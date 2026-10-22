@@ -523,6 +523,350 @@ fn timeline_rejects_stale_bounds_and_unready_assets_but_allows_cancel_and_short_
 }
 
 #[tokio::test]
+async fn optional_round_progress_projects_across_phases_and_preserves_legacy_snapshots() {
+    let f = Fixture::new();
+    f.seed();
+    let legacy = serde_json::to_vec(&f.snapshot(1, "IDLE")).unwrap();
+    assert!(!String::from_utf8_lossy(&legacy).contains("roundNumber"));
+    assert_eq!(
+        call(
+            api::internal(f.app.clone()),
+            f.signed("POST", "/internal/v1/sync", &legacy)
+        )
+        .await
+        .0,
+        StatusCode::OK
+    );
+    let (cookie, _) = f.login();
+    let (_, _, bytes) = call(api::public(f.app.clone()), get("/api/v1/state", &cookie)).await;
+    let value: Value = serde_json::from_slice(&bytes).unwrap();
+    assert!(value["room"].get("roundNumber").is_none());
+    assert!(value["room"].get("totalRounds").is_none());
+
+    for (index, (phase, number, total)) in [
+        ("IDLE", 0, 1),
+        ("WAITING_FOR_MEDIA", 1, 100),
+        ("PREPARING", 1, 100),
+        ("COUNTDOWN", 1, 100),
+        ("PLAYING", 1, 100),
+        ("PAUSED", 1, 100),
+        ("REVEAL", 1, 100),
+        ("IDLE", 1, 100),
+        ("ENDED", 1000, 1000),
+    ]
+    .into_iter()
+    .enumerate()
+    {
+        let mut snapshot = f.snapshot(index as u64 + 2, phase);
+        snapshot.rooms[0].round_number = Some(number);
+        snapshot.rooms[0].total_rounds = Some(total);
+        if ["PREPARING", "COUNTDOWN", "PLAYING", "PAUSED", "REVEAL"].contains(&phase) {
+            f.round(&mut snapshot);
+            snapshot.rooms[0].round.as_mut().unwrap().playing =
+                matches!(phase, "COUNTDOWN" | "PLAYING");
+        }
+        if phase == "REVEAL" {
+            snapshot.rooms[0].reveal = Some(Reveal {
+                title: "정답 제목".into(),
+                aliases: vec!["별칭".into()],
+                tags: vec!["태그".into()],
+                youtube_url: "https://www.youtube.com/watch?v=BaW_jenozKc".into(),
+            });
+        }
+        let body = serde_json::to_vec(&snapshot).unwrap();
+        let (status, _, _) = call(
+            api::internal(f.app.clone()),
+            f.signed("POST", "/internal/v1/sync", &body),
+        )
+        .await;
+        assert_eq!(status, StatusCode::OK, "phase {phase}");
+        let (status, _, bytes) =
+            call(api::public(f.app.clone()), get("/api/v1/state", &cookie)).await;
+        assert_eq!(status, StatusCode::OK);
+        let value: Value = serde_json::from_slice(&bytes).unwrap();
+        assert_eq!(value["room"]["roundNumber"], number);
+        assert_eq!(value["room"]["totalRounds"], total);
+        if phase != "REVEAL" {
+            for secret in [
+                "BaW_jenozKc",
+                "youtube",
+                "title",
+                "aliases",
+                "tags",
+                "정답 제목",
+                "별칭",
+                "태그",
+            ] {
+                assert!(
+                    !String::from_utf8_lossy(&bytes).contains(secret),
+                    "leak in {phase}: {secret}"
+                );
+            }
+        } else {
+            assert_eq!(value["reveal"]["title"], "정답 제목");
+        }
+        if matches!(phase, "IDLE" | "WAITING_FOR_MEDIA" | "ENDED") {
+            assert!(value["round"].is_null());
+        }
+    }
+    f.sync_direct(f.snapshot(11, "IDLE"), None);
+    let (_, _, bytes) = call(api::public(f.app.clone()), get("/api/v1/state", &cookie)).await;
+    let value: Value = serde_json::from_slice(&bytes).unwrap();
+    assert!(value["room"].get("roundNumber").is_none());
+    assert!(value["room"].get("totalRounds").is_none());
+}
+
+#[tokio::test]
+async fn bridge_rejects_partial_invalid_or_noninteger_round_progress_without_accepting_state() {
+    let f = Fixture::new();
+    for progress in [
+        json!({"roundNumber":1}),
+        json!({"totalRounds":100}),
+        json!({"roundNumber":1,"totalRounds":null}),
+        json!({"roundNumber":null,"totalRounds":100}),
+        json!({"roundNumber":-1,"totalRounds":100}),
+        json!({"roundNumber":-1,"totalRounds":0}),
+        json!({"roundNumber":1,"totalRounds":-1}),
+        json!({"roundNumber":1,"totalRounds":2147483648_u32}),
+        json!({"roundNumber":4294967295_u32,"totalRounds":2147483647_u32}),
+        json!({"roundNumber":101,"totalRounds":100}),
+        json!({"roundNumber":1.5,"totalRounds":100}),
+        json!({"roundNumber":1,"totalRounds":100.5}),
+        json!({"roundNumber":"1","totalRounds":100}),
+        json!({"roundNumber":1,"totalRounds":"100"}),
+        json!({"roundNumber":true,"totalRounds":100}),
+        json!({"roundNumber":4294967296_u64,"totalRounds":100}),
+        json!({"roundNumber":4294967296_u64,"totalRounds":0}),
+    ] {
+        let mut snapshot = serde_json::to_value(f.snapshot(1, "IDLE")).unwrap();
+        snapshot["rooms"][0]
+            .as_object_mut()
+            .unwrap()
+            .extend(progress.as_object().unwrap().clone());
+        let body = serde_json::to_vec(&snapshot).unwrap();
+        assert_eq!(
+            call(
+                api::internal(f.app.clone()),
+                f.signed("POST", "/internal/v1/sync", &body)
+            )
+            .await
+            .0,
+            StatusCode::BAD_REQUEST,
+            "invalid progress {progress}"
+        );
+        assert!(f.app.inner.lock().unwrap().snapshot.is_none());
+    }
+    let mut snapshot = serde_json::to_value(f.snapshot(1, "IDLE")).unwrap();
+    snapshot["rooms"][0]["roundNumber"] = Value::Null;
+    snapshot["rooms"][0]["totalRounds"] = Value::Null;
+    let body = serde_json::to_vec(&snapshot).unwrap();
+    assert_eq!(
+        call(
+            api::internal(f.app.clone()),
+            f.signed("POST", "/internal/v1/sync", &body)
+        )
+        .await
+        .0,
+        StatusCode::OK
+    );
+}
+
+#[tokio::test]
+async fn room_progress_must_match_active_round_number_including_zero_boundary() {
+    let f = Fixture::new();
+    f.seed();
+    for (number, total) in [(0, 100), (2, 100), (100, 100), (0, 0), (2, 0)] {
+        let mut snapshot = f.snapshot(1, "PREPARING");
+        f.round(&mut snapshot);
+        snapshot.rooms[0].round_number = Some(number);
+        snapshot.rooms[0].total_rounds = Some(total);
+        let body = serde_json::to_vec(&snapshot).unwrap();
+        assert_eq!(
+            call(
+                api::internal(f.app.clone()),
+                f.signed("POST", "/internal/v1/sync", &body)
+            )
+            .await
+            .0,
+            StatusCode::BAD_REQUEST,
+            "round 1 mismatches room {number}"
+        );
+    }
+    for (index, (number, total)) in [
+        (1001, 1001),
+        (i32::MAX as u32, i32::MAX as u32),
+        (u32::MAX, 0),
+    ]
+    .into_iter()
+    .enumerate()
+    {
+        let mut snapshot = f.snapshot(index as u64 + 1, "PREPARING");
+        f.round(&mut snapshot);
+        snapshot.rooms[0].round_number = Some(number);
+        snapshot.rooms[0].total_rounds = Some(total);
+        snapshot.rooms[0].round.as_mut().unwrap().number = number;
+        let body = serde_json::to_vec(&snapshot).unwrap();
+        assert_eq!(
+            call(
+                api::internal(f.app.clone()),
+                f.signed("POST", "/internal/v1/sync", &body)
+            )
+            .await
+            .0,
+            StatusCode::OK
+        );
+    }
+}
+
+#[tokio::test]
+async fn unlimited_progress_projects_in_every_phase_without_revealing_answers_early() {
+    let f = Fixture::new();
+    f.seed();
+    let mut initial = f.snapshot(1, "IDLE");
+    initial.rooms[0].round_number = Some(0);
+    initial.rooms[0].total_rounds = Some(0);
+    f.sync_direct(initial, None);
+    let (cookie, _) = f.login();
+    for (index, (phase, number)) in [
+        ("IDLE", 0),
+        ("WAITING_FOR_MEDIA", 1),
+        ("PREPARING", 1),
+        ("COUNTDOWN", 1),
+        ("PLAYING", 1),
+        ("PAUSED", 1),
+        ("REVEAL", 1),
+        ("IDLE", 201),
+        ("ENDED", u32::MAX),
+    ]
+    .into_iter()
+    .enumerate()
+    {
+        let mut snapshot = f.snapshot(index as u64 + 2, phase);
+        snapshot.rooms[0].round_number = Some(number);
+        snapshot.rooms[0].total_rounds = Some(0);
+        if ["PREPARING", "COUNTDOWN", "PLAYING", "PAUSED", "REVEAL"].contains(&phase) {
+            f.round(&mut snapshot);
+            snapshot.rooms[0].round.as_mut().unwrap().playing =
+                matches!(phase, "COUNTDOWN" | "PLAYING");
+        }
+        if phase == "REVEAL" {
+            snapshot.rooms[0].reveal = Some(Reveal {
+                title: "정답 제목".into(),
+                aliases: vec!["별칭".into()],
+                tags: vec!["태그".into()],
+                youtube_url: "https://www.youtube.com/watch?v=BaW_jenozKc".into(),
+            });
+        }
+        let body = serde_json::to_vec(&snapshot).unwrap();
+        assert_eq!(
+            call(
+                api::internal(f.app.clone()),
+                f.signed("POST", "/internal/v1/sync", &body)
+            )
+            .await
+            .0,
+            StatusCode::OK,
+            "unlimited phase {phase}"
+        );
+        let (status, _, bytes) =
+            call(api::public(f.app.clone()), get("/api/v1/state", &cookie)).await;
+        assert_eq!(status, StatusCode::OK);
+        let value: Value = serde_json::from_slice(&bytes).unwrap();
+        assert_eq!(value["room"]["roundNumber"], number);
+        assert_eq!(value["room"]["totalRounds"], 0);
+        if phase == "REVEAL" {
+            assert_eq!(value["reveal"]["title"], "정답 제목");
+        } else {
+            for secret in [
+                "BaW_jenozKc",
+                "youtube",
+                "title",
+                "aliases",
+                "tags",
+                "정답 제목",
+                "별칭",
+                "태그",
+            ] {
+                assert!(
+                    !String::from_utf8_lossy(&bytes).contains(secret),
+                    "unlimited leak in {phase}: {secret}"
+                );
+            }
+        }
+        if matches!(phase, "IDLE" | "WAITING_FOR_MEDIA" | "ENDED") {
+            assert!(value["round"].is_null());
+        }
+    }
+    f.sync_direct(f.snapshot(11, "IDLE"), None);
+    let (_, _, bytes) = call(api::public(f.app.clone()), get("/api/v1/state", &cookie)).await;
+    let value: Value = serde_json::from_slice(&bytes).unwrap();
+    assert!(value["room"].get("roundNumber").is_none());
+    assert!(value["room"].get("totalRounds").is_none());
+}
+
+#[tokio::test]
+async fn live_limit_changes_update_room_progress_without_changing_audio_round() {
+    let f = Fixture::new();
+    f.seed();
+    let mut cookie = String::new();
+    let mut original_round = Value::Null;
+    for (index, total) in [0, 300, 1001, i32::MAX as u32, 0, 201]
+        .into_iter()
+        .enumerate()
+    {
+        let mut snapshot = f.snapshot(index as u64 + 1, "PLAYING");
+        f.round(&mut snapshot);
+        snapshot.rooms[0].round_number = Some(201);
+        snapshot.rooms[0].total_rounds = Some(total);
+        let round = snapshot.rooms[0].round.as_mut().unwrap();
+        round.number = 201;
+        round.revision = "1".into();
+        let body = serde_json::to_vec(&snapshot).unwrap();
+        assert_eq!(
+            call(
+                api::internal(f.app.clone()),
+                f.signed("POST", "/internal/v1/sync", &body)
+            )
+            .await
+            .0,
+            StatusCode::OK,
+            "new live total {total}"
+        );
+        if index == 0 {
+            cookie = f.login().0;
+        }
+        let (_, _, bytes) = call(api::public(f.app.clone()), get("/api/v1/state", &cookie)).await;
+        let value: Value = serde_json::from_slice(&bytes).unwrap();
+        assert_eq!(value["room"]["roundNumber"], 201);
+        assert_eq!(value["room"]["totalRounds"], total);
+        if index == 0 {
+            original_round = value["round"].clone();
+        }
+        assert_eq!(value["round"], original_round);
+        assert!(value["reveal"].is_null());
+    }
+    let mut invalid = f.snapshot(7, "PLAYING");
+    f.round(&mut invalid);
+    invalid.rooms[0].round_number = Some(201);
+    invalid.rooms[0].total_rounds = Some(200);
+    invalid.rooms[0].round.as_mut().unwrap().number = 201;
+    let body = serde_json::to_vec(&invalid).unwrap();
+    assert_eq!(
+        call(
+            api::internal(f.app.clone()),
+            f.signed("POST", "/internal/v1/sync", &body)
+        )
+        .await
+        .0,
+        StatusCode::BAD_REQUEST
+    );
+    assert_eq!(
+        f.app.inner.lock().unwrap().snapshot.as_ref().unwrap().rooms[0].total_rounds,
+        Some(201)
+    );
+}
+
+#[tokio::test]
 async fn concurrent_media_registration_deduplicates_and_idempotency_conflict_is_explicit() {
     let f = Fixture::new();
     let mut tasks = Vec::new();

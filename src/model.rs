@@ -92,6 +92,10 @@ pub struct Room {
     pub room_id: String,
     pub room_revision: String,
     pub phase: String,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub round_number: Option<u32>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub total_rounds: Option<u32>,
     pub round: Option<Round>,
     pub reveal: Option<Reveal>,
 }

@@ -243,10 +243,6 @@ progress::-moz-progress-bar {
 .primary:hover {
   background: #373c41
 }
-.primary span {
-  font-size: 15px;
-  font-weight: 400
-}
 .countdown {
   font-size: 23px;
   font-variant-numeric: tabular-nums;
@@ -332,6 +328,38 @@ h2 {
 }
 .listener.live .listener-dot {
   background: var(--green)
+}
+@media(min-width:960px) {
+  .shell {
+    max-width: 1120px
+  }
+  main {
+    display: grid;
+    grid-template-columns: minmax(0,1fr) 208px;
+    column-gap: 48px
+  }
+  .eyebrow,.track,.player {
+    grid-column: 1
+  }
+  .listeners {
+    grid-column: 2;
+    grid-row: 1 / 4;
+    padding: 39px 0 32px 28px;
+    border-left: 1px solid var(--line);
+    border-bottom: 0;
+    min-width: 0
+  }
+  .listener-list {
+    flex-direction: column;
+    gap: 18px
+  }
+  .listener>span:not(.avatar) {
+    min-width: 0;
+    overflow-wrap: anywhere
+  }
+  .listener-dot {
+    flex-shrink: 0
+  }
 }
 footer {
   display: flex;
