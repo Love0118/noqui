@@ -1,0 +1,9 @@
+name: Noqui
+version: '${project.version}'
+main: dev.noqui.paper.NoquiPlugin
+api-version: '26.3'
+description: 별도 cabin 노래퀴즈와 브라우저 오디오 연결
+commands:
+  noqui:
+    description: OP 전용 노래퀴즈 관리
+    usage: /noqui <start [player]|stop|skip|hint|give [player]|status>

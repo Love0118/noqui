@@ -1,0 +1,42 @@
+# Contract verified against noqui/web/src/main.rs (public :8787, bridge :8788).
+[Unit]
+Description=Noqui web and cached Opus media
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/opt/noqui/current
+EnvironmentFile=/etc/noqui/noqui.env
+ExecStart=/opt/noqui/current/noqui-web
+Restart=on-failure
+RestartSec=5s
+TimeoutStopSec=30s
+KillSignal=SIGINT
+KillMode=control-group
+UMask=0077
+StateDirectory=noqui
+StateDirectoryMode=0700
+Nice=10
+CPUQuota=50%
+CPUWeight=20
+IOWeight=20
+# Shared cgroup includes Rust, yt-dlp/Python, Node and FFmpeg child processes.
+MemoryMax=768M
+TasksMax=128
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=strict
+ProtectHome=read-only
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+ReadWritePaths=/var/lib/noqui
+
+[Install]
+WantedBy=multi-user.target

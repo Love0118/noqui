@@ -1,0 +1,19 @@
+# HTTP-only bootstrap for certbot --webroot. Enable before a certificate exists.
+# Stop the temporary noqui-http-probe-2 listener before nginx binds port 80.
+log_format noqui_safe '$remote_addr [$time_local] "$request_method $uri $server_protocol" $status $body_bytes_sent';
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name noqui.danta.qzz.io;
+    access_log /var/log/nginx/noqui-access.log noqui_safe;
+
+    location ^~ /.well-known/acme-challenge/ {
+        root /var/lib/letsencrypt;
+        default_type text/plain;
+        try_files $uri =404;
+    }
+    location / {
+        return 308 https://noqui.danta.qzz.io$request_uri;
+    }
+}

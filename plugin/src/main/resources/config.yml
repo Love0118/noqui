@@ -1,0 +1,20 @@
+# Import the sanitized noqui_cabin world before enabling this plugin.
+world: noqui_cabin
+spawn:
+  x: 411.5
+  y: 11.0
+  z: -205.5
+  yaw: 0.3003012
+  pitch: 0.0
+border:
+  center-x: 416.0
+  center-z: -192.0
+  size: 250.0
+round-seconds: 115
+match-skip: false
+public-origin: https://noqui.danta.qzz.io
+bridge:
+  origin: http://127.0.0.1:8788
+  key-id: primary
+  # A file containing 32 raw bytes or 64 hexadecimal characters. Never commit it.
+  secret-file: bridge.key
