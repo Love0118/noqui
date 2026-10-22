@@ -26,6 +26,9 @@ public final class NoquiPaperSmoke extends JavaPlugin {
                         .type(DialogType.notice(ActionButton.create(Component.text("닫기"),null,120,null))));
                 require(dialog!=null,"native dialog factory");
                 var noqui=Objects.requireNonNull(Bukkit.getPluginManager().getPlugin("Noqui"));
+                require(Bukkit.getServicesManager().load(LobbyService.class)!=null,"wallet service");
+                require(world.getEntitiesByClass(org.bukkit.entity.Mannequin.class).stream()
+                        .filter(entity->entity.getScoreboardTags().contains("noqui_lobby_shop_v1")).count()==1,"single owned shop NPC");
                 var dialogsField=noqui.getClass().getDeclaredField("dialogs");dialogsField.setAccessible(true);Object dialogs=dialogsField.get(noqui);
                 Class<?> entryType=Class.forName("dev.noqui.paper.BrowserConnections$Entry",true,noqui.getClass().getClassLoader());
                 var entryConstructor=entryType.getDeclaredConstructor(UUID.class,UUID.class);entryConstructor.setAccessible(true);
@@ -46,14 +49,15 @@ public final class NoquiPaperSmoke extends JavaPlugin {
                 boolean expectedActive=Boolean.getBoolean("noqui.smoke.expect-active");
                 require(quiz.started()==expectedActive,"persisted active flag");
                 if(expectedActive){Bukkit.dispatchCommand(Bukkit.getConsoleSender(),"noqui stop");require(!quiz.started(),"restored waiting game stops");}
-                Bukkit.dispatchCommand(Bukkit.getConsoleSender(),"noqui start");require(quiz.started(),"empty-server start");
+                Bukkit.dispatchCommand(Bukkit.getConsoleSender(),"noqui start 200");require(quiz.started(),"empty-server limited start");
+                Bukkit.dispatchCommand(Bukkit.getConsoleSender(),"noqui limit 0");require(quiz.started(),"live unlimited limit");
                 Bukkit.dispatchCommand(Bukkit.getConsoleSender(),"mud reload");
                 var after=Objects.requireNonNull(Bukkit.getServicesManager().load(DefenseService.class));
                 require(before!=after,"runtime provider replaced");require(quiz.started(),"quiz survives Moma reload");
                 require(Bukkit.getServicesManager().getRegistrations(DefenseService.class).size()==1,"single current provider");
                 Bukkit.dispatchCommand(Bukkit.getConsoleSender(),"noqui stop");require(!quiz.started(),"stop");
                 if(Boolean.getBoolean("noqui.smoke.keep-active")){Bukkit.dispatchCommand(Bukkit.getConsoleSender(),"noqui start");require(quiz.started(),"persist active before shutdown");}
-                getLogger().info("NOQUI_SMOKE_OK world native-dialog connection-dialog services empty-start runtime-reload stop persisted-active="+expectedActive);
+                getLogger().info("NOQUI_SMOKE_OK world shop wallet native-dialog connection-dialog services limits empty-start runtime-reload stop persisted-active="+expectedActive);
             } catch(Throwable error){getLogger().log(java.util.logging.Level.SEVERE,"NOQUI_SMOKE_FAIL",error);}
             finally{Bukkit.shutdown();}
         },40);

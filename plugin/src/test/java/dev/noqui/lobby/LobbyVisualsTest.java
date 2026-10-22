@@ -1,0 +1,89 @@
+package dev.noqui.lobby;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.*;
+import static org.mockito.Mockito.*;
+import java.util.*;
+import java.util.function.Consumer;
+import io.papermc.paper.datacomponent.item.ResolvableProfile;
+import org.bukkit.*;
+import org.bukkit.block.Block;
+import org.bukkit.entity.*;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.plugin.Plugin;
+import org.bukkit.profile.PlayerTextures;
+import org.junit.jupiter.api.*;
+import org.mockito.*;
+
+class LobbyVisualsTest {
+    @Test @SuppressWarnings("unchecked") void mannequinDeduplicatesAndUsesBundledSlimSkinWithoutExternalProfileService() {
+        World world=mock(World.class);WorldBorder border=mock(WorldBorder.class);Block air=mock(Block.class),floor=mock(Block.class);Chunk chunk=mock(Chunk.class);
+        Material solid=mock(Material.class);when(solid.isSolid()).thenReturn(true);
+        when(world.getWorldBorder()).thenReturn(border);when(border.isInside(any())).thenReturn(true);when(air.isPassable()).thenReturn(true);when(floor.getType()).thenReturn(solid);
+        when(world.getBlockAt(any(Location.class))).thenAnswer(c->((Location)c.getArgument(0)).getY()<11?floor:air);
+        when(world.getChunkAt(any(Location.class))).thenReturn(chunk);
+        Mannequin first=mock(Mannequin.class),duplicate=mock(Mannequin.class),foreign=mock(Mannequin.class);
+        when(first.getUniqueId()).thenReturn(new UUID(0,1));when(duplicate.getUniqueId()).thenReturn(new UUID(0,2));when(first.isValid()).thenReturn(true);
+        when(first.getScoreboardTags()).thenReturn(Set.of(ShopNpc.TAG));when(duplicate.getScoreboardTags()).thenReturn(Set.of(ShopNpc.TAG));when(foreign.getScoreboardTags()).thenReturn(Set.of("unrelated"));
+        when(world.getEntitiesByClass(Mannequin.class)).thenReturn(List.of(duplicate,foreign,first));
+        try(var profiles=mockStatic(ResolvableProfile.class)) {
+            var builder=mock(ResolvableProfile.Builder.class,RETURNS_SELF);var patch=mock(ResolvableProfile.SkinPatchBuilder.class,RETURNS_SELF);
+            var profile=mock(ResolvableProfile.class);profiles.when(ResolvableProfile::resolvableProfile).thenReturn(builder);when(builder.build()).thenReturn(profile);
+            when(builder.skinPatch(any(Consumer.class))).thenAnswer(c->{((Consumer<ResolvableProfile.SkinPatchBuilder>)c.getArgument(0)).accept(patch);return builder;});
+            ShopNpc npc=new ShopNpc(world,409.5,11,-205.5);npc.ensure();npc.ensure();
+            verify(duplicate,times(1)).remove();verify(foreign,never()).remove();verify(first,times(1)).setProfile(profile);
+            verify(patch).body(net.kyori.adventure.key.Key.key("noqui:entity/shopkeeper"));verify(patch).model(PlayerTextures.SkinModel.SLIM);
+            verify(first).setImmovable(true);verify(first).setPersistent(true);verify(first).setInvulnerable(true);
+            assertTrue(LobbyFeatures.ownsEntity(first));assertFalse(LobbyFeatures.ownsEntity(foreign));
+        }
+    }
+
+    @Test void spawnConsumerSetsOwnershipBeforeSpawnEventAndInvalidFloorFails() {
+        World world=mock(World.class);WorldBorder border=mock(WorldBorder.class);when(world.getWorldBorder()).thenReturn(border);when(border.isInside(any())).thenReturn(false);
+        ShopNpc npc=new ShopNpc(world,409.5,11,-205.5);assertThrows(IllegalStateException.class,npc::ensure);verify(world,never()).spawn(any(Location.class),eq(Mannequin.class),any(Consumer.class));
+    }
+
+    @Test @SuppressWarnings("unchecked") void newMannequinReceivesTheNarrowSpawnGuardTagInsideItsSpawnConsumer() {
+        World world=mock(World.class);WorldBorder border=mock(WorldBorder.class);Chunk chunk=mock(Chunk.class);Block air=mock(Block.class),floor=mock(Block.class);Material solid=mock(Material.class);
+        when(solid.isSolid()).thenReturn(true);when(floor.getType()).thenReturn(solid);when(air.isPassable()).thenReturn(true);when(world.getWorldBorder()).thenReturn(border);when(border.isInside(any())).thenReturn(true);
+        when(world.getBlockAt(any(Location.class))).thenAnswer(c->((Location)c.getArgument(0)).getY()<11?floor:air);when(world.getChunkAt(any(Location.class))).thenReturn(chunk);when(world.getEntitiesByClass(Mannequin.class)).thenReturn(List.of());
+        Mannequin fresh=mock(Mannequin.class);Set<String> tags=new HashSet<>();when(fresh.getScoreboardTags()).thenReturn(tags);when(fresh.isValid()).thenReturn(true);
+        doAnswer(c->{tags.add(c.getArgument(0));return true;}).when(fresh).addScoreboardTag(anyString());
+        when(world.spawn(any(Location.class),eq(Mannequin.class),any(Consumer.class))).thenAnswer(c->{
+            assertFalse(LobbyFeatures.ownsEntity(fresh));((Consumer<Mannequin>)c.getArgument(2)).accept(fresh);
+            // Paper invokes CreatureSpawnEvent after this consumer returns.
+            assertTrue(LobbyFeatures.ownsEntity(fresh));return fresh;
+        });
+        try(var profiles=mockStatic(ResolvableProfile.class)) {
+            var builder=mock(ResolvableProfile.Builder.class,RETURNS_SELF);profiles.when(ResolvableProfile::resolvableProfile).thenReturn(builder);when(builder.build()).thenReturn(mock(ResolvableProfile.class));
+            ShopNpc npc=new ShopNpc(world,409.5,11,-205.5);npc.ensure();npc.ensure();verify(world,times(1)).spawn(any(Location.class),eq(Mannequin.class),any(Consumer.class));
+        }
+    }
+
+    @Test @SuppressWarnings("unchecked") void cosmeticEntitiesPreserveRealArmorToolsAndCleanOnlyOwnedEntitiesAcrossWorlds() {
+        try(var bukkit=mockStatic(Bukkit.class);var stacks=mockConstruction(ItemStack.class,(item,context)->when(item.getItemMeta()).thenReturn(mock(ItemMeta.class)))) {
+            Plugin plugin=mock(Plugin.class);World cabin=mock(World.class),arena=mock(World.class);Player player=mock(Player.class);UUID id=UUID.randomUUID();
+            World[] current={cabin};when(player.getUniqueId()).thenReturn(id);when(player.getWorld()).thenAnswer(c->current[0]);when(player.getGameMode()).thenReturn(GameMode.ADVENTURE);
+            when(player.getLocation()).thenAnswer(c->new Location(current[0],1,11,2));List<ItemDisplay> created=new ArrayList<>();
+            for(World world:List.of(cabin,arena))when(world.spawn(any(Location.class),eq(ItemDisplay.class),any(Consumer.class))).thenAnswer(c->{
+                ItemDisplay display=mock(ItemDisplay.class);when(display.isValid()).thenReturn(true);when(display.getLocation()).thenReturn(c.getArgument(0));((Consumer<ItemDisplay>)c.getArgument(2)).accept(display);created.add(display);return display;
+            });
+            CosmeticDisplays cosmetics=new CosmeticDisplays(plugin,cabin);Map<String,String> equipment=Map.of("head","pirate_hat","back","backpack","face","glasses","hand","hammer");
+            cosmetics.tick(player,equipment);assertEquals(4,created.size());cosmetics.tick(player,equipment);assertEquals(4,created.size());
+            current[0]=arena;cosmetics.tick(player,equipment);assertEquals(7,created.size());for(int i=0;i<4;i++)verify(created.get(i)).remove();
+            assertEquals(7,stacks.constructed().size());for(ItemStack item:stacks.constructed())verify(item.getItemMeta()).setItemModel(any(NamespacedKey.class));
+            cosmetics.leave(id);cosmetics.leave(id);cosmetics.close();for(int i=4;i<7;i++)verify(created.get(i),times(1)).remove();
+            verify(player,never()).getInventory();verify(player,never()).getEquipment();verify(player,never()).addPassenger(any());
+        }
+    }
+
+    @Test void restartPurgeRemovesOnlyTaggedDisplayEntities() {
+        try(var bukkit=mockStatic(Bukkit.class)) {
+            World world=mock(World.class);ItemDisplay owned=mock(ItemDisplay.class),foreign=mock(ItemDisplay.class);
+            when(owned.getScoreboardTags()).thenReturn(Set.of(CosmeticDisplays.TAG));when(foreign.getScoreboardTags()).thenReturn(Set.of("other"));
+            when(world.getEntitiesByClass(ItemDisplay.class)).thenReturn(List.of(owned,foreign));bukkit.when(Bukkit::getWorlds).thenReturn(List.of(world));
+            new CosmeticDisplays(mock(Plugin.class),world).purge();verify(owned).remove();verify(foreign,never()).remove();
+        }
+    }
+}

@@ -116,18 +116,19 @@ public final class BridgeClient implements MediaBridge {
         var rosterJson=new JsonArray();
         for(Member m:members)rosterJson.add(object("uuid",m.uuid(),"membershipId",m.membershipId(),"nickname",m.nickname(),"textureHash",m.textureHash(),"roomId",state.session()));
         String phase=switch(state.phase()) {
-            case STOPPED->"ENDED";case WAITING_FOR_PRESENTER,WAITING_FOR_SUBMISSION->"IDLE";case WAITING_FOR_MEDIA->"WAITING_FOR_MEDIA";
+            case STOPPED->"ENDED";case WAITING_FOR_SUBMISSION->"IDLE";case WAITING_FOR_MEDIA->"WAITING_FOR_MEDIA";
             default->state.phase().name();
         };
+        if(state.phase()==QuizGame.Phase.REVEAL && state.media()==null)phase="IDLE";
         JsonObject round=null,reveal=null;
         if(state.roundId()!=null && state.media()!=null && !phase.equals("IDLE") && !phase.equals("ENDED")) {
             long end=state.media()==null?0:state.clipEndMillis();
             round=object("roundId",state.roundId(),"number",state.round(),"revision",Long.toString(state.revision()),
                     "playbackGeneration",state.playbackGeneration(),"mediaId",state.media()==null?null:state.media().id(),
-                    "clipStartMs",0,"clipEndMs",end,"anchorPositionMs",0,"anchorAtMs",state.startsAt(),"playing",state.playing());
+                    "clipStartMs",0,"clipEndMs",end,"anchorPositionMs",state.anchorPositionMillis(),"anchorAtMs",state.startsAt(),"playing",state.playing());
         }
         if(phase.equals("REVEAL") && state.song()!=null)reveal=object("title",state.song().title(),"aliases",new JsonArray(),"tags",gson.toJsonTree(state.song().tags()),"youtubeUrl",state.song().youtubeUrl());
-        var rooms=new JsonArray();rooms.add(object("roomId",state.session(),"roomRevision",Long.toString(state.revision()),"phase",phase,"round",round,"reveal",reveal));
+        var rooms=new JsonArray();rooms.add(object("roomId",state.session(),"roomRevision",Long.toString(state.revision()),"phase",phase,"round",round,"reveal",reveal,"roundNumber",state.round(),"totalRounds",state.totalRounds()));
         return object("schemaVersion",1,"instanceId",instance,"seq","0","sentAtMs",0,"roster",rosterJson,"rooms",rooms);
     }
     @Override public synchronized void publish(QuizGame.Snapshot state) {

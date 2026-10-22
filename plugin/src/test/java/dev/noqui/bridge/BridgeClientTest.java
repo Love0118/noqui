@@ -33,12 +33,12 @@ class BridgeClientTest {
         try(var client=client(List::of)) {
             var future=new CompletableFuture<MediaBridge.Media>();
             MediaBridge fake=new MediaBridge(){public CompletionStage<Media> prepare(Request r){return future;}public void cancel(UUID s,long r){}public void publish(QuizGame.Snapshot s){}};
-            var game=game(fake);game.start(player,List.of(player,membership));
+            var game=game(fake);game.start(List.of(player,membership));game.grant(player,1);
             var song=Song.input("https://youtu.be/BaW_jenozKc","Private answer","PrivateTag");game.submit(player,game.snapshot().revision(),song);
             String pending=client.snapshot(game.snapshot(),List.of()).toString();assertFalse(pending.contains("Private"));assertFalse(pending.contains("BaW_jenozKc"));
             future.complete(new MediaBridge.Media(UUID.randomUUID().toString(),60000));
             String prepared=client.snapshot(game.snapshot(),List.of()).toString();assertFalse(prepared.contains("Private"));assertFalse(prepared.contains("youtube"));
-            game.browsersReady(game.snapshot().revision(),true,true);game.skip();String reveal=client.snapshot(game.snapshot(),List.of()).toString();
+            game.browsersReady(game.snapshot().revision(),true,true);game.forceSkip(game.snapshot().roundId());String reveal=client.snapshot(game.snapshot(),List.of()).toString();
             assertTrue(reveal.contains("Private answer"));assertTrue(reveal.contains("PrivateTag"));assertTrue(reveal.contains("BaW_jenozKc"));
         }
     }
@@ -68,7 +68,7 @@ class BridgeClientTest {
             var ready=client.prepare(new MediaBridge.Request(UUID.randomUUID(),1,Song.input("https://youtu.be/BaW_jenozKc","Secret",""))).toCompletableFuture().get(8,TimeUnit.SECONDS);
             assertEquals(media.toString(),ready.id());assertEquals(1,gets.get());
             var fake=new MediaBridge(){public CompletionStage<Media> prepare(Request r){throw new UnsupportedOperationException();}public void cancel(UUID s,long r){}public void publish(QuizGame.Snapshot s){}};
-            var game=game(fake);game.start(player,List.of(player));client.publish(game.snapshot());
+            var game=game(fake);game.start(List.of(player));client.publish(game.snapshot());
             String raw=client.joinToken(member,game.snapshot().session()).toCompletableFuture().get(8,TimeUnit.SECONDS);
             assertTrue(raw.matches("[A-Za-z0-9_-]{43}"));assertEquals(BridgeClient.hash(raw.getBytes(StandardCharsets.UTF_8)),tokenBody.get().get("tokenSha256").getAsString());
             assertFalse(tokenBody.get().toString().contains(raw));assertNull(failure.get());

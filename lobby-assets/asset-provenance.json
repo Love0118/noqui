@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "resourceFormat": [97, 1],
+  "packUuid": "7d5243d5-c30e-4bdd-a039-71ec1ad10001",
+  "backpack": {
+    "repository": "https://github.com/joshua-pechan/Minecraft-Figura-Cosmetic",
+    "commit": "959204795f2242be80186a040f46b81fbf5ffa10",
+    "model": "https://github.com/joshua-pechan/Minecraft-Figura-Cosmetic/blob/959204795f2242be80186a040f46b81fbf5ffa10/backpack.bbmodel",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/joshua-pechan/Minecraft-Figura-Cosmetic/blob/959204795f2242be80186a040f46b81fbf5ffa10/LICENSE",
+    "copyrightNotice": "Copyright (c) 2024 JashDuck",
+    "localSources": ["vendor/jashduck/backpack.bbmodel", "vendor/jashduck/backpack.png", "vendor/jashduck/LICENSE", "vendor/jashduck/README.md"],
+    "inspection": "Repository MIT notice has no model/texture reservation. backpack.bbmodel contains seven cuboids and one embedded PNG; the separately named ornithopter.bbmodel/armor models are not included. README's uncertain Ornithopter creator note is retained in vendor/README.md rather than erased or represented as authorship of the backpack.",
+    "conversion": "Recenter the bag body at native item origin; replace the Figura outer avatar-group Y-180 transform with the runtime back-attachment coordinate frame. Bake element right-angle X rotations and remap face normals/UV quarter turns; preserve embedded texture bytes. No animation or other repository model is bundled."
+  },
+  "originalFallbacks": {
+    "models": ["pirate_hat", "glasses", "crown", "cap", "bunny", "triple_boots", "quad_boots", "hammer", "snow_bomb", "gravity_suit"],
+    "textures": ["pack/assets/noqui/textures/item/palette.png", "pack/assets/noqui/textures/entity/shopkeeper.png"],
+    "authorship": "New cuboid geometry and pixel-art textures authored with Codex specifically for this project. Not attributed to an outside artist or advertised as downloaded assets. Repository owner's licensing applies.",
+    "authoringSource": "author_assets.py",
+    "skin": "Original female-presenting shopkeeper, navy suit and tie, chestnut hair, gold monocle; standard64x64 UV,3pixel slim arms. Bundled key noqui:entity/shopkeeper; no account, skin upload or external profile."
+  },
+  "candidateResearch": [
+    {"url": "https://raw.githubusercontent.com/fonnymunkey/SimpleHats/master/LICENSE", "decision": "Rejected: model/texture rights reserved, despite MIT code; no files reused."},
+    {"url": "https://kenney.nl/assets/pirate-kit", "license": "CC0", "decision": "Inspected primary asset listing. Mesh-based characters/scenery do not supply the eleven requested vanilla cuboid wearables; no files reused."},
+    {"url": "https://github.com/SL0ANE/Loy-s-Goodies", "license": "CC0 asset collection", "decision": "Inspected candidate listing; no exact native wearable set selected, no files reused. Original compatible fallbacks chosen rather than claiming another artist authored them."}
+  ],
+  "sounds": {
+    "details": "sound-provenance.json",
+    "origin": "User-supplied local 노래퀴즈1218.zip",
+    "rights": "No external public redistribution license asserted. Exact five user-authorized cues only."
+  },
+  "primaryFormatReferences": [
+    "https://www.minecraft.net/en-us/article/minecraft-java-edition-26-3",
+    "https://www.minecraft.net/en-us/article/minecraft-java-edition-1-21-9"
+  ]
+}

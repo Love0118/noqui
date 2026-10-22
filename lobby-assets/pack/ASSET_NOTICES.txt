@@ -1,0 +1,21 @@
+Noqui lobby pack
+
+Backpack model and embedded backpack texture:
+Converted from backpack.bbmodel at joshua-pechan/Minecraft-Figura-Cosmetic
+commit959204795f2242be80186a040f46b81fbf5ffa10.
+MIT License, Copyright(c)2024 JashDuck. Full notice: MIT_BACKPACK_LICENSE.txt.
+Vanilla conversion recenters7 cuboids and bakes90-degree rotations.
+No Ornithopter, armor or other models from that repository are included.
+
+Other10 cosmetic models, shared palette texture and slim shopkeeper skin:
+New geometry and pixel art authored with Codex for this Noqui project.
+These are original compatible fallbacks, not downloaded artist assets.
+No third-party visual source is claimed for them. The repository owner's
+licensing applies to these newly generated project assets.
+
+Five quiz sound files:
+Exact bytes supplied by the user in 노래퀴즈1218.zip, under
+리소스팩/assets/minecraft/sounds/arsf/.
+Only0click2,0select2,0miss,0win,0heal are included.
+No external public redistribution license is asserted for these user assets.
+The original archive, music collection and full sounds.json are not bundled.

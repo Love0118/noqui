@@ -38,6 +38,7 @@ public record Song(String youtubeUrl, String title, List<String> tags) {
         String value = normalize(input);
         return !value.isEmpty() && (value.contains(normalize(title)) || tags.stream().map(Song::normalize).anyMatch(value::contains));
     }
+    public boolean matchesTitle(String input){return normalize(input).contains(normalize(title));}
     public static String youtube(String input) {
         try {
             if(input==null || input.length()>2048) throw new IllegalArgumentException();

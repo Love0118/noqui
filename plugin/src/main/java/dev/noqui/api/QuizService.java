@@ -7,6 +7,11 @@ import org.bukkit.entity.Player;
 public interface QuizService {
     boolean started();
     boolean participant(UUID player);
+    boolean ownsCabin(UUID player);
     boolean routeJoin(Player player);
+    void openControls(Player player);
+    void prepareDefense(Player player);
+    void defenseEntered(Player player);
+    void defenseFailed(Player player);
     void leave(Player player);
 }

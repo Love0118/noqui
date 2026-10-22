@@ -1,0 +1,37 @@
+{
+  "0click2": {
+    "sounds": [
+      {
+        "name": "arsf/0click2"
+      }
+    ]
+  },
+  "0select2": {
+    "sounds": [
+      {
+        "name": "arsf/0select2"
+      }
+    ]
+  },
+  "0miss": {
+    "sounds": [
+      {
+        "name": "arsf/0miss"
+      }
+    ]
+  },
+  "0win": {
+    "sounds": [
+      {
+        "name": "arsf/0win"
+      }
+    ]
+  },
+  "0heal": {
+    "sounds": [
+      {
+        "name": "arsf/0heal"
+      }
+    ]
+  }
+}

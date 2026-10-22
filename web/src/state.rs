@@ -277,8 +277,13 @@ impl State {
             .ok_or(Error::new(404, "ROOM_NOT_FOUND"))?;
         let players:Vec<_>=self.snapshot.as_ref().unwrap().roster.iter().filter(|p|p.room_id==room.room_id).map(|p|json!({"uuid":p.uuid,"nickname":p.nickname,"textureHash":p.texture_hash,"browserOnline":self.sessions.values().any(|s|s.player.uuid==p.uuid && s.browser.as_ref().is_some_and(|b|b.until>now))})).collect();
         let media=room.round.as_ref().and_then(|r|r.media_id.as_ref()).and_then(|id|self.media.get(id)).map(|m|json!({"mediaId":m.id,"url":format!("/media/{}.ogg",m.sha256),"mime":"audio/ogg; codecs=opus","durationMs":m.duration_ms}));
+        let mut public_room = json!({"roomId":room.room_id,"revision":room.room_revision,"phase":room.phase,"players":players});
+        if let (Some(number), Some(total)) = (room.round_number, room.total_rounds) {
+            public_room["roundNumber"] = json!(number);
+            public_room["totalRounds"] = json!(total);
+        }
         Ok(
-            json!({"eventId":format!("{}:{}",self.epoch,self.event_seq),"serverTimeMs":now,"authorityLeaseExpiresAtMs":self.authority_until,"me":{"uuid":session.player.uuid,"nickname":session.player.nickname,"textureHash":session.player.texture_hash},"room":{"roomId":room.room_id,"revision":room.room_revision,"phase":room.phase,"players":players},"round":room.round,"media":media,"reveal":if room.phase=="REVEAL" {room.reveal.as_ref()} else {None}}),
+            json!({"eventId":format!("{}:{}",self.epoch,self.event_seq),"serverTimeMs":now,"authorityLeaseExpiresAtMs":self.authority_until,"me":{"uuid":session.player.uuid,"nickname":session.player.nickname,"textureHash":session.player.texture_hash},"room":public_room,"round":room.round,"media":media,"reveal":if room.phase=="REVEAL" {room.reveal.as_ref()} else {None}}),
         )
     }
     pub fn playback(&mut self, key: &str, p: Playback, now: i64) -> Result<Value> {
@@ -399,6 +404,12 @@ pub fn validate(s: &Snapshot, media: &HashMap<String, Media>, now: i64) -> Resul
             return Err(bad());
         }
         counter(&room.room_revision)?;
+        match (room.round_number, room.total_rounds) {
+            (None, None) => {}
+            (Some(number), Some(total))
+                if total <= i32::MAX as u32 && (total == 0 || number <= total) => {}
+            _ => return Err(bad()),
+        }
         if room.phase != "REVEAL" && room.reveal.is_some() {
             return Err(Error::new(422, "ANSWER_BEFORE_REVEAL"));
         }
@@ -418,7 +429,11 @@ pub fn validate(s: &Snapshot, media: &HashMap<String, Media>, now: i64) -> Resul
             }
         }
         if let Some(r) = &room.round {
-            if !uuid(&r.round_id) || !uuid(&r.playback_generation) || r.number == 0 {
+            if !uuid(&r.round_id)
+                || !uuid(&r.playback_generation)
+                || r.number == 0
+                || room.round_number.is_some_and(|number| number != r.number)
+            {
                 return Err(bad());
             }
             counter(&r.revision)?;

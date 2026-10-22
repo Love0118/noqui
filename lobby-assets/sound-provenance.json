@@ -1,0 +1,36 @@
+{
+  "source": "User-provided 노래퀴즈1218.zip; no external redistribution license asserted",
+  "archiveSha256": "67015703e7b8ed3ec295b5ee75348640ac5a97048881d9b98928712a1cfd71b1",
+  "sounds": [
+    {
+      "event": "minecraft:0click2",
+      "member": "리소스팩/assets/minecraft/sounds/arsf/0click2.ogg",
+      "sha256": "fa5694819b2dc0790fd33d8f672b140412bc25ae6f799f1ed356e8981741d49d",
+      "bytes": 15600
+    },
+    {
+      "event": "minecraft:0select2",
+      "member": "리소스팩/assets/minecraft/sounds/arsf/0select2.ogg",
+      "sha256": "32d23c1bd4eac7f4a9762eb2c8fb07e826c6c13bdd64996128eb0a77d3939840",
+      "bytes": 18294
+    },
+    {
+      "event": "minecraft:0miss",
+      "member": "리소스팩/assets/minecraft/sounds/arsf/0miss.ogg",
+      "sha256": "465382ac7769d8f59329c88c5c339d589f1eb70e22b85eb318341d84a734b79c",
+      "bytes": 11845
+    },
+    {
+      "event": "minecraft:0win",
+      "member": "리소스팩/assets/minecraft/sounds/arsf/0win.ogg",
+      "sha256": "83805c9fbdab4a93286772a5ed01c3aed635d52d080c756288a72d4e3f74c39d",
+      "bytes": 42663
+    },
+    {
+      "event": "minecraft:0heal",
+      "member": "리소스팩/assets/minecraft/sounds/arsf/0heal.ogg",
+      "sha256": "0bae917121c473173083fc193dc611c8d092a85971c90fe64be3f1d4a5cce4d3",
+      "bytes": 18959
+    }
+  ]
+}

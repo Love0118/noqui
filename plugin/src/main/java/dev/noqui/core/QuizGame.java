@@ -1,146 +1,212 @@
 package dev.noqui.core;
 
+import java.io.UncheckedIOException;
 import java.util.*;
 import java.util.concurrent.Executor;
 import java.util.function.LongSupplier;
+import java.util.random.RandomGenerator;
 
-/** Single-threaded state machine. Completion callbacks must enter through the supplied executor. */
+/** Paper-thread authority. Private queue jobs start on acceptance and never enter public snapshots. */
 public final class QuizGame {
-    public enum Phase { STOPPED, WAITING_FOR_PRESENTER, WAITING_FOR_SUBMISSION, WAITING_FOR_MEDIA, PREPARING, COUNTDOWN, PLAYING, REVEAL }
-    public record Snapshot(UUID session, long revision, Phase phase, UUID presenter, UUID winner,
-                           Song song, MediaBridge.Media media, long startsAt, long endsAt,
-                           int round, UUID roundId, UUID playbackGeneration, boolean playing, long clipEndMillis, String hint,
-                           Set<UUID> participants, Map<UUID,Integer> scores) {}
+    public enum Phase { STOPPED, WAITING_FOR_SUBMISSION, WAITING_FOR_MEDIA, PREPARING, COUNTDOWN, PLAYING, REVEAL, PAUSED }
+    public record Snapshot(UUID session,long revision,Phase phase,UUID presenter,UUID winner,Song song,
+            MediaBridge.Media media,long startsAt,long endsAt,int round,UUID roundId,UUID playbackGeneration,
+            boolean playing,long clipEndMillis,String hint,Set<UUID> participants,Map<UUID,Integer> scores,
+            int totalRounds,long anchorPositionMillis,long remainingMillis,int skipVotes,int skipRequired,boolean skipped) {}
     public interface Output {
         void changed(Snapshot snapshot);
-        void error(UUID player, String message);
+        void error(UUID player,String message);
+        default void correctAnswer(UUID round,UUID player,int answerPoints) {}
+        default void ended(Map<UUID,Integer> scores) {}
+    }
+    private static final int MAX_SUBMISSIONS=64;
+    private static final class Submission {
+        final UUID id=UUID.randomUUID(),author;
+        final Song song;
+        final long request;
+        MediaBridge.Media media;
+        boolean live=true;
+        Submission(UUID author,Song song,long request){this.author=author;this.song=song;this.request=request;}
     }
     private final MediaBridge bridge;
     private final Executor main;
     private final LongSupplier clock;
     private final Output output;
+    private final CreditLedger credits;
     private final long roundMillis;
-    private final boolean matchSkip;
-    private final LinkedHashSet<UUID> players = new LinkedHashSet<>();
-    private final Map<UUID,Integer> scores = new LinkedHashMap<>();
-    private UUID session = UUID.randomUUID(), presenter, winner, next;
-    private long revision, operation, startsAt, endsAt, clipEndMillis;
-    private UUID roundId, playbackGeneration;
-    private boolean playing, anyReady, countdownAccepted;
-    private Phase phase = Phase.STOPPED;
-    private Song song;
+    private int totalRounds;
+    private final boolean matchSkip,titleBonus,autoHint;
+    private final RandomGenerator random;
+    private final LinkedHashSet<UUID> players=new LinkedHashSet<>();
+    private final Map<UUID,Integer> scores=new LinkedHashMap<>();
+    private final Deque<Submission> queue=new ArrayDeque<>();
+    // Reservations remain durable in the ledger even if a refund write fails or the process stops.
+    private final Map<UUID,UUID> refundRetries=new LinkedHashMap<>();
+    private final Set<UUID> votes=new HashSet<>();
+    private UUID session=UUID.randomUUID(),winner,roundId,playbackGeneration;
+    private long revision,operation,startsAt,endsAt,clipEndMillis,anchorPosition,pausedRemaining,nextHintAt,hintRemaining=9000,nextRefundRetry;
+    private int roundsStarted;
+    private boolean playing,anyReady,countdownAccepted,roundStarted,skipped;
+    private Phase phase=Phase.STOPPED;
+    private Submission current;
     private MediaBridge.Media media;
-    private int round, hints;
-    private String hint = "";
-    public QuizGame(MediaBridge bridge, Executor main, LongSupplier clock, Output output, int roundSeconds, boolean matchSkip) {
-        if (roundSeconds < 1 || roundSeconds > 600) throw new IllegalArgumentException("Round time must be 1..600 seconds");
-        this.bridge=bridge; this.main=main; this.clock=clock; this.output=output; this.roundMillis=roundSeconds*1000L; this.matchSkip=matchSkip;
+    private HintMask hints;
+    private String hint="";
+    public QuizGame(MediaBridge bridge,Executor main,LongSupplier clock,Output output,int seconds,boolean matchSkip) {
+        this(bridge,main,clock,output,new CreditLedger(),seconds,0,matchSkip,true,false,RandomGenerator.getDefault());
     }
-    public Snapshot snapshot() { return new Snapshot(session, revision, phase, presenter, winner, song, media, startsAt, endsAt, round, roundId, playbackGeneration, playing, clipEndMillis, hint, Set.copyOf(players), Map.copyOf(scores)); }
-    public boolean started() { return phase != Phase.STOPPED; }
-    public boolean participant(UUID id) { return players.contains(id); }
-    public void start(UUID first, Collection<UUID> participants) {
-        if (started()) throw new IllegalArgumentException("노래퀴즈가 이미 진행 중입니다.");
-        if (first == null && !participants.isEmpty() || first != null && !participants.contains(first)) throw new IllegalArgumentException("출제할 참가자가 없습니다.");
-        session=UUID.randomUUID(); players.clear(); players.addAll(participants); scores.clear(); players.forEach(id->scores.put(id,0)); round=0;
-        assign(first);
+    public QuizGame(MediaBridge bridge,Executor main,LongSupplier clock,Output output,CreditLedger credits,int seconds,
+                    int totalRounds,boolean matchSkip,boolean titleBonus,boolean autoHint,RandomGenerator random) {
+        if(seconds<1||seconds>115||totalRounds<0)throw new IllegalArgumentException("Invalid quiz limits");
+        this.bridge=bridge;this.main=main;this.clock=clock;this.output=output;this.credits=credits;roundMillis=seconds*1000L;
+        this.totalRounds=totalRounds;this.matchSkip=matchSkip;this.titleBonus=titleBonus;this.autoHint=autoHint;this.random=random;
+    }
+    public Snapshot snapshot() {
+        long remaining=phase==Phase.PAUSED?pausedRemaining:phase==Phase.COUNTDOWN?clipEndMillis-anchorPosition:Math.max(0,endsAt-clock.getAsLong());
+        return new Snapshot(session,revision,phase,current==null?null:current.author,winner,current==null?null:current.song,media,
+                startsAt,endsAt,roundsStarted+(current!=null&&!roundStarted?1:0),roundId,playbackGeneration,
+                playing,clipEndMillis,hint,Set.copyOf(players),Map.copyOf(scores),totalRounds,anchorPosition,remaining,votes.size(),players.size()/2+1,skipped);
+    }
+    public boolean started(){return phase!=Phase.STOPPED;}
+    public boolean participant(UUID id){return players.contains(id);}
+    public long credits(UUID id){return credits.balance(id);}
+    public boolean pending(UUID id){return current!=null&&!roundStarted&&current.author.equals(id)||queue.stream().anyMatch(s->s.author.equals(id));}
+    public void grant(UUID id,int amount){credits.grant(id,amount);if(started())emit();}
+    public void giveOnce(UUID id,long amount,String transactionId){credits.giveOnce(id,amount,transactionId);if(started())emit();}
+    public void start(Collection<UUID> participants){start(participants,0);}
+    public void start(Collection<UUID> participants,int limit) {
+        if(started())throw new IllegalArgumentException("노래퀴즈가 이미 진행 중입니다.");
+        if(limit<0)throw new IllegalArgumentException("라운드 제한은 0(무제한) 또는 양의 정수입니다.");
+        totalRounds=limit;session=UUID.randomUUID();players.clear();players.addAll(participants);scores.clear();players.forEach(id->scores.put(id,0));
+        roundsStarted=0;clearRound();phase=Phase.WAITING_FOR_SUBMISSION;emit();
+    }
+    public void limit(int limit) {
+        if(!started())throw new IllegalArgumentException("노래퀴즈가 진행 중이 아닙니다.");
+        if(limit<0||limit>0&&limit<roundsStarted)throw new IllegalArgumentException("이미 시작한 라운드보다 작은 제한은 사용할 수 없습니다.");
+        totalRounds=limit;
+        if(limit>0) {
+            if(roundsStarted==limit&&(current==null||!roundStarted)){stop();return;}
+            int capacity=limit-roundsStarted-(current!=null&&!roundStarted?1:0);
+            while(queue.size()>capacity){var s=queue.removeLast();cancelSubmission(s);refund(s);}
+        }
+        emit();
     }
     public void stop() {
-        invalidate(); phase=Phase.STOPPED; presenter=null; winner=null; song=null; media=null; playing=false; players.clear(); startsAt=endsAt=0; emit();
+        if(!started())return;
+        if(current!=null){cancelSubmission(current);if(!roundStarted)refund(current);}
+        for(var s:queue){cancelSubmission(s);refund(s);}queue.clear();
+        clearRound();phase=Phase.STOPPED;players.clear();emit();output.ended(Map.copyOf(scores));
     }
-    public void join(UUID player) {
-        if (!started()) return;
-        if (players.add(player)) scores.putIfAbsent(player,0);
-        if (phase==Phase.WAITING_FOR_PRESENTER) assign(player); else emit();
+    public void join(UUID id){if(started()&&players.add(id)){scores.putIfAbsent(id,0);emit();}}
+    public void leave(UUID id) {
+        if(!players.remove(id))return;
+        for(var it=queue.iterator();it.hasNext();){var s=it.next();if(s.author.equals(id)){cancelSubmission(s);refund(s);it.remove();}}
+        votes.remove(id);
+        if(current!=null&&!roundStarted&&current.author.equals(id)&&!(phase==Phase.REVEAL&&!playing)){abortPreparation();return;}
+        if(votes.size()>=players.size()/2+1&&!votes.isEmpty())finishRound(true);else emit();
     }
-    public void leave(UUID player) {
-        if (!players.remove(player)) return;
-        if (Objects.equals(player, winner)) winner=null;
-        if (Objects.equals(player, next)) next=null;
-        if (Objects.equals(player, presenter)) assign(rotate(player)); else emit();
+    public void cancel(UUID id) {
+        if(current!=null&&!roundStarted&&current.author.equals(id)&&!(phase==Phase.REVEAL&&!playing)){abortPreparation();return;}
+        for(var it=queue.iterator();it.hasNext();){var s=it.next();if(s.author.equals(id)){cancelSubmission(s);refund(s);it.remove();emit();return;}}
     }
-    public void give(UUID player) {
-        if (!started() || !players.contains(player)) throw new IllegalArgumentException("참가 중인 플레이어를 선택하세요.");
-        assign(player);
+    public void submit(UUID id,long expectedRevision,Song song) {
+        if(!started()||revision!=expectedRevision||!players.contains(id))throw new IllegalArgumentException("참가 메뉴를 다시 열어 주세요.");
+        if(pending(id))throw new IllegalArgumentException("대기 중인 제출은 한 곡만 가능합니다.");
+        if(queue.size()+(current==null?0:1)>=MAX_SUBMISSIONS||totalRounds>0&&roundsStarted+queue.size()+(current!=null&&!roundStarted?1:0)>=totalRounds)
+            throw new IllegalArgumentException("남은 라운드의 제출 대기열이 가득 찼습니다.");
+        var s=new Submission(id,Objects.requireNonNull(song),++operation);credits.reserve(s.id,id);queue.add(s);
+        if(current==null)next();else emit();
+        // All accepted submissions begin preparation now. The bounded queue also bounds outstanding jobs.
+        UUID submittedSession=session;
+        try{bridge.prepare(new MediaBridge.Request(session,s.request,s.song)).whenComplete((ready,error)->main.execute(()->{
+            if(!s.live||!session.equals(submittedSession))return;
+            if(error!=null||ready==null){preparationFailed(s);return;}
+            s.media=ready;if(current==s&&phase==Phase.WAITING_FOR_MEDIA)acceptMedia();
+        }));}catch(RuntimeException error){if(s.live)preparationFailed(s);}
     }
-    private UUID rotate(UUID previous) {
-        var list = new ArrayList<>(players);
-        if (list.isEmpty()) return null;
-        int index=list.indexOf(previous);
-        if (index>=0 && list.size()>1) return list.get((index+1)%list.size());
-        return list.getFirst();
-    }
-    private void assign(UUID id) {
-        if(phase==Phase.PLAYING || phase==Phase.COUNTDOWN || phase==Phase.REVEAL && playing) {
-            invalidate();phase=Phase.REVEAL;playing=false;endsAt=clock.getAsLong();emit();
+    private void next() {
+        clearRound();
+        if(totalRounds>0&&roundsStarted>=totalRounds){stop();return;}
+        while(!queue.isEmpty()) {
+            var s=queue.remove();if(!players.contains(s.author)){cancelSubmission(s);refund(s);continue;}
+            current=s;roundId=s.id;playbackGeneration=UUID.randomUUID();hints=new HintMask(s.song.title(),random);
+            phase=Phase.WAITING_FOR_MEDIA;
+            if(s.media!=null)acceptMedia();else emit();return;
         }
-        invalidate(); presenter=id; winner=null; next=null; song=null; media=null; roundId=null; playbackGeneration=null; playing=false; anyReady=false; hint=""; hints=0; startsAt=endsAt=0;
-        phase=id==null?Phase.WAITING_FOR_PRESENTER:Phase.WAITING_FOR_SUBMISSION; emit();
+        phase=Phase.WAITING_FOR_SUBMISSION;emit();
     }
-    public void submit(UUID player, long expectedRevision, Song submitted) {
-        if (phase!=Phase.WAITING_FOR_SUBMISSION || revision!=expectedRevision || !Objects.equals(presenter,player) || !players.contains(player))
-            throw new IllegalArgumentException("현재 출제권으로 입력 창을 다시 열어 주세요.");
-        song=Objects.requireNonNull(submitted); winner=null; phase=Phase.WAITING_FOR_MEDIA; roundId=UUID.randomUUID(); playbackGeneration=UUID.randomUUID(); round++; long request=++operation; emit();
-        try {
-            bridge.prepare(new MediaBridge.Request(session,request,submitted)).whenComplete((ready,error)->main.execute(()->{
-                if (phase!=Phase.WAITING_FOR_MEDIA || operation!=request) return;
-                if (error!=null || ready==null) { failPreparation(); return; }
-                media=ready; clipEndMillis=Math.min(roundMillis,ready.durationMillis()); phase=Phase.PREPARING; endsAt=clock.getAsLong()+20000; emit();
-            }));
-        } catch (RuntimeException error) { if (phase==Phase.WAITING_FOR_MEDIA && operation==request) failPreparation(); }
+    private void acceptMedia(){media=current.media;clipEndMillis=Math.min(roundMillis,media.durationMillis());phase=Phase.PREPARING;endsAt=clock.getAsLong()+20000;emit();}
+    private void cancelSubmission(Submission s){s.live=false;try{bridge.cancel(session,s.request);}catch(RuntimeException ignored){/* The live flag still rejects late completion. */}}
+    private boolean refund(Submission s) {
+        try{credits.refund(s.id);refundRetries.remove(s.id);return true;}
+        catch(UncheckedIOException error){refundRetries.put(s.id,s.author);return false;}
     }
-    private void failPreparation() {
-        invalidate(); phase=Phase.WAITING_FOR_SUBMISSION; media=null; roundId=null; playbackGeneration=null;
-        output.error(presenter,"오디오 준비 실패: 잠시 후 다시 제출하거나 다른 영상을 선택하세요."); emit();
+    private void preparationFailed(Submission s) {
+        boolean refunded;
+        if(current==s){cancelSubmission(s);refunded=refund(s);next();}
+        else {queue.remove(s);cancelSubmission(s);refunded=refund(s);emit();}
+        output.error(s.author,refunded?"오디오 준비 실패 · 출제권을 반환했습니다.":"오디오 준비 실패 · 출제권 반환을 저장할 수 없어 재시도 중입니다.");
     }
-    public boolean answer(UUID player, String answer) {
-        if (phase!=Phase.PLAYING || clock.getAsLong()>=endsAt || winner!=null || !players.contains(player) || Objects.equals(player,presenter) || !song.matches(answer)) return false;
-        winner=player; scores.merge(player,1,Integer::sum); phase=Phase.REVEAL; playing=true; emit(); if(matchSkip) reveal(); return true;
+    private void abortPreparation(){cancelSubmission(current);refund(current);next();}
+    private void clearRound() {
+        current=null;winner=null;roundId=null;playbackGeneration=null;media=null;hints=null;hint="";votes.clear();
+        startsAt=endsAt=clipEndMillis=anchorPosition=pausedRemaining=nextHintAt=0;hintRemaining=9000;
+        playing=anyReady=countdownAccepted=roundStarted=skipped=false;
     }
-    public void skip() {
-        if (!started()) throw new IllegalArgumentException("노래퀴즈가 진행 중이 아닙니다.");
-        if (phase==Phase.PLAYING || phase==Phase.COUNTDOWN || phase==Phase.REVEAL) reveal(); else assign(rotate(presenter));
+    public boolean answer(UUID id,String answer) {
+        if(phase!=Phase.PLAYING||clock.getAsLong()>=endsAt||winner!=null||!players.contains(id)||current.author.equals(id)||!current.song.matches(answer))return false;
+        output.correctAnswer(roundId,id,titleBonus&&current.song.matchesTitle(answer)?2:1);
+        winner=id;scores.merge(id,1,Integer::sum);phase=Phase.REVEAL;emit();if(matchSkip)finishRound(false);return true;
     }
-    private void reveal() {
-        invalidate(); next=winner!=null && players.contains(winner)?winner:rotate(presenter);
-        phase=Phase.REVEAL; playing=false; endsAt=clock.getAsLong()+1000; emit();
+    public boolean voteSkip(UUID id,UUID expectedRound) {
+        if(!players.contains(id)||!Objects.equals(roundId,expectedRound)||roundId==null||phase==Phase.REVEAL&&!playing)return false;
+        if(!votes.add(id))return false;
+        if(votes.size()>=players.size()/2+1)finishRound(true);else emit();return true;
     }
+    public void forceSkip(UUID expectedRound) {
+        if(roundId==null||!Objects.equals(expectedRound,roundId))throw new IllegalArgumentException("현재 라운드 메뉴를 다시 열어 주세요.");
+        finishRound(true);
+    }
+    private long position(long now){return Math.min(clipEndMillis,anchorPosition+(playing?Math.max(0,now-startsAt):0));}
+    private void finishRound(boolean skipped) {
+        if(current==null||phase==Phase.REVEAL&&!playing)return;
+        anchorPosition=position(clock.getAsLong());cancelSubmission(current);if(!roundStarted)refund(current);
+        phase=Phase.REVEAL;playing=false;this.skipped=skipped;endsAt=clock.getAsLong()+5000;emit();
+    }
+    public void pause() {
+        if(phase!=Phase.PLAYING&&phase!=Phase.COUNTDOWN&&!(phase==Phase.REVEAL&&playing))throw new IllegalArgumentException("재생 중에 일시정지할 수 있습니다.");
+        long now=clock.getAsLong();anchorPosition=position(now);pausedRemaining=Math.max(0,clipEndMillis-anchorPosition);
+        hintRemaining=nextHintAt==0?9000:Math.max(0,nextHintAt-now);playing=false;phase=Phase.PAUSED;emit();
+    }
+    public void resume(){if(phase!=Phase.PAUSED)throw new IllegalArgumentException("일시정지 상태가 아닙니다.");countdown();}
     public void tick() {
         long now=clock.getAsLong();
-        if (phase==Phase.PREPARING && now>=endsAt) {
-            if(anyReady) countdown(); else { failPreparation(); output.error(presenter,"브라우저에서 오디오를 켠 뒤 다시 제출하세요. /noqui skip으로 넘길 수 있습니다."); }
+        if(!refundRetries.isEmpty()&&now>=nextRefundRetry){nextRefundRetry=now+1000;boolean changed=false;
+            for(var it=refundRetries.entrySet().iterator();it.hasNext();){var entry=it.next();try{credits.refund(entry.getKey());it.remove();changed=true;}catch(UncheckedIOException ignored){}}
+            if(changed)emit();
         }
-        if (phase==Phase.COUNTDOWN && now>=startsAt) {
-            if(countdownAccepted){phase=Phase.PLAYING;playing=true;emit();}
-            else {phase=Phase.PREPARING;playing=false;startsAt=0;endsAt=now+20000;emit();}
+        if(phase==Phase.PREPARING&&now>=endsAt){if(anyReady)countdown();else preparationFailed(current);}
+        if(phase==Phase.COUNTDOWN&&now>=startsAt) {
+            if(!countdownAccepted){playing=false;startsAt=0;if(roundStarted){phase=Phase.PAUSED;pausedRemaining=clipEndMillis-anchorPosition;}else{phase=Phase.PREPARING;endsAt=now+20000;}emit();return;}
+            if(!roundStarted)try{credits.spend(current.id);roundStarted=true;roundsStarted++;}
+            catch(UncheckedIOException error){
+                UUID author=current.author;playing=false;startsAt=0;phase=Phase.PREPARING;emit();abortPreparation();
+                output.error(author,"출제권 사용을 저장하지 못해 재생을 취소했습니다. 미확정 출제권은 반환됩니다.");return;
+            }
+            phase=Phase.PLAYING;playing=true;nextHintAt=startsAt+hintRemaining;emit();if(winner!=null){phase=Phase.REVEAL;emit();}
         }
-        if (phase==Phase.PLAYING && now>=endsAt) reveal();
-        else if (phase==Phase.REVEAL && now>=endsAt) {
-            if(playing) reveal(); else assign(next!=null && players.contains(next)?next:rotate(presenter));
-        }
+        if((phase==Phase.PLAYING||phase==Phase.REVEAL&&playing)&&now>=endsAt)finishRound(false);
+        else if(phase==Phase.REVEAL&&!playing&&now>=endsAt)next();
+        else if(autoHint&&phase==Phase.PLAYING&&now>=nextHintAt){hint();nextHintAt=now+9000;}
     }
-    public void browsersReady(long expectedRevision, boolean any, boolean all) {
-        if(phase!=Phase.PREPARING || revision!=expectedRevision)return;
-        anyReady=any;
-        if(any && all)countdown();
+    public void browsersReady(long expectedRevision,boolean any,boolean all) {
+        if(phase!=Phase.PREPARING||revision!=expectedRevision)return;anyReady=any;if(any&&all)countdown();
     }
-    public void controlAccepted(long expectedRevision) {if(phase==Phase.COUNTDOWN && revision==expectedRevision)countdownAccepted=true;}
+    public void controlAccepted(long expectedRevision){if(phase==Phase.COUNTDOWN&&revision==expectedRevision)countdownAccepted=true;}
     private void countdown() {
-        phase=Phase.COUNTDOWN;playing=true;countdownAccepted=false;
-        // One second for asynchronous loopback delivery, then the required three-second countdown.
-        startsAt=clock.getAsLong()+4000;endsAt=startsAt+clipEndMillis;emit();
+        phase=Phase.COUNTDOWN;playing=true;countdownAccepted=false;playbackGeneration=UUID.randomUUID();
+        startsAt=clock.getAsLong()+4000;endsAt=startsAt+clipEndMillis-anchorPosition;emit();
     }
-    public void hint() {
-        if (phase!=Phase.PLAYING || winner!=null) throw new IllegalArgumentException("정답을 기다리는 라운드에서 사용할 수 있습니다.");
-        String title=Song.normalize(song.title()); int visible=Math.min(Math.max(0,title.length()-1), hints++*(int)Math.ceil(title.length()*.25));
-        var result=new StringBuilder();
-        String initials="ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ";
-        for(int i=0;i<title.length();i++) {
-            char c=title.charAt(i);
-            result.append(i<visible?c:c>='가'&&c<='힣'?initials.charAt((c-'가')/588):'_');
-        }
-        hint=result.toString(); emit();
-    }
-    private void invalidate() { bridge.cancel(session,operation); operation++; }
-    private void emit() { revision++; Snapshot state=snapshot(); output.changed(state); bridge.publish(state); }
+    public void hint(){if(phase!=Phase.PLAYING)throw new IllegalArgumentException("정답을 기다리는 라운드에서 사용할 수 있습니다.");hint=hints.next();emit();}
+    private void emit(){revision++;Snapshot state=snapshot();output.changed(state);bridge.publish(state);}
 }

@@ -21,17 +21,22 @@ final class NoquiListener implements Listener {
     private final Set<AsyncChatEvent> modern=Collections.synchronizedSet(Collections.newSetFromMap(new WeakHashMap<>()));
     NoquiListener(NoquiPlugin plugin){this.plugin=plugin;}
     private boolean cabin(org.bukkit.Location l){return plugin.cabin.contains(l);}
-    @EventHandler(priority=EventPriority.LOWEST) public void recover(PlayerJoinEvent e){plugin.recovery.restore(e.getPlayer(),true);}
-    @EventHandler(priority=EventPriority.HIGHEST) public void join(PlayerJoinEvent e){plugin.routeJoin(e.getPlayer());}
+    @EventHandler(priority=EventPriority.LOWEST) public void recover(PlayerJoinEvent e){plugin.recovery.recover(e.getPlayer(),plugin.defenseActive(e.getPlayer()),true);}
+    @EventHandler(priority=EventPriority.HIGHEST) public void join(PlayerJoinEvent e){plugin.joined(e.getPlayer());}
     @EventHandler public void quit(PlayerQuitEvent e){plugin.quit(e.getPlayer());}
-    @EventHandler(priority=EventPriority.HIGHEST) public void respawn(PlayerRespawnEvent e){if(plugin.participant(e.getPlayer().getUniqueId()))e.setRespawnLocation(plugin.cabin.spawn.clone());}
-    @EventHandler public void death(PlayerDeathEvent e){if(plugin.participant(e.getPlayer().getUniqueId())){e.setKeepInventory(true);e.getDrops().clear();e.setDroppedExp(0);}}
+    @EventHandler(priority=EventPriority.HIGHEST) public void respawn(PlayerRespawnEvent e){
+        if(plugin.ownsCabin(e.getPlayer().getUniqueId()))e.setRespawnLocation(plugin.cabin.spawn.clone());
+        else if(plugin.participant(e.getPlayer().getUniqueId()))plugin.main(()->{
+            if(e.getPlayer().isOnline()&&!plugin.defenseActive(e.getPlayer()))plugin.routeJoin(e.getPlayer());
+        });
+    }
+    @EventHandler public void death(PlayerDeathEvent e){if(plugin.ownsCabin(e.getPlayer().getUniqueId())){e.setKeepInventory(true);e.getDrops().clear();e.setDroppedExp(0);}}
     @EventHandler public void world(PlayerChangedWorldEvent e){if(!cabin(e.getPlayer().getLocation()))plugin.leftWorld(e.getPlayer());}
     @EventHandler public void move(PlayerMoveEvent e){if(cabin(e.getTo()) && plugin.cabin.outside(e.getTo())){e.getPlayer().setFallDistance(0);e.setTo(plugin.cabin.spawn.clone());}}
-    @EventHandler public void swap(PlayerSwapHandItemsEvent e){if(plugin.participant(e.getPlayer().getUniqueId())){e.setCancelled(true);plugin.dialogs.controls(e.getPlayer());}}
+    @EventHandler public void swap(PlayerSwapHandItemsEvent e){if(plugin.ownsCabin(e.getPlayer().getUniqueId())){e.setCancelled(true);plugin.dialogs.controls(e.getPlayer());}}
     @EventHandler public void interact(PlayerInteractEvent e) {
         if(!cabin(e.getPlayer().getLocation()))return;e.setCancelled(true);
-        if(e.getHand()!=EquipmentSlot.HAND || !(e.getAction()==Action.RIGHT_CLICK_AIR || e.getAction()==Action.RIGHT_CLICK_BLOCK) || !plugin.participant(e.getPlayer().getUniqueId()))return;
+        if(e.getHand()!=EquipmentSlot.HAND || !(e.getAction()==Action.RIGHT_CLICK_AIR || e.getAction()==Action.RIGHT_CLICK_BLOCK) || !plugin.ownsCabin(e.getPlayer().getUniqueId()))return;
         String id=plugin.tool(e.getPlayer());
         if("defense".equals(id))plugin.toDefense(e.getPlayer());else if("controls".equals(id))plugin.dialogs.controls(e.getPlayer());
     }
@@ -76,6 +81,8 @@ final class NoquiListener implements Listener {
     @EventHandler public void piston(BlockPistonExtendEvent e){if(cabin(e.getBlock().getLocation()))e.setCancelled(true);}
     @EventHandler public void piston(BlockPistonRetractEvent e){if(cabin(e.getBlock().getLocation()))e.setCancelled(true);}
     @EventHandler public void redstone(BlockRedstoneEvent e){if(cabin(e.getBlock().getLocation()))e.setNewCurrent(e.getOldCurrent());}
-    @EventHandler public void spawn(CreatureSpawnEvent e){if(cabin(e.getLocation()))e.setCancelled(true);}
+    @EventHandler public void spawn(CreatureSpawnEvent e){
+        if(cabin(e.getLocation())&&!dev.noqui.lobby.LobbyFeatures.ownsEntity(e.getEntity()))e.setCancelled(true);
+    }
     @EventHandler public void weather(WeatherChangeEvent e){if(e.getWorld().equals(plugin.cabin.world))e.setCancelled(true);}
 }

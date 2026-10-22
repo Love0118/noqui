@@ -38,6 +38,20 @@ server {
     location = /internal { return 404; }
     location ^~ /internal/ { return 404; }
 
+    # Deploy only reviewed, content-hashed public pack/skin files here.
+    # Minecraft downloads these directly without a browser session cookie.
+    location ^~ /packs/ {
+        alias /var/www/noqui/packs/;
+        autoindex off;
+        disable_symlinks on;
+        limit_except GET HEAD { deny all; }
+        add_header Cache-Control "public, max-age=31536000, immutable";
+        # Location-level add_header replaces inherited headers on older Nginx.
+        add_header X-Content-Type-Options nosniff always;
+        add_header Referrer-Policy same-origin always;
+        add_header X-Frame-Options DENY always;
+    }
+
     location / {
         proxy_pass http://127.0.0.1:8787;
         proxy_http_version 1.1;

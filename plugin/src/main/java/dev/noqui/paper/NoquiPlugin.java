@@ -3,12 +3,13 @@ package dev.noqui.paper;
 import dev.noqui.api.*;
 import dev.noqui.bridge.BridgeClient;
 import dev.noqui.core.*;
+import dev.noqui.lobby.LobbyFeatures;
 import java.net.URI;
 import java.nio.file.*;
 import java.util.*;
 import java.util.concurrent.Executor;
+import java.util.random.RandomGenerator;
 import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.event.ClickEvent;
 import org.bukkit.*;
 import org.bukkit.command.*;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -18,30 +19,32 @@ import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.plugin.ServicePriority;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class NoquiPlugin extends JavaPlugin implements QuizService, TabExecutor {
+public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExecutor {
     final PlayerRecovery recovery=new PlayerRecovery();
     private final Map<UUID,BridgeClient.Member> members=new LinkedHashMap<>();
     private final Map<UUID,Song> drafts=new HashMap<>();
+    private final Map<UUID,String> names=new HashMap<>();
+    private final Set<UUID> cabinOwners=new HashSet<>(),handoffs=new HashSet<>();
+    private final QuizHud hud=new QuizHud();
     private BrowserConnections connections;
     private BridgeClient bridge;
     private QuizGame game;
+    private LobbyFeatures lobbyFeatures;
     Cabin cabin;
     NoquiDialogs dialogs;
     private String publicOrigin;
     private YamlConfiguration catalog;
-    private UUID lastPresenter;
     private volatile QuizGame.Snapshot answerState;
-    private QuizGame.Phase lastPhase;
-    private int lastCountdown;
+    private int lastCountdown,ticks;
+    private boolean shuttingDown;
     @Override public void onEnable() {
         try {
             saveDefaultConfig();cabin=new Cabin(getConfig());
             publicOrigin=getConfig().getString("public-origin","https://noqui.danta.qzz.io").replaceAll("/+$","");
             URI publicUri=URI.create(publicOrigin);
-            if(!"https".equals(publicUri.getScheme()) || publicUri.getHost()==null || publicUri.getUserInfo()!=null || publicUri.getPort()!=-1
-                    || !publicUri.getPath().isEmpty() || publicUri.getQuery()!=null || publicUri.getFragment()!=null)throw new IllegalArgumentException("Invalid public HTTPS origin");
-            var keyPath=getDataFolder().toPath().resolve(getConfig().getString("bridge.secret-file","bridge.key"));
-            byte[] key=Files.readAllBytes(keyPath);
+            if(!"https".equals(publicUri.getScheme())||publicUri.getHost()==null||publicUri.getUserInfo()!=null||publicUri.getPort()!=-1
+                    ||!publicUri.getPath().isEmpty()||publicUri.getQuery()!=null||publicUri.getFragment()!=null)throw new IllegalArgumentException("Invalid public HTTPS origin");
+            byte[] key=Files.readAllBytes(getDataFolder().toPath().resolve(getConfig().getString("bridge.secret-file","bridge.key")));
             if(key.length!=32)key=HexFormat.of().parseHex(new String(key,java.nio.charset.StandardCharsets.US_ASCII).trim());
             String saved=getConfig().getString("instance-id");UUID instance=saved==null?UUID.randomUUID():UUID.fromString(saved);
             getConfig().set("instance-id",instance.toString());saveConfig();
@@ -53,112 +56,122 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService, TabExe
                     },getLogger()::warning);
             Arrays.fill(key,(byte)0);
             catalog=YamlConfiguration.loadConfiguration(getDataFolder().toPath().resolve("songs.yml").toFile());
-            game=new QuizGame(bridge,main,System::currentTimeMillis,new QuizGame.Output() {
-                @Override public void changed(QuizGame.Snapshot state){changedState(state);}
-                @Override public void error(UUID player,String message){Player p=Bukkit.getPlayer(player);if(p!=null)p.sendMessage(Component.text(message));}
-            },getConfig().getInt("round-seconds",115),getConfig().getBoolean("match-skip",false));
+            var ledger=new CreditLedger(getDataFolder().toPath().resolve("credits.json"));
+            game=new QuizGame(bridge,main,System::currentTimeMillis,new QuizGame.Output(){
+                public void changed(QuizGame.Snapshot state){changedState(state);}
+                public void error(UUID id,String message){Player p=Bukkit.getPlayer(id);if(p!=null)p.sendMessage(text(message));}
+                public void correctAnswer(UUID round,UUID player,int answerPoints){
+                    var wallet=Bukkit.getServicesManager().load(LobbyService.class);
+                    if(wallet==null)throw new IllegalStateException("Lobby wallet unavailable");
+                    wallet.rewardAnswerPoints(player,"noqui-answer:"+round+":"+player,answerPoints);
+                }
+                public void ended(Map<UUID,Integer> scores){finishQuiz(scores);}
+            },ledger,getConfig().getInt("round-seconds",115),0,getConfig().getBoolean("match-skip",false),
+                    getConfig().getBoolean("title-bonus",true),getConfig().getBoolean("auto-hint",false),RandomGenerator.getDefault());
             dialogs=new NoquiDialogs(this);
             connections=new BrowserConnections(this::connectionEntry,(id,entry)->bridge.joinToken(members.get(id),entry.session())
                     .thenApply(token->publicOrigin+"/join#t="+token),main,new BrowserConnections.View(){
                 public void pending(UUID id,BrowserConnections.Entry entry){Player p=Bukkit.getPlayer(id);if(p!=null)dialogs.connection(p,entry,null);}
-                public void ready(UUID id,BrowserConnections.Entry entry,String url){Player p=Bukkit.getPlayer(id);if(p!=null){
-                    dialogs.connection(p,entry,url);p.sendMessage(text("브라우저 연결").clickEvent(ClickEvent.openUrl(url)));
-                }}
-                public void failed(UUID id,BrowserConnections.Entry entry){Player p=Bukkit.getPlayer(id);if(p!=null){
-                    dialogs.connection(p,entry,null);p.sendMessage(text("연결 실패 · 다시 시도하세요."));
-                }}
+                public void ready(UUID id,BrowserConnections.Entry entry,String url){Player p=Bukkit.getPlayer(id);if(p!=null)dialogs.connection(p,entry,url);}
+                public void failed(UUID id,BrowserConnections.Entry entry){Player p=Bukkit.getPlayer(id);if(p!=null){p.closeDialog();p.sendMessage(text("연결 실패 · 메뉴에서 다시 시도하세요."));}}
             });
             Bukkit.getPluginManager().registerEvents(new NoquiListener(this),this);
             Bukkit.getServicesManager().register(QuizService.class,this,this,ServicePriority.Normal);
+            lobbyFeatures=new LobbyFeatures(this,cabin.spawn.getWorld(),new LobbyFeatures.CreditPort(){
+                public long balance(UUID player){return game.credits(player);}
+                public void grant(UUID player,long amount,String transactionId){game.giveOnce(player,amount,transactionId);}
+            });
+            lobbyFeatures.start();
+            Bukkit.getServicesManager().register(LobbyService.class,lobbyFeatures,this,ServicePriority.Normal);
             var command=Objects.requireNonNull(getCommand("noqui"));command.setExecutor(this);command.setTabCompleter(this);
-            for(Player p:Bukkit.getOnlinePlayers())recovery.restore(p,true);
+            Objects.requireNonNull(getCommand("money")).setExecutor(this);
+            for(Player p:Bukkit.getOnlinePlayers()){recovery.recover(p,defenseActive(p),true);lobbyFeatures.join(p);}
             Bukkit.getScheduler().runTaskTimer(this,this::tick,1,1);
             Bukkit.getScheduler().runTaskTimer(this,bridge::heartbeat,1,40);
-            if(getConfig().getBoolean("quiz-active",false))main(()->start(eligible().stream().findFirst().orElse(null)));
+            if(getConfig().getBoolean("quiz-active",false))main(()->start(getConfig().getInt("quiz-limit",0)));
             getLogger().info("Noqui enabled; /noqui starts the quiz.");
-        } catch(Exception error) {
-            getLogger().severe("Noqui startup failed ("+error.getClass().getSimpleName()+"). Check the imported world, safe spawn and bridge key/configuration.");
-            Bukkit.getPluginManager().disablePlugin(this);
-        }
+        }catch(Exception error){getLogger().severe("Noqui startup failed ("+error.getClass().getSimpleName()+"). Check world, spawn, bridge and credit ledger.");Bukkit.getPluginManager().disablePlugin(this);}
     }
     DefenseService defense(){return Bukkit.getServicesManager().load(DefenseService.class);}
+    boolean defenseActive(Player p){var service=defense();return service!=null&&service.active(p);}
     QuizGame game(){return game;}
     void main(Runnable task){if(isEnabled())Bukkit.getScheduler().runTask(this,()->{if(isEnabled())task.run();});}
     static Component text(String value){return Component.text(value);}
     private void tick() {
         game.tick();var state=game.snapshot();
-        if(state.phase()!=QuizGame.Phase.COUNTDOWN){lastCountdown=0;return;}
-        int remaining=(int)Math.ceil((state.startsAt()-System.currentTimeMillis())/1000d);
-        if(remaining>=1 && remaining<=3 && remaining!=lastCountdown) {
-            lastCountdown=remaining;
-            var title=net.kyori.adventure.title.Title.title(text(Integer.toString(remaining)),Component.empty(),
-                    net.kyori.adventure.title.Title.Times.times(java.time.Duration.ZERO,java.time.Duration.ofSeconds(1),java.time.Duration.ZERO));
-            for(UUID id:state.participants()){Player p=Bukkit.getPlayer(id);if(p!=null)p.showTitle(title);}
+        if(state.phase()!=QuizGame.Phase.COUNTDOWN)lastCountdown=0;
+        else {
+            int remaining=(int)Math.ceil((state.startsAt()-System.currentTimeMillis())/1000d);
+            if(remaining>=1&&remaining<=3&&remaining!=lastCountdown){lastCountdown=remaining;
+                for(UUID id:state.participants()){Player p=Bukkit.getPlayer(id);if(p!=null)hud.countdown(p,remaining,state.round(),state.totalRounds());}}
         }
+        if(++ticks%5==0){
+            if(lobbyFeatures!=null)lobbyFeatures.tick();
+            for(UUID id:state.participants()){Player p=Bukkit.getPlayer(id);if(p!=null)render(p,state);}
+        }
+    }
+    private void render(Player p,QuizGame.Snapshot state) {
+        boolean reveal=state.phase()==QuizGame.Phase.REVEAL;
+        hud.setImmersive(p,ownsCabin(p.getUniqueId()));
+        hud.render(p,new QuizHud.Frame(state.round(),state.totalRounds(),state.phase().name(),state.remainingMillis(),state.clipEndMillis(),
+                name(state.presenter()),state.hint(),reveal&&state.song()!=null?state.song().title():"",reveal&&state.song()!=null?state.song().tags():List.of(),
+                reveal&&state.winner()!=null?List.of(name(state.winner())):List.of(),state.skipVotes(),state.skipRequired()),state.scores().getOrDefault(p.getUniqueId(),0),game.credits(p.getUniqueId()));
     }
     private void changedState(QuizGame.Snapshot state) {
         answerState=state;
-        if(state.song()!=null && state.roundId()!=null) {
-            String path="songs."+state.roundId();
-            if(!catalog.contains(path) || state.media()!=null && !catalog.contains(path+".media-id")) {
+        if(state.song()!=null&&state.roundId()!=null){String path="songs."+state.roundId();
+            if(!catalog.contains(path)||state.media()!=null&&!catalog.contains(path+".media-id")){
                 catalog.set(path+".youtube-url",state.song().youtubeUrl());catalog.set(path+".title",state.song().title());catalog.set(path+".tags",state.song().tags());
                 if(state.media()!=null)catalog.set(path+".media-id",state.media().id());
                 try{catalog.save(getDataFolder().toPath().resolve("songs.yml").toFile());}catch(java.io.IOException error){getLogger().warning("Could not save private song catalogue.");}
             }
         }
-        boolean phaseChange=state.phase()!=lastPhase || !Objects.equals(state.presenter(),lastPresenter);
-        if(phaseChange) {
-            String message=switch(state.phase()) {
-                case WAITING_FOR_PRESENTER->"출제할 참가자를 기다립니다.";
-                case WAITING_FOR_SUBMISSION->"출제자: "+name(state.presenter())+" · 곡을 제출해 주세요.";
-                case WAITING_FOR_MEDIA->"오디오를 준비하고 있습니다.";
-                case PREPARING->"브라우저에서 오디오 켜기를 눌러 주세요. 최대 20초 대기합니다.";
-                case COUNTDOWN->"곧 시작합니다! 노래를 듣고 채팅으로 맞혀 주세요.";
-                case PLAYING->"노래퀴즈 "+state.round()+"라운드";
-                case REVEAL->(state.winner()==null?"정답자 없음":"정답: "+name(state.winner()))+" · "+(state.song()==null?"":state.song().title());
-                case STOPPED->"노래퀴즈가 종료되었습니다.";
-            };
-            for(UUID id:state.participants()){Player p=Bukkit.getPlayer(id);if(p!=null)p.sendMessage(text(message));}
-            lastPhase=state.phase();lastPresenter=state.presenter();
+        for(UUID id:state.participants()){
+            Player p=Bukkit.getPlayer(id);if(p==null)continue;render(p,state);
+            if(state.phase()==QuizGame.Phase.REVEAL&&state.song()!=null)
+                hud.reveal(p,state.song().title(),state.song().tags(),state.winner()==null?List.of():List.of(name(state.winner())),state.skipped());
         }
-        if(!state.hint().isEmpty())for(UUID id:state.participants()){Player p=Bukkit.getPlayer(id);if(p!=null)p.sendActionBar(text("힌트: "+state.hint()));}
     }
-    private String name(UUID id){Player p=id==null?null:Bukkit.getPlayer(id);return p==null?"대기 중":p.getName();}
-    @Override public boolean started(){return game!=null && game.started();}
-    @Override public boolean participant(UUID id){return game!=null && game.participant(id);}
-    List<Player> eligible() {
-        var service=defense();return Bukkit.getOnlinePlayers().stream().filter(p->service==null || !service.active(p)).limit(64).map(p->(Player)p).toList();
-    }
-    void start(Player first) {
+    private String name(UUID id){if(id==null)return "대기 중";Player p=Bukkit.getPlayer(id);return p==null?names.getOrDefault(id,"참가자"):p.getName();}
+    @Override public boolean started(){return game!=null&&game.started();}
+    @Override public boolean participant(UUID id){return game!=null&&game.participant(id);}
+    @Override public boolean ownsCabin(UUID id){return cabinOwners.contains(id);}
+    void start(int limit) {
         if(started())throw new IllegalArgumentException("이미 진행 중입니다.");
-        List<Player> players=eligible();if(first==null && !players.isEmpty() || first!=null && !players.contains(first))throw new IllegalArgumentException("디펜스에 참가 중이지 않은 접속자를 선택하세요.");
-        try {
+        if(limit<0)throw new IllegalArgumentException("라운드 제한은 0(무제한) 또는 양의 정수입니다.");
+        var players=Bukkit.getOnlinePlayers().stream().map(p->(Player)p).toList();
+        if(players.size()>64)throw new IllegalArgumentException("노래퀴즈는 최대 64명입니다.");
+        try{
             for(Player p:players)enter(p);
-            game.start(first==null?null:first.getUniqueId(),players.stream().map(Player::getUniqueId).toList());
-            for(Player p:players)promptEntry(p);
-            getConfig().set("quiz-active",true);saveConfig();
-        } catch(RuntimeException error) {
-            for(UUID id:List.copyOf(members.keySet())){Player p=Bukkit.getPlayer(id);if(p!=null)restore(p,true);}
-            throw error;
-        }
+            game.start(players.stream().map(Player::getUniqueId).toList(),limit);
+            for(Player p:players){hud.start(p,game.snapshot().totalRounds());promptEntry(p);}
+            getConfig().set("quiz-active",true);getConfig().set("quiz-limit",limit);saveConfig();
+        }catch(RuntimeException error){if(started())game.stop();else for(UUID id:List.copyOf(members.keySet())){Player p=Bukkit.getPlayer(id);if(p!=null)restore(p,true);}throw error;}
     }
-    void enter(Player player) {
-        if(members.containsKey(player.getUniqueId()))return;
+    void enter(Player p) {
+        UUID id=p.getUniqueId();if(members.containsKey(id))return;
         if(members.size()>=64)throw new IllegalArgumentException("노래퀴즈는 최대 64명입니다.");
-        var defense=defense();if(defense!=null){if(defense.active(player))throw new IllegalArgumentException("먼저 디펜스에서 나와 주세요.");defense.releaseLobbyTools(player);defense.silenceBgm(player);}
-        recovery.restore(player,true);
-        try {
-            UUID generation=recovery.enter(player);
-            player.closeInventory();player.getInventory().clear();player.setInvisible(false);player.setGameMode(GameMode.ADVENTURE);
-            player.setFlying(false);player.setAllowFlight(false);player.setFallDistance(0);player.setFireTicks(0);player.setFoodLevel(20);
-            if(!player.teleport(cabin.spawn))throw new IllegalStateException("Noqui teleport rejected");
-            player.getInventory().setItem(0,tool(Material.COMPASS,"defense","MC Luck Defense","우클릭: 디펜스 참가·관전 메뉴"));
-            player.getInventory().setItem(1,tool(Material.PAPER,"controls","노래퀴즈","우클릭 또는 F: 출제·브라우저·BGM"));player.getInventory().setHeldItemSlot(1);
-            members.put(player.getUniqueId(),new BridgeClient.Member(player.getUniqueId(),generation,player.getName(),texture(player)));
-        } catch(RuntimeException error){recovery.restore(player,true);throw error;}
+        recovery.recover(p,defenseActive(p),true);
+        UUID generation=recovery.beginMembership(p);
+        members.put(id,new BridgeClient.Member(id,generation,p.getName(),texture(p)));names.put(id,p.getName());
+        try{hud.enter(p);hud.setImmersive(p,false);var service=defense();if(service!=null)service.silenceBgm(p);if(!defenseActive(p))enterCabin(p);}
+        catch(RuntimeException error){restore(p,true);throw error;}
+    }
+    private void enterCabin(Player p) {
+        UUID id=p.getUniqueId();if(ownsCabin(id)||defenseActive(p))return;
+        var service=defense();if(service!=null)service.releaseLobbyTools(p);
+        recovery.captureCabin(p);cabinOwners.add(id);
+        try{
+            p.closeInventory();p.getInventory().clear();p.setInvisible(false);p.setGameMode(GameMode.ADVENTURE);
+            p.setFlying(false);p.setAllowFlight(false);p.setFallDistance(0);p.setFireTicks(0);p.setFoodLevel(20);
+            if(!cabin.spawn.equals(p.getLocation())&&!p.teleport(cabin.spawn))throw new IllegalStateException("Noqui teleport rejected");
+            p.getInventory().setItem(0,tool(Material.COMPASS,"defense","MC Luck Defense","우클릭: 디펜스 바로 시작"));
+            p.getInventory().setItem(1,tool(Material.PAPER,"controls","노래퀴즈","우클릭 또는 F: 출제·브라우저·BGM"));p.getInventory().setHeldItemSlot(1);
+            hud.setImmersive(p,true);
+        }catch(RuntimeException error){cabinOwners.remove(id);recovery.releaseCabin(p,true);throw error;}
     }
     private String texture(Player p) {
-        try {var url=p.getPlayerProfile().getTextures().getSkin();if(url==null)return null;
+        try{var url=p.getPlayerProfile().getTextures().getSkin();if(url==null)return null;
             String hash=url.getPath().substring(url.getPath().lastIndexOf('/')+1);return url.getHost().equals("textures.minecraft.net")&&hash.matches("[a-f0-9]{64}")?hash:null;
         }catch(RuntimeException ignored){return null;}
     }
@@ -169,83 +182,109 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService, TabExe
     String tool(Player p){var item=p.getInventory().getItemInMainHand();return item.hasItemMeta()?item.getItemMeta().getPersistentDataContainer().get(new NamespacedKey(this,"tool"),PersistentDataType.STRING):null;}
     @Override public boolean routeJoin(Player p) {
         if(!started())return false;
-        if(participant(p.getUniqueId()))return true;
-        var service=defense();if(service!=null && service.active(p))return false;
-        try {enter(p);game.join(p.getUniqueId());promptEntry(p);return true;}
-        catch(RuntimeException error){p.sendMessage(text("노래퀴즈에 입장하지 못했습니다. 관리자에게 문의하세요."));return false;}
+        boolean joined=participant(p.getUniqueId());
+        try{
+            if(!joined){enter(p);game.join(p.getUniqueId());hud.start(p,game.snapshot().totalRounds());promptEntry(p);}
+            else if(!defenseActive(p))enterCabin(p);
+            else hud.setImmersive(p,false);
+            return true;
+        }catch(RuntimeException error){
+            if(!joined)try{game.leave(p.getUniqueId());restore(p,true);}catch(RuntimeException cleanup){getLogger().warning("Noqui entry rollback retained recovery markers.");}
+            p.sendMessage(text("노래퀴즈에 입장하지 못했습니다. 관리자에게 문의하세요."));return false;
+        }
     }
-    @Override public void leave(Player p) {members.remove(p.getUniqueId());if(participant(p.getUniqueId()))game.leave(p.getUniqueId());restore(p,true);}
+    @Override public void openControls(Player p){if(participant(p.getUniqueId()))dialogs.controls(p);}
+    @Override public void prepareDefense(Player p) {
+        UUID id=p.getUniqueId();if(!ownsCabin(id))return;
+        handoffs.add(id);cabinOwners.remove(id);hud.setImmersive(p,false);
+        try{recovery.releaseCabin(p,false);}catch(RuntimeException error){cabinOwners.add(id);handoffs.remove(id);hud.setImmersive(p,true);throw error;}
+    }
+    @Override public void defenseEntered(Player p){handoffs.remove(p.getUniqueId());if(participant(p.getUniqueId()))hud.setImmersive(p,false);}
+    @Override public void defenseFailed(Player p){if(handoffs.remove(p.getUniqueId())&&participant(p.getUniqueId())&&!defenseActive(p))enterCabin(p);}
+    @Override public void leave(Player p){if(game!=null)game.leave(p.getUniqueId());boolean cabin=ownsCabin(p.getUniqueId());restore(p,true);if(cabin){var service=defense();if(service!=null)service.sendLobby(p);}}
     private void restore(Player p,boolean teleport) {
-        members.remove(p.getUniqueId());if(connections!=null)connections.forget(p.getUniqueId());drafts.remove(p.getUniqueId());
-        if(recovery.pending(p)){p.closeDialog();recovery.restore(p,teleport);}
+        UUID id=p.getUniqueId();members.remove(id);handoffs.remove(id);drafts.remove(id);if(connections!=null)connections.forget(id);
+        boolean owned=cabinOwners.remove(id);
+        try{hud.leave(p);}finally{
+            try{if(owned&&!defenseActive(p)){p.closeDialog();recovery.releaseCabin(p,teleport);}}
+            finally{recovery.restoreMusic(p);}
+        }
     }
-    void quit(Player p) {
-        members.remove(p.getUniqueId());if(connections!=null)connections.forget(p.getUniqueId());drafts.remove(p.getUniqueId());
-        if(game!=null)game.leave(p.getUniqueId());
-        // Restore while the Player is still available; the persisted marker also covers abrupt loss.
-        recovery.restore(p,false);
-    }
-    void leftWorld(Player p){if(participant(p.getUniqueId())){members.remove(p.getUniqueId());game.leave(p.getUniqueId());restore(p,false);}}
-    boolean captureAnswer(UUID player,String input) {
-        var s=answerState;
-        if(s==null || s.phase()!=QuizGame.Phase.PLAYING || s.winner()!=null || s.song()==null || !s.participants().contains(player)
-                || Objects.equals(s.presenter(),player) || !s.song().matches(input))return false;
-        main(()->game.answer(player,input));return true;
+    void quit(Player p){if(game!=null)game.leave(p.getUniqueId());restore(p,false);}
+    void leftWorld(Player p){if(ownsCabin(p.getUniqueId())){cabinOwners.remove(p.getUniqueId());hud.setImmersive(p,false);recovery.releaseCabin(p,false);}}
+    boolean captureAnswer(UUID id,String input) {
+        var s=answerState;if(s==null||s.phase()!=QuizGame.Phase.PLAYING||s.winner()!=null||s.song()==null||!s.participants().contains(id)||Objects.equals(s.presenter(),id)||!s.song().matches(input))return false;
+        main(()->{if(game.snapshot().session().equals(s.session())&&Objects.equals(game.snapshot().roundId(),s.roundId()))game.answer(id,input);});return true;
     }
     void toDefense(Player p) {
         var service=defense();if(service==null){p.sendMessage(text("디펜스가 준비 중입니다. 잠시 후 다시 시도하세요."));return;}
-        leave(p);service.sendLobby(p);
-        main(()->{var current=defense();if(current!=null && !participant(p.getUniqueId()) && p.isOnline())current.openMenu(p);});
+        if(!ownsCabin(p.getUniqueId())||!p.isOnline())return;
+        try{service.startGame(p);}catch(RuntimeException error){defenseFailed(p);p.sendMessage(text("디펜스를 시작하지 못했습니다. 다시 시도하세요."));}
     }
-    void stopQuiz() {
-        if(!started())throw new IllegalArgumentException("진행 중인 노래퀴즈가 없습니다.");
-        var finalState=game.snapshot();String result=finalState.scores().entrySet().stream().sorted(Map.Entry.<UUID,Integer>comparingByValue().reversed()).limit(10)
-                .map(entry->name(entry.getKey())+" "+entry.getValue()+"점").collect(java.util.stream.Collectors.joining(" · "));
-        for(UUID id:finalState.participants()){Player p=Bukkit.getPlayer(id);if(p!=null)p.sendMessage(text("노래퀴즈 결과 · "+result));}
-        getConfig().set("quiz-active",false);saveConfig();
-        var ids=List.copyOf(members.keySet());members.clear();game.stop();
-        for(UUID id:ids){Player p=Bukkit.getPlayer(id);if(p!=null){restore(p,true);var service=defense();if(service!=null)service.sendLobby(p);p.sendMessage(text("노래퀴즈가 종료되었습니다."));}}
+    void stopQuiz(){if(!started())throw new IllegalArgumentException("진행 중인 노래퀴즈가 없습니다.");game.stop();}
+    private void finishQuiz(Map<UUID,Integer> scores) {
+        if(!shuttingDown){getConfig().set("quiz-active",false);saveConfig();}
+        for(UUID id:List.copyOf(members.keySet())){
+            Player p=Bukkit.getPlayer(id);
+            if(p!=null){boolean owned=ownsCabin(id);
+                try{try{hud.finish(p,scores);}finally{restore(p,true);}
+                    if(owned){var service=defense();if(service!=null)service.sendLobby(p);}
+                }catch(RuntimeException error){getLogger().warning("Noqui player cleanup retained recovery markers for reconnect.");}
+            }else{members.remove(id);cabinOwners.remove(id);handoffs.remove(id);drafts.remove(id);if(connections!=null)connections.forget(id);}
+        }
+        names.clear();
+        if(bridge!=null)bridge.publish(game.snapshot());
     }
     Song draft(UUID id){return drafts.get(id);}
-    void submit(Player p,long revision,String url,String title,String tags) {
-        Song song=Song.input(url,title,tags);game.submit(p.getUniqueId(),revision,song);drafts.put(p.getUniqueId(),song);
-    }
+    void submit(Player p,long revision,String url,String title,String tags){Song song=Song.input(url,title,tags);game.submit(p.getUniqueId(),revision,song);drafts.put(p.getUniqueId(),song);}
     BrowserConnections.Entry connectionEntry(UUID id) {
         var member=members.get(id);Player p=Bukkit.getPlayer(id);
-        return member==null || p==null || !p.isOnline() || !participant(id)?null:new BrowserConnections.Entry(game.snapshot().session(),member.membershipId());
+        return member==null||p==null||!p.isOnline()||!participant(id)?null:new BrowserConnections.Entry(game.snapshot().session(),member.membershipId());
     }
-    private void promptEntry(Player p) {
-        var entry=connectionEntry(p.getUniqueId());
-        main(()->{if(entry!=null && entry.equals(connectionEntry(p.getUniqueId())))browserLink(p);});
-    }
+    private void promptEntry(Player p){var entry=connectionEntry(p.getUniqueId());main(()->{if(entry!=null&&entry.equals(connectionEntry(p.getUniqueId())))browserLink(p);});}
     void browserLink(Player p){if(connections!=null)connections.open(p.getUniqueId());}
+    void joined(Player p){if(lobbyFeatures!=null)lobbyFeatures.join(p);routeJoin(p);}
+    void openShop(Player p){var service=Bukkit.getServicesManager().load(LobbyService.class);if(service!=null)service.openShop(p);}
     @Override public boolean onCommand(CommandSender sender,Command command,String label,String[] args) {
-        if(!sender.isOp()){sender.sendMessage(text("OP만 노래퀴즈를 관리할 수 있습니다. 참가 메뉴는 F키로 여세요."));return true;}
-        try {
-            String action=args.length==0?"menu":args[0].toLowerCase(Locale.ROOT);
-            switch(action) {
-                case "start"->{Player first=args.length>1?Bukkit.getPlayerExact(args[1]):sender instanceof Player p?p:eligible().stream().findFirst().orElse(null);
-                    if(args.length>1 && first==null)throw new IllegalArgumentException("접속 중인 플레이어를 선택하세요.");start(first);}
-                case "stop"->stopQuiz();case "skip"->game.skip();case "hint"->game.hint();
-                case "give"->{if(args.length<2 && sender instanceof Player p)dialogs.presenters(p);else {
-                    Player p=args.length>1?Bukkit.getPlayerExact(args[1]):null;
-                    if(p==null)throw new IllegalArgumentException("/noqui give <접속 중인 참가자>");game.give(p.getUniqueId());}}
-                case "status"->{var s=game.snapshot();sender.sendMessage(text("Noqui · "+s.phase()+" · 출제자 "+name(s.presenter())+" · 참가 "+s.participants().size()+"명 · "+s.round()+"라운드"));}
-                default->{if(sender instanceof Player p)dialogs.admin(p);else sender.sendMessage(text("/noqui start [player] | stop | skip | hint | give <player> | status"));}
+        try{
+            if(label.equalsIgnoreCase("money")||command!=null&&command.getName().equalsIgnoreCase("money")){
+                if(!(sender instanceof Player p))throw new IllegalArgumentException("게임에서 /money를 사용하세요.");
+                var wallet=Bukkit.getServicesManager().load(LobbyService.class);
+                if(wallet==null)throw new IllegalArgumentException("지갑을 준비 중입니다.");wallet.showMoney(p);return true;
             }
-        }catch(IllegalArgumentException error){sender.sendMessage(text(error.getMessage()));}
+            String action=args.length==0?"menu":args[0].toLowerCase(Locale.ROOT);
+            if(action.equals("skip")&&(args.length<2||!args[1].equalsIgnoreCase("force"))){
+                if(!(sender instanceof Player p)||!game.voteSkip(p.getUniqueId(),game.snapshot().roundId()))throw new IllegalArgumentException("현재 라운드에서 한 번 투표할 수 있습니다.");return true;
+            }
+            if(action.equals("leave")&&sender instanceof Player p){leave(p);return true;}
+            if(action.equals("menu")&&sender instanceof Player p&&participant(p.getUniqueId())){openControls(p);return true;}
+            if(!sender.isOp())throw new IllegalArgumentException("OP만 노래퀴즈를 관리할 수 있습니다.");
+            switch(action){
+                case "start"->{if(args.length>2)throw new IllegalArgumentException("/noqui start [라운드 수]");start(args.length==2?Integer.parseInt(args[1]):0);}
+                case "limit"->{if(args.length!=2)throw new IllegalArgumentException("/noqui limit <0=무제한 또는 라운드 수>");int limit=Integer.parseInt(args[1]);game.limit(limit);getConfig().set("quiz-limit",limit);saveConfig();}
+                case "stop"->stopQuiz();case "skip"->game.forceSkip(game.snapshot().roundId());case "hint"->game.hint();case "pause"->game.pause();case "resume"->game.resume();
+                case "give"->{if(args.length<2||args.length>3)throw new IllegalArgumentException("/noqui give <player> [1..1000]");
+                    OfflinePlayer target=Bukkit.getPlayerExact(args[1]);
+                    if(target==null)target=Arrays.stream(Bukkit.getOfflinePlayers()).filter(p->args[1].equalsIgnoreCase(p.getName())).findFirst().orElse(null);
+                    if(target==null)throw new IllegalArgumentException("서버에 접속한 적이 있는 플레이어를 선택하세요.");
+                    int amount=args.length==3?Integer.parseInt(args[2]):1;game.grant(target.getUniqueId(),amount);sender.sendMessage(text(target.getName()+" · 출제권 "+game.credits(target.getUniqueId())+"개"));}
+                case "status"->{var s=game.snapshot();sender.sendMessage(text("Noqui · "+s.phase()+" · 참가 "+s.participants().size()+"명 · "+s.round()+" / "+(s.totalRounds()==0?"∞":s.totalRounds())+" 라운드"));}
+                default->{if(sender instanceof Player p)dialogs.admin(p);else sender.sendMessage(text("/noqui start [rounds] | limit <rounds> | stop | skip force | hint | pause | resume | give <player> [amount] | status"));}
+            }
+        }catch(NumberFormatException error){sender.sendMessage(text("유효한 정수 수량을 입력하세요."));}
+        catch(IllegalArgumentException error){sender.sendMessage(text(error.getMessage()));}
+        catch(java.io.UncheckedIOException error){sender.sendMessage(text("출제권 저장에 실패했습니다. 잔액을 변경하지 않았습니다."));getLogger().warning("Credit ledger write failed; check storage before retrying.");}
         return true;
     }
     @Override public List<String> onTabComplete(CommandSender sender,Command command,String alias,String[] args) {
-        if(!sender.isOp())return List.of();
-        List<String> choices=args.length==1?List.of("start","stop","skip","hint","give","status"):
-                args.length==2 && Set.of("start","give").contains(args[0])?eligible().stream().map(Player::getName).toList():List.of();
+        List<String> choices=args.length==1?(sender.isOp()?List.of("start","limit","stop","skip","hint","pause","resume","give","status","leave"):List.of("skip","leave")):
+                sender.isOp()&&args.length==2&&args[0].equals("give")?Bukkit.getOnlinePlayers().stream().map(Player::getName).toList():
+                sender.isOp()&&args.length==2&&args[0].equals("skip")?List.of("force"):List.of();
         String prefix=args[args.length-1].toLowerCase(Locale.ROOT);return choices.stream().filter(s->s.toLowerCase(Locale.ROOT).startsWith(prefix)).toList();
     }
     @Override public void onDisable() {
-        Bukkit.getServicesManager().unregisterAll(this);
-        members.clear();if(game!=null)game.stop();
-        for(Player p:Bukkit.getOnlinePlayers())try{restore(p,true);}catch(RuntimeException error){getLogger().warning("Player recovery retained; it will retry on reconnect.");}
-        if(bridge!=null){if(game!=null)bridge.closeAfterSync();else bridge.close();}
+        shuttingDown=true;Bukkit.getServicesManager().unregisterAll(this);if(game!=null)game.stop();
+        for(Player p:Bukkit.getOnlinePlayers())try{restore(p,true);recovery.recover(p,defenseActive(p),true);}catch(RuntimeException error){getLogger().warning("Player recovery retained for reconnect.");}
+        if(lobbyFeatures!=null)lobbyFeatures.close();hud.close();if(bridge!=null){if(game!=null)bridge.closeAfterSync();else bridge.close();}
     }
 }

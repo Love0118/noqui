@@ -11,6 +11,8 @@ border:
   center-z: -192.0
   size: 250.0
 round-seconds: 115
+title-bonus: true
+auto-hint: false
 match-skip: false
 public-origin: https://noqui.danta.qzz.io
 bridge:

@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "description": "Noqui lobby cosmetics and original quiz cues",
+    "min_format": [
+      97,
+      1
+    ],
+    "max_format": [
+      97,
+      1
+    ]
+  }
+}
