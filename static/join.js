@@ -6,6 +6,14 @@
   const fail = () => { status.textContent = '연결이 만료되었습니다'; document.getElementById('join-back').hidden = false; };
   if (!token || !/^[A-Za-z0-9_-]{43}$/.test(token)) { fail(); return; }
   fetch('/api/v1/auth/redeem', { method: 'POST', credentials: 'same-origin', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ token }), cache: 'no-store' })
-    .then(response => { if (!response.ok) throw new Error('JOIN_INVALID'); location.replace('/'); })
+    .then(async response => {
+      if (!response.ok) throw new Error('JOIN_INVALID');
+      const data = await response.json();
+      try {
+        sessionStorage.setItem('noqui-player', data.me.uuid);
+        localStorage.setItem('noqui-session-change', crypto.randomUUID());
+      } catch { /* Server revocation and CSRF checks also stop older tabs. */ }
+      location.replace('/');
+    })
     .catch(fail);
 })();

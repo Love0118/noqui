@@ -173,7 +173,13 @@ async fn redeem(State(app): State<App>, h: HeaderMap, b: Bytes) -> Result<Respon
         if state.redeem_rate.1 > 120 {
             return Err(Error::retry(429, "RATE_LIMITED", 1000));
         }
-        state.redeem(&input.token, now)?
+        let redeemed = state.redeem(&input.token, now)?;
+        // One HttpOnly cookie identifies this browser profile. Replacing it must
+        // also retire the former SSE/media session, including a different UUID.
+        if let Ok(previous) = auth::session_hash(&h) {
+            state.sessions.remove(&previous);
+        }
+        redeemed
     };
     let mut response = Json(crate::state::State::me(&session)).into_response();
     response.headers_mut().insert(
@@ -209,14 +215,9 @@ async fn logout(State(app): State<App>, h: HeaderMap, b: Bytes) -> Result<Respon
     }
     app.inner.lock().unwrap().sessions.remove(&key);
     app.notify();
-    let mut r = StatusCode::NO_CONTENT.into_response();
-    r.headers_mut().insert(
-        "set-cookie",
-        HeaderValue::from_static(
-            "__Host-noqui=; Secure; HttpOnly; SameSite=Strict; Path=/; Max-Age=0",
-        ),
-    );
-    Ok(r)
+    // Revocation is server-side. A delayed logout response must never erase a
+    // newer login cookie set by another tab in the meantime.
+    Ok(StatusCode::NO_CONTENT.into_response())
 }
 async fn playback(State(app): State<App>, h: HeaderMap, b: Bytes) -> Result<Json<Value>> {
     let (key, s) = authorize(&app, &h)?;
@@ -238,7 +239,8 @@ async fn events(State(app): State<App>, h: HeaderMap) -> Result<Response> {
             let value={app.inner.lock().unwrap().public(&key,app.now())};
             match value {
                 Ok(value)=>{if state_event {let id=value["eventId"].as_str().unwrap_or("").to_owned();yield Ok(Event::default().event("state").id(id).data(value.to_string()));}else{yield Ok(Event::default().event("lease").data(json!({"serverTimeMs":app.now(),"authorityLeaseExpiresAtMs":value["authorityLeaseExpiresAtMs"],"pluginOnline":true}).to_string()));}},
-                Err(_)=>{yield Ok(Event::default().event("revoked").data("{\"code\":\"SESSION_REVOKED\"}"));break;}
+                Err(error) if error.status==401=>{yield Ok(Event::default().event("revoked").data("{\"code\":\"SESSION_REVOKED\"}"));break;}
+                Err(error)=>{yield Ok(Event::default().event("offline").data(json!({"code":error.code}).to_string()));}
             }
         }
     };

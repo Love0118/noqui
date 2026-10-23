@@ -69,10 +69,6 @@ impl Default for State {
 }
 impl State {
     pub fn expire(&mut self, now: i64) {
-        if self.authority_until <= now {
-            self.sessions.clear();
-            self.tokens.clear();
-        }
         self.tokens.retain(|_, t| t.until > now);
         self.receipts.retain(|_, r| r.until + 120000 > now);
         self.sessions
@@ -96,11 +92,20 @@ impl State {
             .sessions
             .get_mut(key)
             .ok_or(Error::new(401, "AUTH_REQUIRED"))?;
-        session.idle_until = (now + 1800000).min(session.absolute_until);
+        if self.authority_until > now {
+            session.idle_until = (now + 1800000).min(session.absolute_until);
+        }
         Ok(session.clone())
+    }
+    fn require_authority(&self, now: i64) -> Result<()> {
+        if self.authority_until <= now {
+            return Err(Error::retry(503, "PLUGIN_OFFLINE", 2000));
+        }
+        Ok(())
     }
     pub fn register(&mut self, r: TokenRequest, fingerprint: String, now: i64) -> Result<Value> {
         self.expire(now);
+        self.require_authority(now)?;
         if r.schema_version != 1 || !uuid(&r.request_id) || !hex(&r.token_sha256) {
             return Err(bad());
         }
@@ -141,6 +146,7 @@ impl State {
     }
     pub fn redeem(&mut self, raw: &str, now: i64) -> Result<(String, Session)> {
         self.expire(now);
+        self.require_authority(now)?;
         if raw.len() != 43
             || !raw
                 .bytes()
@@ -197,6 +203,9 @@ impl State {
                     return Err(Error::new(409, "REVISION_CONFLICT"));
                 }
                 self.retired.insert(previous.instance_id.clone());
+                self.sessions.clear();
+                self.tokens.clear();
+                self.receipts.clear();
                 if self.retired.len() > 128 {
                     self.retired.clear();
                     self.retired.insert(previous.instance_id.clone());
@@ -270,6 +279,7 @@ impl State {
     }
     pub fn public(&mut self, key: &str, now: i64) -> Result<Value> {
         let session = self.session(key, now)?;
+        self.require_authority(now)?;
         let room = self
             .snapshot
             .as_ref()
@@ -288,6 +298,7 @@ impl State {
     }
     pub fn playback(&mut self, key: &str, p: Playback, now: i64) -> Result<Value> {
         let session = self.session(key, now)?;
+        self.require_authority(now)?;
         if !uuid(&p.client_id)
             || ![
                 "CONNECTED",
@@ -347,6 +358,7 @@ impl State {
     }
     pub fn authorize_media(&mut self, key: &str, sha: &str, now: i64) -> Result<Media> {
         let session = self.session(key, now)?;
+        self.require_authority(now)?;
         self.snapshot
             .as_ref()
             .and_then(|s| s.rooms.iter().find(|r| r.room_id == session.player.room_id))

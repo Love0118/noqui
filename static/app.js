@@ -3,13 +3,15 @@
   const $ = id => document.getElementById(id);
   const setText = (id, text) => { const element = $(id); if (element.textContent !== text) element.textContent = text; };
   const audio = $('audio');
-  const clientId = sessionStorage.getItem('noqui-client') || crypto.randomUUID();
-  sessionStorage.setItem('noqui-client', clientId);
+  // Duplicated tabs inherit sessionStorage: ownership must identify this document.
+  const clientId = crypto.randomUUID();
   let state = null, csrf = '', stream = null, connectionGeneration = 0, reconnectTimer = null, retries = 0;
   let offset = 0, calibrated = false, lastControl = -Infinity, authority = 0, leader = true;
   let currentMedia = '', lastGeneration = '', lastSeek = -Infinity, playPending = null, ackPending = false, ackAgain = false, takeover = false, formatFailed = false;
   let gestureBlocked = false, userPaused = false, clientLeaseUntil = 0, authGeneration = 0;
-  let lastStatus = '', authValid = false, eventEpoch = '', eventSeq = -1n, lastPoll = 0;
+  let authValid = false, eventEpoch = '', eventSeq = -1n, lastPoll = -Infinity;
+  let lastReportSignature = '', inFlightSignature = '', lastReportAt = -Infinity, nextReportAt = 0, refreshing = null;
+  let boundPlayer = sessionStorage.getItem('noqui-player') || '', boundCsrf = '';
   let volume = Number(localStorage.getItem('noqui-volume') ?? 65);
   if (!Number.isFinite(volume)) volume = 65;
   volume = Math.max(0, Math.min(100, volume));
@@ -17,21 +19,28 @@
   const now = () => performance.now() + offset;
   const format = value => { const s = Math.max(0, Math.floor(value / 1000)); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`; };
   const message = text => setText('message', text);
-  const errors = { AUTH_REQUIRED: '연결 링크가 필요합니다', SESSION_REVOKED: '연결이 종료되었습니다', PLUGIN_OFFLINE: '게임 연결을 기다리는 중', ACTIVE_CLIENT: '다른 창에서 재생 중', FORMAT_UNSUPPORTED: '이 브라우저는 오디오를 지원하지 않습니다', MEDIA_NOT_READY: '곡을 준비하는 중', RATE_LIMITED: '잠시 후 다시 연결합니다' };
+  const errors = { AUTH_REQUIRED: '연결 링크가 필요합니다', SESSION_REVOKED: '연결이 종료되었습니다', SESSION_CHANGED: '새 연결 링크 필요', PLUGIN_OFFLINE: '게임 연결을 기다리는 중', ACTIVE_CLIENT: '다른 창에서 재생 중', FORMAT_UNSUPPORTED: '이 브라우저는 오디오를 지원하지 않습니다', MEDIA_NOT_READY: '대기 중', RATE_LIMITED: '잠시 후 다시 연결합니다' };
   async function request(path, options = {}) {
     const response = await fetch(path, { credentials: 'same-origin', cache: 'no-store', ...options });
     if (!response.ok) {
       const result = await response.json().catch(() => ({}));
       const error = new Error(result.error?.code || 'NETWORK'); error.status = response.status;
       if (response.status === 401) revoke(error.message);
+      if (response.status === 403 && error.message === 'CSRF_REJECTED') revoke('SESSION_CHANGED');
+      if (response.status === 503 && error.message === 'PLUGIN_OFFLINE') pluginOffline();
       throw error;
     }
     return response.status === 204 ? null : response.json();
   }
   function revoke(code) {
-    authGeneration++; authValid = false; clientLeaseUntil = 0; playPending = null; audio.pause(); stream?.close(); clearTimeout(reconnectTimer);
-    $('connection').classList.remove('connected'); $('connection-text').textContent = '연결 끊김';
+    authGeneration++; connectionGeneration++; authValid = false; clientLeaseUntil = 0; playPending = null; audio.pause(); stream?.close(); clearTimeout(reconnectTimer);
+    $('connection').classList.remove('connected'); $('connection-text').textContent = code === 'SESSION_CHANGED' ? '다른 연결' : '연결 끊김';
+    $('logout').disabled = true;
     $('audio-status').textContent = '연결 대기'; $('playback').hidden = true; $('takeover').hidden = true; message(errors[code] || errors.AUTH_REQUIRED);
+  }
+  function pluginOffline() {
+    if (!authValid) return;
+    authority = 0; align(); paint(); message(errors.PLUGIN_OFFLINE);
   }
   function avatar(container, hash) {
     const valid = /^[a-f0-9]{64}$/.test(hash || '');
@@ -64,6 +73,7 @@
     if (samples[0]?.rtt < 1500) { offset = samples[0].offset; calibrated = true; }
   }
   function apply(next) {
+    if (boundPlayer && next.me.uuid !== boundPlayer) { revoke('SESSION_CHANGED'); return; }
     const split = String(next.eventId).lastIndexOf(':'); const epoch = next.eventId.slice(0, split); let seq;
     try { seq = BigInt(next.eventId.slice(split + 1)); } catch { return; }
     if (epoch === eventEpoch && seq < eventSeq) return;
@@ -74,7 +84,7 @@
     $('nickname').textContent = next.me.nickname; avatar($('avatar'), next.me.textureHash); players(next.room.players);
     const revealed = next.room.phase === 'REVEAL' && next.reveal;
     setText('track-title', next.room.phase === 'ENDED' ? '노래퀴즈 종료' : revealed ? next.reveal.title : next.round ? '지금 흐르는 곡' : '다음 곡을 기다리는 중');
-    setText('phase-label', revealed ? '정답 공개' : ({ WAITING_FOR_MEDIA: '곡 준비', PREPARING: '재생 준비', COUNTDOWN: '곧 시작', PLAYING: '현재 재생', PAUSED: '잠시 멈춤', ENDED: '종료' }[next.room.phase] || '다음 라운드'));
+    setText('phase-label', revealed ? '정답 공개' : ({ WAITING_FOR_MEDIA: '대기 중', PREPARING: '대기 중', COUNTDOWN: '곧 시작', PLAYING: '현재 재생', PAUSED: '잠시 멈춤', ENDED: '종료' }[next.room.phase] || '다음 라운드'));
     const { roundNumber, totalRounds } = next.room;
     const hasRoundProgress = Number.isInteger(roundNumber) && roundNumber >= 0 && roundNumber <= 4294967295
       && Number.isInteger(totalRounds) && totalRounds >= 0 && totalRounds <= 2147483647
@@ -94,7 +104,7 @@
         audio.preload = 'auto'; audio.src = currentMedia; audio.load();
       } else { audio.removeAttribute('src'); audio.load(); }
     }
-    if (!revealed) message(next.room.phase === 'WAITING_FOR_MEDIA' ? '곡을 준비하는 중' : '');
+    if (!revealed || $('message').textContent === errors.PLUGIN_OFFLINE) message('');
     align(); paint();
   }
   function status() {
@@ -116,25 +126,30 @@
   }
   async function report(forced) {
     if (!authValid || !csrf || !leader && !takeover) return;
-    if (ackPending) { ackAgain = true; return; }
-    ackPending = true;
-    const generation = authGeneration;
     const current = forced || status(); const r = state?.round;
+    const signature = JSON.stringify([current, r?.roundId, r?.revision, r?.playbackGeneration, takeover]);
+    if (ackPending) { if (signature !== inFlightSignature) ackAgain = true; return; }
+    if (signature === lastReportSignature && performance.now() - lastReportAt < 15000) return;
+    if (!takeover && performance.now() < nextReportAt) return;
+    ackPending = true;
+    inFlightSignature = signature;
+    const generation = authGeneration;
     let bufferedUntilMs = null;
     for (let i = 0; i < audio.buffered.length; i++) if (audio.buffered.start(i) <= audio.currentTime && audio.buffered.end(i) >= audio.currentTime) bufferedUntilMs = Math.round(audio.buffered.end(i) * 1000);
     try {
       const response = await request('/api/v1/playback', { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Noqui-CSRF': csrf }, body: JSON.stringify({ clientId, takeOver: takeover, roundId: r?.roundId ?? null, roundRevision: r?.revision ?? null, playbackGeneration: r?.playbackGeneration ?? null, status: current, positionMs: currentMedia && Number.isFinite(audio.currentTime) ? Math.round(audio.currentTime * 1000) : null, bufferedUntilMs, lastEventId: state?.eventId ?? null }) });
       if (!authValid || generation !== authGeneration) return;
       clientLeaseUntil = response.leaseExpiresAtMs;
-      takeover = false; lastStatus = current;
+      takeover = false; lastReportSignature = signature; lastReportAt = performance.now(); nextReportAt = 0;
       align(); paint();
     } catch (error) {
       if (generation !== authGeneration) return;
       if (error.message === 'ACTIVE_CLIENT') { leader = false; takeover = false; clientLeaseUntil = 0; playPending = null; audio.pause(); $('takeover').hidden = false; message(errors.ACTIVE_CLIENT); }
+      else nextReportAt = performance.now() + 2000;
     } finally { ackPending = false; if (ackAgain) { ackAgain = false; void report(); } }
   }
   function expected(r) { return Math.min(r.clipEndMs, Math.max(r.clipStartMs, r.anchorPositionMs + (r.playing ? Math.max(0, now() - r.anchorAtMs) : 0))); }
-  function connected() { return authValid && navigator.onLine && performance.now() - lastControl < 12000 && now() < authority; }
+  function connected() { return authValid && navigator.onLine && now() < authority; }
   function wantsPlayback() {
     const r = state?.round;
     return connected() && leader && now() < clientLeaseUntil && !userPaused && !gestureBlocked && r && currentMedia && !formatFailed && !audio.error
@@ -163,10 +178,11 @@
     }
   }
   function paint() {
+    if (!authValid) return;
     const healthy = connected();
     $('connection').classList.toggle('connected', healthy); $('connection-text').textContent = healthy ? '연결됨' : '연결 대기';
     const r = state?.round; const s = status();
-    const names = { CONNECTED: '대기 중', NEEDS_GESTURE: '재생 대기', LOADING: '오디오 준비 중', PREPARED: '재생 준비 완료', PLAYING: '재생 중', PAUSED: '일시 정지', BUFFERING: '버퍼링 중', FAILED: '오디오 오류' };
+    const names = { CONNECTED: '대기 중', NEEDS_GESTURE: '재생 대기', LOADING: '대기 중', PREPARED: '대기 중', PLAYING: '재생 중', PAUSED: '일시 정지', BUFFERING: '버퍼링 중', FAILED: '오디오 오류' };
     setText('audio-status', !healthy ? '연결 대기' : !leader ? '다른 창에서 재생 중' : names[s]);
     $('playback').hidden = !authValid || !leader || !r || !currentMedia;
     const playbackLabel = userPaused || gestureBlocked ? '재생' : '일시 정지';
@@ -177,19 +193,33 @@
       $('elapsed').textContent = format(progress); $('remaining').textContent = format(r.clipEndMs - r.clipStartMs - progress);
       $('countdown').textContent = r.playing && now() < r.anchorAtMs ? String(Math.ceil((r.anchorAtMs - now()) / 1000)) : '';
     } else { $('progress').value = 0; $('elapsed').textContent = '0:00'; $('remaining').textContent = '—'; $('countdown').textContent = ''; }
-    if (s !== lastStatus) { lastStatus = s; void report(s); }
+    void report(s);
+  }
+  function refreshState() {
+    if (!authValid || refreshing) return refreshing;
+    const generation = authGeneration;
+    lastPoll = performance.now();
+    refreshing = request('/api/v1/state').then(next => {
+      if (authValid && generation === authGeneration) { apply(next); void report(); }
+    }).catch(() => {}).finally(() => { refreshing = null; });
+    return refreshing;
   }
   function connect() {
     clearTimeout(reconnectTimer); stream?.close(); const generation = ++connectionGeneration;
     stream = new EventSource('/api/v1/events');
     stream.addEventListener('state', event => { if (generation !== connectionGeneration) return; try { apply(JSON.parse(event.data)); retries = 0; } catch { message('상태를 다시 확인하는 중'); } });
-    stream.addEventListener('lease', event => { if (generation !== connectionGeneration) return; try { const data = JSON.parse(event.data); authority = data.authorityLeaseExpiresAtMs; lastControl = performance.now(); } catch { /* The next snapshot repairs control state. */ } });
+    stream.addEventListener('lease', event => { if (generation !== connectionGeneration) return; try { const data = JSON.parse(event.data); authority = data.authorityLeaseExpiresAtMs; lastControl = performance.now(); if ($('message').textContent === errors.PLUGIN_OFFLINE) message(''); align(); paint(); } catch { /* The next snapshot repairs control state. */ } });
+    stream.addEventListener('offline', () => { if (generation === connectionGeneration) pluginOffline(); });
     stream.addEventListener('revoked', () => { if (generation === connectionGeneration) revoke('SESSION_REVOKED'); });
     stream.onerror = () => {
       if (generation !== connectionGeneration) return; stream.close();
       if (!authValid) return;
       const delay = Math.min(15000, 1000 * 2 ** Math.min(retries++, 4)) * (.8 + Math.random() * .4);
-      reconnectTimer = setTimeout(async () => { try { apply(await request('/api/v1/state')); connect(); } catch { if (authValid) connect(); } }, delay);
+      reconnectTimer = setTimeout(async () => {
+        if (!authValid || generation !== connectionGeneration) return;
+        await refreshState();
+        if (authValid && generation === connectionGeneration) connect();
+      }, delay);
     };
   }
   async function boot() {
@@ -197,6 +227,8 @@
     clientLeaseUntil = 0;
     try {
       const data = await request('/api/v1/me'); if (generation !== authGeneration) return; csrf = data.csrfToken; authValid = true;
+      if (boundPlayer && data.me.uuid !== boundPlayer || boundCsrf && csrf !== boundCsrf) { revoke('SESSION_CHANGED'); return; }
+      boundPlayer = data.me.uuid; boundCsrf = csrf; $('logout').disabled = false;
       $('nickname').textContent = data.me.nickname; avatar($('avatar'), data.me.textureHash);
       await calibrate(); const next = await request('/api/v1/state'); if (generation !== authGeneration) return; apply(next); connect(); void report();
     } catch (error) { if (error.status !== 401) { message('연결을 확인할 수 없습니다'); $('audio-status').textContent = '연결 대기'; } }
@@ -215,13 +247,14 @@
   $('takeover').addEventListener('click', async () => { leader = true; takeover = true; clientLeaseUntil = 0; gestureBlocked = false; await report(); if (leader && authValid && now() < clientLeaseUntil) { $('takeover').hidden = true; align(); paint(); } });
   $('volume').addEventListener('input', () => { volume = Number($('volume').value); audio.volume = volume / 100; audio.muted = volume === 0; $('volume-value').value = String(volume); localStorage.setItem('noqui-volume', String(volume)); $('mute').setAttribute('aria-pressed', String(audio.muted)); });
   $('mute').addEventListener('click', () => { audio.muted = !audio.muted; $('mute').textContent = audio.muted ? '음소거' : '소리'; $('mute').setAttribute('aria-pressed', String(audio.muted)); });
-  $('reconnect').addEventListener('click', () => { if (authValid) { void calibrate().then(() => request('/api/v1/state')).then(next => { apply(next); connect(); }).catch(() => {}); } else void boot(); });
-  $('logout').addEventListener('click', async () => { try { await request('/api/v1/auth/logout', { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Noqui-CSRF': csrf }, body: '{}' }); } finally { revoke('SESSION_REVOKED'); } });
+  $('reconnect').addEventListener('click', () => { if (authValid) { void refreshState(); connect(); } else void boot(); });
+  $('logout').addEventListener('click', async () => { if (!authValid) return; try { await request('/api/v1/auth/logout', { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Noqui-CSRF': csrf }, body: '{}' }); } catch { /* A replaced login is already stopped by request(). */ } finally { if (authValid) revoke('SESSION_REVOKED'); } });
   for (const event of ['loadedmetadata', 'canplay', 'seeked', 'playing', 'pause', 'waiting', 'ended', 'error']) audio.addEventListener(event, () => { align(); paint(); if (event === 'error' && currentMedia) message('오디오를 불러올 수 없습니다'); });
-  document.addEventListener('visibilitychange', () => { if (!document.hidden && authValid) void calibrate().then(() => request('/api/v1/state')).then(apply).catch(() => {}); });
+  document.addEventListener('visibilitychange', () => { if (!document.hidden && authValid) { void refreshState(); void report(); void calibrate().catch(() => {}); } });
+  window.addEventListener('storage', event => { if (event.key === 'noqui-session-change' && event.newValue) revoke('SESSION_CHANGED'); });
   window.addEventListener('online', () => { if (authValid) { connect(); void calibrate().catch(() => {}); } });
   window.addEventListener('offline', () => paint());
-  setInterval(() => { align(); paint(); if (!document.hidden && authValid && stream?.readyState !== EventSource.OPEN && performance.now() - lastPoll > 2000) { lastPoll = performance.now(); void request('/api/v1/state').then(apply).catch(() => {}); } }, 250);
+  setInterval(() => { align(); paint(); if (authValid && (stream?.readyState !== EventSource.OPEN || performance.now() - lastControl >= 10000) && performance.now() - lastPoll >= 2000) { void refreshState(); } }, 250);
   setInterval(() => void report(), 15000);
   void boot();
 })();

@@ -189,6 +189,169 @@ fn get(path: &str, cookie: &str) -> Request<Body> {
 }
 
 #[tokio::test]
+async fn replacing_browser_cookie_retires_old_identity_and_stale_logout_cannot_touch_new_login() {
+    let f = Fixture::new();
+    let second = "10000000-0000-4000-8000-000000000002";
+    let member = "20000000-0000-4000-8000-000000000002";
+    let mut snapshot = f.snapshot(1, "IDLE");
+    snapshot.roster.push(Player {
+        uuid: second.into(),
+        membership_id: member.into(),
+        nickname: "PlayerTwo".into(),
+        texture_hash: None,
+        room_id: ROOM.into(),
+    });
+    f.sync_direct(snapshot, None);
+    let (old_cookie, old_csrf) = f.login();
+    let token = auth::random();
+    f.app
+        .inner
+        .lock()
+        .unwrap()
+        .register(
+            TokenRequest {
+                schema_version: 1,
+                request_id: uuid::Uuid::new_v4().to_string(),
+                instance_id: INSTANCE.into(),
+                uuid: second.into(),
+                membership_id: member.into(),
+                room_id: ROOM.into(),
+                token_sha256: auth::digest(token.as_bytes()),
+            },
+            "register-two".into(),
+            f.app.now(),
+        )
+        .unwrap();
+    let redeem = Request::builder()
+        .method("POST")
+        .uri("/api/v1/auth/redeem")
+        .header("cookie", &old_cookie)
+        .header("origin", noqui_web::ORIGIN)
+        .header("content-type", "application/json")
+        .body(Body::from(json!({"token":token}).to_string()))
+        .unwrap();
+    let (status, headers, body) = call(api::public(f.app.clone()), redeem).await;
+    assert_eq!(status, StatusCode::OK);
+    let new_cookie = headers[header::SET_COOKIE]
+        .to_str()
+        .unwrap()
+        .split(';')
+        .next()
+        .unwrap()
+        .to_owned();
+    let login: Value = serde_json::from_slice(&body).unwrap();
+    let new_csrf = login["csrfToken"].as_str().unwrap();
+    assert_eq!(login["me"]["uuid"], second);
+    assert_eq!(
+        call(
+            api::public(f.app.clone()),
+            get("/api/v1/state", &old_cookie)
+        )
+        .await
+        .0,
+        StatusCode::UNAUTHORIZED
+    );
+    let logout = |cookie: &str, csrf: &str| {
+        Request::builder()
+            .method("POST")
+            .uri("/api/v1/auth/logout")
+            .header("cookie", cookie)
+            .header("origin", noqui_web::ORIGIN)
+            .header("content-type", "application/json")
+            .header("x-noqui-csrf", csrf)
+            .body(Body::from("{}"))
+            .unwrap()
+    };
+    let (status, headers, _) =
+        call(api::public(f.app.clone()), logout(&new_cookie, &old_csrf)).await;
+    assert_eq!(status, StatusCode::FORBIDDEN);
+    assert!(!headers.contains_key(header::SET_COOKIE));
+    assert_eq!(
+        call(
+            api::public(f.app.clone()),
+            get("/api/v1/state", &new_cookie)
+        )
+        .await
+        .0,
+        StatusCode::OK
+    );
+    let invalid_redeem = Request::builder()
+        .method("POST")
+        .uri("/api/v1/auth/redeem")
+        .header("cookie", &new_cookie)
+        .header("origin", noqui_web::ORIGIN)
+        .header("content-type", "application/json")
+        .body(Body::from(json!({"token":auth::random()}).to_string()))
+        .unwrap();
+    assert_eq!(
+        call(api::public(f.app.clone()), invalid_redeem).await.0,
+        StatusCode::UNAUTHORIZED
+    );
+    assert_eq!(
+        call(
+            api::public(f.app.clone()),
+            get("/api/v1/state", &new_cookie)
+        )
+        .await
+        .0,
+        StatusCode::OK,
+        "invalid join must not revoke an existing login"
+    );
+    let (status, headers, _) =
+        call(api::public(f.app.clone()), logout(&new_cookie, new_csrf)).await;
+    assert_eq!(status, StatusCode::NO_CONTENT);
+    assert!(
+        !headers.contains_key(header::SET_COOKIE),
+        "a delayed logout response must not clear a later login cookie"
+    );
+    assert_eq!(
+        call(
+            api::public(f.app.clone()),
+            get("/api/v1/state", &new_cookie)
+        )
+        .await
+        .0,
+        StatusCode::UNAUTHORIZED
+    );
+}
+
+#[tokio::test]
+async fn opus_padding_is_ready_metadata_while_public_round_keeps_exact_115_second_clip() {
+    let f = Fixture::new();
+    let mut media = f.seed();
+    let probe = json!({"format":{"duration":"115.007000","format_name":"ogg"},"streams":[{"codec_name":"opus","channels":2,"sample_rate":"48000","tags":{"encoder":"Lavc"}}]});
+    assert_eq!(
+        noqui_web::jobs::verify_output(&probe, 704745).unwrap(),
+        (115007, 704745)
+    );
+    let db = rusqlite::Connection::open(f.app.jobs.root.join("media.sqlite")).unwrap();
+    db.execute("UPDATE media SET duration=115007 WHERE id=?", [MEDIA])
+        .unwrap();
+    media.duration_ms = 115007;
+    let (_, job) = f.app.jobs.enqueue(job("BaW_jenozKc"), START).await.unwrap();
+    assert_eq!(job["state"], "READY");
+    assert_eq!(job["durationMs"], 115007);
+    let mut snapshot = f.snapshot(1, "PREPARING");
+    f.round(&mut snapshot);
+    f.sync_direct(snapshot, Some(media));
+    let (cookie, _) = f.login();
+    let (status, _, body) = call(api::public(f.app.clone()), get("/api/v1/state", &cookie)).await;
+    assert_eq!(status, StatusCode::OK);
+    let public: Value = serde_json::from_slice(&body).unwrap();
+    assert_eq!(public["round"]["clipEndMs"], 115000);
+    assert_eq!(public["media"]["durationMs"], 115007);
+    assert!(public["reveal"].is_null());
+    f.clock.0.store(START + 15000, Ordering::SeqCst);
+    assert_eq!(
+        call(api::public(f.app.clone()), get("/api/v1/state", &cookie))
+            .await
+            .0,
+        StatusCode::SERVICE_UNAVAILABLE,
+        "authority expiry still blocks access"
+    );
+}
+
+#[tokio::test]
 async fn signed_bridge_rejects_tamper_nonce_replay_old_timestamp_and_unknown_schema() {
     let f = Fixture::new();
     let router = api::internal(f.app.clone());
@@ -280,12 +443,14 @@ async fn auth_flow_uses_secure_cookie_rejects_csrf_and_has_no_ip_identity() {
         "HttpOnly",
         "SameSite=Strict",
         "Path=/",
+        "Max-Age=28800",
     ] {
         assert!(cookie.contains(attribute));
     }
     let cookie = cookie.split(';').next().unwrap();
     let me: Value = serde_json::from_slice(&body).unwrap();
     assert_eq!(me["me"]["uuid"], PLAYER);
+    assert_eq!(me["sessionExpiresAtMs"], START + 28800000);
     assert_eq!(
         call(api::public(f.app.clone()), redeem(noqui_web::ORIGIN))
             .await
@@ -313,7 +478,7 @@ async fn auth_flow_uses_secure_cookie_rejects_csrf_and_has_no_ip_identity() {
 }
 
 #[tokio::test]
-async fn membership_change_and_authority_expiry_revoke_existing_sessions_and_tokens() {
+async fn membership_change_revokes_but_authority_expiry_only_suspends_access() {
     let f = Fixture::new();
     f.sync_direct(f.snapshot(1, "IDLE"), None);
     let (cookie, _) = f.login();
@@ -333,8 +498,187 @@ async fn membership_change_and_authority_expiry_revoke_existing_sessions_and_tok
         call(api::public(f.app.clone()), get("/api/v1/me", &cookie))
             .await
             .0,
+        StatusCode::OK
+    );
+    assert_eq!(
+        call(api::public(f.app.clone()), get("/api/v1/state", &cookie))
+            .await
+            .0,
+        StatusCode::SERVICE_UNAVAILABLE
+    );
+    f.sync_direct(f.snapshot(4, "IDLE"), None);
+    assert_eq!(
+        call(api::public(f.app.clone()), get("/api/v1/state", &cookie))
+            .await
+            .0,
+        StatusCode::OK
+    );
+}
+
+#[tokio::test]
+async fn active_session_outlives_join_token_and_idle_timeout_but_keeps_absolute_cap() {
+    let f = Fixture::new();
+    f.sync_direct(f.snapshot(1, "IDLE"), None);
+    let (cookie, csrf) = f.login();
+    let client = uuid::Uuid::new_v4().to_string();
+    for elapsed in (10000..28800000).step_by(10000) {
+        f.clock.0.store(START + elapsed, Ordering::SeqCst);
+        f.sync_direct(f.snapshot((elapsed / 10000 + 1) as u64, "IDLE"), None);
+        assert_eq!(
+            call(api::public(f.app.clone()), get("/api/v1/state", &cookie))
+                .await
+                .0,
+            StatusCode::OK
+        );
+        if elapsed % 30000 == 0 {
+            let request = Request::builder().method("POST").uri("/api/v1/playback")
+                .header("cookie", &cookie).header("origin", noqui_web::ORIGIN)
+                .header("content-type", "application/json").header("x-noqui-csrf", &csrf)
+                .body(Body::from(json!({"clientId":client,"takeOver":false,"roundId":null,"roundRevision":null,"playbackGeneration":null,"status":"CONNECTED","positionMs":null,"bufferedUntilMs":null,"lastEventId":null}).to_string())).unwrap();
+            let (status, _, body) = call(api::public(f.app.clone()), request).await;
+            assert_eq!(status, StatusCode::OK);
+            let value: Value = serde_json::from_slice(&body).unwrap();
+            assert_eq!(value["leaseExpiresAtMs"], START + elapsed + 60000);
+        }
+    }
+    let (status, _, body) = call(api::public(f.app.clone()), get("/api/v1/me", &cookie)).await;
+    assert_eq!(status, StatusCode::OK);
+    let me: Value = serde_json::from_slice(&body).unwrap();
+    assert_eq!(
+        me["sessionExpiresAtMs"],
+        START + 28800000,
+        "active requests do not extend the absolute cap"
+    );
+    f.clock.0.store(START + 28800000, Ordering::SeqCst);
+    f.sync_direct(f.snapshot(2881, "IDLE"), None);
+    assert_eq!(
+        call(api::public(f.app.clone()), get("/api/v1/me", &cookie))
+            .await
+            .0,
         StatusCode::UNAUTHORIZED
     );
+}
+
+#[tokio::test]
+async fn sse_authority_gap_blocks_room_media_and_control_then_recovers_same_cookie() {
+    async fn next_event(body: &mut Body) -> String {
+        let frame = tokio::time::timeout(std::time::Duration::from_secs(1), body.frame())
+            .await
+            .unwrap()
+            .unwrap()
+            .unwrap();
+        String::from_utf8(frame.into_data().unwrap().to_vec()).unwrap()
+    }
+    let f = Fixture::new();
+    let media = f.seed();
+    let mut snapshot = f.snapshot(1, "PREPARING");
+    f.round(&mut snapshot);
+    f.sync_direct(snapshot, Some(media.clone()));
+    let (cookie, csrf) = f.login();
+    let response = api::public(f.app.clone())
+        .oneshot(get("/api/v1/events", &cookie))
+        .await
+        .unwrap();
+    assert_eq!(response.status(), StatusCode::OK);
+    let mut stream = response.into_body();
+    assert!(next_event(&mut stream).await.contains("event: state"));
+    f.clock.0.store(START + 16000, Ordering::SeqCst);
+    f.app.notify();
+    let offline = next_event(&mut stream).await;
+    assert!(offline.contains("event: offline") && offline.contains("PLUGIN_OFFLINE"));
+    assert!(!offline.contains("revoked") && !offline.contains("roundId"));
+    for path in [
+        "/api/v1/state".to_owned(),
+        format!("/media/{}.ogg", media.sha256),
+        "/api/v1/events".to_owned(),
+    ] {
+        let (status, _, body) = call(api::public(f.app.clone()), get(&path, &cookie)).await;
+        assert_eq!(status, StatusCode::SERVICE_UNAVAILABLE);
+        let value: Value = serde_json::from_slice(&body).unwrap();
+        assert_eq!(value["error"]["code"], "PLUGIN_OFFLINE");
+    }
+    let request = Request::builder().method("POST").uri("/api/v1/playback")
+        .header("cookie", &cookie).header("origin", noqui_web::ORIGIN)
+        .header("content-type", "application/json").header("x-noqui-csrf", &csrf)
+        .body(Body::from(json!({"clientId":uuid::Uuid::new_v4(),"takeOver":false,"roundId":null,"roundRevision":null,"playbackGeneration":null,"status":"CONNECTED","positionMs":null,"bufferedUntilMs":null,"lastEventId":null}).to_string())).unwrap();
+    assert_eq!(
+        call(api::public(f.app.clone()), request).await.0,
+        StatusCode::SERVICE_UNAVAILABLE
+    );
+    let mut snapshot = f.snapshot(2, "PREPARING");
+    f.round(&mut snapshot);
+    f.sync_direct(snapshot, Some(media.clone()));
+    f.app.notify();
+    assert!(next_event(&mut stream).await.contains("event: state"));
+    assert_eq!(
+        call(api::public(f.app.clone()), get("/api/v1/state", &cookie))
+            .await
+            .0,
+        StatusCode::OK
+    );
+    assert_eq!(
+        call(
+            api::public(f.app.clone()),
+            get(&format!("/media/{}.ogg", media.sha256), &cookie)
+        )
+        .await
+        .0,
+        StatusCode::OK
+    );
+}
+
+#[tokio::test]
+async fn dormant_sessions_cannot_survive_changed_instance_membership_leave_logout_or_idle_expiry() {
+    for reason in ["instance", "membership", "leave", "logout", "idle"] {
+        let f = Fixture::new();
+        f.sync_direct(f.snapshot(1, "IDLE"), None);
+        let (cookie, csrf) = f.login();
+        f.clock.0.store(
+            START + if reason == "idle" { 1800000 } else { 16000 },
+            Ordering::SeqCst,
+        );
+        if reason == "logout" {
+            let request = Request::builder()
+                .method("POST")
+                .uri("/api/v1/auth/logout")
+                .header("cookie", &cookie)
+                .header("origin", noqui_web::ORIGIN)
+                .header("content-type", "application/json")
+                .header("x-noqui-csrf", csrf)
+                .body(Body::from("{}"))
+                .unwrap();
+            assert_eq!(
+                call(api::public(f.app.clone()), request).await.0,
+                StatusCode::NO_CONTENT
+            );
+        }
+        let mut snapshot = f.snapshot(2, "IDLE");
+        match reason {
+            "instance" => snapshot.instance_id = uuid::Uuid::new_v4().to_string(),
+            "membership" => snapshot.roster[0].membership_id = uuid::Uuid::new_v4().to_string(),
+            "leave" => snapshot.roster.clear(),
+            _ => {}
+        }
+        let instance = snapshot.instance_id.clone();
+        f.sync_direct(snapshot, None);
+        assert_eq!(
+            call(api::public(f.app.clone()), get("/api/v1/state", &cookie))
+                .await
+                .0,
+            StatusCode::UNAUTHORIZED,
+            "{reason}"
+        );
+        let mut restored = f.snapshot(3, "IDLE");
+        restored.instance_id = instance;
+        f.sync_direct(restored, None);
+        assert_eq!(
+            call(api::public(f.app.clone()), get("/api/v1/state", &cookie))
+                .await
+                .0,
+            StatusCode::UNAUTHORIZED,
+            "restoring roster must not revive {reason}"
+        );
+    }
 }
 
 #[test]
@@ -372,6 +716,53 @@ fn one_time_token_expires_even_while_plugin_keeps_its_lease_alive() {
             .code,
         "JOIN_INVALID"
     );
+}
+
+#[test]
+fn token_redemption_during_authority_gap_waits_for_fresh_matching_authority() {
+    for changed in [false, true] {
+        let f = Fixture::new();
+        f.sync_direct(f.snapshot(1, "IDLE"), None);
+        let token = auth::random();
+        let request = TokenRequest {
+            schema_version: 1,
+            request_id: uuid::Uuid::new_v4().to_string(),
+            instance_id: INSTANCE.into(),
+            uuid: PLAYER.into(),
+            membership_id: MEMBER.into(),
+            room_id: ROOM.into(),
+            token_sha256: auth::digest(token.as_bytes()),
+        };
+        f.app
+            .inner
+            .lock()
+            .unwrap()
+            .register(request, "join".into(), START)
+            .unwrap();
+        f.clock.0.store(START + 16000, Ordering::SeqCst);
+        assert_eq!(
+            f.app
+                .inner
+                .lock()
+                .unwrap()
+                .redeem(&token, f.app.now())
+                .err()
+                .unwrap()
+                .code,
+            "PLUGIN_OFFLINE"
+        );
+        let mut snapshot = f.snapshot(2, "IDLE");
+        if changed {
+            snapshot.roster[0].membership_id = uuid::Uuid::new_v4().to_string();
+        }
+        f.sync_direct(snapshot, None);
+        let result = f.app.inner.lock().unwrap().redeem(&token, f.app.now());
+        if changed {
+            assert_eq!(result.err().unwrap().code, "JOIN_INVALID");
+        } else {
+            assert!(result.is_ok());
+        }
+    }
 }
 
 #[tokio::test]
@@ -906,16 +1297,31 @@ async fn concurrent_media_registration_deduplicates_and_idempotency_conflict_is_
 }
 
 #[tokio::test]
-async fn missing_tool_fails_one_async_job_and_cleans_up_without_taking_control_down() {
+async fn worker_drains_all_accepted_jobs_without_a_current_round_and_preserves_ready_cache() {
     let f = Fixture::new();
-    let (_, job) = f.app.jobs.enqueue(job("BaW_jenozKc"), START).await.unwrap();
-    let id = job["jobId"].as_str().unwrap().to_owned();
+    let cached = f.seed();
+    let cached_path = f
+        .app
+        .jobs
+        .root
+        .join("media")
+        .join(format!("{}.ogg", cached.sha256));
+    let cached_bytes = std::fs::read(&cached_path).unwrap();
+    let mut ids = Vec::new();
+    for video in ["AAAAAAAA000", "AAAAAAAA001", "AAAAAAAA002"] {
+        let (_, result) = f.app.jobs.enqueue(job(video), START).await.unwrap();
+        assert_eq!(result["state"], "QUEUED");
+        ids.push(result["jobId"].as_str().unwrap().to_owned());
+    }
     let worker = tokio::spawn(noqui_web::jobs::worker(f.app.clone()));
     let outcome = tokio::time::timeout(std::time::Duration::from_secs(3), async {
         loop {
-            let status = f.app.jobs.status(id.clone()).await.unwrap();
-            if status["state"] == "FAILED" {
-                break status;
+            let mut statuses = Vec::new();
+            for id in &ids {
+                statuses.push(f.app.jobs.status(id.clone()).await.unwrap());
+            }
+            if statuses.iter().all(|status| status["state"] == "FAILED") {
+                break statuses;
             }
             tokio::time::sleep(std::time::Duration::from_millis(10)).await;
         }
@@ -924,9 +1330,12 @@ async fn missing_tool_fails_one_async_job_and_cleans_up_without_taking_control_d
     .unwrap();
     worker.abort();
     let _ = worker.await;
-    assert_eq!(outcome["failureCode"], "INGEST_UNAVAILABLE");
-    assert_eq!(outcome["retryable"], true);
-    assert!(!f.app.jobs.root.join("tmp").join(id).exists());
+    for (status, id) in outcome.iter().zip(ids) {
+        assert_eq!(status["failureCode"], "INGEST_UNAVAILABLE");
+        assert_eq!(status["retryable"], true);
+        assert!(!f.app.jobs.root.join("tmp").join(id).exists());
+    }
+    assert_eq!(std::fs::read(cached_path).unwrap(), cached_bytes);
     assert_eq!(
         call(api::public(f.app.clone()), get("/healthz", ""))
             .await
@@ -977,9 +1386,9 @@ async fn clipped_profile_dedupes_separately_and_cannot_select_legacy_full_length
 }
 
 #[tokio::test]
-async fn queue_is_bounded_and_failed_jobs_recover_after_explicit_retry_cooldown() {
+async fn queue_accepts_all_64_submission_slots_and_failed_jobs_require_explicit_retry() {
     let f = Fixture::new();
-    for i in 0..20 {
+    for i in 0..64 {
         f.app
             .jobs
             .enqueue(job(&format!("AAAAAAAA{i:03}")), START)

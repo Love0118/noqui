@@ -16,6 +16,8 @@ use std::{
 };
 use tokio::{process::Command, sync::Notify};
 
+const MAX_QUEUED: i64 = 64;
+
 #[derive(Clone, Serialize, Deserialize, Debug)]
 #[serde(rename_all = "camelCase")]
 pub struct Media {
@@ -134,11 +136,11 @@ impl Jobs {
             let pending:i64=tx.query_row("SELECT count(*) FROM jobs WHERE state='QUEUED' AND profile=?",[PROFILE],|row|row.get(0)).map_err(db_error)?;
             let id=if let Some((id,state,retryable,updated))=existing {
                 if state=="FAILED" && retryable && now-updated>=30000 {
-                    if pending>=20 {return Err(Error::retry(429,"QUEUE_FULL",2000))}
+                    if pending>=MAX_QUEUED {return Err(Error::retry(429,"QUEUE_FULL",2000))}
                     tx.execute("UPDATE jobs SET state='QUEUED',failure=NULL,retryable=0,updated=? WHERE id=?",params![now,id]).map_err(db_error)?;
                 }id
             } else {
-                if pending>=20 {return Err(Error::retry(429,"QUEUE_FULL",2000))}
+                if pending>=MAX_QUEUED {return Err(Error::retry(429,"QUEUE_FULL",2000))}
                 let id=uuid::Uuid::new_v4().to_string();tx.execute("INSERT INTO jobs(id,video,profile,state,updated) VALUES(?,?,?,'QUEUED',?)",params![id,r.video_id,PROFILE,now]).map_err(db_error)?;id
             };
             tx.execute("INSERT INTO requests(id,video,job_id) VALUES(?,?,?)",params![r.request_id,r.video_id,id]).map_err(db_error)?;
