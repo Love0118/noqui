@@ -42,13 +42,13 @@ final class NoquiListener implements Listener {
         String id=plugin.tool(e.getPlayer());
         if("defense".equals(id))plugin.openMinigames(e.getPlayer());
     }
-    @EventHandler(priority=EventPriority.LOWEST) public void legacy(AsyncPlayerChatEvent e){
+    @EventHandler(priority=EventPriority.HIGH) public void legacy(AsyncPlayerChatEvent e){
         if(plugin.captureAnswer(e.getPlayer().getUniqueId(),e.getMessage())){legacy.add(e);hide(e);}
     }
     @EventHandler(priority=EventPriority.HIGHEST) public void legacyGuard(AsyncPlayerChatEvent e){if(legacy.remove(e))hide(e);}
     private void hide(AsyncPlayerChatEvent e){e.setCancelled(true);e.setMessage("");e.getRecipients().clear();}
-    @EventHandler(priority=EventPriority.LOWEST) public void chat(AsyncChatEvent e){
-        if(plugin.captureAnswer(e.getPlayer().getUniqueId(),PlainTextComponentSerializer.plainText().serialize(e.originalMessage()))){modern.add(e);hide(e);}
+    @EventHandler(priority=EventPriority.HIGH) public void chat(AsyncChatEvent e){
+        if(plugin.captureAnswer(e.getPlayer().getUniqueId(),PlainTextComponentSerializer.plainText().serialize(e.message()))){modern.add(e);hide(e);}
     }
     @EventHandler(priority=EventPriority.HIGHEST) public void chatGuard(AsyncChatEvent e){if(modern.remove(e))hide(e);}
     private void hide(AsyncChatEvent e){e.setCancelled(true);e.message(Component.empty());e.viewers().clear();}

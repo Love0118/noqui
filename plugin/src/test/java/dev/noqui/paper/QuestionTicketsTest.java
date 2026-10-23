@@ -165,7 +165,7 @@ class QuestionTicketsTest {
         var game=new QuizGame(bridge,Runnable::run,()->1000,new QuizGame.Output(){public void changed(QuizGame.Snapshot s){}public void error(UUID p,String e){}},ledger,115,0,false,true,false,new Random(1));game.start(List.of(id));return game;}
     private NoquiPlugin plugin(QuizGame game)throws Exception {
         var plugin=mock(NoquiPlugin.class,CALLS_REAL_METHODS);
-        for(var entry:Map.of("game",(Object)game,"tickets",tickets,"drafts",new HashMap<UUID,Song>(),"cabinOwners",new HashSet<>(Set.of(id)),"optedOut",new HashSet<UUID>()).entrySet()){var field=NoquiPlugin.class.getDeclaredField(entry.getKey());field.setAccessible(true);field.set(plugin,entry.getValue());}return plugin;
+        for(var entry:Map.of("game",(Object)game,"tickets",tickets,"cabinOwners",new HashSet<>(Set.of(id)),"optedOut",new HashSet<UUID>()).entrySet()){var field=NoquiPlugin.class.getDeclaredField(entry.getKey());field.setAccessible(true);field.set(plugin,entry.getValue());}return plugin;
     }
     @Test void nonparticipantHeldTicketRejoinsWithoutQueuedBrowserPromptReplacingSubmission()throws Exception {
         var game=game();game.leave(id);var plugin=plugin(game);when(player.isOnline()).thenReturn(true);

@@ -97,7 +97,18 @@ class BridgeClientTest {
             JsonObject room=client.snapshot(game.snapshot(),List.of()).getAsJsonArray("rooms").get(0).getAsJsonObject();var round=room.getAsJsonObject("round");
             assertEquals("PREPARING",room.get("phase").getAsString());assertEquals(115007,game.snapshot().media().durationMillis());
             assertEquals(115000,round.get("clipEndMs").getAsLong());assertEquals(0,round.get("clipStartMs").getAsLong());assertEquals(0,round.get("anchorPositionMs").getAsLong());assertFalse(round.get("playing").getAsBoolean());
+            assertEquals(1,round.get("playbackRate").getAsDouble());
+            assertEquals("1",round.get("playbackRate").toString());
             assertEquals(media.toString(),round.get("mediaId").getAsString());assertEquals(room.get("roundNumber"),round.get("number"));assertTrue(room.get("reveal").isJsonNull());
+        }
+    }
+    @Test void speedModePublishesSourceBoundsAndRateWhilePauseFreezesSourcePosition() {
+        try(var client=client(List::of)){
+            long[] now={1000};var future=new CompletableFuture<MediaBridge.Media>();var fake=new MediaBridge(){public CompletionStage<Media> prepare(Request r){return future;}public void cancel(UUID s,long r){}public void publish(QuizGame.Snapshot s){}};
+            var g=new QuizGame(fake,Runnable::run,()->now[0],new QuizGame.Output(){public void changed(QuizGame.Snapshot s){}public void error(UUID id,String message){}},115,false);g.modes(g.modes().with(QuizModes.Mode.SPEED_X2,true));g.start(List.of(player));g.grant(player,1);g.submit(player,g.snapshot().revision(),Song.input("https://youtu.be/BaW_jenozKc","Secret",""));future.complete(new MediaBridge.Media(UUID.randomUUID().toString(),115007));
+            g.browsersReady(g.snapshot().revision(),true,true);g.controlAccepted(g.snapshot().revision());now[0]=g.snapshot().startsAt();g.tick();now[0]+=10000;g.pause();
+            var round=client.snapshot(g.snapshot(),List.of()).getAsJsonArray("rooms").get(0).getAsJsonObject().getAsJsonObject("round");
+            assertEquals("2",round.get("playbackRate").toString());assertTrue(round.toString().contains("\"playbackRate\":2"));assertFalse(round.toString().contains("\"playbackRate\":2.0"));assertEquals(115000,round.get("clipEndMs").getAsLong());assertEquals(20000,round.get("anchorPositionMs").getAsLong());assertFalse(round.get("playing").getAsBoolean());assertEquals(47500,g.snapshot().remainingMillis());
         }
     }
     @Test void realHttpSignsExactBytesPollsEmptyGetAndIssuesHashOnlyToken() throws Exception {

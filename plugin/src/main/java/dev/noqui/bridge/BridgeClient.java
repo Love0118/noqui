@@ -138,7 +138,7 @@ public final class BridgeClient implements MediaBridge {
             long end=state.media()==null?0:state.clipEndMillis();
             round=object("roundId",state.roundId(),"number",state.round(),"revision",Long.toString(state.revision()),
                     "playbackGeneration",state.playbackGeneration(),"mediaId",state.media()==null?null:state.media().id(),
-                    "clipStartMs",0,"clipEndMs",end,"anchorPositionMs",state.anchorPositionMillis(),"anchorAtMs",state.startsAt(),"playing",state.playing());
+                    "clipStartMs",0,"clipEndMs",end,"anchorPositionMs",state.anchorPositionMillis(),"anchorAtMs",state.startsAt(),"playing",state.playing(),"playbackRate",state.playbackRate());
         }
         if(phase.equals("REVEAL") && state.song()!=null)reveal=object("title",state.song().title(),"aliases",new JsonArray(),"tags",gson.toJsonTree(state.song().tags()),"youtubeUrl",state.song().youtubeUrl());
         var rooms=new JsonArray();rooms.add(object("roomId",state.session(),"roomRevision",Long.toString(state.revision()),"phase",phase,"round",round,"reveal",reveal,"roundNumber",state.round(),"totalRounds",state.totalRounds()));

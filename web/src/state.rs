@@ -231,7 +231,8 @@ impl State {
                         match (&room.round, &old.round) {
                             (Some(a), Some(b))
                                 if a.round_id == b.round_id
-                                    && (counter(&a.revision)? < counter(&b.revision)?
+                                    && (a.playback_rate != b.playback_rate
+                                        || counter(&a.revision)? < counter(&b.revision)?
                                         || (a.revision == b.revision && a != b)) =>
                             {
                                 return Err(Error::new(409, "REVISION_CONFLICT"));
@@ -447,6 +448,9 @@ pub fn validate(s: &Snapshot, media: &HashMap<String, Media>, now: i64) -> Resul
             }
         }
         if let Some(r) = &room.round {
+            if ![1, 2].contains(&r.playback_rate) {
+                return Err(Error::new(422, "INVALID_TIMELINE"));
+            }
             if !uuid(&r.round_id)
                 || !uuid(&r.playback_generation)
                 || r.number == 0

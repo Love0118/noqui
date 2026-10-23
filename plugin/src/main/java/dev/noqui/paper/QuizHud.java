@@ -2,7 +2,6 @@ package dev.noqui.paper;
 
 import java.time.Duration;
 import java.util.*;
-import net.kyori.adventure.bossbar.BossBar;
 import net.kyori.adventure.key.Key;
 import net.kyori.adventure.sound.Sound;
 import net.kyori.adventure.text.Component;
@@ -41,10 +40,10 @@ final class QuizHud implements AutoCloseable {
         final Player player;
         boolean immersive = true;
         Tab tab;
-        final BossBar bar = BossBar.bossBar(Component.text("노래퀴즈"), 0, BossBar.Color.WHITE, BossBar.Overlay.PROGRESS);
         int round, total, countdown = -1, countdownRound = -1, countdownTotal = -1;
         String phase = "";
         Reveal lastReveal;
+        boolean endCue;
 
         View(Player player) { this.player = player; }
     }
@@ -56,7 +55,7 @@ final class QuizHud implements AutoCloseable {
         boolean listAbandoned;
         Tab(Player player) { previousListName=player.playerListName(); }
     }
-    private record Reveal(int round, int total, String title, List<String> tags, List<String> winners, boolean skipped) {}
+    private record Reveal(int round, int total, String title, List<String> tags, List<String> winners) {}
     private record Ranked(UUID id, String name, int score) {}
 
     QuizHud() {}
@@ -71,7 +70,6 @@ final class QuizHud implements AutoCloseable {
         }
         View view = new View(player);
         views.put(player.getUniqueId(), view);
-        player.showBossBar(view.bar);
     }
 
     void setImmersive(Player player, boolean immersive) {
@@ -90,24 +88,10 @@ final class QuizHud implements AutoCloseable {
         if (view == null) return;
         Objects.requireNonNull(frame, "frame");
         view.total = Math.max(0, frame.totalRounds());
+        if(view.round!=round(frame.round(),view.total))view.endCue=false;
         view.round = round(frame.round(), view.total);
         if (!frame.phase().equals(view.phase)) view.countdown = -1;
         view.phase = frame.phase();
-        boolean revealed = frame.phase().equals("REVEAL");
-        String rounds = rounds(view.round, view.total);
-        boolean waiting=frame.phase().equals("PREPARING") || frame.phase().equals("WAITING_FOR_MEDIA");
-        Component bar=white(rounds).append(gray(" · "+phase(frame.phase())));
-        if(!waiting)bar=bar.append(gray(" · "+time(frame.remainingMs())));
-        bar=bar.append(gray(" · "+score+"점"));
-        if(!waiting) {
-            bar=bar.append(gray(" · 스킵 "+Math.max(0,frame.skipVotes())+"/"+Math.max(0,frame.skipRequired())));
-            if(!frame.presenter().isBlank())bar=bar.append(gray(" · 출제 "+shortText(frame.presenter(),16)));
-        }
-        if(revealed && !frame.answerTitle().isBlank())bar=bar.append(gray(" · ")).append(white(shortText(frame.answerTitle(),40)));
-        if(!view.immersive && frame.phase().equals("PLAYING") && !frame.hint().isBlank())
-            bar=bar.append(gray(" · 힌트 ")).append(white(shortText(frame.hint(),24)));
-        view.bar.name(bar);
-        view.bar.progress(waiting || frame.durationMs()<=0?0:(float)Math.clamp((double)frame.remainingMs()/frame.durationMs(),0,1));
         if(!view.immersive)return;
         claimTab(view);
         updateListName(view,score);
@@ -124,8 +108,8 @@ final class QuizHud implements AutoCloseable {
         view.total = Math.max(0, totalRounds);
         view.countdown = -1;
         view.lastReveal = null;
+        view.endCue=false;
         if (view.immersive) player.showTitle(Title.title(original("퀴즈를 시작합니다"), Component.empty(), SHORT_TITLE));
-        view.bar.name(white("노래퀴즈").append(gray(" · " + total(view.total))));
         player.sendMessage(Component.text("=====================[", ORIGINAL_FRAME).append(Component.text("노래퀴즈 시작", ORIGINAL_WINNER).decorate(TextDecoration.BOLD)).append(Component.text("]=====================", ORIGINAL_FRAME)));
         player.sendMessage(original("              " + total(view.total) + "입니다"));
         cue(player, "0select2", 1.0f);
@@ -142,19 +126,18 @@ final class QuizHud implements AutoCloseable {
         view.countdown = remaining;
         view.countdownRound = current;
         view.countdownTotal = total;
-        view.bar.name(white(rounds(current, total)).append(gray(" · 시작 " + remaining)));
         if (remaining == 3) framed(player,List.of(original("라운드 " + originalRounds(current,total))));
         if (view.immersive) player.showTitle(Title.title(Component.text(Integer.toString(remaining),NamedTextColor.YELLOW).decorate(TextDecoration.BOLD), Component.empty(),
                 Title.Times.times(Duration.ZERO, Duration.ofMillis(900), Duration.ofMillis(100))));
         cue(player, "0click2", 1.0f);
     }
 
-    void reveal(Player player, String title, List<String> tags, List<String> winners, boolean skipped) {
+    void reveal(Player player, String title, List<String> tags, List<String> winners) {
         mainThread();
         View view = view(player);
         if (view == null) return;
         Reveal reveal = new Reveal(view.round, view.total, Objects.requireNonNullElse(title, ""),
-                tags == null ? List.of() : List.copyOf(tags), winners == null ? List.of() : List.copyOf(winners), skipped);
+                tags == null ? List.of() : List.copyOf(tags), winners == null ? List.of() : List.copyOf(winners));
         if (reveal.equals(view.lastReveal)) return;
         view.lastReveal = reveal;
         var lines = new ArrayList<Component>();
@@ -163,11 +146,10 @@ final class QuizHud implements AutoCloseable {
         lines.add(original("정답: 『" + reveal.title() + "』"));
         lines.add(reveal.tags().isEmpty()?Component.empty():Component.text(" #"+String.join(" #",reveal.tags()),TextColor.color(0xcfcfc4)));
         framed(player, lines);
-        view.bar.name(white(rounds(view.round, view.total)).append(gray(" · 정답 ")).append(white(shortText(reveal.title(), 64))));
         if (view.immersive) player.showTitle(Title.title(white(reveal.title()), gray("라운드 " + rounds(view.round, view.total)), REVEAL_TITLE));
         cue(player, "0win", 1.0f);
-        if (skipped) cue(player, "0heal", 1.0f);
     }
+    void roundEnd(Player player){mainThread();View view=view(player);if(view==null||view.endCue)return;view.endCue=true;cue(player,"0heal",1.0f);}
 
     /** Publishes the final result, then releases owned UI. Finite result titles remain visible. */
     void finish(Player player, Map<UUID, Integer> scores) {
@@ -240,7 +222,6 @@ final class QuizHud implements AutoCloseable {
     }
 
     private static void release(View view) {
-        view.player.hideBossBar(view.bar);
         releaseTab(view);
         // Titles/actionbars have no readable ownership handle: let their finite lifetime expire.
     }
@@ -262,30 +243,10 @@ final class QuizHud implements AutoCloseable {
         return name == null || name.isBlank() ? "이름 없음" : shortText(name, 24);
     }
 
-    private static String phase(String phase) {
-        return switch (phase) {
-            case "PLAYING" -> "정답 대기";
-            case "PAUSED" -> "일시정지";
-            case "REVEAL" -> "정답 공개";
-            case "WAITING_FOR_MEDIA" -> "대기";
-            case "PREPARING" -> "대기";
-            case "COUNTDOWN" -> "시작 대기";
-            case "WAITING_FOR_CREDITS" -> "출제권 대기";
-            case "WAITING_FOR_SUBMISSION", "WAITING_FOR_PRESENTER" -> "출제 대기";
-            case "INTERMISSION" -> "다음 라운드";
-            case "STOPPED", "FINISHED", "ENDED" -> "종료";
-            default -> "대기";
-        };
-    }
-
     private static int round(int round, int total) { return total <= 0 ? Math.max(0,round) : Math.clamp(round, 0, total); }
     private static String rounds(int round, int total) { return total<=0?round+" · 무제한":round + " / " + total; }
     private static String originalRounds(int round,int total){return total<=0?round+" · 무제한":round+"/"+total;}
     private static String total(int total){return total<=0?"무제한":"총 "+total+" 라운드";}
-    private static String time(long millis) {
-        long seconds = millis <= 0 ? 0 : 1 + (millis - 1) / 1000;
-        return seconds / 60 + ":" + String.format(Locale.ROOT, "%02d", seconds % 60);
-    }
     private static String shortText(String text, int limit) {
         String value = text.codePoints().filter(c -> !Character.isISOControl(c)).collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append).toString();
         return value.codePointCount(0, value.length()) <= limit ? value : value.substring(0, value.offsetByCodePoints(0, limit)) + "…";

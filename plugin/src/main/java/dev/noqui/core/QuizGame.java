@@ -12,11 +12,16 @@ public final class QuizGame {
     public record Snapshot(UUID session,long revision,Phase phase,UUID presenter,UUID winner,Song song,
             MediaBridge.Media media,long startsAt,long endsAt,int round,UUID roundId,UUID playbackGeneration,
             boolean playing,long clipEndMillis,String hint,Set<UUID> participants,Map<UUID,Integer> scores,
-            int totalRounds,long anchorPositionMillis,long remainingMillis,int skipVotes,int skipRequired,boolean skipped) {}
+            int totalRounds,long anchorPositionMillis,long remainingMillis,int skipVotes,int skipRequired,boolean skipped,
+            List<UUID> winners,QuizModes modes,int playbackRate) {
+        public boolean accepts(UUID player,String input){return phase==Phase.PLAYING&&participants.contains(player)&&!winners.contains(player)&&song!=null&&modes.points(song,input)>0;}
+    }
     public interface Output {
         void changed(Snapshot snapshot);
         void error(UUID player,String message);
         default void correctAnswer(UUID round,UUID player,int answerPoints) {}
+        default void answerAccepted(UUID player){}
+        default void roundEnded(){}
         default void ended(Map<UUID,Integer> scores) {}
     }
     private static final int MAX_SUBMISSIONS=64;
@@ -35,7 +40,10 @@ public final class QuizGame {
     private final CreditLedger credits;
     private final long roundMillis;
     private int totalRounds;
-    private final boolean matchSkip,titleBonus,autoHint;
+    private QuizModes modes,roundModes;
+    private final Set<UUID> winners=new LinkedHashSet<>();
+    private int playbackRate=1;
+    private long answerSkipAt,skipRemaining=-1;
     private final RandomGenerator random;
     private final LinkedHashSet<UUID> players=new LinkedHashSet<>();
     private final Map<UUID,Integer> scores=new LinkedHashMap<>();
@@ -59,13 +67,15 @@ public final class QuizGame {
                     int totalRounds,boolean matchSkip,boolean titleBonus,boolean autoHint,RandomGenerator random) {
         if(seconds<1||seconds>115||totalRounds<0)throw new IllegalArgumentException("Invalid quiz limits");
         this.bridge=bridge;this.main=main;this.clock=clock;this.output=output;this.credits=credits;roundMillis=seconds*1000L;
-        this.totalRounds=totalRounds;this.matchSkip=matchSkip;this.titleBonus=titleBonus;this.autoHint=autoHint;this.random=random;
+        this.totalRounds=totalRounds;this.modes=QuizModes.legacy(matchSkip,titleBonus,autoHint);this.roundModes=modes;this.random=random;
     }
+    public QuizModes modes(){return modes;}
+    public void modes(QuizModes value){modes=Objects.requireNonNull(value);if(started())emit();}
     public Snapshot snapshot() {
-        long remaining=phase==Phase.PAUSED?pausedRemaining:phase==Phase.COUNTDOWN?clipEndMillis-anchorPosition:Math.max(0,endsAt-clock.getAsLong());
+        long remaining=phase==Phase.PAUSED?pausedRemaining:phase==Phase.COUNTDOWN?wallRemaining():Math.max(0,endsAt-clock.getAsLong());
         return new Snapshot(session,revision,phase,current==null?null:current.author,winner,current==null?null:current.song,media,
                 startsAt,endsAt,roundsStarted+(current!=null&&!roundStarted?1:0),roundId,playbackGeneration,
-                playing,clipEndMillis,hint,Set.copyOf(players),Map.copyOf(scores),totalRounds,anchorPosition,remaining,votes.size(),players.size()/2+1,skipped);
+                playing,clipEndMillis,hint,Set.copyOf(players),Map.copyOf(scores),totalRounds,anchorPosition,remaining,votes.size(),players.size()/2+1,skipped,List.copyOf(winners),current==null?modes:roundModes,playbackRate);
     }
     public boolean started(){return phase!=Phase.STOPPED;}
     public boolean participant(UUID id){return players.contains(id);}
@@ -133,13 +143,13 @@ public final class QuizGame {
         if(totalRounds>0&&roundsStarted>=totalRounds){stop();return;}
         while(!queue.isEmpty()) {
             var s=queue.remove();if(!players.contains(s.author)){cancelSubmission(s);refund(s);continue;}
-            current=s;roundId=s.id;playbackGeneration=UUID.randomUUID();hints=new HintMask(s.song.title(),random);
+            current=s;roundModes=modes;roundId=s.id;playbackGeneration=UUID.randomUUID();hints=new HintMask(s.song.title(),random);
             phase=Phase.WAITING_FOR_MEDIA;
             if(s.media!=null)acceptMedia();else emit();return;
         }
         phase=Phase.WAITING_FOR_SUBMISSION;emit();
     }
-    private void acceptMedia(){media=current.media;clipEndMillis=Math.min(roundMillis,media.durationMillis());phase=Phase.PREPARING;endsAt=clock.getAsLong()+20000;emit();}
+    private void acceptMedia(){media=current.media;clipEndMillis=Math.min(roundMillis,media.durationMillis());playbackRate=roundModes.has(QuizModes.Mode.SPEED_X2)?2:1;phase=Phase.PREPARING;endsAt=clock.getAsLong()+20000;emit();}
     private void cancelSubmission(Submission s){s.live=false;try{bridge.cancel(session,s.request);}catch(RuntimeException ignored){/* The live flag still rejects late completion. */}}
     private boolean refund(Submission s) {
         try{credits.refund(s.id);refundRetries.remove(s.id);return true;}
@@ -152,14 +162,19 @@ public final class QuizGame {
     }
     private void abortPreparation(){cancelSubmission(current);refund(current);next();}
     private void clearRound() {
-        current=null;winner=null;roundId=null;playbackGeneration=null;media=null;hints=null;hint="";votes.clear();
+        current=null;winner=null;roundId=null;playbackGeneration=null;media=null;hints=null;hint="";votes.clear();winners.clear();answerSkipAt=0;skipRemaining=-1;playbackRate=1;
         startsAt=endsAt=clipEndMillis=anchorPosition=pausedRemaining=nextHintAt=0;hintRemaining=9000;
         playing=anyReady=countdownAccepted=roundStarted=skipped=false;
     }
     public boolean answer(UUID id,String answer) {
-        if(phase!=Phase.PLAYING||clock.getAsLong()>=endsAt||winner!=null||!players.contains(id)||current.author.equals(id)||!current.song.matches(answer))return false;
-        output.correctAnswer(roundId,id,titleBonus&&current.song.matchesTitle(answer)?2:1);
-        winner=id;scores.merge(id,1,Integer::sum);phase=Phase.REVEAL;emit();if(matchSkip)finishRound(false);return true;
+        long now=clock.getAsLong();if(!snapshot().accepts(id,answer)||now>=endsAt||answerSkipAt>0&&now>=answerSkipAt)return false;
+        output.correctAnswer(roundId,id,roundModes.points(current.song,answer));
+        boolean first=winners.isEmpty();winners.add(id);if(first)winner=id;scores.merge(id,1,Integer::sum);
+        if(roundModes.has(QuizModes.Mode.NONCOMPETITIVE)) {
+            if(first&&roundModes.has(QuizModes.Mode.MATCH_SKIP))answerSkipAt=now+2000;
+            output.answerAccepted(id);emit();
+        }else{phase=Phase.REVEAL;emit();if(roundModes.has(QuizModes.Mode.MATCH_SKIP))finishRound(false);}
+        return true;
     }
     public boolean voteSkip(UUID id,UUID expectedRound) {
         if(!canVoteSkip(id)||!Objects.equals(roundId,expectedRound))return false;
@@ -170,15 +185,17 @@ public final class QuizGame {
         if(roundId==null||!Objects.equals(expectedRound,roundId))throw new IllegalArgumentException("현재 라운드 메뉴를 다시 열어 주세요.");
         finishRound(true);
     }
-    private long position(long now){return Math.min(clipEndMillis,anchorPosition+(playing?Math.max(0,now-startsAt):0));}
+    private long position(long now){return Math.min(clipEndMillis,anchorPosition+(playing?(long)(Math.max(0,now-startsAt)*playbackRate):0));}
+    private long wallRemaining(){return (clipEndMillis-anchorPosition+playbackRate-1)/playbackRate;}
     private void finishRound(boolean skipped) {
         if(current==null||phase==Phase.REVEAL&&!playing)return;
         anchorPosition=position(clock.getAsLong());cancelSubmission(current);if(!roundStarted)refund(current);
-        phase=Phase.REVEAL;playing=false;this.skipped=skipped;endsAt=clock.getAsLong()+5000;emit();
+        phase=Phase.REVEAL;playing=false;this.skipped=skipped;answerSkipAt=0;skipRemaining=-1;endsAt=clock.getAsLong()+1000;emit();output.roundEnded();
     }
     public void pause() {
         if(phase!=Phase.PLAYING&&phase!=Phase.COUNTDOWN&&!(phase==Phase.REVEAL&&playing))throw new IllegalArgumentException("재생 중에 일시정지할 수 있습니다.");
-        long now=clock.getAsLong();anchorPosition=position(now);pausedRemaining=Math.max(0,clipEndMillis-anchorPosition);
+        long now=clock.getAsLong();anchorPosition=position(now);pausedRemaining=Math.max(0,wallRemaining());
+        if(answerSkipAt>0){skipRemaining=Math.max(0,answerSkipAt-(phase==Phase.COUNTDOWN?startsAt:now));answerSkipAt=0;}
         hintRemaining=nextHintAt==0?9000:Math.max(0,nextHintAt-now);playing=false;phase=Phase.PAUSED;emit();
     }
     public void resume(){if(phase!=Phase.PAUSED)throw new IllegalArgumentException("일시정지 상태가 아닙니다.");countdown();}
@@ -193,17 +210,18 @@ public final class QuizGame {
             else{endsAt=0;emit();}
         }
         if(phase==Phase.COUNTDOWN&&now>=startsAt) {
-            if(!countdownAccepted){playing=false;startsAt=0;if(roundStarted){phase=Phase.PAUSED;pausedRemaining=clipEndMillis-anchorPosition;}else{phase=Phase.PREPARING;anyReady=false;endsAt=now+20000;}emit();return;}
+            if(!countdownAccepted){if(answerSkipAt>0){skipRemaining=Math.max(0,answerSkipAt-startsAt);answerSkipAt=0;}playing=false;startsAt=0;if(roundStarted){phase=Phase.PAUSED;pausedRemaining=wallRemaining();}else{phase=Phase.PREPARING;anyReady=false;endsAt=now+20000;}emit();return;}
             if(!roundStarted)try{credits.spend(current.id);roundStarted=true;roundsStarted++;}
             catch(UncheckedIOException error){
                 UUID author=current.author;playing=false;startsAt=0;phase=Phase.PREPARING;emit();abortPreparation();
                 output.error(author,"출제권 사용을 저장하지 못해 재생을 취소했습니다. 미확정 출제권은 반환됩니다.");return;
             }
-            phase=Phase.PLAYING;playing=true;nextHintAt=startsAt+hintRemaining;emit();if(winner!=null){phase=Phase.REVEAL;emit();}
+            phase=winner!=null&&!roundModes.has(QuizModes.Mode.NONCOMPETITIVE)?Phase.REVEAL:Phase.PLAYING;playing=true;nextHintAt=startsAt+hintRemaining;emit();
         }
-        if((phase==Phase.PLAYING||phase==Phase.REVEAL&&playing)&&now>=endsAt)finishRound(false);
+        if(phase==Phase.PLAYING&&answerSkipAt>0&&now>=answerSkipAt)finishRound(false);
+        else if((phase==Phase.PLAYING||phase==Phase.REVEAL&&playing)&&now>=endsAt)finishRound(false);
         else if(phase==Phase.REVEAL&&!playing&&now>=endsAt)next();
-        else if(autoHint&&phase==Phase.PLAYING&&now>=nextHintAt){hint();nextHintAt=now+9000;}
+        else if(roundModes.has(QuizModes.Mode.AUTO_HINT)&&phase==Phase.PLAYING&&now>=nextHintAt){hint();nextHintAt=now+9000;}
     }
     public void browsersReady(long expectedRevision,boolean any,boolean all) {
         if(phase!=Phase.PREPARING||revision!=expectedRevision)return;anyReady=any;if(any&&(all||endsAt==0))countdown();
@@ -211,7 +229,7 @@ public final class QuizGame {
     public void controlAccepted(long expectedRevision){if(phase==Phase.COUNTDOWN&&revision==expectedRevision)countdownAccepted=true;}
     private void countdown() {
         phase=Phase.COUNTDOWN;playing=true;countdownAccepted=false;playbackGeneration=UUID.randomUUID();
-        startsAt=clock.getAsLong()+4000;endsAt=startsAt+clipEndMillis-anchorPosition;emit();
+        startsAt=clock.getAsLong()+4000;endsAt=startsAt+wallRemaining();if(skipRemaining>=0){answerSkipAt=startsAt+skipRemaining;skipRemaining=-1;}emit();
     }
     public void hint(){if(phase!=Phase.PLAYING)throw new IllegalArgumentException("정답을 기다리는 라운드에서 사용할 수 있습니다.");hint=hints.next();emit();}
     private void emit(){revision++;Snapshot state=snapshot();output.changed(state);bridge.publish(state);}

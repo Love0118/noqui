@@ -14,6 +14,18 @@ class NoquiCommandTest {
     private void set(NoquiPlugin plugin,String field,Object value)throws Exception{var f=NoquiPlugin.class.getDeclaredField(field);f.setAccessible(true);f.set(plugin,value);var opts=NoquiPlugin.class.getDeclaredField("optedOut");opts.setAccessible(true);if(opts.get(plugin)==null)opts.set(plugin,new HashSet<UUID>());}
     private QuizGame game(){var bridge=new MediaBridge(){public CompletionStage<Media> prepare(Request r){throw new UnsupportedOperationException();}public void cancel(UUID s,long r){}public void publish(QuizGame.Snapshot s){}};
         return new QuizGame(bridge,Runnable::run,System::currentTimeMillis,new QuizGame.Output(){public void changed(QuizGame.Snapshot s){}public void error(UUID p,String m){}},115,false);}
+    @Test void originalSevenModeCommandsPersistAndLegacyBooleansMigrateWithoutLosingSettings()throws Exception {
+        var config=new org.bukkit.configuration.file.YamlConfiguration();config.set("match-skip",true);config.set("title-bonus",false);config.set("auto-hint",true);config.set("banned-answers",List.of("금 지"));
+        var defaults=new org.bukkit.configuration.file.YamlConfiguration();defaults.set("modes",List.of("제목점수보너스"));config.setDefaults(defaults);
+        var migrated=NoquiPlugin.configuredModes(config);assertTrue(migrated.has(QuizModes.Mode.MATCH_SKIP));assertTrue(migrated.has(QuizModes.Mode.AUTO_HINT));assertFalse(migrated.has(QuizModes.Mode.TITLE_BONUS));assertEquals(Set.of("금지"),migrated.bannedAnswers());
+        var plugin=mock(NoquiPlugin.class,CALLS_REAL_METHODS);var game=game();game.modes(migrated);set(plugin,"game",game);doReturn(config).when(plugin).getConfig();doNothing().when(plugin).saveConfig();var sender=mock(org.bukkit.command.CommandSender.class);when(sender.isOp()).thenReturn(true);
+        assertEquals(7,QuizModes.Mode.values().length);for(var mode:QuizModes.Mode.values()){plugin.onCommand(sender,null,"noqui",new String[]{"mod","add",mode.label()});assertTrue(game.modes().has(mode));}
+        var reloaded=NoquiPlugin.configuredModes(config);assertEquals(Set.of(QuizModes.Mode.values()),reloaded.enabled());assertEquals(migrated.bannedAnswers(),reloaded.bannedAnswers());
+        for(var mode:QuizModes.Mode.values()){plugin.onCommand(sender,null,"noqui",new String[]{"mod","remove",mode.label()});assertFalse(game.modes().has(mode));}
+        assertTrue(NoquiPlugin.configuredModes(config).enabled().isEmpty());plugin.onCommand(sender,null,"noqui",new String[]{"ban","add","Bad","Apple"});assertTrue(game.modes().bannedAnswers().contains("badapple"));
+        plugin.onCommand(sender,null,"noqui",new String[]{"ban","remove","badapple"});assertFalse(game.modes().bannedAnswers().contains("badapple"));
+        when(sender.isOp()).thenReturn(false);plugin.onCommand(sender,null,"noqui",new String[]{"mod","add","무경쟁"});assertFalse(game.modes().has(QuizModes.Mode.NONCOMPETITIVE));
+    }
     @Test void proxySubmissionPreservesDefenseAndZeroBalanceCannotRejoinOrSubmit()throws Exception {
         var plugin=mock(NoquiPlugin.class,CALLS_REAL_METHODS);var player=mock(Player.class);UUID id=UUID.randomUUID();when(player.getUniqueId()).thenReturn(id);var game=game();game.start(List.of(id));set(plugin,"game",game);plugin.dialogs=mock(NoquiDialogs.class);
         assertThrows(IllegalArgumentException.class,()->plugin.openProxySubmission(player));verifyNoInteractions(plugin.dialogs);game.grant(id,1);plugin.openProxySubmission(player);verify(plugin.dialogs).submit(player);verify(player,never()).teleport(any(org.bukkit.Location.class));verify(plugin,never()).routeJoin(player);verify(plugin,never()).defense();
@@ -26,7 +38,7 @@ class NoquiCommandTest {
     }
     @Test void explicitLeaveBlocksAutomaticRejoinUntilAnIntentionalProxyAction()throws Exception {
         var plugin=mock(NoquiPlugin.class,CALLS_REAL_METHODS);var player=mock(Player.class);UUID id=UUID.randomUUID();when(player.getUniqueId()).thenReturn(id);var game=game();game.start(List.of(id));set(plugin,"game",game);
-        set(plugin,"members",new HashMap<UUID,Object>());set(plugin,"drafts",new HashMap<UUID,Song>());set(plugin,"handoffs",new HashSet<UUID>());set(plugin,"cabinOwners",new HashSet<UUID>());set(plugin,"hud",mock(QuizHud.class));set(plugin,"recovery",mock(PlayerRecovery.class));
+        set(plugin,"members",new HashMap<UUID,Object>());set(plugin,"handoffs",new HashSet<UUID>());set(plugin,"cabinOwners",new HashSet<UUID>());set(plugin,"hud",mock(QuizHud.class));set(plugin,"recovery",mock(PlayerRecovery.class));
         plugin.leave(player);assertFalse(game.participant(id));assertFalse(plugin.routeJoin(player));verify(plugin,never()).enter(player);
         doReturn(null).when(plugin).defense();doNothing().when(plugin).enter(player);plugin.visitCabin(player);assertTrue(game.participant(id));verify(plugin).enter(player);
     }

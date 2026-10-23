@@ -8,7 +8,7 @@
   let state = null, csrf = '', stream = null, connectionGeneration = 0, reconnectTimer = null, retries = 0;
   let offset = 0, calibrated = false, lastControl = -Infinity, authority = 0, leader = true;
   let currentMedia = '', lastGeneration = '', lastSeek = -Infinity, playPending = null, ackPending = false, ackAgain = false, takeover = false, formatFailed = false;
-  let gestureBlocked = false, userPaused = false, clientLeaseUntil = 0, authGeneration = 0;
+  let gestureBlocked = false, userPaused = false, clientLeaseUntil = 0, authGeneration = 0, playbackGesture = 0;
   let authValid = false, eventEpoch = '', eventSeq = -1n, lastPoll = -Infinity;
   let lastReportSignature = '', inFlightSignature = '', lastReportAt = -Infinity, nextReportAt = 0, refreshing = null;
   let boundPlayer = sessionStorage.getItem('noqui-player') || '', boundCsrf = '';
@@ -104,6 +104,9 @@
         audio.preload = 'auto'; audio.src = currentMedia; audio.load();
       } else { audio.removeAttribute('src'); audio.load(); }
     }
+    audio.defaultPlaybackRate = playbackRate(next.round);
+    audio.playbackRate = audio.defaultPlaybackRate;
+    audio.preservesPitch = audio.playbackRate === 1;
     if (!revealed || $('message').textContent === errors.PLUGIN_OFFLINE) message('');
     align(); paint();
   }
@@ -117,7 +120,7 @@
     if (audio.seeking || audio.readyState < 3) return 'LOADING';
     if (state.room.phase === 'PREPARING' || state.room.phase === 'COUNTDOWN') {
       const target = expected(state.round) / 1000;
-      const requiredEnd = Math.min(target + .5, state.round.clipEndMs / 1000);
+      const requiredEnd = Math.min(target + .5 * playbackRate(state.round), state.round.clipEndMs / 1000);
       let buffered = false;
       for (let i = 0; i < audio.buffered.length; i++) if (audio.buffered.start(i) <= target + .05 && audio.buffered.end(i) >= requiredEnd) buffered = true;
       return !audio.seeking && Math.abs(audio.currentTime - target) < .75 && buffered ? 'PREPARED' : 'LOADING';
@@ -148,7 +151,8 @@
       else nextReportAt = performance.now() + 2000;
     } finally { ackPending = false; if (ackAgain) { ackAgain = false; void report(); } }
   }
-  function expected(r) { return Math.min(r.clipEndMs, Math.max(r.clipStartMs, r.anchorPositionMs + (r.playing ? Math.max(0, now() - r.anchorAtMs) : 0))); }
+  function playbackRate(r) { return r?.playbackRate === 2 ? 2 : 1; }
+  function expected(r) { return Math.min(r.clipEndMs, Math.max(r.clipStartMs, r.anchorPositionMs + (r.playing ? Math.max(0, now() - r.anchorAtMs) * playbackRate(r) : 0))); }
   function connected() { return authValid && navigator.onLine && now() < authority; }
   function wantsPlayback() {
     const r = state?.round;
@@ -164,15 +168,20 @@
     }
     if (!wantsPlayback()) { audio.pause(); return; }
     if (audio.paused && !playPending && audio.readyState >= 2 && !audio.seeking) {
-      const attempt = { media: currentMedia, generation: lastGeneration, auth: authGeneration };
+      const attempt = { media: currentMedia, generation: lastGeneration, auth: authGeneration, gesture: playbackGesture };
       playPending = attempt;
       audio.play().then(() => {
         if (!wantsPlayback()) audio.pause();
       }).catch(error => {
         if (playPending !== attempt || attempt.media !== currentMedia || attempt.generation !== lastGeneration || attempt.auth !== authGeneration) return;
-        if (error.name === 'NotAllowedError') { gestureBlocked = true; audio.pause(); }
+        if (error.name === 'NotAllowedError') { gestureBlocked = attempt.gesture === playbackGesture; audio.pause(); }
       }).finally(() => {
-        if (playPending === attempt) playPending = null;
+        if (playPending === attempt) {
+          playPending = null;
+          // A page gesture may precede an older play() promise's rejection.
+          // Retry it once with current activation, then honor any new denial.
+          if (attempt.gesture !== playbackGesture && !gestureBlocked) align();
+        }
         paint();
       });
     }
@@ -185,12 +194,13 @@
     const names = { CONNECTED: '대기 중', NEEDS_GESTURE: '재생 대기', LOADING: '대기 중', PREPARED: '대기 중', PLAYING: '재생 중', PAUSED: '일시 정지', BUFFERING: '버퍼링 중', FAILED: '오디오 오류' };
     setText('audio-status', !healthy ? '연결 대기' : !leader ? '다른 창에서 재생 중' : names[s]);
     $('playback').hidden = !authValid || !leader || !r || !currentMedia;
-    const playbackLabel = userPaused || gestureBlocked ? '재생' : '일시 정지';
+    const playbackLabel = userPaused || gestureBlocked || audio.paused && !playPending ? '재생' : '일시 정지';
     setText('playback', playbackLabel); $('playback').setAttribute('aria-label', playbackLabel);
     if (r) {
       const progress = Math.max(0, Math.min(r.clipEndMs - r.clipStartMs, expected(r) - r.clipStartMs));
-      $('progress').max = r.clipEndMs - r.clipStartMs; $('progress').value = progress;
-      $('elapsed').textContent = format(progress); $('remaining').textContent = format(r.clipEndMs - r.clipStartMs - progress);
+      const rate = playbackRate(r);
+      $('progress').max = (r.clipEndMs - r.clipStartMs) / rate; $('progress').value = progress / rate;
+      $('elapsed').textContent = format(progress / rate); $('remaining').textContent = format(Math.ceil((r.clipEndMs - r.clipStartMs - progress) / rate));
       $('countdown').textContent = r.playing && now() < r.anchorAtMs ? String(Math.ceil((r.anchorAtMs - now()) / 1000)) : '';
     } else { $('progress').value = 0; $('elapsed').textContent = '0:00'; $('remaining').textContent = '—'; $('countdown').textContent = ''; }
     void report(s);
@@ -233,18 +243,18 @@
       await calibrate(); const next = await request('/api/v1/state'); if (generation !== authGeneration) return; apply(next); connect(); void report();
     } catch (error) { if (error.status !== 401) { message('연결을 확인할 수 없습니다'); $('audio-status').textContent = '연결 대기'; } }
   }
-  $('playback').addEventListener('click', () => {
-    if (userPaused || gestureBlocked) { userPaused = false; gestureBlocked = false; align(); }
+  $('playback').addEventListener('click', event => {
+    if (userPaused || gestureBlocked || audio.paused && !playPending) { userPaused = false; gestureBlocked = false; if (event.isTrusted) playbackGesture++; align(); }
     else { userPaused = true; playPending = null; audio.pause(); }
     paint();
   });
   const retryGesture = event => {
-    if (!event.isTrusted || event.repeat || !gestureBlocked || userPaused || event.target?.closest?.('#playback, #takeover, #logout, #reconnect')) return;
+    if (!event.isTrusted || event.repeat || userPaused || event.target?.closest?.('#playback, #takeover, #logout')) return;
     if (event.type === 'keydown' && (event.ctrlKey || event.metaKey || event.altKey || ['Shift', 'Control', 'Alt', 'Meta', 'Tab'].includes(event.key))) return;
-    gestureBlocked = false; align(); paint();
+    playbackGesture++; gestureBlocked = false; align(); paint();
   };
   for (const event of ['pointerup', 'click', 'keydown']) document.addEventListener(event, retryGesture);
-  $('takeover').addEventListener('click', async () => { leader = true; takeover = true; clientLeaseUntil = 0; gestureBlocked = false; await report(); if (leader && authValid && now() < clientLeaseUntil) { $('takeover').hidden = true; align(); paint(); } });
+  $('takeover').addEventListener('click', async event => { leader = true; takeover = true; clientLeaseUntil = 0; gestureBlocked = false; if (event.isTrusted) playbackGesture++; await report(); if (leader && authValid && now() < clientLeaseUntil) { $('takeover').hidden = true; align(); paint(); } });
   $('volume').addEventListener('input', () => { volume = Number($('volume').value); audio.volume = volume / 100; audio.muted = volume === 0; $('volume-value').value = String(volume); localStorage.setItem('noqui-volume', String(volume)); $('mute').setAttribute('aria-pressed', String(audio.muted)); });
   $('mute').addEventListener('click', () => { audio.muted = !audio.muted; $('mute').textContent = audio.muted ? '음소거' : '소리'; $('mute').setAttribute('aria-pressed', String(audio.muted)); });
   $('reconnect').addEventListener('click', () => { if (authValid) { void refreshState(); connect(); } else void boot(); });
