@@ -108,6 +108,7 @@ impl Fixture {
             anchor_position_ms: 0,
             anchor_at_ms: self.app.now() + 3000,
             playing: s.rooms[0].phase != "PREPARING",
+            playback_rate: 1,
         });
     }
     fn sync_direct(&self, s: Snapshot, media: Option<Media>) -> Value {
@@ -606,6 +607,141 @@ async fn signed_bridge_rejects_tamper_nonce_replay_old_timestamp_and_unknown_sch
 }
 fn body_from_snapshot(f: &Fixture, n: u64) -> Vec<u8> {
     serde_json::to_vec(&f.snapshot(n, "IDLE")).unwrap()
+}
+
+#[tokio::test]
+async fn playback_rate_defaults_to_one_projects_two_and_rejects_other_values() {
+    for rate in [None, Some(json!(1)), Some(json!(2))] {
+        let f = Fixture::new();
+        f.seed();
+        let mut snapshot = f.snapshot(1, "PREPARING");
+        f.round(&mut snapshot);
+        let mut value = serde_json::to_value(snapshot).unwrap();
+        match &rate {
+            Some(rate) => value["rooms"][0]["round"]["playbackRate"] = rate.clone(),
+            None => {
+                value["rooms"][0]["round"]
+                    .as_object_mut()
+                    .unwrap()
+                    .remove("playbackRate");
+            }
+        }
+        let bytes = serde_json::to_vec(&value).unwrap();
+        assert_eq!(
+            call(
+                api::internal(f.app.clone()),
+                f.signed("POST", "/internal/v1/sync", &bytes)
+            )
+            .await
+            .0,
+            StatusCode::OK
+        );
+        let (cookie, _) = f.login();
+        let (status, _, body) =
+            call(api::public(f.app.clone()), get("/api/v1/state", &cookie)).await;
+        assert_eq!(status, StatusCode::OK);
+        let public: Value = serde_json::from_slice(&body).unwrap();
+        assert_eq!(public["round"]["playbackRate"], rate.unwrap_or(json!(1)));
+        assert_eq!(public["round"]["clipEndMs"], 115000);
+        assert_eq!(public["media"]["durationMs"], 115000);
+    }
+    for rate in [
+        json!(0),
+        json!(3),
+        json!(-1),
+        json!(1.5),
+        json!(1.0),
+        json!(2.0),
+        json!("2"),
+        json!(null),
+        json!(256),
+    ] {
+        let f = Fixture::new();
+        f.seed();
+        let mut snapshot = f.snapshot(1, "PREPARING");
+        f.round(&mut snapshot);
+        let mut value = serde_json::to_value(snapshot).unwrap();
+        value["rooms"][0]["round"]["playbackRate"] = rate;
+        let bytes = serde_json::to_vec(&value).unwrap();
+        let status = call(
+            api::internal(f.app.clone()),
+            f.signed("POST", "/internal/v1/sync", &bytes),
+        )
+        .await
+        .0;
+        assert!(status == StatusCode::BAD_REQUEST || status == StatusCode::UNPROCESSABLE_ENTITY);
+        assert!(f.app.inner.lock().unwrap().snapshot.is_none());
+    }
+}
+
+#[tokio::test]
+async fn double_speed_keeps_source_readiness_pause_resume_bounds_and_freezes_rate_per_round() {
+    let f = Fixture::new();
+    let media = f.seed();
+    let mut snapshot = f.snapshot(1, "PREPARING");
+    f.round(&mut snapshot);
+    let round = snapshot.rooms[0].round.as_mut().unwrap();
+    round.playback_rate = 2;
+    round.anchor_position_ms = 90000;
+    f.sync_direct(snapshot, Some(media.clone()));
+    let (cookie, csrf) = f.login();
+    let report = Request::builder().method("POST").uri("/api/v1/playback")
+        .header("cookie", &cookie).header("origin", noqui_web::ORIGIN).header("content-type", "application/json").header("x-noqui-csrf", csrf)
+        .body(Body::from(json!({"clientId":uuid::Uuid::new_v4(),"takeOver":false,"roundId":ROUND,"roundRevision":"1","playbackGeneration":GENERATION,"status":"PREPARED","positionMs":90000,"bufferedUntilMs":91000,"lastEventId":null}).to_string())).unwrap();
+    assert_eq!(
+        call(api::public(f.app.clone()), report).await.0,
+        StatusCode::OK
+    );
+    let mut paused = f.snapshot(2, "PAUSED");
+    f.round(&mut paused);
+    let round = paused.rooms[0].round.as_mut().unwrap();
+    round.playback_rate = 2;
+    round.playing = false;
+    round.anchor_position_ms = 90000;
+    let feedback = f.sync_direct(paused.clone(), Some(media.clone()));
+    assert_eq!(feedback["browsers"][0]["positionMs"], 90000);
+    assert_eq!(feedback["browsers"][0]["status"], "PREPARED");
+    let mut resumed = f.snapshot(3, "COUNTDOWN");
+    f.round(&mut resumed);
+    let round = resumed.rooms[0].round.as_mut().unwrap();
+    round.playback_rate = 2;
+    round.anchor_position_ms = 90000;
+    round.anchor_at_ms = START + 3000;
+    f.sync_direct(resumed.clone(), Some(media.clone()));
+    let (_, _, body) = call(api::public(f.app.clone()), get("/api/v1/state", &cookie)).await;
+    let public: Value = serde_json::from_slice(&body).unwrap();
+    assert_eq!(public["round"]["anchorPositionMs"], 90000);
+    assert_eq!(public["round"]["playbackRate"], 2);
+    assert_eq!(public["round"]["anchorAtMs"], START + 3000);
+    assert_eq!(public["round"]["clipEndMs"], 115000);
+    let mut invalid = resumed.clone();
+    invalid.rooms[0].round.as_mut().unwrap().anchor_position_ms = 115001;
+    let map = HashMap::from([(media.id.clone(), media.clone())]);
+    assert_eq!(
+        noqui_web::state::validate(&invalid, &map, START)
+            .unwrap_err()
+            .code,
+        "INVALID_TIMELINE"
+    );
+    let mut changed = resumed;
+    changed.seq = "4".into();
+    changed.rooms[0].room_revision = "4".into();
+    let round = changed.rooms[0].round.as_mut().unwrap();
+    round.revision = "4".into();
+    round.playback_rate = 1;
+    let bytes = serde_json::to_vec(&changed).unwrap();
+    assert_eq!(
+        f.app
+            .inner
+            .lock()
+            .unwrap()
+            .sync(changed.clone(), auth::digest(&bytes), map, START)
+            .unwrap_err()
+            .code,
+        "REVISION_CONFLICT"
+    );
+    changed.rooms[0].round.as_mut().unwrap().round_id = uuid::Uuid::new_v4().to_string();
+    f.sync_direct(changed, Some(media));
 }
 
 #[tokio::test]

@@ -77,6 +77,11 @@ pub struct Round {
     pub anchor_position_ms: i64,
     pub anchor_at_ms: i64,
     pub playing: bool,
+    #[serde(default = "normal_playback_rate")]
+    pub playback_rate: u8,
+}
+fn normal_playback_rate() -> u8 {
+    1
 }
 #[derive(Clone, Serialize, Deserialize, Debug, PartialEq)]
 #[serde(rename_all = "camelCase", deny_unknown_fields)]
