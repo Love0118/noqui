@@ -14,6 +14,9 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.function.Consumer;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
+import org.bukkit.NamespacedKey;
+import org.bukkit.Registry;
+import org.bukkit.attribute.Attribute;
 import org.bukkit.entity.Player;
 import org.junit.jupiter.api.*;
 import org.mockito.MockedStatic;
@@ -35,7 +38,17 @@ class NoquiDialogsTest {
     private NoquiDialogs view;
     @BeforeEach @SuppressWarnings({"unchecked","rawtypes"}) void setup() {
         registryMock=mockStatic(RegistryAccess.class);var registryAccess=mock(RegistryAccess.class);registryMock.when(RegistryAccess::registryAccess).thenReturn(registryAccess);
-        org.mockito.stubbing.Answer<Object> registry=call->java.lang.reflect.Proxy.newProxyInstance(org.bukkit.Registry.class.getClassLoader(),new Class[]{org.bukkit.Registry.class},(proxy,method,args)->method.getName().equals("iterator")?List.of().iterator():null);
+        // Registry.ATTRIBUTE is cached for the JVM when any Registry proxy initializes the interface.
+        // A dialog-only empty proxy would poison later Attribute constants when this class runs first.
+        Map<String,Attribute> attributes=new HashMap<>();
+        org.mockito.stubbing.Answer<Object> registry=call->{
+            boolean attributeRegistry=call.getArgument(0)==Attribute.class||call.getArgument(0)==RegistryKey.ATTRIBUTE;
+            return java.lang.reflect.Proxy.newProxyInstance(Registry.class.getClassLoader(),new Class[]{Registry.class},(proxy,method,args)->{
+                if(attributeRegistry&&(method.getName().equals("get")||method.getName().equals("getOrThrow")))
+                    return attributes.computeIfAbsent(args[0].toString(),key->mock(Attribute.class));
+                return method.getName().equals("iterator")?List.of().iterator():null;
+            });
+        };
         when(registryAccess.getRegistry(any(Class.class))).thenAnswer(registry);
         when(registryAccess.getRegistry(any(RegistryKey.class))).thenAnswer(registry);
         // Initialize the built-in Dialog constants under the same registry boundary as Paper.
@@ -77,6 +90,12 @@ class NoquiDialogsTest {
     private List<String> labels(MultiActionType type){var labels=new ArrayList<>(type.actions().stream().map(b->plain(b.label())).toList());labels.add(plain(type.exitAction().label()));assertTrue(labels.size()<=4);return labels;}
     private String body(){return dialogs.getLast().base().body().stream().map(b->plain(((PlainMessageDialogBody)b).contents())).collect(java.util.stream.Collectors.joining("\n"));}
     private void submit(UUID owner){game.submit(owner,game.snapshot().revision(),Song.input("https://youtu.be/BaW_jenozKc","Private","tag"));}
+    @Test void dialogRegistryLeavesNativeAttributeConstantsUsable() {
+        assertNotNull(Attribute.GRAVITY);assertNotNull(Attribute.MOVEMENT_SPEED);
+        assertNotSame(Attribute.GRAVITY,Attribute.MOVEMENT_SPEED);
+        assertSame(Attribute.GRAVITY,Registry.ATTRIBUTE.getOrThrow(NamespacedKey.minecraft("gravity")));
+        assertSame(Attribute.MOVEMENT_SPEED,Registry.ATTRIBUTE.getOrThrow(NamespacedKey.minecraft("movement_speed")));
+    }
     @Test void zeroBalanceIsTextAndBrowserIsTheOnlyAction() {
         assertEquals(List.of("브라우저 연결","닫기"),labels(show()));assertTrue(body().isEmpty());
     }
