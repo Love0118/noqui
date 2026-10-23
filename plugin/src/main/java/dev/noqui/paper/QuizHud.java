@@ -1,6 +1,5 @@
 package dev.noqui.paper;
 
-import io.papermc.paper.scoreboard.numbers.NumberFormat;
 import java.time.Duration;
 import java.util.*;
 import net.kyori.adventure.bossbar.BossBar;
@@ -13,10 +12,6 @@ import net.kyori.adventure.text.format.TextColor;
 import net.kyori.adventure.title.Title;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
-import org.bukkit.scoreboard.DisplaySlot;
-import org.bukkit.scoreboard.Objective;
-import org.bukkit.scoreboard.RenderType;
-import org.bukkit.scoreboard.Scoreboard;
 
 /** Main-thread presentation only. The game owns timing; this class never schedules work. */
 final class QuizHud implements AutoCloseable {
@@ -33,7 +28,6 @@ final class QuizHud implements AutoCloseable {
         }
     }
 
-    private static final String OBJECTIVE = "noqui_hud";
     private static final TextColor ORIGINAL_FRAME = TextColor.color(0x8aaae5);
     private static final TextColor ORIGINAL_WINNER = TextColor.color(0xb2f9e8);
     private static final TextColor ORIGINAL_WHITE = TextColor.color(0xfefefe);
@@ -46,7 +40,7 @@ final class QuizHud implements AutoCloseable {
     private static final class View {
         final Player player;
         boolean immersive = true;
-        Pane pane;
+        Tab tab;
         final BossBar bar = BossBar.bossBar(Component.text("노래퀴즈"), 0, BossBar.Color.WHITE, BossBar.Overlay.PROGRESS);
         int round, total, countdown = -1, countdownRound = -1, countdownTotal = -1;
         String phase = "";
@@ -55,23 +49,13 @@ final class QuizHud implements AutoCloseable {
         View(Player player) { this.player = player; }
     }
 
-    /** One immersive ownership interval; a later interval captures fresh external state. */
-    private static final class Pane {
-        final Scoreboard previousBoard, board;
-        final Objective objective;
+    /** A fresh TAB ownership interval starts whenever immersion resumes. */
+    private static final class Tab {
         final Component previousListName;
         Component listName;
         boolean listAbandoned;
-        List<Component> rows = List.of();
-
-        Pane(Player player, Scoreboard board, Objective objective) {
-            this.previousBoard = player.getScoreboard();
-            this.previousListName = player.playerListName();
-            this.board = board;
-            this.objective = objective;
-        }
+        Tab(Player player) { previousListName=player.playerListName(); }
     }
-
     private record Reveal(int round, int total, String title, List<String> tags, List<String> winners, boolean skipped) {}
     private record Ranked(UUID id, String name, int score) {}
 
@@ -96,8 +80,8 @@ final class QuizHud implements AutoCloseable {
         if (view == null || view.immersive == immersive) return;
         view.immersive = immersive;
         view.countdown = -1;
-        if (immersive) claimPane(view);
-        else releasePane(view);
+        if (immersive) claimTab(view);
+        else releaseTab(view);
     }
 
     void render(Player player, Frame frame, int score, long credits) {
@@ -111,39 +95,22 @@ final class QuizHud implements AutoCloseable {
         view.phase = frame.phase();
         boolean revealed = frame.phase().equals("REVEAL");
         String rounds = rounds(view.round, view.total);
-        String time = time(frame.remainingMs());
-        String label = phase(frame.phase());
-        Component bar = white(rounds).append(gray(" · " + label + " · " + time));
-        if (revealed && !frame.answerTitle().isBlank()) bar = bar.append(gray(" · ")).append(white(shortText(frame.answerTitle(), 40)));
-        if (!view.immersive) {
-            bar = bar.append(gray(" · " + score + "점 · 출제권 " + Math.max(0, credits)
-                    + " · 스킵 " + Math.max(0, frame.skipVotes()) + "/" + Math.max(0, frame.skipRequired())));
-            if (!frame.presenter().isBlank()) bar = bar.append(gray(" · 출제 " + shortText(frame.presenter(), 16)));
-            if (frame.phase().equals("PLAYING") && !frame.hint().isBlank())
-                bar = bar.append(gray(" · 힌트 ")).append(white(shortText(frame.hint(), 24)));
+        boolean waiting=frame.phase().equals("PREPARING") || frame.phase().equals("WAITING_FOR_MEDIA");
+        Component bar=white(rounds).append(gray(" · "+phase(frame.phase())));
+        if(!waiting)bar=bar.append(gray(" · "+time(frame.remainingMs())));
+        bar=bar.append(gray(" · "+score+"점"));
+        if(!waiting) {
+            bar=bar.append(gray(" · 스킵 "+Math.max(0,frame.skipVotes())+"/"+Math.max(0,frame.skipRequired())));
+            if(!frame.presenter().isBlank())bar=bar.append(gray(" · 출제 "+shortText(frame.presenter(),16)));
         }
+        if(revealed && !frame.answerTitle().isBlank())bar=bar.append(gray(" · ")).append(white(shortText(frame.answerTitle(),40)));
+        if(!view.immersive && frame.phase().equals("PLAYING") && !frame.hint().isBlank())
+            bar=bar.append(gray(" · 힌트 ")).append(white(shortText(frame.hint(),24)));
         view.bar.name(bar);
-        view.bar.progress(frame.durationMs() <= 0 ? 0 : (float) Math.clamp((double) frame.remainingMs() / frame.durationMs(), 0, 1));
-        if (!view.immersive) return;
-        claimPane(view);
-
-        var rows = new ArrayList<Component>();
-        rows.add(line("라운드", rounds));
-        rows.add(line("상태", label));
-        rows.add(line("남은 시간", time));
-        rows.add(line("점수", Integer.toString(score)));
-        rows.add(line("출제권", Long.toString(Math.max(0, credits))));
-        rows.add(line("스킵", Math.max(0, frame.skipVotes()) + " / " + Math.max(0, frame.skipRequired())));
-        rows.add(line("출제자", frame.presenter().isBlank() ? "대기" : shortText(frame.presenter(), 24)));
-        rows.add(line("힌트", frame.hint().isBlank() ? "—" : shortText(frame.hint(), 40)));
-        // Private answer fields are deliberately never read into pre-reveal components.
-        if (revealed) {
-            rows.add(line("정답", shortText(frame.answerTitle(), 40)));
-            rows.add(line("정답자", frame.winners().isEmpty() ? "없음" : shortText(String.join(", ", frame.winners()), 40)));
-            if (!frame.tags().isEmpty()) rows.add(line("태그", shortText(String.join(" · ", frame.tags()), 40)));
-        }
-        if (ownsBoard(view)) updateRows(view.pane, rows);
-        updateListName(view, score);
+        view.bar.progress(waiting || frame.durationMs()<=0?0:(float)Math.clamp((double)frame.remainingMs()/frame.durationMs(),0,1));
+        if(!view.immersive)return;
+        claimTab(view);
+        updateListName(view,score);
         if (frame.phase().equals("PLAYING") && !frame.hint().isBlank())
             player.sendActionBar(Component.text("[힌트] ",NamedTextColor.YELLOW).decorate(TextDecoration.BOLD)
                     .append(white(frame.hint()).decorate(TextDecoration.BOLD)));
@@ -253,34 +220,11 @@ final class QuizHud implements AutoCloseable {
         return view != null && view.player == player ? view : null;
     }
 
-    private static boolean ownsBoard(View view) {
-        Pane pane = view.pane;
-        return pane != null && view.player.getScoreboard() == pane.board && pane.board.getObjective(DisplaySlot.SIDEBAR) == pane.objective;
+    private static void claimTab(View view) {
+        if(view.tab==null)view.tab=new Tab(view.player);
     }
-
-    private static void claimPane(View view) {
-        if (view.pane != null) return;
-        Scoreboard board = Objects.requireNonNull(Bukkit.getScoreboardManager(), "Scoreboard manager unavailable").getNewScoreboard();
-        Objective objective = board.registerNewObjective(OBJECTIVE, "dummy", white("노래퀴즈"), RenderType.INTEGER);
-        objective.numberFormat(NumberFormat.blank());
-        objective.setDisplaySlot(DisplaySlot.SIDEBAR);
-        view.pane = new Pane(view.player, board, objective);
-        view.player.setScoreboard(board);
-    }
-
-    private static void updateRows(Pane view, List<Component> rows) {
-        for (int i = 0; i < rows.size(); i++) {
-            if (i < view.rows.size() && rows.get(i).equals(view.rows.get(i))) continue;
-            var score = view.objective.getScore("noqui_row_" + i);
-            score.customName(rows.get(i));
-            score.setScore(15 - i);
-        }
-        for (int i = rows.size(); i < view.rows.size(); i++) view.board.resetScores("noqui_row_" + i);
-        view.rows = List.copyOf(rows);
-    }
-
     private static void updateListName(View view, int score) {
-        Pane pane = view.pane;
+        Tab pane = view.tab;
         if (pane.listAbandoned) return;
         Component expected = pane.listName == null ? pane.previousListName : pane.listName;
         if (!Objects.equals(view.player.playerListName(), expected)) {
@@ -297,20 +241,17 @@ final class QuizHud implements AutoCloseable {
 
     private static void release(View view) {
         view.player.hideBossBar(view.bar);
-        releasePane(view);
+        releaseTab(view);
         // Titles/actionbars have no readable ownership handle: let their finite lifetime expire.
     }
 
-    private static void releasePane(View view) {
-        Pane pane = view.pane;
-        if (pane == null) return;
-        if (ownsBoard(view)) view.player.setScoreboard(pane.previousBoard);
-        if (pane.listName != null && Objects.equals(view.player.playerListName(), pane.listName))
-            view.player.playerListName(pane.previousListName);
-        if (pane.board.getObjective(OBJECTIVE) == pane.objective) pane.objective.unregister();
-        view.pane = null;
+    private static void releaseTab(View view) {
+        Tab tab=view.tab;
+        if(tab==null)return;
+        if(tab.listName!=null && Objects.equals(view.player.playerListName(),tab.listName))
+            view.player.playerListName(tab.previousListName);
+        view.tab=null;
     }
-
     private String playerName(UUID id) {
         View view = views.get(id);
         String name = view == null ? null : view.player.getName();
@@ -326,8 +267,8 @@ final class QuizHud implements AutoCloseable {
             case "PLAYING" -> "정답 대기";
             case "PAUSED" -> "일시정지";
             case "REVEAL" -> "정답 공개";
-            case "WAITING_FOR_MEDIA" -> "오디오 준비";
-            case "PREPARING" -> "재생 준비";
+            case "WAITING_FOR_MEDIA" -> "대기";
+            case "PREPARING" -> "대기";
             case "COUNTDOWN" -> "시작 대기";
             case "WAITING_FOR_CREDITS" -> "출제권 대기";
             case "WAITING_FOR_SUBMISSION", "WAITING_FOR_PRESENTER" -> "출제 대기";
@@ -349,7 +290,6 @@ final class QuizHud implements AutoCloseable {
         String value = text.codePoints().filter(c -> !Character.isISOControl(c)).collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append).toString();
         return value.codePointCount(0, value.length()) <= limit ? value : value.substring(0, value.offsetByCodePoints(0, limit)) + "…";
     }
-    private static Component line(String label, String value) { return gray(label + " ").append(white(value)); }
     private static Component white(String text) { return Component.text(text, NamedTextColor.WHITE); }
     private static Component gray(String text) { return Component.text(text, NamedTextColor.GRAY); }
     private static Component original(String text){return Component.text(text,ORIGINAL_WHITE).decorate(TextDecoration.BOLD);}

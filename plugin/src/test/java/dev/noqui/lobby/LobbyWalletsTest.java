@@ -18,8 +18,8 @@ class LobbyWalletsTest {
         assertThrows(IllegalArgumentException.class,()->w.purchase(id,product("hammer"),Currency.STARLIGHT,"buy"));
         w.reward(id,"points",100,Currency.POINTS);
         assertThrows(IllegalArgumentException.class,()->w.purchase(id,product("question_credit"),Currency.POINTS,"credit"));
-        assertThrows(IllegalArgumentException.class,()->w.purchase(id,product("glasses"),Currency.POINTS,"cosmetic"));
-        assertEquals(100,w.wallet(id).points());assertTrue(w.pending().isEmpty());
+        w.purchase(id,product("glasses"),Currency.POINTS,"cosmetic");
+        assertEquals(98,w.wallet(id).points());assertEquals(1,w.wallet(id).owned().get("glasses"));assertTrue(w.pending().isEmpty());
     }
     @Test void rewardAndPurchaseReplayAreDurableAndConflictsRejected()throws Exception {
         Path file=dir.resolve("wallet");LobbyWallets w=new LobbyWallets(file);
@@ -27,7 +27,7 @@ class LobbyWalletsTest {
         assertThrows(IllegalArgumentException.class,()->w.reward(id,"stars",21,Currency.STARLIGHT));
         w.purchase(id,product("hammer"),Currency.STARLIGHT,"purchase");w.purchase(id,product("hammer"),Currency.STARLIGHT,"purchase");
         LobbyWallets again=new LobbyWallets(file);again.purchase(id,product("hammer"),Currency.STARLIGHT,"purchase");
-        assertEquals(17,again.wallet(id).stars());assertEquals(1,again.wallet(id).owned().get("hammer"));
+        assertEquals(10,again.wallet(id).stars());assertEquals(1,again.wallet(id).owned().get("hammer"));
         assertThrows(IllegalArgumentException.class,()->again.purchase(id,product("hammer"),Currency.POINTS,"purchase"));
     }
     @Test void paidCreditOutboxSurvivesRestartAndAckPersists()throws Exception {
@@ -57,8 +57,8 @@ class LobbyWalletsTest {
     }
     @Test void duplicateDurablesAndOverflowFailClosed()throws Exception {
         LobbyWallets w=new LobbyWallets(dir.resolve("wallet"));w.reward(id,"seed",100,Currency.STARLIGHT);w.purchase(id,product("glasses"),Currency.STARLIGHT,"one");
-        assertThrows(IllegalArgumentException.class,()->w.purchase(id,product("glasses"),Currency.STARLIGHT,"two"));assertEquals(88,w.wallet(id).stars());
-        assertThrows(ArithmeticException.class,()->w.reward(id,"overflow",Long.MAX_VALUE,Currency.STARLIGHT));assertEquals(88,w.wallet(id).stars());
+        assertThrows(IllegalArgumentException.class,()->w.purchase(id,product("glasses"),Currency.STARLIGHT,"two"));assertEquals(80,w.wallet(id).stars());
+        assertThrows(ArithmeticException.class,()->w.reward(id,"overflow",Long.MAX_VALUE,Currency.STARLIGHT));assertEquals(80,w.wallet(id).stars());
         assertThrows(IllegalArgumentException.class,()->w.reward(id,"negative",-1,Currency.STARLIGHT));
     }
 }

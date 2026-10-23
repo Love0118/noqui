@@ -6,6 +6,7 @@ import static org.mockito.Mockito.*;
 import java.util.*;
 import java.util.function.Consumer;
 import io.papermc.paper.datacomponent.item.ResolvableProfile;
+import com.destroystokyo.paper.SkinParts;
 import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.entity.*;
@@ -17,6 +18,14 @@ import org.junit.jupiter.api.*;
 import org.mockito.*;
 
 class LobbyVisualsTest {
+    MockedStatic<SkinParts> skinFactory;
+    SkinParts.Mutable allParts;
+    @BeforeEach void skinFactory(){
+        // Paper's public factory delegates to the running server, just like ResolvableProfile.
+        skinFactory=mockStatic(SkinParts.class);allParts=mock(SkinParts.Mutable.class);
+        skinFactory.when(SkinParts::allParts).thenReturn(allParts);
+    }
+    @AfterEach void closeSkinFactory(){skinFactory.close();}
     @Test @SuppressWarnings("unchecked") void mannequinDeduplicatesAndUsesBundledSlimSkinWithoutExternalProfileService() {
         World world=mock(World.class);WorldBorder border=mock(WorldBorder.class);Block air=mock(Block.class),floor=mock(Block.class);Chunk chunk=mock(Chunk.class);
         Material solid=mock(Material.class);when(solid.isSolid()).thenReturn(true);
@@ -34,7 +43,9 @@ class LobbyVisualsTest {
             ShopNpc npc=new ShopNpc(world,409.5,11,-205.5);npc.ensure();npc.ensure();
             verify(duplicate,times(1)).remove();verify(foreign,never()).remove();verify(first,times(1)).setProfile(profile);
             verify(patch).body(net.kyori.adventure.key.Key.key("noqui:entity/shopkeeper"));verify(patch).model(PlayerTextures.SkinModel.SLIM);
+            skinFactory.verify(SkinParts::allParts,times(1));verify(first).setSkinParts(allParts);
             verify(first).setImmovable(true);verify(first).setPersistent(true);verify(first).setInvulnerable(true);
+            verify(first).customName(net.kyori.adventure.text.Component.text("상점"));
             assertTrue(LobbyFeatures.ownsEntity(first));assertFalse(LobbyFeatures.ownsEntity(foreign));
         }
     }
@@ -58,6 +69,7 @@ class LobbyVisualsTest {
         try(var profiles=mockStatic(ResolvableProfile.class)) {
             var builder=mock(ResolvableProfile.Builder.class,RETURNS_SELF);profiles.when(ResolvableProfile::resolvableProfile).thenReturn(builder);when(builder.build()).thenReturn(mock(ResolvableProfile.class));
             ShopNpc npc=new ShopNpc(world,409.5,11,-205.5);npc.ensure();npc.ensure();verify(world,times(1)).spawn(any(Location.class),eq(Mannequin.class),any(Consumer.class));
+            verify(fresh).customName(net.kyori.adventure.text.Component.text("상점"));
         }
     }
 

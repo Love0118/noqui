@@ -79,16 +79,26 @@ def attached(name):
 
 def skin_elements():
     tex=np.asarray(Image.open(PACK/'assets/noqui/textures/entity/shopkeeper.png').convert('RGBA'))
-    def part(a,b,x,y,w,h,d,expand=0):
+    def part(name,a,b,x,y,w,h,d,expand=0):
         # Player UV is unfolded right/front/left/back with top and bottom above.
-        rects={'up':[x+d,y,x+d+w,y+d],'down':[x+d+w,y,x+d+2*w,y+d],
+        rects={'up':[x+d,y,x+d+w,y+d],'down':[x+d+w,y+d,x+d+2*w,y],
                'west':[x,y+d,x+d,y+d+h],'south':[x+d,y+d,x+d+w,y+d+h],
                'east':[x+d+w,y+d,x+2*d+w,y+d+h],'north':[x+2*d+w,y+d,x+2*d+2*w,y+d+h]}
-        return {'from':[v-expand for v in a],'to':[v+expand for v in b],'faces':{f:{'uv':[v/4 for v in uv]} for f,uv in rects.items()},'_texture':tex}
-    return [part([-4,24,-4],[4,32,4],0,0,8,8,8),part([-4,12,-2],[4,24,2],16,16,8,12,4),
-            part([-7,12,-2],[-4,24,2],40,16,3,12,4),part([4,12,-2],[7,24,2],32,48,3,12,4),
-            part([-4,0,-2],[0,12,2],0,16,4,12,4),part([0,0,-2],[4,12,2],16,48,4,12,4),
-            part([-4,24,-4],[4,32,4],32,0,8,8,8,.18)]
+        return {'from':[v-expand for v in a],'to':[v+expand for v in b],'faces':{f:{'uv':[v/4 for v in uv]} for f,uv in rects.items()},'_texture':tex,'_part':'root/'+name}
+    # Native 26.3 PlayerModel: all twelve parts, 0.5 hat / 0.25 clothing inflation,
+    # and legs centered at +/-1.9. Overlay UVs must never be omitted from visual QA.
+    return [part('head',[-4,24,-4],[4,32,4],0,0,8,8,8),
+            part('body',[-4,12,-2],[4,24,2],16,16,8,12,4),
+            part('right_arm',[-7,12,-2],[-4,24,2],40,16,3,12,4),
+            part('left_arm',[4,12,-2],[7,24,2],32,48,3,12,4),
+            part('right_leg',[-3.9,0,-2],[.1,12,2],0,16,4,12,4),
+            part('left_leg',[-.1,0,-2],[3.9,12,2],16,48,4,12,4),
+            part('head/hat',[-4,24,-4],[4,32,4],32,0,8,8,8,.5),
+            part('body/jacket',[-4,12,-2],[4,24,2],16,32,8,12,4,.25),
+            part('right_arm/right_sleeve',[-7,12,-2],[-4,24,2],40,32,3,12,4,.25),
+            part('left_arm/left_sleeve',[4,12,-2],[7,24,2],48,48,3,12,4,.25),
+            part('right_leg/right_pants',[-3.9,0,-2],[.1,12,2],0,32,4,12,4,.25),
+            part('left_leg/left_pants',[-.1,0,-2],[3.9,12,2],0,48,4,12,4,.25)]
 
 def sheet(worn=False):
     width,height=1440,1140 if worn else 1020;cellw=360;cellh=335 if worn else 295
@@ -106,7 +116,7 @@ def sheet(worn=False):
 def skin_sheet():
     image=Image.new('RGB',(1060,800),'#f7f8fa');d=ImageDraw.Draw(image)
     d.text((25,18),'NOQUI / SLIM SHOPKEEPER',font=font(26),fill='#202937')
-    d.text((25,57),'Original64x64 texture: suit, chestnut hair, gold monocle. Front / back / UV.',font=font(15),fill='#647080')
+    d.text((25,57),'Munasharna: navy tuxedo, purple hair, monocle. All 12 native skin parts / front / back / UV.',font=font(15),fill='#647080')
     parts=skin_elements()
     image.paste(render(parts,350,650,(.25,.1,1)),(0,100));image.paste(render(parts,350,650,(-.4,.15,-1)),(350,100))
     skin=Image.open(PACK/'assets/noqui/textures/entity/shopkeeper.png').convert('RGBA').resize((320,320),Image.Resampling.NEAREST)

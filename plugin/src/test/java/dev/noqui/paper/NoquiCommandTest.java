@@ -26,16 +26,16 @@ class NoquiCommandTest {
         var game=game();game.start(List.of(id));set(plugin,"game",game);var hud=mock(QuizHud.class);set(plugin,"hud",hud);doReturn(true).when(plugin).defenseActive(p);
         assertTrue(plugin.routeJoin(p));verify(hud).setImmersive(p,false);verify(p,never()).getInventory();verify(p,never()).setGameMode(any());verify(p,never()).teleport(any(org.bukkit.Location.class));
     }
-    @Test void cabinCompassCallsDirectStartAndNeverLeavesQuizOrOpensDefenseMenu()throws Exception {
+    @Test void cabinCompassOpensExistingMenuWithoutStartingOrLeavingQuiz()throws Exception {
         var plugin=mock(NoquiPlugin.class,CALLS_REAL_METHODS);var p=mock(Player.class);UUID id=UUID.randomUUID();when(p.getUniqueId()).thenReturn(id);when(p.isOnline()).thenReturn(true);
-        doReturn(true).when(plugin).ownsCabin(id);var defense=mock(DefenseService.class);doReturn(defense).when(plugin).defense();plugin.toDefense(p);
-        verify(defense).startGame(p);verify(defense,never()).sendLobby(p);verify(defense,never()).openMenu(p);verify(plugin,never()).leave(p);
+        doReturn(true).when(plugin).ownsCabin(id);var defense=mock(DefenseService.class);doReturn(defense).when(plugin).defense();plugin.openMinigames(p);
+        verify(defense).openMenu(p);verify(defense,never()).sendLobby(p);verify(defense,never()).startGame(p);verify(plugin,never()).leave(p);
     }
     @Test void managementRequiresActualOpWhileParticipantsMayVoteAndLeave()throws Exception {
         var plugin=mock(NoquiPlugin.class,CALLS_REAL_METHODS);var player=mock(Player.class);when(player.hasPermission(anyString())).thenReturn(true);when(player.isOp()).thenReturn(false);set(plugin,"game",game());
         try(var bukkit=mockStatic(Bukkit.class)) {
             for(String command:List.of("start","stop","hint","give","status","pause","resume"))assertTrue(plugin.onCommand(player,null,"noqui",new String[]{command}));
-            assertEquals(List.of("skip","leave"),plugin.onTabComplete(player,null,"noqui",new String[]{""}));bukkit.verifyNoInteractions();verify(player,times(7)).sendMessage(any(net.kyori.adventure.text.Component.class));
+            assertEquals(List.of("skip","bgm","leave"),plugin.onTabComplete(player,null,"noqui",new String[]{""}));bukkit.verifyNoInteractions();verify(player,times(7)).sendMessage(any(net.kyori.adventure.text.Component.class));
         }
     }
     @Test void cabinReleaseFailureRollsBackOwnershipWithoutLeavingMembership()throws Exception {
@@ -63,5 +63,43 @@ class NoquiCommandTest {
         plugin.onCommand(sender,null,"noqui",new String[]{"start"});verify(plugin).start(0);plugin.onCommand(sender,null,"noqui",new String[]{"start","200"});verify(plugin).start(200);
         var services=mock(org.bukkit.plugin.ServicesManager.class);var wallet=mock(dev.noqui.api.LobbyService.class);when(services.load(dev.noqui.api.LobbyService.class)).thenReturn(wallet);
         try(var bukkit=mockStatic(Bukkit.class)){bukkit.when(Bukkit::getServicesManager).thenReturn(services);plugin.onCommand(sender,null,"money",new String[]{});verify(wallet).showMoney(sender);}
+    }
+    @Test void participantBgmCommandTogglesPreferenceWithoutOpeningAnotherDialog()throws Exception {
+        var plugin=mock(NoquiPlugin.class,CALLS_REAL_METHODS);var p=mock(Player.class);UUID id=UUID.randomUUID();when(p.getUniqueId()).thenReturn(id);
+        var game=game();game.start(List.of(id));set(plugin,"game",game);var recovery=mock(PlayerRecovery.class);set(plugin,"recovery",recovery);
+        when(recovery.bgmMuted(p)).thenReturn(false,true);plugin.onCommand(p,null,"noqui",new String[]{"bgm"});plugin.onCommand(p,null,"noqui",new String[]{"bgm"});
+        verify(recovery,times(2)).toggleBgm(p);verify(p).sendMessage(NoquiPlugin.text("BGM ON"));verify(p).sendMessage(NoquiPlugin.text("BGM OFF"));verify(p,never()).showDialog(any());
+        game.leave(id);plugin.onCommand(p,null,"noqui",new String[]{"bgm"});verify(recovery,times(2)).toggleBgm(p);
+    }
+    @Test void onlyExplicitAdminCommandOpensManagementPanel()throws Exception {
+        var plugin=mock(NoquiPlugin.class,CALLS_REAL_METHODS);var p=mock(Player.class);when(p.isOp()).thenReturn(true);set(plugin,"game",game());plugin.dialogs=mock(NoquiDialogs.class);
+        plugin.onCommand(p,null,"noqui",new String[]{"unknown"});verifyNoInteractions(plugin.dialogs);
+        plugin.onCommand(p,null,"noqui",new String[]{"admin"});verify(plugin.dialogs).admin(p);
+    }
+    @Test void ticketFormOpensNextTickOnlyForSameOnlineSessionMembershipAndPhysicalTicket()throws Exception {
+        var plugin=mock(NoquiPlugin.class,CALLS_REAL_METHODS);var p=mock(Player.class);UUID id=UUID.randomUUID();when(p.getUniqueId()).thenReturn(id);when(p.isOnline()).thenReturn(true);
+        var game=game();game.start(List.of(id));set(plugin,"game",game);var tickets=mock(QuestionTickets.class);when(tickets.has(p)).thenReturn(true);set(plugin,"tickets",tickets);plugin.dialogs=mock(NoquiDialogs.class);
+        var entry=new java.util.concurrent.atomic.AtomicReference<>(new BrowserConnections.Entry(game.snapshot().session(),UUID.randomUUID()));doAnswer(c->entry.get()).when(plugin).connectionEntry(id);
+        var tasks=new ArrayDeque<Runnable>();doAnswer(c->{tasks.add(c.getArgument(0));return null;}).when(plugin).main(any());
+        plugin.openTicketForm(p);verify(p,never()).closeInventory();verifyNoInteractions(plugin.dialogs);tasks.remove().run();verify(p).closeInventory();verify(plugin.dialogs).submit(p);
+        plugin.openTicketForm(p);entry.set(null);tasks.remove().run();verify(plugin.dialogs,times(1)).submit(p);
+        plugin.openTicketForm(p);when(p.isOnline()).thenReturn(false);tasks.remove().run();verify(plugin.dialogs,times(1)).submit(p);
+    }
+    @Test void controlCompassAndTicketNamesAndLoreDisableItalicsWhilePreservingColors()throws Exception {
+        var plugin=mock(NoquiPlugin.class,CALLS_REAL_METHODS);doReturn("noqui").when(plugin).namespace();
+        try(var items=mockConstruction(org.bukkit.inventory.ItemStack.class,(item,context)->{
+            var meta=mock(org.bukkit.inventory.meta.ItemMeta.class);var data=mock(org.bukkit.persistence.PersistentDataContainer.class);
+            when(data.getOrDefault(any(),any(),any())).thenAnswer(c->c.getArgument(2));when(meta.getPersistentDataContainer()).thenReturn(data);
+            when(item.getItemMeta()).thenReturn(meta);when(item.hasItemMeta()).thenReturn(true);when(item.getType()).thenReturn((org.bukkit.Material)context.arguments().getFirst());
+            doAnswer(c->{assertEquals(net.kyori.adventure.text.format.TextDecoration.State.FALSE,c.getArgument(0,net.kyori.adventure.text.Component.class).decoration(net.kyori.adventure.text.format.TextDecoration.ITALIC));return null;}).when(meta).displayName(any());
+            doAnswer(c->{List<net.kyori.adventure.text.Component> lore=c.getArgument(0);for(var line:lore)assertEquals(net.kyori.adventure.text.format.TextDecoration.State.FALSE,line.decoration(net.kyori.adventure.text.format.TextDecoration.ITALIC));return null;}).when(meta).lore(anyList());
+        })) {
+            var compass=plugin.minigameCompass();verify(compass.getItemMeta()).displayName(net.kyori.adventure.text.Component.text("미니게임",net.kyori.adventure.text.format.NamedTextColor.AQUA).decoration(net.kyori.adventure.text.format.TextDecoration.ITALIC,false));
+            var controlFactory=NoquiPlugin.class.getDeclaredMethod("tool",org.bukkit.Material.class,String.class,String.class,String.class);controlFactory.setAccessible(true);
+            var controls=(org.bukkit.inventory.ItemStack)controlFactory.invoke(plugin,org.bukkit.Material.PAPER,"controls","노래퀴즈","우클릭 또는 F: 노래퀴즈");
+            verify(controls.getItemMeta()).displayName(net.kyori.adventure.text.Component.text("노래퀴즈").decoration(net.kyori.adventure.text.format.TextDecoration.ITALIC,false));
+            var preview=QuestionTickets.displayItem();verify(preview.getItemMeta()).displayName(net.kyori.adventure.text.Component.text("출제권",net.kyori.adventure.text.format.NamedTextColor.GOLD).decoration(net.kyori.adventure.text.format.TextDecoration.ITALIC,false));
+            assertFalse(QuestionTickets.marked(preview));
+        }
     }
 }

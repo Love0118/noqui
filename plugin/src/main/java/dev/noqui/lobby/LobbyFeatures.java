@@ -1,19 +1,11 @@
 package dev.noqui.lobby;
 
 import dev.noqui.api.LobbyService;
-import io.papermc.paper.dialog.Dialog;
-import io.papermc.paper.dialog.DialogResponseView;
 import io.papermc.paper.event.player.PrePlayerAttackEntityEvent;
-import io.papermc.paper.registry.data.dialog.*;
-import io.papermc.paper.registry.data.dialog.action.DialogAction;
-import io.papermc.paper.registry.data.dialog.body.DialogBody;
-import io.papermc.paper.registry.data.dialog.type.DialogType;
 import java.io.*;
-import java.time.Duration;
 import java.util.*;
 import java.util.function.*;
 import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.event.ClickCallback;
 import org.bukkit.*;
 import org.bukkit.attribute.*;
 import org.bukkit.entity.*;
@@ -21,6 +13,8 @@ import org.bukkit.event.*;
 import org.bukkit.event.entity.*;
 import org.bukkit.event.player.*;
 import org.bukkit.inventory.EquipmentSlot;
+import org.bukkit.inventory.Inventory;
+import org.bukkit.event.inventory.*;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.util.Vector;
 import static dev.noqui.lobby.LobbyCatalog.*;
@@ -44,7 +38,7 @@ public final class LobbyFeatures implements LobbyService, AutoCloseable, Listene
     private final Map<UUID,Long> cooldowns=new HashMap<>(),shopCooldowns=new HashMap<>();
     private final Map<UUID,Projectile> projectiles=new HashMap<>();
     private final Map<UUID,Effect> stuns=new HashMap<>(),frost=new HashMap<>();
-    private final java.util.concurrent.ArrayBlockingQueue<Runnable> dialogActions=new java.util.concurrent.ArrayBlockingQueue<>(256);
+    private final LobbyShop menus;
     private final LobbyMovement movement;
     private final CosmeticDisplays cosmetics;
     private final ShopNpc shop;
@@ -67,11 +61,14 @@ public final class LobbyFeatures implements LobbyService, AutoCloseable, Listene
                     p.points()<0?-1:plugin.getConfig().getLong(root+"points",p.points())));
         }
         movement=new LobbyMovement(cabin);cosmetics=new CosmeticDisplays(plugin,cabin);
+        menus=new LobbyShop(wallets,catalog.values(),p->started&&!closed&&players.get(p.getUniqueId())==p&&p.isOnline()&&!p.isDead()&&p.getWorld()==cabin,this::deliverCredits,plugin.getLogger()::warning);
         shop=new ShopNpc(cabin,plugin.getConfig().getDouble("lobby.shop.x",409.5),plugin.getConfig().getDouble("lobby.shop.y",11),plugin.getConfig().getDouble("lobby.shop.z",-205.5));
     }
 
     /** Spawn consumers mark mannequins before CreatureSpawnEvent. No generic CUSTOM bypass. */
     public static boolean ownsEntity(Entity entity){return entity instanceof Mannequin&&ShopNpc.owned(entity);}
+    /** Narrow integration hook: cabin guards may allow navigation; this menu cancels all transfers. */
+    public static boolean ownsInventory(Inventory inventory){return LobbyShop.owns(inventory);}
 
     public void start() {
         main();if(started||closed)return;
@@ -99,7 +96,7 @@ public final class LobbyFeatures implements LobbyService, AutoCloseable, Listene
     public void tick() {
         main();if(!started||closed)return;
         long now=clock.getAsLong();
-        for(int i=0;i<32;i++){Runnable action=dialogActions.poll();if(action==null)break;action.run();}
+        menus.tick();
         for(Player player:List.copyOf(players.values())) {
             if(!player.isOnline()){release(player);players.remove(player.getUniqueId());continue;}
             LobbyWallets.Wallet wallet=wallets.wallet(player.getUniqueId());
@@ -111,47 +108,20 @@ public final class LobbyFeatures implements LobbyService, AutoCloseable, Listene
         cooldowns.entrySet().removeIf(e->e.getValue()<=now);shopCooldowns.entrySet().removeIf(e->e.getValue()<=now);
         if(now>=nextOutbox){nextOutbox=now+5000;deliverCredits();}
         if(now>=nextShopCheck){nextShopCheck=now+5000;shop.ensure();}
+        shop.faceNearest();
     }
     @Override public long starlight(UUID player){main();return wallets.wallet(player).stars();}
     @Override public long answerPoints(UUID player){main();return wallets.wallet(player).points();}
     @Override public void rewardStarlight(UUID player,String transactionId,long amount){reward(player,transactionId,amount,Currency.STARLIGHT);}
     @Override public void rewardAnswerPoints(UUID player,String transactionId,long amount){reward(player,transactionId,amount,Currency.POINTS);}
     private void reward(UUID player,String transaction,long amount,Currency currency){main();if(closed)throw new IllegalStateException("Lobby closed");try{wallets.reward(player,transaction,amount,currency);}catch(IOException error){throw new IllegalStateException("Lobby reward could not be saved",error);}}
-    @Override public void showMoney(Player player){main();if(!closed)notice(player,"지갑","✦ "+starlight(player.getUniqueId())+"  ·  포인트 "+answerPoints(player.getUniqueId())+"  ·  출제권 "+credits.balance(player.getUniqueId()));}
-    @Override public void openShop(Player player) {
-        main();if(!started||closed||!player.isOnline())return;
-        var actions=new ArrayList<ActionButton>();
-        for(Product p:catalog.values())actions.add(button(player,p.label(),(who,r)->product(who,p)));
-        actions.add(button(player,"지갑",(who,r)->showMoney(who)));
-        player.showDialog(Dialog.create(b->b.empty().base(DialogBase.builder(text("✦ "+starlight(player.getUniqueId()))).canCloseWithEscape(true).build())
-                .type(DialogType.multiAction(actions,ActionButton.create(text("닫기"),null,100,null),3))));
+    @Override public void showMoney(Player player){
+        main();if(!closed)player.sendMessage(Component.text("✦ "+starlight(player.getUniqueId())+"  ·  정답 포인트 "+answerPoints(player.getUniqueId())));
     }
-    private void product(Player player,Product p) {
-        var actions=new ArrayList<ActionButton>();
-        if(p.kind()!=Kind.CREDIT&&wallets.wallet(player.getUniqueId()).owned().getOrDefault(p.id(),0L)>0)
-            actions.add(button(player,"장착 / 해제",(who,r)->mutate(who,()->wallets.equip(who.getUniqueId(),p))));
-        String transaction="shop:"+UUID.randomUUID();
-        actions.add(button(player,"✦ "+p.stars(),(who,r)->buy(who,p,Currency.STARLIGHT,transaction)));
-        if(p.points()>0)actions.add(button(player,"포인트 "+p.points(),(who,r)->buy(who,p,Currency.POINTS,transaction)));
-        String control=switch(p.id()){case "hammer"->"좌클릭";case "snow_bomb"->"Shift+우클릭";case "triple_boots","quad_boots"->"공중 Space";default->"";};
-        var body=new ArrayList<DialogBody>();body.add(DialogBody.plainMessage(text("보유 "+wallets.wallet(player.getUniqueId()).owned().getOrDefault(p.id(),0L))));
-        if(!control.isEmpty())body.add(DialogBody.plainMessage(text(control)));
-        player.showDialog(Dialog.create(b->b.empty().base(DialogBase.builder(text(p.label())).body(body).canCloseWithEscape(true).build())
-                .type(DialogType.multiAction(actions,ActionButton.create(text("닫기"),null,100,null),1))));
-    }
-    private void buy(Player player,Product product,Currency currency,String transaction){mutate(player,()->{wallets.purchase(player.getUniqueId(),product,currency,transaction);deliverCredits();});}
-    @FunctionalInterface private interface Mutation {void run()throws IOException;}
-    private void mutate(Player player,Mutation action){try{action.run();notice(player,"상점","완료");}catch(IllegalArgumentException e){notice(player,"상점",e.getMessage());}catch(IOException e){notice(player,"상점","저장 실패");plugin.getLogger().warning("Lobby purchase persistence failed; no unrecorded reward was granted");}}
-    private ActionButton button(Player owner,String label,java.util.function.BiConsumer<Player,DialogResponseView> action) {
-        UUID id=owner.getUniqueId();return ActionButton.create(text(label),null,160,DialogAction.customClick((r,audience)->{
-            // Callback delivery can come from a network thread. All Bukkit work drains in tick().
-            if(!(audience instanceof Player player))return;
-            dialogActions.offer(()->{
-                if(closed||!started||!id.equals(player.getUniqueId())||players.get(id)!=player||!player.isOnline())return;
-                action.accept(player,null); // These action-only screens have no response inputs.
-            });
-        },ClickCallback.Options.builder().uses(1).lifetime(Duration.ofMinutes(2)).build()));
-    }
+    @Override public void openShop(Player player){main();if(started&&!closed)menus.open(player);}
+    @EventHandler(priority=EventPriority.HIGHEST,ignoreCancelled=false) public void shopClick(InventoryClickEvent event){menus.click(event);}
+    @EventHandler(priority=EventPriority.HIGHEST,ignoreCancelled=false) public void shopDrag(InventoryDragEvent event){menus.drag(event);}
+    @EventHandler public void shopClose(InventoryCloseEvent event){menus.closed(event);}
     private void deliverCredits() {
         for(LobbyWallets.Grant grant:wallets.pending())try{credits.grant(grant.player(),grant.amount(),grant.transaction());wallets.delivered(grant.transaction());}
         catch(RuntimeException|IOException error){plugin.getLogger().warning("Lobby paid-credit delivery pending; retrying the recorded transaction");}
@@ -233,12 +203,10 @@ public final class LobbyFeatures implements LobbyService, AutoCloseable, Listene
     @EventHandler public void quit(PlayerQuitEvent e){release(e.getPlayer());players.remove(e.getPlayer().getUniqueId());if(pack!=null)pack.quit(e.getPlayer().getUniqueId());}
     @EventHandler public void mode(PlayerGameModeChangeEvent e){movement.leave(e.getPlayer());}
     private void release(Player player) {
-        movement.leave(player);cosmetics.leave(player.getUniqueId());cooldowns.remove(player.getUniqueId());shopCooldowns.remove(player.getUniqueId());
+        menus.leave(player);movement.leave(player);cosmetics.leave(player.getUniqueId());cooldowns.remove(player.getUniqueId());shopCooldowns.remove(player.getUniqueId());
         Effect stun=stuns.remove(player.getUniqueId()),ice=frost.remove(player.getUniqueId());if(stun!=null)clearEffect(stun);if(ice!=null)clearEffect(ice);
         for(var row:List.copyOf(projectiles.entrySet()))if(row.getValue().owner.equals(player.getUniqueId())){row.getValue().ball.remove();projectiles.remove(row.getKey());}
     }
-    @Override public void close(){main();if(closed)return;closed=true;dialogActions.clear();HandlerList.unregisterAll(this);for(Player p:List.copyOf(players.values()))release(p);players.clear();cosmetics.close();for(Projectile p:projectiles.values())p.ball.remove();projectiles.clear();}
-    private static void notice(Player p,String title,String message){p.showDialog(Dialog.create(b->b.empty().base(DialogBase.builder(text(title)).body(List.of(DialogBody.plainMessage(text(message)))).build()).type(DialogType.notice())));}
-    private static Component text(String value){return Component.text(value);}
+    @Override public void close(){main();if(closed)return;closed=true;menus.close();HandlerList.unregisterAll(this);for(Player p:List.copyOf(players.values()))release(p);players.clear();cosmetics.close();for(Projectile p:projectiles.values())p.ball.remove();projectiles.clear();}
     private static void main(){if(!Bukkit.isPrimaryThread())throw new IllegalStateException("Lobby features require the main thread");}
 }

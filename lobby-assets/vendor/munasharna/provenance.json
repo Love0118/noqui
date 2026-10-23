@@ -1,0 +1,36 @@
+{
+  "title": "Purple Hair Girl in Tuxedo",
+  "author": "Munasharna",
+  "published": "2021-04-06",
+  "retrieved": "2026-10-23",
+  "sourcePage": "https://www.minecraftskins.com/skin/17371832/purple-hair-girl-in-tuxedo/",
+  "sourceUrl": "https://www.minecraftskins.com/uploads/skins/2021/04/06/purple-hair-girl-in-tuxedo-17371832.png?v974",
+  "sha256": "d89c73f673250f54f1298cde7be70c1da7680e98700145e8f253c9776fb4cf45",
+  "bytes": 2852,
+  "dimensions": [
+    64,
+    64
+  ],
+  "model": "slim",
+  "modifications": "None; exact downloaded PNG bytes retained.",
+  "license": {
+    "spdx": null,
+    "status": "No explicit reuse/redistribution license stated on the original author/work page.",
+    "publicDownload": true,
+    "openLicenseAsserted": false,
+    "termsUrl": "https://www.minecraftskins.com/terms-and-conditions/",
+    "note": "The site receives a license from uploaders; this is not asserted to be a general redistribution grant to this project."
+  },
+  "sourceNotice": "vendor/munasharna/NOTICE.txt",
+  "appearance": "Female character, conventional navy tuxedo, purple hair, monocle.",
+  "layers": "Author describes monocle/bangs on hat and tie over base bow tie on jacket. All six vanilla overlay parts are enabled.",
+  "verification": {
+    "clientVersion": "26.3",
+    "clientSha1": "e877b6a07acd633fb3bb475002175cec036e7b87",
+    "api": "Paper 26.3.build.26-alpha native Mannequin + ResolvableProfile.SkinPatch, SLIM",
+    "parts": 12,
+    "faces": 72,
+    "vertexUvComparisons": 288,
+    "liveClientVerified": false
+  }
+}

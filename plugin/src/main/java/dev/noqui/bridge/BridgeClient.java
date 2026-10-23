@@ -15,6 +15,8 @@ import javax.crypto.spec.SecretKeySpec;
 
 /** Bounded asynchronous control client. It never downloads or proxies audio. */
 public final class BridgeClient implements MediaBridge {
+    // At most64 accepted jobs, each with a server-side300s ingest limit, plus15min delivery/restart margin.
+    static final long MAX_PREPARATION_MILLIS=64L*300_000+900_000;
     public record Member(UUID uuid, UUID membershipId, String nickname, String textureHash) {}
     public interface Readiness { void accept(long revision, boolean any, boolean all); default void controlAccepted(long revision){} }
     private final URI origin;
@@ -25,6 +27,7 @@ public final class BridgeClient implements MediaBridge {
     private final Supplier<List<Member>> roster;
     private final Readiness readiness;
     private final Consumer<String> warning;
+    private final LongSupplier preparationClock;
     private final ScheduledExecutorService worker=Executors.newScheduledThreadPool(2,Thread.ofPlatform().daemon().name("noqui-bridge-",0).factory());
     private final HttpClient http;
     private final SecureRandom random=new SecureRandom();
@@ -38,12 +41,16 @@ public final class BridgeClient implements MediaBridge {
     private long seq=System.currentTimeMillis()*1000, nextWarning;
     public BridgeClient(URI origin, byte[] secret, String keyId, UUID instance, Executor main,
                         Supplier<List<Member>> roster, Readiness readiness, Consumer<String> warning) {
+        this(origin,secret,keyId,instance,main,roster,readiness,warning,System::currentTimeMillis);
+    }
+    BridgeClient(URI origin,byte[] secret,String keyId,UUID instance,Executor main,Supplier<List<Member>> roster,
+                 Readiness readiness,Consumer<String> warning,LongSupplier preparationClock) {
         if (!"http".equals(origin.getScheme()) || !Set.of("127.0.0.1","localhost","[::1]").contains(origin.getHost())
                 || origin.getPort()!=8788 || origin.getUserInfo()!=null || origin.getQuery()!=null || origin.getFragment()!=null
                 || !(origin.getPath().isEmpty() || origin.getPath().equals("/"))) throw new IllegalArgumentException("Bridge must use loopback HTTP port 8788");
         if(secret.length!=32 || keyId==null || !keyId.matches("[A-Za-z0-9_-]{1,64}"))throw new IllegalArgumentException("Invalid bridge credentials");
         this.origin=origin;this.secret=secret.clone();this.keyId=keyId;this.instance=instance;this.main=main;
-        this.roster=roster;this.readiness=readiness;this.warning=warning;
+        this.roster=roster;this.readiness=readiness;this.warning=warning;this.preparationClock=preparationClock;
         http=HttpClient.newBuilder().connectTimeout(Duration.ofSeconds(3)).followRedirects(HttpClient.Redirect.NEVER).executor(worker).build();
     }
     public static String hash(byte[] bytes) {
@@ -89,10 +96,10 @@ public final class BridgeClient implements MediaBridge {
         var future=new CompletableFuture<Media>();jobs.put(job,future);
         String videoId=job.song().youtubeUrl().substring(job.song().youtubeUrl().lastIndexOf('=')+1);
         request("POST","/internal/v1/media/jobs",object("schemaVersion",1,"requestId",UUID.randomUUID(),"videoId",videoId))
-                .whenComplete((reply,error)->poll(job,future,reply,error,System.currentTimeMillis()+900000));
+                .whenComplete((reply,error)->poll(job,future,reply,error,preparationClock.getAsLong()+MAX_PREPARATION_MILLIS));
         future.whenComplete((v,e)->jobs.remove(job,future));return future;
     }
-    private void poll(Request request,CompletableFuture<Media> future,JsonObject response,Throwable error,long deadline) {
+    void poll(Request request,CompletableFuture<Media> future,JsonObject response,Throwable error,long deadline) {
         if(future.isDone() || closed)return;
         try {
             if(error!=null)throw new IllegalStateException("Media service unavailable");
@@ -101,7 +108,7 @@ public final class BridgeClient implements MediaBridge {
                 String id=UUID.fromString(response.get("mediaId").getAsString()).toString();
                 future.complete(new Media(id,response.get("durationMs").getAsLong()));return;
             }
-            if(state.equals("FAILED") || System.currentTimeMillis()>deadline)throw new IllegalStateException("Media preparation failed");
+            if(state.equals("FAILED") || preparationClock.getAsLong()>deadline)throw new IllegalStateException("Media preparation failed");
             String jobId=UUID.fromString(response.get("jobId").getAsString()).toString();
             long delay=Math.max(2000,Math.min(30000,response.has("retryAfterMs")?response.get("retryAfterMs").getAsLong():2000));
             worker.schedule(()->{if(!future.isDone())request("GET","/internal/v1/media/jobs/"+jobId,null)

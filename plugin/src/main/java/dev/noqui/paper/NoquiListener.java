@@ -38,7 +38,7 @@ final class NoquiListener implements Listener {
         if(!cabin(e.getPlayer().getLocation()))return;e.setCancelled(true);
         if(e.getHand()!=EquipmentSlot.HAND || !(e.getAction()==Action.RIGHT_CLICK_AIR || e.getAction()==Action.RIGHT_CLICK_BLOCK) || !plugin.ownsCabin(e.getPlayer().getUniqueId()))return;
         String id=plugin.tool(e.getPlayer());
-        if("defense".equals(id))plugin.toDefense(e.getPlayer());else if("controls".equals(id))plugin.dialogs.controls(e.getPlayer());
+        if("defense".equals(id))plugin.openMinigames(e.getPlayer());else if("controls".equals(id))plugin.dialogs.controls(e.getPlayer());
     }
     @EventHandler(priority=EventPriority.LOWEST) public void legacy(AsyncPlayerChatEvent e){
         if(plugin.captureAnswer(e.getPlayer().getUniqueId(),e.getMessage())){legacy.add(e);hide(e);}
@@ -62,8 +62,16 @@ final class NoquiListener implements Listener {
     @EventHandler public void armor(PlayerArmorStandManipulateEvent e){if(cabin(e.getRightClicked().getLocation()))e.setCancelled(true);}
     @EventHandler public void hanging(HangingBreakEvent e){if(cabin(e.getEntity().getLocation()))e.setCancelled(true);}
     @EventHandler public void hanging(HangingPlaceEvent e){if(cabin(e.getEntity().getLocation()))e.setCancelled(true);}
-    @EventHandler public void inventory(InventoryClickEvent e){if(cabin(e.getWhoClicked().getLocation()))e.setCancelled(true);}
-    @EventHandler public void drag(InventoryDragEvent e){if(cabin(e.getWhoClicked().getLocation()))e.setCancelled(true);}
+    @EventHandler public void inventory(InventoryClickEvent e){
+        if(!cabin(e.getWhoClicked().getLocation())||dev.noqui.lobby.LobbyFeatures.ownsInventory(e.getView().getTopInventory()))return;
+        boolean protectedHotbar=e.getHotbarButton()>=0&&plugin.protectedTool(e.getWhoClicked().getInventory().getItem(e.getHotbarButton()));
+        if(!(e.getClickedInventory() instanceof org.bukkit.inventory.PlayerInventory)||plugin.protectedTool(e.getCurrentItem())||plugin.protectedTool(e.getCursor())||protectedHotbar)e.setCancelled(true);
+    }
+    @EventHandler public void drag(InventoryDragEvent e){
+        if(!cabin(e.getWhoClicked().getLocation())||dev.noqui.lobby.LobbyFeatures.ownsInventory(e.getView().getTopInventory()))return;
+        int top=e.getView().getTopInventory().getSize();
+        if(plugin.protectedTool(e.getOldCursor())||e.getRawSlots().stream().anyMatch(slot->slot<top))e.setCancelled(true);
+    }
     @EventHandler public void drop(PlayerDropItemEvent e){if(cabin(e.getPlayer().getLocation()))e.setCancelled(true);}
     @EventHandler public void pickup(EntityPickupItemEvent e){if(cabin(e.getEntity().getLocation()))e.setCancelled(true);}
     @EventHandler public void portal(PlayerPortalEvent e){if(cabin(e.getFrom()))e.setCancelled(true);}

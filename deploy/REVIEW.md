@@ -104,6 +104,20 @@ wrapper copies it to a private 0600 jar **for each yt-dlp invocation**, passes
 only that jar to the real downloader, and removes it after success or failure.
 No cookie contents belong in logs, the release package or HTTP responses.
 
+Per-invocation downloader cookie changes are intentionally discarded with that
+temporary jar. Persistent rotation comes from the existing four-hour
+`mc-luck-defense-youtube-cookies.timer`, which opens the dedicated private
+browser profile, validates an export with yt-dlp and atomically publishes it.
+When installing a newly supplied Netscape jar, seed that same profile once so
+the timer does not re-export the former login. Preserve its existing lock,
+0600 file permissions and 0700 profile directory. See
+[cookie refresh operations](../../docs/youtube-cookie-refresh.md) for the
+verified operator outcome and limits; revoked upstream login credentials still
+require human reauthentication.
+The YouTube jar authenticates ingestion only. Cached Opus playback uses the
+separate Noqui session and Minecraft authority leases; rotating the source jar
+does not expire a browser's already-authenticated listening session.
+
 Observed tools: configured yt-dlp
 `/home/ubuntu/mc-luck-defense/tools/media-venv/bin/yt-dlp` 2026.08.19;
 `/usr/bin/ffmpeg` 6.1.1 with libopus; `/usr/bin/ffprobe`; Node v24.14.1.

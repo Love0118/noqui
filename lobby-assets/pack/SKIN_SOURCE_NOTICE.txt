@@ -1,0 +1,16 @@
+Shopkeeper skin: Purple Hair Girl in Tuxedo
+Author: Munasharna. Published 2021-04-06.
+Original author/work page:
+https://www.minecraftskins.com/skin/17371832/purple-hair-girl-in-tuxedo/
+Original download:
+https://www.minecraftskins.com/uploads/skins/2021/04/06/purple-hair-girl-in-tuxedo-17371832.png?v974
+
+The author publishes this skin with a public Minecraft skin download.
+The work page identifies 3px arms (Slim) and describes the monocle as part
+of the hat layer, with the tie/bow-tie controlled by the jacket layer.
+The original 64x64 RGBA PNG is used unchanged; no recoloring or UV edits.
+Copyright remains with the original creator. No explicit Creative Commons,
+SPDX, public-domain, or general redistribution license was found on the
+original author/work page. Public availability is not represented here as
+an open-content license, and the site's license from its uploaders is not
+represented as a license to this project. Attribution and source are retained.

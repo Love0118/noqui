@@ -71,7 +71,7 @@ class QuizGameTest {
     }
     @Test void failedPreparationRefundsAndAutomaticallyAdvancesQueueWithoutUsingRound() {
         var g=start();submit(g,author);submit(g,second);bridge.futures.getFirst().completeExceptionally(new IllegalStateException("private stderr"));callbacks.remove().run();
-        assertEquals(5,g.credits(author));assertEquals(second,g.snapshot().presenter());assertEquals(1,g.snapshot().round());assertFalse(errors.getFirst().contains("private stderr"));
+        assertEquals(5,g.credits(author));assertEquals(second,g.snapshot().presenter());assertEquals(1,g.snapshot().round());assertTrue(errors.isEmpty());
         play(g,1000);assertEquals(1,g.snapshot().round());assertEquals(4,g.credits(second));finish(g);assertEquals(1,g.snapshot().round());
     }
     @Test void queuedSubmissionCanBeCanceledOrRefundedOnLeaveAndStop() {
@@ -81,9 +81,25 @@ class QuizGameTest {
         var g=start();submit(g,author);play(g,60000);g.pause();g.resume();g.controlAccepted(g.snapshot().revision());now[0]=g.snapshot().startsAt();g.tick();
         g.leave(author);g.stop();assertEquals(4,g.credits(author));
     }
-    @Test void browserWaitIsBoundedAndReadinessNeedsCurrentRevision() {
-        var g=start();submit(g,author);media(g,60000);g.browsersReady(g.snapshot().revision()-1,true,true);now[0]+=20000;g.tick();assertEquals(QuizGame.Phase.WAITING_FOR_SUBMISSION,g.snapshot().phase());assertEquals(5,g.credits(author));
-        submit(g,author);media(g,60000);g.browsersReady(g.snapshot().revision(),true,false);now[0]+=20000;g.tick();assertEquals(QuizGame.Phase.COUNTDOWN,g.snapshot().phase());
+    @Test void absentBrowserKeepsPreparedSongReservedAndWaitsWithoutSpinningOrMisreportingConversionFailure() {
+        var g=start();submit(g,author);media(g,115007);var prepared=g.snapshot();g.browsersReady(prepared.revision()-1,true,true);
+        now[0]+=20000;g.tick();assertEquals(QuizGame.Phase.PREPARING,g.snapshot().phase());assertEquals(4,g.credits(author));assertTrue(g.pending(author));
+        assertEquals(prepared.roundId(),g.snapshot().roundId());assertEquals(prepared.media(),g.snapshot().media());assertEquals(115000,g.snapshot().clipEndMillis());
+        assertFalse(g.snapshot().playing());assertEquals(0,g.snapshot().remainingMillis());assertTrue(errors.isEmpty());
+        long revision=g.snapshot().revision();for(int i=0;i<100;i++){now[0]+=60000;g.tick();}assertEquals(revision,g.snapshot().revision());assertTrue(errors.isEmpty());assertEquals(1,bridge.futures.size());
+        g.browsersReady(prepared.revision(),true,true);assertEquals(QuizGame.Phase.PREPARING,g.snapshot().phase());
+        g.browsersReady(g.snapshot().revision(),true,false);assertEquals(QuizGame.Phase.COUNTDOWN,g.snapshot().phase());
+        g.controlAccepted(g.snapshot().revision());now[0]=g.snapshot().startsAt();g.tick();assertEquals(QuizGame.Phase.PLAYING,g.snapshot().phase());assertEquals(4,g.credits(author));
+    }
+    @Test void browserWaitRemainsCancellableRefundableAndKeepsPrewarmedQueue() {
+        var g=start();submit(g,author);submit(g,second);media(g,60000);media(g,50000);now[0]+=20000;g.tick();
+        assertEquals(author,g.snapshot().presenter());assertEquals(2,bridge.futures.size());g.cancel(author);assertEquals(5,g.credits(author));assertEquals(second,g.snapshot().presenter());assertEquals(QuizGame.Phase.PREPARING,g.snapshot().phase());
+        assertEquals(50000,g.snapshot().media().durationMillis());now[0]+=20000;g.tick();g.stop();assertEquals(5,g.credits(second));
+    }
+    @Test void partialBrowserReadinessStillStartsAfterGracePeriodAndUnacceptedCountdownRequiresFreshReadiness() {
+        var g=start();submit(g,author);media(g,60000);g.browsersReady(g.snapshot().revision(),true,false);now[0]+=20000;g.tick();assertEquals(QuizGame.Phase.COUNTDOWN,g.snapshot().phase());
+        now[0]=g.snapshot().startsAt();g.tick();assertEquals(QuizGame.Phase.PREPARING,g.snapshot().phase());now[0]+=20000;g.tick();assertEquals(QuizGame.Phase.PREPARING,g.snapshot().phase());assertFalse(g.snapshot().playing());
+        g.browsersReady(g.snapshot().revision(),true,false);assertEquals(QuizGame.Phase.COUNTDOWN,g.snapshot().phase());
     }
     @Test void finiteRoundCapRejectsExcessQueueAndAutoStopsAfterFiveSecondReveal() {
         var g=game(1,false,true,false);submit(g,author);assertThrows(IllegalArgumentException.class,()->submit(g,second));play(g,1000);

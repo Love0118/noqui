@@ -152,36 +152,14 @@ def backpack():
     model('backpack',elements,'backpack')
 
 def skin():
-    im=Image.new('RGBA',(64,64));d=ImageDraw.Draw(im)
-    skin='#e9baa0';hair='#45322d';jacket='#293345';trousers='#303b50';shoe='#171e2a';white='#f3eee1';gold='#dcb65b'
-    def limb(x,y,w,h,depth,color):
-        # Standard unfolded cube/slim player UV: top,bottom,right,front,left,back.
-        for rect in [(x+depth,y,x+depth+w-1,y+depth-1),(x+depth+w,y,x+depth+w*2-1,y+depth-1),
-                     (x,y+depth,x+depth-1,y+depth+h-1),(x+depth,y+depth,x+depth+w-1,y+depth+h-1),
-                     (x+depth+w,y+depth,x+depth+w+depth-1,y+depth+h-1),(x+depth+w+depth,y+depth,x+2*depth+2*w-1,y+depth+h-1)]:d.rectangle(rect,fill=color)
-    limb(0,0,8,8,8,skin);d.rectangle((8,0,23,7),fill=hair);d.rectangle((24,8,31,15),fill=hair)
-    for x in [0,16]:d.rectangle((x,8,x+7,15),fill=hair)
-    d.rectangle((8,8,15,10),fill=hair);d.rectangle((8,11,8,15),fill=hair);d.rectangle((15,10,15,15),fill=hair)
-    d.point((10,12),fill='#364e51');d.point((13,12),fill='#364e51');d.point((10,11),fill='#49352e');d.point((13,11),fill='#49352e')
-    d.point((11,13),fill='#d59c84');d.line((11,14,12,14),fill='#a75a63')
-    limb(16,16,8,12,4,jacket);d.polygon([(22,20),(25,20),(24,26),(23,28),(22,26)],fill=white)
-    d.polygon([(22,20),(20,20),(22,25),(23,23)],fill='#576176');d.polygon([(25,20),(27,20),(25,25),(24,23)],fill='#576176')
-    d.line((23,22,23,26),fill='#8f3c4b');d.point((23,21),fill='#8f3c4b');d.point((24,28),fill=gold);d.point((24,30),fill=gold)
-    d.line((25,25,26,27),fill=gold);d.line((26,27,27,25),fill=gold)
-    d.rectangle((33,20,38,25),fill=hair);d.rectangle((34,26,37,27),fill=hair)
-    for x,y in [(40,16),(32,48)]:
-        limb(x,y,3,12,4,jacket)
-        d.rectangle((x+4,y+13,x+6,y+13),fill=white);d.rectangle((x+4,y+14,x+6,y+15),fill=skin)
-    for x,y in [(0,16),(16,48)]:
-        limb(x,y,4,12,4,trousers)
-        d.rectangle((x,y+13,x+15,y+15),fill=shoe)
-        d.line((x+5,y+5,x+5,y+12),fill='#3e4a60')
-    # Hair outer layer and an actual gold monocle over the right eye.
-    d.rectangle((40,0,47,7),fill=hair);d.rectangle((56,8,63,15),fill=hair)
-    d.rectangle((40,8,47,9),fill=hair);d.rectangle((40,10,40,15),fill=hair);d.rectangle((47,10,47,15),fill=hair)
-    for pt in [(44,11),(45,10),(46,11),(46,12),(45,13),(44,12)]:d.point(pt,fill=gold)
-    d.line((46,13,47,15),fill=gold)
-    path=PACK/'assets/noqui/textures/entity/shopkeeper.png';path.parent.mkdir(parents=True,exist_ok=True);im.save(path)
+    # Imported web asset: never regenerate or repaint the committed shop skin.
+    source=ROOT/'vendor/munasharna/purple-hair-girl-in-tuxedo.png'
+    provenance=json.loads((ROOT/'vendor/munasharna/provenance.json').read_text(encoding='utf-8'))
+    data=source.read_bytes()
+    assert hashlib.sha256(data).hexdigest()==provenance['sha256'], 'Downloaded skin source changed'
+    path=PACK/'assets/noqui/textures/entity/shopkeeper.png'
+    path.parent.mkdir(parents=True,exist_ok=True);path.write_bytes(data)
+
 
 def sounds(archive):
     records=[]
@@ -203,4 +181,4 @@ if __name__=='__main__':
     palette();native_models();backpack();skin();records=sounds(args.original_zip)
     write_json(PACK/'pack.mcmeta',{'pack':{'description':'Noqui lobby cosmetics and original quiz cues','min_format':[97,1],'max_format':[97,1]}})
     write_json(ROOT/'sound-provenance.json',{'source':'User-provided 노래퀴즈1218.zip; no external redistribution license asserted','archiveSha256':hashlib.sha256(args.original_zip.read_bytes()).hexdigest(),'sounds':records})
-    print('Authored11 model/item definitions, original palette/slim skin, converted pinned MIT backpack, and copied exact5 user-supplied sounds')
+    print('Authored11 model/item definitions, original palette, imported Munasharna tuxedo skin, converted pinned MIT backpack, and copied exact5 user-supplied sounds')

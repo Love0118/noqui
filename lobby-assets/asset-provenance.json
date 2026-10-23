@@ -1,6 +1,9 @@
 {
   "schemaVersion": 1,
-  "resourceFormat": [97, 1],
+  "resourceFormat": [
+    97,
+    1
+  ],
   "packUuid": "7d5243d5-c30e-4bdd-a039-71ec1ad10001",
   "backpack": {
     "repository": "https://github.com/joshua-pechan/Minecraft-Figura-Cosmetic",
@@ -9,21 +12,49 @@
     "license": "MIT",
     "licenseUrl": "https://github.com/joshua-pechan/Minecraft-Figura-Cosmetic/blob/959204795f2242be80186a040f46b81fbf5ffa10/LICENSE",
     "copyrightNotice": "Copyright (c) 2024 JashDuck",
-    "localSources": ["vendor/jashduck/backpack.bbmodel", "vendor/jashduck/backpack.png", "vendor/jashduck/LICENSE", "vendor/jashduck/README.md"],
+    "localSources": [
+      "vendor/jashduck/backpack.bbmodel",
+      "vendor/jashduck/backpack.png",
+      "vendor/jashduck/LICENSE",
+      "vendor/jashduck/README.md"
+    ],
     "inspection": "Repository MIT notice has no model/texture reservation. backpack.bbmodel contains seven cuboids and one embedded PNG; the separately named ornithopter.bbmodel/armor models are not included. README's uncertain Ornithopter creator note is retained in vendor/README.md rather than erased or represented as authorship of the backpack.",
     "conversion": "Recenter the bag body at native item origin; replace the Figura outer avatar-group Y-180 transform with the runtime back-attachment coordinate frame. Bake element right-angle X rotations and remap face normals/UV quarter turns; preserve embedded texture bytes. No animation or other repository model is bundled."
   },
   "originalFallbacks": {
-    "models": ["pirate_hat", "glasses", "crown", "cap", "bunny", "triple_boots", "quad_boots", "hammer", "snow_bomb", "gravity_suit"],
-    "textures": ["pack/assets/noqui/textures/item/palette.png", "pack/assets/noqui/textures/entity/shopkeeper.png"],
+    "models": [
+      "pirate_hat",
+      "glasses",
+      "crown",
+      "cap",
+      "bunny",
+      "triple_boots",
+      "quad_boots",
+      "hammer",
+      "snow_bomb",
+      "gravity_suit"
+    ],
+    "textures": [
+      "pack/assets/noqui/textures/item/palette.png"
+    ],
     "authorship": "New cuboid geometry and pixel-art textures authored with Codex specifically for this project. Not attributed to an outside artist or advertised as downloaded assets. Repository owner's licensing applies.",
-    "authoringSource": "author_assets.py",
-    "skin": "Original female-presenting shopkeeper, navy suit and tie, chestnut hair, gold monocle; standard64x64 UV,3pixel slim arms. Bundled key noqui:entity/shopkeeper; no account, skin upload or external profile."
+    "authoringSource": "author_assets.py"
   },
   "candidateResearch": [
-    {"url": "https://raw.githubusercontent.com/fonnymunkey/SimpleHats/master/LICENSE", "decision": "Rejected: model/texture rights reserved, despite MIT code; no files reused."},
-    {"url": "https://kenney.nl/assets/pirate-kit", "license": "CC0", "decision": "Inspected primary asset listing. Mesh-based characters/scenery do not supply the eleven requested vanilla cuboid wearables; no files reused."},
-    {"url": "https://github.com/SL0ANE/Loy-s-Goodies", "license": "CC0 asset collection", "decision": "Inspected candidate listing; no exact native wearable set selected, no files reused. Original compatible fallbacks chosen rather than claiming another artist authored them."}
+    {
+      "url": "https://raw.githubusercontent.com/fonnymunkey/SimpleHats/master/LICENSE",
+      "decision": "Rejected: model/texture rights reserved, despite MIT code; no files reused."
+    },
+    {
+      "url": "https://kenney.nl/assets/pirate-kit",
+      "license": "CC0",
+      "decision": "Inspected primary asset listing. Mesh-based characters/scenery do not supply the eleven requested vanilla cuboid wearables; no files reused."
+    },
+    {
+      "url": "https://github.com/SL0ANE/Loy-s-Goodies",
+      "license": "CC0 asset collection",
+      "decision": "Inspected candidate listing; no exact native wearable set selected, no files reused. Original compatible fallbacks chosen rather than claiming another artist authored them."
+    }
   ],
   "sounds": {
     "details": "sound-provenance.json",
@@ -33,5 +64,41 @@
   "primaryFormatReferences": [
     "https://www.minecraft.net/en-us/article/minecraft-java-edition-26-3",
     "https://www.minecraft.net/en-us/article/minecraft-java-edition-1-21-9"
-  ]
+  ],
+  "shopkeeperSkin": {
+    "title": "Purple Hair Girl in Tuxedo",
+    "author": "Munasharna",
+    "published": "2021-04-06",
+    "retrieved": "2026-10-23",
+    "sourcePage": "https://www.minecraftskins.com/skin/17371832/purple-hair-girl-in-tuxedo/",
+    "sourceUrl": "https://www.minecraftskins.com/uploads/skins/2021/04/06/purple-hair-girl-in-tuxedo-17371832.png?v974",
+    "sha256": "d89c73f673250f54f1298cde7be70c1da7680e98700145e8f253c9776fb4cf45",
+    "bytes": 2852,
+    "dimensions": [
+      64,
+      64
+    ],
+    "model": "slim",
+    "modifications": "None; exact downloaded PNG bytes retained.",
+    "license": {
+      "spdx": null,
+      "status": "No explicit reuse/redistribution license stated on the original author/work page.",
+      "publicDownload": true,
+      "openLicenseAsserted": false,
+      "termsUrl": "https://www.minecraftskins.com/terms-and-conditions/",
+      "note": "The site receives a license from uploaders; this is not asserted to be a general redistribution grant to this project."
+    },
+    "sourceNotice": "vendor/munasharna/NOTICE.txt",
+    "appearance": "Female character, conventional navy tuxedo, purple hair, monocle.",
+    "layers": "Author describes monocle/bangs on hat and tie over base bow tie on jacket. All six vanilla overlay parts are enabled.",
+    "verification": {
+      "clientVersion": "26.3",
+      "clientSha1": "e877b6a07acd633fb3bb475002175cec036e7b87",
+      "api": "Paper 26.3.build.26-alpha native Mannequin + ResolvableProfile.SkinPatch, SLIM",
+      "parts": 12,
+      "faces": 72,
+      "vertexUvComparisons": 288,
+      "liveClientVerified": false
+    }
+  }
 }

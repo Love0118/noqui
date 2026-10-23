@@ -70,7 +70,11 @@ public final class QuizGame {
     public boolean started(){return phase!=Phase.STOPPED;}
     public boolean participant(UUID id){return players.contains(id);}
     public long credits(UUID id){return credits.balance(id);}
-    public boolean pending(UUID id){return current!=null&&!roundStarted&&current.author.equals(id)||queue.stream().anyMatch(s->s.author.equals(id));}
+    public boolean pending(UUID id){return current!=null&&current.live&&!roundStarted&&current.author.equals(id)||queue.stream().anyMatch(s->s.author.equals(id));}
+    public boolean canSubmit(UUID id){return started()&&participant(id)&&credits(id)>0&&!pending(id)&&hasSubmissionSpace();}
+    public boolean canVoteSkip(UUID id){return participant(id)&&roundId!=null&&!(phase==Phase.REVEAL&&!playing)&&!votes.contains(id);}
+    private boolean hasSubmissionSpace(){return queue.size()+(current==null?0:1)<MAX_SUBMISSIONS
+            &&(totalRounds==0||roundsStarted+queue.size()+(current!=null&&!roundStarted?1:0)<totalRounds);}
     public void grant(UUID id,int amount){credits.grant(id,amount);if(started())emit();}
     public void giveOnce(UUID id,long amount,String transactionId){credits.giveOnce(id,amount,transactionId);if(started())emit();}
     public void start(Collection<UUID> participants){start(participants,0);}
@@ -112,7 +116,7 @@ public final class QuizGame {
     public void submit(UUID id,long expectedRevision,Song song) {
         if(!started()||revision!=expectedRevision||!players.contains(id))throw new IllegalArgumentException("참가 메뉴를 다시 열어 주세요.");
         if(pending(id))throw new IllegalArgumentException("대기 중인 제출은 한 곡만 가능합니다.");
-        if(queue.size()+(current==null?0:1)>=MAX_SUBMISSIONS||totalRounds>0&&roundsStarted+queue.size()+(current!=null&&!roundStarted?1:0)>=totalRounds)
+        if(!hasSubmissionSpace())
             throw new IllegalArgumentException("남은 라운드의 제출 대기열이 가득 찼습니다.");
         var s=new Submission(id,Objects.requireNonNull(song),++operation);credits.reserve(s.id,id);queue.add(s);
         if(current==null)next();else emit();
@@ -142,10 +146,9 @@ public final class QuizGame {
         catch(UncheckedIOException error){refundRetries.put(s.id,s.author);return false;}
     }
     private void preparationFailed(Submission s) {
-        boolean refunded;
-        if(current==s){cancelSubmission(s);refunded=refund(s);next();}
-        else {queue.remove(s);cancelSubmission(s);refunded=refund(s);emit();}
-        output.error(s.author,refunded?"오디오 준비 실패 · 출제권을 반환했습니다.":"오디오 준비 실패 · 출제권 반환을 저장할 수 없어 재시도 중입니다.");
+
+        if(current==s){cancelSubmission(s);refund(s);next();}
+        else {queue.remove(s);cancelSubmission(s);refund(s);emit();}
     }
     private void abortPreparation(){cancelSubmission(current);refund(current);next();}
     private void clearRound() {
@@ -159,7 +162,7 @@ public final class QuizGame {
         winner=id;scores.merge(id,1,Integer::sum);phase=Phase.REVEAL;emit();if(matchSkip)finishRound(false);return true;
     }
     public boolean voteSkip(UUID id,UUID expectedRound) {
-        if(!players.contains(id)||!Objects.equals(roundId,expectedRound)||roundId==null||phase==Phase.REVEAL&&!playing)return false;
+        if(!canVoteSkip(id)||!Objects.equals(roundId,expectedRound))return false;
         if(!votes.add(id))return false;
         if(votes.size()>=players.size()/2+1)finishRound(true);else emit();return true;
     }
@@ -185,9 +188,12 @@ public final class QuizGame {
             for(var it=refundRetries.entrySet().iterator();it.hasNext();){var entry=it.next();try{credits.refund(entry.getKey());it.remove();changed=true;}catch(UncheckedIOException ignored){}}
             if(changed)emit();
         }
-        if(phase==Phase.PREPARING&&now>=endsAt){if(anyReady)countdown();else preparationFailed(current);}
+        if(phase==Phase.PREPARING&&endsAt>0&&now>=endsAt){
+            if(anyReady)countdown();
+            else{endsAt=0;emit();}
+        }
         if(phase==Phase.COUNTDOWN&&now>=startsAt) {
-            if(!countdownAccepted){playing=false;startsAt=0;if(roundStarted){phase=Phase.PAUSED;pausedRemaining=clipEndMillis-anchorPosition;}else{phase=Phase.PREPARING;endsAt=now+20000;}emit();return;}
+            if(!countdownAccepted){playing=false;startsAt=0;if(roundStarted){phase=Phase.PAUSED;pausedRemaining=clipEndMillis-anchorPosition;}else{phase=Phase.PREPARING;anyReady=false;endsAt=now+20000;}emit();return;}
             if(!roundStarted)try{credits.spend(current.id);roundStarted=true;roundsStarted++;}
             catch(UncheckedIOException error){
                 UUID author=current.author;playing=false;startsAt=0;phase=Phase.PREPARING;emit();abortPreparation();
@@ -200,7 +206,7 @@ public final class QuizGame {
         else if(autoHint&&phase==Phase.PLAYING&&now>=nextHintAt){hint();nextHintAt=now+9000;}
     }
     public void browsersReady(long expectedRevision,boolean any,boolean all) {
-        if(phase!=Phase.PREPARING||revision!=expectedRevision)return;anyReady=any;if(any&&all)countdown();
+        if(phase!=Phase.PREPARING||revision!=expectedRevision)return;anyReady=any;if(any&&(all||endsAt==0))countdown();
     }
     public void controlAccepted(long expectedRevision){if(phase==Phase.COUNTDOWN&&revision==expectedRevision)countdownAccepted=true;}
     private void countdown() {

@@ -8,6 +8,8 @@ import tempfile
 import unittest
 import zipfile
 import zlib
+import ast
+import hashlib
 import build_pack as build
 
 class PackTest(unittest.TestCase):
@@ -45,6 +47,24 @@ class PackTest(unittest.TestCase):
     def test_skin_crc_is_verified(self):
         p=build.PACK/'assets/noqui/textures/entity/shopkeeper.png';data=p.read_bytes();p.write_bytes(data[:-1]+bytes([data[-1]^1]))
         with self.assertRaises(AssertionError):build.validate()
+    def test_web_skin_bytes_and_truthful_source_notice_are_pinned(self):
+        provenance=json.loads((build.ROOT/'vendor/munasharna/provenance.json').read_text(encoding='utf-8'))
+        self.assertEqual(provenance['model'],'slim')
+        self.assertEqual(build.digest((build.PACK/'assets/noqui/textures/entity/shopkeeper.png').read_bytes()),provenance['sha256'])
+        self.assertIn('No explicit Creative Commons',(build.PACK/'SKIN_SOURCE_NOTICE.txt').read_text(encoding='utf-8'))
+        self.assertIn('https://www.minecraftskins.com/uploads/skins/',provenance['sourceUrl'])
+        self.assertFalse(provenance['license']['openLicenseAsserted'])
+        self.assertIsNone(provenance['license']['spdx'])
+    def test_authoring_tool_preserves_downloaded_skin_instead_of_generating_one(self):
+        # The full authoring workflow would touch cosmetics/sounds; isolate only its skin-copy step.
+        tree=ast.parse((build.ROOT/'author_assets.py').read_text(encoding='utf-8'))
+        function=next(n for n in tree.body if isinstance(n,ast.FunctionDef) and n.name=='skin')
+        # Execute the actual copy-only function without importing optional Pillow/NumPy authoring tools.
+        namespace={'ROOT':build.ROOT,'PACK':build.PACK,'json':json,'hashlib':hashlib}
+        exec(compile(ast.Module(body=[function],type_ignores=[]),'author_assets.py','exec'),namespace)
+        (build.PACK/'assets/noqui/textures/entity/shopkeeper.png').write_bytes(b'obsolete')
+        namespace['skin']()
+        self.assertEqual((build.PACK/'assets/noqui/textures/entity/shopkeeper.png').read_bytes(),(build.ROOT/'vendor/munasharna/purple-hair-girl-in-tuxedo.png').read_bytes())
     def test_non_slim_opaque_arm_columns_are_rejected(self):
         def chunk(kind,data):return struct.pack('>I',len(data))+kind+data+struct.pack('>I',zlib.crc32(kind+data)&0xffffffff)
         header=struct.pack('>IIBBBBB',64,64,8,6,0,0,0)

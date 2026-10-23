@@ -29,6 +29,7 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
     private BrowserConnections connections;
     private BridgeClient bridge;
     private QuizGame game;
+    private QuestionTickets tickets;
     private LobbyFeatures lobbyFeatures;
     Cabin cabin;
     NoquiDialogs dialogs;
@@ -69,6 +70,7 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
             },ledger,getConfig().getInt("round-seconds",115),0,getConfig().getBoolean("match-skip",false),
                     getConfig().getBoolean("title-bonus",true),getConfig().getBoolean("auto-hint",false),RandomGenerator.getDefault());
             dialogs=new NoquiDialogs(this);
+            tickets=new QuestionTickets(game::credits,this::openTicketForm);
             connections=new BrowserConnections(this::connectionEntry,(id,entry)->bridge.joinToken(members.get(id),entry.session())
                     .thenApply(token->publicOrigin+"/join#t="+token),main,new BrowserConnections.View(){
                 public void pending(UUID id,BrowserConnections.Entry entry){Player p=Bukkit.getPlayer(id);if(p!=null)dialogs.connection(p,entry,null);}
@@ -76,16 +78,17 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
                 public void failed(UUID id,BrowserConnections.Entry entry){Player p=Bukkit.getPlayer(id);if(p!=null){p.closeDialog();p.sendMessage(text("연결 실패 · 메뉴에서 다시 시도하세요."));}}
             });
             Bukkit.getPluginManager().registerEvents(new NoquiListener(this),this);
+            Bukkit.getPluginManager().registerEvents(tickets,this);
             Bukkit.getServicesManager().register(QuizService.class,this,this,ServicePriority.Normal);
             lobbyFeatures=new LobbyFeatures(this,cabin.spawn.getWorld(),new LobbyFeatures.CreditPort(){
                 public long balance(UUID player){return game.credits(player);}
-                public void grant(UUID player,long amount,String transactionId){game.giveOnce(player,amount,transactionId);}
+                public void grant(UUID player,long amount,String transactionId){giveTickets(player,amount,transactionId);}
             });
             lobbyFeatures.start();
             Bukkit.getServicesManager().register(LobbyService.class,lobbyFeatures,this,ServicePriority.Normal);
             var command=Objects.requireNonNull(getCommand("noqui"));command.setExecutor(this);command.setTabCompleter(this);
             Objects.requireNonNull(getCommand("money")).setExecutor(this);
-            for(Player p:Bukkit.getOnlinePlayers()){recovery.recover(p,defenseActive(p),true);lobbyFeatures.join(p);}
+            for(Player p:Bukkit.getOnlinePlayers()){recovery.recover(p,defenseActive(p),true);lobbyFeatures.join(p);tickets.refresh(p);}
             Bukkit.getScheduler().runTaskTimer(this,this::tick,1,1);
             Bukkit.getScheduler().runTaskTimer(this,bridge::heartbeat,1,40);
             if(getConfig().getBoolean("quiz-active",false))main(()->start(getConfig().getInt("quiz-limit",0)));
@@ -107,6 +110,7 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
         }
         if(++ticks%5==0){
             if(lobbyFeatures!=null)lobbyFeatures.tick();
+            for(Player p:Bukkit.getOnlinePlayers())tickets.refresh(p);
             for(UUID id:state.participants()){Player p=Bukkit.getPlayer(id);if(p!=null)render(p,state);}
         }
     }
@@ -160,14 +164,16 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
     private void enterCabin(Player p) {
         UUID id=p.getUniqueId();if(ownsCabin(id)||defenseActive(p))return;
         var service=defense();if(service!=null)service.releaseLobbyTools(p);
+        if(tickets!=null)tickets.strip(p);
         recovery.captureCabin(p);cabinOwners.add(id);
         try{
             p.closeInventory();p.getInventory().clear();p.setInvisible(false);p.setGameMode(GameMode.ADVENTURE);
             p.setFlying(false);p.setAllowFlight(false);p.setFallDistance(0);p.setFireTicks(0);p.setFoodLevel(20);
             if(!cabin.spawn.equals(p.getLocation())&&!p.teleport(cabin.spawn))throw new IllegalStateException("Noqui teleport rejected");
-            p.getInventory().setItem(0,tool(Material.COMPASS,"defense","MC Luck Defense","우클릭: 디펜스 바로 시작"));
-            p.getInventory().setItem(1,tool(Material.PAPER,"controls","노래퀴즈","우클릭 또는 F: 출제·브라우저·BGM"));p.getInventory().setHeldItemSlot(1);
+            p.getInventory().setItem(0,minigameCompass());
+            p.getInventory().setItem(1,tool(Material.PAPER,"controls","노래퀴즈","우클릭 또는 F: 노래퀴즈"));p.getInventory().setHeldItemSlot(1);
             hud.setImmersive(p,true);
+            if(tickets!=null)tickets.refresh(p);
         }catch(RuntimeException error){cabinOwners.remove(id);recovery.releaseCabin(p,true);throw error;}
     }
     private String texture(Player p) {
@@ -176,15 +182,21 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
         }catch(RuntimeException ignored){return null;}
     }
     private ItemStack tool(Material type,String id,String title,String lore) {
-        var item=new ItemStack(type);var meta=item.getItemMeta();meta.displayName(text(title));meta.lore(List.of(text(lore)));
+        var item=new ItemStack(type);var meta=item.getItemMeta();meta.displayName(text(title).decoration(net.kyori.adventure.text.format.TextDecoration.ITALIC,false));meta.lore(List.of(text(lore).decoration(net.kyori.adventure.text.format.TextDecoration.ITALIC,false)));
         meta.getPersistentDataContainer().set(new NamespacedKey(this,"tool"),PersistentDataType.STRING,id);item.setItemMeta(meta);return item;
     }
+    ItemStack minigameCompass(){
+        var compass=tool(Material.COMPASS,"defense","미니게임","우클릭: 미니게임 메뉴");var meta=compass.getItemMeta();
+        meta.displayName(text("미니게임").color(net.kyori.adventure.text.format.NamedTextColor.AQUA).decoration(net.kyori.adventure.text.format.TextDecoration.ITALIC,false));compass.setItemMeta(meta);return compass;
+    }
     String tool(Player p){var item=p.getInventory().getItemInMainHand();return item.hasItemMeta()?item.getItemMeta().getPersistentDataContainer().get(new NamespacedKey(this,"tool"),PersistentDataType.STRING):null;}
-    @Override public boolean routeJoin(Player p) {
+    boolean protectedTool(ItemStack item){return item!=null&&item.hasItemMeta()&&item.getItemMeta().getPersistentDataContainer().has(new NamespacedKey(this,"tool"),PersistentDataType.STRING);}
+    @Override public boolean routeJoin(Player p){return routeJoin(p,true);}
+    private boolean routeJoin(Player p,boolean promptBrowser) {
         if(!started())return false;
         boolean joined=participant(p.getUniqueId());
         try{
-            if(!joined){enter(p);game.join(p.getUniqueId());hud.start(p,game.snapshot().totalRounds());promptEntry(p);}
+            if(!joined){enter(p);game.join(p.getUniqueId());hud.start(p,game.snapshot().totalRounds());if(promptBrowser)promptEntry(p);}
             else if(!defenseActive(p))enterCabin(p);
             else hud.setImmersive(p,false);
             return true;
@@ -195,19 +207,20 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
     }
     @Override public void openControls(Player p){if(participant(p.getUniqueId()))dialogs.controls(p);}
     @Override public void prepareDefense(Player p) {
+        if(tickets!=null)tickets.strip(p);
         UUID id=p.getUniqueId();if(!ownsCabin(id))return;
         handoffs.add(id);cabinOwners.remove(id);hud.setImmersive(p,false);
-        try{recovery.releaseCabin(p,false);}catch(RuntimeException error){cabinOwners.add(id);handoffs.remove(id);hud.setImmersive(p,true);throw error;}
+        try{recovery.releaseCabin(p,false);if(tickets!=null)tickets.strip(p);}catch(RuntimeException error){cabinOwners.add(id);handoffs.remove(id);hud.setImmersive(p,true);if(tickets!=null)tickets.refresh(p);throw error;}
     }
-    @Override public void defenseEntered(Player p){handoffs.remove(p.getUniqueId());if(participant(p.getUniqueId()))hud.setImmersive(p,false);}
-    @Override public void defenseFailed(Player p){if(handoffs.remove(p.getUniqueId())&&participant(p.getUniqueId())&&!defenseActive(p))enterCabin(p);}
+    @Override public void defenseEntered(Player p){handoffs.remove(p.getUniqueId());if(participant(p.getUniqueId()))hud.setImmersive(p,false);if(tickets!=null)tickets.refresh(p);}
+    @Override public void defenseFailed(Player p){if(handoffs.remove(p.getUniqueId())&&participant(p.getUniqueId())&&!defenseActive(p))enterCabin(p);if(tickets!=null)tickets.refresh(p);}
     @Override public void leave(Player p){if(game!=null)game.leave(p.getUniqueId());boolean cabin=ownsCabin(p.getUniqueId());restore(p,true);if(cabin){var service=defense();if(service!=null)service.sendLobby(p);}}
     private void restore(Player p,boolean teleport) {
         UUID id=p.getUniqueId();members.remove(id);handoffs.remove(id);drafts.remove(id);if(connections!=null)connections.forget(id);
         boolean owned=cabinOwners.remove(id);
         try{hud.leave(p);}finally{
-            try{if(owned&&!defenseActive(p)){p.closeDialog();recovery.releaseCabin(p,teleport);}}
-            finally{recovery.restoreMusic(p);}
+            try{if(owned&&!defenseActive(p)){if(tickets!=null)tickets.strip(p);p.closeDialog();recovery.releaseCabin(p,teleport);}}
+            finally{recovery.restoreMusic(p);if(tickets!=null)tickets.refresh(p);}
         }
     }
     void quit(Player p){if(game!=null)game.leave(p.getUniqueId());restore(p,false);}
@@ -216,10 +229,10 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
         var s=answerState;if(s==null||s.phase()!=QuizGame.Phase.PLAYING||s.winner()!=null||s.song()==null||!s.participants().contains(id)||Objects.equals(s.presenter(),id)||!s.song().matches(input))return false;
         main(()->{if(game.snapshot().session().equals(s.session())&&Objects.equals(game.snapshot().roundId(),s.roundId()))game.answer(id,input);});return true;
     }
-    void toDefense(Player p) {
+    void openMinigames(Player p) {
         var service=defense();if(service==null){p.sendMessage(text("디펜스가 준비 중입니다. 잠시 후 다시 시도하세요."));return;}
         if(!ownsCabin(p.getUniqueId())||!p.isOnline())return;
-        try{service.startGame(p);}catch(RuntimeException error){defenseFailed(p);p.sendMessage(text("디펜스를 시작하지 못했습니다. 다시 시도하세요."));}
+        service.openMenu(p);
     }
     void stopQuiz(){if(!started())throw new IllegalArgumentException("진행 중인 노래퀴즈가 없습니다.");game.stop();}
     private void finishQuiz(Map<UUID,Integer> scores) {
@@ -236,7 +249,28 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
         if(bridge!=null)bridge.publish(game.snapshot());
     }
     Song draft(UUID id){return drafts.get(id);}
-    void submit(Player p,long revision,String url,String title,String tags){Song song=Song.input(url,title,tags);game.submit(p.getUniqueId(),revision,song);drafts.put(p.getUniqueId(),song);}
+    boolean hasTicket(Player p){return tickets!=null&&tickets.has(p);}
+    void giveTickets(UUID player,long amount,String transactionId){game.giveOnce(player,amount,transactionId);tickets.refresh(player);if(tickets.pending(player)>0)throw new QuestionTickets.DeliveryPending();}
+    void openTicketForm(Player p){
+        UUID session=game.snapshot().session();var membership=connectionEntry(p.getUniqueId());
+        main(()->{
+            if(!p.isOnline()||!session.equals(game.snapshot().session())||!Objects.equals(membership,connectionEntry(p.getUniqueId()))||!hasTicket(p))return;
+            try{
+                if(!started())throw new IllegalArgumentException("진행 중인 노래퀴즈가 없습니다.");
+                if(!participant(p.getUniqueId())&&!routeJoin(p,false))throw new IllegalArgumentException("노래퀴즈에 참가할 수 없습니다.");
+                p.closeInventory();dialogs.submit(p);
+            }catch(IllegalArgumentException error){p.sendMessage(text(error.getMessage()));}
+        });
+    }
+    void refreshTickets(Player p){if(tickets!=null)tickets.refresh(p);}
+    void submit(Player p,UUID session,String url,String title,String tags){
+        if(!game.snapshot().session().equals(session)||!participant(p.getUniqueId()))throw new IllegalArgumentException("노래퀴즈 입력 창을 다시 열어 주세요.");
+        Song song=Song.input(url,title,tags);
+        drafts.put(p.getUniqueId(),song);
+        if(tickets==null)throw new IllegalArgumentException("사용할 출제권이 없습니다.");
+        try{tickets.submit(p,()->game.submit(p.getUniqueId(),game.snapshot().revision(),song));}
+        catch(java.io.UncheckedIOException error){throw new IllegalArgumentException("출제권을 저장하지 못했습니다. 다시 시도하세요.",error);}
+    }
     BrowserConnections.Entry connectionEntry(UUID id) {
         var member=members.get(id);Player p=Bukkit.getPlayer(id);
         return member==null||p==null||!p.isOnline()||!participant(id)?null:new BrowserConnections.Entry(game.snapshot().session(),member.membershipId());
@@ -244,7 +278,6 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
     private void promptEntry(Player p){var entry=connectionEntry(p.getUniqueId());main(()->{if(entry!=null&&entry.equals(connectionEntry(p.getUniqueId())))browserLink(p);});}
     void browserLink(Player p){if(connections!=null)connections.open(p.getUniqueId());}
     void joined(Player p){if(lobbyFeatures!=null)lobbyFeatures.join(p);routeJoin(p);}
-    void openShop(Player p){var service=Bukkit.getServicesManager().load(LobbyService.class);if(service!=null)service.openShop(p);}
     @Override public boolean onCommand(CommandSender sender,Command command,String label,String[] args) {
         try{
             if(label.equalsIgnoreCase("money")||command!=null&&command.getName().equalsIgnoreCase("money")){
@@ -257,6 +290,10 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
                 if(!(sender instanceof Player p)||!game.voteSkip(p.getUniqueId(),game.snapshot().roundId()))throw new IllegalArgumentException("현재 라운드에서 한 번 투표할 수 있습니다.");return true;
             }
             if(action.equals("leave")&&sender instanceof Player p){leave(p);return true;}
+            if(action.equals("bgm")&&sender instanceof Player p){
+                if(args.length!=1||!participant(p.getUniqueId()))throw new IllegalArgumentException("참가 중에 /noqui bgm을 사용하세요.");
+                recovery.toggleBgm(p);p.sendMessage(text(recovery.bgmMuted(p)?"BGM OFF":"BGM ON"));return true;
+            }
             if(action.equals("menu")&&sender instanceof Player p&&participant(p.getUniqueId())){openControls(p);return true;}
             if(!sender.isOp())throw new IllegalArgumentException("OP만 노래퀴즈를 관리할 수 있습니다.");
             switch(action){
@@ -267,9 +304,10 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
                     OfflinePlayer target=Bukkit.getPlayerExact(args[1]);
                     if(target==null)target=Arrays.stream(Bukkit.getOfflinePlayers()).filter(p->args[1].equalsIgnoreCase(p.getName())).findFirst().orElse(null);
                     if(target==null)throw new IllegalArgumentException("서버에 접속한 적이 있는 플레이어를 선택하세요.");
-                    int amount=args.length==3?Integer.parseInt(args[2]):1;game.grant(target.getUniqueId(),amount);sender.sendMessage(text(target.getName()+" · 출제권 "+game.credits(target.getUniqueId())+"개"));}
+                    int amount=args.length==3?Integer.parseInt(args[2]):1;game.grant(target.getUniqueId(),amount);if(tickets!=null)tickets.refresh(target.getUniqueId());sender.sendMessage(text(target.getName()+" · 출제권 "+amount+"장 "+(tickets!=null&&tickets.pending(target.getUniqueId())>0?"지급 대기":"지급")));}
                 case "status"->{var s=game.snapshot();sender.sendMessage(text("Noqui · "+s.phase()+" · 참가 "+s.participants().size()+"명 · "+s.round()+" / "+(s.totalRounds()==0?"∞":s.totalRounds())+" 라운드"));}
-                default->{if(sender instanceof Player p)dialogs.admin(p);else sender.sendMessage(text("/noqui start [rounds] | limit <rounds> | stop | skip force | hint | pause | resume | give <player> [amount] | status"));}
+                case "admin"->{if(sender instanceof Player p)dialogs.admin(p);}
+                default->sender.sendMessage(text("/noqui start [rounds] | limit <rounds> | stop | skip force | hint | pause | resume | give <player> [amount] | status | admin"));
             }
         }catch(NumberFormatException error){sender.sendMessage(text("유효한 정수 수량을 입력하세요."));}
         catch(IllegalArgumentException error){sender.sendMessage(text(error.getMessage()));}
@@ -277,7 +315,7 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
         return true;
     }
     @Override public List<String> onTabComplete(CommandSender sender,Command command,String alias,String[] args) {
-        List<String> choices=args.length==1?(sender.isOp()?List.of("start","limit","stop","skip","hint","pause","resume","give","status","leave"):List.of("skip","leave")):
+        List<String> choices=args.length==1?(sender.isOp()?List.of("start","limit","stop","skip","hint","pause","resume","give","status","admin","bgm","leave"):List.of("skip","bgm","leave")):
                 sender.isOp()&&args.length==2&&args[0].equals("give")?Bukkit.getOnlinePlayers().stream().map(Player::getName).toList():
                 sender.isOp()&&args.length==2&&args[0].equals("skip")?List.of("force"):List.of();
         String prefix=args[args.length-1].toLowerCase(Locale.ROOT);return choices.stream().filter(s->s.toLowerCase(Locale.ROOT).startsWith(prefix)).toList();

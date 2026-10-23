@@ -53,7 +53,7 @@ def png(path, pixels=False):
     return w,h,rows
 
 def validate(original=None):
-    expected={'pack.mcmeta','MIT_BACKPACK_LICENSE.txt','ASSET_NOTICES.txt','assets/minecraft/sounds.json',
+    expected={'pack.mcmeta','MIT_BACKPACK_LICENSE.txt','SKIN_SOURCE_NOTICE.txt','ASSET_NOTICES.txt','assets/minecraft/sounds.json',
               'assets/noqui/textures/item/palette.png','assets/noqui/textures/item/backpack.png','assets/noqui/textures/entity/shopkeeper.png'}
     expected.update(f'assets/noqui/items/{name}.json' for name in IDS)
     expected.update(f'assets/noqui/models/{name}.json' for name in IDS)
@@ -93,6 +93,11 @@ def validate(original=None):
         assert all(skin[v][u*4+3]==255 for v in range(y,y+height) for u in range(x,x+width)),(x,y)
     assert all(skin[y][54*4+3]==0 for y in range(20,32)), 'Right arm must be3pixels wide'
     assert all(skin[y][46*4+3]==0 for y in range(52,64)), 'Left arm must be3pixels wide'
+    source=ROOT/'vendor/munasharna/purple-hair-girl-in-tuxedo.png'
+    skin_provenance=json.loads((ROOT/'vendor/munasharna/provenance.json').read_text(encoding='utf-8'))
+    assert digest(source.read_bytes())==skin_provenance['sha256'], 'Downloaded skin source changed'
+    assert (PACK/'assets/noqui/textures/entity/shopkeeper.png').read_bytes()==source.read_bytes(), 'Shop skin must match downloaded asset'
+    assert (PACK/'SKIN_SOURCE_NOTICE.txt').read_bytes()==(ROOT/'vendor/munasharna/NOTICE.txt').read_bytes()
     definitions=json.loads((PACK/'assets/minecraft/sounds.json').read_text(encoding='utf-8'))
     assert set(definitions)==set(EVENTS)
     provenance=json.loads((ROOT/'sound-provenance.json').read_text(encoding='utf-8'))

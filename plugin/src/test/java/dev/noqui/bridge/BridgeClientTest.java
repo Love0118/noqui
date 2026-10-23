@@ -16,6 +16,29 @@ class BridgeClientTest {
     private BridgeClient client(java.util.function.Supplier<List<BridgeClient.Member>> roster) {
         return new BridgeClient(URI.create("http://127.0.0.1:8788"),key,"primary",UUID.randomUUID(),Runnable::run,roster,(r,a,b)->{},s->{});
     }
+    @Test void queuedJobBeyondFifteenMinutesRemainsValidWithinBounded64JobBudget() {
+        var now=new java.util.concurrent.atomic.AtomicLong(1000);long deadline=now.get()+BridgeClient.MAX_PREPARATION_MILLIS;
+        try(var client=new BridgeClient(URI.create("http://127.0.0.1:8788"),key,"primary",UUID.randomUUID(),Runnable::run,List::of,(r,a,b)->{},s->{},now::get)) {
+            var request=new MediaBridge.Request(UUID.randomUUID(),1,Song.input("https://youtu.be/BaW_jenozKc","Song",""));
+            var waiting=new CompletableFuture<MediaBridge.Media>();UUID job=UUID.randomUUID(),media=UUID.randomUUID();
+            JsonObject queued=JsonParser.parseString("{\"state\":\"QUEUED\",\"jobId\":\""+job+"\",\"retryAfterMs\":30000}").getAsJsonObject();
+            now.addAndGet(16*60000L);client.poll(request,waiting,queued,null,deadline);assertFalse(waiting.isDone());
+            now.set(64L*300000);client.poll(request,waiting,queued,null,deadline);assertFalse(waiting.isDone());
+            var ready=JsonParser.parseString("{\"state\":\"READY\",\"mediaId\":\""+media+"\",\"durationMs\":115007}").getAsJsonObject();client.poll(request,waiting,ready,null,deadline);assertEquals(media.toString(),waiting.join().id());
+            var expired=new CompletableFuture<MediaBridge.Media>();now.set(deadline+1);client.poll(request,expired,queued,null,deadline);assertTrue(expired.isCompletedExceptionally());
+        }
+    }
+    @Test void cancellationAndCloseStopQueuedPollingWithoutWaitingForQueueBudget()throws Exception {
+        var server=HttpServer.create(new InetSocketAddress("127.0.0.1",8788),0);var posts=new java.util.concurrent.CountDownLatch(2);var gets=new java.util.concurrent.atomic.AtomicInteger();
+        server.createContext("/internal/v1/media/jobs",exchange->{try{exchange.getRequestBody().readAllBytes();if(exchange.getRequestMethod().equals("GET"))gets.incrementAndGet();
+            byte[] body=("{\"state\":\"QUEUED\",\"jobId\":\""+UUID.randomUUID()+"\",\"retryAfterMs\":30000}").getBytes(StandardCharsets.UTF_8);exchange.sendResponseHeaders(200,body.length);exchange.getResponseBody().write(body);posts.countDown();
+        }finally{exchange.close();}});server.start();
+        try(var client=client(List::of)) {
+            UUID session=UUID.randomUUID();var song=Song.input("https://youtu.be/BaW_jenozKc","Song","");
+            var canceled=client.prepare(new MediaBridge.Request(session,1,song)).toCompletableFuture();var closed=client.prepare(new MediaBridge.Request(session,2,song)).toCompletableFuture();
+            assertTrue(posts.await(5,TimeUnit.SECONDS));client.cancel(session,1);assertTrue(canceled.isCancelled());client.close();assertTrue(closed.isCancelled());assertEquals(0,gets.get());
+        }finally{server.stop(0);}
+    }
     @Test void signingMatchesIndependentVectorAndEmptyGetHasNoTrailingNewline() {
         for(int i=0;i<key.length;i++)key[i]=(byte)i;
         byte[] body="{\"schemaVersion\":1,\"videoId\":\"BaW_jenozKc\"}".getBytes(StandardCharsets.UTF_8);
@@ -40,6 +63,18 @@ class BridgeClientTest {
             String prepared=client.snapshot(game.snapshot(),List.of()).toString();assertFalse(prepared.contains("Private"));assertFalse(prepared.contains("youtube"));
             game.browsersReady(game.snapshot().revision(),true,true);game.forceSkip(game.snapshot().roundId());String reveal=client.snapshot(game.snapshot(),List.of()).toString();
             assertTrue(reveal.contains("Private answer"));assertTrue(reveal.contains("PrivateTag"));assertTrue(reveal.contains("BaW_jenozKc"));
+        }
+    }
+    @Test void opusPaddingMetadataProducesValidBoundedRoundTimelineAndKeepsPreparedMedia() {
+        try(var client=client(List::of)) {
+            var future=new CompletableFuture<MediaBridge.Media>();
+            var fake=new MediaBridge(){public CompletionStage<Media> prepare(Request r){return future;}public void cancel(UUID s,long r){}public void publish(QuizGame.Snapshot s){}};
+            var game=game(fake);game.start(List.of(player));game.grant(player,1);game.submit(player,game.snapshot().revision(),Song.input("https://youtu.be/BaW_jenozKc","Secret","Tag"));
+            UUID media=UUID.randomUUID();future.complete(new MediaBridge.Media(media.toString(),115007));
+            JsonObject room=client.snapshot(game.snapshot(),List.of()).getAsJsonArray("rooms").get(0).getAsJsonObject();var round=room.getAsJsonObject("round");
+            assertEquals("PREPARING",room.get("phase").getAsString());assertEquals(115007,game.snapshot().media().durationMillis());
+            assertEquals(115000,round.get("clipEndMs").getAsLong());assertEquals(0,round.get("clipStartMs").getAsLong());assertEquals(0,round.get("anchorPositionMs").getAsLong());assertFalse(round.get("playing").getAsBoolean());
+            assertEquals(media.toString(),round.get("mediaId").getAsString());assertEquals(room.get("roundNumber"),round.get("number"));assertTrue(room.get("reveal").isJsonNull());
         }
     }
     @Test void realHttpSignsExactBytesPollsEmptyGetAndIssuesHashOnlyToken() throws Exception {

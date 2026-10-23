@@ -115,6 +115,13 @@ class LobbyRuntimeTest {
         b.blocking=true;assertFalse(features.canHammer(a.p,b.p));b.blocking=false;b.world=arena;assertFalse(features.canHammer(a.p,b.p));b.world=cabin;b.location.add(20,0,0);assertFalse(features.canHammer(a.p,b.p));
         verify(a.p,never()).getInventory();verify(b.p,never()).getInventory();
     }
+    @Test void moneyShowsOnlyStarsAndAnswerPointsWithoutQueryingTicketBalance() {
+        var port=mock(LobbyFeatures.CreditPort.class);create(port());Person person=new Person();
+        features.rewardStarlight(person.id,"money:stars",60);features.rewardAnswerPoints(person.id,"money:points",2);
+        features.showMoney(person.p);
+        verify(person.p).sendMessage(net.kyori.adventure.text.Component.text("✦ 60  ·  정답 포인트 2"));
+        verify(port,never()).balance(any());verify(person.p,never()).showDialog(any());
+    }
     @Test void failedCreditDeliveryReplaysSamePaidGrantWithoutSecondDebit()throws Exception {
         UUID id=UUID.randomUUID();LobbyWallets w=ledger();w.reward(id,"funds",20,Currency.STARLIGHT);w.purchase(id,LobbyCatalog.defaults().getFirst(),Currency.STARLIGHT,"credit");
         Set<String> grants=new HashSet<>();AtomicInteger calls=new AtomicInteger();

@@ -35,6 +35,7 @@ public final class PlayerRecovery {
         boolean muted=p.getOrDefault(BGM,PersistentDataType.BYTE,(byte)0)!=0;
         p.set(BGM,PersistentDataType.BYTE,(byte)(muted?0:1));player.saveData();
     }
+    boolean bgmMuted(Player player){return player.getPersistentDataContainer().getOrDefault(BGM,PersistentDataType.BYTE,(byte)0)!=0;}
     public boolean releaseCabin(Player player,boolean teleport) {
         var p=player.getPersistentDataContainer();String encoded=p.get(STATE,PersistentDataType.STRING);if(encoded==null)return false;
         String[] s=encoded.split(";",-1);if(s.length!=10)throw new IllegalStateException("Invalid Noqui recovery state");
