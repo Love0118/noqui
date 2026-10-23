@@ -17,6 +17,7 @@ use std::{
 use tokio::{process::Command, sync::Notify};
 
 const MAX_QUEUED: i64 = 64;
+const SOURCE_FORMAT: &str = "bestaudio[ext=webm][abr<=80]/bestaudio[ext=webm]/bestaudio[ext=m4a]";
 
 #[derive(Clone, Serialize, Deserialize, Debug)]
 #[serde(rename_all = "camelCase")]
@@ -315,6 +316,7 @@ async fn ingest(app: &App, w: &Work) -> IngestResult<()> {
         return Err("DISK_FULL");
     }
     let deadline = Instant::now() + Duration::from_secs(300);
+    let ffmpeg = executable_path(&app.config.ffmpeg)?;
     let url = format!("https://www.youtube.com/watch?v={}", w.video);
     let mut base = vec![
         "--ignore-config".into(),
@@ -330,6 +332,8 @@ async fn ingest(app: &App, w: &Work) -> IngestResult<()> {
         "--fragment-retries".into(),
         "1".into(),
         "--no-progress".into(),
+        "-f".into(),
+        SOURCE_FORMAT.into(),
     ];
     if let Some(path) = &app.config.cookies {
         if !path.is_file() {
@@ -342,7 +346,7 @@ async fn ingest(app: &App, w: &Work) -> IngestResult<()> {
         "--skip-download".into(),
         "--dump-single-json".into(),
         "--".into(),
-        url.clone(),
+        url,
     ]);
     run(
         &app.config.yt_dlp,
@@ -358,7 +362,14 @@ async fn ingest(app: &App, w: &Work) -> IngestResult<()> {
             .map_err(|_| "SOURCE_UNAVAILABLE")?,
     )
     .map_err(|_| "SOURCE_UNAVAILABLE")?;
-    source_duration(&metadata)?;
+    let metadata = download_info(metadata, &w.video)?;
+    let info_path = dir.join("resolved.json");
+    tokio::fs::write(
+        &info_path,
+        serde_json::to_vec(&metadata).map_err(|_| "SOURCE_UNAVAILABLE")?,
+    )
+    .await
+    .map_err(|_| "DISK_FULL")?;
     app.jobs
         .stage(w.id.clone(), "DOWNLOADING", app.now())
         .await
@@ -367,13 +378,19 @@ async fn ingest(app: &App, w: &Work) -> IngestResult<()> {
     args.extend([
         "--max-filesize".into(),
         MAX_SOURCE.to_string(),
-        "-f".into(),
-        "bestaudio[ext=webm][abr<=80]/bestaudio[ext=webm]/bestaudio[ext=m4a]".into(),
+        "--load-info-json".into(),
+        info_path.to_string_lossy().into_owned(),
         "-o".into(),
         dir.join("source.media").to_string_lossy().into_owned(),
-        "--".into(),
-        url,
     ]);
+    if source_duration(&metadata)? > 115.0 {
+        args.extend([
+            "--download-sections".into(),
+            "*0-115".into(),
+            "--ffmpeg-location".into(),
+            ffmpeg.to_string_lossy().into_owned(),
+        ]);
+    }
     run(
         &app.config.yt_dlp,
         &args,
@@ -524,6 +541,49 @@ async fn ingest(app: &App, w: &Work) -> IngestResult<()> {
         .map_err(|_| "INGEST_UNAVAILABLE")?;
     Ok(())
 }
+fn download_info(mut info: Value, video: &str) -> IngestResult<Value> {
+    source_duration(&info)?;
+    if info["id"].as_str() != Some(video)
+        || info
+            .get("_type")
+            .is_some_and(|value| value.as_str() != Some("video"))
+    {
+        return Err("SOURCE_UNAVAILABLE");
+    }
+    let object = info.as_object_mut().ok_or("SOURCE_UNAVAILABLE")?;
+    // yt-dlp otherwise retries a failed info-json download by extracting this
+    // URL again. Keep failure bounded; an explicit job retry resolves fresh URLs.
+    object.remove("webpage_url");
+    object.remove("original_url");
+    Ok(info)
+}
+fn executable_path(program: &str) -> IngestResult<PathBuf> {
+    let path = Path::new(program);
+    if path
+        .parent()
+        .is_some_and(|parent| !parent.as_os_str().is_empty())
+    {
+        return if path.is_file() {
+            fs::canonicalize(path).map_err(|_| "INGEST_UNAVAILABLE")
+        } else {
+            Err("INGEST_UNAVAILABLE")
+        };
+    }
+    for directory in std::env::split_paths(&std::env::var_os("PATH").unwrap_or_default()) {
+        let candidate = directory.join(program);
+        if candidate.is_file() {
+            return fs::canonicalize(candidate).map_err(|_| "INGEST_UNAVAILABLE");
+        }
+        #[cfg(windows)]
+        if path.extension().is_none() {
+            let candidate = candidate.with_extension("exe");
+            if candidate.is_file() {
+                return fs::canonicalize(candidate).map_err(|_| "INGEST_UNAVAILABLE");
+            }
+        }
+    }
+    Err("INGEST_UNAVAILABLE")
+}
 pub fn source_duration(info: &Value) -> IngestResult<f64> {
     let duration = info["duration"].as_f64().ok_or("SOURCE_UNAVAILABLE")?;
     if info["is_live"].as_bool() == Some(true)
@@ -643,6 +703,7 @@ async fn run(
     label: &str,
     deadline: Instant,
 ) -> IngestResult<()> {
+    let started = Instant::now();
     let out = fs::File::create(dir.join(format!("{label}.out"))).map_err(|_| "DISK_FULL")?;
     let err = fs::File::create(dir.join(format!("{label}.err"))).map_err(|_| "DISK_FULL")?;
     let mut command = Command::new(program);
@@ -717,6 +778,16 @@ async fn run(
     }
     let _ = child.wait().await;
     cancellation.armed = false;
+    if let Some(job) = dir
+        .file_name()
+        .and_then(|name| name.to_str())
+        .filter(|id| uuid(id))
+    {
+        eprintln!(
+            "{}",
+            json!({"event":"media_stage","jobId":job,"stage":label,"elapsedMs":started.elapsed().as_millis(),"result":result.as_ref().err().copied().unwrap_or("OK")})
+        );
+    }
     result
 }
 struct ProcessGroup {
@@ -769,6 +840,93 @@ fn classify(path: &Path) -> &'static str {
 #[cfg(test)]
 mod tests {
     use super::*;
+    #[cfg(target_os = "linux")]
+    #[tokio::test]
+    async fn owned_child_processes_stop_on_deadline_and_task_cancellation() {
+        fn stopped(pid: i32) -> bool {
+            if unsafe { libc::kill(pid, 0) } != 0 {
+                return true;
+            }
+            fs::read_to_string(format!("/proc/{pid}/stat")).is_ok_and(|stat| {
+                stat.rsplit_once(") ")
+                    .is_some_and(|(_, tail)| tail.starts_with('Z'))
+            })
+        }
+        for cancel in [false, true] {
+            let dir = tempfile::tempdir().unwrap();
+            let child_file = dir.path().join("owned-child.pid");
+            let work_dir = dir.path().to_owned();
+            let args = vec![
+                "-c".into(),
+                "sleep 30 & printf '%s' \"$!\" > \"$1\"; wait".into(),
+                "fixture".into(),
+                child_file.to_string_lossy().into_owned(),
+            ];
+            let task = tokio::spawn(async move {
+                run(
+                    "/bin/sh",
+                    &args,
+                    &work_dir,
+                    "child-cleanup",
+                    Instant::now() + Duration::from_millis(if cancel { 30000 } else { 750 }),
+                )
+                .await
+            });
+            let child: i32 = tokio::time::timeout(Duration::from_secs(3), async {
+                loop {
+                    if let Ok(text) = fs::read_to_string(&child_file)
+                        && let Ok(pid) = text.parse()
+                    {
+                        break pid;
+                    }
+                    tokio::time::sleep(Duration::from_millis(10)).await;
+                }
+            })
+            .await
+            .unwrap();
+            if cancel {
+                task.abort();
+                assert!(task.await.unwrap_err().is_cancelled());
+            } else {
+                assert_eq!(task.await.unwrap().err(), Some("INGEST_TIMEOUT"));
+            }
+            tokio::time::timeout(Duration::from_secs(2), async {
+                while !stopped(child) {
+                    tokio::time::sleep(Duration::from_millis(10)).await;
+                }
+            })
+            .await
+            .expect("owned child must not survive its job");
+        }
+    }
+    #[test]
+    fn resolved_download_keeps_selected_formats_but_cannot_reextract_a_webpage() {
+        let source = json!({"id":"BaW_jenozKc","_type":"video","duration":240,
+            "webpage_url":"https://www.youtube.com/watch?v=BaW_jenozKc",
+            "original_url":"https://www.youtube.com/watch?v=BaW_jenozKc",
+            "formats":[{"format_id":"249","acodec":"opus","vcodec":"none","abr":64,"url":"https://media.example.test/audio"}]});
+        let ready = download_info(source.clone(), "BaW_jenozKc").unwrap();
+        assert_eq!(ready["formats"], source["formats"]);
+        assert_eq!(ready["duration"], 240);
+        assert!(ready.get("webpage_url").is_none());
+        assert!(ready.get("original_url").is_none());
+        assert_eq!(
+            download_info(source.clone(), "AAAAAAAAAAA").err(),
+            Some("SOURCE_UNAVAILABLE")
+        );
+        let mut playlist = source.clone();
+        playlist["_type"] = json!("playlist");
+        assert_eq!(
+            download_info(playlist, "BaW_jenozKc").err(),
+            Some("SOURCE_UNAVAILABLE")
+        );
+        let mut live = source.clone();
+        live["is_live"] = json!(true);
+        assert_eq!(download_info(live, "BaW_jenozKc").err(), Some("TOO_LONG"));
+        let mut long = source;
+        long["duration"] = json!(301);
+        assert_eq!(download_info(long, "BaW_jenozKc").err(), Some("TOO_LONG"));
+    }
     #[tokio::test]
     async fn subprocess_deadline_stops_work_and_reports_timeout() {
         let dir = tempfile::tempdir().unwrap();

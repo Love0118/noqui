@@ -110,7 +110,7 @@ impl Fixture {
             playing: s.rooms[0].phase != "PREPARING",
         });
     }
-    fn sync_direct(&self, s: Snapshot, media: Option<Media>) {
+    fn sync_direct(&self, s: Snapshot, media: Option<Media>) -> Value {
         let bytes = serde_json::to_vec(&s).unwrap();
         let map = media
             .map(|m| HashMap::from([(m.id.clone(), m)]))
@@ -120,7 +120,7 @@ impl Fixture {
             .lock()
             .unwrap()
             .sync(s, auth::digest(&bytes), map, self.app.now())
-            .unwrap();
+            .unwrap()
     }
     fn login(&self) -> (String, String) {
         let token = auth::random();
@@ -186,6 +186,213 @@ fn get(path: &str, cookie: &str) -> Request<Body> {
         .header("cookie", cookie)
         .body(Body::empty())
         .unwrap()
+}
+
+#[tokio::test(start_paused = true)]
+async fn idle_sse_heartbeats_keep_presence_without_audio_or_browser_timers_then_expire() {
+    let f = Fixture::new();
+    assert_eq!(
+        f.sync_direct(f.snapshot(1, "IDLE"), None)["browsers"][0]["connected"],
+        false
+    );
+    let (cookie, _) = f.login();
+    call(api::public(f.app.clone()), get("/api/v1/me", &cookie)).await;
+    assert_eq!(
+        f.sync_direct(f.snapshot(2, "IDLE"), None)["browsers"][0]["connected"],
+        false
+    );
+    let response = api::public(f.app.clone())
+        .oneshot(get("/api/v1/events", &cookie))
+        .await
+        .unwrap();
+    let mut stream = response.into_body();
+    assert!(
+        String::from_utf8(
+            stream
+                .frame()
+                .await
+                .unwrap()
+                .unwrap()
+                .into_data()
+                .unwrap()
+                .to_vec()
+        )
+        .unwrap()
+        .contains("event: state")
+    );
+    for tick in 1..=12 {
+        let mut next = Box::pin(stream.frame());
+        assert!(futures_util::poll!(next.as_mut()).is_pending());
+        f.clock.0.store(START + tick * 5000, Ordering::SeqCst);
+        f.sync_direct(f.snapshot((tick + 2) as u64, "IDLE"), None);
+        tokio::time::advance(std::time::Duration::from_secs(5)).await;
+        let event =
+            String::from_utf8(next.await.unwrap().unwrap().into_data().unwrap().to_vec()).unwrap();
+        assert!(
+            event.contains("event: lease"),
+            "actual SSE heartbeat, with no state notification"
+        );
+        let feedback = f.sync_direct(f.snapshot((tick + 2) as u64, "IDLE"), None);
+        assert_eq!(feedback["browsers"][0]["uuid"], PLAYER);
+        assert_eq!(feedback["browsers"][0]["membershipId"], MEMBER);
+        assert_eq!(feedback["browsers"][0]["connected"], true);
+        assert_eq!(
+            feedback["browsers"][0]["online"], false,
+            "no active audio-client lease"
+        );
+        assert!(feedback["browsers"][0]["clientId"].is_null());
+    }
+    drop(stream);
+    f.clock.0.store(START + 70000, Ordering::SeqCst);
+    assert_eq!(
+        f.sync_direct(f.snapshot(15, "IDLE"), None)["browsers"][0]["connected"],
+        true
+    );
+    f.clock.0.store(START + 80000, Ordering::SeqCst);
+    call(api::public(f.app.clone()), get("/api/v1/me", &cookie)).await;
+    assert_eq!(
+        f.sync_direct(f.snapshot(16, "IDLE"), None)["browsers"][0]["connected"],
+        false
+    );
+}
+
+#[tokio::test]
+async fn signed_presence_is_independent_of_readiness_and_ignores_failed_writes() {
+    let f = Fixture::new();
+    f.sync_direct(f.snapshot(1, "IDLE"), None);
+    let (cookie, csrf) = f.login();
+    let client = uuid::Uuid::new_v4().to_string();
+    let report = |csrf: &str| {
+        Request::builder().method("POST").uri("/api/v1/playback")
+        .header("cookie", &cookie).header("origin", noqui_web::ORIGIN)
+        .header("content-type", "application/json").header("x-noqui-csrf", csrf)
+        .body(Body::from(json!({"clientId":client,"takeOver":false,"roundId":null,"roundRevision":null,"playbackGeneration":null,"status":"FAILED","positionMs":null,"bufferedUntilMs":null,"lastEventId":null}).to_string())).unwrap()
+    };
+    assert_eq!(
+        call(api::public(f.app.clone()), report("stale-csrf"))
+            .await
+            .0,
+        StatusCode::FORBIDDEN
+    );
+    assert_eq!(
+        f.sync_direct(f.snapshot(2, "IDLE"), None)["browsers"][0]["connected"],
+        false
+    );
+    assert_eq!(
+        call(api::public(f.app.clone()), report(&csrf)).await.0,
+        StatusCode::OK
+    );
+    let bytes = serde_json::to_vec(&f.snapshot(3, "IDLE")).unwrap();
+    let (status, _, body) = call(
+        api::internal(f.app.clone()),
+        f.signed("POST", "/internal/v1/sync", &bytes),
+    )
+    .await;
+    assert_eq!(status, StatusCode::OK);
+    let feedback: Value = serde_json::from_slice(&body).unwrap();
+    assert_eq!(feedback["browsers"][0]["connected"], true);
+    assert_eq!(feedback["browsers"][0]["status"], "FAILED");
+    f.clock.0.store(START + 10000, Ordering::SeqCst);
+    f.sync_direct(f.snapshot(4, "IDLE"), None);
+    f.clock.0.store(START + 20000, Ordering::SeqCst);
+    let feedback = f.sync_direct(f.snapshot(5, "IDLE"), None);
+    assert_eq!(feedback["browsers"][0]["connected"], false);
+    assert_eq!(
+        feedback["browsers"][0]["online"], true,
+        "audio lease is a distinct, longer-lived signal"
+    );
+    assert_eq!(
+        call(api::public(f.app.clone()), report("stale-csrf"))
+            .await
+            .0,
+        StatusCode::FORBIDDEN
+    );
+    assert_eq!(
+        f.sync_direct(f.snapshot(6, "IDLE"), None)["browsers"][0]["connected"],
+        false
+    );
+}
+
+#[tokio::test]
+async fn an_unconsumed_sse_response_does_not_keep_an_orphaned_connection_present() {
+    let f = Fixture::new();
+    f.sync_direct(f.snapshot(1, "IDLE"), None);
+    let (cookie, _) = f.login();
+    let response = api::public(f.app.clone())
+        .oneshot(get("/api/v1/events", &cookie))
+        .await
+        .unwrap();
+    assert_eq!(response.status(), StatusCode::OK);
+    f.clock.0.store(START + 10000, Ordering::SeqCst);
+    assert_eq!(
+        f.sync_direct(f.snapshot(2, "IDLE"), None)["browsers"][0]["connected"],
+        true
+    );
+    f.clock.0.store(START + 20000, Ordering::SeqCst);
+    assert_eq!(
+        f.sync_direct(f.snapshot(3, "IDLE"), None)["browsers"][0]["connected"],
+        false
+    );
+    drop(response);
+}
+
+#[tokio::test]
+async fn presence_requires_fresh_authority_and_current_membership() {
+    for reason in ["membership", "instance", "leave", "logout"] {
+        let f = Fixture::new();
+        f.sync_direct(f.snapshot(1, "IDLE"), None);
+        let (cookie, csrf) = f.login();
+        assert_eq!(
+            call(api::public(f.app.clone()), get("/api/v1/state", &cookie))
+                .await
+                .0,
+            StatusCode::OK
+        );
+        let snapshot = f.snapshot(2, "IDLE");
+        f.sync_direct(snapshot.clone(), None);
+        f.clock.0.store(START + 15000, Ordering::SeqCst);
+        assert_eq!(
+            f.sync_direct(snapshot, None)["browsers"][0]["connected"],
+            false,
+            "duplicate heartbeat cannot revive authority"
+        );
+        if reason == "logout" {
+            let request = Request::builder()
+                .method("POST")
+                .uri("/api/v1/auth/logout")
+                .header("cookie", &cookie)
+                .header("origin", noqui_web::ORIGIN)
+                .header("content-type", "application/json")
+                .header("x-noqui-csrf", &csrf)
+                .body(Body::from("{}"))
+                .unwrap();
+            assert_eq!(
+                call(api::public(f.app.clone()), request).await.0,
+                StatusCode::NO_CONTENT
+            );
+        }
+        let mut next = f.snapshot(3, "IDLE");
+        match reason {
+            "membership" => next.roster[0].membership_id = uuid::Uuid::new_v4().to_string(),
+            "instance" => next.instance_id = uuid::Uuid::new_v4().to_string(),
+            "leave" => next.roster.clear(),
+            _ => {}
+        }
+        let feedback = f.sync_direct(next, None);
+        assert!(
+            feedback["browsers"]
+                .as_array()
+                .unwrap()
+                .iter()
+                .all(|browser| browser["connected"] == false)
+        );
+        assert_eq!(
+            call(api::public(f.app.clone()), get("/api/v1/state", &cookie))
+                .await
+                .0,
+            StatusCode::UNAUTHORIZED
+        );
+    }
 }
 
 #[tokio::test]

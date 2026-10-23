@@ -9,6 +9,7 @@ pub struct Session {
     pub absolute_until: i64,
     pub idle_until: i64,
     pub browser: Option<Browser>,
+    connected_until: i64,
 }
 #[derive(Clone)]
 pub struct Browser {
@@ -175,6 +176,7 @@ impl State {
             absolute_until: now + 28800000,
             idle_until: now + 1800000,
             browser: None,
+            connected_until: 0,
         };
         self.sessions
             .insert(auth::digest(raw_session.as_bytes()), session.clone());
@@ -269,8 +271,10 @@ impl State {
     }
     fn sync_response(&self, now: i64) -> Value {
         let browsers:Vec<Value>=self.snapshot.as_ref().map(|s|s.roster.iter().map(|p| {
-            let b=self.sessions.values().find(|s|s.player.uuid==p.uuid).and_then(|s|s.browser.as_ref()).filter(|b|b.until>now);
-            json!({"uuid":p.uuid,"membershipId":p.membership_id,"online":b.is_some(),"leaseExpiresAtMs":b.map(|x|x.until),"clientId":b.map(|x|&x.client),"roundId":b.and_then(|x|x.round.as_ref()),"roundRevision":b.and_then(|x|x.revision.as_ref()),"playbackGeneration":b.and_then(|x|x.generation.as_ref()),"status":b.map(|x|x.status.as_str()).unwrap_or("CONNECTED"),"positionMs":b.and_then(|x|x.position),"lastSeenAtMs":b.map(|x|x.seen)})
+            let session=self.sessions.values().find(|s|s.player.uuid==p.uuid && s.player.membership_id==p.membership_id && s.player.room_id==p.room_id);
+            let connected=self.authority_until>now && session.is_some_and(|s|s.connected_until>now && s.idle_until>now && s.absolute_until>now);
+            let b=session.and_then(|s|s.browser.as_ref()).filter(|b|b.until>now);
+            json!({"uuid":p.uuid,"membershipId":p.membership_id,"connected":connected,"online":b.is_some(),"leaseExpiresAtMs":b.map(|x|x.until),"clientId":b.map(|x|&x.client),"roundId":b.and_then(|x|x.round.as_ref()),"roundRevision":b.and_then(|x|x.revision.as_ref()),"playbackGeneration":b.and_then(|x|x.generation.as_ref()),"status":b.map(|x|x.status.as_str()).unwrap_or("CONNECTED"),"positionMs":b.and_then(|x|x.position),"lastSeenAtMs":b.map(|x|x.seen)})
         }).collect()).unwrap_or_default();
         json!({"acceptedSeq":self.snapshot.as_ref().map(|s|&s.seq),"backendEpoch":self.epoch,"serverTimeMs":now,"authorityLeaseMs":15000,"browsers":browsers})
     }
@@ -285,6 +289,7 @@ impl State {
             .as_ref()
             .and_then(|s| s.rooms.iter().find(|r| r.room_id == session.player.room_id))
             .ok_or(Error::new(404, "ROOM_NOT_FOUND"))?;
+        self.sessions.get_mut(key).unwrap().connected_until = now + 20000;
         let players:Vec<_>=self.snapshot.as_ref().unwrap().roster.iter().filter(|p|p.room_id==room.room_id).map(|p|json!({"uuid":p.uuid,"nickname":p.nickname,"textureHash":p.texture_hash,"browserOnline":self.sessions.values().any(|s|s.player.uuid==p.uuid && s.browser.as_ref().is_some_and(|b|b.until>now))})).collect();
         let media=room.round.as_ref().and_then(|r|r.media_id.as_ref()).and_then(|id|self.media.get(id)).map(|m|json!({"mediaId":m.id,"url":format!("/media/{}.ogg",m.sha256),"mime":"audio/ogg; codecs=opus","durationMs":m.duration_ms}));
         let mut public_room = json!({"roomId":room.room_id,"revision":room.room_revision,"phase":room.phase,"players":players});
@@ -351,6 +356,7 @@ impl State {
             status,
             position: p.position_ms,
         });
+        self.sessions.get_mut(key).unwrap().connected_until = now + 20000;
         self.event_seq += 1;
         Ok(
             json!({"serverTimeMs":now,"leaseExpiresAtMs":now+60000,"activeClientId":p.client_id,"heartbeatAfterMs":15000}),
