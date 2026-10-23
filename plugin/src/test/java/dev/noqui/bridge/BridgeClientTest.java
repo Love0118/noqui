@@ -16,6 +16,29 @@ class BridgeClientTest {
     private BridgeClient client(java.util.function.Supplier<List<BridgeClient.Member>> roster) {
         return new BridgeClient(URI.create("http://127.0.0.1:8788"),key,"primary",UUID.randomUUID(),Runnable::run,roster,(r,a,b)->{},s->{});
     }
+    @Test void authenticatedIdlePresenceIsIndependentFromAudioAndTransportErrorsBecomeUnknown()throws Exception {
+        var body=new java.util.concurrent.atomic.AtomicReference<JsonObject>();var outage=new java.util.concurrent.atomic.AtomicBoolean();var server=HttpServer.create(new InetSocketAddress("127.0.0.1",8788),0);
+        server.createContext("/internal/v1/sync",exchange->{try{
+            var request=JsonParser.parseString(new String(exchange.getRequestBody().readAllBytes(),StandardCharsets.UTF_8)).getAsJsonObject();
+            if(outage.get()){exchange.sendResponseHeaders(503,-1);return;}
+            var response=new JsonObject();response.add("acceptedSeq",request.get("seq"));response.addProperty("serverTimeMs",1000);var browsers=new JsonArray();browsers.add(body.get());response.add("browsers",browsers);
+            byte[] bytes=response.toString().getBytes(StandardCharsets.UTF_8);exchange.sendResponseHeaders(200,bytes.length);exchange.getResponseBody().write(bytes);
+        }finally{exchange.close();}});server.start();
+        var observations=new LinkedBlockingQueue<List<BridgeClient.BrowserPresence>>();var unknown=new CountDownLatch(1);var member=new BridgeClient.Member(player,membership,"Player",null);
+        var state=new JsonObject();state.addProperty("uuid",player.toString());state.addProperty("membershipId",membership.toString());state.addProperty("connected",true);state.addProperty("online",false);body.set(state);
+        try(var client=new BridgeClient(URI.create("http://127.0.0.1:8788"),key,"primary",UUID.randomUUID(),Runnable::run,()->List.of(member),new BridgeClient.Readiness(){
+            public void accept(long revision,boolean any,boolean all){assertFalse(any);assertFalse(all);}
+            public void browsers(UUID session,List<BridgeClient.BrowserPresence> browsers){observations.add(browsers);}
+            public void unavailable(UUID session){unknown.countDown();}
+        },s->{})) {
+            var game=game(new MediaBridge(){public CompletionStage<Media> prepare(Request r){return new CompletableFuture<>();}public void cancel(UUID s,long r){}public void publish(QuizGame.Snapshot s){}});game.start(List.of(player));client.publish(game.snapshot());
+            var idle=observations.poll(5,TimeUnit.SECONDS);assertNotNull(idle);assertEquals(List.of(new BridgeClient.BrowserPresence(player,membership,true)),idle);
+            var legacy=state.deepCopy();legacy.remove("connected");legacy.addProperty("online",true);legacy.addProperty("leaseExpiresAtMs",2000);body.set(legacy);client.heartbeat();assertTrue(Objects.requireNonNull(observations.poll(5,TimeUnit.SECONDS)).getFirst().connected());
+            var disconnected=legacy.deepCopy();disconnected.addProperty("connected",false);body.set(disconnected);client.heartbeat();assertFalse(Objects.requireNonNull(observations.poll(5,TimeUnit.SECONDS)).getFirst().connected());
+            var stale=state.deepCopy();stale.addProperty("membershipId",UUID.randomUUID().toString());body.set(stale);client.heartbeat();assertTrue(Objects.requireNonNull(observations.poll(5,TimeUnit.SECONDS)).isEmpty());
+            outage.set(true);client.heartbeat();assertTrue(unknown.await(5,TimeUnit.SECONDS));assertTrue(observations.isEmpty());
+        }finally{server.stop(0);}
+    }
     @Test void queuedJobBeyondFifteenMinutesRemainsValidWithinBounded64JobBudget() {
         var now=new java.util.concurrent.atomic.AtomicLong(1000);long deadline=now.get()+BridgeClient.MAX_PREPARATION_MILLIS;
         try(var client=new BridgeClient(URI.create("http://127.0.0.1:8788"),key,"primary",UUID.randomUUID(),Runnable::run,List::of,(r,a,b)->{},s->{},now::get)) {

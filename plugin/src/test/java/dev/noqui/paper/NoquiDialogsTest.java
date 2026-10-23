@@ -66,6 +66,9 @@ class NoquiDialogsTest {
             when(builder.build()).thenAnswer(c->{var base=mock(DialogBase.class);when(base.title()).thenReturn(title);when(base.body()).thenReturn(body.get());return base;});return builder;
         });
         when(instances.plainMessageDialogBody(any())).thenAnswer(call->{Component contents=call.getArgument(0);var body=mock(PlainMessageDialogBody.class);when(body.contents()).thenReturn(contents);return body;});
+        when(instances.notice(any())).thenAnswer(call->{var type=mock(NoticeType.class);when(type.action()).thenReturn(call.getArgument(0));return type;});
+        when(instances.textBuilder(anyString(),any())).thenAnswer(call->{var builder=mock(io.papermc.paper.registry.data.dialog.input.TextDialogInput.Builder.class,RETURNS_SELF);when(builder.build()).thenReturn(mock(io.papermc.paper.registry.data.dialog.input.TextDialogInput.class));return builder;});
+        when(instances.confirmation(any(),any())).thenReturn(mock(ConfirmationType.class));
         when(instances.multiAction(anyList())).thenAnswer(call->{
             List<ActionButton> actions=List.copyOf(call.getArgument(0));var exit=new AtomicReference<ActionButton>();var builder=mock(MultiActionType.Builder.class,RETURNS_SELF);
             doAnswer(c->{exit.set(c.getArgument(0));return builder;}).when(builder).exitAction(any());
@@ -82,12 +85,13 @@ class NoquiDialogsTest {
         var bridge=new MediaBridge(){public CompletionStage<Media> prepare(Request r){var future=new CompletableFuture<Media>();jobs.add(future);return future;}public void cancel(UUID s,long r){}public void publish(QuizGame.Snapshot s){}};
         game=new QuizGame(bridge,Runnable::run,()->100000,new QuizGame.Output(){public void changed(QuizGame.Snapshot s){}public void error(UUID id,String e){}},115,false);game.start(List.of(id,other));
         when(player.getUniqueId()).thenReturn(id);when(player.isOnline()).thenReturn(true);when(plugin.game()).thenReturn(game);when(plugin.participant(id)).thenAnswer(c->game.participant(id));
+        var inventory=mock(org.bukkit.inventory.InventoryView.class);var personal=mock(org.bukkit.inventory.CraftingInventory.class);when(personal.getMatrix()).thenReturn(new org.bukkit.inventory.ItemStack[4]);when(player.getOpenInventory()).thenReturn(inventory);when(inventory.getTopInventory()).thenReturn(personal);
         when(plugin.connectionEntry(id)).thenAnswer(c->new BrowserConnections.Entry(game.snapshot().session(),id));doAnswer(c->{((Runnable)c.getArgument(0)).run();return null;}).when(plugin).main(any());view=new NoquiDialogs(plugin);
     }
     @AfterEach void close(){if(inlineMock!=null)inlineMock.close();if(instancesMock!=null)instancesMock.close();if(registryMock!=null)registryMock.close();}
     private static String plain(Component value){return PlainTextComponentSerializer.plainText().serialize(value);}
-    private MultiActionType show(){view.controls(player);verify(player,atLeastOnce()).showDialog(any());return (MultiActionType)dialogs.getLast().type();}
-    private List<String> labels(MultiActionType type){var labels=new ArrayList<>(type.actions().stream().map(b->plain(b.label())).toList());labels.add(plain(type.exitAction().label()));assertTrue(labels.size()<=4);return labels;}
+    private DialogType show(){view.controls(player);verify(player,atLeastOnce()).showDialog(any());return dialogs.getLast().type();}
+    private List<String> labels(DialogType type){if(type instanceof NoticeType notice)return List.of(plain(notice.action().label()));var multi=(MultiActionType)type;var labels=new ArrayList<>(multi.actions().stream().map(b->plain(b.label())).toList());labels.add(plain(multi.exitAction().label()));assertTrue(labels.size()<=3);return labels;}
     private String body(){return dialogs.getLast().base().body().stream().map(b->plain(((PlainMessageDialogBody)b).contents())).collect(java.util.stream.Collectors.joining("\n"));}
     private void submit(UUID owner){game.submit(owner,game.snapshot().revision(),Song.input("https://youtu.be/BaW_jenozKc","Private","tag"));}
     @Test void dialogRegistryLeavesNativeAttributeConstantsUsable() {
@@ -96,28 +100,44 @@ class NoquiDialogsTest {
         assertSame(Attribute.GRAVITY,Registry.ATTRIBUTE.getOrThrow(NamespacedKey.minecraft("gravity")));
         assertSame(Attribute.MOVEMENT_SPEED,Registry.ATTRIBUTE.getOrThrow(NamespacedKey.minecraft("movement_speed")));
     }
-    @Test void zeroBalanceIsTextAndBrowserIsTheOnlyAction() {
-        assertEquals(List.of("브라우저 연결","닫기"),labels(show()));assertTrue(body().isEmpty());
+    @Test void zeroBalanceHasNoManualBrowserOrSubmissionAction() {
+        assertEquals(List.of("닫기"),labels(show()));assertTrue(body().isEmpty());
     }
     @Test void eligibleOpGetsOnlySubmissionAndBrowserWithNoManagementClutter() {
-        when(player.isOp()).thenReturn(true);game.grant(id,3);assertEquals(List.of("브라우저 연결","닫기"),labels(show()));assertTrue(body().isEmpty());
+        when(player.isOp()).thenReturn(true);game.grant(id,3);assertEquals(List.of("닫기"),labels(show()));assertTrue(body().isEmpty());
     }
     @Test void pendingSubmissionReplacesSubmitWithCancelAndKeepsMaximumFourButtons() {
-        game.grant(id,3);submit(id);assertEquals(List.of("제출 취소","브라우저 연결","넘기기 투표","닫기"),labels(show()));assertTrue(body().isEmpty());
+        game.grant(id,3);submit(id);assertEquals(List.of("제출 취소","넘기기 투표","닫기"),labels(show()));assertTrue(body().isEmpty());
         jobs.getFirst().complete(new MediaBridge.Media("ready",115007));show();assertTrue(body().isEmpty());
     }
     @Test void closedQueueAndAlreadyCastVoteDoNotOfferUnavailableActions() {
-        game.limit(1);game.grant(id,1);game.grant(other,1);submit(other);assertEquals(List.of("브라우저 연결","넘기기 투표","닫기"),labels(show()));
-        game.voteSkip(id,game.snapshot().roundId());assertEquals(List.of("브라우저 연결","닫기"),labels(show()));
+        game.limit(1);game.grant(id,1);game.grant(other,1);submit(other);assertEquals(List.of("넘기기 투표","닫기"),labels(show()));
+        game.voteSkip(id,game.snapshot().roundId());assertEquals(List.of("닫기"),labels(show()));
     }
     @Test void canceledRoundDoesNotShowCancellationForAnAlreadyRefundedReservation() {
-        game.limit(1);game.grant(id,1);submit(id);game.forceSkip(game.snapshot().roundId());assertEquals(List.of("브라우저 연결","닫기"),labels(show()));assertFalse(game.pending(id));assertEquals(1,game.credits(id));
+        game.limit(1);game.grant(id,1);submit(id);game.forceSkip(game.snapshot().roundId());assertEquals(List.of("닫기"),labels(show()));assertFalse(game.pending(id));assertEquals(1,game.credits(id));
     }
-    @Test void browserActionWorksButOldSessionCallbackCannotOpenConnection() {
-        var action=show().actions().getFirst().action();callbacks.get(action).accept(null,player);verify(plugin).browserLink(player);
-        game.stop();game.start(List.of(id,other));callbacks.get(action).accept(null,player);verify(plugin,times(1)).browserLink(player);
+    @Test void oldSessionCallbackCannotCancelNewSubmission() {
+        game.grant(id,2);submit(id);var action=((MultiActionType)show()).actions().getFirst().action();
+        game.stop();game.start(List.of(id,other));submit(id);callbacks.get(action).accept(null,player);assertTrue(game.pending(id));verify(plugin,never()).browserLink(player);
     }
     @Test void nonparticipantCannotOpenPrimaryDialog() {
         game.leave(id);view.controls(player);verify(player,never()).showDialog(any());assertTrue(dialogs.isEmpty());
+    }
+    @Test void connectionPromptNeverReplacesTicketFormOrShopAndOnlyClosesItsOwnDialog() {
+        var entry=plugin.connectionEntry(id);game.grant(id,1);when(plugin.hasTicket(player)).thenReturn(true);
+        view.submit(player);assertFalse(view.canPrompt(player));int forms=dialogs.size();view.connection(player,entry,"https://noqui.danta.qzz.io/join#t=test");assertEquals(forms,dialogs.size());
+        view.closeConnection(player,entry);verify(player,never()).closeDialog();
+        view.otherInteraction(player);var shop=mock(org.bukkit.inventory.Inventory.class);when(player.getOpenInventory().getTopInventory()).thenReturn(shop);
+        view.connection(player,entry,"https://noqui.danta.qzz.io/join#t=test");assertEquals(forms,dialogs.size());
+        var workbench=mock(org.bukkit.inventory.CraftingInventory.class);when(workbench.getMatrix()).thenReturn(new org.bukkit.inventory.ItemStack[9]);when(player.getOpenInventory().getTopInventory()).thenReturn(workbench);
+        assertFalse(view.canPrompt(player));view.connection(player,entry,"https://noqui.danta.qzz.io/join#t=test");assertEquals(forms,dialogs.size());
+        var personal=mock(org.bukkit.inventory.CraftingInventory.class);when(personal.getMatrix()).thenReturn(new org.bukkit.inventory.ItemStack[4]);when(player.getOpenInventory().getTopInventory()).thenReturn(personal);assertTrue(view.canPrompt(player));
+        view.connection(player,entry,"https://noqui.danta.qzz.io/join#t=test");assertEquals(forms+1,dialogs.size());view.closeConnection(player,entry);verify(player).closeDialog();
+    }
+    @Test void zeroTicketProxyContainsExactlyLobbyAndSubmissionWithoutBrowserControls() {
+        view.proxy(player);assertEquals(List.of("로비","출제","닫기"),labels(dialogs.getLast().type()));
+        var actions=((MultiActionType)dialogs.getLast().type()).actions();callbacks.get(actions.getFirst().action()).accept(null,player);verify(plugin).visitCabin(player);
+        view.proxy(player);actions=((MultiActionType)dialogs.getLast().type()).actions();callbacks.get(actions.get(1).action()).accept(null,player);verify(plugin).openProxySubmission(player);verify(plugin,never()).browserLink(player);
     }
 }

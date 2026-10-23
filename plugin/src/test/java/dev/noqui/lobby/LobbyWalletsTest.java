@@ -27,7 +27,8 @@ class LobbyWalletsTest {
         assertThrows(IllegalArgumentException.class,()->w.reward(id,"stars",21,Currency.STARLIGHT));
         w.purchase(id,product("hammer"),Currency.STARLIGHT,"purchase");w.purchase(id,product("hammer"),Currency.STARLIGHT,"purchase");
         LobbyWallets again=new LobbyWallets(file);again.purchase(id,product("hammer"),Currency.STARLIGHT,"purchase");
-        assertEquals(10,again.wallet(id).stars());assertEquals(1,again.wallet(id).owned().get("hammer"));
+        assertEquals(10,again.wallet(id).stars());assertFalse(again.wallet(id).owned().containsKey("hammer"));
+        assertEquals(1,again.pendingGadgets(id).size());assertEquals(w.pendingGadgets(id).getFirst().serial(),again.pendingGadgets(id).getFirst().serial());
         assertThrows(IllegalArgumentException.class,()->again.purchase(id,product("hammer"),Currency.POINTS,"purchase"));
     }
     @Test void paidCreditOutboxSurvivesRestartAndAckPersists()throws Exception {
@@ -45,15 +46,45 @@ class LobbyWalletsTest {
         assertEquals(20,broken.wallet(id).stars());assertTrue(broken.pending().isEmpty());assertEquals(20,new LobbyWallets(file).wallet(id).stars());
         byte[] bytes=Files.readAllBytes(file);bytes[15]^=1;Files.write(file,bytes);assertThrows(IOException.class,()->new LobbyWallets(file));
     }
-    @Test void equipmentAndConsumablesPersistWithoutCreatingInventoryItems()throws Exception {
+    @Test void cosmeticsRemainVirtualAndPhysicalGadgetSerialsRetireDurably()throws Exception {
         Path file=dir.resolve("wallet");LobbyWallets w=new LobbyWallets(file);w.reward(id,"points",100,Currency.POINTS);w.reward(id,"stars",100,Currency.STARLIGHT);
-        w.purchase(id,product("quad_boots"),Currency.POINTS,"boots");w.equip(id,product("quad_boots"));
-        w.purchase(id,product("hammer"),Currency.POINTS,"hammer");w.equip(id,product("hammer"));
+        w.purchase(id,product("quad_boots"),Currency.POINTS,"boots");
+        w.purchase(id,product("hammer"),Currency.POINTS,"hammer");
         w.purchase(id,product("glasses"),Currency.STARLIGHT,"glasses");w.equip(id,product("glasses"));
-        LobbyWallets again=new LobbyWallets(file);assertEquals("quad_boots",again.wallet(id).equipped().get("boots"));assertEquals("glasses",again.wallet(id).equipped().get("face"));
-        again.consume(id,"hammer");assertFalse(again.wallet(id).equipped().containsKey("hand"));
-        assertThrows(IllegalArgumentException.class,()->again.consume(id,"hammer"));
+        LobbyWallets again=new LobbyWallets(file);assertFalse(again.wallet(id).equipped().containsKey("boots"));assertEquals("glasses",again.wallet(id).equipped().get("face"));
+        var hammer=again.pendingGadgets(id).stream().filter(g->g.product().equals("hammer")).findFirst().orElseThrow();
+        assertThrows(IllegalArgumentException.class,()->again.consumeGadget(hammer.serial(),"hammer"));
+        again.gadgetDelivered(hammer.serial());again.consumeGadget(hammer.serial(),"hammer");
+        assertNull(new LobbyWallets(file).gadget(hammer.serial()));
+        assertThrows(IllegalArgumentException.class,()->again.consumeGadget(hammer.serial(),"hammer"));
         again.equip(id,product("glasses"));assertFalse(again.wallet(id).equipped().containsKey("face"));
+    }
+    private Path legacyWallet()throws Exception {
+        var bytes=new java.io.ByteArrayOutputStream();
+        try(var out=new java.io.DataOutputStream(bytes)) {
+            out.writeInt(0x4e514c31);out.writeInt(1);out.writeUTF(id.toString());out.writeLong(88);out.writeLong(9);
+            out.writeInt(3);out.writeUTF("quad_boots");out.writeLong(1);out.writeUTF("snow_bomb");out.writeLong(2);out.writeUTF("glasses");out.writeLong(1);
+            out.writeInt(2);out.writeUTF("boots");out.writeUTF("quad_boots");out.writeUTF("face");out.writeUTF("glasses");
+            out.writeInt(0);out.writeInt(0);
+        }
+        byte[] body=bytes.toByteArray();bytes.writeBytes(java.security.MessageDigest.getInstance("SHA-256").digest(body));
+        Path file=dir.resolve("legacy");Files.write(file,bytes.toByteArray());return file;
+    }
+    @Test void legacyPaidGadgetsMigrateOnceWithoutResettingMoneyCosmeticsOrSpentItems()throws Exception {
+        Path file=legacyWallet();LobbyWallets wallet=new LobbyWallets(file);wallet.migrateGadgets(id);
+        assertEquals(3,wallet.pendingGadgets(id).size());assertEquals(Map.of("glasses",1L),wallet.wallet(id).owned());
+        assertEquals(Map.of("face","glasses"),wallet.wallet(id).equipped());assertEquals(88,wallet.wallet(id).stars());assertEquals(9,wallet.wallet(id).points());
+        var spent=wallet.pendingGadgets(id).stream().filter(g->g.product().equals("snow_bomb")).findFirst().orElseThrow();
+        wallet.gadgetDelivered(spent.serial());wallet.consumeGadget(spent.serial(),"snow_bomb");
+        var restarted=new LobbyWallets(file);restarted.migrateGadgets(id);assertEquals(2,restarted.pendingGadgets(id).size());assertNull(restarted.gadget(spent.serial()));
+    }
+    @Test void failedMigrationOrRetirementCannotLoseLegacyOwnershipOrSpendARealItem()throws Exception {
+        Path file=legacyWallet();byte[] original=Files.readAllBytes(file);
+        var broken=new LobbyWallets(file,(p,b)->{throw new IOException("disk full");});
+        assertThrows(IOException.class,()->broken.migrateGadgets(id));assertEquals(2,broken.wallet(id).owned().get("snow_bomb"));assertTrue(broken.pendingGadgets(id).isEmpty());assertArrayEquals(original,Files.readAllBytes(file));
+        var working=new LobbyWallets(file);working.migrateGadgets(id);var gadget=working.pendingGadgets(id).getFirst();working.gadgetDelivered(gadget.serial());
+        var failing=new LobbyWallets(file,(p,b)->{throw new IOException("disk full");});
+        assertThrows(IOException.class,()->failing.consumeGadget(gadget.serial(),gadget.product()));assertNotNull(failing.gadget(gadget.serial()));
     }
     @Test void duplicateDurablesAndOverflowFailClosed()throws Exception {
         LobbyWallets w=new LobbyWallets(dir.resolve("wallet"));w.reward(id,"seed",100,Currency.STARLIGHT);w.purchase(id,product("glasses"),Currency.STARLIGHT,"one");

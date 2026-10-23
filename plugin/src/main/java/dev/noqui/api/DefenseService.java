@@ -10,4 +10,6 @@ public interface DefenseService {
     void silenceBgm(Player player);
     void sendLobby(Player player);
     void openMenu(Player player);
+    /** Use the normal leave checks and cleanup before deliberate quiz-lobby travel. */
+    default void leaveGame(Player player){throw new IllegalStateException("디펜스 이동 기능을 업데이트하세요.");}
 }

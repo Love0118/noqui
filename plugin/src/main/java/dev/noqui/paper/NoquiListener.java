@@ -21,7 +21,7 @@ final class NoquiListener implements Listener {
     private final Set<AsyncChatEvent> modern=Collections.synchronizedSet(Collections.newSetFromMap(new WeakHashMap<>()));
     NoquiListener(NoquiPlugin plugin){this.plugin=plugin;}
     private boolean cabin(org.bukkit.Location l){return plugin.cabin.contains(l);}
-    @EventHandler(priority=EventPriority.LOWEST) public void recover(PlayerJoinEvent e){plugin.recovery.recover(e.getPlayer(),plugin.defenseActive(e.getPlayer()),true);}
+    @EventHandler(priority=EventPriority.LOWEST) public void recover(PlayerJoinEvent e){plugin.recoverPlayer(e.getPlayer());}
     @EventHandler(priority=EventPriority.HIGHEST) public void join(PlayerJoinEvent e){plugin.joined(e.getPlayer());}
     @EventHandler public void quit(PlayerQuitEvent e){plugin.quit(e.getPlayer());}
     @EventHandler(priority=EventPriority.HIGHEST) public void respawn(PlayerRespawnEvent e){
@@ -33,12 +33,14 @@ final class NoquiListener implements Listener {
     @EventHandler public void death(PlayerDeathEvent e){if(plugin.ownsCabin(e.getPlayer().getUniqueId())){e.setKeepInventory(true);e.getDrops().clear();e.setDroppedExp(0);}}
     @EventHandler public void world(PlayerChangedWorldEvent e){if(!cabin(e.getPlayer().getLocation()))plugin.leftWorld(e.getPlayer());}
     @EventHandler public void move(PlayerMoveEvent e){if(cabin(e.getTo()) && plugin.cabin.outside(e.getTo())){e.getPlayer().setFallDistance(0);e.setTo(plugin.cabin.spawn.clone());}}
-    @EventHandler public void swap(PlayerSwapHandItemsEvent e){if(plugin.ownsCabin(e.getPlayer().getUniqueId())){e.setCancelled(true);plugin.dialogs.controls(e.getPlayer());}}
     @EventHandler public void interact(PlayerInteractEvent e) {
-        if(!cabin(e.getPlayer().getLocation()))return;e.setCancelled(true);
+        plugin.otherInteraction(e.getPlayer());
+        if(!cabin(e.getPlayer().getLocation()))return;
+        var item=e.getItem();boolean equip=e.getAction().isRightClick()&&dev.noqui.lobby.LobbyFeatures.isGadgetItem(item)&&item.getItemMeta().hasEquippable()&&item.getItemMeta().getEquippable().isEquipOnInteract();
+        e.setUseInteractedBlock(Event.Result.DENY);e.setUseItemInHand(equip?Event.Result.ALLOW:Event.Result.DENY);
         if(e.getHand()!=EquipmentSlot.HAND || !(e.getAction()==Action.RIGHT_CLICK_AIR || e.getAction()==Action.RIGHT_CLICK_BLOCK) || !plugin.ownsCabin(e.getPlayer().getUniqueId()))return;
         String id=plugin.tool(e.getPlayer());
-        if("defense".equals(id))plugin.openMinigames(e.getPlayer());else if("controls".equals(id))plugin.dialogs.controls(e.getPlayer());
+        if("defense".equals(id))plugin.openMinigames(e.getPlayer());
     }
     @EventHandler(priority=EventPriority.LOWEST) public void legacy(AsyncPlayerChatEvent e){
         if(plugin.captureAnswer(e.getPlayer().getUniqueId(),e.getMessage())){legacy.add(e);hide(e);}
@@ -62,18 +64,9 @@ final class NoquiListener implements Listener {
     @EventHandler public void armor(PlayerArmorStandManipulateEvent e){if(cabin(e.getRightClicked().getLocation()))e.setCancelled(true);}
     @EventHandler public void hanging(HangingBreakEvent e){if(cabin(e.getEntity().getLocation()))e.setCancelled(true);}
     @EventHandler public void hanging(HangingPlaceEvent e){if(cabin(e.getEntity().getLocation()))e.setCancelled(true);}
-    @EventHandler public void inventory(InventoryClickEvent e){
-        if(!cabin(e.getWhoClicked().getLocation())||dev.noqui.lobby.LobbyFeatures.ownsInventory(e.getView().getTopInventory()))return;
-        boolean protectedHotbar=e.getHotbarButton()>=0&&plugin.protectedTool(e.getWhoClicked().getInventory().getItem(e.getHotbarButton()));
-        if(!(e.getClickedInventory() instanceof org.bukkit.inventory.PlayerInventory)||plugin.protectedTool(e.getCurrentItem())||plugin.protectedTool(e.getCursor())||protectedHotbar)e.setCancelled(true);
-    }
-    @EventHandler public void drag(InventoryDragEvent e){
-        if(!cabin(e.getWhoClicked().getLocation())||dev.noqui.lobby.LobbyFeatures.ownsInventory(e.getView().getTopInventory()))return;
-        int top=e.getView().getTopInventory().getSize();
-        if(plugin.protectedTool(e.getOldCursor())||e.getRawSlots().stream().anyMatch(slot->slot<top))e.setCancelled(true);
-    }
-    @EventHandler public void drop(PlayerDropItemEvent e){if(cabin(e.getPlayer().getLocation()))e.setCancelled(true);}
-    @EventHandler public void pickup(EntityPickupItemEvent e){if(cabin(e.getEntity().getLocation()))e.setCancelled(true);}
+    @EventHandler public void inventory(InventoryClickEvent e){if(e.getWhoClicked() instanceof org.bukkit.entity.Player p)plugin.otherInteraction(p);}
+    @EventHandler public void drag(InventoryDragEvent e){if(e.getWhoClicked() instanceof org.bukkit.entity.Player p)plugin.otherInteraction(p);}
+    @EventHandler public void inventoryOpen(InventoryOpenEvent e){if(e.getPlayer() instanceof org.bukkit.entity.Player p)plugin.otherInteraction(p);}
     @EventHandler public void portal(PlayerPortalEvent e){if(cabin(e.getFrom()))e.setCancelled(true);}
     @EventHandler public void portal(EntityPortalEvent e){if(cabin(e.getFrom()))e.setCancelled(true);}
     @EventHandler public void explode(EntityExplodeEvent e){e.blockList().removeIf(b->cabin(b.getLocation()));if(cabin(e.getLocation()))e.setCancelled(true);}

@@ -18,7 +18,13 @@ public final class BridgeClient implements MediaBridge {
     // At most64 accepted jobs, each with a server-side300s ingest limit, plus15min delivery/restart margin.
     static final long MAX_PREPARATION_MILLIS=64L*300_000+900_000;
     public record Member(UUID uuid, UUID membershipId, String nickname, String textureHash) {}
-    public interface Readiness { void accept(long revision, boolean any, boolean all); default void controlAccepted(long revision){} }
+    public record BrowserPresence(UUID player,UUID membership,boolean connected) {}
+    public interface Readiness {
+        void accept(long revision, boolean any, boolean all);
+        default void controlAccepted(long revision){}
+        default void browsers(UUID session,List<BrowserPresence> browsers){}
+        default void unavailable(UUID session){}
+    }
     private final URI origin;
     private final byte[] secret;
     private final String keyId;
@@ -166,23 +172,31 @@ public final class BridgeClient implements MediaBridge {
                 main.execute(()->{
                     if(closed)return;
                     var ready=new HashSet<UUID>();
-                    if(response.has("browsers"))for(JsonElement entry:response.getAsJsonArray("browsers")) {
+                    var presence=new ArrayList<BrowserPresence>();
+                    long serverTime=response.has("serverTimeMs")?response.get("serverTimeMs").getAsLong():System.currentTimeMillis();
+                    if(response.has("browsers")&&response.get("browsers").isJsonArray())for(JsonElement entry:response.getAsJsonArray("browsers")) {
                         var b=entry.getAsJsonObject();
                         try {
-                            if(b.get("online").getAsBoolean() && b.get("leaseExpiresAtMs").getAsLong()>System.currentTimeMillis()
+                            UUID id=UUID.fromString(b.get("uuid").getAsString()),membership=UUID.fromString(b.get("membershipId").getAsString());
+                            if(members.stream().noneMatch(m->m.uuid().equals(id)&&m.membershipId().equals(membership)))continue;
+                            if(!b.has("connected")&&!b.has("online"))continue;
+                            boolean leased=b.has("online")&&b.get("online").getAsBoolean()&&b.has("leaseExpiresAtMs")&&!b.get("leaseExpiresAtMs").isJsonNull()&&b.get("leaseExpiresAtMs").getAsLong()>serverTime;
+                            presence.add(new BrowserPresence(id,membership,b.has("connected")?b.get("connected").getAsBoolean():leased));
+                            if(leased
                                     && b.get("status").getAsString().equals("PREPARED") && Objects.equals(roundId,UUID.fromString(b.get("roundId").getAsString()))
                                     && Objects.equals(generation,UUID.fromString(b.get("playbackGeneration").getAsString()))
                                     && b.get("roundRevision").getAsString().equals(Long.toString(revision))) {
-                                UUID id=UUID.fromString(b.get("uuid").getAsString()),membership=UUID.fromString(b.get("membershipId").getAsString());
-                                if(members.stream().anyMatch(m->m.uuid().equals(id)&&m.membershipId().equals(membership)))ready.add(id);
+                                ready.add(id);
                             }
                         } catch(RuntimeException ignored) { /* Incomplete/unready browser status. */ }
                     }
+                    readiness.browsers(packet.state().session(),List.copyOf(presence));
                     readiness.accept(revision,!ready.isEmpty(),!members.isEmpty() && ready.size()==members.size());
                     readiness.controlAccepted(revision);
                 });
             } else {
                 ack.completeExceptionally(error==null?new IllegalStateException("Bridge acknowledgement mismatch"):error);
+                main.execute(()->{if(!closed)readiness.unavailable(packet.state().session());});
                 if(System.currentTimeMillis()>=nextWarning){nextWarning=System.currentTimeMillis()+30000;main.execute(()->warning.accept("Noqui control service unavailable; check bridge settings/service."));}
             }
             synchronized(this){flush();}

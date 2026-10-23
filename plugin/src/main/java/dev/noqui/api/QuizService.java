@@ -10,6 +10,8 @@ public interface QuizService {
     boolean ownsCabin(UUID player);
     boolean routeJoin(Player player);
     void openControls(Player player);
+    default long ticketCount(UUID player){return 0;}
+    default void openProxy(Player player){openControls(player);}
     void prepareDefense(Player player);
     void defenseEntered(Player player);
     void defenseFailed(Player player);

@@ -14,6 +14,7 @@ import org.bukkit.event.entity.*;
 import org.bukkit.event.player.*;
 import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.ItemStack;
 import org.bukkit.event.inventory.*;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.util.Vector;
@@ -39,6 +40,7 @@ public final class LobbyFeatures implements LobbyService, AutoCloseable, Listene
     private final Map<UUID,Projectile> projectiles=new HashMap<>();
     private final Map<UUID,Effect> stuns=new HashMap<>(),frost=new HashMap<>();
     private final LobbyShop menus;
+    private final GadgetItems gadgets;
     private final LobbyMovement movement;
     private final CosmeticDisplays cosmetics;
     private final ShopNpc shop;
@@ -52,6 +54,9 @@ public final class LobbyFeatures implements LobbyService, AutoCloseable, Listene
         this(plugin,cabin,credits,System::currentTimeMillis,Math::random);
     }
     LobbyFeatures(JavaPlugin plugin,World cabin,CreditPort credits,LongSupplier clock,DoubleSupplier random) {
+        this(plugin,cabin,credits,clock,random,null);
+    }
+    LobbyFeatures(JavaPlugin plugin,World cabin,CreditPort credits,LongSupplier clock,DoubleSupplier random,Function<LobbyWallets.Gadget,ItemStack> itemFactory) {
         main();this.plugin=plugin;this.cabin=cabin;this.credits=credits;this.clock=clock;this.random=random;
         try{wallets=new LobbyWallets(plugin.getDataFolder().toPath().resolve("lobby/wallets.bin"));}
         catch(IOException error){throw new IllegalStateException("Lobby wallet unavailable; balances were not reset",error);}
@@ -61,7 +66,8 @@ public final class LobbyFeatures implements LobbyService, AutoCloseable, Listene
                     p.points()<0?-1:plugin.getConfig().getLong(root+"points",p.points())));
         }
         movement=new LobbyMovement(cabin);cosmetics=new CosmeticDisplays(plugin,cabin);
-        menus=new LobbyShop(wallets,catalog.values(),p->started&&!closed&&players.get(p.getUniqueId())==p&&p.isOnline()&&!p.isDead()&&p.getWorld()==cabin,this::deliverCredits,plugin.getLogger()::warning);
+        gadgets=itemFactory==null?new GadgetItems(wallets,cabin):new GadgetItems(wallets,cabin,itemFactory);
+        menus=new LobbyShop(wallets,catalog.values(),gadgets,p->started&&!closed&&players.get(p.getUniqueId())==p&&p.isOnline()&&!p.isDead()&&p.getWorld()==cabin,this::deliverCredits,plugin.getLogger()::warning);
         shop=new ShopNpc(cabin,plugin.getConfig().getDouble("lobby.shop.x",409.5),plugin.getConfig().getDouble("lobby.shop.y",11),plugin.getConfig().getDouble("lobby.shop.z",-205.5));
     }
 
@@ -69,6 +75,15 @@ public final class LobbyFeatures implements LobbyService, AutoCloseable, Listene
     public static boolean ownsEntity(Entity entity){return entity instanceof Mannequin&&ShopNpc.owned(entity);}
     /** Narrow integration hook: cabin guards may allow navigation; this menu cancels all transfers. */
     public static boolean ownsInventory(Inventory inventory){return LobbyShop.owns(inventory);}
+    public static boolean isGadgetItem(ItemStack item){return GadgetItems.marked(item);}
+    /** Uses the actual physical item's native equipment/model factory, without an authentic serial. */
+    public static ItemStack gadgetPreview(String product){return GadgetItems.preview(product);}
+    /** Core owns the entire cabin inventory snapshot; C releases effects without moving any stacks. */
+    @Override public void prepareInventoryChange(Player player){main();if(!closed)releaseEffects(player,false);}
+    @Override public void inventoryChanged(Player player){
+        main();if(closed)return;
+        try{gadgets.reconcile(player);}catch(IOException error){throw new IllegalStateException("Gadget delivery could not be saved",error);}
+    }
 
     public void start() {
         main();if(started||closed)return;
@@ -100,8 +115,10 @@ public final class LobbyFeatures implements LobbyService, AutoCloseable, Listene
         for(Player player:List.copyOf(players.values())) {
             if(!player.isOnline()){release(player);players.remove(player.getUniqueId());continue;}
             LobbyWallets.Wallet wallet=wallets.wallet(player.getUniqueId());
-            movement.tick(player,wallet.equipped().get("boots"),"gravity_suit".equals(wallet.equipped().get("suit")));
-            cosmetics.tick(player,wallet.equipped());
+            var equipment=new HashMap<String,String>();wallet.equipped().forEach((slot,product)->{if(Set.of("head","face","back").contains(slot))equipment.put(slot,product);});
+            equipment.putAll(gadgets.equipment(player));
+            movement.tick(player,equipment.get("boots"),"gravity_suit".equals(equipment.get("suit")));
+            cosmetics.tick(player,equipment);
         }
         expire(stuns,now);expire(frost,now);
         for(var entry:List.copyOf(projectiles.entrySet()))if(entry.getValue().until<=now||!entry.getValue().ball.isValid()||entry.getValue().ball.getWorld()!=cabin){entry.getValue().ball.remove();projectiles.remove(entry.getKey());}
@@ -125,6 +142,8 @@ public final class LobbyFeatures implements LobbyService, AutoCloseable, Listene
     private void deliverCredits() {
         for(LobbyWallets.Grant grant:wallets.pending())try{credits.grant(grant.player(),grant.amount(),grant.transaction());wallets.delivered(grant.transaction());}
         catch(RuntimeException|IOException error){plugin.getLogger().warning("Lobby paid-credit delivery pending; retrying the recorded transaction");}
+        for(Player player:players.values())try{gadgets.reconcile(player);}
+        catch(RuntimeException|IOException error){plugin.getLogger().warning("Lobby physical gadget delivery pending; preserving recorded items");}
     }
 
     @EventHandler(priority=EventPriority.HIGHEST,ignoreCancelled=false) public void clickNpc(PlayerInteractEntityEvent event) {
@@ -134,9 +153,10 @@ public final class LobbyFeatures implements LobbyService, AutoCloseable, Listene
     }
     private boolean readyShop(Player player){long now=clock.getAsLong();if(shopCooldowns.getOrDefault(player.getUniqueId(),0L)>now)return false;shopCooldowns.put(player.getUniqueId(),now+500);return true;}
     @EventHandler(priority=EventPriority.HIGHEST) public void protectNpc(EntityDamageEvent e){if(ownsEntity(e.getEntity())||e.getEntity().getScoreboardTags().contains(CosmeticDisplays.TAG))e.setCancelled(true);}
-    @EventHandler(priority=EventPriority.HIGHEST,ignoreCancelled=false) public void doubleJump(PlayerToggleFlightEvent e) {
-        if(!started||closed||!e.isFlying())return;
-        if(movement.jump(e.getPlayer(),wallets.wallet(e.getPlayer().getUniqueId()).equipped().get("boots")))e.setCancelled(true);
+    @EventHandler public void jumpInput(PlayerInputEvent event) {
+        Player player=event.getPlayer();
+        if(!started||closed||players.get(player.getUniqueId())!=player)return;
+        movement.input(player,event.getInput().isJump(),gadgets.equipment(player).get("boots"));
     }
     @EventHandler(priority=EventPriority.HIGHEST,ignoreCancelled=false) public void hammer(PrePlayerAttackEntityEvent event) {
         if(!started||closed)return;
@@ -145,7 +165,7 @@ public final class LobbyFeatures implements LobbyService, AutoCloseable, Listene
         event.setCancelled(true);
         if(!cooldown(attacker,1000))return;
         // Consume the break before applying the effect, so a persistence failure cannot grant a free hit.
-        try{if(random.getAsDouble()<.5)wallets.consume(attacker.getUniqueId(),"hammer");}
+        try{if(random.getAsDouble()<.5)gadgets.consumeHand(attacker,"hammer");}
         catch(IOException|IllegalArgumentException error){return;}
         Vector force=target.getLocation().toVector().subtract(attacker.getLocation().toVector()).setY(0);
         if(force.lengthSquared()<.001)force=attacker.getLocation().getDirection().setY(0);
@@ -154,15 +174,15 @@ public final class LobbyFeatures implements LobbyService, AutoCloseable, Listene
     }
     boolean canHammer(Player attacker,Player target) {
         return LobbyMovement.eligible(attacker,cabin)&&LobbyMovement.eligible(target,cabin)&&attacker!=target&&!target.isBlocking()
-                &&"hammer".equals(wallets.wallet(attacker.getUniqueId()).equipped().get("hand"))
-                &&attacker.getLocation().distanceSquared(target.getLocation())<=16&&attacker.hasLineOfSight(target);
+                &&attacker.getLocation().distanceSquared(target.getLocation())<=16&&attacker.hasLineOfSight(target)
+                &&"hammer".equals(gadgets.hand(attacker));
     }
     @EventHandler(priority=EventPriority.HIGHEST,ignoreCancelled=false) public void snow(PlayerInteractEvent event) {
         if(!started||closed)return;
         Player p=event.getPlayer();if(event.getHand()!=EquipmentSlot.HAND||!event.getAction().isRightClick()||!p.isSneaking()||!LobbyMovement.eligible(p,cabin))return;
-        if(!"snow_bomb".equals(wallets.wallet(p.getUniqueId()).equipped().get("hand")))return;
+        if(!"snow_bomb".equals(gadgets.hand(p)))return;
         event.setCancelled(true);if(projectiles.size()>=64||projectiles.values().stream().filter(v->v.owner.equals(p.getUniqueId())).count()>=2||!cooldown(p,1500))return;
-        try{wallets.consume(p.getUniqueId(),"snow_bomb");}catch(IOException|IllegalArgumentException error){return;}
+        try{gadgets.consumeHand(p,"snow_bomb");}catch(IOException|IllegalArgumentException error){return;}
         Snowball ball=p.launchProjectile(Snowball.class);ball.addScoreboardTag("noqui_lobby_snow_v1");ball.setPersistent(false);
         projectiles.put(ball.getUniqueId(),new Projectile(p.getUniqueId(),ball,clock.getAsLong()+5000));
     }
@@ -203,7 +223,11 @@ public final class LobbyFeatures implements LobbyService, AutoCloseable, Listene
     @EventHandler public void quit(PlayerQuitEvent e){release(e.getPlayer());players.remove(e.getPlayer().getUniqueId());if(pack!=null)pack.quit(e.getPlayer().getUniqueId());}
     @EventHandler public void mode(PlayerGameModeChangeEvent e){movement.leave(e.getPlayer());}
     private void release(Player player) {
-        menus.leave(player);movement.leave(player);cosmetics.leave(player.getUniqueId());cooldowns.remove(player.getUniqueId());shopCooldowns.remove(player.getUniqueId());
+        menus.leave(player);releaseEffects(player,true);
+    }
+    private void releaseEffects(Player player,boolean resetJumps) {
+        if(resetJumps)movement.leave(player);else movement.suspend(player);
+        cosmetics.leave(player.getUniqueId());cooldowns.remove(player.getUniqueId());shopCooldowns.remove(player.getUniqueId());
         Effect stun=stuns.remove(player.getUniqueId()),ice=frost.remove(player.getUniqueId());if(stun!=null)clearEffect(stun);if(ice!=null)clearEffect(ice);
         for(var row:List.copyOf(projectiles.entrySet()))if(row.getValue().owner.equals(player.getUniqueId())){row.getValue().ball.remove();projectiles.remove(row.getKey());}
     }

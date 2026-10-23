@@ -54,7 +54,7 @@ class LobbyShopTest {
         wallets=new LobbyWallets(dir.resolve("wallet"),(path,bytes)->{
             if(failure.get())throw new IOException("disk full");Files.write(path,bytes);
         });
-        shop=new LobbyShop(wallets,LobbyCatalog.defaults(),p->eligible.get(),()->{
+        shop=new LobbyShop(wallets,LobbyCatalog.defaults(),mock(GadgetItems.class),p->eligible.get(),()->{
             for(var grant:wallets.pending()) {
                 deliveryAttempts.add(grant.transaction());
                 // The CreditPort adapter keeps a full inventory pending, with the same durable ID.
@@ -102,17 +102,21 @@ class LobbyShopTest {
     @Test void cosmeticsAndGadgetsBuyWithValuableAnswerPointsAndAllDualPricesAreTenToOne() {
         for(var p:LobbyCatalog.defaults())if(p.kind()!=LobbyCatalog.Kind.CREDIT)assertEquals(10*p.points(),p.stars());
         openProduct(0);click(33);assertEquals(8,wallets.wallet(id).points());assertEquals(100,wallets.wallet(id).stars());
-        shop.open(player);click(1);click(19);click(33);assertEquals(6,wallets.wallet(id).points());assertEquals(1,wallets.wallet(id).owned().get("triple_boots"));
+        shop.open(player);click(1);click(19);click(33);assertEquals(6,wallets.wallet(id).points());assertEquals("triple_boots",wallets.pendingGadgets(id).getFirst().product());
+        assertFalse(wallets.wallet(id).owned().containsKey("triple_boots"));
     }
-    @Test void shiftNumberKeyDoubleDropCreativeAndBottomClicksCannotMutateAnything() {
+    @Test void guiTransferOperationsAreBlockedWhilePersonalInventoryRemainsMovable() {
         openProduct(0);
         for(ClickType type:ClickType.values())if(type!=ClickType.LEFT && type!=ClickType.RIGHT) {
             var e=event(current,player,29,type);shop.click(e);verify(e).setCancelled(true);
         }
         for(int slot:new int[]{-999,54,55,89})for(ClickType type:List.of(ClickType.LEFT,ClickType.RIGHT)) {
-            var e=event(current,player,slot,type);shop.click(e);verify(e).setCancelled(true);
+            var e=event(current,player,slot,type);shop.click(e);verify(e,never()).setCancelled(anyBoolean());
         }
-        InventoryDragEvent drag=mock(InventoryDragEvent.class);when(drag.getView()).thenReturn(current);shop.drag(drag);verify(drag).setCancelled(true);
+        var shift=event(current,player,55,ClickType.SHIFT_LEFT);when(shift.isShiftClick()).thenReturn(true);shop.click(shift);verify(shift).setCancelled(true);
+        var collect=event(current,player,55,ClickType.DOUBLE_CLICK);when(collect.getAction()).thenReturn(InventoryAction.COLLECT_TO_CURSOR);shop.click(collect);verify(collect).setCancelled(true);
+        InventoryDragEvent drag=mock(InventoryDragEvent.class);when(drag.getView()).thenReturn(current);when(drag.getWhoClicked()).thenReturn(player);when(drag.getRawSlots()).thenReturn(Set.of(19,55));shop.drag(drag);verify(drag).setCancelled(true);
+        InventoryDragEvent personal=mock(InventoryDragEvent.class);when(personal.getView()).thenReturn(current);when(personal.getWhoClicked()).thenReturn(player);when(personal.getRawSlots()).thenReturn(Set.of(55,56));shop.drag(personal);verify(personal,never()).setCancelled(anyBoolean());
         shop.tick();assertEquals(100,wallets.wallet(id).stars());assertEquals(10,wallets.wallet(id).points());assertTrue(wallets.wallet(id).owned().isEmpty());
         verify(player,never()).getInventory();
     }

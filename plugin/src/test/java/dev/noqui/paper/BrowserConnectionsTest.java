@@ -9,6 +9,36 @@ import static org.mockito.Mockito.*;
 class BrowserConnectionsTest {
     private final UUID player=UUID.randomUUID();
     private BrowserConnections.Entry entry(){return new BrowserConnections.Entry(UUID.randomUUID(),UUID.randomUUID());}
+    @Test void autoPromptRequiresFreshDisconnectedObservationAndDefersOtherUiAndLateResponses() {
+        long[] now={1000};var current=entry();var view=mock(BrowserConnections.View.class);var futures=new ArrayList<CompletableFuture<String>>();
+        var main=new ArrayDeque<Runnable>();var connections=new BrowserConnections(id->current,(id,e)->{var f=new CompletableFuture<String>();futures.add(f);return f;},main::add,view,()->now[0]);
+        connections.tick();assertTrue(futures.isEmpty());connections.observe(player,current,false);connections.unknown(current.session());
+        when(view.available(player)).thenReturn(true);now[0]=3000;connections.tick();assertTrue(futures.isEmpty());connections.observe(player,current,false);when(view.available(player)).thenReturn(false);
+        now[0]=3000;connections.tick();assertTrue(futures.isEmpty()); // A form/shop is still open.
+        when(view.available(player)).thenReturn(true);connections.tick();assertEquals(1,futures.size());
+        when(view.available(player)).thenReturn(false);futures.getFirst().complete("late-over-form");main.remove().run();verify(view,never()).ready(any(),any(),any());
+        when(view.available(player)).thenReturn(true);now[0]=63000;connections.tick();assertEquals(1,futures.size()); // Backend feedback is now stale.
+        connections.observe(player,current,false);connections.tick();assertEquals(2,futures.size());futures.getLast().complete("fresh");main.remove().run();verify(view).ready(player,current,"fresh");
+        connections.observe(player,current,true);verify(view,atLeastOnce()).close(player,current);now[0]+=1000;connections.observe(player,current,false);connections.tick();assertEquals(2,futures.size());
+        connections.observe(player,current,true);now[0]+=3000;connections.tick();assertEquals(2,futures.size());
+    }
+    @Test void connectedOrUnknownNeverPromptsAndLeavingInvalidatesPendingAutomaticLink() {
+        long[] now={1000};var current=new BrowserConnections.Entry[]{entry()};var view=mock(BrowserConnections.View.class);when(view.available(player)).thenReturn(true);
+        var future=new CompletableFuture<String>();var requests=new java.util.concurrent.atomic.AtomicInteger();
+        var connections=new BrowserConnections(id->current[0],(id,e)->{requests.incrementAndGet();return future;},Runnable::run,view,()->now[0]);
+        connections.observe(player,current[0],true);now[0]+=60000;connections.tick();assertEquals(0,requests.get());
+        connections.observe(player,current[0],false);now[0]+=2000;connections.tick();assertEquals(1,requests.get());
+        current[0]=null;connections.tick();future.complete("after-opt-out");verify(view,never()).ready(any(),any(),any());
+        now[0]+=120000;connections.tick();assertEquals(1,requests.get());
+    }
+    @Test void dismissingAutoPromptThrottlesRetryAndConnectedResponseCancelsInflightLink() {
+        long[] now={1000};var entry=entry();var view=mock(BrowserConnections.View.class);when(view.available(player)).thenReturn(true);var futures=new ArrayList<CompletableFuture<String>>();
+        var connections=new BrowserConnections(id->entry,(id,e)->{var f=new CompletableFuture<String>();futures.add(f);return f;},Runnable::run,view,()->now[0]);
+        connections.observe(player,entry,false);now[0]=3000;connections.tick();futures.getFirst().complete("first");connections.dismiss(player);
+        for(int second=1;second<60;second++){now[0]+=1000;connections.observe(player,entry,false);connections.tick();}assertEquals(1,futures.size());
+        now[0]+=1000;connections.observe(player,entry,false);connections.tick();assertEquals(2,futures.size());
+        connections.observe(player,entry,true);futures.getLast().complete("must-not-open");verify(view,times(1)).ready(any(),any(),any());
+    }
     @Test void nativePromptAppearsBeforeAsyncLinkAndRenewalIssuesAnotherLink() {
         var entry=entry();var view=mock(BrowserConnections.View.class);var futures=new ArrayList<CompletableFuture<String>>();var main=new ArrayDeque<Runnable>();
         var connections=new BrowserConnections(id->entry,(id,e)->{var f=new CompletableFuture<String>();futures.add(f);return f;},main::add,view);

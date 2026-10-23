@@ -29,21 +29,7 @@ public final class NoquiPaperSmoke extends JavaPlugin {
                 require(Bukkit.getServicesManager().load(LobbyService.class)!=null,"wallet service");
                 require(world.getEntitiesByClass(org.bukkit.entity.Mannequin.class).stream()
                         .filter(entity->entity.getScoreboardTags().contains("noqui_lobby_shop_v1")).count()==1,"single owned shop NPC");
-                var dialogsField=noqui.getClass().getDeclaredField("dialogs");dialogsField.setAccessible(true);Object dialogs=dialogsField.get(noqui);
-                Class<?> entryType=Class.forName("dev.noqui.paper.BrowserConnections$Entry",true,noqui.getClass().getClassLoader());
-                var entryConstructor=entryType.getDeclaredConstructor(UUID.class,UUID.class);entryConstructor.setAccessible(true);
-                Object entry=entryConstructor.newInstance(UUID.randomUUID(),UUID.randomUUID());
-                int[] nativePrompts={0};
-                var player=(org.bukkit.entity.Player)java.lang.reflect.Proxy.newProxyInstance(org.bukkit.entity.Player.class.getClassLoader(),new Class<?>[]{org.bukkit.entity.Player.class},(proxy,method,args)->{
-                    if(method.getName().equals("getUniqueId"))return UUID.fromString("12345678-1234-4234-8234-123456789abc");
-                    if(method.getName().equals("showDialog")){nativePrompts[0]++;return null;}
-                    if(method.getName().equals("openInventory"))throw new IllegalStateException("Connection prompt used inventory");
-                    if(method.getName().equals("toString"))return "NoquiFixturePlayer";
-                    throw new UnsupportedOperationException(method.getName());
-                });
-                var connection=dialogs.getClass().getDeclaredMethod("connection",org.bukkit.entity.Player.class,entryType,String.class);connection.setAccessible(true);
-                connection.invoke(dialogs,player,entry,null);connection.invoke(dialogs,player,entry,"https://noqui.danta.qzz.io/join#t=fixture");
-                require(nativePrompts[0]==2,"native pending and URL connection dialogs");
+                verifyPhysicalItems(world);
                 var quiz=Objects.requireNonNull(Bukkit.getServicesManager().load(QuizService.class));
                 var before=Objects.requireNonNull(Bukkit.getServicesManager().load(DefenseService.class));
                 boolean expectedActive=Boolean.getBoolean("noqui.smoke.expect-active");
@@ -57,10 +43,45 @@ public final class NoquiPaperSmoke extends JavaPlugin {
                 require(Bukkit.getServicesManager().getRegistrations(DefenseService.class).size()==1,"single current provider");
                 Bukkit.dispatchCommand(Bukkit.getConsoleSender(),"noqui stop");require(!quiz.started(),"stop");
                 if(Boolean.getBoolean("noqui.smoke.keep-active")){Bukkit.dispatchCommand(Bukkit.getConsoleSender(),"noqui start");require(quiz.started(),"persist active before shutdown");}
-                getLogger().info("NOQUI_SMOKE_OK world shop wallet native-dialog connection-dialog services limits empty-start runtime-reload stop persisted-active="+expectedActive);
+                getLogger().info("NOQUI_SMOKE_OK world shop wallet native-dialog physical-ticket-claim gadget-equipment cabin-layout-serialization services limits empty-start runtime-reload stop persisted-active="+expectedActive);
             } catch(Throwable error){getLogger().log(java.util.logging.Level.SEVERE,"NOQUI_SMOKE_FAIL",error);}
             finally{Bukkit.shutdown();}
         },40);
     }
     private static void require(boolean value,String label){if(!value)throw new IllegalStateException(label);}
+    private static void plain(org.bukkit.inventory.ItemStack item) {
+        var meta=item.getItemMeta();require(meta.displayName()!=null&&meta.displayName().decoration(net.kyori.adventure.text.format.TextDecoration.ITALIC)==net.kyori.adventure.text.format.TextDecoration.State.FALSE,"plain item name");
+        require(meta.lore()!=null&&meta.lore().stream().allMatch(line->line.decoration(net.kyori.adventure.text.format.TextDecoration.ITALIC)==net.kyori.adventure.text.format.TextDecoration.State.FALSE),"plain item lore");
+    }
+    private static void verifyPhysicalItems(org.bukkit.World world)throws Exception {
+        var ledger=new dev.noqui.core.CreditLedger();UUID owner=UUID.randomUUID(),recipient=UUID.randomUUID(),claim=UUID.randomUUID();ledger.grant(owner,3);
+        var factory=dev.noqui.paper.QuestionTickets.class.getDeclaredMethod("ticket",UUID.class,int.class);factory.setAccessible(true);
+        var ticket=(org.bukkit.inventory.ItemStack)factory.invoke(null,owner,3);plain(ticket);
+        var constructor=dev.noqui.paper.QuestionTickets.class.getDeclaredConstructor(dev.noqui.core.CreditLedger.class,java.util.function.BooleanSupplier.class,java.util.function.Consumer.class);constructor.setAccessible(true);
+        var tickets=constructor.newInstance(ledger,(java.util.function.BooleanSupplier)()->true,(java.util.function.Consumer<org.bukkit.entity.Player>)p->{});
+        var groundFactory=dev.noqui.paper.QuestionTickets.class.getDeclaredMethod("groundItem",UUID.class,int.class);groundFactory.setAccessible(true);
+        ledger.drop(claim,owner,2,new dev.noqui.core.CreditLedger.Ground(world.getUID(),0,65,0,0));var ground=(org.bukkit.inventory.ItemStack)groundFactory.invoke(tickets,claim,2);plain(ground);
+        var preview=dev.noqui.paper.QuestionTickets.displayItem();require(!preview.getItemMeta().getPersistentDataContainer().has(new org.bukkit.NamespacedKey("noqui","question_ticket_owner")),"preview cannot authorize tickets");
+        var triple=dev.noqui.lobby.LobbyFeatures.gadgetPreview("triple_boots");var quad=dev.noqui.lobby.LobbyFeatures.gadgetPreview("quad_boots");var suit=dev.noqui.lobby.LobbyFeatures.gadgetPreview("gravity_suit");
+        for(String product:List.of("triple_boots","quad_boots","gravity_suit","hammer","snow_bomb")){
+            var item=dev.noqui.lobby.LobbyFeatures.gadgetPreview(product);plain(item);require(!dev.noqui.lobby.LobbyFeatures.isGadgetItem(item),"gadget preview cannot authorize ownership");
+            require(item.getType()==org.bukkit.Material.PAPER&&item.getItemMeta().getMaxStackSize()==1,"physical gadget material and stack limit");
+            require(new org.bukkit.NamespacedKey("noqui",product).equals(item.getItemMeta().getItemModel()),"gadget custom model");
+            if(product.equals("hammer")||product.equals("snow_bomb"))require(!item.getItemMeta().hasEquippable(),"hand gadgets have no equipment component");
+            else {
+                var equipment=item.getItemMeta().getEquippable();require(equipment.isEquipOnInteract()&&equipment.isSwappable()&&!equipment.isDamageOnHurt()&&!equipment.isDispensable(),"native equipment behavior flags");
+                require(Set.copyOf(equipment.getAllowedEntities()).equals(Set.of(org.bukkit.entity.EntityType.PLAYER)),"only players equip gadgets");
+            }
+        }
+        require(triple.getItemMeta().getEquippable().getSlot()==org.bukkit.inventory.EquipmentSlot.FEET&&quad.getItemMeta().getEquippable().getSlot()==org.bukkit.inventory.EquipmentSlot.FEET,"boots native feet component");
+        require(suit.getItemMeta().getEquippable().getSlot()==org.bukkit.inventory.EquipmentSlot.CHEST,"suit native chest component");
+        var layout=new org.bukkit.inventory.ItemStack[42];layout[12]=ticket;layout[36]=triple;layout[38]=suit;layout[40]=quad;layout[41]=ground;
+        var restored=org.bukkit.inventory.ItemStack.deserializeItemsFromBytes(org.bukkit.inventory.ItemStack.serializeItemsAsBytes(layout));
+        require(restored.length==42&&restored[0].isEmpty()&&restored[12].getAmount()==3&&restored[41].getAmount()==2,"full cabin layout and cursor serialization");
+        require(restored[36].getItemMeta().getEquippable().getSlot()==org.bukkit.inventory.EquipmentSlot.FEET&&restored[38].getItemMeta().getEquippable().getSlot()==org.bukkit.inventory.EquipmentSlot.CHEST,"equipment survives native serialization");
+        require(restored[36].getItemMeta().getItemModel().equals(triple.getItemMeta().getItemModel()),"custom model survives serialization");
+        var data=restored[41].getItemMeta().getPersistentDataContainer();require(claim.toString().equals(data.get(new org.bukkit.NamespacedKey("noqui","question_ticket_claim"),org.bukkit.persistence.PersistentDataType.STRING)),"claim survives native serialization");
+        require(!data.has(new org.bukkit.NamespacedKey("noqui","question_ticket_owner")),"ground claim is transferable");
+        require(ledger.pickup(claim,recipient,2)==2&&ledger.pickup(claim,recipient,2)==0&&ledger.balance(owner)==1&&ledger.balance(recipient)==2,"serialized drop claim redeems once");
+    }
 }

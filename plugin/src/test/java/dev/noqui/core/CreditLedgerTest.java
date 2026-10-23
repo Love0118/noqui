@@ -29,4 +29,21 @@ class CreditLedgerTest {
         ledger.reserve(reservation,player);ledger.spend(reservation);var recovered=new CreditLedger(file);recovered.giveOnce(player,2,"purchase:one");assertEquals(1,recovered.balance(player));
         assertThrows(IllegalArgumentException.class,()->recovered.giveOnce(player,3,"purchase:one"));assertThrows(IllegalArgumentException.class,()->recovered.giveOnce(UUID.randomUUID(),2,"purchase:one"));
     }
+    @Test void groundClaimsTransferPartiallyAcrossRestartAndNeverRefundOrRedeemTwice()throws Exception {
+        Path file=directory.resolve("credits.json");UUID owner=UUID.randomUUID(),recipient=UUID.randomUUID(),claim=UUID.randomUUID();
+        var ledger=new CreditLedger(file);ledger.grant(owner,5);ledger.drop(claim,owner,3,new CreditLedger.Ground(UUID.randomUUID(),1,65,2,0));assertEquals(2,ledger.balance(owner));
+        ledger=new CreditLedger(file);assertEquals(2,ledger.balance(owner));assertEquals(3,ledger.dropped(claim).amount());
+        assertEquals(1,ledger.pickup(claim,recipient,1));assertEquals(2,ledger.dropped(claim).amount());
+        ledger=new CreditLedger(file);assertEquals(1,ledger.balance(recipient));assertEquals(2,ledger.pickup(claim,recipient,64));assertEquals(0,ledger.pickup(claim,recipient,64));assertEquals(3,ledger.balance(recipient));
+        assertNull(new CreditLedger(file).dropped(claim));assertEquals(2,new CreditLedger(file).balance(owner));
+        UUID destroyed=UUID.randomUUID();ledger.drop(destroyed,owner,1,new CreditLedger.Ground(UUID.randomUUID(),1,65,2,0));ledger.retireDrop(destroyed);
+        ledger=new CreditLedger(file);assertEquals(1,ledger.balance(owner));assertNull(ledger.dropped(destroyed));
+    }
+    @Test void failedDropAndPickupWritesLeaveBothSidesUnchanged()throws Exception {
+        Path file=directory.resolve("credits.json"),blocked=directory.resolve("credits.json.tmp");var ledger=new CreditLedger(file);UUID owner=UUID.randomUUID(),other=UUID.randomUUID(),claim=UUID.randomUUID();
+        ledger.grant(owner,2);var ground=new CreditLedger.Ground(UUID.randomUUID(),1,65,2,0);Files.createDirectory(blocked);
+        assertThrows(java.io.UncheckedIOException.class,()->ledger.drop(claim,owner,1,ground));assertEquals(2,ledger.balance(owner));assertNull(ledger.dropped(claim));
+        Files.delete(blocked);ledger.drop(claim,owner,1,ground);Files.createDirectory(blocked);
+        assertThrows(java.io.UncheckedIOException.class,()->ledger.pickup(claim,other,1));assertEquals(0,ledger.balance(other));assertEquals(1,ledger.dropped(claim).amount());assertEquals(1,ledger.balance(owner));
+    }
 }

@@ -5,11 +5,14 @@ import org.bukkit.*;
 import org.bukkit.attribute.*;
 import org.bukkit.entity.Player;
 import org.bukkit.util.Vector;
+import net.kyori.adventure.key.Key;
+import net.kyori.adventure.sound.Sound;
 
-/** Owns temporary flight permission and one transient gravity modifier, never armor or tools. */
+/** Jump-input boosts and one owned gravity modifier. Never takes ownership of vanilla flight. */
 final class LobbyMovement {
     static final NamespacedKey GRAVITY_KEY=new NamespacedKey("noqui","lobby_gravity");
-    private static final class State { boolean flight, expectedAllow; int used; }
+    static final double AIR_JUMP_VELOCITY=.85;
+    private static final class State { boolean jumpHeld; int used; }
     private final Map<UUID,State> states=new HashMap<>();
     private final World cabin;
     LobbyMovement(World cabin){this.cabin=cabin;}
@@ -18,27 +21,32 @@ final class LobbyMovement {
     void tick(Player p,String boots,boolean suit) {
         if(!eligible(p,cabin)){leave(p);return;}
         State s=states.computeIfAbsent(p.getUniqueId(),id->new State());
-        if(s.flight&&p.getAllowFlight()!=s.expectedAllow)s.flight=false;
         if(p.isOnGround())s.used=0;
-        boolean allow=s.used<extraJumps(boots);
-        if(!s.flight&&!p.getAllowFlight()&&!p.isFlying()){s.flight=true;s.expectedAllow=false;}
-        if(s.flight&&s.expectedAllow!=allow){p.setAllowFlight(allow);s.expectedAllow=allow;}
         gravity(p,suit);
     }
+    boolean input(Player p,boolean pressed,String boots) {
+        if(!eligible(p,cabin)){leave(p);return false;}
+        State s=states.computeIfAbsent(p.getUniqueId(),id->new State());
+        boolean rising=pressed&&!s.jumpHeld;s.jumpHeld=pressed;
+        if(p.isOnGround()){s.used=0;return false;}
+        return rising&&jump(p,boots);
+    }
     boolean jump(Player p,String boots) {
-        State s=states.get(p.getUniqueId());
-        if(!eligible(p,cabin)||s==null||!s.flight||!p.getAllowFlight()||s.used>=extraJumps(boots))return false;
-        s.used++;p.setFlying(false);p.setAllowFlight(false);s.expectedAllow=false;
+        if(!eligible(p,cabin)||p.isOnGround()||p.getAllowFlight()||p.isFlying()||p.isGliding()||p.isInsideVehicle())return false;
+        State s=states.computeIfAbsent(p.getUniqueId(),id->new State());
+        if(s.used>=extraJumps(boots))return false;
+        s.used++;
         Vector direction=p.getLocation().getDirection().setY(0);
         if(direction.lengthSquared()>0)direction.normalize().multiply(.55);
-        p.setVelocity(direction.setY(.62));p.setFallDistance(0);return true;
+        p.setVelocity(direction.setY(AIR_JUMP_VELOCITY));p.setFallDistance(0);
+        p.playSound(Sound.sound(Key.key("minecraft:entity.breeze.jump"),Sound.Source.PLAYER,.4f,1f+.1f*(s.used-1)));
+        return true;
     }
     void leave(Player p) {
-        State s=states.remove(p.getUniqueId());
-        if(s!=null&&s.flight&&(p.getGameMode()==GameMode.ADVENTURE||p.getGameMode()==GameMode.SURVIVAL)
-                &&p.getAllowFlight()==s.expectedAllow&&!p.isFlying())p.setAllowFlight(false);
+        states.remove(p.getUniqueId());
         gravity(p,false);
     }
+    void suspend(Player p){gravity(p,false);}
     private static void gravity(Player p,boolean active) {
         AttributeInstance attribute=p.getAttribute(Attribute.GRAVITY);if(attribute==null)return;
         AttributeModifier existing=attribute.getModifier(GRAVITY_KEY);

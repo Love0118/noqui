@@ -56,10 +56,11 @@ class LobbyRuntimeTest {
         Files.writeString(dir.resolve("lobby-pack.properties"),"url=https://noqui.danta.qzz.io/packs/"+"a".repeat(64)+".zip\nsha1="+"b".repeat(40)+"\n");
     }
     @AfterEach void cleanup(){if(features!=null)features.close();cosmetics.close();shop.close();bukkit.close();}
-    LobbyFeatures create(LobbyFeatures.CreditPort port){features=new LobbyFeatures(plugin,cabin,port,clock::get,()->random.get());features.start();return features;}
+    LobbyFeatures create(LobbyFeatures.CreditPort port){features=new LobbyFeatures(plugin,cabin,port,clock::get,()->random.get(),GadgetTestSupport::item);features.start();return features;}
     LobbyFeatures.CreditPort port(){return new LobbyFeatures.CreditPort(){public long balance(UUID id){return 0;}public void grant(UUID id,long n,String tx){}};}
     final class Person {
         Player p=mock(Player.class);UUID id=UUID.randomUUID();boolean allow,flying,ground,dead,blocking,freezeLocked;int freezeTicks;GameMode mode=GameMode.ADVENTURE;World world=cabin;
+        GadgetTestSupport.Inventory inventory=new GadgetTestSupport.Inventory(p);
         Location location=new Location(cabin,411.5,11,-205.5,0,0);
         Map<org.bukkit.NamespacedKey,AttributeModifier> modifiers=new HashMap<>();AttributeInstance attr=mock(AttributeInstance.class);
         Person() {
@@ -79,13 +80,15 @@ class LobbyRuntimeTest {
     void buyEquip(Person person,String id)throws Exception {
         // A reward/purchase is persisted through the actual module ledger before module construction.
         LobbyWallets w=ledger();var item=LobbyCatalog.defaults().stream().filter(p->p.id().equals(id)).findFirst().orElseThrow();
-        w.reward(person.id,"seed:"+id,100,Currency.STARLIGHT);w.purchase(person.id,item,Currency.STARLIGHT,"buy:"+id);w.equip(person.id,item);
+        w.reward(person.id,"seed:"+id,100,Currency.STARLIGHT);w.purchase(person.id,item,Currency.STARLIGHT,"buy:"+id);
+        var gadget=w.pendingGadgets(person.id).getFirst();w.gadgetDelivered(gadget.serial());
+        int slot=item.slot().equals("boots")?36:item.slot().equals("suit")?38:0;person.inventory.slots[slot]=GadgetTestSupport.item(gadget);
     }
 
     @Test void doubleTripleQuadJumpsCountAndLandingResetsWithoutCreativeFlightTheft() {
         for(String boots:Arrays.asList(null,"triple_boots","quad_boots")) {
             Person p=new Person();LobbyMovement m=new LobbyMovement(cabin);
-            for(int i=0;i<LobbyMovement.extraJumps(boots);i++){m.tick(p.p,boots,false);assertTrue(p.allow);assertTrue(m.jump(p.p,boots));}
+            for(int i=0;i<LobbyMovement.extraJumps(boots);i++){m.tick(p.p,boots,false);assertFalse(p.allow);assertTrue(m.jump(p.p,boots));}
             m.tick(p.p,boots,false);assertFalse(m.jump(p.p,boots));
             p.ground=true;m.tick(p.p,boots,false);p.ground=false;assertTrue(m.jump(p.p,boots));m.leave(p.p);assertFalse(p.allow);
         }
@@ -98,16 +101,61 @@ class LobbyRuntimeTest {
         Person q=new Person();m.tick(q.p,null,true);assertEquals(-.5,q.modifiers.get(LobbyMovement.GRAVITY_KEY).getAmount());
         NamespacedKey foreignKey=new NamespacedKey("other","gravity");AttributeModifier foreign=new AttributeModifier(foreignKey,.2,AttributeModifier.Operation.ADD_NUMBER);q.modifiers.put(foreignKey,foreign);
         q.world=arena;m.tick(q.p,null,true);assertFalse(q.allow);assertFalse(q.modifiers.containsKey(LobbyMovement.GRAVITY_KEY));assertSame(foreign,q.modifiers.get(foreignKey));
-        verify(q.p,times(1)).setAllowFlight(true);
+        verify(q.p,never()).setAllowFlight(anyBoolean());
+    }
+    @Test void airJumpInputWorksWhileFallingWithoutGroundJumpAndRequiresFreshPress() {
+        for(String boots:Arrays.asList(null,"triple_boots","quad_boots")) {
+            Person p=new Person();when(p.p.getVelocity()).thenReturn(new Vector(0,-1,0));LobbyMovement movement=new LobbyMovement(cabin);
+            int jumps=LobbyMovement.extraJumps(boots);
+            for(int i=0;i<jumps;i++) {
+                assertTrue(movement.input(p.p,true,boots));assertFalse(movement.input(p.p,true,boots));
+                assertFalse(movement.input(p.p,false,boots));
+            }
+            assertFalse(movement.input(p.p,true,boots));
+            verify(p.p,times(jumps)).setVelocity(argThat((Vector v)->v.getY()==.85));
+            verify(p.p,times(jumps)).playSound(any(net.kyori.adventure.sound.Sound.class));
+            verify(p.p,never()).setAllowFlight(anyBoolean());verify(p.p,never()).setFlying(anyBoolean());
+            p.ground=true;movement.tick(p.p,boots,false);assertFalse(movement.input(p.p,false,boots));
+            p.ground=false;assertTrue(movement.input(p.p,true,boots));
+        }
+    }
+    @Test void jumpInputPreservesGroundFlightSpectatorVehicleAndOtherWorldBehavior() {
+        Person p=new Person();LobbyMovement movement=new LobbyMovement(cabin);p.ground=true;assertFalse(movement.input(p.p,true,null));
+        movement.input(p.p,false,null);p.ground=false;p.mode=GameMode.SPECTATOR;assertFalse(movement.input(p.p,true,null));
+        p.mode=GameMode.ADVENTURE;p.allow=true;assertFalse(movement.input(p.p,true,null));movement.input(p.p,false,null);
+        p.allow=false;when(p.p.isInsideVehicle()).thenReturn(true);assertFalse(movement.input(p.p,true,null));movement.input(p.p,false,null);
+        when(p.p.isInsideVehicle()).thenReturn(false);p.world=arena;assertFalse(movement.input(p.p,true,null));
+        verify(p.p,never()).setVelocity(any());verify(p.p,never()).playSound(any(net.kyori.adventure.sound.Sound.class));
+        verify(p.p,never()).setAllowFlight(anyBoolean());verify(p.p,never()).setFlying(anyBoolean());
+    }
+    @Test void physicalEquipmentAndTransitionHooksControlEffectsWithoutMovingSnapshotStacks()throws Exception {
+        Person p=new Person();buyEquip(p,"quad_boots");buyEquip(p,"gravity_suit");create(port());features.join(p.p);features.tick();
+        assertTrue(p.modifiers.containsKey(LobbyMovement.GRAVITY_KEY));var before=p.inventory.slots.clone();
+        Input pressed=mock(Input.class),released=mock(Input.class);when(pressed.isJump()).thenReturn(true);
+        for(int i=0;i<3;i++){features.jumpInput(new PlayerInputEvent(p.p,pressed));features.jumpInput(new PlayerInputEvent(p.p,released));}
+        features.jumpInput(new PlayerInputEvent(p.p,pressed));verify(p.p,times(3)).playSound(any(net.kyori.adventure.sound.Sound.class));
+        features.prepareInventoryChange(p.p);assertFalse(p.modifiers.containsKey(LobbyMovement.GRAVITY_KEY));assertArrayEquals(before,p.inventory.slots);
+        verify(p.p,never()).setItemOnCursor(any());verify(p.inventory.inventory,never()).setItem(anyInt(),any());
+        features.inventoryChanged(p.p);assertArrayEquals(before,p.inventory.slots);
+        p.inventory.slots[36]=null;p.inventory.slots[38]=null;features.tick();assertFalse(p.modifiers.containsKey(LobbyMovement.GRAVITY_KEY));
+        features.jumpInput(new PlayerInputEvent(p.p,released));features.jumpInput(new PlayerInputEvent(p.p,pressed));features.jumpInput(new PlayerInputEvent(p.p,released));features.jumpInput(new PlayerInputEvent(p.p,pressed));
+        verify(p.p,times(3)).playSound(any(net.kyori.adventure.sound.Sound.class));
+        p.ground=true;features.tick();features.jumpInput(new PlayerInputEvent(p.p,released));p.ground=false;features.jumpInput(new PlayerInputEvent(p.p,pressed));
+        verify(p.p,times(4)).playSound(any(net.kyori.adventure.sound.Sound.class));
+    }
+    @Test void jumpInputIgnoresPlayersWhoAreNotCurrentTrackedCabinPlayers() {
+        Person p=new Person();create(port());Input input=mock(Input.class);when(input.isJump()).thenReturn(true);
+        features.jumpInput(new PlayerInputEvent(p.p,input));verify(p.p,never()).setVelocity(any());
+        features.join(p.p);p.world=arena;features.jumpInput(new PlayerInputEvent(p.p,input));verify(p.p,never()).setVelocity(any());
     }
     @Test void hammerPreAttackWorksWithImmuneTargetsBreakBoundaryAndStunExpires()throws Exception {
         Person attacker=new Person(),target=new Person();target.location.add(1,0,0);buyEquip(attacker,"hammer");create(port());features.join(attacker.p);features.join(target.p);
         random.set(.5);PrePlayerAttackEntityEvent first=new PrePlayerAttackEntityEvent(attacker.p,target.p,false);features.hammer(first);assertTrue(first.isCancelled());
         verify(target.p).setVelocity(any(Vector.class));verify(target.p,never()).damage(anyDouble());
-        assertEquals(1,ledger().wallet(attacker.id).owned().get("hammer"));
+        assertNotNull(ledger().gadget(GadgetItems.serial(attacker.inventory.slots[0])));
         features.hammer(new PrePlayerAttackEntityEvent(attacker.p,target.p,false));verify(target.p,times(1)).setVelocity(any(Vector.class));
         clock.addAndGet(1000);random.set(.499999);features.hammer(new PrePlayerAttackEntityEvent(attacker.p,target.p,false));
-        assertFalse(ledger().wallet(attacker.id).owned().containsKey("hammer"));assertTrue(target.modifiers.keySet().stream().anyMatch(k->k.getKey().equals("lobby_stun")));
+        assertNull(attacker.inventory.slots[0]);assertTrue(target.modifiers.keySet().stream().anyMatch(k->k.getKey().equals("lobby_stun")));
         clock.addAndGet(1001);features.tick();assertFalse(target.modifiers.keySet().stream().anyMatch(k->k.getKey().equals("lobby_stun")));
     }
     @Test void hammerRejectsShieldOutOfWorldRangeAndDoesNotUseArenaInventory()throws Exception {
@@ -149,6 +197,7 @@ class LobbyRuntimeTest {
         features.world(new PlayerChangedWorldEvent(b.p,cabin));assertTrue(b.modifiers.isEmpty());
     }
     Snowball fireSnow(Person owner)throws Exception {
+        if(owner.inventory.slots[0]==null){features.inventoryChanged(owner.p);for(int i=1;i<36;i++)if(GadgetItems.marked(owner.inventory.slots[i])){owner.inventory.slots[0]=owner.inventory.slots[i];owner.inventory.slots[i]=null;break;}}
         Snowball ball=mock(Snowball.class);when(ball.getUniqueId()).thenReturn(UUID.randomUUID());when(ball.getWorld()).thenReturn(cabin);when(ball.isValid()).thenReturn(true);
         when(owner.p.isSneaking()).thenReturn(true);when(owner.p.launchProjectile(Snowball.class)).thenReturn(ball);
         var event=new PlayerInteractEvent(owner.p,org.bukkit.event.block.Action.RIGHT_CLICK_AIR,null,null,org.bukkit.block.BlockFace.UP,org.bukkit.inventory.EquipmentSlot.HAND);
@@ -157,7 +206,7 @@ class LobbyRuntimeTest {
     @Test void snowBombHasBoundedVisibleFrostbiteRestoresOnExpiryAndNeverDamagesBlocks()throws Exception {
         Person a=new Person(),b=new Person();b.freezeTicks=12;buyEquip(a,"snow_bomb");create(port());features.join(a.p);features.join(b.p);
         Snowball ball=fireSnow(a);features.snowHit(new org.bukkit.event.entity.ProjectileHitEvent(ball,b.p));
-        assertEquals(100,b.freezeTicks);assertTrue(b.freezeLocked);assertTrue(b.freezeTicks<140);assertFalse(ledger().wallet(a.id).owned().containsKey("snow_bomb"));
+        assertEquals(100,b.freezeTicks);assertTrue(b.freezeLocked);assertTrue(b.freezeTicks<140);assertNull(a.inventory.slots[0]);
         verify(ball).remove();verify(b.p,never()).damage(anyDouble());verify(b.p,never()).getInventory();
         clock.addAndGet(1801);features.tick();assertEquals(12,b.freezeTicks);assertFalse(b.freezeLocked);assertTrue(b.modifiers.isEmpty());
     }
