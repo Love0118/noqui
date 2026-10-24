@@ -482,7 +482,26 @@ footer>div {
     padding: 0 19px
   }
 }
+.connect-screen{position:fixed;inset:0;z-index:2;display:grid;place-items:center;min-height:100svh;background:#fafbfc;padding:32px}
+.connect-content{width:min(100%,340px)}
+.connect-brand{font-size:11px;font-weight:700;letter-spacing:.24em;margin:0 0 48px}
+.connect-content h1{font-size:clamp(40px,7vw,54px);font-weight:550;letter-spacing:-.065em;margin:28px 0 12px;line-height:1.2}
+.connect-status{font-size:12px;color:var(--muted);min-height:18px;margin:0 0 36px}
+.connect-button{width:100%;min-height:52px;font-size:13px;padding:14px 18px}
+.connect-button span{font-size:20px;font-weight:400}
+.connect-server{position:absolute;bottom:32px;font-size:10px;color:var(--muted);letter-spacing:.04em}
+.connect-wave{height:42px;display:flex;gap:5px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:12px}
+.connect-wave i{display:block;background:var(--ink);width:2px;height:8px;transform-origin:center}
+.connect-wave i:nth-child(3n+1){height:18px}
+.connect-wave i:nth-child(3n+2){height:28px}
+.connect-screen.is-leaving{pointer-events:none}
 @media(prefers-reduced-motion:no-preference) {
+  .connect-wave i{animation:connect-wave 1.4s ease-in-out infinite alternate}
+  .connect-wave i:nth-child(2n){animation-delay:-.7s}
+  .connect-wave i:nth-child(3n){animation-delay:-.35s}
+  .connect-screen.is-leaving{animation:connect-leave .65s cubic-bezier(.4,0,.2,1) forwards}
+  .connect-screen.is-leaving .connect-wave i{animation:connect-pulse .5s ease-out forwards}
+  .shell.is-entering{animation:player-enter .65s cubic-bezier(.2,.7,.2,1) both}
   button {
     transition: background .15s ease,color .15s ease
   }
@@ -490,3 +509,7 @@ footer>div {
     transition: background .2s ease
   }
 }
+@keyframes connect-wave{from{transform:scaleY(.4)}to{transform:scaleY(1)}}
+@keyframes connect-pulse{to{transform:scaleY(.05)}}
+@keyframes connect-leave{to{opacity:0;transform:translateY(-28px)}}
+@keyframes player-enter{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}

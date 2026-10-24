@@ -2,7 +2,17 @@
 <html lang="ko">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>노퀴</title><link rel="stylesheet" href="/style.css"><script src="/join.js" defer></script></head>
 <body>
-<div class="shell">
+<section id="connect-screen" class="connect-screen" aria-labelledby="connect-title">
+  <div class="connect-content">
+    <p class="connect-brand">NOQUI</p>
+    <div class="connect-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <h1 id="connect-title">노래퀴즈</h1>
+    <p id="connect-status" class="connect-status" role="status" aria-live="polite">연결 확인 중</p>
+    <button id="connect-button" class="primary connect-button" type="button" disabled>연결하기<span aria-hidden="true">↗</span></button>
+  </div>
+  <span class="connect-server">mud.danta.qzz.io</span>
+</section>
+<div id="player-screen" class="shell" hidden>
   <header class="masthead"><a class="brand" href="/" aria-label="노퀴 홈">노퀴<span>NOQUI</span></a>
     <div class="identity" aria-label="플레이어 연결 상태">
       <span id="connection" class="connection"><i aria-hidden="true"></i><span id="connection-text">연결 중</span></span>
@@ -12,7 +22,7 @@
   </header>
   <main>
     <div class="eyebrow"><span id="round-label">대기실</span><span id="audio-status" role="status" aria-live="polite">연결 중</span></div>
-    <section class="track" aria-labelledby="track-title"><p id="phase-label" class="phase">다음 라운드</p><h1 id="track-title" aria-live="polite">잠시만요</h1><div id="tags" class="tags" hidden></div><p id="message" class="message" aria-live="polite"></p></section>
+    <section class="track" aria-labelledby="track-title"><p id="phase-label" class="phase">다음 라운드</p><h1 id="track-title" tabindex="-1" aria-live="polite">잠시만요</h1><div id="tags" class="tags" hidden></div><p id="message" class="message" aria-live="polite"></p></section>
     <section class="player" aria-label="오디오 플레이어">
       <div class="timeline"><time id="elapsed">0:00</time><progress id="progress" max="1" value="0" aria-label="라운드 진행"></progress><time id="remaining">—</time></div>
       <div class="controls"><div class="primary-controls"><button id="playback" class="text-button" type="button" aria-label="일시 정지" hidden>일시 정지</button><button id="takeover" class="primary" type="button" hidden>여기서 재생</button><span id="countdown" class="countdown" aria-live="off"></span></div>

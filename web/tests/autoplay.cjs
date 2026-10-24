@@ -1,5 +1,5 @@
 'use strict';
-// Real headed Chromium, default autoplay policy, no page evaluation with userGesture=true.
+// Isolated headless Chrome with default autoplay policy; only the connection button receives a click.
 // Run separately from the fast VM suite. NODE_PATH may point at an installed Playwright.
 const assert = require('node:assert/strict');
 const { createServer } = require('node:http');
@@ -53,7 +53,7 @@ async function fixture() {
       if (phase === 'COUNTDOWN' && report.status === 'PLAYING' && report.positionMs >= 500) { phase = 'PLAYING'; revision++; anchorAt = Date.now(); anchorPosition = report.positionMs; }
       return json({ leaseExpiresAtMs: Date.now() + 60000 });
     }
-    if (path === '/api/v1/me') return json({ me: snapshot().me, csrfToken: 'LOCAL_FIXTURE_ONLY' });
+    if (path === '/api/v1/me' || path === '/api/v1/auth/redeem') return json({ me: snapshot().me, csrfToken: 'LOCAL_FIXTURE_ONLY' });
     if (path === '/api/v1/time') return json({ receivedAtMs: Date.now(), sentAtMs: Date.now() });
     if (path === '/api/v1/state') return json(snapshot());
     if (path === '/api/v1/events') {
@@ -69,7 +69,7 @@ async function fixture() {
       const start = Number(range[1]), end = Math.min(Number(range[2] || track.bytes.length - 1), track.bytes.length - 1);
       return send(track.bytes.subarray(start, end + 1), 'audio/wav', 206, { 'Accept-Ranges': 'bytes', 'Content-Range': `bytes ${start}-${end}/${track.bytes.length}` });
     }
-    const assets = { '/': ['index.html', 'text/html; charset=utf-8'], '/app.js': ['app.js', 'text/javascript'],
+    const assets = { '/': ['index.html', 'text/html; charset=utf-8'], '/join': ['index.html', 'text/html; charset=utf-8'], '/app.js': ['app.js', 'text/javascript'],
       '/join.js': ['join.js', 'text/javascript'], '/style.css': ['style.css', 'text/css'], '/playback-check.wav': ['playback-check.wav', 'audio/wav'] };
     if (assets[path]) return send(readFileSync(join(staticRoot, assets[path][0])), assets[path][1]);
     send(Buffer.from('Not found'), 'text/plain', 404);
@@ -80,7 +80,7 @@ async function fixture() {
 }
 async function readState(cdp) {
   const result = await cdp.send('Runtime.evaluate', { userGesture: false, returnByValue: true,
-    expression: `JSON.stringify({activated:navigator.userActivation.hasBeenActive,hidden:document.hidden,status:document.getElementById('audio-status')?.textContent,countdown:document.getElementById('countdown')?.textContent,paused:document.getElementById('audio')?.paused,muted:document.getElementById('audio')?.muted,volume:document.getElementById('audio')?.volume,position:document.getElementById('audio')?.currentTime,source:document.getElementById('audio')?.getAttribute('src'),readyState:document.getElementById('audio')?.readyState})` });
+    expression: `JSON.stringify({activated:navigator.userActivation.hasBeenActive,hidden:document.hidden,gateHidden:document.getElementById('connect-screen')?.hidden,buttonDisabled:document.getElementById('connect-button')?.disabled,playerHidden:document.getElementById('player-screen')?.hidden,status:document.getElementById('audio-status')?.textContent,countdown:document.getElementById('countdown')?.textContent,paused:document.getElementById('audio')?.paused,muted:document.getElementById('audio')?.muted,volume:document.getElementById('audio')?.volume,position:document.getElementById('audio')?.currentTime,source:document.getElementById('audio')?.getAttribute('src'),readyState:document.getElementById('audio')?.readyState})` });
   return JSON.parse(result.result.value);
 }
 async function waitFor(check, timeout = 20000) {
@@ -88,22 +88,15 @@ async function waitFor(check, timeout = 20000) {
   while (Date.now() < until) { if (await check()) return; await delay(100); }
   throw new Error('Timed out waiting for browser playback');
 }
-async function run(name, allowed, background) {
+async function run(name, connect, background, reducedMotion = false) {
   const app = await fixture(), profile = mkdtempSync(join(tmpdir(), 'noqui-autoplay-'));
   let context, browser, browserCdp, browserProcess;
   try {
-    if (allowed) {
-      mkdirSync(join(profile, 'Default'));
-      // Only this isolated test origin gets the normal per-site "Sound: Allow" setting.
-      writeFileSync(join(profile, 'Default', 'Preferences'), JSON.stringify({ profile: { content_settings: { exceptions: {
-        sound: { [`${app.origin},*`]: { setting: 1, last_modified: String((Date.now() + 11644473600000) * 1000) } },
-      } } } }));
-    }
-    // Launch Chrome directly: no Playwright launch flags, autoplay overrides,
-    // disabled browser sandbox, muted output, or disabled background throttling.
+    // Headless avoids desktop occlusion suspending the fixture before its click.
+    // No autoplay overrides, muted output, or disabled background throttling.
     browserProcess = spawn(process.env.NOQUI_BROWSER_EXECUTABLE || chromium.executablePath(),
-      [`--user-data-dir=${profile}`, '--remote-debugging-port=0', '--no-first-run', '--no-default-browser-check', 'about:blank'],
-      { windowsHide: false, stdio: 'ignore' });
+      [`--user-data-dir=${profile}`, '--headless=new', '--window-size=1280,900', '--remote-debugging-port=0', '--no-first-run', '--no-default-browser-check', 'about:blank'],
+      { windowsHide: true, stdio: 'ignore' });
     let launchError; browserProcess.on('error', error => { launchError = error; });
     const portFile = join(profile, 'DevToolsActivePort');
     await waitFor(() => { if (launchError) throw launchError; return existsSync(portFile); }, 10000);
@@ -117,53 +110,64 @@ async function run(name, allowed, background) {
     const initialTarget = await initialCdp.send('Target.getTargetInfo'), window = await browserCdp.send('Browser.getWindowForTarget', { targetId: initialTarget.targetInfo.targetId });
     await browserCdp.send('Browser.setWindowBounds', { windowId: window.windowId, bounds: { windowState: 'maximized' } });
     await initialCdp.send('Page.bringToFront');
-    if (background === 'never') {
-      const created = context.waitForEvent('page');
-      await browserCdp.send('Target.createTarget', { url: 'about:blank', background: true });
-      page = await created;
-    }
     const cdp = await context.newCDPSession(page), samples = [];
     // Playwright enables focus emulation on every page. Turn it off before the
     // production script loads so document.hidden reflects a real background tab.
     await cdp.send('Emulation.setFocusEmulationEnabled', { enabled: false });
-    await cdp.send('Page.navigate', { url: app.origin });
-    if (background !== 'never') {
-      await waitFor(async () => (await readState(cdp)).status !== undefined);
-      await cdp.send('Page.bringToFront');
+    if (reducedMotion) {
+      await cdp.send('Emulation.setEmulatedMedia', { features: [{ name: 'prefers-reduced-motion', value: 'reduce' }] });
+      await cdp.send('Emulation.setDeviceMetricsOverride', { width: 390, height: 844, deviceScaleFactor: 1, mobile: true });
     }
-    if (background === 'after-show') {
-      try { await waitFor(async () => { if ((await readState(cdp)).hidden) await cdp.send('Page.bringToFront'); return app.reports.some(report => report.status === 'PREPARED'); }); }
-      catch (error) { console.error(JSON.stringify({ name, state: await readState(cdp), reports: app.reports })); throw error; }
+    await cdp.send('Page.navigate', { url: connect ? `${app.origin}/join#t=${'a'.repeat(43)}` : app.origin });
+    await waitFor(async () => (await readState(cdp)).buttonDisabled === false);
+    await cdp.send('Page.bringToFront');
+    await cdp.send('Runtime.evaluate', { userGesture: false, expression: "globalThis.__qaAudio = document.getElementById('audio')" });
+    assert.equal((await readState(cdp)).activated, false);
+    assert.equal(app.reports.length, 0);
+    const screenshotDir = resolve(__dirname, '../target/connection-preview'); mkdirSync(screenshotDir, { recursive: true });
+    const shot = async suffix => { const shot = await cdp.send('Page.captureScreenshot', { format: 'png' }); writeFileSync(join(screenshotDir, `${name}-${suffix}.png`), Buffer.from(shot.data, 'base64')); };
+    await shot('connect');
+    if (connect) {
+      const bounds = await cdp.send('Runtime.evaluate', { userGesture: false, returnByValue: true, expression: "(() => { const r=document.getElementById('connect-button').getBoundingClientRect(); return {x:r.x+r.width/2,y:r.y+r.height/2}; })()" });
+      await cdp.send('Input.dispatchMouseEvent', { type: 'mousePressed', ...bounds.result.value, button: 'left', clickCount: 1 });
+      await cdp.send('Input.dispatchMouseEvent', { type: 'mouseReleased', ...bounds.result.value, button: 'left', clickCount: 1 });
+      try { await waitFor(async () => (await readState(cdp)).gateHidden); }
+      catch (error) {
+        const detail = await cdp.send('Runtime.evaluate', { userGesture: false, returnByValue: true, expression: "JSON.stringify({status:document.getElementById('connect-status').textContent,scripts:[...document.scripts].map(s=>s.src),visibility:document.visibilityState})" });
+        console.error(JSON.stringify({ name, state: await readState(cdp), detail: detail.result.value })); await shot('failed'); throw error;
+      }
+      const identity = await cdp.send('Runtime.evaluate', { userGesture: false, returnByValue: true, expression: "globalThis.__qaAudio === document.getElementById('audio') && __qaAudio.isConnected && location.pathname==='/' && location.hash===''" });
+      assert.equal(identity.result.value, true);
+      await shot('player');
+    }
+    if (background) {
       await browserCdp.send('Target.createTarget', { url: 'about:blank', background: false });
       await waitFor(async () => (await readState(cdp)).hidden);
     }
-    const began = Date.now(), waitingOnly = background === 'never';
+    const began = Date.now();
     try { await waitFor(async () => {
-      const sample = await readState(cdp); samples.push(sample); assert.equal(sample.activated, false, 'no website interaction is allowed');
+      const sample = await readState(cdp); samples.push(sample); assert.equal(sample.activated, connect, 'only the initial connection click is allowed');
       if (background) assert.equal(sample.hidden, true, 'the player must remain in a background tab');
-      return waitingOnly ? Date.now() - began >= 10000 : allowed ? app.snapshot().room.phase === 'ENDED' : app.reports.some(report => report.status === 'NEEDS_GESTURE');
+      return connect ? app.snapshot().room.phase === 'ENDED' : Date.now() - began >= 1500;
     }); } catch (error) {
       console.error(JSON.stringify({ name, state: await readState(cdp), reports: app.reports.slice(-10), window: await browserCdp.send('Browser.getWindowBounds', { windowId: window.windowId }) }));
       throw error;
     }
-    if (waitingOnly) {
-      assert(app.reports.some(report => report.status === 'BUFFERING'));
-      assert(!app.reports.some(report => ['PREPARED', 'PLAYING'].includes(report.status)));
-      assert.equal(app.snapshot().room.phase, 'PREPARING'); assert.equal((await readState(cdp)).countdown, '');
-    } else if (allowed) {
+    if (connect) {
       for (let song = 0; song < tracks.length; song++) {
         assert(app.reports.some(report => report.song === song && report.status === 'PREPARED'));
         assert(app.reports.some(report => report.song === song && report.status === 'PLAYING' && report.positionMs >= 500));
       }
       assert(samples.some(sample => !sample.paused && !sample.muted && sample.volume > 0 && sample.position > .5));
     } else {
-      await delay(2000);
-      assert(!app.reports.some(report => ['PREPARED', 'PLAYING'].includes(report.status)));
+      assert.equal(app.reports.length, 0);
       const sample = await readState(cdp); assert.equal(sample.countdown, ''); assert.equal(sample.activated, false);
       assert.equal(app.snapshot().room.phase, 'PREPARING');
+      assert.equal(sample.playerHidden, true); assert.equal(sample.gateHidden, false);
     }
-    const evidence = { name, allowedOrigin: allowed, background, outcome: waitingOnly ? 'browser-deferred-no-false-readiness' : allowed ? 'two-tracks-with-zero-activation' : 'browser-denied-no-false-readiness',
+    const evidence = { name, defaultOriginPolicy: true, background, reducedMotion, outcome: connect ? 'two-tracks-after-one-connection-click' : 'gate-waits-without-playback',
       appSha256: createHash('sha256').update(readFileSync(join(staticRoot, 'app.js'))).digest('hex'), browser: (await cdp.send('Browser.getVersion')).product,
+      joinSha256: createHash('sha256').update(readFileSync(join(staticRoot, 'join.js'))).digest('hex'),
       activated: samples.some(sample => sample.activated), reports: app.reports, samples: samples.filter((_, index) => index % 5 === 0) };
     console.log(JSON.stringify(evidence)); return evidence;
   } finally {
@@ -174,6 +178,6 @@ async function run(name, allowed, background) {
   }
 }
 (async () => {
-  for (const args of [['fresh-default-blocked', false, false], ['allowed-origin-two-tracks', true, false], ['allowed-origin-background-two-tracks', true, 'after-show'], ['allowed-origin-never-visible-defers', true, 'never']])
+  for (const args of [['fresh-default-unconnected', false, false], ['fresh-default-connected', true, false], ['fresh-default-background', true, true], ['reduced-motion-mobile', true, false, true]])
     if (!process.argv[2] || process.argv[2] === args[0]) await run(...args);
 })().catch(error => { console.error(error); process.exitCode = 1; });
