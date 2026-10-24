@@ -14,7 +14,9 @@ use std::{
 use tokio::sync::broadcast;
 
 pub const ORIGIN: &str = "https://noqui.danta.qzz.io";
-pub const PROFILE: &str = "opus-48-clip115-v1";
+pub const PROFILE: &str = "opus-48-clip40-source360-v2";
+pub const MAX_SOURCE_SECONDS: u32 = 360;
+pub const CLIP_SECONDS: u32 = 40;
 pub const MAX_SOURCE: u64 = 25 * 1024 * 1024;
 pub const CACHE_BUDGET: u64 = 5 * 1024 * 1024 * 1024;
 

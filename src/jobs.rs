@@ -1,5 +1,5 @@
 use crate::{
-    App, MAX_SOURCE, PROFILE,
+    App, CLIP_SECONDS, MAX_SOURCE, MAX_SOURCE_SECONDS, PROFILE,
     cache::{Cache, HANDOFF_MILLIS, MediaPins, PinVersion, TEMP_BUDGET},
     catalogue::{self, CatalogueImportRequest, SongRecord},
     model::{Error, JobRequest, Result, uuid, video},
@@ -413,6 +413,10 @@ pub async fn worker(app: App) {
                 let _ = tokio::fs::remove_dir_all(dir).await;
                 if let Err(code) = result {
                     let retry = !matches!(code, "TOO_LONG" | "TOO_LARGE" | "FORMAT_UNSUPPORTED");
+                    eprintln!(
+                        "media_rejected job={} video={} code={} retryable={}",
+                        work.id, work.video, code, retry
+                    );
                     let _ = app.jobs.fail(work.id.clone(), code, retry, app.now()).await;
                 }
                 app.notify();
@@ -489,6 +493,10 @@ async fn ingest(app: &App, w: &Work) -> IngestResult<()> {
             .map_err(|_| "SOURCE_UNAVAILABLE")?,
     )
     .map_err(|_| "SOURCE_UNAVAILABLE")?;
+    eprintln!(
+        "media_source job={} video={} duration_seconds={} max_seconds={} clip_seconds={}",
+        w.id, w.video, metadata["duration"], MAX_SOURCE_SECONDS, CLIP_SECONDS
+    );
     let metadata = download_info(metadata, &w.video)?;
     let info_path = dir.join("resolved.json");
     tokio::fs::write(
@@ -510,10 +518,10 @@ async fn ingest(app: &App, w: &Work) -> IngestResult<()> {
         "-o".into(),
         dir.join("source.media").to_string_lossy().into_owned(),
     ]);
-    if source_duration(&metadata)? > 115.0 {
+    if source_duration(&metadata)? > f64::from(CLIP_SECONDS) {
         args.extend([
             "--download-sections".into(),
-            "*0-115".into(),
+            format!("*0-{CLIP_SECONDS}"),
             "--ffmpeg-location".into(),
             ffmpeg.to_string_lossy().into_owned(),
         ]);
@@ -545,7 +553,10 @@ async fn ingest(app: &App, w: &Work) -> IngestResult<()> {
         .as_str()
         .and_then(|s| s.parse::<f64>().ok())
         .ok_or("SOURCE_UNAVAILABLE")?;
-    if !source_seconds.is_finite() || source_seconds <= 0.0 || source_seconds > 300.05 {
+    if !source_seconds.is_finite()
+        || source_seconds <= 0.0
+        || source_seconds > f64::from(MAX_SOURCE_SECONDS) + 0.05
+    {
         return Err("TOO_LONG");
     }
     app.jobs
@@ -596,12 +607,14 @@ async fn ingest(app: &App, w: &Work) -> IngestResult<()> {
             "-threads",
             "1",
             "-t",
-            "115",
         ]
         .into_iter()
         .map(String::from),
     )
-    .chain([output.to_string_lossy().into_owned()])
+    .chain([
+        CLIP_SECONDS.to_string(),
+        output.to_string_lossy().into_owned(),
+    ])
     .collect::<Vec<_>>();
     run(&app.config.ffmpeg, &args, &dir, "encode", deadline).await?;
     app.jobs
@@ -699,7 +712,7 @@ pub fn source_duration(info: &Value) -> IngestResult<f64> {
     if info["is_live"].as_bool() == Some(true)
         || !duration.is_finite()
         || duration <= 0.0
-        || duration > 300.0
+        || duration > f64::from(MAX_SOURCE_SECONDS)
     {
         return Err("TOO_LONG");
     }
@@ -718,7 +731,7 @@ pub fn verify_output(info: &Value, bytes: u64) -> IngestResult<(i64, u64)> {
         || bytes > MAX_SOURCE
         || !duration.is_finite()
         || duration <= 0.0
-        || duration > 115.05
+        || duration > f64::from(CLIP_SECONDS) + 0.05
         || info["format"]["format_name"] != "ogg"
         || stream["codec_name"] != "opus"
         || stream["channels"] != 2
@@ -1033,7 +1046,7 @@ mod tests {
         live["is_live"] = json!(true);
         assert_eq!(download_info(live, "BaW_jenozKc").err(), Some("TOO_LONG"));
         let mut long = source;
-        long["duration"] = json!(301);
+        long["duration"] = json!(361);
         assert_eq!(download_info(long, "BaW_jenozKc").err(), Some("TOO_LONG"));
     }
     #[tokio::test]
