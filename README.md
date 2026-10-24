@@ -14,7 +14,7 @@ mvn -B -ntp verify
 cargo test --locked --manifest-path noqui/web/Cargo.toml
 ```
 
-산출물은 `noqui/plugin/target/noqui-plugin-1.0.8.jar`, `target/mc-luck-defense-1.0.30.jar`입니다. Moma는 Noqui API에 provided 의존성을 사용하며 API는 Noqui JAR에만 포함됩니다. Noqui 없이 Moma만 기동하는 경로도 유지합니다. 최초 통합은 두 플러그인을 설치한 뒤 정상 재시작합니다. Noqui 1.0.8은 실제 재생 확인과 대기곡 캐시 보호 계약을 지원하는 웹과 함께 적용합니다. 웹을 먼저 적용한 뒤 Noqui JAR를 교체하고 정상 재시작하며 이번 변경은 Moma 1.0.30과 Noqui 1.0.8 두 JAR를 함께 교체합니다. Moma 런타임 재로드는 매번 현재 서비스 제공자를 조회합니다.
+산출물은 `noqui/plugin/target/noqui-plugin-1.0.11.jar`, `target/mc-luck-defense-1.0.34.jar`입니다. Moma는 Noqui API에 provided 의존성을 사용하며 API는 Noqui JAR에만 포함됩니다. 이번 버전은 공용 인벤토리와 광물 판매 API가 추가되므로 두 JAR를 함께 설치하고 정상 재시작합니다. 광산 지형은 작은 3개 층으로 한 번 재생성하며 기존 강화·미판매 광물·별빛은 유지합니다. Moma 런타임은 매번 현재 서비스 제공자를 조회합니다.
 
 Noqui의 변환 오디오 캐시는 최대 5 GiB LRU로 관리하며 Moma BGM 캐시와 저장·회수 대상을 공유하지 않습니다. 캐시를 재사용하면 최근 사용 순서가 갱신되지만 pin heartbeat 자체는 재사용으로 세지 않습니다. 대기곡·현재 곡·진행 중 스트림은 회수에서 제외하고, 보호하지 않는 파일로 공간을 확보할 수 없으면 새 저장을 거절합니다.
 
