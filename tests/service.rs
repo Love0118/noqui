@@ -2355,6 +2355,51 @@ async fn old_five_minute_rejection_cannot_block_resubmission_under_six_minute_pr
 }
 
 #[tokio::test]
+async fn already_queued_forty_second_media_stays_usable_during_profile_upgrade() {
+    let f = Fixture::new();
+    let media = f.seed();
+    let db = rusqlite::Connection::open(f.app.jobs.root.join("media.sqlite")).unwrap();
+    db.execute("UPDATE jobs SET profile=?", [noqui_web::PREVIOUS_PROFILE])
+        .unwrap();
+    db.execute("UPDATE media SET duration=40007", []).unwrap();
+    let retained = f.app.jobs.media(vec![media.id.clone()]).await.unwrap();
+    assert_eq!(retained.get(&media.id).unwrap().duration_ms, 40007);
+    let (_, fresh) = f.app.jobs.enqueue(job("BaW_jenozKc"), START).await.unwrap();
+    assert_eq!(fresh["state"], "QUEUED");
+    assert_eq!(fresh["profileVersion"], PROFILE);
+}
+
+#[tokio::test]
+async fn unfinished_previous_profile_jobs_resume_and_are_claimed_after_upgrade() {
+    let f = Fixture::new();
+    let id = uuid::Uuid::new_v4().to_string();
+    {
+        let db = rusqlite::Connection::open(f.app.jobs.root.join("media.sqlite")).unwrap();
+        db.execute("INSERT INTO jobs(id,video,profile,state,updated) VALUES(?,'BaW_jenozKc',?,'ENCODING',?)",rusqlite::params![id,noqui_web::PREVIOUS_PROFILE,START]).unwrap();
+    }
+    let reopened = noqui_web::jobs::Jobs::open(&f.app.jobs.root, START + 1).unwrap();
+    assert_eq!(
+        reopened.status(id.clone()).await.unwrap()["state"],
+        "QUEUED"
+    );
+    let worker = tokio::spawn(noqui_web::jobs::worker(f.app.clone()));
+    tokio::time::timeout(std::time::Duration::from_secs(3), async {
+        loop {
+            let state = reopened.status(id.clone()).await.unwrap();
+            if state["state"] == "FAILED" {
+                assert_eq!(state["failureCode"], "INGEST_UNAVAILABLE");
+                break;
+            }
+            tokio::time::sleep(std::time::Duration::from_millis(10)).await;
+        }
+    })
+    .await
+    .unwrap();
+    worker.abort();
+    let _ = worker.await;
+}
+
+#[tokio::test]
 async fn queue_accepts_all_64_submission_slots_and_failed_jobs_require_explicit_retry() {
     let f = Fixture::new();
     for i in 0..64 {
@@ -2526,7 +2571,7 @@ fn source_and_output_boundaries_reject_live_huge_duration_or_answer_metadata() {
     ] {
         assert!(noqui_web::jobs::source_duration(&v).is_err());
     }
-    let good = json!({"format":{"duration":"40.0","format_name":"ogg"},"streams":[{"codec_name":"opus","channels":2,"sample_rate":"48000","tags":{"encoder":"Lavc"}}]});
+    let good = json!({"format":{"duration":"120.0","format_name":"ogg"},"streams":[{"codec_name":"opus","channels":2,"sample_rate":"48000","tags":{"encoder":"Lavc"}}]});
     assert!(noqui_web::jobs::verify_output(&good, 1000).is_ok());
     assert!(noqui_web::jobs::verify_output(&good, noqui_web::MAX_SOURCE + 1).is_err());
     let mut leaking = good.clone();
@@ -2535,20 +2580,20 @@ fn source_and_output_boundaries_reject_live_huge_duration_or_answer_metadata() {
 }
 
 #[test]
-fn encoded_cache_is_capped_at_40_seconds_while_private_source_may_be_360_seconds() {
+fn encoded_cache_is_capped_at_120_seconds_while_private_source_may_be_360_seconds() {
     assert_eq!(
         noqui_web::jobs::source_duration(&json!({"duration":360})).unwrap(),
         360.0
     );
-    let mut audio = json!({"format":{"duration":"40.0","format_name":"ogg"},"streams":[{"codec_name":"opus","channels":2,"sample_rate":"48000"}]});
-    for duration in ["1.0", "37.25", "40.0", "40.05"] {
+    let mut audio = json!({"format":{"duration":"120.0","format_name":"ogg"},"streams":[{"codec_name":"opus","channels":2,"sample_rate":"48000"}]});
+    for duration in ["1.0", "37.25", "40.0", "120.0", "120.05"] {
         audio["format"]["duration"] = duration.into();
         assert!(
             noqui_web::jobs::verify_output(&audio, 1000).is_ok(),
             "valid short/padded clip: {duration}"
         );
     }
-    for duration in ["40.051", "41.0", "115.0", "360.0"] {
+    for duration in ["120.051", "121.0", "360.0"] {
         audio["format"]["duration"] = duration.into();
         assert_eq!(
             noqui_web::jobs::verify_output(&audio, 1000).err(),

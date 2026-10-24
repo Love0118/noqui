@@ -1,5 +1,5 @@
 use crate::{
-    App, CLIP_SECONDS, MAX_SOURCE, MAX_SOURCE_SECONDS, PROFILE,
+    App, CLIP_SECONDS, MAX_SOURCE, MAX_SOURCE_SECONDS, PREVIOUS_PROFILE, PROFILE,
     cache::{Cache, HANDOFF_MILLIS, MediaPins, PinVersion, TEMP_BUDGET},
     catalogue::{self, CatalogueImportRequest, SongRecord},
     model::{Error, JobRequest, Result, uuid, video},
@@ -80,6 +80,8 @@ impl Jobs {
           CREATE TABLE IF NOT EXISTS media(id TEXT PRIMARY KEY,sha256 TEXT NOT NULL UNIQUE,duration INTEGER NOT NULL,bytes INTEGER NOT NULL);
           CREATE TABLE IF NOT EXISTS requests(id TEXT PRIMARY KEY,video TEXT NOT NULL,job_id TEXT NOT NULL);").map_err(|_|"STORAGE_UNAVAILABLE")?;
         catalogue::initialize(&db).map_err(|error| error.code)?;
+        // Resume accepted work from the immediately preceding profile during the live upgrade.
+        db.execute("UPDATE jobs SET state='QUEUED',updated=? WHERE profile=? AND state NOT IN ('QUEUED','READY','FAILED')",params![now,PREVIOUS_PROFILE]).map_err(|_|"STORAGE_UNAVAILABLE")?;
         db.execute("UPDATE jobs SET state='FAILED',failure='INGEST_INTERRUPTED',retryable=1,updated=? WHERE state NOT IN ('QUEUED','READY','FAILED')",[now]).map_err(|_|"STORAGE_UNAVAILABLE")?;
         // Temp directories contain only generated UUID names. No partial output is reusable after restart.
         for entry in fs::read_dir(root.join("tmp"))
@@ -134,7 +136,7 @@ impl Jobs {
             }
             if let Some(song)=&song { catalogue::save(&tx,song,now)?; }
             let existing:Option<(String,String,bool,i64,Option<String>)>=tx.query_row("SELECT id,state,retryable,updated,failure FROM jobs WHERE video=? AND profile=?",params![r.video_id,PROFILE],|row|Ok((row.get(0)?,row.get(1)?,row.get(2)?,row.get(3)?,row.get(4)?))).optional().map_err(db_error)?;
-            let pending:i64=tx.query_row("SELECT count(*) FROM jobs WHERE state='QUEUED' AND profile=?",[PROFILE],|row|row.get(0)).map_err(db_error)?;
+            let pending:i64=tx.query_row("SELECT count(*) FROM jobs WHERE state='QUEUED' AND profile IN (?,?)",params![PROFILE,PREVIOUS_PROFILE],|row|row.get(0)).map_err(db_error)?;
             let id=if let Some((id,state,retryable,updated,failure))=existing {
                 if state=="FAILED" && retryable && (now-updated>=30000 || matches!(failure.as_deref(), Some("CACHE_EVICTED" | "CACHE_MISSING"))) {
                     if pending>=MAX_QUEUED {return Err(Error::retry(429,"QUEUE_FULL",2000))}
@@ -205,7 +207,7 @@ impl Jobs {
         self.access(move |db| {
             let mut out = HashMap::new();
             for id in ids {
-                if let Some(m) = db.query_row("SELECT m.id,m.sha256,m.duration,m.bytes FROM media m JOIN jobs j ON j.media_id=m.id WHERE m.id=? AND j.state='READY' AND j.profile=?", params![id,PROFILE],read_media).optional().map_err(db_error)?.filter(|m|cache.valid_file(&m.sha256,m.byte_length)) {
+                if let Some(m) = db.query_row("SELECT m.id,m.sha256,m.duration,m.bytes FROM media m JOIN jobs j ON j.media_id=m.id WHERE m.id=? AND j.state='READY' AND j.profile IN (?,?)", params![id,PROFILE,PREVIOUS_PROFILE],read_media).optional().map_err(db_error)?.filter(|m|cache.valid_file(&m.sha256,m.byte_length)) {
                     out.insert(id,m);
                 }
             }
@@ -289,8 +291,8 @@ impl Jobs {
             let tx = db.transaction().map_err(db_error)?;
             let row = tx
                 .query_row(
-                    "SELECT id,video FROM jobs WHERE state='QUEUED' AND profile=? ORDER BY updated LIMIT 1",
-                    [PROFILE],
+                    "SELECT id,video FROM jobs WHERE state='QUEUED' AND profile IN (?,?) ORDER BY updated LIMIT 1",
+                    params![PROFILE,PREVIOUS_PROFILE],
                     |r| {
                         Ok(Work {
                             id: r.get(0)?,
