@@ -558,7 +558,7 @@ async fn catalogue_import_is_private_bounded_idempotent_and_transactional() {
 async fn rejected_or_failed_job_registration_cannot_leave_partial_catalogue_records() {
     let f = Fixture::new();
     let db = rusqlite::Connection::open(f.app.config.data.join("media.sqlite")).unwrap();
-    for i in 0..64 {
+    for i in 0..100 {
         f.app
             .jobs
             .enqueue(job(&format!("AAAAAAAA{i:03}")), START)
@@ -620,7 +620,7 @@ async fn retained_media_rejects_invalid_duplicate_unready_and_oversized_lists_wi
         StatusCode::OK
     );
     let mut next = serde_json::to_value(f.snapshot(2, "IDLE")).unwrap();
-    let too_many: Vec<String> = (0..65).map(|_| uuid::Uuid::new_v4().to_string()).collect();
+    let too_many: Vec<String> = (0..101).map(|_| uuid::Uuid::new_v4().to_string()).collect();
     for (ids, status) in [
         (Value::Null, StatusCode::BAD_REQUEST),
         (json!("invalid"), StatusCode::BAD_REQUEST),
@@ -2400,9 +2400,64 @@ async fn unfinished_previous_profile_jobs_resume_and_are_claimed_after_upgrade()
 }
 
 #[tokio::test]
-async fn queue_accepts_all_64_submission_slots_and_failed_jobs_require_explicit_retry() {
+async fn sync_accepts_and_pins_all_100_registered_songs() {
     let f = Fixture::new();
-    for i in 0..64 {
+    let db = rusqlite::Connection::open(f.app.jobs.root.join("media.sqlite")).unwrap();
+    let mut ids = Vec::new();
+    for i in 0..100 {
+        let bytes = format!("fixture audio {i}").into_bytes();
+        let hash = auth::digest(&bytes);
+        let id = uuid::Uuid::new_v4().to_string();
+        std::fs::write(
+            f.app.jobs.root.join("media").join(format!("{hash}.ogg")),
+            &bytes,
+        )
+        .unwrap();
+        db.execute(
+            "INSERT INTO media(id,sha256,duration,bytes) VALUES(?,?,?,?)",
+            rusqlite::params![id, hash, 40000, bytes.len() as i64],
+        )
+        .unwrap();
+        db.execute(
+            "INSERT INTO jobs(id,video,profile,state,media_id,updated) VALUES(?,?,?,'READY',?,?)",
+            rusqlite::params![
+                uuid::Uuid::new_v4().to_string(),
+                format!("AAAAAAAA{i:03}"),
+                PROFILE,
+                id,
+                START
+            ],
+        )
+        .unwrap();
+        ids.push(id);
+    }
+    let mut snapshot = f.snapshot(1, "IDLE");
+    snapshot.retained_media_ids = Some(ids);
+    let bytes = serde_json::to_vec(&snapshot).unwrap();
+    assert_eq!(
+        call(
+            api::internal(f.app.clone()),
+            f.signed("POST", "/internal/v1/sync", &bytes)
+        )
+        .await
+        .0,
+        StatusCode::OK
+    );
+    assert_eq!(
+        db.query_row(
+            "SELECT count(*) FROM cache_pins WHERE kind='queue'",
+            [],
+            |r| r.get::<_, i64>(0)
+        )
+        .unwrap(),
+        100
+    );
+}
+
+#[tokio::test]
+async fn queue_accepts_all_100_submission_slots_and_failed_jobs_require_explicit_retry() {
+    let f = Fixture::new();
+    for i in 0..100 {
         f.app
             .jobs
             .enqueue(job(&format!("AAAAAAAA{i:03}")), START)
