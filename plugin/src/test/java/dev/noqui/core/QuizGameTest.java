@@ -43,6 +43,18 @@ class QuizGameTest {
     private void play(QuizGame g,long duration){media(g,duration);g.browsersReady(g.snapshot().revision(),true,true);g.controlAccepted(g.snapshot().revision());now[0]=g.snapshot().startsAt();g.tick();confirm(g);assertEquals(QuizGame.Phase.PLAYING,g.snapshot().phase());}
     private void confirm(QuizGame g){now[0]++;var s=g.snapshot();assertTrue(g.confirmPlayback(s.participants().iterator().next(),s.roundId(),s.playbackGeneration(),s.anchorPositionMillis()+s.playbackRate(),now[0]));}
     private void finish(QuizGame g){now[0]=g.snapshot().endsAt();g.tick();now[0]+=5000;g.tick();}
+    @Test void fortySecondRoundCapsOpusPaddingAndKeepsShortSongsShort() {
+        var g=new QuizGame(bridge,callbacks::add,()->now[0],new QuizGame.Output(){
+            public void changed(QuizGame.Snapshot s){}public void error(UUID id,String e){fail(e);}
+        },40,false);
+        for(long duration:new long[]{40007,17000}) {
+            g.start(List.of(author,second));g.grant(author,1);submit(g,author);play(g,duration);
+            long clip=Math.min(40000,duration);
+            assertEquals(clip,g.snapshot().clipEndMillis());
+            assertEquals(clip-1,g.snapshot().endsAt()-now[0]);
+            now[0]=g.snapshot().endsAt();g.tick();assertEquals(QuizGame.Phase.REVEAL,g.snapshot().phase());g.stop();
+        }
+    }
     @Test void refundedUnplayedRoundDoesNotLeaveAPhantomRoundNumber() {
         var g=start();submit(g,author);assertEquals(1,g.snapshot().round());g.forceSkip(g.snapshot().roundId());
         assertEquals(0,g.snapshot().round());assertEquals(5,g.credits(author));

@@ -995,30 +995,31 @@ async fn replacing_browser_cookie_retires_old_identity_and_stale_logout_cannot_t
 }
 
 #[tokio::test]
-async fn opus_padding_is_ready_metadata_while_public_round_keeps_exact_115_second_clip() {
+async fn opus_padding_is_ready_metadata_while_public_round_keeps_exact_40_second_clip() {
     let f = Fixture::new();
     let mut media = f.seed();
-    let probe = json!({"format":{"duration":"115.007000","format_name":"ogg"},"streams":[{"codec_name":"opus","channels":2,"sample_rate":"48000","tags":{"encoder":"Lavc"}}]});
+    let probe = json!({"format":{"duration":"40.007000","format_name":"ogg"},"streams":[{"codec_name":"opus","channels":2,"sample_rate":"48000","tags":{"encoder":"Lavc"}}]});
     assert_eq!(
         noqui_web::jobs::verify_output(&probe, 704745).unwrap(),
-        (115007, 704745)
+        (40007, 704745)
     );
     let db = rusqlite::Connection::open(f.app.jobs.root.join("media.sqlite")).unwrap();
-    db.execute("UPDATE media SET duration=115007 WHERE id=?", [MEDIA])
+    db.execute("UPDATE media SET duration=40007 WHERE id=?", [MEDIA])
         .unwrap();
-    media.duration_ms = 115007;
+    media.duration_ms = 40007;
     let (_, job) = f.app.jobs.enqueue(job("BaW_jenozKc"), START).await.unwrap();
     assert_eq!(job["state"], "READY");
-    assert_eq!(job["durationMs"], 115007);
+    assert_eq!(job["durationMs"], 40007);
     let mut snapshot = f.snapshot(1, "PREPARING");
     f.round(&mut snapshot);
+    snapshot.rooms[0].round.as_mut().unwrap().clip_end_ms = 40000;
     f.sync_direct(snapshot, Some(media));
     let (cookie, _) = f.login();
     let (status, _, body) = call(api::public(f.app.clone()), get("/api/v1/state", &cookie)).await;
     assert_eq!(status, StatusCode::OK);
     let public: Value = serde_json::from_slice(&body).unwrap();
-    assert_eq!(public["round"]["clipEndMs"], 115000);
-    assert_eq!(public["media"]["durationMs"], 115007);
+    assert_eq!(public["round"]["clipEndMs"], 40000);
+    assert_eq!(public["media"]["durationMs"], 40007);
     assert!(public["reveal"].is_null());
     f.clock.0.store(START + 15000, Ordering::SeqCst);
     assert_eq!(
@@ -2306,7 +2307,7 @@ async fn ready_source_cache_is_reused_without_a_new_queued_job() {
     assert!(!pending);
     assert_eq!(result["state"], "READY");
     assert_eq!(result["mediaId"], media.id);
-    assert_eq!(result["profileVersion"], "opus-48-clip115-v1");
+    assert_eq!(result["profileVersion"], PROFILE);
     assert_eq!(result["durationMs"], 115000);
     assert_eq!(result["mime"], "audio/ogg; codecs=opus");
 }
@@ -2318,7 +2319,7 @@ async fn clipped_profile_dedupes_separately_and_cannot_select_legacy_full_length
     let old_id = {
         let db = rusqlite::Connection::open(f.app.jobs.root.join("media.sqlite")).unwrap();
         db.execute(
-            "UPDATE jobs SET profile='opus-48-v1' WHERE video=?",
+            "UPDATE jobs SET profile='opus-48-clip115-v1' WHERE video=?",
             ["BaW_jenozKc"],
         )
         .unwrap();
@@ -2328,15 +2329,29 @@ async fn clipped_profile_dedupes_separately_and_cannot_select_legacy_full_length
         .unwrap()
     };
     let old = f.app.jobs.status(old_id.clone()).await.unwrap();
-    assert_eq!(old["profileVersion"], "opus-48-v1");
+    assert_eq!(old["profileVersion"], "opus-48-clip115-v1");
     assert!(f.app.jobs.media(vec![legacy.id]).await.unwrap().is_empty());
     let (pending, new) = f.app.jobs.enqueue(job("BaW_jenozKc"), START).await.unwrap();
     assert!(pending);
-    assert_eq!(new["profileVersion"], "opus-48-clip115-v1");
+    assert_eq!(new["profileVersion"], PROFILE);
     assert_eq!(new["state"], "QUEUED");
     assert_ne!(new["jobId"], old_id);
     let (_, duplicate) = f.app.jobs.enqueue(job("BaW_jenozKc"), START).await.unwrap();
     assert_eq!(new["jobId"], duplicate["jobId"]);
+}
+
+#[tokio::test]
+async fn old_five_minute_rejection_cannot_block_resubmission_under_six_minute_profile() {
+    let f = Fixture::new();
+    let old_id = uuid::Uuid::new_v4().to_string();
+    let db = rusqlite::Connection::open(f.app.jobs.root.join("media.sqlite")).unwrap();
+    db.execute("INSERT INTO jobs(id,video,profile,state,failure,retryable,updated) VALUES(?,?,'opus-48-clip115-v1','FAILED','TOO_LONG',0,?)",
+        rusqlite::params![old_id, "BaW_jenozKc", START]).unwrap();
+    let (pending, new) = f.app.jobs.enqueue(job("BaW_jenozKc"), START).await.unwrap();
+    assert!(pending);
+    assert_eq!(new["state"], "QUEUED");
+    assert_eq!(new["profileVersion"], PROFILE);
+    assert_ne!(new["jobId"], old_id);
 }
 
 #[tokio::test]
@@ -2499,16 +2514,19 @@ async fn unbounded_or_cross_room_control_payloads_fail_without_panicking_or_leak
 
 #[test]
 fn source_and_output_boundaries_reject_live_huge_duration_or_answer_metadata() {
-    assert!(noqui_web::jobs::source_duration(&json!({"duration":300})).is_ok());
+    for duration in [300.0, 301.0, 359.999, 360.0] {
+        assert!(noqui_web::jobs::source_duration(&json!({"duration":duration})).is_ok());
+    }
     for v in [
-        json!({"duration":301}),
+        json!({"duration":360.001}),
+        json!({"duration":361}),
         json!({"duration":0}),
         json!({"duration":100,"is_live":true}),
         json!({}),
     ] {
         assert!(noqui_web::jobs::source_duration(&v).is_err());
     }
-    let good = json!({"format":{"duration":"115.0","format_name":"ogg"},"streams":[{"codec_name":"opus","channels":2,"sample_rate":"48000","tags":{"encoder":"Lavc"}}]});
+    let good = json!({"format":{"duration":"40.0","format_name":"ogg"},"streams":[{"codec_name":"opus","channels":2,"sample_rate":"48000","tags":{"encoder":"Lavc"}}]});
     assert!(noqui_web::jobs::verify_output(&good, 1000).is_ok());
     assert!(noqui_web::jobs::verify_output(&good, noqui_web::MAX_SOURCE + 1).is_err());
     let mut leaking = good.clone();
@@ -2517,20 +2535,20 @@ fn source_and_output_boundaries_reject_live_huge_duration_or_answer_metadata() {
 }
 
 #[test]
-fn encoded_cache_is_capped_at_115_seconds_while_private_source_may_be_300_seconds() {
+fn encoded_cache_is_capped_at_40_seconds_while_private_source_may_be_360_seconds() {
     assert_eq!(
-        noqui_web::jobs::source_duration(&json!({"duration":300})).unwrap(),
-        300.0
+        noqui_web::jobs::source_duration(&json!({"duration":360})).unwrap(),
+        360.0
     );
-    let mut audio = json!({"format":{"duration":"115.0","format_name":"ogg"},"streams":[{"codec_name":"opus","channels":2,"sample_rate":"48000"}]});
-    for duration in ["1.0", "37.25", "115.0", "115.05"] {
+    let mut audio = json!({"format":{"duration":"40.0","format_name":"ogg"},"streams":[{"codec_name":"opus","channels":2,"sample_rate":"48000"}]});
+    for duration in ["1.0", "37.25", "40.0", "40.05"] {
         audio["format"]["duration"] = duration.into();
         assert!(
             noqui_web::jobs::verify_output(&audio, 1000).is_ok(),
             "valid short/padded clip: {duration}"
         );
     }
-    for duration in ["115.051", "116.0", "300.0"] {
+    for duration in ["40.051", "41.0", "115.0", "360.0"] {
         audio["format"]["duration"] = duration.into();
         assert_eq!(
             noqui_web::jobs::verify_output(&audio, 1000).err(),

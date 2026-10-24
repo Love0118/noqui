@@ -10,7 +10,7 @@ border:
   center-x: 416.0
   center-z: -192.0
   size: 250.0
-round-seconds: 115
+round-seconds: 40
 # Independent original modifiers; changes via /noqui mod apply from the next round.
 # 날먹금지, 스피드x2, 맞추면바로스킵, 무경쟁, 제목점수보너스, 오직제목만, 오토힌트
 modes: [제목점수보너스]

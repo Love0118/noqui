@@ -76,7 +76,7 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
                 public void answerAccepted(UUID player){for(UUID id:game.snapshot().participants()){Player p=Bukkit.getPlayer(id);if(p!=null)p.sendMessage(text(name(player)+" 정답").color(net.kyori.adventure.text.format.NamedTextColor.GREEN));}}
                 public void roundEnded(){for(UUID id:game.snapshot().participants()){Player p=Bukkit.getPlayer(id);if(p!=null)hud.roundEnd(p);}}
                 public void ended(Map<UUID,Integer> scores){finishQuiz(scores);}
-            },ledger,getConfig().getInt("round-seconds",115),0,getConfig().getBoolean("match-skip",false),
+            },ledger,getConfig().getInt("round-seconds",40),0,getConfig().getBoolean("match-skip",false),
                     getConfig().getBoolean("title-bonus",true),getConfig().getBoolean("auto-hint",false),RandomGenerator.getDefault());
             game.modes(configuredModes(getConfig()));
             dialogs=new NoquiDialogs(this);
