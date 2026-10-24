@@ -228,6 +228,8 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
         if(tickets!=null)tickets.strip(p);
     }
     @Override public void defenseEntered(Player p){handoffs.remove(p.getUniqueId());if(participant(p.getUniqueId()))hud.setImmersive(p,false);itemsChanged(p);}
+    @Override public void restoreSharedInventory(Player p){if(ownsCabin(p.getUniqueId()))throw new IllegalStateException("Cabin inventory is still active");cabinInventory.restoreShared(p);}
+    @Override public void saveSharedInventory(Player p){prepareItems(p);cabinInventory.captureShared(p);}
     @Override public void defenseFailed(Player p){if(handoffs.remove(p.getUniqueId())&&participant(p.getUniqueId())&&!defenseActive(p))enterCabin(p);itemsChanged(p);}
     @Override public void leave(Player p){optedOut.add(p.getUniqueId());if(game!=null)game.leave(p.getUniqueId());boolean cabin=ownsCabin(p.getUniqueId());restore(p,true);if(cabin){var service=defense();if(service!=null)service.sendLobby(p);}}
     private void restore(Player p,boolean teleport) {
@@ -242,7 +244,11 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
     void leftWorld(Player p){if(ownsCabin(p.getUniqueId())){prepareItems(p);cabinInventory.leave(p);cabinOwners.remove(p.getUniqueId());hud.setImmersive(p,false);try{recovery.releaseCabin(p,false);}finally{itemsChanged(p);}}}
     private void prepareItems(Player p){if(lobbyFeatures!=null)lobbyFeatures.prepareInventoryChange(p);}
     private void ensureNavigation(Player p){if(navigation!=null&&ownsCabin(p.getUniqueId())&&cabinInventory.loaded(p))navigation.ensure(p);}
-    private void itemsChanged(Player p){ensureNavigation(p);try{if(tickets!=null)tickets.refresh(p);}finally{if(lobbyFeatures!=null&&cabinInventory.loaded(p)&&ownsCabin(p.getUniqueId()))lobbyFeatures.inventoryChanged(p);}}
+    private void itemsChanged(Player p){ensureNavigation(p);try{if(tickets!=null)tickets.refresh(p);}finally{if(lobbyFeatures!=null&&cabinInventory.loaded(p)&&ownsCabin(p.getUniqueId())){lobbyFeatures.inventoryChanged(p);refreshCargo(p);}}}
+    private void refreshCargo(Player player){
+        var services=Bukkit.getServicesManager();if(services==null)return;
+        var mining=services.load(dev.noqui.api.MiningService.class);if(mining!=null)mining.refreshCargo(player);
+    }
     void recoverPlayer(Player p){prepareItems(p);if(!defenseActive(p)&&recovery.pending(p)&&cabinInventory.loaded(p))cabinInventory.leave(p);try{recovery.recover(p,defenseActive(p),true);}finally{itemsChanged(p);}}
     void dismissBrowser(Player p){if(connections!=null)connections.dismiss(p.getUniqueId());}
     void otherInteraction(Player p){if(dialogs!=null)dialogs.otherInteraction(p);else dismissBrowser(p);}

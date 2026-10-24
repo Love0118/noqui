@@ -73,4 +73,19 @@ class CabinInventoryVaultTest {
             doThrow(new IllegalStateException("disk unavailable")).when(f.player).saveData();assertThrows(IllegalStateException.class,()->vault.leave(f.player));assertSame(item,f.slots[20]);assertSame(item,f.cursor.get());assertTrue(vault.loaded(f.player));
         }
     }
+    private static ItemStack item(String marker){
+        var item=mock(ItemStack.class);var data=mock(PersistentDataContainer.class);when(item.getPersistentDataContainer()).thenReturn(data);
+        when(data.getKeys()).thenReturn(marker==null?Set.of():Set.of(new NamespacedKey("momadefense",marker)));return item;
+    }
+    @Test void mineSharesBearerItemsAndCursorButNeverItsPickaxeNavigationOrCargo() {
+        try(var f=new Fixture()){
+            var gadget=item(null);var acquired=item(null);var cursor=item(null);var vault=new CabinInventoryVault();
+            f.slots[15]=gadget;f.slots[4]=item("mining_tool");f.slots[0]=item("mine_navigation");f.slots[24]=item("mining_cargo");f.cursor.set(cursor);
+            vault.captureShared(f.player);Arrays.fill(f.slots,null);f.cursor.set(null);
+            assertTrue(vault.restoreShared(f.player));assertFalse(vault.loaded(f.player));assertSame(gadget,f.slots[15]);assertSame(cursor,f.cursor.get());
+            assertNull(f.slots[4]);assertNull(f.slots[0]);assertNull(f.slots[24]);
+            f.slots[15]=null;f.slots[18]=acquired;vault.captureShared(f.player);Arrays.fill(f.slots,null);
+            assertTrue(vault.restore(f.player));assertTrue(vault.loaded(f.player));assertNull(f.slots[15]);assertSame(acquired,f.slots[18]);
+        }
+    }
 }

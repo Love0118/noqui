@@ -66,6 +66,11 @@ class LobbyShopTest {
     @AfterEach void cleanup(){shop.close();stacks.close();bukkit.close();}
     static InventoryView view(Inventory top,Player owner){InventoryView v=mock(InventoryView.class);when(v.getTopInventory()).thenReturn(top);when(v.getPlayer()).thenReturn(owner);return v;}
     void closeEvent(InventoryView view,Player owner){InventoryCloseEvent e=mock(InventoryCloseEvent.class);when(e.getView()).thenReturn(view);when(e.getPlayer()).thenReturn(owner);shop.closed(e);}
+    @Test void cabinShopOffersOreSalesWithoutMineOnlyPickaxeUpgrade(){
+        var sales=mock(Runnable.class);shop.sales(player,sales);
+        assertTrue(contents.get(current.getTopInventory()).containsKey(5));assertFalse(contents.get(current.getTopInventory()).containsKey(6));
+        click(5);verify(sales).run();
+    }
     InventoryClickEvent event(InventoryView view,Player owner,int slot,ClickType type) {
         InventoryClickEvent e=mock(InventoryClickEvent.class);when(e.getView()).thenReturn(view);when(e.getWhoClicked()).thenReturn(owner);
         when(e.getRawSlot()).thenReturn(slot);when(e.getClick()).thenReturn(type);return e;

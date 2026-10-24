@@ -35,6 +35,18 @@ class GadgetItemsTest {
     LobbyWallets.Gadget buy(String id,String transaction)throws Exception {wallets.purchase(owner,product(id),Currency.STARLIGHT,transaction);return wallets.pendingGadgets(owner).stream().filter(g->g.product().equals(id)).findFirst().orElseThrow();}
     ItemStack take(UUID serial) {for(int i=0;i<inventory.slots.length;i++)if(serial.equals(GadgetItems.serial(inventory.slots[i]))){ItemStack item=inventory.slots[i];inventory.slots[i]=null;return item;}throw new AssertionError("Missing item");}
     ItemStack stone(){ItemStack item=mock(ItemStack.class);when(item.getType()).thenReturn(Material.STONE);return item;}
+    @Test void minePurchasesDeliverToSharedInventoryWithoutOccupyingReservedNoquiSlot()throws Exception {
+        world=arena;when(player.isOnline()).thenReturn(true);
+        var services=mock(org.bukkit.plugin.ServicesManager.class);var mining=mock(dev.noqui.api.MiningService.class);
+        when(services.load(dev.noqui.api.MiningService.class)).thenReturn(mining);when(mining.ownsInventory(player)).thenReturn(true);
+        try(var bukkit=mockStatic(Bukkit.class)){
+            bukkit.when(Bukkit::getServicesManager).thenReturn(services);
+            for(int i=0;i<36;i++)inventory.slots[i]=stone();inventory.slots[3]=null;inventory.slots[9]=null;
+            var gadget=buy("snow_bomb","mine-purchase");gadgets.reconcile(player);
+            assertNull(inventory.slots[3]);assertEquals(gadget.serial(),GadgetItems.serial(inventory.slots[9]));
+            world=cabin;gadgets.reconcile(player);assertEquals(1,gadgets.count(player,"snow_bomb"));
+        }
+    }
     @Test void legacyFooterRefreshPreservesCustomLoreAndItemIdentity() {
         var item=mock(ItemStack.class);var meta=mock(ItemMeta.class);when(item.getItemMeta()).thenReturn(meta);
         var custom=Component.text("사용자 제목 \u00b7 유지");var lore=new AtomicReference<List<Component>>(List.of(custom,Component.text("오두막에서 사용 \u00b7 버리기 가능")));

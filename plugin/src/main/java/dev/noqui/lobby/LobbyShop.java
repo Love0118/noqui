@@ -57,6 +57,10 @@ final class LobbyShop implements AutoCloseable {
     }
 
     void open(Player player) { if(!closed && eligible.test(player)){miningActions.remove(player.getUniqueId());category(player,new Page(Section.COSMETICS,0));} }
+    void sales(Player player,Runnable sales){
+        if(closed||!eligible.test(player))return;
+        miningActions.put(player.getUniqueId(),new MiningActions(Objects.requireNonNull(sales),null));category(player,new Page(Section.COSMETICS,0));
+    }
     void mining(Player player,Runnable sales,Runnable upgrade){
         if(closed||!eligible.test(player))return;
         miningActions.put(player.getUniqueId(),new MiningActions(Objects.requireNonNull(sales),Objects.requireNonNull(upgrade)));
@@ -119,7 +123,7 @@ final class LobbyShop implements AutoCloseable {
         var mining=miningActions.get(player.getUniqueId());
         if(mining!=null){
             nav(holder,5,Material.EMERALD,"광석 판매",mining.sales());
-            nav(holder,6,Material.IRON_PICKAXE,"곡괭이 강화",mining.upgrade());
+            if(mining.upgrade()!=null)nav(holder,6,Material.IRON_PICKAXE,"곡괭이 강화",mining.upgrade());
         }
         int offset=page.index()*PAGE_SIZE;
         for(int i=0;i<Math.min(PAGE_SIZE,products.size()-offset);i++) {

@@ -101,9 +101,11 @@ class NoquiCommandTest {
         set(plugin,"cabinOwners",owners);set(plugin,"handoffs",handoffs);set(plugin,"recovery",recovery);set(plugin,"hud",hud);
         var vault=mock(CabinInventoryVault.class);when(vault.loaded(p)).thenReturn(true);set(plugin,"cabinInventory",vault);var lobby=mock(dev.noqui.lobby.LobbyFeatures.class);set(plugin,"lobbyFeatures",lobby);
         doThrow(new IllegalStateException("restore failed")).when(recovery).releaseCabin(p,false);
+        try(var bukkit=mockStatic(Bukkit.class)){
         assertThrows(IllegalStateException.class,()->plugin.prepareDefense(p));assertTrue(owners.contains(id));assertTrue(handoffs.isEmpty());
         verify(hud).setImmersive(p,false);verify(hud).setImmersive(p,true);verify(plugin,never()).leave(p);verify(p,never()).teleport(any(org.bukkit.Location.class));
         var order=inOrder(lobby,vault,recovery);order.verify(lobby).prepareInventoryChange(p);order.verify(vault).leave(p);order.verify(recovery).releaseCabin(p,false);order.verify(vault).restore(p);order.verify(lobby).inventoryChanged(p);
+        }
     }
     @Test void startEntersAllOnlinePlayersAndPassesUnlimitedOrExplicitLimit()throws Exception {
         var plugin=mock(NoquiPlugin.class,CALLS_REAL_METHODS);var game=game();set(plugin,"game",game);set(plugin,"hud",mock(QuizHud.class));

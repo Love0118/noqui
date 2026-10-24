@@ -90,7 +90,7 @@ final class GadgetItems {
     }
 
     void reconcile(Player player)throws IOException {
-        if(!LobbyMovement.eligible(player,cabin))return;
+        if(!deliveryEligible(player))return;
         wallets.migrateGadgets(player.getUniqueId());
         sanitize(player);
         Set<UUID> proofs=proofs(player);
@@ -110,6 +110,12 @@ final class GadgetItems {
             proofs.remove(id);saveProofs(player,proofs);player.saveData();
         }
         if(proofs.removeIf(id->wallets.gadget(id)==null||wallets.gadget(id).delivered())){saveProofs(player,proofs);player.saveData();}
+    }
+    private boolean deliveryEligible(Player player){
+        if(LobbyMovement.eligible(player,cabin))return true;
+        if(!player.isOnline()||player.isDead())return false;
+        var services=Bukkit.getServicesManager();var mining=services==null?null:services.load(dev.noqui.api.MiningService.class);
+        return mining!=null&&mining.ownsInventory(player);
     }
     /** The core cabin vault owns layout/snapshots. Only invalid or duplicate serial copies are removed. */
     private void sanitize(Player player) {
@@ -139,9 +145,11 @@ final class GadgetItems {
         if(current!=null&&(current.equals(new NamespacedKey("noqui",id))||id.equals("gravity_suit")&&current.getNamespace().equals("noqui")&&current.getKey().startsWith("wearable_back_gravity/")))return false;
         wearable.setModel(new NamespacedKey("noqui",id));meta.setEquippable(wearable);item.setItemMeta(meta);return true;
     }
-    private static int freeSlot(Player player) {
+    private int freeSlot(Player player) {
         ItemStack[] items=player.getInventory().getStorageContents();
-        for(int i=0;i<items.length;i++)if(items[i]==null||items[i].getType()==Material.AIR)return i;
+        // The mine keeps slot 4 reserved for its Noqui shortcut even while a quiz is stopped.
+        boolean mine=player.getWorld()!=cabin;
+        for(int i=0;i<items.length;i++)if(!(mine&&i==3)&&(items[i]==null||items[i].getType()==Material.AIR))return i;
         return -1;
     }
     private static List<ItemStack> held(Player player) {

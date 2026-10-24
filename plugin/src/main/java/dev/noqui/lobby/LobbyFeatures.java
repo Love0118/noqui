@@ -140,7 +140,7 @@ public final class LobbyFeatures implements LobbyService, AutoCloseable, Listene
     @Override public void showMoney(Player player){
         main();if(!closed)player.sendMessage(Component.text("✦ "+starlight(player.getUniqueId())+"  정답 포인트 "+answerPoints(player.getUniqueId())));
     }
-    @Override public void openShop(Player player){main();if(started&&!closed)menus.open(player);}
+    @Override public void openShop(Player player){main();if(started&&!closed){var mining=Bukkit.getServicesManager().load(dev.noqui.api.MiningService.class);if(mining==null)menus.open(player);else menus.sales(player,()->mining.openOreSales(player));}}
     @Override public void openMiningShop(Player player,Runnable sales,Runnable upgrade){main();if(started&&!closed)menus.mining(player,sales,upgrade);}
     @Override public void openWardrobe(Player player){main();if(started&&!closed)menus.wardrobe(player,0);}
     @Override public boolean spendStarlight(UUID player,String transaction,long amount){

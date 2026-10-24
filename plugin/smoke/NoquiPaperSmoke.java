@@ -61,7 +61,7 @@ public final class NoquiPaperSmoke extends JavaPlugin {
         var world=Objects.requireNonNull(Bukkit.getWorld("moma_mining"));var spawn=world.getSpawnLocation();
         require(world.getBlockAt(spawn.clone().subtract(0,1,0)).getType().isSolid(),"mine spawn floor");
         require(world.getBlockAt(spawn).isPassable()&&world.getBlockAt(spawn.clone().add(0,1,0)).isPassable(),"mine spawn headroom");
-        require(world.getEntitiesByClass(org.bukkit.entity.Mannequin.class).stream().filter(e->e.getScoreboardTags().contains("moma_mining_shop_v1")).count()==1,"mine shop NPC");
+        require(world.getEntitiesByClass(org.bukkit.entity.Mannequin.class).stream().filter(e->e.getScoreboardTags().contains("moma_mining_shop_v1")).count()==6,"miners across all three levels");
         for(var npc:world.getEntitiesByClass(org.bukkit.entity.Mannequin.class))if(npc.getScoreboardTags().contains("moma_mining_shop_v1"))require(npc.getDescription()==null,"mine description label hidden");
         Object store=field(mine,"store"),items=field(mine,"items");UUID owner=UUID.randomUUID();
         var profile=store.getClass().getDeclaredMethod("profile",UUID.class);profile.setAccessible(true);Object saved=profile.invoke(store,owner);
@@ -71,9 +71,9 @@ public final class NoquiPaperSmoke extends JavaPlugin {
         require(Math.abs(first.getItemMeta().getTool().getRules().getFirst().getSpeed()-3f)<.001,"initial 50% iron speed");
         var fields=saved.getClass().getRecordComponents();Object[] values=new Object[fields.length];Class<?>[] types=new Class<?>[fields.length];
         for(int i=0;i<fields.length;i++){types[i]=fields[i].getType();var accessor=fields[i].getAccessor();accessor.setAccessible(true);values[i]=accessor.invoke(saved);}
-        values[1]=200;values[2]=3;var constructor=saved.getClass().getDeclaredConstructor(types);constructor.setAccessible(true);
+        values[1]=300;values[2]=3;var constructor=saved.getClass().getDeclaredConstructor(types);constructor.setAccessible(true);
         var max=(org.bukkit.inventory.ItemStack)factory.invoke(items,owner,constructor.newInstance(values));
-        require(Math.abs(max.getItemMeta().getTool().getRules().getFirst().getSpeed()-12f)<.001,"maximum 200% iron speed");
+        require(Math.abs(max.getItemMeta().getTool().getRules().getFirst().getSpeed()-18f)<.001,"maximum 300% iron speed");
         require(max.getEnchantmentLevel(org.bukkit.enchantments.Enchantment.FORTUNE)==3,"native fortune III");
         var restored=org.bukkit.inventory.ItemStack.deserializeItemsFromBytes(org.bukkit.inventory.ItemStack.serializeItemsAsBytes(new org.bukkit.inventory.ItemStack[]{max}))[0];
         require(restored.isSimilar(max),"mine component serialization");
@@ -82,7 +82,47 @@ public final class NoquiPaperSmoke extends JavaPlugin {
         require(wallet.spendStarlight(owner,tx+":buy",100)&&wallet.starlight(owner)==50,"mine shared debit replay");
         require(!wallet.spendStarlight(owner,tx+":insufficient",51)&&wallet.starlight(owner)==50,"mine insufficient funds");
         require(dev.noqui.lobby.LobbyCatalog.defaults().getFirst().stars()==100,"ticket price 100");
+        verifySharedMineInventory(mine,world);
     }
+    private static void verifySharedMineInventory(Object mine,org.bukkit.World world)throws Exception {
+        var stacks=new org.bukkit.inventory.ItemStack[41];var cursor=new org.bukkit.inventory.ItemStack[1];int[] held={0};
+        var data=world.getPersistentDataContainer().getAdapterContext().newPersistentDataContainer();UUID id=UUID.randomUUID();
+        var location=new org.bukkit.Location[]{world.getSpawnLocation()};var mode=new org.bukkit.GameMode[]{org.bukkit.GameMode.ADVENTURE};
+        var inventory=(org.bukkit.inventory.PlayerInventory)java.lang.reflect.Proxy.newProxyInstance(NoquiPaperSmoke.class.getClassLoader(),new Class[]{org.bukkit.inventory.PlayerInventory.class},(proxy,method,args)->switch(method.getName()){
+            case "getSize"->41;case "getStorageContents"->Arrays.copyOf(stacks,36);case "getContents"->stacks.clone();
+            case "getItem"->args[0] instanceof Integer slot?stacks[slot]:null;
+            case "getItemInMainHand"->stacks[held[0]]==null?new org.bukkit.inventory.ItemStack(org.bukkit.Material.AIR):stacks[held[0]];
+            case "getItemInOffHand"->new org.bukkit.inventory.ItemStack(org.bukkit.Material.AIR);
+            case "getHeldItemSlot"->held[0];case "setHeldItemSlot"->{held[0]=(int)args[0];yield null;}
+            case "setItem"->{stacks[(int)args[0]]=(org.bukkit.inventory.ItemStack)args[1];yield null;}
+            case "setContents","setStorageContents"->{var items=(org.bukkit.inventory.ItemStack[])args[0];System.arraycopy(items,0,stacks,0,items.length);yield null;}
+            case "clear"->{Arrays.fill(stacks,null);yield null;}
+            default->primitiveDefault(method.getReturnType());
+        });
+        var player=(org.bukkit.entity.Player)java.lang.reflect.Proxy.newProxyInstance(NoquiPaperSmoke.class.getClassLoader(),new Class[]{org.bukkit.entity.Player.class},(proxy,method,args)->switch(method.getName()){
+            case "getUniqueId"->id;case "getName"->"SHARED_INVENTORY_QA";case "getPersistentDataContainer"->data;case "getInventory"->inventory;
+            case "getItemOnCursor"->cursor[0];case "setItemOnCursor"->{cursor[0]=(org.bukkit.inventory.ItemStack)args[0];yield null;}
+            case "getLocation"->location[0];case "getWorld"->location[0].getWorld();case "teleport"->{location[0]=(org.bukkit.Location)args[0];yield true;}
+            case "getGameMode"->mode[0];case "setGameMode"->{mode[0]=(org.bukkit.GameMode)args[0];yield null;}
+            case "isOnline","isValid","hasPermission"->true;case "hashCode"->id.hashCode();case "equals"->proxy==args[0];
+            default->primitiveDefault(method.getReturnType());
+        });
+        var quiz=Objects.requireNonNull(Bukkit.getServicesManager().load(QuizService.class));
+        stacks[10]=new org.bukkit.inventory.ItemStack(org.bukkit.Material.APPLE,5);cursor[0]=new org.bukkit.inventory.ItemStack(org.bukkit.Material.WRITABLE_BOOK);
+        quiz.saveSharedInventory(player);Arrays.fill(stacks,null);cursor[0]=null;
+        var outside=new org.bukkit.inventory.ItemStack(org.bukkit.Material.NETHERITE_SCRAP,4);stacks[0]=outside;
+        mine.getClass().getMethod("join",org.bukkit.entity.Player.class).invoke(mine,player);
+        require(stacks[4]!=null&&stacks[4].getType()==org.bukkit.Material.IRON_PICKAXE,"mine-only pickaxe overlay");
+        require(stacks[10]!=null&&stacks[10].getAmount()==5,"Noqui items loaded in mine");
+        stacks[10].setAmount(2);stacks[11]=new org.bukkit.inventory.ItemStack(org.bukkit.Material.BOOK,3);
+        mine.getClass().getMethod("leave",org.bukkit.entity.Player.class,boolean.class).invoke(mine,player,true);
+        require(stacks[0]!=null&&stacks[0].isSimilar(outside)&&stacks[0].getAmount()==4,"outside inventory restored");
+        quiz.restoreSharedInventory(player);
+        require(stacks[10]!=null&&stacks[10].getAmount()==2&&stacks[11]!=null&&stacks[11].getAmount()==3,"mine changes survive Noqui restore");
+        require(cursor[0]!=null&&cursor[0].getType()==org.bukkit.Material.WRITABLE_BOOK,"shared cursor survives");
+        for(var item:stacks)if(item!=null)require(item.getType()!=org.bukkit.Material.IRON_PICKAXE&&!item.getPersistentDataContainer().has(new org.bukkit.NamespacedKey("momadefense","mine_navigation")),"mine tools excluded from Noqui inventory");
+    }
+    private static Object primitiveDefault(Class<?> type){if(type==boolean.class)return false;if(type==int.class)return 0;if(type==long.class)return 0L;if(type==float.class)return 0f;if(type==double.class)return 0d;return null;}
     private static void require(boolean value,String label){if(!value)throw new IllegalStateException(label);}
     private static void plain(org.bukkit.inventory.ItemStack item) {
         var meta=item.getItemMeta();require(meta.displayName()!=null&&meta.displayName().decoration(net.kyori.adventure.text.format.TextDecoration.ITALIC)==net.kyori.adventure.text.format.TextDecoration.State.FALSE,"plain item name");
