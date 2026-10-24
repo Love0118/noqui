@@ -56,7 +56,11 @@ final class NoquiDialogs {
     }
     void submit(Player p) {
         var game=plugin.game();var state=game.snapshot();
-        if(!game.canSubmit(p.getUniqueId())||!plugin.hasTicket(p))throw new IllegalArgumentException("사용할 출제권을 확인하세요.");
+        if(!game.started())throw new IllegalArgumentException("진행 중인 노래퀴즈가 없습니다.");
+        if(!game.participant(p.getUniqueId()))throw new IllegalArgumentException("노래퀴즈에 먼저 참가하세요.");
+        if(!plugin.hasTicket(p))throw new IllegalArgumentException("사용할 출제권이 없습니다.");
+        if(state.totalRounds()>0&&state.registeredSongs()>=state.totalRounds())throw new IllegalArgumentException("설정된 최대 라운드의 곡이 모두 등록되었습니다.");
+        if(!game.canSubmit(p.getUniqueId()))throw new IllegalArgumentException("대기곡은 1인 10곡, 전체 100곡까지 등록할 수 있습니다.");
         begin(p,null);
         UUID session=state.session();
         var inputs=List.of(DialogInput.text("youtubeLink",text("YouTube 링크")).initial("").maxLength(2048).build(),

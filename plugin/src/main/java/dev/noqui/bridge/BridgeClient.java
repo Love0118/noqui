@@ -15,9 +15,9 @@ import javax.crypto.spec.SecretKeySpec;
 
 /** Bounded asynchronous control client. It never downloads or proxies audio. */
 public final class BridgeClient implements MediaBridge {
-    // At most64 accepted jobs, each with a server-side300s ingest limit, plus15min delivery/restart margin.
-    static final long MAX_PREPARATION_MILLIS=64L*300_000+900_000;
-    private static final int MAX_REQUESTS=64;
+    // 100 accepted jobs, each with a 300s ingest limit, plus 15min delivery/restart margin.
+    static final long MAX_PREPARATION_MILLIS=100L*300_000+900_000;
+    private static final int MAX_REQUESTS=100;
     public record Member(UUID uuid, UUID membershipId, String nickname, String textureHash) {}
     public record BrowserPresence(UUID player,UUID membership,boolean connected) {}
     public record PlaybackProgress(UUID player,UUID membership,UUID round,UUID generation,long positionMs,long lastSeenAtMs) {}
@@ -133,7 +133,12 @@ public final class BridgeClient implements MediaBridge {
     void poll(Request request,CompletableFuture<Media> future,JsonObject response,Throwable error,long deadline) {
         if(future.isDone() || closed)return;
         try {
-            if(error!=null)throw new IllegalStateException("Media service unavailable");
+            if(error!=null){
+                Throwable cause=error;while(cause instanceof CompletionException&&cause.getCause()!=null)cause=cause.getCause();
+                if(!"Bridge HTTP 429".equals(cause.getMessage()))throw new IllegalStateException("Media service unavailable");
+                // Conversion capacity is separate from accepted submissions. Retry with a fresh signed nonce.
+                response=object("state","ENQUEUE_RETRY","jobId","","retryAfterMs",2000);
+            }
             String state=response.get("state").getAsString();
             if(state.equals("READY")) {
                 String id=UUID.fromString(response.get("mediaId").getAsString()).toString();
@@ -146,10 +151,20 @@ public final class BridgeClient implements MediaBridge {
                 main.execute(()->confirmPin(request,job));return;
             }
             if(state.equals("FAILED") || preparationClock.getAsLong()>deadline)throw new IllegalStateException("Media preparation failed");
-            String jobId=UUID.fromString(response.get("jobId").getAsString()).toString();
+            String jobId=state.equals("ENQUEUE_RETRY")?"":UUID.fromString(response.get("jobId").getAsString()).toString();
             long delay=Math.max(2000,Math.min(30000,response.has("retryAfterMs")?response.get("retryAfterMs").getAsLong():2000));
-            worker.schedule(()->{if(!future.isDone())request("GET","/internal/v1/media/jobs/"+jobId,null)
-                    .whenComplete((r,e)->poll(request,future,r,e,deadline));},delay,TimeUnit.MILLISECONDS);
+            worker.schedule(()->{
+                if(future.isDone())return;
+                JsonObject body=null;
+                if(jobId.isEmpty()){
+                    Job job;synchronized(this){job=jobs.get(request);}if(job==null)return;
+                    String videoId=request.song().youtubeUrl().substring(request.song().youtubeUrl().lastIndexOf('=')+1);
+                    body=object("schemaVersion",1,"requestId",job.id,"videoId",videoId,
+                            "song",object("title",request.song().title(),"tags",gson.toJsonTree(request.song().tags())));
+                }
+                request(jobId.isEmpty()?"POST":"GET",jobId.isEmpty()?"/internal/v1/media/jobs":"/internal/v1/media/jobs/"+jobId,body)
+                    .whenComplete((r,e)->poll(request,future,r,e,deadline));
+            },delay,TimeUnit.MILLISECONDS);
         } catch(RuntimeException failure){future.completeExceptionally(failure);}
     }
     private synchronized void confirmPin(Request request,Job job) {

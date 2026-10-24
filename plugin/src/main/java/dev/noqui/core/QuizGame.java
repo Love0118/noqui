@@ -26,7 +26,7 @@ public final class QuizGame {
         default void roundEnded(){}
         default void ended(Map<UUID,Integer> scores) {}
     }
-    private static final int MAX_SUBMISSIONS=64;
+    private static final int MAX_SUBMISSIONS=100;
     private static final long PLAYBACK_REPORT_FRESHNESS_MILLIS=5000,START_CORRECTION_WINDOW_MILLIS=2000;
     private static final class Submission {
         final UUID id=UUID.randomUUID(),author;
@@ -86,7 +86,12 @@ public final class QuizGame {
     public boolean participant(UUID id){return players.contains(id);}
     public long credits(UUID id){return credits.balance(id);}
     public boolean pending(UUID id){return current!=null&&current.live&&!roundStarted&&current.author.equals(id)||queue.stream().anyMatch(s->s.author.equals(id));}
-    public boolean canSubmit(UUID id){return started()&&participant(id)&&credits(id)>0&&!pending(id)&&hasSubmissionSpace();}
+    public boolean canSubmit(UUID id){
+        if(!started()||!participant(id)||credits(id)<1||!hasSubmissionSpace())return false;
+        int waiting=unplayedCurrent()&&current.author.equals(id)?1:0;
+        for(var submission:queue)if(submission.author.equals(id))waiting++;
+        return waiting<10;
+    }
     public boolean canVoteSkip(UUID id){return participant(id)&&roundId!=null&&!(phase==Phase.REVEAL&&!playing)&&!votes.contains(id);}
     private boolean hasSubmissionSpace(){return queue.size()+(current==null?0:1)<MAX_SUBMISSIONS
             &&(totalRounds==0||registeredSongs()<totalRounds);}
@@ -135,7 +140,9 @@ public final class QuizGame {
     }
     public void submit(UUID id,long expectedRevision,Song song) {
         if(!started()||revision!=expectedRevision||!players.contains(id))throw new IllegalArgumentException("참가 메뉴를 다시 열어 주세요.");
-        if(pending(id))throw new IllegalArgumentException("대기 중인 제출은 한 곡만 가능합니다.");
+        int waiting=unplayedCurrent()&&current.author.equals(id)?1:0;
+        for(var submission:queue)if(submission.author.equals(id))waiting++;
+        if(waiting>=10)throw new IllegalArgumentException("대기곡은 한 사람당 10곡까지 등록할 수 있습니다.");
         if(!hasSubmissionSpace())
             throw new IllegalArgumentException("남은 라운드의 제출 대기열이 가득 찼습니다.");
         var s=new Submission(id,Objects.requireNonNull(song),++operation);credits.reserve(s.id,id);queue.add(s);

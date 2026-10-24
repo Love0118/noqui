@@ -18,7 +18,7 @@ use std::{
 };
 use tokio::{process::Command, sync::Notify};
 
-const MAX_QUEUED: i64 = 64;
+const MAX_QUEUED: i64 = 100;
 // Stage logs stay tiny, but yt-dlp's resolved metadata for a private source can
 // legitimately exceed 1MiB (a real 99s webm resolved to 1,660,825 bytes), so the
 // metadata dump gets its own headroom well below the source and temp budgets.

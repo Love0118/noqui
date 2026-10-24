@@ -72,14 +72,14 @@ class BridgeClientTest {
             outage.set(true);client.heartbeat();assertTrue(unknown.await(5,TimeUnit.SECONDS));assertTrue(observations.isEmpty());
         }finally{server.stop(0);}
     }
-    @Test void queuedJobBeyondFifteenMinutesRemainsValidWithinBounded64JobBudget() {
+    @Test void queuedJobBeyondFifteenMinutesRemainsValidWithinBounded100JobBudget() {
         var now=new java.util.concurrent.atomic.AtomicLong(1000);long deadline=now.get()+BridgeClient.MAX_PREPARATION_MILLIS;
         try(var client=new BridgeClient(URI.create("http://127.0.0.1:8788"),key,"primary",UUID.randomUUID(),Runnable::run,List::of,(r,a,b)->{},s->{},now::get)) {
             var request=new MediaBridge.Request(UUID.randomUUID(),1,Song.input("https://youtu.be/BaW_jenozKc","Song",""));
             var waiting=new CompletableFuture<MediaBridge.Media>();UUID job=UUID.randomUUID();
             JsonObject queued=JsonParser.parseString("{\"state\":\"QUEUED\",\"jobId\":\""+job+"\",\"retryAfterMs\":30000}").getAsJsonObject();
             now.addAndGet(16*60000L);client.poll(request,waiting,queued,null,deadline);assertFalse(waiting.isDone());
-            now.set(64L*300000);client.poll(request,waiting,queued,null,deadline);assertFalse(waiting.isDone());
+            now.set(100L*300000);client.poll(request,waiting,queued,null,deadline);assertFalse(waiting.isDone());
             assertFalse(waiting.isDone());waiting.cancel(false);
             var expired=new CompletableFuture<MediaBridge.Media>();now.set(deadline+1);client.poll(request,expired,queued,null,deadline);assertTrue(expired.isCompletedExceptionally());
         }

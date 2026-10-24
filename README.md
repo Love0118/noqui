@@ -1,4 +1,4 @@
-# Noqui 1.0.8
+# Noqui 1.0.14
 
 Paper 26.3 / Java 25용 노래퀴즈 플러그인입니다. 오디오는 Rust 서비스가 원본 길이 6분 이하인 영상의 처음 최대 120초(짧은 곡은 전체)를 약 48kbps Ogg Opus로 캐시하고 브라우저가 재생합니다. 게임·출제권·정답·점수는 Paper가 결정합니다.
 
@@ -14,11 +14,15 @@ mvn -B -ntp verify
 cargo test --locked --manifest-path noqui/web/Cargo.toml
 ```
 
-산출물은 `noqui/plugin/target/noqui-plugin-1.0.11.jar`, `target/mc-luck-defense-1.0.34.jar`입니다. Moma는 Noqui API에 provided 의존성을 사용하며 API는 Noqui JAR에만 포함됩니다. 이번 버전은 공용 인벤토리와 광물 판매 API가 추가되므로 두 JAR를 함께 설치하고 정상 재시작합니다. 광산 지형은 작은 3개 층으로 한 번 재생성하며 기존 강화·미판매 광물·별빛은 유지합니다. Moma 런타임은 매번 현재 서비스 제공자를 조회합니다.
+산출물은 `noqui/plugin/target/noqui-plugin-1.0.14.jar`, `target/mc-luck-defense-1.0.35.jar`입니다. Moma는 Noqui API에 provided 의존성을 사용하며 API는 Noqui JAR에만 포함됩니다. 공용 인벤토리와 광물 판매 API를 사용하므로 두 JAR의 버전을 맞춥니다. Moma 런타임은 매번 현재 서비스 제공자를 조회합니다.
+
+대기곡은 1인당 10곡, 전체 100곡입니다. 재생이 시작된 현재 곡은 개인 대기곡 수에서 제외하며 전체 제한에는 포함합니다. 준비 중인 현재 곡은 두 제한 모두에 포함합니다. 오디오 서비스의 변환 대기열과 캐시 보호 목록도 100곡을 허용해야 합니다. 변환 대기열의 일시적인 포화는 비동기로 재시도하며, 취소·이탈·종료 시 기존 출제권 반환 규칙을 유지합니다.
+
+네이티브 귓속말·팀 채팅·`/me`를 포함한 신고 보호는 별도 GPL 모듈 [MomaChatGuard](../native/chat-report-guard/README.md)가 담당합니다. 명령어는 차단하지 않고 클라이언트로 나가는 플레이어 채팅을 서식이 유지된 시스템 채팅으로 전환합니다.
 
 Noqui의 변환 오디오 캐시는 최대 5 GiB LRU로 관리하며 Moma BGM 캐시와 저장·회수 대상을 공유하지 않습니다. 캐시를 재사용하면 최근 사용 순서가 갱신되지만 pin heartbeat 자체는 재사용으로 세지 않습니다. 대기곡·현재 곡·진행 중 스트림은 회수에서 제외하고, 보호하지 않는 파일로 공간을 확보할 수 없으면 새 저장을 거절합니다.
 
-Java는 내부 `/internal/v1/sync`의 최상위 `retainedMediaIds`에 현재 세션의 전체 보관 목록을 보냅니다. 최대 64개 UUID를 중복 제거하며 동일 미디어의 마지막 제출 참조가 없어질 때 해제합니다. READY 응답만으로 준비를 완료하지 않고, 해당 ID를 포함한 실제 sync 패킷의 성공 ACK를 받은 뒤 QuizGame에 전달합니다. ACK 실패는 준비 실패·출제권 반환으로 처리하며 취소된 요청의 늦은 ACK는 무시합니다. 취소·이탈·종료·재시작은 다음 전체 목록에 반영하고 정상 종료는 빈 배열을 보낸 뒤 연결을 닫습니다. READY/cache hit의 60초 임시 보호는 첫 sync 전의 틈만 막으며 장기 대기열 보호를 대신하지 않습니다. Rust는 승인된 pin 목록을 영구 보관하고 재시작 후에도 보호합니다. 필드가 없는 구버전 요청은 빈 배열로 해석하거나 eviction을 활성화하지 않습니다. 이 목록은 공개 state/SSE와 대기곡 메타데이터에 노출하지 않습니다.
+Java는 내부 `/internal/v1/sync`의 최상위 `retainedMediaIds`에 현재 세션의 전체 보관 목록을 보냅니다. 최대 100개 UUID를 중복 제거하며 동일 미디어의 마지막 제출 참조가 없어질 때 해제합니다. READY 응답만으로 준비를 완료하지 않고, 해당 ID를 포함한 실제 sync 패킷의 성공 ACK를 받은 뒤 QuizGame에 전달합니다. ACK 실패는 준비 실패·출제권 반환으로 처리하며 취소된 요청의 늦은 ACK는 무시합니다. 취소·이탈·종료·재시작은 다음 전체 목록에 반영하고 정상 종료는 빈 배열을 보낸 뒤 연결을 닫습니다. READY/cache hit의 60초 임시 보호는 첫 sync 전의 틈만 막으며 장기 대기열 보호를 대신하지 않습니다. Rust는 승인된 pin 목록을 영구 보관하고 재시작 후에도 보호합니다. 필드가 없는 구버전 요청은 빈 배열로 해석하거나 eviction을 활성화하지 않습니다. 이 목록은 공개 state/SSE와 대기곡 메타데이터에 노출하지 않습니다.
 
 팩의 소스와 생성·검증 방법은 [로비 에셋 안내](lobby-assets/README.md)를 따릅니다. 검증한 `noqui/lobby-assets/lobby-pack.properties` 하나만 JAR 루트에 포함하며 ZIP은 포함하지 않습니다. 팩 ZIP을 해당 내용 해시의 공개 URL에 먼저 게시한 후 플러그인을 기동합니다. 기존 `plugins/Noqui/lobby-pack.properties`가 있으면 자동 덮어쓰지 않으므로 팩을 바꿀 때 검증한 새 descriptor를 함께 반영합니다. CI는 Python 표준 라이브러리로 팩 재현성과 descriptor를 먼저 확인한 뒤 Maven을 실행합니다.
 

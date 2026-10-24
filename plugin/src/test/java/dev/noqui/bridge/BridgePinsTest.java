@@ -20,6 +20,8 @@ class BridgePinsTest {
         final BlockingQueue<CompletableFuture<Void>> syncGates=new LinkedBlockingQueue<>();
         final BlockingQueue<String> requests=new LinkedBlockingQueue<>();
         final AtomicInteger posts=new AtomicInteger();
+        final AtomicInteger rejectEnqueues=new AtomicInteger();
+        final BlockingQueue<String> enqueueNonces=new LinkedBlockingQueue<>(),enqueueIds=new LinkedBlockingQueue<>();
         final java.util.concurrent.atomic.AtomicBoolean failPinSync=new java.util.concurrent.atomic.AtomicBoolean();
         final UUID media=UUID.randomUUID(),owner=UUID.randomUUID(),instance=UUID.randomUUID();
         final BridgeClient client;
@@ -28,7 +30,9 @@ class BridgePinsTest {
         Harness(Executor main)throws Exception{
             server=HttpServer.create(new InetSocketAddress("127.0.0.1",8788),0);server.setExecutor(workers);
             server.createContext("/internal/v1/media/jobs",exchange->{try{
-                exchange.getRequestBody().readAllBytes();posts.incrementAndGet();requests.add(exchange.getRequestMethod());
+                var input=JsonParser.parseString(new String(exchange.getRequestBody().readAllBytes(),StandardCharsets.UTF_8)).getAsJsonObject();posts.incrementAndGet();requests.add(exchange.getRequestMethod());
+                enqueueNonces.add(exchange.getRequestHeaders().getFirst("X-Noqui-Nonce"));enqueueIds.add(input.get("requestId").getAsString());
+                if(rejectEnqueues.getAndUpdate(n->Math.max(0,n-1))>0){exchange.sendResponseHeaders(429,-1);return;}
                 var held=replies.poll();JsonObject response=held==null?ready(media):held.get(8,TimeUnit.SECONDS);
                 byte[] body=response.toString().getBytes(StandardCharsets.UTF_8);exchange.sendResponseHeaders(200,body.length);exchange.getResponseBody().write(body);
             }catch(Exception e){exchange.sendResponseHeaders(500,-1);}finally{exchange.close();}});
@@ -52,7 +56,7 @@ class BridgePinsTest {
         public void close(){client.close();server.stop(0);workers.shutdownNow();}
     }
     private static JsonObject ready(UUID media){var response=new JsonObject();response.addProperty("state","READY");response.addProperty("mediaId",media.toString());response.addProperty("durationMs",60000);return response;}
-    private static Set<String> pins(JsonObject packet){assertTrue(packet.has("retainedMediaIds"),"Full internal pin list must always be present");var result=new LinkedHashSet<String>();for(var id:packet.getAsJsonArray("retainedMediaIds")){assertTrue(result.add(UUID.fromString(id.getAsString()).toString()),"Duplicate pin");}assertTrue(result.size()<=64);return result;}
+    private static Set<String> pins(JsonObject packet){assertTrue(packet.has("retainedMediaIds"),"Full internal pin list must always be present");var result=new LinkedHashSet<String>();for(var id:packet.getAsJsonArray("retainedMediaIds")){assertTrue(result.add(UUID.fromString(id.getAsString()).toString()),"Duplicate pin");}assertTrue(result.size()<=100);return result;}
     private static void await(java.util.function.BooleanSupplier condition)throws Exception{long deadline=System.nanoTime()+TimeUnit.SECONDS.toNanos(5);while(!condition.getAsBoolean()&&System.nanoTime()<deadline)Thread.sleep(2);assertTrue(condition.getAsBoolean(),"Timed out waiting for test condition");}
     @Test void readyResultRemainsPinnedAfterItsFutureCompletes()throws Exception{
         try(var h=new Harness()){
@@ -105,11 +109,24 @@ class BridgePinsTest {
             h.client.heartbeat();assertTrue(pins(h.nextPacket()).isEmpty());
         }
     }
-    @Test void sixtyFourRequestsBoundBothPendingAndReadyReferencesAndCancellationFreesCapacity()throws Exception{
+    @Test void oneHundredRequestsBoundBothPendingAndReadyReferencesAndCancellationFreesCapacity()throws Exception{
         try(var h=new Harness()){
-            for(int i=0;i<64;i++)h.prepare(i).get(5,TimeUnit.SECONDS);
-            assertThrows(ExecutionException.class,()->h.prepare(64).get(5,TimeUnit.SECONDS));assertEquals(64,h.posts.get());assertEquals(Set.of(h.media.toString()),pins(h.snapshot()));
-            h.client.cancel(h.game.snapshot().session(),0);h.prepare(64).get(5,TimeUnit.SECONDS);assertEquals(65,h.posts.get());
+            for(int i=0;i<100;i++)h.prepare(i).get(5,TimeUnit.SECONDS);
+            assertThrows(ExecutionException.class,()->h.prepare(100).get(5,TimeUnit.SECONDS));assertEquals(100,h.posts.get());assertEquals(Set.of(h.media.toString()),pins(h.snapshot()));
+            h.client.cancel(h.game.snapshot().session(),0);h.prepare(100).get(5,TimeUnit.SECONDS);assertEquals(101,h.posts.get());
+        }
+    }
+    @Test void busyConversionQueueRetriesWithoutRefundingAndUsesFreshNonceWithSameRequestId()throws Exception {
+        try(var h=new Harness()){
+            h.rejectEnqueues.set(1);var future=h.prepare(1);future.get(6,TimeUnit.SECONDS);
+            assertEquals(2,h.posts.get());assertNotEquals(h.enqueueNonces.remove(),h.enqueueNonces.remove());
+            assertEquals(h.enqueueIds.remove(),h.enqueueIds.remove());assertEquals(Set.of(h.media.toString()),pins(h.snapshot()));
+        }
+    }
+    @Test void cancellationStopsEnqueueRetriesWhileTheBackendIsBusy()throws Exception {
+        try(var h=new Harness()){
+            h.rejectEnqueues.set(100);var future=h.prepare(1);await(()->h.posts.get()==1);
+            h.client.cancel(h.game.snapshot().session(),1);assertTrue(future.isCancelled());Thread.sleep(2300);assertEquals(1,h.posts.get());
         }
     }
     @Test void gracefulStopPublishesEmptyPinsBeforeCloseAndLateReadyCannotReviveThem()throws Exception{

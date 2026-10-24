@@ -188,11 +188,32 @@ class QuizGameTest {
             now[0]+=999;g.tick();assertEquals(QuizGame.Phase.REVEAL,g.snapshot().phase());now[0]++;g.tick();assertEquals(QuizGame.Phase.WAITING_FOR_SUBMISSION,g.snapshot().phase());
         }
     }
-    @Test void staleFormNonmemberNoCreditAndDuplicateAreRejectedWithoutFurtherReservation() {
+    @Test void staleFormNonmemberAndNoCreditAreRejectedButMultiplePendingSongsAreAccepted() {
         var g=start();long revision=g.snapshot().revision();g.join(UUID.randomUUID());assertThrows(IllegalArgumentException.class,()->g.submit(author,revision,song));
         assertThrows(IllegalArgumentException.class,()->g.submit(UUID.randomUUID(),g.snapshot().revision(),song));
         UUID empty=UUID.randomUUID();g.join(empty);assertThrows(IllegalArgumentException.class,()->g.submit(empty,g.snapshot().revision(),song));
-        submit(g,author);assertEquals(4,g.credits(author));assertThrows(IllegalArgumentException.class,()->submit(g,author));assertEquals(4,g.credits(author));assertEquals(1,bridge.futures.size());
+        submit(g,author);submit(g,author);assertEquals(3,g.credits(author));assertEquals(2,bridge.futures.size());
+    }
+    @Test void tenPendingSongsPerPlayerRejectEleventhWithoutSpendingAndCancellationOrLeaveRefunds(){
+        var g=game(0,false,true,false);g.grant(author,20);
+        for(int i=0;i<10;i++){assertTrue(g.canSubmit(author));submit(g,author);}
+        assertFalse(g.canSubmit(author));assertEquals(15,g.credits(author));
+        assertTrue(assertThrows(IllegalArgumentException.class,()->submit(g,author)).getMessage().contains("10곡"));
+        assertEquals(10,bridge.futures.size());assertEquals(15,g.credits(author));
+        g.cancel(author);assertTrue(g.canSubmit(author));assertEquals(16,g.credits(author));
+        g.leave(author);assertEquals(25,g.credits(author));assertFalse(g.pending(author));
+    }
+    @Test void alreadyPlayingSongDoesNotCountTowardTheTenPendingSongs(){
+        var g=game(0,false,true,false);g.grant(author,20);for(int i=0;i<10;i++)submit(g,author);
+        assertFalse(g.canSubmit(author));play(g,1000);assertTrue(g.canSubmit(author));submit(g,author);
+        assertFalse(g.canSubmit(author));assertEquals(11,bridge.futures.size());
+    }
+    @Test void oneHundredTotalSongsAreAcceptedAndTheNextCannotReserveACredit(){
+        var g=game(0,false,true,false);var authors=new ArrayList<UUID>();
+        for(int person=0;person<10;person++){UUID id=UUID.randomUUID();authors.add(id);g.join(id);g.grant(id,10);for(int song=0;song<10;song++)submit(g,id);}
+        assertEquals(100,g.snapshot().registeredSongs());assertEquals(100,bridge.futures.size());assertFalse(g.canSubmit(author));
+        assertThrows(IllegalArgumentException.class,()->submit(g,author));assertEquals(5,g.credits(author));
+        g.stop();for(UUID id:authors)assertEquals(10,g.credits(id));
     }
     @Test void stoppedSkippedCanceledAndDisconnectedPreparationCannotBeRevivedAndRefundOnce() {
         for(String action:List.of("stop","skip","leave","cancel")) {

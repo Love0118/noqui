@@ -145,7 +145,7 @@ async fn sync(State(app): State<App>, h: HeaderMap, b: Bytes) -> Result<Json<Val
     let snapshot: Snapshot = decode(&h, &b)?;
     let _sync = app.control_sync.lock().await;
     if snapshot.retained_media_ids.as_ref().is_some_and(|ids| {
-        ids.len() > 64
+        ids.len() > 100
             || ids.iter().any(|id| !uuid(id))
             || ids.iter().collect::<std::collections::HashSet<_>>().len() != ids.len()
     }) {
