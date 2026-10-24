@@ -11,6 +11,8 @@ class QuizGameTest {
     private final UUID author=UUID.randomUUID(),second=UUID.randomUUID(),third=UUID.randomUUID();
     private final long[] now={100000};
     private final List<String> errors=new ArrayList<>();
+    private final List<Integer> rewards=new ArrayList<>();
+    private int roundEnds;
     private final Queue<Runnable> callbacks=new ArrayDeque<>();
     private final Song song=Song.input("https://youtu.be/BaW_jenozKc","Bad Apple!!","배드애플;동방");
     private static final class Bridge implements MediaBridge {
@@ -26,6 +28,7 @@ class QuizGameTest {
     private QuizGame game(int rounds,boolean skip,boolean bonus,boolean auto) {
         var g=new QuizGame(bridge,callbacks::add,()->now[0],new QuizGame.Output(){
             public void changed(QuizGame.Snapshot s){}public void error(UUID id,String e){errors.add(e);}
+            public void correctAnswer(UUID round,UUID player,int points){rewards.add(points);}public void roundEnded(){roundEnds++;}
         },new CreditLedger(),115,rounds,skip,bonus,auto,new Random(42));
         g.start(List.of(author,second,third),rounds);g.grant(author,5);g.grant(second,5);g.grant(third,5);return g;
     }
@@ -54,6 +57,47 @@ class QuizGameTest {
     }
     @Test void titleBonusAndImmediateMatchSkipAreConfigurable() {
         var g=game(67,true,false,false);submit(g,author);play(g,90000);assertTrue(g.answer(second,"배드애플"));assertFalse(g.snapshot().playing());assertEquals(1,g.snapshot().scores().get(second));assertEquals(now[0]+1000,g.snapshot().endsAt());
+    }
+    @Test void winnerCanSkipAfterVotingWithoutAnotherVoteRewardOrRefundAndEndsOnlyOnce() {
+        var g=start();submit(g,author);play(g,60000);UUID round=g.snapshot().roundId();
+        assertTrue(g.voteSkip(second,round));assertFalse(g.canVoteSkip(second));assertTrue(g.answer(second,"bad apple"));
+        assertTrue(g.snapshot().canWinnerSkip(second));assertFalse(g.skipAsWinner(second,UUID.randomUUID()));assertFalse(g.skipAsWinner(UUID.randomUUID(),round));
+        assertTrue(g.skipAsWinner(second,round));assertFalse(g.snapshot().playing());assertTrue(g.snapshot().skipped());assertEquals(1,g.snapshot().skipVotes());
+        assertEquals(List.of(2),rewards);assertEquals(1,g.snapshot().scores().get(second));assertEquals(4,g.credits(author));assertEquals(5,g.credits(second));assertEquals(1,roundEnds);
+        long end=g.snapshot().endsAt();assertEquals(now[0]+1000,end);now[0]+=999;
+        assertFalse(g.canVoteSkip(second));assertFalse(g.skipAsWinner(second,round));assertFalse(g.skipAsWinner(third,round));g.forceSkip(round);g.tick();
+        assertEquals(end,g.snapshot().endsAt());assertEquals(1,roundEnds);assertEquals(QuizGame.Phase.REVEAL,g.snapshot().phase());
+        now[0]++;g.tick();assertEquals(QuizGame.Phase.WAITING_FOR_SUBMISSION,g.snapshot().phase());assertFalse(g.skipAsWinner(second,round));
+        assertEquals(List.of(2),rewards);assertEquals(4,g.credits(author));assertEquals(5,g.credits(second));
+    }
+    @Test void anyNoncompetitiveWinnerCanSkipIncludingASecondAnswererWhoAlreadyVoted() {
+        var g=start();g.modes(g.modes().with(QuizModes.Mode.NONCOMPETITIVE,true));submit(g,author);play(g,60000);UUID round=g.snapshot().roundId();
+        assertTrue(g.voteSkip(second,round));assertTrue(g.answer(author,"bad apple"));assertTrue(g.answer(second,"동방"));assertEquals(author,g.snapshot().winner());
+        assertTrue(g.skipAsWinner(second,round));assertFalse(g.snapshot().playing());assertEquals(List.of(author,second),g.snapshot().winners());assertEquals(List.of(2,1),rewards);
+        assertEquals(1,g.snapshot().skipVotes());assertEquals(1,roundEnds);assertFalse(g.answer(third,"동방"));assertFalse(g.skipAsWinner(author,round));
+    }
+    @Test void winnerCanSkipWhilePaused(){skipPausedWinner(false);}
+    @Test void winnerCanSkipDuringResumeCountdown(){skipPausedWinner(true);}
+    private void skipPausedWinner(boolean resume) {
+        var g=start();submit(g,author);play(g,60000);assertTrue(g.answer(second,"bad apple"));now[0]+=2000;g.pause();long position=g.snapshot().anchorPositionMillis();
+        now[0]+=60000;if(resume){g.resume();assertEquals(QuizGame.Phase.COUNTDOWN,g.snapshot().phase());}
+        assertTrue(g.skipAsWinner(second,g.snapshot().roundId()));assertFalse(g.snapshot().playing());assertEquals(QuizGame.Phase.REVEAL,g.snapshot().phase());
+        assertEquals(position,g.snapshot().anchorPositionMillis());assertEquals(now[0]+1000,g.snapshot().endsAt());assertEquals(4,g.credits(author));assertEquals(5,g.credits(second));
+        g.controlAccepted(g.snapshot().revision());assertFalse(g.snapshot().playing());g.stop();
+    }
+    @Test void nonwinnerStillNeedsStrictMajorityAfterSomeoneAnswers() {
+        var g=start();g.join(UUID.randomUUID());submit(g,author);play(g,60000);assertTrue(g.answer(second,"bad apple"));UUID round=g.snapshot().roundId();
+        assertTrue(g.voteSkip(author,round));assertFalse(g.skipAsWinner(author,round));assertFalse(g.voteSkip(author,round));assertTrue(g.voteSkip(third,round));
+        assertEquals(2,g.snapshot().skipVotes());assertEquals(3,g.snapshot().skipRequired());assertTrue(g.snapshot().playing());
+        UUID fourth=g.snapshot().participants().stream().filter(id->!List.of(author,second,third).contains(id)).findFirst().orElseThrow();
+        assertTrue(g.voteSkip(fourth,round));assertFalse(g.snapshot().playing());assertEquals(1,roundEnds);assertEquals(List.of(2),rewards);
+    }
+    @Test void previousWinnerCannotSkipAfterLeavingOrCarryPrivilegeIntoAnotherRoundOrSession() {
+        var g=start();submit(g,author);play(g,60000);assertTrue(g.answer(second,"bad apple"));UUID old=g.snapshot().roundId();
+        g.leave(second);assertFalse(g.canVoteSkip(second));assertFalse(g.skipAsWinner(second,old));g.join(second);assertTrue(g.skipAsWinner(second,old));
+        now[0]+=1000;g.tick();submit(g,author);play(g,60000);assertFalse(g.skipAsWinner(second,old));assertFalse(g.skipAsWinner(second,g.snapshot().roundId()));assertTrue(g.voteSkip(second,g.snapshot().roundId()));assertTrue(g.snapshot().playing());
+        g.stop();assertFalse(g.skipAsWinner(second,old));assertFalse(g.canVoteSkip(second));g.start(List.of(author,second,third));assertFalse(g.skipAsWinner(second,null));
+        submit(g,author);assertFalse(g.skipAsWinner(second,old));assertTrue(g.voteSkip(second,g.snapshot().roundId()));assertEquals(QuizGame.Phase.WAITING_FOR_MEDIA,g.snapshot().phase());
     }
     @Test void noncompetitionWithoutSkipKeepsAnswersPrivateUntilDeadlineAndAwardsEachPlayerOnce() {
         var g=start();g.modes(g.modes().with(QuizModes.Mode.NONCOMPETITIVE,true));submit(g,author);play(g,60000);long end=g.snapshot().endsAt();

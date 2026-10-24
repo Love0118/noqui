@@ -15,6 +15,7 @@ public final class QuizGame {
             int totalRounds,long anchorPositionMillis,long remainingMillis,int skipVotes,int skipRequired,boolean skipped,
             List<UUID> winners,QuizModes modes,int playbackRate) {
         public boolean accepts(UUID player,String input){return phase==Phase.PLAYING&&participants.contains(player)&&!winners.contains(player)&&song!=null&&modes.points(song,input)>0;}
+        public boolean canWinnerSkip(UUID player){return roundId!=null&&phase!=Phase.STOPPED&&!(phase==Phase.REVEAL&&!playing)&&participants.contains(player)&&winners.contains(player);}
     }
     public interface Output {
         void changed(Snapshot snapshot);
@@ -175,6 +176,10 @@ public final class QuizGame {
             output.answerAccepted(id);emit();
         }else{phase=Phase.REVEAL;emit();if(roundModes.has(QuizModes.Mode.MATCH_SKIP))finishRound(false);}
         return true;
+    }
+    public boolean skipAsWinner(UUID id,UUID expectedRound) {
+        if(!Objects.equals(roundId,expectedRound)||!snapshot().canWinnerSkip(id))return false;
+        finishRound(true);return true;
     }
     public boolean voteSkip(UUID id,UUID expectedRound) {
         if(!canVoteSkip(id)||!Objects.equals(roundId,expectedRound))return false;

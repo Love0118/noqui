@@ -27,7 +27,7 @@ def main():
     shutil.copytree(root / ".runtime/noqui-reference/world/noqui", fixture / "noqui_cabin")
     plugins = fixture / "plugins"
     plugins.mkdir()
-    shutil.copy2(root / "noqui/plugin/target/noqui-plugin-1.0.5.jar", plugins / "Noqui.jar")
+    shutil.copy2(root / "noqui/plugin/target/noqui-plugin-1.0.6.jar", plugins / "Noqui.jar")
     shutil.copy2(root / "target/mc-luck-defense-1.0.29.jar", plugins / "MCLuckDefense.jar")
     data = plugins / "Noqui"
     data.mkdir()

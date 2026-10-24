@@ -14,6 +14,28 @@ class NoquiCommandTest {
     private void set(NoquiPlugin plugin,String field,Object value)throws Exception{var f=NoquiPlugin.class.getDeclaredField(field);f.setAccessible(true);f.set(plugin,value);var opts=NoquiPlugin.class.getDeclaredField("optedOut");opts.setAccessible(true);if(opts.get(plugin)==null)opts.set(plugin,new HashSet<UUID>());}
     private QuizGame game(){var bridge=new MediaBridge(){public CompletionStage<Media> prepare(Request r){throw new UnsupportedOperationException();}public void cancel(UUID s,long r){}public void publish(QuizGame.Snapshot s){}};
         return new QuizGame(bridge,Runnable::run,System::currentTimeMillis,new QuizGame.Output(){public void changed(QuizGame.Snapshot s){}public void error(UUID p,String m){}},115,false);}
+    private QuizGame playing(List<UUID> players,long[] clock) {
+        var bridge=new MediaBridge(){public CompletionStage<Media> prepare(Request r){return CompletableFuture.completedFuture(new Media("ready",60000));}public void cancel(UUID s,long r){}public void publish(QuizGame.Snapshot s){}};
+        var game=new QuizGame(bridge,Runnable::run,()->clock[0],new QuizGame.Output(){public void changed(QuizGame.Snapshot s){}public void error(UUID p,String m){}},115,false);
+        game.start(players);UUID author=players.getFirst();game.grant(author,1);game.submit(author,game.snapshot().revision(),Song.input("https://youtu.be/BaW_jenozKc","Private","tag"));
+        game.browsersReady(game.snapshot().revision(),true,true);game.controlAccepted(game.snapshot().revision());clock[0]=game.snapshot().startsAt();game.tick();assertEquals(QuizGame.Phase.PLAYING,game.snapshot().phase());return game;
+    }
+    @Test void winnerCommandStillVotesAndForceRemainsOpOnly()throws Exception {
+        UUID author=UUID.randomUUID(),winner=UUID.randomUUID();long[] clock={100000};var game=playing(List.of(author,winner,UUID.randomUUID()),clock);
+        var plugin=mock(NoquiPlugin.class,CALLS_REAL_METHODS);set(plugin,"game",game);var player=mock(Player.class);when(player.getUniqueId()).thenReturn(winner);assertFalse(player.isOp());
+        assertTrue(game.answer(winner,"Private"));plugin.onCommand(player,null,"noqui",new String[]{"skip"});assertEquals(1,game.snapshot().skipVotes());assertTrue(game.snapshot().playing());
+        plugin.onCommand(player,null,"noqui",new String[]{"skip","force"});assertTrue(game.snapshot().playing());verify(player).sendMessage(any(net.kyori.adventure.text.Component.class));
+        plugin.onCommand(player,null,"noqui",new String[]{"skip"});assertTrue(game.snapshot().playing());assertEquals(1,game.snapshot().skipVotes());
+        assertEquals(1,game.snapshot().scores().get(winner));assertEquals(0,game.credits(author));
+    }
+    @Test void nonwinnerCommandRequiresMajorityAndOnlyAnOpCanForceSkip()throws Exception {
+        UUID author=UUID.randomUUID(),voter=UUID.randomUUID(),other=UUID.randomUUID();long[] clock={100000};var game=playing(List.of(author,voter,other,UUID.randomUUID()),clock);
+        var plugin=mock(NoquiPlugin.class,CALLS_REAL_METHODS);set(plugin,"game",game);var player=mock(Player.class);when(player.getUniqueId()).thenReturn(voter);
+        plugin.onCommand(player,null,"noqui",new String[]{"skip"});plugin.onCommand(player,null,"noqui",new String[]{"skip"});assertEquals(1,game.snapshot().skipVotes());assertTrue(game.snapshot().playing());
+        when(player.getUniqueId()).thenReturn(other);plugin.onCommand(player,null,"noqui",new String[]{"skip"});assertEquals(2,game.snapshot().skipVotes());assertTrue(game.snapshot().playing());
+        plugin.onCommand(player,null,"noqui",new String[]{"skip","force"});assertTrue(game.snapshot().playing());when(player.isOp()).thenReturn(true);
+        plugin.onCommand(player,null,"noqui",new String[]{"skip","force"});assertFalse(game.snapshot().playing());
+    }
     @Test void originalSevenModeCommandsPersistAndLegacyBooleansMigrateWithoutLosingSettings()throws Exception {
         var config=new org.bukkit.configuration.file.YamlConfiguration();config.set("match-skip",true);config.set("title-bonus",false);config.set("auto-hint",true);config.set("banned-answers",List.of("금 지"));
         var defaults=new org.bukkit.configuration.file.YamlConfiguration();defaults.set("modes",List.of("제목점수보너스"));config.setDefaults(defaults);

@@ -36,7 +36,8 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
     NoquiDialogs dialogs;
     private String publicOrigin;
     private YamlConfiguration catalog;
-    private volatile QuizGame.Snapshot answerState;
+    record AnswerState(QuizGame.Snapshot round,Map<UUID,BridgeClient.Member> members) {}
+    private volatile AnswerState answerState;
     private int lastCountdown,ticks;
     private boolean shuttingDown;
     private boolean ticketsActive;
@@ -134,7 +135,7 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
                 reveal?state.winners().stream().map(this::name).toList():List.of(),state.skipVotes(),state.skipRequired()),state.scores().getOrDefault(p.getUniqueId(),0),game.credits(p.getUniqueId()));
     }
     private void changedState(QuizGame.Snapshot state) {
-        answerState=state;
+        answerState=new AnswerState(state,Map.copyOf(members));
         if(tickets!=null&&ticketsActive!=(state.phase()!=QuizGame.Phase.STOPPED)){
             ticketsActive=state.phase()!=QuizGame.Phase.STOPPED;
             for(Player p:Bukkit.getOnlinePlayers())if(ticketsActive||!ownsCabin(p.getUniqueId()))tickets.refresh(p);tickets.refreshGround();
@@ -254,7 +255,13 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
     void dismissBrowser(Player p){if(connections!=null)connections.dismiss(p.getUniqueId());}
     void otherInteraction(Player p){if(dialogs!=null)dialogs.otherInteraction(p);else dismissBrowser(p);}
     boolean captureAnswer(UUID id,String input) {
-        var s=answerState;if(s==null||s.phase()!=QuizGame.Phase.PLAYING||input==null||input.isBlank()||!s.participants().contains(id))return false;
+        var captured=answerState;if(captured==null||input==null||input.isBlank())return false;
+        var s=captured.round();if(!s.participants().contains(id))return false;
+        if(input.trim().equals("스킵")&&s.canWinnerSkip(id)){
+            var member=captured.members().get(id);if(member==null)return false;
+            main(()->{if(game.snapshot().session().equals(s.session())&&member.equals(members.get(id)))game.skipAsWinner(id,s.roundId());});return true;
+        }
+        if(s.phase()!=QuizGame.Phase.PLAYING)return false;
         if(s.modes().has(QuizModes.Mode.NONCOMPETITIVE)&&s.winners().contains(id)){
             main(()->{var current=game.snapshot();if(current.session().equals(s.session())&&Objects.equals(current.roundId(),s.roundId())&&current.phase()==QuizGame.Phase.PLAYING)
                 for(UUID recipient:current.winners()){Player p=Bukkit.getPlayer(recipient);if(p!=null)p.sendMessage(text("<"+name(id)+"> "+input).color(net.kyori.adventure.text.format.NamedTextColor.GRAY));}});return true;

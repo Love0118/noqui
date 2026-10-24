@@ -116,6 +116,12 @@ class NoquiDialogsTest {
         game.limit(1);game.grant(id,1);game.grant(other,1);submit(other);assertEquals(List.of("넘기기 투표","닫기"),labels(show()));
         game.voteSkip(id,game.snapshot().roundId());assertEquals(List.of("닫기"),labels(show()));
     }
+    @Test void winnersKeepTheExistingVoteButtonAndCannotVoteTwice() {
+        game.grant(other,1);submit(other);jobs.getFirst().complete(new MediaBridge.Media("ready",60000));
+        game.browsersReady(game.snapshot().revision(),true,true);game.controlAccepted(game.snapshot().revision());now=game.snapshot().startsAt();game.tick();assertTrue(game.answer(id,"Private"));
+        var type=show();assertEquals(List.of("넘기기 투표","닫기"),labels(type));callbacks.get(((MultiActionType)type).actions().getFirst().action()).accept(null,player);
+        assertTrue(game.snapshot().playing());assertEquals(1,game.snapshot().skipVotes());assertEquals(List.of("닫기"),labels(show()));
+    }
     @Test void canceledRoundDoesNotShowCancellationForAnAlreadyRefundedReservation() {
         game.limit(1);game.grant(id,1);submit(id);game.forceSkip(game.snapshot().roundId());assertEquals(List.of("닫기"),labels(show()));assertFalse(game.pending(id));assertEquals(1,game.credits(id));
     }
