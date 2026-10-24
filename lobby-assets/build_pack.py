@@ -155,6 +155,9 @@ def png(path, pixels=False):
 
 def validate_native(rows):
     native=read_json(NATIVE)
+    core=PACK/'assets/minecraft/shaders/core'
+    assert {p.name for p in core.iterdir() if p.is_file()}=={'entity.vsh','entity.fsh'}, 'Only wearable entity shaders belong in this pack; terrain/block/item overrides are forbidden'
+    assert not any((PACK/'assets/minecraft/shaders/include'/name).exists() for name in ('light.glsl','fog.glsl')), 'Do not override Sodium-shared vanilla shader includes'
     assert native['schemaVersion']==1
     assert native['upstream']['sourceSha256']==digest((ROOT/'vendor/objcubed/objcubed.js').read_bytes())=='a52545b6c2e3a389859b5db32a3f83710164d8aaade12ea7f6ce8aed5856f58c'
     for relative,hash_value in native['files'].items():

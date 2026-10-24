@@ -219,14 +219,8 @@
     }
   ],
   "files": {
-    "assets/minecraft/shaders/core/block.fsh": "94a09c224fbf6e303ac630f464b0d407605ee9c5d7d649ebdd7db5c2bae6480c",
-    "assets/minecraft/shaders/core/block.vsh": "76bdf1be6128b8017343dd655052a1b50ace13e0bb44860efb756b20d2c0e0e3",
     "assets/minecraft/shaders/core/entity.fsh": "450008c22225c9f364e64cdfbf4a660cb134f1d0cb0d0f9febdb3eea8f7d2a92",
     "assets/minecraft/shaders/core/entity.vsh": "7d201bb6e41c2ae41acacb9c2baf6b5170e570991d33c76c3e640e8cbe05004a",
-    "assets/minecraft/shaders/core/item.fsh": "7b331694801f0dad7bea92a8ecfe0e26cfc0596e1117a6d2c7b2921ca7a3ebc7",
-    "assets/minecraft/shaders/core/item.vsh": "f9e1bf9054326e0f64e2e4314e306239dbf30e39cacc3190ec4afd0e44a481ca",
-    "assets/minecraft/shaders/core/terrain.fsh": "ce5adf5778f5e2e4f482eed11aabfdfb3b6b978cad8baa0e417e07197772c4dd",
-    "assets/minecraft/shaders/core/terrain.vsh": "3ebddedf953c915c079ec74843d26eb8a1614985c20398ba5a910c9a5aa011b6",
     "assets/minecraft/shaders/include/objmc_animal.glsl": "06b05c33afbf60c524e80801075c8c37adde8512e2071e4bf24725e1587c9698",
     "assets/minecraft/shaders/include/objmc_animal_v2.glsl": "4d821b65cf5bdf6bc59062f5af53fbe53191dab471bf11dfea5c2ba49660c300",
     "assets/minecraft/shaders/include/objmc_carrier.glsl": "d577d2c32c98443fe5bbe58701ec409b28dc91a2a69f04d599462fd1b6f90ddf",

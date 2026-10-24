@@ -123,6 +123,14 @@ class PackTest(unittest.TestCase):
         path=build.PACK/'assets/minecraft/shaders/core/entity.vsh';path.write_bytes(path.read_bytes()+b'\nchanged')
         with self.assertRaises(AssertionError):build.validate()
 
+    def test_unneeded_sodium_terrain_overrides_are_rejected(self):
+        (build.PACK/'assets/minecraft/shaders/core/terrain.vsh').write_text('#version 330\n')
+        with self.assertRaises(AssertionError):build.validate()
+
+    def test_vanilla_shader_include_overrides_are_rejected(self):
+        (build.PACK/'assets/minecraft/shaders/include/light.glsl').write_text('// incompatible override\n')
+        with self.assertRaises(AssertionError):build.validate()
+
     def test_catalog_drives_models_textures_and_provenance_without_fixed_count(self):
         before=build.validate();self.add_cosmetic_fixture();after=build.validate()
         self.assertEqual(after['cosmetics'],before['cosmetics']+1)

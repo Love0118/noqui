@@ -18,6 +18,16 @@ def read(p):return json.loads(p.read_text(encoding='utf-8'))
 def write(p,value):
  p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+
+def install_entity_shaders():
+ # Wearable back meshes use the entity pipeline only. Do not replace terrain,
+ # block or item pipelines (Sodium replaces terrain rendering independently).
+ source=ROOT/'vendor/objcubed/shaders';target=PACK/'assets/minecraft/shaders'
+ (target/'core').mkdir(parents=True,exist_ok=True)
+ for name in ('terrain.vsh','terrain.fsh','block.vsh','block.fsh','item.vsh','item.fsh'):
+  (target/'core'/name).unlink(missing_ok=True)
+ for name in ('entity.vsh','entity.fsh'):shutil.copyfile(source/'core'/name,target/'core'/name)
+ shutil.copytree(source/'include',target/'include',dirs_exist_ok=True)
 def heads(rows):
  selectors=[]
  for index,slot in enumerate(('head','face')):
@@ -85,8 +95,7 @@ def main():
  rows=read(ROOT/'lobby-cosmetics.json')['cosmetics'];OUT.mkdir(parents=True,exist_ok=True);heads(rows);gadgets()
  entries=body_inputs(rows);write(OUT/'request.json',{'pack':str(PACK),'entries':entries})
  subprocess.run(['node',str(ROOT/'export_native_backs.mjs'),str(OUT/'request.json')],check=True)
- shader_root=ROOT/'vendor/objcubed/shaders'
- shutil.copytree(shader_root,PACK/'assets/minecraft/shaders',dirs_exist_ok=True)
+ install_entity_shaders()
  shutil.copyfile(ROOT/'vendor/objcubed/LICENSE',PACK/'licenses/objcubed.txt')
  notice=PACK/'ASSET_NOTICES.txt';text=notice.read_text(encoding='utf-8')
  if 'JagerMeistars/obj-cubed' not in text:notice.write_text(text+'\nNative equipment renderer: https://github.com/JagerMeistars/obj-cubed\nMIT Copyright (c) 2022 Godlander. Pinned 266880bb7030dae4ab51178df9ee9f8ff91b395f.\nSee licenses/objcubed.txt. Native-body PNG layers generated from the unchanged cosmetic meshes.\n',encoding='utf-8',newline='\n')
