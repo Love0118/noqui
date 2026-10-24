@@ -136,11 +136,11 @@
     },
     {
       "path": "assets/noqui/models/gravity_suit.json",
-      "sha256": "acd9aef76fa80c92ee4883c09934815cae6e64da1dab71eb40d2ef910e52f004"
+      "sha256": "379634a0e2e455c73eb637de0f491ad09211a55929c827777d428412a965addc"
     },
     {
       "path": "assets/noqui/models/hammer.json",
-      "sha256": "69a08f18aa23c576acf0ead12b4535d070c3ea33fe0e45dce33105d6b86c80c3"
+      "sha256": "224b04c3e04683d1b912040cab586746cb1193c1a5e357f52db16a3ca4422c7b"
     },
     {
       "path": "assets/noqui/models/pirate_hat.json",
@@ -152,7 +152,7 @@
     },
     {
       "path": "assets/noqui/models/snow_bomb.json",
-      "sha256": "fed3b19eb29e857df39f46f1e99d896d1cd3469ac6a39bee5e1f1d092a745bd1"
+      "sha256": "53c2d7d13a6dcad96ad28024b8bd82d82c2d426c982de4ea0937b7774045b5cf"
     },
     {
       "path": "assets/noqui/models/triple_boots.json",
@@ -169,6 +169,26 @@
     {
       "path": "assets/noqui/textures/item/palette.png",
       "sha256": "5971fddff89c1e1f394810ea8345253e5cfab984703396ac0a592180eae3f1d6"
+    }
+  ],
+  "approvedReplacements": [
+    {
+      "path": "assets/noqui/models/hammer.json",
+      "baselineSha256": "69a08f18aa23c576acf0ead12b4535d070c3ea33fe0e45dce33105d6b86c80c3",
+      "replacementSha256": "224b04c3e04683d1b912040cab586746cb1193c1a5e357f52db16a3ca4422c7b",
+      "authorization": "User-requested gadget redesign 2026-10-25; authored/gadget_redesign/provenance.json"
+    },
+    {
+      "path": "assets/noqui/models/gravity_suit.json",
+      "baselineSha256": "acd9aef76fa80c92ee4883c09934815cae6e64da1dab71eb40d2ef910e52f004",
+      "replacementSha256": "379634a0e2e455c73eb637de0f491ad09211a55929c827777d428412a965addc",
+      "authorization": "User-requested gadget redesign 2026-10-25; authored/gadget_redesign/provenance.json"
+    },
+    {
+      "path": "assets/noqui/models/snow_bomb.json",
+      "baselineSha256": "fed3b19eb29e857df39f46f1e99d896d1cd3469ac6a39bee5e1f1d092a745bd1",
+      "replacementSha256": "53c2d7d13a6dcad96ad28024b8bd82d82c2d426c982de4ea0937b7774045b5cf",
+      "authorization": "User-requested gadget redesign 2026-10-25; authored/gadget_redesign/provenance.json"
     }
   ]
 }

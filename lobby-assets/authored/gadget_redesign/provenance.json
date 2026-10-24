@@ -1,0 +1,37 @@
+{
+  "origin": "Original Noqui cuboid and pixel designs authored for the explicit user request; no third-party model or texture inputs.",
+  "authoring": "Procedural Pillow pixel textures and cuboid inputs, imported/edited/inspected/exported via the configured Blockbench MCP.",
+  "models": {
+    "hammer": {
+      "packPath": "assets/noqui/models/hammer.json",
+      "baselineSha256": "69a08f18aa23c576acf0ead12b4535d070c3ea33fe0e45dce33105d6b86c80c3",
+      "replacementSha256": "224b04c3e04683d1b912040cab586746cb1193c1a5e357f52db16a3ca4422c7b",
+      "dedicatedTextures": {
+        "assets/noqui/textures/item/hammer_aurora.png": "4a794a8c73240a7cb9755382069ae97ad7ca49076277073a5b8b8caf51ec789a"
+      }
+    },
+    "gravity_suit": {
+      "packPath": "assets/noqui/models/gravity_suit.json",
+      "baselineSha256": "acd9aef76fa80c92ee4883c09934815cae6e64da1dab71eb40d2ef910e52f004",
+      "replacementSha256": "379634a0e2e455c73eb637de0f491ad09211a55929c827777d428412a965addc",
+      "dedicatedTextures": {
+        "assets/noqui/textures/item/gravity_harness.png": "0d25306a7d17412159b73c0eeafc0672acb31fb433267e562e2e3db87174fc2f"
+      }
+    },
+    "snow_bomb": {
+      "packPath": "assets/noqui/models/snow_bomb.json",
+      "baselineSha256": "fed3b19eb29e857df39f46f1e99d896d1cd3469ac6a39bee5e1f1d092a745bd1",
+      "replacementSha256": "53c2d7d13a6dcad96ad28024b8bd82d82c2d426c982de4ea0937b7774045b5cf",
+      "dedicatedTextures": {
+        "assets/noqui/textures/item/snow_bomb_frost.png": "aada3852850ca5e21fc7cbfa7cd1b21b3d942863b5e2c262dad540ad9d5ecec9"
+      }
+    }
+  },
+  "nativeTexture": {
+    "packPath": "assets/noqui/textures/entity/equipment/humanoid/gravity_suit.png",
+    "baselineSha256": "765436c5357a953cf4c574bf3d91f4119ed987019ee05020274fa70def6969e6",
+    "replacementSha256": "58bcad527fab2874b21172559bbb27de74b7e7b7d21cf381feb3d06c66ba2024"
+  },
+  "integration": "Parent reconciles preserved-assets.json model records and the native-equipment.json texture record, then runs the full pack build/check and Git delivery.",
+  "inGameVerification": false
+}

@@ -187,7 +187,7 @@ final class LobbyShop implements AutoCloseable {
         }
         String control=switch(product.id()) {
             case "hammer"->"좌클릭";
-            case "snow_bomb"->"Shift + 우클릭";
+            case "snow_bomb"->"우클릭: 던지기";
             case "triple_boots","quad_boots"->"신발 착용 후 공중에서 Space";
             case "gravity_suit"->"우클릭: 몸통 착용";
             default->"";
@@ -240,7 +240,9 @@ final class LobbyShop implements AutoCloseable {
         holder.used=true;
         if(!queued.offer(()->{
             if(!closed && sessions.get(player.getUniqueId())==holder && eligible.test(player)
-                    && player.getOpenInventory().getTopInventory()==top)action.run();
+                    && player.getOpenInventory().getTopInventory()==top){
+                player.playSound(player.getLocation(),"minecraft:ui.button.click",org.bukkit.SoundCategory.MASTER,.4f,1.1f);action.run();
+            }
         }))holder.used=false;
     }
 

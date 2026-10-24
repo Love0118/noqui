@@ -49,7 +49,7 @@ public final class NoquiPaperSmoke extends JavaPlugin {
                 getLogger().info("NOQUI_SMOKE_OK world shop wallet native-dialog physical-ticket-claim gadget-equipment cabin-layout-serialization services limits empty-start runtime-reload stop persisted-active="+expectedActive);
             } catch(Throwable error){getLogger().log(java.util.logging.Level.SEVERE,"NOQUI_SMOKE_FAIL",error);}
             finally{Bukkit.shutdown();}
-        },160);
+        },400);
     }
     private static Object field(Object object,String name)throws Exception {
         var field=object.getClass().getDeclaredField(name);field.setAccessible(true);return field.get(object);
@@ -71,7 +71,7 @@ public final class NoquiPaperSmoke extends JavaPlugin {
         require(Math.abs(first.getItemMeta().getTool().getRules().getFirst().getSpeed()-3f)<.001,"initial 50% iron speed");
         var fields=saved.getClass().getRecordComponents();Object[] values=new Object[fields.length];Class<?>[] types=new Class<?>[fields.length];
         for(int i=0;i<fields.length;i++){types[i]=fields[i].getType();var accessor=fields[i].getAccessor();accessor.setAccessible(true);values[i]=accessor.invoke(saved);}
-        values[1]=6;values[2]=3;var constructor=saved.getClass().getDeclaredConstructor(types);constructor.setAccessible(true);
+        values[1]=200;values[2]=3;var constructor=saved.getClass().getDeclaredConstructor(types);constructor.setAccessible(true);
         var max=(org.bukkit.inventory.ItemStack)factory.invoke(items,owner,constructor.newInstance(values));
         require(Math.abs(max.getItemMeta().getTool().getRules().getFirst().getSpeed()-12f)<.001,"maximum 200% iron speed");
         require(max.getEnchantmentLevel(org.bukkit.enchantments.Enchantment.FORTUNE)==3,"native fortune III");

@@ -6,6 +6,7 @@ import java.util.function.*;
 
 /** Main-thread private links and prompts driven only by fresh backend connection observations. */
 final class BrowserConnections {
+    private static final long PROMPT_DELAY_MILLIS=2000;
     record Entry(UUID session,UUID membership) {}
     interface View {
         void pending(UUID player,Entry entry);
@@ -19,7 +20,7 @@ final class BrowserConnections {
         final Entry entry;
         boolean connected,known;
         long observedAt,nextPromptAt,shownUntil;
-        Status(Entry entry,long now){this.entry=entry;nextPromptAt=now+2000;}
+        Status(Entry entry,long now){this.entry=entry;nextPromptAt=now+PROMPT_DELAY_MILLIS;}
     }
     private final Function<UUID,Entry> current;
     private final BiFunction<UUID,Entry,CompletionStage<String>> issue;
@@ -36,7 +37,7 @@ final class BrowserConnections {
         if(!entry.equals(current.apply(player)))return;
         long now=clock.getAsLong();var state=statuses.get(player);
         if(state==null||!state.entry.equals(entry)){forget(player);state=new Status(entry,now);statuses.put(player,state);}
-        if(state.connected&&!connected)state.nextPromptAt=now+2000;
+        if(state.connected&&!connected)state.nextPromptAt=now+PROMPT_DELAY_MILLIS;
         state.connected=connected;state.known=true;state.observedAt=now;
         if(connected){pending.remove(player);state.shownUntil=0;view.close(player,entry);}
     }
@@ -66,16 +67,19 @@ final class BrowserConnections {
         if(!request.entry().equals(current.apply(player)))return;
         var state=statuses.get(player);long now=clock.getAsLong();
         if(state!=null&&state.connected)return;
-        if(request.automatic()&&(state==null||!state.known||now-state.observedAt>15000||!view.available(player)))return;
+        if(request.automatic()&&(state==null||!state.known||now-state.observedAt>15000||!view.available(player))){
+            if(state!=null)state.nextPromptAt=now+PROMPT_DELAY_MILLIS;
+            return;
+        }
         if(error==null&&url!=null){
             if(state!=null)state.shownUntil=now+55000;
             view.ready(player,request.entry(),url);
         }else if(!request.automatic())view.failed(player,request.entry());
     }
-    /** Other UI/interaction dismisses only this prompt and starts a cooldown. */
+    /** Closing this prompt or using another UI defers the next fresh disconnected prompt briefly. */
     void dismiss(UUID player) {
         pending.remove(player);var state=statuses.get(player);
-        if(state!=null){state.shownUntil=0;state.nextPromptAt=clock.getAsLong()+60000;view.close(player,state.entry);}
+        if(state!=null){state.shownUntil=0;state.nextPromptAt=clock.getAsLong()+PROMPT_DELAY_MILLIS;view.close(player,state.entry);}
     }
     void forget(UUID player){var request=pending.remove(player);var state=statuses.remove(player);if(state!=null)view.close(player,state.entry);else if(request!=null)view.close(player,request.entry());}
 }

@@ -1,0 +1,118 @@
+{
+  "scope": "three owned gadget models and dedicated textures only",
+  "blockbench": {
+    "version": "5.1.6",
+    "mcpPluginVersion": "1.10.1",
+    "transport": "configured localhost streamable HTTP"
+  },
+  "validation": {
+    "hammer": {
+      "modelSha256": "224b04c3e04683d1b912040cab586746cb1193c1a5e357f52db16a3ca4422c7b",
+      "cubes": 35,
+      "fixedExtentsModelUnits": [
+        8.7,
+        13.630004,
+        4.64
+      ],
+      "textures": {
+        "assets/noqui/textures/item/hammer_aurora.png": "4a794a8c73240a7cb9755382069ae97ad7ca49076277073a5b8b8caf51ec789a"
+      },
+      "gripDistanceFromFistModelUnits": 0.00352,
+      "thirdpersonShaftInHandFrame": [
+        -0.0,
+        0.906308,
+        0.422618
+      ]
+    },
+    "gravity_suit": {
+      "modelSha256": "379634a0e2e455c73eb637de0f491ad09211a55929c827777d428412a965addc",
+      "cubes": 35,
+      "fixedExtentsModelUnits": [
+        11.3,
+        11.2,
+        7.25
+      ],
+      "textures": {
+        "assets/noqui/textures/item/gravity_harness.png": "0d25306a7d17412159b73c0eeafc0672acb31fb433267e562e2e3db87174fc2f"
+      }
+    },
+    "snow_bomb": {
+      "modelSha256": "53c2d7d13a6dcad96ad28024b8bd82d82c2d426c982de4ea0937b7774045b5cf",
+      "cubes": 20,
+      "fixedExtentsModelUnits": [
+        3.835,
+        4.29,
+        4.056
+      ],
+      "textures": {
+        "assets/noqui/textures/item/snow_bomb_frost.png": "aada3852850ca5e21fc7cbfa7cd1b21b3d942863b5e2c262dad540ad9d5ecec9"
+      },
+      "fixedExtentsBlocks": [
+        0.23969,
+        0.26813,
+        0.2535
+      ],
+      "groundExtentsBlocks": [
+        0.23969,
+        0.26813,
+        0.2535
+      ]
+    },
+    "nativeGravity": {
+      "sha256": "58bcad527fab2874b21172559bbb27de74b7e7b7d21cf381feb3d06c66ba2024",
+      "size": [
+        64,
+        32
+      ],
+      "referencingEquipmentAssets": [
+        "assets/noqui/equipment/gravity_suit.json",
+        "assets/noqui/equipment/wearable_back_gravity/backpack.json",
+        "assets/noqui/equipment/wearable_back_gravity/back_acoustic_guitar.json",
+        "assets/noqui/equipment/wearable_back_gravity/back_arcane_staff.json",
+        "assets/noqui/equipment/wearable_back_gravity/back_artist_easel.json",
+        "assets/noqui/equipment/wearable_back_gravity/back_bagpipe.json",
+        "assets/noqui/equipment/wearable_back_gravity/back_cleric_cross.json",
+        "assets/noqui/equipment/wearable_back_gravity/back_didgeridoo.json",
+        "assets/noqui/equipment/wearable_back_gravity/back_double_axe.json",
+        "assets/noqui/equipment/wearable_back_gravity/back_halloween_gravestone.json",
+        "assets/noqui/equipment/wearable_back_gravity/back_handpan.json",
+        "assets/noqui/equipment/wearable_back_gravity/back_hunters_bow.json",
+        "assets/noqui/equipment/wearable_back_gravity/back_katana_scabbard.json",
+        "assets/noqui/equipment/wearable_back_gravity/back_kite_shield.json",
+        "assets/noqui/equipment/wearable_back_gravity/back_lute.json",
+        "assets/noqui/equipment/wearable_back_gravity/back_portable_keyboard.json",
+        "assets/noqui/equipment/wearable_back_gravity/back_round_shield.json",
+        "assets/noqui/equipment/wearable_back_gravity/back_smith_hammer.json",
+        "assets/noqui/equipment/wearable_back_gravity/back_tiny_drum.json",
+        "assets/noqui/equipment/wearable_back_gravity/back_trail_rucksack.json",
+        "assets/noqui/equipment/wearable_back_gravity/back_trumpet.json",
+        "assets/noqui/equipment/wearable_back_gravity/back_vielle.json"
+      ],
+      "preview": "vanilla humanoid chestplate UVs, 1px outer armor inflation, slight idle arm pose; software render"
+    }
+  },
+  "previewNotes": "Raw item/display images were rendered on demand by Blockbench MCP. Native chest images use the committed 64x32 texture on vanilla inflated armor geometry with a slight idle arm pose. No in-game verification claimed.",
+  "previewFiles": {
+    "gravity_native_back.png": "4e25ba631c6a0682c56e39444da0ca33cb57a44d8eacb7ec2076a1c37094f4ec",
+    "gravity_native_blockbench_back.png": "41d4ffd430ae662d41a062137f96d137fd2972cf934b7bc12403855113c25595",
+    "gravity_native_blockbench_front.png": "deff0d867cf0cfde16a41eba232a3bb2bb643a45d28bfa158fd6594adb71139d",
+    "gravity_native_front.png": "96c74cd346cb1252ea5b5cff454e12c7c1ac9554bef2fb1c40780fab1697e0fe",
+    "gravity_suit_fixed.png": "ef907d39340357cc2b10b20ce24ef774470bb89064bd130f88324e882a8df943",
+    "gravity_suit_ground.png": "44f882bd67e72880ea3d9f2fd0c528dfbcbf7685797298e7ed8c824bf868d61c",
+    "gravity_suit_gui.png": "7945000570e022ae611dc26a973c207553592c245579db702611f614cc0843c3",
+    "gravity_suit_software.png": "bf77b4e34d4c3ee3625f75fcd9ffb69e28d07c321a91c91792031c304ab13cf1",
+    "hammer_firstperson_lefthand.png": "baff6ceec35a24467b015fef6f0abc87c09fc33d9324f8812527967d1d7b229e",
+    "hammer_firstperson_righthand.png": "c6f27e329d546a91b48085b391c49d1b4a84aabe2996935e381ff159e3d6e038",
+    "hammer_gui.png": "5374604be4aabae7ee9817ed49ae1402fe0e562f2bda3a03196be23507a271e6",
+    "hammer_software.png": "77aaf1497c63cd00ee22c686acced5f06072f1c5f3ee1ce019e7f02881d262f7",
+    "hammer_thirdperson_lefthand.png": "e1080a436719ff046b5720bd259f5f335101713edafabf2e55a7e0726ca64b83",
+    "hammer_thirdperson_righthand.png": "878a2adca4c24e878eddb3c469ecf73e130b1c472df48b00b050df3da4b53967",
+    "review_sheet.png": "129addc4edde8ce44556766b903916146453071c8a0712aa37de8ad3cffdaa09",
+    "snow_bomb_firstperson_lefthand.png": "cd7c0c37f0f51f26d662001d6aeffd26d9ab7884038f2a043379464adc357769",
+    "snow_bomb_firstperson_righthand.png": "bca571f2c560ec76b6cebb49963c587c5714751c908f265d2a1918016f0b6617",
+    "snow_bomb_fixed.png": "95c29a725fc943f43bb919da5c6587651d19fc2f09686eff3609ea9078dcab02",
+    "snow_bomb_ground.png": "1cdb141f737073a5976b0c7852a8e95087206bc8ab63c6cd6e6ebc9aa435880a",
+    "snow_bomb_gui.png": "f7e035a120f2520f810d7e108b38e215c486526d147d1be4e62c4ceeb8ed72a0",
+    "snow_bomb_software.png": "5f858b8d689e1b434fe28d9779f05e1fac69b7fc439c9a3613e8b5cd3f99e8cc"
+  }
+}

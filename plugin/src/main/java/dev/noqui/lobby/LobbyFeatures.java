@@ -48,7 +48,7 @@ public final class LobbyFeatures implements LobbyService, AutoCloseable, Listene
     private final DoubleSupplier random;
     private PackDelivery pack;
     private boolean started,closed;
-    private long nextOutbox,nextShopCheck;
+    private long nextOutbox,nextShopCheck,nextSnowTrail;
 
     public LobbyFeatures(JavaPlugin plugin,World cabin,CreditPort credits) {
         this(plugin,cabin,credits,System::currentTimeMillis,Math::random);
@@ -122,6 +122,11 @@ public final class LobbyFeatures implements LobbyService, AutoCloseable, Listene
         }
         expire(stuns,now);expire(frost,now);
         for(var entry:List.copyOf(projectiles.entrySet()))if(entry.getValue().until<=now||!entry.getValue().ball.isValid()||entry.getValue().ball.getWorld()!=cabin){entry.getValue().ball.remove();projectiles.remove(entry.getKey());}
+        if(now>=nextSnowTrail){
+            nextSnowTrail=now+200;
+            for(var shot:projectiles.values())cabin.spawnParticle(Particle.SNOWFLAKE,shot.ball.getLocation(),3,.1,.1,.1,.01);
+            for(var frozen:frost.values())cabin.spawnParticle(Particle.SNOWFLAKE,frozen.player.getLocation().add(0,1,0),4,.3,.6,.3,.01);
+        }
         cooldowns.entrySet().removeIf(e->e.getValue()<=now);shopCooldowns.entrySet().removeIf(e->e.getValue()<=now);
         if(now>=nextOutbox){nextOutbox=now+5000;deliverCredits();}
         if(now>=nextShopCheck){nextShopCheck=now+5000;shop.ensure();}
@@ -187,17 +192,28 @@ public final class LobbyFeatures implements LobbyService, AutoCloseable, Listene
     }
     @EventHandler(priority=EventPriority.HIGHEST,ignoreCancelled=false) public void snow(PlayerInteractEvent event) {
         if(!started||closed)return;
-        Player p=event.getPlayer();if(event.getHand()!=EquipmentSlot.HAND||!event.getAction().isRightClick()||!p.isSneaking()||!LobbyMovement.eligible(p,cabin))return;
+        Player p=event.getPlayer();if(event.getHand()!=EquipmentSlot.HAND||!event.getAction().isRightClick()||!LobbyMovement.eligible(p,cabin))return;
         if(!"snow_bomb".equals(gadgets.hand(p)))return;
         event.setCancelled(true);if(projectiles.size()>=64||projectiles.values().stream().filter(v->v.owner.equals(p.getUniqueId())).count()>=2||!cooldown(p,1500))return;
+        ItemStack bomb=p.getInventory().getItemInMainHand();
         try{gadgets.consumeHand(p,"snow_bomb");}catch(IOException|IllegalArgumentException error){return;}
         Snowball ball=p.launchProjectile(Snowball.class);ball.addScoreboardTag("noqui_lobby_snow_v1");ball.setPersistent(false);
+        // The retired serial cannot be reused; the projectile copies the exact authored item model.
+        ball.setItem(bomb);ball.setVelocity(p.getEyeLocation().getDirection().multiply(1.25));
+        cabin.playSound(p.getLocation(),"minecraft:entity.snowball.throw",SoundCategory.PLAYERS,.7f,1.1f);
         projectiles.put(ball.getUniqueId(),new Projectile(p.getUniqueId(),ball,clock.getAsLong()+5000));
     }
     @EventHandler(priority=EventPriority.HIGHEST,ignoreCancelled=false) public void snowHit(ProjectileHitEvent event) {
         Projectile shot=projectiles.remove(event.getEntity().getUniqueId());if(shot==null)return;
-        event.setCancelled(true);shot.ball.remove();Player owner=players.get(shot.owner);
-        if(owner!=null&&LobbyMovement.eligible(owner,cabin)&&event.getHitEntity() instanceof Player target&&LobbyMovement.eligible(target,cabin)&&!target.isBlocking())effect(target,FROST_KEY,1800,frost,-.4);
+        event.setCancelled(true);Location at=shot.ball.getLocation();shot.ball.remove();Player owner=players.get(shot.owner);
+        if(owner==null||!LobbyMovement.eligible(owner,cabin)||at==null||at.getWorld()!=cabin)return;
+        cabin.spawnParticle(Particle.EXPLOSION,at,1,0,0,0,0);
+        cabin.spawnParticle(Particle.SNOWFLAKE,at,90,1.8,1.1,1.8,.09);
+        cabin.spawnParticle(Particle.CLOUD,at,22,.8,.4,.8,.04);
+        cabin.playSound(at,"minecraft:block.snow.break",SoundCategory.PLAYERS,1.2f,.8f);
+        cabin.playSound(at,"minecraft:entity.generic.explode",SoundCategory.PLAYERS,.35f,1.7f);
+        for(Player target:players.values())if(target!=owner&&LobbyMovement.eligible(target,cabin)&&!target.isBlocking()
+                &&target.getLocation().distanceSquared(at)<=25)effect(target,FROST_KEY,3500,frost,-.55);
     }
     @EventHandler(priority=EventPriority.HIGHEST) public void snowDamage(EntityDamageByEntityEvent event){if(projectiles.containsKey(event.getDamager().getUniqueId())||event.getDamager().getScoreboardTags().contains("noqui_lobby_snow_v1"))event.setCancelled(true);}
     @EventHandler(priority=EventPriority.HIGHEST,ignoreCancelled=false) public void stunMove(PlayerMoveEvent event) {

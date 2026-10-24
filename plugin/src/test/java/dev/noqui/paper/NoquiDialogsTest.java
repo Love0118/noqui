@@ -143,6 +143,21 @@ class NoquiDialogsTest {
         var personal=mock(org.bukkit.inventory.CraftingInventory.class);when(personal.getMatrix()).thenReturn(new org.bukkit.inventory.ItemStack[4]);when(player.getOpenInventory().getTopInventory()).thenReturn(personal);assertTrue(view.canPrompt(player));
         view.connection(player,entry,"https://noqui.danta.qzz.io/join#t=test");assertEquals(forms+1,dialogs.size());view.closeConnection(player,entry);verify(player).closeDialog();
     }
+    @Test void escapeExitActionReleasesConnectionOwnershipAndSchedulesOnlyItsOwnRetry() {
+        var entry=plugin.connectionEntry(id);view.connection(player,entry,"https://noqui.danta.qzz.io/join#t=test");
+        var exit=((MultiActionType)dialogs.getLast().type()).exitAction();assertEquals("닫기",plain(exit.label()));assertNotNull(callbacks.get(exit.action()));
+        clearInvocations(plugin,player);callbacks.get(exit.action()).accept(null,player);
+        verify(plugin).dismissBrowser(player);assertTrue(view.canPrompt(player));view.closeConnection(player,entry);verify(player,never()).closeDialog();
+    }
+    @Test void oldConnectionExitCannotDismissANewerSubmissionOrAShutdownSession() {
+        var entry=plugin.connectionEntry(id);view.connection(player,entry,"https://noqui.danta.qzz.io/join#t=test");
+        var exit=((MultiActionType)dialogs.getLast().type()).exitAction();
+        game.grant(id,1);when(plugin.hasTicket(player)).thenReturn(true);view.submit(player);clearInvocations(plugin,player);
+        callbacks.get(exit.action()).accept(null,player);verify(plugin,never()).dismissBrowser(player);assertFalse(view.canPrompt(player));
+        var form=(ConfirmationType)dialogs.getLast().type();callbacks.get(form.noButton().action()).accept(null,player);assertTrue(view.canPrompt(player));
+        view.connection(player,entry,"https://noqui.danta.qzz.io/join#t=test");var stoppedExit=((MultiActionType)dialogs.getLast().type()).exitAction();game.stop();when(plugin.connectionEntry(id)).thenReturn(null);clearInvocations(plugin);
+        callbacks.get(stoppedExit.action()).accept(null,player);verify(plugin,never()).dismissBrowser(player);
+    }
     @Test void zeroTicketProxyContainsExactlyLobbyAndSubmissionWithoutBrowserControls() {
         view.proxy(player);assertEquals(List.of("로비","출제","닫기"),labels(dialogs.getLast().type()));
         var actions=((MultiActionType)dialogs.getLast().type()).actions();callbacks.get(actions.getFirst().action()).accept(null,player);verify(plugin).visitCabin(player);

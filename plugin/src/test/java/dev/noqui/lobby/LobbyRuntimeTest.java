@@ -16,6 +16,7 @@ import org.bukkit.event.player.*;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.util.Vector;
+import org.bukkit.inventory.ItemStack;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.io.TempDir;
 import org.mockito.*;
@@ -65,7 +66,7 @@ class LobbyRuntimeTest {
         Map<org.bukkit.NamespacedKey,AttributeModifier> modifiers=new HashMap<>();AttributeInstance attr=mock(AttributeInstance.class);
         Person() {
             when(p.getUniqueId()).thenReturn(id);when(p.getWorld()).thenAnswer(c->world);when(p.getGameMode()).thenAnswer(c->mode);when(p.isDead()).thenAnswer(c->dead);
-            when(p.isOnline()).thenReturn(true);when(p.getLocation()).thenAnswer(c->location.clone());when(p.getAllowFlight()).thenAnswer(c->allow);when(p.isFlying()).thenAnswer(c->flying);
+            when(p.isOnline()).thenReturn(true);when(p.getLocation()).thenAnswer(c->location.clone());when(p.getEyeLocation()).thenAnswer(c->location.clone().add(0,1.6,0));when(p.getAllowFlight()).thenAnswer(c->allow);when(p.isFlying()).thenAnswer(c->flying);
             doAnswer(c->{allow=c.getArgument(0);return null;}).when(p).setAllowFlight(anyBoolean());doAnswer(c->{flying=c.getArgument(0);return null;}).when(p).setFlying(anyBoolean());
             when(p.isOnGround()).thenAnswer(c->ground);when(p.isBlocking()).thenAnswer(c->blocking);when(p.hasLineOfSight(any(Entity.class))).thenReturn(true);
             when(p.getMaxFreezeTicks()).thenReturn(140);when(p.getFreezeTicks()).thenAnswer(c->freezeTicks);when(p.isFreezeTickingLocked()).thenAnswer(c->freezeLocked);
@@ -198,8 +199,8 @@ class LobbyRuntimeTest {
     }
     Snowball fireSnow(Person owner)throws Exception {
         if(owner.inventory.slots[0]==null){features.inventoryChanged(owner.p);for(int i=1;i<36;i++)if(GadgetItems.marked(owner.inventory.slots[i])){owner.inventory.slots[0]=owner.inventory.slots[i];owner.inventory.slots[i]=null;break;}}
-        Snowball ball=mock(Snowball.class);when(ball.getUniqueId()).thenReturn(UUID.randomUUID());when(ball.getWorld()).thenReturn(cabin);when(ball.isValid()).thenReturn(true);
-        when(owner.p.isSneaking()).thenReturn(true);when(owner.p.launchProjectile(Snowball.class)).thenReturn(ball);
+        Snowball ball=mock(Snowball.class);when(ball.getUniqueId()).thenReturn(UUID.randomUUID());when(ball.getWorld()).thenReturn(cabin);when(ball.isValid()).thenReturn(true);when(ball.getLocation()).thenReturn(owner.location.clone());
+        when(owner.p.isSneaking()).thenReturn(false);when(owner.p.launchProjectile(Snowball.class)).thenReturn(ball);
         var event=new PlayerInteractEvent(owner.p,org.bukkit.event.block.Action.RIGHT_CLICK_AIR,null,null,org.bukkit.block.BlockFace.UP,org.bukkit.inventory.EquipmentSlot.HAND);
         features.snow(event);assertTrue(event.isCancelled());return ball;
     }
@@ -208,11 +209,21 @@ class LobbyRuntimeTest {
         Snowball ball=fireSnow(a);features.snowHit(new org.bukkit.event.entity.ProjectileHitEvent(ball,b.p));
         assertEquals(100,b.freezeTicks);assertTrue(b.freezeLocked);assertTrue(b.freezeTicks<140);assertNull(a.inventory.slots[0]);
         verify(ball).remove();verify(b.p,never()).damage(anyDouble());verify(b.p,never()).getInventory();
-        clock.addAndGet(1801);features.tick();assertEquals(12,b.freezeTicks);assertFalse(b.freezeLocked);assertTrue(b.modifiers.isEmpty());
+        clock.addAndGet(3501);features.tick();assertEquals(12,b.freezeTicks);assertFalse(b.freezeLocked);assertTrue(b.modifiers.isEmpty());
+    }
+    @Test void rightClickThrowsAuthoredBombWithSoundAndBlockImpactFreezesNearbyPlayers()throws Exception{
+        Person owner=new Person(),near=new Person(),far=new Person();near.location.add(3,0,0);far.location.add(7,0,0);
+        buyEquip(owner,"snow_bomb");create(port());features.join(owner.p);features.join(near.p);features.join(far.p);
+        Snowball ball=fireSnow(owner);verify(ball).setItem(any(ItemStack.class));
+        verify(cabin).playSound(any(Location.class),eq("minecraft:entity.snowball.throw"),eq(SoundCategory.PLAYERS),anyFloat(),anyFloat());
+        features.snowHit(new org.bukkit.event.entity.ProjectileHitEvent(ball));
+        assertTrue(near.freezeLocked);assertFalse(far.freezeLocked);assertFalse(owner.freezeLocked);
+        verify(cabin).spawnParticle(eq(Particle.SNOWFLAKE),any(Location.class),eq(90),anyDouble(),anyDouble(),anyDouble(),anyDouble());
+        verify(near.p,never()).damage(anyDouble());verify(cabin,never()).getBlockAt(anyInt(),anyInt(),anyInt());
     }
     @Test void foreignFreezeStateIsNotOverwrittenAndArenaTargetsAreImmune()throws Exception {
         Person a=new Person(),b=new Person();b.freezeLocked=true;b.freezeTicks=120;buyEquip(a,"snow_bomb");create(port());features.join(a.p);features.join(b.p);
-        Snowball ball=fireSnow(a);features.snowHit(new org.bukkit.event.entity.ProjectileHitEvent(ball,b.p));clock.addAndGet(1801);features.tick();assertEquals(120,b.freezeTicks);assertTrue(b.freezeLocked);
+        Snowball ball=fireSnow(a);features.snowHit(new org.bukkit.event.entity.ProjectileHitEvent(ball,b.p));clock.addAndGet(3501);features.tick();assertEquals(120,b.freezeTicks);assertTrue(b.freezeLocked);
         verify(b.p,never()).lockFreezeTicks(anyBoolean());verify(b.p,never()).setFreezeTicks(anyInt());
         b.world=arena;features.world(new PlayerChangedWorldEvent(b.p,cabin));assertTrue(b.modifiers.isEmpty());
     }
@@ -225,7 +236,7 @@ class LobbyRuntimeTest {
         Snowball first=fireSnow(a);fireSnow(a);verify(a.p,times(1)).launchProjectile(Snowball.class);
         clock.addAndGet(1500);Snowball second=fireSnow(a);clock.addAndGet(1500);fireSnow(a);verify(a.p,times(2)).launchProjectile(Snowball.class);
         features.snowHit(new org.bukkit.event.entity.ProjectileHitEvent(first,b.p));assertTrue(b.freezeLocked);
-        b.freezeTicks=130;clock.addAndGet(1801);features.tick();assertEquals(130,b.freezeTicks);assertTrue(b.freezeLocked);
+        b.freezeTicks=130;clock.addAndGet(3501);features.tick();assertEquals(130,b.freezeTicks);assertTrue(b.freezeLocked);
         clock.addAndGet(5001);features.tick();verify(second).remove();
         // A tagged projectile never damages even if it hits a player in a different world.
         when(second.getScoreboardTags()).thenReturn(Set.of("noqui_lobby_snow_v1"));b.world=arena;

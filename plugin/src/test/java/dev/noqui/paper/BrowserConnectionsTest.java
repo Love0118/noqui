@@ -31,13 +31,33 @@ class BrowserConnectionsTest {
         current[0]=null;connections.tick();future.complete("after-opt-out");verify(view,never()).ready(any(),any(),any());
         now[0]+=120000;connections.tick();assertEquals(1,requests.get());
     }
-    @Test void dismissingAutoPromptThrottlesRetryAndConnectedResponseCancelsInflightLink() {
+    @Test void dismissingAutoPromptRetriesAfterTwoSecondsAndConnectedResponseCancelsInflightLink() {
         long[] now={1000};var entry=entry();var view=mock(BrowserConnections.View.class);when(view.available(player)).thenReturn(true);var futures=new ArrayList<CompletableFuture<String>>();
         var connections=new BrowserConnections(id->entry,(id,e)->{var f=new CompletableFuture<String>();futures.add(f);return f;},Runnable::run,view,()->now[0]);
         connections.observe(player,entry,false);now[0]=3000;connections.tick();futures.getFirst().complete("first");connections.dismiss(player);
-        for(int second=1;second<60;second++){now[0]+=1000;connections.observe(player,entry,false);connections.tick();}assertEquals(1,futures.size());
-        now[0]+=1000;connections.observe(player,entry,false);connections.tick();assertEquals(2,futures.size());
+        now[0]+=1999;connections.observe(player,entry,false);connections.tick();assertEquals(1,futures.size());
+        now[0]++;connections.observe(player,entry,false);connections.tick();assertEquals(2,futures.size());
         connections.observe(player,entry,true);futures.getLast().complete("must-not-open");verify(view,times(1)).ready(any(),any(),any());
+    }
+    @Test void closedPromptDefersToOtherMenusAndStoppingQuizCancelsTheRetry() {
+        long[] now={1000};var current=new BrowserConnections.Entry[]{entry()};var view=mock(BrowserConnections.View.class);when(view.available(player)).thenReturn(true);
+        var requests=new ArrayList<CompletableFuture<String>>();
+        var connections=new BrowserConnections(id->current[0],(id,e)->{var f=new CompletableFuture<String>();requests.add(f);return f;},Runnable::run,view,()->now[0]);
+        connections.observe(player,current[0],false);now[0]=3000;connections.tick();requests.getFirst().complete("first");connections.dismiss(player);
+        when(view.available(player)).thenReturn(false);now[0]=5000;connections.observe(player,current[0],false);connections.tick();assertEquals(1,requests.size());
+        now[0]=10000;connections.observe(player,current[0],false);connections.tick();assertEquals(1,requests.size());
+        when(view.available(player)).thenReturn(true);connections.tick();assertEquals(2,requests.size());
+        current[0]=null;connections.tick();requests.getLast().complete("after-stop");now[0]+=60000;connections.tick();
+        assertEquals(2,requests.size());verify(view,times(1)).ready(any(),any(),any());
+    }
+    @Test void aFormOpenedDuringLinkIssuanceDefersTheResultAndRetriesSoonAfterItCloses() {
+        long[] now={1000};var entry=entry();var view=mock(BrowserConnections.View.class);when(view.available(player)).thenReturn(true);
+        var requests=new ArrayList<CompletableFuture<String>>();
+        var connections=new BrowserConnections(id->entry,(id,e)->{var f=new CompletableFuture<String>();requests.add(f);return f;},Runnable::run,view,()->now[0]);
+        connections.observe(player,entry,false);now[0]=3000;connections.tick();
+        when(view.available(player)).thenReturn(false);requests.getFirst().complete("over-form");verify(view,never()).ready(any(),any(),any());
+        now[0]=5000;connections.observe(player,entry,false);connections.tick();assertEquals(1,requests.size());
+        when(view.available(player)).thenReturn(true);connections.tick();assertEquals(2,requests.size());requests.getLast().complete("after-form");verify(view).ready(player,entry,"after-form");
     }
     @Test void nativePromptAppearsBeforeAsyncLinkAndRenewalIssuesAnotherLink() {
         var entry=entry();var view=mock(BrowserConnections.View.class);var futures=new ArrayList<CompletableFuture<String>>();var main=new ArrayDeque<Runnable>();
