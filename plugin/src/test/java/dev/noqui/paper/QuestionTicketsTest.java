@@ -29,6 +29,12 @@ class QuestionTicketsTest {
     private final java.util.concurrent.atomic.AtomicBoolean active=new java.util.concurrent.atomic.AtomicBoolean(true);
     private final AtomicReference<ItemStack> cursor=new AtomicReference<>();
     private int opened;
+    @Test void inventorySaveDeathPreservesPhysicalTicketPositionsAndBalance(){
+        ledger.grant(id,3);tickets.refresh(player);var original=slots[0];
+        var death=mock(org.bukkit.event.entity.PlayerDeathEvent.class);when(death.getEntity()).thenReturn(player);when(death.getKeepInventory()).thenReturn(true);when(death.getDrops()).thenReturn(new ArrayList<>());
+        tickets.death(death);assertSame(original,slots[0]);assertEquals(3,slots[0].getAmount());assertEquals(3,ledger.balance(id));
+        when(death.getKeepInventory()).thenReturn(false);tickets.death(death);assertNull(slots[0]);assertEquals(3,ledger.balance(id));
+    }
     @BeforeEach void setup()throws Exception {
         ledger=new CreditLedger(directory.resolve("credits.json"));when(player.getUniqueId()).thenReturn(id);when(player.getInventory()).thenReturn(inventory);
         when(inventory.getSize()).thenReturn(slots.length);when(inventory.getStorageContents()).thenAnswer(c->Arrays.copyOf(slots,36));when(inventory.getHeldItemSlot()).thenReturn(0);

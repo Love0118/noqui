@@ -25,6 +25,7 @@ final class Cabin {
         world.getWorldBorder().setCenter(centerX,centerZ);world.getWorldBorder().setSize(size);world.setSpawnLocation(spawn);
         world.setGameRule(GameRules.SPAWN_MOBS,false);world.setGameRule(GameRules.ADVANCE_TIME,false);world.setGameRule(GameRules.ADVANCE_WEATHER,false);
         world.setGameRule(GameRules.RANDOM_TICK_SPEED,0);world.setGameRule(GameRules.FIRE_SPREAD_RADIUS_AROUND_PLAYER,0);
+        world.setGameRule(GameRules.PVP,true);world.setGameRule(GameRules.KEEP_INVENTORY,true);
         world.setTime(6000);world.setStorm(false);world.setThundering(false);
     }
     boolean contains(Location location) {return location!=null && world.equals(location.getWorld());}

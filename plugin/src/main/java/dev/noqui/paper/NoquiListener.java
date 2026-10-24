@@ -4,6 +4,7 @@ import io.papermc.paper.event.player.AsyncChatEvent;
 import java.util.*;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
+import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import org.bukkit.entity.*;
 import org.bukkit.event.*;
 import org.bukkit.event.block.*;
@@ -30,7 +31,7 @@ final class NoquiListener implements Listener {
             if(e.getPlayer().isOnline()&&!plugin.defenseActive(e.getPlayer()))plugin.routeJoin(e.getPlayer());
         });
     }
-    @EventHandler public void death(PlayerDeathEvent e){if(plugin.ownsCabin(e.getPlayer().getUniqueId())){e.setKeepInventory(true);e.getDrops().clear();e.setDroppedExp(0);}}
+    @EventHandler public void death(PlayerDeathEvent e){if(cabin(e.getPlayer().getLocation())||plugin.ownsCabin(e.getPlayer().getUniqueId())){e.setKeepInventory(true);e.setKeepLevel(true);e.getDrops().clear();e.setDroppedExp(0);}}
     @EventHandler public void world(PlayerChangedWorldEvent e){if(!cabin(e.getPlayer().getLocation()))plugin.leftWorld(e.getPlayer());}
     @EventHandler public void move(PlayerMoveEvent e){if(cabin(e.getTo()) && plugin.cabin.outside(e.getTo())){e.getPlayer().setFallDistance(0);e.setTo(plugin.cabin.spawn.clone());}}
     @EventHandler public void interact(PlayerInteractEvent e) {
@@ -48,17 +49,32 @@ final class NoquiListener implements Listener {
         else if("wardrobe".equals(id))plugin.openWardrobe(e.getPlayer());
     }
     @EventHandler(priority=EventPriority.HIGH) public void legacy(AsyncPlayerChatEvent e){
-        if(plugin.captureAnswer(e.getPlayer().getUniqueId(),e.getMessage())){legacy.add(e);hide(e);}
+        String message=e.getMessage();
+        if(plugin.cabin!=null&&cabin(e.getPlayer().getLocation()))message=org.bukkit.ChatColor.translateAlternateColorCodes('&',message);
+        if(plugin.captureAnswer(e.getPlayer().getUniqueId(),org.bukkit.ChatColor.stripColor(message))){legacy.add(e);hide(e);}
+        else if(!e.isCancelled())e.setMessage(message);
     }
     @EventHandler(priority=EventPriority.HIGHEST) public void legacyGuard(AsyncPlayerChatEvent e){if(legacy.remove(e))hide(e);}
     private void hide(AsyncPlayerChatEvent e){e.setCancelled(true);e.setMessage("");e.getRecipients().clear();}
     @EventHandler(priority=EventPriority.HIGH) public void chat(AsyncChatEvent e){
-        if(plugin.captureAnswer(e.getPlayer().getUniqueId(),PlainTextComponentSerializer.plainText().serialize(e.message()))){modern.add(e);hide(e);}
+        Component message=e.message();
+        if(plugin.cabin!=null&&cabin(e.getPlayer().getLocation())&&PlainTextComponentSerializer.plainText().serialize(message).matches("(?is).*&[0-9a-fk-orx].*"))
+            message=LegacyComponentSerializer.legacyAmpersand().deserialize(LegacyComponentSerializer.legacyAmpersand().serialize(message));
+        if(plugin.captureAnswer(e.getPlayer().getUniqueId(),PlainTextComponentSerializer.plainText().serialize(message))){modern.add(e);hide(e);}
+        else if(!e.isCancelled())e.message(message);
     }
     @EventHandler(priority=EventPriority.HIGHEST) public void chatGuard(AsyncChatEvent e){if(modern.remove(e))hide(e);}
     private void hide(AsyncChatEvent e){e.setCancelled(true);e.message(Component.empty());e.viewers().clear();}
-    @EventHandler public void damage(EntityDamageEvent e){if(cabin(e.getEntity().getLocation()))e.setCancelled(true);}
-    @EventHandler public void attack(EntityDamageByEntityEvent e){if(cabin(e.getDamager().getLocation()) || cabin(e.getEntity().getLocation()))e.setCancelled(true);}
+    @EventHandler public void damage(EntityDamageEvent e){
+        if(e instanceof EntityDamageByEntityEvent hit){
+            Entity source=hit.getDamager();
+            if(source instanceof Projectile projectile&&projectile.getShooter() instanceof Entity shooter)source=shooter;
+            boolean targetCabin=cabin(e.getEntity().getLocation()),sourceCabin=cabin(source.getLocation());
+            if(!targetCabin&&!sourceCabin&&!cabin(hit.getDamager().getLocation()))return;
+            if(!(e.getEntity() instanceof Player&&source instanceof Player&&targetCabin&&sourceCabin))e.setCancelled(true);
+        }else if(cabin(e.getEntity().getLocation()))e.setCancelled(true);
+    }
+    @EventHandler public void attack(EntityDamageByEntityEvent e){damage(e);}
     @EventHandler public void hunger(FoodLevelChangeEvent e){if(cabin(e.getEntity().getLocation()))e.setCancelled(true);}
     @EventHandler public void breakBlock(BlockBreakEvent e){if(cabin(e.getBlock().getLocation()))e.setCancelled(true);}
     @EventHandler public void placeBlock(BlockPlaceEvent e){if(cabin(e.getBlock().getLocation()))e.setCancelled(true);}

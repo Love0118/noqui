@@ -41,7 +41,7 @@ public final class QuizGame {
     private final LongSupplier clock;
     private final Output output;
     private final CreditLedger credits;
-    private final long roundMillis;
+    private long roundMillis;
     private int totalRounds;
     private QuizModes modes,roundModes;
     private final Set<UUID> winners=new LinkedHashSet<>();
@@ -68,7 +68,7 @@ public final class QuizGame {
     }
     public QuizGame(MediaBridge bridge,Executor main,LongSupplier clock,Output output,CreditLedger credits,int seconds,
                     int totalRounds,boolean matchSkip,boolean titleBonus,boolean autoHint,RandomGenerator random) {
-        if(seconds<1||seconds>115||totalRounds<0)throw new IllegalArgumentException("Invalid quiz limits");
+        if(seconds<1||seconds>120||totalRounds<0)throw new IllegalArgumentException("Invalid quiz limits");
         this.bridge=bridge;this.main=main;this.clock=clock;this.output=output;this.credits=credits;roundMillis=seconds*1000L;
         this.totalRounds=totalRounds;this.modes=QuizModes.legacy(matchSkip,titleBonus,autoHint);this.roundModes=modes;this.random=random;
     }
@@ -99,6 +99,10 @@ public final class QuizGame {
         if(limit<0)throw new IllegalArgumentException("라운드 제한은 0(무제한) 또는 양의 정수입니다.");
         totalRounds=limit;session=UUID.randomUUID();players.clear();players.addAll(participants);scores.clear();players.forEach(id->scores.put(id,0));
         roundsStarted=0;clearRound();phase=Phase.WAITING_FOR_SUBMISSION;emit();
+    }
+    public void timeLimit(int seconds) {
+        if(seconds<1||seconds>120)throw new IllegalArgumentException("시간 제한은 1~120초입니다.");
+        roundMillis=seconds*1000L;
     }
     public void limit(int limit) {
         if(!started())throw new IllegalArgumentException("노래퀴즈가 진행 중이 아닙니다.");

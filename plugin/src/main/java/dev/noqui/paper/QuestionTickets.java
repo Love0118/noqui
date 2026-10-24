@@ -186,7 +186,7 @@ public final class QuestionTickets implements Listener {
         }
         if(++groundPasses%30==0||!visible){ledger.checkpointDrops(checkpoints);checkpoints.clear();}
     }
-    @EventHandler(priority=EventPriority.HIGHEST) public void death(PlayerDeathEvent event){event.getDrops().removeIf(QuestionTickets::marked);strip(event.getEntity());}
+    @EventHandler(priority=EventPriority.HIGHEST) public void death(PlayerDeathEvent event){event.getDrops().removeIf(QuestionTickets::marked);if(!event.getKeepInventory())strip(event.getEntity());}
     @EventHandler(priority=EventPriority.MONITOR) public void join(PlayerJoinEvent event){refresh(event.getPlayer());}
     @EventHandler(priority=EventPriority.MONITOR) public void quit(PlayerQuitEvent event){refresh(event.getPlayer());clicks.remove(event.getPlayer().getUniqueId());}
 }

@@ -43,6 +43,13 @@ class QuizGameTest {
     private void play(QuizGame g,long duration){media(g,duration);g.browsersReady(g.snapshot().revision(),true,true);g.controlAccepted(g.snapshot().revision());now[0]=g.snapshot().startsAt();g.tick();confirm(g);assertEquals(QuizGame.Phase.PLAYING,g.snapshot().phase());}
     private void confirm(QuizGame g){now[0]++;var s=g.snapshot();assertTrue(g.confirmPlayback(s.participants().iterator().next(),s.roundId(),s.playbackGeneration(),s.anchorPositionMillis()+s.playbackRate(),now[0]));}
     private void finish(QuizGame g){now[0]=g.snapshot().endsAt();g.tick();now[0]+=5000;g.tick();}
+    @Test void timeLimitChangesNextSongWithoutChangingCurrentSongOrRoundLimit(){
+        var g=start();g.timeLimit(40);submit(g,author);play(g,120007);assertEquals(40000,g.snapshot().clipEndMillis());
+        g.timeLimit(120);assertEquals(40000,g.snapshot().clipEndMillis());assertEquals(67,g.snapshot().totalRounds());
+        finish(g);submit(g,second);play(g,120007);assertEquals(120000,g.snapshot().clipEndMillis());assertEquals(67,g.snapshot().totalRounds());
+        assertThrows(IllegalArgumentException.class,()->g.timeLimit(0));assertThrows(IllegalArgumentException.class,()->g.timeLimit(121));
+        g.timeLimit(1);assertEquals(120000,g.snapshot().clipEndMillis());
+    }
     @Test void fortySecondRoundCapsOpusPaddingAndKeepsShortSongsShort() {
         var g=new QuizGame(bridge,callbacks::add,()->now[0],new QuizGame.Output(){
             public void changed(QuizGame.Snapshot s){}public void error(UUID id,String e){fail(e);}
@@ -258,7 +265,7 @@ class QuizGameTest {
         var g=start();submit(g,author);media(g,60000);g.browsersReady(g.snapshot().revision(),true,true);now[0]=g.snapshot().startsAt();g.tick();assertEquals(QuizGame.Phase.PREPARING,g.snapshot().phase());assertEquals(4,g.credits(author));
         g.browsersReady(g.snapshot().revision(),true,true);g.controlAccepted(g.snapshot().revision());now[0]=g.snapshot().startsAt();g.tick();confirm(g);now[0]+=9000;g.tick();assertTrue(g.snapshot().hint().isEmpty());
     }
-    @Test void limitValidationIsExplicit(){assertThrows(IllegalArgumentException.class,()->new QuizGame(bridge,Runnable::run,()->0,null,116,false));assertThrows(IllegalArgumentException.class,()->game(-1,false,true,false));}
+    @Test void limitValidationIsExplicit(){assertThrows(IllegalArgumentException.class,()->new QuizGame(bridge,Runnable::run,()->0,null,121,false));assertThrows(IllegalArgumentException.class,()->game(-1,false,true,false));}
     @Test void everyAcceptedQueuedSongBeginsConversionImmediatelyAndReadySongsAdvanceWithoutNewJob() {
         var g=start();submit(g,author);submit(g,second);submit(g,third);assertEquals(3,bridge.futures.size());
         bridge.futures.get(1).complete(new MediaBridge.Media("second-ready",1000));callbacks.remove().run();
