@@ -1,0 +1,45 @@
+{
+  "path": "atcg/lissachatina-fulica",
+  "sourceURL": "https://blockbenchworkshop.com/model/atcg/lissachatina-fulica",
+  "metadata": {
+    "@context": "https://schema.org",
+    "@type": "3DModel",
+    "name": "Lissachatina Fulica",
+    "description": "A rigged and animated Blockbench model by @atcg. Just big snail. Just Support - https://ko-fi.com/actgu. Free .bbmodel download.",
+    "url": "https://blockbenchworkshop.com/model/atcg/lissachatina-fulica",
+    "image": "https://blockbenchworkshop.com/cdn/thumbnails/VegvhHXJI4lMbjgP7x9zpljU2WhpL2yv/e2636213-4cc3-4c98-b4a2-9d2fa0fd7fc9.png",
+    "encodingFormat": "application/json",
+    "isAccessibleForFree": true,
+    "keywords": "snail, animal, animated, mob",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "author": {
+      "@type": "Person",
+      "name": "atcg",
+      "url": "https://blockbenchworkshop.com/creator/atcg"
+    },
+    "interactionStatistic": [
+      {
+        "@type": "InteractionCounter",
+        "interactionType": "https://schema.org/LikeAction",
+        "userInteractionCount": 18
+      },
+      {
+        "@type": "InteractionCounter",
+        "interactionType": "https://schema.org/DownloadAction",
+        "userInteractionCount": 141
+      }
+    ]
+  },
+  "permissive": true,
+  "publicSourceURL": "https://blockbenchworkshop.com/cdn/previews/VegvhHXJI4lMbjgP7x9zpljU2WhpL2yv/e2636213-4cc3-4c98-b4a2-9d2fa0fd7fc9.json?v=5",
+  "sourceKind": "publicly published interactive preview model JSON",
+  "originalDownloadLimitation": "The .bbmodel download endpoint returns HTTP 401 without an account; no account was used. This is the openly published preview JSON, not the original .bbmodel archive.",
+  "sha256": "25335fb6f47f5c24cace2ef1de633d28d2f6b9eed1356215a1dfb1a708b4c51c",
+  "format": {
+    "model_format": "modded_entity"
+  },
+  "elements": 17,
+  "meshes": 0,
+  "textures": 1,
+  "animations": 2
+}

@@ -16,6 +16,39 @@ class BridgeClientTest {
     private BridgeClient client(java.util.function.Supplier<List<BridgeClient.Member>> roster) {
         return new BridgeClient(URI.create("http://127.0.0.1:8788"),key,"primary",UUID.randomUUID(),Runnable::run,roster,(r,a,b)->{},s->{});
     }
+    @Test void countdownTransportAckOnlyForwardsMatchingPlayingProgressAfterTheAck()throws Exception {
+        long[] now={100000};var media=new CompletableFuture<MediaBridge.Media>();
+        var fake=new MediaBridge(){public CompletionStage<Media> prepare(Request r){return media;}public void cancel(UUID s,long r){}public void publish(QuizGame.Snapshot s){}};
+        var game=new QuizGame(fake,Runnable::run,()->now[0],new QuizGame.Output(){public void changed(QuizGame.Snapshot s){}public void error(UUID p,String m){fail(m);}},115,false);
+        game.start(List.of(player));game.grant(player,1);game.submit(player,game.snapshot().revision(),Song.input("https://youtu.be/BaW_jenozKc","Song","tag"));media.complete(new MediaBridge.Media("ready",60000));
+        game.browsersReady(game.snapshot().revision(),true,true);var s=game.snapshot();now[0]=s.startsAt()+1;
+        var responseBody=new java.util.concurrent.atomic.AtomicReference<JsonObject>();var server=HttpServer.create(new InetSocketAddress("127.0.0.1",8788),0);
+        server.createContext("/internal/v1/sync",exchange->{try{
+            var request=JsonParser.parseString(new String(exchange.getRequestBody().readAllBytes(),StandardCharsets.UTF_8)).getAsJsonObject();
+            var response=new JsonObject();response.add("acceptedSeq",request.get("seq"));response.addProperty("serverTimeMs",now[0]);var browsers=new JsonArray();browsers.add(responseBody.get());response.add("browsers",browsers);
+            byte[] bytes=response.toString().getBytes(StandardCharsets.UTF_8);exchange.sendResponseHeaders(200,bytes.length);exchange.getResponseBody().write(bytes);
+        }finally{exchange.close();}});server.start();
+        var acknowledgements=new LinkedBlockingQueue<Long>();var proofs=new LinkedBlockingQueue<BridgeClient.PlaybackProgress>();
+        var member=new BridgeClient.Member(player,membership,"Player",null);
+        try(var client=new BridgeClient(URI.create("http://127.0.0.1:8788"),key,"primary",UUID.randomUUID(),Runnable::run,()->List.of(member),new BridgeClient.Readiness(){
+            public void accept(long revision,boolean any,boolean all){}
+            public void controlAccepted(long revision){game.controlAccepted(revision);acknowledgements.add(revision);}
+            public void playbackStarted(UUID session,BridgeClient.PlaybackProgress progress){assertEquals(s.session(),session);assertTrue(game.confirmPlayback(progress.player(),progress.round(),progress.generation(),progress.positionMs(),progress.lastSeenAtMs()));proofs.add(progress);}
+        },m->fail(m))){
+            var valid=new JsonObject();valid.addProperty("uuid",player.toString());valid.addProperty("membershipId",membership.toString());valid.addProperty("connected",true);valid.addProperty("online",true);valid.addProperty("leaseExpiresAtMs",now[0]+60000);
+            valid.addProperty("roundId",s.roundId().toString());valid.addProperty("playbackGeneration",s.playbackGeneration().toString());valid.addProperty("roundRevision",Long.toString(s.revision()));valid.addProperty("positionMs",1);valid.addProperty("lastSeenAtMs",now[0]);valid.addProperty("status","PLAYING");
+            var rejected=new ArrayList<JsonObject>();
+            for(String status:List.of("PREPARED","LOADING","BUFFERING","NEEDS_GESTURE","PAUSED","FAILED")){var b=valid.deepCopy();b.addProperty("status",status);rejected.add(b);}
+            for(String field:List.of("membershipId","roundId","playbackGeneration")){var b=valid.deepCopy();b.addProperty(field,UUID.randomUUID().toString());rejected.add(b);}
+            var stale=valid.deepCopy();stale.addProperty("roundRevision",Long.toString(s.revision()-1));rejected.add(stale);
+            var expired=valid.deepCopy();expired.addProperty("leaseExpiresAtMs",now[0]);rejected.add(expired);
+            var absent=valid.deepCopy();absent.remove("positionMs");rejected.add(absent);
+            for(var b:rejected){responseBody.set(b);client.publish(s);assertEquals(s.revision(),acknowledgements.poll(5,TimeUnit.SECONDS));}
+            assertTrue(proofs.isEmpty());assertEquals(QuizGame.Phase.COUNTDOWN,game.snapshot().phase());assertTrue(game.pending(player));
+            responseBody.set(valid);client.publish(s);assertEquals(s.revision(),acknowledgements.poll(5,TimeUnit.SECONDS));
+            assertEquals(new BridgeClient.PlaybackProgress(player,membership,s.roundId(),s.playbackGeneration(),1,now[0]),proofs.poll(5,TimeUnit.SECONDS));assertEquals(QuizGame.Phase.PLAYING,game.snapshot().phase());
+        }finally{server.stop(0);}
+    }
     @Test void authenticatedIdlePresenceIsIndependentFromAudioAndTransportErrorsBecomeUnknown()throws Exception {
         var body=new java.util.concurrent.atomic.AtomicReference<JsonObject>();var outage=new java.util.concurrent.atomic.AtomicBoolean();var server=HttpServer.create(new InetSocketAddress("127.0.0.1",8788),0);
         server.createContext("/internal/v1/sync",exchange->{try{
@@ -43,11 +76,11 @@ class BridgeClientTest {
         var now=new java.util.concurrent.atomic.AtomicLong(1000);long deadline=now.get()+BridgeClient.MAX_PREPARATION_MILLIS;
         try(var client=new BridgeClient(URI.create("http://127.0.0.1:8788"),key,"primary",UUID.randomUUID(),Runnable::run,List::of,(r,a,b)->{},s->{},now::get)) {
             var request=new MediaBridge.Request(UUID.randomUUID(),1,Song.input("https://youtu.be/BaW_jenozKc","Song",""));
-            var waiting=new CompletableFuture<MediaBridge.Media>();UUID job=UUID.randomUUID(),media=UUID.randomUUID();
+            var waiting=new CompletableFuture<MediaBridge.Media>();UUID job=UUID.randomUUID();
             JsonObject queued=JsonParser.parseString("{\"state\":\"QUEUED\",\"jobId\":\""+job+"\",\"retryAfterMs\":30000}").getAsJsonObject();
             now.addAndGet(16*60000L);client.poll(request,waiting,queued,null,deadline);assertFalse(waiting.isDone());
             now.set(64L*300000);client.poll(request,waiting,queued,null,deadline);assertFalse(waiting.isDone());
-            var ready=JsonParser.parseString("{\"state\":\"READY\",\"mediaId\":\""+media+"\",\"durationMs\":115007}").getAsJsonObject();client.poll(request,waiting,ready,null,deadline);assertEquals(media.toString(),waiting.join().id());
+            assertFalse(waiting.isDone());waiting.cancel(false);
             var expired=new CompletableFuture<MediaBridge.Media>();now.set(deadline+1);client.poll(request,expired,queued,null,deadline);assertTrue(expired.isCompletedExceptionally());
         }
     }
@@ -74,6 +107,14 @@ class BridgeClientTest {
     }
     private QuizGame game(MediaBridge bridge) {
         return new QuizGame(bridge,Runnable::run,()->100000,new QuizGame.Output(){public void changed(QuizGame.Snapshot s){}public void error(UUID id,String e){}},115,false);
+    }
+    @Test void roomCarriesRegisteredSongsSeparatelyFromConfiguredMaximum() {
+        try(var client=client(List::of)){
+            var game=game(new MediaBridge(){public CompletionStage<Media> prepare(Request r){return new CompletableFuture<>();}public void cancel(UUID s,long r){}public void publish(QuizGame.Snapshot s){}});
+            game.start(List.of(player),200);game.grant(player,1);game.submit(player,game.snapshot().revision(),Song.input("https://youtu.be/BaW_jenozKc","Song","tag"));
+            var room=client.snapshot(game.snapshot(),List.of()).getAsJsonArray("rooms").get(0).getAsJsonObject();assertEquals(200,room.get("totalRounds").getAsInt());assertEquals(1,room.get("registeredSongs").getAsInt());
+            game.forceSkip(game.snapshot().roundId());room=client.snapshot(game.snapshot(),List.of()).getAsJsonArray("rooms").get(0).getAsJsonObject();assertEquals(0,room.get("registeredSongs").getAsInt());assertEquals(0,room.get("roundNumber").getAsInt());
+        }
     }
     @Test void preRevealSyncCannotLeakAnswersSourceOrVideoId() {
         try(var client=client(List::of)) {
@@ -106,9 +147,9 @@ class BridgeClientTest {
         try(var client=client(List::of)){
             long[] now={1000};var future=new CompletableFuture<MediaBridge.Media>();var fake=new MediaBridge(){public CompletionStage<Media> prepare(Request r){return future;}public void cancel(UUID s,long r){}public void publish(QuizGame.Snapshot s){}};
             var g=new QuizGame(fake,Runnable::run,()->now[0],new QuizGame.Output(){public void changed(QuizGame.Snapshot s){}public void error(UUID id,String message){}},115,false);g.modes(g.modes().with(QuizModes.Mode.SPEED_X2,true));g.start(List.of(player));g.grant(player,1);g.submit(player,g.snapshot().revision(),Song.input("https://youtu.be/BaW_jenozKc","Secret",""));future.complete(new MediaBridge.Media(UUID.randomUUID().toString(),115007));
-            g.browsersReady(g.snapshot().revision(),true,true);g.controlAccepted(g.snapshot().revision());now[0]=g.snapshot().startsAt();g.tick();now[0]+=10000;g.pause();
+            g.browsersReady(g.snapshot().revision(),true,true);g.controlAccepted(g.snapshot().revision());now[0]=g.snapshot().startsAt()+1;assertTrue(g.confirmPlayback(player,g.snapshot().roundId(),g.snapshot().playbackGeneration(),2,now[0]));now[0]+=10000;g.pause();
             var round=client.snapshot(g.snapshot(),List.of()).getAsJsonArray("rooms").get(0).getAsJsonObject().getAsJsonObject("round");
-            assertEquals("2",round.get("playbackRate").toString());assertTrue(round.toString().contains("\"playbackRate\":2"));assertFalse(round.toString().contains("\"playbackRate\":2.0"));assertEquals(115000,round.get("clipEndMs").getAsLong());assertEquals(20000,round.get("anchorPositionMs").getAsLong());assertFalse(round.get("playing").getAsBoolean());assertEquals(47500,g.snapshot().remainingMillis());
+            assertEquals("2",round.get("playbackRate").toString());assertTrue(round.toString().contains("\"playbackRate\":2"));assertFalse(round.toString().contains("\"playbackRate\":2.0"));assertEquals(115000,round.get("clipEndMs").getAsLong());assertEquals(20002,round.get("anchorPositionMs").getAsLong());assertFalse(round.get("playing").getAsBoolean());assertEquals(47499,g.snapshot().remainingMillis());
         }
     }
     @Test void realHttpSignsExactBytesPollsEmptyGetAndIssuesHashOnlyToken() throws Exception {
@@ -125,7 +166,8 @@ class BridgeClientTest {
                 if(method.equals("GET")){assertEquals(0,bytes.length);gets.incrementAndGet();reply="{\"state\":\"READY\",\"jobId\":\""+job+"\",\"mediaId\":\""+media+"\",\"durationMs\":60000}";}
                 else {
                     var body=JsonParser.parseString(new String(bytes,StandardCharsets.UTF_8)).getAsJsonObject();
-                    if(path.endsWith("/media/jobs")){assertEquals(Set.of("schemaVersion","requestId","videoId"),body.keySet());reply="{\"state\":\"QUEUED\",\"jobId\":\""+job+"\",\"retryAfterMs\":2000}";}
+                    if(path.endsWith("/media/jobs")){assertEquals(Set.of("schemaVersion","requestId","videoId","song"),body.keySet());assertEquals("Secret",body.getAsJsonObject("song").get("title").getAsString());assertTrue(body.getAsJsonObject("song").getAsJsonArray("tags").isEmpty());reply="{\"state\":\"QUEUED\",\"jobId\":\""+job+"\",\"retryAfterMs\":2000}";}
+                    else if(path.endsWith("/catalogue/import")){assertEquals(Set.of("schemaVersion","songs"),body.keySet());assertTrue(bytes.length<65536);reply="{\"savedCount\":"+body.getAsJsonArray("songs").size()+"}";}
                     else if(path.endsWith("/sync"))reply="{\"acceptedSeq\":"+body.get("seq")+",\"browsers\":[]}";
                     else {tokenBody.set(body);assertFalse(body.has("token"));reply="{\"expiresInSeconds\":60}";}
                 }
@@ -134,10 +176,11 @@ class BridgeClientTest {
         });server.start();
         var member=new BridgeClient.Member(player,membership,"PlayerOne",null);
         try(var client=client(()->List.of(member))) {
-            var ready=client.prepare(new MediaBridge.Request(UUID.randomUUID(),1,Song.input("https://youtu.be/BaW_jenozKc","Secret",""))).toCompletableFuture().get(8,TimeUnit.SECONDS);
-            assertEquals(media.toString(),ready.id());assertEquals(1,gets.get());
             var fake=new MediaBridge(){public CompletionStage<Media> prepare(Request r){throw new UnsupportedOperationException();}public void cancel(UUID s,long r){}public void publish(QuizGame.Snapshot s){}};
             var game=game(fake);game.start(List.of(player));client.publish(game.snapshot());
+            var ready=client.prepare(new MediaBridge.Request(game.snapshot().session(),1,Song.input("https://youtu.be/BaW_jenozKc","Secret",""))).toCompletableFuture().get(8,TimeUnit.SECONDS);
+            assertEquals(media.toString(),ready.id());assertEquals(1,gets.get());
+            var imported=new JsonArray();imported.add(JsonParser.parseString("{\"id\":\""+UUID.randomUUID()+"\",\"youtubeUrl\":\"https://youtu.be/BaW_jenozKc\",\"title\":\"비공개 제목\",\"tags\":[\"태그\"]}"));assertEquals(1,client.importCatalogue(imported).toCompletableFuture().get(5,TimeUnit.SECONDS));
             String raw=client.joinToken(member,game.snapshot().session()).toCompletableFuture().get(8,TimeUnit.SECONDS);
             assertTrue(raw.matches("[A-Za-z0-9_-]{43}"));assertEquals(BridgeClient.hash(raw.getBytes(StandardCharsets.UTF_8)),tokenBody.get().get("tokenSha256").getAsString());
             assertFalse(tokenBody.get().toString().contains(raw));assertNull(failure.get());

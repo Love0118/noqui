@@ -1,0 +1,45 @@
+{
+  "path": "polyjo/pigeon-polyjo",
+  "sourceURL": "https://blockbenchworkshop.com/model/polyjo/pigeon-polyjo",
+  "metadata": {
+    "@context": "https://schema.org",
+    "@type": "3DModel",
+    "name": "Pigeon (Polyjo)",
+    "description": "A rigged and animated Blockbench model by @polyjo. Pig Eon. Free .bbmodel download.",
+    "url": "https://blockbenchworkshop.com/model/polyjo/pigeon-polyjo",
+    "image": "https://blockbenchworkshop.com/cdn/thumbnails/UTEEN2hlb679ziICMqn5p6y9qtFWkeGz/bb7f1366-3655-466b-a6d7-73113dac83ed.png",
+    "encodingFormat": "application/json",
+    "isAccessibleForFree": true,
+    "keywords": "pigeon, animal, bird, polyjo, grey, nature, natural, avian, flying thing",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "author": {
+      "@type": "Person",
+      "name": "polyjo",
+      "url": "https://blockbenchworkshop.com/creator/polyjo"
+    },
+    "interactionStatistic": [
+      {
+        "@type": "InteractionCounter",
+        "interactionType": "https://schema.org/LikeAction",
+        "userInteractionCount": 16
+      },
+      {
+        "@type": "InteractionCounter",
+        "interactionType": "https://schema.org/DownloadAction",
+        "userInteractionCount": 136
+      }
+    ]
+  },
+  "permissive": true,
+  "publicSourceURL": "https://blockbenchworkshop.com/cdn/previews/UTEEN2hlb679ziICMqn5p6y9qtFWkeGz/bb7f1366-3655-466b-a6d7-73113dac83ed.json?v=5",
+  "sourceKind": "publicly published interactive preview model JSON",
+  "originalDownloadLimitation": "The .bbmodel download endpoint returns HTTP 401 without an account; no account was used. This is the openly published preview JSON, not the original .bbmodel archive.",
+  "sha256": "fd8314b12ec3c72183121300960ecb95e2566ed52ede0a68395f7119246f43d8",
+  "format": {
+    "model_format": "free"
+  },
+  "elements": 9,
+  "meshes": 0,
+  "textures": 1,
+  "animations": 1
+}

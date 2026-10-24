@@ -1,0 +1,5 @@
+여우 귀 머리띠 / face_fox_ears
+Source: https://github.com/eliasnvx/femboy-mod/blob/1e2f8d91881ca8ee6edacc206072f5ed72aa38b3/art/blockbench/fox_ears/fox_ears.geo.json
+Author: eliasnvx
+License: MIT; see LICENSE.txt.
+Changes: Bedrock cuboids converted to Java elements; coordinates adjusted for Noqui attachment; original palette UVs and PNG retained. Static pose.

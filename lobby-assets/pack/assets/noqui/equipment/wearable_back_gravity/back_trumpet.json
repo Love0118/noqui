@@ -1,0 +1,99 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "noqui:gravity_suit"
+      },
+      {
+        "texture": "noqui:wearable_back/back_trumpet_0",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_trumpet_1",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_trumpet_2",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_trumpet_3",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_trumpet_4",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_trumpet_5",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_trumpet_6",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_trumpet_7",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_trumpet_8",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_trumpet_9",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_trumpet_10",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_trumpet_11",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_trumpet_12",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_trumpet_13",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_trumpet_14",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      }
+    ]
+  }
+}

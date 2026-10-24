@@ -1,0 +1,6 @@
+행운의 목도리 / face_lucky_scarf
+Author: Wouter Pauwels / Artifacts contributors
+Source: https://github.com/ochotonida/artifacts/blob/4b67278df94e4d3669119f1abb24a1c3a758afe1/common/src/main/java/artifacts/client/item/mesh/BodyMeshDefinitions.java
+Source method: createScarf()
+License: MIT; see LICENSE.txt.
+Changes: cuboid geometry transcribed to native Java item model; UV rectangles retained, face directions mapped for +Z front, attachment translated to Noqui face anchor. Night vision overlay composited statically; scarf frozen at 6 degree rest pose. No gameplay effect.

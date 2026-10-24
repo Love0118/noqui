@@ -1,0 +1,300 @@
+{
+  "credit": "Made with Blockbench | More Hats by oiioooiiiooi, Hot_doggy13; CC-BY-4.0; Noqui research export (see ATTRIBUTION.txt)",
+  "textures": {
+    "1": "noqui:item/shared/11d38ca4678dfe7827b3",
+    "particle": "noqui:item/shared/11d38ca4678dfe7827b3"
+  },
+  "elements": [
+    {
+      "name": "Head",
+      "from": [
+        4,
+        4.25,
+        3.5
+      ],
+      "to": [
+        12,
+        8.25,
+        11.5
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            2,
+            6.25,
+            4,
+            7.25
+          ],
+          "texture": "#1"
+        },
+        "east": {
+          "uv": [
+            0,
+            6.25,
+            2,
+            7.25
+          ],
+          "texture": "#1"
+        },
+        "south": {
+          "uv": [
+            6,
+            6.25,
+            8,
+            7.25
+          ],
+          "texture": "#1"
+        },
+        "west": {
+          "uv": [
+            4,
+            6.25,
+            6,
+            7.25
+          ],
+          "texture": "#1"
+        },
+        "up": {
+          "uv": [
+            4,
+            6.25,
+            2,
+            4.25
+          ],
+          "texture": "#1"
+        },
+        "down": {
+          "uv": [
+            6,
+            4.25,
+            4,
+            6.25
+          ],
+          "texture": "#1"
+        }
+      }
+    },
+    {
+      "name": "Head",
+      "from": [
+        3,
+        6.30813,
+        2.79224
+      ],
+      "to": [
+        13,
+        13.30813,
+        12.79224
+      ],
+      "rotation": {
+        "angle": 22.5,
+        "axis": "x",
+        "origin": [
+          8,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            2.5,
+            2.5,
+            5,
+            4.25
+          ],
+          "texture": "#1"
+        },
+        "east": {
+          "uv": [
+            0,
+            2.5,
+            2.5,
+            4.25
+          ],
+          "texture": "#1"
+        },
+        "south": {
+          "uv": [
+            7.5,
+            2.5,
+            10,
+            4.25
+          ],
+          "texture": "#1"
+        },
+        "west": {
+          "uv": [
+            5,
+            2.5,
+            7.5,
+            4.25
+          ],
+          "texture": "#1"
+        },
+        "up": {
+          "uv": [
+            5,
+            2.5,
+            2.5,
+            0
+          ],
+          "texture": "#1"
+        },
+        "down": {
+          "uv": [
+            7.5,
+            0,
+            5,
+            2.5
+          ],
+          "texture": "#1"
+        }
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        0,
+        0,
+        -15
+      ],
+      "translation": [
+        1.75,
+        0.5,
+        -2.5
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        0,
+        0,
+        -15
+      ],
+      "translation": [
+        1.75,
+        0.5,
+        -2.5
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "translation": [
+        1,
+        3.5,
+        -1
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "translation": [
+        1,
+        3.5,
+        -1
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        3,
+        0
+      ]
+    },
+    "gui": {
+      "rotation": [
+        45,
+        45,
+        0
+      ],
+      "translation": [
+        0.25,
+        -0.5,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        -1
+      ]
+    },
+    "head": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0.0,
+        12.340000000000002,
+        0.9
+      ],
+      "scale": [
+        1.8100000000000003,
+        1.8100000000000003,
+        1.8100000000000003
+      ]
+    },
+    "on_shelf": {
+      "rotation": [
+        0,
+        -180,
+        0
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "translation": [
+        -0.0,
+        3.7125,
+        -0.5625
+      ],
+      "scale": [
+        1.13125,
+        1.13125,
+        1.13125
+      ]
+    }
+  }
+}

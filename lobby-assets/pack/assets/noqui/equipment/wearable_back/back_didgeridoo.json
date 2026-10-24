@@ -1,0 +1,18 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "noqui:wearable_back/back_didgeridoo_0",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_didgeridoo_1",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      }
+    ]
+  }
+}

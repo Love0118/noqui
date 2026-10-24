@@ -1,0 +1,81 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "noqui:gravity_suit"
+      },
+      {
+        "texture": "noqui:wearable_back/back_lute_0",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_lute_1",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_lute_2",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_lute_3",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_lute_4",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_lute_5",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_lute_6",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_lute_7",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_lute_8",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_lute_9",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_lute_10",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_lute_11",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      }
+    ]
+  }
+}

@@ -61,8 +61,8 @@ final class NoquiDialogs {
         UUID session=state.session();
         var inputs=List.of(DialogInput.text("youtubeLink",text("YouTube 링크")).initial("").maxLength(2048).build(),
                 DialogInput.text("title",text("제목")).initial("").maxLength(160).build(),
-                DialogInput.text("tags",text("태그 · ; 구분 · 최대 10개")).initial("").maxLength(330).build());
-        p.showDialog(Dialog.create(b->b.empty().base(DialogBase.builder(text("노래 제출 · 출제권 1장")).canCloseWithEscape(true).inputs(inputs).build())
+                DialogInput.text("tags",text("태그 (; 구분, 최대 10개)")).initial("").maxLength(330).build());
+        p.showDialog(Dialog.create(b->b.empty().base(DialogBase.builder(text("노래 제출 (출제권 1장)")).canCloseWithEscape(true).inputs(inputs).build())
                 .type(DialogType.confirmation(button(p,"제출",(who,r)->plugin.submit(who,session,r.getText("youtubeLink"),r.getText("title"),r.getText("tags"))),button(p,"취소",(who,r)->{})))));
     }
     void admin(Player p) {

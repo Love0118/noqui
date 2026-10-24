@@ -18,7 +18,7 @@ class NoquiCommandTest {
         var bridge=new MediaBridge(){public CompletionStage<Media> prepare(Request r){return CompletableFuture.completedFuture(new Media("ready",60000));}public void cancel(UUID s,long r){}public void publish(QuizGame.Snapshot s){}};
         var game=new QuizGame(bridge,Runnable::run,()->clock[0],new QuizGame.Output(){public void changed(QuizGame.Snapshot s){}public void error(UUID p,String m){}},115,false);
         game.start(players);UUID author=players.getFirst();game.grant(author,1);game.submit(author,game.snapshot().revision(),Song.input("https://youtu.be/BaW_jenozKc","Private","tag"));
-        game.browsersReady(game.snapshot().revision(),true,true);game.controlAccepted(game.snapshot().revision());clock[0]=game.snapshot().startsAt();game.tick();assertEquals(QuizGame.Phase.PLAYING,game.snapshot().phase());return game;
+        game.browsersReady(game.snapshot().revision(),true,true);game.controlAccepted(game.snapshot().revision());clock[0]=game.snapshot().startsAt()+1;assertTrue(game.confirmPlayback(author,game.snapshot().roundId(),game.snapshot().playbackGeneration(),1,clock[0]));assertEquals(QuizGame.Phase.PLAYING,game.snapshot().phase());return game;
     }
     @Test void winnerCommandStillVotesAndForceRemainsOpOnly()throws Exception {
         UUID author=UUID.randomUUID(),winner=UUID.randomUUID();long[] clock={100000};var game=playing(List.of(author,winner,UUID.randomUUID()),clock);
@@ -47,6 +47,13 @@ class NoquiCommandTest {
         assertTrue(NoquiPlugin.configuredModes(config).enabled().isEmpty());plugin.onCommand(sender,null,"noqui",new String[]{"ban","add","Bad","Apple"});assertTrue(game.modes().bannedAnswers().contains("badapple"));
         plugin.onCommand(sender,null,"noqui",new String[]{"ban","remove","badapple"});assertFalse(game.modes().bannedAnswers().contains("badapple"));
         when(sender.isOp()).thenReturn(false);plugin.onCommand(sender,null,"noqui",new String[]{"mod","add","무경쟁"});assertFalse(game.modes().has(QuizModes.Mode.NONCOMPETITIVE));
+    }
+    @Test void grantAndStatusUsePlainSpacingAndSessionRegistrationCount()throws Exception {
+        var plugin=mock(NoquiPlugin.class,CALLS_REAL_METHODS);var game=game();UUID id=UUID.randomUUID();game.start(List.of(id),200);set(plugin,"game",game);
+        var sender=mock(org.bukkit.command.CommandSender.class);when(sender.isOp()).thenReturn(true);var target=mock(Player.class);when(target.getUniqueId()).thenReturn(id);when(target.getName()).thenReturn("R_Rust");
+        try(var bukkit=mockStatic(Bukkit.class)){bukkit.when(()->Bukkit.getPlayerExact("R_Rust")).thenReturn(target);plugin.onCommand(sender,null,"noqui",new String[]{"give","R_Rust"});}
+        verify(sender).sendMessage(NoquiPlugin.text("R_Rust 출제권 1장 지급"));plugin.onCommand(sender,null,"noqui",new String[]{"status"});
+        verify(sender).sendMessage(NoquiPlugin.text("Noqui WAITING_FOR_SUBMISSION 참가 1명 라운드 0/0"));assertEquals(200,game.snapshot().totalRounds());
     }
     @Test void proxySubmissionPreservesDefenseAndZeroBalanceCannotRejoinOrSubmit()throws Exception {
         var plugin=mock(NoquiPlugin.class,CALLS_REAL_METHODS);var player=mock(Player.class);UUID id=UUID.randomUUID();when(player.getUniqueId()).thenReturn(id);var game=game();game.start(List.of(id));set(plugin,"game",game);plugin.dialogs=mock(NoquiDialogs.class);
@@ -138,7 +145,6 @@ class NoquiCommandTest {
         plugin.openTicketForm(p);when(p.isOnline()).thenReturn(false);tasks.remove().run();verify(plugin.dialogs,times(1)).submit(p);
     }
     @Test void controlCompassAndTicketNamesAndLoreDisableItalicsWhilePreservingColors()throws Exception {
-        var plugin=mock(NoquiPlugin.class,CALLS_REAL_METHODS);doReturn("noqui").when(plugin).namespace();
         try(var items=mockConstruction(org.bukkit.inventory.ItemStack.class,(item,context)->{
             var meta=mock(org.bukkit.inventory.meta.ItemMeta.class);var data=mock(org.bukkit.persistence.PersistentDataContainer.class);
             when(data.getOrDefault(any(),any(),any())).thenAnswer(c->c.getArgument(2));when(meta.getPersistentDataContainer()).thenReturn(data);
@@ -146,10 +152,8 @@ class NoquiCommandTest {
             doAnswer(c->{assertEquals(net.kyori.adventure.text.format.TextDecoration.State.FALSE,c.getArgument(0,net.kyori.adventure.text.Component.class).decoration(net.kyori.adventure.text.format.TextDecoration.ITALIC));return null;}).when(meta).displayName(any());
             doAnswer(c->{List<net.kyori.adventure.text.Component> lore=c.getArgument(0);for(var line:lore)assertEquals(net.kyori.adventure.text.format.TextDecoration.State.FALSE,line.decoration(net.kyori.adventure.text.format.TextDecoration.ITALIC));return null;}).when(meta).lore(anyList());
         })) {
-            var compass=plugin.minigameCompass();verify(compass.getItemMeta()).displayName(net.kyori.adventure.text.Component.text("미니게임",net.kyori.adventure.text.format.NamedTextColor.AQUA).decoration(net.kyori.adventure.text.format.TextDecoration.ITALIC,false));
-            var controlFactory=NoquiPlugin.class.getDeclaredMethod("tool",org.bukkit.Material.class,String.class,String.class,String.class);controlFactory.setAccessible(true);
-            var controls=(org.bukkit.inventory.ItemStack)controlFactory.invoke(plugin,org.bukkit.Material.PAPER,"controls","노래퀴즈","우클릭 또는 F: 노래퀴즈");
-            verify(controls.getItemMeta()).displayName(net.kyori.adventure.text.Component.text("노래퀴즈").decoration(net.kyori.adventure.text.format.TextDecoration.ITALIC,false));
+            var compass=CabinNavigation.item("defense");verify(compass.getItemMeta()).displayName(net.kyori.adventure.text.Component.text("미니게임",net.kyori.adventure.text.format.NamedTextColor.AQUA).decoration(net.kyori.adventure.text.format.TextDecoration.ITALIC,false));
+            for(String id:List.of("settings","traits")){var navigation=CabinNavigation.item(id);assertEquals(id.equals("settings")?org.bukkit.Material.COMPARATOR:org.bukkit.Material.ENCHANTED_BOOK,navigation.getType());}
             var preview=QuestionTickets.displayItem();verify(preview.getItemMeta()).displayName(net.kyori.adventure.text.Component.text("출제권",net.kyori.adventure.text.format.NamedTextColor.GOLD).decoration(net.kyori.adventure.text.format.TextDecoration.ITALIC,false));
             assertFalse(QuestionTickets.marked(preview));
         }

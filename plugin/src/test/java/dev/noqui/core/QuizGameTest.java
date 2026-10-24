@@ -40,13 +40,24 @@ class QuizGameTest {
         }
         fail("No live media job");
     }
-    private void play(QuizGame g,long duration){media(g,duration);g.browsersReady(g.snapshot().revision(),true,true);g.controlAccepted(g.snapshot().revision());now[0]=g.snapshot().startsAt();g.tick();assertEquals(QuizGame.Phase.PLAYING,g.snapshot().phase());}
+    private void play(QuizGame g,long duration){media(g,duration);g.browsersReady(g.snapshot().revision(),true,true);g.controlAccepted(g.snapshot().revision());now[0]=g.snapshot().startsAt();g.tick();confirm(g);assertEquals(QuizGame.Phase.PLAYING,g.snapshot().phase());}
+    private void confirm(QuizGame g){now[0]++;var s=g.snapshot();assertTrue(g.confirmPlayback(s.participants().iterator().next(),s.roundId(),s.playbackGeneration(),s.anchorPositionMillis()+s.playbackRate(),now[0]));}
     private void finish(QuizGame g){now[0]=g.snapshot().endsAt();g.tick();now[0]+=5000;g.tick();}
+    @Test void refundedUnplayedRoundDoesNotLeaveAPhantomRoundNumber() {
+        var g=start();submit(g,author);assertEquals(1,g.snapshot().round());g.forceSkip(g.snapshot().roundId());
+        assertEquals(0,g.snapshot().round());assertEquals(5,g.credits(author));
+    }
+    @Test void transportAcknowledgementCannotSpendOrStartWithoutPlaybackProgress() {
+        var g=start();submit(g,author);media(g,60000);g.browsersReady(g.snapshot().revision(),true,true);g.controlAccepted(g.snapshot().revision());
+        now[0]=g.snapshot().startsAt()+120000;g.tick();assertEquals(QuizGame.Phase.COUNTDOWN,g.snapshot().phase());
+        assertTrue(g.pending(author));assertEquals(60000,g.snapshot().remainingMillis());assertFalse(g.answer(second,"bad apple"));assertEquals(0,roundEnds);
+        g.stop();assertEquals(5,g.credits(author));
+    }
     @Test void mediaAndBrowserGatesDoNotStartClockEarlyAndDurationCapsRound() {
         var g=start();submit(g,author);now[0]+=50000;g.tick();assertEquals(QuizGame.Phase.WAITING_FOR_MEDIA,g.snapshot().phase());assertEquals(0,g.snapshot().startsAt());
         media(g,10000);assertFalse(g.answer(second,"bad apple"));g.browsersReady(g.snapshot().revision()-1,true,true);assertEquals(QuizGame.Phase.PREPARING,g.snapshot().phase());
         g.browsersReady(g.snapshot().revision(),true,true);assertEquals(now[0]+4000,g.snapshot().startsAt());g.controlAccepted(g.snapshot().revision());
-        now[0]+=3999;g.tick();assertFalse(g.answer(second,"bad apple"));now[0]++;g.tick();assertTrue(g.answer(second,"bad apple"));
+        now[0]+=3999;g.tick();assertFalse(g.answer(second,"bad apple"));now[0]++;g.tick();confirm(g);assertTrue(g.answer(second,"bad apple"));
         assertEquals(10000,g.snapshot().clipEndMillis());
     }
     @Test void firstCorrectScoresOnceContinuesAudioAndNeverGrantsCreditsOrPresenterRights() {
@@ -72,11 +83,22 @@ class QuizGameTest {
     }
     @Test void anyNoncompetitiveWinnerCanSkipIncludingASecondAnswererWhoAlreadyVoted() {
         var g=start();g.modes(g.modes().with(QuizModes.Mode.NONCOMPETITIVE,true));submit(g,author);play(g,60000);UUID round=g.snapshot().roundId();
-        assertTrue(g.voteSkip(second,round));assertTrue(g.answer(author,"bad apple"));assertTrue(g.answer(second,"동방"));assertEquals(author,g.snapshot().winner());
-        assertTrue(g.skipAsWinner(second,round));assertFalse(g.snapshot().playing());assertEquals(List.of(author,second),g.snapshot().winners());assertEquals(List.of(2,1),rewards);
-        assertEquals(1,g.snapshot().skipVotes());assertEquals(1,roundEnds);assertFalse(g.answer(third,"동방"));assertFalse(g.skipAsWinner(author,round));
+        assertTrue(g.voteSkip(third,round));assertTrue(g.answer(second,"bad apple"));assertTrue(g.answer(third,"동방"));assertEquals(second,g.snapshot().winner());
+        assertTrue(g.skipAsWinner(third,round));assertFalse(g.snapshot().playing());assertEquals(List.of(second,third),g.snapshot().winners());assertEquals(List.of(2,1),rewards);
+        assertEquals(1,g.snapshot().skipVotes());assertEquals(1,roundEnds);assertFalse(g.answer(second,"동방"));assertFalse(g.skipAsWinner(second,round));assertFalse(g.answer(author,"동방"));
     }
     @Test void winnerCanSkipWhilePaused(){skipPausedWinner(false);}
+    @Test void presenterSelfAnswerIsRejectedInEveryModeWithoutScoreRewardWinnerOrRoundChange() {
+        for(QuizModes.Mode mode:List.of(QuizModes.Mode.NONCOMPETITIVE,QuizModes.Mode.MATCH_SKIP,QuizModes.Mode.TITLE_ONLY,QuizModes.Mode.TITLE_BONUS)){
+            var g=start();g.modes(g.modes().with(mode,true));submit(g,author);play(g,60000);
+            UUID round=g.snapshot().roundId();var before=g.snapshot();
+            assertFalse(g.answer(author,"bad apple"));assertFalse(g.answer(author,"동방"));
+            assertEquals(before,g.snapshot());assertEquals(QuizGame.Phase.PLAYING,g.snapshot().phase());assertTrue(g.snapshot().playing());
+            assertNull(g.snapshot().winner());assertTrue(g.snapshot().winners().isEmpty());assertEquals(0,g.snapshot().scores().get(author));
+            assertEquals(1,g.snapshot().round());assertTrue(rewards.isEmpty());assertEquals(0,roundEnds);
+            assertFalse(g.snapshot().canWinnerSkip(author));assertFalse(g.skipAsWinner(author,round));
+        }
+    }
     @Test void winnerCanSkipDuringResumeCountdown(){skipPausedWinner(true);}
     private void skipPausedWinner(boolean resume) {
         var g=start();submit(g,author);play(g,60000);assertTrue(g.answer(second,"bad apple"));now[0]+=2000;g.pause();long position=g.snapshot().anchorPositionMillis();
@@ -101,26 +123,26 @@ class QuizGameTest {
     }
     @Test void noncompetitionWithoutSkipKeepsAnswersPrivateUntilDeadlineAndAwardsEachPlayerOnce() {
         var g=start();g.modes(g.modes().with(QuizModes.Mode.NONCOMPETITIVE,true));submit(g,author);play(g,60000);long end=g.snapshot().endsAt();
-        assertTrue(g.answer(author,"BAD APPLE"));assertTrue(g.answer(second,"동방"));assertFalse(g.answer(author,"배드애플"));assertEquals(QuizGame.Phase.PLAYING,g.snapshot().phase());assertEquals(end,g.snapshot().endsAt());
-        assertEquals(List.of(author,second),g.snapshot().winners());assertEquals(1,g.snapshot().scores().get(author));assertEquals(1,g.snapshot().scores().get(second));
-        now[0]=end;g.tick();assertEquals(QuizGame.Phase.REVEAL,g.snapshot().phase());assertFalse(g.snapshot().playing());assertEquals(List.of(author,second),g.snapshot().winners());assertFalse(g.answer(third,"동방"));
+        assertTrue(g.answer(second,"BAD APPLE"));assertTrue(g.answer(third,"동방"));assertFalse(g.answer(second,"배드애플"));assertEquals(QuizGame.Phase.PLAYING,g.snapshot().phase());assertEquals(end,g.snapshot().endsAt());
+        assertEquals(List.of(second,third),g.snapshot().winners());assertEquals(1,g.snapshot().scores().get(second));assertEquals(1,g.snapshot().scores().get(third));
+        now[0]=end;g.tick();assertEquals(QuizGame.Phase.REVEAL,g.snapshot().phase());assertFalse(g.snapshot().playing());assertEquals(List.of(second,third),g.snapshot().winners());assertFalse(g.answer(author,"동방"));
     }
     @Test void noncompetitionMatchSkipUsesFirstAnswersTwoSecondWindowAndPausesItsRemainingTime() {
-        var g=game(67,true,true,false);g.modes(g.modes().with(QuizModes.Mode.NONCOMPETITIVE,true));submit(g,author);play(g,60000);assertTrue(g.answer(author,"BAD APPLE"));
-        now[0]+=1000;assertTrue(g.answer(second,"동방"));g.pause();now[0]+=60000;g.tick();assertEquals(QuizGame.Phase.PAUSED,g.snapshot().phase());assertFalse(g.answer(third,"배드애플"));
-        g.resume();g.controlAccepted(g.snapshot().revision());now[0]=g.snapshot().startsAt();g.tick();assertEquals(QuizGame.Phase.PLAYING,g.snapshot().phase());
-        now[0]+=999;g.tick();assertTrue(g.snapshot().playing());assertTrue(g.answer(third,"배드애플"));now[0]++;g.tick();assertFalse(g.snapshot().playing());assertEquals(3,g.snapshot().winners().size());
+        var g=game(67,true,true,false);UUID fourth=UUID.randomUUID();g.join(fourth);g.modes(g.modes().with(QuizModes.Mode.NONCOMPETITIVE,true));submit(g,author);play(g,60000);assertTrue(g.answer(second,"BAD APPLE"));
+        now[0]+=1000;assertTrue(g.answer(third,"동방"));g.pause();now[0]+=60000;g.tick();assertEquals(QuizGame.Phase.PAUSED,g.snapshot().phase());assertFalse(g.answer(fourth,"배드애플"));
+        g.resume();g.controlAccepted(g.snapshot().revision());now[0]=g.snapshot().startsAt();g.tick();confirm(g);assertEquals(QuizGame.Phase.PLAYING,g.snapshot().phase());
+        now[0]+=999;g.tick();assertTrue(g.snapshot().playing());assertTrue(g.answer(fourth,"배드애플"));now[0]++;g.tick();assertFalse(g.snapshot().playing());assertEquals(3,g.snapshot().winners().size());
         long deadline=g.snapshot().endsAt();g.forceSkip(g.snapshot().roundId());assertEquals(deadline,g.snapshot().endsAt());
     }
     @Test void speedModeUsesMediaPositionAtDoubleRateAndPreservesPauseAndResumeTiming() {
-        var g=start();g.modes(g.modes().with(QuizModes.Mode.SPEED_X2,true));submit(g,author);play(g,115007);assertEquals(2,g.snapshot().playbackRate());assertEquals(115000,g.snapshot().clipEndMillis());assertEquals(57500,g.snapshot().endsAt()-g.snapshot().startsAt());
-        now[0]+=10000;g.pause();assertEquals(20000,g.snapshot().anchorPositionMillis());assertEquals(47500,g.snapshot().remainingMillis());now[0]+=60000;g.resume();
-        assertEquals(47500,g.snapshot().endsAt()-g.snapshot().startsAt());g.controlAccepted(g.snapshot().revision());now[0]=g.snapshot().startsAt();g.tick();assertEquals(47500,g.snapshot().remainingMillis());
+        var g=start();g.modes(g.modes().with(QuizModes.Mode.SPEED_X2,true));submit(g,author);play(g,115007);assertEquals(2,g.snapshot().playbackRate());assertEquals(115000,g.snapshot().clipEndMillis());assertEquals(57499,g.snapshot().endsAt()-g.snapshot().startsAt());
+        now[0]+=10000;g.pause();assertEquals(20002,g.snapshot().anchorPositionMillis());assertEquals(47499,g.snapshot().remainingMillis());now[0]+=60000;g.resume();
+        assertEquals(47499,g.snapshot().remainingMillis());g.controlAccepted(g.snapshot().revision());now[0]=g.snapshot().startsAt();g.tick();confirm(g);assertEquals(47498,g.snapshot().remainingMillis());
         now[0]=g.snapshot().endsAt();g.tick();assertFalse(g.snapshot().playing());assertEquals(115000,g.snapshot().anchorPositionMillis());
     }
     @Test void doubleRateRoundsOddSourceMillisecondsUpWithoutEndingOneTickEarly() {
         var g=start();g.modes(g.modes().with(QuizModes.Mode.SPEED_X2,true));submit(g,author);play(g,60001);
-        assertEquals(60001,g.snapshot().clipEndMillis());assertEquals(30001,g.snapshot().endsAt()-g.snapshot().startsAt());assertEquals(30001,g.snapshot().remainingMillis());
+        assertEquals(60001,g.snapshot().clipEndMillis());assertEquals(30000,g.snapshot().endsAt()-g.snapshot().startsAt());assertEquals(30000,g.snapshot().remainingMillis());
         now[0]=g.snapshot().endsAt()-1;g.tick();assertTrue(g.snapshot().playing());now[0]++;g.tick();assertFalse(g.snapshot().playing());assertEquals(60001,g.snapshot().anchorPositionMillis());
     }
     @Test void titleOnlyAndBannedKeywordsKeepOriginalSubstringRulesAndIndependentTitleBonus() {
@@ -130,7 +152,7 @@ class QuizGameTest {
         assertEquals(1,modes.with(QuizModes.Mode.TITLE_BONUS,false).points(song,"bad apple"));assertEquals(0,modes.points(song,"apple"));
     }
     @Test void modeChangesOnlyAffectNextRoundAndCannotRevealAnExistingNoncompetitionRound() {
-        var g=start();g.modes(g.modes().with(QuizModes.Mode.NONCOMPETITIVE,true));submit(g,author);submit(g,second);play(g,60000);assertTrue(g.answer(author,"bad apple"));
+        var g=start();g.modes(g.modes().with(QuizModes.Mode.NONCOMPETITIVE,true));submit(g,author);submit(g,second);play(g,60000);assertTrue(g.answer(third,"bad apple"));
         g.modes(g.modes().with(QuizModes.Mode.NONCOMPETITIVE,false).with(QuizModes.Mode.MATCH_SKIP,true).with(QuizModes.Mode.SPEED_X2,true).with(QuizModes.Mode.TITLE_ONLY,true));
         assertTrue(g.snapshot().modes().has(QuizModes.Mode.NONCOMPETITIVE));assertEquals(1,g.snapshot().playbackRate());assertTrue(g.answer(second,"동방"));assertEquals(QuizGame.Phase.PLAYING,g.snapshot().phase());
         g.forceSkip(g.snapshot().roundId());now[0]+=5000;g.tick();play(g,60000);assertFalse(g.snapshot().modes().has(QuizModes.Mode.NONCOMPETITIVE));assertEquals(2,g.snapshot().playbackRate());assertFalse(g.answer(author,"동방"));assertTrue(g.answer(author,"bad apple"));assertFalse(g.snapshot().playing());
@@ -140,9 +162,9 @@ class QuizGameTest {
             int[] ended={0};var future=new CompletableFuture<MediaBridge.Media>();
             var g=new QuizGame(new MediaBridge(){public CompletionStage<Media> prepare(Request r){return future;}public void cancel(UUID s,long r){}public void publish(QuizGame.Snapshot s){}},Runnable::run,()->now[0],new QuizGame.Output(){
                 public void changed(QuizGame.Snapshot s){}public void error(UUID id,String message){}public void roundEnded(){ended[0]++;}
-            },115,cause.equals("match-skip"));g.start(List.of(author));g.grant(author,1);g.submit(author,g.snapshot().revision(),song);future.complete(new MediaBridge.Media("media",10000));
-            g.browsersReady(g.snapshot().revision(),true,true);g.controlAccepted(g.snapshot().revision());now[0]=g.snapshot().startsAt();g.tick();
-            switch(cause){case "timeout"->{now[0]=g.snapshot().endsAt();g.tick();}case "manual"->g.forceSkip(g.snapshot().roundId());case "vote"->g.voteSkip(author,g.snapshot().roundId());default->g.answer(author,"bad apple");}
+            },115,cause.equals("match-skip"));g.start(List.of(author));g.grant(author,1);if(cause.equals("match-skip"))g.join(second);g.submit(author,g.snapshot().revision(),song);future.complete(new MediaBridge.Media("media",10000));
+            g.browsersReady(g.snapshot().revision(),true,true);g.controlAccepted(g.snapshot().revision());now[0]=g.snapshot().startsAt();g.tick();confirm(g);
+            switch(cause){case "timeout"->{now[0]=g.snapshot().endsAt();g.tick();}case "manual"->g.forceSkip(g.snapshot().roundId());case "vote"->g.voteSkip(author,g.snapshot().roundId());default->g.answer(second,"bad apple");}
             assertEquals(1,ended[0]);assertFalse(g.snapshot().playing());assertEquals(now[0]+1000,g.snapshot().endsAt());g.forceSkip(g.snapshot().roundId());assertEquals(1,ended[0]);
             now[0]+=999;g.tick();assertEquals(QuizGame.Phase.REVEAL,g.snapshot().phase());now[0]++;g.tick();assertEquals(QuizGame.Phase.WAITING_FOR_SUBMISSION,g.snapshot().phase());
         }
@@ -170,7 +192,7 @@ class QuizGameTest {
         var g=start();submit(g,author);submit(g,second);submit(g,third);g.cancel(second);g.cancel(second);assertEquals(5,g.credits(second));g.leave(third);assertEquals(5,g.credits(third));g.stop();assertEquals(5,g.credits(author));
     }
     @Test void playbackSpendsExactlyOnceEvenAcrossPauseResumeStopAndPresenterLeave() {
-        var g=start();submit(g,author);play(g,60000);g.pause();g.resume();g.controlAccepted(g.snapshot().revision());now[0]=g.snapshot().startsAt();g.tick();
+        var g=start();submit(g,author);play(g,60000);g.pause();g.resume();g.controlAccepted(g.snapshot().revision());now[0]=g.snapshot().startsAt();g.tick();confirm(g);
         g.leave(author);g.stop();assertEquals(4,g.credits(author));
     }
     @Test void absentBrowserKeepsPreparedSongReservedAndWaitsWithoutSpinningOrMisreportingConversionFailure() {
@@ -179,17 +201,17 @@ class QuizGameTest {
         assertEquals(prepared.roundId(),g.snapshot().roundId());assertEquals(prepared.media(),g.snapshot().media());assertEquals(115000,g.snapshot().clipEndMillis());
         assertFalse(g.snapshot().playing());assertEquals(0,g.snapshot().remainingMillis());assertTrue(errors.isEmpty());
         long revision=g.snapshot().revision();for(int i=0;i<100;i++){now[0]+=60000;g.tick();}assertEquals(revision,g.snapshot().revision());assertTrue(errors.isEmpty());assertEquals(1,bridge.futures.size());
-        g.browsersReady(prepared.revision(),true,true);assertEquals(QuizGame.Phase.PREPARING,g.snapshot().phase());
+        g.browsersReady(prepared.revision()-1,true,true);assertEquals(QuizGame.Phase.PREPARING,g.snapshot().phase());
         g.browsersReady(g.snapshot().revision(),true,false);assertEquals(QuizGame.Phase.COUNTDOWN,g.snapshot().phase());
-        g.controlAccepted(g.snapshot().revision());now[0]=g.snapshot().startsAt();g.tick();assertEquals(QuizGame.Phase.PLAYING,g.snapshot().phase());assertEquals(4,g.credits(author));
+        g.controlAccepted(g.snapshot().revision());now[0]=g.snapshot().startsAt();g.tick();confirm(g);assertEquals(QuizGame.Phase.PLAYING,g.snapshot().phase());assertEquals(4,g.credits(author));
     }
     @Test void browserWaitRemainsCancellableRefundableAndKeepsPrewarmedQueue() {
         var g=start();submit(g,author);submit(g,second);media(g,60000);media(g,50000);now[0]+=20000;g.tick();
         assertEquals(author,g.snapshot().presenter());assertEquals(2,bridge.futures.size());g.cancel(author);assertEquals(5,g.credits(author));assertEquals(second,g.snapshot().presenter());assertEquals(QuizGame.Phase.PREPARING,g.snapshot().phase());
         assertEquals(50000,g.snapshot().media().durationMillis());now[0]+=20000;g.tick();g.stop();assertEquals(5,g.credits(second));
     }
-    @Test void partialBrowserReadinessStillStartsAfterGracePeriodAndUnacceptedCountdownRequiresFreshReadiness() {
-        var g=start();submit(g,author);media(g,60000);g.browsersReady(g.snapshot().revision(),true,false);now[0]+=20000;g.tick();assertEquals(QuizGame.Phase.COUNTDOWN,g.snapshot().phase());
+    @Test void onePreparedBrowserStartsImmediatelyAndUnacceptedCountdownRequiresFreshReadiness() {
+        var g=start();submit(g,author);media(g,60000);g.browsersReady(g.snapshot().revision(),true,false);assertEquals(QuizGame.Phase.COUNTDOWN,g.snapshot().phase());
         now[0]=g.snapshot().startsAt();g.tick();assertEquals(QuizGame.Phase.PREPARING,g.snapshot().phase());now[0]+=20000;g.tick();assertEquals(QuizGame.Phase.PREPARING,g.snapshot().phase());assertFalse(g.snapshot().playing());
         g.browsersReady(g.snapshot().revision(),true,false);assertEquals(QuizGame.Phase.COUNTDOWN,g.snapshot().phase());
     }
@@ -211,9 +233,9 @@ class QuizGameTest {
         now[0]+=5000;g.tick();submit(g,second);assertEquals(0,g.snapshot().skipVotes());assertFalse(g.voteSkip(author,old));
     }
     @Test void pauseFreezesPositionDeadlineAndHintScheduleAndRejectsAnswers() {
-        var g=game(67,false,true,true);submit(g,author);play(g,60000);now[0]+=4000;g.pause();assertEquals(4000,g.snapshot().anchorPositionMillis());assertEquals(56000,g.snapshot().remainingMillis());
-        now[0]+=90000;g.tick();assertEquals(56000,g.snapshot().remainingMillis());assertFalse(g.answer(second,"bad apple"));assertThrows(IllegalArgumentException.class,g::hint);
-        g.resume();assertEquals(now[0]+4000,g.snapshot().startsAt());g.controlAccepted(g.snapshot().revision());now[0]=g.snapshot().startsAt();g.tick();assertEquals(56000,g.snapshot().remainingMillis());
+        var g=game(67,false,true,true);submit(g,author);play(g,60000);now[0]+=4000;g.pause();assertEquals(4001,g.snapshot().anchorPositionMillis());assertEquals(55999,g.snapshot().remainingMillis());
+        now[0]+=90000;g.tick();assertEquals(55999,g.snapshot().remainingMillis());assertFalse(g.answer(second,"bad apple"));assertThrows(IllegalArgumentException.class,g::hint);
+        g.resume();assertEquals(now[0]+4000,g.snapshot().startsAt());g.controlAccepted(g.snapshot().revision());now[0]=g.snapshot().startsAt();g.tick();confirm(g);assertEquals(55998,g.snapshot().remainingMillis());
         now[0]+=4999;g.tick();assertTrue(g.snapshot().hint().isEmpty());now[0]++;g.tick();assertEquals("________",g.snapshot().hint());
     }
     @Test void initialHintPreservesOriginalHangulInitialsAndRandomRevealsLeaveOneHidden() {
@@ -222,7 +244,7 @@ class QuizGameTest {
     }
     @Test void automaticHintsAreOffByDefaultAndUnacknowledgedCountdownNeverSpends() {
         var g=start();submit(g,author);media(g,60000);g.browsersReady(g.snapshot().revision(),true,true);now[0]=g.snapshot().startsAt();g.tick();assertEquals(QuizGame.Phase.PREPARING,g.snapshot().phase());assertEquals(4,g.credits(author));
-        g.browsersReady(g.snapshot().revision(),true,true);g.controlAccepted(g.snapshot().revision());now[0]=g.snapshot().startsAt();g.tick();now[0]+=9000;g.tick();assertTrue(g.snapshot().hint().isEmpty());
+        g.browsersReady(g.snapshot().revision(),true,true);g.controlAccepted(g.snapshot().revision());now[0]=g.snapshot().startsAt();g.tick();confirm(g);now[0]+=9000;g.tick();assertTrue(g.snapshot().hint().isEmpty());
     }
     @Test void limitValidationIsExplicit(){assertThrows(IllegalArgumentException.class,()->new QuizGame(bridge,Runnable::run,()->0,null,116,false));assertThrows(IllegalArgumentException.class,()->game(-1,false,true,false));}
     @Test void everyAcceptedQueuedSongBeginsConversionImmediatelyAndReadySongsAdvanceWithoutNewJob() {
@@ -259,7 +281,7 @@ class QuizGameTest {
     private Path block(Path file)throws Exception {Path temp=file.resolveSibling(file.getFileName()+".tmp");Files.createDirectory(temp);return temp;}
     @Test void failedSpendRetractsPlayingTimelineAndRetainsRecoverableReservation()throws Exception {
         Path file=directory.resolve("credits.json");var g=durable(file,new int[1]);submit(g,author);media(g,60000);g.browsersReady(g.snapshot().revision(),true,true);g.controlAccepted(g.snapshot().revision());
-        Path blocked=block(file);now[0]=g.snapshot().startsAt();assertDoesNotThrow(g::tick);assertFalse(g.snapshot().playing());assertEquals(QuizGame.Phase.WAITING_FOR_SUBMISSION,g.snapshot().phase());assertFalse(g.answer(second,"bad apple"));
+        Path blocked=block(file);now[0]=g.snapshot().startsAt()+1;var pending=g.snapshot();assertFalse(g.confirmPlayback(author,pending.roundId(),pending.playbackGeneration(),1,now[0]));assertFalse(g.snapshot().playing());assertEquals(QuizGame.Phase.WAITING_FOR_SUBMISSION,g.snapshot().phase());assertFalse(g.answer(second,"bad apple"));
         assertEquals(0,g.credits(author));Files.delete(blocked);now[0]+=1000;g.tick();assertEquals(1,g.credits(author));assertEquals(1,new CreditLedger(file).balance(author));
     }
     @Test void refundWriteFailureDoesNotStrandPreparationOrBlockStopAndRetriesAfterStorageRecovers()throws Exception {

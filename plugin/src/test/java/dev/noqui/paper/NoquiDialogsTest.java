@@ -118,7 +118,7 @@ class NoquiDialogsTest {
     }
     @Test void winnersKeepTheExistingVoteButtonAndCannotVoteTwice() {
         game.grant(other,1);submit(other);jobs.getFirst().complete(new MediaBridge.Media("ready",60000));
-        game.browsersReady(game.snapshot().revision(),true,true);game.controlAccepted(game.snapshot().revision());now=game.snapshot().startsAt();game.tick();assertTrue(game.answer(id,"Private"));
+        game.browsersReady(game.snapshot().revision(),true,true);game.controlAccepted(game.snapshot().revision());now=game.snapshot().startsAt()+1;assertTrue(game.confirmPlayback(id,game.snapshot().roundId(),game.snapshot().playbackGeneration(),1,now));assertTrue(game.answer(id,"Private"));
         var type=show();assertEquals(List.of("넘기기 투표","닫기"),labels(type));callbacks.get(((MultiActionType)type).actions().getFirst().action()).accept(null,player);
         assertTrue(game.snapshot().playing());assertEquals(1,game.snapshot().skipVotes());assertEquals(List.of("닫기"),labels(show()));
     }
@@ -153,7 +153,7 @@ class NoquiDialogsTest {
         doAnswer(c->{game.submit(id,game.snapshot().revision(),Song.input(c.getArgument(2),c.getArgument(3),c.getArgument(4)));return null;}).when(plugin).submit(eq(player),any(),anyString(),anyString(),anyString());
         view.submit(player);var first=(ConfirmationType)dialogs.getLast().type();var response=mock(io.papermc.paper.dialog.DialogResponseView.class);
         when(response.getText("youtubeLink")).thenReturn("https://youtu.be/BaW_jenozKc");when(response.getText("title")).thenReturn("Previous title");when(response.getText("tags")).thenReturn("Previous tag");
-        callbacks.get(first.yesButton().action()).accept(response,player);assertTrue(game.pending(id));jobs.getFirst().complete(new MediaBridge.Media("ready",1000));game.browsersReady(game.snapshot().revision(),true,true);game.controlAccepted(game.snapshot().revision());now=game.snapshot().startsAt();game.tick();game.forceSkip(game.snapshot().roundId());now+=1000;game.tick();assertEquals(2,game.credits(id));
+        callbacks.get(first.yesButton().action()).accept(response,player);assertTrue(game.pending(id));jobs.getFirst().complete(new MediaBridge.Media("ready",1000));game.browsersReady(game.snapshot().revision(),true,true);game.controlAccepted(game.snapshot().revision());now=game.snapshot().startsAt()+1;assertTrue(game.confirmPlayback(id,game.snapshot().roundId(),game.snapshot().playbackGeneration(),1,now));game.forceSkip(game.snapshot().roundId());now+=1000;game.tick();assertEquals(2,game.credits(id));
         view.submit(player);var second=(ConfirmationType)dialogs.getLast().type();callbacks.get(second.yesButton().action()).accept(response,player);assertTrue(game.pending(id));game.cancel(id);assertEquals(2,game.credits(id));
         view.submit(player);var third=(ConfirmationType)dialogs.getLast().type();callbacks.get(third.noButton().action()).accept(null,player);view.submit(player);
         assertEquals(4,formValues.size());for(var values:formValues)assertEquals(Map.of("youtubeLink","","title","","tags",""),values);

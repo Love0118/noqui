@@ -1,0 +1,23 @@
+{
+  "id": "pop_tart_hat",
+  "labelKo": "토스터 페이스트리",
+  "title": "Pop Tart",
+  "author": "netherlife15",
+  "sourceURL": "https://blockbenchworkshop.com/model/netherlife15/pop-tart",
+  "sourceDownloadURL": "https://blockbenchworkshop.com/cdn/previews/gqJxfCedjZqNwBjsSiOkq6yHa7QD6flm/2abd4704-06d8-4358-90fc-f5b804865b9a.json?v=5",
+  "sourceKind": "publicly published interactive preview model JSON",
+  "license": "Creative Commons Attribution 4.0 International",
+  "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+  "licenseObligations": "Credit the named author, link the source and license, and identify changes.",
+  "changes": [
+    "Two solid cuboids make the source pastry; no generated 2D item icon is used.",
+    "Adapted prop/pet: no upstream claim that it is a wearable Minecraft hat.",
+    "Use head slot anchor Y=1.85, ItemDisplay FIXED, 16 model units per block. Runtime head scale assumed 1.0.",
+    "Native item wrapper references minecraft:model. Parent owns final geometry/attachment visual QA, selection, and pack integration.",
+    "PNG bytes are unmodified. UV coordinates are normalized to Java 0..16 units using each texture UV dimensions, or the source project resolution for older .bbmodel files.",
+    "Texture references use noqui:item/cosmetics/<id>/texture_<n> so all custom sprites belong to the vanilla item atlas directory in 1.21.11+.",
+    "Only uniform geometry scaling/translation and the documented static pose/frame selection were applied. FIXED transforms are explicitly set for the head anchor; original held/head display transforms are replaced.",
+    "Source cullface hints were removed for detached display use; shade:false maps to 26.3 shade_direction_override:up."
+  ],
+  "status": "native_export_ready_for_parent_visual_qa"
+}

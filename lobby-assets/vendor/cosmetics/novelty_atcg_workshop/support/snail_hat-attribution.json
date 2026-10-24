@@ -1,0 +1,24 @@
+{
+  "id": "snail_hat",
+  "labelKo": "머리 위 달팽이",
+  "title": "lissachatina_fulica",
+  "author": "atcg",
+  "sourceURL": "https://blockbenchworkshop.com/model/atcg/lissachatina-fulica",
+  "sourceDownloadURL": "https://blockbenchworkshop.com/cdn/previews/VegvhHXJI4lMbjgP7x9zpljU2WhpL2yv/e2636213-4cc3-4c98-b4a2-9d2fa0fd7fc9.json?v=5",
+  "sourceKind": "publicly published interactive preview model JSON",
+  "license": "CC0 1.0 Universal",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "licenseObligations": "No attribution requirement; retain the supplied source credit as a courtesy.",
+  "changes": [
+    "Original snail in its static bind pose; shell group rotation is flattened exactly.",
+    "Adapted prop/pet: no upstream claim that it is a wearable Minecraft hat.",
+    "Use head slot anchor Y=1.85, ItemDisplay FIXED, 16 model units per block. Runtime head scale assumed 1.0.",
+    "Native item wrapper references minecraft:model. Parent owns final geometry/attachment visual QA, selection, and pack integration.",
+    "PNG bytes are unmodified. UV coordinates are normalized to Java 0..16 units using each texture UV dimensions, or the source project resolution for older .bbmodel files.",
+    "Texture references use noqui:item/cosmetics/<id>/texture_<n> so all custom sprites belong to the vanilla item atlas directory in 1.21.11+.",
+    "Only uniform geometry scaling/translation and the documented static pose/frame selection were applied. FIXED transforms are explicitly set for the head anchor; original held/head display transforms are replaced.",
+    "Source cullface hints were removed for detached display use; shade:false maps to 26.3 shade_direction_override:up.",
+    "Animations are omitted; this is the exact static bind geometry, not an animated export."
+  ],
+  "status": "native_export_ready_for_parent_visual_qa"
+}

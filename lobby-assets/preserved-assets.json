@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "baseline": "beta 3ad4d8e (user supplied); exact assets captured before integration",
+  "cosmetics": [
+    {
+      "id": "pirate_hat",
+      "label": "해적 모자",
+      "slot": "head"
+    },
+    {
+      "id": "backpack",
+      "label": "가방",
+      "slot": "back"
+    },
+    {
+      "id": "glasses",
+      "label": "안경",
+      "slot": "face"
+    },
+    {
+      "id": "crown",
+      "label": "별 왕관",
+      "slot": "head"
+    },
+    {
+      "id": "cap",
+      "label": "별 모자",
+      "slot": "head"
+    },
+    {
+      "id": "bunny",
+      "label": "토끼 귀",
+      "slot": "head"
+    }
+  ],
+  "files": [
+    {
+      "path": "MIT_BACKPACK_LICENSE.txt",
+      "sha256": "608ed1e0e4fca4abde639456bd3d6ed3468a9ecc4145234428d4f8311dde6d13"
+    },
+    {
+      "path": "pack.mcmeta",
+      "sha256": "4e21387e493febd879bf69c6691da43010bef2ffed663a6c8827ddb374724346"
+    },
+    {
+      "path": "SKIN_SOURCE_NOTICE.txt",
+      "sha256": "a2888f062dd1efac273af88f5201d877c899d95307710ae4f3bb6655dcf38bf6"
+    },
+    {
+      "path": "assets/minecraft/sounds.json",
+      "sha256": "11001f85183fc739e63d75951a8cefb594094d5c05ea3726dae7486028ea872d"
+    },
+    {
+      "path": "assets/minecraft/sounds/arsf/0click2.ogg",
+      "sha256": "fa5694819b2dc0790fd33d8f672b140412bc25ae6f799f1ed356e8981741d49d"
+    },
+    {
+      "path": "assets/minecraft/sounds/arsf/0heal.ogg",
+      "sha256": "0bae917121c473173083fc193dc611c8d092a85971c90fe64be3f1d4a5cce4d3"
+    },
+    {
+      "path": "assets/minecraft/sounds/arsf/0miss.ogg",
+      "sha256": "465382ac7769d8f59329c88c5c339d589f1eb70e22b85eb318341d84a734b79c"
+    },
+    {
+      "path": "assets/minecraft/sounds/arsf/0select2.ogg",
+      "sha256": "32d23c1bd4eac7f4a9762eb2c8fb07e826c6c13bdd64996128eb0a77d3939840"
+    },
+    {
+      "path": "assets/minecraft/sounds/arsf/0win.ogg",
+      "sha256": "83805c9fbdab4a93286772a5ed01c3aed635d52d080c756288a72d4e3f74c39d"
+    },
+    {
+      "path": "assets/noqui/items/backpack.json",
+      "sha256": "1d701bd65bf82613ac79c02c4089abc9d55ef3b5ba7ec971b82ea5ffc29d200c"
+    },
+    {
+      "path": "assets/noqui/items/bunny.json",
+      "sha256": "28d67f6a3d0c2972e942b4950ab2b114c96718be2e25e0a396b68c21b09d61b7"
+    },
+    {
+      "path": "assets/noqui/items/cap.json",
+      "sha256": "c661d5c4233169ed3e91abf90ceadec05601f63dbfdb5d8c982ebd0764b70d95"
+    },
+    {
+      "path": "assets/noqui/items/crown.json",
+      "sha256": "5ad3e31029c53f1e1f5948ed54a34b827675cc31d560a2f78908e2547f4c531b"
+    },
+    {
+      "path": "assets/noqui/items/glasses.json",
+      "sha256": "c13f9431d54ceacebc68f275693015efd6fd494df082848da3513836411de492"
+    },
+    {
+      "path": "assets/noqui/items/gravity_suit.json",
+      "sha256": "470f0ad77c55cc7ea82963b223fe75ffa69bbf72bf8af5fca65c8995cc907076"
+    },
+    {
+      "path": "assets/noqui/items/hammer.json",
+      "sha256": "8cdc6cb0d8f0860db6bcb796c5e96fdba4306963ad9ee9223a40f4616a63db4e"
+    },
+    {
+      "path": "assets/noqui/items/pirate_hat.json",
+      "sha256": "afca0d154505a1a118c52dd431cbbd436beb98f1ea865e938c3fbfd2007fc7e6"
+    },
+    {
+      "path": "assets/noqui/items/quad_boots.json",
+      "sha256": "b95684dee879cb91850b85e31d04b9f4f6469093c79dc744f00b818fb4eadcec"
+    },
+    {
+      "path": "assets/noqui/items/snow_bomb.json",
+      "sha256": "6c064c2c1202a46471e552e38443d1ac712da7b2666d201008e8cebf75f9ee80"
+    },
+    {
+      "path": "assets/noqui/items/triple_boots.json",
+      "sha256": "4badedac1cd980137d553dd0e08216130bc34feaae6fd0616ac5714d1ec01c86"
+    },
+    {
+      "path": "assets/noqui/models/backpack.json",
+      "sha256": "c0395900bd23bdd7c28f60dea95059b84f783ab383612dd13aca2112d8d8e0a1"
+    },
+    {
+      "path": "assets/noqui/models/bunny.json",
+      "sha256": "82cb4aa2fba378aba966648a0d578de01b64d1298be53ab340424ff29080f786"
+    },
+    {
+      "path": "assets/noqui/models/cap.json",
+      "sha256": "43d4f8b6d613a1671979f69196eb9588b6bf44d968ee2ef81f3d9411bd2b0745"
+    },
+    {
+      "path": "assets/noqui/models/crown.json",
+      "sha256": "1a7b23c37d522c219c8621822c6be73e8590fd03ffa98eabe7a6f8cd28f79b62"
+    },
+    {
+      "path": "assets/noqui/models/glasses.json",
+      "sha256": "3efa652ffc58675c48d7a6069e4ab29dee480acb99edce86db9f91d689e4bb3f"
+    },
+    {
+      "path": "assets/noqui/models/gravity_suit.json",
+      "sha256": "acd9aef76fa80c92ee4883c09934815cae6e64da1dab71eb40d2ef910e52f004"
+    },
+    {
+      "path": "assets/noqui/models/hammer.json",
+      "sha256": "69a08f18aa23c576acf0ead12b4535d070c3ea33fe0e45dce33105d6b86c80c3"
+    },
+    {
+      "path": "assets/noqui/models/pirate_hat.json",
+      "sha256": "92e2596f5bef99c9d2ae2ad091e61a73332bd2db42a115d28d17333a594f58ce"
+    },
+    {
+      "path": "assets/noqui/models/quad_boots.json",
+      "sha256": "92c6eed633cff37ba8f7d11435f7ea51da5f3160c1bd993ddf018468621fbfb7"
+    },
+    {
+      "path": "assets/noqui/models/snow_bomb.json",
+      "sha256": "fed3b19eb29e857df39f46f1e99d896d1cd3469ac6a39bee5e1f1d092a745bd1"
+    },
+    {
+      "path": "assets/noqui/models/triple_boots.json",
+      "sha256": "b091809a64f04a01f46057df4b3cbc5a0ff17d02ac54576d83da4004997b8822"
+    },
+    {
+      "path": "assets/noqui/textures/entity/shopkeeper.png",
+      "sha256": "d89c73f673250f54f1298cde7be70c1da7680e98700145e8f253c9776fb4cf45"
+    },
+    {
+      "path": "assets/noqui/textures/item/backpack.png",
+      "sha256": "f3505e3ff1c36f2b55e57d3356883781db38dfcdcbdff9f444f82d2e856a904a"
+    },
+    {
+      "path": "assets/noqui/textures/item/palette.png",
+      "sha256": "5971fddff89c1e1f394810ea8345253e5cfab984703396ac0a592180eae3f1d6"
+    }
+  ]
+}

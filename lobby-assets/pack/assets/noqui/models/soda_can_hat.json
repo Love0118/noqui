@@ -1,0 +1,164 @@
+{
+  "credit": "Verified upstream source and modifications: see adjacent attribution.json",
+  "ambientocclusion": false,
+  "gui_light": "front",
+  "textures": {
+    "0": "noqui:item/shared/06e38ee352320d58ee40",
+    "particle": "#0"
+  },
+  "elements": [
+    {
+      "from": [
+        6.2843137,
+        8.0,
+        6.0392157
+      ],
+      "to": [
+        10.2058824,
+        17.8039216,
+        9.9607843
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.0,
+            0.0,
+            2.0,
+            5.0
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            2.0,
+            0.0,
+            4.0,
+            5.0
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            4.0,
+            0.0,
+            6.0,
+            5.0
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            0.0,
+            5.0,
+            2.0,
+            10.0
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            4.0,
+            7.0,
+            2.0,
+            5.0
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            6.0,
+            5.0,
+            4.0,
+            7.0
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "from": [
+        5.7941176,
+        18.0,
+        7.0196078
+      ],
+      "to": [
+        7.754902,
+        18.0,
+        8.9803922
+      ],
+      "faces": {
+        "up": {
+          "uv": [
+            7.0,
+            1.0,
+            6.0,
+            0.0
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            7.0,
+            1.0,
+            6.0,
+            2.0
+          ],
+          "texture": "#0"
+        }
+      }
+    }
+  ],
+  "display": {
+    "fixed": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "gui": {
+      "rotation": [
+        20,
+        145,
+        0
+      ],
+      "translation": [
+        0,
+        -2,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "head": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0.0,
+        6.4,
+        0.0
+      ],
+      "scale": [
+        1.6,
+        1.6,
+        1.6
+      ]
+    }
+  }
+}

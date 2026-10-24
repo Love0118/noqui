@@ -1,0 +1,84 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "noqui:wearable_back/back_trail_rucksack_0",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_trail_rucksack_1",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_trail_rucksack_2",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_trail_rucksack_3",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_trail_rucksack_4",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_trail_rucksack_5",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_trail_rucksack_6",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_trail_rucksack_7",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_trail_rucksack_8",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_trail_rucksack_9",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_trail_rucksack_10",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_trail_rucksack_11",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_trail_rucksack_12",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      }
+    ]
+  }
+}

@@ -17,11 +17,14 @@ import javax.crypto.spec.SecretKeySpec;
 public final class BridgeClient implements MediaBridge {
     // At most64 accepted jobs, each with a server-side300s ingest limit, plus15min delivery/restart margin.
     static final long MAX_PREPARATION_MILLIS=64L*300_000+900_000;
+    private static final int MAX_REQUESTS=64;
     public record Member(UUID uuid, UUID membershipId, String nickname, String textureHash) {}
     public record BrowserPresence(UUID player,UUID membership,boolean connected) {}
+    public record PlaybackProgress(UUID player,UUID membership,UUID round,UUID generation,long positionMs,long lastSeenAtMs) {}
     public interface Readiness {
         void accept(long revision, boolean any, boolean all);
         default void controlAccepted(long revision){}
+        default void playbackStarted(UUID session,PlaybackProgress progress){}
         default void browsers(UUID session,List<BrowserPresence> browsers){}
         default void unavailable(UUID session){}
     }
@@ -38,12 +41,18 @@ public final class BridgeClient implements MediaBridge {
     private final HttpClient http;
     private final SecureRandom random=new SecureRandom();
     private final Gson gson=new GsonBuilder().serializeNulls().create();
-    private final Map<Request,CompletableFuture<Media>> jobs=new ConcurrentHashMap<>();
+    private static final class Job {
+        final UUID id=UUID.randomUUID();
+        final CompletableFuture<Media> future=new CompletableFuture<>();
+        Media media;
+    }
+    private final Map<Request,Job> jobs=new HashMap<>();
     private QuizGame.Snapshot latest;
-    private record Packet(JsonObject body,QuizGame.Snapshot state,List<Member> members,CompletableFuture<Void> ack) {}
+    private record Packet(JsonObject body,QuizGame.Snapshot state,List<Member> members,CompletableFuture<Set<String>> ack) {}
     private final Deque<Packet> pending=new ArrayDeque<>();
-    private CompletableFuture<Void> lastAck,inFlightAck;
-    private boolean inFlight, closed;
+    private CompletableFuture<Set<String>> lastAck,inFlightAck;
+    private boolean inFlight,closing;
+    private volatile boolean closed;
     private long seq=System.currentTimeMillis()*1000, nextWarning;
     public BridgeClient(URI origin, byte[] secret, String keyId, UUID instance, Executor main,
                         Supplier<List<Member>> roster, Readiness readiness, Consumer<String> warning) {
@@ -98,12 +107,28 @@ public final class BridgeClient implements MediaBridge {
         }
         return json;
     }
-    @Override public CompletionStage<Media> prepare(Request job) {
-        var future=new CompletableFuture<Media>();jobs.put(job,future);
-        String videoId=job.song().youtubeUrl().substring(job.song().youtubeUrl().lastIndexOf('=')+1);
-        request("POST","/internal/v1/media/jobs",object("schemaVersion",1,"requestId",UUID.randomUUID(),"videoId",videoId))
-                .whenComplete((reply,error)->poll(job,future,reply,error,preparationClock.getAsLong()+MAX_PREPARATION_MILLIS));
-        future.whenComplete((v,e)->jobs.remove(job,future));return future;
+    @Override public synchronized CompletionStage<Media> prepare(Request request) {
+        if(closed||closing)return CompletableFuture.failedFuture(new IllegalStateException("Bridge closed"));
+        var existing=jobs.get(request);if(existing!=null)return existing.future;
+        if(jobs.size()>=MAX_REQUESTS)return CompletableFuture.failedFuture(new IllegalStateException("Media reservation limit reached"));
+        var job=new Job();jobs.put(request,job);var future=job.future;
+        future.whenComplete((v,error)->{if(error!=null)synchronized(this){if(jobs.remove(request,job)&&job.media!=null)refreshPins();}});
+        String videoId=request.song().youtubeUrl().substring(request.song().youtubeUrl().lastIndexOf('=')+1);
+        request("POST","/internal/v1/media/jobs",object("schemaVersion",1,"requestId",job.id,"videoId",videoId,
+                "song",object("title",request.song().title(),"tags",gson.toJsonTree(request.song().tags()))))
+                .whenComplete((reply,error)->poll(request,future,reply,error,preparationClock.getAsLong()+MAX_PREPARATION_MILLIS));
+        return future;
+    }
+    public CompletionStage<Integer> importCatalogue(JsonArray songs) {
+        var body=object("schemaVersion",1,"songs",songs);
+        if(songs.isEmpty()||songs.size()>50||gson.toJson(body).getBytes(StandardCharsets.UTF_8).length>=65536)
+            return CompletableFuture.failedFuture(new IllegalArgumentException("Invalid catalogue import batch"));
+        int expected=songs.size();
+        return request("POST","/internal/v1/catalogue/import",body).thenApply(reply->{
+            if(!reply.has("savedCount")||!reply.get("savedCount").isJsonPrimitive()||!reply.getAsJsonPrimitive("savedCount").isNumber()
+                    ||reply.get("savedCount").getAsBigDecimal().compareTo(java.math.BigDecimal.valueOf(expected))!=0)throw new CompletionException(new IllegalStateException("Catalogue import acknowledgement mismatch"));
+            return expected;
+        });
     }
     void poll(Request request,CompletableFuture<Media> future,JsonObject response,Throwable error,long deadline) {
         if(future.isDone() || closed)return;
@@ -112,7 +137,13 @@ public final class BridgeClient implements MediaBridge {
             String state=response.get("state").getAsString();
             if(state.equals("READY")) {
                 String id=UUID.fromString(response.get("mediaId").getAsString()).toString();
-                future.complete(new Media(id,response.get("durationMs").getAsLong()));return;
+                var media=new Media(id,response.get("durationMs").getAsLong());Job job;
+                synchronized(this){
+                    job=jobs.get(request);
+                    if(closed||closing||future.isDone()||job==null||job.future!=future||job.media!=null)return;
+                    job.media=media;
+                }
+                main.execute(()->confirmPin(request,job));return;
             }
             if(state.equals("FAILED") || preparationClock.getAsLong()>deadline)throw new IllegalStateException("Media preparation failed");
             String jobId=UUID.fromString(response.get("jobId").getAsString()).toString();
@@ -121,11 +152,27 @@ public final class BridgeClient implements MediaBridge {
                     .whenComplete((r,e)->poll(request,future,r,e,deadline));},delay,TimeUnit.MILLISECONDS);
         } catch(RuntimeException failure){future.completeExceptionally(failure);}
     }
-    @Override public void cancel(UUID session,long revision) {
-        jobs.forEach((request,future)->{if(request.session().equals(session) && request.revision()==revision)future.cancel(false);});
+    private synchronized void confirmPin(Request request,Job job) {
+        if(closed||closing||jobs.get(request)!=job||job.future.isDone())return;
+        if(latest==null||!latest.session().equals(request.session())||latest.phase()==QuizGame.Phase.STOPPED){
+            job.future.completeExceptionally(new IllegalStateException("No active quiz snapshot for media pin"));return;
+        }
+        queue(latest).whenComplete((pins,error)->{synchronized(this){
+            if(closed||closing||jobs.get(request)!=job||job.future.isDone())return;
+            if(error==null&&pins.contains(job.media.id()))job.future.complete(job.media);
+            else job.future.completeExceptionally(new IllegalStateException("Media pin was not acknowledged",error));
+        }});
+    }
+    private void refreshPins(){if(!closed&&!closing)main.execute(this::heartbeat);}
+    private void discardRequests(Predicate<Request> discard) {
+        var removed=jobs.entrySet().stream().filter(e->discard.test(e.getKey())).map(e->Map.entry(e.getKey(),e.getValue())).toList();
+        for(var entry:removed)if(jobs.remove(entry.getKey(),entry.getValue()))entry.getValue().future.cancel(false);
+    }
+    @Override public synchronized void cancel(UUID session,long revision) {
+        discardRequests(r->r.session().equals(session)&&r.revision()==revision);refreshPins();
     }
     /** Called only on the Paper thread; the resulting DTO contains no Bukkit objects. */
-    public JsonObject snapshot(QuizGame.Snapshot state,List<Member> members) {
+    public synchronized JsonObject snapshot(QuizGame.Snapshot state,List<Member> members) {
         var rosterJson=new JsonArray();
         for(Member m:members)rosterJson.add(object("uuid",m.uuid(),"membershipId",m.membershipId(),"nickname",m.nickname(),"textureHash",m.textureHash(),"roomId",state.session()));
         String phase=switch(state.phase()) {
@@ -141,23 +188,28 @@ public final class BridgeClient implements MediaBridge {
                     "clipStartMs",0,"clipEndMs",end,"anchorPositionMs",state.anchorPositionMillis(),"anchorAtMs",state.startsAt(),"playing",state.playing(),"playbackRate",state.playbackRate());
         }
         if(phase.equals("REVEAL") && state.song()!=null)reveal=object("title",state.song().title(),"aliases",new JsonArray(),"tags",gson.toJsonTree(state.song().tags()),"youtubeUrl",state.song().youtubeUrl());
-        var rooms=new JsonArray();rooms.add(object("roomId",state.session(),"roomRevision",Long.toString(state.revision()),"phase",phase,"round",round,"reveal",reveal,"roundNumber",state.round(),"totalRounds",state.totalRounds()));
-        return object("schemaVersion",1,"instanceId",instance,"seq","0","sentAtMs",0,"roster",rosterJson,"rooms",rooms);
+        var rooms=new JsonArray();rooms.add(object("roomId",state.session(),"roomRevision",Long.toString(state.revision()),"phase",phase,"round",round,"reveal",reveal,"roundNumber",state.round(),"totalRounds",state.totalRounds(),"registeredSongs",state.registeredSongs()));
+        var retained=new JsonArray();
+        if(state.phase()!=QuizGame.Phase.STOPPED)jobs.entrySet().stream().filter(e->e.getKey().session().equals(state.session())&&e.getValue().media!=null)
+                .map(e->e.getValue().media.id()).distinct().sorted().forEach(retained::add);
+        return object("schemaVersion",1,"instanceId",instance,"seq","0","sentAtMs",0,"roster",rosterJson,"rooms",rooms,"retainedMediaIds",retained);
     }
     @Override public synchronized void publish(QuizGame.Snapshot state) {
+        if(closed||closing)return;
+        discardRequests(r->state.phase()==QuizGame.Phase.STOPPED||!r.session().equals(state.session()));
         latest=state;queue(state);
     }
-    public synchronized void heartbeat() {if(latest!=null)queue(latest);}
-    private void queue(QuizGame.Snapshot state) {
-        List<Member> members=roster.get();var ack=new CompletableFuture<Void>();
+    public synchronized void heartbeat() {if(!closed&&!closing&&latest!=null)queue(latest);}
+    private CompletableFuture<Set<String>> queue(QuizGame.Snapshot state) {
+        List<Member> members=roster.get();var ack=new CompletableFuture<Set<String>>();
         Packet tail=pending.peekLast();
         // Coalesce heartbeats and equivalent same-phase updates, preserving phase/timeline edges.
         if(tail!=null && tail.state().phase()==state.phase() && Objects.equals(tail.state().roundId(),state.roundId()) && tail.state().playing()==state.playing()) {
             pending.removeLast();ack=tail.ack();
         }
-        if(pending.size()>=128){ack.completeExceptionally(new IllegalStateException("Bridge queue full"));return;}
+        if(pending.size()>=128){ack.completeExceptionally(new IllegalStateException("Bridge queue full"));return ack;}
         pending.addLast(new Packet(snapshot(state,members),state,List.copyOf(members),ack));lastAck=ack;
-        flush();
+        flush();return ack;
     }
     private synchronized void flush() {
         if(closed || inFlight || pending.isEmpty())return;
@@ -168,11 +220,13 @@ public final class BridgeClient implements MediaBridge {
         request("POST","/internal/v1/sync",body).whenComplete((response,error)->{
             synchronized(this){inFlight=false;}
             if(error==null && response.has("acceptedSeq") && response.get("acceptedSeq").getAsString().equals(body.get("seq").getAsString())) {
-                ack.complete(null);
+                var pins=new HashSet<String>();for(var id:body.getAsJsonArray("retainedMediaIds"))pins.add(id.getAsString());
+                ack.complete(Set.copyOf(pins));
                 main.execute(()->{
                     if(closed)return;
                     var ready=new HashSet<UUID>();
                     var presence=new ArrayList<BrowserPresence>();
+                    var progress=new ArrayList<PlaybackProgress>();
                     long serverTime=response.has("serverTimeMs")?response.get("serverTimeMs").getAsLong():System.currentTimeMillis();
                     if(response.has("browsers")&&response.get("browsers").isJsonArray())for(JsonElement entry:response.getAsJsonArray("browsers")) {
                         var b=entry.getAsJsonObject();
@@ -182,17 +236,20 @@ public final class BridgeClient implements MediaBridge {
                             if(!b.has("connected")&&!b.has("online"))continue;
                             boolean leased=b.has("online")&&b.get("online").getAsBoolean()&&b.has("leaseExpiresAtMs")&&!b.get("leaseExpiresAtMs").isJsonNull()&&b.get("leaseExpiresAtMs").getAsLong()>serverTime;
                             presence.add(new BrowserPresence(id,membership,b.has("connected")?b.get("connected").getAsBoolean():leased));
-                            if(leased
-                                    && b.get("status").getAsString().equals("PREPARED") && Objects.equals(roundId,UUID.fromString(b.get("roundId").getAsString()))
+                            if(leased && Objects.equals(roundId,UUID.fromString(b.get("roundId").getAsString()))
                                     && Objects.equals(generation,UUID.fromString(b.get("playbackGeneration").getAsString()))
                                     && b.get("roundRevision").getAsString().equals(Long.toString(revision))) {
-                                ready.add(id);
+                                String status=b.get("status").getAsString();
+                                if(status.equals("PREPARED"))ready.add(id);
+                                else if(status.equals("PLAYING")&&packet.state().phase()==QuizGame.Phase.COUNTDOWN)
+                                    progress.add(new PlaybackProgress(id,membership,roundId,generation,b.get("positionMs").getAsLong(),b.get("lastSeenAtMs").getAsLong()));
                             }
                         } catch(RuntimeException ignored) { /* Incomplete/unready browser status. */ }
                     }
                     readiness.browsers(packet.state().session(),List.copyOf(presence));
                     readiness.accept(revision,!ready.isEmpty(),!members.isEmpty() && ready.size()==members.size());
                     readiness.controlAccepted(revision);
+                    for(var report:progress)readiness.playbackStarted(packet.state().session(),report);
                 });
             } else {
                 ack.completeExceptionally(error==null?new IllegalStateException("Bridge acknowledgement mismatch"):error);
@@ -212,13 +269,16 @@ public final class BridgeClient implements MediaBridge {
         return ack.thenCompose(ignored->request("POST","/internal/v1/join-tokens",body)).thenApply(reply->raw);
     }
     @Override public synchronized void close() {
-        closed=true;jobs.values().forEach(f->f.cancel(false));jobs.clear();
+        closed=true;discardRequests(r->true);
         for(Packet packet:pending)packet.ack().completeExceptionally(new IllegalStateException("Bridge closed"));pending.clear();
         http.shutdownNow();worker.shutdownNow();Arrays.fill(secret,(byte)0);
     }
     public synchronized void closeAfterSync() {
-        if(closed)return;
-        var ack=lastAck==null?inFlightAck:lastAck;
+        if(closed||closing)return;
+        closing=true;discardRequests(r->true);
+        // The final full set supersedes queued states, even if normal publications filled the queue.
+        for(var packet:pending)packet.ack().completeExceptionally(new IllegalStateException("Bridge closing"));pending.clear();
+        var ack=latest==null?inFlightAck:queue(latest);
         worker.schedule(this::close,10,TimeUnit.SECONDS);
         if(ack==null)close();else ack.whenComplete((ignored,error)->close());
     }

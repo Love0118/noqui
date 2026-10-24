@@ -72,10 +72,13 @@ public final class CreditLedger {
     public void retireDrop(UUID claim) {
         if(!dropped.containsKey(claim))return;var claims=new HashMap<>(dropped);claims.remove(claim);commit(balances,pending,grants,claims);
     }
-    public void grant(UUID player,int amount) {
+    public void validateGrant(UUID player,int amount) {
         long reserved=pending.values().stream().filter(player::equals).count();
         if(amount<1 || amount>MAX_GRANT || balance(player)+reserved+amount>MAX_BALANCE)
             throw new IllegalArgumentException("출제권은 1..1000개, 보유 한도는 1,000,000개입니다.");
+    }
+    public void grant(UUID player,int amount) {
+        validateGrant(player,amount);
         var next=new HashMap<>(balances);next.put(player,balance(player)+amount);commit(next,pending,grants);
     }
     public void giveOnce(UUID player,long amount,String transactionId) {

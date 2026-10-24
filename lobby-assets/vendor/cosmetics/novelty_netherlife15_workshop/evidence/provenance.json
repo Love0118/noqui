@@ -1,0 +1,45 @@
+{
+  "path": "netherlife15/pop-tart",
+  "sourceURL": "https://blockbenchworkshop.com/model/netherlife15/pop-tart",
+  "metadata": {
+    "@context": "https://schema.org",
+    "@type": "3DModel",
+    "name": "Pop Tart",
+    "description": "A Blockbench model by @netherlife15. It's a Pop, it's a Pop Tart! Free .bbmodel download.",
+    "url": "https://blockbenchworkshop.com/model/netherlife15/pop-tart",
+    "image": "https://blockbenchworkshop.com/cdn/thumbnails/gqJxfCedjZqNwBjsSiOkq6yHa7QD6flm/2abd4704-06d8-4358-90fc-f5b804865b9a.png",
+    "encodingFormat": "application/json",
+    "isAccessibleForFree": true,
+    "keywords": "food, object",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "author": {
+      "@type": "Person",
+      "name": "netherlife15",
+      "url": "https://blockbenchworkshop.com/creator/netherlife15"
+    },
+    "interactionStatistic": [
+      {
+        "@type": "InteractionCounter",
+        "interactionType": "https://schema.org/LikeAction",
+        "userInteractionCount": 5
+      },
+      {
+        "@type": "InteractionCounter",
+        "interactionType": "https://schema.org/DownloadAction",
+        "userInteractionCount": 3
+      }
+    ]
+  },
+  "permissive": true,
+  "publicSourceURL": "https://blockbenchworkshop.com/cdn/previews/gqJxfCedjZqNwBjsSiOkq6yHa7QD6flm/2abd4704-06d8-4358-90fc-f5b804865b9a.json?v=5",
+  "sourceKind": "publicly published interactive preview model JSON",
+  "originalDownloadLimitation": "The .bbmodel download endpoint returns HTTP 401 without an account; no account was used. This is the openly published preview JSON, not the original .bbmodel archive.",
+  "sha256": "1078f3d4e4f6cb7e96796527c388e5bdf189339e330e88ee196331ba4d5ad1b8",
+  "format": {
+    "model_format": "free"
+  },
+  "elements": 2,
+  "meshes": 0,
+  "textures": 1,
+  "animations": 0
+}

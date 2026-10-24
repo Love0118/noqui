@@ -26,7 +26,7 @@ class LobbyRuntimeTest {
     @TempDir Path dir;
     MockedStatic<Bukkit> bukkit;
     MockedConstruction<ShopNpc> shop;
-    MockedConstruction<CosmeticDisplays> cosmetics;
+    MockedConstruction<NativeWardrobe> cosmetics;
     World cabin=mock(World.class),arena=mock(World.class);
     JavaPlugin plugin;
     AtomicLong clock=new AtomicLong(1000);
@@ -49,7 +49,7 @@ class LobbyRuntimeTest {
     @AfterAll static void registryClose(){registryAccess.close();}
     @BeforeEach void setup()throws Exception {
         bukkit=mockStatic(Bukkit.class);bukkit.when(Bukkit::isPrimaryThread).thenReturn(true);bukkit.when(Bukkit::getOnlinePlayers).thenReturn(List.of());
-        shop=mockConstruction(ShopNpc.class);cosmetics=mockConstruction(CosmeticDisplays.class);
+        shop=mockConstruction(ShopNpc.class);cosmetics=mockConstruction(NativeWardrobe.class);
         plugin=mock(JavaPlugin.class);when(plugin.getDataFolder()).thenReturn(dir.toFile());when(plugin.getConfig()).thenReturn(new YamlConfiguration());
         var server=mock(Server.class);when(plugin.getServer()).thenReturn(server);when(server.getPluginManager()).thenReturn(mock(PluginManager.class));
         when(plugin.getLogger()).thenReturn(java.util.logging.Logger.getAnonymousLogger());
@@ -80,7 +80,7 @@ class LobbyRuntimeTest {
     void buyEquip(Person person,String id)throws Exception {
         // A reward/purchase is persisted through the actual module ledger before module construction.
         LobbyWallets w=ledger();var item=LobbyCatalog.defaults().stream().filter(p->p.id().equals(id)).findFirst().orElseThrow();
-        w.reward(person.id,"seed:"+id,100,Currency.STARLIGHT);w.purchase(person.id,item,Currency.STARLIGHT,"buy:"+id);
+        w.reward(person.id,"seed:"+id,1000,Currency.STARLIGHT);w.purchase(person.id,item,Currency.STARLIGHT,"buy:"+id);
         var gadget=w.pendingGadgets(person.id).getFirst();w.gadgetDelivered(gadget.serial());
         int slot=item.slot().equals("boots")?36:item.slot().equals("suit")?38:0;person.inventory.slots[slot]=GadgetTestSupport.item(gadget);
     }
@@ -167,7 +167,7 @@ class LobbyRuntimeTest {
         var port=mock(LobbyFeatures.CreditPort.class);create(port());Person person=new Person();
         features.rewardStarlight(person.id,"money:stars",60);features.rewardAnswerPoints(person.id,"money:points",2);
         features.showMoney(person.p);
-        verify(person.p).sendMessage(net.kyori.adventure.text.Component.text("✦ 60  ·  정답 포인트 2"));
+        verify(person.p).sendMessage(net.kyori.adventure.text.Component.text("✦ 60  정답 포인트 2"));
         verify(port,never()).balance(any());verify(person.p,never()).showDialog(any());
     }
     @Test void failedCreditDeliveryReplaysSamePaidGrantWithoutSecondDebit()throws Exception {

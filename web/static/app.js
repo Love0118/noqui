@@ -9,6 +9,7 @@
   let offset = 0, calibrated = false, lastControl = -Infinity, authority = 0, leader = true;
   let currentMedia = '', lastGeneration = '', lastSeek = -Infinity, playPending = null, ackPending = false, ackAgain = false, takeover = false, formatFailed = false;
   let gestureBlocked = false, userPaused = false, clientLeaseUntil = 0, authGeneration = 0, playbackGesture = 0;
+  let countdownStarted = false, progressSample = null, progressStart = null, lastProgressAt = -Infinity;
   let authValid = false, eventEpoch = '', eventSeq = -1n, lastPoll = -Infinity;
   let lastReportSignature = '', inFlightSignature = '', lastReportAt = -Infinity, nextReportAt = 0, refreshing = null;
   let boundPlayer = sessionStorage.getItem('noqui-player') || '', boundCsrf = '';
@@ -79,26 +80,22 @@
     if (epoch === eventEpoch && seq < eventSeq) return;
     if (epoch !== eventEpoch) { eventEpoch = epoch; eventSeq = -1n; }
     eventSeq = seq; state = next; lastControl = performance.now(); authority = next.authorityLeaseExpiresAtMs;
-    if (next.round?.playbackGeneration !== lastGeneration) { lastGeneration = next.round?.playbackGeneration || ''; lastSeek = -Infinity; playPending = null; audio.pause(); }
+    if (next.round?.playbackGeneration !== lastGeneration) { lastGeneration = next.round?.playbackGeneration || ''; lastSeek = -Infinity; playPending = null; countdownStarted = false; resetProgress(); audio.pause(); }
     if (!calibrated) offset = next.serverTimeMs - performance.now();
     $('nickname').textContent = next.me.nickname; avatar($('avatar'), next.me.textureHash); players(next.room.players);
     const revealed = next.room.phase === 'REVEAL' && next.reveal;
     setText('track-title', next.room.phase === 'ENDED' ? '노래퀴즈 종료' : revealed ? next.reveal.title : next.round ? '지금 흐르는 곡' : '다음 곡을 기다리는 중');
     setText('phase-label', revealed ? '정답 공개' : ({ WAITING_FOR_MEDIA: '대기 중', PREPARING: '대기 중', COUNTDOWN: '곧 시작', PLAYING: '현재 재생', PAUSED: '잠시 멈춤', ENDED: '종료' }[next.room.phase] || '다음 라운드'));
-    const { roundNumber, totalRounds } = next.room;
-    const hasRoundProgress = Number.isInteger(roundNumber) && roundNumber >= 0 && roundNumber <= 4294967295
-      && Number.isInteger(totalRounds) && totalRounds >= 0 && totalRounds <= 2147483647
-      && (totalRounds === 0 || roundNumber <= totalRounds);
-    let roundLabel = next.round ? `${String(next.round.number).padStart(2, '0')} 라운드` : '대기실';
-    if (hasRoundProgress) {
-      const number = String(roundNumber).padStart(2, '0');
-      roundLabel = totalRounds === 0 ? `${number} 라운드 · 무제한` : `${number} / ${totalRounds} 라운드`;
-    }
+    const { roundNumber, registeredSongs } = next.room;
+    const hasRoundNumber = Number.isInteger(roundNumber) && roundNumber >= 0 && roundNumber <= 4294967295;
+    const hasRegisteredCount = Number.isInteger(registeredSongs) && registeredSongs >= 0 && registeredSongs <= 4294967295;
+    let roundLabel = next.round ? `${next.round.number} 라운드` : hasRoundNumber && roundNumber > 0 ? `${roundNumber} 라운드` : '대기실';
+    if (hasRoundNumber && hasRegisteredCount) roundLabel = `${roundNumber}/${registeredSongs}`;
     setText('round-label', roundLabel);
     $('tags').hidden = !revealed || !next.reveal.tags.length;
     $('tags').replaceChildren(...(revealed ? next.reveal.tags.map(tag => { const el = document.createElement('span'); el.textContent = tag; return el; }) : []));
     if (next.media?.url !== currentMedia) {
-      playPending = null; audio.pause(); currentMedia = next.media?.url || ''; lastSeek = -Infinity; formatFailed = false;
+      playPending = null; countdownStarted = false; resetProgress(); audio.pause(); currentMedia = next.media?.url || ''; lastSeek = -Infinity; formatFailed = false;
       if (currentMedia) {
         if (!/^\/media\/[a-f0-9]{64}\.ogg$/.test(currentMedia) || !audio.canPlayType('audio/ogg; codecs="opus"')) { formatFailed = true; message(errors.FORMAT_UNSUPPORTED); report('FAILED'); return; }
         audio.preload = 'auto'; audio.src = currentMedia; audio.load();
@@ -110,13 +107,29 @@
     if (!revealed || $('message').textContent === errors.PLUGIN_OFFLINE) message('');
     align(); paint();
   }
+  function resetProgress() { progressSample = null; progressStart = null; lastProgressAt = -Infinity; }
+  function naturallyPlaying() {
+    if (audio.paused || audio.seeking || playPending || audio.readyState < 3 || !wantsPlayback()) { resetProgress(); return false; }
+    const sample = { at: performance.now(), position: audio.currentTime };
+    if (progressSample && sample.at > progressSample.at) {
+      const elapsed = sample.at - progressSample.at, advanced = sample.position - progressSample.position;
+      if (advanced < 0 || advanced > elapsed / 1000 * playbackRate(state.round) + .25) { progressStart = null; lastProgressAt = -Infinity; }
+      else if (advanced > 0) { progressStart ||= progressSample; lastProgressAt = sample.at; }
+      if (sample.at - lastProgressAt > 2000) progressStart = null;
+    }
+    progressSample = sample;
+    return progressStart !== null && sample.at - progressStart.at >= 100
+      && sample.position - progressStart.position >= .1 * playbackRate(state.round) && sample.at - lastProgressAt <= 2000;
+  }
   function status() {
+    if (audio.paused || audio.seeking || playPending) resetProgress();
     if (!leader) return 'CONNECTED';
     if (!state?.round || !currentMedia) return 'CONNECTED';
     if (audio.error || formatFailed) return 'FAILED';
     if (userPaused) return 'PAUSED';
     if (gestureBlocked) return 'NEEDS_GESTURE';
-    if (!audio.paused) return audio.readyState >= 3 ? 'PLAYING' : 'BUFFERING';
+    if (playPending) return 'BUFFERING';
+    if (!audio.paused) return naturallyPlaying() ? 'PLAYING' : 'BUFFERING';
     if (audio.seeking || audio.readyState < 3) return 'LOADING';
     if (state.room.phase === 'PREPARING' || state.room.phase === 'COUNTDOWN') {
       const target = expected(state.round) / 1000;
@@ -132,7 +145,8 @@
     const current = forced || status(); const r = state?.round;
     const signature = JSON.stringify([current, r?.roundId, r?.revision, r?.playbackGeneration, takeover]);
     if (ackPending) { if (signature !== inFlightSignature) ackAgain = true; return; }
-    if (signature === lastReportSignature && performance.now() - lastReportAt < 15000) return;
+    const heartbeat = state?.room.phase === 'COUNTDOWN' && current === 'PLAYING' ? 1000 : 15000;
+    if (signature === lastReportSignature && performance.now() - lastReportAt < heartbeat) return;
     if (!takeover && performance.now() < nextReportAt) return;
     ackPending = true;
     inFlightSignature = signature;
@@ -152,23 +166,25 @@
     } finally { ackPending = false; if (ackAgain) { ackAgain = false; void report(); } }
   }
   function playbackRate(r) { return r?.playbackRate === 2 ? 2 : 1; }
-  function expected(r) { return Math.min(r.clipEndMs, Math.max(r.clipStartMs, r.anchorPositionMs + (r.playing ? Math.max(0, now() - r.anchorAtMs) * playbackRate(r) : 0))); }
+  function expected(r) { return Math.min(r.clipEndMs, Math.max(r.clipStartMs, r.anchorPositionMs + (r.playing && state?.room.phase !== 'COUNTDOWN' ? Math.max(0, now() - r.anchorAtMs) * playbackRate(r) : 0))); }
   function connected() { return authValid && navigator.onLine && now() < authority; }
   function wantsPlayback() {
     const r = state?.round;
     return connected() && leader && now() < clientLeaseUntil && !userPaused && !gestureBlocked && r && currentMedia && !formatFailed && !audio.error
-      && r.playing && now() >= r.anchorAtMs && expected(r) < r.clipEndMs;
+      && r.playing && now() >= r.anchorAtMs && expected(r) < r.clipEndMs
+      && (state.room.phase !== 'COUNTDOWN' || audio.currentTime * 1000 < r.clipEndMs);
   }
   function align() {
     const r = state?.round;
-    if (!connected() || !leader || now() >= clientLeaseUntil || !r || !currentMedia || formatFailed || audio.error) { audio.pause(); return; }
+    if (!connected() || !leader || now() >= clientLeaseUntil || !r || !currentMedia || formatFailed || audio.error) { resetProgress(); audio.pause(); return; }
     const target = expected(r) / 1000;
-    if (audio.readyState >= 1 && !audio.seeking && Math.abs(audio.currentTime - target) > .5 && performance.now() - lastSeek >= 2000) {
-      try { audio.currentTime = target; lastSeek = performance.now(); } catch { /* Seek becomes available after metadata. */ }
+    if (!(state.room.phase === 'COUNTDOWN' && countdownStarted) && audio.readyState >= 1 && !audio.seeking && !playPending && Math.abs(audio.currentTime - target) > .5 && performance.now() - lastSeek >= 2000) {
+      try { resetProgress(); audio.currentTime = target; lastSeek = performance.now(); } catch { /* Seek becomes available after metadata. */ }
     }
-    if (!wantsPlayback()) { audio.pause(); return; }
+    if (!wantsPlayback()) { resetProgress(); audio.pause(); return; }
     if (audio.paused && !playPending && audio.readyState >= 2 && !audio.seeking) {
       const attempt = { media: currentMedia, generation: lastGeneration, auth: authGeneration, gesture: playbackGesture };
+      if (state.room.phase === 'COUNTDOWN') countdownStarted = true;
       playPending = attempt;
       audio.play().then(() => {
         if (!wantsPlayback()) audio.pause();
@@ -259,7 +275,12 @@
   $('mute').addEventListener('click', () => { audio.muted = !audio.muted; $('mute').textContent = audio.muted ? '음소거' : '소리'; $('mute').setAttribute('aria-pressed', String(audio.muted)); });
   $('reconnect').addEventListener('click', () => { if (authValid) { void refreshState(); connect(); } else void boot(); });
   $('logout').addEventListener('click', async () => { if (!authValid) return; try { await request('/api/v1/auth/logout', { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Noqui-CSRF': csrf }, body: '{}' }); } catch { /* A replaced login is already stopped by request(). */ } finally { if (authValid) revoke('SESSION_REVOKED'); } });
-  for (const event of ['loadedmetadata', 'canplay', 'seeked', 'playing', 'pause', 'waiting', 'ended', 'error']) audio.addEventListener(event, () => { align(); paint(); if (event === 'error' && currentMedia) message('오디오를 불러올 수 없습니다'); });
+  for (const event of ['loadedmetadata', 'canplay', 'seeking', 'seeked', 'playing', 'timeupdate', 'pause', 'waiting', 'ended', 'error']) audio.addEventListener(event, () => {
+    // Let a completed seek play before chasing the clock again, even if loading took longer than the correction interval.
+    if (event === 'seeked') lastSeek = performance.now();
+    if (['seeking', 'seeked', 'pause', 'waiting', 'ended', 'error'].includes(event)) resetProgress();
+    align(); paint(); if (event === 'error' && currentMedia) message('오디오를 불러올 수 없습니다');
+  });
   document.addEventListener('visibilitychange', () => { if (!document.hidden && authValid) { void refreshState(); void report(); void calibrate().catch(() => {}); } });
   window.addEventListener('storage', event => { if (event.key === 'noqui-session-change' && event.newValue) revoke('SESSION_CHANGED'); });
   window.addEventListener('online', () => { if (authValid) { connect(); void calibrate().catch(() => {}); } });

@@ -1,0 +1,45 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "noqui:gravity_suit"
+      },
+      {
+        "texture": "noqui:wearable_back/back_portable_keyboard_0",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_portable_keyboard_1",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_portable_keyboard_2",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_portable_keyboard_3",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_portable_keyboard_4",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_portable_keyboard_5",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      }
+    ]
+  }
+}

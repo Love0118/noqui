@@ -1,0 +1,24 @@
+{
+  "id": "phonograph_hat",
+  "labelKo": "축음기",
+  "title": "1",
+  "author": "Loy / SL0ANE",
+  "sourceURL": "https://github.com/SL0ANE/Loy-s-Goodies/blob/afbb7695b09de0ed8ee3aa97732ff7c3d367520c/models/java-model/furniture%20%26%20decoration/220614_phonograph.bbmodel",
+  "sourceDownloadURL": "https://raw.githubusercontent.com/SL0ANE/Loy-s-Goodies/afbb7695b09de0ed8ee3aa97732ff7c3d367520c/models/java-model/furniture%20%26%20decoration/220614_phonograph.bbmodel",
+  "sourceKind": "original upstream repository .bbmodel, pinned to commit afbb7695b09de0ed8ee3aa97732ff7c3d367520c",
+  "license": "CC0 1.0 Universal",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "licenseObligations": "No attribution requirement; retain the supplied source credit as a courtesy.",
+  "changes": [
+    "Phonograph prop; retain disk_0 and the first hand frame only, making one static object.",
+    "Adapted prop/pet: no upstream claim that it is a wearable Minecraft hat.",
+    "Use head slot anchor Y=1.85, ItemDisplay FIXED, 16 model units per block. Runtime head scale assumed 1.0.",
+    "Native item wrapper references minecraft:model. Parent owns final geometry/attachment visual QA, selection, and pack integration.",
+    "PNG bytes are unmodified. UV coordinates are normalized to Java 0..16 units using each texture UV dimensions, or the source project resolution for older .bbmodel files.",
+    "Texture references use noqui:item/cosmetics/<id>/texture_<n> so all custom sprites belong to the vanilla item atlas directory in 1.21.11+.",
+    "Only uniform geometry scaling/translation and the documented static pose/frame selection were applied. FIXED transforms are explicitly set for the head anchor; original held/head display transforms are replaced.",
+    "Source cullface hints were removed for detached display use; shade:false maps to 26.3 shade_direction_override:up.",
+    "Phonograph alternative disk/hand frame groups omitted: 30 groups; keep disk_0 and the first hand group."
+  ],
+  "status": "native_export_ready_for_parent_visual_qa"
+}

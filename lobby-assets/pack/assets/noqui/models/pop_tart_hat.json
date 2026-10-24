@@ -1,0 +1,200 @@
+{
+  "credit": "Verified upstream source and modifications: see adjacent attribution.json",
+  "ambientocclusion": false,
+  "gui_light": "front",
+  "textures": {
+    "0": "noqui:item/shared/6eb7288b9365ab9facd6",
+    "particle": "#0"
+  },
+  "elements": [
+    {
+      "from": [
+        4.25,
+        8.0,
+        3.0
+      ],
+      "to": [
+        11.75,
+        9.25,
+        13.0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            4.0,
+            5.0,
+            7.0,
+            5.5
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            4.0,
+            4.0,
+            8.0,
+            4.5
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            4.0,
+            5.5,
+            7.0,
+            6.0
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            4.0,
+            4.5,
+            8.0,
+            5.0
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            0.0,
+            0.0,
+            3.0,
+            4.0
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            3.0,
+            0.0,
+            6.0,
+            4.0
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "from": [
+        5.5,
+        8.625,
+        4.25
+      ],
+      "to": [
+        10.5,
+        9.875,
+        11.75
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6.0,
+            1.0,
+            8.0,
+            1.5
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            6.0,
+            0.0,
+            9.0,
+            0.5
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            6.0,
+            1.5,
+            8.0,
+            2.0
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            6.0,
+            0.5,
+            9.0,
+            1.0
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            0.0,
+            4.0,
+            2.0,
+            7.0
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            2.0,
+            4.0,
+            4.0,
+            7.0
+          ],
+          "texture": "#0"
+        }
+      }
+    }
+  ],
+  "display": {
+    "fixed": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "gui": {
+      "rotation": [
+        20,
+        145,
+        0
+      ],
+      "translation": [
+        0,
+        -2,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "head": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0.0,
+        6.4,
+        0.0
+      ],
+      "scale": [
+        1.6,
+        1.6,
+        1.6
+      ]
+    }
+  }
+}

@@ -6,6 +6,7 @@ import org.bukkit.*;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.*;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.inventory.meta.components.EquippableComponent;
 import org.bukkit.persistence.*;
 
 /** Mutable Bukkit inventory/PDC boundary; the real gadget and wallet services run against it. */
@@ -23,7 +24,10 @@ final class GadgetTestSupport {
         data.set(new NamespacedKey("noqui","gadget_serial"),PersistentDataType.STRING,gadget.serial().toString());
         data.set(new NamespacedKey("noqui","gadget_product"),PersistentDataType.STRING,gadget.product());
         when(item.getType()).thenReturn(Material.PAPER);when(item.getAmount()).thenReturn(1);when(item.hasItemMeta()).thenReturn(true);
-        when(item.getItemMeta()).thenReturn(meta);when(meta.getPersistentDataContainer()).thenReturn(data);return item;
+        when(item.getItemMeta()).thenReturn(meta);when(meta.getPersistentDataContainer()).thenReturn(data);
+        var wearable=mock(EquippableComponent.class);var model=new java.util.concurrent.atomic.AtomicReference<NamespacedKey>(Set.of("triple_boots","quad_boots","gravity_suit").contains(gadget.product())?new NamespacedKey("noqui",gadget.product()):null);
+        when(meta.getEquippable()).thenReturn(wearable);when(wearable.getModel()).thenAnswer(c->model.get());
+        doAnswer(c->{model.set(c.getArgument(0));return null;}).when(wearable).setModel(nullable(NamespacedKey.class));return item;
     }
     static final class Inventory {
         final PlayerInventory inventory=mock(PlayerInventory.class);
@@ -37,6 +41,8 @@ final class GadgetTestSupport {
             when(inventory.getItem(anyInt())).thenAnswer(c->slots[c.getArgument(0,Integer.class)]);
             when(inventory.getItem(any(EquipmentSlot.class))).thenAnswer(c->slots[slot(c.getArgument(0))]);
             doAnswer(c->{slots[c.getArgument(0,Integer.class)]=c.getArgument(1);return null;}).when(inventory).setItem(anyInt(),nullable(ItemStack.class));
+            doAnswer(c->{slots[slot(c.getArgument(0))]=c.getArgument(1);return null;}).when(inventory).setItem(any(EquipmentSlot.class),nullable(ItemStack.class));
+            when(inventory.getItemInOffHand()).thenAnswer(c->slots[40]);
             when(inventory.getItemInMainHand()).thenAnswer(c->slots[0]);
             doAnswer(c->{slots[0]=c.getArgument(0);return null;}).when(inventory).setItemInMainHand(nullable(ItemStack.class));
         }

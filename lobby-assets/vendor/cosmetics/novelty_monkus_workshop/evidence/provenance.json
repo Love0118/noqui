@@ -1,0 +1,45 @@
+{
+  "path": "monkus/meat",
+  "sourceURL": "https://blockbenchworkshop.com/model/monkus/meat",
+  "metadata": {
+    "@context": "https://schema.org",
+    "@type": "3DModel",
+    "name": "Meat",
+    "description": "A rigged Blockbench model by @monkus. 7 elements, 2 bones, 1 texture. Free .bbmodel download.",
+    "url": "https://blockbenchworkshop.com/model/monkus/meat",
+    "image": "https://blockbenchworkshop.com/cdn/thumbnails/IM9eL5u3KwUG1yc4KRjHeHTtc4RrITi8/2767c1f9-ef69-465f-84b7-cae94f494b0d.png",
+    "encodingFormat": "application/json",
+    "isAccessibleForFree": true,
+    "keywords": "food, meat",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "author": {
+      "@type": "Person",
+      "name": "monkus",
+      "url": "https://blockbenchworkshop.com/creator/monkus"
+    },
+    "interactionStatistic": [
+      {
+        "@type": "InteractionCounter",
+        "interactionType": "https://schema.org/LikeAction",
+        "userInteractionCount": 8
+      },
+      {
+        "@type": "InteractionCounter",
+        "interactionType": "https://schema.org/DownloadAction",
+        "userInteractionCount": 58
+      }
+    ]
+  },
+  "permissive": true,
+  "publicSourceURL": "https://blockbenchworkshop.com/cdn/previews/IM9eL5u3KwUG1yc4KRjHeHTtc4RrITi8/2767c1f9-ef69-465f-84b7-cae94f494b0d.json?v=5",
+  "sourceKind": "publicly published interactive preview model JSON",
+  "originalDownloadLimitation": "The .bbmodel download endpoint returns HTTP 401 without an account; no account was used. This is the openly published preview JSON, not the original .bbmodel archive.",
+  "sha256": "c6509907af5381a64f4a02548024ae76b0daf73655b8d8c8c54e9ee4a6377ba3",
+  "format": {
+    "model_format": "free"
+  },
+  "elements": 7,
+  "meshes": 0,
+  "textures": 1,
+  "animations": 0
+}

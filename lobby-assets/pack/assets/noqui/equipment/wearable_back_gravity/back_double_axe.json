@@ -1,0 +1,33 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "noqui:gravity_suit"
+      },
+      {
+        "texture": "noqui:wearable_back/back_double_axe_0",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_double_axe_1",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_double_axe_2",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      },
+      {
+        "texture": "noqui:wearable_back/back_double_axe_3",
+        "dyeable": {
+          "color_when_undyed": 16777215
+        }
+      }
+    ]
+  }
+}

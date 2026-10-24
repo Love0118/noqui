@@ -1,0 +1,13 @@
+{
+  "retrievedAt": "2026-10-24T05:57:17.751186+00:00",
+  "sourceURL": "https://modrinth.com/resourcepack/more-hats",
+  "downloadURL": "https://cdn.modrinth.com/data/YQFHgeFv/versions/BQKrVC7s/MoreHats.zip",
+  "versionID": "BQKrVC7s",
+  "matchedFileID": "9DoXslCU",
+  "hashes": {
+    "sha1": "a4064aa8c1582c4f1aa5c0020b1aba97238e096e",
+    "sha256": "8a96baf6cc5f4593fde83faaae422256b8957af88f7772c222098b6dd846b6c6",
+    "sha512": "ce3d466b719d3f602cd8e187e879a1c3cc66966a5b0b578f1d3673de9c7b65478030f1fc5f509ad5a3c50dcfd388a45e02f9227eb5f124e44f0007cf252b782a"
+  },
+  "size": 70347
+}

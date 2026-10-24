@@ -1,3 +1,10 @@
 * text eol=lf
 *.png binary
 *.ogg binary
+vendor/cosmetics/** -text -whitespace
+
+vendor/objcubed/** -text -whitespace
+vendor/native-head-baseline/** -text -whitespace
+vendor/native-back-inputs/** -text -whitespace
+pack/assets/minecraft/shaders/** -text -whitespace
+pack/licenses/** -whitespace

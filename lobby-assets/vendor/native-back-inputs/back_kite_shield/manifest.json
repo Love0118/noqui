@@ -1,0 +1,149 @@
+{
+  "model": "back_kite_shield",
+  "source": {
+    "model": "assets/noqui/models/back_kite_shield.json",
+    "modelSha256": "cd6f903ad53261cddc40339d31440178691b65fa07c69c55f1319fc7e57a6395",
+    "credit": "Adapted from Loy / SL0ANE; CC0-1.0; see ATTRIBUTION.txt",
+    "slot": "back",
+    "textures": [
+      {
+        "reference": "t0",
+        "path": "assets/noqui/textures/item/shared/20d8e9793516fdf6bf0b.png",
+        "sha256": "20d8e9793516fdf6bf0b2238d37491dd13ccba4f39cfb8f38e8f3633b39b6b1e",
+        "size": [
+          64,
+          64
+        ],
+        "keys": [
+          "t0"
+        ]
+      }
+    ]
+  },
+  "output": {
+    "atlas": "bundles/back_kite_shield/atlas.png",
+    "atlasSha256": "96eeafc46ca6fcbba8877018bef14d95d818148a6a2cd34d2a530447ed618542",
+    "atlasSize": [
+      128,
+      128
+    ],
+    "atlasMode": "RGBA",
+    "model": "bundles/back_kite_shield/model.json",
+    "modelSha256": "7e4f73e3b355c827403f89b4a9aea0e1942c3609c03a34d9b92d2551dbf8c738",
+    "textureKey": "t0",
+    "textureReference": "noqui:item/normalized/back_kite_shield",
+    "packPath": "assets/noqui/textures/item/normalized/back_kite_shield.png"
+  },
+  "sourceTextureCount": 1,
+  "uvTransform": {
+    "assets/noqui/textures/item/shared/20d8e9793516fdf6bf0b.png": {
+      "u": {
+        "scale": 0.5,
+        "offset": 0.125
+      },
+      "v": {
+        "scale": 0.5,
+        "offset": 0.125
+      }
+    }
+  },
+  "manifestPath": "bundles/back_kite_shield/manifest.json",
+  "checks": {
+    "structure": {
+      "elements": 8,
+      "faces": 48,
+      "preservedKeys": [
+        "ambientocclusion",
+        "credit",
+        "display",
+        "gui_light"
+      ],
+      "geometrySignature": {
+        "source": "0753cebd79a49f8360fc72decf95301195649867506a10c7ed0206e1aafbe649",
+        "normalized": "0753cebd79a49f8360fc72decf95301195649867506a10c7ed0206e1aafbe649"
+      },
+      "geometrySignatureStable": true
+    },
+    "texels": {
+      "regions": [
+        {
+          "texture": "assets/noqui/textures/item/shared/20d8e9793516fdf6bf0b.png",
+          "keys": [
+            "t0"
+          ],
+          "sourceSize": [
+            64,
+            64
+          ],
+          "blockOrigin": [
+            0,
+            0
+          ],
+          "contentOrigin": [
+            1,
+            1
+          ],
+          "blockSize": [
+            66,
+            66
+          ]
+        }
+      ],
+      "contentPixelsIdentical": true,
+      "borderReplicationExact": true,
+      "paddingTransparent": true
+    },
+    "uv": {
+      "cornerSamples": 192,
+      "cornerSamplesAtUvZero": 8,
+      "cornerSamplesAtUvSixteen": 0,
+      "maxUvError": 0.0,
+      "sampledTexelsInPlace": true
+    },
+    "packRules": {
+      "rules": "noqui/lobby-assets/build_pack.py validate() per-model block",
+      "singleTextureKey": true,
+      "uvWithin0to16": true,
+      "faceDirectionsValid": true,
+      "solidElements": 8,
+      "extents": [
+        9.51862,
+        18.0,
+        3.91304
+      ],
+      "conforms": true
+    },
+    "render": {
+      "views": [
+        {
+          "view": "front",
+          "display": "none",
+          "resolution": 256,
+          "sourceSha256": "7ae745ce2edcf7ea163efc4c78bbcc37bd2f675f7a3a76e448182a98215f1f65",
+          "normalizedSha256": "7ae745ce2edcf7ea163efc4c78bbcc37bd2f675f7a3a76e448182a98215f1f65",
+          "maxChannelDelta": 0
+        },
+        {
+          "view": "back",
+          "display": "none",
+          "resolution": 256,
+          "sourceSha256": "c84b272669bdc737d30b72184015b7b8acd4ecf6869fc63fb8814effa06d8f78",
+          "normalizedSha256": "c84b272669bdc737d30b72184015b7b8acd4ecf6869fc63fb8814effa06d8f78",
+          "maxChannelDelta": 0
+        },
+        {
+          "view": "gui",
+          "display": "gui",
+          "resolution": 256,
+          "sourceSha256": "bdd3ec0ddf7acb2a2e2ccfd9ecbf10f9dc9abd223d8d0bc72f5dd3f6a3c6fd25",
+          "normalizedSha256": "bdd3ec0ddf7acb2a2e2ccfd9ecbf10f9dc9abd223d8d0bc72f5dd3f6a3c6fd25",
+          "maxChannelDelta": 0
+        }
+      ],
+      "renderIdentical": true
+    },
+    "sourceReadOnly": true,
+    "measuredAt": "2026-10-24T12:30:01Z"
+  },
+  "verified": true
+}

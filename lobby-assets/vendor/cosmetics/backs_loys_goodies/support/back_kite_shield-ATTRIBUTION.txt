@@ -1,0 +1,12 @@
+Original: Loy / SL0ANE
+Source: https://github.com/SL0ANE/Loy-s-Goodies/blob/afbb7695b09de0ed8ee3aa97732ff7c3d367520c/models/java-model/tools%20%26%20weapons/shields/230419_shield_0_0.bbmodel
+Commit: afbb7695b09de0ed8ee3aa97732ff7c3d367520c
+License: CC0-1.0
+License URL: https://github.com/SL0ANE/Loy-s-Goodies/blob/afbb7695b09de0ed8ee3aa97732ff7c3d367520c/LICENSE
+
+Modified 2026-10-24 for Noqui backwear research: extracted static native cuboids, remapped texture resource names, recentered and uniformly scaled geometry, and replaced display settings for ItemDisplay FIXED.
+Per-face UVs divided by source Blockbench resolution and multiplied by 16; UV order and face rotations retained. Organizational groups have no rotations. Embedded PNG bytes decoded verbatim. World-block cullface flags omitted for an isolated item display. Animated PNG strips retain original pixels with generated mcmeta from the source frame_time.
+Tall bent-panel shield with a separate grip; inspect outward-facing panel and grip clearance.
+
+Assets explicitly released under CC0 in the upstream README; optional attribution retained.
+Original sources remain under upstream/ and are identified by SHA256 in candidates.json. Changes are reproducible with normalize_assets.py.

@@ -4,14 +4,25 @@ Backpack model and embedded backpack texture:
 Converted from backpack.bbmodel at joshua-pechan/Minecraft-Figura-Cosmetic
 commit959204795f2242be80186a040f46b81fbf5ffa10.
 MIT License, Copyright(c)2024 JashDuck. Full notice: MIT_BACKPACK_LICENSE.txt.
+Source model:
+https://github.com/joshua-pechan/Minecraft-Figura-Cosmetic/blob/959204795f2242be80186a040f46b81fbf5ffa10/backpack.bbmodel
+Source license:
+https://github.com/joshua-pechan/Minecraft-Figura-Cosmetic/blob/959204795f2242be80186a040f46b81fbf5ffa10/LICENSE
 Vanilla conversion recenters7 cuboids and bakes90-degree rotations.
 No Ornithopter, armor or other models from that repository are included.
 
-Other10 cosmetic models and shared palette texture:
+Other ten baseline cosmetic/gadget models and shared palette texture:
 New geometry and pixel art authored with Codex for this Noqui project.
 These are original compatible fallbacks, not downloaded artist assets.
 No third-party visual source is claimed for them. The repository owner's
 licensing applies to these newly generated project assets.
+
+Additional catalog cosmetics:
+See COSMETICS_SOURCES.json for the complete selected source URLs, authors,
+license URLs, conversion notes, model hashes, and shared texture resources.
+Full licenses for additional sources are included under licenses/.
+Downloaded model derivatives and approved original adaptations are labeled
+separately; source recolors are not counted as distinct cosmetic structures.
 
 Five quiz sound files:
 Exact bytes supplied by the user in 노래퀴즈1218.zip, under
@@ -36,3 +47,139 @@ SPDX, public-domain, or general redistribution license was found on the
 original author/work page. Public availability is not represented here as
 an open-content license, and the site's license from its uploaders is not
 represented as a license to this project. Attribution and source are retained.
+
+Integrated third-party catalog sources:
+
+more-hats
+Author(s): oiioooiiiooi, Hot_doggy13
+License: CC-BY-4.0
+Source: https://modrinth.com/resourcepack/more-hats
+License URL: https://creativecommons.org/licenses/by/4.0/
+Full license: licenses/hats_more_hats.txt
+Changes: Selected licensed hat models converted to native noqui item definitions; source cuboid rotations/UVs retained; texture content deduplicated; attachment pose reviewed in software.
+
+osmetic-hats-pack
+Author(s): Kanamori-Arice
+License: BSD-2-Clause
+Source: https://modrinth.com/resourcepack/osmetic-hats-pack
+License URL: https://opensource.org/license/bsd-2-clause
+Full license: licenses/hats_osmetic_hats_pack.txt
+Changes: Selected licensed hat models converted to native noqui item definitions; source cuboid rotations/UVs retained; texture content deduplicated; attachment pose reviewed in software.
+Source notice: Dedicated resource-pack project declares BSD-2-Clause; no standalone copyright/year notice supplied by upstream. Author identified by official project team metadata; standard BSD terms retained without inventing a year.
+
+femboy-mod
+Author(s): eliasnvx
+License: MIT
+Source: https://github.com/eliasnvx/femboy-mod
+License URL: https://github.com/eliasnvx/femboy-mod/blob/1e2f8d91881ca8ee6edacc206072f5ed72aa38b3/LICENSE
+Full license: licenses/faces_fashion_mit.txt
+Changes: 15 selected face cosmetics from the pinned MIT source converted into Noqui native item models: source cuboid rotations and per-face UV fractions retained, PNG pixels unchanged, Blockbench editor metadata removed, texture references remapped, and explicit fixed display transforms added.
+
+Artifacts
+Author(s): Wouter Pauwels (ochotonida)
+License: MIT
+Source: https://github.com/ochotonida/artifacts
+License URL: https://github.com/ochotonida/artifacts/blob/4b67278df94e4d3669119f1abb24a1c3a758afe1/LICENSE
+Full license: licenses/faces_artifacts_mit.txt
+Changes: 3 selected face accessories from the pinned MIT source converted into Noqui native item models: source cuboid rotations and per-face UV fractions retained, PNG pixels unchanged, Blockbench editor metadata removed, texture references remapped, and explicit fixed display transforms added.
+
+Loy-s-Goodies
+Author(s): Loy / SL0ANE
+License: CC0-1.0
+Source: https://github.com/SL0ANE/Loy-s-Goodies
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+Full license: licenses/backs_loys_goodies.txt
+Changes: 12 selected CC0-1.0 backwear models converted into Noqui native item models: unrotated organizational groups flattened, embedded PNG bytes decoded verbatim, per-face UVs normalized to Java units with source UV order retained, geometry recentred and uniformly scaled, and held-item transforms replaced for ItemDisplay FIXED.
+
+Immersive Melodies
+Author(s): Luke100000 and Immersive Melodies contributors
+License: GPL-3.0
+Source: https://github.com/Luke100000/ImmersiveMelodies
+License URL: https://github.com/Luke100000/ImmersiveMelodies/blob/16c004872866048d11f6d0141ca878bf4fb5a09a/LICENSE
+Full license: licenses/backs_immersive_melodies.txt
+Changes: 8 selected GPL-3.0 backwear models converted into Noqui native item models: static native cuboids extracted, PNG bytes copied verbatim, per-face UVs and face rotations retained, geometry recentred and uniformly scaled, and held-item transforms replaced for ItemDisplay FIXED. Sounds, playback code, and melodies are excluded.
+Source notice: Repository GPL-3.0 covers the item models and textures. Upstream excludes sounds and the /melodies data from that licence; no sound or melody content is included or claimed. The GPL-3.0 licence text, original source models, per-asset attribution notice with the 2026-10-24 modification date, and the reproducible normalize_assets.py conversion script are retained with the adaptations.
+
+Loy-s-Goodies
+Author(s): Loy / SL0ANE
+License: CC0-1.0
+Source: https://github.com/SL0ANE/Loy-s-Goodies
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+Full license: licenses/novelty_loys_goodies.txt
+Changes: 9 selected CC0-1.0 head ornaments converted into Noqui native item models: static source cuboids and per-face UVs retained, embedded PNG bytes decoded verbatim, geometry uniformly scaled/recentred only, and an explicit fixed yaw 180 head pose added.
+
+Blockbench Workshop listing by conczin
+Author(s): conczin
+License: CC-BY-4.0
+Source: https://blockbenchworkshop.com/model/conczin/bread
+License URL: https://creativecommons.org/licenses/by/4.0/
+Full license: licenses/novelty_conczin_workshop.txt
+Changes: One selected Blockbench Workshop listing converted into a Noqui native head ornament: static source cuboids and per-face UVs retained, UVs normalized to Java 0..16 units, PNG bytes copied unchanged, geometry uniformly scaled/recentred only, explicit fixed head pose added. The listing provenance and source page are pinned.
+Source notice: License, creator-rights, and AI-use statements are declared by the Blockbench Workshop uploader and are not independently verified by the platform. The original .bbmodel download endpoint requires an account, so the openly published interactive-preview JSON is the pinned source model; no account was used.
+
+Blockbench Workshop listing by netherlife15
+Author(s): netherlife15
+License: CC-BY-4.0
+Source: https://blockbenchworkshop.com/model/netherlife15/pop-tart
+License URL: https://creativecommons.org/licenses/by/4.0/
+Full license: licenses/novelty_netherlife15_workshop.txt
+Changes: One selected Blockbench Workshop listing converted into a Noqui native head ornament: static source cuboids and per-face UVs retained, UVs normalized to Java 0..16 units, PNG bytes copied unchanged, geometry uniformly scaled/recentred only, explicit fixed head pose added. The listing provenance and source page are pinned.
+Source notice: License, creator-rights, and AI-use statements are declared by the Blockbench Workshop uploader and are not independently verified by the platform. The original .bbmodel download endpoint requires an account, so the openly published interactive-preview JSON is the pinned source model; no account was used.
+
+Blockbench Workshop listing by monkus
+Author(s): monkus
+License: CC-BY-SA-4.0
+Source: https://blockbenchworkshop.com/model/monkus/meat
+License URL: https://creativecommons.org/licenses/by-sa/4.0/
+Full license: licenses/novelty_monkus_workshop.txt
+Changes: One selected Blockbench Workshop listing converted into a Noqui native head ornament: static source cuboids and per-face UVs retained, UVs normalized to Java 0..16 units, PNG bytes copied unchanged, geometry uniformly scaled/recentred only, explicit fixed head pose added. The listing provenance and source page are pinned.
+Source notice: License, creator-rights, and AI-use statements are declared by the Blockbench Workshop uploader and are not independently verified by the platform. The original .bbmodel download endpoint requires an account, so the openly published interactive-preview JSON is the pinned source model; no account was used. CC BY-SA 4.0 is share-alike: this adapted asset and its derived texture stay under CC BY-SA 4.0, and the uploader declares AI use for the listing geometry/textures with no creator-rights attestation.
+
+Blockbench Workshop listing by capu0410
+Author(s): capu0410
+License: CC-BY-4.0
+Source: https://blockbenchworkshop.com/model/capu0410/mushroom-mailbox
+License URL: https://creativecommons.org/licenses/by/4.0/
+Full license: licenses/novelty_capu0410_workshop.txt
+Changes: One selected Blockbench Workshop listing converted into a Noqui native head ornament: static source cuboids and per-face UVs retained, UVs normalized to Java 0..16 units, PNG bytes copied unchanged, geometry uniformly scaled/recentred only, explicit fixed head pose added. The listing provenance and source page are pinned.
+Source notice: License, creator-rights, and AI-use statements are declared by the Blockbench Workshop uploader and are not independently verified by the platform. The original .bbmodel download endpoint requires an account, so the openly published interactive-preview JSON is the pinned source model; no account was used.
+
+Blockbench Workshop listing by polyjo
+Author(s): polyjo
+License: CC-BY-4.0
+Source: https://blockbenchworkshop.com/model/polyjo/pigeon-polyjo
+License URL: https://creativecommons.org/licenses/by/4.0/
+Full license: licenses/novelty_polyjo_workshop.txt
+Changes: One selected Blockbench Workshop listing converted into a Noqui native head ornament: static source cuboids and per-face UVs retained, UVs normalized to Java 0..16 units, PNG bytes copied unchanged, geometry uniformly scaled/recentred only, explicit fixed head pose added. The listing provenance and source page are pinned.
+Source notice: License, creator-rights, and AI-use statements are declared by the Blockbench Workshop uploader and are not independently verified by the platform. The original .bbmodel download endpoint requires an account, so the openly published interactive-preview JSON is the pinned source model; no account was used.
+
+Blockbench Workshop listing by atcg
+Author(s): atcg
+License: CC0-1.0
+Source: https://blockbenchworkshop.com/model/atcg/lissachatina-fulica
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+Full license: licenses/novelty_atcg_workshop.txt
+Changes: One selected Blockbench Workshop listing converted into a Noqui native head ornament: static source cuboids and per-face UVs retained, UVs normalized to Java 0..16 units, PNG bytes copied unchanged, geometry uniformly scaled/recentred only, explicit fixed head pose added. The listing provenance and source page are pinned.
+Source notice: License, creator-rights, and AI-use statements are declared by the Blockbench Workshop uploader and are not independently verified by the platform. The original .bbmodel download endpoint requires an account, so the openly published interactive-preview JSON is the pinned source model; no account was used.
+
+Blockbench Workshop listing by sevensstar1707
+Author(s): sevensstar1707
+License: CC-BY-4.0
+Source: https://blockbenchworkshop.com/model/sevensstar1707/wolfu
+License URL: https://creativecommons.org/licenses/by/4.0/
+Full license: licenses/novelty_sevensstar1707_workshop.txt
+Changes: One selected Blockbench Workshop listing converted into a Noqui native head ornament: static source cuboids and per-face UVs retained, UVs normalized to Java 0..16 units, PNG bytes copied unchanged, geometry uniformly scaled/recentred only, explicit fixed head pose added. The listing provenance and source page are pinned.
+Source notice: License, creator-rights, and AI-use statements are declared by the Blockbench Workshop uploader and are not independently verified by the platform. The original .bbmodel download endpoint requires an account, so the openly published interactive-preview JSON is the pinned source model; no account was used.
+
+Blockbench Workshop listing by wasabi
+Author(s): wasabi
+License: CC0-1.0
+Source: https://blockbenchworkshop.com/model/wasabi/caramel-frappuccino
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+Full license: licenses/novelty_wasabi_workshop.txt
+Changes: One selected Blockbench Workshop listing converted into a Noqui native head ornament: static source cuboids and per-face UVs retained, UVs normalized to Java 0..16 units, PNG bytes copied unchanged, geometry uniformly scaled/recentred only, explicit fixed head pose added. The listing provenance and source page are pinned.
+Source notice: License, creator-rights, and AI-use statements are declared by the Blockbench Workshop uploader and are not independently verified by the platform. The original .bbmodel download endpoint requires an account, so the openly published interactive-preview JSON is the pinned source model; no account was used.
+
+Native equipment renderer: https://github.com/JagerMeistars/obj-cubed
+MIT Copyright (c) 2022 Godlander. Pinned 266880bb7030dae4ab51178df9ee9f8ff91b395f.
+See licenses/objcubed.txt. Native-body PNG layers generated from the unchanged cosmetic meshes.

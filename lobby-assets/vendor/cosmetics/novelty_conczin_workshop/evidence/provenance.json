@@ -1,0 +1,45 @@
+{
+  "path": "conczin/bread",
+  "sourceURL": "https://blockbenchworkshop.com/model/conczin/bread",
+  "metadata": {
+    "@context": "https://schema.org",
+    "@type": "3DModel",
+    "name": "Bread",
+    "description": "A rigged Blockbench model by @conczin. 7 elements, 1 bones, 1 texture. Free .bbmodel download.",
+    "url": "https://blockbenchworkshop.com/model/conczin/bread",
+    "image": "https://blockbenchworkshop.com/cdn/thumbnails/DjFTXNhA3dzawmRmpRNfQyoQf4izMEtb/b79335c8-f7cf-4d46-80af-bdc0786a5500.png",
+    "encodingFormat": "application/json",
+    "isAccessibleForFree": true,
+    "keywords": "food, bread, kitchen, knife",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "author": {
+      "@type": "Person",
+      "name": "conczin",
+      "url": "https://blockbenchworkshop.com/creator/conczin"
+    },
+    "interactionStatistic": [
+      {
+        "@type": "InteractionCounter",
+        "interactionType": "https://schema.org/LikeAction",
+        "userInteractionCount": 9
+      },
+      {
+        "@type": "InteractionCounter",
+        "interactionType": "https://schema.org/DownloadAction",
+        "userInteractionCount": 91
+      }
+    ]
+  },
+  "permissive": true,
+  "publicSourceURL": "https://blockbenchworkshop.com/cdn/previews/DjFTXNhA3dzawmRmpRNfQyoQf4izMEtb/b79335c8-f7cf-4d46-80af-bdc0786a5500.json?v=5",
+  "sourceKind": "publicly published interactive preview model JSON",
+  "originalDownloadLimitation": "The .bbmodel download endpoint returns HTTP 401 without an account; no account was used. This is the openly published preview JSON, not the original .bbmodel archive.",
+  "sha256": "e66ac6f333fb10ef1ccdf11673b2393626545bbd965a174ce2d5a083fe70f086",
+  "format": {
+    "model_format": "free"
+  },
+  "elements": 7,
+  "meshes": 0,
+  "textures": 1,
+  "animations": 0
+}

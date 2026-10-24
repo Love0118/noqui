@@ -1,0 +1,13 @@
+{
+  "retrievedAt": "2026-10-24T05:57:18.506948+00:00",
+  "sourceURL": "https://modrinth.com/resourcepack/osmetic-hats-pack",
+  "downloadURL": "https://cdn.modrinth.com/data/ficGHxgF/versions/xtMrTr8T/cosmetic%20hats%20pack.zip",
+  "versionID": "xtMrTr8T",
+  "matchedFileID": "dSIxSOqu",
+  "hashes": {
+    "sha1": "41eacad918389db0d7b825f030fc34737021dc2e",
+    "sha256": "0319de0d6f249750fef255b1452e089ba6f3ea0f5286ce1a6493b824aaade502",
+    "sha512": "3950e548164a07b95e47b1cc6a5138306e18687bf7e18e7a51649c879b9892558da45afbc954d329caf07e5bf2ccacb98693f82e613e4c8bef1ff2781c0d1cfd"
+  },
+  "size": 333152
+}

@@ -3,12 +3,14 @@
 Pillow/NumPy are preview-only dependencies; build_pack.py is stdlib-only.
 """
 from pathlib import Path
+import argparse
+import hashlib
 import json
 import math
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
-from author_assets import face_vertices, NORMALS
-from build_pack import ROOT, PACK, IDS, DEFAULT_OUTPUT
+from model_geometry import face_vertices, NORMALS, rotated_point, rotated_normal, model_bounds
+from build_pack import ROOT, PACK, GADGETS, DEFAULT_OUTPUT, catalog, item_ids, texture_path
 
 OUT=DEFAULT_OUTPUT/'previews'
 FONT=Path('C:/Windows/Fonts/segoeui.ttf')
@@ -19,26 +21,45 @@ def cube(a,b,color):
     return {'from':a,'to':b,'faces':{f:{'uv':[0,0,16,16]} for f in NORMALS},'_texture':np.asarray(im)}
 
 def load(name):
-    model=json.loads((PACK/f'assets/noqui/models/{name}.json').read_text())
-    ns,texture=model['textures']['0'].split(':')
-    tex=np.asarray(Image.open(PACK/f'assets/{ns}/textures/{texture}.png').convert('RGBA'))
-    return [{**e,'from':[n-8 for n in e['from']],'to':[n-8 for n in e['to']],'_texture':tex} for e in model['elements']]
+    model=json.loads((PACK/f'assets/noqui/models/{name}.json').read_text(encoding='utf-8'))
+    textures={key:np.asarray(Image.open(PACK/texture_path(model,'#'+key)).convert('RGBA')) for key in model['textures']}
+    result=[]
+    for source in model['elements']:
+        e={**source,'from':[n-8 for n in source['from']],'to':[n-8 for n in source['to']],'_textures':textures}
+        if 'rotation' in source:e['rotation']={**source['rotation'],'origin':[n-8 for n in source['rotation']['origin']]}
+        result.append(e)
+    return result
 
-def render(elements,width,height,view=(.7,.45,1),padding=20):
+def display_matrix(name,context='gui'):
+    model=json.loads((PACK/f'assets/noqui/models/{name}.json').read_text(encoding='utf-8'))
+    display=model['display'].get(context,{})
+    x,y,z=np.radians(display.get('rotation',[0,0,0]))
+    rx=np.array([[1,0,0],[0,np.cos(x),-np.sin(x)],[0,np.sin(x),np.cos(x)]])
+    ry=np.array([[np.cos(y),0,np.sin(y)],[0,1,0],[-np.sin(y),0,np.cos(y)]])
+    rz=np.array([[np.cos(z),-np.sin(z),0],[np.sin(z),np.cos(z),0],[0,0,1]])
+    return rz@ry@rx@np.diag(display.get('scale',[1,1,1]))
+
+def points_for_face(element,face):
+    points=np.array([rotated_point(element,p) for p in face_vertices(element['from'],element['to'],face)])
+    return points@element.get('_transform',np.eye(3)).T+element.get('_offset',np.zeros(3))
+
+def render(elements,width,height,view=(.7,.45,1),padding=20,transform=None):
+    transform=np.eye(3) if transform is None else transform
     view=np.array(view,dtype=float);view/=np.linalg.norm(view)
     right=np.cross([0,1,0],view);right/=np.linalg.norm(right);up=np.cross(view,right)
-    allpoints=np.array([p for e in elements for f in e['faces'] for p in face_vertices(e['from'],e['to'],f)])
+    allpoints=np.concatenate([points_for_face(e,f) for e in elements for f in e['faces']])@transform.T
     projected=np.column_stack([allpoints@right, -allpoints@up]);lo=projected.min(axis=0);hi=projected.max(axis=0)
     scale=min((width-2*padding)/(hi[0]-lo[0]),(height-2*padding)/(hi[1]-lo[1]));center=(lo+hi)/2
     canvas=np.empty((height,width,4),dtype=np.uint8);canvas[:]=[247,248,250,255]
     depth=np.full((height,width),-np.inf)
     light=np.array([-.3,.8,.6]);light/=np.linalg.norm(light)
     for element in elements:
-        texture=element['_texture'];th,tw=texture.shape[:2]
         for face,spec in element['faces'].items():
-            normal=np.array(NORMALS[face]);
+            texture=element['_textures'][spec['texture'][1:]] if '_textures' in element else element['_texture']
+            th,tw=texture.shape[:2]
+            normal=np.linalg.inv(transform@element.get('_transform',np.eye(3))).T@np.array(rotated_normal(element,face));normal=normal/np.linalg.norm(normal)
             if normal@view<=0:continue
-            points=np.array(face_vertices(element['from'],element['to'],face),float)
+            points=points_for_face(element,face)@transform.T
             xy=np.column_stack([points@right,-points@up]);xy=(xy-center)*scale+[width/2,height/2];z=points@view
             u,v,U,V=spec['uv'];uv=np.array([[u,v],[U,v],[U,V],[u,V]],float)/16
             uv=np.roll(uv,-spec.get('rotation',0)//90,axis=0)
@@ -65,17 +86,26 @@ def render(elements,width,height,view=(.7,.45,1),padding=20):
 
 def dummy():
     boxes=[([-4,24,-4],[4,32,4]),([-4,12,-2],[4,24,2]),([-7,12,-2],[-4,24,2]),([4,12,-2],[7,24,2]),([-4,0,-2],[0,12,2]),([0,0,-2],[4,12,2])]
-    return [cube([v*.9 for v in a],[v*.9 for v in b],'#c7cdd4') for a,b in boxes]
+    return [cube(a,b,'#c7cdd4') for a,b in boxes]
 
 def attached(name):
-    y,z,scale=(29.6,0,1)
-    if name=='backpack':y,z,scale=17.6,-4.48,.8
-    elif name=='glasses':y,z=25.92,4.48
-    elif name.endswith('boots'):y=1.92
-    elif name in ('hammer','snow_bomb'):y,z=16.8,6.4
-    elif name=='gravity_suit':y=17.6
-    return dummy()+[{**e,'from':[e['from'][0]*scale,e['from'][1]*scale+y,e['from'][2]*scale+z],
-                          'to':[e['to'][0]*scale,e['to'][1]*scale+y,e['to'][2]*scale+z]} for e in load(name)]
+    slots={row['id']:row['slot'] for row in catalog()};slots.update(GADGETS)
+    model=json.loads((PACK/f'assets/noqui/models/{name}.json').read_text(encoding='utf-8'))
+    if slots[name] in ('head','face'):
+        # Official CustomHeadLayer anchor + HEAD item transform, expressed in
+        # the preview's upright +Z-front player frame (uniform player scale omitted).
+        native=np.diag([-.625,.625,-.625])
+        matrix=native@display_matrix(name,'head')
+        offset=np.array([0,28,0])+native@np.array(model['display']['head']['translation'])
+    elif slots[name]=='back':
+        # The exporter recentres each mesh. Match the actual native north
+        # carrier fit: torso centre y=18, back surface beyond z=-3.2 model pixels.
+        fixed=model['display']['fixed'];low,high=np.array(model_bounds(model,fixed=True))-np.array(fixed['translation'])
+        center=(low+high)/2;matrix=np.diag([-.8,.8,-.8])@display_matrix(name,'fixed')
+        offset=np.array([.8*center[0],18-.8*center[1],-3.2+.8*low[2]])
+    else:
+        raise ValueError('Native armor gadgets use equipment textures; use item previews for their shop icons')
+    return dummy()+[{**e,'_transform':matrix,'_offset':offset} for e in load(name)]
 
 def skin_elements():
     tex=np.asarray(Image.open(PACK/'assets/noqui/textures/entity/shopkeeper.png').convert('RGBA'))
@@ -100,18 +130,40 @@ def skin_elements():
             part('right_leg/right_pants',[-3.9,0,-2],[.1,12,2],0,32,4,12,4,.25),
             part('left_leg/left_pants',[-.1,0,-2],[3.9,12,2],0,48,4,12,4,.25)]
 
-def sheet(worn=False):
-    width,height=1440,1140 if worn else 1020;cellw=360;cellh=335 if worn else 295
+def sheet(worn=False,names=None,filename=None,columns=5,cellw=280,cellh=285):
+    names=item_ids() if names is None else names
+    if worn:names=[name for name in names if name not in GADGETS]
+    width=columns*cellw;height=90+math.ceil(len(names)/columns)*cellh
     image=Image.new('RGB',(width,height),'#f7f8fa');draw=ImageDraw.Draw(image)
     draw.text((28,18),'NOQUI / ACTUAL MODEL '+('ATTACHMENTS' if worn else 'CONTACT SHEET'),font=font(24),fill='#202937')
     draw.text((28,53),'Software render of committed cuboids + UV textures. Not an in-game screenshot.',font=font(14),fill='#647080')
-    for i,name in enumerate(IDS):
-        col,row=i%4,i//4;x=col*cellw;y=86+row*cellh
-        view=(-.7,.4,-1) if worn and name=='backpack' else (.65,.35,1)
+    slots={row['id']:row['slot'] for row in catalog()}
+    for i,name in enumerate(names):
+        col,row=i%columns,i//columns;x=col*cellw;y=86+row*cellh
+        view=(-.7,.4,-1) if worn and slots.get(name)=='back' else (.65,.35,1)
         tile=render(attached(name) if worn else load(name),cellw,cellh-48,view)
-        image.paste(tile,(x,y));draw.text((x+20,y+cellh-41),name,font=font(18),fill='#202937')
-        if worn and name=='backpack':draw.text((x+20,y+cellh-19),'back view / runtime scale0.8',font=font(12),fill='#647080')
-    path=OUT/('attachments.png' if worn else 'models.png');image.save(path)
+        image.paste(tile,(x,y));draw.text((x+12,y+cellh-41),name,font=font(15),fill='#202937')
+        if worn and slots.get(name)=='back':draw.text((x+12,y+cellh-19),'back view / runtime scale 0.8',font=font(12),fill='#647080')
+    path=OUT/(filename or ('attachments.png' if worn else 'models.png'));image.save(path)
+    return path
+
+def item_images():
+    """Use each item's actual GUI transform and all of its JSON face textures."""
+    target=OUT/'items';target.mkdir(parents=True,exist_ok=True)
+    records=[]
+    for name in item_ids():
+        model_path=PACK/f'assets/noqui/models/{name}.json'
+        image_path=target/f'{name}.png'
+        render(load(name),256,256,view=(0,0,1),transform=display_matrix(name)).save(image_path)
+        model=json.loads(model_path.read_text(encoding='utf-8'))
+        records.append({'id':name,'image':image_path.relative_to(OUT).as_posix(),
+                        'modelSha256':hashlib.sha256(model_path.read_bytes()).hexdigest(),
+                        'imageSha256':hashlib.sha256(image_path.read_bytes()).hexdigest(),
+                        'textures':{relative:hashlib.sha256((PACK/relative).read_bytes()).hexdigest()
+                                    for relative in sorted({texture_path(model,reference) for reference in model['textures'].values()})}})
+    (OUT/'preview-manifest.json').write_text(json.dumps({'renderer':'JSON cuboids, face UVs, z-buffer, GUI transforms; software QA, no live client claim',
+        'attachments':{'unitsPerBlock':16,'front':'+Z','modelOrigin':[8,8,8],'nativeHeadContext':True,'hatBaseY':2,'eyeY':1.859375,'nativeBackCentreY':1.125,'nativeBackSurface':-.2,'backScale':.8},
+        'items':records},indent=2)+'\n',encoding='utf-8',newline='\n')
 
 def skin_sheet():
     image=Image.new('RGB',(1060,800),'#f7f8fa');d=ImageDraw.Draw(image)
@@ -125,4 +177,13 @@ def skin_sheet():
     image.save(OUT/'shopkeeper.png')
 
 if __name__=='__main__':
-    OUT.mkdir(parents=True,exist_ok=True);sheet();sheet(True);skin_sheet();print(OUT)
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--output',type=Path,default=OUT);parser.add_argument('--skip-skin',action='store_true')
+    args=parser.parse_args();OUT=args.output;OUT.mkdir(parents=True,exist_ok=True)
+    sheet(columns=8,cellw=210,cellh=230);sheet(True,columns=8,cellw=210,cellh=260)
+    names=item_ids()
+    for start in range(0,len(names),20):
+        page=start//20+1;subset=names[start:start+20]
+        sheet(names=subset,filename=f'models-{page:02}.png');sheet(True,names=subset,filename=f'attachments-{page:02}.png')
+    item_images()
+    if not args.skip_skin:skin_sheet()
+    print(OUT)

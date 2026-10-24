@@ -89,8 +89,8 @@ class QuizHudTest {
         Viewer a=new Viewer("Alpha"),b=new Viewer("Beta");hud.enter(a.p);hud.enter(b.p);
         BossBar foreign=BossBar.bossBar(Component.text("디펜스"),1,BossBar.Color.BLUE,BossBar.Overlay.PROGRESS);a.bars.add(foreign);
         hud.render(a.p,frame("PLAYING"),1,0);hud.close();hud.close();assertEquals(Set.of(foreign),a.bars);assertTrue(b.bars.isEmpty());
-        clearInvocations(a.p);hud.enter(a.p);hud.render(a.p,frame("PLAYING"),5,0);hud.start(a.p,5);hud.countdown(a.p,3,1,5);
-        hud.reveal(a.p,"x",List.of(),List.of());hud.finish(a.p,Map.of());hud.leave(a.p);hud.setImmersive(a.p,true);
+        clearInvocations(a.p);hud.enter(a.p);hud.render(a.p,frame("PLAYING"),5,0);hud.start(a.p,0,5);hud.countdown(a.p,3,1,5);
+        hud.reveal(a.p,a.id,"x",List.of(),List.of());hud.finish(a.p,Map.of());hud.leave(a.p);hud.setImmersive(a.p,true);
         verify(a.p,never()).showBossBar(any());verify(a.p,never()).showTitle(any(Title.class));verify(a.p,never()).sendMessage(any(Component.class));
         verify(a.p,never()).playSound(any(Sound.class));verify(a.p,never()).hideBossBar(foreign);
     }
@@ -101,12 +101,12 @@ class QuizHudTest {
             assertFalse(text.contains("비밀"));assertFalse(text.contains("123456"));assertFalse(text.contains("출제권"));
         }
         assertFalse(a.chat().contains("비밀"));assertTrue(a.actions.stream().noneMatch(c->plain(c).contains("비밀")));
-        hud.reveal(a.p,"비밀 제목",List.of(),List.of());assertTrue(a.chat().contains("비밀 제목"));
+        hud.reveal(a.p,a.id,"비밀 제목",List.of(),List.of());assertTrue(a.chat().contains("비밀 제목"));
     }
     @Test void defenseKeepsChatAndSoundsWithoutBossbarTabTitlesOrActionbars() {
-        Viewer a=new Viewer("Alpha");hud.enter(a.p);hud.setImmersive(a.p,false);hud.start(a.p,67);hud.countdown(a.p,3,1,67);
+        Viewer a=new Viewer("Alpha");hud.enter(a.p);hud.setImmersive(a.p,false);hud.start(a.p,0,67);hud.countdown(a.p,3,1,67);
         hud.render(a.p,frame("PLAYING"),7,99);assertTrue(a.bars.isEmpty());
-        hud.reveal(a.p,"정답",List.of(),List.of("Alpha"));hud.finish(a.p,Map.of(a.id,7));
+        hud.reveal(a.p,a.id,"정답",List.of(),List.of("Alpha"));hud.finish(a.p,Map.of(a.id,7));
         verify(a.p,never()).playerListName();verify(a.p,never()).playerListName(nullable(Component.class));
         assertTrue(a.titles.isEmpty());assertTrue(a.actions.isEmpty());assertTrue(a.chat().contains("정답"));
     }
@@ -118,9 +118,9 @@ class QuizHudTest {
         }
     }
     @Test void originalStartCountdownFramesSoundsAndDeduplication() {
-        Viewer a=new Viewer("Alpha");hud.enter(a.p);hud.start(a.p,67);
+        Viewer a=new Viewer("Alpha");hud.enter(a.p);hud.start(a.p,0,67);
         assertEquals("=====================[노래퀴즈 시작]=====================",plain(a.messages.getFirst()));
-        assertEquals("              총 67 라운드입니다",plain(a.messages.get(1)));
+        assertEquals("라운드 0/67",plain(a.messages.get(1)));
         for(int tick:new int[]{4,3,3,2,2,1,1,0})hud.countdown(a.p,tick,1,67);
         assertEquals(List.of("minecraft:0select2","minecraft:0click2","minecraft:0click2","minecraft:0click2"),a.sounds.stream().map(s->s.name().asString()).toList());
         assertTrue(a.sounds.stream().allMatch(s->s.volume()==1));
@@ -129,25 +129,35 @@ class QuizHudTest {
         assertEquals(List.of("=".repeat(53),"라운드 1/67","=".repeat(53)),a.messages.subList(2,5).stream().map(QuizHudTest::plain).toList());
         hud.countdown(a.p,3,2,67);assertEquals(5,a.sounds.size());
     }
-    @Test void originalRevealColorsTextAndUnlimitedRound() {
-        Viewer a=new Viewer("Alpha");hud.enter(a.p);hud.start(a.p,0);hud.countdown(a.p,3,19,0);
-        hud.render(a.p,new QuizHud.Frame(19,0,"PLAYING",30000,115000,"출제자","","비공개",List.of(),List.of(),0,2),4,2);
+    @Test void originalRevealColorsTextAndRegisteredRound() {
+        Viewer a=new Viewer("Alpha");hud.enter(a.p);hud.start(a.p,0,0);hud.countdown(a.p,3,19,20);
+        hud.render(a.p,new QuizHud.Frame(19,20,"PLAYING",30000,115000,"출제자","","비공개",List.of(),List.of(),0,2),4,2);
         assertTrue(a.bars.isEmpty());assertFalse(a.chat().contains("비공개"));
-        a.messages.clear();a.sounds.clear();hud.reveal(a.p,"정답 제목",List.of("태그1","태그2"),List.of("Alpha"));
-        assertEquals(List.of("=".repeat(53),"정답자: Alpha","","정답: 『정답 제목』"," #태그1 #태그2","=".repeat(53)),a.messages.stream().map(QuizHudTest::plain).toList());
+        a.messages.clear();a.sounds.clear();hud.reveal(a.p,a.id,"정답 제목",List.of("태그1","태그2"),List.of("Alpha"));
+        assertEquals(List.of("=".repeat(53),"정답자: Alpha","","정답: 『정답 제목』  출제자: Alpha"," #태그1 #태그2","=".repeat(53)),a.messages.stream().map(QuizHudTest::plain).toList());
         assertEquals(0x8aaae5,a.messages.getFirst().color().value());assertEquals(0xb2f9e8,a.messages.get(1).color().value());assertEquals(0xfefefe,a.messages.get(3).color().value());
         assertEquals("minecraft:0win",a.sounds.getFirst().name().asString());
-        hud.reveal(a.p,"정답 제목",List.of("태그1","태그2"),List.of("Alpha"));assertEquals(6,a.messages.size());
+        assertEquals("라운드 19/20  출제자: Alpha",plain(a.titles.getLast().subtitle()));
+        hud.reveal(a.p,a.id,"정답 제목",List.of("태그1","태그2"),List.of("Alpha"));assertEquals(6,a.messages.size());
     }
     @Test void skippedNoWinnerRevealHasOriginalEmptyResultAndBothCues() {
-        Viewer a=new Viewer("Alpha");hud.enter(a.p);hud.reveal(a.p,"노래",List.of(),List.of());hud.roundEnd(a.p);hud.roundEnd(a.p);
+        Viewer a=new Viewer("Alpha");hud.enter(a.p);hud.reveal(a.p,a.id,"노래",List.of(),List.of());hud.roundEnd(a.p);hud.roundEnd(a.p);
         assertEquals("아무도 정답을 맞히지 못했습니다",plain(a.messages.get(1)));assertEquals("",plain(a.messages.get(4)));
         assertEquals(List.of("minecraft:0win","minecraft:0heal"),a.sounds.stream().map(s->s.name().asString()).toList());
     }
     @Test void timeoutOrSkipAfterACompetitiveRevealDoesNotRepeatWinTextOrSound() {
-        Viewer a=new Viewer("Alpha");hud.enter(a.p);hud.render(a.p,frame("PLAYING"),0,0);hud.reveal(a.p,"정답",List.of("태그"),List.of("Alpha"));
-        var messages=List.copyOf(a.messages);hud.reveal(a.p,"정답",List.of("태그"),List.of("Alpha"));hud.roundEnd(a.p);hud.roundEnd(a.p);
+        Viewer a=new Viewer("Alpha");hud.enter(a.p);hud.render(a.p,frame("PLAYING"),0,0);hud.reveal(a.p,a.id,"정답",List.of("태그"),List.of("Alpha"));
+        var messages=List.copyOf(a.messages);hud.reveal(a.p,a.id,"정답",List.of("태그"),List.of("Alpha"));hud.roundEnd(a.p);hud.roundEnd(a.p);
         assertEquals(messages,a.messages);assertEquals(List.of("minecraft:0win","minecraft:0heal"),a.sounds.stream().map(s->s.name().asString()).toList());
+    }
+    @Test void emptyAndLateJoinDisplaysUseRegisteredSongsAndNoDecorativeSeparators() {
+        Viewer a=new Viewer("Alpha");hud.enter(a.p);hud.start(a.p,0,0);assertTrue(a.chat().contains("라운드 0/0"));assertFalse(a.chat().contains("무제한"));
+        hud.start(a.p,2,5);assertTrue(a.chat().contains("라운드 2/5"));hud.finish(a.p,Map.of(a.id,3));assertFalse(a.chat().contains("·"));assertFalse(a.chat().contains("ㆍ"));
+    }
+    @Test void changedRegistrationCountDoesNotReplayAnAlreadyRevealedAnswer() {
+        Viewer a=new Viewer("Alpha");hud.enter(a.p);hud.render(a.p,frame("REVEAL"),1,0);hud.reveal(a.p,a.id,"정답",List.of(),List.of("Alpha"));
+        var messages=List.copyOf(a.messages);hud.render(a.p,new QuizHud.Frame(3,68,"REVEAL",1000,60000,"","","",List.of(),List.of(),0,2),1,0);
+        hud.reveal(a.p,a.id,"정답",List.of(),List.of("Alpha"));assertEquals(messages,a.messages);assertEquals(1,a.sounds.size());
     }
     @Test void rankingUsesCompetitionTiesTopTenAndNoUuidFallback() {
         Viewer a=new Viewer("Alpha");hud.enter(a.p);Map<UUID,Integer> scores=new LinkedHashMap<>();scores.put(a.id,12);
@@ -166,7 +176,25 @@ class QuizHudTest {
     @Test void everyEntryPointRequiresMainThread() {
         Viewer a=new Viewer("Alpha");bukkit.when(Bukkit::isPrimaryThread).thenReturn(false);
         for(Runnable call:List.<Runnable>of(()->hud.enter(a.p),()->hud.setImmersive(a.p,false),()->hud.render(a.p,frame("PLAYING"),1,0),
-                ()->hud.start(a.p,2),()->hud.countdown(a.p,3,1,2),()->hud.reveal(a.p,"",List.of(),List.of()),
+                ()->hud.start(a.p,0,2),()->hud.countdown(a.p,3,1,2),()->hud.reveal(a.p,a.id,"",List.of(),List.of()),
                 ()->hud.roundEnd(a.p),()->hud.finish(a.p,Map.of()),()->hud.leave(a.p),hud::close))assertThrows(IllegalStateException.class,call::run);
+    }
+    @Test void revealPrintsThePresenterNameAndOnlyRepublishesForADifferentPresenter() {
+        Viewer a=new Viewer("Alpha"),b=new Viewer("Beta");hud.enter(a.p);hud.enter(b.p);
+        hud.reveal(a.p,a.id,"정답 제목",List.of(),List.of("Alpha"));
+        assertTrue(a.chat().contains("정답: 『정답 제목』  출제자: Alpha"));assertEquals("라운드 0/0  출제자: Alpha",plain(a.titles.getLast().subtitle()));
+        int sent=a.messages.size();hud.reveal(a.p,a.id,"정답 제목",List.of(),List.of("Alpha"));
+        assertEquals(sent,a.messages.size());assertEquals(1,a.sounds.size());
+        hud.reveal(a.p,b.id,"정답 제목",List.of(),List.of("Alpha"));
+        assertEquals(sent*2,a.messages.size());assertTrue(a.chat().contains("출제자: Beta"));assertEquals("라운드 0/0  출제자: Beta",plain(a.titles.getLast().subtitle()));
+    }
+    @Test void presenterNameFallsBackToOfflineLookupThenToAPlaceholder() {
+        Viewer a=new Viewer("Alpha");hud.enter(a.p);UUID known=UUID.randomUUID();knownNames.put(known,"Gamma");
+        hud.render(a.p,frame("PLAYING"),1,0);hud.reveal(a.p,known,"정답",List.of(),List.of());
+        assertTrue(a.chat().contains("정답: 『정답』  출제자: Gamma"));
+        hud.reveal(a.p,UUID.randomUUID(),"정답",List.of(),List.of());hud.reveal(a.p,null,"정답",List.of(),List.of());
+        int placeholders=(int)a.messages.stream().filter(m->plain(m).endsWith("출제자: 이름 없음")).count();
+        assertEquals(2,placeholders);assertTrue(a.messages.stream().noneMatch(m->plain(m).contains("null")));
+        assertFalse(a.chat().contains("출제자: Alpha"));
     }
 }

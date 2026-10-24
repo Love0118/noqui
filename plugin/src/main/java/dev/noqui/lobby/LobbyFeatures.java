@@ -42,7 +42,7 @@ public final class LobbyFeatures implements LobbyService, AutoCloseable, Listene
     private final LobbyShop menus;
     private final GadgetItems gadgets;
     private final LobbyMovement movement;
-    private final CosmeticDisplays cosmetics;
+    private final NativeWardrobe cosmetics;
     private final ShopNpc shop;
     private final LongSupplier clock;
     private final DoubleSupplier random;
@@ -65,7 +65,7 @@ public final class LobbyFeatures implements LobbyService, AutoCloseable, Listene
             catalog.put(p.id(),new Product(p.id(),p.label(),p.kind(),p.slot(),plugin.getConfig().getLong(root+"starlight",p.stars()),
                     p.points()<0?-1:plugin.getConfig().getLong(root+"points",p.points())));
         }
-        movement=new LobbyMovement(cabin);cosmetics=new CosmeticDisplays(plugin,cabin);
+        movement=new LobbyMovement(cabin);cosmetics=new NativeWardrobe();
         gadgets=itemFactory==null?new GadgetItems(wallets,cabin):new GadgetItems(wallets,cabin,itemFactory);
         menus=new LobbyShop(wallets,catalog.values(),gadgets,p->started&&!closed&&players.get(p.getUniqueId())==p&&p.isOnline()&&!p.isDead()&&p.getWorld()==cabin,this::deliverCredits,plugin.getLogger()::warning);
         shop=new ShopNpc(cabin,plugin.getConfig().getDouble("lobby.shop.x",409.5),plugin.getConfig().getDouble("lobby.shop.y",11),plugin.getConfig().getDouble("lobby.shop.z",-205.5));
@@ -133,11 +133,11 @@ public final class LobbyFeatures implements LobbyService, AutoCloseable, Listene
     @Override public void rewardAnswerPoints(UUID player,String transactionId,long amount){reward(player,transactionId,amount,Currency.POINTS);}
     private void reward(UUID player,String transaction,long amount,Currency currency){main();if(closed)throw new IllegalStateException("Lobby closed");try{wallets.reward(player,transaction,amount,currency);}catch(IOException error){throw new IllegalStateException("Lobby reward could not be saved",error);}}
     @Override public void showMoney(Player player){
-        main();if(!closed)player.sendMessage(Component.text("✦ "+starlight(player.getUniqueId())+"  ·  정답 포인트 "+answerPoints(player.getUniqueId())));
+        main();if(!closed)player.sendMessage(Component.text("✦ "+starlight(player.getUniqueId())+"  정답 포인트 "+answerPoints(player.getUniqueId())));
     }
     @Override public void openShop(Player player){main();if(started&&!closed)menus.open(player);}
-    @EventHandler(priority=EventPriority.HIGHEST,ignoreCancelled=false) public void shopClick(InventoryClickEvent event){menus.click(event);}
-    @EventHandler(priority=EventPriority.HIGHEST,ignoreCancelled=false) public void shopDrag(InventoryDragEvent event){menus.drag(event);}
+    @EventHandler(priority=EventPriority.HIGHEST,ignoreCancelled=false) public void shopClick(InventoryClickEvent event){cosmetics.click(event);menus.click(event);}
+    @EventHandler(priority=EventPriority.HIGHEST,ignoreCancelled=false) public void shopDrag(InventoryDragEvent event){cosmetics.drag(event);menus.drag(event);}
     @EventHandler public void shopClose(InventoryCloseEvent event){menus.closed(event);}
     private void deliverCredits() {
         for(LobbyWallets.Grant grant:wallets.pending())try{credits.grant(grant.player(),grant.amount(),grant.transaction());wallets.delivered(grant.transaction());}
@@ -152,7 +152,8 @@ public final class LobbyFeatures implements LobbyService, AutoCloseable, Listene
         openShop(event.getPlayer());
     }
     private boolean readyShop(Player player){long now=clock.getAsLong();if(shopCooldowns.getOrDefault(player.getUniqueId(),0L)>now)return false;shopCooldowns.put(player.getUniqueId(),now+500);return true;}
-    @EventHandler(priority=EventPriority.HIGHEST) public void protectNpc(EntityDamageEvent e){if(ownsEntity(e.getEntity())||e.getEntity().getScoreboardTags().contains(CosmeticDisplays.TAG))e.setCancelled(true);}
+    @EventHandler(priority=EventPriority.HIGHEST) public void protectNpc(EntityDamageEvent e){if(ownsEntity(e.getEntity()))e.setCancelled(true);}
+    @EventHandler(priority=EventPriority.HIGHEST,ignoreCancelled=false) public void wardrobeDrop(PlayerDropItemEvent e){if(NativeWardrobe.managed(e.getItemDrop().getItemStack()))e.setCancelled(true);}
     @EventHandler public void jumpInput(PlayerInputEvent event) {
         Player player=event.getPlayer();
         if(!started||closed||players.get(player.getUniqueId())!=player)return;
@@ -219,7 +220,7 @@ public final class LobbyFeatures implements LobbyService, AutoCloseable, Listene
         if(effect.freeze!=null&&effect.player.isFreezeTickingLocked()&&effect.player.getFreezeTicks()==effect.freeze.expected){effect.player.lockFreezeTicks(false);effect.player.setFreezeTicks(effect.freeze.previous);}
     }
     @EventHandler public void world(PlayerChangedWorldEvent e){release(e.getPlayer());}
-    @EventHandler public void death(PlayerDeathEvent e){release(e.getEntity());}
+    @EventHandler public void death(PlayerDeathEvent e){e.getDrops().removeIf(NativeWardrobe::managed);release(e.getEntity());}
     @EventHandler public void quit(PlayerQuitEvent e){release(e.getPlayer());players.remove(e.getPlayer().getUniqueId());if(pack!=null)pack.quit(e.getPlayer().getUniqueId());}
     @EventHandler public void mode(PlayerGameModeChangeEvent e){movement.leave(e.getPlayer());}
     private void release(Player player) {
@@ -227,7 +228,7 @@ public final class LobbyFeatures implements LobbyService, AutoCloseable, Listene
     }
     private void releaseEffects(Player player,boolean resetJumps) {
         if(resetJumps)movement.leave(player);else movement.suspend(player);
-        cosmetics.leave(player.getUniqueId());cooldowns.remove(player.getUniqueId());shopCooldowns.remove(player.getUniqueId());
+        cosmetics.leave(player);cooldowns.remove(player.getUniqueId());shopCooldowns.remove(player.getUniqueId());
         Effect stun=stuns.remove(player.getUniqueId()),ice=frost.remove(player.getUniqueId());if(stun!=null)clearEffect(stun);if(ice!=null)clearEffect(ice);
         for(var row:List.copyOf(projectiles.entrySet()))if(row.getValue().owner.equals(player.getUniqueId())){row.getValue().ball.remove();projectiles.remove(row.getKey());}
     }

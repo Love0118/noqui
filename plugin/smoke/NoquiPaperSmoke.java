@@ -30,6 +30,7 @@ public final class NoquiPaperSmoke extends JavaPlugin {
                 require(world.getEntitiesByClass(org.bukkit.entity.Mannequin.class).stream()
                         .filter(entity->entity.getScoreboardTags().contains("noqui_lobby_shop_v1")).count()==1,"single owned shop NPC");
                 verifyPhysicalItems(world);
+                verifyNativeWardrobe();
                 var quiz=Objects.requireNonNull(Bukkit.getServicesManager().load(QuizService.class));
                 var before=Objects.requireNonNull(Bukkit.getServicesManager().load(DefenseService.class));
                 boolean expectedActive=Boolean.getBoolean("noqui.smoke.expect-active");
@@ -70,6 +71,7 @@ public final class NoquiPaperSmoke extends JavaPlugin {
             if(product.equals("hammer")||product.equals("snow_bomb"))require(!item.getItemMeta().hasEquippable(),"hand gadgets have no equipment component");
             else {
                 var equipment=item.getItemMeta().getEquippable();require(equipment.isEquipOnInteract()&&equipment.isSwappable()&&!equipment.isDamageOnHurt()&&!equipment.isDispensable(),"native equipment behavior flags");
+                require(new org.bukkit.NamespacedKey("noqui",product).equals(equipment.getModel()),"native gadget equipment asset");
                 require(Set.copyOf(equipment.getAllowedEntities()).equals(Set.of(org.bukkit.entity.EntityType.PLAYER)),"only players equip gadgets");
             }
         }
@@ -83,5 +85,18 @@ public final class NoquiPaperSmoke extends JavaPlugin {
         var data=restored[41].getItemMeta().getPersistentDataContainer();require(claim.toString().equals(data.get(new org.bukkit.NamespacedKey("noqui","question_ticket_claim"),org.bukkit.persistence.PersistentDataType.STRING)),"claim survives native serialization");
         require(!data.has(new org.bukkit.NamespacedKey("noqui","question_ticket_owner")),"ground claim is transferable");
         require(ledger.pickup(claim,recipient,2)==2&&ledger.pickup(claim,recipient,2)==0&&ledger.balance(owner)==1&&ledger.balance(recipient)==2,"serialized drop claim redeems once");
+    }
+    private static void verifyNativeWardrobe()throws Exception {
+        var type=Class.forName("dev.noqui.lobby.NativeWardrobe");UUID owner=UUID.randomUUID();
+        var headFactory=type.getDeclaredMethod("head",UUID.class,String.class,String.class);headFactory.setAccessible(true);
+        var backFactory=type.getDeclaredMethod("back",UUID.class,String.class);backFactory.setAccessible(true);
+        var head=(org.bukkit.inventory.ItemStack)headFactory.invoke(null,owner,"bunny","glasses");
+        var back=(org.bukkit.inventory.ItemStack)backFactory.invoke(null,owner,"backpack");
+        require(head.getItemMeta().getItemModel().equals(new org.bukkit.NamespacedKey("noqui","wearable_head")),"native composite head item");
+        require(head.getItemMeta().getCustomModelDataComponent().getStrings().equals(List.of("bunny","glasses")),"native two-part selection");
+        require(head.getItemMeta().getEquippable().getSlot()==org.bukkit.inventory.EquipmentSlot.HEAD&&head.getItemMeta().getEquippable().getModel()==null,"head takes custom item geometry path");
+        require(back.getItemMeta().getEquippable().getSlot()==org.bukkit.inventory.EquipmentSlot.CHEST&&back.getItemMeta().getEquippable().getModel().equals(new org.bukkit.NamespacedKey("noqui","wearable_back/backpack")),"back takes native equipment path");
+        var restored=org.bukkit.inventory.ItemStack.deserializeItemsFromBytes(org.bukkit.inventory.ItemStack.serializeItemsAsBytes(new org.bukkit.inventory.ItemStack[]{head,back}));
+        require(restored[0].equals(head)&&restored[1].equals(back),"native wardrobe metadata survives real server serialization");
     }
 }

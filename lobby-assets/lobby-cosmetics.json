@@ -1,0 +1,405 @@
+{
+  "schemaVersion": 1,
+  "cosmetics": [
+    {
+      "id": "pirate_hat",
+      "label": "해적 모자",
+      "slot": "head"
+    },
+    {
+      "id": "backpack",
+      "label": "가방",
+      "slot": "back"
+    },
+    {
+      "id": "glasses",
+      "label": "안경",
+      "slot": "face"
+    },
+    {
+      "id": "crown",
+      "label": "별 왕관",
+      "slot": "head"
+    },
+    {
+      "id": "cap",
+      "label": "별 모자",
+      "slot": "head"
+    },
+    {
+      "id": "bunny",
+      "label": "토끼 귀",
+      "slot": "head"
+    },
+    {
+      "id": "chef_toque",
+      "label": "요리사 모자",
+      "slot": "head"
+    },
+    {
+      "id": "western_hat",
+      "label": "카우보이 모자",
+      "slot": "head"
+    },
+    {
+      "id": "formal_top_hat",
+      "label": "정장 실크해트",
+      "slot": "head"
+    },
+    {
+      "id": "winter_pom_hat",
+      "label": "방울 털모자",
+      "slot": "head"
+    },
+    {
+      "id": "jester_cap",
+      "label": "궁정 광대 모자",
+      "slot": "head"
+    },
+    {
+      "id": "miner_lamp_helmet",
+      "label": "광부 안전모",
+      "slot": "head"
+    },
+    {
+      "id": "queen_crest_crown",
+      "label": "여왕 장식 왕관",
+      "slot": "head"
+    },
+    {
+      "id": "wide_sombrero",
+      "label": "솜브레로",
+      "slot": "head"
+    },
+    {
+      "id": "straw_boater",
+      "label": "밀짚모자",
+      "slot": "head"
+    },
+    {
+      "id": "graduation_mortarboard",
+      "label": "학사모",
+      "slot": "head"
+    },
+    {
+      "id": "brass_diver_helmet",
+      "label": "잠수부 투구",
+      "slot": "head"
+    },
+    {
+      "id": "ushanka_hat",
+      "label": "귀달이 털모자",
+      "slot": "head"
+    },
+    {
+      "id": "samurai_kabuto",
+      "label": "사무라이 투구",
+      "slot": "head"
+    },
+    {
+      "id": "witch_cone_hat",
+      "label": "마녀 모자",
+      "slot": "head"
+    },
+    {
+      "id": "steampunk_courier_cap",
+      "label": "증기 배달부 모자",
+      "slot": "head"
+    },
+    {
+      "id": "ornamental_tiara",
+      "label": "장식 티아라",
+      "slot": "head"
+    },
+    {
+      "id": "bucket_hat",
+      "label": "버킷햇",
+      "slot": "head"
+    },
+    {
+      "id": "santa_fold_hat",
+      "label": "산타 모자",
+      "slot": "head"
+    },
+    {
+      "id": "face_uwu_choker",
+      "label": "방울 초커",
+      "slot": "face"
+    },
+    {
+      "id": "face_heart_glasses",
+      "label": "하트 안경",
+      "slot": "face"
+    },
+    {
+      "id": "face_dark_shades",
+      "label": "두꺼운 선글라스",
+      "slot": "face"
+    },
+    {
+      "id": "face_cyber_visor",
+      "label": "사이버 바이저",
+      "slot": "face"
+    },
+    {
+      "id": "face_moonstone_pendant",
+      "label": "문스톤 목걸이",
+      "slot": "face"
+    },
+    {
+      "id": "face_cat_ear_headphones",
+      "label": "고양이 귀 헤드셋",
+      "slot": "head"
+    },
+    {
+      "id": "face_hair_clip_bow",
+      "label": "리본 머리핀",
+      "slot": "head"
+    },
+    {
+      "id": "face_hair_clip_butterfly",
+      "label": "나비 머리핀",
+      "slot": "head"
+    },
+    {
+      "id": "face_hair_clip_cherry",
+      "label": "체리 머리핀",
+      "slot": "head"
+    },
+    {
+      "id": "face_hair_clip_flower",
+      "label": "꽃 머리핀",
+      "slot": "head"
+    },
+    {
+      "id": "face_rose_quartz_earrings",
+      "label": "장미수정 귀걸이",
+      "slot": "head"
+    },
+    {
+      "id": "face_cat_ears",
+      "label": "고양이 귀 머리띠",
+      "slot": "head"
+    },
+    {
+      "id": "face_fox_ears",
+      "label": "여우 귀 머리띠",
+      "slot": "head"
+    },
+    {
+      "id": "face_bear_ears",
+      "label": "곰 귀 머리띠",
+      "slot": "head"
+    },
+    {
+      "id": "face_wolf_ears",
+      "label": "늑대 귀 머리띠",
+      "slot": "head"
+    },
+    {
+      "id": "face_night_vision_goggles",
+      "label": "야간투시경",
+      "slot": "face"
+    },
+    {
+      "id": "face_snorkel",
+      "label": "스노클",
+      "slot": "face"
+    },
+    {
+      "id": "face_lucky_scarf",
+      "label": "행운의 목도리",
+      "slot": "face"
+    },
+    {
+      "id": "back_trail_rucksack",
+      "label": "탐험 배낭",
+      "slot": "back"
+    },
+    {
+      "id": "back_acoustic_guitar",
+      "label": "어쿠스틱 기타",
+      "slot": "back"
+    },
+    {
+      "id": "back_kite_shield",
+      "label": "기사의 방패",
+      "slot": "back"
+    },
+    {
+      "id": "back_round_shield",
+      "label": "둥근 방패",
+      "slot": "back"
+    },
+    {
+      "id": "back_artist_easel",
+      "label": "화가의 이젤",
+      "slot": "back"
+    },
+    {
+      "id": "back_halloween_gravestone",
+      "label": "할로윈 묘비",
+      "slot": "back"
+    },
+    {
+      "id": "back_cleric_cross",
+      "label": "성직자의 십자가",
+      "slot": "back"
+    },
+    {
+      "id": "back_double_axe",
+      "label": "양날 도끼",
+      "slot": "back"
+    },
+    {
+      "id": "back_smith_hammer",
+      "label": "대장장이 망치",
+      "slot": "back"
+    },
+    {
+      "id": "back_katana_scabbard",
+      "label": "카타나 칼집",
+      "slot": "back"
+    },
+    {
+      "id": "back_arcane_staff",
+      "label": "마법사의 지팡이",
+      "slot": "back"
+    },
+    {
+      "id": "back_hunters_bow",
+      "label": "사냥꾼의 활",
+      "slot": "back"
+    },
+    {
+      "id": "back_bagpipe",
+      "label": "백파이프",
+      "slot": "back"
+    },
+    {
+      "id": "back_didgeridoo",
+      "label": "디저리두",
+      "slot": "back"
+    },
+    {
+      "id": "back_handpan",
+      "label": "핸드팬",
+      "slot": "back"
+    },
+    {
+      "id": "back_lute",
+      "label": "류트",
+      "slot": "back"
+    },
+    {
+      "id": "back_portable_keyboard",
+      "label": "휴대용 건반",
+      "slot": "back"
+    },
+    {
+      "id": "back_tiny_drum",
+      "label": "작은 북",
+      "slot": "back"
+    },
+    {
+      "id": "back_trumpet",
+      "label": "트럼펫",
+      "slot": "back"
+    },
+    {
+      "id": "back_vielle",
+      "label": "비엘 현악기",
+      "slot": "back"
+    },
+    {
+      "id": "burger_hat",
+      "label": "햄버거",
+      "slot": "head"
+    },
+    {
+      "id": "zongzi_hat",
+      "label": "쫑즈",
+      "slot": "head"
+    },
+    {
+      "id": "soda_can_hat",
+      "label": "탄산음료 캔",
+      "slot": "head"
+    },
+    {
+      "id": "moai_hat",
+      "label": "모아이",
+      "slot": "head"
+    },
+    {
+      "id": "gourd_hat",
+      "label": "호리병",
+      "slot": "head"
+    },
+    {
+      "id": "vase_hat",
+      "label": "꽃병",
+      "slot": "head"
+    },
+    {
+      "id": "phonograph_hat",
+      "label": "축음기",
+      "slot": "head"
+    },
+    {
+      "id": "camera_hat",
+      "label": "사진기",
+      "slot": "head"
+    },
+    {
+      "id": "cctv_hat",
+      "label": "감시 카메라",
+      "slot": "head"
+    },
+    {
+      "id": "bread_board_hat",
+      "label": "빵 도마",
+      "slot": "head"
+    },
+    {
+      "id": "cheese_hat",
+      "label": "치즈",
+      "slot": "head"
+    },
+    {
+      "id": "pop_tart_hat",
+      "label": "토스터 페이스트리",
+      "slot": "head"
+    },
+    {
+      "id": "meat_hat",
+      "label": "고기",
+      "slot": "head"
+    },
+    {
+      "id": "mushroom_mailbox_hat",
+      "label": "버섯 우편함",
+      "slot": "head"
+    },
+    {
+      "id": "pigeon_hat",
+      "label": "머리 위 비둘기",
+      "slot": "head"
+    },
+    {
+      "id": "snail_hat",
+      "label": "머리 위 달팽이",
+      "slot": "head"
+    },
+    {
+      "id": "wolf_hat",
+      "label": "머리 위 늑대",
+      "slot": "head"
+    },
+    {
+      "id": "frappuccino_hat",
+      "label": "프라푸치노",
+      "slot": "head"
+    }
+  ]
+}

@@ -29,12 +29,19 @@ class GadgetItemsTest {
         player=mock(Player.class);world=cabin;when(player.getUniqueId()).thenReturn(owner);when(player.getWorld()).thenAnswer(c->world);when(player.getGameMode()).thenReturn(GameMode.ADVENTURE);
         inventory=new GadgetTestSupport.Inventory(player);
         wallets=new LobbyWallets(dir.resolve("wallet"),(p,b)->{if(failure.get())throw new IOException("disk full");Files.write(p,b);});
-        wallets.reward(owner,"seed",100,Currency.STARLIGHT);gadgets=new GadgetItems(wallets,cabin,GadgetTestSupport::item);
+        wallets.reward(owner,"seed",1000,Currency.STARLIGHT);gadgets=new GadgetItems(wallets,cabin,GadgetTestSupport::item);
     }
     LobbyCatalog.Product product(String id){return LobbyCatalog.defaults().stream().filter(p->p.id().equals(id)).findFirst().orElseThrow();}
     LobbyWallets.Gadget buy(String id,String transaction)throws Exception {wallets.purchase(owner,product(id),Currency.STARLIGHT,transaction);return wallets.pendingGadgets(owner).stream().filter(g->g.product().equals(id)).findFirst().orElseThrow();}
     ItemStack take(UUID serial) {for(int i=0;i<inventory.slots.length;i++)if(serial.equals(GadgetItems.serial(inventory.slots[i]))){ItemStack item=inventory.slots[i];inventory.slots[i]=null;return item;}throw new AssertionError("Missing item");}
     ItemStack stone(){ItemStack item=mock(ItemStack.class);when(item.getType()).thenReturn(Material.STONE);return item;}
+    @Test void legacyFooterRefreshPreservesCustomLoreAndItemIdentity() {
+        var item=mock(ItemStack.class);var meta=mock(ItemMeta.class);when(item.getItemMeta()).thenReturn(meta);
+        var custom=Component.text("사용자 제목 \u00b7 유지");var lore=new AtomicReference<List<Component>>(List.of(custom,Component.text("오두막에서 사용 \u00b7 버리기 가능")));
+        when(meta.lore()).thenAnswer(c->lore.get());doAnswer(c->{lore.set(c.getArgument(0));return null;}).when(meta).lore(anyList());
+        assertTrue(GadgetItems.refreshLegacyLore(item));assertSame(custom,lore.get().getFirst());assertEquals("오두막에서 사용, 버리기 가능",net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer.plainText().serialize(lore.get().getLast()));
+        assertFalse(GadgetItems.refreshLegacyLore(item));verify(item).setItemMeta(meta);verify(meta,never()).displayName(any());
+    }
 
     @Test void deliveryDropTransferAndConsumptionNeverRecreateWalletOwnership()throws Exception {
         var token=buy("hammer","purchase");gadgets.reconcile(player);
@@ -57,9 +64,9 @@ class GadgetItemsTest {
     }
     @Test void fullInventoryKeepsOnePendingSerialAndRetryNeverChargesAgain()throws Exception {
         Arrays.fill(inventory.slots,stone());var token=buy("triple_boots","one");gadgets.reconcile(player);
-        assertFalse(wallets.gadget(token.serial()).delivered());assertEquals(80,wallets.wallet(owner).stars());
+        assertFalse(wallets.gadget(token.serial()).delivered());assertEquals(800,wallets.wallet(owner).stars());
         inventory.slots[8]=null;gadgets.reconcile(player);wallets.purchase(owner,product("triple_boots"),Currency.STARLIGHT,"one");gadgets.reconcile(player);
-        assertEquals(token.serial(),GadgetItems.serial(inventory.slots[8]));assertTrue(wallets.pendingGadgets(owner).isEmpty());assertEquals(80,wallets.wallet(owner).stars());assertEquals(1,gadgets.count(player,"triple_boots"));
+        assertEquals(token.serial(),GadgetItems.serial(inventory.slots[8]));assertTrue(wallets.pendingGadgets(owner).isEmpty());assertEquals(800,wallets.wallet(owner).stars());assertEquals(1,gadgets.count(player,"triple_boots"));
     }
     @Test void persistedIssuanceProofPreventsRemintAfterAckFailureAndDrop()throws Exception {
         var token=buy("hammer","one");failure.set(true);assertThrows(IOException.class,()->gadgets.reconcile(player));

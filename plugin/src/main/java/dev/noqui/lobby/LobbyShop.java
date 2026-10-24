@@ -18,6 +18,12 @@ import dev.noqui.lobby.LobbyCatalog.Currency;
 
 /** Main-thread chest UI. Item stacks are presentation; only the current holder authorizes actions. */
 final class LobbyShop implements AutoCloseable {
+    private enum Section {
+        COSMETICS("치장"),GADGETS("장난감"),TICKETS("출제권"),OWNED("보유");
+        final String label;Section(String label){this.label=label;}
+    }
+    private record Page(Section section,int index) {}
+    private static final int PAGE_SIZE=21;
     private static final class Holder implements InventoryHolder {
         final Player owner;
         final Map<Integer,Runnable> actions = new HashMap<>();
@@ -48,7 +54,7 @@ final class LobbyShop implements AutoCloseable {
         return inventory!=null && inventory.getHolder() instanceof Holder holder && holder.inventory==inventory;
     }
 
-    void open(Player player) { if(!closed && eligible.test(player))category(player,Kind.COSMETIC); }
+    void open(Player player) { if(!closed && eligible.test(player))category(player,new Page(Section.COSMETICS,0)); }
 
     private Holder chest(Player player,String title) {
         Holder holder=new Holder(player);
@@ -66,32 +72,42 @@ final class LobbyShop implements AutoCloseable {
         holder.owner.openInventory(holder.inventory);
     }
 
-    private void category(Player player,Kind kind) {
-        Holder holder=chest(player,"상점 · "+categoryName(kind));
-        nav(holder,0,Material.LEATHER_HELMET,"치장",()->category(player,Kind.COSMETIC));
-        nav(holder,1,Material.FEATHER,"장난감",()->category(player,Kind.GADGET));
-        nav(holder,2,Material.PAPER,"출제권",()->category(player,Kind.CREDIT));
-        int slot=19;
-        for(Product product:catalog)if(product.kind()==kind) {
+    private void category(Player player,Page requested) {
+        var products=catalog.stream().filter(product->switch(requested.section()){
+            case COSMETICS->product.kind()==Kind.COSMETIC;
+            case GADGETS->product.kind()==Kind.GADGET;
+            case TICKETS->product.kind()==Kind.CREDIT;
+            case OWNED->product.kind()!=Kind.CREDIT&&owned(player,product)>0;
+        }).toList();
+        int pages=Math.max(1,(products.size()+PAGE_SIZE-1)/PAGE_SIZE);var page=new Page(requested.section(),Math.clamp(requested.index(),0,pages-1));
+        Holder holder=chest(player,"상점 "+page.section().label+(pages>1?" "+(page.index()+1)+"/"+pages:""));
+        nav(holder,0,Material.LEATHER_HELMET,"치장",()->category(player,new Page(Section.COSMETICS,0)));
+        nav(holder,1,Material.FEATHER,"장난감",()->category(player,new Page(Section.GADGETS,0)));
+        nav(holder,2,Material.PAPER,"출제권",()->category(player,new Page(Section.TICKETS,0)));
+        nav(holder,3,Material.CHEST,"보유",()->category(player,new Page(Section.OWNED,0)));
+        int offset=page.index()*PAGE_SIZE;
+        for(int i=0;i<Math.min(PAGE_SIZE,products.size()-offset);i++) {
+            Product product=products.get(offset+i);int slot=19+(i/7)*9+i%7;
             holder.inventory.setItem(slot,productIcon(player,product));
-            holder.actions.put(slot,()->product(player,product));
-            if(++slot%9==8)slot+=2;
+            holder.actions.put(slot,()->product(player,product,page));
         }
+        if(page.index()>0)nav(holder,45,Material.ARROW,"이전",()->category(player,new Page(page.section(),page.index()-1)));
+        if(page.index()+1<pages)nav(holder,53,Material.ARROW,"다음",()->category(player,new Page(page.section(),page.index()+1)));
         nav(holder,49,Material.BARRIER,"닫기",player::closeInventory);
         show(holder);
     }
 
-    private void product(Player player,Product product) {
-        Holder holder=chest(player,"상점 · "+product.label());
+    private void product(Player player,Product product,Page origin) {
+        Holder holder=chest(player,"상점 "+product.label());
         holder.inventory.setItem(13,productIcon(player,product));
         String transaction="shop:"+UUID.randomUUID();
         boolean durable=product.kind()==Kind.COSMETIC;
         long owned=owned(player,product);
         if(!durable || owned==0) {
             nav(holder,29,Material.EMERALD,"✦ "+product.stars()+" 구매",
-                    ()->purchase(player,product,Currency.STARLIGHT,transaction));
+                    ()->purchase(player,product,Currency.STARLIGHT,transaction,origin));
             if(product.points()>0)nav(holder,33,Material.EXPERIENCE_BOTTLE,"정답 포인트 "+product.points()+" 구매",
-                    ()->purchase(player,product,Currency.POINTS,transaction));
+                    ()->purchase(player,product,Currency.POINTS,transaction,origin));
         }
         if(product.kind()==Kind.COSMETIC && owned>0) {
             boolean equipped=product.id().equals(wallets.wallet(player.getUniqueId()).equipped().get(product.slot()));
@@ -99,35 +115,35 @@ final class LobbyShop implements AutoCloseable {
                 try { wallets.equip(player.getUniqueId(),product); }
                 catch(IOException error) { failed(player); }
                 catch(IllegalArgumentException error) { message(player,error.getMessage(),NamedTextColor.RED); }
-                product(player,product);
+                product(player,product,origin);
             });
         }
-        nav(holder,49,Material.ARROW,"돌아가기",()->category(player,product.kind()));
+        nav(holder,49,Material.ARROW,"돌아가기",()->category(player,origin));
         show(holder);
     }
 
-    private void purchase(Player player,Product product,Currency currency,String transaction) {
+    private void purchase(Player player,Product product,Currency currency,String transaction,Page origin) {
         try {
             wallets.purchase(player.getUniqueId(),product,currency,transaction);
             delivery.run();
             boolean pending=product.kind()==Kind.CREDIT?wallets.pending().stream().anyMatch(g->g.player().equals(player.getUniqueId()))
                     :product.kind()==Kind.GADGET&&wallets.pendingGadgets(player.getUniqueId()).stream().anyMatch(g->g.product().equals(product.id()));
-            message(player,pending?product.label()+" 지급 대기 · 인벤토리 공간을 확인하세요":"구매 완료",NamedTextColor.GREEN);
+            message(player,pending?product.label()+" 지급 대기: 인벤토리 공간을 확인하세요":"구매 완료",NamedTextColor.GREEN);
         } catch(IOException error) { failed(player); }
         catch(IllegalArgumentException error) { message(player,error.getMessage(),NamedTextColor.RED); }
-        product(player,product);
+        product(player,product,origin);
     }
 
     private void failed(Player player) {
-        message(player,"저장 실패 · 다시 시도하세요",NamedTextColor.RED);
+        message(player,"저장 실패: 다시 시도하세요",NamedTextColor.RED);
         warning.accept("Lobby shop persistence failed; no unsaved purchase or equipment change was applied");
     }
 
     private ItemStack productIcon(Player player,Product product) {
         var wallet=wallets.wallet(player.getUniqueId());
         List<String> lore=new ArrayList<>();
-        lore.add("✦ "+product.stars()+(product.points()>0?"  /  정답 포인트 "+product.points():" · 별빛 전용"));
-        if(product.kind()==Kind.CREDIT)lore.add("실물 1장 · 사용 시 소모");
+        lore.add("✦ "+product.stars()+(product.points()>0?"  /  정답 포인트 "+product.points():" 별빛 전용"));
+        if(product.kind()==Kind.CREDIT)lore.add("실물 1장, 사용 시 소모");
         else {
             lore.add("보유 "+owned(player,product));
             boolean equipped=product.kind()==Kind.GADGET?gadgets.equipped(player,product):product.id().equals(wallet.equipped().get(product.slot()));
@@ -136,7 +152,7 @@ final class LobbyShop implements AutoCloseable {
         String control=switch(product.id()) {
             case "hammer"->"좌클릭";
             case "snow_bomb"->"Shift + 우클릭";
-            case "triple_boots","quad_boots"->"신발 착용 · 공중 Space";
+            case "triple_boots","quad_boots"->"신발 착용 후 공중에서 Space";
             case "gravity_suit"->"우클릭: 몸통 착용";
             default->"";
         };
@@ -165,10 +181,6 @@ final class LobbyShop implements AutoCloseable {
     private static void nav(Holder holder,int slot,Material material,String name,Runnable action) {
         holder.inventory.setItem(slot,item(material,name,NamedTextColor.YELLOW));
         holder.actions.put(slot,action);
-    }
-
-    private static String categoryName(Kind kind) {
-        return switch(kind){case COSMETIC->"치장";case GADGET->"장난감";case CREDIT->"출제권";};
     }
 
     void click(InventoryClickEvent event) {

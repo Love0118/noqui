@@ -1,0 +1,5 @@
+하트 안경 / face_heart_glasses
+Author: eliasnvx
+Source: https://github.com/eliasnvx/femboy-mod/blob/1e2f8d91881ca8ee6edacc206072f5ed72aa38b3/common/src/main/java/dev/eliasnvx/femboymod/client/render/model/CosmeticModels.java
+License: MIT; see LICENSE.txt.
+Changes: exact static cuboids captured by executing the upstream factory body with recording builders. Native Java elements, original UV offsets, default group colors baked into tiled fabric textures. Dynamic dye, animation and headset audio-reactive light omitted.

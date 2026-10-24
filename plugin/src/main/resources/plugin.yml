@@ -5,8 +5,8 @@ api-version: '26.3'
 description: 별도 cabin 노래퀴즈와 브라우저 오디오 연결
 commands:
   noqui:
-    description: 노래퀴즈 참여·관리
-    usage: /noqui <start [rounds]|limit rounds|stop|skip [force]|hint|pause|resume|give player [amount]|mod list/add/remove|ban list/add/remove|status|admin|bgm|connect|leave>
+    description: 노래퀴즈 참여 및 관리
+    usage: /noqui <start [rounds]|limit rounds|stop|skip [force]|hint|pause|resume|give nickname|@a [amount]|mod list/add/remove|ban list/add/remove|status|admin|bgm|connect|leave>
   money:
-    description: 내 별빛과 정답 포인트 확인
-    usage: /money
+    description: 내 별빛과 정답 포인트 확인 및 별빛 지급
+    usage: /money [give <nickname|@a> [amount]]

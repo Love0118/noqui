@@ -19,15 +19,15 @@ class LobbyWalletsTest {
         w.reward(id,"points",100,Currency.POINTS);
         assertThrows(IllegalArgumentException.class,()->w.purchase(id,product("question_credit"),Currency.POINTS,"credit"));
         w.purchase(id,product("glasses"),Currency.POINTS,"cosmetic");
-        assertEquals(98,w.wallet(id).points());assertEquals(1,w.wallet(id).owned().get("glasses"));assertTrue(w.pending().isEmpty());
+        assertEquals(80,w.wallet(id).points());assertEquals(1,w.wallet(id).owned().get("glasses"));assertTrue(w.pending().isEmpty());
     }
     @Test void rewardAndPurchaseReplayAreDurableAndConflictsRejected()throws Exception {
         Path file=dir.resolve("wallet");LobbyWallets w=new LobbyWallets(file);
-        w.reward(id,"stars",20,Currency.STARLIGHT);w.reward(id,"stars",20,Currency.STARLIGHT);
-        assertThrows(IllegalArgumentException.class,()->w.reward(id,"stars",21,Currency.STARLIGHT));
+        w.reward(id,"stars",200,Currency.STARLIGHT);w.reward(id,"stars",200,Currency.STARLIGHT);
+        assertThrows(IllegalArgumentException.class,()->w.reward(id,"stars",201,Currency.STARLIGHT));
         w.purchase(id,product("hammer"),Currency.STARLIGHT,"purchase");w.purchase(id,product("hammer"),Currency.STARLIGHT,"purchase");
         LobbyWallets again=new LobbyWallets(file);again.purchase(id,product("hammer"),Currency.STARLIGHT,"purchase");
-        assertEquals(10,again.wallet(id).stars());assertFalse(again.wallet(id).owned().containsKey("hammer"));
+        assertEquals(100,again.wallet(id).stars());assertFalse(again.wallet(id).owned().containsKey("hammer"));
         assertEquals(1,again.pendingGadgets(id).size());assertEquals(w.pendingGadgets(id).getFirst().serial(),again.pendingGadgets(id).getFirst().serial());
         assertThrows(IllegalArgumentException.class,()->again.purchase(id,product("hammer"),Currency.POINTS,"purchase"));
     }
@@ -47,7 +47,7 @@ class LobbyWalletsTest {
         byte[] bytes=Files.readAllBytes(file);bytes[15]^=1;Files.write(file,bytes);assertThrows(IOException.class,()->new LobbyWallets(file));
     }
     @Test void cosmeticsRemainVirtualAndPhysicalGadgetSerialsRetireDurably()throws Exception {
-        Path file=dir.resolve("wallet");LobbyWallets w=new LobbyWallets(file);w.reward(id,"points",100,Currency.POINTS);w.reward(id,"stars",100,Currency.STARLIGHT);
+        Path file=dir.resolve("wallet");LobbyWallets w=new LobbyWallets(file);w.reward(id,"points",100,Currency.POINTS);w.reward(id,"stars",1000,Currency.STARLIGHT);
         w.purchase(id,product("quad_boots"),Currency.POINTS,"boots");
         w.purchase(id,product("hammer"),Currency.POINTS,"hammer");
         w.purchase(id,product("glasses"),Currency.STARLIGHT,"glasses");w.equip(id,product("glasses"));
@@ -87,9 +87,9 @@ class LobbyWalletsTest {
         assertThrows(IOException.class,()->failing.consumeGadget(gadget.serial(),gadget.product()));assertNotNull(failing.gadget(gadget.serial()));
     }
     @Test void duplicateDurablesAndOverflowFailClosed()throws Exception {
-        LobbyWallets w=new LobbyWallets(dir.resolve("wallet"));w.reward(id,"seed",100,Currency.STARLIGHT);w.purchase(id,product("glasses"),Currency.STARLIGHT,"one");
-        assertThrows(IllegalArgumentException.class,()->w.purchase(id,product("glasses"),Currency.STARLIGHT,"two"));assertEquals(80,w.wallet(id).stars());
-        assertThrows(ArithmeticException.class,()->w.reward(id,"overflow",Long.MAX_VALUE,Currency.STARLIGHT));assertEquals(80,w.wallet(id).stars());
+        LobbyWallets w=new LobbyWallets(dir.resolve("wallet"));w.reward(id,"seed",1000,Currency.STARLIGHT);w.purchase(id,product("glasses"),Currency.STARLIGHT,"one");
+        assertThrows(IllegalArgumentException.class,()->w.purchase(id,product("glasses"),Currency.STARLIGHT,"two"));assertEquals(800,w.wallet(id).stars());
+        assertThrows(ArithmeticException.class,()->w.reward(id,"overflow",Long.MAX_VALUE,Currency.STARLIGHT));assertEquals(800,w.wallet(id).stars());
         assertThrows(IllegalArgumentException.class,()->w.reward(id,"negative",-1,Currency.STARLIGHT));
     }
 }

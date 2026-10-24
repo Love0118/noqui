@@ -1,0 +1,45 @@
+{
+  "path": "sevensstar1707/wolfu",
+  "sourceURL": "https://blockbenchworkshop.com/model/sevensstar1707/wolfu",
+  "metadata": {
+    "@context": "https://schema.org",
+    "@type": "3DModel",
+    "name": "Wolfu",
+    "description": "A rigged and animated Blockbench model by @sevensstar1707. 11 elements, 10 bones, 1 texture. Free .bbmodel download.",
+    "url": "https://blockbenchworkshop.com/model/sevensstar1707/wolfu",
+    "image": "https://blockbenchworkshop.com/cdn/thumbnails/YhkQtqRBsHUDZw5L8tJ3pricbG3LsQa7/5573d02f-af53-408a-aede-94e5dc6f1f51.png",
+    "encodingFormat": "application/json",
+    "isAccessibleForFree": true,
+    "keywords": "cute, funny, wolf, pet, white, ice, snow",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "author": {
+      "@type": "Person",
+      "name": "sevensstar1707",
+      "url": "https://blockbenchworkshop.com/creator/sevensstar1707"
+    },
+    "interactionStatistic": [
+      {
+        "@type": "InteractionCounter",
+        "interactionType": "https://schema.org/LikeAction",
+        "userInteractionCount": 8
+      },
+      {
+        "@type": "InteractionCounter",
+        "interactionType": "https://schema.org/DownloadAction",
+        "userInteractionCount": 77
+      }
+    ]
+  },
+  "permissive": true,
+  "publicSourceURL": "https://blockbenchworkshop.com/cdn/previews/YhkQtqRBsHUDZw5L8tJ3pricbG3LsQa7/5573d02f-af53-408a-aede-94e5dc6f1f51.json?v=5",
+  "sourceKind": "publicly published interactive preview model JSON",
+  "originalDownloadLimitation": "The .bbmodel download endpoint returns HTTP 401 without an account; no account was used. This is the openly published preview JSON, not the original .bbmodel archive.",
+  "sha256": "0cd266eb1b9c78a7caa156cdfc2e68cec9a50ef8432b5606d8a0bfa527a1192d",
+  "format": {
+    "model_format": "bedrock_old"
+  },
+  "elements": 11,
+  "meshes": 0,
+  "textures": 1,
+  "animations": 2
+}

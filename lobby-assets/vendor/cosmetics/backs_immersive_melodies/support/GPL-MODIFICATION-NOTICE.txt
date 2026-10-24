@@ -1,0 +1,56 @@
+Immersive Melodies backwear adaptations - GPL-3.0 modification notice
+===================================================================
+
+Original project: Immersive Melodies
+Upstream repository: https://github.com/Luke100000/ImmersiveMelodies
+Upstream commit: 16c004872866048d11f6d0141ca878bf4fb5a09a
+Upstream authors: Immersive Melodies contributors / Luke100000
+License: GNU General Public License version 3 (GPL-3.0)
+License text: LICENSE.txt (distributed beside this notice in the Noqui pack source inventory)
+License URL: https://github.com/Luke100000/ImmersiveMelodies/blob/16c004872866048d11f6d0141ca878bf4fb5a09a/LICENSE
+Modification date: 2026-10-24
+
+Modified material
+-----------------
+
+The Noqui source inventory contains these eight GPL-3.0-licensed static backwear
+adaptations and their corresponding original upstream Minecraft item models:
+
+  back_bagpipe             <- bagpipe_hand.json
+  back_didgeridoo          <- didgeridoo_hand.json
+  back_handpan             <- handpan_hand.json
+  back_lute                <- lute_hand.json
+  back_portable_keyboard   <- piano_hand.json
+  back_tiny_drum           <- tiny_drum_hand.json
+  back_trumpet             <- trumpet_hand.json
+  back_vielle              <- vielle_hand.json
+
+The original upstream models are retained under
+vendor/cosmetics/backs_immersive_melodies/models/ with their filenames. Per-item
+attribution files are retained under the same source's support directory. The
+upstream README and the complete GPL-3.0 license text are also included in the
+source inventory and provenance records.
+
+Changes made for Noqui
+----------------------
+
+The selected static native cuboids were extracted from the pinned upstream
+models. The models were recentered on [8,8,8], uniformly scaled to backwear
+proportions, and given fixed ItemDisplay transforms. Texture resource names
+were remapped to the Noqui catalog, while original per-face UVs and face
+rotations were retained. PNG image bytes were copied without regenerating the
+artwork. The adapted outputs contain no Immersive Melodies sounds, playback
+code, or melodies. The upstream GPL-3.0 grant for models and textures does not
+extend to those excluded materials.
+
+Reproduction and redistribution
+-------------------------------
+
+The reproducible conversion source is distributed as
+vendor/cosmetics/backs_immersive_melodies/support/normalize_assets.py. The
+original upstream models, textures, README, license, this modification notice,
+and the script travel with the adapted assets in the Noqui source inventory.
+The pack also includes the full GPL-3.0 text at
+pack/licenses/backs_immersive_melodies.txt. These backwear adaptations and
+their modified files remain available under GPL-3.0; preserve the license,
+source materials, notices, and modification record when redistributing them.

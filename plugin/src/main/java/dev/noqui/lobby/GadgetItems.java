@@ -6,6 +6,7 @@ import java.util.function.Function;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
+import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
 import org.bukkit.*;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.*;
@@ -18,6 +19,7 @@ final class GadgetItems {
     private static final NamespacedKey PRODUCT=new NamespacedKey("noqui","gadget_product");
     private static final NamespacedKey PROOFS=new NamespacedKey("noqui","gadget_delivery_proofs");
     private static final Map<String,Product> PRODUCTS=new LinkedHashMap<>();
+    private static final String FOOTER="오두막에서 사용, 버리기 가능";
     static { for(Product product:LobbyCatalog.defaults())if(product.kind()==Kind.GADGET)PRODUCTS.put(product.id(),product); }
     private final LobbyWallets wallets;
     private final World cabin;
@@ -33,11 +35,12 @@ final class GadgetItems {
         meta.displayName(Component.text(product.label(),NamedTextColor.AQUA).decoration(TextDecoration.ITALIC,false));
         String action=switch(product.slot()){case "boots"->"우클릭: 신발 착용";case "suit"->"우클릭: 몸통 착용";default->id.equals("hammer")?"손에 들고 좌클릭":"손에 들고 Shift + 우클릭";};
         meta.lore(List.of(Component.text(action,NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false),
-                Component.text("오두막에서 사용 · 버리기 가능",NamedTextColor.DARK_GRAY).decoration(TextDecoration.ITALIC,false)));
+                Component.text(FOOTER,NamedTextColor.DARK_GRAY).decoration(TextDecoration.ITALIC,false)));
         if(Set.of("boots","suit").contains(product.slot())) {
             var equippable=meta.getEquippable();equippable.setSlot(product.slot().equals("boots")?EquipmentSlot.FEET:EquipmentSlot.CHEST);
             equippable.setAllowedEntities(org.bukkit.entity.EntityType.PLAYER);equippable.setSwappable(true);
             equippable.setDispensable(false);equippable.setDamageOnHurt(false);equippable.setEquipOnInteract(true);
+            equippable.setModel(new NamespacedKey("noqui",id));
             meta.setEquippable(equippable);
         }
         item.setItemMeta(meta);return item;
@@ -54,6 +57,7 @@ final class GadgetItems {
         try{return UUID.fromString(value);}catch(IllegalArgumentException ignored){return null;}
     }
     static boolean marked(ItemStack item){return serial(item)!=null;}
+    static String product(ItemStack item){return marked(item)?item.getItemMeta().getPersistentDataContainer().get(PRODUCT,PersistentDataType.STRING):null;}
     private LobbyWallets.Gadget valid(ItemStack item,boolean delivered) {
         UUID serial=serial(item);if(serial==null||item.getAmount()!=1)return null;
         var gadget=wallets.gadget(serial);
@@ -114,11 +118,26 @@ final class GadgetItems {
             ItemStack item=inventory.getItem(slot);if(!marked(item))continue;
             var gadget=valid(item,false);
             if(gadget==null||!held.add(gadget.serial())){inventory.setItem(slot,null);changed=true;}
+            else if(refreshLegacyLore(item)|refreshEquipment(item)){inventory.setItem(slot,item);changed=true;}
         }
         ItemStack cursor=player.getItemOnCursor();if(marked(cursor)) {
             var gadget=valid(cursor,false);if(gadget==null||!held.add(gadget.serial())){player.setItemOnCursor(null);changed=true;}
+            else if(refreshLegacyLore(cursor)|refreshEquipment(cursor)){player.setItemOnCursor(cursor);changed=true;}
         }
         if(changed)player.saveData();
+    }
+    static boolean refreshLegacyLore(ItemStack item) {
+        var meta=item.getItemMeta();var lore=meta.lore();if(lore==null)return false;
+        var updated=lore.stream().map(line->PlainTextComponentSerializer.plainText().serialize(line).equals("오두막에서 사용 \u00b7 버리기 가능")
+                ?Component.text(FOOTER,NamedTextColor.DARK_GRAY).decoration(TextDecoration.ITALIC,false):line).toList();
+        if(updated.equals(lore))return false;meta.lore(updated);item.setItemMeta(meta);return true;
+    }
+    private static boolean refreshEquipment(ItemStack item) {
+        String id=product(item);if(!Set.of("triple_boots","quad_boots","gravity_suit").contains(id==null?"":id))return false;
+        var meta=item.getItemMeta();var wearable=meta.getEquippable();NamespacedKey current=wearable.getModel();
+        // A selected back can be layered over the authentic suit by NativeWardrobe.
+        if(current!=null&&(current.equals(new NamespacedKey("noqui",id))||id.equals("gravity_suit")&&current.getNamespace().equals("noqui")&&current.getKey().startsWith("wearable_back_gravity/")))return false;
+        wearable.setModel(new NamespacedKey("noqui",id));meta.setEquippable(wearable);item.setItemMeta(meta);return true;
     }
     private static int freeSlot(Player player) {
         ItemStack[] items=player.getInventory().getStorageContents();

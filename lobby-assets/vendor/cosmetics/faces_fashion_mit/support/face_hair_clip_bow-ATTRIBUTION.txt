@@ -1,0 +1,5 @@
+리본 머리핀 / face_hair_clip_bow
+Source: https://github.com/eliasnvx/femboy-mod/blob/1e2f8d91881ca8ee6edacc206072f5ed72aa38b3/art/blockbench/hair_clip_bow/hair_clip_bow.geo.json
+Author: eliasnvx
+License: MIT; see LICENSE.txt.
+Changes: Bedrock cuboids converted to Java elements; coordinates adjusted for Noqui attachment; original palette UVs and PNG retained. Static pose.

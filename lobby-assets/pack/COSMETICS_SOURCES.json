@@ -1,0 +1,2473 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "title": "more-hats",
+      "author": "oiioooiiiooi, Hot_doggy13",
+      "sourceUrl": "https://modrinth.com/resourcepack/more-hats",
+      "license": "CC-BY-4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "Selected licensed hat models converted to native noqui item definitions; source cuboid rotations/UVs retained; texture content deduplicated; attachment pose reviewed in software.",
+      "id": "hats_more_hats",
+      "licenseFile": "vendor/cosmetics/hats_more_hats/LICENSE.txt",
+      "packLicenseFile": "licenses/hats_more_hats.txt",
+      "sourceFiles": [
+        {
+          "path": "vendor/cosmetics/hats_more_hats/LICENSE.txt",
+          "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+        },
+        {
+          "path": "vendor/cosmetics/hats_more_hats/evidence/project.json",
+          "sha256": "7ffd4e68b9257c6564c506f459993cad19b38168cc357bb30e7f4350820c91da"
+        },
+        {
+          "path": "vendor/cosmetics/hats_more_hats/evidence/receipt.json",
+          "sha256": "b9becd9846717b35ee9ec799f282c6c50a5be7b283a1415fbccf254ec7eac0f6"
+        },
+        {
+          "path": "vendor/cosmetics/hats_more_hats/models/chef_toque.json",
+          "sha256": "104f9b8ff074c89955fe6144e449b2fcfe5acd726802e0d391cffcbcc2d1fed1"
+        },
+        {
+          "path": "vendor/cosmetics/hats_more_hats/textures/11d38ca4678dfe7827b31b5c284039b8558b3e1434d2443e42d9c347f7136906.png",
+          "sha256": "11d38ca4678dfe7827b31b5c284039b8558b3e1434d2443e42d9c347f7136906"
+        },
+        {
+          "path": "vendor/cosmetics/hats_more_hats/models/western_hat.json",
+          "sha256": "b04c286b8beca98c148aeb5aa57e0849b84b59d9542c3f8ddc15cf22faf1c2b4"
+        },
+        {
+          "path": "vendor/cosmetics/hats_more_hats/textures/78972f0dd0a2e7c5a745a87eebe60266b662a8268a3992a55e573ac7bfc360b1.png",
+          "sha256": "78972f0dd0a2e7c5a745a87eebe60266b662a8268a3992a55e573ac7bfc360b1"
+        },
+        {
+          "path": "vendor/cosmetics/hats_more_hats/models/formal_top_hat.json",
+          "sha256": "119538bc61df96535d1c37a4b08c122145b52aba9de406b4b64fc9dfe655855c"
+        },
+        {
+          "path": "vendor/cosmetics/hats_more_hats/textures/6eb770869f09ee58c9ae39270f7c7dee53cb17a0562172ebfbb8e6606440a40b.png",
+          "sha256": "6eb770869f09ee58c9ae39270f7c7dee53cb17a0562172ebfbb8e6606440a40b"
+        },
+        {
+          "path": "vendor/cosmetics/hats_more_hats/models/winter_pom_hat.json",
+          "sha256": "5c505b98849cb8c3cdda73a5c626f42f1c4d14d26711de5056d02d7623a42404"
+        },
+        {
+          "path": "vendor/cosmetics/hats_more_hats/textures/c1625fc4e3d738b406377cb65b2191ffe62b3561b69f6712e9f1550db53b77c9.png",
+          "sha256": "c1625fc4e3d738b406377cb65b2191ffe62b3561b69f6712e9f1550db53b77c9"
+        },
+        {
+          "path": "vendor/cosmetics/hats_more_hats/models/jester_cap.json",
+          "sha256": "c398f3420b2ef9d9f5653f7888429a63bc439c631e1e53ca2e7ebcf2655af5c7"
+        },
+        {
+          "path": "vendor/cosmetics/hats_more_hats/textures/79e9419953b1ae0d0e66aa8d7ffa9c26233e430c6d040b79c934960301549400.png",
+          "sha256": "79e9419953b1ae0d0e66aa8d7ffa9c26233e430c6d040b79c934960301549400"
+        },
+        {
+          "path": "vendor/cosmetics/hats_more_hats/models/miner_lamp_helmet.json",
+          "sha256": "e7266d08a34a8c5a1fe16bc25f3920873eb0a154348688e7ffd0385a6e28568d"
+        },
+        {
+          "path": "vendor/cosmetics/hats_more_hats/textures/b518fc4f61439d7b3de42b77b856d3c53bf44c81dc7e9adf36ec27268ae5add8.png",
+          "sha256": "b518fc4f61439d7b3de42b77b856d3c53bf44c81dc7e9adf36ec27268ae5add8"
+        },
+        {
+          "path": "vendor/cosmetics/hats_more_hats/models/queen_crest_crown.json",
+          "sha256": "4964ce5234d2fbc9663a430f06787b09f723c79e7ed49b2ee1907ad963d1b340"
+        },
+        {
+          "path": "vendor/cosmetics/hats_more_hats/textures/1a2e5d32e81324bca3918e33d37effd4f201663853779a4d98d01eb8fa3270c8.png",
+          "sha256": "1a2e5d32e81324bca3918e33d37effd4f201663853779a4d98d01eb8fa3270c8"
+        },
+        {
+          "path": "vendor/cosmetics/hats_more_hats/models/wide_sombrero.json",
+          "sha256": "c81dc2e511ee04192191f6c0677e5816eb4255442010dbacf50d82654536c0fd"
+        },
+        {
+          "path": "vendor/cosmetics/hats_more_hats/textures/362a152517f0617a102979ce28f291e65fac0d43cc481917196c13bc43c96134.png",
+          "sha256": "362a152517f0617a102979ce28f291e65fac0d43cc481917196c13bc43c96134"
+        },
+        {
+          "path": "vendor/cosmetics/hats_more_hats/models/straw_boater.json",
+          "sha256": "eae1f25b75bac48dfac88114cd871d5fd2084bc2ce8f1bd8e7ad7c41de35687c"
+        },
+        {
+          "path": "vendor/cosmetics/hats_more_hats/textures/6dfa052bcf2abdd28be715c4e2eb9e08de35744bf38c5bdf46945c88cc3c9a74.png",
+          "sha256": "6dfa052bcf2abdd28be715c4e2eb9e08de35744bf38c5bdf46945c88cc3c9a74"
+        }
+      ]
+    },
+    {
+      "title": "osmetic-hats-pack",
+      "author": "Kanamori-Arice",
+      "sourceUrl": "https://modrinth.com/resourcepack/osmetic-hats-pack",
+      "license": "BSD-2-Clause",
+      "licenseUrl": "https://opensource.org/license/bsd-2-clause",
+      "modifications": "Selected licensed hat models converted to native noqui item definitions; source cuboid rotations/UVs retained; texture content deduplicated; attachment pose reviewed in software.",
+      "caveat": "Dedicated resource-pack project declares BSD-2-Clause; no standalone copyright/year notice supplied by upstream. Author identified by official project team metadata; standard BSD terms retained without inventing a year.",
+      "id": "hats_osmetic_hats_pack",
+      "licenseFile": "vendor/cosmetics/hats_osmetic_hats_pack/LICENSE.txt",
+      "packLicenseFile": "licenses/hats_osmetic_hats_pack.txt",
+      "sourceFiles": [
+        {
+          "path": "vendor/cosmetics/hats_osmetic_hats_pack/LICENSE.txt",
+          "sha256": "3a40c51364d71673f9019b1c9189926040236b3119d02cd181c2e1eac7c3cab5"
+        },
+        {
+          "path": "vendor/cosmetics/hats_osmetic_hats_pack/evidence/project.json",
+          "sha256": "7622e6f27fe3733fc8e1a9d31361a4ebc460970a42cdd580facaffec18d73dce"
+        },
+        {
+          "path": "vendor/cosmetics/hats_osmetic_hats_pack/evidence/receipt.json",
+          "sha256": "cd573db8dbd430064d18c5d37e7b83ca43ff590702edcf1950519f9fc835e5cd"
+        },
+        {
+          "path": "vendor/cosmetics/hats_osmetic_hats_pack/models/graduation_mortarboard.json",
+          "sha256": "0fbd391e36e47b929f354cd68425d486d9bd8ca1acf1c7ab791a90fb3eec1a24"
+        },
+        {
+          "path": "vendor/cosmetics/hats_osmetic_hats_pack/textures/49494164aeaccbc3f784f46b5100103eb40a59889a68b95be2aa1a2340f03057.png",
+          "sha256": "49494164aeaccbc3f784f46b5100103eb40a59889a68b95be2aa1a2340f03057"
+        },
+        {
+          "path": "vendor/cosmetics/hats_osmetic_hats_pack/models/brass_diver_helmet.json",
+          "sha256": "6e2b2e66cc3c1c2fd46622085be4edb0dbfe5c27d359b084577558aa4ab8820b"
+        },
+        {
+          "path": "vendor/cosmetics/hats_osmetic_hats_pack/textures/9a243f2241603c2e0ce08f37f580b254af1625a4ce81a7b2e8f49e6571f8aee4.png",
+          "sha256": "9a243f2241603c2e0ce08f37f580b254af1625a4ce81a7b2e8f49e6571f8aee4"
+        },
+        {
+          "path": "vendor/cosmetics/hats_osmetic_hats_pack/models/ushanka_hat.json",
+          "sha256": "660e7690bcd1b0c805a3066d7f30ee72a116d81e26f4f1211b2a2978743caedf"
+        },
+        {
+          "path": "vendor/cosmetics/hats_osmetic_hats_pack/textures/ecb77e319ddbc81c41421ac958474bf1473ade2e92785365f6177a88c16a7ca2.png",
+          "sha256": "ecb77e319ddbc81c41421ac958474bf1473ade2e92785365f6177a88c16a7ca2"
+        },
+        {
+          "path": "vendor/cosmetics/hats_osmetic_hats_pack/models/samurai_kabuto.json",
+          "sha256": "e2989c84f1e9d7c05aa712641cd1eff2f2ff6060bbb90e3c26fe9a1f9ed8e1a5"
+        },
+        {
+          "path": "vendor/cosmetics/hats_osmetic_hats_pack/textures/ac1e7a590ffbd4b968e1b1b74d94ae10ff4da597366e134f4e901c2e32fcd69a.png",
+          "sha256": "ac1e7a590ffbd4b968e1b1b74d94ae10ff4da597366e134f4e901c2e32fcd69a"
+        },
+        {
+          "path": "vendor/cosmetics/hats_osmetic_hats_pack/models/witch_cone_hat.json",
+          "sha256": "8e91671b89d7a34aed8ed1d5724c19de6d450fcf568e45758256dcb4cdcf2f08"
+        },
+        {
+          "path": "vendor/cosmetics/hats_osmetic_hats_pack/textures/f50d67c63c90dea2298cd473bf5ed67e00b0196220b2e3194ee6857393452bb8.png",
+          "sha256": "f50d67c63c90dea2298cd473bf5ed67e00b0196220b2e3194ee6857393452bb8"
+        },
+        {
+          "path": "vendor/cosmetics/hats_osmetic_hats_pack/models/steampunk_courier_cap.json",
+          "sha256": "f2158b1152bc82e605d925376809a53aa816d27ec13568f1cf0df6803a698ddd"
+        },
+        {
+          "path": "vendor/cosmetics/hats_osmetic_hats_pack/textures/5dd3fc91841c7d58d92eaea8f67873bcb3ba28155ad11a1b687d96356e073fae.png",
+          "sha256": "5dd3fc91841c7d58d92eaea8f67873bcb3ba28155ad11a1b687d96356e073fae"
+        },
+        {
+          "path": "vendor/cosmetics/hats_osmetic_hats_pack/models/ornamental_tiara.json",
+          "sha256": "0a35d9326aca7d5e74fec41ebd3afb71e8c96f6df6cc989acb3ef2a0d8e50681"
+        },
+        {
+          "path": "vendor/cosmetics/hats_osmetic_hats_pack/textures/7da5ab3acd615e5669d8816399f04566045ab302cc6f809dd6a724d047a754ff.png",
+          "sha256": "7da5ab3acd615e5669d8816399f04566045ab302cc6f809dd6a724d047a754ff"
+        },
+        {
+          "path": "vendor/cosmetics/hats_osmetic_hats_pack/models/bucket_hat.json",
+          "sha256": "36a7ca58b6919991f29fa8420d453f31e3b4ab6b85b33f4a0ab6832e69bcbd1c"
+        },
+        {
+          "path": "vendor/cosmetics/hats_osmetic_hats_pack/textures/a8e73f84d9b03961589a282389cb87419fc291ee48bc5d258957c8762eace6bf.png",
+          "sha256": "a8e73f84d9b03961589a282389cb87419fc291ee48bc5d258957c8762eace6bf"
+        },
+        {
+          "path": "vendor/cosmetics/hats_osmetic_hats_pack/models/santa_fold_hat.json",
+          "sha256": "bd8a0e2a0ced12ff6ded2c3626ce49f283caa1ac9e4855f06813e30d7d8723f0"
+        },
+        {
+          "path": "vendor/cosmetics/hats_osmetic_hats_pack/textures/c7f46e323c2e55eaa25c16725ce259893b6726e4e6a553c1734994aa95f2fed6.png",
+          "sha256": "c7f46e323c2e55eaa25c16725ce259893b6726e4e6a553c1734994aa95f2fed6"
+        }
+      ]
+    },
+    {
+      "title": "femboy-mod",
+      "author": "eliasnvx",
+      "sourceUrl": "https://github.com/eliasnvx/femboy-mod",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/eliasnvx/femboy-mod/blob/1e2f8d91881ca8ee6edacc206072f5ed72aa38b3/LICENSE",
+      "modifications": "15 selected face cosmetics from the pinned MIT source converted into Noqui native item models: source cuboid rotations and per-face UV fractions retained, PNG pixels unchanged, Blockbench editor metadata removed, texture references remapped, and explicit fixed display transforms added.",
+      "id": "faces_fashion_mit",
+      "licenseFile": "vendor/cosmetics/faces_fashion_mit/LICENSE.txt",
+      "packLicenseFile": "licenses/faces_fashion_mit.txt",
+      "sourceFiles": [
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/LICENSE.txt",
+          "sha256": "debf1d5a606f9f35666f76e22b36adf6445eb0bcc7bcce792cdf8ef942f5063c"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/evidence/upstream-README.md",
+          "sha256": "bb9d2b37e6706b3fce7431b9c6fa6aaf45c42155d7c4e9a696e1d0d149e71a2f"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/models/uwu_choker.geo.json",
+          "sha256": "d7a2c7d1e2665cad71e3dc5e7c78b0641291fb8de3e216a46d6cdb3da366c32a"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/support/face_uwu_choker-ATTRIBUTION.txt",
+          "sha256": "7f4490e43cd2924dedc118510688cb1be7ab2aac6ea40044de6cabe83fa7287f"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/textures/ea03b08bf44e0665e68452893d6a5006841006da9560818b2269dfece1d07068.png",
+          "sha256": "ea03b08bf44e0665e68452893d6a5006841006da9560818b2269dfece1d07068"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/models/CosmeticModels.java",
+          "sha256": "17754f9d8d1b07671ab7520a2075b1bbe8e5c225e24d553a78d6150d2e858762"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/support/face_heart_glasses-ATTRIBUTION.txt",
+          "sha256": "cd65e845d631288529d48ae1db834354f964090a7f045d872190301138e51a05"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/textures/2080586e2d25aa646df0e92d2cf5d20481f387d3b4374b0da63ce751acb7eb01.png",
+          "sha256": "2080586e2d25aa646df0e92d2cf5d20481f387d3b4374b0da63ce751acb7eb01"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/textures/a824ce5b35ee9fffe3e3978f959ca054bf9bf6d2fe8b717dd53215fbd637cac5.png",
+          "sha256": "a824ce5b35ee9fffe3e3978f959ca054bf9bf6d2fe8b717dd53215fbd637cac5"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/support/face_dark_shades-ATTRIBUTION.txt",
+          "sha256": "d2280ebafead052c8f305fc5238a7bea6040e456439112ef34af190ee7fb76ba"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/textures/53fb495ccd3ef2847174d9cfbc171181b8a28455e8571df785dbc1bb395fab3e.png",
+          "sha256": "53fb495ccd3ef2847174d9cfbc171181b8a28455e8571df785dbc1bb395fab3e"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/textures/70f80522436c8a6441b97263c09b8b170b73948ef5f286ff9ce8a8fdb07e459f.png",
+          "sha256": "70f80522436c8a6441b97263c09b8b170b73948ef5f286ff9ce8a8fdb07e459f"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/textures/2406ec4e4d58ed2d1e502eb412d51b2d15a12e9b10f07a2cbd9cc2510b687eb6.png",
+          "sha256": "2406ec4e4d58ed2d1e502eb412d51b2d15a12e9b10f07a2cbd9cc2510b687eb6"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/support/face_cyber_visor-ATTRIBUTION.txt",
+          "sha256": "0d5e59b693e2033f24da5adde07460e68849c58917462c939870599ddc0147ed"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/textures/d717c62fb2b11ce856d30a871e5babd9e161e7c4ff3dd1927afa66620b21e24f.png",
+          "sha256": "d717c62fb2b11ce856d30a871e5babd9e161e7c4ff3dd1927afa66620b21e24f"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/textures/be1dee88d49ad5d6596875f1333323514471e118e3bf80495a068dabc17b09e7.png",
+          "sha256": "be1dee88d49ad5d6596875f1333323514471e118e3bf80495a068dabc17b09e7"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/support/face_moonstone_pendant-ATTRIBUTION.txt",
+          "sha256": "d8bdda375c0e9adee060aebebf3db80681010f12fe981fcb34ef174694508060"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/textures/ea670e12352dbd6a2e261c19c0f53d64852a8d536ad339c7725a9ebba247257a.png",
+          "sha256": "ea670e12352dbd6a2e261c19c0f53d64852a8d536ad339c7725a9ebba247257a"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/textures/9356c51152ec362b89189fb24893a57dd61ed95df95b9dc257148232258b90ef.png",
+          "sha256": "9356c51152ec362b89189fb24893a57dd61ed95df95b9dc257148232258b90ef"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/textures/a81081392baeaaa30b438e39e189f55af23ff13dca3f09df58841a357341f174.png",
+          "sha256": "a81081392baeaaa30b438e39e189f55af23ff13dca3f09df58841a357341f174"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/support/face_cat_ear_headphones-ATTRIBUTION.txt",
+          "sha256": "83f24034b58a9562dee45fbe06ea06e7fc30e97a03c55445d5d4e7796dc2637b"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/textures/d81e05957d74ba38502be0d319fe47140c9c57db6cfd7c6b6d0048c244a4c33a.png",
+          "sha256": "d81e05957d74ba38502be0d319fe47140c9c57db6cfd7c6b6d0048c244a4c33a"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/textures/703ac5c36a7305c44b3466f0653c7550414724f815caa43491abe873df9ff099.png",
+          "sha256": "703ac5c36a7305c44b3466f0653c7550414724f815caa43491abe873df9ff099"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/textures/a3e70d1f7e1669900d4963ebaa77037bf475db4d0c8bf7fe3ff0c7e5376da2fa.png",
+          "sha256": "a3e70d1f7e1669900d4963ebaa77037bf475db4d0c8bf7fe3ff0c7e5376da2fa"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/models/hair_clip_bow.geo.json",
+          "sha256": "571e49ab70978f5e16d7991e4c91f456cad4a602eb7c00dde0775c7e03a224db"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/support/face_hair_clip_bow-ATTRIBUTION.txt",
+          "sha256": "ce52845d63dfdd960873ed6d18289f0b12580bcc36bcde6ac28afd88fdcc6723"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/textures/160687e747d8258d2e3a31122f8c875c687602f18da7cc455f9032e829374f29.png",
+          "sha256": "160687e747d8258d2e3a31122f8c875c687602f18da7cc455f9032e829374f29"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/models/hair_clip_butterfly.geo.json",
+          "sha256": "6c1afdf71f328464d5d7a2a4bde3eb181f8e8442bcf8801fad85698d1f5c4b32"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/support/face_hair_clip_butterfly-ATTRIBUTION.txt",
+          "sha256": "aa78d4d54d3b71f95c98b7dcb1c090adcc83e1f173d9c437f97423e8a280e21b"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/models/hair_clip_cherry.geo.json",
+          "sha256": "fc63cd0f1b94dbc72e41407a51740ffebf95731f8e7c0253f975841de08e3c83"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/support/face_hair_clip_cherry-ATTRIBUTION.txt",
+          "sha256": "77483e24bdffe6d95e21445bc76dc8657513821dea4fd68527799cb3810461c5"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/models/hair_clip_flower.geo.json",
+          "sha256": "712f6b8e9b290da0ada0f5f23875c0e0ec4172b9688bad289f80aa68539c11b3"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/support/face_hair_clip_flower-ATTRIBUTION.txt",
+          "sha256": "896de82fe6e67bd79de9fab04e5aa2193c9a9adfc56b84c1669a8f023db68ee1"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/support/face_rose_quartz_earrings-ATTRIBUTION.txt",
+          "sha256": "4bf6d14063528a2769eca940e7024536addedac41ab08da5ea64d9bbff733072"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/textures/d958a036c7a70f79876674c150d00c883dd6b48de637a4bbd69642c6909b1e27.png",
+          "sha256": "d958a036c7a70f79876674c150d00c883dd6b48de637a4bbd69642c6909b1e27"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/textures/f6953d0d991562617be9352ba17560af020849c021de6b94f80729c99a208f9b.png",
+          "sha256": "f6953d0d991562617be9352ba17560af020849c021de6b94f80729c99a208f9b"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/models/cat_ears.geo.json",
+          "sha256": "3231ab6c2057f96c6ff85e6b75f4000c0f63f5f179c9e8116131ba828b3e0b18"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/support/face_cat_ears-ATTRIBUTION.txt",
+          "sha256": "9233261a59031a27dd40789f6c5e8310b033c3b1d9f739d90912da05fd4976ed"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/textures/7923feff951e1f916c286ae32dd33b27b21f5eea353a19b9577b817b0cbededa.png",
+          "sha256": "7923feff951e1f916c286ae32dd33b27b21f5eea353a19b9577b817b0cbededa"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/models/fox_ears.geo.json",
+          "sha256": "8e1fcd6ae59a51eed650a7d1e476d71062bd37e65783eaaedc5e282b89ddba76"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/support/face_fox_ears-ATTRIBUTION.txt",
+          "sha256": "6060e0dd8ed288e2a30e2634669b191120a1ee5e6203ba1b1dec7b6c562c819e"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/textures/f269ce45925334dc562edcdf43725b66772a6da1e15398c1cedc003f21239ce8.png",
+          "sha256": "f269ce45925334dc562edcdf43725b66772a6da1e15398c1cedc003f21239ce8"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/models/bear_ears.geo.json",
+          "sha256": "1a45aaaf84610173401ccd386cc9fb3b6df4b3ab17f35caeb49a817e9fe35879"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/support/face_bear_ears-ATTRIBUTION.txt",
+          "sha256": "8239f64f1d1422a2dd5ea3de826667035ebd1fe16821fdc0d386677688f1ccdd"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/textures/921c4839fa8d02542df89d5d33f94e8fca5cac58d2d3b1867bd66ee9ff19acf4.png",
+          "sha256": "921c4839fa8d02542df89d5d33f94e8fca5cac58d2d3b1867bd66ee9ff19acf4"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/models/wolf_ears.geo.json",
+          "sha256": "91ae711bd2bbbee9af5b08a073625dc14ae51daecc5e67e66d54f60f52ef9cad"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/support/face_wolf_ears-ATTRIBUTION.txt",
+          "sha256": "db156f273ab8e961bf7bb9c968352951b55f84fe61960335c4745a9b25c45009"
+        },
+        {
+          "path": "vendor/cosmetics/faces_fashion_mit/textures/b23a9f9c585d666ace06ced3b8be70f7c80257d3ac89dee26e4db3cf4e618aae.png",
+          "sha256": "b23a9f9c585d666ace06ced3b8be70f7c80257d3ac89dee26e4db3cf4e618aae"
+        }
+      ]
+    },
+    {
+      "title": "Artifacts",
+      "author": "Wouter Pauwels (ochotonida)",
+      "sourceUrl": "https://github.com/ochotonida/artifacts",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/ochotonida/artifacts/blob/4b67278df94e4d3669119f1abb24a1c3a758afe1/LICENSE",
+      "modifications": "3 selected face accessories from the pinned MIT source converted into Noqui native item models: source cuboid rotations and per-face UV fractions retained, PNG pixels unchanged, Blockbench editor metadata removed, texture references remapped, and explicit fixed display transforms added.",
+      "id": "faces_artifacts_mit",
+      "licenseFile": "vendor/cosmetics/faces_artifacts_mit/LICENSE.txt",
+      "packLicenseFile": "licenses/faces_artifacts_mit.txt",
+      "sourceFiles": [
+        {
+          "path": "vendor/cosmetics/faces_artifacts_mit/LICENSE.txt",
+          "sha256": "6f580709ce0cfddd214a4c2132177c99ed92bf79786b67e3e674b88859b2628f"
+        },
+        {
+          "path": "vendor/cosmetics/faces_artifacts_mit/evidence/upstream-README.md",
+          "sha256": "467b89002f1a6b904026c6d97d58fc069e9554e168f4d100fe353b60c738db78"
+        },
+        {
+          "path": "vendor/cosmetics/faces_artifacts_mit/models/HeadMeshDefinitions.java",
+          "sha256": "8a5d601dd2ca0b58d1486a98f9f2154699a19468d8953effb8c3eafd97fdc4e3"
+        },
+        {
+          "path": "vendor/cosmetics/faces_artifacts_mit/support/face_night_vision_goggles-ATTRIBUTION.txt",
+          "sha256": "336d74c8a30d72ef09ba77da7b5d75ef919fbe2b68ea57b87ab21533a633c14f"
+        },
+        {
+          "path": "vendor/cosmetics/faces_artifacts_mit/textures/9eec226dd256eb433f06d91fdd8ab0f4874f4f12d65d27b430d793c6c1a7b14d.png",
+          "sha256": "9eec226dd256eb433f06d91fdd8ab0f4874f4f12d65d27b430d793c6c1a7b14d"
+        },
+        {
+          "path": "vendor/cosmetics/faces_artifacts_mit/support/face_snorkel-ATTRIBUTION.txt",
+          "sha256": "bd071924d33fc87c923889544a2fd431a7a34111fc76c084ecb8a99826d9e41e"
+        },
+        {
+          "path": "vendor/cosmetics/faces_artifacts_mit/textures/8e3b5198540e320a6d1394d6f7cd0ee73c66d6e08a5c5fd282b58a3467c6f40a.png",
+          "sha256": "8e3b5198540e320a6d1394d6f7cd0ee73c66d6e08a5c5fd282b58a3467c6f40a"
+        },
+        {
+          "path": "vendor/cosmetics/faces_artifacts_mit/models/BodyMeshDefinitions.java",
+          "sha256": "5a6f2ad7abf579881713948b72c7b7ab42160f4cdeb71181b3a0404e57f91e39"
+        },
+        {
+          "path": "vendor/cosmetics/faces_artifacts_mit/support/face_lucky_scarf-ATTRIBUTION.txt",
+          "sha256": "8c7deba125b264fb5deddb5f981ce6aac5b4b3b962e7285672f23e07c31c6ee4"
+        },
+        {
+          "path": "vendor/cosmetics/faces_artifacts_mit/textures/26b21768b1f4816bd05bd77a798673cb71503cee54872c6c1fa80127a31fdabd.png",
+          "sha256": "26b21768b1f4816bd05bd77a798673cb71503cee54872c6c1fa80127a31fdabd"
+        }
+      ]
+    },
+    {
+      "title": "Loy-s-Goodies",
+      "author": "Loy / SL0ANE",
+      "sourceUrl": "https://github.com/SL0ANE/Loy-s-Goodies",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modifications": "12 selected CC0-1.0 backwear models converted into Noqui native item models: unrotated organizational groups flattened, embedded PNG bytes decoded verbatim, per-face UVs normalized to Java units with source UV order retained, geometry recentred and uniformly scaled, and held-item transforms replaced for ItemDisplay FIXED.",
+      "id": "backs_loys_goodies",
+      "licenseFile": "vendor/cosmetics/backs_loys_goodies/LICENSE.txt",
+      "packLicenseFile": "licenses/backs_loys_goodies.txt",
+      "sourceFiles": [
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/LICENSE.txt",
+          "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/evidence/upstream-README.md",
+          "sha256": "7cc87ad5f434420765ffcce6440f2cad9376cbfa861bc2ff8aef5b1b3a579d79"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/models/230516_backpack.bbmodel",
+          "sha256": "8824028065c3388def555d83d46d7431ba43b39be40408d76b77822c12d0162e"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/support/back_trail_rucksack-ATTRIBUTION.txt",
+          "sha256": "e8119652f334b793538a531351a6a541176587310c4654efd43d8ea4e42008a5"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/textures/875a89c22fa6616f729fad5b9da925d5cbb1719ff089147233ba576abf72571f.png",
+          "sha256": "875a89c22fa6616f729fad5b9da925d5cbb1719ff089147233ba576abf72571f"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/models/220913_guitar.bbmodel",
+          "sha256": "d11553144a6cb565a2de9e7972c8530df24073a382ec4ed341fe180176ef7d6c"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/support/back_acoustic_guitar-ATTRIBUTION.txt",
+          "sha256": "706f1a25dc657423451ea64e4e60fa2679ad46a8d2c63ff2d55aa74ddf94f048"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/textures/1b616ff78593dfbbfc14e0e711806cccb06f88765c779677c98296702e594056.png",
+          "sha256": "1b616ff78593dfbbfc14e0e711806cccb06f88765c779677c98296702e594056"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/models/230419_shield_0_0.bbmodel",
+          "sha256": "0c8be90d414df5296784adf01433e6b43567392db5f45719f632e191dac45e66"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/support/back_kite_shield-ATTRIBUTION.txt",
+          "sha256": "e47da4ad272e03320981fe8ca0fb6f86a64ce2ce864da8b831ec8a458f764486"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/textures/20d8e9793516fdf6bf0b2238d37491dd13ccba4f39cfb8f38e8f3633b39b6b1e.png",
+          "sha256": "20d8e9793516fdf6bf0b2238d37491dd13ccba4f39cfb8f38e8f3633b39b6b1e"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/models/230618_small_shield.bbmodel",
+          "sha256": "509584d06117ea35a03c39f9c55c6b7108dadc16b1bef681e3c28c99cd66a7c4"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/support/back_round_shield-ATTRIBUTION.txt",
+          "sha256": "e31f47af641b730f8d72ffec1785262b095b63d9bb893f0738ed3e2ef12f0ac1"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/textures/7f23beab9ef9f814e954045abc11cae49591fb41261044f952fbf34aac930f7c.png",
+          "sha256": "7f23beab9ef9f814e954045abc11cae49591fb41261044f952fbf34aac930f7c"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/models/230627_easel.bbmodel",
+          "sha256": "dc1f0423a7b0fcb13af41e7afcdb303808f039ae17ba5a629cb39cef433ac639"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/support/back_artist_easel-ATTRIBUTION.txt",
+          "sha256": "d6ac5c03bff352c2a9c98386a561dc42ea01a999eaa432688646151554289b92"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/textures/e5e698997652db19366bd638ed812ce5529bd02965194c76d1eded2b59344ca8.png",
+          "sha256": "e5e698997652db19366bd638ed812ce5529bd02965194c76d1eded2b59344ca8"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/models/230728_gravestone.bbmodel",
+          "sha256": "c4917174f6faf15aceeb3b37f3d609254f2e9c94cbcef0b9d12b15fc7355cd5f"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/support/back_halloween_gravestone-ATTRIBUTION.txt",
+          "sha256": "ed5e274bddb07e1c45db66a28a8b255d6e32fa5ef60771bfc0869c238e7e99cd"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/textures/fca8c34e442bd50f06d92585bc23ffadf82910524f59a46d90d57f14152c5065.png",
+          "sha256": "fca8c34e442bd50f06d92585bc23ffadf82910524f59a46d90d57f14152c5065"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/models/230418_crux.bbmodel",
+          "sha256": "a776bc1d330e202dcc64fbdd25022c86e81baf92019450734d9eda165b00ad61"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/support/back_cleric_cross-ATTRIBUTION.txt",
+          "sha256": "1cb97880635eee842a94116769ef1b557347ceea8b933a8e16ed38ff5d3a9296"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/textures/78f428f5580f9df2de171fc30afc0b5e41614fcb4b97d4eeb8a300544360ed49.png",
+          "sha256": "78f428f5580f9df2de171fc30afc0b5e41614fcb4b97d4eeb8a300544360ed49"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/models/230429_double_axe.bbmodel",
+          "sha256": "963b7579b745321f36f047aee9eac7da553c39e6c8cb5f5580e92ff5b30ca501"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/support/back_double_axe-ATTRIBUTION.txt",
+          "sha256": "a591f331b35871cc4ac7c7f0a4e2caa229da1013c71f4bbcd81b85e4acdd1b97"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/textures/3384339f53e6569e7055f2fd9d2d75dd0c266c1b841ac7a9f65efa7a354678b3.png",
+          "sha256": "3384339f53e6569e7055f2fd9d2d75dd0c266c1b841ac7a9f65efa7a354678b3"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/models/230512_hammer.bbmodel",
+          "sha256": "c7fb09189b006755a3c54ce94a44d025808db591a446eebcdf8bb532915921cb"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/support/back_smith_hammer-ATTRIBUTION.txt",
+          "sha256": "6980ded6bbcc57bfb954d13b9724c9592276bd99c7057685c358d0a99ef45db8"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/textures/dea57a92da045ccc9fb8752a2608c9d22084a3e56be23b95e69b38ac409e5415.png",
+          "sha256": "dea57a92da045ccc9fb8752a2608c9d22084a3e56be23b95e69b38ac409e5415"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/models/230419_katana_shell.bbmodel",
+          "sha256": "935a396ed287dec2d00ebb98638228ad12f4cd4029755eb7898c9815997d8d51"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/support/back_katana_scabbard-ATTRIBUTION.txt",
+          "sha256": "6ad1b634363a012a19f6e5e2d01186b714f595554a466834a4ce81d9f75f9fc1"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/textures/c228da2296fdfa7519f2d45730a1bb8ca5ede5f6af5ea55dcaf0d11d523584f4.png",
+          "sha256": "c228da2296fdfa7519f2d45730a1bb8ca5ede5f6af5ea55dcaf0d11d523584f4"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/models/230418_wizard_wand.bbmodel",
+          "sha256": "0874e92f61c7fdcb3b9cf0b0c60d19c63c37a117b00ca1e7cc644436c3926f9e"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/support/back_arcane_staff-ATTRIBUTION.txt",
+          "sha256": "fd71912527dea69643a11203f127a88350cf75a7284fea1ae5cfc9460aedc540"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/textures/61666ea436b29e4b1253c5542b74ed3fbd763ef236a7a3e824375d4d428d7cae.png",
+          "sha256": "61666ea436b29e4b1253c5542b74ed3fbd763ef236a7a3e824375d4d428d7cae"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/textures/a2bac26938b25aeadb0bfc7096019d34ffc6b6346e363549b3309ac34b50286f.png",
+          "sha256": "a2bac26938b25aeadb0bfc7096019d34ffc6b6346e363549b3309ac34b50286f"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/models/230418_bow_0_0.bbmodel",
+          "sha256": "ebbb14770987b26ea142b3104473ad8996d595324ac3d077adcef09cea662ffe"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/support/back_hunters_bow-ATTRIBUTION.txt",
+          "sha256": "7bdc719324faee5f70eebfde201079daad84f03b72ba8f5e3c7e38cdca96741b"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/textures/6674b4d1d44b7b51ef808f7cb627ae7d8540cc537b1cbd1b1fda2d39c6f1d0d0.png",
+          "sha256": "6674b4d1d44b7b51ef808f7cb627ae7d8540cc537b1cbd1b1fda2d39c6f1d0d0"
+        },
+        {
+          "path": "vendor/cosmetics/backs_loys_goodies/textures/8fe7b484051ad7d8b78b2452f139c891696985e0baf04dc71a7e24f26813909b.png",
+          "sha256": "8fe7b484051ad7d8b78b2452f139c891696985e0baf04dc71a7e24f26813909b"
+        }
+      ]
+    },
+    {
+      "title": "Immersive Melodies",
+      "author": "Luke100000 and Immersive Melodies contributors",
+      "sourceUrl": "https://github.com/Luke100000/ImmersiveMelodies",
+      "license": "GPL-3.0",
+      "licenseUrl": "https://github.com/Luke100000/ImmersiveMelodies/blob/16c004872866048d11f6d0141ca878bf4fb5a09a/LICENSE",
+      "modifications": "8 selected GPL-3.0 backwear models converted into Noqui native item models: static native cuboids extracted, PNG bytes copied verbatim, per-face UVs and face rotations retained, geometry recentred and uniformly scaled, and held-item transforms replaced for ItemDisplay FIXED. Sounds, playback code, and melodies are excluded.",
+      "caveat": "Repository GPL-3.0 covers the item models and textures. Upstream excludes sounds and the /melodies data from that licence; no sound or melody content is included or claimed. The GPL-3.0 licence text, original source models, per-asset attribution notice with the 2026-10-24 modification date, and the reproducible normalize_assets.py conversion script are retained with the adaptations.",
+      "id": "backs_immersive_melodies",
+      "licenseFile": "vendor/cosmetics/backs_immersive_melodies/LICENSE.txt",
+      "packLicenseFile": "licenses/backs_immersive_melodies.txt",
+      "sourceFiles": [
+        {
+          "path": "vendor/cosmetics/backs_immersive_melodies/LICENSE.txt",
+          "sha256": "446be0788b2194a6e90faf4c845228f196e2f90b7cb7abf6659a3ed9b2f79fd2"
+        },
+        {
+          "path": "vendor/cosmetics/backs_immersive_melodies/evidence/upstream-README.md",
+          "sha256": "c4bd162ea1251b1f9ab4e03b760f0a02c1c380d6ff5b55ef641b592ef48a6719"
+        },
+        {
+          "path": "vendor/cosmetics/backs_immersive_melodies/models/bagpipe_hand.json",
+          "sha256": "378f083cb76845470537aa65166aaa7de0fa5be7640354d533a736ef96ce7fae"
+        },
+        {
+          "path": "vendor/cosmetics/backs_immersive_melodies/support/back_bagpipe-ATTRIBUTION.txt",
+          "sha256": "460e7c7394351f706d9deb9cd368d3a01d90225a69617e67a108aa7d79313c17"
+        },
+        {
+          "path": "vendor/cosmetics/backs_immersive_melodies/support/normalize_assets.py",
+          "sha256": "bec2d441b603ec5583cd8b0a543bc26be440fc868260c8f2e2edf9d0061e0595"
+        },
+        {
+          "path": "vendor/cosmetics/backs_immersive_melodies/support/GPL-MODIFICATION-NOTICE.txt",
+          "sha256": "5012be462e500c9a1783f319003802ae0c49b3364783324ad5e431b928fbe546"
+        },
+        {
+          "path": "vendor/cosmetics/backs_immersive_melodies/textures/74ba0591595214ad218015519f799d51675f0bac346fd11d47ed9f71392333a4.png",
+          "sha256": "74ba0591595214ad218015519f799d51675f0bac346fd11d47ed9f71392333a4"
+        },
+        {
+          "path": "vendor/cosmetics/backs_immersive_melodies/models/didgeridoo_hand.json",
+          "sha256": "e14f4b33364a90b7831510f6486d19643b134993bcf02417578f2faacc05f463"
+        },
+        {
+          "path": "vendor/cosmetics/backs_immersive_melodies/support/back_didgeridoo-ATTRIBUTION.txt",
+          "sha256": "2eec46816691ed97d5af6dd0de7a2d567cf87a8d496c732178f4247a6c5a85d5"
+        },
+        {
+          "path": "vendor/cosmetics/backs_immersive_melodies/textures/4a2aba5a8feac41416bf133b813cd3a1f721d60935dc67a2e1618f7001fe5b93.png",
+          "sha256": "4a2aba5a8feac41416bf133b813cd3a1f721d60935dc67a2e1618f7001fe5b93"
+        },
+        {
+          "path": "vendor/cosmetics/backs_immersive_melodies/models/handpan_hand.json",
+          "sha256": "0a769243db1924a7ce8857393621df48002d3e6d2edb55d524414e69056578be"
+        },
+        {
+          "path": "vendor/cosmetics/backs_immersive_melodies/support/back_handpan-ATTRIBUTION.txt",
+          "sha256": "e9031e86152d18f99070e02a94c6bb3003b97880228dd37cfbc93db5cabb390a"
+        },
+        {
+          "path": "vendor/cosmetics/backs_immersive_melodies/textures/f45705e39a5a3696f4ebce0e3cd5d462c1be2cee6d8fb6c094788e7bcfa82b0e.png",
+          "sha256": "f45705e39a5a3696f4ebce0e3cd5d462c1be2cee6d8fb6c094788e7bcfa82b0e"
+        },
+        {
+          "path": "vendor/cosmetics/backs_immersive_melodies/models/lute_hand.json",
+          "sha256": "0a8151ea392c9d1710b6c98590bc731695d3dd0db9a1d51a61d6762143ce932f"
+        },
+        {
+          "path": "vendor/cosmetics/backs_immersive_melodies/support/back_lute-ATTRIBUTION.txt",
+          "sha256": "2563cd26e4d41dacae7febd8b9f9988cffc665e1093226f24ecb735294899495"
+        },
+        {
+          "path": "vendor/cosmetics/backs_immersive_melodies/textures/8b733d92f3686f81d64f21d521933ee60eed5b5fec611e4d2115690df3401a69.png",
+          "sha256": "8b733d92f3686f81d64f21d521933ee60eed5b5fec611e4d2115690df3401a69"
+        },
+        {
+          "path": "vendor/cosmetics/backs_immersive_melodies/models/piano_hand.json",
+          "sha256": "66b8ccd1f8eb163ca3d3b57e438bfbed8b59f0fe18838953d83210b972d00f83"
+        },
+        {
+          "path": "vendor/cosmetics/backs_immersive_melodies/support/back_portable_keyboard-ATTRIBUTION.txt",
+          "sha256": "9849368c4db57031b3f16e87f6ef273d79a4fd19296e3ce73b69fbf44af8ab4e"
+        },
+        {
+          "path": "vendor/cosmetics/backs_immersive_melodies/textures/52128278f5700cdb59368e48a12bd6f0a5b9faaff6941f7329b649127cd34452.png",
+          "sha256": "52128278f5700cdb59368e48a12bd6f0a5b9faaff6941f7329b649127cd34452"
+        },
+        {
+          "path": "vendor/cosmetics/backs_immersive_melodies/models/tiny_drum_hand.json",
+          "sha256": "812b2a6c32d46acaa158bd6459a0403e524a4960216ade46986513096d0394cb"
+        },
+        {
+          "path": "vendor/cosmetics/backs_immersive_melodies/support/back_tiny_drum-ATTRIBUTION.txt",
+          "sha256": "fe23ed0b3f5dc7c9131997c86a9e2dc6a71519bf82c0361d4eaf16d9cb4318f2"
+        },
+        {
+          "path": "vendor/cosmetics/backs_immersive_melodies/textures/c876c0412b255a63ebf83e97af09769eef452fb36eed36c8f22510350b0f266f.png",
+          "sha256": "c876c0412b255a63ebf83e97af09769eef452fb36eed36c8f22510350b0f266f"
+        },
+        {
+          "path": "vendor/cosmetics/backs_immersive_melodies/models/trumpet_hand.json",
+          "sha256": "b66c44e17cc49314f4ecd3ddc76b94b7eb706131a47abf608aaf0041a47d96da"
+        },
+        {
+          "path": "vendor/cosmetics/backs_immersive_melodies/support/back_trumpet-ATTRIBUTION.txt",
+          "sha256": "4646e997c6b95fd229b0350ecfe67d87f92175e79d8e548b80a06808f024e586"
+        },
+        {
+          "path": "vendor/cosmetics/backs_immersive_melodies/textures/2db78a977d97a255b5e3b3c32172869138f2828fedb4da216dc483f7435502c9.png",
+          "sha256": "2db78a977d97a255b5e3b3c32172869138f2828fedb4da216dc483f7435502c9"
+        },
+        {
+          "path": "vendor/cosmetics/backs_immersive_melodies/models/vielle_hand.json",
+          "sha256": "7ccd0a4a871142acd6ce5d9f59f96215f43587a377653a7de20e553ec9cfb60c"
+        },
+        {
+          "path": "vendor/cosmetics/backs_immersive_melodies/support/back_vielle-ATTRIBUTION.txt",
+          "sha256": "ff1e407db83784416737bd4335d34c2d07c3bf0fdc5bb75f03f0832c79a443c5"
+        },
+        {
+          "path": "vendor/cosmetics/backs_immersive_melodies/textures/a63ad8d55ba922bc751812bd719642519f81a22edffb63cd64bba46dd088fedf.png",
+          "sha256": "a63ad8d55ba922bc751812bd719642519f81a22edffb63cd64bba46dd088fedf"
+        }
+      ]
+    },
+    {
+      "title": "Loy-s-Goodies",
+      "author": "Loy / SL0ANE",
+      "sourceUrl": "https://github.com/SL0ANE/Loy-s-Goodies",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modifications": "9 selected CC0-1.0 head ornaments converted into Noqui native item models: static source cuboids and per-face UVs retained, embedded PNG bytes decoded verbatim, geometry uniformly scaled/recentred only, and an explicit fixed yaw 180 head pose added.",
+      "id": "novelty_loys_goodies",
+      "licenseFile": "vendor/cosmetics/novelty_loys_goodies/LICENSE.txt",
+      "packLicenseFile": "licenses/novelty_loys_goodies.txt",
+      "sourceFiles": [
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/LICENSE.txt",
+          "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/evidence/upstream-README.md",
+          "sha256": "7cc87ad5f434420765ffcce6440f2cad9376cbfa861bc2ff8aef5b1b3a579d79"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/models/220909_burger.bbmodel",
+          "sha256": "ed8a0e200db3cef9ece7bace4acb87fc70fda8ce5979ae76784204b0f87e78e4"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/support/burger_hat-attribution.json",
+          "sha256": "d4cea82fefd9632b5efb65408a71da9592ab244cdd91d91ad6ec2618e40c03e1"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/3f3725ee3d60f41b4d3d5c30db859f333ec0455d6d6e541c94a8ef4e8e488295.png",
+          "sha256": "3f3725ee3d60f41b4d3d5c30db859f333ec0455d6d6e541c94a8ef4e8e488295"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/models/230602_zongzi.bbmodel",
+          "sha256": "38fe855ce83a4424531471db9e8201f359a17d8aab9c068d2ffa330da1f3941a"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/support/zongzi_hat-attribution.json",
+          "sha256": "b3c101d4ec163510c1c4b0ab17987913ae7c1202d55849f68abca61d8cc5ba5d"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/d2392a33eb8c1de4f492b4d56b3d06cd1727e326e8aaaeddf13c63b1c1096ca3.png",
+          "sha256": "d2392a33eb8c1de4f492b4d56b3d06cd1727e326e8aaaeddf13c63b1c1096ca3"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/6c3556d5e01067ea3636c10ce5372858dd769507f1e7ad53c76fccc6e13f78db.png",
+          "sha256": "6c3556d5e01067ea3636c10ce5372858dd769507f1e7ad53c76fccc6e13f78db"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/models/230923_pop_can_blue.bbmodel",
+          "sha256": "57e9b9b40c219f97f6868ae9c2efdb3b0dee619307ec70f86d8c5f342dd45301"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/support/soda_can_hat-attribution.json",
+          "sha256": "175f5928bcca554b4bd19bcaa56947b4530964ba2b14bc9fa902015efd46c832"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/06e38ee352320d58ee40548165cd737a47c53d06623bc6f831c098a2779b083f.png",
+          "sha256": "06e38ee352320d58ee40548165cd737a47c53d06623bc6f831c098a2779b083f"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/models/230617_moai.bbmodel",
+          "sha256": "52f1a1abf293ffdd1fb19562051e345717f8078bb3be8168cd4dbb9e5394750d"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/support/moai_hat-attribution.json",
+          "sha256": "a8b5c1971cffd5160f6cd0946b0a7e534658c4785d2dc233bf25f10816de7e40"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/40dd3fdfcc2506e8ef9f51312e3f21f6b664a12b98d1b0d49d582b7fb985a770.png",
+          "sha256": "40dd3fdfcc2506e8ef9f51312e3f21f6b664a12b98d1b0d49d582b7fb985a770"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/models/220520_hulu.bbmodel",
+          "sha256": "6a64eb1b375285ca1cb844dd45d0f13157325d4b9406c498a5d95998e4ead0bd"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/support/gourd_hat-attribution.json",
+          "sha256": "03e32d3b2c05901948c8c4991274fbca11d99cf1df80c0830edfa1d6ad4640cf"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/4835de7718011c4c836cd49212690d6963fb8a866abd87a57ed38253432eab96.png",
+          "sha256": "4835de7718011c4c836cd49212690d6963fb8a866abd87a57ed38253432eab96"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/models/230217_vase.bbmodel",
+          "sha256": "b8c6495f17657f6f7076c4a2c0bfd6c05ca05d2ebe1e92c950fbfa8aaf4d3cbd"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/support/vase_hat-attribution.json",
+          "sha256": "a56ae26a51d576c135f4a66e50c92a6f6ace6e5ae0d9975a648a7aa279c8f35a"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/bc1c2b9f9df48aff08d0d6d870378605646af15bffe0c9d4dfa13df8fc6176a0.png",
+          "sha256": "bc1c2b9f9df48aff08d0d6d870378605646af15bffe0c9d4dfa13df8fc6176a0"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/models/220614_phonograph.bbmodel",
+          "sha256": "95ad278b9c0bb23c7c92cb964bbfe9a9b9323ee46c07589c9a06bb17f8423d32"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/support/phonograph_hat-attribution.json",
+          "sha256": "b84fa7ee98aa9102059493e43b1fc7dc0cbb420450f106c7a1c4e0659e2d19f7"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/81413ae9cdcf6aeedcd66fb12716c638679ce1602e8cd67acd24e60dbd775c75.png",
+          "sha256": "81413ae9cdcf6aeedcd66fb12716c638679ce1602e8cd67acd24e60dbd775c75"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/c0cc92c1e4c63bd9f63b66684dfe64e08cc0d4ec193da47651780c3322d4e01d.png",
+          "sha256": "c0cc92c1e4c63bd9f63b66684dfe64e08cc0d4ec193da47651780c3322d4e01d"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/972723a40d395eb2f9d58618dd16b2a1523e9e66d280cda04290d525f28cb6e0.png",
+          "sha256": "972723a40d395eb2f9d58618dd16b2a1523e9e66d280cda04290d525f28cb6e0"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/cffd5516435d178ded27458516010ba6b7f7a40410749f22ebc9aecc9eb5f5a9.png",
+          "sha256": "cffd5516435d178ded27458516010ba6b7f7a40410749f22ebc9aecc9eb5f5a9"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/9f573b5eb91d9313b82344cafd2dabac62b60b9f39f1b64546a4dcf5163c1107.png",
+          "sha256": "9f573b5eb91d9313b82344cafd2dabac62b60b9f39f1b64546a4dcf5163c1107"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/6aa53d8b7b76af396b2d6a0ffccb4b7474d39f15da4112ae70bd2639ab00a99a.png",
+          "sha256": "6aa53d8b7b76af396b2d6a0ffccb4b7474d39f15da4112ae70bd2639ab00a99a"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/a7be00ca5c19ce76985cd249dff606ec8d73b1aa39e24ced4f3670ac17726ce0.png",
+          "sha256": "a7be00ca5c19ce76985cd249dff606ec8d73b1aa39e24ced4f3670ac17726ce0"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/04395028fb162ca9f6aca0f777551da0b769ce6cb0e0b884fbda2e89d79f35ed.png",
+          "sha256": "04395028fb162ca9f6aca0f777551da0b769ce6cb0e0b884fbda2e89d79f35ed"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/27982f2168ebb78699934c53f407f52a3ae9e64472a51498c1195e66a9711a42.png",
+          "sha256": "27982f2168ebb78699934c53f407f52a3ae9e64472a51498c1195e66a9711a42"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/21aa182448f0f7a8d6841c2a19383d6137db2b61ebece00fb9dbb3ea3aaec811.png",
+          "sha256": "21aa182448f0f7a8d6841c2a19383d6137db2b61ebece00fb9dbb3ea3aaec811"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/f91ca6276bca76ecfc6fe8c72885518d92c3a2c9f94e1bcdea6aa1789f6097f3.png",
+          "sha256": "f91ca6276bca76ecfc6fe8c72885518d92c3a2c9f94e1bcdea6aa1789f6097f3"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/79c7a5c99ceb42bc029d7b03a59870ac162d2e8ab3c70f1a905cfe34d68ccb3a.png",
+          "sha256": "79c7a5c99ceb42bc029d7b03a59870ac162d2e8ab3c70f1a905cfe34d68ccb3a"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/f2e6f07e4d95675f1a450ea7bf35ab54896f3223b4305e400c1c7cd41ef8b51b.png",
+          "sha256": "f2e6f07e4d95675f1a450ea7bf35ab54896f3223b4305e400c1c7cd41ef8b51b"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/b8805a0ec907296cc526ec8731b0281c7e6c38c6cfc0e477210a8424c13f9a5d.png",
+          "sha256": "b8805a0ec907296cc526ec8731b0281c7e6c38c6cfc0e477210a8424c13f9a5d"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/92cab3cd1ff9090c92f4aed89c9813e02e6e03b0c125a1f63e8d9462150506fe.png",
+          "sha256": "92cab3cd1ff9090c92f4aed89c9813e02e6e03b0c125a1f63e8d9462150506fe"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/35e5a5dd1d965924a27aa18a2680c3efe5eb8fe36791152fe143a9476a3cec1e.png",
+          "sha256": "35e5a5dd1d965924a27aa18a2680c3efe5eb8fe36791152fe143a9476a3cec1e"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/db03c1569a0ee5db6db8f34aecb3055156e6a6a6d935db66d04db662eab71912.png",
+          "sha256": "db03c1569a0ee5db6db8f34aecb3055156e6a6a6d935db66d04db662eab71912"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/fb0d865198480464fdca57aaee878eee9000a076da3bed67d221830c5d73a07a.png",
+          "sha256": "fb0d865198480464fdca57aaee878eee9000a076da3bed67d221830c5d73a07a"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/89e669a08ecbd6f90a3bb7608b736c2fa26a20a1ca38e6dab06eba4d58be50e2.png",
+          "sha256": "89e669a08ecbd6f90a3bb7608b736c2fa26a20a1ca38e6dab06eba4d58be50e2"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/fbe4ed0d7f9bb796d9cd5bb278ea0b5b655969c4669b61d0ba43ef2542590b9c.png",
+          "sha256": "fbe4ed0d7f9bb796d9cd5bb278ea0b5b655969c4669b61d0ba43ef2542590b9c"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/671c921c511ab753e0d5c3ee9a698bfd89d9a0e73bb740af193c569b974f1c9a.png",
+          "sha256": "671c921c511ab753e0d5c3ee9a698bfd89d9a0e73bb740af193c569b974f1c9a"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/670dfa7c116d2971b8cd2b99b14981539f75e8f689f23712dcfc3a5effa0ddd8.png",
+          "sha256": "670dfa7c116d2971b8cd2b99b14981539f75e8f689f23712dcfc3a5effa0ddd8"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/5b2de2a1d2e3b10d32d3aeae8dd6ac979c7434030f38c333713f9a0adb45cdcb.png",
+          "sha256": "5b2de2a1d2e3b10d32d3aeae8dd6ac979c7434030f38c333713f9a0adb45cdcb"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/f50f253273b6280578b47d5ea4b62e9c13bd2d81ae09a8143881b45be425954d.png",
+          "sha256": "f50f253273b6280578b47d5ea4b62e9c13bd2d81ae09a8143881b45be425954d"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/babfe187008c3c7cbfa30f73820e9f8d3f1ea1fd12b48d703e69d752eaece583.png",
+          "sha256": "babfe187008c3c7cbfa30f73820e9f8d3f1ea1fd12b48d703e69d752eaece583"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/695cafa19c129f003d78738d020c0ecd9bfa4a8de4202a88178ac23bc2dd511f.png",
+          "sha256": "695cafa19c129f003d78738d020c0ecd9bfa4a8de4202a88178ac23bc2dd511f"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/6f258ab361f3659fc9f6bb56cf5cf86ec92126021871dcbf935b14366bf8bfae.png",
+          "sha256": "6f258ab361f3659fc9f6bb56cf5cf86ec92126021871dcbf935b14366bf8bfae"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/578b56b7ae85bbea291e877b04980e2defcb2baa4606075f4f29c166e577f547.png",
+          "sha256": "578b56b7ae85bbea291e877b04980e2defcb2baa4606075f4f29c166e577f547"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/3e7edbcf444af80e6592b2b30b54087b6bf1cc49fcae970c84c72820c4cee8a8.png",
+          "sha256": "3e7edbcf444af80e6592b2b30b54087b6bf1cc49fcae970c84c72820c4cee8a8"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/1296da80d32f6733da177b0122abd4208ba3f291d6284d37ff59affd0537c0d4.png",
+          "sha256": "1296da80d32f6733da177b0122abd4208ba3f291d6284d37ff59affd0537c0d4"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/c24c66594912e98d5385487f4507c84933da981465e24f82d0b31f8f1ef8505a.png",
+          "sha256": "c24c66594912e98d5385487f4507c84933da981465e24f82d0b31f8f1ef8505a"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/fdad9e023fc22b85b249b2a148e53687358786304b4a3ff5a7bca9910a7fcaec.png",
+          "sha256": "fdad9e023fc22b85b249b2a148e53687358786304b4a3ff5a7bca9910a7fcaec"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/c0df2cadb202fb18e0ad2f94f90b8ff452bc03318247f21f7ed1bb91fbfda8c5.png",
+          "sha256": "c0df2cadb202fb18e0ad2f94f90b8ff452bc03318247f21f7ed1bb91fbfda8c5"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/models/230511_camera.bbmodel",
+          "sha256": "13c1f62a286d06668b231aa8957682c0954ca021e335a3737cc6d19a9bc53bd8"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/support/camera_hat-attribution.json",
+          "sha256": "da0e00cb3590d1d023ff1643de32df07cdeeb0f9f26349329aab79964010b627"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/a9e075ad6c4f27ebd2f9b3b947c0a0580bf7ef05546ebe57bca458efeb776681.png",
+          "sha256": "a9e075ad6c4f27ebd2f9b3b947c0a0580bf7ef05546ebe57bca458efeb776681"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/models/230502_cctv_camera.bbmodel",
+          "sha256": "0c646e6ab8befa5dc0e0b38f42a2c657c0084ce1cab517d5a9733fe149f245c3"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/support/cctv_hat-attribution.json",
+          "sha256": "eab6e2ca7e6fc1a36f522235b82df4afc049b300ddf013f91cb8af7a3594356c"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_loys_goodies/textures/ef285e66d16e953ffa31af109a1ba5fbbd10e4a575a765a10c6b6a8928fcc2cf.png",
+          "sha256": "ef285e66d16e953ffa31af109a1ba5fbbd10e4a575a765a10c6b6a8928fcc2cf"
+        }
+      ]
+    },
+    {
+      "title": "Blockbench Workshop listing by conczin",
+      "author": "conczin",
+      "sourceUrl": "https://blockbenchworkshop.com/model/conczin/bread",
+      "license": "CC-BY-4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "One selected Blockbench Workshop listing converted into a Noqui native head ornament: static source cuboids and per-face UVs retained, UVs normalized to Java 0..16 units, PNG bytes copied unchanged, geometry uniformly scaled/recentred only, explicit fixed head pose added. The listing provenance and source page are pinned.",
+      "caveat": "License, creator-rights, and AI-use statements are declared by the Blockbench Workshop uploader and are not independently verified by the platform. The original .bbmodel download endpoint requires an account, so the openly published interactive-preview JSON is the pinned source model; no account was used.",
+      "id": "novelty_conczin_workshop",
+      "licenseFile": "vendor/cosmetics/novelty_conczin_workshop/LICENSE.txt",
+      "packLicenseFile": "licenses/novelty_conczin_workshop.txt",
+      "sourceFiles": [
+        {
+          "path": "vendor/cosmetics/novelty_conczin_workshop/LICENSE.txt",
+          "sha256": "58230517b7895aa219ff46a6ed63e67057a1582fb9ea054b16728a8c13525650"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_conczin_workshop/evidence/source-page.html",
+          "sha256": "e6ff734996201366bcc677253e28b8bf4a75014c563cdc72ddad52c23d2d9736"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_conczin_workshop/evidence/provenance.json",
+          "sha256": "ae4d0105ef9a36599965ccaf7755aa1fdf7f3025953ccc4e32b301dd5102fe6b"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_conczin_workshop/models/bread_board_hat-public-preview.json",
+          "sha256": "e66ac6f333fb10ef1ccdf11673b2393626545bbd965a174ce2d5a083fe70f086"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_conczin_workshop/support/bread_board_hat-attribution.json",
+          "sha256": "e54bec4b591daf0c75788077bba488c56177abd0a1c7022672cff7923a6584a5"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_conczin_workshop/textures/d47e590d6721a0a5c3c72b6c28cd7536d4daf24683811879d4b072e283a1b1ea.png",
+          "sha256": "d47e590d6721a0a5c3c72b6c28cd7536d4daf24683811879d4b072e283a1b1ea"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_conczin_workshop/models/cheese_hat-public-preview.json",
+          "sha256": "66abd35cdd1cba82e1b24fe5148ffee3a3474641978bd5020c1c1fbc09ed2f8a"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_conczin_workshop/support/cheese_hat-attribution.json",
+          "sha256": "f9d5721d42c2513ac1dfab81a7ed09e1144aee6c3a6c75d1be49dad59fd58f93"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_conczin_workshop/textures/61f56ffd2acc15f3dbb72b6c6a23382d3315c2cfa96927fa18903c1c940b66b2.png",
+          "sha256": "61f56ffd2acc15f3dbb72b6c6a23382d3315c2cfa96927fa18903c1c940b66b2"
+        }
+      ]
+    },
+    {
+      "title": "Blockbench Workshop listing by netherlife15",
+      "author": "netherlife15",
+      "sourceUrl": "https://blockbenchworkshop.com/model/netherlife15/pop-tart",
+      "license": "CC-BY-4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "One selected Blockbench Workshop listing converted into a Noqui native head ornament: static source cuboids and per-face UVs retained, UVs normalized to Java 0..16 units, PNG bytes copied unchanged, geometry uniformly scaled/recentred only, explicit fixed head pose added. The listing provenance and source page are pinned.",
+      "caveat": "License, creator-rights, and AI-use statements are declared by the Blockbench Workshop uploader and are not independently verified by the platform. The original .bbmodel download endpoint requires an account, so the openly published interactive-preview JSON is the pinned source model; no account was used.",
+      "id": "novelty_netherlife15_workshop",
+      "licenseFile": "vendor/cosmetics/novelty_netherlife15_workshop/LICENSE.txt",
+      "packLicenseFile": "licenses/novelty_netherlife15_workshop.txt",
+      "sourceFiles": [
+        {
+          "path": "vendor/cosmetics/novelty_netherlife15_workshop/LICENSE.txt",
+          "sha256": "58230517b7895aa219ff46a6ed63e67057a1582fb9ea054b16728a8c13525650"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_netherlife15_workshop/evidence/source-page.html",
+          "sha256": "3360f0cc7cf30c0557ee5e5246f2d636ac0a45790d96c9ca74bbc1f9cc8e25c7"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_netherlife15_workshop/evidence/provenance.json",
+          "sha256": "6c0c8bb9186303d6fc15811d0fe8b94d59bcb7d550f098f64eac860c9b5dcb0d"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_netherlife15_workshop/models/pop_tart_hat-public-preview.json",
+          "sha256": "1078f3d4e4f6cb7e96796527c388e5bdf189339e330e88ee196331ba4d5ad1b8"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_netherlife15_workshop/support/pop_tart_hat-attribution.json",
+          "sha256": "d43c336bd5d4363c515607ffd90e513445454bf391ff1199c89d2e6580029e38"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_netherlife15_workshop/textures/6eb7288b9365ab9facd6d7dbee44403150bcbdd4b16367c0600b219716a658e6.png",
+          "sha256": "6eb7288b9365ab9facd6d7dbee44403150bcbdd4b16367c0600b219716a658e6"
+        }
+      ]
+    },
+    {
+      "title": "Blockbench Workshop listing by monkus",
+      "author": "monkus",
+      "sourceUrl": "https://blockbenchworkshop.com/model/monkus/meat",
+      "license": "CC-BY-SA-4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "modifications": "One selected Blockbench Workshop listing converted into a Noqui native head ornament: static source cuboids and per-face UVs retained, UVs normalized to Java 0..16 units, PNG bytes copied unchanged, geometry uniformly scaled/recentred only, explicit fixed head pose added. The listing provenance and source page are pinned.",
+      "caveat": "License, creator-rights, and AI-use statements are declared by the Blockbench Workshop uploader and are not independently verified by the platform. The original .bbmodel download endpoint requires an account, so the openly published interactive-preview JSON is the pinned source model; no account was used. CC BY-SA 4.0 is share-alike: this adapted asset and its derived texture stay under CC BY-SA 4.0, and the uploader declares AI use for the listing geometry/textures with no creator-rights attestation.",
+      "id": "novelty_monkus_workshop",
+      "licenseFile": "vendor/cosmetics/novelty_monkus_workshop/LICENSE.txt",
+      "packLicenseFile": "licenses/novelty_monkus_workshop.txt",
+      "sourceFiles": [
+        {
+          "path": "vendor/cosmetics/novelty_monkus_workshop/LICENSE.txt",
+          "sha256": "47c0a954c88d793bdefe92fb007ae3c038fb3807f1a27083433d01aa7542c0d8"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_monkus_workshop/evidence/source-page.html",
+          "sha256": "f9fad02bdf026a953e3e311123b790c2fed43a453ab340a7bd4a0dada6a840c1"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_monkus_workshop/evidence/provenance.json",
+          "sha256": "b1f43bfe1d3ac45f2f0286754567a46bb9afc14ee9198ead6322b0de0293467e"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_monkus_workshop/models/meat_hat-public-preview.json",
+          "sha256": "c6509907af5381a64f4a02548024ae76b0daf73655b8d8c8c54e9ee4a6377ba3"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_monkus_workshop/support/meat_hat-attribution.json",
+          "sha256": "2677d5a7710fa961cd8e77c71d54b36093d158ca7817831e655ea17bf4dcd96c"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_monkus_workshop/textures/a36f118ec2a867c978f631bbe14a11d342b402346c99c1464d16e9657eeb1022.png",
+          "sha256": "a36f118ec2a867c978f631bbe14a11d342b402346c99c1464d16e9657eeb1022"
+        }
+      ]
+    },
+    {
+      "title": "Blockbench Workshop listing by capu0410",
+      "author": "capu0410",
+      "sourceUrl": "https://blockbenchworkshop.com/model/capu0410/mushroom-mailbox",
+      "license": "CC-BY-4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "One selected Blockbench Workshop listing converted into a Noqui native head ornament: static source cuboids and per-face UVs retained, UVs normalized to Java 0..16 units, PNG bytes copied unchanged, geometry uniformly scaled/recentred only, explicit fixed head pose added. The listing provenance and source page are pinned.",
+      "caveat": "License, creator-rights, and AI-use statements are declared by the Blockbench Workshop uploader and are not independently verified by the platform. The original .bbmodel download endpoint requires an account, so the openly published interactive-preview JSON is the pinned source model; no account was used.",
+      "id": "novelty_capu0410_workshop",
+      "licenseFile": "vendor/cosmetics/novelty_capu0410_workshop/LICENSE.txt",
+      "packLicenseFile": "licenses/novelty_capu0410_workshop.txt",
+      "sourceFiles": [
+        {
+          "path": "vendor/cosmetics/novelty_capu0410_workshop/LICENSE.txt",
+          "sha256": "58230517b7895aa219ff46a6ed63e67057a1582fb9ea054b16728a8c13525650"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_capu0410_workshop/evidence/source-page.html",
+          "sha256": "d343f49e1edcc1e1bf6019b7b43f24875a6d81c1e8bf8b1c646ac99cb6f4c540"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_capu0410_workshop/evidence/provenance.json",
+          "sha256": "f8ff7c845185c713d91c459938bc11e30f2b2a3c3d1645696f45159a7a3b60e4"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_capu0410_workshop/models/mushroom_mailbox_hat-public-preview.json",
+          "sha256": "b000209be4ad02838d3f67268f352811d06e2607c7d4958a8a8a292294485a59"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_capu0410_workshop/support/mushroom_mailbox_hat-attribution.json",
+          "sha256": "05bb46921efe4d96c6839209aafde477c4ce09512424c6517a5f3d7579316ac0"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_capu0410_workshop/textures/c0addc6d55e079fd49a4cde7033b29e7313f3944bfa80ec4e0b3f7c538ee3b0c.png",
+          "sha256": "c0addc6d55e079fd49a4cde7033b29e7313f3944bfa80ec4e0b3f7c538ee3b0c"
+        }
+      ]
+    },
+    {
+      "title": "Blockbench Workshop listing by polyjo",
+      "author": "polyjo",
+      "sourceUrl": "https://blockbenchworkshop.com/model/polyjo/pigeon-polyjo",
+      "license": "CC-BY-4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "One selected Blockbench Workshop listing converted into a Noqui native head ornament: static source cuboids and per-face UVs retained, UVs normalized to Java 0..16 units, PNG bytes copied unchanged, geometry uniformly scaled/recentred only, explicit fixed head pose added. The listing provenance and source page are pinned.",
+      "caveat": "License, creator-rights, and AI-use statements are declared by the Blockbench Workshop uploader and are not independently verified by the platform. The original .bbmodel download endpoint requires an account, so the openly published interactive-preview JSON is the pinned source model; no account was used.",
+      "id": "novelty_polyjo_workshop",
+      "licenseFile": "vendor/cosmetics/novelty_polyjo_workshop/LICENSE.txt",
+      "packLicenseFile": "licenses/novelty_polyjo_workshop.txt",
+      "sourceFiles": [
+        {
+          "path": "vendor/cosmetics/novelty_polyjo_workshop/LICENSE.txt",
+          "sha256": "58230517b7895aa219ff46a6ed63e67057a1582fb9ea054b16728a8c13525650"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_polyjo_workshop/evidence/source-page.html",
+          "sha256": "be5dd21786abbec5da6b3ba486623ee6722e1dd3ede9d35b4c7ffc2ae5e2b778"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_polyjo_workshop/evidence/provenance.json",
+          "sha256": "78f861593f4491e9aa4b942269932db72630129b56d3b5a46bcf6edf1826f05b"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_polyjo_workshop/models/pigeon_hat-public-preview.json",
+          "sha256": "fd8314b12ec3c72183121300960ecb95e2566ed52ede0a68395f7119246f43d8"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_polyjo_workshop/support/pigeon_hat-attribution.json",
+          "sha256": "6743a003c364286d5f2d3766672095b6308beffb58cf19010ea78ad068a023ee"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_polyjo_workshop/textures/e8c0dac3b72bdba65d947ed53c04643f3ff8e97de128aac76c8aa84bc93ade96.png",
+          "sha256": "e8c0dac3b72bdba65d947ed53c04643f3ff8e97de128aac76c8aa84bc93ade96"
+        }
+      ]
+    },
+    {
+      "title": "Blockbench Workshop listing by atcg",
+      "author": "atcg",
+      "sourceUrl": "https://blockbenchworkshop.com/model/atcg/lissachatina-fulica",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modifications": "One selected Blockbench Workshop listing converted into a Noqui native head ornament: static source cuboids and per-face UVs retained, UVs normalized to Java 0..16 units, PNG bytes copied unchanged, geometry uniformly scaled/recentred only, explicit fixed head pose added. The listing provenance and source page are pinned.",
+      "caveat": "License, creator-rights, and AI-use statements are declared by the Blockbench Workshop uploader and are not independently verified by the platform. The original .bbmodel download endpoint requires an account, so the openly published interactive-preview JSON is the pinned source model; no account was used.",
+      "id": "novelty_atcg_workshop",
+      "licenseFile": "vendor/cosmetics/novelty_atcg_workshop/LICENSE.txt",
+      "packLicenseFile": "licenses/novelty_atcg_workshop.txt",
+      "sourceFiles": [
+        {
+          "path": "vendor/cosmetics/novelty_atcg_workshop/LICENSE.txt",
+          "sha256": "b43732f4c1463b087cf10d4daf8d8766514b2bf8f21bc5ef50905f95be227726"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_atcg_workshop/evidence/source-page.html",
+          "sha256": "1f6b41da5d1cc684b042801c293438056ff8387d5e87a433d7de0d90e927f637"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_atcg_workshop/evidence/provenance.json",
+          "sha256": "3def3160d487098a1f37f4f544ad5e899c4745fb0059d33be3e56c6703b5dbdc"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_atcg_workshop/models/snail_hat-public-preview.json",
+          "sha256": "25335fb6f47f5c24cace2ef1de633d28d2f6b9eed1356215a1dfb1a708b4c51c"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_atcg_workshop/support/snail_hat-attribution.json",
+          "sha256": "8bb8fcee536abc0fe3afd197275cff854b5a92e33b26e4f89eb550e89858b452"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_atcg_workshop/textures/6835ba8ef23d57566457ef61ee90ab342cea3abd5cef6333cc3d546346d461a3.png",
+          "sha256": "6835ba8ef23d57566457ef61ee90ab342cea3abd5cef6333cc3d546346d461a3"
+        }
+      ]
+    },
+    {
+      "title": "Blockbench Workshop listing by sevensstar1707",
+      "author": "sevensstar1707",
+      "sourceUrl": "https://blockbenchworkshop.com/model/sevensstar1707/wolfu",
+      "license": "CC-BY-4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "One selected Blockbench Workshop listing converted into a Noqui native head ornament: static source cuboids and per-face UVs retained, UVs normalized to Java 0..16 units, PNG bytes copied unchanged, geometry uniformly scaled/recentred only, explicit fixed head pose added. The listing provenance and source page are pinned.",
+      "caveat": "License, creator-rights, and AI-use statements are declared by the Blockbench Workshop uploader and are not independently verified by the platform. The original .bbmodel download endpoint requires an account, so the openly published interactive-preview JSON is the pinned source model; no account was used.",
+      "id": "novelty_sevensstar1707_workshop",
+      "licenseFile": "vendor/cosmetics/novelty_sevensstar1707_workshop/LICENSE.txt",
+      "packLicenseFile": "licenses/novelty_sevensstar1707_workshop.txt",
+      "sourceFiles": [
+        {
+          "path": "vendor/cosmetics/novelty_sevensstar1707_workshop/LICENSE.txt",
+          "sha256": "58230517b7895aa219ff46a6ed63e67057a1582fb9ea054b16728a8c13525650"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_sevensstar1707_workshop/evidence/source-page.html",
+          "sha256": "332c57b0bb98559e0516fb10a6b458d2b2265bd0ad5d07cb90132df6a01f4fef"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_sevensstar1707_workshop/evidence/provenance.json",
+          "sha256": "55884dac42162f24ad1a4fc8eca88caa2f2d6c0b593553afabd5e3b4b9e89b54"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_sevensstar1707_workshop/models/wolf_hat-public-preview.json",
+          "sha256": "0cd266eb1b9c78a7caa156cdfc2e68cec9a50ef8432b5606d8a0bfa527a1192d"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_sevensstar1707_workshop/support/wolf_hat-attribution.json",
+          "sha256": "71379b7995ac2aec1b62df5956b09ae1d60d703e971983c965aa54c60b1a5a1c"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_sevensstar1707_workshop/textures/c86b4b108afad9598f46eaee223b8932edf996732bd1f5275aa3fd60ba04ba8f.png",
+          "sha256": "c86b4b108afad9598f46eaee223b8932edf996732bd1f5275aa3fd60ba04ba8f"
+        }
+      ]
+    },
+    {
+      "title": "Blockbench Workshop listing by wasabi",
+      "author": "wasabi",
+      "sourceUrl": "https://blockbenchworkshop.com/model/wasabi/caramel-frappuccino",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modifications": "One selected Blockbench Workshop listing converted into a Noqui native head ornament: static source cuboids and per-face UVs retained, UVs normalized to Java 0..16 units, PNG bytes copied unchanged, geometry uniformly scaled/recentred only, explicit fixed head pose added. The listing provenance and source page are pinned.",
+      "caveat": "License, creator-rights, and AI-use statements are declared by the Blockbench Workshop uploader and are not independently verified by the platform. The original .bbmodel download endpoint requires an account, so the openly published interactive-preview JSON is the pinned source model; no account was used.",
+      "id": "novelty_wasabi_workshop",
+      "licenseFile": "vendor/cosmetics/novelty_wasabi_workshop/LICENSE.txt",
+      "packLicenseFile": "licenses/novelty_wasabi_workshop.txt",
+      "sourceFiles": [
+        {
+          "path": "vendor/cosmetics/novelty_wasabi_workshop/LICENSE.txt",
+          "sha256": "b43732f4c1463b087cf10d4daf8d8766514b2bf8f21bc5ef50905f95be227726"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_wasabi_workshop/evidence/source-page.html",
+          "sha256": "cd147ce17af361b76f2bbb596955d70afff71dbff2b50363f602dc6b09192ffc"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_wasabi_workshop/evidence/provenance.json",
+          "sha256": "5d393ea26919d243a81ebbb54f3a0524460909d2fd3a31ba7d33d609cb53f488"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_wasabi_workshop/models/frappuccino_hat-public-preview.json",
+          "sha256": "5a22382fb952a2901134b642968bc8ac3ce9e47b67980edbf6ca4fa5e55200cd"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_wasabi_workshop/support/frappuccino_hat-attribution.json",
+          "sha256": "d335fdc3c246a274b1656fafef86aab550023d1a4e5befd08c18ddbdcd90dfe1"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_wasabi_workshop/textures/5f4da95c751eb133917cbde7ac445cd7f344ac4a7b636459b78b24e618e89f6b.png",
+          "sha256": "5f4da95c751eb133917cbde7ac445cd7f344ac4a7b636459b78b24e618e89f6b"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_wasabi_workshop/textures/cc07125e3cae2cb5f3966150dcc8ed9b081aa6b0b8bd85ec4efeadf5ed6a3301.png",
+          "sha256": "cc07125e3cae2cb5f3966150dcc8ed9b081aa6b0b8bd85ec4efeadf5ed6a3301"
+        },
+        {
+          "path": "vendor/cosmetics/novelty_wasabi_workshop/textures/b2ec6240d70083c3f3f7510a83d9df5b86d96d1b362ad53a953f90994667a6c5.png",
+          "sha256": "b2ec6240d70083c3f3f7510a83d9df5b86d96d1b362ad53a953f90994667a6c5"
+        }
+      ]
+    }
+  ],
+  "cosmetics": [
+    {
+      "id": "chef_toque",
+      "sourceIds": [
+        "hats_more_hats"
+      ],
+      "geometry": "derived",
+      "modifications": "Unchanged cuboid geometry, face UV coordinates, and PNG pixels. Texture resource locations remapped to noqui. Modern minecraft:model item definition added. Blockbench editor metadata removed. Initial display.fixed attachment transform added. No in-game fitting performed. Original source: https://modrinth.com/resourcepack/more-hats; version BQKrVC7s. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated. Software model/mannequin review retained the source-derived head pose after checking crown/brim placement, face coverage and front orientation.",
+      "modelSha256": "c10baaeaa4a91ec38094a9ac70d3522c6033df71d63bb9d746fe27847600ff57",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/11d38ca4678dfe7827b3.png"
+      ],
+      "upstreamModelSha256": "104f9b8ff074c89955fe6144e449b2fcfe5acd726802e0d391cffcbcc2d1fed1",
+      "researchModelSha256": "9f66722fcfcecea7f76a77939e51e284e437bdeffc13502ffc1d2d7bbf6cded4",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "western_hat",
+      "sourceIds": [
+        "hats_more_hats"
+      ],
+      "geometry": "derived",
+      "modifications": "Unchanged cuboid geometry, face UV coordinates, and PNG pixels. Texture resource locations remapped to noqui. Modern minecraft:model item definition added. Blockbench editor metadata removed. Initial display.fixed attachment transform added. No in-game fitting performed. Original source: https://modrinth.com/resourcepack/more-hats; version BQKrVC7s. Integration removes 32 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated. Software model/mannequin review retained the source-derived head pose after checking crown/brim placement, face coverage and front orientation.",
+      "modelSha256": "96ef6fc5a04aea8294771c9f7a42dea460be9f021186524e190c6bb22e85ce94",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/78972f0dd0a2e7c5a745.png"
+      ],
+      "upstreamModelSha256": "b04c286b8beca98c148aeb5aa57e0849b84b59d9542c3f8ddc15cf22faf1c2b4",
+      "researchModelSha256": "2cd58110fdfb68dcf0827632b90aefaf086d16c5a468fb4e1842ba88006eb49e",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "formal_top_hat",
+      "sourceIds": [
+        "hats_more_hats"
+      ],
+      "geometry": "derived",
+      "modifications": "Unchanged cuboid geometry, face UV coordinates, and PNG pixels. Texture resource locations remapped to noqui. Modern minecraft:model item definition added. Blockbench editor metadata removed. Initial display.fixed attachment transform added. No in-game fitting performed. Original source: https://modrinth.com/resourcepack/more-hats; version BQKrVC7s. Integration removes 28 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated. Software model/mannequin review retained the source-derived head pose after checking crown/brim placement, face coverage and front orientation.",
+      "modelSha256": "3a1dbabaea2e23a4bafce606d11a2720847f95d95a6bf67e3b980758d5aea05d",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/6eb770869f09ee58c9ae.png"
+      ],
+      "upstreamModelSha256": "119538bc61df96535d1c37a4b08c122145b52aba9de406b4b64fc9dfe655855c",
+      "researchModelSha256": "edfd67d8f3350febd12c2e14dd726b1b98fe38f75a79e4d51712e048c62c7e4a",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "winter_pom_hat",
+      "sourceIds": [
+        "hats_more_hats"
+      ],
+      "geometry": "derived",
+      "modifications": "Unchanged cuboid geometry, face UV coordinates, and PNG pixels. Texture resource locations remapped to noqui. Modern minecraft:model item definition added. Blockbench editor metadata removed. Initial display.fixed attachment transform added. No in-game fitting performed. Original source: https://modrinth.com/resourcepack/more-hats; version BQKrVC7s. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated. Software model/mannequin review retained the source-derived head pose after checking crown/brim placement, face coverage and front orientation.",
+      "modelSha256": "38c8039b4b5af2ba4ed4d0fefa9f814a2cfe27da9d79d6ea6cab5d7cc3b4032f",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/c1625fc4e3d738b40637.png"
+      ],
+      "upstreamModelSha256": "5c505b98849cb8c3cdda73a5c626f42f1c4d14d26711de5056d02d7623a42404",
+      "researchModelSha256": "328c2d68dbf86433a87863bf216df28fb72abb9183c31660a175ada871ae1a4d",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "jester_cap",
+      "sourceIds": [
+        "hats_more_hats"
+      ],
+      "geometry": "derived",
+      "modifications": "Unchanged cuboid geometry, face UV coordinates, and PNG pixels. Texture resource locations remapped to noqui. Modern minecraft:model item definition added. Blockbench editor metadata removed. Initial display.fixed attachment transform added. No in-game fitting performed. Original source: https://modrinth.com/resourcepack/more-hats; version BQKrVC7s. Integration removes 16 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated. Software model/mannequin review retained the source-derived head pose after checking crown/brim placement, face coverage and front orientation.",
+      "modelSha256": "29d92c9f2855466e224b17b83b4ca1a5c23b5803830ef245abd453c18b6a7eec",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/79e9419953b1ae0d0e66.png"
+      ],
+      "upstreamModelSha256": "c398f3420b2ef9d9f5653f7888429a63bc439c631e1e53ca2e7ebcf2655af5c7",
+      "researchModelSha256": "4cbb108ea774f80f79b80be34594d2a3d5a45abd845483d9dbce8fecd0b37778",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "miner_lamp_helmet",
+      "sourceIds": [
+        "hats_more_hats"
+      ],
+      "geometry": "derived",
+      "modifications": "Unchanged cuboid geometry, face UV coordinates, and PNG pixels. Texture resource locations remapped to noqui. Modern minecraft:model item definition added. Blockbench editor metadata removed. Initial display.fixed attachment transform added. No in-game fitting performed. Original source: https://modrinth.com/resourcepack/more-hats; version BQKrVC7s. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated. Software model/mannequin review retained the source-derived head pose after checking crown/brim placement, face coverage and front orientation.",
+      "modelSha256": "e6c7506b893001a79eca1f59392bd13b3848ede5fec74073dba49a057310617a",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/b518fc4f61439d7b3de4.png"
+      ],
+      "upstreamModelSha256": "e7266d08a34a8c5a1fe16bc25f3920873eb0a154348688e7ffd0385a6e28568d",
+      "researchModelSha256": "d676cb9c1d985b703c3c68f952eead0e54e2a5d2406958a0847a70ed94f8b0ec",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "queen_crest_crown",
+      "sourceIds": [
+        "hats_more_hats"
+      ],
+      "geometry": "derived",
+      "modifications": "Unchanged cuboid geometry, face UV coordinates, and PNG pixels. Texture resource locations remapped to noqui. Modern minecraft:model item definition added. Blockbench editor metadata removed. Initial display.fixed attachment transform added. No in-game fitting performed. Original source: https://modrinth.com/resourcepack/more-hats; version BQKrVC7s. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated. Software model/mannequin review retained the source-derived head pose after checking crown/brim placement, face coverage and front orientation.",
+      "modelSha256": "2cdd651ff0470c614df6da6c19e443e5322a7af6db54749481226a311d6f83a5",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/1a2e5d32e81324bca391.png"
+      ],
+      "upstreamModelSha256": "4964ce5234d2fbc9663a430f06787b09f723c79e7ed49b2ee1907ad963d1b340",
+      "researchModelSha256": "d7fb6bf5eb6e9567fafa7678d8e17775ea619bf6ab93ad19a20e2bfff804abcc",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "wide_sombrero",
+      "sourceIds": [
+        "hats_more_hats"
+      ],
+      "geometry": "derived",
+      "modifications": "Unchanged cuboid geometry, face UV coordinates, and PNG pixels. Texture resource locations remapped to noqui. Modern minecraft:model item definition added. Blockbench editor metadata removed. Initial display.fixed attachment transform added. No in-game fitting performed. Original source: https://modrinth.com/resourcepack/more-hats; version BQKrVC7s. Integration removes 20 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated. Software model/mannequin review retained the source-derived head pose after checking crown/brim placement, face coverage and front orientation.",
+      "modelSha256": "d117acc5ca50cad14d4e31413df5278683e7afc0c7913500dd734e60d4413a36",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/362a152517f0617a1029.png"
+      ],
+      "upstreamModelSha256": "c81dc2e511ee04192191f6c0677e5816eb4255442010dbacf50d82654536c0fd",
+      "researchModelSha256": "08a17993d3fce1ecec3545f76da917b2fa44daa818fc14287cbc023a139c49bc",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "straw_boater",
+      "sourceIds": [
+        "hats_more_hats"
+      ],
+      "geometry": "derived",
+      "modifications": "Unchanged cuboid geometry, face UV coordinates, and PNG pixels. Texture resource locations remapped to noqui. Modern minecraft:model item definition added. Blockbench editor metadata removed. Initial display.fixed attachment transform added. No in-game fitting performed. Original source: https://modrinth.com/resourcepack/more-hats; version BQKrVC7s. Integration removes 12 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated. Software model/mannequin review retained the source-derived head pose after checking crown/brim placement, face coverage and front orientation.",
+      "modelSha256": "7fdeb0c4dc5bd9df58f0c0df918c3e9b8accc862208ec0e0ee688a333b44c921",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/6dfa052bcf2abdd28be7.png"
+      ],
+      "upstreamModelSha256": "eae1f25b75bac48dfac88114cd871d5fd2084bc2ce8f1bd8e7ad7c41de35687c",
+      "researchModelSha256": "4d9579e56d5e9ada62e99a7562786bfb18b5b888fc7a63869e7893ee51e07219",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "graduation_mortarboard",
+      "sourceIds": [
+        "hats_osmetic_hats_pack"
+      ],
+      "geometry": "derived",
+      "modifications": "Unchanged cuboid geometry, face UV coordinates, and PNG pixels. Texture resource locations remapped to noqui. Modern minecraft:model item definition added. Blockbench editor metadata removed. Initial display.fixed attachment transform added. No in-game fitting performed. Original source: https://modrinth.com/resourcepack/osmetic-hats-pack; version xtMrTr8T. Integration removes 8 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated. Software model/mannequin review retained the source-derived head pose after checking crown/brim placement, face coverage and front orientation.",
+      "modelSha256": "73a875e662aad3ebc56d6bc8638dd8865681f1fdcc25779698b604fcafaff6f1",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/49494164aeaccbc3f784.png"
+      ],
+      "upstreamModelSha256": "0fbd391e36e47b929f354cd68425d486d9bd8ca1acf1c7ab791a90fb3eec1a24",
+      "researchModelSha256": "fabbd6f919da039f72eeb3585a4780b423f3d7fd6e812f05bcd73dcde5cff1f4",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "brass_diver_helmet",
+      "sourceIds": [
+        "hats_osmetic_hats_pack"
+      ],
+      "geometry": "derived",
+      "modifications": "Unchanged cuboid geometry, face UV coordinates, and PNG pixels. Texture resource locations remapped to noqui. Modern minecraft:model item definition added. Blockbench editor metadata removed. Initial display.fixed attachment transform added. No in-game fitting performed. Original source: https://modrinth.com/resourcepack/osmetic-hats-pack; version xtMrTr8T. Integration removes 41 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated. Software model/mannequin review retained the source-derived head pose after checking crown/brim placement, face coverage and front orientation.",
+      "modelSha256": "3f33cab513dd5546bc9a5f215515224277f336168e5e2d9657dcf75069e22d17",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/9a243f2241603c2e0ce0.png"
+      ],
+      "upstreamModelSha256": "6e2b2e66cc3c1c2fd46622085be4edb0dbfe5c27d359b084577558aa4ab8820b",
+      "researchModelSha256": "6aab4461452666a6eb4fc08e289f098b826cb5a9451d636a5def0d900f9d5672",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "ushanka_hat",
+      "sourceIds": [
+        "hats_osmetic_hats_pack"
+      ],
+      "geometry": "derived",
+      "modifications": "Unchanged cuboid geometry, face UV coordinates, and PNG pixels. Texture resource locations remapped to noqui. Modern minecraft:model item definition added. Blockbench editor metadata removed. Initial display.fixed attachment transform added. No in-game fitting performed. Original source: https://modrinth.com/resourcepack/osmetic-hats-pack; version xtMrTr8T. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated. Software model/mannequin review retained the source-derived head pose after checking crown/brim placement, face coverage and front orientation.",
+      "modelSha256": "0e5a4bc6ca19a3426adab5f8a46061cc381dc4b7d0ab327c9bd0de0a51835911",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/ecb77e319ddbc81c4142.png"
+      ],
+      "upstreamModelSha256": "660e7690bcd1b0c805a3066d7f30ee72a116d81e26f4f1211b2a2978743caedf",
+      "researchModelSha256": "102f821db7fc653747686b8f84408a23e75d5745effb17b3d89ea6b4c5fd124b",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "samurai_kabuto",
+      "sourceIds": [
+        "hats_osmetic_hats_pack"
+      ],
+      "geometry": "derived",
+      "modifications": "Unchanged cuboid geometry, face UV coordinates, and PNG pixels. Texture resource locations remapped to noqui. Modern minecraft:model item definition added. Blockbench editor metadata removed. Initial display.fixed attachment transform added. No in-game fitting performed. Original source: https://modrinth.com/resourcepack/osmetic-hats-pack; version xtMrTr8T. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated. Software model/mannequin review retained the source-derived head pose after checking crown/brim placement, face coverage and front orientation.",
+      "modelSha256": "e5933da457c9f6e69b69854d8b3d5854709c94296be7810126563049278f75a7",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/ac1e7a590ffbd4b968e1.png"
+      ],
+      "upstreamModelSha256": "e2989c84f1e9d7c05aa712641cd1eff2f2ff6060bbb90e3c26fe9a1f9ed8e1a5",
+      "researchModelSha256": "eeb8d39d9f106a8c3662c067b3e6b7145c12ebe6f321e5b8eec07872ccf94105",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "witch_cone_hat",
+      "sourceIds": [
+        "hats_osmetic_hats_pack"
+      ],
+      "geometry": "derived",
+      "modifications": "Unchanged cuboid geometry, face UV coordinates, and PNG pixels. Texture resource locations remapped to noqui. Modern minecraft:model item definition added. Blockbench editor metadata removed. Initial display.fixed attachment transform added. No in-game fitting performed. Original source: https://modrinth.com/resourcepack/osmetic-hats-pack; version xtMrTr8T. Integration removes 5 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated. Software model/mannequin review retained the source-derived head pose after checking crown/brim placement, face coverage and front orientation.",
+      "modelSha256": "6b9aebe620cfd7c352d8bea2a73a36ce180fd4a290804627a3de3acb35da4282",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/f50d67c63c90dea2298c.png"
+      ],
+      "upstreamModelSha256": "8e91671b89d7a34aed8ed1d5724c19de6d450fcf568e45758256dcb4cdcf2f08",
+      "researchModelSha256": "622e574c21855deb9b8b5c42658adc973d1e48371108b9cd4508c87c5690e6eb",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "steampunk_courier_cap",
+      "sourceIds": [
+        "hats_osmetic_hats_pack"
+      ],
+      "geometry": "derived",
+      "modifications": "Unchanged cuboid geometry, face UV coordinates, and PNG pixels. Texture resource locations remapped to noqui. Modern minecraft:model item definition added. Blockbench editor metadata removed. Initial display.fixed attachment transform added. No in-game fitting performed. Original source: https://modrinth.com/resourcepack/osmetic-hats-pack; version xtMrTr8T. Integration removes 12 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated. Software model/mannequin review retained the source-derived head pose after checking crown/brim placement, face coverage and front orientation.",
+      "modelSha256": "5ca1dd8eabe2c1e7b3bd45a9eebfdb39cee5ea404b2f229423a008a0b46db40e",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/5dd3fc91841c7d58d92e.png"
+      ],
+      "upstreamModelSha256": "f2158b1152bc82e605d925376809a53aa816d27ec13568f1cf0df6803a698ddd",
+      "researchModelSha256": "5ccd5feddc1e0226cecd0f28d5c9307e8251eb98a41a5396f4a1ce866128909b",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "ornamental_tiara",
+      "sourceIds": [
+        "hats_osmetic_hats_pack"
+      ],
+      "geometry": "derived",
+      "modifications": "Unchanged cuboid geometry, face UV coordinates, and PNG pixels. Texture resource locations remapped to noqui. Modern minecraft:model item definition added. Blockbench editor metadata removed. Initial display.fixed attachment transform added. No in-game fitting performed. Original source: https://modrinth.com/resourcepack/osmetic-hats-pack; version xtMrTr8T. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated. Software model/mannequin review retained the source-derived head pose after checking crown/brim placement, face coverage and front orientation.",
+      "modelSha256": "bc6d7ade8df4bd5b441b2a7c24bcbea4c80b04fab0581b5a14b9f9c4a6c69457",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/7da5ab3acd615e5669d8.png"
+      ],
+      "upstreamModelSha256": "0a35d9326aca7d5e74fec41ebd3afb71e8c96f6df6cc989acb3ef2a0d8e50681",
+      "researchModelSha256": "85c8c6fd91a29e0031f082f1c582dce5960eafa192a1728d751dd06a6481a6ac",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "bucket_hat",
+      "sourceIds": [
+        "hats_osmetic_hats_pack"
+      ],
+      "geometry": "derived",
+      "modifications": "Unchanged cuboid geometry, face UV coordinates, and PNG pixels. Texture resource locations remapped to noqui. Modern minecraft:model item definition added. Blockbench editor metadata removed. Initial display.fixed attachment transform added. No in-game fitting performed. Original source: https://modrinth.com/resourcepack/osmetic-hats-pack; version xtMrTr8T. Integration removes 16 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated. Software model/mannequin review retained the source-derived head pose after checking crown/brim placement, face coverage and front orientation.",
+      "modelSha256": "2044ebd07d49cf15948949ad60e3736e8198ce276414172745f691bf49f9b7f8",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/a8e73f84d9b03961589a.png"
+      ],
+      "upstreamModelSha256": "36a7ca58b6919991f29fa8420d453f31e3b4ab6b85b33f4a0ab6832e69bcbd1c",
+      "researchModelSha256": "5991b760c0be98d3fea9bb6b07e500fd844a717698bf4dc438d4b30b609ce367",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "santa_fold_hat",
+      "sourceIds": [
+        "hats_osmetic_hats_pack"
+      ],
+      "geometry": "derived",
+      "modifications": "Unchanged cuboid geometry, face UV coordinates, and PNG pixels. Texture resource locations remapped to noqui. Modern minecraft:model item definition added. Blockbench editor metadata removed. Initial display.fixed attachment transform added. No in-game fitting performed. Original source: https://modrinth.com/resourcepack/osmetic-hats-pack; version xtMrTr8T. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated. Software model/mannequin review retained the source-derived head pose after checking crown/brim placement, face coverage and front orientation.",
+      "modelSha256": "267ed354cbd7fe64d468c203f526ccb9c27fbccdbe9e67357d786e2ce121eefd",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/c7f46e323c2e55eaa25c.png"
+      ],
+      "upstreamModelSha256": "bd8a0e2a0ced12ff6ded2c3626ce49f283caa1ac9e4855f06813e30d7d8723f0",
+      "researchModelSha256": "40f57c7df8be797b5a16f4b2189bdd9bf3760057c0c3807d581b53e629855969",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "face_uwu_choker",
+      "sourceIds": [
+        "faces_fashion_mit"
+      ],
+      "geometry": "derived",
+      "modifications": "Static native conversion of 8 upstream source cuboids for the face cosmetic 'face_uwu_choker': source cuboid rotations and per-face UV fractions retained, PNG pixels unchanged, Blockbench editor metadata removed, texture references remapped into the noqui item atlas, content-deduplicated sprites shared inside the pack, explicit display.fixed transform added. Upstream: https://github.com/eliasnvx/femboy-mod/blob/1e2f8d91881ca8ee6edacc206072f5ed72aa38b3/art/blockbench/uwu_choker/uwu_choker.geo.json. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "c96abafd1f592224412160b7604b10bd296e8e3bde6aa32638c3bb62a642099f",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/ea03b08bf44e0665e684.png"
+      ],
+      "upstreamModelSha256": "d7a2c7d1e2665cad71e3dc5e7c78b0641291fb8de3e216a46d6cdb3da366c32a",
+      "researchModelSha256": "06592ad641fe61e3cbbb69c220488ebc749496c9c3437734bbab32e764b19219",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime face y=1.62, forward 0.28, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "face_heart_glasses",
+      "sourceIds": [
+        "faces_fashion_mit"
+      ],
+      "geometry": "derived",
+      "modifications": "Static native conversion of 15 upstream source cuboids for the face cosmetic 'face_heart_glasses': source cuboid rotations and per-face UV fractions retained, PNG pixels unchanged, Blockbench editor metadata removed, texture references remapped into the noqui item atlas, content-deduplicated sprites shared inside the pack, explicit display.fixed transform added. Upstream: https://github.com/eliasnvx/femboy-mod/blob/1e2f8d91881ca8ee6edacc206072f5ed72aa38b3/common/src/main/java/dev/eliasnvx/femboymod/client/render/model/CosmeticModels.java#L979. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "cd07f51d81d9dcef016403ec9c13c6cac8b23c7d6e9d4e165c1874a93abefbfe",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/2080586e2d25aa646df0.png",
+        "assets/noqui/textures/item/shared/a824ce5b35ee9fffe3e3.png"
+      ],
+      "upstreamModelSha256": "17754f9d8d1b07671ab7520a2075b1bbe8e5c225e24d553a78d6150d2e858762",
+      "researchModelSha256": "b073791afd8bcec4351559f6be5cea2772e7613f5b79e08aa1e96a54766887f4",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime face y=1.62, forward 0.28, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "face_dark_shades",
+      "sourceIds": [
+        "faces_fashion_mit"
+      ],
+      "geometry": "derived",
+      "modifications": "Static native conversion of 18 upstream source cuboids for the face cosmetic 'face_dark_shades': source cuboid rotations and per-face UV fractions retained, PNG pixels unchanged, Blockbench editor metadata removed, texture references remapped into the noqui item atlas, content-deduplicated sprites shared inside the pack, explicit display.fixed transform added. Upstream: https://github.com/eliasnvx/femboy-mod/blob/1e2f8d91881ca8ee6edacc206072f5ed72aa38b3/common/src/main/java/dev/eliasnvx/femboymod/client/render/model/CosmeticModels.java#L1093. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "22b4ed925cbff21e1bccdb303d108ade24f0224871244eb474c0a7f3d5c57df3",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/2406ec4e4d58ed2d1e50.png",
+        "assets/noqui/textures/item/shared/53fb495ccd3ef2847174.png",
+        "assets/noqui/textures/item/shared/70f80522436c8a6441b9.png"
+      ],
+      "upstreamModelSha256": "17754f9d8d1b07671ab7520a2075b1bbe8e5c225e24d553a78d6150d2e858762",
+      "researchModelSha256": "ecdc012c80e551d3d1a2261dd4d23eaafb53fc7d4f58b28a6495ca232865dd49",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime face y=1.62, forward 0.28, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "face_cyber_visor",
+      "sourceIds": [
+        "faces_fashion_mit"
+      ],
+      "geometry": "derived",
+      "modifications": "Static native conversion of 7 upstream source cuboids for the face cosmetic 'face_cyber_visor': source cuboid rotations and per-face UV fractions retained, PNG pixels unchanged, Blockbench editor metadata removed, texture references remapped into the noqui item atlas, content-deduplicated sprites shared inside the pack, explicit display.fixed transform added. Upstream: https://github.com/eliasnvx/femboy-mod/blob/1e2f8d91881ca8ee6edacc206072f5ed72aa38b3/common/src/main/java/dev/eliasnvx/femboymod/client/render/model/CosmeticModels.java#L1114. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "a186872bf7d7bd03c6f35c9d51621dd6e9f9271860c8077094ccff08dbbc7ba3",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/2406ec4e4d58ed2d1e50.png",
+        "assets/noqui/textures/item/shared/be1dee88d49ad5d65968.png",
+        "assets/noqui/textures/item/shared/d717c62fb2b11ce856d3.png"
+      ],
+      "upstreamModelSha256": "17754f9d8d1b07671ab7520a2075b1bbe8e5c225e24d553a78d6150d2e858762",
+      "researchModelSha256": "cd8567f593130bf3690c1b71c08537be000e45c351a495d2d2934863346b6810",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime face y=1.62, forward 0.28, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "face_moonstone_pendant",
+      "sourceIds": [
+        "faces_fashion_mit"
+      ],
+      "geometry": "derived",
+      "modifications": "Static native conversion of 7 upstream source cuboids for the face cosmetic 'face_moonstone_pendant': source cuboid rotations and per-face UV fractions retained, PNG pixels unchanged, Blockbench editor metadata removed, texture references remapped into the noqui item atlas, content-deduplicated sprites shared inside the pack, explicit display.fixed transform added. Upstream: https://github.com/eliasnvx/femboy-mod/blob/1e2f8d91881ca8ee6edacc206072f5ed72aa38b3/common/src/main/java/dev/eliasnvx/femboymod/client/render/model/CosmeticModels.java#L1079. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "2d8f34a29c158bb35a67634c26dab496bc0bf751acec582d7668510f414e31e9",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/9356c51152ec362b8918.png",
+        "assets/noqui/textures/item/shared/a81081392baeaaa30b43.png",
+        "assets/noqui/textures/item/shared/ea670e12352dbd6a2e26.png"
+      ],
+      "upstreamModelSha256": "17754f9d8d1b07671ab7520a2075b1bbe8e5c225e24d553a78d6150d2e858762",
+      "researchModelSha256": "92ba069ee388e70dd703834449c5b7f10f4845520650d0e325503f5f9aa8157d",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime face y=1.62, forward 0.28, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "face_cat_ear_headphones",
+      "sourceIds": [
+        "faces_fashion_mit"
+      ],
+      "geometry": "derived",
+      "modifications": "Static native conversion of 38 upstream source cuboids for the head cosmetic 'face_cat_ear_headphones': source cuboid rotations and per-face UV fractions retained, PNG pixels unchanged, Blockbench editor metadata removed, texture references remapped into the noqui item atlas, content-deduplicated sprites shared inside the pack, explicit display.fixed transform added. Upstream: https://github.com/eliasnvx/femboy-mod/blob/1e2f8d91881ca8ee6edacc206072f5ed72aa38b3/common/src/main/java/dev/eliasnvx/femboymod/client/render/model/CosmeticModels.java#L936. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "d2b48f02994445888569f9145e453910db412b4acea12885dce48589dd7ecab0",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/703ac5c36a7305c44b34.png",
+        "assets/noqui/textures/item/shared/a3e70d1f7e1669900d49.png",
+        "assets/noqui/textures/item/shared/d717c62fb2b11ce856d3.png",
+        "assets/noqui/textures/item/shared/d81e05957d74ba38502b.png"
+      ],
+      "upstreamModelSha256": "17754f9d8d1b07671ab7520a2075b1bbe8e5c225e24d553a78d6150d2e858762",
+      "researchModelSha256": "7d16510059b16a1ffad39a64209f8a8423613ff848dfbd3d9231a10fb65f41ce",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "face_hair_clip_bow",
+      "sourceIds": [
+        "faces_fashion_mit"
+      ],
+      "geometry": "derived",
+      "modifications": "Static native conversion of 31 upstream source cuboids for the head cosmetic 'face_hair_clip_bow': source cuboid rotations and per-face UV fractions retained, PNG pixels unchanged, Blockbench editor metadata removed, texture references remapped into the noqui item atlas, content-deduplicated sprites shared inside the pack, explicit display.fixed transform added. Upstream: https://github.com/eliasnvx/femboy-mod/blob/1e2f8d91881ca8ee6edacc206072f5ed72aa38b3/art/blockbench/hair_clip_bow/hair_clip_bow.geo.json. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "5720fc5f9d39ba16084c3003af3238d0e86ec4852334abc93271d13a832115e5",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/160687e747d8258d2e3a.png"
+      ],
+      "upstreamModelSha256": "571e49ab70978f5e16d7991e4c91f456cad4a602eb7c00dde0775c7e03a224db",
+      "researchModelSha256": "8980f7236a68f7a7e8b2a3d0ffc6f68562c026fe4ad964160d431de53d178a79",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "face_hair_clip_butterfly",
+      "sourceIds": [
+        "faces_fashion_mit"
+      ],
+      "geometry": "derived",
+      "modifications": "Static native conversion of 34 upstream source cuboids for the head cosmetic 'face_hair_clip_butterfly': source cuboid rotations and per-face UV fractions retained, PNG pixels unchanged, Blockbench editor metadata removed, texture references remapped into the noqui item atlas, content-deduplicated sprites shared inside the pack, explicit display.fixed transform added. Upstream: https://github.com/eliasnvx/femboy-mod/blob/1e2f8d91881ca8ee6edacc206072f5ed72aa38b3/art/blockbench/hair_clip_butterfly/hair_clip_butterfly.geo.json. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "bd4092668c154ed06bdb8e4e48e7fe189c28304951d6fc54a509a73c32744da3",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/160687e747d8258d2e3a.png"
+      ],
+      "upstreamModelSha256": "6c1afdf71f328464d5d7a2a4bde3eb181f8e8442bcf8801fad85698d1f5c4b32",
+      "researchModelSha256": "5a16eb40d85d535808541eada6fa3e687a6d15ea21b99b47f4b9c7da80fc91e2",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "face_hair_clip_cherry",
+      "sourceIds": [
+        "faces_fashion_mit"
+      ],
+      "geometry": "derived",
+      "modifications": "Static native conversion of 28 upstream source cuboids for the head cosmetic 'face_hair_clip_cherry': source cuboid rotations and per-face UV fractions retained, PNG pixels unchanged, Blockbench editor metadata removed, texture references remapped into the noqui item atlas, content-deduplicated sprites shared inside the pack, explicit display.fixed transform added. Upstream: https://github.com/eliasnvx/femboy-mod/blob/1e2f8d91881ca8ee6edacc206072f5ed72aa38b3/art/blockbench/hair_clip_cherry/hair_clip_cherry.geo.json. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "6a078ea2ca0fbe9b45883d5aa96ab19ffbbf2451bf0d9982100100df48909278",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/160687e747d8258d2e3a.png"
+      ],
+      "upstreamModelSha256": "fc63cd0f1b94dbc72e41407a51740ffebf95731f8e7c0253f975841de08e3c83",
+      "researchModelSha256": "54e17a6bc260bb2480e327fdbd6d8fc327baf628cb33dbc661f3f62cbbc236e7",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "face_hair_clip_flower",
+      "sourceIds": [
+        "faces_fashion_mit"
+      ],
+      "geometry": "derived",
+      "modifications": "Static native conversion of 28 upstream source cuboids for the head cosmetic 'face_hair_clip_flower': source cuboid rotations and per-face UV fractions retained, PNG pixels unchanged, Blockbench editor metadata removed, texture references remapped into the noqui item atlas, content-deduplicated sprites shared inside the pack, explicit display.fixed transform added. Upstream: https://github.com/eliasnvx/femboy-mod/blob/1e2f8d91881ca8ee6edacc206072f5ed72aa38b3/art/blockbench/hair_clip_flower/hair_clip_flower.geo.json. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "fe8df6d2783c226eaa11dee9342af665d9875796e2516a6c7780b0f2be305527",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/160687e747d8258d2e3a.png"
+      ],
+      "upstreamModelSha256": "712f6b8e9b290da0ada0f5f23875c0e0ec4172b9688bad289f80aa68539c11b3",
+      "researchModelSha256": "2298708f025a2fd3895fde6d3240fd4cbf22855dcb901b3261960b797f277fb3",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "face_rose_quartz_earrings",
+      "sourceIds": [
+        "faces_fashion_mit"
+      ],
+      "geometry": "derived",
+      "modifications": "Static native conversion of 8 upstream source cuboids for the head cosmetic 'face_rose_quartz_earrings': source cuboid rotations and per-face UV fractions retained, PNG pixels unchanged, Blockbench editor metadata removed, texture references remapped into the noqui item atlas, content-deduplicated sprites shared inside the pack, explicit display.fixed transform added. Upstream: https://github.com/eliasnvx/femboy-mod/blob/1e2f8d91881ca8ee6edacc206072f5ed72aa38b3/common/src/main/java/dev/eliasnvx/femboymod/client/render/model/CosmeticModels.java#L1128. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "f8f19b908c69fe444836ba158a04a75f957aa4f54df86c6b7a74241c5f6aecab",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/a81081392baeaaa30b43.png",
+        "assets/noqui/textures/item/shared/d958a036c7a70f798766.png",
+        "assets/noqui/textures/item/shared/f6953d0d991562617be9.png"
+      ],
+      "upstreamModelSha256": "17754f9d8d1b07671ab7520a2075b1bbe8e5c225e24d553a78d6150d2e858762",
+      "researchModelSha256": "fc22313d73ca1972b9bc0d2c1aa3ad941284c2e40b6ec6fc136f2bd1631989d7",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "face_cat_ears",
+      "sourceIds": [
+        "faces_fashion_mit"
+      ],
+      "geometry": "derived",
+      "modifications": "Static native conversion of 97 upstream source cuboids for the head cosmetic 'face_cat_ears': source cuboid rotations and per-face UV fractions retained, PNG pixels unchanged, Blockbench editor metadata removed, texture references remapped into the noqui item atlas, content-deduplicated sprites shared inside the pack, explicit display.fixed transform added. Upstream: https://github.com/eliasnvx/femboy-mod/blob/1e2f8d91881ca8ee6edacc206072f5ed72aa38b3/art/blockbench/cat_ears/cat_ears.geo.json. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "e94a70465f60456672a42f6f11f5abcfa452a4f080212971629d2ce5e74b0292",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/7923feff951e1f916c28.png"
+      ],
+      "upstreamModelSha256": "3231ab6c2057f96c6ff85e6b75f4000c0f63f5f179c9e8116131ba828b3e0b18",
+      "researchModelSha256": "867b29fe3ee0b69324e9938e230983e39f48e5990cc609b368c06605e5a5a659",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "face_fox_ears",
+      "sourceIds": [
+        "faces_fashion_mit"
+      ],
+      "geometry": "derived",
+      "modifications": "Static native conversion of 111 upstream source cuboids for the head cosmetic 'face_fox_ears': source cuboid rotations and per-face UV fractions retained, PNG pixels unchanged, Blockbench editor metadata removed, texture references remapped into the noqui item atlas, content-deduplicated sprites shared inside the pack, explicit display.fixed transform added. Upstream: https://github.com/eliasnvx/femboy-mod/blob/1e2f8d91881ca8ee6edacc206072f5ed72aa38b3/art/blockbench/fox_ears/fox_ears.geo.json. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "d78a0d23acc6c4696dbbb138a9544e32d1dd961f8f8710a2b54d3571dc0d708d",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/f269ce45925334dc562e.png"
+      ],
+      "upstreamModelSha256": "8e1fcd6ae59a51eed650a7d1e476d71062bd37e65783eaaedc5e282b89ddba76",
+      "researchModelSha256": "63d56cad2dc00d1cb8ac3d3fcabcfdc6257b0443f854dfe874b8bebc08ebf246",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "face_bear_ears",
+      "sourceIds": [
+        "faces_fashion_mit"
+      ],
+      "geometry": "derived",
+      "modifications": "Static native conversion of 51 upstream source cuboids for the head cosmetic 'face_bear_ears': source cuboid rotations and per-face UV fractions retained, PNG pixels unchanged, Blockbench editor metadata removed, texture references remapped into the noqui item atlas, content-deduplicated sprites shared inside the pack, explicit display.fixed transform added. Upstream: https://github.com/eliasnvx/femboy-mod/blob/1e2f8d91881ca8ee6edacc206072f5ed72aa38b3/art/blockbench/bear_ears/bear_ears.geo.json. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "fa9af6e9a8a26e33c85016dd1eeb26244d4aa6518465faccf267281d93a4fa7d",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/921c4839fa8d02542df8.png"
+      ],
+      "upstreamModelSha256": "1a45aaaf84610173401ccd386cc9fb3b6df4b3ab17f35caeb49a817e9fe35879",
+      "researchModelSha256": "ec2445e06d88bbbc11a991cc757cbc173886b54763b78f3b3a11dc5e3db4719f",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "face_wolf_ears",
+      "sourceIds": [
+        "faces_fashion_mit"
+      ],
+      "geometry": "derived",
+      "modifications": "Static native conversion of 95 upstream source cuboids for the head cosmetic 'face_wolf_ears': source cuboid rotations and per-face UV fractions retained, PNG pixels unchanged, Blockbench editor metadata removed, texture references remapped into the noqui item atlas, content-deduplicated sprites shared inside the pack, explicit display.fixed transform added. Upstream: https://github.com/eliasnvx/femboy-mod/blob/1e2f8d91881ca8ee6edacc206072f5ed72aa38b3/art/blockbench/wolf_ears/wolf_ears.geo.json. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "2a97547c225b4236dff09f21fd0f451f7e0ad36864eeb32894989b2c48e268f5",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/b23a9f9c585d666ace06.png"
+      ],
+      "upstreamModelSha256": "91ae711bd2bbbee9af5b08a073625dc14ae51daecc5e67e66d54f60f52ef9cad",
+      "researchModelSha256": "9a19e27bd61e2b15d017eb36b2fc76224843e5d1ba0f64b2a65eae34cf769c9b",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "face_night_vision_goggles",
+      "sourceIds": [
+        "faces_artifacts_mit"
+      ],
+      "geometry": "derived",
+      "modifications": "Static native conversion of 4 upstream source cuboids for the face cosmetic 'face_night_vision_goggles': source cuboid rotations and per-face UV fractions retained, PNG pixels unchanged, Blockbench editor metadata removed, texture references remapped into the noqui item atlas, content-deduplicated sprites shared inside the pack, explicit display.fixed transform added. Upstream: https://github.com/ochotonida/artifacts/blob/4b67278df94e4d3669119f1abb24a1c3a758afe1/common/src/main/java/artifacts/client/item/mesh/HeadMeshDefinitions.java. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "6500b314f92d275e1d7a05980c3cec1c97b9043085f3dc8a81ce5f3b9a2d88a6",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/9eec226dd256eb433f06.png"
+      ],
+      "upstreamModelSha256": "8a5d601dd2ca0b58d1486a98f9f2154699a19468d8953effb8c3eafd97fdc4e3",
+      "researchModelSha256": "2202fa1032f7e3d0c05ea3622d58c9a3848765c6a1e3d780af25553a8823c7b0",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime face y=1.62, forward 0.28, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "face_snorkel",
+      "sourceIds": [
+        "faces_artifacts_mit"
+      ],
+      "geometry": "derived",
+      "modifications": "Static native conversion of 3 upstream source cuboids for the face cosmetic 'face_snorkel': source cuboid rotations and per-face UV fractions retained, PNG pixels unchanged, Blockbench editor metadata removed, texture references remapped into the noqui item atlas, content-deduplicated sprites shared inside the pack, explicit display.fixed transform added. Upstream: https://github.com/ochotonida/artifacts/blob/4b67278df94e4d3669119f1abb24a1c3a758afe1/common/src/main/java/artifacts/client/item/mesh/HeadMeshDefinitions.java. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "99a1ac92f2fee785ea52d66813271716434fe9546ee78e6779e1f784e756661c",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/8e3b5198540e320a6d13.png"
+      ],
+      "upstreamModelSha256": "8a5d601dd2ca0b58d1486a98f9f2154699a19468d8953effb8c3eafd97fdc4e3",
+      "researchModelSha256": "f98b6fffee86b4ebe4e6e90d6a681cdad15afee8feaf37b690f1c409e40bbe91",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime face y=1.62, forward 0.28, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "face_lucky_scarf",
+      "sourceIds": [
+        "faces_artifacts_mit"
+      ],
+      "geometry": "derived",
+      "modifications": "Static native conversion of 2 upstream source cuboids for the face cosmetic 'face_lucky_scarf': source cuboid rotations and per-face UV fractions retained, PNG pixels unchanged, Blockbench editor metadata removed, texture references remapped into the noqui item atlas, content-deduplicated sprites shared inside the pack, explicit display.fixed transform added. Upstream: https://github.com/ochotonida/artifacts/blob/4b67278df94e4d3669119f1abb24a1c3a758afe1/common/src/main/java/artifacts/client/item/mesh/BodyMeshDefinitions.java. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "85b7c1b114f222caa7cd0e6b2b0896f7d86ceee340bcd26603e845c9830f10e3",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/26b21768b1f4816bd05b.png"
+      ],
+      "upstreamModelSha256": "5a6f2ad7abf579881713948b72c7b7ab42160f4cdeb71181b3a0404e57f91e39",
+      "researchModelSha256": "7f2fbf1990d279191c783a5b846850580822c7c58cf13209a1b71372e30d6f30",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime face y=1.62, forward 0.28, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "back_trail_rucksack",
+      "sourceIds": [
+        "backs_loys_goodies"
+      ],
+      "geometry": "derived",
+      "modifications": "Rigid back-slot adaptation of 10 static source cuboids from the pinned upstream model for 'back_trail_rucksack': embedded PNG bytes copied verbatim, per-face UVs and the source display.fixed rotation retained, geometry recentred on [8,8,8] with uniform scale, texture references remapped, and the original held-item transforms replaced for ItemDisplay FIXED. Upstream: https://github.com/SL0ANE/Loy-s-Goodies/blob/afbb7695b09de0ed8ee3aa97732ff7c3d367520c/models/java-model/armor%20%26%20costumes/packs/230516_backpack.bbmodel. Integration removes 8 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "7cd6b26da8e613b5e7225f16c232d867d1f01fdfe87550567a5ea3e95771a80a",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/875a89c22fa6616f729f.png"
+      ],
+      "upstreamModelSha256": "8824028065c3388def555d83d46d7431ba43b39be40408d76b77822c12d0162e",
+      "researchModelSha256": "51d94a029065bc46e036fdb3c06ac22ea42df84345f0488e1ba3e1afd5f40fe6",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime back y=1.1, offset 0.28, scale 0.8, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "back_acoustic_guitar",
+      "sourceIds": [
+        "backs_loys_goodies"
+      ],
+      "geometry": "derived",
+      "modifications": "Rigid back-slot adaptation of 9 static source cuboids from the pinned upstream model for 'back_acoustic_guitar': embedded PNG bytes copied verbatim, per-face UVs and the source display.fixed rotation retained, geometry recentred on [8,8,8] with uniform scale, texture references remapped, and the original held-item transforms replaced for ItemDisplay FIXED. Upstream: https://github.com/SL0ANE/Loy-s-Goodies/blob/afbb7695b09de0ed8ee3aa97732ff7c3d367520c/models/java-model/tools%20%26%20weapons/instruments/220913_guitar.bbmodel. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "642f8d7973a2eb79422934f3d0b8bad3b5f88a56dfb8afaf87fac44f3bcbc67a",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/1b616ff78593dfbbfc14.png"
+      ],
+      "upstreamModelSha256": "d11553144a6cb565a2de9e7972c8530df24073a382ec4ed341fe180176ef7d6c",
+      "researchModelSha256": "9ea28741cd8feeed797934159f1ddaf5faa8299e52789f01adf907d13f9b6270",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime back y=1.1, offset 0.28, scale 0.8, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "back_kite_shield",
+      "sourceIds": [
+        "backs_loys_goodies"
+      ],
+      "geometry": "derived",
+      "modifications": "Rigid back-slot adaptation of 8 static source cuboids from the pinned upstream model for 'back_kite_shield': embedded PNG bytes copied verbatim, per-face UVs and the source display.fixed rotation retained, geometry recentred on [8,8,8] with uniform scale, texture references remapped, and the original held-item transforms replaced for ItemDisplay FIXED. Upstream: https://github.com/SL0ANE/Loy-s-Goodies/blob/afbb7695b09de0ed8ee3aa97732ff7c3d367520c/models/java-model/tools%20%26%20weapons/shields/230419_shield_0_0.bbmodel. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "cd6f903ad53261cddc40339d31440178691b65fa07c69c55f1319fc7e57a6395",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/20d8e9793516fdf6bf0b.png"
+      ],
+      "upstreamModelSha256": "0c8be90d414df5296784adf01433e6b43567392db5f45719f632e191dac45e66",
+      "researchModelSha256": "84fd54a0f8b2e03955d9442bf47c20041858b08b164b3fcd42e841ecc32c8c29",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime back y=1.1, offset 0.28, scale 0.8, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "back_round_shield",
+      "sourceIds": [
+        "backs_loys_goodies"
+      ],
+      "geometry": "derived",
+      "modifications": "Rigid back-slot adaptation of 8 static source cuboids from the pinned upstream model for 'back_round_shield': embedded PNG bytes copied verbatim, per-face UVs and the source display.fixed rotation retained, geometry recentred on [8,8,8] with uniform scale, texture references remapped, and the original held-item transforms replaced for ItemDisplay FIXED. Upstream: https://github.com/SL0ANE/Loy-s-Goodies/blob/afbb7695b09de0ed8ee3aa97732ff7c3d367520c/models/java-model/tools%20%26%20weapons/shields/230618_small_shield.bbmodel. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "bf50db1afae26e6351767380735144e9f9fe7994ee119e8b8b02f19171be0dd2",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/7f23beab9ef9f814e954.png"
+      ],
+      "upstreamModelSha256": "509584d06117ea35a03c39f9c55c6b7108dadc16b1bef681e3c28c99cd66a7c4",
+      "researchModelSha256": "f0e6e12ea4bea2e7df73f074c9d9aeffe845714579d4996f903a26345a16a68d",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime back y=1.1, offset 0.28, scale 0.8, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "back_artist_easel",
+      "sourceIds": [
+        "backs_loys_goodies"
+      ],
+      "geometry": "derived",
+      "modifications": "Rigid back-slot adaptation of 9 static source cuboids from the pinned upstream model for 'back_artist_easel': embedded PNG bytes copied verbatim, per-face UVs and the source display.fixed rotation retained, geometry recentred on [8,8,8] with uniform scale, texture references remapped, and the original held-item transforms replaced for ItemDisplay FIXED. Upstream: https://github.com/SL0ANE/Loy-s-Goodies/blob/afbb7695b09de0ed8ee3aa97732ff7c3d367520c/models/java-model/furniture%20%26%20decoration/230627_easel.bbmodel. Integration removes 10 degenerate UV faces and 1 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "569bdcdd7dbb7ffc47f2d363cf3d6991fc9bb363c0cee65bfe8be562362f451c",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/e5e698997652db19366b.png"
+      ],
+      "upstreamModelSha256": "dc1f0423a7b0fcb13af41e7afcdb303808f039ae17ba5a629cb39cef433ac639",
+      "researchModelSha256": "98212776aa68f334099ef1de4b896d5bbf86088fe51225fa8210efcbec7d73d1",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime back y=1.1, offset 0.28, scale 0.8, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "back_halloween_gravestone",
+      "sourceIds": [
+        "backs_loys_goodies"
+      ],
+      "geometry": "derived",
+      "modifications": "Rigid back-slot adaptation of 8 static source cuboids from the pinned upstream model for 'back_halloween_gravestone': embedded PNG bytes copied verbatim, per-face UVs and the source display.fixed rotation retained, geometry recentred on [8,8,8] with uniform scale, texture references remapped, and the original held-item transforms replaced for ItemDisplay FIXED. Upstream: https://github.com/SL0ANE/Loy-s-Goodies/blob/afbb7695b09de0ed8ee3aa97732ff7c3d367520c/models/java-model/furniture%20%26%20decoration/230728_gravestone.bbmodel. Integration removes 4 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "59fd91d14836555cc472ca7c9db4843e172a58d3768bf7eae8870e41aa23de25",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/fca8c34e442bd50f06d9.png"
+      ],
+      "upstreamModelSha256": "c4917174f6faf15aceeb3b37f3d609254f2e9c94cbcef0b9d12b15fc7355cd5f",
+      "researchModelSha256": "76e5f2ce6419c635ba1525e46eff475d915b30102aabf52278164d1bf111ccfd",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime back y=1.1, offset 0.28, scale 0.8, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "back_cleric_cross",
+      "sourceIds": [
+        "backs_loys_goodies"
+      ],
+      "geometry": "derived",
+      "modifications": "Rigid back-slot adaptation of 8 static source cuboids from the pinned upstream model for 'back_cleric_cross': embedded PNG bytes copied verbatim, per-face UVs and the source display.fixed rotation retained, geometry recentred on [8,8,8] with uniform scale, texture references remapped, and the original held-item transforms replaced for ItemDisplay FIXED. Upstream: https://github.com/SL0ANE/Loy-s-Goodies/blob/afbb7695b09de0ed8ee3aa97732ff7c3d367520c/models/java-model/tools%20%26%20weapons/230418_crux.bbmodel. Integration removes 12 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "8491353cd9edf9264c548b1be486abdd681821a2ea14fa2813a3d96f88513283",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/78f428f5580f9df2de17.png"
+      ],
+      "upstreamModelSha256": "a776bc1d330e202dcc64fbdd25022c86e81baf92019450734d9eda165b00ad61",
+      "researchModelSha256": "c91df50c27358daef26966854e338b78e1d6232f3e84acd3b6831ad8fa10aaf9",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime back y=1.1, offset 0.28, scale 0.8, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "back_double_axe",
+      "sourceIds": [
+        "backs_loys_goodies"
+      ],
+      "geometry": "derived",
+      "modifications": "Rigid back-slot adaptation of 3 static source cuboids from the pinned upstream model for 'back_double_axe': embedded PNG bytes copied verbatim, per-face UVs and the source display.fixed rotation retained, geometry recentred on [8,8,8] with uniform scale, texture references remapped, and the original held-item transforms replaced for ItemDisplay FIXED. Upstream: https://github.com/SL0ANE/Loy-s-Goodies/blob/afbb7695b09de0ed8ee3aa97732ff7c3d367520c/models/java-model/tools%20%26%20weapons/axes/230429_double_axe.bbmodel. Integration removes 4 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "1599caf174b3804457ff235bc7a530fec694a513019c19a2b4739ddac1ec858c",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/3384339f53e6569e7055.png"
+      ],
+      "upstreamModelSha256": "963b7579b745321f36f047aee9eac7da553c39e6c8cb5f5580e92ff5b30ca501",
+      "researchModelSha256": "ae87fed8cce964b06dc06dc10fad350d836acb55b2b71b0a7dde3172edea0e25",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime back y=1.1, offset 0.28, scale 0.8, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "back_smith_hammer",
+      "sourceIds": [
+        "backs_loys_goodies"
+      ],
+      "geometry": "derived",
+      "modifications": "Rigid back-slot adaptation of 4 static source cuboids from the pinned upstream model for 'back_smith_hammer': embedded PNG bytes copied verbatim, per-face UVs and the source display.fixed rotation retained, geometry recentred on [8,8,8] with uniform scale, texture references remapped, and the original held-item transforms replaced for ItemDisplay FIXED. Upstream: https://github.com/SL0ANE/Loy-s-Goodies/blob/afbb7695b09de0ed8ee3aa97732ff7c3d367520c/models/java-model/tools%20%26%20weapons/hammer/230512_hammer.bbmodel. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "746e5419421ebf78359b2c70ee704e2dcb88b80af202a81f9bd1ea1aef9ae678",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/dea57a92da045ccc9fb8.png"
+      ],
+      "upstreamModelSha256": "c7fb09189b006755a3c54ce94a44d025808db591a446eebcdf8bb532915921cb",
+      "researchModelSha256": "ee28dbf2df018f43b97d1f0c7b5a4a6baad54d4c7d2609f5552ecd4edd730eb7",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime back y=1.1, offset 0.28, scale 0.8, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "back_katana_scabbard",
+      "sourceIds": [
+        "backs_loys_goodies"
+      ],
+      "geometry": "derived",
+      "modifications": "Rigid back-slot adaptation of 2 static source cuboids from the pinned upstream model for 'back_katana_scabbard': embedded PNG bytes copied verbatim, per-face UVs and the source display.fixed rotation retained, geometry recentred on [8,8,8] with uniform scale, texture references remapped, and the original held-item transforms replaced for ItemDisplay FIXED. Upstream: https://github.com/SL0ANE/Loy-s-Goodies/blob/afbb7695b09de0ed8ee3aa97732ff7c3d367520c/models/java-model/tools%20%26%20weapons/swords/230419_katana_shell.bbmodel. Integration removes 4 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "1f4ec244c0852cb879a389b1e952683b25ae9a68dc9cda351d8e3bfe12a07ef0",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/c228da2296fdfa7519f2.png"
+      ],
+      "upstreamModelSha256": "935a396ed287dec2d00ebb98638228ad12f4cd4029755eb7898c9815997d8d51",
+      "researchModelSha256": "4e3280e1f75844f2a2b310bcf585fe9b3152a6d5275ea57c05c7598e7bb3cce6",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime back y=1.1, offset 0.28, scale 0.8, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "back_arcane_staff",
+      "sourceIds": [
+        "backs_loys_goodies"
+      ],
+      "geometry": "derived",
+      "modifications": "Rigid back-slot adaptation of 8 static source cuboids from the pinned upstream model for 'back_arcane_staff': embedded PNG bytes copied verbatim, per-face UVs and the source display.fixed rotation retained, geometry recentred on [8,8,8] with uniform scale, texture references remapped, and the original held-item transforms replaced for ItemDisplay FIXED. Upstream: https://github.com/SL0ANE/Loy-s-Goodies/blob/afbb7695b09de0ed8ee3aa97732ff7c3d367520c/models/java-model/tools%20%26%20weapons/wands/230418_wizard_wand.bbmodel. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "dad5d23c7a387f0af242d41c8c45917c83b0dfa0687885588c59f0d546d5460e",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/61666ea436b29e4b1253.png",
+        "assets/noqui/textures/item/shared/a2bac26938b25aeadb0b.png"
+      ],
+      "upstreamModelSha256": "0874e92f61c7fdcb3b9cf0b0c60d19c63c37a117b00ca1e7cc644436c3926f9e",
+      "researchModelSha256": "ffc064cfd4b068754b8881f45ed8570d8c442a1ab69760ba4a131a9172e51704",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime back y=1.1, offset 0.28, scale 0.8, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "back_hunters_bow",
+      "sourceIds": [
+        "backs_loys_goodies"
+      ],
+      "geometry": "derived",
+      "modifications": "Rigid back-slot adaptation of 10 static source cuboids from the pinned upstream model for 'back_hunters_bow': embedded PNG bytes copied verbatim, per-face UVs and the source display.fixed rotation retained, geometry recentred on [8,8,8] with uniform scale, texture references remapped, and the original held-item transforms replaced for ItemDisplay FIXED. Upstream: https://github.com/SL0ANE/Loy-s-Goodies/blob/afbb7695b09de0ed8ee3aa97732ff7c3d367520c/models/java-model/tools%20%26%20weapons/bows/230418_bow_0_0.bbmodel. Integration removes 16 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "c3c01146cfcb15dccb74d62d52329e488670e527dc10698c287b9903a6525dba",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/6674b4d1d44b7b51ef80.png",
+        "assets/noqui/textures/item/shared/8fe7b484051ad7d8b78b.png"
+      ],
+      "upstreamModelSha256": "ebbb14770987b26ea142b3104473ad8996d595324ac3d077adcef09cea662ffe",
+      "researchModelSha256": "cab7268721e6414f3296dceb90eb3d64a9117021eedfe8a698535d8e46bdc645",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime back y=1.1, offset 0.28, scale 0.8, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "back_bagpipe",
+      "sourceIds": [
+        "backs_immersive_melodies"
+      ],
+      "geometry": "derived",
+      "modifications": "Rigid back-slot adaptation of 13 static source cuboids from the pinned upstream model for 'back_bagpipe': embedded PNG bytes copied verbatim, per-face UVs and the source display.fixed rotation retained, geometry recentred on [8,8,8] with uniform scale, texture references remapped, and the original held-item transforms replaced for ItemDisplay FIXED. Upstream: https://github.com/Luke100000/ImmersiveMelodies/blob/16c004872866048d11f6d0141ca878bf4fb5a09a/common/src/main/resources/assets/immersive_melodies/models/item/bagpipe_hand.json. GPL-3.0 adaptation distributed with the original source model, full licence text, attribution notice, modification date 2026-10-24, and the reproducible conversion script; upstream excludes sounds and melodies, which are not included. Integration removes 8 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "7472b1697e1818bc00790bafa055c67f231a87edb0841866f9d51307e0e89d30",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/74ba0591595214ad2180.png"
+      ],
+      "upstreamModelSha256": "378f083cb76845470537aa65166aaa7de0fa5be7640354d533a736ef96ce7fae",
+      "researchModelSha256": "5ca8bf2995c92c8798158248f56b88e2109863bcd06a73353a4ee5ef1b319c88",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime back y=1.1, offset 0.28, scale 0.8, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "back_didgeridoo",
+      "sourceIds": [
+        "backs_immersive_melodies"
+      ],
+      "geometry": "derived",
+      "modifications": "Rigid back-slot adaptation of 1 static source cuboids from the pinned upstream model for 'back_didgeridoo': embedded PNG bytes copied verbatim, per-face UVs and the source display.fixed rotation retained, geometry recentred on [8,8,8] with uniform scale, texture references remapped, and the original held-item transforms replaced for ItemDisplay FIXED. Upstream: https://github.com/Luke100000/ImmersiveMelodies/blob/16c004872866048d11f6d0141ca878bf4fb5a09a/common/src/main/resources/assets/immersive_melodies/models/item/didgeridoo_hand.json. GPL-3.0 adaptation distributed with the original source model, full licence text, attribution notice, modification date 2026-10-24, and the reproducible conversion script; upstream excludes sounds and melodies, which are not included. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "722d91d4a45f8d000d1c6a1f054fb7c5404eb5b0dbf21b0738c444d492a37b95",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/4a2aba5a8feac41416bf.png"
+      ],
+      "upstreamModelSha256": "e14f4b33364a90b7831510f6486d19643b134993bcf02417578f2faacc05f463",
+      "researchModelSha256": "e51c204ed96ef244f8eeb8da8c2d77dfcb659f12ee510e12e61e40c9ecbe2d3f",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime back y=1.1, offset 0.28, scale 0.8, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "back_handpan",
+      "sourceIds": [
+        "backs_immersive_melodies"
+      ],
+      "geometry": "derived",
+      "modifications": "Rigid back-slot adaptation of 1 static source cuboids from the pinned upstream model for 'back_handpan': embedded PNG bytes copied verbatim, per-face UVs and the source display.fixed rotation retained, geometry recentred on [8,8,8] with uniform scale, texture references remapped, and the original held-item transforms replaced for ItemDisplay FIXED. Upstream: https://github.com/Luke100000/ImmersiveMelodies/blob/16c004872866048d11f6d0141ca878bf4fb5a09a/common/src/main/resources/assets/immersive_melodies/models/item/handpan_hand.json. GPL-3.0 adaptation distributed with the original source model, full licence text, attribution notice, modification date 2026-10-24, and the reproducible conversion script; upstream excludes sounds and melodies, which are not included. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "fa560519a96eeec498cd90ae9a893e154251b37a3150f47f1027e3501d898884",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/f45705e39a5a3696f4eb.png"
+      ],
+      "upstreamModelSha256": "0a769243db1924a7ce8857393621df48002d3e6d2edb55d524414e69056578be",
+      "researchModelSha256": "d814d7bc4cbf0289c43e6ecd4c01417fb7c9701b2fc31edb507ce43407e3aa0c",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime back y=1.1, offset 0.28, scale 0.8, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "back_lute",
+      "sourceIds": [
+        "backs_immersive_melodies"
+      ],
+      "geometry": "derived",
+      "modifications": "Rigid back-slot adaptation of 8 static source cuboids from the pinned upstream model for 'back_lute': embedded PNG bytes copied verbatim, per-face UVs and the source display.fixed rotation retained, geometry recentred on [8,8,8] with uniform scale, texture references remapped, and the original held-item transforms replaced for ItemDisplay FIXED. Upstream: https://github.com/Luke100000/ImmersiveMelodies/blob/16c004872866048d11f6d0141ca878bf4fb5a09a/common/src/main/resources/assets/immersive_melodies/models/item/lute_hand.json. GPL-3.0 adaptation distributed with the original source model, full licence text, attribution notice, modification date 2026-10-24, and the reproducible conversion script; upstream excludes sounds and melodies, which are not included. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "2c3d0b49f4a252489acdf916c03627375a958364cf5807746ebcc17085983cf0",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/8b733d92f3686f81d64f.png"
+      ],
+      "upstreamModelSha256": "0a8151ea392c9d1710b6c98590bc731695d3dd0db9a1d51a61d6762143ce932f",
+      "researchModelSha256": "698d63cf41f0a67678f071d1b51723378dc83886abc90d91cdeca3a45fca3a3a",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime back y=1.1, offset 0.28, scale 0.8, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "back_portable_keyboard",
+      "sourceIds": [
+        "backs_immersive_melodies"
+      ],
+      "geometry": "derived",
+      "modifications": "Rigid back-slot adaptation of 4 static source cuboids from the pinned upstream model for 'back_portable_keyboard': embedded PNG bytes copied verbatim, per-face UVs and the source display.fixed rotation retained, geometry recentred on [8,8,8] with uniform scale, texture references remapped, and the original held-item transforms replaced for ItemDisplay FIXED. Upstream: https://github.com/Luke100000/ImmersiveMelodies/blob/16c004872866048d11f6d0141ca878bf4fb5a09a/common/src/main/resources/assets/immersive_melodies/models/item/piano_hand.json. GPL-3.0 adaptation distributed with the original source model, full licence text, attribution notice, modification date 2026-10-24, and the reproducible conversion script; upstream excludes sounds and melodies, which are not included. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "d3d29db9a1accebb5ae9068ec1be2b3dafb9e52a25ade7a174413814e1234bf4",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/52128278f5700cdb5936.png"
+      ],
+      "upstreamModelSha256": "66b8ccd1f8eb163ca3d3b57e438bfbed8b59f0fe18838953d83210b972d00f83",
+      "researchModelSha256": "c2ddc98b3a4176e037374f0e9d29e01da3a2de44ab2f88e081ee160f912e2ccb",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime back y=1.1, offset 0.28, scale 0.8, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "back_tiny_drum",
+      "sourceIds": [
+        "backs_immersive_melodies"
+      ],
+      "geometry": "derived",
+      "modifications": "Rigid back-slot adaptation of 2 static source cuboids from the pinned upstream model for 'back_tiny_drum': embedded PNG bytes copied verbatim, per-face UVs and the source display.fixed rotation retained, geometry recentred on [8,8,8] with uniform scale, texture references remapped, and the original held-item transforms replaced for ItemDisplay FIXED. Upstream: https://github.com/Luke100000/ImmersiveMelodies/blob/16c004872866048d11f6d0141ca878bf4fb5a09a/common/src/main/resources/assets/immersive_melodies/models/item/tiny_drum_hand.json. GPL-3.0 adaptation distributed with the original source model, full licence text, attribution notice, modification date 2026-10-24, and the reproducible conversion script; upstream excludes sounds and melodies, which are not included. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "df9e480acec25f2b0f695bfb25324053de657259eff96396ba0cd973cc5d33f8",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/c876c0412b255a63ebf8.png"
+      ],
+      "upstreamModelSha256": "812b2a6c32d46acaa158bd6459a0403e524a4960216ade46986513096d0394cb",
+      "researchModelSha256": "abac6d5af73236a7115f3010b24ebd9af1884d7f01b5597481333b963525efbb",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime back y=1.1, offset 0.28, scale 0.8, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "back_trumpet",
+      "sourceIds": [
+        "backs_immersive_melodies"
+      ],
+      "geometry": "derived",
+      "modifications": "Rigid back-slot adaptation of 10 static source cuboids from the pinned upstream model for 'back_trumpet': embedded PNG bytes copied verbatim, per-face UVs and the source display.fixed rotation retained, geometry recentred on [8,8,8] with uniform scale, texture references remapped, and the original held-item transforms replaced for ItemDisplay FIXED. Upstream: https://github.com/Luke100000/ImmersiveMelodies/blob/16c004872866048d11f6d0141ca878bf4fb5a09a/common/src/main/resources/assets/immersive_melodies/models/item/trumpet_hand.json. GPL-3.0 adaptation distributed with the original source model, full licence text, attribution notice, modification date 2026-10-24, and the reproducible conversion script; upstream excludes sounds and melodies, which are not included. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "ea3e770ac9c3afd84f6d385c943588cbc4c22ab250da593a3e885e2794e5fc05",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/2db78a977d97a255b5e3.png"
+      ],
+      "upstreamModelSha256": "b66c44e17cc49314f4ecd3ddc76b94b7eb706131a47abf608aaf0041a47d96da",
+      "researchModelSha256": "4c8ff4200358fa1893924f81d2e665d2b19ecc97f7e6596aaf0fa7ee3f570ca4",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime back y=1.1, offset 0.28, scale 0.8, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "back_vielle",
+      "sourceIds": [
+        "backs_immersive_melodies"
+      ],
+      "geometry": "derived",
+      "modifications": "Rigid back-slot adaptation of 6 static source cuboids from the pinned upstream model for 'back_vielle': embedded PNG bytes copied verbatim, per-face UVs and the source display.fixed rotation retained, geometry recentred on [8,8,8] with uniform scale, texture references remapped, and the original held-item transforms replaced for ItemDisplay FIXED. Upstream: https://github.com/Luke100000/ImmersiveMelodies/blob/16c004872866048d11f6d0141ca878bf4fb5a09a/common/src/main/resources/assets/immersive_melodies/models/item/vielle_hand.json. GPL-3.0 adaptation distributed with the original source model, full licence text, attribution notice, modification date 2026-10-24, and the reproducible conversion script; upstream excludes sounds and melodies, which are not included. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "8eef6a8820f73ec702c056cd970470e1dba7e22755fc53214c19d57fc20238da",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/a63ad8d55ba922bc7518.png"
+      ],
+      "upstreamModelSha256": "7ccd0a4a871142acd6ce5d9f59f96215f43587a377653a7de20e553ec9cfb60c",
+      "researchModelSha256": "45ac6a8187428afcace1ea19068a36a750e435710d1a4004f35ef33287c9a008",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime back y=1.1, offset 0.28, scale 0.8, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "burger_hat",
+      "sourceIds": [
+        "novelty_loys_goodies"
+      ],
+      "geometry": "derived",
+      "modifications": "Adapted head ornament from Loy / SL0ANE's published Blockbench listing for 'burger_hat': static native cuboids, per-face UVs normalized to Java 0..16 units, PNG bytes unchanged, uniform geometry scale/translation only, explicit fixed yaw 180 pose for the head anchor. Upstream: https://github.com/SL0ANE/Loy-s-Goodies/blob/afbb7695b09de0ed8ee3aa97732ff7c3d367520c/models/java-model/foods%20%26%20drinks/220909_burger.bbmodel. License obligation: No attribution requirement; retain the supplied source credit as a courtesy. Integration removes 16 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "752c28c94220cc0182fdf68a737e004715fb39861cca63c1d43aeb241b1578a9",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/3f3725ee3d60f41b4d3d.png"
+      ],
+      "upstreamModelSha256": "ed8a0e200db3cef9ece7bace4acb87fc70fda8ce5979ae76784204b0f87e78e4",
+      "researchModelSha256": "8b8555b0dee6b94474e64809298aa85475fa316f621bd1da064136c2efecdd76",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "zongzi_hat",
+      "sourceIds": [
+        "novelty_loys_goodies"
+      ],
+      "geometry": "derived",
+      "modifications": "Adapted head ornament from Loy / SL0ANE's published Blockbench listing for 'zongzi_hat': static native cuboids, per-face UVs normalized to Java 0..16 units, PNG bytes unchanged, uniform geometry scale/translation only, explicit fixed yaw 180 pose for the head anchor. Upstream: https://github.com/SL0ANE/Loy-s-Goodies/blob/afbb7695b09de0ed8ee3aa97732ff7c3d367520c/models/java-model/foods%20%26%20drinks/230602_zongzi.bbmodel. License obligation: No attribution requirement; retain the supplied source credit as a courtesy. Integration removes 4 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "d497c965e0e3b45844bae051de3acec04f3c9e050ea7816c0c6202d718a7706d",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/6c3556d5e01067ea3636.png",
+        "assets/noqui/textures/item/shared/d2392a33eb8c1de4f492.png"
+      ],
+      "upstreamModelSha256": "38fe855ce83a4424531471db9e8201f359a17d8aab9c068d2ffa330da1f3941a",
+      "researchModelSha256": "cfdf234788059c26c656840f7de30d400a1b984c511f7389ee2f129f5d82544e",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "soda_can_hat",
+      "sourceIds": [
+        "novelty_loys_goodies"
+      ],
+      "geometry": "derived",
+      "modifications": "Adapted head ornament from Loy / SL0ANE's published Blockbench listing for 'soda_can_hat': static native cuboids, per-face UVs normalized to Java 0..16 units, PNG bytes unchanged, uniform geometry scale/translation only, explicit fixed yaw 180 pose for the head anchor. Upstream: https://github.com/SL0ANE/Loy-s-Goodies/blob/afbb7695b09de0ed8ee3aa97732ff7c3d367520c/models/java-model/foods%20%26%20drinks/230923_pop_can_blue.bbmodel. License obligation: No attribution requirement; retain the supplied source credit as a courtesy. Integration removes 4 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "340adc713aaed8cc561068282b0114d2c017d5cc570d6d7d1e3daa3fb80e268c",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/06e38ee352320d58ee40.png"
+      ],
+      "upstreamModelSha256": "57e9b9b40c219f97f6868ae9c2efdb3b0dee619307ec70f86d8c5f342dd45301",
+      "researchModelSha256": "d2dba3d3bef03cf4f1900f5667c7d9ed50356558193687594cb1203c5ba7b698",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "moai_hat",
+      "sourceIds": [
+        "novelty_loys_goodies"
+      ],
+      "geometry": "derived",
+      "modifications": "Adapted head ornament from Loy / SL0ANE's published Blockbench listing for 'moai_hat': static native cuboids, per-face UVs normalized to Java 0..16 units, PNG bytes unchanged, uniform geometry scale/translation only, explicit fixed yaw 180 pose for the head anchor. Upstream: https://github.com/SL0ANE/Loy-s-Goodies/blob/afbb7695b09de0ed8ee3aa97732ff7c3d367520c/models/java-model/furniture%20%26%20decoration/230617_moai.bbmodel. License obligation: No attribution requirement; retain the supplied source credit as a courtesy. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "c8c0ecdf9e41ba0fc7aa69cb6a6d9f415c1d700d6fb185b446d89af2a7b51751",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/40dd3fdfcc2506e8ef9f.png"
+      ],
+      "upstreamModelSha256": "52f1a1abf293ffdd1fb19562051e345717f8078bb3be8168cd4dbb9e5394750d",
+      "researchModelSha256": "db3d4f69f675292874a90a4d2ad6a40e54593d2a48dce998e7b05d7599e9b83d",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "gourd_hat",
+      "sourceIds": [
+        "novelty_loys_goodies"
+      ],
+      "geometry": "derived",
+      "modifications": "Adapted head ornament from Loy / SL0ANE's published Blockbench listing for 'gourd_hat': static native cuboids, per-face UVs normalized to Java 0..16 units, PNG bytes unchanged, uniform geometry scale/translation only, explicit fixed yaw 180 pose for the head anchor. Upstream: https://github.com/SL0ANE/Loy-s-Goodies/blob/afbb7695b09de0ed8ee3aa97732ff7c3d367520c/models/java-model/furniture%20%26%20decoration/cups/220520_hulu.bbmodel. License obligation: No attribution requirement; retain the supplied source credit as a courtesy. Integration removes 4 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "85207fe1f4f54ce096d5c205f388a0041f7fe97d5431adcb3e051b1f7ed1d0ae",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/4835de7718011c4c836c.png"
+      ],
+      "upstreamModelSha256": "6a64eb1b375285ca1cb844dd45d0f13157325d4b9406c498a5d95998e4ead0bd",
+      "researchModelSha256": "b8f33c23fddbd264261db533b9e2ab019ab5528e114328ac13b729ca0e57ee48",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "vase_hat",
+      "sourceIds": [
+        "novelty_loys_goodies"
+      ],
+      "geometry": "derived",
+      "modifications": "Adapted head ornament from Loy / SL0ANE's published Blockbench listing for 'vase_hat': static native cuboids, per-face UVs normalized to Java 0..16 units, PNG bytes unchanged, uniform geometry scale/translation only, explicit fixed yaw 180 pose for the head anchor. Upstream: https://github.com/SL0ANE/Loy-s-Goodies/blob/afbb7695b09de0ed8ee3aa97732ff7c3d367520c/models/java-model/furniture%20%26%20decoration/230217_vase.bbmodel. License obligation: No attribution requirement; retain the supplied source credit as a courtesy. Integration removes 8 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "7a358d1634c050bfd9fa32151ffc490b4b419c4e38e9ed6ca5682bcb555f829f",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/bc1c2b9f9df48aff08d0.png"
+      ],
+      "upstreamModelSha256": "b8c6495f17657f6f7076c4a2c0bfd6c05ca05d2ebe1e92c950fbfa8aaf4d3cbd",
+      "researchModelSha256": "501b1b6995dac8e8ac8503c23e1df7dd382b438e7361b2275444a697e8a73838",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "phonograph_hat",
+      "sourceIds": [
+        "novelty_loys_goodies"
+      ],
+      "geometry": "derived",
+      "modifications": "Adapted head ornament from Loy / SL0ANE's published Blockbench listing for 'phonograph_hat': static native cuboids, per-face UVs normalized to Java 0..16 units, PNG bytes unchanged, uniform geometry scale/translation only, explicit fixed yaw 180 pose for the head anchor. Upstream: https://github.com/SL0ANE/Loy-s-Goodies/blob/afbb7695b09de0ed8ee3aa97732ff7c3d367520c/models/java-model/furniture%20%26%20decoration/220614_phonograph.bbmodel. License obligation: No attribution requirement; retain the supplied source credit as a courtesy. Integration removes 20 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "c3d857e9c7c337726dd74b50cf950543fd594d2c349f453d95771bf28d6b0194",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/81413ae9cdcf6aeedcd6.png",
+        "assets/noqui/textures/item/shared/c0df2cadb202fb18e0ad.png",
+        "assets/noqui/textures/item/shared/db03c1569a0ee5db6db8.png"
+      ],
+      "upstreamModelSha256": "95ad278b9c0bb23c7c92cb964bbfe9a9b9323ee46c07589c9a06bb17f8423d32",
+      "researchModelSha256": "8290bfd9fb8ca8c7af17a4c3c27b50dcc009426c5383409892bbac0dc5413451",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "camera_hat",
+      "sourceIds": [
+        "novelty_loys_goodies"
+      ],
+      "geometry": "derived",
+      "modifications": "Adapted head ornament from Loy / SL0ANE's published Blockbench listing for 'camera_hat': static native cuboids, per-face UVs normalized to Java 0..16 units, PNG bytes unchanged, uniform geometry scale/translation only, explicit fixed yaw 180 pose for the head anchor. Upstream: https://github.com/SL0ANE/Loy-s-Goodies/blob/afbb7695b09de0ed8ee3aa97732ff7c3d367520c/models/java-model/tools%20%26%20weapons/230511_camera.bbmodel. License obligation: No attribution requirement; retain the supplied source credit as a courtesy. Integration removes 62 degenerate UV faces and 1 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "a4a0bb32efd6f30490f344793a636179ec4c8d61accd16a1c19c0e04b3aaf464",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/a9e075ad6c4f27ebd2f9.png"
+      ],
+      "upstreamModelSha256": "13c1f62a286d06668b231aa8957682c0954ca021e335a3737cc6d19a9bc53bd8",
+      "researchModelSha256": "0fa39d8f160900cf2dcebcd60b6ea03d167cfd3bdf418e41b0bda1c7df491812",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "cctv_hat",
+      "sourceIds": [
+        "novelty_loys_goodies"
+      ],
+      "geometry": "derived",
+      "modifications": "Adapted head ornament from Loy / SL0ANE's published Blockbench listing for 'cctv_hat': static native cuboids, per-face UVs normalized to Java 0..16 units, PNG bytes unchanged, uniform geometry scale/translation only, explicit fixed yaw 180 pose for the head anchor. Upstream: https://github.com/SL0ANE/Loy-s-Goodies/blob/afbb7695b09de0ed8ee3aa97732ff7c3d367520c/models/java-model/tech%20%26%20machine/230502_cctv_camera.bbmodel. License obligation: No attribution requirement; retain the supplied source credit as a courtesy. Integration removes 32 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "e9a9347c8c0ff9087b5603c4a8c8949ef8c5c8b0497e57c373ebecdaa6fd1c9a",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/ef285e66d16e953ffa31.png"
+      ],
+      "upstreamModelSha256": "0c646e6ab8befa5dc0e0b38f42a2c657c0084ce1cab517d5a9733fe149f245c3",
+      "researchModelSha256": "ff70de104fa29f6aed2b6cb1602debf2ded4910d4c23c9f47a23b021b7fd32de",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "bread_board_hat",
+      "sourceIds": [
+        "novelty_conczin_workshop"
+      ],
+      "geometry": "derived",
+      "modifications": "Adapted head ornament from conczin's published Blockbench listing for 'bread_board_hat': static native cuboids, per-face UVs normalized to Java 0..16 units, PNG bytes unchanged, uniform geometry scale/translation only, explicit fixed yaw 180 pose for the head anchor. Upstream: https://blockbenchworkshop.com/model/conczin/bread. License obligation: Credit the named author, link the source and license, and identify changes. Integration removes 4 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "cf608837869f94530269041bde35917210fd5c62f17451b4fc8cfe5f991dace7",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/d47e590d6721a0a5c3c7.png"
+      ],
+      "upstreamModelSha256": "e66ac6f333fb10ef1ccdf11673b2393626545bbd965a174ce2d5a083fe70f086",
+      "researchModelSha256": "bdd6865b411970acc80ab1f7a8694afd783fb93068021804b71acaf874c9088b",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "cheese_hat",
+      "sourceIds": [
+        "novelty_conczin_workshop"
+      ],
+      "geometry": "derived",
+      "modifications": "Adapted head ornament from conczin's published Blockbench listing for 'cheese_hat': static native cuboids, per-face UVs normalized to Java 0..16 units, PNG bytes unchanged, uniform geometry scale/translation only, explicit fixed yaw 180 pose for the head anchor. Upstream: https://blockbenchworkshop.com/model/conczin/cheese. License obligation: Credit the named author, link the source and license, and identify changes. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "4521d3c95900c4a5d3e7d79bc7f8c2252ae21451287207d2a2c33e17f2e4b174",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/61f56ffd2acc15f3dbb7.png"
+      ],
+      "upstreamModelSha256": "66abd35cdd1cba82e1b24fe5148ffee3a3474641978bd5020c1c1fbc09ed2f8a",
+      "researchModelSha256": "9fda43bf836e599bf4ddcc8123e604fdec80014e5d4bb0c77582e9e20dcb4b8c",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "pop_tart_hat",
+      "sourceIds": [
+        "novelty_netherlife15_workshop"
+      ],
+      "geometry": "derived",
+      "modifications": "Adapted head ornament from netherlife15's published Blockbench listing for 'pop_tart_hat': static native cuboids, per-face UVs normalized to Java 0..16 units, PNG bytes unchanged, uniform geometry scale/translation only, explicit fixed yaw 180 pose for the head anchor. Upstream: https://blockbenchworkshop.com/model/netherlife15/pop-tart. License obligation: Credit the named author, link the source and license, and identify changes. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "9d69e0a4a1dff6741eb006f9432a98ccc6c290249e0d2f43dbc1895b5fe05b83",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/6eb7288b9365ab9facd6.png"
+      ],
+      "upstreamModelSha256": "1078f3d4e4f6cb7e96796527c388e5bdf189339e330e88ee196331ba4d5ad1b8",
+      "researchModelSha256": "8ee047548a48398fc9563d94168cd752ecac49da2705554ddbc918f5144edf74",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "meat_hat",
+      "sourceIds": [
+        "novelty_monkus_workshop"
+      ],
+      "geometry": "derived",
+      "modifications": "Adapted head ornament from monkus's published Blockbench listing for 'meat_hat': static native cuboids, per-face UVs normalized to Java 0..16 units, PNG bytes unchanged, uniform geometry scale/translation only, explicit fixed yaw 180 pose for the head anchor. Upstream: https://blockbenchworkshop.com/model/monkus/meat. License obligation: Credit the named author, link the source and license, identify changes, and distribute this adapted asset under CC BY-SA 4.0. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "c2d5e60dc86941da31800b54e05b40d04449153b085d0b06564495612b992e2e",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/a36f118ec2a867c978f6.png"
+      ],
+      "upstreamModelSha256": "c6509907af5381a64f4a02548024ae76b0daf73655b8d8c8c54e9ee4a6377ba3",
+      "researchModelSha256": "08d3730f7cde2e24f31a5b83e870082e45ef920cedf26c6f8dfb68231a0f037e",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "mushroom_mailbox_hat",
+      "sourceIds": [
+        "novelty_capu0410_workshop"
+      ],
+      "geometry": "derived",
+      "modifications": "Adapted head ornament from capu0410's published Blockbench listing for 'mushroom_mailbox_hat': static native cuboids, per-face UVs normalized to Java 0..16 units, PNG bytes unchanged, uniform geometry scale/translation only, explicit fixed yaw 180 pose for the head anchor. Upstream: https://blockbenchworkshop.com/model/capu0410/mushroom-mailbox. License obligation: Credit the named author, link the source and license, and identify changes. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "4bb59b155ef6e0e56a1a8f368d80e3d2ea618e92cb645b59e23762f11548e2eb",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/c0addc6d55e079fd49a4.png"
+      ],
+      "upstreamModelSha256": "b000209be4ad02838d3f67268f352811d06e2607c7d4958a8a8a292294485a59",
+      "researchModelSha256": "8ec98376e79601a31e8f9916ceec433c40e6b5b2192e741e5a47c6a0097443a8",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "pigeon_hat",
+      "sourceIds": [
+        "novelty_polyjo_workshop"
+      ],
+      "geometry": "derived",
+      "modifications": "Adapted head ornament from polyjo's published Blockbench listing for 'pigeon_hat': static native cuboids, per-face UVs normalized to Java 0..16 units, PNG bytes unchanged, uniform geometry scale/translation only, explicit fixed yaw 180 pose for the head anchor. Upstream: https://blockbenchworkshop.com/model/polyjo/pigeon-polyjo. License obligation: Credit the named author, link the source and license, and identify changes. Integration removes 4 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "ea6a533bd400dc344e49ec1a157c1110606900b3920c726711476be009ca1136",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/e8c0dac3b72bdba65d94.png"
+      ],
+      "upstreamModelSha256": "fd8314b12ec3c72183121300960ecb95e2566ed52ede0a68395f7119246f43d8",
+      "researchModelSha256": "3ede6e66eac8789a61b1c1c6bc0ba1228f750165328785b9a3d06fc55c873a65",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "snail_hat",
+      "sourceIds": [
+        "novelty_atcg_workshop"
+      ],
+      "geometry": "derived",
+      "modifications": "Adapted head ornament from atcg's published Blockbench listing for 'snail_hat': static native cuboids, per-face UVs normalized to Java 0..16 units, PNG bytes unchanged, uniform geometry scale/translation only, explicit fixed yaw 180 pose for the head anchor. Upstream: https://blockbenchworkshop.com/model/atcg/lissachatina-fulica. License obligation: No attribution requirement; retain the supplied source credit as a courtesy. Integration removes 16 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "bac7fcc3544764718310fb7a09da4fb3d18e7c6fd20b32d621b4535864a134fa",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/6835ba8ef23d57566457.png"
+      ],
+      "upstreamModelSha256": "25335fb6f47f5c24cace2ef1de633d28d2f6b9eed1356215a1dfb1a708b4c51c",
+      "researchModelSha256": "080ac904ea83fcc5b04f5ccba7ce1e18b45cfc64ad91d969c97d0d819c444260",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "wolf_hat",
+      "sourceIds": [
+        "novelty_sevensstar1707_workshop"
+      ],
+      "geometry": "derived",
+      "modifications": "Adapted head ornament from sevensstar1707's published Blockbench listing for 'wolf_hat': static native cuboids, per-face UVs normalized to Java 0..16 units, PNG bytes unchanged, uniform geometry scale/translation only, explicit fixed yaw 180 pose for the head anchor. Upstream: https://blockbenchworkshop.com/model/sevensstar1707/wolfu. License obligation: Credit the named author, link the source and license, and identify changes. Integration removes 4 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "56333efa16d799b3db6e30438125894e80abdab8c66e7249061e717d84b02402",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/c86b4b108afad9598f46.png"
+      ],
+      "upstreamModelSha256": "0cd266eb1b9c78a7caa156cdfc2e68cec9a50ef8432b5606d8a0bfa527a1192d",
+      "researchModelSha256": "36878fcb1f2ef1402a8fb67173e87420b91ce761b3004e73cc1309158b09b21b",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    },
+    {
+      "id": "frappuccino_hat",
+      "sourceIds": [
+        "novelty_wasabi_workshop"
+      ],
+      "geometry": "derived",
+      "modifications": "Adapted head ornament from wasabi's published Blockbench listing for 'frappuccino_hat': static native cuboids, per-face UVs normalized to Java 0..16 units, PNG bytes unchanged, uniform geometry scale/translation only, explicit fixed yaw 180 pose for the head anchor. Upstream: https://blockbenchworkshop.com/model/wasabi/caramel-frappuccino. License obligation: No attribution requirement; retain the supplied source credit as a courtesy. Integration removes 0 degenerate UV faces and 0 renderless elements, remaps content-deduplicated textures, and adds canonical item definitions. No visible cuboid/PNG artwork is regenerated.",
+      "modelSha256": "c8de40d7906212e2722fbf78ed85d4ad2efd8c4263265dfe37b7c392f3cf6d10",
+      "texturePaths": [
+        "assets/noqui/textures/item/shared/5f4da95c751eb133917c.png",
+        "assets/noqui/textures/item/shared/b2ec6240d70083c3f3f7.png",
+        "assets/noqui/textures/item/shared/cc07125e3cae2cb5f396.png"
+      ],
+      "upstreamModelSha256": "5a22382fb952a2901134b642968bc8ac3ce9e47b67980edbf6ca4fa5e55200cd",
+      "researchModelSha256": "1eadd76fff5f801101706ff65c3bab93cabc7edd63ffdfb90e62ec2d9aaa0944",
+      "attachmentFit": "Software mannequin review passed 2026-10-24 at runtime head y=1.85, model origin 8/8/8; source fixed pose retained. Not live-client verified."
+    }
+  ]
+}

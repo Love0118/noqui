@@ -73,29 +73,4 @@ class LobbyVisualsTest {
         }
     }
 
-    @Test @SuppressWarnings("unchecked") void cosmeticEntitiesPreserveRealArmorToolsAndCleanOnlyOwnedEntitiesAcrossWorlds() {
-        try(var bukkit=mockStatic(Bukkit.class);var stacks=mockConstruction(ItemStack.class,(item,context)->when(item.getItemMeta()).thenReturn(mock(ItemMeta.class)))) {
-            Plugin plugin=mock(Plugin.class);World cabin=mock(World.class),arena=mock(World.class);Player player=mock(Player.class);UUID id=UUID.randomUUID();
-            World[] current={cabin};when(player.getUniqueId()).thenReturn(id);when(player.getWorld()).thenAnswer(c->current[0]);when(player.getGameMode()).thenReturn(GameMode.ADVENTURE);
-            when(player.getLocation()).thenAnswer(c->new Location(current[0],1,11,2));List<ItemDisplay> created=new ArrayList<>();
-            for(World world:List.of(cabin,arena))when(world.spawn(any(Location.class),eq(ItemDisplay.class),any(Consumer.class))).thenAnswer(c->{
-                ItemDisplay display=mock(ItemDisplay.class);when(display.isValid()).thenReturn(true);when(display.getLocation()).thenReturn(c.getArgument(0));((Consumer<ItemDisplay>)c.getArgument(2)).accept(display);created.add(display);return display;
-            });
-            CosmeticDisplays cosmetics=new CosmeticDisplays(plugin,cabin);Map<String,String> equipment=Map.of("head","pirate_hat","back","backpack","face","glasses","hand","hammer");
-            cosmetics.tick(player,equipment);assertEquals(4,created.size());cosmetics.tick(player,equipment);assertEquals(4,created.size());
-            current[0]=arena;cosmetics.tick(player,equipment);assertEquals(7,created.size());for(int i=0;i<4;i++)verify(created.get(i)).remove();
-            assertEquals(7,stacks.constructed().size());for(ItemStack item:stacks.constructed())verify(item.getItemMeta()).setItemModel(any(NamespacedKey.class));
-            cosmetics.leave(id);cosmetics.leave(id);cosmetics.close();for(int i=4;i<7;i++)verify(created.get(i),times(1)).remove();
-            verify(player,never()).getInventory();verify(player,never()).getEquipment();verify(player,never()).addPassenger(any());
-        }
-    }
-
-    @Test void restartPurgeRemovesOnlyTaggedDisplayEntities() {
-        try(var bukkit=mockStatic(Bukkit.class)) {
-            World world=mock(World.class);ItemDisplay owned=mock(ItemDisplay.class),foreign=mock(ItemDisplay.class);
-            when(owned.getScoreboardTags()).thenReturn(Set.of(CosmeticDisplays.TAG));when(foreign.getScoreboardTags()).thenReturn(Set.of("other"));
-            when(world.getEntitiesByClass(ItemDisplay.class)).thenReturn(List.of(owned,foreign));bukkit.when(Bukkit::getWorlds).thenReturn(List.of(world));
-            new CosmeticDisplays(mock(Plugin.class),world).purge();verify(owned).remove();verify(foreign,never()).remove();
-        }
-    }
 }

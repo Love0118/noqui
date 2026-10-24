@@ -45,6 +45,17 @@ class CabinInventoryVaultTest {
             recovery.captureCabin(f.player);new CabinInventoryVault().restore(f.player);assertSame(custom,f.slots[9]);assertNull(f.slots[17]);assertSame(boots,f.slots[36]);assertSame(offhand,f.slots[40]);
         }
     }
+    @Test void restoredCabinMigratesMissingNavigationWithoutMovingExistingItemsOrReminting() {
+        try(var f=new Fixture()){
+            when(f.inventory.getStorageContents()).thenAnswer(c->Arrays.copyOf(f.slots,36));when(f.inventory.getItem(anyInt())).thenAnswer(c->f.slots[c.getArgument(0,Integer.class)]);
+            doAnswer(c->{f.slots[c.getArgument(0,Integer.class)]=c.getArgument(1);return null;}).when(f.inventory).setItem(anyInt(),nullable(ItemStack.class));
+            var ordinary=mock(ItemStack.class);when(ordinary.getType()).thenReturn(Material.STONE);var compass=CabinNavigationTest.tool("defense");var traits=CabinNavigationTest.tool("traits");
+            f.slots[12]=compass;f.slots[20]=ordinary;f.cursor.set(traits);var vault=new CabinInventoryVault();vault.markLoaded(f.player);vault.leave(f.player);
+            Arrays.fill(f.slots,null);assertTrue(vault.restore(f.player));var created=new java.util.concurrent.atomic.AtomicInteger();var navigation=new CabinNavigation(id->{created.incrementAndGet();return CabinNavigationTest.tool(id);});navigation.ensure(f.player);
+            assertSame(compass,f.slots[12]);assertSame(ordinary,f.slots[20]);assertSame(traits,f.cursor.get());assertEquals("settings",CabinNavigation.id(f.slots[0]));
+            vault.leave(f.player);Arrays.fill(f.slots,null);assertTrue(vault.restore(f.player));navigation.ensure(f.player);assertEquals(1,created.get());assertSame(compass,f.slots[12]);assertSame(traits,f.cursor.get());
+        }
+    }
     @Test void interruptedCabinRecoveryCapturesCurrentLayoutBeforeRestoringOutsideState()throws Exception {
         try(var f=new Fixture()){
             var outside=mock(ItemStack.class);f.slots[0]=outside;var recovery=new PlayerRecovery();recovery.captureCabin(f.player);

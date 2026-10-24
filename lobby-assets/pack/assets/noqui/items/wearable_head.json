@@ -1,0 +1,440 @@
+{
+  "model": {
+    "type": "minecraft:composite",
+    "models": [
+      {
+        "type": "minecraft:select",
+        "property": "minecraft:custom_model_data",
+        "index": 0,
+        "cases": [
+          {
+            "when": "pirate_hat",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:pirate_hat"
+            }
+          },
+          {
+            "when": "crown",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:crown"
+            }
+          },
+          {
+            "when": "cap",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:cap"
+            }
+          },
+          {
+            "when": "bunny",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:bunny"
+            }
+          },
+          {
+            "when": "chef_toque",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:chef_toque"
+            }
+          },
+          {
+            "when": "western_hat",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:western_hat"
+            }
+          },
+          {
+            "when": "formal_top_hat",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:formal_top_hat"
+            }
+          },
+          {
+            "when": "winter_pom_hat",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:winter_pom_hat"
+            }
+          },
+          {
+            "when": "jester_cap",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:jester_cap"
+            }
+          },
+          {
+            "when": "miner_lamp_helmet",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:miner_lamp_helmet"
+            }
+          },
+          {
+            "when": "queen_crest_crown",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:queen_crest_crown"
+            }
+          },
+          {
+            "when": "wide_sombrero",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:wide_sombrero"
+            }
+          },
+          {
+            "when": "straw_boater",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:straw_boater"
+            }
+          },
+          {
+            "when": "graduation_mortarboard",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:graduation_mortarboard"
+            }
+          },
+          {
+            "when": "brass_diver_helmet",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:brass_diver_helmet"
+            }
+          },
+          {
+            "when": "ushanka_hat",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:ushanka_hat"
+            }
+          },
+          {
+            "when": "samurai_kabuto",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:samurai_kabuto"
+            }
+          },
+          {
+            "when": "witch_cone_hat",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:witch_cone_hat"
+            }
+          },
+          {
+            "when": "steampunk_courier_cap",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:steampunk_courier_cap"
+            }
+          },
+          {
+            "when": "ornamental_tiara",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:ornamental_tiara"
+            }
+          },
+          {
+            "when": "bucket_hat",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:bucket_hat"
+            }
+          },
+          {
+            "when": "santa_fold_hat",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:santa_fold_hat"
+            }
+          },
+          {
+            "when": "face_cat_ear_headphones",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:face_cat_ear_headphones"
+            }
+          },
+          {
+            "when": "face_hair_clip_bow",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:face_hair_clip_bow"
+            }
+          },
+          {
+            "when": "face_hair_clip_butterfly",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:face_hair_clip_butterfly"
+            }
+          },
+          {
+            "when": "face_hair_clip_cherry",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:face_hair_clip_cherry"
+            }
+          },
+          {
+            "when": "face_hair_clip_flower",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:face_hair_clip_flower"
+            }
+          },
+          {
+            "when": "face_rose_quartz_earrings",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:face_rose_quartz_earrings"
+            }
+          },
+          {
+            "when": "face_cat_ears",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:face_cat_ears"
+            }
+          },
+          {
+            "when": "face_fox_ears",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:face_fox_ears"
+            }
+          },
+          {
+            "when": "face_bear_ears",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:face_bear_ears"
+            }
+          },
+          {
+            "when": "face_wolf_ears",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:face_wolf_ears"
+            }
+          },
+          {
+            "when": "burger_hat",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:burger_hat"
+            }
+          },
+          {
+            "when": "zongzi_hat",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:zongzi_hat"
+            }
+          },
+          {
+            "when": "soda_can_hat",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:soda_can_hat"
+            }
+          },
+          {
+            "when": "moai_hat",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:moai_hat"
+            }
+          },
+          {
+            "when": "gourd_hat",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:gourd_hat"
+            }
+          },
+          {
+            "when": "vase_hat",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:vase_hat"
+            }
+          },
+          {
+            "when": "phonograph_hat",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:phonograph_hat"
+            }
+          },
+          {
+            "when": "camera_hat",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:camera_hat"
+            }
+          },
+          {
+            "when": "cctv_hat",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:cctv_hat"
+            }
+          },
+          {
+            "when": "bread_board_hat",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:bread_board_hat"
+            }
+          },
+          {
+            "when": "cheese_hat",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:cheese_hat"
+            }
+          },
+          {
+            "when": "pop_tart_hat",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:pop_tart_hat"
+            }
+          },
+          {
+            "when": "meat_hat",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:meat_hat"
+            }
+          },
+          {
+            "when": "mushroom_mailbox_hat",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:mushroom_mailbox_hat"
+            }
+          },
+          {
+            "when": "pigeon_hat",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:pigeon_hat"
+            }
+          },
+          {
+            "when": "snail_hat",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:snail_hat"
+            }
+          },
+          {
+            "when": "wolf_hat",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:wolf_hat"
+            }
+          },
+          {
+            "when": "frappuccino_hat",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:frappuccino_hat"
+            }
+          }
+        ],
+        "fallback": {
+          "type": "minecraft:empty"
+        }
+      },
+      {
+        "type": "minecraft:select",
+        "property": "minecraft:custom_model_data",
+        "index": 1,
+        "cases": [
+          {
+            "when": "glasses",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:glasses"
+            }
+          },
+          {
+            "when": "face_uwu_choker",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:face_uwu_choker"
+            }
+          },
+          {
+            "when": "face_heart_glasses",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:face_heart_glasses"
+            }
+          },
+          {
+            "when": "face_dark_shades",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:face_dark_shades"
+            }
+          },
+          {
+            "when": "face_cyber_visor",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:face_cyber_visor"
+            }
+          },
+          {
+            "when": "face_moonstone_pendant",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:face_moonstone_pendant"
+            }
+          },
+          {
+            "when": "face_night_vision_goggles",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:face_night_vision_goggles"
+            }
+          },
+          {
+            "when": "face_snorkel",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:face_snorkel"
+            }
+          },
+          {
+            "when": "face_lucky_scarf",
+            "model": {
+              "type": "minecraft:model",
+              "model": "noqui:face_lucky_scarf"
+            }
+          }
+        ],
+        "fallback": {
+          "type": "minecraft:empty"
+        }
+      }
+    ]
+  }
+}

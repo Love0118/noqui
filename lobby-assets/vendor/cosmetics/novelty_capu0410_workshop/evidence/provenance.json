@@ -1,0 +1,45 @@
+{
+  "path": "capu0410/mushroom-mailbox",
+  "sourceURL": "https://blockbenchworkshop.com/model/capu0410/mushroom-mailbox",
+  "metadata": {
+    "@context": "https://schema.org",
+    "@type": "3DModel",
+    "name": "Mushroom Mailbox",
+    "description": "A rigged Blockbench model by @capu0410. A mushroom mailbox. Free .bbmodel download.",
+    "url": "https://blockbenchworkshop.com/model/capu0410/mushroom-mailbox",
+    "image": "https://blockbenchworkshop.com/cdn/thumbnails/SAxUNznOsc6VbacGqhiBoHBe0zzgMUXS/c8f5902a-d184-41cf-934e-c62c165b5a3f.png",
+    "encodingFormat": "application/json",
+    "isAccessibleForFree": true,
+    "keywords": "mushroom, furniture, prop, minecraft, decoration, pixel art, low poly, fae, fantasy, nature",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "author": {
+      "@type": "Person",
+      "name": "capu0410",
+      "url": "https://blockbenchworkshop.com/creator/capu0410"
+    },
+    "interactionStatistic": [
+      {
+        "@type": "InteractionCounter",
+        "interactionType": "https://schema.org/LikeAction",
+        "userInteractionCount": 12
+      },
+      {
+        "@type": "InteractionCounter",
+        "interactionType": "https://schema.org/DownloadAction",
+        "userInteractionCount": 75
+      }
+    ]
+  },
+  "permissive": true,
+  "publicSourceURL": "https://blockbenchworkshop.com/cdn/previews/SAxUNznOsc6VbacGqhiBoHBe0zzgMUXS/e1713e81-6793-4002-8abf-0a17cd5c97db.json?v=5",
+  "sourceKind": "publicly published interactive preview model JSON",
+  "originalDownloadLimitation": "The .bbmodel download endpoint returns HTTP 401 without an account; no account was used. This is the openly published preview JSON, not the original .bbmodel archive.",
+  "sha256": "b000209be4ad02838d3f67268f352811d06e2607c7d4958a8a8a292294485a59",
+  "format": {
+    "model_format": "java_block"
+  },
+  "elements": 17,
+  "meshes": 0,
+  "textures": 1,
+  "animations": 0
+}

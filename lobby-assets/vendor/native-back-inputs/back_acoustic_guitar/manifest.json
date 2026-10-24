@@ -1,0 +1,149 @@
+{
+  "model": "back_acoustic_guitar",
+  "source": {
+    "model": "assets/noqui/models/back_acoustic_guitar.json",
+    "modelSha256": "642f8d7973a2eb79422934f3d0b8bad3b5f88a56dfb8afaf87fac44f3bcbc67a",
+    "credit": "Adapted from Loy / SL0ANE; CC0-1.0; see ATTRIBUTION.txt",
+    "slot": "back",
+    "textures": [
+      {
+        "reference": "t0",
+        "path": "assets/noqui/textures/item/shared/1b616ff78593dfbbfc14.png",
+        "sha256": "1b616ff78593dfbbfc14e0e711806cccb06f88765c779677c98296702e594056",
+        "size": [
+          32,
+          32
+        ],
+        "keys": [
+          "t0"
+        ]
+      }
+    ]
+  },
+  "output": {
+    "atlas": "bundles/back_acoustic_guitar/atlas.png",
+    "atlasSha256": "66f0672406f29eccbed6846a7931dca5ad633ece504de203b97f177fa085553a",
+    "atlasSize": [
+      64,
+      64
+    ],
+    "atlasMode": "RGBA",
+    "model": "bundles/back_acoustic_guitar/model.json",
+    "modelSha256": "32f0f0e3c7f20db2be260e21c7530cb4d00be6916ee4642cdb0f95a23074cebb",
+    "textureKey": "t0",
+    "textureReference": "noqui:item/normalized/back_acoustic_guitar",
+    "packPath": "assets/noqui/textures/item/normalized/back_acoustic_guitar.png"
+  },
+  "sourceTextureCount": 1,
+  "uvTransform": {
+    "assets/noqui/textures/item/shared/1b616ff78593dfbbfc14.png": {
+      "u": {
+        "scale": 0.5,
+        "offset": 0.25
+      },
+      "v": {
+        "scale": 0.5,
+        "offset": 0.25
+      }
+    }
+  },
+  "manifestPath": "bundles/back_acoustic_guitar/manifest.json",
+  "checks": {
+    "structure": {
+      "elements": 9,
+      "faces": 54,
+      "preservedKeys": [
+        "ambientocclusion",
+        "credit",
+        "display",
+        "gui_light"
+      ],
+      "geometrySignature": {
+        "source": "b858e1aa18371f34d1fe7b2a3c8a7812b1e6873ea5a66858dca603e3792ab8e6",
+        "normalized": "b858e1aa18371f34d1fe7b2a3c8a7812b1e6873ea5a66858dca603e3792ab8e6"
+      },
+      "geometrySignatureStable": true
+    },
+    "texels": {
+      "regions": [
+        {
+          "texture": "assets/noqui/textures/item/shared/1b616ff78593dfbbfc14.png",
+          "keys": [
+            "t0"
+          ],
+          "sourceSize": [
+            32,
+            32
+          ],
+          "blockOrigin": [
+            0,
+            0
+          ],
+          "contentOrigin": [
+            1,
+            1
+          ],
+          "blockSize": [
+            34,
+            34
+          ]
+        }
+      ],
+      "contentPixelsIdentical": true,
+      "borderReplicationExact": true,
+      "paddingTransparent": true
+    },
+    "uv": {
+      "cornerSamples": 216,
+      "cornerSamplesAtUvZero": 11,
+      "cornerSamplesAtUvSixteen": 0,
+      "maxUvError": 0.0,
+      "sampledTexelsInPlace": true
+    },
+    "packRules": {
+      "rules": "noqui/lobby-assets/build_pack.py validate() per-model block",
+      "singleTextureKey": true,
+      "uvWithin0to16": true,
+      "faceDirectionsValid": true,
+      "solidElements": 9,
+      "extents": [
+        7.61538,
+        22.0,
+        2.62308
+      ],
+      "conforms": true
+    },
+    "render": {
+      "views": [
+        {
+          "view": "front",
+          "display": "none",
+          "resolution": 256,
+          "sourceSha256": "a713b17822a85c2cbc56f36d3572d32e0dee4933710dcf06694e0ef65f03dde2",
+          "normalizedSha256": "a713b17822a85c2cbc56f36d3572d32e0dee4933710dcf06694e0ef65f03dde2",
+          "maxChannelDelta": 0
+        },
+        {
+          "view": "back",
+          "display": "none",
+          "resolution": 256,
+          "sourceSha256": "98369942684b0dd11f6479eafb62b5e71d56258056b3ea00d2cb486670b2921d",
+          "normalizedSha256": "98369942684b0dd11f6479eafb62b5e71d56258056b3ea00d2cb486670b2921d",
+          "maxChannelDelta": 0
+        },
+        {
+          "view": "gui",
+          "display": "gui",
+          "resolution": 256,
+          "sourceSha256": "507fc4dd66e1042911ebbf08f5f3bb9756c2533bafdb1167ce94f2092119b5bb",
+          "normalizedSha256": "507fc4dd66e1042911ebbf08f5f3bb9756c2533bafdb1167ce94f2092119b5bb",
+          "maxChannelDelta": 0
+        }
+      ],
+      "renderIdentical": true
+    },
+    "sourceReadOnly": true,
+    "measuredAt": "2026-10-24T12:30:01Z"
+  },
+  "verified": true
+}

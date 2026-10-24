@@ -1,0 +1,12 @@
+Original: Immersive Melodies contributors / Luke100000
+Source: https://github.com/Luke100000/ImmersiveMelodies/blob/16c004872866048d11f6d0141ca878bf4fb5a09a/common/src/main/resources/assets/immersive_melodies/models/item/lute_hand.json
+Commit: 16c004872866048d11f6d0141ca878bf4fb5a09a
+License: GPL-3.0
+License URL: https://github.com/Luke100000/ImmersiveMelodies/blob/16c004872866048d11f6d0141ca878bf4fb5a09a/LICENSE
+
+Modified 2026-10-24 for Noqui backwear research: extracted static native cuboids, remapped texture resource names, recentered and uniformly scaled geometry, and replaced display settings for ItemDisplay FIXED.
+Original native Java per-face UVs and face rotations retained verbatim. Original _hand model selected; the generated inventory icon model is not used. PNG bytes copied verbatim.
+Original mod instrument prop adapted as rigid backwear. Playback functionality and sound assets are not included.
+
+Repository GPL-3.0 applies to models and textures; explicit exclusions cover sounds and melodies only. No sounds or melodies staged. Retain GPL license, notices, original model/texture sources, and this modification script when distributing these adaptations.
+Original sources remain under upstream/ and are identified by SHA256 in candidates.json. Changes are reproducible with normalize_assets.py.

@@ -39,6 +39,7 @@ pub fn internal(app: App) -> Router {
     Router::new()
         .route("/internal/v1/media/jobs", post(enqueue))
         .route("/internal/v1/media/jobs/{id}", get(job_status))
+        .route("/internal/v1/catalogue/import", post(import_catalogue))
         .route("/internal/v1/sync", post(sync))
         .route("/internal/v1/join-tokens", post(token))
         .layer(DefaultBodyLimit::max(65536))
@@ -48,7 +49,7 @@ pub fn internal(app: App) -> Router {
 pub fn public(app: App) -> Router {
     Router::new()
         .route("/", get(index))
-        .route("/join", get(join))
+        .route("/join", get(index))
         .route("/app.js", get(script))
         .route("/join.js", get(join_script))
         .route("/style.css", get(style))
@@ -135,19 +136,80 @@ async fn enqueue(State(app): State<App>, h: HeaderMap, b: Bytes) -> Result<Respo
 async fn job_status(State(app): State<App>, Path(id): Path<String>) -> Result<Json<Value>> {
     Ok(Json(app.jobs.status(id).await?))
 }
+async fn import_catalogue(State(app): State<App>, h: HeaderMap, b: Bytes) -> Result<Json<Value>> {
+    let request: crate::catalogue::CatalogueImportRequest = decode(&h, &b)?;
+    Ok(Json(app.jobs.import_catalogue(request, app.now()).await?))
+}
 async fn sync(State(app): State<App>, h: HeaderMap, b: Bytes) -> Result<Json<Value>> {
     let snapshot: Snapshot = decode(&h, &b)?;
-    let ids = snapshot
+    let _sync = app.control_sync.lock().await;
+    if snapshot.retained_media_ids.as_ref().is_some_and(|ids| {
+        ids.len() > 64
+            || ids.iter().any(|id| !uuid(id))
+            || ids.iter().collect::<std::collections::HashSet<_>>().len() != ids.len()
+    }) {
+        return Err(bad());
+    }
+    let current: Vec<String> = snapshot
         .rooms
         .iter()
         .filter_map(|r| r.round.as_ref()?.media_id.clone())
         .collect();
-    let media = app.jobs.media(ids).await?;
-    let out = app
-        .inner
-        .lock()
-        .unwrap()
-        .sync(snapshot, auth::digest(&b), media, app.now())?;
+    let mut ids = current.clone();
+    ids.extend(snapshot.retained_media_ids.iter().flatten().cloned());
+    let (media, selection) = app.jobs.protect(ids).await?;
+    if snapshot
+        .retained_media_ids
+        .as_ref()
+        .is_some_and(|ids| ids.iter().any(|id| !media.contains_key(id)))
+    {
+        return Err(Error::retry(409, "MEDIA_NOT_READY", 2000));
+    }
+    let retained = snapshot.retained_media_ids.clone();
+    let instance = snapshot.instance_id.clone();
+    let seq = snapshot.seq.clone();
+    let newly_used = {
+        let inner = app.inner.lock().unwrap();
+        snapshot
+            .rooms
+            .iter()
+            .filter_map(|room| {
+                let round = room.round.as_ref()?;
+                let id = round.media_id.as_ref()?;
+                let old = inner
+                    .snapshot
+                    .as_ref()
+                    .and_then(|s| s.rooms.iter().find(|r| r.room_id == room.room_id))
+                    .and_then(|r| r.round.as_ref());
+                if old.is_some_and(|r| {
+                    r.round_id == round.round_id && r.media_id.as_ref() == Some(id)
+                }) {
+                    None
+                } else {
+                    Some(id.clone())
+                }
+            })
+            .collect()
+    };
+    let (out, revision) = {
+        let mut inner = app.inner.lock().unwrap();
+        let out = inner.sync(snapshot, auth::digest(&b), media, app.now())?;
+        (out, inner.event_seq)
+    };
+    app.jobs
+        .retain_selection(
+            retained,
+            current,
+            newly_used,
+            app.now(),
+            Some(selection),
+            Some(crate::cache::PinVersion {
+                revision,
+                instance,
+                seq,
+            }),
+        )
+        .await?;
     app.notify();
     Ok(Json(out))
 }
@@ -327,13 +389,15 @@ async fn media(
         .lock()
         .unwrap()
         .authorize_media(&key, hash, app.now())?;
-    let path = app.jobs.root.join("media").join(format!("{hash}.ogg"));
-    let metadata = tokio::fs::symlink_metadata(&path)
+    let (file, media_guard) = app
+        .jobs
+        .open_media(m.clone(), app.now(), method == Method::GET)
+        .await?;
+    let mut file = tokio::fs::File::from_std(file);
+    let metadata = file
+        .metadata()
         .await
         .map_err(|_| Error::new(404, "MEDIA_NOT_FOUND"))?;
-    if !metadata.is_file() || metadata.file_type().is_symlink() || metadata.len() != m.byte_length {
-        return Err(Error::new(404, "MEDIA_NOT_FOUND"));
-    }
     let modified = metadata.modified().unwrap_or(SystemTime::UNIX_EPOCH);
     let last_modified = httpdate::fmt_http_date(modified);
     let tag = format!("\"sha256-{hash}\"");
@@ -418,15 +482,12 @@ async fn media(
         app: app.clone(),
         key,
     };
-    let mut file = tokio::fs::File::open(path)
-        .await
-        .map_err(|_| Error::new(404, "MEDIA_NOT_FOUND"))?;
     file.seek(std::io::SeekFrom::Start(start))
         .await
         .map_err(|_| Error::new(500, "MEDIA_UNAVAILABLE"))?;
     let mut stream = tokio_util::io::ReaderStream::with_capacity(file.take(count), 65536);
     use futures_util::StreamExt;
-    let body = async_stream::stream! {let _guard=guard;while let Some(chunk)=stream.next().await{yield chunk;}};
+    let body = async_stream::stream! {let _guard=guard;let _media_guard=media_guard;while let Some(chunk)=stream.next().await{yield chunk;}};
     *response.body_mut() = Body::from_stream(body);
     Ok(response)
 }
@@ -437,12 +498,6 @@ async fn index() -> Response {
     asset(
         "text/html; charset=utf-8",
         include_str!("../static/index.html"),
-    )
-}
-async fn join() -> Response {
-    asset(
-        "text/html; charset=utf-8",
-        include_str!("../static/join.html"),
     )
 }
 async fn script() -> Response {

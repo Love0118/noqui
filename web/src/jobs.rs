@@ -1,5 +1,7 @@
 use crate::{
-    App, CACHE_BUDGET, MAX_SOURCE, PROFILE,
+    App, MAX_SOURCE, PROFILE,
+    cache::{Cache, HANDOFF_MILLIS, MediaPins, PinVersion, TEMP_BUDGET},
+    catalogue::{self, CatalogueImportRequest, SongRecord},
     model::{Error, JobRequest, Result, uuid, video},
 };
 use rusqlite::{Connection, OptionalExtension, params};
@@ -17,6 +19,14 @@ use std::{
 use tokio::{process::Command, sync::Notify};
 
 const MAX_QUEUED: i64 = 64;
+// Stage logs stay tiny, but yt-dlp's resolved metadata for a private source can
+// legitimately exceed 1MiB (a real 99s webm resolved to 1,660,825 bytes), so the
+// metadata dump gets its own headroom well below the source and temp budgets.
+const LOG_OUTPUT_LIMIT: u64 = 1024 * 1024;
+const METADATA_OUTPUT_LIMIT: u64 = 8 * 1024 * 1024;
+#[cfg(test)]
+#[path = "cache_tests.rs"]
+mod cache_tests;
 const SOURCE_FORMAT: &str = "bestaudio[ext=webm][abr<=80]/bestaudio[ext=webm]/bestaudio[ext=m4a]";
 
 #[derive(Clone, Serialize, Deserialize, Debug)]
@@ -32,6 +42,7 @@ pub struct Jobs {
     db: Arc<Mutex<Connection>>,
     pub root: Arc<PathBuf>,
     wake: Arc<Notify>,
+    cache: Arc<Cache>,
 }
 #[derive(Clone)]
 struct Work {
@@ -45,6 +56,7 @@ impl Jobs {
     pub fn open(root: &Path, now: i64) -> std::result::Result<Self, String> {
         fs::create_dir_all(root.join("media")).map_err(|_| "CACHE_UNAVAILABLE")?;
         fs::create_dir_all(root.join("tmp")).map_err(|_| "CACHE_UNAVAILABLE")?;
+        Cache::validate_paths(root)?;
         #[cfg(unix)]
         {
             use std::os::unix::fs::PermissionsExt;
@@ -53,7 +65,8 @@ impl Jobs {
                     .map_err(|_| "CACHE_UNAVAILABLE")?;
             }
         }
-        let db = Connection::open(root.join("media.sqlite")).map_err(|_| "STORAGE_UNAVAILABLE")?;
+        let mut db =
+            Connection::open(root.join("media.sqlite")).map_err(|_| "STORAGE_UNAVAILABLE")?;
         #[cfg(unix)]
         {
             use std::os::unix::fs::PermissionsExt;
@@ -66,6 +79,7 @@ impl Jobs {
           CREATE TABLE IF NOT EXISTS jobs(id TEXT PRIMARY KEY,video TEXT NOT NULL,profile TEXT NOT NULL,state TEXT NOT NULL,media_id TEXT,failure TEXT,retryable INTEGER NOT NULL DEFAULT 0,updated INTEGER NOT NULL,UNIQUE(video,profile));
           CREATE TABLE IF NOT EXISTS media(id TEXT PRIMARY KEY,sha256 TEXT NOT NULL UNIQUE,duration INTEGER NOT NULL,bytes INTEGER NOT NULL);
           CREATE TABLE IF NOT EXISTS requests(id TEXT PRIMARY KEY,video TEXT NOT NULL,job_id TEXT NOT NULL);").map_err(|_|"STORAGE_UNAVAILABLE")?;
+        catalogue::initialize(&db).map_err(|error| error.code)?;
         db.execute("UPDATE jobs SET state='FAILED',failure='INGEST_INTERRUPTED',retryable=1,updated=? WHERE state NOT IN ('QUEUED','READY','FAILED')",[now]).map_err(|_|"STORAGE_UNAVAILABLE")?;
         // Temp directories contain only generated UUID names. No partial output is reusable after restart.
         for entry in fs::read_dir(root.join("tmp"))
@@ -80,38 +94,14 @@ impl Jobs {
                 let _ = fs::remove_dir_all(entry.path());
             }
         }
-        let mut missing = Vec::new();
-        {
-            let mut stmt = db
-                .prepare("SELECT id,sha256,bytes FROM media")
-                .map_err(|_| "STORAGE_UNAVAILABLE")?;
-            let rows = stmt
-                .query_map([], |r| {
-                    Ok((
-                        r.get::<_, String>(0)?,
-                        r.get::<_, String>(1)?,
-                        r.get::<_, u64>(2)?,
-                    ))
-                })
-                .map_err(|_| "STORAGE_UNAVAILABLE")?;
-            for row in rows.flatten() {
-                if !crate::model::hex(&row.1)
-                    || !fs::metadata(root.join("media").join(format!("{}.ogg", row.1)))
-                        .is_ok_and(|m| m.is_file() && m.len() == row.2)
-                {
-                    missing.push(row.0);
-                }
-            }
-        }
-        for id in missing {
-            db.execute("UPDATE jobs SET state='FAILED',failure='CACHE_MISSING',retryable=1,updated=? WHERE media_id=?",params![now,id]).map_err(|_|"STORAGE_UNAVAILABLE")?;
-            db.execute("DELETE FROM media WHERE id=?", [id])
-                .map_err(|_| "STORAGE_UNAVAILABLE")?;
-        }
+        let root = Arc::new(root.to_owned());
+        let cache = Cache::new(root.clone());
+        cache.initialize(&mut db, now).map_err(|e| e.code)?;
         Ok(Self {
             db: Arc::new(Mutex::new(db)),
-            root: Arc::new(root.to_owned()),
+            root,
             wake: Arc::new(Notify::new()),
+            cache,
         })
     }
     async fn access<T: Send + 'static>(
@@ -127,24 +117,37 @@ impl Jobs {
         if r.schema_version != 1 || !uuid(&r.request_id) || !video(&r.video_id) {
             return Err(Error::new(422, "INVALID_SOURCE"));
         }
+        let song = r
+            .song
+            .as_ref()
+            .map(|metadata| SongRecord::from_job(&r.request_id, &r.video_id, metadata))
+            .transpose()?;
+        let cache = self.cache.clone();
         let out=self.access(move|db|{
+            let existing_id: Option<String> = db.query_row("SELECT id FROM jobs WHERE video=? AND profile=?", params![r.video_id, PROFILE], |row| row.get(0)).optional().map_err(db_error)?;
+            if let Some(id) = &existing_id { cache.reconcile_job(db, id, now)?; }
             let tx=db.transaction().map_err(db_error)?;
             if let Some((old,id))=tx.query_row("SELECT video,job_id FROM requests WHERE id=?",[&r.request_id],|row|Ok((row.get::<_,String>(0)?,row.get::<_,String>(1)?))).optional().map_err(db_error)? {
                 if old!=r.video_id {return Err(Error::new(409,"IDEMPOTENCY_CONFLICT"))}
-                let value=job_json(&tx,&id)?;return Ok((value["state"]!="READY",value));
+                if let Some(song)=&song { catalogue::save(&tx,song,now)?; }
+                let value=job_json(&tx,&id)?;tx.commit().map_err(db_error)?;return Ok((value["state"]!="READY",value));
             }
-            let existing:Option<(String,String,bool,i64)>=tx.query_row("SELECT id,state,retryable,updated FROM jobs WHERE video=? AND profile=?",params![r.video_id,PROFILE],|row|Ok((row.get(0)?,row.get(1)?,row.get(2)?,row.get(3)?))).optional().map_err(db_error)?;
+            if let Some(song)=&song { catalogue::save(&tx,song,now)?; }
+            let existing:Option<(String,String,bool,i64,Option<String>)>=tx.query_row("SELECT id,state,retryable,updated,failure FROM jobs WHERE video=? AND profile=?",params![r.video_id,PROFILE],|row|Ok((row.get(0)?,row.get(1)?,row.get(2)?,row.get(3)?,row.get(4)?))).optional().map_err(db_error)?;
             let pending:i64=tx.query_row("SELECT count(*) FROM jobs WHERE state='QUEUED' AND profile=?",[PROFILE],|row|row.get(0)).map_err(db_error)?;
-            let id=if let Some((id,state,retryable,updated))=existing {
-                if state=="FAILED" && retryable && now-updated>=30000 {
+            let id=if let Some((id,state,retryable,updated,failure))=existing {
+                if state=="FAILED" && retryable && (now-updated>=30000 || matches!(failure.as_deref(), Some("CACHE_EVICTED" | "CACHE_MISSING"))) {
                     if pending>=MAX_QUEUED {return Err(Error::retry(429,"QUEUE_FULL",2000))}
-                    tx.execute("UPDATE jobs SET state='QUEUED',failure=NULL,retryable=0,updated=? WHERE id=?",params![now,id]).map_err(db_error)?;
+                    tx.execute("UPDATE jobs SET state='QUEUED',media_id=NULL,failure=NULL,retryable=0,updated=? WHERE id=?",params![now,id]).map_err(db_error)?;
                 }id
             } else {
                 if pending>=MAX_QUEUED {return Err(Error::retry(429,"QUEUE_FULL",2000))}
                 let id=uuid::Uuid::new_v4().to_string();tx.execute("INSERT INTO jobs(id,video,profile,state,updated) VALUES(?,?,?,'QUEUED',?)",params![id,r.video_id,PROFILE,now]).map_err(db_error)?;id
             };
             tx.execute("INSERT INTO requests(id,video,job_id) VALUES(?,?,?)",params![r.request_id,r.video_id,id]).map_err(db_error)?;
+            let order = Cache::next_use(&tx, now)?;
+            tx.execute("UPDATE jobs SET last_used=? WHERE id=?",params![order,id]).map_err(db_error)?;
+            tx.execute("UPDATE media SET last_used=?,handoff_until=MAX(handoff_until,?) WHERE id=(SELECT media_id FROM jobs WHERE id=? AND state='READY')",params![order,now+HANDOFF_MILLIS,id]).map_err(db_error)?;
             // Receipts are bounded independently of deduplicated source records.
             tx.execute("DELETE FROM requests WHERE rowid IN (SELECT rowid FROM requests ORDER BY rowid DESC LIMIT -1 OFFSET 10000)",[]).map_err(db_error)?;
             let value=job_json(&tx,&id)?;tx.commit().map_err(db_error)?;Ok((value["state"]!="READY",value))
@@ -152,16 +155,134 @@ impl Jobs {
         self.wake.notify_one();
         Ok(out)
     }
+    pub async fn import_catalogue(
+        &self,
+        request: CatalogueImportRequest,
+        now: i64,
+    ) -> Result<Value> {
+        request.validate()?;
+        self.access(move |db| {
+            let tx = db.transaction().map_err(db_error)?;
+            for song in &request.songs {
+                catalogue::save(&tx, song, now)?;
+            }
+            tx.commit().map_err(db_error)?;
+            Ok(json!({"savedCount":request.songs.len()}))
+        })
+        .await
+    }
     pub async fn status(&self, id: String) -> Result<Value> {
         if !uuid(&id) {
             return Err(Error::new(404, "JOB_NOT_FOUND"));
         }
-        self.access(move |db| job_json(db, &id)).await
+        let cache = self.cache.clone();
+        self.access(move |db| {
+            let value = job_json(db, &id)?;
+            if value["state"] == "READY" {
+                let media = value["mediaId"]
+                    .as_str()
+                    .ok_or(Error::new(404, "MEDIA_NOT_FOUND"))?;
+                let record = db
+                    .query_row("SELECT sha256,bytes FROM media WHERE id=?", [media], |r| {
+                        Ok((r.get::<_, String>(0)?, r.get::<_, u64>(1)?))
+                    })
+                    .optional()
+                    .map_err(db_error)?;
+                let valid = record.is_some_and(|(sha, bytes)| cache.valid_file(&sha, bytes));
+                if !valid {
+                    return Err(Error::new(404, "MEDIA_NOT_FOUND"));
+                }
+            }
+            Ok(value)
+        })
+        .await
     }
     pub async fn media(&self, ids: Vec<String>) -> Result<HashMap<String, Media>> {
-        self.access(move|db| {let mut out=HashMap::new();for id in ids {
-            if let Some(m)=db.query_row("SELECT m.id,m.sha256,m.duration,m.bytes FROM media m JOIN jobs j ON j.media_id=m.id WHERE m.id=? AND j.state='READY' AND j.profile=?",params![id,PROFILE],read_media).optional().map_err(db_error)?{out.insert(id,m);}
-        }Ok(out)}).await
+        Ok(self.protect(ids).await?.0)
+    }
+    pub async fn protect(&self, ids: Vec<String>) -> Result<(HashMap<String, Media>, MediaPins)> {
+        let cache = self.cache.clone();
+        self.access(move |db| {
+            let mut out = HashMap::new();
+            for id in ids {
+                if let Some(m) = db.query_row("SELECT m.id,m.sha256,m.duration,m.bytes FROM media m JOIN jobs j ON j.media_id=m.id WHERE m.id=? AND j.state='READY' AND j.profile=?", params![id,PROFILE],read_media).optional().map_err(db_error)?.filter(|m|cache.valid_file(&m.sha256,m.byte_length)) {
+                    out.insert(id,m);
+                }
+            }
+            let guard = cache.pin(out.keys().cloned().collect());
+            Ok((out,guard))
+        }).await
+    }
+    pub async fn retain(
+        &self,
+        retained: Option<Vec<String>>,
+        current: Vec<String>,
+        newly_used: Vec<String>,
+        now: i64,
+    ) -> Result<()> {
+        self.retain_selection(retained, current, newly_used, now, None, None)
+            .await
+    }
+    pub(crate) async fn retain_selection(
+        &self,
+        retained: Option<Vec<String>>,
+        current: Vec<String>,
+        newly_used: Vec<String>,
+        now: i64,
+        selection: Option<MediaPins>,
+        version: Option<PinVersion>,
+    ) -> Result<()> {
+        let cache = self.cache.clone();
+        self.access(move |db| {
+            // The blocking transaction retains its guard even if the HTTP future is cancelled.
+            let _selection = selection;
+            let applied = if version.is_some() {
+                cache.replace_versioned_pins(db, retained.as_deref(), &current, version.as_ref())?
+            } else {
+                cache.replace_pins(db, retained.as_deref(), &current)?;
+                true
+            };
+            if applied {
+                for id in newly_used {
+                    Cache::touch(db, &id, now)?;
+                }
+            }
+            Ok(())
+        })
+        .await
+    }
+    pub async fn open_media(
+        &self,
+        media: Media,
+        now: i64,
+        touch: bool,
+    ) -> Result<(fs::File, MediaPins)> {
+        let cache = self.cache.clone();
+        self.access(move |db| {
+            let registered: bool = db
+                .query_row(
+                    "SELECT EXISTS(SELECT 1 FROM media WHERE id=? AND sha256=? AND bytes=?)",
+                    params![media.id, media.sha256, media.byte_length],
+                    |r| r.get(0),
+                )
+                .map_err(db_error)?;
+            if !registered || !cache.valid_file(&media.sha256, media.byte_length) {
+                return Err(Error::new(404, "MEDIA_NOT_FOUND"));
+            }
+            let file = fs::File::open(cache.path(&media.sha256))
+                .map_err(|_| Error::new(404, "MEDIA_NOT_FOUND"))?;
+            let guard = cache.pin(vec![media.id.clone()]);
+            if touch {
+                Cache::touch(db, &media.id, now)?;
+            }
+            Ok((file, guard))
+        })
+        .await
+    }
+    async fn reserve_cache(&self, now: i64) -> Result<()> {
+        let cache = self.cache.clone();
+        self.access(move |db| cache.make_room(db, now, MAX_SOURCE))
+            .await
     }
     async fn claim(&self, now: i64) -> Result<Option<Work>> {
         self.access(move |db| {
@@ -226,10 +347,20 @@ impl Jobs {
         duration: i64,
         bytes: u64,
         now: i64,
+        output: PathBuf,
     ) -> Result<()> {
+        let cache = self.cache.clone();
         self.access(move|db|{let tx=db.transaction().map_err(db_error)?;
+            let destination = cache.path(&sha);
+            if destination.try_exists().map_err(|_|Error::new(507,"DISK_FULL"))? {
+                if !cache.valid_file(&sha,bytes) { return Err(Error::new(500,"VERIFY_FAILED")); }
+                fs::remove_file(output).map_err(|_|Error::new(507,"DISK_FULL"))?;
+            } else { fs::rename(output,&destination).map_err(|_|Error::new(507,"DISK_FULL"))?; }
+            #[cfg(unix)]
+            fs::File::open(destination.parent().unwrap()).and_then(|f|f.sync_all()).map_err(|_|Error::new(507,"DISK_FULL"))?;
             let id=tx.query_row("SELECT id FROM media WHERE sha256=?",[&sha],|r|r.get::<_,String>(0)).optional().map_err(db_error)?.unwrap_or_else(||uuid::Uuid::new_v4().to_string());
-            tx.execute("INSERT OR IGNORE INTO media(id,sha256,duration,bytes) VALUES(?,?,?,?)",params![id,sha,duration,bytes]).map_err(db_error)?;
+            let order: i64 = tx.query_row("SELECT last_used FROM jobs WHERE id=?",[&job],|r|r.get(0)).map_err(db_error)?;
+            tx.execute("INSERT INTO media(id,sha256,duration,bytes,last_used,handoff_until) VALUES(?,?,?,?,?,?) ON CONFLICT(sha256) DO UPDATE SET last_used=MAX(last_used,excluded.last_used),handoff_until=MAX(handoff_until,excluded.handoff_until)",params![id,sha,duration,bytes,order,now+HANDOFF_MILLIS]).map_err(db_error)?;
             tx.execute("UPDATE jobs SET state='READY',media_id=?,failure=NULL,retryable=0,updated=? WHERE id=?",params![id,now,job]).map_err(db_error)?;
             tx.commit().map_err(db_error)?;Ok(())
         }).await
@@ -305,16 +436,12 @@ async fn ingest(app: &App, w: &Work) -> IngestResult<()> {
     {
         return Err("DISK_FULL");
     }
+    app.jobs
+        .reserve_cache(app.now())
+        .await
+        .map_err(|e| e.code)?;
     let dir = app.jobs.root.join("tmp").join(&w.id);
     tokio::fs::create_dir(&dir).await.map_err(|_| "DISK_FULL")?;
-    let root = app.jobs.root.clone();
-    let used = tokio::task::spawn_blocking(move || directory_size(&root.join("media")))
-        .await
-        .map_err(|_| "DISK_FULL")??;
-    // Refuse new work instead of risking eviction of an asset a room is about to select.
-    if used.saturating_add(MAX_SOURCE) > CACHE_BUDGET {
-        return Err("DISK_FULL");
-    }
     let deadline = Instant::now() + Duration::from_secs(300);
     let ffmpeg = executable_path(&app.config.ffmpeg)?;
     let url = format!("https://www.youtube.com/watch?v={}", w.video);
@@ -511,34 +638,13 @@ async fn ingest(app: &App, w: &Work) -> IngestResult<()> {
     })
     .await
     .map_err(|_| "VERIFY_FAILED")??;
-    let destination = app.jobs.root.join("media").join(format!("{sha}.ogg"));
-    if tokio::fs::try_exists(&destination)
-        .await
-        .map_err(|_| "DISK_FULL")?
-    {
-        if tokio::fs::metadata(&destination)
-            .await
-            .map_err(|_| "VERIFY_FAILED")?
-            .len()
-            != bytes
-        {
-            return Err("VERIFY_FAILED");
-        }
-        tokio::fs::remove_file(&output)
-            .await
-            .map_err(|_| "DISK_FULL")?;
-    } else {
-        tokio::fs::rename(&output, &destination)
-            .await
-            .map_err(|_| "DISK_FULL")?;
-    }
     if Instant::now() > deadline {
         return Err("INGEST_TIMEOUT");
     }
     app.jobs
-        .commit(w.id.clone(), sha, duration, bytes, app.now())
+        .commit(w.id.clone(), sha, duration, bytes, app.now(), output)
         .await
-        .map_err(|_| "INGEST_UNAVAILABLE")?;
+        .map_err(|error| error.code)?;
     Ok(())
 }
 fn download_info(mut info: Value, video: &str) -> IngestResult<Value> {
@@ -555,6 +661,10 @@ fn download_info(mut info: Value, video: &str) -> IngestResult<Value> {
     // URL again. Keep failure bounded; an explicit job retry resolves fresh URLs.
     object.remove("webpage_url");
     object.remove("original_url");
+    // Caption tracks are unused by an audio-only download and carry short-lived signed
+    // URLs, so they are dropped before the info is written back for the download stage.
+    object.remove("automatic_captions");
+    object.remove("subtitles");
     Ok(info)
 }
 fn executable_path(program: &str) -> IngestResult<PathBuf> {
@@ -663,18 +773,6 @@ async fn probe(
     )
     .map_err(|_| "VERIFY_FAILED")
 }
-fn directory_size(dir: &Path) -> IngestResult<u64> {
-    let mut size = 0u64;
-    for entry in fs::read_dir(dir).map_err(|_| "DISK_FULL")? {
-        let entry = entry.map_err(|_| "DISK_FULL")?;
-        let meta = entry.metadata().map_err(|_| "DISK_FULL")?;
-        if !meta.is_file() || entry.file_type().map_err(|_| "DISK_FULL")?.is_symlink() {
-            return Err("DISK_FULL");
-        }
-        size = size.saturating_add(meta.len());
-    }
-    Ok(size)
-}
 fn check_temp(dir: &Path) -> IngestResult<()> {
     let mut total = 0u64;
     let mut count = 0;
@@ -687,10 +785,17 @@ fn check_temp(dir: &Path) -> IngestResult<()> {
         let bytes = entry.metadata().map_err(|_| "DISK_FULL")?.len();
         total = total.saturating_add(bytes);
         let name = entry.file_name().to_string_lossy().into_owned();
-        if (name.ends_with(".out") || name.ends_with(".err")) && bytes > 1024 * 1024 {
+        // Every stage shares this directory, so the wider metadata cap is keyed on the
+        // file name instead of the stage that happens to be running.
+        let limit = if name == "metadata.out" {
+            METADATA_OUTPUT_LIMIT
+        } else {
+            LOG_OUTPUT_LIMIT
+        };
+        if (name.ends_with(".out") || name.ends_with(".err")) && bytes > limit {
             return Err("TOO_LARGE");
         }
-        if bytes > MAX_SOURCE || total > 64 * 1024 * 1024 {
+        if bytes > MAX_SOURCE || total > TEMP_BUDGET {
             return Err("TOO_LARGE");
         }
     }
@@ -904,12 +1009,16 @@ mod tests {
         let source = json!({"id":"BaW_jenozKc","_type":"video","duration":240,
             "webpage_url":"https://www.youtube.com/watch?v=BaW_jenozKc",
             "original_url":"https://www.youtube.com/watch?v=BaW_jenozKc",
+            "subtitles":{"en":[{"ext":"vtt","url":"https://media.example.test/signed-sub"}]},
+            "automatic_captions":{"en":[{"ext":"json3","url":"https://media.example.test/signed-auto"}]},
             "formats":[{"format_id":"249","acodec":"opus","vcodec":"none","abr":64,"url":"https://media.example.test/audio"}]});
         let ready = download_info(source.clone(), "BaW_jenozKc").unwrap();
         assert_eq!(ready["formats"], source["formats"]);
         assert_eq!(ready["duration"], 240);
         assert!(ready.get("webpage_url").is_none());
         assert!(ready.get("original_url").is_none());
+        assert!(ready.get("subtitles").is_none());
+        assert!(ready.get("automatic_captions").is_none());
         assert_eq!(
             download_info(source.clone(), "AAAAAAAAAAA").err(),
             Some("SOURCE_UNAVAILABLE")
@@ -968,8 +1077,64 @@ mod tests {
         assert_eq!(check_temp(dir.path()).err(), Some("TOO_LARGE"));
         drop(file);
         fs::remove_file(dir.path().join("source.media")).unwrap();
-        let file = fs::File::create(dir.path().join("download.err")).unwrap();
-        file.set_len(1024 * 1024 + 1).unwrap();
+        for name in [
+            "download.err",
+            "download.out",
+            "sourceprobe.out",
+            "encode.out",
+            "metadata.err",
+        ] {
+            let file = fs::File::create(dir.path().join(name)).unwrap();
+            file.set_len(LOG_OUTPUT_LIMIT).unwrap();
+            assert_eq!(check_temp(dir.path()).ok(), Some(()), "{name} at the cap");
+            file.set_len(LOG_OUTPUT_LIMIT + 1).unwrap();
+            assert_eq!(
+                check_temp(dir.path()).err(),
+                Some("TOO_LARGE"),
+                "{name} over the cap"
+            );
+            drop(file);
+            fs::remove_file(dir.path().join(name)).unwrap();
+        }
+    }
+    #[test]
+    fn metadata_dump_of_a_real_song_survives_the_temp_cap() {
+        let dir = tempfile::tempdir().unwrap();
+        let file = fs::File::create(dir.path().join("metadata.out")).unwrap();
+        // Measured yt-dlp metadata for the rejected 99s private webm source.
+        file.set_len(1_660_825).unwrap();
+        assert_eq!(check_temp(dir.path()).ok(), Some(()));
+        file.set_len(METADATA_OUTPUT_LIMIT).unwrap();
+        assert_eq!(check_temp(dir.path()).ok(), Some(()));
+        file.set_len(METADATA_OUTPUT_LIMIT + 1).unwrap();
+        assert_eq!(check_temp(dir.path()).err(), Some("TOO_LARGE"));
+        drop(file);
+        fs::remove_file(dir.path().join("metadata.out")).unwrap();
+    }
+    #[test]
+    fn shared_temp_budget_survives_the_wider_metadata_cap() {
+        let dir = tempfile::tempdir().unwrap();
+        // Every file stays inside its own limit; only the directory total crosses TEMP_BUDGET.
+        let fill = |name: &str, bytes: u64| {
+            fs::File::create(dir.path().join(name))
+                .unwrap()
+                .set_len(bytes)
+                .unwrap();
+        };
+        fill("metadata.out", METADATA_OUTPUT_LIMIT);
+        fill("source.media", MAX_SOURCE);
+        fill("resolved.json", MAX_SOURCE);
+        for name in [
+            "download.err",
+            "download.out",
+            "encode.err",
+            "encode.out",
+            "metadata.err",
+            "sourceprobe.err",
+            "sourceprobe.out",
+        ] {
+            fill(name, LOG_OUTPUT_LIMIT);
+        }
         assert_eq!(check_temp(dir.path()).err(), Some("TOO_LARGE"));
     }
 }

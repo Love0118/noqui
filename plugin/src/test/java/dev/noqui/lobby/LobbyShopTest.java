@@ -42,7 +42,7 @@ class LobbyShopTest {
         bukkit.when(()->Bukkit.createInventory(any(InventoryHolder.class),eq(54),any(Component.class))).thenAnswer(c->{
             Inventory inventory=mock(Inventory.class);when(inventory.getHolder()).thenReturn(c.getArgument(0));when(inventory.getSize()).thenReturn(54);
             Map<Integer,ItemStack> items=new HashMap<>();contents.put(inventory,items);
-            doAnswer(write->{items.put(write.getArgument(0),write.getArgument(1));return null;}).when(inventory).setItem(anyInt(),any());return inventory;
+            doAnswer(write->{int slot=write.getArgument(0);assertTrue(slot>=0&&slot<54,"Menu slot out of bounds");assertFalse(items.containsKey(slot),"Menu entry overwritten");items.put(slot,write.getArgument(1));return null;}).when(inventory).setItem(anyInt(),any());return inventory;
         });
         player=mock(Player.class);when(player.getUniqueId()).thenReturn(id);when(player.getOpenInventory()).thenAnswer(c->current);
         when(player.openInventory(any(Inventory.class))).thenAnswer(c->{
@@ -61,7 +61,7 @@ class LobbyShopTest {
                 if(!full.get())try{wallets.delivered(grant.transaction());}catch(IOException error){throw new IllegalStateException(error);}
             }
         },message->{});
-        wallets.reward(id,"stars",100,Currency.STARLIGHT);wallets.reward(id,"points",10,Currency.POINTS);
+        wallets.reward(id,"stars",1000,Currency.STARLIGHT);wallets.reward(id,"points",100,Currency.POINTS);
     }
     @AfterEach void cleanup(){shop.close();stacks.close();bukkit.close();}
     static InventoryView view(Inventory top,Player owner){InventoryView v=mock(InventoryView.class);when(v.getTopInventory()).thenReturn(top);when(v.getPlayer()).thenReturn(owner);return v;}
@@ -74,6 +74,21 @@ class LobbyShopTest {
     void openProduct(int category){shop.open(player);if(category!=0)click(category);click(19);}
     ItemMeta meta(int slot){return metadata.get(contents.get(current.getTopInventory()).get(slot));}
     static String plain(Component c){return PlainTextComponentSerializer.plainText().serialize(c);}
+    private List<LobbyCatalog.Product> largeCatalogue(){var products=new ArrayList<LobbyCatalog.Product>();for(int i=0;i<80;i++)products.add(new LobbyCatalog.Product("fixture_hat_"+i,"치장 "+i,LobbyCatalog.Kind.COSMETIC,"head",200,20));return products;}
+    private void largeShop(List<LobbyCatalog.Product> products){shop.close();shop=new LobbyShop(wallets,products,mock(GadgetItems.class),p->eligible.get(),()->{},s->{});walletsReward();}
+    private void walletsReward(){try{wallets.reward(id,"large-catalogue-funds",20000,Currency.STARLIGHT);}catch(IOException error){throw new AssertionError(error);}}
+    private List<String> visibleModels(){var models=new ArrayList<String>();for(int i=0;i<21;i++){int slot=19+(i/7)*9+i%7;if(!contents.get(current.getTopInventory()).containsKey(slot))continue;var key=ArgumentCaptor.forClass(NamespacedKey.class);verify(meta(slot)).setItemModel(key.capture());models.add(key.getValue().getKey());}return models;}
+    @Test void eightyProductsAreReachableWithoutClippingAndDetailBackReturnsToItsPage(){
+        largeShop(largeCatalogue());shop.open(player);var seen=new LinkedHashSet<String>();
+        for(int page=0;page<4;page++){var models=visibleModels();assertEquals(page==3?17:21,models.size());for(String model:models)assertTrue(seen.add(model));assertEquals(page>0,contents.get(current.getTopInventory()).containsKey(45));assertEquals(page<3,contents.get(current.getTopInventory()).containsKey(53));if(page<3)click(53);}
+        assertEquals(80,seen.size());click(19);click(29);click(22);assertEquals("fixture_hat_63",wallets.wallet(id).equipped().get("head"));click(49);assertEquals("fixture_hat_63",visibleModels().getFirst());
+        var old=current;click(45);var next=current;shop.click(event(old,player,19,ClickType.LEFT));shop.tick();assertSame(next,current);assertEquals("fixture_hat_42",visibleModels().getFirst());
+    }
+    @Test void ownedMenuPaginatesAllOwnedCosmeticsAndPreservesEquipBackNavigation()throws Exception{
+        var products=largeCatalogue();largeShop(products);for(var product:products)wallets.purchase(id,product,Currency.STARLIGHT,"owned:"+product.id());
+        shop.open(player);click(3);var seen=new HashSet<String>();for(int page=0;page<4;page++){seen.addAll(visibleModels());if(page<3)click(53);}assertEquals(80,seen.size());
+        click(19);click(22);assertEquals("fixture_hat_63",wallets.wallet(id).equipped().get("head"));click(49);assertEquals("fixture_hat_63",visibleModels().getFirst());
+    }
 
     @Test void chestCategoriesShowActualModelsStyledNamesPricesAndOwnership() {
         shop.open(player);assertTrue(LobbyFeatures.ownsInventory(current.getTopInventory()));
@@ -81,7 +96,7 @@ class LobbyShopTest {
         var name=ArgumentCaptor.forClass(Component.class);verify(pirate).displayName(name.capture());
         assertEquals("해적 모자",plain(name.getValue()));assertEquals(TextDecoration.State.FALSE,name.getValue().decoration(TextDecoration.ITALIC));assertNotNull(name.getValue().color());
         @SuppressWarnings("unchecked") var lore=(ArgumentCaptor<List<Component>>)(ArgumentCaptor<?>)ArgumentCaptor.forClass(List.class);
-        verify(pirate).lore(lore.capture());assertEquals(List.of("✦ 20  /  정답 포인트 2","보유 0","미장착"),lore.getValue().stream().map(LobbyShopTest::plain).toList());
+        verify(pirate).lore(lore.capture());assertEquals(List.of("✦ 200  /  정답 포인트 20","보유 0","미장착"),lore.getValue().stream().map(LobbyShopTest::plain).toList());
         assertTrue(lore.getValue().stream().allMatch(c->c.decoration(TextDecoration.ITALIC)==TextDecoration.State.FALSE&&c.color()!=null));
         click(1);verify(meta(19)).setItemModel(new NamespacedKey("noqui","triple_boots"));click(2);
         verify(meta(19),never()).setItemModel(any());verify(player,never()).showDialog(any());
@@ -92,17 +107,17 @@ class LobbyShopTest {
         var stars=event(old,player,29,ClickType.LEFT);
         var points=event(old,player,33,ClickType.RIGHT);
         when(stars.isCancelled()).thenReturn(true);shop.click(stars);shop.click(points);
-        assertEquals(100,wallets.wallet(id).stars());shop.tick();
-        assertEquals(80,wallets.wallet(id).stars());assertEquals(10,wallets.wallet(id).points());assertEquals(1,wallets.wallet(id).owned().get("pirate_hat"));
-        shop.click(stars);shop.tick();assertEquals(80,wallets.wallet(id).stars());
+        assertEquals(1000,wallets.wallet(id).stars());shop.tick();
+        assertEquals(800,wallets.wallet(id).stars());assertEquals(100,wallets.wallet(id).points());assertEquals(1,wallets.wallet(id).owned().get("pirate_hat"));
+        shop.click(stars);shop.tick();assertEquals(800,wallets.wallet(id).stars());
         assertFalse(contents.get(current.getTopInventory()).containsKey(29));click(22);assertEquals("pirate_hat",wallets.wallet(id).equipped().get("head"));
         assertEquals("pirate_hat",new LobbyWallets(dir.resolve("wallet")).wallet(id).equipped().get("head"));
         click(22);assertFalse(wallets.wallet(id).equipped().containsKey("head"));
     }
     @Test void cosmeticsAndGadgetsBuyWithValuableAnswerPointsAndAllDualPricesAreTenToOne() {
         for(var p:LobbyCatalog.defaults())if(p.kind()!=LobbyCatalog.Kind.CREDIT)assertEquals(10*p.points(),p.stars());
-        openProduct(0);click(33);assertEquals(8,wallets.wallet(id).points());assertEquals(100,wallets.wallet(id).stars());
-        shop.open(player);click(1);click(19);click(33);assertEquals(6,wallets.wallet(id).points());assertEquals("triple_boots",wallets.pendingGadgets(id).getFirst().product());
+        openProduct(0);click(33);assertEquals(80,wallets.wallet(id).points());assertEquals(1000,wallets.wallet(id).stars());
+        shop.open(player);click(1);click(19);click(33);assertEquals(60,wallets.wallet(id).points());assertEquals("triple_boots",wallets.pendingGadgets(id).getFirst().product());
         assertFalse(wallets.wallet(id).owned().containsKey("triple_boots"));
     }
     @Test void guiTransferOperationsAreBlockedWhilePersonalInventoryRemainsMovable() {
@@ -117,33 +132,33 @@ class LobbyShopTest {
         var collect=event(current,player,55,ClickType.DOUBLE_CLICK);when(collect.getAction()).thenReturn(InventoryAction.COLLECT_TO_CURSOR);shop.click(collect);verify(collect).setCancelled(true);
         InventoryDragEvent drag=mock(InventoryDragEvent.class);when(drag.getView()).thenReturn(current);when(drag.getWhoClicked()).thenReturn(player);when(drag.getRawSlots()).thenReturn(Set.of(19,55));shop.drag(drag);verify(drag).setCancelled(true);
         InventoryDragEvent personal=mock(InventoryDragEvent.class);when(personal.getView()).thenReturn(current);when(personal.getWhoClicked()).thenReturn(player);when(personal.getRawSlots()).thenReturn(Set.of(55,56));shop.drag(personal);verify(personal,never()).setCancelled(anyBoolean());
-        shop.tick();assertEquals(100,wallets.wallet(id).stars());assertEquals(10,wallets.wallet(id).points());assertTrue(wallets.wallet(id).owned().isEmpty());
+        shop.tick();assertEquals(1000,wallets.wallet(id).stars());assertEquals(100,wallets.wallet(id).points());assertTrue(wallets.wallet(id).owned().isEmpty());
         verify(player,never()).getInventory();
     }
     @Test void foreignOwnerForeignHolderAndOldPlayerHandleCannotAct() {
         openProduct(0);Player stranger=mock(Player.class);when(stranger.getUniqueId()).thenReturn(id);
         var e=event(current,stranger,29,ClickType.LEFT);shop.click(e);verify(e).setCancelled(true);
         InventoryView foreign=view(mock(Inventory.class),player);var foreignEvent=event(foreign,player,29,ClickType.LEFT);
-        shop.click(foreignEvent);verify(foreignEvent,never()).setCancelled(anyBoolean());shop.tick();assertEquals(100,wallets.wallet(id).stars());
+        shop.click(foreignEvent);verify(foreignEvent,never()).setCancelled(anyBoolean());shop.tick();assertEquals(1000,wallets.wallet(id).stars());
     }
     @Test void queuedActionsAreInvalidatedByClosingReplacingLeavingOrShutdown() {
-        openProduct(0);shop.click(event(current,player,29,ClickType.LEFT));closeEvent(current,player);shop.tick();assertEquals(100,wallets.wallet(id).stars());
-        openProduct(0);shop.click(event(current,player,29,ClickType.LEFT));shop.open(player);shop.tick();assertEquals(100,wallets.wallet(id).stars());
-        openProduct(0);shop.click(event(current,player,29,ClickType.LEFT));eligible.set(false);shop.tick();assertEquals(100,wallets.wallet(id).stars());
-        eligible.set(true);openProduct(0);shop.click(event(current,player,29,ClickType.LEFT));shop.close();shop.tick();assertEquals(100,wallets.wallet(id).stars());
+        openProduct(0);shop.click(event(current,player,29,ClickType.LEFT));closeEvent(current,player);shop.tick();assertEquals(1000,wallets.wallet(id).stars());
+        openProduct(0);shop.click(event(current,player,29,ClickType.LEFT));shop.open(player);shop.tick();assertEquals(1000,wallets.wallet(id).stars());
+        openProduct(0);shop.click(event(current,player,29,ClickType.LEFT));eligible.set(false);shop.tick();assertEquals(1000,wallets.wallet(id).stars());
+        eligible.set(true);openProduct(0);shop.click(event(current,player,29,ClickType.LEFT));shop.close();shop.tick();assertEquals(1000,wallets.wallet(id).stars());
     }
     @Test void persistenceFailureCannotDebitDeliverOrEquipAndInsufficientFundsAreSafe()throws Exception {
-        openProduct(2);failure.set(true);click(29);assertEquals(100,wallets.wallet(id).stars());assertTrue(wallets.pending().isEmpty());assertTrue(deliveryAttempts.isEmpty());
+        openProduct(2);failure.set(true);click(29);assertEquals(1000,wallets.wallet(id).stars());assertTrue(wallets.pending().isEmpty());assertTrue(deliveryAttempts.isEmpty());
         assertTrue(messages.stream().anyMatch(m->plain(m).contains("저장 실패")));
         failure.set(false);wallets.purchase(id,LobbyCatalog.defaults().get(1),Currency.STARLIGHT,"direct");openProduct(0);
         failure.set(true);click(22);assertTrue(wallets.wallet(id).equipped().isEmpty());failure.set(false);
-        for(int i=0;i<8;i++){openProduct(2);click(29);}assertEquals(0,wallets.wallet(id).stars());
-        openProduct(2);click(29);assertEquals(8,deliveryAttempts.size());assertEquals(0,wallets.wallet(id).stars());
+        for(int i=0;i<80;i++){openProduct(2);click(29);}assertEquals(0,wallets.wallet(id).stars());
+        openProduct(2);click(29);assertEquals(80,deliveryAttempts.size());assertEquals(0,wallets.wallet(id).stars());
         assertTrue(messages.stream().anyMatch(m->plain(m).contains("부족")));
     }
     @Test void physicalTicketIsStarsOnlyAndFullInventoryLeavesOneDurableDelivery()throws Exception {
         full.set(true);openProduct(2);assertFalse(contents.get(current.getTopInventory()).containsKey(33));
-        InventoryView old=current;click(29);assertEquals(90,wallets.wallet(id).stars());assertEquals(1,wallets.pending().size());
+        InventoryView old=current;click(29);assertEquals(990,wallets.wallet(id).stars());assertEquals(1,wallets.pending().size());
         assertFalse(wallets.wallet(id).owned().containsKey("question_credit"));assertEquals(1,new LobbyWallets(dir.resolve("wallet")).pending().size());
         shop.click(event(old,player,29,ClickType.LEFT));shop.tick();assertEquals(1,deliveryAttempts.size());
         assertTrue(messages.stream().anyMatch(m->plain(m).contains("지급 대기")));verify(player,never()).getInventory();

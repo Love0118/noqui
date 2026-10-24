@@ -1,0 +1,23 @@
+{
+  "id": "frappuccino_hat",
+  "labelKo": "프라푸치노",
+  "title": "caramel_frappuccino",
+  "author": "wasabi",
+  "sourceURL": "https://blockbenchworkshop.com/model/wasabi/caramel-frappuccino",
+  "sourceDownloadURL": "https://blockbenchworkshop.com/cdn/previews/w5sK8fFlrZBQFGKhxwzZjIfWuD7KV2PL/55885588-7558-430d-8e6e-50a2f4644695.json?v=5",
+  "sourceKind": "publicly published interactive preview model JSON",
+  "license": "CC0 1.0 Universal",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "licenseObligations": "No attribution requirement; retain the supplied source credit as a courtesy.",
+  "changes": [
+    "Cup prop; its straw uses native Java 1.21.11+ XYZ element rotation, supported by the target 26.3 runtime.",
+    "Adapted prop/pet: no upstream claim that it is a wearable Minecraft hat.",
+    "Use head slot anchor Y=1.85, ItemDisplay FIXED, 16 model units per block. Runtime head scale assumed 1.0.",
+    "Native item wrapper references minecraft:model. Parent owns final geometry/attachment visual QA, selection, and pack integration.",
+    "PNG bytes are unmodified. UV coordinates are normalized to Java 0..16 units using each texture UV dimensions, or the source project resolution for older .bbmodel files.",
+    "Texture references use noqui:item/cosmetics/<id>/texture_<n> so all custom sprites belong to the vanilla item atlas directory in 1.21.11+.",
+    "Only uniform geometry scaling/translation and the documented static pose/frame selection were applied. FIXED transforms are explicitly set for the head anchor; original held/head display transforms are replaced.",
+    "Source cullface hints were removed for detached display use; shade:false maps to 26.3 shade_direction_override:up."
+  ],
+  "status": "native_export_ready_for_parent_visual_qa"
+}

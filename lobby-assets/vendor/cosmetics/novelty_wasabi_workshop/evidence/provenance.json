@@ -1,0 +1,45 @@
+{
+  "path": "wasabi/caramel-frappuccino",
+  "sourceURL": "https://blockbenchworkshop.com/model/wasabi/caramel-frappuccino",
+  "metadata": {
+    "@context": "https://schema.org",
+    "@type": "3DModel",
+    "name": "Caramel Frappuccino",
+    "description": "A rigged Blockbench model by @wasabi. 7 elements, 1 bones, 3 textures. Free .bbmodel download.",
+    "url": "https://blockbenchworkshop.com/model/wasabi/caramel-frappuccino",
+    "image": "https://blockbenchworkshop.com/cdn/thumbnails/w5sK8fFlrZBQFGKhxwzZjIfWuD7KV2PL/55885588-7558-430d-8e6e-50a2f4644695.png",
+    "encodingFormat": "application/json",
+    "isAccessibleForFree": true,
+    "keywords": "food",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "author": {
+      "@type": "Person",
+      "name": "wasabi",
+      "url": "https://blockbenchworkshop.com/creator/wasabi"
+    },
+    "interactionStatistic": [
+      {
+        "@type": "InteractionCounter",
+        "interactionType": "https://schema.org/LikeAction",
+        "userInteractionCount": 14
+      },
+      {
+        "@type": "InteractionCounter",
+        "interactionType": "https://schema.org/DownloadAction",
+        "userInteractionCount": 92
+      }
+    ]
+  },
+  "permissive": true,
+  "publicSourceURL": "https://blockbenchworkshop.com/cdn/previews/w5sK8fFlrZBQFGKhxwzZjIfWuD7KV2PL/55885588-7558-430d-8e6e-50a2f4644695.json?v=5",
+  "sourceKind": "publicly published interactive preview model JSON",
+  "originalDownloadLimitation": "The .bbmodel download endpoint returns HTTP 401 without an account; no account was used. This is the openly published preview JSON, not the original .bbmodel archive.",
+  "sha256": "5a22382fb952a2901134b642968bc8ac3ce9e47b67980edbf6ca4fa5e55200cd",
+  "format": {
+    "model_format": "free"
+  },
+  "elements": 7,
+  "meshes": 0,
+  "textures": 3,
+  "animations": 0
+}

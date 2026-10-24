@@ -1,5 +1,7 @@
 pub mod api;
 pub mod auth;
+mod cache;
+pub mod catalogue;
 pub mod jobs;
 pub mod model;
 pub mod state;
@@ -14,7 +16,7 @@ use tokio::sync::broadcast;
 pub const ORIGIN: &str = "https://noqui.danta.qzz.io";
 pub const PROFILE: &str = "opus-48-clip115-v1";
 pub const MAX_SOURCE: u64 = 25 * 1024 * 1024;
-pub const CACHE_BUDGET: u64 = 2 * 1024 * 1024 * 1024;
+pub const CACHE_BUDGET: u64 = 5 * 1024 * 1024 * 1024;
 
 pub trait Clock: Send + Sync {
     fn now_ms(&self) -> i64;
@@ -58,6 +60,7 @@ pub struct App {
     pub inner: Arc<Mutex<state::State>>,
     pub jobs: jobs::Jobs,
     pub changed: broadcast::Sender<()>,
+    pub control_sync: Arc<tokio::sync::Mutex<()>>,
 }
 impl App {
     pub fn open(config: Config, clock: Arc<dyn Clock>) -> Result<Self, String> {
@@ -69,6 +72,7 @@ impl App {
             inner: Arc::new(Mutex::new(state::State::default())),
             jobs,
             changed,
+            control_sync: Arc::new(tokio::sync::Mutex::new(())),
         })
     }
     pub fn now(&self) -> i64 {

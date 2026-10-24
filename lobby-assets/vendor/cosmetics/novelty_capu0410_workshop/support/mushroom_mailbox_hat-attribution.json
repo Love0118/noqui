@@ -1,0 +1,23 @@
+{
+  "id": "mushroom_mailbox_hat",
+  "labelKo": "버섯 우편함",
+  "title": "mushroom_mailbox",
+  "author": "capu0410",
+  "sourceURL": "https://blockbenchworkshop.com/model/capu0410/mushroom-mailbox",
+  "sourceDownloadURL": "https://blockbenchworkshop.com/cdn/previews/SAxUNznOsc6VbacGqhiBoHBe0zzgMUXS/e1713e81-6793-4002-8abf-0a17cd5c97db.json?v=5",
+  "sourceKind": "publicly published interactive preview model JSON",
+  "license": "Creative Commons Attribution 4.0 International",
+  "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+  "licenseObligations": "Credit the named author, link the source and license, and identify changes.",
+  "changes": [
+    "Mushroom-shaped mailbox prop scaled down as a head ornament.",
+    "Adapted prop/pet: no upstream claim that it is a wearable Minecraft hat.",
+    "Use head slot anchor Y=1.85, ItemDisplay FIXED, 16 model units per block. Runtime head scale assumed 1.0.",
+    "Native item wrapper references minecraft:model. Parent owns final geometry/attachment visual QA, selection, and pack integration.",
+    "PNG bytes are unmodified. UV coordinates are normalized to Java 0..16 units using each texture UV dimensions, or the source project resolution for older .bbmodel files.",
+    "Texture references use noqui:item/cosmetics/<id>/texture_<n> so all custom sprites belong to the vanilla item atlas directory in 1.21.11+.",
+    "Only uniform geometry scaling/translation and the documented static pose/frame selection were applied. FIXED transforms are explicitly set for the head anchor; original held/head display transforms are replaced.",
+    "Source cullface hints were removed for detached display use; shade:false maps to 26.3 shade_direction_override:up."
+  ],
+  "status": "native_export_ready_for_parent_visual_qa"
+}
