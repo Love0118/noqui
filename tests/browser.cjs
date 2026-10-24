@@ -319,27 +319,47 @@ test('late autoplay denial cannot resume explicit pause or a revoked session aft
   }
 });
 
-async function joinFixture(hash, response, pathname = '/join') {
-  const elements = new Map(), storage = new Map(), requests = [], navigations = [], historyPaths = [], scripts = [];
-  const get = id => { if (!elements.has(id)) elements.set(id, { textContent: '', hidden: true }); return elements.get(id); };
-  const store = { setItem: (key, value) => storage.set(key, value) };
+async function joinFixture(hash, response, pathname = '/join', reducedMotion = false) {
+  const elements = new Map(), storage = new Map(), requests = [], navigations = [], historyPaths = [], scripts = [], timers = [];
+  let play = () => Promise.resolve(), plays = 0;
+  const get = id => {
+    if (!elements.has(id)) elements.set(id, { textContent: '', hidden: id === 'player-screen', disabled: id === 'connect-button',
+      handlers: {}, classes: new Set(), addEventListener(type, fn) { this.handlers[type] = fn; },
+      classList: { add: name => get(id).classes.add(name), remove: name => get(id).classes.delete(name) },
+      play() { plays++; return play(); }, pause() { this.paused = true; }, load() {}, focus() { this.focused = true; } });
+    return elements.get(id);
+  };
+  const store = { setItem: (key, value) => storage.set(key, value), getItem: key => storage.get(key) || null };
   vm.runInNewContext(joinSource, {
     URLSearchParams, location: { pathname, hash, replace: path => navigations.push(path) }, history: { replaceState: (_, __, path) => historyPaths.push(path) },
-    document: { getElementById: get, createElement: () => ({}), head: { append: script => scripts.push(script) } }, sessionStorage: store, localStorage: store, crypto: { randomUUID: () => 'login-change-marker' },
+    document: { getElementById: get, createElement: () => ({ remove() { this.removed = true; } }), head: { append: script => scripts.push(script) } }, sessionStorage: store, localStorage: store, crypto: { randomUUID: () => 'login-change-marker' },
+    matchMedia: () => ({ matches: reducedMotion }), setTimeout: fn => timers.push(fn),
     fetch: async (path, options) => { requests.push({ path, options }); if (response instanceof Error) throw response; return response; },
   });
-  await flush(); return { get, storage, requests, navigations, historyPaths, scripts };
+  await flush(); return { get, storage, requests, navigations, historyPaths, scripts, timers,
+    click: () => get('connect-button').handlers.click(), plays: () => plays, setPlay: fn => { play = fn; } };
 }
 
 test('join redeems in the same document and keeps its audio element and interaction history', async () => {
   const r = await joinFixture('#t=' + 'a'.repeat(43), { ok: true, json: async () => ({ me: { uuid: UUID_A }, csrfToken: 'csrf-A' }) });
   assert.deepEqual(r.historyPaths, ['/join', '/']); assert.deepEqual(r.navigations, []);
-  assert.deepEqual(r.scripts.map(script => script.src), ['/app.js']);
+  assert.equal(r.scripts.length, 0); assert.equal(r.plays(), 0); assert.equal(r.get('connect-button').disabled, false);
   assert.equal(r.requests.length, 1); assert.equal(r.requests[0].options.credentials, 'same-origin');
   assert.equal(r.storage.get('noqui-player'), UUID_A); assert.equal(r.storage.get('noqui-session-change'), 'login-change-marker');
   const html = readFileSync(resolve(__dirname, '../static/index.html'), 'utf8');
   assert(!html.includes('id="enable"') && !html.includes('소리 켜기'));
+  assert(html.includes('연결하기') && html.includes('id="player-screen" class="shell" hidden'));
   assert(html.includes('src="/join.js"')); assert(!html.includes('src="/app.js"'), 'player starts only after join redemption');
+  const audio = r.get('audio'); r.click();
+  assert.equal(r.plays(), 1, 'audio is unlocked synchronously inside the connection click');
+  assert.equal(audio.src, '/playback-check.wav'); assert.equal(audio.muted, false); assert.equal(audio.volume, .65);
+  r.click(); await flush(); assert.equal(r.plays(), 1); assert.equal(r.scripts.length, 1);
+  assert.equal(r.get('player-screen').hidden, true);
+  r.scripts[0].onload();
+  assert.equal(r.get('player-screen').hidden, false); assert.equal(r.get('connect-screen').hidden, false);
+  assert(r.get('connect-screen').classes.has('is-leaving')); assert(r.get('player-screen').classes.has('is-entering'));
+  r.timers[0](); assert.equal(r.get('connect-screen').hidden, true); assert(r.get('track-title').focused);
+  assert.equal(r.get('audio'), audio); assert.equal(r.navigations.length, 0);
 });
 
 test('expired, malformed and failed joins never navigate or adopt another identity', async () => {
@@ -351,20 +371,38 @@ test('expired, malformed and failed joins never navigate or adopt another identi
     const r = await joinFixture(hash, response);
     assert.equal(r.requests.length, requests); assert.equal(r.navigations.length, 0); assert.equal(r.storage.size, 0);
     assert.equal(r.scripts.length, 0, 'failed redemption must not boot an older cookie identity');
-    assert.equal(r.get('track-title').textContent, '연결이 만료되었습니다'); assert.equal(r.get('logout').disabled, true);
+    assert.equal(r.get('connect-button').disabled, true); assert.equal(r.get('player-screen').hidden, true);
+    r.click(); assert.equal(r.plays(), 0);
   }
 });
 
-test('join waits for redemption while direct home arrivals load the player without redemption', async () => {
+test('join waits for redemption and home arrivals also wait for connection click', async () => {
   let resolveJoin;
   const r = await joinFixture('#t=' + 'a'.repeat(43), new Promise(resolve => { resolveJoin = resolve; }));
   const audio = r.get('audio');
   assert.equal(r.scripts.length, 0); assert.deepEqual(r.historyPaths, ['/join']);
   resolveJoin({ ok: true, json: async () => ({ me: { uuid: UUID_A } }) }); await flush();
-  assert.equal(r.get('audio'), audio); assert.equal(r.scripts.length, 1); assert.equal(r.navigations.length, 0);
-  const home = await joinFixture('', null, '/');
-  assert.equal(home.requests.length, 0); assert.deepEqual(home.historyPaths, []);
+  assert.equal(r.get('audio'), audio); assert.equal(r.scripts.length, 0); assert.equal(r.navigations.length, 0);
+  const home = await joinFixture('', { ok: true, json: async () => ({ me: { uuid: UUID_A } }) }, '/');
+  assert.equal(home.requests.length, 1); assert.equal(home.requests[0].path, '/api/v1/me'); assert.deepEqual(home.historyPaths, []);
+  assert.equal(home.scripts.length, 0); home.click(); await flush();
   assert.deepEqual(home.scripts.map(script => script.src), ['/app.js']);
+});
+
+test('failed audio unlock and script load allow retry without exposing the player', async () => {
+  const r = await joinFixture('', { ok: true, json: async () => ({ me: { uuid: UUID_A } }) }, '/');
+  r.setPlay(() => Promise.reject(Object.assign(new Error('blocked'), { name: 'NotAllowedError' })));
+  r.click(); await flush(); assert.equal(r.scripts.length, 0); assert.equal(r.get('connect-button').disabled, false);
+  assert.equal(r.get('player-screen').hidden, true);
+  r.setPlay(() => Promise.resolve()); r.click(); await flush(); r.scripts[0].onerror();
+  assert.equal(r.get('connect-button').disabled, false); assert.equal(r.get('player-screen').hidden, true);
+  assert(r.scripts[0].removed); r.click(); await flush(); assert.equal(r.scripts.length, 2);
+});
+
+test('reduced motion completes the connection without animation delay', async () => {
+  const r = await joinFixture('', { ok: true, json: async () => ({ me: { uuid: UUID_A } }) }, '/', true);
+  r.click(); await flush(); r.scripts[0].onload();
+  assert.equal(r.get('connect-screen').hidden, true); assert.equal(r.get('player-screen').hidden, false); assert.equal(r.timers.length, 0);
 });
 
 test('double speed uses source positions and wall progress through pause, countdown, resume and end', async () => {
