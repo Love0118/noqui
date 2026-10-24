@@ -67,7 +67,7 @@ public final class LobbyFeatures implements LobbyService, AutoCloseable, Listene
         }
         movement=new LobbyMovement(cabin);cosmetics=new NativeWardrobe();
         gadgets=itemFactory==null?new GadgetItems(wallets,cabin):new GadgetItems(wallets,cabin,itemFactory);
-        menus=new LobbyShop(wallets,catalog.values(),gadgets,p->started&&!closed&&players.get(p.getUniqueId())==p&&p.isOnline()&&!p.isDead()&&p.getWorld()==cabin,this::deliverCredits,plugin.getLogger()::warning);
+        menus=new LobbyShop(wallets,catalog.values(),gadgets,p->started&&!closed&&players.get(p.getUniqueId())==p&&p.isOnline()&&!p.isDead(),this::deliverCredits,plugin.getLogger()::warning);
         shop=new ShopNpc(cabin,plugin.getConfig().getDouble("lobby.shop.x",409.5),plugin.getConfig().getDouble("lobby.shop.y",11),plugin.getConfig().getDouble("lobby.shop.z",-205.5));
     }
 
@@ -136,6 +136,13 @@ public final class LobbyFeatures implements LobbyService, AutoCloseable, Listene
         main();if(!closed)player.sendMessage(Component.text("✦ "+starlight(player.getUniqueId())+"  정답 포인트 "+answerPoints(player.getUniqueId())));
     }
     @Override public void openShop(Player player){main();if(started&&!closed)menus.open(player);}
+    @Override public void openMiningShop(Player player,Runnable sales,Runnable upgrade){main();if(started&&!closed)menus.mining(player,sales,upgrade);}
+    @Override public void openWardrobe(Player player){main();if(started&&!closed)menus.wardrobe(player,0);}
+    @Override public boolean spendStarlight(UUID player,String transaction,long amount){
+        main();if(closed)throw new IllegalStateException("Lobby closed");
+        try{return wallets.spend(player,transaction,amount);}
+        catch(IOException error){throw new IllegalStateException("Lobby debit could not be saved",error);}
+    }
     @EventHandler(priority=EventPriority.HIGHEST,ignoreCancelled=false) public void shopClick(InventoryClickEvent event){cosmetics.click(event);menus.click(event);}
     @EventHandler(priority=EventPriority.HIGHEST,ignoreCancelled=false) public void shopDrag(InventoryDragEvent event){cosmetics.drag(event);menus.drag(event);}
     @EventHandler public void shopClose(InventoryCloseEvent event){menus.closed(event);}

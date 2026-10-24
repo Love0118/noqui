@@ -58,6 +58,7 @@ class ShopNpcFacingTest {
         // A fresh controller finds the already-saved entity; setup does not teleport it at the same point.
         ShopNpc reloaded=new ShopNpc(world,0,64,0);reloaded.ensure();reloaded.ensure();
         verify(mannequin,times(1)).customName(Component.text("상점"));verify(mannequin).setImmovable(true);verify(mannequin).setInvulnerable(true);
+        verify(mannequin).setDescription(null);
         verify(mannequin,times(1)).setSkinParts(allParts);
         verify(mannequin,never()).setRotation(anyFloat(),anyFloat());verify(mannequin,never()).teleport(any(Location.class));
         when(world.getPlayers()).thenReturn(List.of());reloaded.faceNearest();verify(mannequin,never()).setRotation(anyFloat(),anyFloat());

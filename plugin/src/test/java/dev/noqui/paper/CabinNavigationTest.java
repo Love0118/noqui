@@ -27,7 +27,8 @@ class CabinNavigationTest {
         var f=new Fixture();var ordinary=mock(ItemStack.class);when(ordinary.getType()).thenReturn(Material.STONE);f.slots[0]=ordinary;
         var compass=tool("defense");var settings=tool("settings");f.slots[40]=compass;f.cursor.set(settings);
         f.navigation.ensure(f.player);assertSame(ordinary,f.slots[0]);assertSame(compass,f.slots[40]);assertSame(settings,f.cursor.get());assertEquals("traits",CabinNavigation.id(f.slots[1]));
-        var before=f.slots.clone();f.navigation.ensure(f.player);assertArrayEquals(before,f.slots);verify(f.inventory,times(1)).setItem(anyInt(),any());
+        assertEquals("wardrobe",CabinNavigation.id(f.slots[2]));
+        var before=f.slots.clone();f.navigation.ensure(f.player);assertArrayEquals(before,f.slots);verify(f.inventory,times(2)).setItem(anyInt(),any());
     }
     @Test void fullInventoryIsNeverOverwrittenAndFreedSlotsReceiveOnlyMissingTools(){
         var f=new Fixture();var ordinary=mock(ItemStack.class);when(ordinary.getType()).thenReturn(Material.STONE);Arrays.fill(f.slots,ordinary);f.slots[20]=tool("defense");var before=f.slots.clone();

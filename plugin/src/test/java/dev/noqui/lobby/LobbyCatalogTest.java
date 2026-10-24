@@ -8,7 +8,7 @@ class LobbyCatalogTest {
     @Test void everyNonTicketPriceIsTenTimesThePriorPriceWithoutChangingCurrencyRatio(){
         var prior=Map.ofEntries(Map.entry("pirate_hat",20L),Map.entry("backpack",20L),Map.entry("glasses",20L),Map.entry("crown",20L),Map.entry("cap",20L),Map.entry("bunny",20L),Map.entry("triple_boots",20L),Map.entry("quad_boots",40L),Map.entry("hammer",10L),Map.entry("snow_bomb",10L),Map.entry("gravity_suit",40L));
         var products=LobbyCatalog.defaults();assertEquals(1,products.stream().filter(p->p.kind()==LobbyCatalog.Kind.CREDIT).count());assertEquals(5,products.stream().filter(p->p.kind()==LobbyCatalog.Kind.GADGET).count());for(var product:products){
-            if(product.kind()==LobbyCatalog.Kind.CREDIT){assertEquals("question_credit",product.id());assertEquals(10,product.stars());assertEquals(-1,product.points());}
+            if(product.kind()==LobbyCatalog.Kind.CREDIT){assertEquals("question_credit",product.id());assertEquals(100,product.stars());assertEquals(-1,product.points());}
             else{long old=product.kind()==LobbyCatalog.Kind.COSMETIC?20:prior.get(product.id());assertEquals(old*10,product.stars());assertEquals(old,product.points());assertEquals(product.points()*10,product.stars());}
         }
         assertEquals(products,LobbyCatalog.defaults());

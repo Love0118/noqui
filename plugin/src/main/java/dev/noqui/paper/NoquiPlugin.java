@@ -266,6 +266,7 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
     }
     void openSettings(Player p){openCabinMenu(p,service->service.openSettings(p));}
     void openTraits(Player p){openCabinMenu(p,service->service.openTraits(p));}
+    void openWardrobe(Player p){if(ownsCabin(p.getUniqueId())&&p.isOnline()){otherInteraction(p);var service=Bukkit.getServicesManager().load(dev.noqui.api.LobbyService.class);if(service!=null)service.openWardrobe(p);}}
     private void openCabinMenu(Player p,java.util.function.Consumer<DefenseService> open) {
         if(!ownsCabin(p.getUniqueId())||!p.isOnline())return;
         otherInteraction(p);

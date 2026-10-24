@@ -41,6 +41,15 @@ final class LobbyWallets {
                 currency==Currency.POINTS?Math.addExact(old.points,amount):old.points,old.owned,old.equipped);
         save(id,next,transaction,fingerprint,null,null);
     }
+    boolean spend(UUID id,String transaction,long amount) throws IOException {
+        if(amount<1)throw new IllegalArgumentException("Debit must be positive");
+        String fingerprint="spend|"+id+"|"+amount;
+        if(replayed(transaction,fingerprint))return true;
+        Wallet old=wallet(id);
+        if(old.stars<amount)return false;
+        save(id,new Wallet(old.stars-amount,old.points,old.owned,old.equipped),transaction,fingerprint,null,null);
+        return true;
+    }
     void purchase(UUID id,Product product,Currency currency,String transaction) throws IOException {
         if(product.kind()==Kind.GADGET&&!GADGETS.contains(product.id()))throw new IllegalArgumentException("Unknown gadget");
         long price=product.price(currency);

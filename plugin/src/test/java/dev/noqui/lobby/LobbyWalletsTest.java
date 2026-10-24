@@ -21,6 +21,16 @@ class LobbyWalletsTest {
         w.purchase(id,product("glasses"),Currency.POINTS,"cosmetic");
         assertEquals(80,w.wallet(id).points());assertEquals(1,w.wallet(id).owned().get("glasses"));assertTrue(w.pending().isEmpty());
     }
+    @Test void sharedStarDebitsAreDurableIdempotentAndFailClosed()throws Exception {
+        Path file=dir.resolve("wallet");var w=new LobbyWallets(file);w.reward(id,"seed",150,Currency.STARLIGHT);
+        assertFalse(w.spend(id,"upgrade-too-expensive",151));assertEquals(150,w.wallet(id).stars());
+        assertTrue(w.spend(id,"upgrade",100));assertTrue(w.spend(id,"upgrade",100));
+        var again=new LobbyWallets(file);assertTrue(again.spend(id,"upgrade",100));assertEquals(50,again.wallet(id).stars());
+        assertThrows(IllegalArgumentException.class,()->again.spend(id,"upgrade",99));
+        var broken=new LobbyWallets(file,(p,b)->{throw new IOException("full");});
+        assertThrows(IOException.class,()->broken.spend(id,"another",20));assertEquals(50,broken.wallet(id).stars());
+        assertEquals(50,new LobbyWallets(file).wallet(id).stars());assertThrows(IllegalArgumentException.class,()->again.spend(id,"zero",0));
+    }
     @Test void rewardAndPurchaseReplayAreDurableAndConflictsRejected()throws Exception {
         Path file=dir.resolve("wallet");LobbyWallets w=new LobbyWallets(file);
         w.reward(id,"stars",200,Currency.STARLIGHT);w.reward(id,"stars",200,Currency.STARLIGHT);
@@ -32,18 +42,18 @@ class LobbyWalletsTest {
         assertThrows(IllegalArgumentException.class,()->again.purchase(id,product("hammer"),Currency.POINTS,"purchase"));
     }
     @Test void paidCreditOutboxSurvivesRestartAndAckPersists()throws Exception {
-        Path file=dir.resolve("wallet");LobbyWallets w=new LobbyWallets(file);w.reward(id,"seed",20,Currency.STARLIGHT);
+        Path file=dir.resolve("wallet");LobbyWallets w=new LobbyWallets(file);w.reward(id,"seed",200,Currency.STARLIGHT);
         w.purchase(id,product("question_credit"),Currency.STARLIGHT,"credit");
         LobbyWallets restart=new LobbyWallets(file);var grant=restart.pending().getFirst();
-        assertEquals(id,grant.player());assertEquals(1,grant.amount());assertEquals(10,restart.wallet(id).stars());
+        assertEquals(id,grant.player());assertEquals(1,grant.amount());assertEquals(100,restart.wallet(id).stars());
         restart.purchase(id,product("question_credit"),Currency.STARLIGHT,"credit");assertEquals(1,restart.pending().size());
         restart.delivered(grant.transaction());assertTrue(new LobbyWallets(file).pending().isEmpty());
     }
     @Test void saveFailureCannotDebitOrAddOutboxAndCorruptionCannotResetBalances()throws Exception {
-        Path file=dir.resolve("wallet");LobbyWallets original=new LobbyWallets(file);original.reward(id,"seed",20,Currency.STARLIGHT);
+        Path file=dir.resolve("wallet");LobbyWallets original=new LobbyWallets(file);original.reward(id,"seed",200,Currency.STARLIGHT);
         LobbyWallets broken=new LobbyWallets(file,(p,b)->{throw new IOException("disk failure");});
         assertThrows(IOException.class,()->broken.purchase(id,product("question_credit"),Currency.STARLIGHT,"credit"));
-        assertEquals(20,broken.wallet(id).stars());assertTrue(broken.pending().isEmpty());assertEquals(20,new LobbyWallets(file).wallet(id).stars());
+        assertEquals(200,broken.wallet(id).stars());assertTrue(broken.pending().isEmpty());assertEquals(200,new LobbyWallets(file).wallet(id).stars());
         byte[] bytes=Files.readAllBytes(file);bytes[15]^=1;Files.write(file,bytes);assertThrows(IOException.class,()->new LobbyWallets(file));
     }
     @Test void cosmeticsRemainVirtualAndPhysicalGadgetSerialsRetireDurably()throws Exception {

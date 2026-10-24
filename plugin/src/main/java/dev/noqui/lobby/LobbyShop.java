@@ -40,6 +40,8 @@ final class LobbyShop implements AutoCloseable {
     private final Runnable delivery;
     private final Consumer<String> warning;
     private final Map<UUID,Holder> sessions = new HashMap<>();
+    private record MiningActions(Runnable sales,Runnable upgrade) {}
+    private final Map<UUID,MiningActions> miningActions=new HashMap<>();
     private final ArrayBlockingQueue<Runnable> queued = new ArrayBlockingQueue<>(256);
     private boolean closed;
 
@@ -54,7 +56,36 @@ final class LobbyShop implements AutoCloseable {
         return inventory!=null && inventory.getHolder() instanceof Holder holder && holder.inventory==inventory;
     }
 
-    void open(Player player) { if(!closed && eligible.test(player))category(player,new Page(Section.COSMETICS,0)); }
+    void open(Player player) { if(!closed && eligible.test(player)){miningActions.remove(player.getUniqueId());category(player,new Page(Section.COSMETICS,0));} }
+    void mining(Player player,Runnable sales,Runnable upgrade){
+        if(closed||!eligible.test(player))return;
+        miningActions.put(player.getUniqueId(),new MiningActions(Objects.requireNonNull(sales),Objects.requireNonNull(upgrade)));
+        category(player,new Page(Section.COSMETICS,0));
+    }
+
+    void wardrobe(Player player,int requestedPage) {
+        if(closed||!eligible.test(player))return;
+        miningActions.remove(player.getUniqueId());
+        var products=catalog.stream().filter(p->p.kind()==Kind.COSMETIC&&owned(player,p)>0).toList();
+        int pages=Math.max(1,(products.size()+PAGE_SIZE-1)/PAGE_SIZE);
+        int page=Math.clamp(requestedPage,0,pages-1),offset=page*PAGE_SIZE;
+        Holder holder=chest(player,"치장"+(pages>1?" "+(page+1)+"/"+pages:""));
+        for(int i=0;i<Math.min(PAGE_SIZE,products.size()-offset);i++) {
+            Product product=products.get(offset+i);int slot=19+(i/7)*9+i%7;
+            holder.inventory.setItem(slot,productIcon(player,product));
+            holder.actions.put(slot,()->{
+                try{wallets.equip(player.getUniqueId(),product);}
+                catch(IOException error){failed(player);}
+                catch(IllegalArgumentException error){message(player,error.getMessage(),NamedTextColor.RED);}
+                wardrobe(player,page);
+            });
+        }
+        if(products.isEmpty())holder.inventory.setItem(22,item(Material.GRAY_DYE,"보유 치장 없음",NamedTextColor.GRAY));
+        if(page>0)nav(holder,45,Material.ARROW,"이전",()->wardrobe(player,page-1));
+        if(page+1<pages)nav(holder,53,Material.ARROW,"다음",()->wardrobe(player,page+1));
+        nav(holder,49,Material.BARRIER,"닫기",player::closeInventory);
+        show(holder);
+    }
 
     private Holder chest(Player player,String title) {
         Holder holder=new Holder(player);
@@ -85,6 +116,11 @@ final class LobbyShop implements AutoCloseable {
         nav(holder,1,Material.FEATHER,"장난감",()->category(player,new Page(Section.GADGETS,0)));
         nav(holder,2,Material.PAPER,"출제권",()->category(player,new Page(Section.TICKETS,0)));
         nav(holder,3,Material.CHEST,"보유",()->category(player,new Page(Section.OWNED,0)));
+        var mining=miningActions.get(player.getUniqueId());
+        if(mining!=null){
+            nav(holder,5,Material.EMERALD,"광석 판매",mining.sales());
+            nav(holder,6,Material.IRON_PICKAXE,"곡괭이 강화",mining.upgrade());
+        }
         int offset=page.index()*PAGE_SIZE;
         for(int i=0;i<Math.min(PAGE_SIZE,products.size()-offset);i++) {
             Product product=products.get(offset+i);int slot=19+(i/7)*9+i%7;
@@ -128,7 +164,7 @@ final class LobbyShop implements AutoCloseable {
             delivery.run();
             boolean pending=product.kind()==Kind.CREDIT?wallets.pending().stream().anyMatch(g->g.player().equals(player.getUniqueId()))
                     :product.kind()==Kind.GADGET&&wallets.pendingGadgets(player.getUniqueId()).stream().anyMatch(g->g.product().equals(product.id()));
-            message(player,pending?product.label()+" 지급 대기: 인벤토리 공간을 확인하세요":"구매 완료",NamedTextColor.GREEN);
+            message(player,pending?product.label()+" 지급 대기":"구매 완료",NamedTextColor.GREEN);
         } catch(IOException error) { failed(player); }
         catch(IllegalArgumentException error) { message(player,error.getMessage(),NamedTextColor.RED); }
         product(player,product,origin);
@@ -217,7 +253,7 @@ final class LobbyShop implements AutoCloseable {
 
     void closed(InventoryCloseEvent event) {
         Inventory top=event.getView().getTopInventory();
-        if(owns(top))sessions.remove(event.getPlayer().getUniqueId(),(Holder)top.getHolder());
+        if(owns(top)&&sessions.remove(event.getPlayer().getUniqueId(),(Holder)top.getHolder()))miningActions.remove(event.getPlayer().getUniqueId());
     }
 
     void tick() {
@@ -228,6 +264,7 @@ final class LobbyShop implements AutoCloseable {
         Holder holder=sessions.get(player.getUniqueId());
         if(holder==null || holder.owner!=player)return;
         sessions.remove(player.getUniqueId());
+        miningActions.remove(player.getUniqueId());
         if(player.getOpenInventory().getTopInventory()==holder.inventory)player.closeInventory();
     }
 

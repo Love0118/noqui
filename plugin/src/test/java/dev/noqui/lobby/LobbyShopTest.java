@@ -89,6 +89,23 @@ class LobbyShopTest {
         shop.open(player);click(3);var seen=new HashSet<String>();for(int page=0;page<4;page++){seen.addAll(visibleModels());if(page<3)click(53);}assertEquals(80,seen.size());
         click(19);click(22);assertEquals("fixture_hat_63",wallets.wallet(id).equipped().get("head"));click(49);assertEquals("fixture_hat_63",visibleModels().getFirst());
     }
+    @Test void wardrobeOnlyOffersOwnedCosmeticsAndCanEquipAndRemoveWithoutBuying()throws Exception {
+        var product=LobbyCatalog.defaults().stream().filter(p->p.id().equals("pirate_hat")).findFirst().orElseThrow();
+        shop.wardrobe(player,0);assertTrue(contents.get(current.getTopInventory()).containsKey(22));
+        wallets.purchase(id,product,Currency.STARLIGHT,"owned-hat");
+        shop.wardrobe(player,0);assertEquals(List.of("pirate_hat"),visibleModels());
+        assertFalse(contents.get(current.getTopInventory()).containsKey(0));assertFalse(contents.get(current.getTopInventory()).containsKey(29));
+        click(19);assertEquals("pirate_hat",wallets.wallet(id).equipped().get("head"));
+        click(19);assertFalse(wallets.wallet(id).equipped().containsKey("head"));assertEquals(800,wallets.wallet(id).stars());
+    }
+    @Test void mineShopReusesCatalogueAndAddsSalesAndUpgradeActionsAcrossNavigation(){
+        Runnable sales=mock(Runnable.class),upgrade=mock(Runnable.class);
+        shop.mining(player,sales,upgrade);assertTrue(contents.get(current.getTopInventory()).containsKey(5));
+        click(1);assertTrue(contents.get(current.getTopInventory()).containsKey(6));
+        click(6);verify(upgrade).run();
+        shop.mining(player,sales,upgrade);click(5);verify(sales).run();
+        shop.open(player);assertFalse(contents.get(current.getTopInventory()).containsKey(5));assertFalse(contents.get(current.getTopInventory()).containsKey(6));
+    }
 
     @Test void chestCategoriesShowActualModelsStyledNamesPricesAndOwnership() {
         shop.open(player);assertTrue(LobbyFeatures.ownsInventory(current.getTopInventory()));
@@ -152,13 +169,13 @@ class LobbyShopTest {
         assertTrue(messages.stream().anyMatch(m->plain(m).contains("저장 실패")));
         failure.set(false);wallets.purchase(id,LobbyCatalog.defaults().get(1),Currency.STARLIGHT,"direct");openProduct(0);
         failure.set(true);click(22);assertTrue(wallets.wallet(id).equipped().isEmpty());failure.set(false);
-        for(int i=0;i<80;i++){openProduct(2);click(29);}assertEquals(0,wallets.wallet(id).stars());
-        openProduct(2);click(29);assertEquals(80,deliveryAttempts.size());assertEquals(0,wallets.wallet(id).stars());
+        for(int i=0;i<8;i++){openProduct(2);click(29);}assertEquals(0,wallets.wallet(id).stars());
+        openProduct(2);click(29);assertEquals(8,deliveryAttempts.size());assertEquals(0,wallets.wallet(id).stars());
         assertTrue(messages.stream().anyMatch(m->plain(m).contains("부족")));
     }
     @Test void physicalTicketIsStarsOnlyAndFullInventoryLeavesOneDurableDelivery()throws Exception {
         full.set(true);openProduct(2);assertFalse(contents.get(current.getTopInventory()).containsKey(33));
-        InventoryView old=current;click(29);assertEquals(990,wallets.wallet(id).stars());assertEquals(1,wallets.pending().size());
+        InventoryView old=current;click(29);assertEquals(900,wallets.wallet(id).stars());assertEquals(1,wallets.pending().size());
         assertFalse(wallets.wallet(id).owned().containsKey("question_credit"));assertEquals(1,new LobbyWallets(dir.resolve("wallet")).pending().size());
         shop.click(event(old,player,29,ClickType.LEFT));shop.tick();assertEquals(1,deliveryAttempts.size());
         assertTrue(messages.stream().anyMatch(m->plain(m).contains("지급 대기")));verify(player,never()).getInventory();

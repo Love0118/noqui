@@ -27,7 +27,8 @@ final class ShopNpc {
                 .skinPatch(p->p.body(Key.key("noqui:entity/shopkeeper")).model(PlayerTextures.SkinModel.SLIM)).build());
         // Persistent mannequins can retain a previous layer mask; the authored skin uses all overlays.
         npc.setSkinParts(SkinParts.allParts());
-        npc.customName(Component.text("상점"));npc.setCustomNameVisible(true);npc.setDescription(Component.empty());
+        // Empty text still draws the mannequin's second label; null sets hide_description.
+        npc.customName(Component.text("상점"));npc.setCustomNameVisible(true);npc.setDescription(null);
         // Reusing a persistent NPC must not reset its current facing on every reload.
         Location current=npc.getLocation();
         if(current!=null&&(current.getWorld()!=position.getWorld()||current.distanceSquared(position)>.0001)) {

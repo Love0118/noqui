@@ -53,7 +53,8 @@ class CabinInventoryVaultTest {
             f.slots[12]=compass;f.slots[20]=ordinary;f.cursor.set(traits);var vault=new CabinInventoryVault();vault.markLoaded(f.player);vault.leave(f.player);
             Arrays.fill(f.slots,null);assertTrue(vault.restore(f.player));var created=new java.util.concurrent.atomic.AtomicInteger();var navigation=new CabinNavigation(id->{created.incrementAndGet();return CabinNavigationTest.tool(id);});navigation.ensure(f.player);
             assertSame(compass,f.slots[12]);assertSame(ordinary,f.slots[20]);assertSame(traits,f.cursor.get());assertEquals("settings",CabinNavigation.id(f.slots[0]));
-            vault.leave(f.player);Arrays.fill(f.slots,null);assertTrue(vault.restore(f.player));navigation.ensure(f.player);assertEquals(1,created.get());assertSame(compass,f.slots[12]);assertSame(traits,f.cursor.get());
+            assertEquals("wardrobe",CabinNavigation.id(f.slots[1]));
+            vault.leave(f.player);Arrays.fill(f.slots,null);assertTrue(vault.restore(f.player));navigation.ensure(f.player);assertEquals(2,created.get());assertSame(compass,f.slots[12]);assertSame(traits,f.cursor.get());
         }
     }
     @Test void interruptedCabinRecoveryCapturesCurrentLayoutBeforeRestoringOutsideState()throws Exception {

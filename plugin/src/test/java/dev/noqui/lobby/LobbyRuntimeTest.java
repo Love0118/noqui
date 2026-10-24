@@ -171,11 +171,11 @@ class LobbyRuntimeTest {
         verify(port,never()).balance(any());verify(person.p,never()).showDialog(any());
     }
     @Test void failedCreditDeliveryReplaysSamePaidGrantWithoutSecondDebit()throws Exception {
-        UUID id=UUID.randomUUID();LobbyWallets w=ledger();w.reward(id,"funds",20,Currency.STARLIGHT);w.purchase(id,LobbyCatalog.defaults().getFirst(),Currency.STARLIGHT,"credit");
+        UUID id=UUID.randomUUID();LobbyWallets w=ledger();w.reward(id,"funds",200,Currency.STARLIGHT);w.purchase(id,LobbyCatalog.defaults().getFirst(),Currency.STARLIGHT,"credit");
         Set<String> grants=new HashSet<>();AtomicInteger calls=new AtomicInteger();
         LobbyFeatures.CreditPort port=new LobbyFeatures.CreditPort(){public long balance(UUID p){return grants.size();}public void grant(UUID p,long n,String tx){grants.add(tx);if(calls.getAndIncrement()==0)throw new IllegalStateException("lost acknowledgement");}};
-        create(port);assertEquals(10,features.starlight(id));assertEquals(1,ledger().pending().size());
-        features.tick();assertEquals(1,grants.size());assertTrue(ledger().pending().isEmpty());assertEquals(10,features.starlight(id));
+        create(port);assertEquals(100,features.starlight(id));assertEquals(1,ledger().pending().size());
+        features.tick();assertEquals(1,grants.size());assertTrue(ledger().pending().isEmpty());assertEquals(100,features.starlight(id));
     }
     @Test void packIsAddedOnceByUniqueIdAndCloseNeverRemovesOtherPacksOrItems()throws Exception {
         Person p=new Person();create(port());features.join(p.p);features.join(p.p);

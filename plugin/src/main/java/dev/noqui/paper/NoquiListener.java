@@ -45,6 +45,7 @@ final class NoquiListener implements Listener {
         if("defense".equals(id))plugin.openMinigames(e.getPlayer());
         else if("settings".equals(id))plugin.openSettings(e.getPlayer());
         else if("traits".equals(id))plugin.openTraits(e.getPlayer());
+        else if("wardrobe".equals(id))plugin.openWardrobe(e.getPlayer());
     }
     @EventHandler(priority=EventPriority.HIGH) public void legacy(AsyncPlayerChatEvent e){
         if(plugin.captureAnswer(e.getPlayer().getUniqueId(),e.getMessage())){legacy.add(e);hide(e);}

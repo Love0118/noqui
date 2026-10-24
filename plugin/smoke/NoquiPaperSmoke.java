@@ -29,8 +29,10 @@ public final class NoquiPaperSmoke extends JavaPlugin {
                 require(Bukkit.getServicesManager().load(LobbyService.class)!=null,"wallet service");
                 require(world.getEntitiesByClass(org.bukkit.entity.Mannequin.class).stream()
                         .filter(entity->entity.getScoreboardTags().contains("noqui_lobby_shop_v1")).count()==1,"single owned shop NPC");
+                for(var npc:world.getEntitiesByClass(org.bukkit.entity.Mannequin.class))if(npc.getScoreboardTags().contains("noqui_lobby_shop_v1"))require(npc.getDescription()==null,"shop description label hidden");
                 verifyPhysicalItems(world);
                 verifyNativeWardrobe();
+                verifyMine();
                 var quiz=Objects.requireNonNull(Bukkit.getServicesManager().load(QuizService.class));
                 var before=Objects.requireNonNull(Bukkit.getServicesManager().load(DefenseService.class));
                 boolean expectedActive=Boolean.getBoolean("noqui.smoke.expect-active");
@@ -47,7 +49,39 @@ public final class NoquiPaperSmoke extends JavaPlugin {
                 getLogger().info("NOQUI_SMOKE_OK world shop wallet native-dialog physical-ticket-claim gadget-equipment cabin-layout-serialization services limits empty-start runtime-reload stop persisted-active="+expectedActive);
             } catch(Throwable error){getLogger().log(java.util.logging.Level.SEVERE,"NOQUI_SMOKE_FAIL",error);}
             finally{Bukkit.shutdown();}
-        },40);
+        },160);
+    }
+    private static Object field(Object object,String name)throws Exception {
+        var field=object.getClass().getDeclaredField(name);field.setAccessible(true);return field.get(object);
+    }
+    private static void verifyMine()throws Exception {
+        var moma=Objects.requireNonNull(Bukkit.getPluginManager().getPlugin("MCLuckDefense"));
+        Object games=field(moma,"games"),mine=field(games,"mining"),cave=field(mine,"cave");
+        var ready=cave.getClass().getDeclaredMethod("ready");ready.setAccessible(true);require((boolean)ready.invoke(cave),"mine terrain ready");
+        var world=Objects.requireNonNull(Bukkit.getWorld("moma_mining"));var spawn=world.getSpawnLocation();
+        require(world.getBlockAt(spawn.clone().subtract(0,1,0)).getType().isSolid(),"mine spawn floor");
+        require(world.getBlockAt(spawn).isPassable()&&world.getBlockAt(spawn.clone().add(0,1,0)).isPassable(),"mine spawn headroom");
+        require(world.getEntitiesByClass(org.bukkit.entity.Mannequin.class).stream().filter(e->e.getScoreboardTags().contains("moma_mining_shop_v1")).count()==1,"mine shop NPC");
+        for(var npc:world.getEntitiesByClass(org.bukkit.entity.Mannequin.class))if(npc.getScoreboardTags().contains("moma_mining_shop_v1"))require(npc.getDescription()==null,"mine description label hidden");
+        Object store=field(mine,"store"),items=field(mine,"items");UUID owner=UUID.randomUUID();
+        var profile=store.getClass().getDeclaredMethod("profile",UUID.class);profile.setAccessible(true);Object saved=profile.invoke(store,owner);
+        var factory=items.getClass().getDeclaredMethod("pickaxe",UUID.class,saved.getClass());factory.setAccessible(true);
+        var first=(org.bukkit.inventory.ItemStack)factory.invoke(items,owner,saved);plain(first);
+        require(first.getType()==org.bukkit.Material.IRON_PICKAXE&&first.getItemMeta().hasTool(),"native mine iron pickaxe tool component");
+        require(Math.abs(first.getItemMeta().getTool().getRules().getFirst().getSpeed()-3f)<.001,"initial 50% iron speed");
+        var fields=saved.getClass().getRecordComponents();Object[] values=new Object[fields.length];Class<?>[] types=new Class<?>[fields.length];
+        for(int i=0;i<fields.length;i++){types[i]=fields[i].getType();var accessor=fields[i].getAccessor();accessor.setAccessible(true);values[i]=accessor.invoke(saved);}
+        values[1]=6;values[2]=3;var constructor=saved.getClass().getDeclaredConstructor(types);constructor.setAccessible(true);
+        var max=(org.bukkit.inventory.ItemStack)factory.invoke(items,owner,constructor.newInstance(values));
+        require(Math.abs(max.getItemMeta().getTool().getRules().getFirst().getSpeed()-12f)<.001,"maximum 200% iron speed");
+        require(max.getEnchantmentLevel(org.bukkit.enchantments.Enchantment.FORTUNE)==3,"native fortune III");
+        var restored=org.bukkit.inventory.ItemStack.deserializeItemsFromBytes(org.bukkit.inventory.ItemStack.serializeItemsAsBytes(new org.bukkit.inventory.ItemStack[]{max}))[0];
+        require(restored.isSimilar(max),"mine component serialization");
+        var wallet=Objects.requireNonNull(Bukkit.getServicesManager().load(LobbyService.class));String tx="smoke-mine:"+owner;
+        wallet.rewardStarlight(owner,tx+":seed",150);require(wallet.spendStarlight(owner,tx+":buy",100),"mine shared debit");
+        require(wallet.spendStarlight(owner,tx+":buy",100)&&wallet.starlight(owner)==50,"mine shared debit replay");
+        require(!wallet.spendStarlight(owner,tx+":insufficient",51)&&wallet.starlight(owner)==50,"mine insufficient funds");
+        require(dev.noqui.lobby.LobbyCatalog.defaults().getFirst().stars()==100,"ticket price 100");
     }
     private static void require(boolean value,String label){if(!value)throw new IllegalStateException(label);}
     private static void plain(org.bukkit.inventory.ItemStack item) {

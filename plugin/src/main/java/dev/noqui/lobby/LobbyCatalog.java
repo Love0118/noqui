@@ -24,7 +24,7 @@ public final class LobbyCatalog {
     private LobbyCatalog() {}
     public static List<Product> defaults() {return DEFAULTS;}
     private static List<Product> loadDefaults() {
-        var products=new ArrayList<Product>();products.add(new Product("question_credit", "출제권", Kind.CREDIT, "", 10, -1));
+        var products=new ArrayList<Product>();products.add(new Product("question_credit", "출제권", Kind.CREDIT, "", 100, -1));
         try(var stream=LobbyCatalog.class.getResourceAsStream("/lobby-cosmetics.json")){
             if(stream==null)throw new IOException("Missing lobby-cosmetics.json");
             products.addAll(cosmetics(new InputStreamReader(stream,StandardCharsets.UTF_8)));

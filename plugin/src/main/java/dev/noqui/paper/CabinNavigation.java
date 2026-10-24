@@ -15,7 +15,7 @@ import org.bukkit.persistence.PersistentDataType;
 /** Cabin-owned tools keep their moved positions; the vault persists them with the other inventory. */
 final class CabinNavigation {
     private static final NamespacedKey KEY=new NamespacedKey("noqui","tool");
-    private static final List<String> IDS=List.of("defense","settings","traits");
+    private static final List<String> IDS=List.of("defense","settings","traits","wardrobe");
     private final Function<String,ItemStack> factory;
     CabinNavigation(){this(CabinNavigation::item);}
     CabinNavigation(Function<String,ItemStack> factory){this.factory=factory;}
@@ -24,9 +24,10 @@ final class CabinNavigation {
     static ItemStack item(String id) {
         Material type;String name,lore;NamedTextColor color;
         switch(id){
-            case "defense"->{type=Material.COMPASS;name="미니게임";lore="우클릭: 이동할 로비 선택";color=NamedTextColor.AQUA;}
+            case "defense"->{type=Material.COMPASS;name="미니게임";lore="우클릭: 미니게임";color=NamedTextColor.AQUA;}
             case "settings"->{type=Material.COMPARATOR;name="환경설정";lore="우클릭: 환경설정";color=NamedTextColor.YELLOW;}
             case "traits"->{type=Material.ENCHANTED_BOOK;name="특성 선택";lore="우클릭: 특성 장착 및 해제";color=NamedTextColor.LIGHT_PURPLE;}
+            case "wardrobe"->{type=Material.LEATHER_CHESTPLATE;name="치장";lore="우클릭: 장착 및 해제";color=NamedTextColor.LIGHT_PURPLE;}
             default->throw new IllegalArgumentException("Unknown cabin navigation tool");
         }
         var item=new ItemStack(type);var meta=item.getItemMeta();meta.setMaxStackSize(1);
