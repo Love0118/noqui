@@ -53,6 +53,7 @@ pub fn public(app: App) -> Router {
         .route("/app.js", get(script))
         .route("/join.js", get(join_script))
         .route("/style.css", get(style))
+        .route("/playback-check.wav", get(playback_check))
         .route("/healthz", get(|| async { Json(json!({"status":"ok"})) }))
         .route("/api/v1/auth/redeem", post(redeem))
         .route("/api/v1/auth/logout", post(logout))
@@ -517,4 +518,11 @@ async fn style() -> Response {
         "text/css; charset=utf-8",
         include_str!("../static/style.css"),
     )
+}
+async fn playback_check() -> Response {
+    (
+        [(axum::http::header::CONTENT_TYPE, "audio/wav")],
+        include_bytes!("../static/playback-check.wav").as_slice(),
+    )
+        .into_response()
 }

@@ -10,6 +10,7 @@
   let currentMedia = '', lastGeneration = '', lastSeek = -Infinity, playPending = null, ackPending = false, ackAgain = false, takeover = false, formatFailed = false;
   let gestureBlocked = false, userPaused = false, clientLeaseUntil = 0, authGeneration = 0, playbackGesture = 0;
   let countdownStarted = false, progressSample = null, progressStart = null, lastProgressAt = -Infinity;
+  let outputCheck = null, checkedOutput = '', nextAutoplayAttemptAt = 0;
   let authValid = false, eventEpoch = '', eventSeq = -1n, lastPoll = -Infinity;
   let lastReportSignature = '', inFlightSignature = '', lastReportAt = -Infinity, nextReportAt = 0, refreshing = null;
   let boundPlayer = sessionStorage.getItem('noqui-player') || '', boundCsrf = '';
@@ -34,7 +35,7 @@
     return response.status === 204 ? null : response.json();
   }
   function revoke(code) {
-    authGeneration++; connectionGeneration++; authValid = false; clientLeaseUntil = 0; playPending = null; audio.pause(); stream?.close(); clearTimeout(reconnectTimer);
+    authGeneration++; connectionGeneration++; authValid = false; clientLeaseUntil = 0; playPending = null; cancelOutputCheck(); checkedOutput = ''; audio.pause(); stream?.close(); clearTimeout(reconnectTimer);
     $('connection').classList.remove('connected'); $('connection-text').textContent = code === 'SESSION_CHANGED' ? '다른 연결' : '연결 끊김';
     $('logout').disabled = true;
     $('audio-status').textContent = '연결 대기'; $('playback').hidden = true; $('takeover').hidden = true; message(errors[code] || errors.AUTH_REQUIRED);
@@ -79,6 +80,7 @@
     try { seq = BigInt(next.eventId.slice(split + 1)); } catch { return; }
     if (epoch === eventEpoch && seq < eventSeq) return;
     if (epoch !== eventEpoch) { eventEpoch = epoch; eventSeq = -1n; }
+    if (next.round?.roundId !== state?.round?.roundId || next.media?.url !== currentMedia) { cancelOutputCheck(); checkedOutput = ''; }
     eventSeq = seq; state = next; lastControl = performance.now(); authority = next.authorityLeaseExpiresAtMs;
     if (next.round?.playbackGeneration !== lastGeneration) { lastGeneration = next.round?.playbackGeneration || ''; lastSeek = -Infinity; playPending = null; countdownStarted = false; resetProgress(); audio.pause(); }
     if (!calibrated) offset = next.serverTimeMs - performance.now();
@@ -108,6 +110,33 @@
     align(); paint();
   }
   function resetProgress() { progressSample = null; progressStart = null; lastProgressAt = -Infinity; }
+  function outputKey() { return `${state?.round?.roundId}:${currentMedia}`; }
+  function cancelOutputCheck() {
+    if (!outputCheck) return;
+    const attempt = outputCheck;
+    // Keep the guard in place during pause/load events from the temporary source.
+    audio.pause(); audio.volume = attempt.volume; audio.muted = attempt.muted;
+    if (currentMedia) audio.src = currentMedia; else audio.removeAttribute('src');
+    audio.load(); lastSeek = -Infinity; resetProgress(); outputCheck = null;
+  }
+  function checkOutput() {
+    const attempt = { key: outputKey(), auth: authGeneration, gesture: playbackGesture, volume: audio.volume, muted: audio.muted };
+    outputCheck = attempt;
+    // An unmuted silent WAV checks the browser's audible-playback permission on
+    // this same element without revealing the quiz. It does not grant permission.
+    audio.src = '/playback-check.wav'; audio.volume = .65; audio.muted = false; audio.load();
+    audio.play().then(() => {
+      if (outputCheck !== attempt || attempt.key !== outputKey() || attempt.auth !== authGeneration) return;
+      if (connected() && leader && now() < clientLeaseUntil && !userPaused && !audio.paused && audio.readyState >= 2) { checkedOutput = attempt.key; gestureBlocked = false; }
+    }).catch(error => {
+      if (outputCheck !== attempt) return;
+      if (error.name === 'NotAllowedError') { gestureBlocked = attempt.gesture === playbackGesture; nextAutoplayAttemptAt = performance.now() + 15000; }
+      else if (error.name !== 'AbortError') { formatFailed = true; }
+    }).finally(() => {
+      if (outputCheck !== attempt) return;
+      cancelOutputCheck(); align(); paint();
+    });
+  }
   function naturallyPlaying() {
     if (audio.paused || audio.seeking || playPending || audio.readyState < 3 || !wantsPlayback()) { resetProgress(); return false; }
     const sample = { at: performance.now(), position: audio.currentTime };
@@ -128,10 +157,12 @@
     if (audio.error || formatFailed) return 'FAILED';
     if (userPaused) return 'PAUSED';
     if (gestureBlocked) return 'NEEDS_GESTURE';
+    if (outputCheck) return 'BUFFERING';
     if (playPending) return 'BUFFERING';
     if (!audio.paused) return naturallyPlaying() ? 'PLAYING' : 'BUFFERING';
     if (audio.seeking || audio.readyState < 3) return 'LOADING';
     if (state.room.phase === 'PREPARING' || state.room.phase === 'COUNTDOWN') {
+      if (checkedOutput !== outputKey()) return 'LOADING';
       const target = expected(state.round) / 1000;
       const requiredEnd = Math.min(target + .5 * playbackRate(state.round), state.round.clipEndMs / 1000);
       let buffered = false;
@@ -152,16 +183,16 @@
     inFlightSignature = signature;
     const generation = authGeneration;
     let bufferedUntilMs = null;
-    for (let i = 0; i < audio.buffered.length; i++) if (audio.buffered.start(i) <= audio.currentTime && audio.buffered.end(i) >= audio.currentTime) bufferedUntilMs = Math.round(audio.buffered.end(i) * 1000);
+    if (!outputCheck) for (let i = 0; i < audio.buffered.length; i++) if (audio.buffered.start(i) <= audio.currentTime && audio.buffered.end(i) >= audio.currentTime) bufferedUntilMs = Math.round(audio.buffered.end(i) * 1000);
     try {
-      const response = await request('/api/v1/playback', { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Noqui-CSRF': csrf }, body: JSON.stringify({ clientId, takeOver: takeover, roundId: r?.roundId ?? null, roundRevision: r?.revision ?? null, playbackGeneration: r?.playbackGeneration ?? null, status: current, positionMs: currentMedia && Number.isFinite(audio.currentTime) ? Math.round(audio.currentTime * 1000) : null, bufferedUntilMs, lastEventId: state?.eventId ?? null }) });
+      const response = await request('/api/v1/playback', { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Noqui-CSRF': csrf }, body: JSON.stringify({ clientId, takeOver: takeover, roundId: r?.roundId ?? null, roundRevision: r?.revision ?? null, playbackGeneration: r?.playbackGeneration ?? null, status: current, positionMs: !outputCheck && currentMedia && Number.isFinite(audio.currentTime) ? Math.round(audio.currentTime * 1000) : null, bufferedUntilMs, lastEventId: state?.eventId ?? null }) });
       if (!authValid || generation !== authGeneration) return;
       clientLeaseUntil = response.leaseExpiresAtMs;
       takeover = false; lastReportSignature = signature; lastReportAt = performance.now(); nextReportAt = 0;
       align(); paint();
     } catch (error) {
       if (generation !== authGeneration) return;
-      if (error.message === 'ACTIVE_CLIENT') { leader = false; takeover = false; clientLeaseUntil = 0; playPending = null; audio.pause(); $('takeover').hidden = false; message(errors.ACTIVE_CLIENT); }
+      if (error.message === 'ACTIVE_CLIENT') { leader = false; takeover = false; clientLeaseUntil = 0; playPending = null; cancelOutputCheck(); audio.pause(); $('takeover').hidden = false; message(errors.ACTIVE_CLIENT); }
       else nextReportAt = performance.now() + 2000;
     } finally { ackPending = false; if (ackAgain) { ackAgain = false; void report(); } }
   }
@@ -176,7 +207,10 @@
   }
   function align() {
     const r = state?.round;
-    if (!connected() || !leader || now() >= clientLeaseUntil || !r || !currentMedia || formatFailed || audio.error) { resetProgress(); audio.pause(); return; }
+    if (!connected() || !leader || now() >= clientLeaseUntil || !r || !currentMedia || formatFailed || audio.error) { cancelOutputCheck(); resetProgress(); audio.pause(); return; }
+    if (gestureBlocked && performance.now() >= nextAutoplayAttemptAt) gestureBlocked = false;
+    if (outputCheck) return;
+    if (!userPaused && !gestureBlocked && checkedOutput !== outputKey() && (state.room.phase === 'PREPARING' || state.room.phase === 'COUNTDOWN' && now() < r.anchorAtMs)) { checkOutput(); return; }
     const target = expected(r) / 1000;
     if (!(state.room.phase === 'COUNTDOWN' && countdownStarted) && audio.readyState >= 1 && !audio.seeking && !playPending && Math.abs(audio.currentTime - target) > .5 && performance.now() - lastSeek >= 2000) {
       try { resetProgress(); audio.currentTime = target; lastSeek = performance.now(); } catch { /* Seek becomes available after metadata. */ }
@@ -190,7 +224,7 @@
         if (!wantsPlayback()) audio.pause();
       }).catch(error => {
         if (playPending !== attempt || attempt.media !== currentMedia || attempt.generation !== lastGeneration || attempt.auth !== authGeneration) return;
-        if (error.name === 'NotAllowedError') { gestureBlocked = attempt.gesture === playbackGesture; audio.pause(); }
+        if (error.name === 'NotAllowedError') { gestureBlocked = attempt.gesture === playbackGesture; checkedOutput = ''; nextAutoplayAttemptAt = performance.now() + 15000; audio.pause(); }
       }).finally(() => {
         if (playPending === attempt) {
           playPending = null;
@@ -207,7 +241,7 @@
     const healthy = connected();
     $('connection').classList.toggle('connected', healthy); $('connection-text').textContent = healthy ? '연결됨' : '연결 대기';
     const r = state?.round; const s = status();
-    const names = { CONNECTED: '대기 중', NEEDS_GESTURE: '재생 대기', LOADING: '대기 중', PREPARED: '대기 중', PLAYING: '재생 중', PAUSED: '일시 정지', BUFFERING: '버퍼링 중', FAILED: '오디오 오류' };
+    const names = { CONNECTED: '대기 중', NEEDS_GESTURE: '자동 재생 차단됨', LOADING: '대기 중', PREPARED: '대기 중', PLAYING: '재생 중', PAUSED: '일시 정지', BUFFERING: '버퍼링 중', FAILED: '오디오 오류' };
     setText('audio-status', !healthy ? '연결 대기' : !leader ? '다른 창에서 재생 중' : names[s]);
     $('playback').hidden = !authValid || !leader || !r || !currentMedia;
     const playbackLabel = userPaused || gestureBlocked || audio.paused && !playPending ? '재생' : '일시 정지';
@@ -217,7 +251,7 @@
       const rate = playbackRate(r);
       $('progress').max = (r.clipEndMs - r.clipStartMs) / rate; $('progress').value = progress / rate;
       $('elapsed').textContent = format(progress / rate); $('remaining').textContent = format(Math.ceil((r.clipEndMs - r.clipStartMs - progress) / rate));
-      $('countdown').textContent = r.playing && now() < r.anchorAtMs ? String(Math.ceil((r.anchorAtMs - now()) / 1000)) : '';
+      $('countdown').textContent = !gestureBlocked && checkedOutput === outputKey() && r.playing && now() < r.anchorAtMs ? String(Math.ceil((r.anchorAtMs - now()) / 1000)) : '';
     } else { $('progress').value = 0; $('elapsed').textContent = '0:00'; $('remaining').textContent = '—'; $('countdown').textContent = ''; }
     void report(s);
   }
@@ -261,7 +295,7 @@
   }
   $('playback').addEventListener('click', event => {
     if (userPaused || gestureBlocked || audio.paused && !playPending) { userPaused = false; gestureBlocked = false; if (event.isTrusted) playbackGesture++; align(); }
-    else { userPaused = true; playPending = null; audio.pause(); }
+    else { userPaused = true; playPending = null; cancelOutputCheck(); audio.pause(); }
     paint();
   });
   const retryGesture = event => {
@@ -271,11 +305,12 @@
   };
   for (const event of ['pointerup', 'click', 'keydown']) document.addEventListener(event, retryGesture);
   $('takeover').addEventListener('click', async event => { leader = true; takeover = true; clientLeaseUntil = 0; gestureBlocked = false; if (event.isTrusted) playbackGesture++; await report(); if (leader && authValid && now() < clientLeaseUntil) { $('takeover').hidden = true; align(); paint(); } });
-  $('volume').addEventListener('input', () => { volume = Number($('volume').value); audio.volume = volume / 100; audio.muted = volume === 0; $('volume-value').value = String(volume); localStorage.setItem('noqui-volume', String(volume)); $('mute').setAttribute('aria-pressed', String(audio.muted)); });
-  $('mute').addEventListener('click', () => { audio.muted = !audio.muted; $('mute').textContent = audio.muted ? '음소거' : '소리'; $('mute').setAttribute('aria-pressed', String(audio.muted)); });
+  $('volume').addEventListener('input', () => { volume = Number($('volume').value); const output = outputCheck || audio; output.volume = volume / 100; output.muted = volume === 0; $('volume-value').value = String(volume); localStorage.setItem('noqui-volume', String(volume)); $('mute').setAttribute('aria-pressed', String(output.muted)); });
+  $('mute').addEventListener('click', () => { const output = outputCheck || audio; output.muted = !output.muted; $('mute').textContent = output.muted ? '음소거' : '소리'; $('mute').setAttribute('aria-pressed', String(output.muted)); });
   $('reconnect').addEventListener('click', () => { if (authValid) { void refreshState(); connect(); } else void boot(); });
   $('logout').addEventListener('click', async () => { if (!authValid) return; try { await request('/api/v1/auth/logout', { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Noqui-CSRF': csrf }, body: '{}' }); } catch { /* A replaced login is already stopped by request(). */ } finally { if (authValid) revoke('SESSION_REVOKED'); } });
   for (const event of ['loadedmetadata', 'canplay', 'seeking', 'seeked', 'playing', 'timeupdate', 'pause', 'waiting', 'ended', 'error']) audio.addEventListener(event, () => {
+    if (event === 'error' && outputCheck) formatFailed = true;
     // Let a completed seek play before chasing the clock again, even if loading took longer than the correction interval.
     if (event === 'seeked') lastSeek = performance.now();
     if (['seeking', 'seeked', 'pause', 'waiting', 'ended', 'error'].includes(event)) resetProgress();

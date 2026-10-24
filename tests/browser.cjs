@@ -13,7 +13,7 @@ let clientSequence = 0;
 function fixture(stored = new Map()) {
   const els = new Map(), documentEvents = new Map(), windowEvents = new Map(), intervals = [], timers = new Map(), streams = [], reports = [], requests = [];
   let clock = 1000, cookiePlayer = UUID_A, csrf = 'csrf-A', pendingState = null, denyCsrf = false, offline = false, expired = false, plays = 0;
-  let playOverride = null;
+  let playOverride = null, checks = 0;
   const storage = new Map(stored);
   function element() { return { textContent: '', hidden: false, disabled: false, attrs: {}, events: {}, classList: { toggle() {}, remove() {} }, querySelectorAll: () => [],
     addEventListener(type, fn) { this.events[type] = fn; }, setAttribute(k, v) { this.attrs[k] = v; }, removeAttribute() {}, replaceChildren() {}, closest: () => null }; }
@@ -21,7 +21,7 @@ function fixture(stored = new Map()) {
   const audio = get('audio');
   Object.assign(audio, { readyState: 4, paused: true, seeking: false, currentTime: 0, error: null,
     buffered: { length: 1, start: () => 0, end: () => 115.007 }, pause() { this.paused = true; }, load() {}, canPlayType: () => 'probably',
-    play() { plays++; if (playOverride) return playOverride(); this.paused = false; return Promise.resolve(); } });
+    play() { if (this.src === '/playback-check.wav') checks++; else plays++; if (playOverride) return playOverride(); this.paused = false; return Promise.resolve(); } });
   let snapshot = state('PREPARING', '1');
   function state(phase, revision, player = cookiePlayer) {
     return { eventId: `epoch:${revision}`, serverTimeMs: clock, authorityLeaseExpiresAtMs: clock + 15000,
@@ -61,7 +61,7 @@ function fixture(stored = new Map()) {
     },
   };
   vm.runInNewContext(source.replace('  void boot();', '  globalThis.api = { boot, apply, align, paint, status, report, revoke };'), context);
-  return { ...context.api, get, audio, streams, reports, requests, intervals, document, state, storage, plays: () => plays,
+  return { ...context.api, get, audio, streams, reports, requests, intervals, document, state, storage, plays: () => plays, checks: () => checks,
     setClock: value => { clock = value; }, setSnapshot: value => { snapshot = value; },
     switchPlayer: () => { cookiePlayer = UUID_B; csrf = 'csrf-B'; },
     denyCsrf: () => { denyCsrf = true; }, pendingState: promise => { pendingState = promise; },
@@ -77,12 +77,55 @@ function fixture(stored = new Map()) {
     reconnect: async () => { const [id, timer] = timers.entries().next().value; timers.delete(id); await timer.fn(); await flush(); },
   };
 }
-test('new round revision reports PREPARED immediately without a heartbeat timer', async () => {
+test('new round revision reports PREPARED after the output check without a heartbeat timer', async () => {
   const r = fixture(); await r.boot(); await flush();
   assert.equal(r.reports.at(-1).status, 'PREPARED');
   r.apply(r.state('PREPARING', '2')); await flush();
   assert.equal(r.reports.at(-1).roundRevision, '2');
   assert.equal(r.reports.at(-1).status, 'PREPARED');
+  assert.equal(r.checks(), 1); assert.equal(r.plays(), 0, 'the quiz track is not exposed during the check');
+});
+
+test('buffered preparation denied audible autoplay never reports readiness or a countdown', async () => {
+  const r = fixture(new Map([['noqui-volume', '0']]));
+  r.setPlay(() => { assert.equal(r.audio.src, '/playback-check.wav'); assert.equal(r.audio.muted, false); assert(r.audio.volume > 0); return Promise.reject(Object.assign(new Error('policy'), { name: 'NotAllowedError' })); });
+  await r.boot(); await flush();
+  assert.equal(r.status(), 'NEEDS_GESTURE'); assert.equal(r.reports.at(-1).status, 'NEEDS_GESTURE');
+  assert(!r.reports.some(report => ['PREPARED', 'PLAYING'].includes(report.status)));
+  assert.equal(r.audio.muted, true); assert.equal(r.audio.volume, 0); assert.equal(r.get('countdown').textContent, '');
+  for (let i = 0; i < 10; i++) await r.tick(); assert.equal(r.checks(), 1, 'denials do not create a retry storm');
+  const countdown = r.state('COUNTDOWN', '2'); Object.assign(countdown.round, { playing: true, anchorAtMs: 3000 });
+  r.apply(countdown); await flush(); assert.equal(r.get('countdown').textContent, '');
+});
+
+test('a policy change can recover automatically on a background lease with zero gestures', async () => {
+  const r = fixture(); r.setPlay(() => Promise.reject(Object.assign(new Error('policy'), { name: 'NotAllowedError' })));
+  await r.boot(); await flush(); assert.equal(r.status(), 'NEEDS_GESTURE');
+  r.setPlay(null); r.setClock(16000); await r.event('lease', { authorityLeaseExpiresAtMs: 31000 });
+  assert.equal(r.status(), 'PREPARED'); assert.equal(r.checks(), 2); assert.equal(r.plays(), 0); assert.equal(r.document.hidden, true);
+});
+
+test('pending output checks cannot report the probe position, grant readiness after revocation or override user pause', async () => {
+  for (const action of ['revoke', 'pause']) {
+    const r = fixture(); let finish;
+    r.setPlay(() => { r.audio.paused = false; return new Promise(resolve => { finish = resolve; }); });
+    await r.boot(); await flush(); assert.equal(r.status(), 'BUFFERING');
+    assert.equal(r.reports.at(-1).positionMs, null); assert.equal(r.reports.at(-1).bufferedUntilMs, null);
+    if (action === 'revoke') r.revoke('SESSION_REVOKED');
+    else await r.click('playback');
+    finish(); await flush();
+    assert(!r.reports.some(report => ['PREPARED', 'PLAYING'].includes(report.status))); assert.equal(r.audio.paused, true);
+  }
+});
+
+test('an output check from an old round cannot prepare a replacement source', async () => {
+  const r = fixture(), pending = [];
+  r.setPlay(() => { r.audio.paused = false; return new Promise(resolve => pending.push(resolve)); });
+  await r.boot(); await flush();
+  const next = r.state('PREPARING', '2'); next.round.roundId = 'round-two'; next.media.url = `/media/${'b'.repeat(64)}.ogg`;
+  r.apply(next); await flush(); assert.equal(pending.length, 2);
+  pending[0](); await flush(); assert.equal(r.status(), 'BUFFERING');
+  pending[1](); await flush(); assert.equal(r.status(), 'PREPARED'); assert.equal(r.reports.at(-1).roundId, 'round-two');
 });
 
 test('round label uses session registered songs including played songs independently of the round limit', async () => {
@@ -255,7 +298,7 @@ test('direct arrival truthfully waits for a trusted page gesture without changin
   const r = fixture(new Map([['noqui-volume', '0']]));
   r.setPlay(() => Promise.reject(Object.assign(new Error('policy'), { name: 'NotAllowedError' })));
   r.setSnapshot(r.state('PLAYING', '1')); await r.boot(); await flush();
-  assert.equal(r.status(), 'NEEDS_GESTURE'); assert.equal(r.get('audio-status').textContent, '재생 대기');
+  assert.equal(r.status(), 'NEEDS_GESTURE'); assert.equal(r.get('audio-status').textContent, '자동 재생 차단됨');
   assert.equal(r.get('playback').textContent, '재생'); assert.equal(r.audio.muted, true);
   r.setPlay(null); await r.gesture('click', { isTrusted: false });
   assert.equal(r.plays(), 1);

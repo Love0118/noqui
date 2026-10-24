@@ -191,6 +191,29 @@ fn get(path: &str, cookie: &str) -> Request<Body> {
 }
 
 #[tokio::test]
+async fn output_check_is_a_public_silent_wav_with_the_existing_security_policy() {
+    let f = Fixture::new();
+    let (status, headers, body) =
+        call(api::public(f.app.clone()), get("/playback-check.wav", "")).await;
+    assert_eq!(status, StatusCode::OK);
+    assert_eq!(headers["content-type"], "audio/wav");
+    assert_eq!(
+        headers["permissions-policy"],
+        "camera=(), microphone=(), geolocation=()"
+    );
+    assert!(
+        headers["content-security-policy"]
+            .to_str()
+            .unwrap()
+            .contains("media-src 'self'")
+    );
+    assert_eq!(&body[..4], b"RIFF");
+    assert_eq!(&body[8..12], b"WAVE");
+    assert_eq!(&body[36..40], b"data");
+    assert!(body[44..].iter().all(|sample| *sample == 0));
+}
+
+#[tokio::test]
 async fn join_and_home_share_the_player_document_without_an_auth_redirect() {
     let f = Fixture::new();
     let router = api::public(f.app.clone());
