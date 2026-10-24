@@ -298,6 +298,9 @@ impl State {
             public_room["roundNumber"] = json!(number);
             public_room["totalRounds"] = json!(total);
         }
+        if let Some(registered) = room.registered_songs {
+            public_room["registeredSongs"] = json!(registered);
+        }
         Ok(
             json!({"eventId":format!("{}:{}",self.epoch,self.event_seq),"serverTimeMs":now,"authorityLeaseExpiresAtMs":self.authority_until,"me":{"uuid":session.player.uuid,"nickname":session.player.nickname,"textureHash":session.player.texture_hash},"room":public_room,"round":room.round,"media":media,"reveal":if room.phase=="REVEAL" {room.reveal.as_ref()} else {None}}),
         )

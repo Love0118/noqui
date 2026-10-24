@@ -179,6 +179,7 @@ fn job(video: &str) -> JobRequest {
         schema_version: 1,
         request_id: uuid::Uuid::new_v4().to_string(),
         video_id: video.into(),
+        song: None,
     }
 }
 fn get(path: &str, cookie: &str) -> Request<Body> {
@@ -187,6 +188,453 @@ fn get(path: &str, cookie: &str) -> Request<Body> {
         .header("cookie", cookie)
         .body(Body::empty())
         .unwrap()
+}
+
+#[tokio::test]
+async fn join_and_home_share_the_player_document_without_an_auth_redirect() {
+    let f = Fixture::new();
+    let router = api::public(f.app.clone());
+    let (status, headers, home) = call(router.clone(), get("/", "")).await;
+    assert_eq!(status, StatusCode::OK);
+    assert_eq!(headers["cache-control"], "no-store");
+    let (status, headers, join) = call(router, get("/join", "")).await;
+    assert_eq!(status, StatusCode::OK);
+    assert!(!headers.contains_key("location"));
+    assert_eq!(home, join);
+    let html = String::from_utf8(join).unwrap();
+    assert!(html.contains("id=\"audio\""));
+    assert!(html.contains("src=\"/join.js\""));
+    assert!(!html.contains("src=\"/app.js\""));
+}
+
+#[tokio::test]
+async fn retained_media_pins_are_private_durable_and_replaced_only_by_accepted_pin_aware_sync() {
+    let f = Fixture::new();
+    let media = f.seed();
+    let mut snapshot = f.snapshot(1, "IDLE");
+    snapshot.retained_media_ids = Some(vec![media.id.clone()]);
+    let bytes = serde_json::to_vec(&snapshot).unwrap();
+    assert_eq!(
+        call(
+            api::internal(f.app.clone()),
+            f.signed("POST", "/internal/v1/sync", &bytes)
+        )
+        .await
+        .0,
+        StatusCode::OK
+    );
+    let db = rusqlite::Connection::open(f.app.config.data.join("media.sqlite")).unwrap();
+    let pins = || {
+        db.query_row(
+            "SELECT count(*) FROM cache_pins WHERE kind='queue' AND media_id=?",
+            [MEDIA],
+            |r| r.get::<_, i64>(0),
+        )
+        .unwrap()
+    };
+    assert_eq!(pins(), 1);
+    let (cookie, _) = f.login();
+    let public = call(api::public(f.app.clone()), get("/api/v1/state", &cookie)).await;
+    assert_eq!(public.0, StatusCode::OK);
+    let body = String::from_utf8(public.2).unwrap();
+    assert!(!body.contains("retainedMediaIds"));
+    assert!(
+        !body.contains(MEDIA),
+        "queued-only media is not exposed to browsers"
+    );
+    let legacy = serde_json::to_vec(&f.snapshot(2, "IDLE")).unwrap();
+    assert_eq!(
+        call(
+            api::internal(f.app.clone()),
+            f.signed("POST", "/internal/v1/sync", &legacy)
+        )
+        .await
+        .0,
+        StatusCode::OK
+    );
+    assert_eq!(pins(), 1);
+    snapshot.retained_media_ids = Some(vec![]);
+    let stale = serde_json::to_vec(&snapshot).unwrap();
+    assert_eq!(
+        call(
+            api::internal(f.app.clone()),
+            f.signed("POST", "/internal/v1/sync", &stale)
+        )
+        .await
+        .0,
+        StatusCode::CONFLICT
+    );
+    assert_eq!(pins(), 1);
+    let mut replacement = f.snapshot(3, "IDLE");
+    replacement.instance_id = uuid::Uuid::new_v4().to_string();
+    replacement.retained_media_ids = Some(vec![]);
+    let bytes = serde_json::to_vec(&replacement).unwrap();
+    assert_eq!(
+        call(
+            api::internal(f.app.clone()),
+            f.signed("POST", "/internal/v1/sync", &bytes)
+        )
+        .await
+        .0,
+        StatusCode::CONFLICT
+    );
+    assert_eq!(pins(), 1);
+    let _reopened = Jobs::open(&f.app.config.data, START + 1000).unwrap();
+    assert_eq!(pins(), 1);
+    let mut release = f.snapshot(3, "PREPARING");
+    f.round(&mut release);
+    release.retained_media_ids = Some(vec![]);
+    let bytes = serde_json::to_vec(&release).unwrap();
+    assert_eq!(
+        call(
+            api::internal(f.app.clone()),
+            f.signed("POST", "/internal/v1/sync", &bytes)
+        )
+        .await
+        .0,
+        StatusCode::OK
+    );
+    assert_eq!(pins(), 0);
+    assert_eq!(
+        db.query_row(
+            "SELECT count(*) FROM cache_pins WHERE kind='current' AND media_id=?",
+            [MEDIA],
+            |r| r.get::<_, i64>(0)
+        )
+        .unwrap(),
+        1
+    );
+    let used: i64 = db
+        .query_row("SELECT last_used FROM media WHERE id=?", [MEDIA], |r| {
+            r.get(0)
+        })
+        .unwrap();
+    release.seq = "4".into();
+    release.sent_at_ms = START + 1000;
+    f.clock.0.store(START + 1000, Ordering::SeqCst);
+    let bytes = serde_json::to_vec(&release).unwrap();
+    assert_eq!(
+        call(
+            api::internal(f.app.clone()),
+            f.signed("POST", "/internal/v1/sync", &bytes)
+        )
+        .await
+        .0,
+        StatusCode::OK
+    );
+    assert_eq!(
+        db.query_row("SELECT last_used FROM media WHERE id=?", [MEDIA], |r| r
+            .get::<_, i64>(0))
+            .unwrap(),
+        used,
+        "pin/control heartbeats are not uses"
+    );
+}
+
+#[tokio::test]
+async fn submission_metadata_is_saved_before_conversion_for_queued_and_cached_songs_without_public_leaks()
+ {
+    let f = Fixture::new();
+    f.seed();
+    let mut idle = f.snapshot(1, "IDLE");
+    idle.rooms[0].round_number = Some(0);
+    idle.rooms[0].total_rounds = Some(0);
+    idle.rooms[0].registered_songs = Some(0);
+    f.sync_direct(idle, None);
+    let (cookie, _) = f.login();
+    let db = rusqlite::Connection::open(f.app.config.data.join("media.sqlite")).unwrap();
+    for (video, status) in [
+        ("AAAAAAAAAAA", StatusCode::ACCEPTED),
+        ("BaW_jenozKc", StatusCode::OK),
+    ] {
+        let id = uuid::Uuid::new_v4().to_string();
+        let request = json!({"schemaVersion":1,"requestId":id,"videoId":video,"song":{"title":"PRIVATE SONG TITLE","tags":["PRIVATE TAG"]}});
+        let bytes = serde_json::to_vec(&request).unwrap();
+        let response = call(
+            api::internal(f.app.clone()),
+            f.signed("POST", "/internal/v1/media/jobs", &bytes),
+        )
+        .await;
+        assert_eq!(response.0, status);
+        for secret in ["PRIVATE SONG TITLE", "PRIVATE TAG", "youtube.com"] {
+            assert!(!String::from_utf8_lossy(&response.2).contains(secret));
+        }
+        let row: (String, String, String, i64, i64) = db
+            .query_row(
+                "SELECT youtube_url,title,tags_json,created,updated FROM song_catalogue WHERE id=?",
+                [&id],
+                |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?, r.get(3)?, r.get(4)?)),
+            )
+            .unwrap();
+        assert_eq!(row.0, format!("https://www.youtube.com/watch?v={video}"));
+        assert_eq!(row.1, "PRIVATE SONG TITLE");
+        assert_eq!(
+            serde_json::from_str::<Value>(&row.2).unwrap(),
+            json!(["PRIVATE TAG"])
+        );
+        f.clock.0.store(START + 1000, Ordering::SeqCst);
+        assert_eq!(
+            call(
+                api::internal(f.app.clone()),
+                f.signed("POST", "/internal/v1/media/jobs", &bytes)
+            )
+            .await
+            .0,
+            status
+        );
+        let timestamps: (i64, i64) = db
+            .query_row(
+                "SELECT created,updated FROM song_catalogue WHERE id=?",
+                [&id],
+                |r| Ok((r.get(0)?, r.get(1)?)),
+            )
+            .unwrap();
+        assert_eq!(timestamps, (row.3, row.4));
+        let mut conflict = request;
+        conflict["song"]["title"] = json!("DIFFERENT TITLE");
+        let bytes = serde_json::to_vec(&conflict).unwrap();
+        assert_eq!(
+            call(
+                api::internal(f.app.clone()),
+                f.signed("POST", "/internal/v1/media/jobs", &bytes)
+            )
+            .await
+            .0,
+            StatusCode::CONFLICT
+        );
+    }
+    let (status, _, public) = call(api::public(f.app.clone()), get("/api/v1/state", &cookie)).await;
+    assert_eq!(status, StatusCode::OK);
+    for secret in [
+        "PRIVATE SONG TITLE",
+        "PRIVATE TAG",
+        "youtube.com",
+        "AAAAAAAAAAA",
+        "BaW_jenozKc",
+    ] {
+        assert!(!String::from_utf8_lossy(&public).contains(secret));
+    }
+    let value: Value = serde_json::from_slice(&public).unwrap();
+    assert_eq!(
+        value["room"]["registeredSongs"], 0,
+        "catalogue size cannot become the session display denominator"
+    );
+    assert_eq!(
+        db.query_row("SELECT count(*) FROM song_catalogue", [], |r| r
+            .get::<_, i64>(0))
+            .unwrap(),
+        2
+    );
+}
+
+#[tokio::test]
+async fn catalogue_import_is_private_bounded_idempotent_and_transactional() {
+    let f = Fixture::new();
+    let path = "/internal/v1/catalogue/import";
+    let record = |id: String, title: &str| json!({"id":id,"youtubeUrl":"https://www.youtube.com/watch?v=BaW_jenozKc","title":title,"tags":["음악"]});
+    let first = record(uuid::Uuid::new_v4().to_string(), "Imported First");
+    let second = record(uuid::Uuid::new_v4().to_string(), "Imported Second");
+    let payload = json!({"schemaVersion":1,"songs":[first.clone(),second]});
+    let bytes = serde_json::to_vec(&payload).unwrap();
+    let unsigned = Request::builder()
+        .method("POST")
+        .uri(path)
+        .header("content-type", "application/json")
+        .body(Body::from(bytes.clone()))
+        .unwrap();
+    assert!(
+        call(api::internal(f.app.clone()), unsigned)
+            .await
+            .0
+            .is_client_error()
+    );
+    let public = Request::builder()
+        .method("POST")
+        .uri(path)
+        .header("content-type", "application/json")
+        .body(Body::from(bytes.clone()))
+        .unwrap();
+    assert_eq!(
+        call(api::public(f.app.clone()), public).await.0,
+        StatusCode::NOT_FOUND
+    );
+    for _ in 0..2 {
+        let response = call(api::internal(f.app.clone()), f.signed("POST", path, &bytes)).await;
+        assert_eq!(response.0, StatusCode::OK);
+        assert_eq!(
+            serde_json::from_slice::<Value>(&response.2).unwrap(),
+            json!({"savedCount":2})
+        );
+    }
+    let db = rusqlite::Connection::open(f.app.config.data.join("media.sqlite")).unwrap();
+    let count = || {
+        db.query_row("SELECT count(*) FROM song_catalogue", [], |r| {
+            r.get::<_, i64>(0)
+        })
+        .unwrap()
+    };
+    assert_eq!(count(), 2);
+    let mut conflict = first.clone();
+    conflict["title"] = json!("Changed Existing");
+    let rollback = json!({"schemaVersion":1,"songs":[record(uuid::Uuid::new_v4().to_string(),"Must Roll Back"),conflict]});
+    let bytes = serde_json::to_vec(&rollback).unwrap();
+    assert_eq!(
+        call(api::internal(f.app.clone()), f.signed("POST", path, &bytes))
+            .await
+            .0,
+        StatusCode::CONFLICT
+    );
+    assert_eq!(count(), 2);
+    let fifty: Vec<Value> = (0..50)
+        .map(|i| record(uuid::Uuid::new_v4().to_string(), &format!("Song {i}")))
+        .collect();
+    let bytes = serde_json::to_vec(&json!({"schemaVersion":1,"songs":fifty})).unwrap();
+    assert!(bytes.len() < 65536);
+    let response = call(api::internal(f.app.clone()), f.signed("POST", path, &bytes)).await;
+    assert_eq!(response.0, StatusCode::OK);
+    assert_eq!(
+        serde_json::from_slice::<Value>(&response.2).unwrap()["savedCount"],
+        50
+    );
+    assert_eq!(count(), 52);
+    let too_many: Vec<Value> = (0..51).map(|_| first.clone()).collect();
+    for (payload, status) in [
+        (
+            json!({"schemaVersion":1,"songs":too_many}),
+            StatusCode::BAD_REQUEST,
+        ),
+        (
+            json!({"schemaVersion":2,"songs":[]}),
+            StatusCode::BAD_REQUEST,
+        ),
+        (
+            json!({"schemaVersion":1,"songs":[],"padding":"x".repeat(65536)}),
+            StatusCode::PAYLOAD_TOO_LARGE,
+        ),
+    ] {
+        let bytes = serde_json::to_vec(&payload).unwrap();
+        assert_eq!(
+            call(api::internal(f.app.clone()), f.signed("POST", path, &bytes))
+                .await
+                .0,
+            status
+        );
+        assert_eq!(count(), 52);
+    }
+    for table in ["jobs", "media", "requests"] {
+        assert_eq!(
+            db.query_row(&format!("SELECT count(*) FROM {table}"), [], |r| r
+                .get::<_, i64>(0))
+                .unwrap(),
+            0
+        );
+    }
+}
+
+#[tokio::test]
+async fn rejected_or_failed_job_registration_cannot_leave_partial_catalogue_records() {
+    let f = Fixture::new();
+    let db = rusqlite::Connection::open(f.app.config.data.join("media.sqlite")).unwrap();
+    for i in 0..64 {
+        f.app
+            .jobs
+            .enqueue(job(&format!("AAAAAAAA{i:03}")), START)
+            .await
+            .unwrap();
+    }
+    let mut rejected = job("ZZZZZZZZZZZ");
+    rejected.song = Some(noqui_web::catalogue::SongMetadata {
+        title: "Queue Full Song".into(),
+        tags: vec![],
+    });
+    assert_eq!(
+        f.app.jobs.enqueue(rejected, START).await.unwrap_err().code,
+        "QUEUE_FULL"
+    );
+    assert_eq!(
+        db.query_row("SELECT count(*) FROM song_catalogue", [], |r| r
+            .get::<_, i64>(0))
+            .unwrap(),
+        0
+    );
+    let g = Fixture::new();
+    let db = rusqlite::Connection::open(g.app.config.data.join("media.sqlite")).unwrap();
+    db.execute_batch("CREATE TRIGGER reject_receipt BEFORE INSERT ON requests BEGIN SELECT RAISE(ABORT,'injected failure'); END;").unwrap();
+    let mut rejected = job("ZZZZZZZZZZZ");
+    rejected.song = Some(noqui_web::catalogue::SongMetadata {
+        title: "Storage Failure Song".into(),
+        tags: vec![],
+    });
+    assert_eq!(
+        g.app.jobs.enqueue(rejected, START).await.unwrap_err().code,
+        "STORAGE_UNAVAILABLE"
+    );
+    for table in ["song_catalogue", "jobs", "requests"] {
+        assert_eq!(
+            db.query_row(&format!("SELECT count(*) FROM {table}"), [], |r| r
+                .get::<_, i64>(0))
+                .unwrap(),
+            0
+        );
+    }
+}
+
+#[tokio::test]
+async fn retained_media_rejects_invalid_duplicate_unready_and_oversized_lists_without_releasing_pins()
+ {
+    let f = Fixture::new();
+    let media = f.seed();
+    let mut snapshot = f.snapshot(1, "IDLE");
+    snapshot.retained_media_ids = Some(vec![media.id.clone()]);
+    let bytes = serde_json::to_vec(&snapshot).unwrap();
+    assert_eq!(
+        call(
+            api::internal(f.app.clone()),
+            f.signed("POST", "/internal/v1/sync", &bytes)
+        )
+        .await
+        .0,
+        StatusCode::OK
+    );
+    let mut next = serde_json::to_value(f.snapshot(2, "IDLE")).unwrap();
+    let too_many: Vec<String> = (0..65).map(|_| uuid::Uuid::new_v4().to_string()).collect();
+    for (ids, status) in [
+        (Value::Null, StatusCode::BAD_REQUEST),
+        (json!("invalid"), StatusCode::BAD_REQUEST),
+        (json!([MEDIA, MEDIA]), StatusCode::BAD_REQUEST),
+        (json!(["invalid"]), StatusCode::BAD_REQUEST),
+        (json!(too_many), StatusCode::BAD_REQUEST),
+        (
+            json!([uuid::Uuid::new_v4().to_string()]),
+            StatusCode::CONFLICT,
+        ),
+    ] {
+        next["retainedMediaIds"] = ids;
+        let bytes = serde_json::to_vec(&next).unwrap();
+        assert_eq!(
+            call(
+                api::internal(f.app.clone()),
+                f.signed("POST", "/internal/v1/sync", &bytes)
+            )
+            .await
+            .0,
+            status
+        );
+        assert_eq!(
+            f.app.inner.lock().unwrap().snapshot.as_ref().unwrap().seq,
+            "1"
+        );
+    }
+    let db = rusqlite::Connection::open(f.app.config.data.join("media.sqlite")).unwrap();
+    assert_eq!(
+        db.query_row(
+            "SELECT count(*) FROM cache_pins WHERE kind='queue'",
+            [],
+            |r| r.get::<_, i64>(0)
+        )
+        .unwrap(),
+        1
+    );
 }
 
 #[tokio::test(start_paused = true)]
@@ -1348,6 +1796,146 @@ async fn optional_round_progress_projects_across_phases_and_preserves_legacy_sna
     let value: Value = serde_json::from_slice(&bytes).unwrap();
     assert!(value["room"].get("roundNumber").is_none());
     assert!(value["room"].get("totalRounds").is_none());
+}
+
+#[tokio::test]
+async fn registered_songs_projects_session_count_in_all_phases_independently_of_the_limit() {
+    let f = Fixture::new();
+    f.seed();
+    f.sync_direct(f.snapshot(1, "IDLE"), None);
+    let (cookie, _) = f.login();
+    for (index, (phase, number, registered, total)) in [
+        ("IDLE", 0, 0, 200),
+        ("WAITING_FOR_MEDIA", 1, 3, 2),
+        ("PREPARING", 1, 3, 200),
+        ("COUNTDOWN", 1, 3, 0),
+        ("PLAYING", 1, 3, 200),
+        ("PAUSED", 1, 2, 0),
+        ("REVEAL", 1, 2, 200),
+        ("IDLE", 1, 2, 0),
+        ("ENDED", 1, 1, 200),
+        ("ENDED", u32::MAX, u32::MAX, 0),
+    ]
+    .into_iter()
+    .enumerate()
+    {
+        let mut snapshot = f.snapshot(index as u64 + 2, phase);
+        let room = &mut snapshot.rooms[0];
+        room.round_number = Some(number);
+        room.total_rounds = Some(total);
+        room.registered_songs = Some(registered);
+        if ["PREPARING", "COUNTDOWN", "PLAYING", "PAUSED", "REVEAL"].contains(&phase) {
+            f.round(&mut snapshot);
+            snapshot.rooms[0].round.as_mut().unwrap().playing =
+                matches!(phase, "COUNTDOWN" | "PLAYING");
+        }
+        let body = serde_json::to_vec(&snapshot).unwrap();
+        assert_eq!(
+            call(
+                api::internal(f.app.clone()),
+                f.signed("POST", "/internal/v1/sync", &body)
+            )
+            .await
+            .0,
+            StatusCode::OK,
+            "phase {phase}"
+        );
+        let (status, _, bytes) =
+            call(api::public(f.app.clone()), get("/api/v1/state", &cookie)).await;
+        assert_eq!(status, StatusCode::OK);
+        let value: Value = serde_json::from_slice(&bytes).unwrap();
+        assert_eq!(value["room"]["registeredSongs"], registered);
+        assert_eq!(value["room"]["roundNumber"], number);
+        assert_eq!(value["room"]["totalRounds"], total);
+    }
+    let legacy = f.snapshot(12, "IDLE");
+    let bytes = serde_json::to_vec(&legacy).unwrap();
+    assert!(!String::from_utf8_lossy(&bytes).contains("registeredSongs"));
+    assert_eq!(
+        call(
+            api::internal(f.app.clone()),
+            f.signed("POST", "/internal/v1/sync", &bytes)
+        )
+        .await
+        .0,
+        StatusCode::OK
+    );
+    let (_, _, bytes) = call(api::public(f.app.clone()), get("/api/v1/state", &cookie)).await;
+    assert!(
+        serde_json::from_slice::<Value>(&bytes).unwrap()["room"]
+            .get("registeredSongs")
+            .is_none()
+    );
+}
+
+#[tokio::test]
+async fn registered_songs_rejects_invalid_numeric_values_without_accepting_state() {
+    let f = Fixture::new();
+    for registered in [
+        json!(-1),
+        json!(1.5),
+        json!(1.0),
+        json!(true),
+        json!("3"),
+        json!(4294967296_u64),
+    ] {
+        let mut snapshot = serde_json::to_value(f.snapshot(1, "IDLE")).unwrap();
+        snapshot["rooms"][0]["registeredSongs"] = registered;
+        let body = serde_json::to_vec(&snapshot).unwrap();
+        assert_eq!(
+            call(
+                api::internal(f.app.clone()),
+                f.signed("POST", "/internal/v1/sync", &body)
+            )
+            .await
+            .0,
+            StatusCode::BAD_REQUEST
+        );
+        assert!(f.app.inner.lock().unwrap().snapshot.is_none());
+    }
+    let mut snapshot = serde_json::to_value(f.snapshot(1, "IDLE")).unwrap();
+    snapshot["rooms"][0]["registeredSongs"] = Value::Null;
+    let snapshot: Snapshot = serde_json::from_value(snapshot).unwrap();
+    assert!(snapshot.rooms[0].registered_songs.is_none());
+    assert!(
+        !serde_json::to_string(&snapshot)
+            .unwrap()
+            .contains("registeredSongs")
+    );
+}
+
+#[tokio::test]
+async fn registered_songs_changes_do_not_change_the_current_audio_round() {
+    let f = Fixture::new();
+    let media = f.seed();
+    let mut snapshot = f.snapshot(1, "PLAYING");
+    f.round(&mut snapshot);
+    snapshot.rooms[0].round_number = Some(1);
+    snapshot.rooms[0].total_rounds = Some(0);
+    snapshot.rooms[0].registered_songs = Some(2);
+    f.sync_direct(snapshot.clone(), Some(media));
+    let (cookie, _) = f.login();
+    let (_, _, before) = call(api::public(f.app.clone()), get("/api/v1/state", &cookie)).await;
+    snapshot.seq = "2".into();
+    snapshot.rooms[0].room_revision = "2".into();
+    snapshot.rooms[0].registered_songs = Some(3);
+    snapshot.rooms[0].total_rounds = Some(200);
+    let body = serde_json::to_vec(&snapshot).unwrap();
+    assert_eq!(
+        call(
+            api::internal(f.app.clone()),
+            f.signed("POST", "/internal/v1/sync", &body)
+        )
+        .await
+        .0,
+        StatusCode::OK
+    );
+    let (_, _, after) = call(api::public(f.app.clone()), get("/api/v1/state", &cookie)).await;
+    let before: Value = serde_json::from_slice(&before).unwrap();
+    let after: Value = serde_json::from_slice(&after).unwrap();
+    assert_eq!(before["round"], after["round"]);
+    assert_eq!(before["media"], after["media"]);
+    assert_eq!(after["room"]["registeredSongs"], 3);
 }
 
 #[tokio::test]

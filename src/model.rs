@@ -101,6 +101,8 @@ pub struct Room {
     pub round_number: Option<u32>,
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub total_rounds: Option<u32>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub registered_songs: Option<u32>,
     pub round: Option<Round>,
     pub reveal: Option<Reveal>,
 }
@@ -113,6 +115,17 @@ pub struct Snapshot {
     pub sent_at_ms: i64,
     pub roster: Vec<Player>,
     pub rooms: Vec<Room>,
+    #[serde(
+        default,
+        deserialize_with = "deserialize_retained_media_ids",
+        skip_serializing_if = "Option::is_none"
+    )]
+    pub retained_media_ids: Option<Vec<String>>,
+}
+fn deserialize_retained_media_ids<'de, D: serde::Deserializer<'de>>(
+    deserializer: D,
+) -> std::result::Result<Option<Vec<String>>, D::Error> {
+    Vec::<String>::deserialize(deserializer).map(Some)
 }
 #[derive(Deserialize)]
 #[serde(rename_all = "camelCase", deny_unknown_fields)]
@@ -120,6 +133,8 @@ pub struct JobRequest {
     pub schema_version: u32,
     pub request_id: String,
     pub video_id: String,
+    #[serde(default)]
+    pub song: Option<crate::catalogue::SongMetadata>,
 }
 #[derive(Deserialize)]
 #[serde(rename_all = "camelCase", deny_unknown_fields)]
