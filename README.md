@@ -1,4 +1,4 @@
-# Noqui 1.0.15
+# Noqui 1.0.16
 
 Paper 26.3 / Java 25용 노래퀴즈 플러그인입니다. 오디오는 Rust 서비스가 원본 길이 6분 이하인 영상의 처음 최대 120초(짧은 곡은 전체)를 약 48kbps Ogg Opus로 캐시하고 브라우저가 재생합니다. 게임·출제권·정답·점수는 Paper가 결정합니다.
 
@@ -14,7 +14,9 @@ mvn -B -ntp verify
 cargo test --locked --manifest-path noqui/web/Cargo.toml
 ```
 
-산출물은 `noqui/plugin/target/noqui-plugin-1.0.15.jar`, `target/mc-luck-defense-1.0.36.jar`입니다. Moma는 Noqui API에 provided 의존성을 사용하며 API는 Noqui JAR에만 포함됩니다. 공용 인벤토리와 광물 판매 API를 사용하므로 두 JAR의 버전을 맞춥니다. Moma 런타임은 매번 현재 서비스 제공자를 조회합니다.
+산출물은 `noqui/plugin/target/noqui-plugin-1.0.16.jar`, `target/mc-luck-defense-1.0.37.jar`입니다. Moma는 Noqui API에 provided 의존성을 사용하며 API는 Noqui JAR에만 포함됩니다. 공용 인벤토리와 광물 판매 API를 사용하므로 두 JAR의 버전을 맞춥니다. Moma 런타임은 매번 현재 서비스 제공자를 조회합니다.
+
+광산은 실제 시간으로 20분마다, 또는 남은 광물 수가 마지막 생성량의 60% 이하일 때 리셋합니다. 매번 전체 광맥을 다시 뽑아 미채굴 광물이 누적되지 않으며 플레이어 몸과 겹치는 칸과 기반 시설은 보존합니다. 리셋이 완료될 때까지 블록 쓰기를 기존 tick 예산 안에서 처리합니다. 광산 이용자에게만 보이는 보스바는 실제 리셋 시각을 사용합니다. 마감 시각은 DB에 저장하므로 런타임 재적용으로 타이머를 새로 시작하지 않습니다. OP의 `/noqui mine reset`은 광산과 20분 타이머를 함께 리셋하며 `/noqui mine rate`는 남은 광물 비율·개수·리셋 기준·남은 시간을 표시합니다. 퀴즈 세션은 변경하지 않습니다.
 
 정답 수 TAB 표시는 퀴즈 참여 여부를 따르며 광산·디펜스에서도 유지됩니다. 광물은 인벤토리 안에서 이동·분할·보조 손 이동이 가능하고 재동기화 시 배치를 유지합니다. 드롭하면 판매 가능한 보유량이 즉시 감소하며, 주우면 단일 사용 드롭 기록을 통해 수령자의 보유량으로 이동합니다. 곡괭이·고정 이동 도구는 보호합니다.
 

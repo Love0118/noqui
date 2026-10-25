@@ -351,11 +351,12 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
                 case "time"->{if(args.length!=2)throw new IllegalArgumentException("/noqui time <1~120초>");int seconds=Integer.parseInt(args[1]);game.timeLimit(seconds);getConfig().set("round-seconds",seconds);saveConfig();sender.sendMessage(text("시간 제한 "+seconds+"초 (다음 곡부터)"));}
                 case "stop"->stopQuiz();case "skip"->game.forceSkip(game.snapshot().roundId());case "hint"->game.hint();case "pause"->game.pause();case "resume"->game.resume();
                 case "give"->grantTickets(sender,args);
+                case "mine"->MiningCommands.execute(sender,args);
                 case "status"->{var s=game.snapshot();sender.sendMessage(text("Noqui "+s.phase()+" 참가 "+s.participants().size()+"명 라운드 "+s.round()+"/"+s.registeredSongs()));}
                 case "mod"->modeCommand(sender,args);
                 case "ban"->banCommand(sender,args);
                 case "admin"->{if(sender instanceof Player p)dialogs.admin(p);}
-                default->sender.sendMessage(text("/noqui start [rounds] | limit <rounds> | time <seconds:1-120> | stop | skip force | hint | pause | resume | give <nickname|@a> [amount] | mod list/add/remove | ban list/add/remove | status | admin"));
+                default->sender.sendMessage(text("/noqui start [rounds] | limit <rounds> | time <seconds:1-120> | stop | skip force | hint | pause | resume | give <nickname|@a> [amount] | mine reset/rate | mod list/add/remove | ban list/add/remove | status | admin"));
             }
         }catch(NumberFormatException error){sender.sendMessage(text("유효한 정수 수량을 입력하세요."));}
         catch(IllegalArgumentException error){sender.sendMessage(text(error.getMessage()));}
@@ -425,7 +426,8 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
         List<String> choices;
         if(isMoney(command,alias))choices=!sender.isOp()?List.of():args.length==1?List.of("give"):
                 args[0].equalsIgnoreCase("give")&&args.length==2?grantSuggestions():args[0].equalsIgnoreCase("give")&&args.length==3?List.of("1","10","100","1000"):List.of();
-        else choices=args.length==1?(sender.isOp()?List.of("start","limit","time","stop","skip","hint","pause","resume","give","mod","ban","status","admin","bgm","connect","leave"):List.of("skip","bgm","connect","leave")):
+        else choices=args.length==1?(sender.isOp()?List.of("start","limit","time","stop","skip","hint","pause","resume","give","mine","mod","ban","status","admin","bgm","connect","leave"):List.of("skip","bgm","connect","leave")):
+                sender.isOp()&&args.length==2&&args[0].equalsIgnoreCase("mine")?List.of("reset","rate"):
                 sender.isOp()&&args.length==2&&Set.of("mod","ban").contains(args[0])?List.of("list","add","remove"):
                 sender.isOp()&&args.length==3&&args[0].equals("mod")?Arrays.stream(QuizModes.Mode.values()).map(QuizModes.Mode::label).toList():
                 sender.isOp()&&args.length==2&&args[0].equalsIgnoreCase("give")?grantSuggestions():
