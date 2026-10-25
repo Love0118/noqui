@@ -7,14 +7,14 @@ Prices belong to the Java catalog/configuration: all cosmetics default to 200 st
 Build and verify using Python3's standard library:
 
 ```text
-python3 noqui/lobby-assets/build_pack.py
-python3 noqui/lobby-assets/build_pack.py --check
-python3 noqui/lobby-assets/test_pack.py
+python3 lobby-assets/build_pack.py
+python3 lobby-assets/build_pack.py --check
+python3 lobby-assets/test_pack.py
 ```
 
-The normal build writes the small tracked `noqui/lobby-assets/lobby-pack.properties` descriptor and ignored `.runtime/noqui-cosmetics-integration/pack/<sha256>.zip` plus `pack-manifest.json`. `--output PATH` selects another artifact directory. `--check` validates all committed inputs, builds the ZIP twice in memory and compares the resulting URL/SHA1 with the tracked descriptor. It does not modify sources. PNG/OGG inputs are already compressed; ZIP entries use STORED mode, fixed timestamps/permissions and sorted paths to avoid zlib-version hash drift across Windows/Linux. Text inputs are pinned to LF through `.gitattributes`. No Pillow, downloader or original ZIP is needed for normal build/check. For local provenance verification add `--original-zip PATH`.
+The normal build writes the small tracked `lobby-assets/lobby-pack.properties` descriptor and ignored `.runtime/noqui-cosmetics-integration/pack/<sha256>.zip` plus `pack-manifest.json`. `--output PATH` selects another artifact directory. `--check` validates all committed inputs, builds the ZIP twice in memory and compares the resulting URL/SHA1 with the tracked descriptor. It does not modify sources. PNG/OGG inputs are already compressed; ZIP entries use STORED mode, fixed timestamps/permissions and sorted paths to avoid zlib-version hash drift across Windows/Linux. Text inputs are pinned to LF through `.gitattributes`. No Pillow, downloader or original ZIP is needed for normal build/check. For local provenance verification add `--original-zip PATH`.
 
-**Maven integration owner:** bundle `noqui/lobby-assets/lobby-pack.properties` and `noqui/lobby-assets/lobby-cosmetics.json` at the JAR classpath root under those same filenames. Exclude `pack/`, vendor files, previews, and the ZIP from the JAR. The descriptor contains `url` and `sha1`. The pack UUID is `7d5243d5-c30e-4bdd-a039-71ec1ad10001`; public URL is `https://noqui.danta.qzz.io/packs/<sha256>.zip`. Publishing is a separate parent-owned step. Keep using `addResourcePack` so existing BGM packs remain applied.
+**Maven integration owner:** bundle `lobby-assets/lobby-pack.properties` and `lobby-assets/lobby-cosmetics.json` at the JAR classpath root under those same filenames. Exclude `pack/`, vendor files, previews, and the ZIP from the JAR. The descriptor contains `url` and `sha1`. The pack UUID is `7d5243d5-c30e-4bdd-a039-71ec1ad10001`; public URL is `https://noqui.danta.qzz.io/packs/<sha256>.zip`. Publishing is a separate parent-owned step. Keep using `addResourcePack` so existing BGM packs remain applied.
 
 `cosmetics-provenance.json` records each additional cosmetic's pinned model hash, texture resources, source IDs, and actual conversion steps. Every source retains its author, source/license URLs, exact vendor license, and hashes of the selected upstream evidence. The pack includes an identical `COSMETICS_SOURCES.json`, human-readable attribution in `ASSET_NOTICES.txt`, and the full license files in `licenses/`. An original adaptation must be explicitly labeled and carry parent approval; it must not be described as a downloaded model. The original asset, skin, and sound provenance files remain in force.
 
@@ -46,7 +46,7 @@ The shop skin is the unchanged public download [Purple Hair Girl in Tuxedo by Mu
 
 The previous silver-haired purple-striped asset rendered as authored; it was unsuitable for the requested formal shopkeeper. The old preview also omitted five clothing overlay parts and used an undersized hat. The corrected preview includes all twelve native parts, native 0.5/0.25 overlay inflation, correct leg offsets, and bottom-face UV orientation. These geometry/UV values were compared against the official Minecraft 26.3 `PlayerModel` (client SHA1 `e877b6a07acd633fb3bb475002175cec036e7b87`): 72 faces and all 288 vertex/UV pairs match. The runtime continues to use native `Mannequin` with the bundled SLIM skin patch and explicitly enables all skin layers on reused NPCs.
 
-For independent verification, run `verification/NativeSkinMesh.java` with the official 26.3 client and its libraries on the classpath, passing an output JSON path. Then run `python noqui/lobby-assets/verify_native_skin.py <mesh.json>`. No client JAR or downloaded library is included in this repository or resource pack. This verifies native geometry/UV mapping; a live Minecraft 26.3 client still needs to confirm the newly deployed pack and NPC.
+For independent verification, run `verification/NativeSkinMesh.java` with the official 26.3 client and its libraries on the classpath, passing an output JSON path. Then run `python lobby-assets/verify_native_skin.py <mesh.json>`. No client JAR or downloaded library is included in this repository or resource pack. This verifies native geometry/UV mapping; a live Minecraft 26.3 client still needs to confirm the newly deployed pack and NPC.
 
 For deployment, the parent publishes the new content-hash ZIP before Paper starts, then deploys the JAR and **replaces the existing live plugin-data lobby-pack.properties through reviewed deployment**. The runtime intentionally preserves an existing descriptor and will not overwrite it merely because the JAR resource changed. Keep the pack UUID, six existing cosmetic IDs/slots, five gadget models, NPC skin, and five original cues unchanged.
 

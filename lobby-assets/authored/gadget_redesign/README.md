@@ -16,7 +16,7 @@ Blockbench, inspected there, and exported with Blockbench's native codecs.
 - `assets/noqui/textures/item/snow_bomb_frost.png` (new, 64x64)
 - `assets/noqui/textures/entity/equipment/humanoid/gravity_suit.png` (64x32)
 
-Paths above are relative to `noqui/lobby-assets/pack/`. All other changes from
+Paths above are relative to `lobby-assets/pack/`. All other changes from
 this work are contained in this new `authored/gadget_redesign/` directory.
 
 ## Appearance and hand placement

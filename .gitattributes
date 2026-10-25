@@ -1,0 +1,5 @@
+deploy/gsit-source/** text eol=lf
+hint-assets/** text=auto eol=lf
+hint-assets/pack/licenses/* -whitespace
+plugin/src/main/resources/hint-* text eol=lf
+*.sh text eol=lf

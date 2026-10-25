@@ -16,7 +16,7 @@ from model_geometry import geometry_signature, model_bounds, rotation_angles
 
 ROOT=Path(__file__).resolve().parent
 PACK=ROOT/'pack'
-DEFAULT_OUTPUT=ROOT.parents[1]/'.runtime/noqui-cosmetics-integration/pack'
+DEFAULT_OUTPUT=ROOT.parent/'.runtime/noqui-cosmetics-integration/pack'
 CATALOG=ROOT/'lobby-cosmetics.json'
 PROVENANCE=ROOT/'cosmetics-provenance.json'
 PRESERVED=ROOT/'preserved-assets.json'
@@ -320,8 +320,8 @@ def main():
         args.output.mkdir(parents=True,exist_ok=True)
         (args.output/(sha256+'.zip')).write_bytes(data)
         manifest={'packUuid':str(uuid.UUID(PACK_UUID)),'resourceFormat':[97,1],'url':url,'sha1':sha1,'sha256':sha256,'bytes':len(data),
-                  'descriptorSource':'noqui/lobby-assets/lobby-pack.properties','classpathResource':'/lobby-pack.properties',
-                  'catalogSource':'noqui/lobby-assets/lobby-cosmetics.json','catalogSha256':digest(CATALOG.read_bytes()),'checks':checks,
+                  'descriptorSource':'lobby-assets/lobby-pack.properties','classpathResource':'/lobby-pack.properties',
+                  'catalogSource':'lobby-assets/lobby-cosmetics.json','catalogSha256':digest(CATALOG.read_bytes()),'checks':checks,
                   'files':[{'path':x.relative_to(PACK).as_posix(),'bytes':x.stat().st_size,'sha256':digest(x.read_bytes())} for x in sorted(PACK.rglob('*'),key=lambda p:p.relative_to(PACK).as_posix()) if x.is_file()]}
         (args.output/'pack-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     summary={key:value for key,value in checks.items() if key!='geometry'}

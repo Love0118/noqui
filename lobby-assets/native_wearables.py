@@ -10,7 +10,7 @@ from model_geometry import rotated_point, rotate, model_bounds
 
 ROOT=Path(__file__).resolve().parent
 PACK=ROOT/'pack'
-REPO=ROOT.parents[1]
+REPO=ROOT.parent
 NORMALIZED=ROOT/'vendor/native-back-inputs'
 OUT=REPO/'.runtime/noqui-native-authoring'
 TABLE={'north':[2,5,7,4],'east':[1,2,4,3],'south':[6,1,3,8],'west':[5,6,8,7],'up':[5,2,1,6],'down':[8,3,4,7]}

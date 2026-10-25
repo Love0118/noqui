@@ -2,19 +2,34 @@
 
 Paper 26.3 / Java 25용 노래퀴즈 플러그인입니다. 오디오는 Rust 서비스가 원본 길이 6분 이하인 영상의 처음 최대 120초(짧은 곡은 전체)를 약 48kbps Ogg Opus로 캐시하고 브라우저가 재생합니다. 게임·출제권·정답·점수는 Paper가 결정합니다.
 
+## 저장소와 브랜치
+
+[Love0118/noqui](https://github.com/Love0118/noqui)의 기본 브랜치는 `beta`입니다.
+
+- `beta`: Paper 플러그인, 공개 연동 API, 로비·치장·힌트 리소스팩과 월드 도구.
+- [`web`](https://github.com/Love0118/noqui/tree/web): Rust 오디오 서비스, 재생 페이지, nginx·systemd 예제와 다운로드 도구.
+- [Moma](https://github.com/Love0118/mc-luck-defense/tree/beta): 디펜스·광산 구현. `noqui` 서브모듈로 검증된 플러그인 커밋을 고정합니다.
+
+두 브랜치는 서로 다른 구성 요소를 담습니다. 브랜치 사이를 통째로 병합하지 않으며 웹 소스는 별도 체크아웃에서 수정합니다. 브리지 계약은 [contracts.md](contracts.md)를 기준으로 양쪽 변경의 호환성을 확인합니다. 기존 `mc-luck-defense/noqui`와 `mc-luck-defense/noqui/web`의 커밋 이력을 각각 보존했습니다.
+
 ## 빌드
 
-저장소 루트에서 순서대로 실행합니다.
+플러그인 저장소 루트에서 실행합니다. Java 25, Maven, Python 3이 필요합니다.
 
 ```powershell
-python noqui/lobby-assets/build_pack.py --check
-python noqui/lobby-assets/test_pack.py
-mvn -B -ntp -f noqui/plugin/pom.xml clean install
-mvn -B -ntp verify
-cargo test --locked --manifest-path noqui/web/Cargo.toml
+git clone --branch beta https://github.com/Love0118/noqui.git
+cd noqui
+python lobby-assets/build_pack.py --check
+python lobby-assets/test_pack.py
+python hint-assets/build_pack.py --output target/hint-pack
+python -m pip install -r tools/requirements.txt
+python -m unittest discover -s tools -p 'test_*.py'
+mvn -B -ntp -f plugin/pom.xml clean install
 ```
 
-산출물은 `noqui/plugin/target/noqui-plugin-1.0.16.jar`, `target/mc-luck-defense-1.0.40.jar`입니다. Moma는 Noqui API에 provided 의존성을 사용하며 API는 Noqui JAR에만 포함됩니다. 공용 인벤토리와 광물 판매 API를 사용하므로 두 JAR의 버전을 맞춥니다. Moma 런타임은 매번 현재 서비스 제공자를 조회합니다.
+산출물은 `plugin/target/noqui-plugin-1.0.16.jar`입니다. Linux 전용 배포 도구 검사는 Linux 또는 CI에서 `python -m unittest discover -s hint-assets/tools -p 'test_*.py'`로 실행합니다. GitHub Actions가 플러그인과 팩을 검증하고 `beta-build-<commit>` 릴리스에 `Noqui.jar`와 팩 ZIP을 게시합니다. 웹 빌드와 배포는 `web` 브랜치의 독립 워크플로를 사용합니다. 웹 코드는 `git clone --branch web --single-branch https://github.com/Love0118/noqui.git noqui-web`으로 별도 폴더에 받습니다.
+
+Moma는 Noqui API에 provided 의존성을 사용하며 API는 Noqui JAR에만 포함됩니다. Moma를 빌드할 때 먼저 `git submodule update --init --recursive`로 고정된 Noqui를 받고 `mvn -B -ntp -f noqui/plugin/pom.xml install`을 실행합니다. Moma 런타임은 매번 현재 서비스 제공자를 조회합니다.
 
 광산은 실제 시간으로 20분마다, 또는 남은 광물 수가 마지막 생성량의 60% 이하일 때 리셋합니다. 매번 전체 광맥을 다시 뽑아 미채굴 광물이 누적되지 않으며 플레이어 몸과 겹치는 칸과 기반 시설은 보존합니다. 리셋이 완료될 때까지 블록 쓰기를 기존 tick 예산 안에서 처리합니다. 광산 이용자에게만 보이는 보스바는 실제 리셋 시각을 사용합니다. 마감 시각은 DB에 저장하므로 런타임 재적용으로 타이머를 새로 시작하지 않습니다. OP의 `/noqui mine reset`은 광산과 20분 타이머를 함께 리셋하며 `/noqui mine rate`는 남은 광물 비율·개수·리셋 기준·남은 시간을 표시합니다. 퀴즈 세션은 변경하지 않습니다.
 
@@ -24,19 +39,19 @@ cargo test --locked --manifest-path noqui/web/Cargo.toml
 
 대기곡은 1인당 10곡, 전체 100곡입니다. 재생이 시작된 현재 곡은 개인 대기곡 수에서 제외하며 전체 제한에는 포함합니다. 준비 중인 현재 곡은 두 제한 모두에 포함합니다. 오디오 서비스의 변환 대기열과 캐시 보호 목록도 100곡을 허용해야 합니다. 변환 대기열의 일시적인 포화는 비동기로 재시도하며, 취소·이탈·종료 시 기존 출제권 반환 규칙을 유지합니다.
 
-네이티브 귓속말·팀 채팅·`/me`를 포함한 신고 보호는 별도 GPL 모듈 [MomaChatGuard](../native/chat-report-guard/README.md)가 담당합니다. 명령어는 차단하지 않고 클라이언트로 나가는 플레이어 채팅을 서식이 유지된 시스템 채팅으로 전환합니다.
+네이티브 귓속말·팀 채팅·`/me`를 포함한 신고 보호는 별도 GPL 모듈 [MomaChatGuard](https://github.com/Love0118/mc-luck-defense/tree/beta/native/chat-report-guard)가 담당합니다. 명령어는 차단하지 않고 클라이언트로 나가는 플레이어 채팅을 서식이 유지된 시스템 채팅으로 전환합니다.
 
 Noqui의 변환 오디오 캐시는 최대 5 GiB LRU로 관리하며 Moma BGM 캐시와 저장·회수 대상을 공유하지 않습니다. 캐시를 재사용하면 최근 사용 순서가 갱신되지만 pin heartbeat 자체는 재사용으로 세지 않습니다. 대기곡·현재 곡·진행 중 스트림은 회수에서 제외하고, 보호하지 않는 파일로 공간을 확보할 수 없으면 새 저장을 거절합니다.
 
 Java는 내부 `/internal/v1/sync`의 최상위 `retainedMediaIds`에 현재 세션의 전체 보관 목록을 보냅니다. 최대 100개 UUID를 중복 제거하며 동일 미디어의 마지막 제출 참조가 없어질 때 해제합니다. READY 응답만으로 준비를 완료하지 않고, 해당 ID를 포함한 실제 sync 패킷의 성공 ACK를 받은 뒤 QuizGame에 전달합니다. ACK 실패는 준비 실패·출제권 반환으로 처리하며 취소된 요청의 늦은 ACK는 무시합니다. 취소·이탈·종료·재시작은 다음 전체 목록에 반영하고 정상 종료는 빈 배열을 보낸 뒤 연결을 닫습니다. READY/cache hit의 60초 임시 보호는 첫 sync 전의 틈만 막으며 장기 대기열 보호를 대신하지 않습니다. Rust는 승인된 pin 목록을 영구 보관하고 재시작 후에도 보호합니다. 필드가 없는 구버전 요청은 빈 배열로 해석하거나 eviction을 활성화하지 않습니다. 이 목록은 공개 state/SSE와 대기곡 메타데이터에 노출하지 않습니다.
 
-팩의 소스와 생성·검증 방법은 [로비 에셋 안내](lobby-assets/README.md)를 따릅니다. 검증한 `noqui/lobby-assets/lobby-pack.properties` 하나만 JAR 루트에 포함하며 ZIP은 포함하지 않습니다. 팩 ZIP을 해당 내용 해시의 공개 URL에 먼저 게시한 후 플러그인을 기동합니다. 기존 `plugins/Noqui/lobby-pack.properties`가 있으면 자동 덮어쓰지 않으므로 팩을 바꿀 때 검증한 새 descriptor를 함께 반영합니다. CI는 Python 표준 라이브러리로 팩 재현성과 descriptor를 먼저 확인한 뒤 Maven을 실행합니다.
+팩의 소스와 생성·검증 방법은 [로비 에셋 안내](lobby-assets/README.md)를 따릅니다. 검증한 `lobby-assets/lobby-pack.properties` 하나만 JAR 루트에 포함하며 ZIP은 포함하지 않습니다. 팩 ZIP을 해당 내용 해시의 공개 URL에 먼저 게시한 후 플러그인을 기동합니다. 기존 `plugins/Noqui/lobby-pack.properties`가 있으면 자동 덮어쓰지 않으므로 팩을 바꿀 때 검증한 새 descriptor를 함께 반영합니다. CI는 Python 표준 라이브러리로 팩 재현성과 descriptor를 먼저 확인한 뒤 Maven을 실행합니다.
 
 ## 설정과 이용
 
 정제된 `noqui_cabin` 월드를 서버 정지 중 반입합니다. 기본 스폰은 `(411.5, 11, -205.5)`, 경계 중심은 `(416, -192)`, 크기는 250입니다. 바깥 청크는 void generator를 사용하며 스폰 안전성과 월드 보호를 적용합니다.
 
-`plugins/Noqui/config.yml`의 bridge 주소는 루프백 `http://127.0.0.1:8788`, 공개 주소는 `https://noqui.danta.qzz.io`입니다. `bridge.secret-file`에는 Rust와 같은 32바이트 키 파일 또는 64자리 16진수 키 파일을 지정합니다. 실제 키와 `credits.json`, Rust의 `media.sqlite` 안에 있는 `song_catalogue`는 비공개 서버 데이터입니다. 웹 설정은 `deploy/`를 따르며 Minecraft 주소는 `mud.danta.qzz.io`입니다.
+`plugins/Noqui/config.yml`의 bridge 주소는 루프백 `http://127.0.0.1:8788`, 공개 주소는 `https://noqui.danta.qzz.io`입니다. `bridge.secret-file`에는 Rust와 같은 32바이트 키 파일 또는 64자리 16진수 키 파일을 지정합니다. 실제 키와 `credits.json`, Rust의 `media.sqlite` 안에 있는 `song_catalogue`는 비공개 서버 데이터입니다. 웹 설정은 [`web` 브랜치의 deploy/](https://github.com/Love0118/noqui/tree/web/deploy)를 따르며 Minecraft 주소는 `mud.danta.qzz.io`입니다.
 
 OP 명령은 `/noqui start [rounds]`, `limit <rounds>`, `time <1~120초>`, `stop`, `skip force`, `hint`, `pause`, `resume`, `give <nickname|@a> [amount]`, `status`, `admin`입니다. 일반 참가자는 `/noqui`로 메뉴를 열고 `/noqui skip`으로 투표하며 `/noqui bgm`으로 BGM을 켜거나 끄고 `/noqui leave`로 퀴즈에서 나갑니다. `/noqui start`는 무제한, `/noqui start 200`은 최대 200라운드입니다. `/noqui limit 0`으로 무제한 전환하며 양의 정수로 실행 중 제한을 바꿉니다. 이미 시작한 라운드보다 낮은 양수 제한은 거절하고, 남은 제한을 초과한 대기 곡은 취소·반환합니다. 콘솔은 접속자가 없어도 시작할 수 있습니다.
 
@@ -64,7 +79,7 @@ cabin의 전체 인벤토리는 바깥 Moma 인벤토리와 별도로 영구 보
 
 `quiz-active`가 true였던 정상 재시작은 `quiz-limit`에 저장된 제한으로 새 제출 대기 상태를 만듭니다. 이전 곡·타이머·작업·브라우저 회원권은 재사용하지 않습니다. 점수는 한 실행에 한정되며 출제권 잔액과 개인 제출 기록은 보존합니다.
 
-치장 목록은 canonical `noqui/lobby-assets/lobby-cosmetics.json`을 JAR 루트 `/lobby-cosmetics.json`으로 포함해 읽습니다. 스키마는 `schemaVersion: 1`, `cosmetics: [{id,label,slot}]`이며 기존 여섯 ID와 슬롯을 보존합니다. ID는 영문 소문자로 시작하는 64자 이내 영문 소문자, 숫자, 밑줄이며 슬롯은 head, face, back입니다. 중복, 예약 ID 충돌, 빈 이름, 잘못된 슬롯과 기존 ID 누락은 거절합니다. 상점과 보유 목록은 한 페이지 21개로 나누고 이전, 다음, 상세 화면의 돌아가기는 원래 페이지를 유지합니다. 표시용 빈 상품은 넣지 않습니다. 메타데이터와 팩 descriptor만 JAR에 포함하며 팩 ZIP은 포함하지 않습니다.
+치장 목록은 canonical `lobby-assets/lobby-cosmetics.json`을 JAR 루트 `/lobby-cosmetics.json`으로 포함해 읽습니다. 스키마는 `schemaVersion: 1`, `cosmetics: [{id,label,slot}]`이며 기존 여섯 ID와 슬롯을 보존합니다. ID는 영문 소문자로 시작하는 64자 이내 영문 소문자, 숫자, 밑줄이며 슬롯은 head, face, back입니다. 중복, 예약 ID 충돌, 빈 이름, 잘못된 슬롯과 기존 ID 누락은 거절합니다. 상점과 보유 목록은 한 페이지 21개로 나누고 이전, 다음, 상세 화면의 돌아가기는 원래 페이지를 유지합니다. 표시용 빈 상품은 넣지 않습니다. 메타데이터와 팩 descriptor만 JAR에 포함하며 팩 ZIP은 포함하지 않습니다.
 
 GSit가 활성화된 경우 빈 주손으로 위쪽을 누른 안전한 계단, 반블록, 카펫, 이끼 카펫, 눈, 선반 버섯과 빈 주손 플레이어 상호작용을 GSit에 넘깁니다. 기존 취소를 되돌리거나 권한을 넓게 부여하지 않습니다. 컨테이너, 블록 편집, NPC, 보조 손 및 생물 생성 보호는 유지합니다.
 
@@ -78,11 +93,11 @@ cabin의 상점 NPC 상자 GUI에서 구매합니다. 치장과 가젯은 별빛
 
 Maven 검사는 크레딧 예약/확정/반환/재시작, 유한 라운드, 투표, 일시정지와 힌트, 비동기 취소, HUD 복구, 동시 참여, BGM 복구, HMAC 실제 HTTP 요청, 공개 전 정답 비노출을 포함합니다.
 
-승인된 Paper 파일·EULA·정제 월드가 있을 때 격리된 fixture를 실행합니다.
+승인된 Paper 파일·EULA·정제 월드가 있을 때 [Moma 저장소의 통합 fixture](https://github.com/Love0118/mc-luck-defense/tree/beta/scripts/noqui-smoke)를 Moma 루트에서 실행합니다.
 
 ```powershell
 mvn -B -ntp -f noqui/plugin/pom.xml dependency:build-classpath -Dmdep.outputFile=target/smoke-classpath.txt
-python noqui/plugin/smoke/run_paper_smoke.py
+python scripts/noqui-smoke/run_paper_smoke.py
 ```
 
 fixture는 `.runtime/noqui-plugin-smoke-*` 안에서 Paper를 두 번 부팅해 월드·스폰·경계, 네이티브 연결 창, 서비스 등록, 빈 서버 시작/종료, Moma 런타임 교체와 활성 상태 재시작을 확인합니다. 실제 클라이언트 화면과 브라우저 청취는 별도 검증 대상입니다.

@@ -1,0 +1,85 @@
+name: Noqui plugin
+on:
+  push:
+    branches: [beta]
+  pull_request:
+    branches: [beta]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '25'
+          cache: maven
+          cache-dependency-path: plugin/pom.xml
+      - run: python3 lobby-assets/build_pack.py --check
+      - run: python3 lobby-assets/test_pack.py
+      - run: python3 lobby-assets/build_pack.py --output target/lobby-pack
+      - run: python3 hint-assets/build_pack.py --output target/hint-pack
+      - run: git diff --exit-code -- lobby-assets/lobby-pack.properties plugin/src/main/resources/hint-pack.properties
+      - run: python3 -m unittest discover -s hint-assets/tools -p 'test_*.py'
+      - run: python3 -m pip install -r tools/requirements.txt
+      - run: python3 -m unittest discover -s tools -p 'test_*.py'
+      - run: mvn -B -ntp -f plugin/pom.xml clean verify
+      - uses: actions/upload-artifact@v4
+        with:
+          name: noqui-plugin
+          path: plugin/target/noqui-plugin-*.jar
+          if-no-files-found: error
+      - uses: actions/upload-artifact@v4
+        with:
+          name: noqui-packs
+          path: |
+            target/lobby-pack/*.zip
+            target/hint-pack/*.zip
+          if-no-files-found: error
+  publish-beta:
+    if: github.ref == 'refs/heads/beta' && github.event_name != 'pull_request'
+    needs: verify
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: publish-noqui-beta
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: noqui-plugin
+          path: dist/plugin
+      - uses: actions/download-artifact@v4
+        with:
+          name: noqui-packs
+          path: dist/packs
+      - name: Publish plugin and resource packs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          head=$(gh api "repos/$GITHUB_REPOSITORY/git/ref/heads/beta" --jq '.object.sha')
+          if [ "$head" != "$GITHUB_SHA" ]; then
+            echo 'A newer beta commit exists; skipping outdated publication.'
+            exit 0
+          fi
+          cp dist/plugin/noqui-plugin-*.jar dist/Noqui.jar
+          python3 - <<'PY'
+          import hashlib, pathlib
+          root = pathlib.Path('dist')
+          files = [root / 'Noqui.jar', *sorted((root / 'packs').rglob('*.zip'))]
+          (root / 'SHA256SUMS').write_text(''.join(
+              f'{hashlib.sha256(path.read_bytes()).hexdigest()}  {path.name}\n' for path in files))
+          PY
+          tag="beta-build-$GITHUB_SHA"
+          if ! gh release view "$tag" >/dev/null 2>&1; then
+            gh release create "$tag" dist/Noqui.jar dist/SHA256SUMS dist/packs/*/*.zip \
+              --target "$GITHUB_SHA" --prerelease --title "Noqui ${GITHUB_SHA:0:8}" \
+              --notes 'Verified Paper plugin and resource packs. The web service is released from the web branch.'
+          fi

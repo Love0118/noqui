@@ -29,14 +29,14 @@ separate.
 Python/Pillow are needed only to regenerate the Noto Sans KR font atlas:
 
 ```powershell
-python noqui/hint-assets/build_pack.py --font '<NotoSansKR variable TTF>' --output '<output directory>'
+python hint-assets/build_pack.py --font '<NotoSansKR variable TTF>' --output '<output directory>'
 ```
 
 The font file is the OFL font identified by `font-provenance.json`; its license
 ships in the pack. To validate and package the checked-in atlas without Pillow:
 
 ```powershell
-python noqui/hint-assets/build_pack.py --output '<output directory>'
+python hint-assets/build_pack.py --output '<output directory>'
 ```
 
 The deterministic ZIP is named by SHA-256. This also updates the bundled
