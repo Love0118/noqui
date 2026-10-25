@@ -93,7 +93,12 @@ final class QuizHud implements AutoCloseable {
         view.phase = frame.phase();
         claimTab(view);
         updateListName(view,score);
-        if(!view.immersive)return;
+        if(!view.immersive){
+            var services=Bukkit.getServicesManager();
+            var defense=services==null?null:services.load(dev.noqui.api.DefenseService.class);
+            var mining=services==null?null:services.load(dev.noqui.api.MiningService.class);
+            if(defense!=null&&defense.active(player)&&(mining==null||!mining.ownsInventory(player)))return;
+        }
         if (frame.phase().equals("PLAYING") && !frame.hint().isBlank())
             player.sendActionBar(Component.text("[힌트] ",NamedTextColor.YELLOW).decorate(TextDecoration.BOLD)
                     .append(white(frame.hint()).decorate(TextDecoration.BOLD)));

@@ -18,10 +18,14 @@ import org.mockito.MockedStatic;
 class QuizHudTest {
     MockedStatic<Bukkit> bukkit;
     QuizHud hud;
+    final org.bukkit.plugin.ServicesManager services=mock(org.bukkit.plugin.ServicesManager.class);
+    final dev.noqui.api.DefenseService defense=mock(dev.noqui.api.DefenseService.class);
+    final dev.noqui.api.MiningService mining=mock(dev.noqui.api.MiningService.class);
     final List<Viewer> viewers=new ArrayList<>();
     final Map<UUID,String> knownNames=new HashMap<>();
     @BeforeEach void setup() {
         bukkit=mockStatic(Bukkit.class);bukkit.when(Bukkit::isPrimaryThread).thenReturn(true);
+        bukkit.when(Bukkit::getServicesManager).thenReturn(services);when(services.load(dev.noqui.api.DefenseService.class)).thenReturn(defense);when(services.load(dev.noqui.api.MiningService.class)).thenReturn(mining);
         bukkit.when(()->Bukkit.getOfflinePlayer(any(UUID.class))).thenAnswer(c->{
             OfflinePlayer p=mock(OfflinePlayer.class);when(p.getName()).thenReturn(knownNames.get(c.getArgument(0)));return p;
         });hud=new QuizHud();
@@ -67,6 +71,7 @@ class QuizHudTest {
     }
     @Test void mineAndDefenseKeepAnswerCountsWhenImmersiveHudIsDisabled() {
         Viewer a=new Viewer("Alpha");hud.enter(a.p);hud.render(a.p,frame("PLAYING"),1,0);
+        when(defense.active(a.p)).thenReturn(true);
         hud.setImmersive(a.p,false);assertEquals("기존 Alpha [1]",plain(a.tab));int actions=a.actions.size();
         hud.render(a.p,frame("PLAYING"),2,99);assertEquals("기존 Alpha [2]",plain(a.tab));assertEquals(actions,a.actions.size());
         hud.setImmersive(a.p,true);hud.render(a.p,frame("PLAYING"),3,99);
@@ -104,9 +109,21 @@ class QuizHudTest {
     }
     @Test void defenseKeepsChatSoundsAndTabWithoutBossbarTitlesOrActionbars() {
         Viewer a=new Viewer("Alpha");hud.enter(a.p);hud.setImmersive(a.p,false);hud.start(a.p,0,67);hud.countdown(a.p,3,1,67);
+        when(defense.active(a.p)).thenReturn(true);
         hud.render(a.p,frame("PLAYING"),7,99);assertTrue(a.bars.isEmpty());
         hud.reveal(a.p,a.id,"정답",List.of(),List.of("Alpha"));hud.finish(a.p,Map.of(a.id,7));
         assertTrue(a.titles.isEmpty());assertTrue(a.actions.isEmpty());assertTrue(a.chat().contains("정답"));
+    }
+    @Test void mineKeepsHintsEvenThoughTheDefenseAdapterCountsItsInventoryAsActive(){
+        Viewer a=new Viewer("Miner");hud.enter(a.p);hud.setImmersive(a.p,false);when(defense.active(a.p)).thenReturn(true);when(mining.ownsInventory(a.p)).thenReturn(true);
+        hud.render(a.p,frame("PLAYING"),0,0);assertEquals("[힌트] ㄱㄴ",plain(a.actions.getLast()));
+        hud.countdown(a.p,3,1,67);assertTrue(a.titles.isEmpty());assertTrue(a.bars.isEmpty());
+    }
+    @Test void otherLobbiesUseTheActionbarButNotTitlesOrBossbars(){
+        Viewer a=new Viewer("Visitor");hud.enter(a.p);hud.setImmersive(a.p,false);
+        hud.render(a.p,frame("PREPARING"),0,0);assertTrue(a.actions.isEmpty());
+        hud.render(a.p,frame("PLAYING"),0,0);assertEquals("[힌트] ㄱㄴ",plain(a.actions.getLast()));
+        hud.render(a.p,frame("PAUSED"),0,0);assertEquals(1,a.actions.size());assertTrue(a.titles.isEmpty());assertTrue(a.bars.isEmpty());
     }
     @Test void preparationOnlyShowsQuietWaitingWithoutTimeProgressOrMessages() {
         Viewer a=new Viewer("Alpha");hud.enter(a.p);
