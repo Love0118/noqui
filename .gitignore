@@ -1,0 +1,16 @@
+target/
+.codegraph/
+.runtime/
+node_modules/
+__pycache__/
+*.pyc
+data/
+.env
+*.env
+*cookies*.txt
+*.key
+*.pem
+*.sqlite*
+*.db
+*.db-shm
+*.db-wal
