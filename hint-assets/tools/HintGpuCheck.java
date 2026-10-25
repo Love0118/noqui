@@ -154,10 +154,9 @@ public final class HintGpuCheck {
         glBindFramebuffer(GL_FRAMEBUFFER,framebuffer); glFramebufferTexture2D(GL_FRAMEBUFFER,GL_COLOR_ATTACHMENT0,GL_TEXTURE_2D,colorTexture,0);
         if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE) throw new AssertionError("Offscreen framebuffer unavailable");
         guiWidth = (float)Math.ceil(width/(double)scale); guiHeight = (float)Math.ceil(height/(double)scale); cursor=0;
-        factor = Math.min(Math.clamp(height/720.0,1,1.5)/Math.max(1,height/(double)guiHeight),Math.max(0,Math.min((guiWidth-16)/360.0,(guiHeight-108)/84.0)));
+        factor = Math.min(1,Math.max(0,Math.min((guiWidth-32)/360.0,(guiHeight-108)/84.0)));
         block("Projection",0,Map.of("ProjMat",new float[]{2/guiWidth,0,0,0, 0,-2/guiHeight,0,0, 0,0,1,0, -1,1,0,1}));
         block("DynamicTransforms",1,Map.of("ModelViewMat",new float[]{1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1},"ColorModulator",new float[]{1,1,1,1}));
-        block("Globals",2,Map.of("ScreenSize",new float[]{width,height}));
         glViewport(0,0,width,height); glClearColor(.09f,.18f,.22f,1); glClear(GL_COLOR_BUFFER_BIT);
         component(HintGlyphs.compose(hint),Key.key("noqui_hint:row_0"),0xFFFFFF);
         if(Math.abs(cursor)>.001) throw new AssertionError("Native font advances drifted by "+cursor);

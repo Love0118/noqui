@@ -8,10 +8,14 @@ each changed hint is sent once to chat. No game timing or browser playback is
 owned by the overlay.
 
 The hint is centered above Moundi's action bar. Up to 160 characters wrap into
-six rows without truncation. Every row has zero native font advance. Only the
+six rows without truncation. Every row has zero native font advance. The
+hint uses native GUI text scale rather than a fixed physical pixel size. It is
+twice the former size at GUI 2 in a 720p window, and scales up or down with the
+client's GUI setting; window bounds can still reduce it to fit. Its lower edge
+stays fixed so the gap above the action bar is unchanged. Only
 encoded GUI glyphs are repositioned; ordinary GUI/world text keeps its vanilla
-position. Window size and GUI scale are obtained from the 26.3 projection and
-Globals uniforms. This follows the font-ascent and screen-layout technique in
+position. Window layout is obtained from the 26.3 GUI projection. This follows
+the font-ascent and screen-layout technique in
 the user's Plague Inc project, using a dedicated namespace and marker range.
 
 The pack replaces only `text.vsh` and the two unused PINK bossbar sprites.

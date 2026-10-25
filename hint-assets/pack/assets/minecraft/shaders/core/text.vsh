@@ -7,9 +7,6 @@
 #endif
 #include <minecraft:dynamictransforms.glsl>
 #include <minecraft:projection.glsl>
-#ifdef IS_GUI
-#include <minecraft:globals.glsl>
-#endif
 #ifdef VULKAN
 #define gl_VertexID gl_VertexIndex
 #endif
@@ -34,9 +31,9 @@ void main() {
     if (pos.y >= ui.y && ProjMat[3].x == -1.0) {
         int id = (int(pos.y) >> 13) - 1024;
         if (id >= 300 && id <= 305) {
-            float guiScale = max(1.0, ScreenSize.y / ui.y);
-            float factor = min(clamp(ScreenSize.y / 720.0, 1.0, 1.5) / guiScale,
-                max(0.0, min((ui.x - 16.0) / 360.0, (ui.y - 108.0) / 84.0)));
+            // Native GUI units: the hint grows and shrinks with Minecraft's GUI scale.
+            float factor = min(1.0,
+                max(0.0, min((ui.x - 32.0) / 360.0, (ui.y - 108.0) / 84.0)));
             float corner = float(((gl_VertexID + 1) % 4) / 2);
             pos.x = ui.x * 0.5 + (pos.x - ui.x * 0.5) * factor;
             pos.y = ui.y - 78.0 - (float(id - 300) * 14.0 + (1.0 - corner) * 12.0) * factor;
