@@ -65,14 +65,13 @@ class QuizHudTest {
         Component foreign=Component.text("디펜스");a.tab=foreign;
         hud.render(a.p,frame("PLAYING"),9,0);hud.render(a.p,frame("PLAYING"),10,0);hud.leave(a.p);assertSame(foreign,a.tab);
     }
-    @Test void immersionRestoresThenCapturesFreshTabState() {
+    @Test void mineAndDefenseKeepAnswerCountsWhenImmersiveHudIsDisabled() {
         Viewer a=new Viewer("Alpha");hud.enter(a.p);hud.render(a.p,frame("PLAYING"),1,0);
-        hud.setImmersive(a.p,false);assertEquals(a.originalTab,a.tab);
-        Component defense=Component.text("새 디펜스");a.tab=defense;int actions=a.actions.size();
-        hud.render(a.p,frame("PLAYING"),2,99);assertSame(defense,a.tab);assertEquals(actions,a.actions.size());
+        hud.setImmersive(a.p,false);assertEquals("기존 Alpha [1]",plain(a.tab));int actions=a.actions.size();
+        hud.render(a.p,frame("PLAYING"),2,99);assertEquals("기존 Alpha [2]",plain(a.tab));assertEquals(actions,a.actions.size());
         hud.setImmersive(a.p,true);hud.render(a.p,frame("PLAYING"),3,99);
-        assertEquals("새 디펜스 [3]",plain(a.tab));assertTrue(a.bars.isEmpty());
-        hud.setImmersive(a.p,false);hud.setImmersive(a.p,false);hud.close();assertSame(defense,a.tab);
+        assertEquals("기존 Alpha [3]",plain(a.tab));assertTrue(a.bars.isEmpty());
+        hud.setImmersive(a.p,false);hud.setImmersive(a.p,false);hud.close();assertSame(a.originalTab,a.tab);
     }
     @Test void nullTabUsesPlayerNameAndIsRestored() {
         Viewer a=new Viewer(UUID.randomUUID(),"Alpha",null);hud.enter(a.p);hud.render(a.p,frame("PLAYING"),5,0);
@@ -103,11 +102,10 @@ class QuizHudTest {
         assertFalse(a.chat().contains("비밀"));assertTrue(a.actions.stream().noneMatch(c->plain(c).contains("비밀")));
         hud.reveal(a.p,a.id,"비밀 제목",List.of(),List.of());assertTrue(a.chat().contains("비밀 제목"));
     }
-    @Test void defenseKeepsChatAndSoundsWithoutBossbarTabTitlesOrActionbars() {
+    @Test void defenseKeepsChatSoundsAndTabWithoutBossbarTitlesOrActionbars() {
         Viewer a=new Viewer("Alpha");hud.enter(a.p);hud.setImmersive(a.p,false);hud.start(a.p,0,67);hud.countdown(a.p,3,1,67);
         hud.render(a.p,frame("PLAYING"),7,99);assertTrue(a.bars.isEmpty());
         hud.reveal(a.p,a.id,"정답",List.of(),List.of("Alpha"));hud.finish(a.p,Map.of(a.id,7));
-        verify(a.p,never()).playerListName();verify(a.p,never()).playerListName(nullable(Component.class));
         assertTrue(a.titles.isEmpty());assertTrue(a.actions.isEmpty());assertTrue(a.chat().contains("정답"));
     }
     @Test void preparationOnlyShowsQuietWaitingWithoutTimeProgressOrMessages() {

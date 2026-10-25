@@ -1,4 +1,4 @@
-# Noqui 1.0.14
+# Noqui 1.0.15
 
 Paper 26.3 / Java 25용 노래퀴즈 플러그인입니다. 오디오는 Rust 서비스가 원본 길이 6분 이하인 영상의 처음 최대 120초(짧은 곡은 전체)를 약 48kbps Ogg Opus로 캐시하고 브라우저가 재생합니다. 게임·출제권·정답·점수는 Paper가 결정합니다.
 
@@ -14,7 +14,11 @@ mvn -B -ntp verify
 cargo test --locked --manifest-path noqui/web/Cargo.toml
 ```
 
-산출물은 `noqui/plugin/target/noqui-plugin-1.0.14.jar`, `target/mc-luck-defense-1.0.35.jar`입니다. Moma는 Noqui API에 provided 의존성을 사용하며 API는 Noqui JAR에만 포함됩니다. 공용 인벤토리와 광물 판매 API를 사용하므로 두 JAR의 버전을 맞춥니다. Moma 런타임은 매번 현재 서비스 제공자를 조회합니다.
+산출물은 `noqui/plugin/target/noqui-plugin-1.0.15.jar`, `target/mc-luck-defense-1.0.36.jar`입니다. Moma는 Noqui API에 provided 의존성을 사용하며 API는 Noqui JAR에만 포함됩니다. 공용 인벤토리와 광물 판매 API를 사용하므로 두 JAR의 버전을 맞춥니다. Moma 런타임은 매번 현재 서비스 제공자를 조회합니다.
+
+정답 수 TAB 표시는 퀴즈 참여 여부를 따르며 광산·디펜스에서도 유지됩니다. 광물은 인벤토리 안에서 이동·분할·보조 손 이동이 가능하고 재동기화 시 배치를 유지합니다. 드롭하면 판매 가능한 보유량이 즉시 감소하며, 주우면 단일 사용 드롭 기록을 통해 수령자의 보유량으로 이동합니다. 곡괭이·고정 이동 도구는 보호합니다.
+
+다른 미니게임은 메인 스레드에서 `TicketService`를 매번 조회하여 `grant(playerUuid, amount, transactionId)`로 출제권을 지급할 수 있습니다. 같은 지급을 재시도할 때 같은 거래 ID를 사용하면 중복 지급하지 않습니다. `balance(playerUuid)`로 잔액을 확인합니다. 미니게임은 `TicketService.Inventory`를 서비스로 등록하고 자신의 인벤토리에 대해 `ownsInventory`와 `refreshTickets`를 구현하면 `/noqui give` 및 API 지급 직후 아이콘이 갱신됩니다. 광산은 전체 보유량을 설명에 표시하고 아이콘 수량은 1~64개로 표시합니다. 퀴즈가 중단되면 외부 미니게임의 아이콘은 숨깁니다.
 
 대기곡은 1인당 10곡, 전체 100곡입니다. 재생이 시작된 현재 곡은 개인 대기곡 수에서 제외하며 전체 제한에는 포함합니다. 준비 중인 현재 곡은 두 제한 모두에 포함합니다. 오디오 서비스의 변환 대기열과 캐시 보호 목록도 100곡을 허용해야 합니다. 변환 대기열의 일시적인 포화는 비동기로 재시도하며, 취소·이탈·종료 시 기존 출제권 반환 규칙을 유지합니다.
 

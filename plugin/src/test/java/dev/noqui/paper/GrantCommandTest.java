@@ -19,6 +19,16 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 class GrantCommandTest {
+    @Test void grantsRefreshTheOwningMinigameImmediatelyAndThePublicApiIsIdempotent()throws Exception{
+        try(var f=new Fixture()){
+            UUID id=f.a.getUniqueId();f.bukkit.when(()->Bukkit.getPlayer(id)).thenReturn(f.a);doReturn(false).when(f.plugin).ownsCabin(id);
+            var provider=mock(dev.noqui.api.TicketService.Inventory.class);when(provider.ownsInventory(f.a)).thenReturn(true);
+            var services=Bukkit.getServicesManager();when(services.getRegistrations(dev.noqui.api.TicketService.Inventory.class)).thenReturn(List.of(new org.bukkit.plugin.RegisteredServiceProvider<>(dev.noqui.api.TicketService.Inventory.class,provider,org.bukkit.plugin.ServicePriority.Normal,f.plugin)));
+            f.run("noqui","give","Alpha","70");verify(provider).refreshTickets(f.a,70);assertTrue(f.messages.contains("Alpha 출제권 70장 지급"));
+            var api=new TicketGrants(f.plugin);api.grant(f.a.getUniqueId(),2,"api-grant-test");api.grant(f.a.getUniqueId(),2,"api-grant-test");
+            assertEquals(72,api.balance(f.a.getUniqueId()));verify(provider,times(2)).refreshTickets(f.a,72);
+        }
+    }
     @TempDir Path directory;
     private static void set(NoquiPlugin plugin,String name,Object value)throws Exception{var field=NoquiPlugin.class.getDeclaredField(name);field.setAccessible(true);field.set(plugin,value);}
     private final class Fixture implements AutoCloseable {

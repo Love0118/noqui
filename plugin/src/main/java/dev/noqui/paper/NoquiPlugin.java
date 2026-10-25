@@ -92,6 +92,7 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
             Bukkit.getPluginManager().registerEvents(new NoquiListener(this),this);
             Bukkit.getPluginManager().registerEvents(tickets,this);
             Bukkit.getServicesManager().register(QuizService.class,this,this,ServicePriority.Normal);
+            Bukkit.getServicesManager().register(dev.noqui.api.TicketService.class,new TicketGrants(this),this,ServicePriority.Normal);
             lobbyFeatures=new LobbyFeatures(this,cabin.spawn.getWorld(),new LobbyFeatures.CreditPort(){
                 public long balance(UUID player){return game.credits(player);}
                 public void grant(UUID player,long amount,String transactionId){giveTickets(player,amount,transactionId);}
@@ -295,7 +296,7 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
         if(bridge!=null)bridge.publish(game.snapshot());
     }
     boolean hasTicket(Player p){return game!=null&&game.credits(p.getUniqueId())>0&&(!ownsCabin(p.getUniqueId())||tickets!=null&&tickets.has(p));}
-    void giveTickets(UUID player,long amount,String transactionId){game.giveOnce(player,amount,transactionId);tickets.refresh(player);if(tickets.pending(player)>0)throw new QuestionTickets.DeliveryPending();}
+    void giveTickets(UUID player,long amount,String transactionId){game.giveOnce(player,amount,transactionId);if(!TicketGrants.deliver(this,tickets,player))throw new QuestionTickets.DeliveryPending();}
     void openTicketForm(Player p){
         UUID session=game.snapshot().session();var membership=connectionEntry(p.getUniqueId());
         main(()->{
@@ -406,7 +407,7 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
                 // Core publishes after committing; a presentation failure must not misreport a stored credit.
                 granted=game.credits(target.id())==before+amount;pending=granted;
             }
-            if(granted&&tickets!=null)try{tickets.refresh(target.id());pending|=tickets.pending(target.id())>0;}catch(RuntimeException error){pending=true;}
+            if(granted)try{pending|=!TicketGrants.deliver(this,tickets,target.id());}catch(RuntimeException error){pending=true;}
             results.add(new GrantResult(target,granted,pending));
         }
         reportGrants(sender,results,"출제권 "+amount+"장");

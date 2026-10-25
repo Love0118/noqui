@@ -78,8 +78,7 @@ final class QuizHud implements AutoCloseable {
         if (view == null || view.immersive == immersive) return;
         view.immersive = immersive;
         view.countdown = -1;
-        if (immersive) claimTab(view);
-        else releaseTab(view);
+        claimTab(view);
     }
 
     void render(Player player, Frame frame, int score, long credits) {
@@ -92,9 +91,9 @@ final class QuizHud implements AutoCloseable {
         view.round = round(frame.round(), view.total);
         if (!frame.phase().equals(view.phase)) view.countdown = -1;
         view.phase = frame.phase();
-        if(!view.immersive)return;
         claimTab(view);
         updateListName(view,score);
+        if(!view.immersive)return;
         if (frame.phase().equals("PLAYING") && !frame.hint().isBlank())
             player.sendActionBar(Component.text("[힌트] ",NamedTextColor.YELLOW).decorate(TextDecoration.BOLD)
                     .append(white(frame.hint()).decorate(TextDecoration.BOLD)));
