@@ -24,7 +24,7 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
     private final Set<UUID> optedOut=new HashSet<>();
     private final Map<UUID,String> names=new HashMap<>();
     private final Set<UUID> cabinOwners=new HashSet<>(),handoffs=new HashSet<>();
-    private final QuizHud hud=new QuizHud();
+    private final QuizHud hud=new QuizHud(this);
     private BrowserConnections connections;
     private BridgeClient bridge;
     private QuizGame game;

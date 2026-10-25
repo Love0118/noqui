@@ -125,6 +125,20 @@ class QuizHudTest {
         hud.render(a.p,frame("PLAYING"),0,0);assertEquals("[힌트] ㄱㄴ",plain(a.actions.getLast()));
         hud.render(a.p,frame("PAUSED"),0,0);assertEquals(1,a.actions.size());assertTrue(a.titles.isEmpty());assertTrue(a.bars.isEmpty());
     }
+    @Test void moundiUsesOverlayWhileMiningAndLobbyKeepTheActionbar(){
+        try(var created=mockConstruction(HintOverlay.class)) {
+            QuizHud routed=new QuizHud(mock(org.bukkit.plugin.Plugin.class));
+            var overlay=created.constructed().getFirst();Viewer a=new Viewer("Player");
+            routed.enter(a.p);routed.setImmersive(a.p,false);when(defense.active(a.p)).thenReturn(true);
+            var playing=frame("PLAYING");routed.render(a.p,playing,0,0);
+            verify(overlay).render(a.p,playing);assertTrue(a.actions.isEmpty());
+            when(mining.ownsInventory(a.p)).thenReturn(true);routed.render(a.p,playing,0,0);
+            verify(overlay).clear(a.p);assertEquals("[힌트] ㄱㄴ",plain(a.actions.getLast()));
+            when(mining.ownsInventory(a.p)).thenReturn(false);when(defense.active(a.p)).thenReturn(false);
+            routed.render(a.p,playing,0,0);assertEquals(2,a.actions.size());
+            routed.leave(a.p);routed.close();verify(overlay).close();
+        }
+    }
     @Test void preparationOnlyShowsQuietWaitingWithoutTimeProgressOrMessages() {
         Viewer a=new Viewer("Alpha");hud.enter(a.p);
         for(String phase:List.of("PREPARING","WAITING_FOR_MEDIA")) {

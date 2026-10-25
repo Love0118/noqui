@@ -34,6 +34,7 @@ final class QuizHud implements AutoCloseable {
     private static final Title.Times SHORT_TITLE = Title.Times.times(Duration.ofMillis(100), Duration.ofSeconds(2), Duration.ofMillis(300));
     private static final Title.Times REVEAL_TITLE = Title.Times.times(Duration.ofMillis(100), Duration.ofSeconds(4), Duration.ofMillis(400));
     private final Map<UUID, View> views = new LinkedHashMap<>();
+    private final HintOverlay overlay;
     private boolean closed;
 
     private static final class View {
@@ -58,7 +59,8 @@ final class QuizHud implements AutoCloseable {
     private record Reveal(int round, UUID presenter, String title, List<String> tags, List<String> winners) {}
     private record Ranked(UUID id, String name, int score) {}
 
-    QuizHud() {}
+    QuizHud() { overlay = null; }
+    QuizHud(org.bukkit.plugin.Plugin plugin) { overlay = new HintOverlay(plugin); }
 
     void enter(Player player) {
         mainThread();
@@ -97,8 +99,12 @@ final class QuizHud implements AutoCloseable {
             var services=Bukkit.getServicesManager();
             var defense=services==null?null:services.load(dev.noqui.api.DefenseService.class);
             var mining=services==null?null:services.load(dev.noqui.api.MiningService.class);
-            if(defense!=null&&defense.active(player)&&(mining==null||!mining.ownsInventory(player)))return;
+            if(defense!=null&&defense.active(player)&&(mining==null||!mining.ownsInventory(player))){
+                if(overlay!=null)overlay.render(player,frame);
+                return;
+            }
         }
+        if(overlay!=null)overlay.clear(player);
         if (frame.phase().equals("PLAYING") && !frame.hint().isBlank())
             player.sendActionBar(Component.text("[힌트] ",NamedTextColor.YELLOW).decorate(TextDecoration.BOLD)
                     .append(white(frame.hint()).decorate(TextDecoration.BOLD)));
@@ -189,6 +195,7 @@ final class QuizHud implements AutoCloseable {
         View view = views.get(player.getUniqueId());
         if (view == null || view.player != player) return;
         views.remove(player.getUniqueId());
+        if(overlay!=null)overlay.clear(player);
         release(view);
     }
 
@@ -199,6 +206,7 @@ final class QuizHud implements AutoCloseable {
         var owned = List.copyOf(views.values());
         views.clear();
         for (View view : owned) release(view);
+        if(overlay!=null)overlay.close();
     }
 
     private View view(Player player) {
