@@ -13,6 +13,19 @@ import static org.junit.jupiter.api.Assertions.*;
 class BridgeClientTest {
     private final byte[] key=new byte[32];
     private final UUID player=UUID.randomUUID(),membership=UUID.randomUUID();
+    @Test void failedJobReasonAndDeadlineReachTheCoreAsSafeTypedFailures(){
+        try(var client=client(List::of)){
+            var request=new MediaBridge.Request(UUID.randomUUID(),1,Song.input("https://youtu.be/BaW_jenozKc","Song",""));
+            for(String code:List.of("TOO_LONG","TOO_LARGE","SOURCE_AUTH_REQUIRED","FORMAT_UNSUPPORTED","INGEST_TIMEOUT","unknown private tool output")){
+                var future=new CompletableFuture<MediaBridge.Media>();var response=new JsonObject();response.addProperty("state","FAILED");response.addProperty("failureCode",code);
+                client.poll(request,future,response,null,Long.MAX_VALUE);
+                var error=assertThrows(CompletionException.class,future::join);assertInstanceOf(SubmissionFailure.class,error.getCause());assertEquals(new SubmissionFailure(code).getMessage(),error.getCause().getMessage());
+                assertFalse(error.getCause().getMessage().contains("private tool output"));
+            }
+            var future=new CompletableFuture<MediaBridge.Media>();var response=new JsonObject();response.addProperty("state","QUEUED");
+            client.poll(request,future,response,null,0);var error=assertThrows(CompletionException.class,future::join);assertTrue(error.getCause().getMessage().contains("시간"));
+        }
+    }
     private BridgeClient client(java.util.function.Supplier<List<BridgeClient.Member>> roster) {
         return new BridgeClient(URI.create("http://127.0.0.1:8788"),key,"primary",UUID.randomUUID(),Runnable::run,roster,(r,a,b)->{},s->{});
     }

@@ -135,7 +135,7 @@ public final class BridgeClient implements MediaBridge {
         try {
             if(error!=null){
                 Throwable cause=error;while(cause instanceof CompletionException&&cause.getCause()!=null)cause=cause.getCause();
-                if(!"Bridge HTTP 429".equals(cause.getMessage()))throw new IllegalStateException("Media service unavailable");
+                if(!"Bridge HTTP 429".equals(cause.getMessage()))throw new SubmissionFailure("SERVICE_UNAVAILABLE");
                 // Conversion capacity is separate from accepted submissions. Retry with a fresh signed nonce.
                 response=object("state","ENQUEUE_RETRY","jobId","","retryAfterMs",2000);
             }
@@ -150,7 +150,8 @@ public final class BridgeClient implements MediaBridge {
                 }
                 main.execute(()->confirmPin(request,job));return;
             }
-            if(state.equals("FAILED") || preparationClock.getAsLong()>deadline)throw new IllegalStateException("Media preparation failed");
+            if(state.equals("FAILED"))throw new SubmissionFailure(response.has("failureCode")&&!response.get("failureCode").isJsonNull()?response.get("failureCode").getAsString():null);
+            if(preparationClock.getAsLong()>deadline)throw new SubmissionFailure("PREPARATION_TIMEOUT");
             String jobId=state.equals("ENQUEUE_RETRY")?"":UUID.fromString(response.get("jobId").getAsString()).toString();
             long delay=Math.max(2000,Math.min(30000,response.has("retryAfterMs")?response.get("retryAfterMs").getAsLong():2000));
             worker.schedule(()->{

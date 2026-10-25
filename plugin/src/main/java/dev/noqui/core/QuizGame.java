@@ -151,9 +151,14 @@ public final class QuizGame {
         UUID submittedSession=session;
         try{bridge.prepare(new MediaBridge.Request(session,s.request,s.song)).whenComplete((ready,error)->main.execute(()->{
             if(!s.live||!session.equals(submittedSession))return;
-            if(error!=null||ready==null){preparationFailed(s);return;}
+            if(error!=null||ready==null){
+                try{preparationFailed(s);}finally{output.error(s.author,SubmissionFailure.reason(error)+(refundRetries.containsKey(s.id)?" 출제권 반환 대기 중입니다.":" 출제권 1장을 반환했습니다."));}
+                return;
+            }
             s.media=ready;if(current==s&&phase==Phase.WAITING_FOR_MEDIA)acceptMedia();
-        }));}catch(RuntimeException error){if(s.live)preparationFailed(s);}
+        }));}catch(RuntimeException error){if(s.live){
+            try{preparationFailed(s);}finally{output.error(s.author,SubmissionFailure.reason(error)+(refundRetries.containsKey(s.id)?" 출제권 반환 대기 중입니다.":" 출제권 1장을 반환했습니다."));}
+        }}
     }
     private void next() {
         clearRound();
@@ -224,7 +229,7 @@ public final class QuizGame {
     public void tick() {
         long now=clock.getAsLong();
         if(!refundRetries.isEmpty()&&now>=nextRefundRetry){nextRefundRetry=now+1000;boolean changed=false;
-            for(var it=refundRetries.entrySet().iterator();it.hasNext();){var entry=it.next();try{credits.refund(entry.getKey());it.remove();changed=true;}catch(UncheckedIOException ignored){}}
+            for(var it=refundRetries.entrySet().iterator();it.hasNext();){var entry=it.next();try{boolean returned=credits.refund(entry.getKey());it.remove();changed=true;if(returned)output.error(entry.getValue(),"출제권 1장을 반환했습니다.");}catch(UncheckedIOException ignored){}}
             if(changed)emit();
         }
         if(phase==Phase.COUNTDOWN&&now>=startsAt) {

@@ -9,10 +9,11 @@ class RegisteredSongsTest {
     private static final class Fixture {
         final UUID a=UUID.randomUUID(),b=UUID.randomUUID(),c=UUID.randomUUID();
         final List<CompletableFuture<MediaBridge.Media>> media=new ArrayList<>();long now=100000;
+        final List<String> errors=new ArrayList<>();
         final QuizGame game;
         Fixture(){
             var bridge=new MediaBridge(){public CompletionStage<Media> prepare(Request r){var future=new CompletableFuture<Media>();media.add(future);return future;}public void cancel(UUID s,long r){}public void publish(QuizGame.Snapshot s){assertTrue(s.round()<=s.registeredSongs());}};
-            game=new QuizGame(bridge,Runnable::run,()->now,new QuizGame.Output(){public void changed(QuizGame.Snapshot s){}public void error(UUID id,String m){fail(m);}},115,false);
+            game=new QuizGame(bridge,Runnable::run,()->now,new QuizGame.Output(){public void changed(QuizGame.Snapshot s){}public void error(UUID id,String m){errors.add(m);}},115,false);
             game.start(List.of(a,b,c),200);for(UUID id:List.of(a,b,c))game.grant(id,10);
         }
         void submit(UUID id){game.submit(id,game.snapshot().revision(),Song.input("https://youtu.be/BaW_jenozKc","Song","tag"));}

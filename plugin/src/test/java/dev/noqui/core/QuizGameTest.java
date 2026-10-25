@@ -225,7 +225,7 @@ class QuizGameTest {
     }
     @Test void failedPreparationRefundsAndAutomaticallyAdvancesQueueWithoutUsingRound() {
         var g=start();submit(g,author);submit(g,second);bridge.futures.getFirst().completeExceptionally(new IllegalStateException("private stderr"));callbacks.remove().run();
-        assertEquals(5,g.credits(author));assertEquals(second,g.snapshot().presenter());assertEquals(1,g.snapshot().round());assertTrue(errors.isEmpty());
+        assertEquals(5,g.credits(author));assertEquals(second,g.snapshot().presenter());assertEquals(1,g.snapshot().round());assertEquals(1,errors.size());assertTrue(errors.getFirst().contains("반환했습니다"));assertFalse(errors.getFirst().contains("private stderr"));
         play(g,1000);assertEquals(1,g.snapshot().round());assertEquals(4,g.credits(second));finish(g);assertEquals(1,g.snapshot().round());
     }
     @Test void queuedSubmissionCanBeCanceledOrRefundedOnLeaveAndStop() {
@@ -327,8 +327,8 @@ class QuizGameTest {
     @Test void refundWriteFailureDoesNotStrandPreparationOrBlockStopAndRetriesAfterStorageRecovers()throws Exception {
         Path file=directory.resolve("credits.json");int[] ended={0};var g=durable(file,ended);submit(g,author);Path blocked=block(file);
         bridge.futures.getFirst().completeExceptionally(new IllegalStateException("failed"));assertDoesNotThrow(()->callbacks.remove().run());
-        assertEquals(QuizGame.Phase.WAITING_FOR_SUBMISSION,g.snapshot().phase());assertFalse(errors.stream().anyMatch(e->e.contains("반환했습니다")));
-        assertDoesNotThrow(g::stop);assertEquals(1,ended[0]);assertFalse(g.started());Files.delete(blocked);g.tick();assertEquals(1,g.credits(author));g.stop();assertEquals(1,ended[0]);
+        assertEquals(QuizGame.Phase.WAITING_FOR_SUBMISSION,g.snapshot().phase());assertFalse(errors.stream().anyMatch(e->e.contains("반환했습니다")));assertTrue(errors.getFirst().contains("반환 대기"));
+        assertDoesNotThrow(g::stop);assertEquals(1,ended[0]);assertFalse(g.started());Files.delete(blocked);g.tick();assertEquals(1,g.credits(author));assertEquals(1,errors.stream().filter(e->e.contains("반환했습니다")).count());g.stop();g.tick();assertEquals(1,ended[0]);assertEquals(1,errors.stream().filter(e->e.contains("반환했습니다")).count());
     }
     @Test void stopWithUnwritableRefundStillEndsAndRestartRefundsOnce()throws Exception {
         Path file=directory.resolve("credits.json");int[] ended={0};var g=durable(file,ended);submit(g,author);Path blocked=block(file);

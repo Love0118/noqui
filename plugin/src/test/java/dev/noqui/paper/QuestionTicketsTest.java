@@ -160,6 +160,18 @@ class QuestionTicketsTest {
             bukkit.when(Bukkit::getCurrentTick).thenReturn(11);tickets.inventory(click);verify(click,never()).setCancelled(anyBoolean());assertEquals(1,opened);assertEquals(2,physical());
         }
     }
+    @Test void rejectedSourcesReturnPhysicalTicketBeforeReportingTheReasonExactlyOnce(){
+        ledger.grant(id,3);tickets.refresh(player);var futures=new ArrayList<CompletableFuture<MediaBridge.Media>>();var messages=new ArrayList<String>();
+        var bridge=new MediaBridge(){public CompletionStage<Media> prepare(Request r){var f=new CompletableFuture<Media>();futures.add(f);return f;}public void cancel(UUID s,long r){}public void publish(QuizGame.Snapshot s){}};
+        var game=new QuizGame(bridge,Runnable::run,()->1000,new QuizGame.Output(){
+            public void changed(QuizGame.Snapshot s){tickets.refresh(player);}public void error(UUID p,String text){assertEquals(id,p);assertEquals(3,physical());messages.add(text);}
+        },ledger,40,0,false,true,false,new Random(1));game.start(List.of(id));
+        for(String code:List.of("TOO_LONG","TOO_LARGE","SOURCE_AUTH_REQUIRED","FORMAT_UNSUPPORTED","INGEST_TIMEOUT")){
+            int previous=messages.size();tickets.submit(player,()->game.submit(id,game.snapshot().revision(),Song.input("https://youtu.be/BaW_jenozKc","Song","")));assertEquals(2,physical());
+            futures.getLast().completeExceptionally(new CompletionException(new SubmissionFailure(code)));assertEquals(3,physical());assertEquals(3,ledger.balance(id));assertEquals(previous+1,messages.size());
+            assertTrue(messages.getLast().contains(new SubmissionFailure(code).getMessage()));game.cancel(id);assertEquals(3,physical());
+        }
+    }
     @Test void realCoreFailureAndCancelRefundPhysicalTicketsWhilePlaybackSpendSurvivesReturn() {
         var futures=new ArrayList<CompletableFuture<MediaBridge.Media>>();var bridge=new MediaBridge(){public CompletionStage<Media> prepare(Request r){var f=new CompletableFuture<Media>();futures.add(f);return f;}public void cancel(UUID s,long r){}public void publish(QuizGame.Snapshot s){}};
         long[] now={1000};var game=new QuizGame(bridge,Runnable::run,()->now[0],new QuizGame.Output(){public void changed(QuizGame.Snapshot s){}public void error(UUID p,String e){}},ledger,115,0,false,true,false,new Random(1));game.start(List.of(id));ledger.grant(id,2);tickets.refresh(player);
