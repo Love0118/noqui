@@ -89,8 +89,10 @@ def build(output):
             if path.is_file():
                 entry = zipfile.ZipInfo(path.relative_to(PACK).as_posix(), date_time=(2026, 10, 25, 0, 0, 0))
                 entry.compress_type = zipfile.ZIP_DEFLATED
+                entry.create_system = 3
+                entry.external_attr = 0o100644 << 16
                 data = path.read_bytes() if path.suffix == '.png' else path.read_text(encoding='utf-8').replace('\r\n', '\n').encode('utf-8')
-                archive.writestr(entry, data)
+                archive.writestr(entry, data, compresslevel=9)
     data = temp.read_bytes()
     sha256, sha1 = hashlib.sha256(data).hexdigest(), hashlib.sha1(data).hexdigest()
     target = output / f'{sha256}.zip'

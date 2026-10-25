@@ -84,8 +84,12 @@ def main():
     args = parser.parse_args()
     stage = Path(__file__).resolve().parent
     config = json.loads((stage / 'deployment.json').read_text())
-    lock = (stage.parent / '.noqui-deploy.lock').open('w')
-    fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+    with (stage.parent / '.noqui-deploy.lock').open('w') as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        deploy(stage, config, args.deploy)
+
+
+def deploy(stage, config, execute):
     current = SERVER / 'plugins/Noqui.jar'
     candidate = stage / 'Noqui-hud.jar'
     for name, expected in config['artifacts'].items():
@@ -100,7 +104,7 @@ def main():
     if sha(public_pack) != config['artifacts'][config['packName']]:
         raise ValueError('Public HUD pack differs from review')
     count = players()
-    if not args.deploy or count:
+    if not execute or count:
         print(json.dumps({'status': 'waiting-for-empty' if count else 'ready', 'online': count, 'restartRequested': False}))
         return
     attempt = stage / ('attempt-' + str(time.time_ns()))
