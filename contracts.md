@@ -150,7 +150,7 @@ Errors are `{error:{code,message,retryable,retryAfterMs,requestId}}`, with 400 v
 
 ## Runtime and checks
 
-Build/test from `noqui/web`: `cargo build --release --locked`, `cargo test --locked`, `cargo clippy --all-targets -- -D warnings`, `node --check static/app.js`, `node --check static/join.js`, `node --test tests/browser.cjs`.
+Build/test from the root of a `web` branch checkout of `Love0118/noqui`: `cargo build --release --locked`, `cargo test --locked`, `cargo clippy --all-targets -- -D warnings`, `node --check static/app.js`, `node --check static/join.js`, `node --test tests/browser.cjs`.
 
 The `noqui-web` CI job runs the Rust tests and dependency-free browser regression suite, with Node 22 selected explicitly.
 
