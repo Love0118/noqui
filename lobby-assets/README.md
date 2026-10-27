@@ -1,6 +1,6 @@
 # Noqui lobby assets
 
-The pack targets exactly resource format **97.1** and uses native `minecraft:model` item definitions. `lobby-cosmetics.json` is the canonical catalog: schema version 1, with `id`, Korean `label`, and `slot` (`head`, `face`, or `back`) for each cosmetic. All catalog entries and the five existing gadget models must have actual cuboid geometry, complete texture UVs, and explicit `fixed` transforms. The downloaded 64×64 slim female shopkeeper skin by Munasharna (navy tuxedo, purple hair, monocle) and five exact user-provided quiz cues are preserved. No quiz music, full source archives, or mod/client JARs are included. Native torso meshes use the pinned MIT obj-cubed 26.3 core shaders.
+The pack targets exactly resource format **97.1** and uses native `minecraft:model` item definitions. `lobby-cosmetics.json` is the canonical catalog: schema version 1, with `id`, Korean `label`, and `slot` (`head`, `face`, or `back`) for each cosmetic. All catalog entries and the five existing gadget models must have actual cuboid geometry, complete texture UVs, and explicit `fixed` transforms. The downloaded 64×64 slim female shopkeeper skin by Munasharna (navy tuxedo, purple hair, monocle) and four active user-provided quiz cues keep their original bytes. No quiz music, full source archives, or mod/client JARs are included. Native torso meshes use the pinned MIT obj-cubed 26.3 core shaders.
 
 Prices belong to the Java catalog/configuration: all cosmetics default to 200 stars / 20 answer points, with per-product overrides. The asset catalog deliberately contains no prices. Existing cosmetic IDs, labels, and slots remain stable so saved ownership and equipment remain valid. `preserved-assets.json` pins the original six catalog entries and the exact hashes of the original 34 pack files; additions do not regenerate or replace those assets.
 
@@ -12,9 +12,21 @@ geometry, textures, licenses, and attribution stay intact in this repository.
 The packaged `COSMETICS_SOURCES.json` retains the canonical input hash as
 `sourceModelSha256` and records the shipped model hash in `modelSha256`;
 `pack-manifest.json` also describes the actual ZIP contents. The lobby pack
-shrinks from 3,147,035 to 2,108,591 bytes without removing any of its 80
-cosmetics, five gadgets, NPC skin, or five sound cues. Validation already
-rejects unreferenced files and textures; required equipment shaders remain.
+is 1,865,943 bytes, down from 3,147,035 bytes before trimming. All 80
+cosmetics, five gadgets, NPC skin, and four active sound cues remain.
+The uncalled `0miss` cue and item-only `objmc_mesh_carrier.glsl` are excluded
+from delivery; their pinned source inputs remain available for authoring.
+Validation checks the complete canonical inputs before packaging, and the
+ZIP manifest lists only delivered files. Shader imports are followed from
+the two entity entry points so only their eight shader files are shipped.
+
+The delivered ZIP contains no standalone license files. Complete license
+texts are consolidated under `licenses` in `pack.mcmeta`, keyed by SHA-256;
+six duplicate texts share entries. Attribution and source URLs remain in
+`ASSET_NOTICES.txt` and `COSMETICS_SOURCES.json`. Source records point to the
+metadata using `packLicenseFile` and `packLicenseKey`. The canonical license
+files remain in the repository as validated build inputs. The lobby ZIP
+contains 524 files instead of 543.
 
 ```text
 python3 lobby-assets/build_pack.py
@@ -26,7 +38,7 @@ The normal build writes the small tracked `lobby-assets/lobby-pack.properties` d
 
 **Maven integration owner:** bundle `lobby-assets/lobby-pack.properties` and `lobby-assets/lobby-cosmetics.json` at the JAR classpath root under those same filenames. Exclude `pack/`, vendor files, previews, and the ZIP from the JAR. The descriptor contains `url` and `sha1`. The pack UUID is `7d5243d5-c30e-4bdd-a039-71ec1ad10001`; public URL is `https://noqui.danta.qzz.io/packs/<sha256>.zip`. Publishing is a separate parent-owned step. Keep using `addResourcePack` so existing BGM packs remain applied.
 
-`cosmetics-provenance.json` records each additional cosmetic's pinned model hash, texture resources, source IDs, and actual conversion steps. Every source retains its author, source/license URLs, exact vendor license, and hashes of the selected upstream evidence. The pack includes an identical `COSMETICS_SOURCES.json`, human-readable attribution in `ASSET_NOTICES.txt`, and the full license files in `licenses/`. An original adaptation must be explicitly labeled and carry parent approval; it must not be described as a downloaded model. The original asset, skin, and sound provenance files remain in force.
+`cosmetics-provenance.json` records each additional cosmetic's pinned model hash, texture resources, source IDs, and actual conversion steps. Every source retains its author, source/license URLs, exact vendor license, and hashes of the selected upstream evidence. The packaged `COSMETICS_SOURCES.json` adds the shipped model hash and metadata license location; human-readable attribution remains in `ASSET_NOTICES.txt`, with complete license text in `pack.mcmeta`. An original adaptation must be explicitly labeled and carry parent approval; it must not be described as a downloaded model. The original asset, skin, and sound provenance files remain in force.
 
 Validation derives the model set from the catalog rather than a fixed count. It checks closed pack contents, exact 97.1 bounds, item-definition references, finite cuboid/rotation bounds, nonzero-volume geometry and depth, valid native face directions, nonzero UV rectangles, texture aliases, source/model/license hashes, and preservation of existing assets. Multi-axis element rotations use native X-then-Y-then-Z order; legacy axis/angle notation takes precedence, matching the [official 1.21.11 format notes](https://www.minecraft.net/en-us/article/minecraft-java-edition-1-21-11). Mixed solid geometry with planar decorative faces is supported; models made only of zero-thickness planes do not enter the solid cosmetic count. Degenerate UV faces are removed during conversion rather than bundled as texture errors. Geometry signatures include element rotations and ignore color, element order, translation, and uniform scale to reject recolor-only duplicates. Identical texture content must use one shared resource; only referenced textures enter the pack. Upstream atlases remain shared where practical rather than being copied once per item. The pack has an 8 MB upper bound.
 
@@ -58,7 +70,7 @@ The previous silver-haired purple-striped asset rendered as authored; it was uns
 
 For independent verification, run `verification/NativeSkinMesh.java` with the official 26.3 client and its libraries on the classpath, passing an output JSON path. Then run `python lobby-assets/verify_native_skin.py <mesh.json>`. No client JAR or downloaded library is included in this repository or resource pack. This verifies native geometry/UV mapping; a live Minecraft 26.3 client still needs to confirm the newly deployed pack and NPC.
 
-For deployment, the parent publishes the new content-hash ZIP before Paper starts, then deploys the JAR and **replaces the existing live plugin-data lobby-pack.properties through reviewed deployment**. The runtime intentionally preserves an existing descriptor and will not overwrite it merely because the JAR resource changed. Keep the pack UUID, six existing cosmetic IDs/slots, five gadget models, NPC skin, and five original cues unchanged.
+For deployment, the parent publishes the new content-hash ZIP before Paper starts, then deploys the JAR and **replaces the existing live plugin-data lobby-pack.properties through reviewed deployment**. The runtime intentionally preserves an existing descriptor and will not overwrite it merely because the JAR resource changed. Keep the pack UUID, six existing cosmetic IDs/slots, five gadget models, NPC skin, and four active cue events unchanged.
 
 ## Native equipment authoring
 

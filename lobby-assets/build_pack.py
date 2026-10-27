@@ -23,6 +23,7 @@ PRESERVED=ROOT/'preserved-assets.json'
 NATIVE=ROOT/'native-equipment.json'
 GADGETS={'triple_boots':'boots','quad_boots':'boots','hammer':'hand','snow_bomb':'hand','gravity_suit':'suit'}
 EVENTS=('0click2','0select2','0miss','0win','0heal')
+RUNTIME_EVENTS=('0click2','0select2','0win','0heal')
 PACK_UUID='7d5243d5-c30e-4bdd-a039-71ec1ad10001'
 ORIGIN='https://noqui.danta.qzz.io/packs/'
 
@@ -295,6 +296,22 @@ def validate(original=None):
     return {'cosmetics':len(rows),'gadgets':len(GADGETS),'models':len(ids),'elements':total_elements,'textures':len(textures)+1,'sounds':len(EVENTS),
             'files':len(actual),'uniqueCosmeticGeometry':len(geometry),'geometry':model_checks,'slimSkinUV':'64x64 opaque base faces,3pixel arms'}
 
+def shader_dependencies(files):
+    """Follow packaged core shader imports; vanilla includes stay client-owned."""
+    pending=[name for name in files if '/shaders/core/' in name]
+    used=set()
+    while pending:
+        name=pending.pop()
+        if name in used:continue
+        used.add(name)
+        imports=re.findall(r'(?m)^\s*#(?:include|moj_import)\s*[<"]([^>"]+)[>"]',files[name].decode('utf-8'))
+        for reference in imports:
+            namespace,relative=reference.split(':',1) if ':' in reference else ('minecraft',reference)
+            target=f'assets/{namespace}/shaders/include/{relative}'
+            if target in files:pending.append(target)
+            else:assert not relative.startswith('objmc_'), ('Missing wearable shader include',target)
+    return used
+
 def packed_files():
     """Keep authoring evidence in source; ship compact runtime model data."""
     files={}
@@ -307,9 +324,30 @@ def packed_files():
                 for element in value.get('elements',[]):element.pop('name',None)
             data=(json.dumps(value,ensure_ascii=False,separators=(',',':'))+'\n').encode('utf-8')
         files[name]=data
+    required_shaders=shader_dependencies(files)
+    for name in list(files):
+        if '/shaders/' in name and name not in required_shaders:del files[name]
+    sounds=json.loads(files['assets/minecraft/sounds.json'])
+    files['assets/minecraft/sounds.json']=(json.dumps({name:sounds[name] for name in RUNTIME_EVENTS},separators=(',',':'))+'\n').encode('utf-8')
+    for name in set(EVENTS)-set(RUNTIME_EVENTS):del files[f'assets/minecraft/sounds/arsf/{name}.ogg']
+    # Keep complete license notices in ordinary, readable pack metadata instead
+    # of standalone files. Identical license texts share one metadata entry.
+    licenses={};license_keys={}
+    for name in sorted(files):
+        if name.startswith('licenses/') or name=='MIT_BACKPACK_LICENSE.txt':
+            data=files.pop(name);key=digest(data)
+            licenses[key]=data.decode('utf-8');license_keys[name]=key
+    metadata=json.loads(files['pack.mcmeta']);metadata['licenses']=licenses
+    files['pack.mcmeta']=(json.dumps(metadata,ensure_ascii=False,separators=(',',':'))+'\n').encode('utf-8')
+    notices=files['ASSET_NOTICES.txt'].decode('utf-8')
+    for name,key in license_keys.items():notices=notices.replace(name,'pack.mcmeta#licenses/'+key)
+    files['ASSET_NOTICES.txt']=notices.encode('utf-8')
     # Attribution records distinguish canonical authoring hashes from shipped
     # model hashes so consumers can verify the actual files in the ZIP.
     provenance=read_json(PROVENANCE)
+    for source in provenance['sources']:
+        source['packLicenseKey']=license_keys[source['packLicenseFile']]
+        source['packLicenseFile']='pack.mcmeta'
     for record in provenance['cosmetics']:
         record['sourceModelSha256']=record['modelSha256']
         record['modelSha256']=digest(files[f"assets/noqui/models/{record['id']}.json"])
@@ -345,6 +383,7 @@ def main():
                   'files':[{'path':name,'bytes':len(contents),'sha256':digest(contents)} for name,contents in packed_files().items()]}
         (args.output/'pack-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     summary={key:value for key,value in checks.items() if key!='geometry'}
+    summary.update(packedFiles=len(packed_files()),runtimeSounds=len(RUNTIME_EVENTS))
     print(json.dumps({'checkOnly':args.check,'sha1':sha1,'sha256':sha256,'bytes':len(data),'descriptor':str(target),'output':str(args.output),**summary},ensure_ascii=False))
 
 if __name__=='__main__':main()

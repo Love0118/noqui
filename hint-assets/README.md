@@ -27,6 +27,14 @@ transparent columns: 48×36 becomes 28×36. Grayscale plus alpha stores the
 same pixels without redundant RGB channels. All ASCII, Korean compatibility
 jamo, and Hangul syllables remain available for dynamic song titles.
 
+The final atlas page uses eight rows instead of sixteen, removing eight
+unused rows (129,024 decoded pixels). Two transparent padding rows keep UV
+coordinates aligned to powers of two; trimming to six rows changed sampling
+in one GUI-scale case, while eight rows matched all 36 baseline images.
+The delivered ZIP has 50 files and no standalone license file. The complete
+OFL notice is included in the readable `licenses` metadata in `pack.mcmeta`;
+the canonical license remains a validated source input.
+
 The pack replaces only `text.vsh` and the two unused PINK bossbar sprites.
 Vanilla's fragment shader remains in use. It contains no terrain shaders or
 shared shader includes from Sodium's unsupported shader list. The existing

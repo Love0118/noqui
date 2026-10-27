@@ -10,6 +10,7 @@ import zipfile
 import zlib
 import ast
 import hashlib
+import re
 import build_pack as build
 from model_geometry import rotated_point
 
@@ -44,12 +45,48 @@ class PackTest(unittest.TestCase):
             for element in expected['elements']:element.pop('name',None)
             self.assertEqual(json.loads(files[path.relative_to(build.PACK).as_posix()]),expected)
         for path in build.PACK.rglob('*'):
-            if path.is_file() and path.suffix!='.json':self.assertEqual(files[path.relative_to(build.PACK).as_posix()],path.read_bytes())
+            name=path.relative_to(build.PACK).as_posix()
+            if path.is_file() and path.suffix!='.json' and name in files and name not in {'pack.mcmeta','ASSET_NOTICES.txt'}:
+                self.assertEqual(files[name],path.read_bytes())
         sources=json.loads(files['COSMETICS_SOURCES.json'])
         original={r['id']:r for r in build.read_json(build.PROVENANCE)['cosmetics']}
         for row in sources['cosmetics']:
             self.assertEqual(row['sourceModelSha256'],original[row['id']]['modelSha256'])
             self.assertEqual(row['modelSha256'],build.digest(files[f"assets/noqui/models/{row['id']}.json"]))
+    def test_no_standalone_license_files_and_complete_verifiable_notices(self):
+        files=build.packed_files();metadata=json.loads(files['pack.mcmeta'])
+        self.assertNotIn('MIT_BACKPACK_LICENSE.txt',files)
+        self.assertFalse(any(name.startswith('licenses/') for name in files))
+        for path in [build.PACK/'MIT_BACKPACK_LICENSE.txt',*(build.PACK/'licenses').glob('*.txt')]:
+            data=path.read_bytes();self.assertEqual(metadata['licenses'][build.digest(data)],data.decode('utf-8'))
+        for key,text in metadata['licenses'].items():self.assertEqual(build.digest(text.encode('utf-8')),key)
+        original={row['id']:row for row in build.read_json(build.PROVENANCE)['sources']}
+        for row in json.loads(files['COSMETICS_SOURCES.json'])['sources']:
+            source=original[row['id']]
+            self.assertEqual(row['packLicenseFile'],'pack.mcmeta')
+            self.assertEqual(metadata['licenses'][row['packLicenseKey']],(build.ROOT/source['licenseFile']).read_text(encoding='utf-8'))
+            for field in ('author','sourceUrl','license','licenseUrl','sourceFiles'):
+                self.assertEqual(row[field],source[field])
+    def test_shipped_sounds_match_every_quiz_cue_call(self):
+        source=(build.ROOT.parent/'plugin/src/main/java/dev/noqui/paper/QuizHud.java').read_text(encoding='utf-8')
+        calls=re.findall(r'\bcue\(player,\s*"([^"]+)"',source)
+        self.assertEqual(len(re.findall(r'\bcue\(',source)),len(calls)+1,'Review dynamic cue callers before pruning sounds')
+        files=build.packed_files();sounds=json.loads(files['assets/minecraft/sounds.json'])
+        self.assertEqual(set(sounds),set(calls))
+        self.assertNotIn('assets/minecraft/sounds/arsf/0miss.ogg',files)
+        for key in calls:self.assertIn(f'assets/minecraft/sounds/arsf/{key}.ogg',files)
+    def test_item_only_shader_is_omitted_without_changing_active_shaders(self):
+        files=build.packed_files()
+        self.assertNotIn('assets/minecraft/shaders/include/objmc_mesh_carrier.glsl',files)
+        shaders={name for name in files if '/shaders/' in name}
+        self.assertEqual(len(shaders),8)
+        for name in shaders:self.assertEqual(files[name],(build.PACK/name).read_bytes())
+    def test_shader_imports_reject_missing_custom_include_and_accept_vanilla(self):
+        core='assets/minecraft/shaders/core/entity.vsh';include='assets/minecraft/shaders/include/objmc_needed.glsl'
+        with self.assertRaisesRegex(AssertionError,'Missing wearable shader'):
+            build.shader_dependencies({core:b'#include <minecraft:objmc_needed.glsl>'})
+        files={core:b'#include <minecraft:objmc_needed.glsl>',include:b'#include <minecraft:light.glsl>'}
+        self.assertEqual(build.shader_dependencies(files),{core,include})
     def test_out_of_bounds_uv(self):
         self.edit('assets/noqui/models/cap.json',lambda v:v['elements'][0]['faces']['north'].update(uv=[0,0,17,4]))
         with self.assertRaises(AssertionError):build.validate()

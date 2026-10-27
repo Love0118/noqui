@@ -1,5 +1,6 @@
 """Guard the one-font pack against duplicate providers and unused resources."""
 from pathlib import Path
+import hashlib
 import json
 import shutil
 import tempfile
@@ -48,6 +49,17 @@ class PackTest(unittest.TestCase):
     def test_missing_bossbar_sprite_is_rejected(self):
         (build.PACK / sorted(build.SPRITES)[0]).unlink()
         with self.assertRaises(AssertionError): build.validate()
+
+    def test_empty_rows_in_final_page_are_rejected(self):
+        self.edit_font(lambda providers: providers[-1]['chars'].append('\0' * 16))
+        with self.assertRaises(AssertionError): build.validate()
+
+    def test_font_license_is_in_metadata_without_a_standalone_file(self):
+        files = build.packed_files()
+        self.assertFalse(any(name.startswith('licenses/') for name in files))
+        notice = (build.PACK / 'licenses/NotoSansKR-OFL.txt').read_text(encoding='utf-8')
+        key = hashlib.sha256(notice.encode('utf-8')).hexdigest()
+        self.assertEqual(json.loads(files['pack.mcmeta'])['licenses'][key], notice)
 
 
 if __name__ == '__main__': unittest.main(verbosity=2)

@@ -25,6 +25,12 @@ def write_json(path, data):
     path.write_text(json.dumps(data, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8', newline='\n')
 
 
+def atlas_rows(glyphs):
+    # Power-of-two row counts preserve native UV sampling at every GUI scale.
+    rows = math.ceil(glyphs / 16)
+    return 1 << (rows - 1).bit_length()
+
+
 def rasterize(font_path):
     from PIL import Image, ImageFont, ImageDraw
     font = ImageFont.truetype(str(font_path), 30)
@@ -33,10 +39,11 @@ def rasterize(font_path):
     providers, metrics = [], {'32': 4}
     for page, start in enumerate(range(0, len(chars), 256)):
         codes = chars[start:start + 256]
-        image = Image.new('RGBA', (48 * 16, 36 * 16))
+        rows = atlas_rows(len(codes))
+        image = Image.new('RGBA', (48 * 16, 36 * rows))
         draw = ImageDraw.Draw(image)
         grid = []
-        for row in range(16):
+        for row in range(rows):
             line = ''
             for col in range(16):
                 i = row * 16 + col
@@ -55,8 +62,8 @@ def rasterize(font_path):
         path = PACK / file
         path.parent.mkdir(parents=True, exist_ok=True)
         # Discard only the 20 completely transparent columns in each cell.
-        compact = Image.new('LA', (28 * 16, 36 * 16))
-        for row in range(16):
+        compact = Image.new('LA', (28 * 16, 36 * rows))
+        for row in range(rows):
             for col in range(16):
                 cell = image.crop((col * 48, row * 36, (col + 1) * 48, (row + 1) * 36))
                 assert not cell.getchannel('A').crop((28, 0, 48, 36)).getbbox(), 'Glyph would be clipped'
@@ -87,18 +94,20 @@ def validate():
     assert len(providers) == 46 and providers[0]['type'] == 'space'
     assert providers[0]['advances'] == {**{chr(0xF000 + n): n for n in range(-360, 361)}, ' ': 4}
     expected = {'pack.mcmeta', 'licenses/NotoSansKR-OFL.txt', FONT, *shader_files, *SPRITES}
+    expected_codes = list(range(33, 127)) + list(range(0x3131, 0x318F)) + list(range(0xAC00, 0xD7A4))
     codes = []
     for page, provider in enumerate(providers[1:]):
         assert provider['type'] == 'bitmap' and provider['ascent'] == ASCENT and provider['height'] == 12
         assert provider['file'] == f'noqui_hint:font/page_{page:02}.png'
         grid = provider['chars']
-        assert len(grid) == 16 and all(len(row) == 16 for row in grid)
+        rows = atlas_rows(min(256, len(expected_codes) - page * 256))
+        assert len(grid) == rows and all(len(row) == 16 for row in grid)
         codes.extend(ord(char) for row in grid for char in row if char != '\0')
         relative = 'assets/noqui_hint/textures/' + provider['file'].split(':')[1]
         image = (PACK / relative).read_bytes()
-        assert image[:8] == b'\x89PNG\r\n\x1a\n' and struct.unpack('>IIBB', image[16:26]) == (448, 576, 8, 4)
+        assert image[:8] == b'\x89PNG\r\n\x1a\n' and struct.unpack('>IIBB', image[16:26]) == (448, rows * 36, 8, 4)
         expected.add(relative)
-    assert codes == list(range(33, 127)) + list(range(0x3131, 0x318F)) + list(range(0xAC00, 0xD7A4))
+    assert codes == expected_codes
     assert set(widths) == {'32', *(str(code) for code in codes)}
     assert not any(p.is_symlink() for p in PACK.rglob('*')), 'No symlinks in pack'
     actual = {p.relative_to(PACK).as_posix() for p in PACK.rglob('*') if p.is_file()}
@@ -106,19 +115,32 @@ def validate():
     assert (PACK / 'licenses/NotoSansKR-OFL.txt').stat().st_size > 1000
 
 
+def packed_files():
+    files = {}
+    license_path = 'licenses/NotoSansKR-OFL.txt'
+    for path in sorted(PACK.rglob('*')):
+        if not path.is_file() or path.relative_to(PACK).as_posix() == license_path:
+            continue
+        files[path.relative_to(PACK).as_posix()] = (path.read_bytes() if path.suffix == '.png'
+            else path.read_text(encoding='utf-8').replace('\r\n', '\n').encode('utf-8'))
+    notice = (PACK / license_path).read_text(encoding='utf-8').replace('\r\n', '\n')
+    metadata = json.loads(files['pack.mcmeta'])
+    metadata['licenses'] = {hashlib.sha256(notice.encode('utf-8')).hexdigest(): notice}
+    files['pack.mcmeta'] = (json.dumps(metadata, ensure_ascii=False, separators=(',', ':')) + '\n').encode('utf-8')
+    return files
+
+
 def build(output):
     validate()
     output.mkdir(parents=True, exist_ok=True)
     temp = output / 'hint-pack.zip'
     with zipfile.ZipFile(temp, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
-        for path in sorted(PACK.rglob('*')):
-            if path.is_file():
-                entry = zipfile.ZipInfo(path.relative_to(PACK).as_posix(), date_time=(2026, 10, 25, 0, 0, 0))
-                entry.compress_type = zipfile.ZIP_DEFLATED
-                entry.create_system = 3
-                entry.external_attr = 0o100644 << 16
-                data = path.read_bytes() if path.suffix == '.png' else path.read_text(encoding='utf-8').replace('\r\n', '\n').encode('utf-8')
-                archive.writestr(entry, data, compresslevel=9)
+        for name, data in packed_files().items():
+            entry = zipfile.ZipInfo(name, date_time=(2026, 10, 25, 0, 0, 0))
+            entry.compress_type = zipfile.ZIP_DEFLATED
+            entry.create_system = 3
+            entry.external_attr = 0o100644 << 16
+            archive.writestr(entry, data, compresslevel=9)
     data = temp.read_bytes()
     sha256, sha1 = hashlib.sha256(data).hexdigest(), hashlib.sha1(data).hexdigest()
     target = output / f'{sha256}.zip'
