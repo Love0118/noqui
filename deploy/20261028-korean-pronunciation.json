@@ -1,0 +1,66 @@
+{
+  "activatedAt": "2026-10-27T17:38:14Z",
+  "minecraftRestarted": false,
+  "minecraftPID": "1561884",
+  "audioServiceRestarted": true,
+  "verifiedPlayableSongs": 1091,
+  "playlists": [
+    {
+      "id": "japan-zeom",
+      "name": "일본 - ZEOM",
+      "playableCount": 252,
+      "trackCount": 289
+    },
+    {
+      "id": "ssip-noqui",
+      "name": "씹노퀴",
+      "playableCount": 541,
+      "trackCount": 541
+    },
+    {
+      "id": "tj-261027-domestic",
+      "name": "TJ인기차트-261027국내",
+      "playableCount": 100,
+      "trackCount": 100
+    },
+    {
+      "id": "tj-261027-japan",
+      "name": "TJ인기차트-261027일본노래",
+      "playableCount": 100,
+      "trackCount": 100
+    },
+    {
+      "id": "tj-261027-pop",
+      "name": "TJ인기차트-261027팝송",
+      "playableCount": 98,
+      "trackCount": 100
+    }
+  ],
+  "examples": [
+    {
+      "id": "8f7b4375-dcc8-57ab-8342-8aa7099bc454",
+      "tags": [
+        "나오미 스콧",
+        "Speechless",
+        "Naomi Scott",
+        "PASEK BENJ",
+        "PAUL JUSTIN NOBLE",
+        "MENKEN ALAN",
+        "스피치리스"
+      ],
+      "title": "Speechless",
+      "youtubeUrl": "https://www.youtube.com/watch?v=DwTogmKwYWo"
+    },
+    {
+      "id": "eefbe3d6-c9db-5ad2-99b5-f8baf203b6da",
+      "tags": [
+        "Love Story",
+        "Taylor Swift",
+        "러브스토리"
+      ],
+      "title": "Love Story",
+      "youtubeUrl": "https://www.youtube.com/watch?v=8xg3vE8Ie_E"
+    }
+  ],
+  "audioReuploaded": false
+}

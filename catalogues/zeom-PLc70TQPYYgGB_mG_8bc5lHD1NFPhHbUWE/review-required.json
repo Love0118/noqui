@@ -14,9 +14,18 @@
     ],
     "tags": [
       "Prometheus",
-      "sanetii"
+      "sanetii",
+      "프로메테우스"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "프로메테우스",
+        "url": null,
+        "origin": "user_authorized_pronunciation",
+        "quote": "사용자 승인 영어 제목 일반 발음: Prometheus → 프로메테우스 (2026-10-28). 외부 검색 인용 아님."
+      }
+    ],
     "reviewRequired": true,
     "reviewReasons": [
       "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
@@ -38,10 +47,8 @@
       }
     ],
     "notes": "",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
     "audioSourceType": "official_album_audio",
     "audioSourceReviewRequired": false,
     "audio": {
@@ -53,12 +60,21 @@
       "channels": 2,
       "durationSeconds": 244.29339583333334,
       "byteLength": 1499808,
-      "sha256": "980bc400e0d77b62c20a07aa393ec68eeb74206c5e6d409e1186209b13f98bf9"
+      "sha256": "e8b8d1a7ab01367ddba0626bf41bb7456ede1072fd8460534315ca9765da46e5"
     },
     "singer": "sanetii",
     "writerReviewRequired": false,
     "writerTagReviewRequired": false,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-28",
+        "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+        "addedTags": [
+          "프로메테우스"
+        ]
+      }
+    ]
   },
   {
     "index": 40,
@@ -136,9 +152,18 @@
     ],
     "tags": [
       "CROWNED",
-      "unoblaqlo"
+      "unoblaqlo",
+      "크라운드"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "크라운드",
+        "url": null,
+        "origin": "user_authorized_pronunciation",
+        "quote": "사용자 승인 영어 제목 일반 발음: CROWNED → 크라운드 (2026-10-28). 외부 검색 인용 아님."
+      }
+    ],
     "reviewRequired": true,
     "reviewReasons": [
       "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
@@ -152,10 +177,8 @@
       }
     ],
     "notes": "",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
     "audioSourceType": "official_album_audio",
     "audioSourceReviewRequired": false,
     "audio": {
@@ -167,12 +190,21 @@
       "channels": 2,
       "durationSeconds": 200.66033333333334,
       "byteLength": 1230943,
-      "sha256": "c6252dec12d7f57cd729159fbd95051ba01532116eb2af27e8b8aaa563d8e707"
+      "sha256": "57bf9472e139a4cd8db719ce46486c0b69336846070cf7acbe496a643c62e89f"
     },
     "singer": "Aimi",
     "writerReviewRequired": false,
     "writerTagReviewRequired": false,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-28",
+        "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+        "addedTags": [
+          "크라운드"
+        ]
+      }
+    ]
   },
   {
     "index": 49,
@@ -189,9 +221,18 @@
     ],
     "tags": [
       "Dance In The Game",
-      "ZAQ"
+      "ZAQ",
+      "댄스인더게임"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "댄스인더게임",
+        "url": null,
+        "origin": "user_authorized_pronunciation",
+        "quote": "사용자 승인 영어 제목 일반 발음: Dance In The Game → 댄스인더게임 (2026-10-28). 외부 검색 인용 아님."
+      }
+    ],
     "reviewRequired": true,
     "reviewReasons": [
       "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
@@ -213,10 +254,8 @@
       }
     ],
     "notes": "",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
     "audioSourceType": "official_album_audio",
     "audioSourceReviewRequired": false,
     "audio": {
@@ -228,12 +267,21 @@
       "channels": 2,
       "durationSeconds": 206.1311875,
       "byteLength": 1264216,
-      "sha256": "6ca061c2bbf0177d0b64cd15b1b13a51163df564004554b1595d8c950b63c374"
+      "sha256": "67a68fe37ce8f3aa2d3d4a8579d9411464f6adcdced628a8a4af422a057298c9"
     },
     "singer": "ZAQ",
     "writerReviewRequired": false,
     "writerTagReviewRequired": false,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-28",
+        "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+        "addedTags": [
+          "댄스인더게임"
+        ]
+      }
+    ]
   },
   {
     "index": 53,
@@ -249,9 +297,18 @@
       "岩橋星実(Elements Garden)"
     ],
     "tags": [
-      "AMBITION"
+      "AMBITION",
+      "앰비션"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "앰비션",
+        "url": null,
+        "origin": "user_authorized_pronunciation",
+        "quote": "사용자 승인 영어 제목 일반 발음: AMBITION → 앰비션 (2026-10-28). 외부 검색 인용 아님."
+      }
+    ],
     "reviewRequired": true,
     "reviewReasons": [
       "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
@@ -281,10 +338,8 @@
       }
     ],
     "notes": "",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
     "audioSourceType": "official_album_audio",
     "audioSourceReviewRequired": false,
     "audio": {
@@ -296,12 +351,21 @@
       "channels": 2,
       "durationSeconds": 234.69345833333333,
       "byteLength": 1440173,
-      "sha256": "728bf2e3174ba75543a45512b2ae7bc7df56b3f6d9ebb7043028f5008c446f45"
+      "sha256": "f8634d6fb022fdd623b7bb2a01cd9be46232bad1454a7aaa15d6724af2789a0e"
     },
     "singer": "UTAHIME DREAM, Maika Sakuragi 【UTAHIME DREAM】 (CV:Anna Suzuki), Spirit Garden, Seiwa Iwahashi",
     "writerReviewRequired": false,
     "writerTagReviewRequired": false,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-28",
+        "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+        "addedTags": [
+          "앰비션"
+        ]
+      }
+    ]
   },
   {
     "index": 62,
@@ -319,9 +383,18 @@
     ],
     "tags": [
       "Go Shiina",
-      "Yuki Kajiura"
+      "Yuki Kajiura",
+      "투더인피니티캐슬"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "투더인피니티캐슬",
+        "url": null,
+        "origin": "user_authorized_pronunciation",
+        "quote": "사용자 승인 영어 제목 일반 발음: To the Infinity Castle - Muzan vs Hashira Theme (from \"Demon Slayer\") → 투더인피니티캐슬 (2026-10-28). 외부 검색 인용 아님."
+      }
+    ],
     "reviewRequired": true,
     "reviewReasons": [
       "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
@@ -349,10 +422,8 @@
       }
     ],
     "notes": "",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
     "audioSourceType": "official_album_audio",
     "audioSourceReviewRequired": false,
     "audio": {
@@ -364,12 +435,21 @@
       "channels": 2,
       "durationSeconds": 305.4327916666667,
       "byteLength": 1869749,
-      "sha256": "bca0b796147713f88e74e86275dedfca4ba9da1d2fac035b1fa126f7b8c77f21"
+      "sha256": "e86aff90a1ee2ef629401d7840323310b03e745006ca8c239e15a8cf5b3d19e5"
     },
     "singer": "Diego Mitre",
     "writerReviewRequired": false,
     "writerTagReviewRequired": false,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-28",
+        "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+        "addedTags": [
+          "투더인피니티캐슬"
+        ]
+      }
+    ]
   },
   {
     "index": 76,
@@ -390,9 +470,18 @@
       "LOST IN PARADISE",
       "LEO",
       "LUTHFI",
-      "ALEX"
+      "ALEX",
+      "로스트인파라다이스"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "로스트인파라다이스",
+        "url": null,
+        "origin": "user_authorized_pronunciation",
+        "quote": "사용자 승인 영어 제목 일반 발음: LOST IN PARADISE → 로스트인파라다이스 (2026-10-28). 외부 검색 인용 아님."
+      }
+    ],
     "reviewRequired": true,
     "reviewReasons": [
       "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
@@ -414,10 +503,8 @@
       }
     ],
     "notes": "",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
     "audioSourceType": "official_album_audio",
     "audioSourceReviewRequired": false,
     "audio": {
@@ -429,12 +516,21 @@
       "channels": 2,
       "durationSeconds": 327.97366666666665,
       "byteLength": 2000165,
-      "sha256": "e5e0f843e4120a878ff76cd13303460fde5abc6e39a14b90bad358c36719b4ce"
+      "sha256": "256b915acbb616328c689c8d31abd3a31dfdc8247e088af14f207e7242f12866"
     },
     "singer": "ALI, AKLO",
     "writerReviewRequired": false,
     "writerTagReviewRequired": false,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-28",
+        "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+        "addedTags": [
+          "로스트인파라다이스"
+        ]
+      }
+    ]
   },
   {
     "index": 77,
@@ -451,7 +547,8 @@
     ],
     "tags": [
       "bloom",
-      "Asahi"
+      "Asahi",
+      "블룸"
     ],
     "aliases": [
       {
@@ -459,6 +556,13 @@
         "name": "bloom",
         "url": "https://blog.naver.com/leaf_ox/223306501586",
         "quote": "넷플릭스 애니메이션 스콧 필그림 OP - Necry Talkie bloom [ 가사 /해석] ​ ​ なんだかキャビの匂いがしてるガレージで yeah 왜인지 캐비닛 냄새가 나는 창고에서 yeah ​ まともじゃない夢ばかり見てた 제정신이 아닌 꿈밖에 안 꿨어 ​ もう少し眠っていたいな 조금 더 자고 싶어 ​ 砂利がカラカラだった道端にある 자갈이 와글바글했던 길가에 있는 ​ 二、三転がるゴミが見えてる 둘, 셋 굴러가던..."
+      },
+      {
+        "kind": "title",
+        "name": "블룸",
+        "url": null,
+        "origin": "user_authorized_pronunciation",
+        "quote": "사용자 승인 영어 제목 일반 발음: bloom → 블룸 (2026-10-28). 외부 검색 인용 아님."
       }
     ],
     "reviewRequired": true,
@@ -491,10 +595,8 @@
       }
     ],
     "notes": "",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
     "audioSourceType": "official_album_audio",
     "audioSourceReviewRequired": false,
     "audio": {
@@ -506,12 +608,21 @@
       "channels": 2,
       "durationSeconds": 197.24414583333333,
       "byteLength": 1210492,
-      "sha256": "83019e75ff31649ce3bc9fa4ad3a068799a69ae512c3523dce25d661823f760d"
+      "sha256": "c8f8e5b473e635df4f2f72756d54c7e93465c98c7fa96ac207f3d995a2f05522"
     },
     "singer": "NECRY TALKIE",
     "writerReviewRequired": false,
     "writerTagReviewRequired": false,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-28",
+        "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+        "addedTags": [
+          "블룸"
+        ]
+      }
+    ]
   },
   {
     "index": 90,
@@ -679,9 +790,26 @@
     ],
     "tags": [
       "FLY",
-      "MABO"
+      "MABO",
+      "플라이",
+      "에프엘와이"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "플라이",
+        "url": null,
+        "origin": "user_authorized_pronunciation",
+        "quote": "사용자 승인 영어 제목 일반 발음: F・L・Y → 플라이 (2026-10-28). 외부 검색 인용 아님."
+      },
+      {
+        "kind": "title",
+        "name": "에프엘와이",
+        "url": null,
+        "origin": "user_authorized_pronunciation",
+        "quote": "사용자 승인 영어 제목 일반 발음: F・L・Y → 에프엘와이 (2026-10-28). 외부 검색 인용 아님."
+      }
+    ],
     "reviewRequired": true,
     "reviewReasons": [
       "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
@@ -711,10 +839,8 @@
       }
     ],
     "notes": "",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
     "audioSourceType": "official_album_audio",
     "audioSourceReviewRequired": false,
     "audio": {
@@ -726,12 +852,22 @@
       "channels": 2,
       "durationSeconds": 210.3963125,
       "byteLength": 1289868,
-      "sha256": "b6933b9a764136a917cb8883d0b1417d6b63eb51d8fc9c3a17e7e694ca431c57"
+      "sha256": "6de828429baf03d2f51bd6df0eaa4d60420d779ed8c753376f7169faaed0e146"
     },
     "singer": "SPECTRUM",
     "writerReviewRequired": false,
     "writerTagReviewRequired": false,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-28",
+        "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+        "addedTags": [
+          "플라이",
+          "에프엘와이"
+        ]
+      }
+    ]
   },
   {
     "index": 113,
@@ -750,9 +886,18 @@
     "tags": [
       "WATERLOO ROAD",
       "Michael Antony Deighan",
-      "Michael Wilshaw"
+      "Michael Wilshaw",
+      "워털루로드"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "워털루로드",
+        "url": null,
+        "origin": "user_authorized_pronunciation",
+        "quote": "사용자 승인 영어 제목 일반 발음: WATERLOO ROAD → 워털루로드 (2026-10-28). 외부 검색 인용 아님."
+      }
+    ],
     "reviewRequired": true,
     "reviewReasons": [
       "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
@@ -774,10 +919,8 @@
       }
     ],
     "notes": "",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
     "audioSourceType": "official_album_audio",
     "audioSourceReviewRequired": false,
     "audio": {
@@ -789,12 +932,21 @@
       "channels": 2,
       "durationSeconds": 224.31335416666667,
       "byteLength": 1373691,
-      "sha256": "5835a12cedf164b05c91b4b1b5f3bfe33b943d35a6c8dca410d6a32c3957a136"
+      "sha256": "cbffc0131b0d6e6867fb2641dcf885379f40ab6a5bdf265b25ee1b51d2dbb613"
     },
     "singer": "miya takehiro",
     "writerReviewRequired": false,
     "writerTagReviewRequired": false,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-28",
+        "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+        "addedTags": [
+          "워털루로드"
+        ]
+      }
+    ]
   },
   {
     "index": 114,
@@ -1103,9 +1255,18 @@
     ],
     "tags": [
       "Lovey Dovey",
-      "Shusaku Yanagita"
+      "Shusaku Yanagita",
+      "러비더비"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "러비더비",
+        "url": null,
+        "origin": "user_authorized_pronunciation",
+        "quote": "사용자 승인 영어 제목 일반 발음: Lovey Dovey → 러비더비 (2026-10-28). 외부 검색 인용 아님."
+      }
+    ],
     "reviewRequired": true,
     "reviewReasons": [
       "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
@@ -1127,10 +1288,8 @@
       }
     ],
     "notes": "",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
     "audioSourceType": "official_album_audio",
     "audioSourceReviewRequired": false,
     "audio": {
@@ -1142,12 +1301,21 @@
       "channels": 2,
       "durationSeconds": 196.34033333333332,
       "byteLength": 1205396,
-      "sha256": "12ff033ac91a6b0b901b10ea0fa66046838261f22b2a293d6196ed02355e46bf"
+      "sha256": "919a0a2201e65e0aff49e2d63ed0fa3420206a29d5f6d6b0b08c57a90801c09e"
     },
     "singer": "KAMI WA SAIKORO WO FURANAI",
     "writerReviewRequired": false,
     "writerTagReviewRequired": false,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-28",
+        "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+        "addedTags": [
+          "러비더비"
+        ]
+      }
+    ]
   },
   {
     "index": 168,
@@ -1163,9 +1331,18 @@
       "アトラスサウンドチーム"
     ],
     "tags": [
-      "Its Going Down Now"
+      "Its Going Down Now",
+      "잇츠고잉다운나우"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "잇츠고잉다운나우",
+        "url": null,
+        "origin": "user_authorized_pronunciation",
+        "quote": "사용자 승인 영어 제목 일반 발음: It's Going Down Now → 잇츠고잉다운나우 (2026-10-28). 외부 검색 인용 아님."
+      }
+    ],
     "reviewRequired": true,
     "reviewReasons": [
       "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요",
@@ -1196,10 +1373,8 @@
       }
     ],
     "notes": "",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
     "audioSourceType": "official_album_audio",
     "audioSourceReviewRequired": false,
     "audio": {
@@ -1211,12 +1386,21 @@
       "channels": 2,
       "durationSeconds": 186.10033333333334,
       "byteLength": 1126306,
-      "sha256": "90858c89d16c6d3a5b26bde8df7f3594146464a78f0f73aa7682472576a0dbdc"
+      "sha256": "bdf5ab0d790a2471a2db3b98bc61fc387d709ed6ec9c42a7198ee7df38487f9a"
     },
     "singer": "Azumi Takahashi, Lotus Juice, ATLUS Sound Team, ATLUS GAME MUSIC, Lotus Juice, ATLUS Sound Team, ATLUS Sound Team",
     "writerReviewRequired": false,
     "writerTagReviewRequired": true,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-28",
+        "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+        "addedTags": [
+          "잇츠고잉다운나우"
+        ]
+      }
+    ]
   },
   {
     "index": 173,
@@ -1316,9 +1500,18 @@
     ],
     "tags": [
       "Coffee and Cigarette",
-      "Shiho Tamiya"
+      "Shiho Tamiya",
+      "커피앤시가렛"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "커피앤시가렛",
+        "url": null,
+        "origin": "user_authorized_pronunciation",
+        "quote": "사용자 승인 영어 제목 일반 발음: Coffee and Cigarette → 커피앤시가렛 (2026-10-28). 외부 검색 인용 아님."
+      }
+    ],
     "reviewRequired": true,
     "reviewReasons": [
       "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
@@ -1346,10 +1539,8 @@
       }
     ],
     "notes": "",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
     "audioSourceType": "official_album_audio",
     "audioSourceReviewRequired": false,
     "audio": {
@@ -1361,7 +1552,7 @@
       "channels": 2,
       "durationSeconds": 216.62595833333333,
       "byteLength": 1328354,
-      "sha256": "3bd86a9aa3be27df1e76cec56847e3856173c495d9fe7d19b7e3b91237571769"
+      "sha256": "f0ae592e4c834eb7f6d44095f78f1006416c76d6317be522171f473a6fb02596"
     },
     "singer": "田宮 志保 Official Channel",
     "writerReviewRequired": false,
@@ -1386,6 +1577,15 @@
         "reason": "Replace music-video edit with matched song audio",
         "replacementSourceType": "official_album_audio"
       }
+    ],
+    "namingHistory": [
+      {
+        "date": "2026-10-28",
+        "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+        "addedTags": [
+          "커피앤시가렛"
+        ]
+      }
     ]
   },
   {
@@ -1403,9 +1603,18 @@
     ],
     "tags": [
       "Innocent",
-      "komedawara"
+      "komedawara",
+      "이노센트"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "이노센트",
+        "url": null,
+        "origin": "user_authorized_pronunciation",
+        "quote": "사용자 승인 영어 제목 일반 발음: Innocent → 이노센트 (2026-10-28). 외부 검색 인용 아님."
+      }
+    ],
     "reviewRequired": true,
     "reviewReasons": [
       "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
@@ -1427,10 +1636,8 @@
       }
     ],
     "notes": "",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
     "audioSourceType": "official_album_audio",
     "audioSourceReviewRequired": false,
     "audio": {
@@ -1442,12 +1649,21 @@
       "channels": 2,
       "durationSeconds": 242.607,
       "byteLength": 1476165,
-      "sha256": "32d5990ecef82686b3ae289feac4f55c6f03164db53b3742eb11f6409745ca53"
+      "sha256": "fcccc41e3b3302baeb1440176211b25be418e3614761d899cc2fb811e8072ba8"
     },
     "singer": "yama",
     "writerReviewRequired": false,
     "writerTagReviewRequired": false,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-28",
+        "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+        "addedTags": [
+          "이노센트"
+        ]
+      }
+    ]
   },
   {
     "index": 195,
@@ -1741,7 +1957,8 @@
     ],
     "tags": [
       "Hollows",
-      "쿠지라"
+      "쿠지라",
+      "할로우즈"
     ],
     "aliases": [
       {
@@ -1749,6 +1966,13 @@
         "name": "쿠지라",
         "url": "https://blog.naver.com/melonsodadaisuki/224454640834",
         "quote": "쿠지라 알카홀릭 랑데부 가사 해석 くじら アルカホリック・ランデヴー 일렉트로닉함과 쿠지라 특유의 감각적인 보컬이 대비를 이루면서 버전별로 골라 듣는 재미가 있는 곡이예요. ​ ​ ​ 보카로 P이자 싱어송라이터 쿠지라 (くじら, Whaledontsleep , kujira ) ​ ​ 현대를 살아가는 우리들. 즐거운 시간은 분명 존재했지만, 그만큼 외로움도 공존합니다. 무엇보다 <アルカホリック・ランデヴー>는..."
+      },
+      {
+        "kind": "title",
+        "name": "할로우즈",
+        "url": null,
+        "origin": "user_authorized_pronunciation",
+        "quote": "사용자 승인 영어 제목 일반 발음: Hollows... → 할로우즈 (2026-10-28). 외부 검색 인용 아님."
       }
     ],
     "reviewRequired": true,
@@ -1787,10 +2011,8 @@
       }
     ],
     "notes": "",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
     "audioSourceType": "official_album_audio",
     "audioSourceReviewRequired": false,
     "audio": {
@@ -1802,12 +2024,21 @@
       "channels": 2,
       "durationSeconds": 208.24033333333333,
       "byteLength": 1272436,
-      "sha256": "90fe54ffa5a5bb6f7cb56e306b6521a53aa0145babde29ccedd5669701f88b4a"
+      "sha256": "1cb83cf6cc2131ec746de4f7ba65b8dc40e17d0f39e36bbcee87c2ce1f60bbdf"
     },
     "singer": "whaledontsleep",
     "writerReviewRequired": false,
     "writerTagReviewRequired": false,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-28",
+        "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+        "addedTags": [
+          "할로우즈"
+        ]
+      }
+    ]
   },
   {
     "index": 205,
@@ -1890,9 +2121,18 @@
       "FIVE NEW OLD",
       "Hiroshi Nakahara",
       "Hayato Yamamoto",
-      "Jamil Kazmi"
+      "Jamil Kazmi",
+      "쇼다운"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "쇼다운",
+        "url": null,
+        "origin": "user_authorized_pronunciation",
+        "quote": "사용자 승인 영어 제목 일반 발음: Showdown → 쇼다운 (2026-10-28). 외부 검색 인용 아님."
+      }
+    ],
     "reviewRequired": true,
     "reviewReasons": [
       "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
@@ -1914,10 +2154,8 @@
       }
     ],
     "notes": "",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
     "audioSourceType": "official_album_audio",
     "audioSourceReviewRequired": false,
     "audio": {
@@ -1929,12 +2167,21 @@
       "channels": 2,
       "durationSeconds": 206.32227083333333,
       "byteLength": 1243808,
-      "sha256": "76081baf886c5ac2dc8b4426eec725f3f3d2bb8eb178f7b42f8ad68ab75ec0ed"
+      "sha256": "0e032f4b24d81b5f229e13f7205fccd02d02f4ccceb6aaf65b1ee2c8f3ca634f"
     },
     "singer": "FIVE NEW OLD",
     "writerReviewRequired": false,
     "writerTagReviewRequired": false,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-28",
+        "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+        "addedTags": [
+          "쇼다운"
+        ]
+      }
+    ]
   },
   {
     "index": 224,
@@ -2089,9 +2336,18 @@
     ],
     "tags": [
       "When My Devil Rises",
-      "JeanKen Johnny"
+      "JeanKen Johnny",
+      "웬마이데블라이즈"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "웬마이데블라이즈",
+        "url": null,
+        "origin": "user_authorized_pronunciation",
+        "quote": "사용자 승인 영어 제목 일반 발음: When My Devil Rises → 웬마이데블라이즈 (2026-10-28). 외부 검색 인용 아님."
+      }
+    ],
     "reviewRequired": true,
     "reviewReasons": [
       "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
@@ -2113,10 +2369,8 @@
       }
     ],
     "notes": "",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
     "audioSourceType": "official_album_audio",
     "audioSourceReviewRequired": false,
     "audio": {
@@ -2128,12 +2382,21 @@
       "channels": 2,
       "durationSeconds": 256.007,
       "byteLength": 1557962,
-      "sha256": "2e4deef147638065a1e83317389d072e4a9ab2a454ba192afc1e77dffc2bd6d7"
+      "sha256": "a3b002261a94a6b069c39571809a677a1d54c1b93aafee23e390e6a3d0cd4772"
     },
     "singer": "MAN WITH A MISSION",
     "writerReviewRequired": false,
     "writerTagReviewRequired": false,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-28",
+        "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+        "addedTags": [
+          "웬마이데블라이즈"
+        ]
+      }
+    ]
   },
   {
     "index": 243,
@@ -2211,9 +2474,18 @@
     "tags": [
       "Blood Drain Again Eltnum Theme",
       "Blood Drain Again",
-      "Masura Kuba"
+      "Masura Kuba",
+      "블러드드레인어게인"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "블러드드레인어게인",
+        "url": null,
+        "origin": "user_authorized_pronunciation",
+        "quote": "사용자 승인 영어 제목 일반 발음: Blood Drain Again Eltnum Theme → 블러드드레인어게인 (2026-10-28). 외부 검색 인용 아님."
+      }
+    ],
     "reviewRequired": true,
     "reviewReasons": [
       "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
@@ -2234,10 +2506,8 @@
       }
     ],
     "notes": "",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
     "audioSourceType": "official_album_audio",
     "audioSourceReviewRequired": false,
     "audio": {
@@ -2249,12 +2519,21 @@
       "channels": 2,
       "durationSeconds": 205.35420833333333,
       "byteLength": 1260130,
-      "sha256": "395c260f2be121ca4cfc1b8977dc56c328458c1f6454b7d0f0c6441be1a857fd"
+      "sha256": "b17a7267c0f3f76268ce7e25134074d9120d893823a2e7b0aabf46895d522685"
     },
     "singer": "Raito",
     "writerReviewRequired": false,
     "writerTagReviewRequired": false,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-28",
+        "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+        "addedTags": [
+          "블러드드레인어게인"
+        ]
+      }
+    ]
   },
   {
     "index": 254,
@@ -2356,9 +2635,18 @@
       "中田ヤスタカ"
     ],
     "tags": [
-      "Hello"
+      "Hello",
+      "헬로"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "헬로",
+        "url": null,
+        "origin": "user_authorized_pronunciation",
+        "quote": "사용자 승인 영어 제목 일반 발음: Hello → 헬로 (2026-10-28). 외부 검색 인용 아님."
+      }
+    ],
     "reviewRequired": true,
     "reviewReasons": [
       "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요",
@@ -2388,10 +2676,8 @@
       }
     ],
     "notes": "",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
     "audioSourceType": "official_album_audio",
     "audioSourceReviewRequired": false,
     "audio": {
@@ -2403,12 +2689,21 @@
       "channels": 2,
       "durationSeconds": 101.78033333333333,
       "byteLength": 623188,
-      "sha256": "54fb3cce05cea20df72511071d935c2e44701e7ecfee9507e619417f04b8e8a0"
+      "sha256": "3009c5faa20be21d0375d8f92c65a93ac9ec790c7ef10c16c2a275948cc8bc08"
     },
     "singer": "capsule",
     "writerReviewRequired": false,
     "writerTagReviewRequired": true,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-28",
+        "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+        "addedTags": [
+          "헬로"
+        ]
+      }
+    ]
   },
   {
     "index": 275,
@@ -2504,9 +2799,18 @@
     ],
     "tags": [
       "Seamless",
-      "Sena Yamakita"
+      "Sena Yamakita",
+      "심리스"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "심리스",
+        "url": null,
+        "origin": "user_authorized_pronunciation",
+        "quote": "사용자 승인 영어 제목 일반 발음: Seamless → 심리스 (2026-10-28). 외부 검색 인용 아님."
+      }
+    ],
     "reviewRequired": true,
     "reviewReasons": [
       "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
@@ -2527,10 +2831,8 @@
       }
     ],
     "notes": "",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
     "audioSourceType": "official_album_audio",
     "audioSourceReviewRequired": false,
     "audio": {
@@ -2542,12 +2844,21 @@
       "channels": 2,
       "durationSeconds": 172.99366666666666,
       "byteLength": 1062474,
-      "sha256": "735639e35f57607931a6f91166c80b2dc32dc872dbcade4228aa99b807c68dec"
+      "sha256": "a51f4ec8e881a2bfee19a1a5b91fd5f9f04af055a860544acd40393f37d3171c"
     },
     "singer": "Hitohira",
     "writerReviewRequired": false,
     "writerTagReviewRequired": false,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-28",
+        "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+        "addedTags": [
+          "심리스"
+        ]
+      }
+    ]
   },
   {
     "index": 287,

@@ -260,7 +260,8 @@
       "tags": [
         "Dont Look Back In Anger",
         "Oasis",
-        "Noel Gallagher"
+        "Noel Gallagher",
+        "돈룩백인앵거"
       ],
       "aliases": [
         {
@@ -268,6 +269,13 @@
           "name": "Don't Look Back In Anger",
           "url": "https://www.youtube.com/watch?v=oplra1FJxWI",
           "quote": "Don't Look Back In Anger (Remastered) | Oasis"
+        },
+        {
+          "kind": "title",
+          "name": "돈룩백인앵거",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Don't Look Back In Anger → 돈룩백인앵거 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -303,7 +311,7 @@
         "sampleRate": 48000,
         "durationSeconds": 289.567,
         "byteLength": 1777286,
-        "sha256": "5abd60fe866a6de573f29e0a58b778ab719a2f3ce2da89705389bf9445aa678a"
+        "sha256": "0c3fe650f4bc5c12bec2d5aed2bedf228aa7fcdbb0df1dbd63b74e785ff5cb8c"
       },
       "sourceTitle": "Don't Look Back In Anger",
       "rawChartWriterCredit": {
@@ -315,10 +323,18 @@
       "notes": "",
       "namingReviewRequired": true,
       "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
         "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "돈룩백인앵거"
+          ]
+        }
+      ]
     },
     {
       "index": 4,
@@ -340,7 +356,8 @@
         "Naomi Scott",
         "PASEK BENJ",
         "PAUL JUSTIN NOBLE",
-        "MENKEN ALAN"
+        "MENKEN ALAN",
+        "스피치리스"
       ],
       "aliases": [
         {
@@ -361,6 +378,13 @@
           "quote": "Naomi Scott(나오미 스콧) - Speechless (Full) [알라딘 OST] [가사/Lyrics] 3:29",
           "kind": "singer",
           "canonicalName": "Naomi Scott"
+        },
+        {
+          "kind": "title",
+          "name": "스피치리스",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Speechless → 스피치리스 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -403,7 +427,7 @@
         "sampleRate": 48000,
         "durationSeconds": 209.265,
         "byteLength": 1257077,
-        "sha256": "1ef4b4f66d4ebb147407606659cd652e7fa2443928fa682feb029e929d46fa97"
+        "sha256": "e5fb8f8d43627347f64dd84f4f1159e931576ecc1e404162a593766c4a541d22"
       },
       "sourceTitle": "Speechless(Aladdin OST)",
       "rawChartWriterCredit": {
@@ -413,10 +437,8 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "namingHistory": [
         {
           "previousTitle": "Speechless(Aladdin OST)",
@@ -429,6 +451,13 @@
             "Speechless"
           ],
           "reason": "Replace prior naming with independently sourced common usage"
+        },
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "스피치리스"
+          ]
         }
       ],
       "singerAliases": [
@@ -571,7 +600,8 @@
         "Rolling In The Deep",
         "Adele",
         "ADKINS ADELE LAURIE BLUE",
-        "EPWORTH PAUL"
+        "EPWORTH PAUL",
+        "롤링인더딥"
       ],
       "aliases": [
         {
@@ -598,6 +628,13 @@
           "name": "아델",
           "quote": "Hello - Adele (아델) 가사 한글 해석",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "롤링인더딥",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Rolling In The Deep → 롤링인더딥 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -632,7 +669,7 @@
         "sampleRate": 48000,
         "durationSeconds": 227.737,
         "byteLength": 1390101,
-        "sha256": "ee8850a6eb81f415b1699f9f6deff3944dad513dd91eb9fafa03638d63ada4e4"
+        "sha256": "557df68b7dc453445a41439bd2533a4e6b2ae4ba654f05da4b119b97c4c95caa"
       },
       "sourceTitle": "Rolling In The Deep",
       "rawChartWriterCredit": {
@@ -642,12 +679,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "아델"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "롤링인더딥"
+          ]
+        }
       ]
     },
     {
@@ -664,7 +708,8 @@
       ],
       "tags": [
         "Love Story",
-        "Taylor Swift"
+        "Taylor Swift",
+        "러브스토리"
       ],
       "aliases": [
         {
@@ -672,6 +717,13 @@
           "name": "Love Story",
           "url": "https://www.youtube.com/watch?v=8xg3vE8Ie_E",
           "quote": "Taylor Swift - Love Story | Taylor Swift"
+        },
+        {
+          "kind": "title",
+          "name": "러브스토리",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Love Story → 러브스토리 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -707,7 +759,7 @@
         "sampleRate": 48000,
         "durationSeconds": 236.502,
         "byteLength": 1444980,
-        "sha256": "fe6ae7e2c442708d058f8222ab8f62c6eb75f2188c82a1d332b9f09e21ecdd6d"
+        "sha256": "f341c62c3953b3d7c7db668fe1e0f7d09676d668bbda7e7c700c4c48b1b438cb"
       },
       "sourceTitle": "Love Story",
       "rawChartWriterCredit": {
@@ -719,10 +771,18 @@
       "notes": "",
       "namingReviewRequired": true,
       "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
         "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "러브스토리"
+          ]
+        }
+      ]
     },
     {
       "index": 8,
@@ -741,7 +801,8 @@
         "샘 스미스",
         "Im Not The Only One",
         "Sam Smith",
-        "JAMES NAPIER"
+        "JAMES NAPIER",
+        "아임낫디온리원"
       ],
       "aliases": [
         {
@@ -762,6 +823,13 @@
           "quote": "I’m Not the Only One - Sam Smith (샘 스미스) [가사 해석/번역]",
           "kind": "singer",
           "canonicalName": "Sam Smith"
+        },
+        {
+          "kind": "title",
+          "name": "아임낫디온리원",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: I'm Not The Only One → 아임낫디온리원 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -804,7 +872,7 @@
         "sampleRate": 48000,
         "durationSeconds": 223.322,
         "byteLength": 1367007,
-        "sha256": "06ee5267c87e782f06edc9f76d80694f59227f05f878334efaf5ef3476046e5f"
+        "sha256": "18c9ff61347f9e5660efb8373fb2bc2b9debae0b4b273526c04189acecc81212"
       },
       "sourceTitle": "I'm Not The Only One",
       "rawChartWriterCredit": {
@@ -814,12 +882,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "샘 스미스"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "아임낫디온리원"
+          ]
+        }
       ]
     },
     {
@@ -840,7 +915,8 @@
         "Zac Efron",
         "Zendaya",
         "PASEK BENJ",
-        "PAUL JUSTIN NOBLE"
+        "PAUL JUSTIN NOBLE",
+        "리라이트더스타즈"
       ],
       "aliases": [
         {
@@ -848,6 +924,13 @@
           "name": "Rewrite The Stars",
           "url": "https://www.youtube.com/watch?v=gdjR2lvIfJ4",
           "quote": "The Greatest Showman Cast - Rewrite The Stars (Official Audio) | Atlantic Records"
+        },
+        {
+          "kind": "title",
+          "name": "리라이트더스타즈",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Rewrite The Stars → 리라이트더스타즈 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -883,7 +966,7 @@
         "sampleRate": 48000,
         "durationSeconds": 216.185,
         "byteLength": 1327181,
-        "sha256": "4015593f454752acb61668e5216f74e26359042807058c10c3f3ebcb556187eb"
+        "sha256": "bd4ab053c0a0376a49999290ea7956bfb0aafacefc5dfbdff9c011d7ada86566"
       },
       "sourceTitle": "Rewrite The Stars(The Greatest Showman OST)",
       "rawChartWriterCredit": {
@@ -895,7 +978,6 @@
       "notes": "",
       "namingReviewRequired": true,
       "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
         "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
       ],
       "namingHistory": [
@@ -909,6 +991,13 @@
             "Rewrite The Stars"
           ],
           "reason": "Replace prior naming with independently sourced common usage"
+        },
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "리라이트더스타즈"
+          ]
         }
       ],
       "singerAliases": []
@@ -932,14 +1021,14 @@
       "tags": [
         "레이디 가가",
         "브루노 마스",
-        "Die With A Smile",
         "Lady Gaga",
         "Bruno Mars",
         "EMILE DERNST",
         "FAUNTLEROY JAMES EDWARD",
         "GERMANOTTA STEFANI J",
         "HERNANDEZ PETER GENE",
-        "WATT ANDREW"
+        "WATT ANDREW",
+        "다이위드어스마일"
       ],
       "aliases": [
         {
@@ -973,6 +1062,13 @@
           "quote": "[MV] 레이디 가가(Lady Gaga), 브루노 마스(Bruno Mars) - Die With A Smile | 한글자막 뮤직비디오",
           "kind": "singer",
           "canonicalName": "Lady Gaga"
+        },
+        {
+          "kind": "title",
+          "name": "다이위드어스마일",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Die With A Smile → 다이위드어스마일 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -1015,7 +1111,7 @@
         "sampleRate": 48000,
         "durationSeconds": 251.723,
         "byteLength": 1539656,
-        "sha256": "7fdd404fd701721c9472d52439d97aa1d9c1f3bbf1afa869e6713fbf8546fa79"
+        "sha256": "be37bfc9e875201391e0a545e62d0382c662a97193ba674aa9694be80cd25999"
       },
       "sourceTitle": "Die With A Smile",
       "rawChartWriterCredit": {
@@ -1025,13 +1121,20 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "레이디 가가",
         "브루노 마스"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "다이위드어스마일"
+          ]
+        }
       ]
     },
     {
@@ -1276,7 +1379,8 @@
         "ALEXANDER IZQUIERDO",
         "JAMES JOHN ABRAHART",
         "MARCO ANTONIO RODRIGUEZDIAZ",
-        "ROTEM JONATHAN"
+        "ROTEM JONATHAN",
+        "데인저러슬리"
       ],
       "aliases": [
         {
@@ -1309,6 +1413,13 @@
           "url": "https://www.youtube.com/watch?v=R71KeUoA-8U",
           "quote": "Charlie Puth(찰리 푸스) - One Call Away [가사/Lyrics]",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "데인저러슬리",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Dangerously → 데인저러슬리 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -1343,7 +1454,7 @@
         "sampleRate": 48000,
         "durationSeconds": 199.58,
         "byteLength": 1215585,
-        "sha256": "fe8fca675e6a0fc268738c1327c8fe95436a9a81ab153d74f0c9342f5ed19827"
+        "sha256": "2a3b3e7ff01b15c85a1c77a7d46098d2623248c2c9a950afc0af1647e7647ba0"
       },
       "sourceTitle": "Dangerously",
       "rawChartWriterCredit": {
@@ -1353,12 +1464,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "찰리 푸스"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "데인저러슬리"
+          ]
+        }
       ]
     },
     {
@@ -1630,7 +1748,8 @@
         "Lemon Tree",
         "Fools Garden",
         "FREUDENTHALER PETER",
-        "HINKEL VOLKER"
+        "HINKEL VOLKER",
+        "레몬트리"
       ],
       "aliases": [
         {
@@ -1644,6 +1763,13 @@
           "url": "https://www.youtube.com/watch?v=Tlw8qYoMXWk",
           "quote": "Fool’s Garden(풀스 가든) - Lemon Tree [가사/Lyrics]",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "레몬트리",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Lemon Tree → 레몬트리 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -1686,7 +1812,7 @@
         "sampleRate": 48000,
         "durationSeconds": 190.45,
         "byteLength": 1168783,
-        "sha256": "2db4ca1c37bc980252c2cd8546824667bb4b081335e9ab3da978d735b2b3753a"
+        "sha256": "d179f74b6945181bdfd0fe9307b22486b3a37dd98e5db867614a68d6d3f38cfd"
       },
       "sourceTitle": "Lemon Tree",
       "rawChartWriterCredit": {
@@ -1696,12 +1822,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "풀스 가든"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "레몬트리"
+          ]
+        }
       ]
     },
     {
@@ -1730,7 +1863,8 @@
         "Bridges",
         "TheDream",
         "Stewart Bridges",
-        "Stewart Milian"
+        "Stewart Milian",
+        "베이비"
       ],
       "aliases": [
         {
@@ -1763,6 +1897,13 @@
           "url": "https://www.youtube.com/watch?v=0810ztn8Pj0",
           "quote": "Justin Bieber (저스틴 비버) - Off My Face [가사/Lyrics]",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "베이비",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Baby → 베이비 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -1805,7 +1946,7 @@
         "sampleRate": 48000,
         "durationSeconds": 212.063,
         "byteLength": 1300050,
-        "sha256": "6dc53743758c2504ed9fd899beb814fa8358fd7f83f75ce5ac361bae3a7be9d1"
+        "sha256": "36fdedacd4d1eeb6a40f67db6c973f0a1a1d2ad101d7f168ca917ed6c4f1c308"
       },
       "sourceTitle": "Baby",
       "rawChartWriterCredit": {
@@ -1815,12 +1956,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "저스틴 비버"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "베이비"
+          ]
+        }
       ]
     },
     {
@@ -1841,7 +1989,8 @@
         "Snowman",
         "Sia",
         "GREG KURSTIN",
-        "SIA FURLER"
+        "SIA FURLER",
+        "스노우맨"
       ],
       "aliases": [
         {
@@ -1862,6 +2011,13 @@
           "quote": "Sia (시아) - Snowman [가사/Lyrics] #Sia #시아 #Snowman 발매 : 2022.12.30 아티스트 : Sia",
           "kind": "singer",
           "canonicalName": "Sia"
+        },
+        {
+          "kind": "title",
+          "name": "스노우맨",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Snowman → 스노우맨 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -1904,7 +2060,7 @@
         "sampleRate": 48000,
         "durationSeconds": 168.154,
         "byteLength": 1014871,
-        "sha256": "757dcbd0e1aa3864ce638eaeb53c3a4f0fced0a87b59de6cbb749643eb76adf4"
+        "sha256": "348974581a532f9d5b71e420a3037b5d3c49d6c994bad8291b010469105824c7"
       },
       "sourceTitle": "Snowman",
       "rawChartWriterCredit": {
@@ -1914,12 +2070,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "시아"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "스노우맨"
+          ]
+        }
       ]
     },
     {
@@ -1944,7 +2107,8 @@
         "ZEDD",
         "SAVAN KOTECHA",
         "MAX MARTIN",
-        "NICKI MINAJ"
+        "NICKI MINAJ",
+        "뷰티앤어비트"
       ],
       "aliases": [
         {
@@ -1959,6 +2123,13 @@
           "quote": "Justin Bieber (저스틴 비버) - Off My Face [가사/Lyrics]",
           "kind": "singer",
           "canonicalName": "Justin Bieber"
+        },
+        {
+          "kind": "title",
+          "name": "뷰티앤어비트",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Beauty And A Beat → 뷰티앤어비트 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -1994,7 +2165,7 @@
         "sampleRate": 48000,
         "durationSeconds": 228.329,
         "byteLength": 1397742,
-        "sha256": "665246c0c1ae13ffacfba3a04156b58ed743e65678ac1e9148a1201f2c6c015e"
+        "sha256": "3a948e36612a3a431bd923286ce9207befd484798b0dfa4541def40581dc9248"
       },
       "sourceTitle": "Beauty And A Beat",
       "rawChartWriterCredit": {
@@ -2004,12 +2175,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "저스틴 비버"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "뷰티앤어비트"
+          ]
+        }
       ]
     },
     {
@@ -2027,7 +2205,8 @@
       "tags": [
         "Until I Found You",
         "Stephen Sanchez",
-        "SANCHEZ STEPHEN CHRISTOPHER"
+        "SANCHEZ STEPHEN CHRISTOPHER",
+        "언틸아이파운드유"
       ],
       "aliases": [
         {
@@ -2035,6 +2214,13 @@
           "name": "Until I Found You",
           "url": "https://www.youtube.com/watch?v=MlThQTo6D8A",
           "quote": "Stephen Sanchez - \"Until I Found You\" (Official Audio) | Stephen Sanchez"
+        },
+        {
+          "kind": "title",
+          "name": "언틸아이파운드유",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Until I Found You → 언틸아이파운드유 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -2070,7 +2256,7 @@
         "sampleRate": 48000,
         "durationSeconds": 178.012,
         "byteLength": 1084930,
-        "sha256": "f9c622998da1fee5753c57a8f92ec8f2971bb8614a5bc5daa1aa1475db9840b5"
+        "sha256": "bd9c809cd45b18406b05fb268279384392de6a1ef40b77c1e379f487162ae971"
       },
       "sourceTitle": "Until I Found You",
       "rawChartWriterCredit": {
@@ -2082,10 +2268,18 @@
       "notes": "",
       "namingReviewRequired": true,
       "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
         "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "언틸아이파운드유"
+          ]
+        }
+      ]
     },
     {
       "index": 21,
@@ -2109,7 +2303,8 @@
         "LAWRENCE PHILIP MARTIN II",
         "LEVINE ARI",
         "MARS BRUNO",
-        "WYATT ANDREW"
+        "WYATT ANDREW",
+        "웬아이워즈유어맨"
       ],
       "aliases": [
         {
@@ -2148,6 +2343,13 @@
           "url": "https://www.youtube.com/watch?v=CP9PXe74mW8",
           "quote": "Bruno Mars (브루노 마스) - Marry You",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "웬아이워즈유어맨",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: When I Was Your Man → 웬아이워즈유어맨 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -2182,7 +2384,7 @@
         "sampleRate": 48000,
         "durationSeconds": 214.06,
         "byteLength": 1306839,
-        "sha256": "49a84d7c7dd963530cf5741d677bdfa5405a7b60f83e2eb8ca54989a004655ca"
+        "sha256": "7ef943ba46d5ce3111f900092fd0836339f9420535225598e583e3b2e98d37ea"
       },
       "sourceTitle": "When I Was Your Man",
       "rawChartWriterCredit": {
@@ -2192,12 +2394,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "브루노 마스"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "웬아이워즈유어맨"
+          ]
+        }
       ]
     },
     {
@@ -2220,7 +2429,8 @@
         "Mena Massoud",
         "Naomi Scott",
         "MENKEN ALAN IRWIN",
-        "RICE TIMOTHY MILES BINDON"
+        "RICE TIMOTHY MILES BINDON",
+        "어홀뉴월드"
       ],
       "aliases": [
         {
@@ -2247,6 +2457,13 @@
           "quote": "Naomi Scott(나오미 스콧) - Speechless (Full) [알라딘 OST] [가사/Lyrics] 3:29",
           "kind": "singer",
           "canonicalName": "Naomi Scott"
+        },
+        {
+          "kind": "title",
+          "name": "어홀뉴월드",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: A Whole New World → 어홀뉴월드 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -2289,7 +2506,7 @@
         "sampleRate": 48000,
         "durationSeconds": 177.396,
         "byteLength": 1061323,
-        "sha256": "a97693a82f2f21d284a5db01bc09f0aae3a4c1cbfb1cba36488cc5f437d9e459"
+        "sha256": "91d019b0f0ef9264d9f9eaa617f76ebb800ca1d6a1a5d810781cf6b45b02592c"
       },
       "sourceTitle": "A Whole New World(Aladdin OST)",
       "rawChartWriterCredit": {
@@ -2299,10 +2516,8 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "namingHistory": [
         {
           "previousTitle": "A Whole New World(Aladdin OST)",
@@ -2315,6 +2530,13 @@
             "A Whole New World"
           ],
           "reason": "Replace prior naming with independently sourced common usage"
+        },
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "어홀뉴월드"
+          ]
         }
       ],
       "singerAliases": [
@@ -2341,7 +2563,8 @@
         "Love Yourself",
         "Justin Bieber",
         "ED SHEERAN",
-        "BENNY BLANCO"
+        "BENNY BLANCO",
+        "러브유어셀프"
       ],
       "aliases": [
         {
@@ -2374,6 +2597,13 @@
           "url": "https://www.youtube.com/watch?v=0810ztn8Pj0",
           "quote": "Justin Bieber (저스틴 비버) - Off My Face [가사/Lyrics]",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "러브유어셀프",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Love Yourself → 러브유어셀프 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -2416,7 +2646,7 @@
         "sampleRate": 48000,
         "durationSeconds": 272.226,
         "byteLength": 1497104,
-        "sha256": "f6b6d42940f71e0317e6b65532e6efca3e18721017f8a72e04df804909639708"
+        "sha256": "d9a4c11496096047eb9d0a5c04a5dba18e36c3fc7fb369dd154dc47b5ea0c99c"
       },
       "sourceTitle": "Love Yourself",
       "rawChartWriterCredit": {
@@ -2426,12 +2656,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "저스틴 비버"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "러브유어셀프"
+          ]
+        }
       ]
     },
     {
@@ -2451,7 +2688,8 @@
         "아델",
         "Someone Like You",
         "Adele",
-        "Dan Wilson"
+        "Dan Wilson",
+        "섬원라이크유"
       ],
       "aliases": [
         {
@@ -2478,6 +2716,13 @@
           "name": "아델",
           "quote": "Hello - Adele (아델) 가사 한글 해석",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "섬원라이크유",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Someone Like You → 섬원라이크유 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -2513,7 +2758,7 @@
         "sampleRate": 48000,
         "durationSeconds": 290.106,
         "byteLength": 1745895,
-        "sha256": "d5dc755c4d39e361d5a6d33405a5c8373c896c0dc244883d669bd60779603c2c"
+        "sha256": "5f2c7699deb590d58db656aa62fb5cd2eb8c5ce73a05001746969221cbf70168"
       },
       "sourceTitle": "Someone Like You",
       "rawChartWriterCredit": {
@@ -2523,12 +2768,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "아델"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "섬원라이크유"
+          ]
+        }
       ]
     },
     {
@@ -2548,7 +2800,8 @@
         "Love",
         "Keyshia Cole",
         "키샤 콜",
-        "Greg Curtis"
+        "Greg Curtis",
+        "러브"
       ],
       "aliases": [
         {
@@ -2568,6 +2821,13 @@
           "url": "https://www.youtube.com/watch?v=d3LfmnQJI_c",
           "quote": "[가사 해석/발음] Keyshia Cole(키샤 콜) - Love [한글/자막/번역/lyrics] #1",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "러브",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Love → 러브 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -2632,7 +2892,7 @@
         "channels": 2,
         "durationSeconds": 257.48147916666665,
         "byteLength": 1563710,
-        "sha256": "4bc60ad56cce4492c10cd64add689caf1e6b064fa417cd31573c6fff3bd575e1"
+        "sha256": "7237f94c31c0a1b31bc35499b0cbe4d62d7c13ed4e157ea1232fb4dd6392779f"
       },
       "sourceTitle": "Love",
       "rawChartWriterCredit": {
@@ -2697,10 +2957,8 @@
           ]
         }
       ],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "키샤 콜"
       ],
@@ -2719,7 +2977,16 @@
       ],
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "러브"
+          ]
+        }
+      ]
     },
     {
       "index": 26,
@@ -2741,7 +3008,8 @@
         "Christopher",
         "LINJAMA LENNO SAKARI",
         "LUND CHRISTOPHER",
-        "BLOM ARON ROLF"
+        "BLOM ARON ROLF",
+        "배드"
       ],
       "aliases": [
         {
@@ -2749,6 +3017,13 @@
           "name": "Bad",
           "url": "https://www.youtube.com/watch?v=T6tTohWiu5A",
           "quote": "Christopher - Bad (Official Audio) | CHRISTOPHER"
+        },
+        {
+          "kind": "title",
+          "name": "배드",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Bad → 배드 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -2784,7 +3059,7 @@
         "sampleRate": 48000,
         "durationSeconds": 190.376,
         "byteLength": 1168735,
-        "sha256": "76b15ccaeb8bf7139f12f1e751b282ebb761aa5aa0e1ca11ba361772f7d71f84"
+        "sha256": "45bdb1156871035f1aa0623d17209d1afa62873134a99ecb570356717e8fef44"
       },
       "sourceTitle": "Bad",
       "rawChartWriterCredit": {
@@ -2796,10 +3071,18 @@
       "notes": "",
       "namingReviewRequired": true,
       "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
         "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "배드"
+          ]
+        }
+      ]
     },
     {
       "index": 27,
@@ -2822,7 +3105,8 @@
         "Guy Berryman",
         "Jon Buckland",
         "Will Champion",
-        "Chris Martin"
+        "Chris Martin",
+        "비바라비다"
       ],
       "aliases": [
         {
@@ -2830,6 +3114,13 @@
           "name": "Viva La Vida",
           "url": "https://www.youtube.com/watch?v=dvgZkm1xWPE",
           "quote": "Coldplay - Viva La Vida (Official Video) | Coldplay"
+        },
+        {
+          "kind": "title",
+          "name": "비바라비다",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Viva La Vida → 비바라비다 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -2871,7 +3162,7 @@
         "channels": 2,
         "durationSeconds": 242.78325,
         "byteLength": 1483018,
-        "sha256": "cf0727d94c9e28ab0c582f7701cf09cd4dd5182fe29df5873bdff261018aeffb"
+        "sha256": "f5f957f6c2ef07dc7c21727e967cc08269918899ed8932ce4ff53f3fd0ef8490"
       },
       "sourceTitle": "Viva La Vida",
       "rawChartWriterCredit": {
@@ -2883,7 +3174,6 @@
       "notes": "",
       "namingReviewRequired": true,
       "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
         "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
       ],
       "audioSourceReviewRequired": false,
@@ -2915,7 +3205,16 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "비바라비다"
+          ]
+        }
+      ]
     },
     {
       "index": 28,
@@ -2936,7 +3235,8 @@
         "Taylor Swift",
         "ANTONOFF JACK",
         "CLARK ANNIE",
-        "SWIFT TAYLOR ALISON"
+        "SWIFT TAYLOR ALISON",
+        "크루얼서머"
       ],
       "aliases": [
         {
@@ -2944,6 +3244,13 @@
           "name": "Cruel Summer",
           "url": "https://www.youtube.com/watch?v=ic8j13piAhQ",
           "quote": "Taylor Swift - Cruel Summer (Official Audio) | Taylor Swift"
+        },
+        {
+          "kind": "title",
+          "name": "크루얼서머",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Cruel Summer → 크루얼서머 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -2979,7 +3286,7 @@
         "sampleRate": 48000,
         "durationSeconds": 179.399,
         "byteLength": 1087630,
-        "sha256": "d5af9108674d7d77b2fa314510e2830a7dcaa32ced4593005711336500a40b7d"
+        "sha256": "8cacfd5a33ddf01ce08f14e019e5f7ed682a1ed94a96fc636e64f2127b0bddca"
       },
       "sourceTitle": "Cruel Summer",
       "rawChartWriterCredit": {
@@ -2991,10 +3298,18 @@
       "notes": "",
       "namingReviewRequired": true,
       "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
         "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "크루얼서머"
+          ]
+        }
+      ]
     },
     {
       "index": 29,
@@ -3017,7 +3332,8 @@
         "Shawn Mendes",
         "TEDDY GEIGER",
         "SCOTT HARRIS",
-        "GEOFFREY WARBURTON"
+        "GEOFFREY WARBURTON",
+        "데어즈낫씽홀딩미백"
       ],
       "aliases": [
         {
@@ -3031,6 +3347,13 @@
           "url": "https://www.youtube.com/watch?v=jebXGyLLqfw",
           "quote": "There's Nothing Holdin' Me Back - 숀 멘데스 (Shawn Mendes)[가사 해석/번역 / 영어 한글 발음 / 팝송모음 / 팝송대회 / 빌보드차트]",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "데어즈낫씽홀딩미백",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: There's Nothing Holdin' Me Back → 데어즈낫씽홀딩미백 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -3071,7 +3394,7 @@
         "channels": 2,
         "durationSeconds": 199.594125,
         "byteLength": 1221036,
-        "sha256": "aae63810a7b414976da75fa22d1e96733b0f58f02b87ef31e6f78a6214c61689"
+        "sha256": "673a76d4284062aec8e739a8be76bfe1c8f6ec6321ac14f5fddc8bd560bb40b4"
       },
       "sourceTitle": "There's Nothing Holdin' Me Back",
       "rawChartWriterCredit": {
@@ -3081,10 +3404,8 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
       "audioSourceEvidence": {
@@ -3116,7 +3437,16 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "데어즈낫씽홀딩미백"
+          ]
+        }
+      ]
     },
     {
       "index": 30,
@@ -3138,7 +3468,6 @@
         "Justin Tranter"
       ],
       "tags": [
-        "Believer",
         "Imagine Dragons",
         "이매진 드래곤스",
         "Dan Reynolds",
@@ -3147,7 +3476,8 @@
         "Daniel Platzman",
         "Alex da Kid",
         "Robin Fredriksson",
-        "Mattias Larsson"
+        "Mattias Larsson",
+        "빌리버"
       ],
       "aliases": [
         {
@@ -3161,6 +3491,13 @@
           "name": "이매진 드래곤스",
           "url": "https://ko.wikipedia.org/wiki/이매진_드래곤스",
           "quote": "이매진 드래곤스 (영어: Imagine Dragons)는 2008년 미국 네바다주 라스베이거스에서 결성한 얼터너티브 록 밴드이다."
+        },
+        {
+          "kind": "title",
+          "name": "빌리버",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Believer → 빌리버 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": true,
@@ -3208,7 +3545,7 @@
         "sampleRate": 48000,
         "durationSeconds": 202.822,
         "byteLength": 1244635,
-        "sha256": "4bf7c68a71511e431e18f733fafcf9ec4bf5eed24a2fa5d008148843062285b3"
+        "sha256": "ff4a88f8690d066cef5a32a90764566b226301cf46b5ed8f56760526220eccc0"
       },
       "sourceTitle": "Believer",
       "rawChartWriterCredit": {
@@ -3220,12 +3557,19 @@
         "TJ’s raw writer credit represents seven credited names, while the independently retrieved full-songwriter source lists eight. Retained the full sourced list and raw chart credit separately; author-count discrepancy still needs reconciliation."
       ],
       "notes": "TJ’s raw writer credit represents seven credited names, while the independently retrieved full-songwriter source lists eight. Retained the full sourced list and raw chart credit separately; author-count discrepancy still needs reconciliation.",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "이매진 드래곤스"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "빌리버"
+          ]
+        }
       ]
     },
     {
@@ -3247,7 +3591,8 @@
         "Shape Of You",
         "Ed Sheeran",
         "STEVE MAC",
-        "JOHNNY MCDAID"
+        "JOHNNY MCDAID",
+        "셰이프오브유"
       ],
       "aliases": [
         {
@@ -3261,6 +3606,13 @@
           "url": "https://www.youtube.com/watch?v=li4MBgyGYsQ",
           "quote": "Shape of You - 에드 시런(Ed Sheeran) [가사 해석/번역 / 영어 한글 발음]",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "셰이프오브유",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Shape Of You → 셰이프오브유 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -3303,7 +3655,7 @@
         "sampleRate": 48000,
         "durationSeconds": 235.016,
         "byteLength": 1421667,
-        "sha256": "c5dfc1a27eeca32e1545e243bf848ad97b4e43781cdaec5640ea312c0843a156"
+        "sha256": "8e60bcdb30ba7c3681e5ca8fe8d9a75acb0c2d888ffa6ad7a8eadeb6a1f99073"
       },
       "sourceTitle": "Shape Of You",
       "rawChartWriterCredit": {
@@ -3313,12 +3665,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "에드 시런"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "셰이프오브유"
+          ]
+        }
       ]
     },
     {
@@ -3347,7 +3706,8 @@
         "MALIK AMMAR",
         "OMELIO DAN",
         "SCHUSTER JOHAN KARL",
-        "THOMAZ CAMERON"
+        "THOMAZ CAMERON",
+        "페이폰"
       ],
       "aliases": [
         {
@@ -3362,6 +3722,13 @@
           "quote": "Maroon 5 - Sugar [가사 / Lyrics] 아티스트 : Maroon 5 (마룬 5)",
           "kind": "singer",
           "canonicalName": "Maroon 5"
+        },
+        {
+          "kind": "title",
+          "name": "페이폰",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Payphone → 페이폰 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -3402,7 +3769,7 @@
         "channels": 2,
         "durationSeconds": 232.327,
         "byteLength": 1422617,
-        "sha256": "26087dcf87efffc93b1af2c832702a92d5854aec1f41f67d36f6d5acdad588b4"
+        "sha256": "4591e6d129ca851d65888099aeb2521d0b906bc259a13553f7f27e272502e01b"
       },
       "sourceTitle": "Payphone",
       "rawChartWriterCredit": {
@@ -3412,10 +3779,8 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "recordingHistory": [
         {
           "videoId": "KRaWnd3LJfs",
@@ -3439,6 +3804,15 @@
       "audioSourceType": "official_album_audio",
       "singerAliases": [
         "마룬 5"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "페이폰"
+          ]
+        }
       ]
     },
     {
@@ -3461,7 +3835,8 @@
         "Green Day",
         "BILLIE JOE ARMSTRONG",
         "FRANK E III WRIGHT",
-        "MICHAEL RYAN PRITCHARD"
+        "MICHAEL RYAN PRITCHARD",
+        "라스트나이트온어스"
       ],
       "aliases": [
         {
@@ -3475,6 +3850,13 @@
           "url": "https://www.youtube.com/watch?v=VGo2-JsNW84",
           "quote": "아티스트 : 그린 데이 (Green Day)",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "라스트나이트온어스",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Last Night On Earth → 라스트나이트온어스 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -3517,7 +3899,7 @@
         "sampleRate": 48000,
         "durationSeconds": 235.122,
         "byteLength": 1443181,
-        "sha256": "d9c1cd6b85cd7ff43069ed879d273a4405438c52acc63d4c0751ffb25ddcb875"
+        "sha256": "b4d27381482f4e37dc168a9473b1777abf20a1633df2724881b11ceca82f5855"
       },
       "sourceTitle": "Last Night On Earth",
       "rawChartWriterCredit": {
@@ -3527,12 +3909,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "그린 데이"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "라스트나이트온어스"
+          ]
+        }
       ]
     },
     {
@@ -3557,7 +3946,6 @@
       ],
       "tags": [
         "저스틴 비버",
-        "Stay",
         "The Kid LAROI",
         "Justin Bieber",
         "더 키드 라로이",
@@ -3565,7 +3953,8 @@
         "Magnus Hiberg",
         "Charlie Puth",
         "Omer Fedi",
-        "Blake Slatkin"
+        "Blake Slatkin",
+        "스테이"
       ],
       "aliases": [
         {
@@ -3586,6 +3975,13 @@
           "quote": "Justin Bieber (저스틴 비버) - Off My Face [가사/Lyrics]",
           "kind": "singer",
           "canonicalName": "Justin Bieber"
+        },
+        {
+          "kind": "title",
+          "name": "스테이",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Stay → 스테이 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -3644,7 +4040,7 @@
         "channels": 2,
         "durationSeconds": 141.81277083333333,
         "byteLength": 866435,
-        "sha256": "dea8c125d0434ff70dff16d4a1bc4dd005981e9f427617cee2617358e5fe5088"
+        "sha256": "d358c705421114825794d50fc715ea2327e0aeb5303c6f8494f0c6599ca8e9be"
       },
       "sourceTitle": "Stay",
       "rawChartWriterCredit": {
@@ -3654,10 +4050,8 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "recordingHistory": [
         {
           "videoId": "kTJczUoc26U",
@@ -3682,6 +4076,15 @@
       "singerAliases": [
         "저스틴 비버",
         "더 키드 라로이"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "스테이"
+          ]
+        }
       ]
     },
     {
@@ -3701,7 +4104,8 @@
         "All I Want For Christmas Is You",
         "Mariah Carey",
         "AFANASIEFF WALTER N",
-        "CAREY MARIAH"
+        "CAREY MARIAH",
+        "올아이원트포크리스마스이즈유"
       ],
       "aliases": [
         {
@@ -3709,6 +4113,13 @@
           "name": "All I Want For Christmas Is You",
           "url": "https://www.youtube.com/watch?v=bXlk2q_kt3I",
           "quote": "Mariah Carey - All I Want For Christmas Is You (Official Audio) | Mariah Carey"
+        },
+        {
+          "kind": "title",
+          "name": "올아이원트포크리스마스이즈유",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: All I Want For Christmas Is You → 올아이원트포크리스마스이즈유 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -3744,7 +4155,7 @@
         "sampleRate": 48000,
         "durationSeconds": 271.431,
         "byteLength": 1660622,
-        "sha256": "989123f590754569baa1b41a86615d14820c59e3fc4b8a9caf71e849bd72d250"
+        "sha256": "adb9fb0ab1a1ea8ce153e8b4a960ccd0245c809026c1c1c6864f92a0fbd48f5f"
       },
       "sourceTitle": "All I Want For Christmas Is You",
       "rawChartWriterCredit": {
@@ -3756,10 +4167,18 @@
       "notes": "",
       "namingReviewRequired": true,
       "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
         "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "올아이원트포크리스마스이즈유"
+          ]
+        }
+      ]
     },
     {
       "index": 36,
@@ -3778,7 +4197,8 @@
         "Beggin",
         "Maneskin",
         "BOB GAUDIO",
-        "PEGGY FARINA"
+        "PEGGY FARINA",
+        "베긴"
       ],
       "aliases": [
         {
@@ -3786,6 +4206,13 @@
           "name": "Beggin'",
           "url": "https://www.youtube.com/watch?v=D557gnClcwc",
           "quote": "Beggin' | Måneskin Official"
+        },
+        {
+          "kind": "title",
+          "name": "베긴",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Beggin' → 베긴 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -3821,7 +4248,7 @@
         "sampleRate": 48000,
         "durationSeconds": 210.767,
         "byteLength": 1293230,
-        "sha256": "8bf65e551efb2cfa9e29ee6df269d51a6b979f7abc494b3295d14a7be6d5f1b4"
+        "sha256": "2e4ac32232f63ad4867bb40d0076e50bb66345cd3888d2ed69d5d428fc9263c7"
       },
       "sourceTitle": "Beggin'",
       "rawChartWriterCredit": {
@@ -3833,10 +4260,18 @@
       "notes": "",
       "namingReviewRequired": true,
       "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
         "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "베긴"
+          ]
+        }
+      ]
     },
     {
       "index": 37,
@@ -3991,7 +4426,8 @@
         "PRINGLE DANIEL JAMES",
         "PRINGLE LEAH JAQUELINE",
         "SCOLA TIA MARIE",
-        "TORREY JACOB"
+        "TORREY JACOB",
+        "오프마이페이스"
       ],
       "aliases": [
         {
@@ -4024,6 +4460,13 @@
           "url": "https://www.youtube.com/watch?v=TKDpOEkT0cY",
           "quote": "Justin Bieber(저스틴 비버) - Love Yourself [가사/Lyrics]",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "오프마이페이스",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Off My Face → 오프마이페이스 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -4066,7 +4509,7 @@
         "sampleRate": 48000,
         "durationSeconds": 156.551,
         "byteLength": 961536,
-        "sha256": "bac8001d099787104150b2c8482f84e04fd2c8cb246712f3ef06c852179d5bb8"
+        "sha256": "8e45e45d14b014b989b1a7d5bc48a4080f0be553005ab3aa71f6bbac2adbd473"
       },
       "sourceTitle": "Off My Face",
       "rawChartWriterCredit": {
@@ -4076,12 +4519,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "저스틴 비버"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "오프마이페이스"
+          ]
+        }
       ]
     },
     {
@@ -4110,7 +4560,8 @@
         "ADAM LEVINE",
         "JOSHUA COLEMAN",
         "JACOB HINDLIN",
-        "LUKASZ GOTTWALD"
+        "LUKASZ GOTTWALD",
+        "슈거"
       ],
       "aliases": [
         {
@@ -4131,6 +4582,13 @@
           "quote": "Maroon 5 - Sugar [가사 / Lyrics] 아티스트 : Maroon 5 (마룬 5)",
           "kind": "singer",
           "canonicalName": "Maroon 5"
+        },
+        {
+          "kind": "title",
+          "name": "슈거",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Sugar → 슈거 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -4178,7 +4636,7 @@
         "channels": 2,
         "durationSeconds": 234.83366666666666,
         "byteLength": 1441547,
-        "sha256": "71fc3d595daafab371f258cedd5b945c01567deaf08636917e505e12f9517efc"
+        "sha256": "1273ace1a36245473ac62a0892e7ae61c442880f7f422f8bb177ade564a30cd8"
       },
       "sourceTitle": "Sugar",
       "rawChartWriterCredit": {
@@ -4188,10 +4646,8 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "recordingHistory": [
         {
           "videoId": "09R8_2nJtjg",
@@ -4215,6 +4671,15 @@
       "audioSourceType": "official_album_audio",
       "singerAliases": [
         "마룬 5"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "슈거"
+          ]
+        }
       ]
     },
     {
@@ -4235,7 +4700,8 @@
         "This Love",
         "Maroon 5",
         "Carmichael",
-        "Levine"
+        "Levine",
+        "디스러브"
       ],
       "aliases": [
         {
@@ -4256,6 +4722,13 @@
           "url": "https://www.youtube.com/watch?v=xyZbMHsrWaU",
           "quote": "Maroon 5 - Sugar [가사 / Lyrics] 아티스트 : Maroon 5 (마룬 5)",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "디스러브",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: This Love → 디스러브 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -4291,7 +4764,7 @@
         "sampleRate": 48000,
         "durationSeconds": 205.26,
         "byteLength": 1245480,
-        "sha256": "60bf5abf2d7ff9521611b1b17bf357795a5b2cdc82eec831deec9daffa0cecaf"
+        "sha256": "2c9a6969ec5c665eedeb92fe756b9c97ae558b870ff8159915f19413fb946a2c"
       },
       "sourceTitle": "This Love",
       "rawChartWriterCredit": {
@@ -4301,12 +4774,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "마룬 5"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "디스러브"
+          ]
+        }
       ]
     },
     {
@@ -4421,7 +4901,8 @@
         "Just The Two Of Us",
         "Bill Withers",
         "Ralph MacDonald",
-        "William Salter"
+        "William Salter",
+        "저스트더투오브어스"
       ],
       "aliases": [
         {
@@ -4429,6 +4910,13 @@
           "name": "Just The Two Of Us",
           "url": "https://www.youtube.com/watch?v=6IO74QV6wHY",
           "quote": "Grover Washington Jr. - Just the Two of Us (feat. Bill Withers) (Official Audio) | RHINO"
+        },
+        {
+          "kind": "title",
+          "name": "저스트더투오브어스",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Just The Two Of Us → 저스트더투오브어스 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -4464,7 +4952,7 @@
         "sampleRate": 48000,
         "durationSeconds": 446.457,
         "byteLength": 2724842,
-        "sha256": "6d6c2d25c9736df453dd1c5c1e32f166df414cea8376f6a24f91ecb8377646ff"
+        "sha256": "93cf939ac8b2527edb39c9248d2872d07d91bfe91d84dc5d5b3b3dd5dcab20ad"
       },
       "sourceTitle": "Just The Two Of Us",
       "rawChartWriterCredit": {
@@ -4476,10 +4964,18 @@
       "notes": "",
       "namingReviewRequired": true,
       "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
         "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "저스트더투오브어스"
+          ]
+        }
+      ]
     },
     {
       "index": 43,
@@ -4501,7 +4997,8 @@
         "Ruel",
         "VAN DIJK RUEL VINCENT",
         "AARONS SARAH PAIGE",
-        "LANDON MARK"
+        "LANDON MARK",
+        "페인킬러"
       ],
       "aliases": [
         {
@@ -4515,6 +5012,13 @@
           "url": "https://www.youtube.com/watch?v=DrrRMdU7KpI",
           "quote": "Painkiller - 루엘(Ruel) [가사 해석/번역, 영어 한글 발음]",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "페인킬러",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Painkiller → 페인킬러 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -4563,7 +5067,7 @@
         "channels": 2,
         "durationSeconds": 230.44183333333334,
         "byteLength": 1322714,
-        "sha256": "d2f4ac2b41ce5c9f3e483d63c7f783fd3f2eef54055e74f9d1c7a67ff329d745"
+        "sha256": "1101b35d781e6ab6e2d07f924ccbc490734c366106c3f65141deabf9af1722a7"
       },
       "sourceTitle": "Painkiller",
       "rawChartWriterCredit": {
@@ -4573,10 +5077,8 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
       "audioSourceEvidence": {
@@ -4608,7 +5110,16 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "페인킬러"
+          ]
+        }
+      ]
     },
     {
       "index": 44,
@@ -4626,7 +5137,8 @@
         "프랭크 시나트라",
         "Fly Me To The Moon",
         "Frank Sinatra",
-        "Bart Howard"
+        "Bart Howard",
+        "플라이미투더문"
       ],
       "aliases": [
         {
@@ -4653,6 +5165,13 @@
           "url": "https://www.youtube.com/watch?v=dv3ha4AZcrQ",
           "quote": "My Way 마이웨이 - Frank Sinatra(프랭크 시나트라) 가사 해석 한글번역",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "플라이미투더문",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Fly Me To The Moon → 플라이미투더문 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -4701,7 +5220,7 @@
         "sampleRate": 48000,
         "durationSeconds": 147.198,
         "byteLength": 900845,
-        "sha256": "3e8d1bc37ff6850aa1adcbca4489940f5b837c539eea12d952724ea4acde2a4e"
+        "sha256": "87a34725ba38e4caca7087941df7ea35bd0ca55e0cfef4a0f470b0962d792c1e"
       },
       "sourceTitle": "Fly Me To The Moon",
       "rawChartWriterCredit": {
@@ -4711,12 +5230,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "프랭크 시나트라"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "플라이미투더문"
+          ]
+        }
       ]
     },
     {
@@ -4838,7 +5364,8 @@
         "앨리샤 키스",
         "If I Aint Got You",
         "Alicia Keys",
-        "AUGELLOCOOK ALICIA"
+        "AUGELLOCOOK ALICIA",
+        "이프아이에인트갓유"
       ],
       "aliases": [
         {
@@ -4852,6 +5379,13 @@
           "url": "https://www.youtube.com/watch?v=fP4D3Fzw3qw",
           "quote": "Alicia Keys(앨리샤 키스) - If I Ain't Got You 가사 한글 해석 자막 번역",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "이프아이에인트갓유",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: If I Ain't Got You → 이프아이에인트갓유 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -4894,7 +5428,7 @@
         "sampleRate": 48000,
         "durationSeconds": 209.637,
         "byteLength": 1284627,
-        "sha256": "ef7ef191bde6dded84cf85cde0af0dd956ae14b41e9c7694184417f24c23d7ac"
+        "sha256": "f791d787c2ccfe93a304f4e7a67bf5240b5a610500818306e6e3013051733060"
       },
       "sourceTitle": "If I Ain't Got You",
       "rawChartWriterCredit": {
@@ -4904,12 +5438,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "앨리샤 키스"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "이프아이에인트갓유"
+          ]
+        }
       ]
     },
     {
@@ -4937,7 +5478,8 @@
         "Matt Prime",
         "Shy Carter",
         "Maureen McDonald",
-        "Breyan Isaac"
+        "Breyan Isaac",
+        "원콜어웨이"
       ],
       "aliases": [
         {
@@ -4970,6 +5512,13 @@
           "url": "https://www.youtube.com/watch?v=1OKW170JTnU",
           "quote": "Charlie Puth(찰리 푸스) - Dangerously [가사/Lyrics]",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "원콜어웨이",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: One Call Away → 원콜어웨이 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -5036,7 +5585,7 @@
         "channels": 2,
         "durationSeconds": 194.43929166666666,
         "byteLength": 1173067,
-        "sha256": "90dd41fcd646f044c8eaefc664eaca6b0f55a7053836842abe39cee911ba8a10"
+        "sha256": "b7edd17eb37daf20403556fe67eb19282a0406fc97fd79f7db4081971950812d"
       },
       "sourceTitle": "One Call Away",
       "rawChartWriterCredit": {
@@ -5046,10 +5595,8 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
       "audioSourceEvidence": {
@@ -5081,7 +5628,16 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "원콜어웨이"
+          ]
+        }
+      ]
     },
     {
       "index": 48,
@@ -5100,7 +5656,8 @@
         "A Thousand Years",
         "Christina Perri",
         "HODGES DAVID",
-        "PERRI CHRISTINA"
+        "PERRI CHRISTINA",
+        "어사우전드이어즈"
       ],
       "aliases": [
         {
@@ -5108,6 +5665,13 @@
           "name": "A Thousand Years",
           "url": "https://www.youtube.com/watch?v=rtOvBOTyX00",
           "quote": "Christina Perri - A Thousand Years [Official Music Video] | Christina Perri"
+        },
+        {
+          "kind": "title",
+          "name": "어사우전드이어즈",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: A Thousand Years → 어사우전드이어즈 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -5149,7 +5713,7 @@
         "channels": 2,
         "durationSeconds": 285.182875,
         "byteLength": 1750679,
-        "sha256": "3c1f5b206a979928ddb583908cbba926d801d66ec0916e4775ef80e22fcb463b"
+        "sha256": "7548d2e1c3711f6a81d05f73add60105051de8090200e0cd2b614e2641c30dd1"
       },
       "sourceTitle": "A Thousand Years(Twilight Saga : Breaking Dawn Part 1 OST)",
       "rawChartWriterCredit": {
@@ -5161,7 +5725,6 @@
       "notes": "",
       "namingReviewRequired": true,
       "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
         "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
       ],
       "namingHistory": [
@@ -5174,6 +5737,13 @@
             "A Thousand Years"
           ],
           "reason": "Replace prior naming with independently sourced common usage"
+        },
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "어사우전드이어즈"
+          ]
         }
       ],
       "audioSourceReviewRequired": false,
@@ -5222,7 +5792,8 @@
       "tags": [
         "마이클 잭슨",
         "Billie Jean",
-        "Michael Jackson"
+        "Michael Jackson",
+        "빌리진"
       ],
       "aliases": [
         {
@@ -5236,6 +5807,13 @@
           "url": "https://www.youtube.com/watch?v=pepA734Abh0",
           "quote": "Michael Jackson (마이클 잭슨) - Billie Jean",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "빌리진",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Billie Jean → 빌리진 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -5283,7 +5861,7 @@
         "channels": 2,
         "durationSeconds": 294.007,
         "byteLength": 1800742,
-        "sha256": "da8de3346091e0f4594ae7990c4a1dc7d65f9dc29f140aab02dbd5e88914dff5"
+        "sha256": "32b2f420204c1577b0b813de5b6a51913b837fceced61ad0aea5a6d64e15b944"
       },
       "sourceTitle": "Billie Jean",
       "rawChartWriterCredit": {
@@ -5293,10 +5871,8 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [
         "Source is labelled as a music video; matched official audio-only recording still required"
@@ -5329,6 +5905,15 @@
       "audioSourceType": "official_album_audio",
       "singerAliases": [
         "마이클 잭슨"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "빌리진"
+          ]
+        }
       ]
     },
     {
@@ -5349,7 +5934,8 @@
         "Chandelier",
         "Sia",
         "SIA FURLER",
-        "JESSE SHATKIN"
+        "JESSE SHATKIN",
+        "샹들리에"
       ],
       "aliases": [
         {
@@ -5370,6 +5956,13 @@
           "name": "시아",
           "quote": "Sia (시아) - Snowman [가사/Lyrics] #Sia #시아 #Snowman 발매 : 2022.12.30 아티스트 : Sia",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "샹들리에",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Chandelier → 샹들리에 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -5405,7 +5998,7 @@
         "sampleRate": 48000,
         "durationSeconds": 215.794,
         "byteLength": 1322136,
-        "sha256": "59422c7d70c2ad7860855485013ca199ab7b8f27f68d43ecca489fb408def7eb"
+        "sha256": "b0d2bacc66f496f268fe776829315302d6029c918272e27d6ef1fddf72eae2bf"
       },
       "sourceTitle": "Chandelier",
       "rawChartWriterCredit": {
@@ -5415,12 +6008,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "시아"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "샹들리에"
+          ]
+        }
       ]
     },
     {
@@ -5439,7 +6039,8 @@
         "에드 시런",
         "Perfect",
         "Ed Sheeran",
-        "SHEERAN ED"
+        "SHEERAN ED",
+        "퍼펙트"
       ],
       "aliases": [
         {
@@ -5453,6 +6054,13 @@
           "url": "https://www.youtube.com/watch?v=li4MBgyGYsQ",
           "quote": "Shape of You - 에드 시런(Ed Sheeran) [가사 해석/번역 / 영어 한글 발음]",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "퍼펙트",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Perfect → 퍼펙트 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -5488,7 +6096,7 @@
         "sampleRate": 48000,
         "durationSeconds": 263.367,
         "byteLength": 1616682,
-        "sha256": "0a4caa5fdd53707f4c0a4c0499cfba2355911113ee0d25ba7e36209cf4f450bc"
+        "sha256": "a0bce84f5b186780e710a7f2a1409d1ee2f11bf5663d95b94874a6757f2fdfc0"
       },
       "sourceTitle": "Perfect",
       "rawChartWriterCredit": {
@@ -5498,12 +6106,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "에드 시런"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "퍼펙트"
+          ]
+        }
       ]
     },
     {
@@ -5528,7 +6143,8 @@
         "GERMANOTTA STEFANI",
         "HEMBY NATALIE",
         "LINDSEY HILLARY",
-        "MCKENNA LORI"
+        "MCKENNA LORI",
+        "올웨이즈리멤버어스디스웨이"
       ],
       "aliases": [
         {
@@ -5543,6 +6159,13 @@
           "quote": "[MV] 레이디 가가(Lady Gaga), 브루노 마스(Bruno Mars) - Die With A Smile | 한글자막 뮤직비디오",
           "kind": "singer",
           "canonicalName": "Lady Gaga"
+        },
+        {
+          "kind": "title",
+          "name": "올웨이즈리멤버어스디스웨이",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Always Remember Us This Way → 올웨이즈리멤버어스디스웨이 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -5577,7 +6200,7 @@
         "channels": 2,
         "durationSeconds": 207.02452083333333,
         "byteLength": 1270531,
-        "sha256": "58d936cd7f516e33337caaa7a13aa8b472dcba844959e81ff7cec726c861e5cc"
+        "sha256": "2e3a6f5d50d35b86090aa652cd1dd5120a05956c87402e19f219cea9338ccc4f"
       },
       "sourceTitle": "Always Remember Us This Way(A Star Is Born OST)",
       "rawChartWriterCredit": {
@@ -5587,10 +6210,8 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "namingHistory": [
         {
           "previousTitle": "Always Remember Us This Way(A Star Is Born OST)",
@@ -5603,6 +6224,13 @@
             "Always Remember Us This Way"
           ],
           "reason": "Replace prior naming with independently sourced common usage"
+        },
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "올웨이즈리멤버어스디스웨이"
+          ]
         }
       ],
       "audioSourceReviewRequired": false,
@@ -5657,7 +6285,8 @@
         "Santa Tell Me",
         "Ariana Grande",
         "SAVAN HARISH KOTECHA",
-        "ILYA"
+        "ILYA",
+        "산타텔미"
       ],
       "aliases": [
         {
@@ -5671,6 +6300,13 @@
           "url": "https://www.youtube.com/watch?v=-zA3S7vrXgo",
           "quote": "Ariana Grande(아리아나 그란데) - Santa Tell Me [가사/Lyrics]",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "산타텔미",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Santa Tell Me → 산타텔미 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -5705,7 +6341,7 @@
         "sampleRate": 48000,
         "durationSeconds": 204.029,
         "byteLength": 1251749,
-        "sha256": "0379045254dd750e3c55da631d02b0e7bde273b7ceba04823017bfebf591450c"
+        "sha256": "5665e016056f52dbe8bbe38400a558540f44e8d26ca59ac888e5028debbeaf68"
       },
       "sourceTitle": "Santa Tell Me",
       "rawChartWriterCredit": {
@@ -5715,12 +6351,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "아리아나 그란데"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "산타텔미"
+          ]
+        }
       ]
     },
     {
@@ -5859,7 +6502,8 @@
         "One Direction",
         "FALK CARL",
         "KOTECHA SAVAN HARISH",
-        "YACOUB RAMI"
+        "YACOUB RAMI",
+        "왓메이크스유뷰티풀"
       ],
       "aliases": [
         {
@@ -5873,6 +6517,13 @@
           "url": "https://www.youtube.com/watch?v=CuNdgbcDBRk",
           "quote": "One Direction (원 디렉션) - What Makes You Beautiful [가사/Lyrics]",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "왓메이크스유뷰티풀",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: What Makes You Beautiful → 왓메이크스유뷰티풀 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -5915,7 +6566,7 @@
         "sampleRate": 48000,
         "durationSeconds": 200.348,
         "byteLength": 1217557,
-        "sha256": "6c43a0bbd39ef6c4672b74d2380a729a4d75997d7c5f9e8a1b06bdc9faa1040b"
+        "sha256": "5807df12755b0dc364c0f906b723de1178c59512383ff8a7751c66f6860e2990"
       },
       "sourceTitle": "What Makes You Beautiful",
       "rawChartWriterCredit": {
@@ -5925,12 +6576,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "원 디렉션"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "왓메이크스유뷰티풀"
+          ]
+        }
       ]
     },
     {
@@ -5956,7 +6614,6 @@
         "Stephen Morris"
       ],
       "tags": [
-        "Teeth",
         "5 Seconds Of Summer",
         "파이브 세컨즈 오브 서머",
         "Ali Tamposi",
@@ -5965,7 +6622,8 @@
         "Andrew Watt",
         "Bernard Sumner",
         "Carl Sturken",
-        "Evan Rogers"
+        "Evan Rogers",
+        "티스"
       ],
       "aliases": [
         {
@@ -5979,6 +6637,13 @@
           "name": "파이브 세컨즈 오브 서머",
           "url": "https://ko.wikipedia.org/wiki/파이브_세컨즈_오브_서머",
           "quote": "파이브 세컨즈 오브 서머 (5 Seconds of Summer, 이하 5SOS)는 오스트레일리아의 팝 록 밴드이다."
+        },
+        {
+          "kind": "title",
+          "name": "티스",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Teeth → 티스 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": true,
@@ -6032,7 +6697,7 @@
         "channels": 2,
         "durationSeconds": 203.47185416666667,
         "byteLength": 1239847,
-        "sha256": "1be774e80b7f7aa895ddae91fa68dbcd9772f57fb5aa342416cdf453967dd927"
+        "sha256": "08c56f7c05ff1538f5aa88d2117e5ad9ed55b8b782c6017c5bbeed4456cae68c"
       },
       "sourceTitle": "Teeth",
       "rawChartWriterCredit": {
@@ -6044,10 +6709,8 @@
         "TJ’s raw credit names Louis Bell and indicates six additional writers, while the full-songwriter source lists a different 11-name set and omits Louis Bell. Retained both records separately; credit-set discrepancy still needs reconciliation."
       ],
       "notes": "TJ’s raw credit names Louis Bell and indicates six additional writers, while the full-songwriter source lists a different 11-name set and omits Louis Bell. Retained both records separately; credit-set discrepancy still needs reconciliation.",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
       "audioSourceEvidence": {
@@ -6079,7 +6742,16 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "티스"
+          ]
+        }
+      ]
     },
     {
       "index": 57,
@@ -6100,7 +6772,6 @@
       ],
       "tags": [
         "포스트 말론",
-        "Sunflower",
         "Post Malone",
         "Swae Lee",
         "BROWN KHALIF",
@@ -6108,7 +6779,8 @@
         "CARTER LANG",
         "CARL AUSTIN ROSEN",
         "LOUIS BELL",
-        "AUSTIN POST"
+        "AUSTIN POST",
+        "선플라워"
       ],
       "aliases": [
         {
@@ -6123,6 +6795,13 @@
           "quote": "포스트 말론(Post Malone) - Circles [가사/해석/한국어 자막]",
           "kind": "singer",
           "canonicalName": "Post Malone"
+        },
+        {
+          "kind": "title",
+          "name": "선플라워",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Sunflower → 선플라워 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -6158,7 +6837,7 @@
         "sampleRate": 48000,
         "durationSeconds": 161.676,
         "byteLength": 973624,
-        "sha256": "c5618c9138f882868b942b9bbb923ec2e188b55b28ca6d503e7d323e64ff13ff"
+        "sha256": "d0ff07bcca235abf23487a2dc30f22fd7bb9dc41a35e1de82cf78cc82639343d"
       },
       "sourceTitle": "Sunflower(Spider-Man: Into the Spider-Verse OST)",
       "rawChartWriterCredit": {
@@ -6168,10 +6847,8 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "namingHistory": [
         {
           "previousTitle": "Sunflower(Spider-Man: Into the Spider-Verse OST)",
@@ -6187,6 +6864,13 @@
             "Sunflower"
           ],
           "reason": "Replace prior naming with independently sourced common usage"
+        },
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "선플라워"
+          ]
         }
       ],
       "singerAliases": [
@@ -6212,7 +6896,8 @@
         "Beautiful Things",
         "Benson Boone",
         "EVAN BLAIR",
-        "JACK LAFRANTZ"
+        "JACK LAFRANTZ",
+        "뷰티풀씽스"
       ],
       "aliases": [
         {
@@ -6226,6 +6911,13 @@
           "name": "벤슨 분",
           "quote": "아티스트 : 벤슨 분 (Benson Boone) 제목 : Beautiful Things",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "뷰티풀씽스",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Beautiful Things → 뷰티풀씽스 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -6268,7 +6960,7 @@
         "sampleRate": 48000,
         "durationSeconds": 180.322,
         "byteLength": 1101201,
-        "sha256": "26287462438ca017f45c1b53757ddb03ad60e33233a4797a9f05ab77874e8788"
+        "sha256": "093cd5b990ecaaea7b04cdadc710c30415e4d271bb9b084febe4b145eafc94a7"
       },
       "sourceTitle": "Beautiful Things",
       "rawChartWriterCredit": {
@@ -6278,12 +6970,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "벤슨 분"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "뷰티풀씽스"
+          ]
+        }
       ]
     },
     {
@@ -6304,7 +7003,8 @@
         "Idina Menzel",
         "Aurora",
         "KRISTEN ANDERSONLOPEZ",
-        "ROBERT LOPEZ"
+        "ROBERT LOPEZ",
+        "인투디언노운"
       ],
       "aliases": [
         {
@@ -6312,6 +7012,13 @@
           "name": "Into the Unknown",
           "url": "https://www.youtube.com/watch?v=07kWy4mJES8",
           "quote": "Idina Menzel, AURORA - Into the Unknown (From \"Frozen 2\"/Audio Only) | DisneyMusicVEVO"
+        },
+        {
+          "kind": "title",
+          "name": "인투디언노운",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Into the Unknown → 인투디언노운 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -6347,7 +7054,7 @@
         "sampleRate": 48000,
         "durationSeconds": 199.884,
         "byteLength": 1198790,
-        "sha256": "4a57981c32f6c0be9b60fa637c1b0f68be5891d953b790fb73de87629ac5328f"
+        "sha256": "f14db47a04b650cf40b901d3fa431c4cef2c6f248ced5278e91ffbf6463a9356"
       },
       "sourceTitle": "Into the Unknown(Frozen2(겨울왕국2) OST)",
       "rawChartWriterCredit": {
@@ -6359,7 +7066,6 @@
       "notes": "",
       "namingReviewRequired": true,
       "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
         "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
       ],
       "namingHistory": [
@@ -6374,6 +7080,13 @@
             "Into the Unknown"
           ],
           "reason": "Replace prior naming with independently sourced common usage"
+        },
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "인투디언노운"
+          ]
         }
       ],
       "singerAliases": []
@@ -6393,7 +7106,8 @@
       "tags": [
         "Rosa Walton",
         "Hallie Coggins",
-        "WALTON ROSA JEWEL"
+        "WALTON ROSA JEWEL",
+        "아이리얼리원트투스테이앳유어하우스"
       ],
       "aliases": [
         {
@@ -6401,6 +7115,13 @@
           "name": "I Really Want to Stay at Your House",
           "url": "https://www.youtube.com/watch?v=gzbLODUb1sA",
           "quote": "CYBERPUNK 2077 SOUNDTRACK - I REALLY WANT TO STAY AT YOUR HOUSE by Rosa Walton & Hallie Coggins | Lakeshore Records"
+        },
+        {
+          "kind": "title",
+          "name": "아이리얼리원트투스테이앳유어하우스",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: I Really Want to Stay at Your House → 아이리얼리원트투스테이앳유어하우스 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -6436,7 +7157,7 @@
         "sampleRate": 48000,
         "durationSeconds": 246.684,
         "byteLength": 1514353,
-        "sha256": "d0dda6e8e6a0a536d3ab121d071fb925cd734528e62782a423e2c980ac51cc3e"
+        "sha256": "b4333ec30363d6ec5d9e04ab454c61f4f79efeb0c71114e8ef5ef2622dac5631"
       },
       "sourceTitle": "I Really Want to Stay at Your House(Cyberpunk OST)",
       "rawChartWriterCredit": {
@@ -6448,7 +7169,6 @@
       "notes": "",
       "namingReviewRequired": true,
       "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
         "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
       ],
       "namingHistory": [
@@ -6460,6 +7180,13 @@
             "WALTONROSAJEWEL"
           ],
           "reason": "Replace prior naming with independently sourced common usage"
+        },
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "아이리얼리원트투스테이앳유어하우스"
+          ]
         }
       ],
       "singerAliases": []
@@ -6568,7 +7295,8 @@
         "Reality",
         "Richard Sanderson",
         "Vladimir Cosma",
-        "J Jordan"
+        "J Jordan",
+        "리얼리티"
       ],
       "aliases": [
         {
@@ -6576,6 +7304,13 @@
           "name": "Reality",
           "url": "https://www.youtube.com/watch?v=66u3OPuiA1I",
           "quote": "Richard Sanderson reality  official clip | Richard Sanderson"
+        },
+        {
+          "kind": "title",
+          "name": "리얼리티",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Reality → 리얼리티 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -6611,7 +7346,7 @@
         "sampleRate": 48000,
         "durationSeconds": 288.968,
         "byteLength": 1753745,
-        "sha256": "afcde8783316f76b4ab9b5e2dee0c00174bbd6374bfef5ccfdc1f5f858a09d31"
+        "sha256": "ddfd1cf39d6243b910cd04ecf56c743773b356b777648f3f5ddb4a7c117e5646"
       },
       "sourceTitle": "Reality",
       "rawChartWriterCredit": {
@@ -6623,10 +7358,18 @@
       "notes": "",
       "namingReviewRequired": true,
       "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
         "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "리얼리티"
+          ]
+        }
+      ]
     },
     {
       "index": 63,
@@ -6649,7 +7392,8 @@
         "BENJAMIN ALEXANDER KOHN",
         "THOMAS BARNES",
         "PETER KELLEHERLEWIS CAPALDI",
-        "SAMUEL ELLIOT ROMAN"
+        "SAMUEL ELLIOT ROMAN",
+        "섬원유러브드"
       ],
       "aliases": [
         {
@@ -6657,6 +7401,13 @@
           "name": "Someone You Loved",
           "url": "https://www.youtube.com/watch?v=xrcMgO2fgpA",
           "quote": "Lewis Capaldi - Someone You Loved (Official Audio) | Lewis Capaldi"
+        },
+        {
+          "kind": "title",
+          "name": "섬원유러브드",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Someone You Loved → 섬원유러브드 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -6692,7 +7443,7 @@
         "sampleRate": 48000,
         "durationSeconds": 182.812,
         "byteLength": 1115384,
-        "sha256": "5627d7afc4f5259436d07cc962e1f3dbbd061cb6093181699354de2d2ddeb41e"
+        "sha256": "6f983c6caad135ee81c6c04040c11bcbe4c87308c5fabd282b583ea566a0455c"
       },
       "sourceTitle": "Someone You Loved",
       "rawChartWriterCredit": {
@@ -6704,10 +7455,18 @@
       "notes": "",
       "namingReviewRequired": true,
       "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
         "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "섬원유러브드"
+          ]
+        }
+      ]
     },
     {
       "index": 64,
@@ -6733,7 +7492,8 @@
         "HOLTER OSCAR THOMAS",
         "MARTIN MAX",
         "QUENNEVILLE JASON MATTHEW",
-        "TESFAYE ABEL"
+        "TESFAYE ABEL",
+        "블라인딩라이츠"
       ],
       "aliases": [
         {
@@ -6753,6 +7513,13 @@
           "url": "https://www.youtube.com/watch?v=S0eUa8QTsFQ",
           "quote": "The Weeknd 위켄드 - Out Of Time [가사/해석/번역]",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "블라인딩라이츠",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Blinding Lights → 블라인딩라이츠 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -6788,7 +7555,7 @@
         "sampleRate": 48000,
         "durationSeconds": 203.216,
         "byteLength": 1240758,
-        "sha256": "a3a86ff99c46ba3ee34313f99c8960167de488e6bb7390678d9444eefdc0ad14"
+        "sha256": "2564e132e9ca81ec4bd11d30b0eef6164b68b75cd8e48473e5b17660895fc01d"
       },
       "sourceTitle": "Blinding Lights",
       "rawChartWriterCredit": {
@@ -6798,12 +7565,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "위켄드"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "블라인딩라이츠"
+          ]
+        }
       ]
     },
     {
@@ -6821,7 +7595,8 @@
       "tags": [
         "Counting Stars",
         "OneRepublic",
-        "TEDDER RYAN B"
+        "TEDDER RYAN B",
+        "카운팅스타즈"
       ],
       "aliases": [
         {
@@ -6829,6 +7604,13 @@
           "name": "Counting Stars",
           "url": "https://www.youtube.com/watch?v=hT_nvWreIhg",
           "quote": "OneRepublic - Counting Stars | OneRepublic"
+        },
+        {
+          "kind": "title",
+          "name": "카운팅스타즈",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Counting Stars → 카운팅스타즈 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -6864,7 +7646,7 @@
         "sampleRate": 48000,
         "durationSeconds": 283.047,
         "byteLength": 1707902,
-        "sha256": "8992527d8e528a2cc54f321c4b1c88ad16e55d194ca1bdfa1076af1a64815d81"
+        "sha256": "f57ee636e9f99a08579bc0c3183e2c2ea7b2d70be601a739311a3cbe9ec7c531"
       },
       "sourceTitle": "Counting Stars",
       "rawChartWriterCredit": {
@@ -6876,10 +7658,18 @@
       "notes": "",
       "namingReviewRequired": true,
       "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
         "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "카운팅스타즈"
+          ]
+        }
+      ]
     },
     {
       "index": 66,
@@ -6895,7 +7685,8 @@
       ],
       "tags": [
         "Englishman In New York",
-        "Sting"
+        "Sting",
+        "잉글리시맨인뉴욕"
       ],
       "aliases": [
         {
@@ -6903,6 +7694,13 @@
           "name": "Englishman In New York",
           "url": "https://www.youtube.com/watch?v=_HATOKmdaKc",
           "quote": "Sting -  Englishman In New York (Audio) | Sting"
+        },
+        {
+          "kind": "title",
+          "name": "잉글리시맨인뉴욕",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Englishman In New York → 잉글리시맨인뉴욕 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -6938,7 +7736,7 @@
         "sampleRate": 48000,
         "durationSeconds": 267.454,
         "byteLength": 1641565,
-        "sha256": "b92855ea92cfd4ed57227d20710543401b664766beb155f8b7bc09b60c8914fa"
+        "sha256": "0135b4e41dc477459edde33aa1f0b313a8ec621271857eb778379223e11c568e"
       },
       "sourceTitle": "Englishman In New York",
       "rawChartWriterCredit": {
@@ -6950,10 +7748,18 @@
       "notes": "",
       "namingReviewRequired": true,
       "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
         "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "잉글리시맨인뉴욕"
+          ]
+        }
+      ]
     },
     {
       "index": 67,
@@ -7152,7 +7958,8 @@
         "This Is Me",
         "Various Artists",
         "PASEK BENJ",
-        "PAUL JUSTIN NOBLE"
+        "PAUL JUSTIN NOBLE",
+        "디스이즈미"
       ],
       "aliases": [
         {
@@ -7166,6 +7973,13 @@
           "url": "https://www.youtube.com/watch?v=7S7j9pgqKn4",
           "quote": "This Is Me (위대한 쇼맨 ost) - Keala Settle(케알라 세틀) [가사 해석/번역, 영어 한글 발음]",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "디스이즈미",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: This Is Me → 디스이즈미 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -7200,7 +8014,7 @@
         "sampleRate": 48000,
         "durationSeconds": 234.679,
         "byteLength": 1437173,
-        "sha256": "78e950acf0e41a11b6ecaac29049e4a86d46d11d941d0c1e5245f4db32e2647f"
+        "sha256": "f0da289766298c56b624eab193ca5b6b12c5b914736b525accd54e80435a2e2f"
       },
       "sourceTitle": "This Is Me(The Greatest Showman OST)",
       "rawChartWriterCredit": {
@@ -7210,10 +8024,8 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "namingHistory": [
         {
           "previousTitle": "This Is Me(The Greatest Showman OST)",
@@ -7224,6 +8036,13 @@
             "This Is Me"
           ],
           "reason": "Replace prior naming with independently sourced common usage"
+        },
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "디스이즈미"
+          ]
         }
       ],
       "singerAliases": [
@@ -7475,7 +8294,8 @@
       "tags": [
         "Im Yours",
         "Jason Mraz",
-        "MRAZ JASON THOMAS"
+        "MRAZ JASON THOMAS",
+        "아임유어즈"
       ],
       "aliases": [
         {
@@ -7483,6 +8303,13 @@
           "name": "I'm Yours",
           "url": "https://www.youtube.com/watch?v=EkHTsc9PU2A",
           "quote": "Jason Mraz - I'm Yours (Official Video) [4K Remaster] | Jason Mraz"
+        },
+        {
+          "kind": "title",
+          "name": "아임유어즈",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: I'm Yours → 아임유어즈 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -7524,7 +8351,7 @@
         "channels": 2,
         "durationSeconds": 241.01852083333333,
         "byteLength": 1475485,
-        "sha256": "90e25db7830c070ae362a3abbde96f1205db18b8634fce36a227a833f964be86"
+        "sha256": "ecaf9490f9b607d723d8f23a15f66b0cdbe5cc7e3de4378d109eebdca38030de"
       },
       "sourceTitle": "I'm Yours",
       "rawChartWriterCredit": {
@@ -7536,7 +8363,6 @@
       "notes": "",
       "namingReviewRequired": true,
       "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
         "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
       ],
       "audioSourceReviewRequired": false,
@@ -7568,7 +8394,16 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "아임유어즈"
+          ]
+        }
+      ]
     },
     {
       "index": 73,
@@ -7587,7 +8422,8 @@
         "All Of Me",
         "John Legend",
         "GAD TOBY",
-        "LEGEND JOHN"
+        "LEGEND JOHN",
+        "올오브미"
       ],
       "aliases": [
         {
@@ -7595,6 +8431,13 @@
           "name": "All Of Me",
           "url": "https://www.youtube.com/watch?v=450p7goxZqg",
           "quote": "John Legend - All of Me (Official Video) | John Legend"
+        },
+        {
+          "kind": "title",
+          "name": "올오브미",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: All Of Me → 올오브미 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -7636,7 +8479,7 @@
         "channels": 2,
         "durationSeconds": 278.01952083333333,
         "byteLength": 1702875,
-        "sha256": "b83ce5a14a2bf109e6a72fb9c8c396103744e8b43153c8e0271d769a875e7af4"
+        "sha256": "8fe17e9c7a61cf61ee9c166f7eb8b98ce8abf067067e7a23ce891e4c80d58e1c"
       },
       "sourceTitle": "All Of Me",
       "rawChartWriterCredit": {
@@ -7648,7 +8491,6 @@
       "notes": "",
       "namingReviewRequired": true,
       "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
         "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
       ],
       "audioSourceReviewRequired": false,
@@ -7680,7 +8522,16 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "올오브미"
+          ]
+        }
+      ]
     },
     {
       "index": 74,
@@ -7701,7 +8552,8 @@
         "Westlife",
         "Jorgen Elofsson",
         "Dave Kreuger",
-        "Per Nylen"
+        "Per Nylen",
+        "마이러브"
       ],
       "aliases": [
         {
@@ -7709,6 +8561,13 @@
           "name": "My Love",
           "url": "https://www.youtube.com/watch?v=ulOb9gIGGd0",
           "quote": "Westlife - My Love (Official Video) | Westlife "
+        },
+        {
+          "kind": "title",
+          "name": "마이러브",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: My Love → 마이러브 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -7750,7 +8609,7 @@
         "channels": 2,
         "durationSeconds": 231.84664583333333,
         "byteLength": 1414674,
-        "sha256": "3f0b991ff2fd4be9f07f8227712812d79d557993da50f30554edd689db94a367"
+        "sha256": "774dd3beccaac31320ad66ff093731d85cb0109683d051bc80a75ac5deb82bd1"
       },
       "sourceTitle": "My Love",
       "rawChartWriterCredit": {
@@ -7762,7 +8621,6 @@
       "notes": "",
       "namingReviewRequired": true,
       "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
         "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
       ],
       "audioSourceReviewRequired": false,
@@ -7794,7 +8652,16 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "마이러브"
+          ]
+        }
+      ]
     },
     {
       "index": 75,
@@ -7814,7 +8681,8 @@
         "When We Were Young",
         "Adele",
         "JESSO TOBIAS MACDONALD",
-        "ADKINS ADELE LAURIE BLUE"
+        "ADKINS ADELE LAURIE BLUE",
+        "웬위워영"
       ],
       "aliases": [
         {
@@ -7841,6 +8709,13 @@
           "name": "아델",
           "quote": "Hello - Adele (아델) 가사 한글 해석",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "웬위워영",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: When We Were Young → 웬위워영 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -7875,7 +8750,7 @@
         "channels": 2,
         "durationSeconds": 292.36945833333334,
         "byteLength": 1792239,
-        "sha256": "a215801f10c89ee5dc6d893c642d9a154105a1b87c30e71919ac0af41d9222f3"
+        "sha256": "a3aea65be639ca87814bdf894d621cd1592318d38171921d919ed2c66cb72ddd"
       },
       "sourceTitle": "When We Were Young",
       "rawChartWriterCredit": {
@@ -7885,10 +8760,8 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
       "audioSourceEvidence": {
@@ -7920,7 +8793,16 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "웬위워영"
+          ]
+        }
+      ]
     },
     {
       "index": 76,
@@ -7938,7 +8820,8 @@
         "시아",
         "How Far Ill Go",
         "Alessia Cara",
-        "MIRANDA LIN MANUEL"
+        "MIRANDA LIN MANUEL",
+        "하우파아일고"
       ],
       "aliases": [
         {
@@ -7953,6 +8836,13 @@
           "quote": "Sia (시아) - Snowman [가사/Lyrics] #Sia #시아 #Snowman 발매 : 2022.12.30 아티스트 : Sia",
           "kind": "singer",
           "canonicalName": "Sia"
+        },
+        {
+          "kind": "title",
+          "name": "하우파아일고",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: How Far I'll Go → 하우파아일고 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -7994,7 +8884,7 @@
         "channels": 2,
         "durationSeconds": 182.03985416666666,
         "byteLength": 1110846,
-        "sha256": "5673b6cb37989826f24481e0d3721ce42b5426e18b2445959432002812ba65bd"
+        "sha256": "48337d274f0db99d61f10b8704e7d9f2e68d06eb9b036e28ae66765a60799523"
       },
       "sourceTitle": "How Far I'll Go(Moana OST)",
       "rawChartWriterCredit": {
@@ -8004,10 +8894,8 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "namingHistory": [
         {
           "previousTitle": "How Far I'll Go(Moana OST)",
@@ -8018,6 +8906,13 @@
             "How Far I'll Go"
           ],
           "reason": "Replace prior naming with independently sourced common usage"
+        },
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "하우파아일고"
+          ]
         }
       ],
       "audioSourceReviewRequired": false,
@@ -8187,7 +9082,8 @@
         "Babyface",
         "Jeff Bhasker",
         "Brody Brown",
-        "Philip Lawrence"
+        "Philip Lawrence",
+        "투굿투세이굿바이"
       ],
       "aliases": [
         {
@@ -8226,6 +9122,13 @@
           "url": "https://www.youtube.com/watch?v=CP9PXe74mW8",
           "quote": "Bruno Mars (브루노 마스) - Marry You",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "투굿투세이굿바이",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Too Good To Say Goodbye → 투굿투세이굿바이 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -8301,7 +9204,7 @@
         "channels": 2,
         "durationSeconds": 281.2006666666667,
         "byteLength": 1723313,
-        "sha256": "45196b3e016a711bfb616d5966a1ce73a998b1973f7ac4481c9201d13c8bf3a4"
+        "sha256": "f016d23adc85b08ad05fee49e73bc4018e8c277ede4cff510db8f97d438b603d"
       },
       "sourceTitle": "Too Good To Say Goodbye",
       "rawChartWriterCredit": {
@@ -8361,10 +9264,8 @@
           ]
         }
       ],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "브루노 마스"
       ],
@@ -8383,7 +9284,16 @@
       ],
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "투굿투세이굿바이"
+          ]
+        }
+      ]
     },
     {
       "index": 79,
@@ -8405,7 +9315,8 @@
         "Beyonce",
         "KNOWLES BEYONCE GISSELLE",
         "NASH TERIUS YOUNGDELL",
-        "TAYLOR ROBERT SHEA"
+        "TAYLOR ROBERT SHEA",
+        "러브온탑"
       ],
       "aliases": [
         {
@@ -8419,6 +9330,13 @@
           "url": "https://www.youtube.com/watch?v=dGwRtjDgsAg",
           "quote": "Beyonce (비욘세) - Love On Top (가사/해석/lyrics)",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "러브온탑",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Love On Top → 러브온탑 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -8467,7 +9385,7 @@
         "channels": 2,
         "durationSeconds": 267.82595833333335,
         "byteLength": 1634248,
-        "sha256": "7ed709abdcdf8a6e711954ba3ae37aa57a7cbc2e285655ab7565b2866bf3721e"
+        "sha256": "0303427edc0eaa1586107834c38a2bea0e8e4b3e66a47f55d41598cffdd12dc6"
       },
       "sourceTitle": "Love On Top",
       "rawChartWriterCredit": {
@@ -8477,10 +9395,8 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
       "audioSourceEvidence": {
@@ -8512,7 +9428,16 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "러브온탑"
+          ]
+        }
+      ]
     },
     {
       "index": 80,
@@ -8532,7 +9457,8 @@
         "From The Start",
         "Laufey",
         "JONSDOTTIR LAUFEY LIN",
-        "STEWART SPENCER EUGENE"
+        "STEWART SPENCER EUGENE",
+        "프롬더스타트"
       ],
       "aliases": [
         {
@@ -8546,6 +9472,13 @@
           "url": "https://www.youtube.com/watch?v=944jqBPIt0E",
           "quote": "Laufey (레이베이)",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "프롬더스타트",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: From The Start → 프롬더스타트 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -8588,7 +9521,7 @@
         "sampleRate": 48000,
         "durationSeconds": 169.559,
         "byteLength": 1034346,
-        "sha256": "90f8e10751759f9844ff2c8f7e884ece3b0c56e559c2ff768d0bf009fff96922"
+        "sha256": "6cf25aff64a809cb23d59c8a0c4dac444c4627e5d44a918e2893f597ebd192c1"
       },
       "sourceTitle": "From The Start",
       "rawChartWriterCredit": {
@@ -8598,12 +9531,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "레이베이"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "프롬더스타트"
+          ]
+        }
       ]
     },
     {
@@ -8754,7 +9694,8 @@
         "Wiz Khalifa",
         "Charlie Puth",
         "CEDAR ANDREW",
-        "FRANKS JUSTIN SCOTT"
+        "FRANKS JUSTIN SCOTT",
+        "씨유어게인"
       ],
       "aliases": [
         {
@@ -8775,6 +9716,13 @@
           "quote": "Charlie Puth(찰리 푸스) - One Call Away [가사/Lyrics]",
           "kind": "singer",
           "canonicalName": "Charlie Puth"
+        },
+        {
+          "kind": "title",
+          "name": "씨유어게인",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: See You Again → 씨유어게인 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -8822,7 +9770,7 @@
         "channels": 2,
         "durationSeconds": 229.53277083333333,
         "byteLength": 1406548,
-        "sha256": "c93f6a34c3218b6664de2817d9531673fb43e42a401975ca44eb4d5c5b439a20"
+        "sha256": "2f826792174c107b2e93fd265e4d9affa4733c3b514ea6eaaa608ca8d8f16296"
       },
       "sourceTitle": "See You Again(폴워커추모엔딩곡)",
       "rawChartWriterCredit": {
@@ -8832,10 +9780,8 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "namingHistory": [
         {
           "previousTitle": "See You Again(폴워커추모엔딩곡)",
@@ -8850,6 +9796,13 @@
             "See You Again"
           ],
           "reason": "Replace prior naming with independently sourced common usage"
+        },
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "씨유어게인"
+          ]
         }
       ],
       "audioSourceReviewRequired": false,
@@ -8911,7 +9864,8 @@
         "IERO FRANK",
         "TORO RAY",
         "WAY GERARD",
-        "WAY MICHAEL"
+        "WAY MICHAEL",
+        "웰컴투더블랙퍼레이드"
       ],
       "aliases": [
         {
@@ -8925,6 +9879,13 @@
           "name": "마이 케미컬 로맨스",
           "quote": "마이 케미컬 로맨스 (My Chemical Romance) - Welcome To The Black Parade 가사 번역 뮤직비디오",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "웰컴투더블랙퍼레이드",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Welcome To The Black Parade → 웰컴투더블랙퍼레이드 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -8973,7 +9934,7 @@
         "channels": 2,
         "durationSeconds": 312.048375,
         "byteLength": 1910438,
-        "sha256": "a5ea0540b481bcaef2ffd87f77c4d84192641b971c5ef169e5ae4c45ff3f2bef"
+        "sha256": "45a0eda3290488c5bfdfe5c5537f00b5854cc08e177e38fbcbec00ea6e462853"
       },
       "sourceTitle": "Welcome To The Black Parade",
       "rawChartWriterCredit": {
@@ -8983,10 +9944,8 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
       "audioSourceEvidence": {
@@ -9018,7 +9977,16 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "웰컴투더블랙퍼레이드"
+          ]
+        }
+      ]
     },
     {
       "index": 84,
@@ -9044,7 +10012,8 @@
         "POST AUSTIN RICHARD",
         "BELL LOUIS RUSSELL",
         "WALSH BILLY",
-        "GUNESBERK KAAN"
+        "GUNESBERK KAAN",
+        "서클스"
       ],
       "aliases": [
         {
@@ -9065,6 +10034,13 @@
           "quote": "포스트 말론(Post Malone) - Circles [가사/해석/한국어 자막]",
           "kind": "singer",
           "canonicalName": "Post Malone"
+        },
+        {
+          "kind": "title",
+          "name": "서클스",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Circles → 서클스 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -9107,7 +10083,7 @@
         "sampleRate": 48000,
         "durationSeconds": 215.36,
         "byteLength": 1317447,
-        "sha256": "f107b409315bf8322a4bb0756de06ff8f3397530d0d184e43f78f1a72ce6abf8"
+        "sha256": "8a4f5100a6cedbc79b1309c8a64113aecaa12792621ac028054dd9e7b85e5138"
       },
       "sourceTitle": "Circles",
       "rawChartWriterCredit": {
@@ -9117,12 +10093,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "포스트 말론"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "서클스"
+          ]
+        }
       ]
     },
     {
@@ -9144,7 +10127,8 @@
         "GHOST TOWN",
         "Benson Boone",
         "NOLAN WINFIELD SIPE",
-        "TUSHAR APTE"
+        "TUSHAR APTE",
+        "고스트타운"
       ],
       "aliases": [
         {
@@ -9158,6 +10142,13 @@
           "name": "벤슨 분",
           "quote": "아티스트 : 벤슨 분 (Benson Boone) 제목 : Beautiful Things",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "고스트타운",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: GHOST TOWN → 고스트타운 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -9193,7 +10184,7 @@
         "sampleRate": 48000,
         "durationSeconds": 193.731,
         "byteLength": 1187024,
-        "sha256": "bddfc6b11675dfeff18f767b607600c914b2c80b5b0213d309ba125e5c08e9ff"
+        "sha256": "dd572dc5f45024fb6f57a1d0faccc8588c69928c1648ff24fadeb1a3407609c5"
       },
       "sourceTitle": "GHOST TOWN",
       "rawChartWriterCredit": {
@@ -9203,12 +10194,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "벤슨 분"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "고스트타운"
+          ]
+        }
       ]
     },
     {
@@ -9323,7 +10321,8 @@
         "HOLTER OSCAR THOMAS",
         "LOPATIN DANIEL",
         "MAX MARTIN",
-        "TESFAYE ABEL"
+        "TESFAYE ABEL",
+        "아웃오브타임"
       ],
       "aliases": [
         {
@@ -9343,6 +10342,13 @@
           "name": "위켄드",
           "url": "https://music.bugs.co.kr/track/4821881",
           "quote": "Die For You/The Weeknd(위켄드) - 벅스"
+        },
+        {
+          "kind": "title",
+          "name": "아웃오브타임",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Out of Time → 아웃오브타임 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -9385,7 +10391,7 @@
         "sampleRate": 48000,
         "durationSeconds": 214.316,
         "byteLength": 1316227,
-        "sha256": "49b3397afd253ad0249b063b49656a2bfe458b73c96b2da0cb233386ac00f313"
+        "sha256": "2f500b703559c6234009d1fe165f8f04c805989b1a9aace1781056271fef896a"
       },
       "sourceTitle": "Out of Time",
       "rawChartWriterCredit": {
@@ -9395,12 +10401,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "위켄드"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "아웃오브타임"
+          ]
+        }
       ]
     },
     {
@@ -9421,7 +10434,8 @@
         "Sunday Morning",
         "Maroon 5",
         "Carmichael",
-        "Levine"
+        "Levine",
+        "선데이모닝"
       ],
       "aliases": [
         {
@@ -9442,6 +10456,13 @@
           "url": "https://www.youtube.com/watch?v=xyZbMHsrWaU",
           "quote": "Maroon 5 - Sugar [가사 / Lyrics] 아티스트 : Maroon 5 (마룬 5)",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "선데이모닝",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Sunday Morning → 선데이모닝 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -9477,7 +10498,7 @@
         "sampleRate": 48000,
         "durationSeconds": 264.331,
         "byteLength": 1608894,
-        "sha256": "fc7de37d57b8d1bf5fa6b75b76c6aad0642a89cc0b140868d4ae62b9cbbded61"
+        "sha256": "56cb361d66e29673974a3490c77215a1f51775a77e7a98a5c046cbed887ae031"
       },
       "sourceTitle": "Sunday Morning",
       "rawChartWriterCredit": {
@@ -9487,12 +10508,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "마룬 5"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "선데이모닝"
+          ]
+        }
       ]
     },
     {
@@ -9518,7 +10546,8 @@
         "GERMANOTTA STEFANI",
         "RONSON MARK",
         "ROSSOMANDO ANTHONY",
-        "WYATT ANDREW"
+        "WYATT ANDREW",
+        "샬로우"
       ],
       "aliases": [
         {
@@ -9533,6 +10562,13 @@
           "quote": "[MV] 레이디 가가(Lady Gaga), 브루노 마스(Bruno Mars) - Die With A Smile | 한글자막 뮤직비디오",
           "kind": "singer",
           "canonicalName": "Lady Gaga"
+        },
+        {
+          "kind": "title",
+          "name": "샬로우",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Shallow → 샬로우 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -9574,7 +10610,7 @@
         "channels": 2,
         "durationSeconds": 216.13835416666666,
         "byteLength": 1327192,
-        "sha256": "ddd3fe59c20234ea85fc104b2540971438bddab26a5bbfddbb7d6019123f5c6a"
+        "sha256": "49fe8b9aec657fe7ca197a70513b136e382b1b02a1ea46a9e39c26afa193fd16"
       },
       "sourceTitle": "Shallow(A Star Is Born OST)",
       "rawChartWriterCredit": {
@@ -9584,10 +10620,8 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "namingHistory": [
         {
           "previousTitle": "Shallow(A Star Is Born OST)",
@@ -9602,6 +10636,13 @@
             "Shallow"
           ],
           "reason": "Replace prior naming with independently sourced common usage"
+        },
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "샬로우"
+          ]
         }
       ],
       "audioSourceReviewRequired": false,
@@ -9657,7 +10698,8 @@
         "Bruno Mars",
         "HERNANDEZ PETER GENE",
         "LAWRENCE PHILIP MARTIN",
-        "LEVINE ARI"
+        "LEVINE ARI",
+        "메리유"
       ],
       "aliases": [
         {
@@ -9696,6 +10738,13 @@
           "url": "https://www.youtube.com/watch?v=y82-7klxNbQ",
           "quote": "Too Good to Say Goodbye - 브루노 마스 (Bruno Mars) 가사 한글 해석",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "메리유",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Marry You → 메리유 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -9738,7 +10787,7 @@
         "sampleRate": 48000,
         "durationSeconds": 227.435,
         "byteLength": 1396314,
-        "sha256": "3d673b40b47fa25dd35122b1dd98ea5e635b866321612610814dcbdf9ddab42f"
+        "sha256": "55bad4f0f946fc9713ee0b304029eaffa04501bccbbbbdbad1be365ce6ba984c"
       },
       "sourceTitle": "Marry You",
       "rawChartWriterCredit": {
@@ -9748,12 +10797,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "브루노 마스"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "메리유"
+          ]
+        }
       ]
     },
     {
@@ -9781,7 +10837,8 @@
         "Mitch Rowland",
         "Ryan Nasci",
         "Alex Salibian",
-        "Tyler Johnson"
+        "Tyler Johnson",
+        "사인오브더타임즈"
       ],
       "aliases": [
         {
@@ -9795,6 +10852,13 @@
           "name": "해리 스타일스",
           "url": "https://ko.wikipedia.org/wiki/해리_스타일스",
           "quote": "해리 스타일스 - 위키백과, 우리 모두의 백과사전."
+        },
+        {
+          "kind": "title",
+          "name": "사인오브더타임즈",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Sign Of The Times → 사인오브더타임즈 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -9842,7 +10906,7 @@
         "sampleRate": 48000,
         "durationSeconds": 341.816,
         "byteLength": 2087944,
-        "sha256": "c390401c22367b3d22a1ae1fbcf016b66a314ce567e7ef9ddf2e4dcd64c0d13a"
+        "sha256": "032a4755d397cc7c9deb91659d21d2d41ff7ab17d30ec18437974a44b7d00761"
       },
       "sourceTitle": "Sign Of The Times",
       "rawChartWriterCredit": {
@@ -9852,12 +10916,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "해리 스타일스"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "사인오브더타임즈"
+          ]
+        }
       ]
     },
     {
@@ -9881,7 +10952,6 @@
         "Ilsey Juber"
       ],
       "tags": [
-        "High Hopes",
         "Panic At The Disco",
         "패닉 앳 더 디스코",
         "Brendon Urie",
@@ -9890,7 +10960,8 @@
         "Lauren Pritchard",
         "Sam Hollander",
         "William LobbanBean",
-        "Jonas Jeberg"
+        "Jonas Jeberg",
+        "하이호프스"
       ],
       "aliases": [
         {
@@ -9904,6 +10975,13 @@
           "name": "패닉 앳 더 디스코",
           "url": "https://music.bugs.co.kr/track/5222062",
           "quote": "High Hopes/Panic! At The Disco(패닉 앳 더 디스코) - 벅스"
+        },
+        {
+          "kind": "title",
+          "name": "하이호프스",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: High Hopes → 하이호프스 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -9951,7 +11029,7 @@
         "sampleRate": 48000,
         "durationSeconds": 190.98,
         "byteLength": 1166593,
-        "sha256": "41102a64258bcf91d83356189f24f755a8bb82d6c08ded5f3612e13bdb622944"
+        "sha256": "c2b2f397dd5562f7366544ec8c8c0f365a9f706e6ee74e030ca61512ee0fd57b"
       },
       "sourceTitle": "High Hopes",
       "rawChartWriterCredit": {
@@ -9961,12 +11039,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "패닉 앳 더 디스코"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "하이호프스"
+          ]
+        }
       ]
     },
     {
@@ -9990,7 +11075,8 @@
         "Charlie PuthFeatSelena Gomez",
         "CHARLIE PUTH",
         "JACOB KASHER HINDLIN",
-        "SELENA MARIE GOMEZ"
+        "SELENA MARIE GOMEZ",
+        "위돈트토크애니모어"
       ],
       "aliases": [
         {
@@ -10024,6 +11110,13 @@
           "quote": "찰리 푸스 & 셀레나 고메즈 (Charlie Puth & Selena Gomez) - We Don't Talk Anymore 가사 번역 라이브 비디오",
           "kind": "singer",
           "canonicalName": "Selena Gomez"
+        },
+        {
+          "kind": "title",
+          "name": "위돈트토크애니모어",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: We Don't Talk Anymore → 위돈트토크애니모어 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -10066,7 +11159,7 @@
         "sampleRate": 48000,
         "durationSeconds": 217.706,
         "byteLength": 1328760,
-        "sha256": "9d4baba7e7c67a5d804273c8a532cb0c80fc9c8da50325b9b15f316720385a64"
+        "sha256": "2b273b3fa2346b2840ddb8b58773d84a65b87f8f58480acf17f2b9f6ac388889"
       },
       "sourceTitle": "We Don't Talk Anymore",
       "rawChartWriterCredit": {
@@ -10076,13 +11169,20 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "찰리 푸스",
         "셀레나 고메즈"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "위돈트토크애니모어"
+          ]
+        }
       ]
     },
     {
@@ -10105,7 +11205,8 @@
         "Sam SmithFeatJohn Legend",
         "SAM SMITH",
         "JAMES NAPIER",
-        "ELVIN SMITH"
+        "ELVIN SMITH",
+        "레이미다운"
       ],
       "aliases": [
         {
@@ -10120,6 +11221,13 @@
           "quote": "I’m Not the Only One - Sam Smith (샘 스미스) [가사 해석/번역]",
           "kind": "singer",
           "canonicalName": "Sam Smith"
+        },
+        {
+          "kind": "title",
+          "name": "레이미다운",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Lay Me Down → 레이미다운 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -10154,7 +11262,7 @@
         "sampleRate": 48000,
         "durationSeconds": 254.207,
         "byteLength": 1560607,
-        "sha256": "624bfa965affa34e1a2057fbd1f1df8dea4caf86cf317b2ef0ac6b668f211b6e"
+        "sha256": "d9c0fc4d87c6831ab4cb040e1cac484c9c6f4924acf0afd6428af12c0801727c"
       },
       "sourceTitle": "Lay Me Down",
       "rawChartWriterCredit": {
@@ -10164,12 +11272,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "샘 스미스"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "레이미다운"
+          ]
+        }
       ]
     },
     {
@@ -10189,7 +11304,8 @@
         "Hero",
         "Mili",
         "CASSIE WEI",
-        "SAKAI HIROKAZU"
+        "SAKAI HIROKAZU",
+        "히어로"
       ],
       "aliases": [
         {
@@ -10197,6 +11313,13 @@
           "name": "Hero",
           "url": "https://www.youtube.com/watch?v=ZuifkacZ0TA",
           "quote": "Mili - Hero [Limbus Company] | Mili"
+        },
+        {
+          "kind": "title",
+          "name": "히어로",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Hero → 히어로 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -10232,7 +11355,7 @@
         "sampleRate": 48000,
         "durationSeconds": 214.768,
         "byteLength": 1282842,
-        "sha256": "3904f9e97e90c56bfedae994d954878314923fafc5ff03a48923dafb237b7402"
+        "sha256": "d672564ca97478a1605b90d694384f703198196655c5b624ef4d90de031920e1"
       },
       "sourceTitle": "Hero(림버스컴퍼니OST)",
       "rawChartWriterCredit": {
@@ -10244,7 +11367,6 @@
       "notes": "",
       "namingReviewRequired": true,
       "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
         "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
       ],
       "namingHistory": [
@@ -10258,6 +11380,13 @@
             "Hero"
           ],
           "reason": "Replace prior naming with independently sourced common usage"
+        },
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "히어로"
+          ]
         }
       ],
       "singerAliases": []
@@ -10279,7 +11408,8 @@
         "Cant Take My Eyes Off You",
         "Morten Harket",
         "Bob Crewe",
-        "Bob Gaudio"
+        "Bob Gaudio",
+        "캔트테이크마이아이즈오프유"
       ],
       "aliases": [
         {
@@ -10287,6 +11417,13 @@
           "name": "Can't Take My Eyes Off You",
           "url": "https://www.youtube.com/watch?v=3pYqVj-FyBk",
           "quote": "Can't Take My Eyes off You | Morten Harket - Topic"
+        },
+        {
+          "kind": "title",
+          "name": "캔트테이크마이아이즈오프유",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Can't Take My Eyes Off You → 캔트테이크마이아이즈오프유 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -10322,7 +11459,7 @@
         "sampleRate": 48000,
         "durationSeconds": 223.874,
         "byteLength": 1368902,
-        "sha256": "f1a752c217b051f1ea374c26f137c0274a2fcd6a113cc18c6bfd9adc84c07388"
+        "sha256": "5b594794e7918fa4a6d7b628c54267280148f67ee97b3907f360aff09f5f8886"
       },
       "sourceTitle": "Can't Take My Eyes Off You",
       "rawChartWriterCredit": {
@@ -10334,10 +11471,18 @@
       "notes": "",
       "namingReviewRequired": true,
       "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
         "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "캔트테이크마이아이즈오프유"
+          ]
+        }
+      ]
     },
     {
       "index": 97,
@@ -10357,7 +11502,8 @@
         "Risk It All",
         "Bruno Mars",
         "ARJONA VAZQUEZ JOHAN",
-        "HERNANDEZ PETER GENE"
+        "HERNANDEZ PETER GENE",
+        "리스크잇올"
       ],
       "aliases": [
         {
@@ -10396,6 +11542,13 @@
           "url": "https://www.youtube.com/watch?v=CP9PXe74mW8",
           "quote": "Bruno Mars (브루노 마스) - Marry You",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "리스크잇올",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Risk It All → 리스크잇올 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -10437,7 +11590,7 @@
         "channels": 2,
         "durationSeconds": 197.68166666666667,
         "byteLength": 1212162,
-        "sha256": "976577fee9e0b15b1cc2f2a93bda272c319f716570f18b2c17d4efc786754271"
+        "sha256": "9fd8336723c5c6de3e24cc3c1aff0b2ec93ab3fb1b5d817d333bf17c1cd5e2e6"
       },
       "sourceTitle": "Risk It All",
       "rawChartWriterCredit": {
@@ -10447,10 +11600,8 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
       "audioSourceEvidence": {
@@ -10482,7 +11633,16 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "리스크잇올"
+          ]
+        }
+      ]
     },
     {
       "index": 98,
@@ -10500,7 +11660,8 @@
       "tags": [
         "Falling Slowly",
         "Glen Hansard",
-        "Marketa Irglova"
+        "Marketa Irglova",
+        "폴링슬로울리"
       ],
       "aliases": [
         {
@@ -10508,6 +11669,13 @@
           "name": "Falling Slowly",
           "url": "https://www.youtube.com/watch?v=agf4tUnxotA",
           "quote": "Falling Slowly | Glen Hansard"
+        },
+        {
+          "kind": "title",
+          "name": "폴링슬로울리",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Falling Slowly → 폴링슬로울리 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -10550,7 +11718,7 @@
         "sampleRate": 48000,
         "durationSeconds": 244.14,
         "byteLength": 1492846,
-        "sha256": "4b77bb19a33007ddd15fe09324849b176448bb38088a850dc21d9543590fad56"
+        "sha256": "04df2631b1e91c19ce36d9b9c55f59ce42825ebf9842ffd15e74afa72a5eb5c9"
       },
       "sourceTitle": "Falling Slowly(Once OST)",
       "rawChartWriterCredit": {
@@ -10562,7 +11730,6 @@
       "notes": "",
       "namingReviewRequired": true,
       "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
         "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
       ],
       "namingHistory": [
@@ -10576,6 +11743,13 @@
             "Falling Slowly"
           ],
           "reason": "Replace prior naming with independently sourced common usage"
+        },
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "폴링슬로울리"
+          ]
         }
       ],
       "singerAliases": []
@@ -10598,7 +11772,8 @@
         "Hello",
         "Adele",
         "ADKINS ADELE",
-        "KURSTIN GREGORY ALLEN"
+        "KURSTIN GREGORY ALLEN",
+        "헬로"
       ],
       "aliases": [
         {
@@ -10625,6 +11800,13 @@
           "url": "https://www.youtube.com/watch?v=PF5uH0W7ZjY",
           "quote": "아델 - Rolling In The Deep 가사 번역",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "헬로",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Hello → 헬로 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -10667,7 +11849,7 @@
         "sampleRate": 48000,
         "durationSeconds": 295.539,
         "byteLength": 1810996,
-        "sha256": "b9402cfb324624f14c6743431e9f037c0e0b47ec22bd5ebe0a2380a211958dbb"
+        "sha256": "761b7776b197f6f1f89186112db27c81da805e7a5073f0399dc6518ef38c1c4e"
       },
       "sourceTitle": "Hello",
       "rawChartWriterCredit": {
@@ -10677,12 +11859,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "아델"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "헬로"
+          ]
+        }
       ]
     },
     {
@@ -10705,7 +11894,8 @@
         "Beyonce",
         "E Kidd Bogart",
         "Beyonce Knowles",
-        "Ryan Tedder"
+        "Ryan Tedder",
+        "헤일로"
       ],
       "aliases": [
         {
@@ -10719,6 +11909,13 @@
           "url": "https://www.youtube.com/watch?v=dGwRtjDgsAg",
           "quote": "Beyonce (비욘세) - Love On Top (가사/해석/lyrics)",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "헤일로",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Halo → 헤일로 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -10754,7 +11951,7 @@
         "sampleRate": 48000,
         "durationSeconds": 224.776,
         "byteLength": 1373249,
-        "sha256": "0e4dd921a866716ccebfa36f64ed5eaf8293717341a811fd2e2b2506a62ba884"
+        "sha256": "7be206f65c2d34d5b6d2bb38319dc106d144ad81fc8dbbeed72fb4513d0c3832"
       },
       "sourceTitle": "Halo",
       "rawChartWriterCredit": {
@@ -10764,12 +11961,19 @@
       "writerCreditsComplete": true,
       "reviewReasons": [],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "비욘세"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "헤일로"
+          ]
+        }
       ]
     }
   ],
@@ -10786,5 +11990,5 @@
       69
     ]
   },
-  "namingReviewRequiredCount": 86
+  "namingReviewRequiredCount": 28
 }

@@ -24,3 +24,5 @@ Chrome의 실제 YouTube 검색 결과와 영상 설명을 근거로 68곡의 �
 사전 검사에서 다섯 원본 목록의 음원 검사, 보컬로이드 검사, 내보낸 파일의 해시·전체 길이·정답 태그 제거, 두 SQLite DB의 무결성과 외래키 검사,541곡 선택 보존을 확인했다. Windows에서 열려 있는 DB의 재생성 실패를 재현해 SQLite backup 방식으로 갱신하도록 수정했다. 배포 후에는 서비스 상태, 웹 healthz, 플러그인 기동과 다섯 목록의 실제 API 응답을 확인했다.
 
 통합 DB는 [playlists/catalogue.sqlite3](../playlists/catalogue.sqlite3), 곡별 조사 근거는 [검색 조사 기록](../catalogues/youtube-jamm-research-20261028.json)에 있다. JSON이 원본이며 DB를 직접 고쳐도 재생성 시 덮어쓴다.
+
+이후 같은 날 영어 제목의 일반 한국어 발음 태그를 추가했다. 위 표의 이름 보완180건은 이 추가 작업 전 집계다. 최신 이름 보완 대상은53건이며 [발음 태그 적용 기록](20261028-korean-pronunciation.md)을 참고한다.

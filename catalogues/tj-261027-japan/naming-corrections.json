@@ -618,20 +618,6 @@
       ]
     },
     {
-      "index": 17,
-      "title": "Bunny Girl",
-      "reasons": [
-        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
-      ]
-    },
-    {
-      "index": 18,
-      "title": "-ERROR",
-      "reasons": [
-        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
-      ]
-    },
-    {
       "index": 19,
       "title": "킥백",
       "reasons": [
@@ -639,50 +625,8 @@
       ]
     },
     {
-      "index": 24,
-      "title": "W / X / Y",
-      "reasons": [
-        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
-      ]
-    },
-    {
-      "index": 30,
-      "title": "PPPP",
-      "reasons": [
-        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
-      ]
-    },
-    {
-      "index": 33,
-      "title": "DAYBREAK FRONTLINE",
-      "reasons": [
-        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
-      ]
-    },
-    {
       "index": 34,
       "title": "라일락",
-      "reasons": [
-        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
-      ]
-    },
-    {
-      "index": 36,
-      "title": "Henceforth",
-      "reasons": [
-        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
-      ]
-    },
-    {
-      "index": 46,
-      "title": "Endless Rain",
-      "reasons": [
-        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
-      ]
-    },
-    {
-      "index": 51,
-      "title": "NIGHT DANCER",
       "reasons": [
         "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
       ]
@@ -709,20 +653,6 @@
       ]
     },
     {
-      "index": 72,
-      "title": "I love you",
-      "reasons": [
-        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
-      ]
-    },
-    {
-      "index": 85,
-      "title": "Mela!",
-      "reasons": [
-        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
-      ]
-    },
-    {
       "index": 86,
       "title": "블링-뱅-뱅-본",
       "reasons": [
@@ -742,13 +672,296 @@
       "reasons": [
         "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
       ]
+    }
+  ],
+  "pronunciationChanges": [
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 18,
+      "id": "f9688975-66cb-5c50-8098-9acfacb5242b",
+      "title": "-ERROR",
+      "addedTags": [
+        "에러"
+      ],
+      "previousTags": [
+        "ERROR",
+        "NIKI",
+        "nikiFeatLily"
+      ],
+      "tags": [
+        "ERROR",
+        "NIKI",
+        "nikiFeatLily",
+        "에러"
+      ],
+      "retiredRedundantAliases": [],
+      "reviewRequired": false,
+      "previousNamingReasons": [
+        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
+      ],
+      "namingReviewReasons": []
     },
     {
-      "index": 100,
-      "title": "Ray",
-      "reasons": [
+      "catalogue": "tj-261027-japan",
+      "index": 85,
+      "id": "b3e4aa61-b9cc-53f7-99dc-74c15ef25597",
+      "title": "Mela!",
+      "addedTags": [
+        "멜라"
+      ],
+      "previousTags": [
+        "Mela",
+        "PEPPE",
+        "녹황색사회",
+        "나가야하루코",
+        "아나미싱고"
+      ],
+      "tags": [
+        "Mela",
+        "PEPPE",
+        "녹황색사회",
+        "나가야하루코",
+        "아나미싱고",
+        "멜라"
+      ],
+      "retiredRedundantAliases": [],
+      "reviewRequired": false,
+      "previousNamingReasons": [
         "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
-      ]
+      ],
+      "namingReviewReasons": []
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 24,
+      "id": "94ce2e98-777f-5346-b174-225168af46d8",
+      "title": "W / X / Y",
+      "addedTags": [
+        "더블유엑스와이"
+      ],
+      "previousTags": [
+        "W X Y",
+        "Tani Yuuki",
+        "타니 유우키"
+      ],
+      "tags": [
+        "W X Y",
+        "Tani Yuuki",
+        "타니 유우키",
+        "더블유엑스와이"
+      ],
+      "retiredRedundantAliases": [],
+      "reviewRequired": false,
+      "previousNamingReasons": [
+        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
+      ],
+      "namingReviewReasons": []
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 100,
+      "id": "320b99ba-5742-5b19-91e6-b7fb98ad6ceb",
+      "title": "Ray",
+      "addedTags": [
+        "레이"
+      ],
+      "previousTags": [
+        "Ray",
+        "범프 오브 치킨",
+        "후지와라모토오"
+      ],
+      "tags": [
+        "Ray",
+        "범프 오브 치킨",
+        "후지와라모토오",
+        "레이"
+      ],
+      "retiredRedundantAliases": [],
+      "reviewRequired": false,
+      "previousNamingReasons": [
+        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
+      ],
+      "namingReviewReasons": []
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 30,
+      "id": "77ff5c8b-c7c8-5a4e-bc98-587a10a5180b",
+      "title": "PPPP",
+      "addedTags": [
+        "피피피피"
+      ],
+      "previousTags": [
+        "PPPP",
+        "TAK",
+        "하츠네 미쿠"
+      ],
+      "tags": [
+        "PPPP",
+        "TAK",
+        "하츠네 미쿠",
+        "피피피피"
+      ],
+      "retiredRedundantAliases": [],
+      "reviewRequired": false,
+      "previousNamingReasons": [
+        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
+      ],
+      "namingReviewReasons": []
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 33,
+      "id": "b4a88261-250d-5530-83fa-5e46912934c1",
+      "title": "DAYBREAK FRONTLINE",
+      "addedTags": [
+        "데이브레이크프런트라인"
+      ],
+      "previousTags": [
+        "DAYBREAK FRONTLINE",
+        "ORANGESTAR",
+        "OrangestarFeatIA"
+      ],
+      "tags": [
+        "DAYBREAK FRONTLINE",
+        "ORANGESTAR",
+        "OrangestarFeatIA",
+        "데이브레이크프런트라인"
+      ],
+      "retiredRedundantAliases": [],
+      "reviewRequired": false,
+      "previousNamingReasons": [
+        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
+      ],
+      "namingReviewReasons": []
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 36,
+      "id": "6fb76d99-5629-5ad0-8562-b03e28c68ea8",
+      "title": "Henceforth",
+      "addedTags": [
+        "헨스포스"
+      ],
+      "previousTags": [
+        "Henceforth",
+        "ORANGESTAR",
+        "OrangestarFeatIA"
+      ],
+      "tags": [
+        "Henceforth",
+        "ORANGESTAR",
+        "OrangestarFeatIA",
+        "헨스포스"
+      ],
+      "retiredRedundantAliases": [],
+      "reviewRequired": false,
+      "previousNamingReasons": [
+        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
+      ],
+      "namingReviewReasons": []
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 46,
+      "id": "f8d1844d-e127-59ff-9839-a180d4fc7d0e",
+      "title": "Endless Rain",
+      "addedTags": [
+        "엔들리스레인"
+      ],
+      "previousTags": [
+        "Endless Rain",
+        "YOSHIKI",
+        "엑스 재팬",
+        "XJAPAN"
+      ],
+      "tags": [
+        "Endless Rain",
+        "YOSHIKI",
+        "엑스 재팬",
+        "XJAPAN",
+        "엔들리스레인"
+      ],
+      "retiredRedundantAliases": [],
+      "reviewRequired": false,
+      "previousNamingReasons": [
+        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
+      ],
+      "namingReviewReasons": []
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 51,
+      "id": "a6c33dea-c22d-5e78-b73e-40c8cea3a727",
+      "title": "NIGHT DANCER",
+      "addedTags": [
+        "나이트댄서"
+      ],
+      "previousTags": [
+        "NIGHT DANCER",
+        "IMASE",
+        "이마세"
+      ],
+      "tags": [
+        "NIGHT DANCER",
+        "IMASE",
+        "이마세",
+        "나이트댄서"
+      ],
+      "retiredRedundantAliases": [],
+      "reviewRequired": false,
+      "previousNamingReasons": [
+        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
+      ],
+      "namingReviewReasons": []
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 17,
+      "id": "fb5d3790-6dbf-549b-8f29-5eac9a45d3a8",
+      "title": "Bunny Girl",
+      "addedTags": [
+        "바니걸"
+      ],
+      "previousTags": [
+        "Bunny Girl",
+        "AKASAKI"
+      ],
+      "tags": [
+        "Bunny Girl",
+        "AKASAKI",
+        "바니걸"
+      ],
+      "retiredRedundantAliases": [],
+      "reviewRequired": false,
+      "previousNamingReasons": [
+        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
+      ],
+      "namingReviewReasons": []
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 72,
+      "id": "bea4ad3f-1c1d-5fd4-8a62-f73160da0a4f",
+      "title": "I love you",
+      "addedTags": [
+        "아이러브유"
+      ],
+      "previousTags": [
+        "I love you",
+        "오자키유타카"
+      ],
+      "tags": [
+        "I love you",
+        "오자키유타카",
+        "아이러브유"
+      ],
+      "retiredRedundantAliases": [],
+      "reviewRequired": false,
+      "previousNamingReasons": [
+        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
+      ],
+      "namingReviewReasons": []
     }
   ]
 }

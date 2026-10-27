@@ -1993,7 +1993,8 @@
       ],
       "tags": [
         "Bunny Girl",
-        "AKASAKI"
+        "AKASAKI",
+        "바니걸"
       ],
       "aliases": [
         {
@@ -2001,6 +2002,13 @@
           "name": "Bunny Girl",
           "url": "https://m.blog.naver.com/music_omakase/224171185456",
           "quote": "Bunny Girl (바니걸)- AKASAKI"
+        },
+        {
+          "kind": "title",
+          "name": "바니걸",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Bunny Girl → 바니걸 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -2042,14 +2050,21 @@
         "channels": 2,
         "durationSeconds": 216.5446875,
         "byteLength": 1326808,
-        "sha256": "952571b0aae6558dff5d14903f31aa62eabbbfbadf32d35c1cdb0a6e27be366a"
+        "sha256": "eca1e7af1f587cdb3c82757d359184844e529bd15856e92fe778f16cfe16a379"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
       "reviewReasons": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "바니걸"
+          ]
+        }
       ]
     },
     {
@@ -2069,7 +2084,8 @@
       "tags": [
         "ERROR",
         "NIKI",
-        "nikiFeatLily"
+        "nikiFeatLily",
+        "에러"
       ],
       "aliases": [
         {
@@ -2077,6 +2093,13 @@
           "name": "ERROR",
           "url": null,
           "quote": "-ERROR"
+        },
+        {
+          "kind": "title",
+          "name": "에러",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: -ERROR → 에러 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -2112,14 +2135,21 @@
         "channels": 2,
         "durationSeconds": 234.64464583333333,
         "byteLength": 1434300,
-        "sha256": "db7bab4b753f3a8723052f18479fc9aa0c28aa01528862b151a4c56e77b84f78"
+        "sha256": "7cf5026b1fc34c6a26fcf0b546e4acab937dfcd372a2e2b7a0b74f5a09cb90db"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
       "reviewReasons": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "에러"
+          ]
+        }
       ]
     },
     {
@@ -2720,7 +2750,8 @@
       "tags": [
         "W X Y",
         "Tani Yuuki",
-        "타니 유우키"
+        "타니 유우키",
+        "더블유엑스와이"
       ],
       "aliases": [
         {
@@ -2728,6 +2759,13 @@
           "name": "W X Y",
           "url": null,
           "quote": "W / X / Y"
+        },
+        {
+          "kind": "title",
+          "name": "더블유엑스와이",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: W / X / Y → 더블유엑스와이 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -2775,14 +2813,21 @@
         "channels": 2,
         "durationSeconds": 279.08764583333334,
         "byteLength": 1706016,
-        "sha256": "dfdaa5b59f6950abba075039ac36fddc538ed304290568792aa799ef310afc27"
+        "sha256": "f8d73ff485d5c3f1dc52a6a9092ba75499ce4b01824a2ff57ffbad74aecd3d8c"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
       "reviewReasons": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "더블유엑스와이"
+          ]
+        }
       ]
     },
     {
@@ -3340,9 +3385,18 @@
       "tags": [
         "PPPP",
         "TAK",
-        "하츠네 미쿠"
+        "하츠네 미쿠",
+        "피피피피"
       ],
-      "aliases": [],
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "피피피피",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: PPPP → 피피피피 (2026-10-28). 외부 검색 인용 아님."
+        }
+      ],
       "reviewRequired": false,
       "reviewNotes": [],
       "evidence": [
@@ -3382,14 +3436,21 @@
         "channels": 2,
         "durationSeconds": 156.09154166666667,
         "byteLength": 945085,
-        "sha256": "98d623758fa7d5084c5e576aac6d13e7a240ed970ac7b94f3fd5d0d4a5f78255"
+        "sha256": "16af123bcb576eb3f4a91727b550a622f6f07e90d5215745080a8cd805ab1283"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
       "reviewReasons": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "피피피피"
+          ]
+        }
       ]
     },
     {
@@ -3590,9 +3651,18 @@
       "tags": [
         "DAYBREAK FRONTLINE",
         "ORANGESTAR",
-        "OrangestarFeatIA"
+        "OrangestarFeatIA",
+        "데이브레이크프런트라인"
       ],
-      "aliases": [],
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "데이브레이크프런트라인",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: DAYBREAK FRONTLINE → 데이브레이크프런트라인 (2026-10-28). 외부 검색 인용 아님."
+        }
+      ],
       "reviewRequired": false,
       "reviewNotes": [],
       "evidence": [
@@ -3626,14 +3696,21 @@
         "channels": 2,
         "durationSeconds": 217.65925,
         "byteLength": 1334828,
-        "sha256": "f84cc7e963c60b9ebf9898ba320a1563b63782a3cce743e83e25fc0c6774f262"
+        "sha256": "776a4f547896c7300df03e32b5ed7d7a1ada169811e95cdf35d25b5f5b9b50d5"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
       "reviewReasons": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "데이브레이크프런트라인"
+          ]
+        }
       ]
     },
     {
@@ -3889,9 +3966,18 @@
       "tags": [
         "Henceforth",
         "ORANGESTAR",
-        "OrangestarFeatIA"
+        "OrangestarFeatIA",
+        "헨스포스"
       ],
-      "aliases": [],
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "헨스포스",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Henceforth → 헨스포스 (2026-10-28). 외부 검색 인용 아님."
+        }
+      ],
       "reviewRequired": false,
       "reviewNotes": [],
       "evidence": [
@@ -3925,14 +4011,21 @@
         "channels": 2,
         "durationSeconds": 235.81725,
         "byteLength": 1432544,
-        "sha256": "5ac05c961a294c87494aa5ae804f1543d9eaff0733ca75db28ddfd2f9ae1e85e"
+        "sha256": "a1244930de6146a47097f3317f7deb20f080a7b496c51b209045d322ba639987"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
       "reviewReasons": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "헨스포스"
+          ]
+        }
       ]
     },
     {
@@ -4818,9 +4911,18 @@
         "Endless Rain",
         "YOSHIKI",
         "엑스 재팬",
-        "XJAPAN"
+        "XJAPAN",
+        "엔들리스레인"
       ],
-      "aliases": [],
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "엔들리스레인",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Endless Rain → 엔들리스레인 (2026-10-28). 외부 검색 인용 아님."
+        }
+      ],
       "reviewRequired": false,
       "reviewNotes": [],
       "evidence": [
@@ -4860,14 +4962,21 @@
         "channels": 2,
         "durationSeconds": 421.43758333333335,
         "byteLength": 2428754,
-        "sha256": "6d69258e6c2913ee1313a6fbfb16c32b5cce435a18444beecb44af5adfb5700d"
+        "sha256": "812201324ade3a84e5abcf8620ce4f95b1608a2949655337ee7c79399ed9156d"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
       "reviewReasons": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "엔들리스레인"
+          ]
+        }
       ]
     },
     {
@@ -5326,9 +5435,18 @@
       "tags": [
         "NIGHT DANCER",
         "IMASE",
-        "이마세"
+        "이마세",
+        "나이트댄서"
       ],
-      "aliases": [],
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "나이트댄서",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: NIGHT DANCER → 나이트댄서 (2026-10-28). 외부 검색 인용 아님."
+        }
+      ],
       "reviewRequired": false,
       "reviewNotes": [],
       "evidence": [
@@ -5368,14 +5486,21 @@
         "channels": 2,
         "durationSeconds": 210.97191666666666,
         "byteLength": 1279030,
-        "sha256": "2a805f31c3c9da79c4170c398b907ab35a34e645617bc45796f6f01822f9714e"
+        "sha256": "39c8050e2b1bffb43e86e4d16550a7157b009287d14c2e9833bb3c3ed39e400a"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
       "reviewReasons": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "나이트댄서"
+          ]
+        }
       ]
     },
     {
@@ -7360,7 +7485,8 @@
       ],
       "tags": [
         "I love you",
-        "오자키유타카"
+        "오자키유타카",
+        "아이러브유"
       ],
       "aliases": [
         {
@@ -7381,6 +7507,13 @@
           "url": "https://www.youtube.com/watch?v=bdMU8c8lP6I",
           "quote": "오자키 유타카(尾崎豊) - I Love You [가사/발음/해석]",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "아이러브유",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: I love you → 아이러브유 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -7429,14 +7562,21 @@
         "channels": 2,
         "durationSeconds": 255.27558333333334,
         "byteLength": 1566766,
-        "sha256": "517a0fd391519b132ce4f03449e3b7090c06b7efdc8f5e52a326ba8060ed9414"
+        "sha256": "a0711164a739b8e4a16e57e8501748d47e0da50e4be800eadfca6eaee2315f7b"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
       "reviewReasons": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "아이러브유"
+          ]
+        }
       ]
     },
     {
@@ -8808,7 +8948,8 @@
         "PEPPE",
         "녹황색사회",
         "나가야하루코",
-        "아나미싱고"
+        "아나미싱고",
+        "멜라"
       ],
       "aliases": [
         {
@@ -8836,6 +8977,13 @@
           "url": "https://www.youtube.com/watch?v=T59SXQlneLY",
           "quote": "녹황색사회(Ryoku Shaka) - Mela! [가사/해석/발음]",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "멜라",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Mela! → 멜라 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -8896,16 +9044,23 @@
         "channels": 2,
         "durationSeconds": 249.923375,
         "byteLength": 1476535,
-        "sha256": "a9cabb1a12d82ebd25adec92ead24b14a2fe2d55ba6f405a062cc58bd653d3ec"
+        "sha256": "6c2b1188cd9065ba7cb2f2af4dd7e322fe4e662ca5f404a76e54ddf989d3e873"
       },
       "aliasReviewReasons": [
         "Writer alias unresolved: 小林壱誓: 확인된 Latin 표기 Issei Kobayashi는 허용 문자 형식에 공백을 포함하므로 출력 별칭으로 사용할 수 없습니다."
       ],
       "aliasReviewRequired": true,
       "reviewReasons": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "멜라"
+          ]
+        }
       ]
     },
     {
@@ -10318,7 +10473,8 @@
       "tags": [
         "Ray",
         "범프 오브 치킨",
-        "후지와라모토오"
+        "후지와라모토오",
+        "레이"
       ],
       "aliases": [
         {
@@ -10327,6 +10483,13 @@
           "name": "후지와라모토오",
           "url": "https://blog.naver.com/yksleruza47/223710399925",
           "quote": "藤原基央 (후지와라 모토오)"
+        },
+        {
+          "kind": "title",
+          "name": "레이",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Ray → 레이 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -10374,14 +10537,21 @@
         "channels": 2,
         "durationSeconds": 317.52827083333335,
         "byteLength": 1850879,
-        "sha256": "86256bda3222d7dfbaa1da97c37cb2636bc99bf21b6db63bfecbd6bd9e8f7c25"
+        "sha256": "1e851028cfc58e605477f921c4b005c500397d9c399c2dc341434e49fe0e30b8"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
       "reviewReasons": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "레이"
+          ]
+        }
       ]
     }
   ],

@@ -6303,8 +6303,8 @@
       "playable": 100,
       "downloaded": 100,
       "reviewRequired": 0,
-      "namingReviewRequired": 22,
-      "selectedNamingReviewRequired": 22,
+      "namingReviewRequired": 11,
+      "selectedNamingReviewRequired": 11,
       "audioSourceReviewRequired": 0,
       "audioBytes": 148028396
     },
@@ -6316,8 +6316,8 @@
       "playable": 98,
       "downloaded": 100,
       "reviewRequired": 2,
-      "namingReviewRequired": 86,
-      "selectedNamingReviewRequired": 84,
+      "namingReviewRequired": 28,
+      "selectedNamingReviewRequired": 28,
       "audioSourceReviewRequired": 0,
       "audioBytes": 142815035
     },
@@ -6329,8 +6329,8 @@
       "playable": 541,
       "downloaded": 557,
       "reviewRequired": 24,
-      "namingReviewRequired": 46,
-      "selectedNamingReviewRequired": 41,
+      "namingReviewRequired": 2,
+      "selectedNamingReviewRequired": 2,
       "audioSourceReviewRequired": 0,
       "audioBytes": 756489152
     },
@@ -6342,10 +6342,15 @@
       "playable": 252,
       "downloaded": 288,
       "reviewRequired": 37,
-      "namingReviewRequired": 31,
+      "namingReviewRequired": 12,
       "selectedNamingReviewRequired": 0,
       "audioSourceReviewRequired": 3,
       "audioBytes": 387040525
     }
-  ]
+  ],
+  "latestPronunciationUpdate": {
+    "date": "2026-10-28",
+    "record": "korean-pronunciation-20261028.json",
+    "note": "Current naming flags and tags include user-authorized conventional English-title pronunciations; the search evidence above remains unchanged."
+  }
 }

@@ -1781,7 +1781,8 @@
         "이상준",
         "버즈",
         "My LoveAnd",
-        "My Love"
+        "My Love",
+        "마이러브앤드"
       ],
       "aliases": [
         {
@@ -1795,6 +1796,13 @@
           "name": "My Love",
           "url": "https://www.tjmedia.com/chart/top100",
           "quote": "rank 24; TJ no. 15922; My Love(And) — 버즈; lyricist: 이재경; composer: 이상준"
+        },
+        {
+          "kind": "title",
+          "name": "마이러브앤드",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: My Love(And) → 마이러브앤드 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -1827,10 +1835,21 @@
         "channels": 2,
         "durationSeconds": 242.81808333333333,
         "byteLength": 1490033,
-        "sha256": "90d645208ab46723510732013ca9b8e0c015a2e50140c96756824768c68362e2"
+        "sha256": "384b84b34aac0e1cda02219985512931d322dc3635c19c2ec2963dc53f623676"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewReasons": [],
+      "namingReviewRequired": false,
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "마이러브앤드"
+          ]
+        }
+      ]
     },
     {
       "index": 25,
@@ -2621,9 +2640,18 @@
         "한재호",
         "김승수",
         "송수윤",
-        "RESCENE리센느"
+        "RESCENE리센느",
+        "프리티걸"
       ],
-      "aliases": [],
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "프리티걸",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Pretty Girl → 프리티걸 (2026-10-28). 외부 검색 인용 아님."
+        }
+      ],
       "reviewRequired": false,
       "evidence": [
         {
@@ -2654,10 +2682,21 @@
         "channels": 2,
         "durationSeconds": 213.43322916666668,
         "byteLength": 1289922,
-        "sha256": "899e5fda11ac80a83f0c9ae8e509c22518161ce4c32f5a42e600f54625835a74"
+        "sha256": "1b81ca000c7e0bcfef71e4b9c42d5a154022fcb5803d8ba94b890bde6c4fe4e8"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewReasons": [],
+      "namingReviewRequired": false,
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "프리티걸"
+          ]
+        }
+      ]
     },
     {
       "index": 37,
@@ -4423,9 +4462,18 @@
       ],
       "tags": [
         "OZAKI YUTAKA",
-        "포지션"
+        "포지션",
+        "아이러브유"
       ],
-      "aliases": [],
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "아이러브유",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: I Love You → 아이러브유 (2026-10-28). 외부 검색 인용 아님."
+        }
+      ],
       "reviewRequired": false,
       "evidence": [
         {
@@ -4456,10 +4504,21 @@
         "channels": 2,
         "durationSeconds": 335.07095833333335,
         "byteLength": 2018816,
-        "sha256": "3d00fbabb50f22ff4faa33f732553a7eae9047a87f614f6923c96d93ddc08253"
+        "sha256": "0c6ddc468007233b7c43210d47f60d31c92b31b88cde19c81e8bbfb25b4bbee0"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewReasons": [],
+      "namingReviewRequired": false,
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "아이러브유"
+          ]
+        }
+      ]
     },
     {
       "index": 62,
@@ -4783,9 +4842,18 @@
       ],
       "tags": [
         "이수",
-        "MC THE MAX"
+        "MC THE MAX",
+        "원러브"
       ],
-      "aliases": [],
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "원러브",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: One Love → 원러브 (2026-10-28). 외부 검색 인용 아님."
+        }
+      ],
       "reviewRequired": false,
       "evidence": [
         {
@@ -4816,10 +4884,21 @@
         "channels": 2,
         "durationSeconds": 265.06279166666667,
         "byteLength": 1609831,
-        "sha256": "b8a7691d6d96d6d31363b20f86cb465a473290d6d8fd5bd61ab2434f35a26515"
+        "sha256": "6ffe7ead02315fe5b81ab2a3c5a1d87c90a90e1680e34fdf31ce002017c1b00f"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewReasons": [],
+      "namingReviewRequired": false,
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "원러브"
+          ]
+        }
+      ]
     },
     {
       "index": 68,
@@ -4903,9 +4982,18 @@
       "tags": [
         "정성윤",
         "주태영",
-        "소찬휘"
+        "소찬휘",
+        "티어스"
       ],
-      "aliases": [],
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "티어스",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Tears → 티어스 (2026-10-28). 외부 검색 인용 아님."
+        }
+      ],
       "reviewRequired": false,
       "evidence": [
         {
@@ -4936,10 +5024,21 @@
         "channels": 2,
         "durationSeconds": 236.90033333333332,
         "byteLength": 1442091,
-        "sha256": "ce3471f25336ff22ae4cba8837b7eca3669e106ffc60b203d00cb83dbba2ea75"
+        "sha256": "73aa5fee9cb05a6612ff8acad13915eba794c9166969ac2073bae5a74d0613b5"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewReasons": [],
+      "namingReviewRequired": false,
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "티어스"
+          ]
+        }
+      ]
     },
     {
       "index": 70,
@@ -5027,11 +5126,11 @@
         "코르티스",
         "SUPREME BOI",
         "HISS NOISE",
-        "MARTIN",
         "JAMES",
         "성현",
         "주훈",
-        "건호"
+        "건호",
+        "레드레드"
       ],
       "aliases": [
         {
@@ -5055,6 +5154,13 @@
           "name": "제임스",
           "url": "https://www.youtube.com/watch?v=ZF49-rKzTLk",
           "quote": "발매 : 2026.04.20 아티스트 : CORTIS (코르티스) 앨범 : GREENGREEN 작곡 : Supreme Boi, ''hitman''bang, Hiss noise, 마틴, Jasper Harris, Skillies, 성현, 건호, skai, 제임스, 주훈, Derrick Milano, Jacob Aaron (THE HUB) 작사 : Supreme Boi, ''hitman''bang, Hiss noise, 마틴, Jasper Harris, Skillies, 성현, 건호, skai, 제임스, 주훈, Derrick Milano, Jacob Aaron (THE HUB)"
+        },
+        {
+          "kind": "title",
+          "name": "레드레드",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: REDRED → 레드레드 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -5109,7 +5215,7 @@
         "channels": 2,
         "durationSeconds": 163.015,
         "byteLength": 1000990,
-        "sha256": "f67af9f43e171b778ad1644918beede84b2b8a6ad967a5a1093f4c6b5713f7b2"
+        "sha256": "081909e192dc61102d37c3d0e90aeb9206360eca9acfeff09c186a79d6f94682"
       },
       "reviewReasons": [],
       "singerAliases": [
@@ -5151,7 +5257,18 @@
       ],
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewReasons": [],
+      "namingReviewRequired": false,
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "레드레드"
+          ]
+        }
+      ]
     },
     {
       "index": 72,
@@ -5848,9 +5965,18 @@
       ],
       "tags": [
         "마크툽MAKTUB",
-        "마크툽MAKTUB구윤회"
+        "마크툽MAKTUB구윤회",
+        "메리미"
       ],
-      "aliases": [],
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "메리미",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Marry Me → 메리미 (2026-10-28). 외부 검색 인용 아님."
+        }
+      ],
       "reviewRequired": false,
       "evidence": [
         {
@@ -5881,10 +6007,21 @@
         "channels": 2,
         "durationSeconds": 261.428875,
         "byteLength": 1602284,
-        "sha256": "929f901335a24f24a2758f777295f6dc63c7b37cb0f51656277dc19114b6798d"
+        "sha256": "2a23070ce39b7987e2a4130f4612a070f8c9f48d1898747d351f26f4f8977d8f"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewReasons": [],
+      "namingReviewRequired": false,
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "메리미"
+          ]
+        }
+      ]
     },
     {
       "index": 82,

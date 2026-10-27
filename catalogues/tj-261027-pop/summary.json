@@ -39,8 +39,9 @@
   "validationCommand": "python tools/validate_playlist_catalogues.py --audio catalogues/tj-261027-pop/catalogue.json",
   "entries": 100,
   "downloaded": 100,
-  "namingReviewRequired": 86,
+  "namingReviewRequired": 28,
   "audioSourceReviewRequired": 0,
   "lastResearchDate": "2026-10-28",
-  "downloadFailures": 0
+  "downloadFailures": 0,
+  "lastPronunciationUpdate": "2026-10-28"
 }

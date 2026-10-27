@@ -35,7 +35,11 @@ def validate(source, audio=False):
             assert all(e.get('url') and e.get('quote') and e.get('retrievedEvidenceMatched') for e in song['evidence']),f'{label}: unmatched evidence'
         for alias in song.get('aliases',[]):
             assert alias['name'].strip() and alias['kind'] in {'title','writer','punctuation','singer'},f'{label}: invalid alias'
-            if alias['kind']!='punctuation':
+            if alias.get('origin')=='user_authorized_pronunciation':
+                assert alias['kind']=='title' and re.fullmatch('[가-힣0-9 ]+',alias['name']) and len(alias['name'])<=32,f'{label}: invalid pronunciation alias'
+                assert re.search('[A-Za-z]',song['title']) and not re.search('[ぁ-ゖァ-ヺ一-龯가-힣]',song['title']),f'{label}: pronunciation requires a Latin title'
+                assert alias.get('quote') and not alias.get('url'),f'{label}: pronunciation provenance must not claim a retrieved source'
+            elif alias['kind']!='punctuation':
                 assert alias.get('url') and alias.get('quote'),f'{label}: unsourced alias'
         a=song['audio']
         assert a['status'] in {'ready','failed'},f'{label}: unfinished audio'

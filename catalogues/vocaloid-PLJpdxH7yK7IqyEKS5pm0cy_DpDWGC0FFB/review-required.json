@@ -293,7 +293,8 @@
     "title": "Clipping Radio",
     "tags": [
       "23exe",
-      "Clipping Radio"
+      "Clipping Radio",
+      "클리핑라디오"
     ],
     "confidence": "high",
     "reviewRequired": true,
@@ -344,17 +345,32 @@
       "channels": 2,
       "durationSeconds": 209.881,
       "byteLength": 1277139,
-      "sha256": "db2248e53b1df8bba5da3d1bd568767808d6b1606e7e5f47860f437b890c3b90"
+      "sha256": "0ca6726bd1eb487f976b9b31fda03ce49e68f60d5a827f3fd52dd8a0677431bf"
     },
     "writers": [
       "23.exe"
     ],
-    "aliases": [],
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "클리핑라디오",
+        "url": null,
+        "origin": "user_authorized_pronunciation",
+        "quote": "사용자 승인 영어 제목 일반 발음: Clipping Radio → 클리핑라디오 (2026-10-28). 외부 검색 인용 아님."
+      }
     ],
-    "singerAliases": []
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-28",
+        "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+        "addedTags": [
+          "클리핑라디오"
+        ]
+      }
+    ]
   },
   {
     "index": 206,
@@ -556,7 +572,8 @@
     "title": "Erica",
     "tags": [
       "okameP",
-      "Erica"
+      "Erica",
+      "에리카"
     ],
     "confidence": "low",
     "reviewRequired": true,
@@ -591,17 +608,32 @@
       "channels": 2,
       "durationSeconds": 258.774,
       "byteLength": 1588112,
-      "sha256": "c3b326bdfed098b57d67933cf536f5ceaa54104f8e922a1011b166f48087f5e9"
+      "sha256": "a6bc7663a83c33e531752a561c660a07047012041f606f83fd5b5f73ede6299e"
     },
     "writers": [
       "okameP"
     ],
-    "aliases": [],
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "에리카",
+        "url": null,
+        "origin": "user_authorized_pronunciation",
+        "quote": "사용자 승인 영어 제목 일반 발음: Erica → 에리카 (2026-10-28). 외부 검색 인용 아님."
+      }
     ],
-    "singerAliases": []
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-28",
+        "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+        "addedTags": [
+          "에리카"
+        ]
+      }
+    ]
   },
   {
     "index": 315,
@@ -779,7 +811,8 @@
     "id": "d392a1db-ada6-5b88-9306-54f9fba876d3",
     "title": "NEXT STAGE",
     "tags": [
-      "NEXT STAGE"
+      "NEXT STAGE",
+      "넥스트스테이지"
     ],
     "confidence": "low",
     "reviewRequired": true,
@@ -800,15 +833,30 @@
       "channels": 2,
       "durationSeconds": 268.314,
       "byteLength": 1641742,
-      "sha256": "0d45015a28c316f996a2a1fca9dc97feae4ed96525e7dfe891845b0a47dcb6d9"
+      "sha256": "22b22e4cb01f31d578a40e0a87e685737f412da1aadfaef50c81d50fe9a40ae9"
     },
     "writers": [],
-    "aliases": [],
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "넥스트스테이지",
+        "url": null,
+        "origin": "user_authorized_pronunciation",
+        "quote": "사용자 승인 영어 제목 일반 발음: NEXT STAGE → 넥스트스테이지 (2026-10-28). 외부 검색 인용 아님."
+      }
     ],
-    "singerAliases": []
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-28",
+        "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+        "addedTags": [
+          "넥스트스테이지"
+        ]
+      }
+    ]
   },
   {
     "index": 478,
@@ -821,7 +869,8 @@
     "title": "I am a broken umbrella",
     "tags": [
       "Nem",
-      "I am a broken umbrella"
+      "I am a broken umbrella",
+      "아이엠어브로큰엄브렐라"
     ],
     "confidence": "low",
     "reviewRequired": true,
@@ -846,17 +895,32 @@
       "channels": 2,
       "durationSeconds": 287.923,
       "byteLength": 1715698,
-      "sha256": "e367dfe8d98145be311516a8b58603f718c7ee2c2cbd6e46facc9ca2aa444803"
+      "sha256": "9619318de77661d6dd2c88f2c9676ab83041bdcc815f545f79bee2db4d14326c"
     },
     "writers": [
       "Nem"
     ],
-    "aliases": [],
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "아이엠어브로큰엄브렐라",
+        "url": null,
+        "origin": "user_authorized_pronunciation",
+        "quote": "사용자 승인 영어 제목 일반 발음: I am a broken umbrella → 아이엠어브로큰엄브렐라 (2026-10-28). 외부 검색 인용 아님."
+      }
     ],
-    "singerAliases": []
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-28",
+        "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+        "addedTags": [
+          "아이엠어브로큰엄브렐라"
+        ]
+      }
+    ]
   },
   {
     "index": 490,
@@ -924,7 +988,8 @@
     "title": "NEVERLAND",
     "tags": [
       "APG550",
-      "NEVERLAND"
+      "NEVERLAND",
+      "네버랜드"
     ],
     "confidence": "low",
     "reviewRequired": true,
@@ -951,17 +1016,32 @@
       "channels": 2,
       "durationSeconds": 182.151,
       "byteLength": 1108389,
-      "sha256": "793dbeb1b3e9768f94c54f52826a8c3d7384e720bbf2ef1850e8c87a47723ee4"
+      "sha256": "f71340a89b31e7ef08749b02426224f654e198d09d96ba8d90fda1c1c977ef49"
     },
     "writers": [
       "APG550"
     ],
-    "aliases": [],
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "네버랜드",
+        "url": null,
+        "origin": "user_authorized_pronunciation",
+        "quote": "사용자 승인 영어 제목 일반 발음: NEVERLAND → 네버랜드 (2026-10-28). 외부 검색 인용 아님."
+      }
     ],
-    "singerAliases": []
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-28",
+        "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+        "addedTags": [
+          "네버랜드"
+        ]
+      }
+    ]
   },
   {
     "index": 519,

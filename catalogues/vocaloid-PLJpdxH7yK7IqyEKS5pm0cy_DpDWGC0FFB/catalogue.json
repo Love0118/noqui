@@ -3759,7 +3759,8 @@
       "tags": [
         "JimmyThumbP",
         "지미섬P",
-        "Calc"
+        "Calc",
+        "캘크"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -3816,7 +3817,7 @@
         "channels": 2,
         "durationSeconds": 235.933,
         "byteLength": 1441407,
-        "sha256": "652628505d6216af4a3b4dc4718196fa06b5f047d67fffaefcb408ecd9136eb2"
+        "sha256": "92516688d0ba218c1e1d6037c6624ed38223793317c3ace624350f61460b8596"
       },
       "writers": [
         "JimmyThumb-P"
@@ -3834,13 +3835,27 @@
           "name": "Calc",
           "url": null,
           "quote": "Calc."
+        },
+        {
+          "kind": "title",
+          "name": "캘크",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Calc. → 캘크 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
-      ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "캘크"
+          ]
+        }
+      ]
     },
     {
       "index": 71,
@@ -5706,7 +5721,8 @@
       "title": "ECHO",
       "tags": [
         "CrusherP",
-        "ECHO"
+        "ECHO",
+        "에코"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -5747,17 +5763,32 @@
         "channels": 2,
         "durationSeconds": 244.931,
         "byteLength": 1440491,
-        "sha256": "025529fe4b4c2730936e3b148ddd10578b8555ca0e7a2f9f1012cb069146637c"
+        "sha256": "478ca382b1a9e7f3ebabb906cd7df2595ad4fe68eb39bb066b14c122c0e8dda8"
       },
       "writers": [
         "Crusher-P"
       ],
-      "aliases": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "에코",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: ECHO → 에코 (2026-10-28). 외부 검색 인용 아님."
+        }
       ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "에코"
+          ]
+        }
+      ]
     },
     {
       "index": 108,
@@ -7324,7 +7355,8 @@
       "title": "YY",
       "tags": [
         "23exe",
-        "YY"
+        "YY",
+        "와이와이"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -7365,17 +7397,32 @@
         "channels": 2,
         "durationSeconds": 194.114,
         "byteLength": 1173160,
-        "sha256": "be427a5bac3db54d2591c8fd9796ffda112406b6d8b49cd81aba0cc2e6aad01a"
+        "sha256": "ffb4687270e56d70489f7751b2d2825db28951cc6303a10a7dc32f114a19da56"
       },
       "writers": [
         "23.exe"
       ],
-      "aliases": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "와이와이",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: YY → 와이와이 (2026-10-28). 외부 검색 인용 아님."
+        }
       ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "와이와이"
+          ]
+        }
+      ]
     },
     {
       "index": 138,
@@ -8847,7 +8894,8 @@
       "title": "Clipping Radio",
       "tags": [
         "23exe",
-        "Clipping Radio"
+        "Clipping Radio",
+        "클리핑라디오"
       ],
       "confidence": "high",
       "reviewRequired": true,
@@ -8898,17 +8946,32 @@
         "channels": 2,
         "durationSeconds": 209.881,
         "byteLength": 1277139,
-        "sha256": "db2248e53b1df8bba5da3d1bd568767808d6b1606e7e5f47860f437b890c3b90"
+        "sha256": "0ca6726bd1eb487f976b9b31fda03ce49e68f60d5a827f3fd52dd8a0677431bf"
       },
       "writers": [
         "23.exe"
       ],
-      "aliases": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "클리핑라디오",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Clipping Radio → 클리핑라디오 (2026-10-28). 외부 검색 인용 아님."
+        }
       ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "클리핑라디오"
+          ]
+        }
+      ]
     },
     {
       "index": 166,
@@ -9846,7 +9909,8 @@
         "Reol",
         "Giga",
         "기가P",
-        "drop pop candy"
+        "drop pop candy",
+        "드롭팝캔디"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -9887,7 +9951,7 @@
         "channels": 2,
         "durationSeconds": 227.098,
         "byteLength": 1391015,
-        "sha256": "6f6078943e468a6ffb95b5585df99ad3d0db039da37a66227e6a51cfd416c205"
+        "sha256": "05fc5a017ac4967e734bc95c1ccd724fd212b093a3d1e1fefd6a7e8904cbc724"
       },
       "writers": [
         "Reol",
@@ -9900,13 +9964,27 @@
           "name": "기가P",
           "url": "https://namu.wiki/w/%EC%9D%8C%EC%84%B1%20%ED%95%A9%EC%84%B1%20%EC%97%94%EC%A7%84/%ED%94%84%EB%A1%9C%EB%93%80%EC%84%9C",
           "quote": "Giga (=기가P)"
+        },
+        {
+          "kind": "title",
+          "name": "드롭팝캔디",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: drop pop candy → 드롭팝캔디 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
-      ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "드롭팝캔디"
+          ]
+        }
+      ]
     },
     {
       "index": 184,
@@ -10824,7 +10902,8 @@
       "title": "Love & Death",
       "tags": [
         "호옹이",
-        "Love Death"
+        "Love Death",
+        "러브앤데스"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -10865,7 +10944,7 @@
         "channels": 2,
         "durationSeconds": 248.867,
         "byteLength": 1508681,
-        "sha256": "0debf0032137546958a3cb5d585999c1c5db5193cfb5ec2471f9090da9854504"
+        "sha256": "f746d6c6312d292a15900400617fd5bab21283a16c9604769b3ec137ac6c3f5f"
       },
       "writers": [
         "호옹이"
@@ -10876,13 +10955,27 @@
           "name": "Love Death",
           "url": null,
           "quote": "Love & Death"
+        },
+        {
+          "kind": "title",
+          "name": "러브앤데스",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Love & Death → 러브앤데스 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
-      ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "러브앤데스"
+          ]
+        }
+      ]
     },
     {
       "index": 202,
@@ -12461,7 +12554,8 @@
         "김박사",
         "HAKASE K",
         "하카세 K",
-        "Alone"
+        "Alone",
+        "얼론"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -12501,7 +12595,7 @@
         "channels": 2,
         "durationSeconds": 298.685,
         "byteLength": 1790106,
-        "sha256": "8d9dab44c453cbc45ca510c9b2072882acf7d948ed4b43490ec586c4888f25af"
+        "sha256": "c3fb331f9915a2842e21496210775c8f9206a5e3f3538232427ce7292581b918"
       },
       "writers": [
         "HAKASE K"
@@ -12521,13 +12615,27 @@
           "kind": "writer",
           "canonicalName": "HAKASE K",
           "writer": "HAKASE K"
+        },
+        {
+          "kind": "title",
+          "name": "얼론",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Alone → 얼론 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
-      ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "얼론"
+          ]
+        }
+      ]
     },
     {
       "index": 233,
@@ -12583,7 +12691,8 @@
       "title": "Hand in Hand",
       "tags": [
         "kz",
-        "Hand in Hand"
+        "Hand in Hand",
+        "핸드인핸드"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -12624,17 +12733,32 @@
         "channels": 2,
         "durationSeconds": 319.038,
         "byteLength": 1908383,
-        "sha256": "74dd9f7c86c370844224575ca1f981c240b9b6e8f2d0bb214a2b9aac501ab929"
+        "sha256": "1e49244f69765b023bbfcb7d080ee0278243de4a8ea98a8b3521310b81163da4"
       },
       "writers": [
         "kz"
       ],
-      "aliases": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "핸드인핸드",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Hand in Hand → 핸드인핸드 (2026-10-28). 외부 검색 인용 아님."
+        }
       ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "핸드인핸드"
+          ]
+        }
+      ]
     },
     {
       "index": 235,
@@ -12973,7 +13097,8 @@
       "title": "Redial",
       "tags": [
         "kz",
-        "Redial"
+        "Redial",
+        "리다이얼"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -13006,17 +13131,32 @@
         "channels": 2,
         "durationSeconds": 311.456,
         "byteLength": 1808294,
-        "sha256": "04010cbca761597e18c204e474f717d7f31cf13dcb15cc32e61bb42b1e5b3abf"
+        "sha256": "07a129110bf8caa671468bf29421841ef2bc53dffbd2f43e9b5e63b4969a254c"
       },
       "writers": [
         "kz"
       ],
-      "aliases": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "리다이얼",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Redial → 리다이얼 (2026-10-28). 외부 검색 인용 아님."
+        }
       ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "리다이얼"
+          ]
+        }
+      ]
     },
     {
       "index": 242,
@@ -13674,7 +13814,8 @@
       "title": "quiet room",
       "tags": [
         "유기산",
-        "quiet room"
+        "quiet room",
+        "콰이어트룸"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -13715,17 +13856,32 @@
         "channels": 2,
         "durationSeconds": 219.993,
         "byteLength": 1340656,
-        "sha256": "699c5dae3f39a225324163728414676e66c5e89f94ca48ffee7a1b223f4595ac"
+        "sha256": "82e3f0906b0208093aa28daf99335af70eb6795bea5884edc00bae942e0a3bd9"
       },
       "writers": [
         "유기산"
       ],
-      "aliases": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "콰이어트룸",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: quiet room → 콰이어트룸 (2026-10-28). 외부 검색 인용 아님."
+        }
       ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "콰이어트룸"
+          ]
+        }
+      ]
     },
     {
       "index": 254,
@@ -13740,7 +13896,8 @@
         "Giga",
         "Reol",
         "기가P",
-        "LUVORATORRRRRY"
+        "LUVORATORRRRRY",
+        "러버토리"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -13772,7 +13929,7 @@
         "channels": 2,
         "durationSeconds": 205.051,
         "byteLength": 1245159,
-        "sha256": "480d08a70126bfac6b4e4027c081a7d306fb256fe51f242d091685a4d3f9469a"
+        "sha256": "b5cb50b4f7501058864d24be268a7895c19966c265c7bf9f194e3e724624c85d"
       },
       "writers": [
         "Giga",
@@ -13791,13 +13948,27 @@
           "name": "LUVORATORRRRRY",
           "url": null,
           "quote": "LUVORATORRRRRY!"
+        },
+        {
+          "kind": "title",
+          "name": "러버토리",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: LUVORATORRRRRY! → 러버토리 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
-      ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "러버토리"
+          ]
+        }
+      ]
     },
     {
       "index": 255,
@@ -15815,7 +15986,8 @@
       "title": "Tell Your World",
       "tags": [
         "kz",
-        "Tell Your World"
+        "Tell Your World",
+        "텔유어월드"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -15856,17 +16028,32 @@
         "channels": 2,
         "durationSeconds": 253.557,
         "byteLength": 1555180,
-        "sha256": "394610b2f4830e0a6edb816f63d47f72c1046cbd53edd0ca4a56d16d0392903d"
+        "sha256": "ed50f6938806b865355c2a843da625facb707be530ae3cd0d735aa014afc4dd3"
       },
       "writers": [
         "kz"
       ],
-      "aliases": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "텔유어월드",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Tell Your World → 텔유어월드 (2026-10-28). 외부 검색 인용 아님."
+        }
       ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "텔유어월드"
+          ]
+        }
+      ]
     },
     {
       "index": 293,
@@ -15879,7 +16066,8 @@
       "title": "Miku",
       "tags": [
         "Anamanaguchi",
-        "Miku"
+        "Miku",
+        "미쿠"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -15912,17 +16100,32 @@
         "channels": 2,
         "durationSeconds": 238.557,
         "byteLength": 1372650,
-        "sha256": "8a094661452224715b42519549f693841234ed516d7b9dc281f3eebc879da623"
+        "sha256": "c8edf328825a444ffe665f27cccfe3202b9fb311205771dde2c171712b49bb0b"
       },
       "writers": [
         "Anamanaguchi"
       ],
-      "aliases": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "미쿠",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Miku → 미쿠 (2026-10-28). 외부 검색 인용 아님."
+        }
       ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "미쿠"
+          ]
+        }
+      ]
     },
     {
       "index": 294,
@@ -16080,7 +16283,8 @@
       "title": "p.h.",
       "tags": [
         "SEVENTHLINKS",
-        "ph"
+        "ph",
+        "피에이치"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -16112,7 +16316,7 @@
         "channels": 2,
         "durationSeconds": 155.975,
         "byteLength": 930327,
-        "sha256": "dd45c0094c8ee7e614f531fda67e687922d2273f1c13d014dd6efeca6125d63a"
+        "sha256": "407f8be7f634411bb67dba1017bfcb8eb563caf7540c650b526670839c71aed6"
       },
       "writers": [
         "SEVENTHLINKS"
@@ -16123,13 +16327,27 @@
           "name": "ph",
           "url": null,
           "quote": "p.h."
+        },
+        {
+          "kind": "title",
+          "name": "피에이치",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: p.h. → 피에이치 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
-      ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "피에이치"
+          ]
+        }
+      ]
     },
     {
       "index": 298,
@@ -16244,7 +16462,8 @@
       "title": "Surges",
       "tags": [
         "Orangestar",
-        "Surges"
+        "Surges",
+        "서지스"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -16277,17 +16496,32 @@
         "channels": 2,
         "durationSeconds": 144.574,
         "byteLength": 884853,
-        "sha256": "8a8620fec54464c859aef3c5ae82f2c82fa6ca123eb249d5fb5cac9f1453c8fa"
+        "sha256": "2acb855ccf27f22b4ecbb1ce39096e7bb18bb9188466ba181271dbcdabf2d65f"
       },
       "writers": [
         "Orangestar"
       ],
-      "aliases": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "서지스",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Surges → 서지스 (2026-10-28). 외부 검색 인용 아님."
+        }
       ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "서지스"
+          ]
+        }
+      ]
     },
     {
       "index": 301,
@@ -16860,7 +17094,8 @@
       "title": "Corruption",
       "tags": [
         "오누마 파슬리",
-        "Corruption"
+        "Corruption",
+        "커럽션"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -16893,17 +17128,32 @@
         "channels": 2,
         "durationSeconds": 192.001,
         "byteLength": 1165822,
-        "sha256": "c37cf5d5aeb540e5dd532653bd22aed9041c9ed7fc555184f1bf76eb4cb53b02"
+        "sha256": "c760499f15fb7c84c993767a7c6f567f93caf656402960be6d0ff3807460758e"
       },
       "writers": [
         "오누마 파슬리"
       ],
-      "aliases": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "커럽션",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Corruption → 커럽션 (2026-10-28). 외부 검색 인용 아님."
+        }
       ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "커럽션"
+          ]
+        }
+      ]
     },
     {
       "index": 313,
@@ -16916,7 +17166,8 @@
       "title": "Erica",
       "tags": [
         "okameP",
-        "Erica"
+        "Erica",
+        "에리카"
       ],
       "confidence": "low",
       "reviewRequired": true,
@@ -16951,17 +17202,32 @@
         "channels": 2,
         "durationSeconds": 258.774,
         "byteLength": 1588112,
-        "sha256": "c3b326bdfed098b57d67933cf536f5ceaa54104f8e922a1011b166f48087f5e9"
+        "sha256": "a6bc7663a83c33e531752a561c660a07047012041f606f83fd5b5f73ede6299e"
       },
       "writers": [
         "okameP"
       ],
-      "aliases": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "에리카",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Erica → 에리카 (2026-10-28). 외부 검색 인용 아님."
+        }
       ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "에리카"
+          ]
+        }
+      ]
     },
     {
       "index": 314,
@@ -17944,7 +18210,8 @@
       "tags": [
         "시유",
         "방시혁",
-        "IFantasy"
+        "IFantasy",
+        "아이판타지"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -17992,7 +18259,7 @@
         "channels": 2,
         "durationSeconds": 229.525,
         "byteLength": 1409175,
-        "sha256": "22ac0244fd6f8e5c90a33c904979229f7ef1b7d306f579d634706496fbb10593"
+        "sha256": "7d92c5abe2d505eb1ae3531358c41ee30ca47cbff873aa643dd9997611ed5e3d"
       },
       "writers": [
         "방시혁"
@@ -18009,14 +18276,28 @@
           "name": "시유",
           "quote": "【SeeU/시유】I=Fantasy【전 = 판타지】",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "아이판타지",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: I=Fantasy → 아이판타지 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [
         "시유"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "아이판타지"
+          ]
+        }
       ]
     },
     {
@@ -19175,7 +19456,8 @@
       "title": "ODDS & ENDS",
       "tags": [
         "ryo",
-        "ODDS ENDS"
+        "ODDS ENDS",
+        "오즈앤엔즈"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -19208,7 +19490,7 @@
         "channels": 2,
         "durationSeconds": 348.004,
         "byteLength": 2132180,
-        "sha256": "06eeb3de5e7263d6ed936da6c64bacaeff991e2d12b2c4233840dfaf5300b564"
+        "sha256": "c0b3b7c5d210a72f8bb3ac78a94d2b4ad0a64ec5f2752374bd788f8122330089"
       },
       "writers": [
         "ryo"
@@ -19219,13 +19501,27 @@
           "name": "ODDS ENDS",
           "url": null,
           "quote": "ODDS & ENDS"
+        },
+        {
+          "kind": "title",
+          "name": "오즈앤엔즈",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: ODDS & ENDS → 오즈앤엔즈 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
-      ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "오즈앤엔즈"
+          ]
+        }
+      ]
     },
     {
       "index": 355,
@@ -19869,7 +20165,8 @@
       "title": "Q",
       "tags": [
         "시이나 모타",
-        "Q"
+        "Q",
+        "큐"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -19901,7 +20198,7 @@
         "channels": 2,
         "durationSeconds": 258.972,
         "byteLength": 1581538,
-        "sha256": "24116a8cc523f9e8a6c4975b6ea75c66e0fd2e3b850cfbfe8cab985ef0ba3212"
+        "sha256": "898a6455edc10843c3c90ba6748c61fbc62b88d36653517e679394eaab744f3f"
       },
       "writers": [
         "시이나 모타"
@@ -19914,13 +20211,27 @@
           "kind": "writer",
           "canonicalName": "시이나 모타",
           "writer": "시이나 모타"
+        },
+        {
+          "kind": "title",
+          "name": "큐",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Q → 큐 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
-      ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "큐"
+          ]
+        }
+      ]
     },
     {
       "index": 369,
@@ -21171,7 +21482,8 @@
       "title": "ONE OFF MIND",
       "tags": [
         "Van de Shop",
-        "ONE OFF MIND"
+        "ONE OFF MIND",
+        "원오프마인드"
       ],
       "confidence": "medium",
       "reviewRequired": false,
@@ -21212,17 +21524,32 @@
         "channels": 2,
         "durationSeconds": 219.145,
         "byteLength": 1336156,
-        "sha256": "34014e4df75e524512332c16429290ba19851c9ac2a21e526f4f55988f16181b"
+        "sha256": "500155429dbd6724a625c6988230d8c779d6a420139046e29456072bad6a4601"
       },
       "writers": [
         "Van de Shop"
       ],
-      "aliases": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "원오프마인드",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: ONE OFF MIND → 원오프마인드 (2026-10-28). 외부 검색 인용 아님."
+        }
       ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "원오프마인드"
+          ]
+        }
+      ]
     },
     {
       "index": 393,
@@ -21469,7 +21796,8 @@
       "tags": [
         "Kanaria",
         "카나리아",
-        "MIRA"
+        "MIRA",
+        "미라"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -21502,7 +21830,7 @@
         "channels": 2,
         "durationSeconds": 136.413,
         "byteLength": 833518,
-        "sha256": "d06313acf3f742d6b8f95dda06a87482e163618a6f6fb97bd5fc01165e5c4c59"
+        "sha256": "454a13526972bde2cdec98e15604cc4b13c706acebdf460f4a09ca92037d02ce"
       },
       "writers": [
         "Kanaria"
@@ -21514,13 +21842,27 @@
           "name": "카나리아",
           "url": "https://namu.wiki/w/Kanaria",
           "quote": "Kanaria カナリア | 카나리아"
+        },
+        {
+          "kind": "title",
+          "name": "미라",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: MIRA → 미라 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
-      ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "미라"
+          ]
+        }
+      ]
     },
     {
       "index": 399,
@@ -22005,7 +22347,8 @@
       "title": "snooze",
       "tags": [
         "wotaku",
-        "snooze"
+        "snooze",
+        "스누즈"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -22045,17 +22388,32 @@
         "channels": 2,
         "durationSeconds": 176.328,
         "byteLength": 1080485,
-        "sha256": "0346b9672b14b2d8861395ac8a4bcdb460da6daf59df4af4099c1326bb16d046"
+        "sha256": "f5c85acf4d9950139458e295e28895dceacdac7c5a4674dadad8a6c8205ff2ce"
       },
       "writers": [
         "wotaku"
       ],
-      "aliases": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "스누즈",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: snooze → 스누즈 (2026-10-28). 외부 검색 인용 아님."
+        }
       ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "스누즈"
+          ]
+        }
+      ]
     },
     {
       "index": 409,
@@ -22314,7 +22672,8 @@
       "title": "About Me",
       "tags": [
         "쵸쵸P",
-        "About Me"
+        "About Me",
+        "어바웃미"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -22355,17 +22714,32 @@
         "channels": 2,
         "durationSeconds": 245.488,
         "byteLength": 1496593,
-        "sha256": "a5090cef1003f251736d9ac3f6bd87118a7b4990679ea9d3339d26250911b91d"
+        "sha256": "6182a9fcb98c38cbbd088d7885cb3b8c7ac93a97e21fb8945823b1476c2769c5"
       },
       "writers": [
         "쵸쵸P"
       ],
-      "aliases": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "어바웃미",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: About Me → 어바웃미 (2026-10-28). 외부 검색 인용 아님."
+        }
       ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "어바웃미"
+          ]
+        }
+      ]
     },
     {
       "index": 415,
@@ -22378,7 +22752,8 @@
       "title": "Beat Eater",
       "tags": [
         "Police Piccadilly",
-        "Beat Eater"
+        "Beat Eater",
+        "비트이터"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -22419,17 +22794,32 @@
         "channels": 2,
         "durationSeconds": 216.928,
         "byteLength": 1327464,
-        "sha256": "a6ca4ef770a32384f838aa1a78cd23c77086b5e176ad9b46b3c43c2b4b03234a"
+        "sha256": "645f5b6b32a8a807cf3bee082363f1265535a6046af1546d7e6195f2c9390114"
       },
       "writers": [
         "Police Piccadilly"
       ],
-      "aliases": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "비트이터",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Beat Eater → 비트이터 (2026-10-28). 외부 검색 인용 아님."
+        }
       ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "비트이터"
+          ]
+        }
+      ]
     },
     {
       "index": 416,
@@ -23267,7 +23657,9 @@
       "title": "ANTI THE∞HOLiC",
       "tags": [
         "cosMo폭주P",
-        "ANTI THEHOLiC"
+        "ANTI THEHOLiC",
+        "안티디인피니트홀릭",
+        "안티더홀릭"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -23308,7 +23700,7 @@
         "channels": 2,
         "durationSeconds": 308.743,
         "byteLength": 1885324,
-        "sha256": "6db17b3b39b94cad8c483bd6836af7d6abf1a5cf96f0d3c37f1407a982efb122"
+        "sha256": "4da303398c65dc5e4c8ed135177c991b63e678769b60f9f8c7207dbdbf66e78d"
       },
       "writers": [
         "cosMo@폭주P"
@@ -23319,18 +23711,40 @@
           "name": "ANTI THEHOLiC",
           "url": null,
           "quote": "ANTI THE∞HOLiC"
+        },
+        {
+          "kind": "title",
+          "name": "안티디인피니트홀릭",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: ANTI THE∞HOLiC → 안티디인피니트홀릭 (2026-10-28). 외부 검색 인용 아님."
+        },
+        {
+          "kind": "title",
+          "name": "안티더홀릭",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: ANTI THE∞HOLiC → 안티더홀릭 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
-      ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [],
       "retiredAnswerTags": [
         {
           "tag": "안티 디 인피니트 홀릭",
           "reason": "No retained publication supports this Hangul spelling.",
           "date": "2026-10-28"
+        }
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "안티디인피니트홀릭",
+            "안티더홀릭"
+          ]
         }
       ]
     },
@@ -23456,7 +23870,8 @@
       "id": "d392a1db-ada6-5b88-9306-54f9fba876d3",
       "title": "NEXT STAGE",
       "tags": [
-        "NEXT STAGE"
+        "NEXT STAGE",
+        "넥스트스테이지"
       ],
       "confidence": "low",
       "reviewRequired": true,
@@ -23477,15 +23892,30 @@
         "channels": 2,
         "durationSeconds": 268.314,
         "byteLength": 1641742,
-        "sha256": "0d45015a28c316f996a2a1fca9dc97feae4ed96525e7dfe891845b0a47dcb6d9"
+        "sha256": "22b22e4cb01f31d578a40e0a87e685737f412da1aadfaef50c81d50fe9a40ae9"
       },
       "writers": [],
-      "aliases": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "넥스트스테이지",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: NEXT STAGE → 넥스트스테이지 (2026-10-28). 외부 검색 인용 아님."
+        }
       ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "넥스트스테이지"
+          ]
+        }
+      ]
     },
     {
       "index": 434,
@@ -23499,7 +23929,8 @@
       "tags": [
         "chouchouP",
         "쵸쵸P",
-        "Black Board"
+        "Black Board",
+        "블랙보드"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -23548,7 +23979,7 @@
         "channels": 2,
         "durationSeconds": 221.596,
         "byteLength": 1351766,
-        "sha256": "a9fc65772624daf2bd4137702ac75f7e646ddef658a18948ba7928f59efd514c"
+        "sha256": "3e2b620c15780ea23139af1f4f6af0f9a2e749d870f3af00b1e06bda95a4bb3a"
       },
       "writers": [
         "chouchou-P"
@@ -23560,13 +23991,27 @@
           "name": "쵸쵸P",
           "url": "https://namu.wiki/w/%EC%B5%B8%EC%B5%B8P",
           "quote": "(Chouchou-P / papiyon / Ichinose Yuu) (쵸쵸P / 이치노세 유우)"
+        },
+        {
+          "kind": "title",
+          "name": "블랙보드",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Black Board → 블랙보드 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
-      ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "블랙보드"
+          ]
+        }
+      ]
     },
     {
       "index": 435,
@@ -23649,7 +24094,8 @@
       "tags": [
         "JimmyThumbP",
         "지미섬P",
-        "Calc"
+        "Calc",
+        "캘크"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -23706,7 +24152,7 @@
         "channels": 2,
         "durationSeconds": 240.008,
         "byteLength": 1447466,
-        "sha256": "5fc836cead80ab2d56b04d9e9b2fc5192780cf8941de93f578b6ed6c9ce7d07f"
+        "sha256": "beee0a2b62132980f0a028795977c6f802f0a4ab6038340bc2ccbfadcfb2d4e5"
       },
       "writers": [
         "JimmyThumb-P"
@@ -23724,13 +24170,27 @@
           "name": "Calc",
           "url": null,
           "quote": "Calc."
+        },
+        {
+          "kind": "title",
+          "name": "캘크",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Calc. → 캘크 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
-      ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "캘크"
+          ]
+        }
+      ]
     },
     {
       "index": 437,
@@ -24156,7 +24616,8 @@
       "tags": [
         "HarryP",
         "하리P",
-        "STAGE OF SEKAI"
+        "STAGE OF SEKAI",
+        "스테이지오브세카이"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -24197,7 +24658,7 @@
         "channels": 2,
         "durationSeconds": 239.962,
         "byteLength": 1470122,
-        "sha256": "cff468ad999e7b1a8c8fbb2a56b81e03dd1d6115c7334a0324f4887c6617bdad"
+        "sha256": "d90cab92aae42ad0b38c4d971451f9c0fb5a3dae3b1e745ed89ce4ba7ff879f7"
       },
       "writers": [
         "HarryP"
@@ -24209,13 +24670,27 @@
           "name": "하리P",
           "url": "https://namu.wiki/w/%ED%95%98%EB%A6%ACP",
           "quote": "HarryP はりーP | 하리P"
+        },
+        {
+          "kind": "title",
+          "name": "스테이지오브세카이",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: STAGE OF SEKAI → 스테이지오브세카이 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
-      ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "스테이지오브세카이"
+          ]
+        }
+      ]
     },
     {
       "index": 444,
@@ -24743,7 +25218,8 @@
       "title": "Flyer!",
       "tags": [
         "Chinozo",
-        "Flyer"
+        "Flyer",
+        "플라이어"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -24784,7 +25260,7 @@
         "channels": 2,
         "durationSeconds": 214.455,
         "byteLength": 1314717,
-        "sha256": "ad60453a9fc440a5d9c7c66c831caa4b5bec758e478ca3f1f91ae79f3ee817a8"
+        "sha256": "6f9f38a21200370ccc6f94fcd58af7b3d1b9a066cebbdd2ae86feb624208cf97"
       },
       "writers": [
         "Chinozo"
@@ -24795,13 +25271,27 @@
           "name": "Flyer",
           "url": null,
           "quote": "Flyer!"
+        },
+        {
+          "kind": "title",
+          "name": "플라이어",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Flyer! → 플라이어 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
-      ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "플라이어"
+          ]
+        }
+      ]
     },
     {
       "index": 455,
@@ -24886,7 +25376,8 @@
       "tags": [
         "Yunosuke",
         "유노스케",
-        "Awake Now"
+        "Awake Now",
+        "어웨이크나우"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -24927,7 +25418,7 @@
         "channels": 2,
         "durationSeconds": 205.515,
         "byteLength": 1222917,
-        "sha256": "5a1cb38aa19232264aa0749f9c087b656f99a4b80886b17e0f35feac5c05d798"
+        "sha256": "9ea0970443839f7fbe3e479e492377d393100ba0edf779da9547766e11aa770b"
       },
       "writers": [
         "Yunosuke"
@@ -24939,13 +25430,27 @@
           "name": "유노스케",
           "url": "https://namu.wiki/w/%EC%9C%A0%EB%85%B8%EC%8A%A4%EC%BC%80",
           "quote": "이름 雄之助 유노스케 / Yunosuke"
+        },
+        {
+          "kind": "title",
+          "name": "어웨이크나우",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Awake Now → 어웨이크나우 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
-      ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "어웨이크나우"
+          ]
+        }
+      ]
     },
     {
       "index": 457,
@@ -25335,7 +25840,8 @@
       "title": "-ERROR",
       "tags": [
         "niki",
-        "ERROR"
+        "ERROR",
+        "에러"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -25376,7 +25882,7 @@
         "channels": 2,
         "durationSeconds": 234.645,
         "byteLength": 1434359,
-        "sha256": "12d408970539b166b2baa3835aa3da3ffa5d763ca446e7265c388bca855c1129"
+        "sha256": "ed0a249f935eab32e1970b9178407f58d232cf5ce46982fa31fdf0cc15a1dff5"
       },
       "writers": [
         "niki"
@@ -25387,13 +25893,27 @@
           "name": "ERROR",
           "url": null,
           "quote": "-ERROR"
+        },
+        {
+          "kind": "title",
+          "name": "에러",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: -ERROR → 에러 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
-      ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "에러"
+          ]
+        }
+      ]
     },
     {
       "index": 466,
@@ -25559,7 +26079,8 @@
       "title": "twitter",
       "tags": [
         "devilishP",
-        "twitter"
+        "twitter",
+        "트위터"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -25600,22 +26121,37 @@
         "channels": 2,
         "durationSeconds": 252.999,
         "byteLength": 1552897,
-        "sha256": "15d4cb1b5408924a3526d1470aabf35e3a7ba2aa6928677681cda908fbd5be80"
+        "sha256": "10648e295455b2dee717670d36f1ada2fcfee7114fe35aedb779142d30d99f1e"
       },
       "writers": [
         "devilishP"
       ],
-      "aliases": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "트위터",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: twitter → 트위터 (2026-10-28). 외부 검색 인용 아님."
+        }
       ],
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
       "singerAliases": [],
       "retiredAnswerTags": [
         {
           "tag": "에러",
           "reason": "No retained publication supports this Hangul spelling.",
           "date": "2026-10-28"
+        }
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "트위터"
+          ]
         }
       ]
     },
@@ -25964,7 +26500,8 @@
       "title": "Close to you",
       "tags": [
         "niki",
-        "Close to you"
+        "Close to you",
+        "클로스토유"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -26004,17 +26541,32 @@
         "channels": 2,
         "durationSeconds": 292.01,
         "byteLength": 1788133,
-        "sha256": "920d219f68c5bd66697cfe4b465feda0361a33ee7dfbf7ba9d5dd6ff53861fda"
+        "sha256": "2f16618bf783f1825a40bffa179d07e151ce1a94aaffaebf2653bbe7782f7f4f"
       },
       "writers": [
         "niki"
       ],
-      "aliases": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "클로스토유",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Close to you → 클로스토유 (2026-10-28). 외부 검색 인용 아님."
+        }
       ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "클로스토유"
+          ]
+        }
+      ]
     },
     {
       "index": 478,
@@ -26027,7 +26579,8 @@
       "title": "I am a broken umbrella",
       "tags": [
         "Nem",
-        "I am a broken umbrella"
+        "I am a broken umbrella",
+        "아이엠어브로큰엄브렐라"
       ],
       "confidence": "low",
       "reviewRequired": true,
@@ -26052,17 +26605,32 @@
         "channels": 2,
         "durationSeconds": 287.923,
         "byteLength": 1715698,
-        "sha256": "e367dfe8d98145be311516a8b58603f718c7ee2c2cbd6e46facc9ca2aa444803"
+        "sha256": "9619318de77661d6dd2c88f2c9676ab83041bdcc815f545f79bee2db4d14326c"
       },
       "writers": [
         "Nem"
       ],
-      "aliases": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "아이엠어브로큰엄브렐라",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: I am a broken umbrella → 아이엠어브로큰엄브렐라 (2026-10-28). 외부 검색 인용 아님."
+        }
       ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "아이엠어브로큰엄브렐라"
+          ]
+        }
+      ]
     },
     {
       "index": 479,
@@ -26127,7 +26695,8 @@
       "title": "WAVE",
       "tags": [
         "niki",
-        "WAVE"
+        "WAVE",
+        "웨이브"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -26168,17 +26737,32 @@
         "channels": 2,
         "durationSeconds": 203.576,
         "byteLength": 1235326,
-        "sha256": "26f611a286a43a2744fad7f9589d9aaa05ff8d6c7aca79a0ceff17529ddf5675"
+        "sha256": "d00df993768cd2156c7ab68aeeb53bb79cd736e7b2e9333230d680c5f958c5a0"
       },
       "writers": [
         "niki"
       ],
-      "aliases": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "웨이브",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: WAVE → 웨이브 (2026-10-28). 외부 검색 인용 아님."
+        }
       ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "웨이브"
+          ]
+        }
+      ]
     },
     {
       "index": 481,
@@ -26588,7 +27172,8 @@
       "title": "ELECT",
       "tags": [
         "niki",
-        "ELECT"
+        "ELECT",
+        "일렉트"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -26629,17 +27214,32 @@
         "channels": 2,
         "durationSeconds": 193.244,
         "byteLength": 1180490,
-        "sha256": "7e645abe1f1341df91f6a2c7fb33e1e6bec05d4a7c0109149375d64c1272a923"
+        "sha256": "8d41c8e7290c8fb235e61fdbcff2bd10450622abd538a4a228fa10bfc61b9bb9"
       },
       "writers": [
         "niki"
       ],
-      "aliases": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "일렉트",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: ELECT → 일렉트 (2026-10-28). 외부 검색 인용 아님."
+        }
       ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "일렉트"
+          ]
+        }
+      ]
     },
     {
       "index": 490,
@@ -26761,7 +27361,8 @@
       "tags": [
         "HarryP",
         "하리P",
-        "HEAVEN"
+        "HEAVEN",
+        "헤븐"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -26794,7 +27395,7 @@
         "channels": 2,
         "durationSeconds": 288.007,
         "byteLength": 1751385,
-        "sha256": "9c4cc2354d55a4f157acc0ef1354e187f8072e1d21ad619bfd6bf26bc5a88582"
+        "sha256": "21e983ff46daff6c23a896bf9a546aa49be507dc05168a45abc777a874507210"
       },
       "writers": [
         "HarryP"
@@ -26806,13 +27407,27 @@
           "name": "하리P",
           "url": "https://namu.wiki/w/%ED%95%98%EB%A6%ACP",
           "quote": "HarryP はりーP | 하리P"
+        },
+        {
+          "kind": "title",
+          "name": "헤븐",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: HEAVEN → 헤븐 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
-      ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "헤븐"
+          ]
+        }
+      ]
     },
     {
       "index": 493,
@@ -27310,7 +27925,8 @@
       "title": "Catchy !?",
       "tags": [
         "r906",
-        "Catchy"
+        "Catchy",
+        "캐치"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -27343,7 +27959,7 @@
         "channels": 2,
         "durationSeconds": 180.008,
         "byteLength": 1103321,
-        "sha256": "ea7ef2d8048b9b552f272853b4e48e44b0659b363f1b76d86aad2fc90c2ff8af"
+        "sha256": "f54daff99c2f13b9ab5eb0cbab1b445128214c901a7d01cdeac7f2c85cf0228a"
       },
       "writers": [
         "r-906"
@@ -27354,13 +27970,27 @@
           "name": "Catchy",
           "url": null,
           "quote": "Catchy !?"
+        },
+        {
+          "kind": "title",
+          "name": "캐치",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Catchy !? → 캐치 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
-      ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "캐치"
+          ]
+        }
+      ]
     },
     {
       "index": 503,
@@ -27621,7 +28251,8 @@
       "title": "NEVERLAND",
       "tags": [
         "APG550",
-        "NEVERLAND"
+        "NEVERLAND",
+        "네버랜드"
       ],
       "confidence": "low",
       "reviewRequired": true,
@@ -27648,17 +28279,32 @@
         "channels": 2,
         "durationSeconds": 182.151,
         "byteLength": 1108389,
-        "sha256": "793dbeb1b3e9768f94c54f52826a8c3d7384e720bbf2ef1850e8c87a47723ee4"
+        "sha256": "f71340a89b31e7ef08749b02426224f654e198d09d96ba8d90fda1c1c977ef49"
       },
       "writers": [
         "APG550"
       ],
-      "aliases": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "네버랜드",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: NEVERLAND → 네버랜드 (2026-10-28). 외부 검색 인용 아님."
+        }
       ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "네버랜드"
+          ]
+        }
+      ]
     },
     {
       "index": 509,
@@ -27833,7 +28479,8 @@
       "title": "Happppy song",
       "tags": [
         "SOOOO",
-        "Happppy song"
+        "Happppy song",
+        "해피송"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -27866,17 +28513,32 @@
         "channels": 2,
         "durationSeconds": 324.134,
         "byteLength": 1960410,
-        "sha256": "eb74ae575ac44ade81108ae8769b87cf0f3e18fd9338a0928f9e7acf20f53ee4"
+        "sha256": "e2084cdecfa9ddfd9c4ef5810c3dd73fb2390097047138cf0ea86d9e0504063a"
       },
       "writers": [
         "SOOOO"
       ],
-      "aliases": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "해피송",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Happppy song → 해피송 (2026-10-28). 외부 검색 인용 아님."
+        }
       ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "해피송"
+          ]
+        }
+      ]
     },
     {
       "index": 513,
@@ -28886,7 +29548,8 @@
       "tags": [
         "토쿠",
         "kentax",
-        "SPiCa"
+        "SPiCa",
+        "스피카"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -28919,18 +29582,33 @@
         "channels": 2,
         "durationSeconds": 217.172,
         "byteLength": 1330099,
-        "sha256": "1dd5b731032ae34dc29d9638af572a5f394d7aa8a65a2ce44750c99765b8002e"
+        "sha256": "970670b0f46b84b1aae0b9b5962d0137dc4c3f785270325814b26e995968875f"
       },
       "writers": [
         "토쿠",
         "kentax"
       ],
-      "aliases": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "스피카",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: SPiCa → 스피카 (2026-10-28). 외부 검색 인용 아님."
+        }
       ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "스피카"
+          ]
+        }
+      ]
     },
     {
       "index": 534,
@@ -29476,7 +30154,8 @@
       "title": "Forward",
       "tags": [
         "R Sound Design",
-        "Forward"
+        "Forward",
+        "포워드"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -29509,17 +30188,32 @@
         "channels": 2,
         "durationSeconds": 193.754,
         "byteLength": 1189551,
-        "sha256": "c2d2edb9c7a48dfeca75003b8d13ea78bc33f7b363c8dfb46ff3b876e0488969"
+        "sha256": "2fa6d4b82bf95ffb22ce57dabb575f3335061bddb8e942e184ba247377d6b315"
       },
       "writers": [
         "R Sound Design"
       ],
-      "aliases": [],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "포워드",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Forward → 포워드 (2026-10-28). 외부 검색 인용 아님."
+        }
       ],
-      "singerAliases": []
+      "namingReviewRequired": false,
+      "namingReviewReasons": [],
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-28",
+          "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+          "addedTags": [
+            "포워드"
+          ]
+        }
+      ]
     },
     {
       "index": 544,

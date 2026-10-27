@@ -19,7 +19,6 @@
       "Justin Tranter"
     ],
     "tags": [
-      "Believer",
       "Imagine Dragons",
       "이매진 드래곤스",
       "Dan Reynolds",
@@ -28,7 +27,8 @@
       "Daniel Platzman",
       "Alex da Kid",
       "Robin Fredriksson",
-      "Mattias Larsson"
+      "Mattias Larsson",
+      "빌리버"
     ],
     "aliases": [
       {
@@ -42,6 +42,13 @@
         "name": "이매진 드래곤스",
         "url": "https://ko.wikipedia.org/wiki/이매진_드래곤스",
         "quote": "이매진 드래곤스 (영어: Imagine Dragons)는 2008년 미국 네바다주 라스베이거스에서 결성한 얼터너티브 록 밴드이다."
+      },
+      {
+        "kind": "title",
+        "name": "빌리버",
+        "url": null,
+        "origin": "user_authorized_pronunciation",
+        "quote": "사용자 승인 영어 제목 일반 발음: Believer → 빌리버 (2026-10-28). 외부 검색 인용 아님."
       }
     ],
     "reviewRequired": true,
@@ -89,7 +96,7 @@
       "sampleRate": 48000,
       "durationSeconds": 202.822,
       "byteLength": 1244635,
-      "sha256": "4bf7c68a71511e431e18f733fafcf9ec4bf5eed24a2fa5d008148843062285b3"
+      "sha256": "ff4a88f8690d066cef5a32a90764566b226301cf46b5ed8f56760526220eccc0"
     },
     "sourceTitle": "Believer",
     "rawChartWriterCredit": {
@@ -101,12 +108,19 @@
       "TJ’s raw writer credit represents seven credited names, while the independently retrieved full-songwriter source lists eight. Retained the full sourced list and raw chart credit separately; author-count discrepancy still needs reconciliation."
     ],
     "notes": "TJ’s raw writer credit represents seven credited names, while the independently retrieved full-songwriter source lists eight. Retained the full sourced list and raw chart credit separately; author-count discrepancy still needs reconciliation.",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
     "singerAliases": [
       "이매진 드래곤스"
+    ],
+    "namingHistory": [
+      {
+        "date": "2026-10-28",
+        "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+        "addedTags": [
+          "빌리버"
+        ]
+      }
     ]
   },
   {
@@ -132,7 +146,6 @@
       "Stephen Morris"
     ],
     "tags": [
-      "Teeth",
       "5 Seconds Of Summer",
       "파이브 세컨즈 오브 서머",
       "Ali Tamposi",
@@ -141,7 +154,8 @@
       "Andrew Watt",
       "Bernard Sumner",
       "Carl Sturken",
-      "Evan Rogers"
+      "Evan Rogers",
+      "티스"
     ],
     "aliases": [
       {
@@ -155,6 +169,13 @@
         "name": "파이브 세컨즈 오브 서머",
         "url": "https://ko.wikipedia.org/wiki/파이브_세컨즈_오브_서머",
         "quote": "파이브 세컨즈 오브 서머 (5 Seconds of Summer, 이하 5SOS)는 오스트레일리아의 팝 록 밴드이다."
+      },
+      {
+        "kind": "title",
+        "name": "티스",
+        "url": null,
+        "origin": "user_authorized_pronunciation",
+        "quote": "사용자 승인 영어 제목 일반 발음: Teeth → 티스 (2026-10-28). 외부 검색 인용 아님."
       }
     ],
     "reviewRequired": true,
@@ -208,7 +229,7 @@
       "channels": 2,
       "durationSeconds": 203.47185416666667,
       "byteLength": 1239847,
-      "sha256": "1be774e80b7f7aa895ddae91fa68dbcd9772f57fb5aa342416cdf453967dd927"
+      "sha256": "08c56f7c05ff1538f5aa88d2117e5ad9ed55b8b782c6017c5bbeed4456cae68c"
     },
     "sourceTitle": "Teeth",
     "rawChartWriterCredit": {
@@ -220,10 +241,8 @@
       "TJ’s raw credit names Louis Bell and indicates six additional writers, while the full-songwriter source lists a different 11-name set and omits Louis Bell. Retained both records separately; credit-set discrepancy still needs reconciliation."
     ],
     "notes": "TJ’s raw credit names Louis Bell and indicates six additional writers, while the full-songwriter source lists a different 11-name set and omits Louis Bell. Retained both records separately; credit-set discrepancy still needs reconciliation.",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
     "audioSourceReviewRequired": false,
     "audioSourceReviewReasons": [],
     "audioSourceEvidence": {
@@ -255,6 +274,15 @@
         "replacementSourceType": "subtitled_audio"
       }
     ],
-    "audioSourceType": "subtitled_audio"
+    "audioSourceType": "subtitled_audio",
+    "namingHistory": [
+      {
+        "date": "2026-10-28",
+        "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
+        "addedTags": [
+          "티스"
+        ]
+      }
+    ]
   }
 ]

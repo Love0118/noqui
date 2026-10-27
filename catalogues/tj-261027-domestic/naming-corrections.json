@@ -282,5 +282,194 @@
       "namingReviewRequired": false
     }
   ],
-  "remainingNamingReview": []
+  "remainingNamingReview": [],
+  "pronunciationChanges": [
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 24,
+      "id": "0bbccc9c-70b4-510e-b702-2ebc8ef7ccd1",
+      "title": "My Love(And)",
+      "addedTags": [
+        "마이러브앤드"
+      ],
+      "previousTags": [
+        "이재경",
+        "이상준",
+        "버즈",
+        "My LoveAnd",
+        "My Love"
+      ],
+      "tags": [
+        "이재경",
+        "이상준",
+        "버즈",
+        "My LoveAnd",
+        "My Love",
+        "마이러브앤드"
+      ],
+      "retiredRedundantAliases": [],
+      "reviewRequired": false,
+      "previousNamingReasons": [],
+      "namingReviewReasons": []
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 36,
+      "id": "c1e71249-52f9-514b-84f3-8b580eb4ad52",
+      "title": "Pretty Girl",
+      "addedTags": [
+        "프리티걸"
+      ],
+      "previousTags": [
+        "한재호",
+        "김승수",
+        "송수윤",
+        "RESCENE리센느"
+      ],
+      "tags": [
+        "한재호",
+        "김승수",
+        "송수윤",
+        "RESCENE리센느",
+        "프리티걸"
+      ],
+      "retiredRedundantAliases": [],
+      "reviewRequired": false,
+      "previousNamingReasons": [],
+      "namingReviewReasons": []
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 61,
+      "id": "6c6e6cdf-4dcb-5a5e-91ce-c63a74b1fb46",
+      "title": "I Love You",
+      "addedTags": [
+        "아이러브유"
+      ],
+      "previousTags": [
+        "OZAKI YUTAKA",
+        "포지션"
+      ],
+      "tags": [
+        "OZAKI YUTAKA",
+        "포지션",
+        "아이러브유"
+      ],
+      "retiredRedundantAliases": [],
+      "reviewRequired": false,
+      "previousNamingReasons": [],
+      "namingReviewReasons": []
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 67,
+      "id": "0dcb0d1d-fce4-521d-94ba-7219c49081f2",
+      "title": "One Love",
+      "addedTags": [
+        "원러브"
+      ],
+      "previousTags": [
+        "이수",
+        "MC THE MAX"
+      ],
+      "tags": [
+        "이수",
+        "MC THE MAX",
+        "원러브"
+      ],
+      "retiredRedundantAliases": [],
+      "reviewRequired": false,
+      "previousNamingReasons": [],
+      "namingReviewReasons": []
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 69,
+      "id": "56ae2a84-8c77-57e9-9c6c-5b8b4569ce33",
+      "title": "Tears",
+      "addedTags": [
+        "티어스"
+      ],
+      "previousTags": [
+        "정성윤",
+        "주태영",
+        "소찬휘"
+      ],
+      "tags": [
+        "정성윤",
+        "주태영",
+        "소찬휘",
+        "티어스"
+      ],
+      "retiredRedundantAliases": [],
+      "reviewRequired": false,
+      "previousNamingReasons": [],
+      "namingReviewReasons": []
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 71,
+      "id": "f1813de4-12e5-5a5f-b1f1-0181d3b90b4d",
+      "title": "REDRED",
+      "addedTags": [
+        "레드레드"
+      ],
+      "previousTags": [
+        "마틴",
+        "제임스",
+        "코르티스",
+        "SUPREME BOI",
+        "HISS NOISE",
+        "MARTIN",
+        "JAMES",
+        "성현",
+        "주훈",
+        "건호"
+      ],
+      "tags": [
+        "마틴",
+        "제임스",
+        "코르티스",
+        "SUPREME BOI",
+        "HISS NOISE",
+        "JAMES",
+        "성현",
+        "주훈",
+        "건호",
+        "레드레드"
+      ],
+      "retiredRedundantAliases": [
+        {
+          "tag": "MARTIN",
+          "retainedEquivalent": "마틴",
+          "reason": "Ten-tag limit; retain the Korean writer alias and full canonical writers metadata."
+        }
+      ],
+      "reviewRequired": false,
+      "previousNamingReasons": [],
+      "namingReviewReasons": []
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 81,
+      "id": "01f5b148-5522-5a96-8b9f-e6818f78b80f",
+      "title": "Marry Me",
+      "addedTags": [
+        "메리미"
+      ],
+      "previousTags": [
+        "마크툽MAKTUB",
+        "마크툽MAKTUB구윤회"
+      ],
+      "tags": [
+        "마크툽MAKTUB",
+        "마크툽MAKTUB구윤회",
+        "메리미"
+      ],
+      "retiredRedundantAliases": [],
+      "reviewRequired": false,
+      "previousNamingReasons": [],
+      "namingReviewReasons": []
+    }
+  ]
 }

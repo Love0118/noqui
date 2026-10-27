@@ -21,9 +21,9 @@
     "playable": 100,
     "baseReviewRequired": 0,
     "aliasReviewRequired": 14,
-    "titleAliases": 125,
+    "titleAliases": 136,
     "writerAliasInstances": 107,
-    "namingReviewRequired": 22
+    "namingReviewRequired": 11
   },
   "baseReviewRequiredRows": [],
   "aliasReviewRows": [
