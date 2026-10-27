@@ -1,0 +1,868 @@
+[
+  {
+    "index": 42,
+    "videoId": "VqmA_LdvBmk",
+    "sourceTitle": null,
+    "channel": null,
+    "durationSeconds": null,
+    "youtubeUrl": "https://www.youtube.com/watch?v=VqmA_LdvBmk",
+    "id": "19a5322e-e81e-5e30-94cc-133941aec43b",
+    "title": "",
+    "tags": [],
+    "confidence": "low",
+    "reviewRequired": true,
+    "notes": "Source title unavailable; left unresolved.",
+    "validationWarnings": [
+      "No title/producer evidence supplied",
+      "Selected title does not appear in the matched evidence quote",
+      "Korean usage of the retained international title is not established",
+      "Original songwriter/producer is unresolved",
+      "Metadata does not satisfy the current Noqui catalogue API constraints"
+    ],
+    "evidence": [],
+    "audio": {
+      "status": "failed",
+      "stage": "download",
+      "reason": "YouTube reports this playlist entry as private.",
+      "failureCode": "PRIVATE_VIDEO"
+    }
+  },
+  {
+    "index": 71,
+    "videoId": "yk74-nV4N4I",
+    "sourceTitle": "미쿠 사랑해줘",
+    "channel": "졸려하루종일",
+    "durationSeconds": 214,
+    "youtubeUrl": "https://www.youtube.com/watch?v=yk74-nV4N4I",
+    "id": "c5005832-12d8-5bbe-8db9-03572693e8fa",
+    "title": "미쿠 사랑해줘",
+    "tags": [],
+    "confidence": "low",
+    "reviewRequired": true,
+    "notes": "Video identity and original songwriter/producer were not verified.",
+    "validationWarnings": [
+      "No title/producer evidence supplied",
+      "Selected title does not appear in the matched evidence quote",
+      "Original songwriter/producer is unresolved"
+    ],
+    "evidence": [],
+    "audio": {
+      "status": "ready",
+      "path": "audio/yk74-nV4N4I.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "durationSeconds": 214.002,
+      "byteLength": 1281562,
+      "sha256": "772194441b201f27db3694799d7d1f67ddd6aba0996bac3dbcd8ffafde8e3951"
+    }
+  },
+  {
+    "index": 72,
+    "videoId": "widZEAJc0QM",
+    "sourceTitle": "Hatsune Miku - Ievan Polkka",
+    "channel": "MCR Official",
+    "durationSeconds": 150,
+    "youtubeUrl": "https://www.youtube.com/watch?v=widZEAJc0QM",
+    "id": "2adad48c-c877-5825-87ea-36b3931b8890",
+    "title": "Ievan Polkka",
+    "tags": [],
+    "confidence": "low",
+    "reviewRequired": true,
+    "notes": "The underlying song is identifiable, but the original songwriter/producer for this video’s arrangement was not verified.",
+    "validationWarnings": [
+      "No title/producer evidence supplied",
+      "Selected title does not appear in the matched evidence quote",
+      "Korean usage of the retained international title is not established",
+      "Original songwriter/producer is unresolved"
+    ],
+    "evidence": [],
+    "audio": {
+      "status": "ready",
+      "path": "audio/widZEAJc0QM.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "durationSeconds": 149.369,
+      "byteLength": 917227,
+      "sha256": "18a6fab263a34f88085589d82d2458519f2f85db5ad9d1ef72485507aaf828c9"
+    }
+  },
+  {
+    "index": 81,
+    "videoId": "vJHz_kxSODc",
+    "sourceTitle": "【手描き】자캐로 다루마씨가 굴러간다 패러디【オリキャラ】",
+    "channel": "Orangette",
+    "durationSeconds": 265,
+    "youtubeUrl": "https://www.youtube.com/watch?v=vJHz_kxSODc",
+    "id": "70d21e2e-ea0e-5d27-ad25-94369706d64d",
+    "title": "【手描き】자캐로 다루마씨가 굴러간다 패러디【オリキャラ】",
+    "tags": [],
+    "confidence": "low",
+    "reviewRequired": true,
+    "notes": "Source is a parody; the underlying song and original creator were not verified.",
+    "validationWarnings": [
+      "No title/producer evidence supplied",
+      "Selected title does not appear in the matched evidence quote",
+      "Original songwriter/producer is unresolved"
+    ],
+    "evidence": [],
+    "audio": {
+      "status": "ready",
+      "path": "audio/vJHz_kxSODc.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "durationSeconds": 264.587,
+      "byteLength": 1623833,
+      "sha256": "7d07117378a72374edec94f76913521c875fce42177c2f541e1b975c0bf70361"
+    }
+  },
+  {
+    "index": 96,
+    "videoId": "9hbTX02By9E",
+    "sourceTitle": null,
+    "channel": null,
+    "durationSeconds": null,
+    "youtubeUrl": "https://www.youtube.com/watch?v=9hbTX02By9E",
+    "id": "4dc62072-3d0c-5014-871d-10c7ade3fd98",
+    "title": "",
+    "tags": [],
+    "confidence": "low",
+    "reviewRequired": true,
+    "notes": "Video unavailable; title and original songwriter are unresolved.",
+    "validationWarnings": [
+      "Selected title does not appear in the matched evidence quote",
+      "Original songwriter/producer is unresolved",
+      "Metadata does not satisfy the current Noqui catalogue API constraints"
+    ],
+    "evidence": [
+      {
+        "url": "https://m.blog.naver.com/qodty0088/223639007988",
+        "quote": "MARETU-White Happy",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://search.naver.com/search.naver?query=9hbTX02By9E",
+        "retrievedAt": "2026-10-27T10:03:59.152071+00:00"
+      }
+    ],
+    "audio": {
+      "status": "failed",
+      "stage": "download",
+      "reason": "YouTube reports this playlist entry as private.",
+      "failureCode": "PRIVATE_VIDEO"
+    }
+  },
+  {
+    "index": 141,
+    "videoId": "UxM5UgpXYM4",
+    "sourceTitle": "‌",
+    "channel": "‌",
+    "durationSeconds": 134,
+    "youtubeUrl": "https://www.youtube.com/watch?v=UxM5UgpXYM4",
+    "id": "c3ef0dcb-492b-5ff9-ba10-247e564d9ae6",
+    "title": "‌",
+    "tags": [],
+    "confidence": "low",
+    "reviewRequired": true,
+    "notes": "Title and original producer could not be identified from available metadata or search results.",
+    "validationWarnings": [
+      "No title/producer evidence supplied",
+      "Selected title does not appear in the matched evidence quote",
+      "Korean usage of the retained international title is not established",
+      "Original songwriter/producer is unresolved",
+      "Metadata does not satisfy the current Noqui catalogue API constraints"
+    ],
+    "evidence": [],
+    "audio": {
+      "status": "ready",
+      "path": "audio/UxM5UgpXYM4.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "durationSeconds": 133.905,
+      "byteLength": 819570,
+      "sha256": "f4413a693b6c828ace58c3146775dfb1553c40ac53e363eaa4ff30f7d33d2435"
+    }
+  },
+  {
+    "index": 156,
+    "videoId": "1pgJ4atTDyo",
+    "sourceTitle": "[구_v2021] [w288p - 4K 업스케일링] 아지랑이 데이즈 2차 창작 - 감자 데이즈",
+    "channel": "믿고 보는 업스케일링",
+    "durationSeconds": 249,
+    "youtubeUrl": "https://www.youtube.com/watch?v=1pgJ4atTDyo",
+    "id": "ece52453-f872-5272-9b24-06eb856513c9",
+    "title": "아지랑이 데이즈",
+    "tags": [
+      "진"
+    ],
+    "confidence": "low",
+    "reviewRequired": true,
+    "notes": "Fan-made 감자 데이즈 parody of Kagerou Days; the parody title itself was not independently verified.",
+    "validationWarnings": [],
+    "evidence": [
+      {
+        "url": "https://namu.wiki/w/%EC%95%84%EC%A7%80%EB%9E%91%EC%9D%B4%20%EB%8D%B0%EC%9D%B4%EC%A6%88",
+        "quote": "아지랑이 데이즈 カゲロウデイズ",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://search.naver.com/search.naver?query=slwnYSnIYVg+%ED%95%98%EC%B8%A0%EB%84%A4%EB%AF%B8%EC%BF%A0-%EC%95%84%EC%A7%80%EB%9E%91%EC%9D%B4%EB%8D%B0%EC%9D%B4%EC%A6%88",
+        "retrievedAt": "2026-10-27T10:01:19.858084+00:00"
+      },
+      {
+        "url": "https://namu.wiki/w/%EC%95%84%EC%A7%80%EB%9E%91%EC%9D%B4%20%EB%8D%B0%EC%9D%B4%EC%A6%88",
+        "quote": "진",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://search.naver.com/search.naver?query=slwnYSnIYVg+%ED%95%98%EC%B8%A0%EB%84%A4%EB%AF%B8%EC%BF%A0-%EC%95%84%EC%A7%80%EB%9E%91%EC%9D%B4%EB%8D%B0%EC%9D%B4%EC%A6%88",
+        "retrievedAt": "2026-10-27T10:01:19.858084+00:00"
+      }
+    ],
+    "audio": {
+      "status": "ready",
+      "path": "audio/1pgJ4atTDyo.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "durationSeconds": 248.6,
+      "byteLength": 1439034,
+      "sha256": "0c25302e87f2a6f05ab2553a1124daacfcaa4ce29f4da503680a2f6eeb60e9af"
+    }
+  },
+  {
+    "index": 165,
+    "videoId": "KhAcM0Nbtr8",
+    "sourceTitle": "Clipping Radio - ft.Hatsune Miku",
+    "channel": "23.exe",
+    "durationSeconds": 210,
+    "youtubeUrl": "https://www.youtube.com/watch?v=KhAcM0Nbtr8",
+    "id": "dedf7693-a4e9-5163-86d1-4c9d58ee9c98",
+    "title": "Clipping Radio",
+    "tags": [
+      "23.exe"
+    ],
+    "confidence": "high",
+    "reviewRequired": true,
+    "notes": "",
+    "validationWarnings": [
+      "Korean usage of the retained international title is not established"
+    ],
+    "evidence": [
+      {
+        "url": "https://typing-tube.net/movie/show/46192",
+        "quote": "Clipping Radio - ft.Hatsune Miku",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://search.naver.com/search.naver?query=Clipping+Radio+23.exe+%EB%B3%B4%EC%BB%AC%EB%A1%9C%EC%9D%B4%EB%93%9C+%ED%95%9C%EA%B5%AD%EC%96%B4+%EC%A0%9C%EB%AA%A9",
+        "retrievedAt": "2026-10-27T10:30:42.284000+00:00"
+      },
+      {
+        "url": "https://vocadb.net/S/344896",
+        "quote": "Clipping Radio - 23 . exe feat. 初音ミク",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://search.naver.com/search.naver?query=Clipping+Radio+23.exe+Hatsune+Miku",
+        "retrievedAt": "2026-10-27T10:07:13.256566+00:00"
+      },
+      {
+        "url": "https://vocadb.net/S/344896",
+        "quote": "Producers : 23 . exe",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://search.naver.com/search.naver?query=Clipping+Radio+23.exe+Hatsune+Miku",
+        "retrievedAt": "2026-10-27T10:07:13.256566+00:00"
+      },
+      {
+        "url": "https://namu.wiki/w/YY",
+        "quote": "23.exe",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://search.naver.com/search.naver?query=Clipping+Radio+23.exe+%EB%B3%B4%EC%BB%AC%EB%A1%9C%EC%9D%B4%EB%93%9C+%ED%95%9C%EA%B5%AD%EC%96%B4+%EC%A0%9C%EB%AA%A9",
+        "retrievedAt": "2026-10-27T10:30:42.284000+00:00"
+      }
+    ],
+    "audio": {
+      "status": "ready",
+      "path": "audio/KhAcM0Nbtr8.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "durationSeconds": 209.881,
+      "byteLength": 1277139,
+      "sha256": "202f0c3c7a87a1d62e92635f596a3d88b17e67ac5e066a9916e018dc3e8c47a2"
+    }
+  },
+  {
+    "index": 206,
+    "videoId": "e2LJBskoJ-g",
+    "sourceTitle": null,
+    "channel": null,
+    "durationSeconds": null,
+    "youtubeUrl": "https://www.youtube.com/watch?v=e2LJBskoJ-g",
+    "id": "110df5fc-3adf-516c-889c-f942d95bc71c",
+    "title": "",
+    "tags": [],
+    "confidence": "low",
+    "reviewRequired": true,
+    "notes": "Title and original producer could not be established from retrieved results.",
+    "validationWarnings": [
+      "No title/producer evidence supplied",
+      "Selected title does not appear in the matched evidence quote",
+      "Korean usage of the retained international title is not established",
+      "Original songwriter/producer is unresolved",
+      "Metadata does not satisfy the current Noqui catalogue API constraints"
+    ],
+    "evidence": [],
+    "audio": {
+      "status": "failed",
+      "stage": "download",
+      "reason": "YouTube reports this playlist entry as private.",
+      "failureCode": "PRIVATE_VIDEO"
+    }
+  },
+  {
+    "index": 211,
+    "videoId": "PpxaCNRT8kg",
+    "sourceTitle": null,
+    "channel": null,
+    "durationSeconds": null,
+    "youtubeUrl": "https://www.youtube.com/watch?v=PpxaCNRT8kg",
+    "id": "2f096018-8c07-569f-bbba-2946fc241037",
+    "title": "",
+    "tags": [],
+    "confidence": "low",
+    "reviewRequired": true,
+    "notes": "Unavailable entry; title and producer left unresolved.",
+    "validationWarnings": [
+      "No title/producer evidence supplied",
+      "Selected title does not appear in the matched evidence quote",
+      "Korean usage of the retained international title is not established",
+      "Original songwriter/producer is unresolved",
+      "Metadata does not satisfy the current Noqui catalogue API constraints"
+    ],
+    "evidence": [],
+    "audio": {
+      "status": "failed",
+      "stage": "download",
+      "reason": "YouTube reports this playlist entry as private.",
+      "failureCode": "PRIVATE_VIDEO"
+    }
+  },
+  {
+    "index": 269,
+    "videoId": "4vIrjQVcc3U",
+    "sourceTitle": "Vocaloid Bossa Nova Medley 【kahimi ft. Hatsune Miku】",
+    "channel": "kahimi Official Channel",
+    "durationSeconds": 566,
+    "youtubeUrl": "https://www.youtube.com/watch?v=4vIrjQVcc3U",
+    "id": "426a9536-88b0-522d-820c-0e5ef5507a64",
+    "title": "보컬로이드 보사노바 메들리",
+    "tags": [
+      "kahimi"
+    ],
+    "confidence": "high",
+    "reviewRequired": true,
+    "notes": "Medley arrangement by kahimi; the 26 included songs have multiple original songwriters, not individually verified here.",
+    "validationWarnings": [
+      "Medley original songwriter credits have not been fully verified"
+    ],
+    "evidence": [
+      {
+        "url": "https://namu.wiki/w/%EB%B3%B4%EC%BB%AC%EB%A1%9C%EC%9D%B4%EB%93%9C%20%EB%B3%B4%EC%82%AC%EB%85%B8%EB%B0%94%20%EB%A9%94%EB%93%A4%EB%A6%AC",
+        "quote": "namu.wiki › 보컬로이드 보사노바 메들리 새 창 열림 Keep에 저장 Keep에 바로가기 새 창 열림 보컬로이드 보사노바 메들리 새 창 열림 개요 ボーカロイドボサノバメドレー / Vocaloid Bo",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://search.naver.com/search.naver?query=Vocaloid+Bossa+Nova+Medley+kahimi",
+        "retrievedAt": "2026-10-27T10:18:21.155264+00:00"
+      },
+      {
+        "url": "https://namu.wiki/w/%EB%B3%B4%EC%BB%AC%EB%A1%9C%EC%9D%B4%EB%93%9C%20%EB%B3%B4%EC%82%AC%EB%85%B8%EB%B0%94%20%EB%A9%94%EB%93%A4%EB%A6%AC",
+        "quote": "ova Medley 2018년에 올라온 kahimi 의 메들리 곡이다. 영상 제작은 K-09, 일러스트레이너는 すゃ, 추가 조교자는 METAx. 2026년 3월 9일, 2편이 나왔다. 26곡인 1편",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://search.naver.com/search.naver?query=Vocaloid+Bossa+Nova+Medley+kahimi",
+        "retrievedAt": "2026-10-27T10:18:21.155264+00:00"
+      }
+    ],
+    "audio": {
+      "status": "ready",
+      "path": "audio/4vIrjQVcc3U.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "durationSeconds": 565.053,
+      "byteLength": 3454746,
+      "sha256": "51043124050e4248a13d27dcf3d5aa49c4da89beb99944e3e7fd99dc25dbd61d"
+    }
+  },
+  {
+    "index": 280,
+    "videoId": "YmzhBoxcVb0",
+    "sourceTitle": "난세콘나센스 / 아마네. / 하츠네 미쿠[한글화]",
+    "channel": "작업용",
+    "durationSeconds": 197,
+    "youtubeUrl": "https://www.youtube.com/watch?v=YmzhBoxcVb0",
+    "id": "c4654208-3362-5eaa-b585-f83db5822510",
+    "title": "난세콘나센스 / 아마네. / 하츠네 미쿠[한글화]",
+    "tags": [],
+    "confidence": "low",
+    "reviewRequired": true,
+    "notes": "Title and producer unresolved; no established Korean title or original title was verified.",
+    "validationWarnings": [
+      "No title/producer evidence supplied",
+      "Selected title does not appear in the matched evidence quote",
+      "Original songwriter/producer is unresolved"
+    ],
+    "evidence": [],
+    "audio": {
+      "status": "ready",
+      "path": "audio/YmzhBoxcVb0.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "durationSeconds": 196.785,
+      "byteLength": 1203492,
+      "sha256": "c7c79efb4338918ba852e479db8219a76f561bdfb2eaa0aeec181c4d32cf24b2"
+    }
+  },
+  {
+    "index": 309,
+    "videoId": "-pH-nDPgDFQ",
+    "sourceTitle": null,
+    "channel": null,
+    "durationSeconds": null,
+    "youtubeUrl": "https://www.youtube.com/watch?v=-pH-nDPgDFQ",
+    "id": "8b971c53-4f36-5767-83fa-2e5763b79c37",
+    "title": "",
+    "tags": [],
+    "confidence": "low",
+    "reviewRequired": true,
+    "notes": "Source title unavailable; video identity unresolved",
+    "validationWarnings": [
+      "No title/producer evidence supplied",
+      "Selected title does not appear in the matched evidence quote",
+      "Korean usage of the retained international title is not established",
+      "Original songwriter/producer is unresolved",
+      "Metadata does not satisfy the current Noqui catalogue API constraints"
+    ],
+    "evidence": [],
+    "audio": {
+      "status": "failed",
+      "stage": "download",
+      "reason": "YouTube reports the uploader account as closed or terminated.",
+      "failureCode": "UPLOADER_ACCOUNT_UNAVAILABLE"
+    }
+  },
+  {
+    "index": 313,
+    "videoId": "tOt_FlJg9zw",
+    "sourceTitle": "Erica (feat. 初音ミク)",
+    "channel": "okameP - Topic",
+    "durationSeconds": 259,
+    "youtubeUrl": "https://www.youtube.com/watch?v=tOt_FlJg9zw",
+    "id": "0aab7327-66ed-589c-ad49-54cf649803a2",
+    "title": "Erica",
+    "tags": [
+      "okameP"
+    ],
+    "confidence": "low",
+    "reviewRequired": true,
+    "notes": "Established Korean title not verified",
+    "validationWarnings": [
+      "Korean usage of the retained international title is not established"
+    ],
+    "evidence": [
+      {
+        "url": "https://vocadb.net/S/41159",
+        "quote": "Erica - オカメP feat. 初音ミク Append (Dark)",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://search.naver.com/search.naver?query=Erica+okameP",
+        "retrievedAt": "2026-10-27T10:04:06.595284+00:00"
+      },
+      {
+        "url": "https://karent.jp/album/1562",
+        "quote": "Erica / okameP",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://search.naver.com/search.naver?query=Erica+okameP",
+        "retrievedAt": "2026-10-27T10:04:06.595284+00:00"
+      }
+    ],
+    "audio": {
+      "status": "ready",
+      "path": "audio/tOt_FlJg9zw.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "durationSeconds": 258.774,
+      "byteLength": 1588112,
+      "sha256": "cbf117524c87dfbb2fe373c3443ac37db72395e67949fdcf020452ff35d46b27"
+    }
+  },
+  {
+    "index": 315,
+    "videoId": "-tCZYBrf_XM",
+    "sourceTitle": "라이스 정식으로 먹어요.",
+    "channel": "cmccox1",
+    "durationSeconds": 85,
+    "youtubeUrl": "https://www.youtube.com/watch?v=-tCZYBrf_XM",
+    "id": "14cda6bf-8a51-5b93-8194-357b8ccffb85",
+    "title": "라이스 정식으로 먹어요.",
+    "tags": [],
+    "confidence": "low",
+    "reviewRequired": true,
+    "notes": "Korean upload title is verified in a community article linking this exact video. Original song/parody identity and songwriter remain unverified; downloaded description is empty. Targeted searches did not establish the original.",
+    "validationWarnings": [
+      "Original songwriter/producer is unresolved"
+    ],
+    "evidence": [
+      {
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=mikuhatsune&no=371195",
+        "quote": "라이스 정식으로 먹어요.라이스 정식으로 먹어요.",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://m.search.naver.com/search.naver?where=m&sm=mtp_hty.top&query=-tCZYBrf_XM",
+        "retrievedAt": "2026-10-27T10:46:07.316662+00:00"
+      }
+    ],
+    "audio": {
+      "status": "ready",
+      "path": "audio/-tCZYBrf_XM.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "durationSeconds": 84.11,
+      "byteLength": 490428,
+      "sha256": "f0ff5674c5555bd64c99f7cf961f13e07d870a3350bfff4ca1624dc0ff18f545"
+    }
+  },
+  {
+    "index": 316,
+    "videoId": "MlNBPKVgt9M",
+    "sourceTitle": "VOCAJAZZ - Miku - oo is a Receiver",
+    "channel": "Cariccalia",
+    "durationSeconds": 191,
+    "youtubeUrl": "https://www.youtube.com/watch?v=MlNBPKVgt9M",
+    "id": "ce8d6306-565b-5a8c-9999-b348e8534c5c",
+    "title": "○○は受信機なんです",
+    "tags": [
+      "UraCommanderP"
+    ],
+    "confidence": "low",
+    "reviewRequired": true,
+    "notes": "Established Korean title not verified",
+    "validationWarnings": [
+      "Korean usage of the retained international title is not established",
+      "Metadata does not satisfy the current Noqui catalogue API constraints"
+    ],
+    "evidence": [
+      {
+        "url": "https://vocadb.net/S/113495",
+        "quote": "○○は受信機なんです - 裏コマンダーP feat. 初音ミク",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://m.search.naver.com/search.naver?query=oo+is+a+Receiver+VOCALOID+song+producer",
+        "retrievedAt": "2026-10-27T10:22:43.062421+00:00"
+      },
+      {
+        "url": "https://vocadb.net/S/113495?lang=English",
+        "quote": "○○ is a Receiver - UraCommanderP feat. Hatsune Miku - Vocaloid Database",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/S/113495?lang=English",
+        "retrievedAt": "2026-10-27T10:47:13.510992+00:00"
+      }
+    ],
+    "audio": {
+      "status": "ready",
+      "path": "audio/MlNBPKVgt9M.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "durationSeconds": 190.921,
+      "byteLength": 1172751,
+      "sha256": "21bb841c6628ba513a0ec00e31078c36a448e9a534e228605091861ec8193295"
+    }
+  },
+  {
+    "index": 363,
+    "videoId": "67jCsBAYaPU",
+    "sourceTitle": null,
+    "channel": null,
+    "durationSeconds": null,
+    "youtubeUrl": "https://www.youtube.com/watch?v=67jCsBAYaPU",
+    "id": "8e3e6c8b-6b4c-5db1-8867-39726884357f",
+    "title": "",
+    "tags": [],
+    "confidence": "low",
+    "reviewRequired": true,
+    "notes": "Source title unavailable; video identity unresolved",
+    "validationWarnings": [
+      "No title/producer evidence supplied",
+      "Selected title does not appear in the matched evidence quote",
+      "Korean usage of the retained international title is not established",
+      "Original songwriter/producer is unresolved",
+      "Metadata does not satisfy the current Noqui catalogue API constraints"
+    ],
+    "evidence": [],
+    "audio": {
+      "status": "failed",
+      "stage": "download",
+      "reason": "YouTube reports the uploader account as closed or terminated.",
+      "failureCode": "UPLOADER_ACCOUNT_UNAVAILABLE"
+    }
+  },
+  {
+    "index": 386,
+    "videoId": "fjHTr9CpG0k",
+    "sourceTitle": null,
+    "channel": null,
+    "durationSeconds": null,
+    "youtubeUrl": "https://www.youtube.com/watch?v=fjHTr9CpG0k",
+    "id": "6082b9ec-0fbc-5c59-85b0-6778c7106539",
+    "title": "",
+    "tags": [],
+    "confidence": "low",
+    "reviewRequired": true,
+    "notes": "No retrievable title or source credit was found for this unavailable/private entry.",
+    "validationWarnings": [
+      "No title/producer evidence supplied",
+      "Selected title does not appear in the matched evidence quote",
+      "Korean usage of the retained international title is not established",
+      "Original songwriter/producer is unresolved",
+      "Metadata does not satisfy the current Noqui catalogue API constraints"
+    ],
+    "evidence": [],
+    "audio": {
+      "status": "failed",
+      "stage": "download",
+      "reason": "YouTube reports this playlist entry as private.",
+      "failureCode": "PRIVATE_VIDEO"
+    }
+  },
+  {
+    "index": 433,
+    "videoId": "MwzFh1hbPvw",
+    "sourceTitle": "[Megurine Luka] - NEXT STAGE [Original]",
+    "channel": "snowyheart1",
+    "durationSeconds": 269,
+    "youtubeUrl": "https://www.youtube.com/watch?v=MwzFh1hbPvw",
+    "id": "d392a1db-ada6-5b88-9306-54f9fba876d3",
+    "title": "NEXT STAGE",
+    "tags": [],
+    "confidence": "low",
+    "reviewRequired": true,
+    "notes": "Established Korean title and songwriter/producer were not verified.",
+    "validationWarnings": [
+      "No title/producer evidence supplied",
+      "Selected title does not appear in the matched evidence quote",
+      "Korean usage of the retained international title is not established",
+      "Original songwriter/producer is unresolved"
+    ],
+    "evidence": [],
+    "audio": {
+      "status": "ready",
+      "path": "audio/MwzFh1hbPvw.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "durationSeconds": 268.314,
+      "byteLength": 1641742,
+      "sha256": "241e6f7736bfb9e4669fe0e62abc06c149c5cd12aa4151c7c280e4b59cfb02bf"
+    }
+  },
+  {
+    "index": 478,
+    "videoId": "_TeOj59LA0g",
+    "sourceTitle": "I am a broken umbrella / 初音ミク Hatsune Miku",
+    "channel": "Nem",
+    "durationSeconds": 288,
+    "youtubeUrl": "https://www.youtube.com/watch?v=_TeOj59LA0g",
+    "id": "0da78bfd-e587-5071-adaf-454e4d7642fc",
+    "title": "I am a broken umbrella",
+    "tags": [
+      "Nem"
+    ],
+    "confidence": "low",
+    "reviewRequired": true,
+    "notes": "Established Korean title not verified",
+    "validationWarnings": [],
+    "evidence": [
+      {
+        "url": "https://namu.wiki/w/Nem",
+        "quote": "I am a broken umbrella",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://search.naver.com/search.naver?query=I+am+a+broken+umbrella+Nem+%EB%B3%B4%EC%BB%AC%EB%A1%9C%EC%9D%B4%EB%93%9C",
+        "retrievedAt": "2026-10-27T10:51:36.027255+00:00"
+      }
+    ],
+    "audio": {
+      "status": "ready",
+      "path": "audio/_TeOj59LA0g.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "durationSeconds": 287.923,
+      "byteLength": 1715698,
+      "sha256": "126691308838e1dad278a339c3dca6f9c148d3450ee3063f94798fef0dc75cf2"
+    }
+  },
+  {
+    "index": 490,
+    "videoId": "Zif5l-U7LwQ",
+    "sourceTitle": "【Hanatan / 花たん】Sasabune/笹舟/Chiếc thuyền tre - [Yoshami trans]",
+    "channel": "ながらよしゃみ",
+    "durationSeconds": 313,
+    "youtubeUrl": "https://www.youtube.com/watch?v=Zif5l-U7LwQ",
+    "id": "0b52563a-609b-5321-970c-0ee896b2fa5f",
+    "title": "笹舟",
+    "tags": [
+      "doriko"
+    ],
+    "confidence": "low",
+    "reviewRequired": true,
+    "notes": "Established Korean title not verified",
+    "validationWarnings": [
+      "Korean usage of the retained international title is not established",
+      "Metadata does not satisfy the current Noqui catalogue API constraints"
+    ],
+    "evidence": [
+      {
+        "url": "https://www.uta-net.com/movie/213971/",
+        "quote": "doriko feat. 初音ミク 笹舟",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://search.yahoo.co.jp/search?p=%E3%80%90Hanatan+%2F+%E8%8A%B1%E3%81%9F%E3%82%93%E3%80%91Sasabune%2F%E7%AC%B9%E8%88%9F%2FChi%E1%BA%BFc+thuy%E1%BB%81n+tre+-+%5BYoshami+trans%5D+%ED%95%9C%EA%B5%AD%EC%96%B4+%EC%A0%9C%EB%AA%A9+%EB%B3%B4%EC%BB%AC%EB%A1%9C%EC%9D%B4%EB%93%9C+%EC%9E%91%EA%B3%A1%EA%B0%80",
+        "retrievedAt": "2026-10-27T10:00:02.683299+00:00"
+      }
+    ],
+    "audio": {
+      "status": "ready",
+      "path": "audio/Zif5l-U7LwQ.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "durationSeconds": 312.629,
+      "byteLength": 1917027,
+      "sha256": "7ac78c92837333ad8a7ba06e8f301fbdb870626613420568b4cb465056e07ac1"
+    }
+  },
+  {
+    "index": 508,
+    "videoId": "H0RHgnFLJ3A",
+    "sourceTitle": "Hatsune Miku (初音ミク) - Neverland (APG) (English Subtitles)",
+    "channel": "Kumitan",
+    "durationSeconds": 183,
+    "youtubeUrl": "https://www.youtube.com/watch?v=H0RHgnFLJ3A",
+    "id": "1c55fc4b-2237-543c-b1b4-70d17e4641f0",
+    "title": "NEVERLAND",
+    "tags": [
+      "APG550"
+    ],
+    "confidence": "low",
+    "reviewRequired": true,
+    "notes": "Established Korean title not verified",
+    "validationWarnings": [
+      "Korean usage of the retained international title is not established"
+    ],
+    "evidence": [
+      {
+        "url": "https://w.atwiki.jp/hmiku/pages/11970.html",
+        "quote": "NEVERLAND / APG550 - 初音ミク Wiki - atwiki（アットウィキ）",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://m.search.naver.com/search.naver?query=Neverland+APG550",
+        "retrievedAt": "2026-10-27T10:27:03.464932+00:00"
+      }
+    ],
+    "audio": {
+      "status": "ready",
+      "path": "audio/H0RHgnFLJ3A.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "durationSeconds": 182.151,
+      "byteLength": 1108389,
+      "sha256": "8f8a532ed100218d91e6642238fe85aefbf61469d85cc0225369029bcfa22baa"
+    }
+  },
+  {
+    "index": 519,
+    "videoId": "viZSgo0f6Io",
+    "sourceTitle": null,
+    "channel": null,
+    "durationSeconds": null,
+    "youtubeUrl": "https://www.youtube.com/watch?v=viZSgo0f6Io",
+    "id": "4c5e5c18-f0e4-5160-9338-a8a39ecb3ada",
+    "title": "",
+    "tags": [],
+    "confidence": "low",
+    "reviewRequired": true,
+    "notes": "Established Korean title and/or full producer credit not verified; original upload title retained.",
+    "validationWarnings": [
+      "No title/producer evidence supplied",
+      "Selected title does not appear in the matched evidence quote",
+      "Korean usage of the retained international title is not established",
+      "Original songwriter/producer is unresolved",
+      "Metadata does not satisfy the current Noqui catalogue API constraints"
+    ],
+    "evidence": [],
+    "audio": {
+      "status": "failed",
+      "stage": "download",
+      "reason": "YouTube reports the uploader account as closed or terminated.",
+      "failureCode": "UPLOADER_ACCOUNT_UNAVAILABLE"
+    }
+  },
+  {
+    "index": 529,
+    "videoId": "3vUQ7a6pV_A",
+    "sourceTitle": "▶︎消えてしまえたならいいのに、なんて　歌ってみた /めありー",
+    "channel": "めありーちゃんねる",
+    "durationSeconds": 257,
+    "youtubeUrl": "https://www.youtube.com/watch?v=3vUQ7a6pV_A",
+    "id": "da6f3af3-6e84-547f-83a2-aab78b3a1390",
+    "title": "▶︎消えてしまえたならいいのに、なんて　歌ってみた /めありー",
+    "tags": [],
+    "confidence": "low",
+    "reviewRequired": true,
+    "notes": "Established Korean title and/or full producer credit not verified; original upload title retained.",
+    "validationWarnings": [
+      "No title/producer evidence supplied",
+      "Selected title does not appear in the matched evidence quote",
+      "Korean usage of the retained international title is not established",
+      "Original songwriter/producer is unresolved",
+      "Metadata does not satisfy the current Noqui catalogue API constraints"
+    ],
+    "evidence": [],
+    "audio": {
+      "status": "ready",
+      "path": "audio/3vUQ7a6pV_A.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "durationSeconds": 256.75,
+      "byteLength": 1561545,
+      "sha256": "dab0ee0606dbc8aed7f097bd90b47802e0c3bb7f35ff59b60ab7004d7347c670"
+    }
+  }
+]

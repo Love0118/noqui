@@ -12,6 +12,17 @@ Paper 26.3 / Java 25용 노래퀴즈 플러그인입니다. 오디오는 Rust �
 
 두 브랜치는 서로 다른 구성 요소를 담습니다. 브랜치 사이를 통째로 병합하지 않으며 웹 소스는 별도 체크아웃에서 수정합니다. 브리지 계약은 [contracts.md](contracts.md)를 기준으로 양쪽 변경의 호환성을 확인합니다. 기존 `mc-luck-defense/noqui`와 `mc-luck-defense/noqui/web`의 커밋 이력을 각각 보존했습니다.
 
+## 곡 데이터
+
+[보컬로이드 플레이리스트 정제 데이터](catalogues/vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB/)에는 한국어 통용 제목·원곡 작가 태그·확인 출처와 검수 대기 목록이 들어 있습니다. 전체 길이 음원은 해당 폴더의 로컬 `audio/`에 보관하며 Git에는 포함하지 않습니다. 이 데이터 준비 작업은 운영 서버나 기존 120초 재생 캐시를 변경하지 않습니다.
+
+- `catalogue.json`: 원래 순서와 영상 ID를 보존한 전체 목록, 확인 출처, 음원 경로와 SHA-256.
+- `import-batch-*.json`: 검수를 통과한 메타데이터만 담은 최대 50곡 단위의 내부 API 입력 파일. 자동 전송하지 않습니다.
+- `review-required.json`, `download-failures.json`: 제목·작가 확인이 더 필요한 항목과 다운로드 불가 항목.
+- `summary.json`: 검수·다운로드 집계. 음원은 잘라내지 않은 48kbps 스테레오 Ogg Opus이며 제목과 작가를 파일 태그에도 기록합니다.
+
+`python catalogues/vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB/validate.py`로 목록을 검사합니다. 로컬 음원까지 보관한 체크아웃에서는 `--audio`를 추가해 파일 해시·전체 길이·내장 태그도 확인할 수 있습니다. 자체 번역한 제목은 사용하지 않으며 통용 한국어 제목을 확인하지 못한 곡은 검수 대기 목록에 남깁니다.
+
 ## 빌드
 
 플러그인 저장소 루트에서 실행합니다. Java 25, Maven, Python 3이 필요합니다.

@@ -1,0 +1,17 @@
+{
+  "verifiedOn": "2026-10-27",
+  "playlistEntries": 565,
+  "uniqueVideoIds": 565,
+  "metadataVerified": 541,
+  "metadataReviewRequired": 24,
+  "fullLengthAudioFiles": 552,
+  "fullAudioDecodePassed": 552,
+  "audioDecodeFailures": 0,
+  "fileHashesDurationsAndEmbeddedTagsChecked": true,
+  "importBatches": 11,
+  "largestImportBatchBytes": 11309,
+  "sourceReferences": 873,
+  "directTranslationsUsed": false,
+  "liveServerModified": false,
+  "localAudioIgnoredByGit": true
+}

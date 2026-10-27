@@ -1,0 +1,21 @@
+{
+  "total": 565,
+  "audio": {
+    "ready": 552,
+    "failed": 13
+  },
+  "reviewRequired": 24,
+  "importable": 541,
+  "audioBytes": 749078730,
+  "playlistEntries": 565,
+  "verifiedMetadata": 541,
+  "downloadFailureReasons": {
+    "PRIVATE_VIDEO": 7,
+    "AGE_RESTRICTED": 2,
+    "UPLOADER_ACCOUNT_UNAVAILABLE": 3,
+    "RIGHTSHOLDER_BLOCKED": 1
+  },
+  "fullLengthAudio": true,
+  "nominalAudioBitrate": 48000,
+  "audioStoredInGit": false
+}

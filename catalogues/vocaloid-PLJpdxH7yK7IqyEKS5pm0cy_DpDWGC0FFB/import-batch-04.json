@@ -1,0 +1,407 @@
+{
+  "schemaVersion": 1,
+  "songs": [
+    {
+      "id": "ef83b374-7105-5056-b583-2b2f4998a7fa",
+      "youtubeUrl": "https://www.youtube.com/watch?v=wfzC8qMmOlY",
+      "title": "불꽃",
+      "tags": [
+        "DECO*27"
+      ]
+    },
+    {
+      "id": "a6c6d3a9-8eac-5fcf-a96b-6ffca231051e",
+      "youtubeUrl": "https://www.youtube.com/watch?v=w3EvolmCInA",
+      "title": "진흙 속에 피다",
+      "tags": [
+        "HarryP"
+      ]
+    },
+    {
+      "id": "5bd214c6-3600-54e5-b104-e058385621c3",
+      "youtubeUrl": "https://www.youtube.com/watch?v=_UhEPxX7Zkg",
+      "title": "정말 멋진 6월이었습니다",
+      "tags": [
+        "Eight"
+      ]
+    },
+    {
+      "id": "b6be41dd-c50a-52da-8e98-98ed11577260",
+      "youtubeUrl": "https://www.youtube.com/watch?v=Ooq6t7YPNM0",
+      "title": "너도 나쁜 사람이라 다행이야",
+      "tags": [
+        "피노키오피"
+      ]
+    },
+    {
+      "id": "77d3b4c6-1b55-585c-9d56-c9959b029960",
+      "youtubeUrl": "https://www.youtube.com/watch?v=rUATvcj9S9E",
+      "title": "우리들은 모두 의미불명",
+      "tags": [
+        "피노키오피"
+      ]
+    },
+    {
+      "id": "abc7d918-c46c-5858-9115-741ee0e3ac71",
+      "youtubeUrl": "https://www.youtube.com/watch?v=BGgWt9t8ie8",
+      "title": "있잖아 있잖아 있잖아.",
+      "tags": [
+        "피노키오피"
+      ]
+    },
+    {
+      "id": "44a176ff-a598-52ae-a4ef-4c78da37eb42",
+      "youtubeUrl": "https://www.youtube.com/watch?v=AV2bHsCZKRs",
+      "title": "앙헬",
+      "tags": [
+        "카이리키 베어"
+      ]
+    },
+    {
+      "id": "ad495151-0145-5ca3-80f1-9f599fc84592",
+      "youtubeUrl": "https://www.youtube.com/watch?v=o2tPQeX27-s",
+      "title": "래트가 죽었다",
+      "tags": [
+        "P.I.N.A."
+      ]
+    },
+    {
+      "id": "ce1d8fb6-68c6-592a-8fcb-2f62cdc866b2",
+      "youtubeUrl": "https://www.youtube.com/watch?v=loAQ8a_lk_4",
+      "title": "지터 돌",
+      "tags": [
+        "niki"
+      ]
+    },
+    {
+      "id": "3d4c0e6c-7805-5503-a7d9-9b60c8fa1de8",
+      "youtubeUrl": "https://www.youtube.com/watch?v=bA0FBlMNv4Q",
+      "title": "레드・퍼지!!!",
+      "tags": [
+        "P.I.N.A."
+      ]
+    },
+    {
+      "id": "ad0987de-ddbc-50ae-b0bd-7ab27b381a60",
+      "youtubeUrl": "https://www.youtube.com/watch?v=37t7YlMNYiY",
+      "title": "알칼리 열등생",
+      "tags": [
+        "카이리키 베어"
+      ]
+    },
+    {
+      "id": "b4fb95a8-ffe7-52a8-b2d0-4f18c2da0811",
+      "youtubeUrl": "https://www.youtube.com/watch?v=rhSEpO-ghaY",
+      "title": "달맞이 리사이틀",
+      "tags": [
+        "진"
+      ]
+    },
+    {
+      "id": "5ede061e-bf47-57bc-aec9-27b84db42b60",
+      "youtubeUrl": "https://www.youtube.com/watch?v=OhqvBrQ_ikY",
+      "title": "코인 로커 베이비",
+      "tags": [
+        "MARETU"
+      ]
+    },
+    {
+      "id": "10f0dee0-bd29-52fd-958e-7ec703237595",
+      "youtubeUrl": "https://www.youtube.com/watch?v=vqCiDfc82A8",
+      "title": "너는 글러먹은 아이",
+      "tags": [
+        "키쿠오"
+      ]
+    },
+    {
+      "id": "9ecf7bb9-eea0-548f-9500-c64eb74e4c18",
+      "youtubeUrl": "https://www.youtube.com/watch?v=7_2HFC7kao4",
+      "title": "그러니 유 앤 미",
+      "tags": [
+        "타다노Co"
+      ]
+    },
+    {
+      "id": "46d86bbb-6694-5ab8-9041-0371c747fa38",
+      "youtubeUrl": "https://www.youtube.com/watch?v=_XUbtmzR2pA",
+      "title": "샐러맨더",
+      "tags": [
+        "DECO*27"
+      ]
+    },
+    {
+      "id": "cf0bfe44-9bdf-517c-83f2-7518b20be10f",
+      "youtubeUrl": "https://www.youtube.com/watch?v=jMWXqEtFfxk",
+      "title": "에고이스트",
+      "tags": [
+        "오누마 파슬리"
+      ]
+    },
+    {
+      "id": "659ec7cd-f594-5968-bd9c-d4ced5c01251",
+      "youtubeUrl": "https://www.youtube.com/watch?v=mMaAXVdrU3o",
+      "title": "가지마",
+      "tags": [
+        "Sota"
+      ]
+    },
+    {
+      "id": "acefee94-a192-5da6-a351-7b302434f1b6",
+      "youtubeUrl": "https://www.youtube.com/watch?v=6T3s2EyPYbM",
+      "title": "아카리가 찾아왔다굿",
+      "tags": [
+        "GYARI"
+      ]
+    },
+    {
+      "id": "a36359e5-a01c-5f5d-a3da-0a2e75604e63",
+      "youtubeUrl": "https://www.youtube.com/watch?v=n3244uWidzw",
+      "title": "아이덴티티",
+      "tags": [
+        "Kanaria"
+      ]
+    },
+    {
+      "id": "320f99ec-9767-5acc-a970-da2872a4d8d2",
+      "youtubeUrl": "https://www.youtube.com/watch?v=Qs1spSzwSPE",
+      "title": "리얼 하츠네 미쿠의 소실",
+      "tags": [
+        "cosMo@폭주P"
+      ]
+    },
+    {
+      "id": "ad95bb7f-b9b1-5537-a0fd-9fed8c085992",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ygSs5O6ni4g",
+      "title": "로워",
+      "tags": [
+        "누유리"
+      ]
+    },
+    {
+      "id": "51e68d22-66e3-5bf7-8394-eb346844a874",
+      "youtubeUrl": "https://www.youtube.com/watch?v=C5YLaNJo4es",
+      "title": "비와 페트라",
+      "tags": [
+        "벌룬"
+      ]
+    },
+    {
+      "id": "eab3914c-0e65-5a58-8e20-084f69c286b6",
+      "youtubeUrl": "https://www.youtube.com/watch?v=80alq22ryXo",
+      "title": "울려퍼져라",
+      "tags": [
+        "Giga",
+        "Reol"
+      ]
+    },
+    {
+      "id": "7e7f9d26-821e-5dcb-a66c-659ccb32efef",
+      "youtubeUrl": "https://www.youtube.com/watch?v=9eyyhtOrKPI",
+      "title": "drop pop candy",
+      "tags": [
+        "Reol",
+        "Giga"
+      ]
+    },
+    {
+      "id": "d9509da0-cd2d-50f1-b7bd-10b78f582464",
+      "youtubeUrl": "https://www.youtube.com/watch?v=YZHkyR37Qpk",
+      "title": "사랑의 말 Ⅳ",
+      "tags": [
+        "DECO*27"
+      ]
+    },
+    {
+      "id": "82c6409b-3fef-5366-83c6-8e3b250f3d2d",
+      "youtubeUrl": "https://www.youtube.com/watch?v=p9FJXfGHtDA",
+      "title": "빌런",
+      "tags": [
+        "테니오하"
+      ]
+    },
+    {
+      "id": "3c9fac48-6bac-5da5-8b49-1c2d03731cfd",
+      "youtubeUrl": "https://www.youtube.com/watch?v=oNT_x8sr24Y",
+      "title": "애정 열등생",
+      "tags": [
+        "카이리키 베어"
+      ]
+    },
+    {
+      "id": "9117015d-229d-57d2-bec1-f3ccef14d70b",
+      "youtubeUrl": "https://www.youtube.com/watch?v=hXTaO1tPsHc",
+      "title": "헝그리 니콜",
+      "tags": [
+        "니루 카지츠"
+      ]
+    },
+    {
+      "id": "4fb35925-1a16-5c7e-836c-71d8971cc8a8",
+      "youtubeUrl": "https://www.youtube.com/watch?v=E1PGiyRjqkU",
+      "title": "정키 나이트 타운 오케스트라",
+      "tags": [
+        "스리이"
+      ]
+    },
+    {
+      "id": "a2c8d678-eb80-5164-bb2b-1a35f126e098",
+      "youtubeUrl": "https://www.youtube.com/watch?v=YtUH0zRq0UE",
+      "title": "고독의 종교",
+      "tags": [
+        "syudou"
+      ]
+    },
+    {
+      "id": "8473b7f9-7ab0-5a6e-bab7-67315fa4bfba",
+      "youtubeUrl": "https://www.youtube.com/watch?v=DuX6J_t0BRo",
+      "title": "인조 에너미",
+      "tags": [
+        "진"
+      ]
+    },
+    {
+      "id": "54600435-2d78-55a2-a7ce-c9668d9458af",
+      "youtubeUrl": "https://www.youtube.com/watch?v=-YNXsDuY4LM",
+      "title": "키사라기 어텐션",
+      "tags": [
+        "진"
+      ]
+    },
+    {
+      "id": "b0914cdb-6d9e-5504-9b83-7613274fcbca",
+      "youtubeUrl": "https://www.youtube.com/watch?v=0Fyg3YQwVMU",
+      "title": "코노하의 세계사정",
+      "tags": [
+        "진"
+      ]
+    },
+    {
+      "id": "0c7564da-bbe7-5288-9702-eaacf2c22717",
+      "youtubeUrl": "https://www.youtube.com/watch?v=hbn1Acnes-w",
+      "title": "내가 그 녀석을 죽였어",
+      "tags": [
+        "즈키오"
+      ]
+    },
+    {
+      "id": "b16fc7d1-82b7-5afd-b1ba-422401fa8202",
+      "youtubeUrl": "https://www.youtube.com/watch?v=JdLXXqYqxUg",
+      "title": "뭘 해도 잘되지 않아",
+      "tags": [
+        "meiyo"
+      ]
+    },
+    {
+      "id": "f43ee2b5-f2ee-5741-84fe-7bf7f1ab7cc1",
+      "youtubeUrl": "https://www.youtube.com/watch?v=I1mOeAtPkgk",
+      "title": "미안해 미안해",
+      "tags": [
+        "Kikuo"
+      ]
+    },
+    {
+      "id": "76d0ecaa-0ae0-5b5e-8c3c-370a7b0758c5",
+      "youtubeUrl": "https://www.youtube.com/watch?v=qVM2xBIQf6E",
+      "title": "쥐었다가 펼쳐서 나찰과 송장",
+      "tags": [
+        "하치"
+      ]
+    },
+    {
+      "id": "b2d3b90d-3567-58c6-8c25-472942c17257",
+      "youtubeUrl": "https://www.youtube.com/watch?v=g4Qqu16ffVk",
+      "title": "실상 워드",
+      "tags": [
+        "진"
+      ]
+    },
+    {
+      "id": "eaf356a1-d212-5349-90ff-d9327f0982ac",
+      "youtubeUrl": "https://www.youtube.com/watch?v=YGRGIK3fdWM",
+      "title": "거센 외로움이 덮쳐와",
+      "tags": [
+        "히후미"
+      ]
+    },
+    {
+      "id": "296418a3-9601-550b-a242-e7721eb7bfbf",
+      "youtubeUrl": "https://www.youtube.com/watch?v=6P3AVDspok8",
+      "title": "썩은 외도와 초콜릿",
+      "tags": [
+        "피노키오피"
+      ]
+    },
+    {
+      "id": "2d9f4a23-3c2f-5520-9e70-fd0e9d876670",
+      "youtubeUrl": "https://www.youtube.com/watch?v=lXma6qKonnk",
+      "title": "Alice in 냉동고",
+      "tags": [
+        "Orangestar"
+      ]
+    },
+    {
+      "id": "dcf56640-ff56-52b8-99a8-eeba185e00fc",
+      "youtubeUrl": "https://www.youtube.com/watch?v=txvsf2Zaquo",
+      "title": "Love & Death",
+      "tags": [
+        "호옹이"
+      ]
+    },
+    {
+      "id": "d3aa478f-11f0-5978-ac8b-b6e0726150f6",
+      "youtubeUrl": "https://www.youtube.com/watch?v=z_RmuScgWOQ",
+      "title": "에바",
+      "tags": [
+        "Hiiragi Kirai"
+      ]
+    },
+    {
+      "id": "9d47b175-90ae-5f16-a827-36e83fe6d7b7",
+      "youtubeUrl": "https://www.youtube.com/watch?v=MCj1KedBSsY",
+      "title": "죽어버리다니 한심하구나!",
+      "tags": [
+        "지저스P"
+      ]
+    },
+    {
+      "id": "d4c84817-0fd0-5690-a87e-1f5f31b4e013",
+      "youtubeUrl": "https://www.youtube.com/watch?v=mQWAUAcnR-w",
+      "title": "매지컬 닥터",
+      "tags": [
+        "MARETU"
+      ]
+    },
+    {
+      "id": "c387a716-699e-59e7-b362-e4d383b079ad",
+      "youtubeUrl": "https://www.youtube.com/watch?v=JB-eZL1CLy8",
+      "title": "행복해질 수 있는 숨겨진 커맨드가 있다는 것 같다",
+      "tags": [
+        "UtataP"
+      ]
+    },
+    {
+      "id": "7d425b97-6546-57d6-8ff1-2f595a26d98b",
+      "youtubeUrl": "https://www.youtube.com/watch?v=KF-8HkiP6-M",
+      "title": "혜성 허니문",
+      "tags": [
+        "나유탄 성인"
+      ]
+    },
+    {
+      "id": "9f8c27bb-0059-5ddb-9a1c-bc041de57c24",
+      "youtubeUrl": "https://www.youtube.com/watch?v=EYLCHz16m2c",
+      "title": "Mrs.Pumpkin의 우스꽝스러운 꿈",
+      "tags": [
+        "하치"
+      ]
+    },
+    {
+      "id": "8e242cc6-4bde-544d-ae31-96be28ccb329",
+      "youtubeUrl": "https://www.youtube.com/watch?v=nce7Pkd0gyQ",
+      "title": "키메라",
+      "tags": [
+        "DECO*27"
+      ]
+    }
+  ]
+}
