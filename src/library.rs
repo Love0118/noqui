@@ -33,6 +33,15 @@ pub struct Playlist {
     pub id: String,
     pub name: String,
     pub songs: Vec<Track>,
+    #[serde(default)]
+    pub excluded_songs: Vec<ExcludedSong>,
+}
+#[derive(Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase", deny_unknown_fields)]
+pub struct ExcludedSong {
+    pub index: u32,
+    pub title: String,
+    pub reasons: Vec<String>,
 }
 #[derive(Default)]
 pub struct Library {
@@ -83,9 +92,23 @@ fn load(manifest: &Path) -> Result<Playlist, String> {
         || playlist.name.chars().count() > 64
         || playlist.name.chars().any(char::is_control)
         || playlist.songs.is_empty()
-        || playlist.songs.len() > 10000
+        || playlist.songs.len() + playlist.excluded_songs.len() > 10000
     {
         return Err("Invalid playlist manifest".into());
+    }
+    for excluded in &playlist.excluded_songs {
+        if excluded.index == 0
+            || excluded.title.trim().is_empty()
+            || excluded.title.chars().count() > 160
+            || excluded.title.chars().any(char::is_control)
+            || excluded.reasons.is_empty()
+            || excluded
+                .reasons
+                .iter()
+                .any(|r| r.is_empty() || r.chars().count() > 2048)
+        {
+            return Err("Invalid excluded playlist entry".into());
+        }
     }
     let mut ids = HashSet::new();
     for track in &playlist.songs {
@@ -227,7 +250,7 @@ impl Library {
         Ok(library)
     }
     pub fn summaries(&self) -> serde_json::Value {
-        serde_json::json!({"playlists":self.playlists.iter().map(|p|serde_json::json!({"id":p.id,"name":p.name,"trackCount":p.songs.len(),"playableCount":p.songs.iter().filter(|t|t.audio.is_some()).count()})).collect::<Vec<_>>()})
+        serde_json::json!({"playlists":self.playlists.iter().map(|p|serde_json::json!({"id":p.id,"name":p.name,"trackCount":p.songs.len()+p.excluded_songs.len(),"playableCount":p.songs.iter().filter(|t|t.audio.is_some()).count()})).collect::<Vec<_>>()})
     }
     pub fn tracks(&self, id: &str, offset: usize) -> Option<serde_json::Value> {
         let p = self.playlists.iter().find(|p| p.id == id)?;

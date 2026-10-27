@@ -22,6 +22,7 @@ fn bundle(root: &Path) -> (PathBuf, String) {
     let id = uuid::Uuid::new_v4().to_string();
     let manifest = root.join("playlist.json");
     let playlist = Playlist {
+        excluded_songs: vec![],
         schema_version: 1,
         id: "test-playlist".into(),
         name: "씹노퀴".into(),
@@ -162,5 +163,29 @@ fn unicode_heavy_pages_stay_within_bridge_response_limit() {
     assert_eq!(
         page["nextOffset"].as_u64().unwrap() as usize,
         page["tracks"].as_array().unwrap().len()
+    );
+}
+#[test]
+fn unreviewed_chart_entries_remain_counted_without_entering_playback_pages() {
+    let dir = tempfile::tempdir().unwrap();
+    let (manifest, _) = bundle(dir.path());
+    let mut p: Playlist = serde_json::from_slice(&fs::read(manifest).unwrap()).unwrap();
+    p.excluded_songs = vec![ExcludedSong {
+        index: 2,
+        title: "未確認".into(),
+        reasons: vec!["Original recording unresolved".into()],
+    }];
+    let library = Library {
+        playlists: vec![p],
+        assets: HashMap::new(),
+    };
+    assert_eq!(library.summaries()["playlists"][0]["trackCount"], 2);
+    assert_eq!(library.summaries()["playlists"][0]["playableCount"], 1);
+    assert_eq!(
+        library.tracks("test-playlist", 0).unwrap()["tracks"]
+            .as_array()
+            .unwrap()
+            .len(),
+        1
     );
 }
