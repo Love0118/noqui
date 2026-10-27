@@ -69,7 +69,8 @@ class QuizGameTest {
     @Test void transportAcknowledgementCannotSpendOrStartWithoutPlaybackProgress() {
         var g=start();submit(g,author);media(g,60000);g.browsersReady(g.snapshot().revision(),true,true);g.controlAccepted(g.snapshot().revision());
         now[0]=g.snapshot().startsAt()+120000;g.tick();assertEquals(QuizGame.Phase.COUNTDOWN,g.snapshot().phase());
-        assertTrue(g.pending(author));assertEquals(60000,g.snapshot().remainingMillis());assertFalse(g.answer(second,"bad apple"));assertEquals(0,roundEnds);
+        assertTrue(g.pending(author));assertEquals(60000,g.snapshot().remainingMillis());assertTrue(g.answer(second,"bad apple"));
+        assertTrue(g.snapshot().winners().isEmpty());assertTrue(rewards.isEmpty());assertEquals(0,roundEnds);
         g.stop();assertEquals(5,g.credits(author));
     }
     @Test void mediaAndBrowserGatesDoNotStartClockEarlyAndDurationCapsRound() {

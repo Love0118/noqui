@@ -40,6 +40,7 @@ class RegisteredSongsTest {
         f.now++;f.game.tick();assertEquals(QuizGame.Phase.PREPARING,f.game.snapshot().phase());assertEquals(0,f.game.snapshot().endsAt());
         f.game.browsersReady(f.game.snapshot().revision(),false,false);assertEquals(QuizGame.Phase.PREPARING,f.game.snapshot().phase());
         f.game.browsersReady(f.game.snapshot().revision(),true,false);assertEquals(QuizGame.Phase.COUNTDOWN,f.game.snapshot().phase());assertEquals(f.now+4000,f.game.snapshot().startsAt());
-        f.game.controlAccepted(f.game.snapshot().revision());f.now+=120000;f.game.tick();assertEquals(QuizGame.Phase.COUNTDOWN,f.game.snapshot().phase());assertTrue(f.game.pending(f.b));assertFalse(f.game.answer(f.a,"Song"));f.display(2,2);
+        f.game.controlAccepted(f.game.snapshot().revision());f.now+=120000;f.game.tick();assertEquals(QuizGame.Phase.COUNTDOWN,f.game.snapshot().phase());assertTrue(f.game.pending(f.b));
+        assertTrue(f.game.answer(f.a,"Song"));assertTrue(f.game.snapshot().winners().isEmpty());assertEquals(0,f.game.snapshot().scores().get(f.a));f.display(2,2);
     }
 }

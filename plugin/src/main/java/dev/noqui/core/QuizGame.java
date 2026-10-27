@@ -15,7 +15,9 @@ public final class QuizGame {
             int totalRounds,int registeredSongs,long anchorPositionMillis,long remainingMillis,int skipVotes,int skipRequired,boolean skipped,
             List<UUID> winners,QuizModes modes,int playbackRate) {
         /** The presenter already knows the answer, so their own message is never a competing answer. */
-        public boolean accepts(UUID player,String input){return phase==Phase.PLAYING&&participants.contains(player)&&!Objects.equals(player,presenter)&&!winners.contains(player)&&song!=null&&modes.points(song,input)>0;}
+        public boolean accepts(UUID player,String input){return phase==Phase.PLAYING&&matchesAnswer(player,input);}
+        public boolean acceptsPending(UUID player,String input,long now){return phase==Phase.COUNTDOWN&&playing&&now>=startsAt&&matchesAnswer(player,input);}
+        private boolean matchesAnswer(UUID player,String input){return participants.contains(player)&&!Objects.equals(player,presenter)&&!winners.contains(player)&&song!=null&&modes.points(song,input)>0;}
         public boolean canWinnerSkip(UUID player){return roundId!=null&&phase!=Phase.STOPPED&&!(phase==Phase.REVEAL&&!playing)&&participants.contains(player)&&winners.contains(player);}
     }
     public interface Output {
@@ -45,6 +47,7 @@ public final class QuizGame {
     private int totalRounds;
     private QuizModes modes,roundModes;
     private final Set<UUID> winners=new LinkedHashSet<>();
+    private final Map<UUID,String> pendingAnswers=new LinkedHashMap<>();
     private int playbackRate=1;
     private long answerSkipAt,skipRemaining=-1;
     private final RandomGenerator random;
@@ -129,6 +132,7 @@ public final class QuizGame {
     public void join(UUID id){if(started()&&players.add(id)){scores.putIfAbsent(id,0);emit();}}
     public void leave(UUID id) {
         if(!players.remove(id))return;
+        pendingAnswers.remove(id);
         for(var it=queue.iterator();it.hasNext();){var s=it.next();if(s.author.equals(id)){cancelSubmission(s);refund(s);it.remove();}}
         votes.remove(id);
         if(current!=null&&!roundStarted&&current.author.equals(id)&&!(phase==Phase.REVEAL&&!playing)){abortPreparation();return;}
@@ -184,12 +188,16 @@ public final class QuizGame {
     }
     private void abortPreparation(){cancelSubmission(current);refund(current);next();}
     private void clearRound() {
+        pendingAnswers.clear();
         current=null;winner=null;roundId=null;playbackGeneration=null;media=null;hints=null;hint="";votes.clear();winners.clear();answerSkipAt=0;skipRemaining=-1;playbackRate=1;
         startsAt=endsAt=clipEndMillis=anchorPosition=pausedRemaining=nextHintAt=0;hintRemaining=9000;
         playing=countdownAccepted=roundStarted=skipped=false;
     }
     public boolean answer(UUID id,String answer) {
-        long now=clock.getAsLong();if(!snapshot().accepts(id,answer)||now>=endsAt||answerSkipAt>0&&now>=answerSkipAt)return false;
+        long now=clock.getAsLong();var state=snapshot();
+        // Browser progress reaches Paper on a later heartbeat; keep correct chat private until it arrives.
+        if(countdownAccepted&&state.acceptsPending(id,answer,now)){pendingAnswers.putIfAbsent(id,answer);return true;}
+        if(!state.accepts(id,answer)||now>=endsAt||answerSkipAt>0&&now>=answerSkipAt)return false;
         output.correctAnswer(roundId,id,roundModes.points(current.song,answer));
         boolean first=winners.isEmpty();winners.add(id);if(first)winner=id;scores.merge(id,1,Integer::sum);
         if(roundModes.has(QuizModes.Mode.NONCOMPETITIVE)) {
@@ -215,11 +223,13 @@ public final class QuizGame {
     private long wallRemaining(){return (clipEndMillis-anchorPosition+playbackRate-1)/playbackRate;}
     private void finishRound(boolean skipped) {
         if(current==null||phase==Phase.REVEAL&&!playing)return;
+        pendingAnswers.clear();
         anchorPosition=position(clock.getAsLong());cancelSubmission(current);if(!roundStarted)refund(current);
         phase=Phase.REVEAL;playing=false;this.skipped=skipped;answerSkipAt=0;skipRemaining=-1;endsAt=clock.getAsLong()+1000;emit();output.roundEnded();
     }
     public void pause() {
         if(phase!=Phase.PLAYING&&phase!=Phase.COUNTDOWN&&!(phase==Phase.REVEAL&&playing))throw new IllegalArgumentException("재생 중에 일시정지할 수 있습니다.");
+        pendingAnswers.clear();
         long now=clock.getAsLong();anchorPosition=position(now);pausedRemaining=Math.max(0,wallRemaining());
         if(answerSkipAt>0){skipRemaining=Math.max(0,answerSkipAt-now);answerSkipAt=0;}
         if(phase!=Phase.COUNTDOWN)hintRemaining=nextHintAt==0?9000:Math.max(0,nextHintAt-now);
@@ -260,9 +270,12 @@ public final class QuizGame {
         anchorPosition=Math.min(clipEndMillis,anchorPosition+correction+Math.min(START_CORRECTION_WINDOW_MILLIS,age)*playbackRate);startsAt=now;endsAt=now+wallRemaining();
         if(skipRemaining>=0){answerSkipAt=now+skipRemaining;skipRemaining=-1;}
         nextHintAt=now+hintRemaining;phase=winner!=null&&!roundModes.has(QuizModes.Mode.NONCOMPETITIVE)?Phase.REVEAL:Phase.PLAYING;
-        emit();if(anchorPosition==clipEndMillis)finishRound(false);return true;
+        var answers=new LinkedHashMap<>(pendingAnswers);pendingAnswers.clear();
+        emit();for(var entry:answers.entrySet())answer(entry.getKey(),entry.getValue());
+        if(anchorPosition==clipEndMillis)finishRound(false);return true;
     }
     private void countdown() {
+        pendingAnswers.clear();
         phase=Phase.COUNTDOWN;playing=true;countdownAccepted=false;playbackGeneration=UUID.randomUUID();
         startsAt=clock.getAsLong()+4000;endsAt=0;nextHintAt=0;emit();
     }

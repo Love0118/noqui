@@ -260,13 +260,15 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
             var member=captured.members().get(id);if(member==null)return false;
             main(()->{if(game.snapshot().session().equals(s.session())&&member.equals(members.get(id)))game.skipAsWinner(id,s.roundId());});return true;
         }
-        if(s.phase()!=QuizGame.Phase.PLAYING)return false;
-        if(s.modes().has(QuizModes.Mode.NONCOMPETITIVE)&&s.winners().contains(id)){
+        if(s.phase()!=QuizGame.Phase.PLAYING&&!s.acceptsPending(id,input,System.currentTimeMillis()))return false;
+        if(s.phase()==QuizGame.Phase.PLAYING&&s.modes().has(QuizModes.Mode.NONCOMPETITIVE)&&s.winners().contains(id)){
             main(()->{var current=game.snapshot();if(current.session().equals(s.session())&&Objects.equals(current.roundId(),s.roundId())&&current.phase()==QuizGame.Phase.PLAYING)
                 for(UUID recipient:current.winners()){Player p=Bukkit.getPlayer(recipient);if(p!=null)p.sendMessage(text("<"+name(id)+"> "+input).color(net.kyori.adventure.text.format.NamedTextColor.GRAY));}});return true;
         }
-        if(!s.accepts(id,input))return false;
-        main(()->{if(game.snapshot().session().equals(s.session())&&Objects.equals(game.snapshot().roundId(),s.roundId()))game.answer(id,input);});return true;
+        if(!s.accepts(id,input)&&!s.acceptsPending(id,input,System.currentTimeMillis()))return false;
+        var member=captured.members().get(id);if(member==null)return false;
+        main(()->{var current=game.snapshot();if(current.session().equals(s.session())&&Objects.equals(current.roundId(),s.roundId())
+                &&Objects.equals(current.playbackGeneration(),s.playbackGeneration())&&member.equals(members.get(id)))game.answer(id,input);});return true;
     }
     void openMinigames(Player p) {
         openCabinMenu(p,service->service.openMenu(p));

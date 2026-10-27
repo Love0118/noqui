@@ -33,7 +33,9 @@ class NoquiAnswerFlowTest {
         final CompletableFuture<MediaBridge.Media> media=new CompletableFuture<>();
         final QuizGame game;
         Fixture(String title){this(title,false);}
-        Fixture(String title,boolean noncompetitive) {
+        Fixture(String title,boolean noncompetitive) {this(title,noncompetitive,true);}
+        Fixture(String title,boolean noncompetitive,boolean confirm) {
+            if(!confirm)now[0]=System.currentTimeMillis()-5000;
             when(player.getUniqueId()).thenReturn(author);when(player.getName()).thenReturn("Answerer");when(player.isOnline()).thenReturn(true);
             when(presenter.getUniqueId()).thenReturn(other);when(presenter.getName()).thenReturn("Presenter");when(presenter.isOnline()).thenReturn(true);
             when(thirdPlayer.getUniqueId()).thenReturn(third);when(thirdPlayer.getName()).thenReturn("Third");when(thirdPlayer.isOnline()).thenReturn(true);
@@ -48,7 +50,7 @@ class NoquiAnswerFlowTest {
             },115,false);set(plugin,"game",game);
             if(noncompetitive)game.modes(game.modes().with(QuizModes.Mode.NONCOMPETITIVE,true));
             game.start(List.of(author,other));game.grant(other,1);game.submit(other,game.snapshot().revision(),Song.input("https://youtu.be/BaW_jenozKc",title,"태그"));
-            media.complete(new MediaBridge.Media("fixture",60000));drain();game.browsersReady(game.snapshot().revision(),true,true);game.controlAccepted(game.snapshot().revision());now[0]=game.snapshot().startsAt()+1;assertTrue(game.confirmPlayback(author,game.snapshot().roundId(),game.snapshot().playbackGeneration(),1,now[0]));
+            media.complete(new MediaBridge.Media("fixture",60000));drain();game.browsersReady(game.snapshot().revision(),true,true);game.controlAccepted(game.snapshot().revision());now[0]=game.snapshot().startsAt()+1;if(confirm)assertTrue(game.confirmPlayback(author,game.snapshot().roundId(),game.snapshot().playbackGeneration(),1,now[0]));
         }
         void joinThird(){members.put(third,new BridgeClient.Member(third,UUID.randomUUID(),"Third",null));game.join(third);}
         void drain(){while(!main.isEmpty())main.remove().run();}
@@ -56,6 +58,25 @@ class NoquiAnswerFlowTest {
         AsyncPlayerChatEvent legacy(Player sender,String text){return new AsyncPlayerChatEvent(true,sender,text,new HashSet<>(Set.of(sender)));}
         AsyncChatEvent modern(String original,String converted){return modern(player,original,converted);}
         AsyncChatEvent modern(Player sender,String original,String converted){return new AsyncChatEvent(true,sender,new HashSet<Audience>(Set.of(sender)),mock(ChatRenderer.class),Component.text(converted),Component.text(original),mock(SignedMessage.class));}
+    }
+    @Test void earlyAnswersInBothChatFormatsAreHiddenUntilPlaybackConfirmationAndAwardOnce() {
+        for(boolean modern:List.of(false,true)){
+            var f=new Fixture("test",false,false);var s=f.game.snapshot();
+            if(modern){var event=f.modern("test","test");f.listener.chat(event);assertTrue(event.isCancelled());assertTrue(event.viewers().isEmpty());}
+            else{var event=f.legacy("test");f.listener.legacy(event);assertTrue(event.isCancelled());assertTrue(event.getRecipients().isEmpty());}
+            f.listener.legacy(f.legacy("test"));f.drain();verifyNoInteractions(f.wallet);assertTrue(f.game.snapshot().winners().isEmpty());
+            assertTrue(f.game.confirmPlayback(f.author,s.roundId(),s.playbackGeneration(),1,f.now[0]));
+            assertEquals(List.of(f.author),f.game.snapshot().winners());verify(f.wallet,times(1)).rewardAnswerPoints(eq(f.author),anyString(),eq(2L));
+        }
+    }
+    @Test void capturedEarlyAnswerCannotCrossMembershipOrPlaybackGenerationChanges() {
+        for(boolean membership:List.of(false,true)){
+            var f=new Fixture("test",false,false);assertTrue(f.plugin.captureAnswer(f.author,"test"));
+            if(membership)f.members.put(f.author,new BridgeClient.Member(f.author,UUID.randomUUID(),"Answerer",null));
+            else{f.game.pause();f.game.resume();f.game.controlAccepted(f.game.snapshot().revision());f.now[0]=f.game.snapshot().startsAt()+1;}
+            f.drain();var s=f.game.snapshot();assertTrue(f.game.confirmPlayback(f.author,s.roundId(),s.playbackGeneration(),1,f.now[0]));
+            verifyNoInteractions(f.wallet);assertTrue(f.game.snapshot().winners().isEmpty());
+        }
     }
     @Test void kakcNormalConversionIsCheckedAfterConversionAndANormalAnswerScores()throws Exception {
         assertEquals(EventPriority.HIGH,NoquiListener.class.getDeclaredMethod("legacy",AsyncPlayerChatEvent.class).getAnnotation(EventHandler.class).priority());

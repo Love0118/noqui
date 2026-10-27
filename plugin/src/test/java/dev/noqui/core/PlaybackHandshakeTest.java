@@ -41,6 +41,39 @@ class PlaybackHandshakeTest {
         f.now=s.startsAt()+10000;assertFalse(f.proof(f.author,1,f.now-5001));assertTrue(f.game.pending(f.author));
         assertTrue(f.proof(f.author,1,f.now-5000));assertEquals(2001,f.game.snapshot().anchorPositionMillis());
     }
+    @Test void earlyCorrectAnswersWaitForPlaybackAndPreserveArrivalOrder() {
+        var f=new Fixture();UUID third=UUID.randomUUID();f.game.join(third);f.ack();var s=f.game.snapshot();f.now=s.startsAt()+1;
+        assertTrue(f.game.answer(f.other,"Song"));assertTrue(f.game.answer(third,"tag"));assertTrue(f.game.answer(f.other,"tag"));
+        assertEquals(QuizGame.Phase.COUNTDOWN,f.game.snapshot().phase());assertTrue(f.game.snapshot().winners().isEmpty());assertTrue(f.game.pending(f.author));
+        assertFalse(f.proof(f.author,0,f.now));assertTrue(f.game.snapshot().winners().isEmpty());
+        f.now+=2000;assertTrue(f.proof(f.author,100,f.now));
+        assertEquals(List.of(f.other),f.game.snapshot().winners());assertEquals(1,f.game.snapshot().scores().get(f.other));assertEquals(0,f.game.snapshot().scores().get(third));
+        assertFalse(f.game.pending(f.author));assertFalse(f.proof(f.author,200,f.now));
+    }
+    @Test void countdownGuessesRequireAcceptedControlScheduledStartAndEligibleAnswerer() {
+        var f=new Fixture();var s=f.game.snapshot();f.now=s.startsAt()-1;f.ack();assertFalse(f.game.answer(f.other,"Song"));
+        f.now=s.startsAt();assertFalse(f.game.answer(f.author,"Song"));assertFalse(f.game.answer(UUID.randomUUID(),"Song"));assertFalse(f.game.answer(f.other,"wrong"));
+        assertTrue(f.proof(f.author,1,f.now));assertTrue(f.game.snapshot().winners().isEmpty());
+        var unaccepted=new Fixture();unaccepted.now=unaccepted.game.snapshot().startsAt()+1;assertFalse(unaccepted.game.answer(unaccepted.other,"Song"));
+    }
+    @Test void pendingAnswersCannotSurvivePauseSkipStopOrMembershipDeparture() {
+        for(String action:List.of("pause","skip","stop","leave")){
+            var f=new Fixture();f.ack();var s=f.game.snapshot();f.now=s.startsAt()+1;assertTrue(f.game.answer(f.other,"Song"));
+            switch(action){
+                case "pause"->{f.game.pause();f.game.resume();f.ack();f.now=f.game.snapshot().startsAt()+1;assertTrue(f.proof(f.author,1,f.now));}
+                case "skip"->f.game.forceSkip(s.roundId());
+                case "stop"->f.game.stop();
+                default->{f.game.leave(f.other);f.game.join(f.other);assertTrue(f.proof(f.author,1,f.now));}
+            }
+            assertTrue(f.game.snapshot().winners().isEmpty());assertEquals(0,f.game.snapshot().scores().get(f.other));
+        }
+    }
+    @Test void noncompetitivePendingAnswersScoreEachParticipantOnceAfterConfirmation() {
+        var f=new Fixture(60000,true,false);UUID third=UUID.randomUUID();f.game.join(third);f.ack();f.now=f.game.snapshot().startsAt()+1;
+        assertTrue(f.game.answer(f.other,"Song"));assertTrue(f.game.answer(f.other,"tag"));assertTrue(f.game.answer(third,"tag"));
+        assertTrue(f.proof(f.author,1,f.now));assertEquals(List.of(f.other,third),f.game.snapshot().winners());
+        assertEquals(1,f.game.snapshot().scores().get(f.other));assertEquals(1,f.game.snapshot().scores().get(third));
+    }
     @Test void pauseDuringPendingStartFreezesAnchorAndOldGenerationCannotResumeIt() {
         var f=new Fixture();f.ack();var first=f.game.snapshot();f.now=first.startsAt()+120000;f.game.pause();
         assertEquals(0,f.game.snapshot().anchorPositionMillis());assertEquals(60000,f.game.snapshot().remainingMillis());f.game.resume();f.ack();f.now=f.game.snapshot().startsAt()+1;
