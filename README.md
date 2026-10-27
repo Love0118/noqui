@@ -40,6 +40,8 @@ python tools/build_playlist.py catalogues/vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWG
 
 작가 원명은 `writers`, 조사한 한국어 별칭·곡명 발음·특수문자 제거 이름은 `aliases`로 구분하고 게임용 `tags`에 합칩니다. DB의 `전체곡.정답태그`와 `별칭목록`에서 확인할 수 있습니다. `alias-research.json`에는 미확인 이름을 남깁니다. 직접 번역·추측한 발음은 추가하지 않습니다.
 
+음원 선택은 개인이 올린 한글 자막곡을 우선 후보로 사용하며 공식·Topic 업로드로 제한하지 않습니다. 동일 곡과 가수·버전인지 확인하고, MV용 대사·인트로가 붙은 영상은 교체 대상으로 둡니다. 출처 교체 도구의 `sourceType: subtitled_audio`는 개인 자막 업로드를 허용합니다. 한국어 제목·작가 태그의 근거 확인은 음원 출처 판정과 별도로 기록합니다.
+
 `TJ인기차트-261027국내`, `TJ인기차트-261027팝송`, `TJ인기차트-261027일본노래`는 TJ 공식 TOP100을 2026-10-01~2026-10-27 기간으로 조회한 각각 100곡의 스냅샷입니다. 정제 원본은 `catalogues/tj-261027-*/`, 설치 번들은 `playlists/tj-261027-*/`에 있습니다. 검토 대기곡도 목록 총계와 DB에 보존하고 재생에서 제외합니다. `playlists/catalogue.sqlite3`의 `플레이리스트`, `전체곡`, `재생가능곡`, `검토필요곡`, `출처목록`, `이름검토필요곡`, `별칭목록`, `음원검토필요곡` 뷰에서 목록과 남은 검토 사항을 함께 확인합니다. `python tools/build_playlist_database.py`로 DB를 갱신하고 `python tools/validate_playlist_catalogues.py --audio`로 정제 목록과 원본 음원을 검사합니다.
 
 `일본 - ZEOM`은 `catalogues/zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE/`의 289곡 목록입니다. 285곡을 전체 길이로 저장했고 두 곡은 Music Premium 전용, 두 곡은 원본 접근 불가입니다. 26곡만 제목·작가·한국어 통용 표기·공식 음원 출처를 함께 통과했으며 나머지263곡은 검토 사유를 보존하고 재생에서 제외했습니다. 미확인 표기를 임의 번역하거나 한국어로 음차하지 않습니다.

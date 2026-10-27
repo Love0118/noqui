@@ -1,4 +1,4 @@
-"""Replace individually verified MV recordings with matched official album audio."""
+"""Replace MV edits with matched album audio or personal subtitled song uploads."""
 import argparse
 import hashlib
 import json
@@ -22,24 +22,27 @@ def replace(catalogue, replacements, packages=None):
         video = proposal['videoId']
         source = Path(proposal['localAudio'])
         evidence = proposal['evidence']
+        source_type = proposal.get('sourceType', 'official_album_audio')
         if (song['videoId'] != proposal['previousVideoId']
                 or not re.fullmatch('[A-Za-z0-9_-]{11}', video)
+                or source_type not in {'official_album_audio', 'subtitled_audio'}
                 or not proposal.get('sameArtistAndSongVerified')
                 or not evidence.get('retrievedEvidenceMatched')
+                or not evidence.get('quote')
                 or evidence.get('url') != 'https://www.youtube.com/watch?v=' + video
-                or 'Provided to YouTube by' not in evidence.get('quote', '')):
-            raise ValueError('Replacement needs matching song identity and official distribution evidence')
+                or source_type == 'official_album_audio' and 'Provided to YouTube by' not in evidence['quote']):
+            raise ValueError('Replacement needs matching song identity and album or subtitled-upload evidence')
         if hashlib.sha256(source.read_bytes()).hexdigest() != proposal['sha256']:
             raise ValueError('Replacement audio hash mismatch')
         audio = OggOpus(source)
         expected = proposal['sourceDurationSeconds']
         if audio.info.channels != 2 or abs(audio.info.length - expected) > max(5, expected * .02):
             raise ValueError('Replacement audio is not the complete stereo recording')
-        prepared.append((song, proposal, source))
-    for song, proposal, source in prepared:
+        prepared.append((song, proposal, source, source_type))
+    for song, proposal, source, source_type in prepared:
         previous = {key: song.get(key) for key in ['videoId', 'youtubeUrl', 'audio']}
         song.setdefault('recordingHistory', []).append({**previous,
-            'reason': 'Replace music-video edit with verified official album audio'})
+            'reason': 'Replace music-video edit with matched song audio', 'replacementSourceType': source_type})
         video = proposal['videoId']
         target = catalogue.parent / 'audio' / (video + '.ogg')
         temporary = target.with_suffix('.replacement.ogg')
@@ -65,7 +68,7 @@ def replace(catalogue, replacements, packages=None):
             'sha256': hashlib.sha256(target.read_bytes()).hexdigest()}
         song['audioSourceReviewRequired'] = False
         song['audioSourceReviewReasons'] = []
-        song['audioSourceType'] = 'official_album_audio'
+        song['audioSourceType'] = source_type
         if proposal['evidence'] not in song['evidence']:
             song['evidence'].append(proposal['evidence'])
     catalogue.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
