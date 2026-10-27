@@ -36,6 +36,20 @@ class PackTest(unittest.TestCase):
     def test_broken_model_reference(self):
         self.edit('assets/noqui/items/crown.json',lambda v:v['model'].update(model='noqui:absent'))
         with self.assertRaises(AssertionError):build.validate()
+    def test_archive_strips_only_authoring_fields_and_preserves_runtime_data(self):
+        files=build.packed_files()
+        for path in (build.PACK/'assets/noqui/models').glob('*.json'):
+            expected=build.read_json(path)
+            for key in ('credit','format_version','texture_size'):expected.pop(key,None)
+            for element in expected['elements']:element.pop('name',None)
+            self.assertEqual(json.loads(files[path.relative_to(build.PACK).as_posix()]),expected)
+        for path in build.PACK.rglob('*'):
+            if path.is_file() and path.suffix!='.json':self.assertEqual(files[path.relative_to(build.PACK).as_posix()],path.read_bytes())
+        sources=json.loads(files['COSMETICS_SOURCES.json'])
+        original={r['id']:r for r in build.read_json(build.PROVENANCE)['cosmetics']}
+        for row in sources['cosmetics']:
+            self.assertEqual(row['sourceModelSha256'],original[row['id']]['modelSha256'])
+            self.assertEqual(row['modelSha256'],build.digest(files[f"assets/noqui/models/{row['id']}.json"]))
     def test_out_of_bounds_uv(self):
         self.edit('assets/noqui/models/cap.json',lambda v:v['elements'][0]['faces']['north'].update(uv=[0,0,17,4]))
         with self.assertRaises(AssertionError):build.validate()

@@ -6,6 +6,16 @@ Prices belong to the Java catalog/configuration: all cosmetics default to 200 st
 
 Build and verify using Python3's standard library:
 
+Packaging removes JSON whitespace and model-editor fields (`credit`,
+`format_version`, `texture_size`, element names). Canonical source models,
+geometry, textures, licenses, and attribution stay intact in this repository.
+The packaged `COSMETICS_SOURCES.json` retains the canonical input hash as
+`sourceModelSha256` and records the shipped model hash in `modelSha256`;
+`pack-manifest.json` also describes the actual ZIP contents. The lobby pack
+shrinks from 3,147,035 to 2,108,591 bytes without removing any of its 80
+cosmetics, five gadgets, NPC skin, or five sound cues. Validation already
+rejects unreferenced files and textures; required equipment shaders remain.
+
 ```text
 python3 lobby-assets/build_pack.py
 python3 lobby-assets/build_pack.py --check

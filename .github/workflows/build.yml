@@ -22,6 +22,7 @@ jobs:
       - run: python3 lobby-assets/test_pack.py
       - run: python3 lobby-assets/build_pack.py --output target/lobby-pack
       - run: python3 hint-assets/build_pack.py --output target/hint-pack
+      - run: python3 hint-assets/test_pack.py
       - run: git diff --exit-code -- lobby-assets/lobby-pack.properties plugin/src/main/resources/hint-pack.properties
       - run: python3 -m unittest discover -s hint-assets/tools -p 'test_*.py'
       - run: python3 -m pip install -r tools/requirements.txt

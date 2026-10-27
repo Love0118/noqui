@@ -52,7 +52,7 @@ public final class HintGpuCheck {
         if (modern) { v = v.replace("#version 330", "#version 330\n#define IS_GUI"); f = f.replace("#version 330", "#version 330\n#define IS_GUI"); }
         program = glCreateProgram(); int vs = shader(GL_VERTEX_SHADER, v), fs = shader(GL_FRAGMENT_SHADER, f);
         glAttachShader(program, vs); glAttachShader(program, fs);
-        glTransformFeedbackVaryings(program, new String[]{"gl_Position"}, GL_INTERLEAVED_ATTRIBS); glLinkProgram(program);
+        glTransformFeedbackVaryings(program, new String[]{"gl_Position", "vertexColor"}, GL_INTERLEAVED_ATTRIBS); glLinkProgram(program);
         if (glGetProgrami(program, GL_LINK_STATUS) == 0) throw new AssertionError(glGetProgramInfoLog(program));
         glDeleteShader(vs); glDeleteShader(fs); glUseProgram(program);
         vao = glGenVertexArrays(); glBindVertexArray(vao); vertices = glGenBuffers(); glBindBuffer(GL_ARRAY_BUFFER, vertices);
@@ -60,7 +60,7 @@ public final class HintGpuCheck {
             int location = glGetAttribLocation(program, attribute.getKey()); glEnableVertexAttribArray(location);
             glVertexAttribPointer(location, attribute.getValue()[0], GL_FLOAT, false, 9 * 4, attribute.getValue()[1] * 4L);
         }
-        feedback = glGenBuffers(); glBindBuffer(GL_TRANSFORM_FEEDBACK_BUFFER, feedback); glBufferData(GL_TRANSFORM_FEEDBACK_BUFFER, 64, GL_DYNAMIC_READ);
+        feedback = glGenBuffers(); glBindBuffer(GL_TRANSFORM_FEEDBACK_BUFFER, feedback); glBufferData(GL_TRANSFORM_FEEDBACK_BUFFER, 128, GL_DYNAMIC_READ);
         glBindBufferBase(GL_TRANSFORM_FEEDBACK_BUFFER, 0, feedback); glUniform1i(glGetUniformLocation(program, "Sampler0"), 0);
         glEnable(GL_BLEND); glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA); glDisable(GL_DEPTH_TEST);
     }
@@ -112,6 +112,9 @@ public final class HintGpuCheck {
         fonts.put(key,out); return out;
     }
     void quad(Glyph glyph, float x, float y, int rgb, boolean capture) {
+        quad(glyph, x, y, rgb, capture, true);
+    }
+    void quad(Glyph glyph, float x, float y, int rgb, boolean capture, boolean draw) {
         float[] data = new float[36];
         for (int vertex = 0; vertex < 4; vertex++) {
             boolean right = vertex >= 2, bottom = vertex == 1 || vertex == 2; int o = vertex * 9;
@@ -122,17 +125,25 @@ public final class HintGpuCheck {
         glBindBuffer(GL_ARRAY_BUFFER,vertices); glBufferData(GL_ARRAY_BUFFER,data,GL_STREAM_DRAW); glBindTexture(GL_TEXTURE_2D,glyph.texture);
         if (capture) {
             glEnable(GL_RASTERIZER_DISCARD); glBeginTransformFeedback(GL_POINTS); glDrawArrays(GL_POINTS,0,4); glEndTransformFeedback(); glDisable(GL_RASTERIZER_DISCARD);
-            float[] actual = new float[16]; glBindBuffer(GL_TRANSFORM_FEEDBACK_BUFFER,feedback); glGetBufferSubData(GL_TRANSFORM_FEEDBACK_BUFFER,0,actual);
+            float[] actual = new float[32]; glBindBuffer(GL_TRANSFORM_FEEDBACK_BUFFER,feedback); glGetBufferSubData(GL_TRANSFORM_FEEDBACK_BUFFER,0,actual);
+            int white = (rgb >> 16) & 255, blue = rgb & 255;
+            boolean label = blue < (white < 128 ? 40 : 160);
+            int base = label ? (white < 128 ? 21 : 85) : white;
+            int row = (base - blue) / (white < 128 ? 2 : 8);
             for (int vertex = 0; vertex < 4; vertex++) {
                 double expectedX = guiWidth*.5 + (x - guiWidth*.5 + (vertex >= 2 ? glyph.width : 0)) * factor;
-                double expectedY = guiHeight - 78 - (glyph.marker - 300) * 14 * factor - (vertex == 1 || vertex == 2 ? 0 : glyph.height * factor);
-                double ax = (actual[vertex*4] + 1) * guiWidth / 2, ay = (1 - actual[vertex*4+1]) * guiHeight / 2;
+                double expectedY = guiHeight - 78 - row * 14 * factor - (vertex == 1 || vertex == 2 ? 0 : glyph.height * factor);
+                double ax = (actual[vertex*8] + 1) * guiWidth / 2, ay = (1 - actual[vertex*8+1]) * guiHeight / 2;
                 if (Math.abs(ax-expectedX) > .02 || Math.abs(ay-expectedY) > .02) throw new AssertionError("GPU placement differs: "+ax+","+ay+" expected "+expectedX+","+expectedY);
                 if (ax < 7 || ax > guiWidth - 7 || ay < 0 || ay > guiHeight - 77.9) throw new AssertionError("Hint overlaps game HUD or window bounds");
+                int[] expectedColor = {white, white, base, 255};
+                for (int channel = 0; channel < 4; channel++)
+                    if (Math.abs(actual[vertex*8+4+channel]*255 - expectedColor[channel]) > .01)
+                        throw new AssertionError("GPU failed to restore hint/shadow color");
                 captured++;
             }
         }
-        glDrawArrays(GL_TRIANGLE_FAN,0,4);
+        if (draw) glDrawArrays(GL_TRIANGLE_FAN,0,4);
     }
     void component(Component value, Key inherited, int rgb) throws Exception {
         Key key = value.font() == null ? inherited : value.font(); if (value.color() != null) rgb = value.color().value();
@@ -140,7 +151,9 @@ public final class HintGpuCheck {
             if (code == 32) { cursor += 4; continue; }
             if (code >= 0xEC00 && code <= 0xF400) { cursor += code - 0xF000; continue; }
             var glyph = font(key.asString()).get(code); if (glyph == null) throw new AssertionError("Absent glyph " + code);
-            quad(glyph, guiWidth/2 + cursor, (((1024 + glyph.marker) << 13) + 4095) + 30, rgb, true); cursor += glyph.advance;
+            float y = (((1024 + glyph.marker) << 13) + 4095) + 30;
+            quad(glyph, guiWidth/2 + cursor, y, (rgb & 0xFCFCFC) >> 2, true, false);
+            quad(glyph, guiWidth/2 + cursor, y, rgb, true); cursor += glyph.advance;
         }
         for (Component child : value.children()) component(child,key,rgb);
     }
@@ -158,7 +171,7 @@ public final class HintGpuCheck {
         block("Projection",0,Map.of("ProjMat",new float[]{2/guiWidth,0,0,0, 0,-2/guiHeight,0,0, 0,0,1,0, -1,1,0,1}));
         block("DynamicTransforms",1,Map.of("ModelViewMat",new float[]{1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1},"ColorModulator",new float[]{1,1,1,1}));
         glViewport(0,0,width,height); glClearColor(.09f,.18f,.22f,1); glClear(GL_COLOR_BUFFER_BIT);
-        component(HintGlyphs.compose(hint),Key.key("noqui_hint:row_0"),0xFFFFFF);
+        component(HintGlyphs.compose(hint),Key.key("noqui_hint:hint"),0xFFFFFF);
         if(Math.abs(cursor)>.001) throw new AssertionError("Native font advances drifted by "+cursor);
         vanilla("hotbar",guiWidth/2-91,guiHeight-22,182,22); vanilla("experience_bar_background",guiWidth/2-91,guiHeight-29,182,5);
         for(int i=0;i<10;i++){vanilla("heart/full",guiWidth/2-91+i*8,guiHeight-39,9,9);vanilla("food_full",guiWidth/2+82-i*8,guiHeight-39,9,9);vanilla("armor_full",guiWidth/2-91+i*8,guiHeight-49,9,9);}

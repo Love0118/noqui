@@ -22,6 +22,7 @@ cd noqui
 python lobby-assets/build_pack.py --check
 python lobby-assets/test_pack.py
 python hint-assets/build_pack.py --output target/hint-pack
+python hint-assets/test_pack.py
 python -m pip install -r tools/requirements.txt
 python -m unittest discover -s tools -p 'test_*.py'
 mvn -B -ntp -f plugin/pom.xml clean install

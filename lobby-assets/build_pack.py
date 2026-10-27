@@ -295,15 +295,35 @@ def validate(original=None):
     return {'cosmetics':len(rows),'gadgets':len(GADGETS),'models':len(ids),'elements':total_elements,'textures':len(textures)+1,'sounds':len(EVENTS),
             'files':len(actual),'uniqueCosmeticGeometry':len(geometry),'geometry':model_checks,'slimSkinUV':'64x64 opaque base faces,3pixel arms'}
 
+def packed_files():
+    """Keep authoring evidence in source; ship compact runtime model data."""
+    files={}
+    for path in sorted(p for p in PACK.rglob('*') if p.is_file()):
+        name=path.relative_to(PACK).as_posix();data=path.read_bytes()
+        if path.suffix=='.json':
+            value=read_json(path)
+            if name.startswith('assets/noqui/models/'):
+                for key in ('credit','format_version','texture_size'):value.pop(key,None)
+                for element in value.get('elements',[]):element.pop('name',None)
+            data=(json.dumps(value,ensure_ascii=False,separators=(',',':'))+'\n').encode('utf-8')
+        files[name]=data
+    # Attribution records distinguish canonical authoring hashes from shipped
+    # model hashes so consumers can verify the actual files in the ZIP.
+    provenance=read_json(PROVENANCE)
+    for record in provenance['cosmetics']:
+        record['sourceModelSha256']=record['modelSha256']
+        record['modelSha256']=digest(files[f"assets/noqui/models/{record['id']}.json"])
+    files['COSMETICS_SOURCES.json']=(json.dumps(provenance,ensure_ascii=False,separators=(',',':'))+'\n').encode('utf-8')
+    return dict(sorted(files.items()))
+
 def archive_bytes():
     stream=io.BytesIO()
     # PNG/OGG are already compressed; STORED avoids host zlib-version hash drift.
     with zipfile.ZipFile(stream,'w',compression=zipfile.ZIP_STORED) as z:
-        for path in sorted((p for p in PACK.rglob('*') if p.is_file()),key=lambda p:p.relative_to(PACK).as_posix()):
-            name=path.relative_to(PACK).as_posix()
+        for name,data in packed_files().items():
             info=zipfile.ZipInfo(name,(1980,1,1,0,0,0));info.compress_type=zipfile.ZIP_STORED
             info.create_system=3;info.external_attr=0o100644<<16
-            z.writestr(info,path.read_bytes(),compress_type=zipfile.ZIP_STORED)
+            z.writestr(info,data,compress_type=zipfile.ZIP_STORED)
     data=stream.getvalue();assert len(data)<8_000_000, 'Keep this lobby-only pack below 8 MB; exclude unused source assets'
     return data
 
@@ -322,7 +342,7 @@ def main():
         manifest={'packUuid':str(uuid.UUID(PACK_UUID)),'resourceFormat':[97,1],'url':url,'sha1':sha1,'sha256':sha256,'bytes':len(data),
                   'descriptorSource':'lobby-assets/lobby-pack.properties','classpathResource':'/lobby-pack.properties',
                   'catalogSource':'lobby-assets/lobby-cosmetics.json','catalogSha256':digest(CATALOG.read_bytes()),'checks':checks,
-                  'files':[{'path':x.relative_to(PACK).as_posix(),'bytes':x.stat().st_size,'sha256':digest(x.read_bytes())} for x in sorted(PACK.rglob('*'),key=lambda p:p.relative_to(PACK).as_posix()) if x.is_file()]}
+                  'files':[{'path':name,'bytes':len(contents),'sha256':digest(contents)} for name,contents in packed_files().items()]}
         (args.output/'pack-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     summary={key:value for key,value in checks.items() if key!='geometry'}
     print(json.dumps({'checkOnly':args.check,'sha1':sha1,'sha256':sha256,'bytes':len(data),'descriptor':str(target),'output':str(args.output),**summary},ensure_ascii=False))

@@ -7,12 +7,17 @@ import argparse
 import hashlib
 import json
 import math
+import struct
 from pathlib import Path
 import zipfile
 
 ROOT = Path(__file__).resolve().parent
 PACK = ROOT / 'pack'
 RESOURCES = ROOT.parent / 'plugin/src/main/resources'
+ASCENT = -(((1024 + 300) << 13) + 4095)
+FONT = 'assets/noqui_hint/font/hint.json'
+SPRITES = {f'assets/minecraft/textures/gui/sprites/boss_bar/pink_{kind}.png'
+           for kind in ('background', 'progress')}
 
 
 def write_json(path, data):
@@ -49,34 +54,55 @@ def rasterize(font_path):
         file = f'assets/noqui_hint/textures/font/page_{page:02}.png'
         path = PACK / file
         path.parent.mkdir(parents=True, exist_ok=True)
-        image.save(path, optimize=True)
+        # Discard only the 20 completely transparent columns in each cell.
+        compact = Image.new('LA', (28 * 16, 36 * 16))
+        for row in range(16):
+            for col in range(16):
+                cell = image.crop((col * 48, row * 36, (col + 1) * 48, (row + 1) * 36))
+                assert not cell.getchannel('A').crop((28, 0, 48, 36)).getbbox(), 'Glyph would be clipped'
+                compact.paste(cell.crop((0, 0, 28, 36)).convert('LA'), (col * 28, row * 36))
+        compact.save(path, optimize=True)
         providers.append({'type': 'bitmap', 'file': f'noqui_hint:font/page_{page:02}.png', 'height': 12, 'chars': grid})
     advances = {chr(0xF000 + n): n for n in range(-360, 361)}
     advances[' '] = 4
-    for row in range(6):
-        ascent = -(((1024 + 300 + row) << 13) + 4095)
-        write_json(PACK / f'assets/noqui_hint/font/row_{row}.json', {'providers': [
-            {'type': 'space', 'advances': advances}, *[dict(p, ascent=ascent) for p in providers]]})
+    write_json(PACK / FONT, {'providers': [
+        {'type': 'space', 'advances': advances}, *[dict(p, ascent=ASCENT) for p in providers]]})
     write_json(RESOURCES / 'hint-glyph-widths.json', metrics)
     write_json(ROOT / 'font-provenance.json', {
         'font': 'Noto Sans KR', 'weight': 500, 'license': 'OFL-1.1',
         'source': 'https://github.com/google/fonts/tree/main/ofl/notosanskr',
         'sourceSha256': hashlib.sha256(font_path.read_bytes()).hexdigest(),
-        'rasterCell': [48, 36], 'displayHeight': 12, 'glyphs': len(chars),
+        'rasterCell': [28, 36], 'displayHeight': 12, 'glyphs': len(chars),
         'advance': 'floor(0.5 + rightmostOpaquePixel * 12 / 36) + 1'})
 
 
 def validate():
-    assert json.loads((PACK / 'pack.mcmeta').read_text())['pack']['min_format'] == [97, 1]
+    meta = json.loads((PACK / 'pack.mcmeta').read_text())['pack']
+    assert meta['min_format'] == meta['max_format'] == [97, 1]
     shader_files = {p.relative_to(PACK).as_posix() for p in PACK.rglob('*') if p.is_file() and '/shaders/' in p.as_posix()}
     assert shader_files == {'assets/minecraft/shaders/core/text.vsh'}
     widths = json.loads((RESOURCES / 'hint-glyph-widths.json').read_text(encoding='utf-8'))
-    assert len(widths) == 11361 and max(widths.values()) <= 12
-    for row in range(6):
-        providers = json.loads((PACK / f'assets/noqui_hint/font/row_{row}.json').read_text(encoding='utf-8'))['providers']
-        assert len(providers) == 46
-        assert all(p['ascent'] == -(((1024 + 300 + row) << 13) + 4095) for p in providers[1:])
-        assert all((PACK / ('assets/noqui_hint/textures/' + p['file'].split(':')[1])).is_file() for p in providers[1:])
+    assert len(widths) == 11361 and all(isinstance(v, int) and 0 < v <= 12 for v in widths.values())
+    providers = json.loads((PACK / FONT).read_text(encoding='utf-8'))['providers']
+    assert len(providers) == 46 and providers[0]['type'] == 'space'
+    assert providers[0]['advances'] == {**{chr(0xF000 + n): n for n in range(-360, 361)}, ' ': 4}
+    expected = {'pack.mcmeta', 'licenses/NotoSansKR-OFL.txt', FONT, *shader_files, *SPRITES}
+    codes = []
+    for page, provider in enumerate(providers[1:]):
+        assert provider['type'] == 'bitmap' and provider['ascent'] == ASCENT and provider['height'] == 12
+        assert provider['file'] == f'noqui_hint:font/page_{page:02}.png'
+        grid = provider['chars']
+        assert len(grid) == 16 and all(len(row) == 16 for row in grid)
+        codes.extend(ord(char) for row in grid for char in row if char != '\0')
+        relative = 'assets/noqui_hint/textures/' + provider['file'].split(':')[1]
+        image = (PACK / relative).read_bytes()
+        assert image[:8] == b'\x89PNG\r\n\x1a\n' and struct.unpack('>IIBB', image[16:26]) == (448, 576, 8, 4)
+        expected.add(relative)
+    assert codes == list(range(33, 127)) + list(range(0x3131, 0x318F)) + list(range(0xAC00, 0xD7A4))
+    assert set(widths) == {'32', *(str(code) for code in codes)}
+    assert not any(p.is_symlink() for p in PACK.rglob('*')), 'No symlinks in pack'
+    actual = {p.relative_to(PACK).as_posix() for p in PACK.rglob('*') if p.is_file()}
+    assert actual == expected, {'unexpected': sorted(actual - expected), 'missing': sorted(expected - actual)}
     assert (PACK / 'licenses/NotoSansKR-OFL.txt').stat().st_size > 1000
 
 

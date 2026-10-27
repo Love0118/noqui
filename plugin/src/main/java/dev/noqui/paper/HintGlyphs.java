@@ -7,7 +7,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.*;
 import net.kyori.adventure.key.Key;
 import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.format.NamedTextColor;
+import net.kyori.adventure.text.format.TextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 
 /** Bitmap advances are measured from the shipped atlas, using Minecraft's rounding. */
@@ -15,6 +15,7 @@ final class HintGlyphs {
     static final int WIDTH = 360, ROWS = 6;
     private static final Map<String,Integer> WIDTHS = loadWidths();
     private static final String LABEL = "[힌트] ";
+    private static final Key FONT = Key.key("noqui_hint:hint");
 
     private static Map<String,Integer> loadWidths() {
         try (var stream = HintGlyphs.class.getResourceAsStream("/hint-glyph-widths.json")) {
@@ -43,16 +44,22 @@ final class HintGlyphs {
     }
 
     private static Component space(int advance) { return Component.text(String.valueOf((char)(0xF000 + advance))); }
+    // Eight blue-channel steps survive vanilla's quarter-brightness text shadow.
+    // text.vsh decodes the row and restores the original yellow/white color.
+    private static TextColor rowColor(int row, boolean label) {
+        return TextColor.color(255, 255, (label ? 85 : 255) - row * 8);
+    }
     static Component compose(String hint) {
         List<String> lines = lines(hint);
         Component result = Component.empty();
         for (int i = 0; i < lines.size(); i++) {
             String text = lines.get(i);
             int width = width(text), left = width / 2;
+            int row = lines.size() - 1 - i;
             Component value = i == 0
-                ? Component.text(LABEL, NamedTextColor.YELLOW).append(Component.text(text.substring(LABEL.length()), NamedTextColor.WHITE))
-                : Component.text(text, NamedTextColor.WHITE);
-            result = result.append(Component.empty().font(Key.key("noqui_hint:row_" + (lines.size() - 1 - i)))
+                ? Component.text(LABEL, rowColor(row, true)).append(Component.text(text.substring(LABEL.length()), rowColor(row, false)))
+                : Component.text(text, rowColor(row, false));
+            result = result.append(Component.empty().font(FONT)
                 .decoration(TextDecoration.BOLD, false).decoration(TextDecoration.ITALIC, false)
                 .append(space(-left)).append(value).append(space(-(width - left))));
         }

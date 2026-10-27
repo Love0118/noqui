@@ -69,6 +69,26 @@ class HintOverlayTest {
         assertTrue(lines.stream().allMatch(s->HintGlyphs.width(s)<=HintGlyphs.WIDTH));
         Component text=HintGlyphs.compose(hint);assertEquals(0,advance(text));
     }
+    @Test void allRowsShareOneFontAndColorsSurviveVanillaShadowRounding() {
+        Component text=HintGlyphs.compose("힣".repeat(160));
+        int rows=HintGlyphs.lines("힣".repeat(160)).size();
+        assertEquals(rows,text.children().size());
+        for(int i=0;i<rows;i++) {
+            Component row=text.children().get(i);
+            assertEquals("noqui_hint:hint",row.font().asString());
+            checkRowColors(row,rows-1-i);
+        }
+    }
+    private void checkRowColors(Component value,int row) {
+        if(value.color()!=null) {
+            var color=value.color();
+            assertEquals(255,color.red());assertEquals(255,color.green());
+            int blue=color.blue(),base=blue<160?85:255;
+            assertEquals(row,(base-blue)/8);
+            assertEquals(row,(base/4-blue/4)/2);
+        }
+        for(Component child:value.children())checkRowColors(child,row);
+    }
     private int advance(Component value) {
         int total=0;
         if(value instanceof net.kyori.adventure.text.TextComponent text) for(int code:text.content().codePoints().toArray())

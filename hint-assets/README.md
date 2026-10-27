@@ -18,6 +18,15 @@ position. Window layout is obtained from the 26.3 GUI projection. This follows
 the font-ascent and screen-layout technique in
 the user's Plague Inc project, using a dedicated namespace and marker range.
 
+All six rows share one bitmap font (`noqui_hint:hint`). A small color marker
+selects the row; the shader restores the original white/yellow color,
+including vanilla text shadows. This removes five duplicate registrations of
+the complete 11,360-glyph set (68,160 registrations become 11,360). Each glyph
+cell keeps its original height, pixels, and advance, but drops 20 fully
+transparent columns: 48×36 becomes 28×36. Grayscale plus alpha stores the
+same pixels without redundant RGB channels. All ASCII, Korean compatibility
+jamo, and Hangul syllables remain available for dynamic song titles.
+
 The pack replaces only `text.vsh` and the two unused PINK bossbar sprites.
 Vanilla's fragment shader remains in use. It contains no terrain shaders or
 shared shader includes from Sodium's unsupported shader list. The existing
@@ -37,6 +46,7 @@ ships in the pack. To validate and package the checked-in atlas without Pillow:
 
 ```powershell
 python hint-assets/build_pack.py --output '<output directory>'
+python hint-assets/test_pack.py
 ```
 
 The deterministic ZIP is named by SHA-256. This also updates the bundled
@@ -59,3 +69,10 @@ advance, and separation from the game display at GUI scales 1–4. It renders
 2560×1440 and 3840×2160 (excluding GUI scales the vanilla client disallows).
 This is an actual GPU shader check, not a Minecraft world screenshot. Other
 GPU vendors and Vulkan still require client validation.
+
+The compact pack passed the same 36 cases with 26,640 captured main/shadow
+vertices, including restored colors. All 36 rendered images matched the
+previous pack pixel for pixel on the tested AMD OpenGL driver. Pack tests
+reject obsolete per-row fonts, duplicate providers, missing characters,
+unused textures, and missing bossbar sprites. Actual client reload duration
+still depends on the client's hardware and other active packs.

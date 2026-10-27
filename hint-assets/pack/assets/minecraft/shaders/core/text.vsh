@@ -25,18 +25,30 @@ layout(location = 3) out vec2 texCoord0;
 
 void main() {
     vec3 pos = Position;
+    vec4 color = Color;
 #ifdef IS_GUI
     vec2 ui = round(2.0 / vec2(ProjMat[0][0], -ProjMat[1][1]));
     // Only our encoded bitmap ascents in the GUI projection are moved.
     if (pos.y >= ui.y && ProjMat[3].x == -1.0) {
         int id = (int(pos.y) >> 13) - 1024;
-        if (id >= 300 && id <= 305) {
+        // One shared font replaces six copies of every bitmap glyph. The row
+        // travels in blue, including vanilla's quarter-brightness shadow.
+        ivec3 rgb = ivec3(round(Color.rgb * 255.0));
+        bool shadow = rgb.r < 128;
+        int white = shadow ? 63 : 255;
+        bool label = rgb.b < (shadow ? 40 : 160);
+        int blue = label ? (shadow ? 21 : 85) : white;
+        int step = shadow ? 2 : 8;
+        int row = (blue - rgb.b) / step;
+        if (id == 300 && rgb.r == white && rgb.g == white
+                && blue - rgb.b == row * step && row >= 0 && row < 6) {
             // Native GUI units: the hint grows and shrinks with Minecraft's GUI scale.
             float factor = min(1.0,
                 max(0.0, min((ui.x - 32.0) / 360.0, (ui.y - 108.0) / 84.0)));
             float corner = float(((gl_VertexID + 1) % 4) / 2);
             pos.x = ui.x * 0.5 + (pos.x - ui.x * 0.5) * factor;
-            pos.y = ui.y - 78.0 - (float(id - 300) * 14.0 + (1.0 - corner) * 12.0) * factor;
+            pos.y = ui.y - 78.0 - (float(row) * 14.0 + (1.0 - corner) * 12.0) * factor;
+            color.b = float(label ? (shadow ? 21 : 85) : white) / 255.0;
         }
     }
 #endif
@@ -44,9 +56,9 @@ void main() {
 #if !defined(IS_GUI) && !defined(IS_SEE_THROUGH)
     sphericalVertexDistance = fog_spherical_distance(Position);
     cylindricalVertexDistance = fog_cylindrical_distance(Position);
-    vertexColor = Color * sample_lightmap(Sampler2, UV2);
+    vertexColor = color * sample_lightmap(Sampler2, UV2);
 #else
-    vertexColor = Color;
+    vertexColor = color;
 #endif
     texCoord0 = UV0;
 }
