@@ -96,6 +96,17 @@ class NoquiDialogsTest {
     private List<String> labels(DialogType type){if(type instanceof NoticeType notice)return List.of(plain(notice.action().label()));var multi=(MultiActionType)type;var labels=new ArrayList<>(multi.actions().stream().map(b->plain(b.label())).toList());labels.add(plain(multi.exitAction().label()));assertTrue(labels.size()<=3);return labels;}
     private String body(){return dialogs.getLast().base().body().stream().map(b->plain(((PlainMessageDialogBody)b).contents())).collect(java.util.stream.Collectors.joining("\n"));}
     private void submit(UUID owner){game.submit(owner,game.snapshot().revision(),Song.input("https://youtu.be/BaW_jenozKc","Private","tag"));}
+    @Test void playlistMenuStartsSelectedListAndRechecksOpAndSession() {
+        game.stop();when(player.isOp()).thenReturn(true);
+        var lists=List.of(new dev.noqui.bridge.BridgeClient.Playlist("ssip-noqui","씹노퀴",541,536));
+        view.playlists(player,lists);var type=(MultiActionType)dialogs.getLast().type();
+        assertEquals("씹노퀴 · 541곡 (재생 536)",plain(type.actions().getFirst().label()));
+        callbacks.get(type.actions().getFirst().action()).accept(null,player);verify(plugin).loadPlaylist(player,"ssip-noqui",0);
+        clearInvocations(plugin);view.playlists(player,lists);type=(MultiActionType)dialogs.getLast().type();when(player.isOp()).thenReturn(false);
+        callbacks.get(type.actions().getFirst().action()).accept(null,player);verify(plugin,never()).loadPlaylist(any(),anyString(),anyInt());
+        when(player.isOp()).thenReturn(true);view.playlists(player,lists);type=(MultiActionType)dialogs.getLast().type();game.start(List.of(id));
+        callbacks.get(type.actions().getFirst().action()).accept(null,player);verify(plugin,never()).loadPlaylist(any(),anyString(),anyInt());
+    }
     @Test void dialogRegistryLeavesNativeAttributeConstantsUsable() {
         assertNotNull(Attribute.GRAVITY);assertNotNull(Attribute.MOVEMENT_SPEED);
         assertNotSame(Attribute.GRAVITY,Attribute.MOVEMENT_SPEED);

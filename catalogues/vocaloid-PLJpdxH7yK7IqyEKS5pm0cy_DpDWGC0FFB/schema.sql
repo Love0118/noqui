@@ -1,5 +1,5 @@
 PRAGMA foreign_keys = ON;
-PRAGMA user_version = 1;
+PRAGMA user_version = 2;
 
 CREATE TABLE catalogue_info (
     key TEXT PRIMARY KEY,
@@ -33,6 +33,27 @@ CREATE TABLE song_writers (
     UNIQUE (song_id, tag_order)
 );
 CREATE INDEX song_writers_by_writer ON song_writers(writer_id, song_id);
+CREATE TABLE song_tags (
+    song_id TEXT NOT NULL REFERENCES songs(id),
+    tag_order INTEGER NOT NULL,
+    name TEXT NOT NULL,
+    PRIMARY KEY (song_id, tag_order)
+);
+CREATE TABLE aliases (
+    song_id TEXT NOT NULL REFERENCES songs(id),
+    alias_order INTEGER NOT NULL,
+    kind TEXT NOT NULL CHECK (kind IN ('writer', 'title', 'punctuation')),
+    name TEXT NOT NULL,
+    writer TEXT,
+    url TEXT,
+    quote TEXT NOT NULL,
+    PRIMARY KEY (song_id, alias_order)
+);
+CREATE VIEW 별칭목록 AS
+SELECT s.playlist_position AS 번호, s.title AS 곡명,
+       CASE a.kind WHEN 'writer' THEN '작가 별칭' WHEN 'title' THEN '곡명 발음' ELSE '특수문자 제거' END AS 종류,
+       a.name AS 태그, a.writer AS 원래작가, a.url AS 출처URL, a.quote AS 확인문구
+FROM aliases a JOIN songs s ON s.id=a.song_id ORDER BY s.playlist_position,a.alias_order;
 
 CREATE TABLE audio (
     song_id TEXT PRIMARY KEY REFERENCES songs(id),
@@ -85,6 +106,7 @@ SELECT s.playlist_position AS 번호,
                WHERE sw.song_id = s.id ORDER BY sw.tag_order
            )
        ), '작가 미확인') AS 작가,
+       (SELECT GROUP_CONCAT(name, ', ') FROM (SELECT name FROM song_tags WHERE song_id=s.id ORDER BY tag_order)) AS 정답태그,
        CASE s.review_required WHEN 0 THEN '검수 완료' ELSE '검토 필요' END AS 검수상태,
        CASE a.status WHEN 'ready' THEN '저장 완료' ELSE '다운로드 불가' END AS 음원상태,
        CASE WHEN COALESCE(a.duration_seconds, s.source_duration_seconds) IS NULL THEN NULL

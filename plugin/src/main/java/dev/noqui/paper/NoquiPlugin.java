@@ -39,6 +39,8 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
     private boolean shuttingDown;
     private boolean ticketsActive;
     private boolean starting;
+    private long playlistLoadVersion;
+    private boolean loadingPlaylist;
     @Override public void onEnable() {
         try {
             saveDefaultConfig();cabin=new Cabin(getConfig());
@@ -104,7 +106,11 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
             for(Player p:Bukkit.getOnlinePlayers()){recoverPlayer(p);lobbyFeatures.join(p);tickets.refresh(p);}
             Bukkit.getScheduler().runTaskTimer(this,this::tick,1,1);
             Bukkit.getScheduler().runTaskTimer(this,bridge::heartbeat,1,40);
-            if(getConfig().getBoolean("quiz-active",false))main(()->start(getConfig().getInt("quiz-limit",0)));
+            if(getConfig().getBoolean("quiz-active",false))main(()->{
+                String playlist=getConfig().getString("quiz-playlist","");
+                if(playlist.isEmpty())start(getConfig().getInt("quiz-limit",0));
+                else loadPlaylist(Bukkit.getConsoleSender(),playlist,getConfig().getInt("quiz-limit",0));
+            });
             getLogger().info("Noqui enabled; /noqui starts the quiz.");
         }catch(Exception error){getLogger().severe("Noqui startup failed ("+error.getClass().getSimpleName()+"). Check world, spawn, bridge and credit ledger.");Bukkit.getPluginManager().disablePlugin(this);}
     }
@@ -139,7 +145,7 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
         boolean reveal=state.phase()==QuizGame.Phase.REVEAL;
         hud.setImmersive(p,ownsCabin(p.getUniqueId()));
         hud.render(p,new QuizHud.Frame(state.round(),state.registeredSongs(),state.phase().name(),state.remainingMillis(),state.clipEndMillis(),
-                name(state.presenter()),state.hint(),reveal&&state.song()!=null?state.song().title():"",reveal&&state.song()!=null?state.song().tags():List.of(),
+                state.presenter()==null&&game.playlist()?"플레이리스트":name(state.presenter()),state.hint(),reveal&&state.song()!=null?state.song().title():"",reveal&&state.song()!=null?state.song().tags():List.of(),
                 reveal?state.winners().stream().map(this::name).toList():List.of(),state.skipVotes(),state.skipRequired()),state.scores().getOrDefault(p.getUniqueId(),0),game.credits(p.getUniqueId()));
     }
     private void changedState(QuizGame.Snapshot state) {
@@ -159,6 +165,9 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
     @Override public boolean participant(UUID id){return game!=null&&game.participant(id);}
     @Override public boolean ownsCabin(UUID id){return cabinOwners.contains(id);}
     void start(int limit) {
+        start(limit,null,null);
+    }
+    private void start(int limit,String playlist,List<QuizGame.PlaylistTrack> tracks) {
         if(started())throw new IllegalArgumentException("이미 진행 중입니다.");
         if(limit<0)throw new IllegalArgumentException("라운드 제한은 0(무제한) 또는 양의 정수입니다.");
         var players=Bukkit.getOnlinePlayers().stream().map(p->(Player)p).toList();
@@ -167,11 +176,40 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
         starting=true;
         try{
             for(Player p:players)enter(p);
-            game.start(players.stream().map(Player::getUniqueId).toList(),limit);
+            playlistLoadVersion++;loadingPlaylist=false;
+            if(tracks==null)game.start(players.stream().map(Player::getUniqueId).toList(),limit);
+            else game.startPlaylist(players.stream().map(Player::getUniqueId).toList(),tracks,limit);
             for(Player p:players)hud.start(p,game.snapshot().round(),game.snapshot().registeredSongs());
-            getConfig().set("quiz-active",true);getConfig().set("quiz-limit",limit);saveConfig();
+            getConfig().set("quiz-active",true);getConfig().set("quiz-limit",limit);getConfig().set("quiz-playlist",playlist);saveConfig();
         }catch(RuntimeException error){if(started())game.stop();else for(UUID id:List.copyOf(members.keySet())){Player p=Bukkit.getPlayer(id);if(p!=null)restore(p,true);}throw error;}
         finally{starting=false;}
+    }
+    void loadPlaylist(CommandSender sender,String id,int limit) {
+        if(!sender.isOp())throw new IllegalArgumentException("OP만 플레이리스트를 시작할 수 있습니다.");
+        if(started())throw new IllegalArgumentException("진행 중인 퀴즈를 먼저 종료하세요.");
+        if(loadingPlaylist)throw new IllegalArgumentException("플레이리스트를 불러오는 중입니다.");
+        long version=++playlistLoadVersion;UUID session=game.snapshot().session();loadingPlaylist=true;
+        sender.sendMessage(text("플레이리스트를 불러오는 중입니다."));
+        bridge.playlistTracks(id).whenComplete((tracks,error)->main(()->{
+            if(version!=playlistLoadVersion||!session.equals(game.snapshot().session())||shuttingDown)return;
+            loadingPlaylist=false;
+            if(sender instanceof Player player&&(!player.isOnline()||!player.isOp()))return;
+            if(error!=null){sender.sendMessage(text("플레이리스트를 불러오지 못했습니다. 오디오 서비스와 설치 상태를 확인하세요."));return;}
+            try{start(limit,id,tracks);}catch(IllegalArgumentException failure){sender.sendMessage(text(failure.getMessage()));}
+        }));
+    }
+    private void playlistCommand(CommandSender sender,String[] args) {
+        if(args.length>2)throw new IllegalArgumentException("/noqui playlist [플레이리스트 ID]");
+        if(args.length==2){loadPlaylist(sender,args[1],0);return;}
+        UUID session=game.snapshot().session();
+        bridge.playlists().whenComplete((playlists,error)->main(()->{
+            if(!session.equals(game.snapshot().session())||shuttingDown)return;
+            if(sender instanceof Player player&&(!player.isOnline()||!player.isOp()))return;
+            if(error!=null){sender.sendMessage(text("플레이리스트 목록을 불러오지 못했습니다."));return;}
+            if(sender instanceof Player player){dialogs.playlists(player,playlists);return;}
+            if(playlists.isEmpty())sender.sendMessage(text("설치된 플레이리스트가 없습니다."));
+            for(var playlist:playlists)sender.sendMessage(text(playlist.name()+" ["+playlist.id()+"] "+playlist.trackCount()+"곡 (재생 가능 "+playlist.playableCount()+"곡)"));
+        }));
     }
     void enter(Player p){enter(p,true);}
     private void enter(Player p,boolean takeCabin) {
@@ -282,9 +320,9 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
         var service=defense();if(service==null){p.sendMessage(text("디펜스가 준비 중입니다. 잠시 후 다시 시도하세요."));return;}
         try{open.accept(service);}catch(IllegalStateException error){p.sendMessage(text(error.getMessage()));}
     }
-    void stopQuiz(){if(!started())throw new IllegalArgumentException("진행 중인 노래퀴즈가 없습니다.");game.stop();}
+    void stopQuiz(){playlistLoadVersion++;if(loadingPlaylist){loadingPlaylist=false;getConfig().set("quiz-active",false);saveConfig();return;}if(!started())throw new IllegalArgumentException("진행 중인 노래퀴즈가 없습니다.");game.stop();}
     private void finishQuiz(Map<UUID,Integer> scores) {
-        if(!shuttingDown){getConfig().set("quiz-active",false);saveConfig();}
+        if(!shuttingDown){getConfig().set("quiz-active",false);getConfig().set("quiz-playlist",null);saveConfig();}
         for(UUID id:List.copyOf(members.keySet())){
             Player p=Bukkit.getPlayer(id);
             if(p!=null){boolean owned=ownsCabin(id);
@@ -311,6 +349,7 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
         });
     }
     void openProxySubmission(Player p) {
+        if(started()&&game.playlist())throw new IllegalArgumentException("플레이리스트 진행 중에는 곡을 제출할 수 없습니다.");
         if(!started()||game.credits(p.getUniqueId())<1)throw new IllegalArgumentException("출제권이 없습니다.");
         if(!participant(p.getUniqueId())) {
             try{enter(p,false);game.join(p.getUniqueId());optedOut.remove(p.getUniqueId());hud.start(p,game.snapshot().round(),game.snapshot().registeredSongs());}
@@ -348,6 +387,7 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
             if(action.equals("menu")&&sender instanceof Player p&&participant(p.getUniqueId())){openControls(p);return true;}
             if(!sender.isOp())throw new IllegalArgumentException("OP만 노래퀴즈를 관리할 수 있습니다.");
             switch(action){
+                case "playlist"->playlistCommand(sender,args);
                 case "start"->{if(args.length>2)throw new IllegalArgumentException("/noqui start [라운드 수]");start(args.length==2?Integer.parseInt(args[1]):0);}
                 case "limit"->{if(args.length!=2)throw new IllegalArgumentException("/noqui limit <0=무제한 또는 라운드 수>");int limit=Integer.parseInt(args[1]);game.limit(limit);getConfig().set("quiz-limit",limit);saveConfig();}
                 case "time"->{if(args.length!=2)throw new IllegalArgumentException("/noqui time <1~120초>");int seconds=Integer.parseInt(args[1]);game.timeLimit(seconds);getConfig().set("round-seconds",seconds);saveConfig();sender.sendMessage(text("시간 제한 "+seconds+"초 (다음 곡부터)"));}
@@ -358,7 +398,7 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
                 case "mod"->modeCommand(sender,args);
                 case "ban"->banCommand(sender,args);
                 case "admin"->{if(sender instanceof Player p)dialogs.admin(p);}
-                default->sender.sendMessage(text("/noqui start [rounds] | limit <rounds> | time <seconds:1-120> | stop | skip force | hint | pause | resume | give <nickname|@a> [amount] | mine reset/rate | mod list/add/remove | ban list/add/remove | status | admin"));
+                default->sender.sendMessage(text("/noqui playlist [id] | start [rounds] | limit <rounds> | time <seconds:1-120> | stop | skip force | hint | pause | resume | give <nickname|@a> [amount] | mine reset/rate | mod list/add/remove | ban list/add/remove | status | admin"));
             }
         }catch(NumberFormatException error){sender.sendMessage(text("유효한 정수 수량을 입력하세요."));}
         catch(IllegalArgumentException error){sender.sendMessage(text(error.getMessage()));}
@@ -428,7 +468,7 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
         List<String> choices;
         if(isMoney(command,alias))choices=!sender.isOp()?List.of():args.length==1?List.of("give"):
                 args[0].equalsIgnoreCase("give")&&args.length==2?grantSuggestions():args[0].equalsIgnoreCase("give")&&args.length==3?List.of("1","10","100","1000"):List.of();
-        else choices=args.length==1?(sender.isOp()?List.of("start","limit","time","stop","skip","hint","pause","resume","give","mine","mod","ban","status","admin","bgm","connect","leave"):List.of("skip","bgm","connect","leave")):
+        else choices=args.length==1?(sender.isOp()?List.of("playlist","start","limit","time","stop","skip","hint","pause","resume","give","mine","mod","ban","status","admin","bgm","connect","leave"):List.of("skip","bgm","connect","leave")):
                 sender.isOp()&&args.length==2&&args[0].equalsIgnoreCase("mine")?List.of("reset","rate"):
                 sender.isOp()&&args.length==2&&Set.of("mod","ban").contains(args[0])?List.of("list","add","remove"):
                 sender.isOp()&&args.length==3&&args[0].equals("mod")?Arrays.stream(QuizModes.Mode.values()).map(QuizModes.Mode::label).toList():
@@ -455,6 +495,7 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
         var banned=new HashSet<>(game.modes().bannedAnswers());if(args[1].equals("add"))banned.add(keyword);else banned.remove(keyword);storeModes(game.modes().withBanned(banned));sender.sendMessage(text("날먹금지 키워드를 저장했습니다. 다음 라운드부터 적용합니다."));
     }
     @Override public void onDisable() {
+        playlistLoadVersion++;loadingPlaylist=false;
         shuttingDown=true;Bukkit.getServicesManager().unregisterAll(this);if(game!=null)game.stop();
         for(Player p:Bukkit.getOnlinePlayers())try{restore(p,true);recoverPlayer(p);}catch(RuntimeException error){getLogger().warning("Player recovery retained for reconnect.");}
         if(lobbyFeatures!=null)lobbyFeatures.close();hud.close();if(bridge!=null){if(game!=null)bridge.closeAfterSync();else bridge.close();}

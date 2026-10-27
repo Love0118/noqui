@@ -46,6 +46,15 @@ final class NoquiDialogs {
         if(game.canVoteSkip(p.getUniqueId()))buttons.add(button(p,"넘기기 투표",(who,r)->game.voteSkip(who.getUniqueId(),state.roundId())));
         show(p,"노래퀴즈",buttons);
     }
+    void playlists(Player p,List<dev.noqui.bridge.BridgeClient.Playlist> playlists) {
+        if(!p.isOp())throw new IllegalArgumentException("OP만 플레이리스트를 시작할 수 있습니다.");
+        begin(p,null);var actions=new ArrayList<ActionButton>();
+        for(var playlist:playlists)actions.add(button(p,playlist.name()+" · "+playlist.trackCount()+"곡 (재생 "+playlist.playableCount()+")",(who,r)->{
+            if(!who.isOp())throw new IllegalArgumentException("OP만 플레이리스트를 시작할 수 있습니다.");
+            plugin.loadPlaylist(who,playlist.id(),0);
+        }));
+        show(p,"플레이리스트",List.of(DialogBody.plainMessage(text(playlists.isEmpty()?"설치된 플레이리스트가 없습니다.":"선택하면 셔플로 시작합니다. /noqui limit <라운드 수>로 남은 곡을 줄일 수 있습니다."))),actions);
+    }
     void proxy(Player p){begin(p,null);show(p,"노래퀴즈",List.of(button(p,"로비",(who,r)->plugin.visitCabin(who)),button(p,"출제",(who,r)->plugin.openProxySubmission(who))));}
     void connection(Player p,BrowserConnections.Entry entry,String url) {
         if(!canPrompt(p)||!entry.equals(plugin.connectionEntry(p.getUniqueId())))return;
@@ -57,6 +66,7 @@ final class NoquiDialogs {
     void submit(Player p) {
         var game=plugin.game();var state=game.snapshot();
         if(!game.started())throw new IllegalArgumentException("진행 중인 노래퀴즈가 없습니다.");
+        if(game.playlist())throw new IllegalArgumentException("플레이리스트 진행 중에는 곡을 제출할 수 없습니다.");
         if(!game.participant(p.getUniqueId()))throw new IllegalArgumentException("노래퀴즈에 먼저 참가하세요.");
         if(!plugin.hasTicket(p))throw new IllegalArgumentException("사용할 출제권이 없습니다.");
         if(state.totalRounds()>0&&state.registeredSongs()>=state.totalRounds())throw new IllegalArgumentException("설정된 최대 라운드의 곡이 모두 등록되었습니다.");

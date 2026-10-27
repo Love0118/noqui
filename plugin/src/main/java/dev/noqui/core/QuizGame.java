@@ -60,6 +60,7 @@ public final class QuizGame {
     private UUID session=UUID.randomUUID(),winner,roundId,playbackGeneration;
     private long revision,operation,startsAt,endsAt,clipEndMillis,anchorPosition,pausedRemaining,nextHintAt,hintRemaining=9000,nextRefundRetry;
     private int roundsStarted;
+    private boolean playlist;
     private boolean playing,countdownAccepted,roundStarted,skipped;
     private Phase phase=Phase.STOPPED;
     private Submission current;
@@ -88,11 +89,12 @@ public final class QuizGame {
     public boolean started(){return phase!=Phase.STOPPED;}
     public boolean participant(UUID id){return players.contains(id);}
     public long credits(UUID id){return credits.balance(id);}
-    public boolean pending(UUID id){return current!=null&&current.live&&!roundStarted&&current.author.equals(id)||queue.stream().anyMatch(s->s.author.equals(id));}
+    public boolean playlist(){return playlist;}
+    public boolean pending(UUID id){return current!=null&&current.live&&!roundStarted&&Objects.equals(current.author,id)||queue.stream().anyMatch(s->Objects.equals(s.author,id));}
     public boolean canSubmit(UUID id){
-        if(!started()||!participant(id)||credits(id)<1||!hasSubmissionSpace())return false;
-        int waiting=unplayedCurrent()&&current.author.equals(id)?1:0;
-        for(var submission:queue)if(submission.author.equals(id))waiting++;
+        if(playlist||!started()||!participant(id)||credits(id)<1||!hasSubmissionSpace())return false;
+        int waiting=unplayedCurrent()&&Objects.equals(current.author,id)?1:0;
+        for(var submission:queue)if(Objects.equals(submission.author,id))waiting++;
         return waiting<10;
     }
     public boolean canVoteSkip(UUID id){return participant(id)&&roundId!=null&&!(phase==Phase.REVEAL&&!playing)&&!votes.contains(id);}
@@ -105,8 +107,26 @@ public final class QuizGame {
     public void start(Collection<UUID> participants,int limit) {
         if(started())throw new IllegalArgumentException("노래퀴즈가 이미 진행 중입니다.");
         if(limit<0)throw new IllegalArgumentException("라운드 제한은 0(무제한) 또는 양의 정수입니다.");
-        totalRounds=limit;session=UUID.randomUUID();players.clear();players.addAll(participants);scores.clear();players.forEach(id->scores.put(id,0));
+        playlist=false;totalRounds=limit;session=UUID.randomUUID();players.clear();players.addAll(participants);scores.clear();players.forEach(id->scores.put(id,0));
         roundsStarted=0;clearRound();phase=Phase.WAITING_FOR_SUBMISSION;emit();
+    }
+    public record PlaylistTrack(Song song,MediaBridge.Media media) {
+        public PlaylistTrack {Objects.requireNonNull(song);Objects.requireNonNull(media);}
+    }
+    /** Managed tracks are ready media and have no presenter or credit reservation. */
+    public void startPlaylist(Collection<UUID> participants,List<PlaylistTrack> tracks,int limit) {
+        if(started())throw new IllegalArgumentException("노래퀴즈가 이미 진행 중입니다.");
+        if(tracks.isEmpty())throw new IllegalArgumentException("재생 가능한 플레이리스트 곡이 없습니다.");
+        if(limit<0)throw new IllegalArgumentException("라운드 제한은 0 또는 양의 정수입니다.");
+        var shuffled=new ArrayList<>(tracks);
+        for(var track:shuffled)Objects.requireNonNull(track);
+        for(int i=shuffled.size()-1;i>0;i--)Collections.swap(shuffled,i,random.nextInt(i+1));
+        start(participants,limit);playlist=true;
+        int count=limit==0?shuffled.size():Math.min(limit,shuffled.size());
+        for(var track:shuffled.subList(0,count)){
+            var submission=new Submission(null,track.song(),++operation);submission.media=track.media();queue.add(submission);
+        }
+        next();
     }
     public void timeLimit(int seconds) {
         if(seconds<1||seconds>120)throw new IllegalArgumentException("시간 제한은 1~120초입니다.");
@@ -133,16 +153,17 @@ public final class QuizGame {
     public void leave(UUID id) {
         if(!players.remove(id))return;
         pendingAnswers.remove(id);
-        for(var it=queue.iterator();it.hasNext();){var s=it.next();if(s.author.equals(id)){cancelSubmission(s);refund(s);it.remove();}}
+        for(var it=queue.iterator();it.hasNext();){var s=it.next();if(Objects.equals(s.author,id)){cancelSubmission(s);refund(s);it.remove();}}
         votes.remove(id);
-        if(current!=null&&!roundStarted&&current.author.equals(id)&&!(phase==Phase.REVEAL&&!playing)){abortPreparation();return;}
+        if(current!=null&&!roundStarted&&Objects.equals(current.author,id)&&!(phase==Phase.REVEAL&&!playing)){abortPreparation();return;}
         if(votes.size()>=players.size()/2+1&&!votes.isEmpty())finishRound(true);else emit();
     }
     public void cancel(UUID id) {
-        if(current!=null&&!roundStarted&&current.author.equals(id)&&!(phase==Phase.REVEAL&&!playing)){abortPreparation();return;}
-        for(var it=queue.iterator();it.hasNext();){var s=it.next();if(s.author.equals(id)){cancelSubmission(s);refund(s);it.remove();emit();return;}}
+        if(current!=null&&!roundStarted&&Objects.equals(current.author,id)&&!(phase==Phase.REVEAL&&!playing)){abortPreparation();return;}
+        for(var it=queue.iterator();it.hasNext();){var s=it.next();if(Objects.equals(s.author,id)){cancelSubmission(s);refund(s);it.remove();emit();return;}}
     }
     public void submit(UUID id,long expectedRevision,Song song) {
+        if(playlist)throw new IllegalArgumentException("플레이리스트 진행 중에는 곡을 제출할 수 없습니다.");
         if(!started()||revision!=expectedRevision||!players.contains(id))throw new IllegalArgumentException("참가 메뉴를 다시 열어 주세요.");
         int waiting=unplayedCurrent()&&current.author.equals(id)?1:0;
         for(var submission:queue)if(submission.author.equals(id))waiting++;
@@ -168,16 +189,18 @@ public final class QuizGame {
         clearRound();
         if(totalRounds>0&&roundsStarted>=totalRounds){stop();return;}
         while(!queue.isEmpty()) {
-            var s=queue.remove();if(!players.contains(s.author)){cancelSubmission(s);refund(s);continue;}
+            var s=queue.remove();if(s.author!=null&&!players.contains(s.author)){cancelSubmission(s);refund(s);continue;}
             current=s;roundModes=modes;roundId=s.id;playbackGeneration=UUID.randomUUID();hints=new HintMask(s.song.title(),random);
             phase=Phase.WAITING_FOR_MEDIA;
             if(s.media!=null)acceptMedia();else emit();return;
         }
+        if(playlist){stop();return;}
         phase=Phase.WAITING_FOR_SUBMISSION;emit();
     }
     private void acceptMedia(){media=current.media;clipEndMillis=Math.min(roundMillis,media.durationMillis());playbackRate=roundModes.has(QuizModes.Mode.SPEED_X2)?2:1;phase=Phase.PREPARING;endsAt=0;emit();}
-    private void cancelSubmission(Submission s){s.live=false;try{bridge.cancel(session,s.request);}catch(RuntimeException ignored){/* The live flag still rejects late completion. */}}
+    private void cancelSubmission(Submission s){s.live=false;if(s.author==null)return;try{bridge.cancel(session,s.request);}catch(RuntimeException ignored){/* The live flag still rejects late completion. */}}
     private boolean refund(Submission s) {
+        if(s.author==null)return false;
         try{credits.refund(s.id);refundRetries.remove(s.id);return true;}
         catch(UncheckedIOException error){refundRetries.put(s.id,s.author);return false;}
     }
@@ -261,7 +284,7 @@ public final class QuizGame {
         if(phase!=Phase.COUNTDOWN||!countdownAccepted||!participant(player)||!Objects.equals(roundId,expectedRound)
                 ||!Objects.equals(playbackGeneration,expectedGeneration)||now<startsAt||observedAtMillis<startsAt
                 ||age<0||age>PLAYBACK_REPORT_FRESHNESS_MILLIS||positionMillis<=anchorPosition||positionMillis>clipEndMillis)return false;
-        if(!roundStarted)try{credits.spend(current.id);roundStarted=true;roundsStarted++;}
+        if(!roundStarted)try{if(current.author!=null)credits.spend(current.id);roundStarted=true;roundsStarted++;}
         catch(UncheckedIOException error){
             UUID author=current.author;playing=false;startsAt=0;phase=Phase.PREPARING;emit();abortPreparation();
             output.error(author,"출제권 사용을 저장하지 못해 재생을 취소했습니다. 미확정 출제권은 반환됩니다.");return false;

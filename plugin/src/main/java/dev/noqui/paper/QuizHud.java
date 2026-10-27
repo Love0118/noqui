@@ -150,7 +150,7 @@ final class QuizHud implements AutoCloseable {
                 tags == null ? List.of() : List.copyOf(tags), winners == null ? List.of() : List.copyOf(winners));
         if (reveal.equals(view.lastReveal)) return;
         view.lastReveal = reveal;
-        String presenterName = playerName(reveal.presenter());
+        String presenterName = reveal.presenter()==null?"플레이리스트":playerName(reveal.presenter());
         var lines = new ArrayList<Component>();
         lines.add(Component.text(reveal.winners().isEmpty() ? "아무도 정답을 맞히지 못했습니다" : "정답자: " + String.join(", ", reveal.winners()),ORIGINAL_WINNER).decorate(TextDecoration.BOLD));
         lines.add(Component.empty());

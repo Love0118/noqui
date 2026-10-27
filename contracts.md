@@ -8,7 +8,7 @@ Public Minecraft resource-pack/skin files under `/packs/` are served directly by
 
 ## Internal authentication
 
-All four internal routes require `Host: 127.0.0.1:8788`, `X-Noqui-Key-Id`, `X-Noqui-Timestamp` (Unix seconds), `X-Noqui-Nonce` (base64url, at least 16 random bytes) and `X-Noqui-Signature: v1=<lowercase hex HMAC-SHA256>`. The shared secret is exactly 32 raw bytes. Sign this UTF-8 text without a trailing newline:
+All internal routes require `Host: 127.0.0.1:8788`, `X-Noqui-Key-Id`, `X-Noqui-Timestamp` (Unix seconds), `X-Noqui-Nonce` (base64url, at least 16 random bytes) and `X-Noqui-Signature: v1=<lowercase hex HMAC-SHA256>`. The shared secret is exactly 32 raw bytes. Sign this UTF-8 text without a trailing newline:
 
 ```text
 UPPERCASE_METHOD
@@ -27,12 +27,14 @@ Queries are rejected. Empty GET body hashes the empty byte string. Clock skew is
 | `POST /internal/v1/media/jobs` | `{schemaVersion:1,requestId,videoId,song?:{title,tags}}` | `202` pending, `200` cached READY; `{jobId,state,mediaId,profileVersion,durationMs,byteLength,mime,failureCode,retryable,retryAfterMs}` |
 | `POST /internal/v1/catalogue/import` | `{schemaVersion:1,songs:[{id,youtubeUrl,title,tags}]}`; at most 50 records and the existing 64 KiB body limit | `200 {savedCount:<batch length>}`, including idempotent records; whole-batch transaction |
 | `GET /internal/v1/media/jobs/{jobId}` | Empty body | Same job descriptor |
+| `GET /internal/v1/playlists` | Empty body | `{playlists:[{id,name,trackCount,playableCount}]}` |
+| `GET /internal/v1/playlists/{id}/tracks/{offset}` | Empty body; zero-based offset | `{id,tracks:[{song:{id,youtubeUrl,title,tags},mediaId,durationMs}],nextOffset:<integer or null>}`; at most 50 playable entries |
 | `POST /internal/v1/sync` | Full snapshot below | `{acceptedSeq,backendEpoch,serverTimeMs,authorityLeaseMs:15000,browsers:[...]}` |
 | `POST /internal/v1/join-tokens` | `{schemaVersion:1,requestId,instanceId,uuid,membershipId,roomId,tokenSha256}` | `201 {expiresAtMs,expiresInSeconds}` |
 
 `videoId` is exactly 11 ASCII YouTube ID characters. The plugin parses the native dialog's HTTPS YouTube URL locally; title/tags/aliases remain private. Ingest accepts the video ID rather than an arbitrary source URL; catalogue import accepts only validated canonical YouTube URLs as metadata and does not start downloads. Missing tools/source authentication and source/network failures become explicit FAILED jobs. A successful registration is not playable until READY. Poll pending jobs at least two seconds apart; failed retryable jobs need a new explicit request after the 30-second cooldown, except evicted/missing-cache jobs which can requeue immediately. Same request ID with changed video/token/metadata returns `409 IDEMPOTENCY_CONFLICT`. Concurrent requests for the same video/profile share one job.
 
-The single background worker drains every accepted job independently of current round selection; one failed conversion does not stop later jobs. Up to 64 queued sources are accepted. Further registrations return `429 QUEUE_FULL` with a two-second retry hint and do not create a request receipt, so callers can retry the same request ID. Time spent queued is separate from the 300-second per-attempt processing deadline; consumers must allow for preceding jobs rather than treating a valid queued job as a conversion failure. Future queued/READY media remains private and cannot be selected through a public browser endpoint before it is that room's current asset.
+The single background worker drains every accepted job independently of current round selection; one failed conversion does not stop later jobs. Up to 100 queued sources are accepted. Further registrations return `429 QUEUE_FULL` with a two-second retry hint and do not create a request receipt, so callers can retry the same request ID. Time spent queued is separate from the 300-second per-attempt processing deadline; consumers must allow for preceding jobs rather than treating a valid queued job as a conversion failure. Future queued/READY media remains private and cannot be selected through a public browser endpoint before it is that room's current asset.
 
 Snapshot shape (listed fields are required except the optional room progress pair described below; nullable fields accept JSON null):
 
@@ -93,6 +95,14 @@ After the accepted countdown's scheduled anchor, Paper privately holds each elig
 Browser entries in the sync response contain `uuid,membershipId,online,leaseExpiresAtMs,clientId,roundId,roundRevision,playbackGeneration,status,positionMs,lastSeenAtMs`; absent session fields are null. Browser telemetry supplies readiness/start confirmation; it does not authorize answers or award score. PREPARED must match the intended round revision/generation and indicates buffering, not proof that browser policy permits output. Native logic should use a visible preparation timeout/skip decision rather than treating a disconnected browser as ready.
 
 Each entry also contains the additive boolean `connected`, for connection prompts independently of media readiness. It is true only for an unexpired session matching that UUID, membership and room, with valid Minecraft authority and a successful authenticated state/SSE read or accepted playback report in the last 20 seconds. SSE's five-second heartbeat renews this connection signal even when no media is selected or playable. Token redemption, `/me`, clock/media requests, rejected CSRF writes and expired/revoked sessions do not establish presence. Activity expires after 20 seconds without another control read/report; it does not require PREPARED. Existing `online` retains its 60-second active playback-client-lease meaning. Consumers should use `connected` when present and may fall back to `online` with older backends; connection prompts must still be gated by the plugin's quiz-active state.
+
+## Managed playlists
+
+Bundle manifests may include `excludedSongs:[{index,title,reasons}]` to retain unreviewed chart entries without a source URL or media asset. They contribute to `trackCount` and never appear in playable pages. The catalogue/DB preserves their full evidence and review reasons.
+
+Playlist routes use the same HMAC and loopback-only access, with no public browser equivalent. IDs match `[a-z0-9-]{1,64}`. Unavailable audio remains in `trackCount` but is omitted from playable pages. Paper loads pages asynchronously, checks stale session/permission callbacks, shuffles once on start, and runs the existing quiz without a presenter or credit reservation. Player submissions are disabled in this mode. `/noqui limit N` trims the existing queue tail; raising/resetting the limit does not restore removed songs. Exhaustion ends the session.
+
+Run `install-playlist <data-dir> <playlist.json>` while the service is stopped, then restart. The installer validates metadata, relative paths, SHA-256, sizes and full Opus durations before atomically publishing a new directory. Existing IDs cannot be overwritten. Files live under `library/<id>/audio/` with a private `playlist.json`, outside the ordinary `media` table and `media/` cache. They are excluded from the 5 GiB LRU accounting and eviction. Full library files may exceed the normal 360-second ingestion limit; game clips still use the configured 1–120 seconds. Export strips answer-bearing audio comments. Only current media IDs enter `/sync`; the 100 queued-job/pin bounds do not limit playlist length. Current-room browser authorization still gates each library media request. Never publish the library folder through nginx static routes.
 
 ## Browser authentication and control
 

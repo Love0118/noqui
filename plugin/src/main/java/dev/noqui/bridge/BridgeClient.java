@@ -130,6 +130,40 @@ public final class BridgeClient implements MediaBridge {
             return expected;
         });
     }
+    public record Playlist(String id,String name,int trackCount,int playableCount) {}
+    public CompletionStage<List<Playlist>> playlists() {
+        return request("GET","/internal/v1/playlists",null).thenApply(reply->{
+            var result=new ArrayList<Playlist>();
+            for(var entry:reply.getAsJsonArray("playlists")){
+                var value=entry.getAsJsonObject();String id=value.get("id").getAsString();
+                if(!id.matches("[a-z0-9-]{1,64}"))throw new IllegalArgumentException("Invalid playlist ID");
+                result.add(new Playlist(id,value.get("name").getAsString(),value.get("trackCount").getAsInt(),value.get("playableCount").getAsInt()));
+            }
+            return List.copyOf(result);
+        });
+    }
+    public CompletionStage<List<QuizGame.PlaylistTrack>> playlistTracks(String id) {
+        if(id==null||!id.matches("[a-z0-9-]{1,64}"))return CompletableFuture.failedFuture(new IllegalArgumentException("Invalid playlist ID"));
+        return playlistPage(id,0,new ArrayList<>());
+    }
+    private CompletionStage<List<QuizGame.PlaylistTrack>> playlistPage(String id,int offset,List<QuizGame.PlaylistTrack> tracks) {
+        return request("GET","/internal/v1/playlists/"+id+"/tracks/"+offset,null).thenCompose(reply->{
+            var page=reply.getAsJsonArray("tracks");
+            if(page.size()>50)throw new IllegalArgumentException("Invalid playlist page size");
+            for(var entry:page){
+                var value=entry.getAsJsonObject();var song=value.getAsJsonObject("song");var tags=new ArrayList<String>();
+                for(var tag:song.getAsJsonArray("tags"))tags.add(tag.getAsString());
+                tracks.add(new QuizGame.PlaylistTrack(new Song(song.get("youtubeUrl").getAsString(),song.get("title").getAsString(),tags),
+                    new Media(UUID.fromString(value.get("mediaId").getAsString()).toString(),value.get("durationMs").getAsLong())));
+            }
+            if(tracks.size()>10000)throw new IllegalArgumentException("Playlist too large");
+            var next=reply.get("nextOffset");
+            if(next==null||next.isJsonNull())return CompletableFuture.completedFuture(List.copyOf(tracks));
+            int nextOffset=next.getAsInt();
+            if(page.isEmpty()||nextOffset!=offset+page.size()||nextOffset>=10000)throw new IllegalArgumentException("Invalid playlist page");
+            return playlistPage(id,nextOffset,tracks);
+        });
+    }
     void poll(Request request,CompletableFuture<Media> future,JsonObject response,Throwable error,long deadline) {
         if(future.isDone() || closed)return;
         try {

@@ -1,0 +1,5841 @@
+{
+  "schemaVersion": 1,
+  "playlistId": "tj-261027-domestic",
+  "playlistTitle": "TJ인기차트-261027국내",
+  "sourceDate": "2026-10-27",
+  "chartPeriod": "2026-10-01~2026-10-27 (TJ TOP100 selected search range)",
+  "chartSources": [
+    "https://www.tjmedia.com/chart/top100",
+    "https://www.tjmedia.com/legacy/api/topAndHot100"
+  ],
+  "songs": [
+    {
+      "index": 1,
+      "rank": 1,
+      "tjNumber": 14260,
+      "videoId": "NfDeBiVy_IY",
+      "id": "00143f9c-db35-5d32-bac5-673359fd646b",
+      "youtubeUrl": "https://www.youtube.com/watch?v=NfDeBiVy_IY",
+      "title": "행복하지 말아요",
+      "sourceTitle": "행복하지 말아요",
+      "singer": "MC THE MAX",
+      "writers": [
+        "양재선"
+      ],
+      "tags": [
+        "양재선",
+        "MC THE MAX"
+      ],
+      "aliases": [],
+      "reviewRequired": true,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 1; TJ no. 14260; 행복하지 말아요 — MC THE MAX; lyricist: 양재선; composer: 외국곡",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 1; TJ no. 14260; 행복하지 말아요 — MC THE MAX; lyricist: 양재선; composer: 외국곡",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=NfDeBiVy_IY",
+          "quote": "행복하지 말아요 — M.C the MAX Official. Provided to YouTube by OGAM 행복하지 말아요 · M.C The Max Solitude Love ℗ 오감엔터테인먼트 Released on: 2004-11-19 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/NfDeBiVy_IY.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 358.880375,
+        "byteLength": 2198698,
+        "sha256": "1a913e1365cb58460a859ae64f1380861e4010cfaba6d36065316e377faafe56"
+      },
+      "reviewReasons": [
+        "tj_composer_credit_generic"
+      ]
+    },
+    {
+      "index": 2,
+      "rank": 2,
+      "tjNumber": 83945,
+      "videoId": "NbKH4iZqq1Y",
+      "id": "3df46bf9-d6ed-5501-9ed0-4ab766a72b8d",
+      "youtubeUrl": "https://www.youtube.com/watch?v=NbKH4iZqq1Y",
+      "title": "Drowning",
+      "sourceTitle": "Drowning",
+      "singer": "WOODZ(조승연)",
+      "writers": [
+        "WOODZ",
+        "네이슨(NATHAN)",
+        "HOHO"
+      ],
+      "tags": [
+        "WOODZ",
+        "네이슨(NATHAN)",
+        "HOHO",
+        "WOODZ(조승연)",
+        "드라우닝"
+      ],
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "드라우닝",
+          "url": "https://namu.wiki/w/Drowning(WOODZ)",
+          "quote": "그중의 한 곡이 드라우닝이었다."
+        }
+      ],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 2; TJ no. 83945; Drowning — WOODZ(조승연); lyricist: WOODZ; composer: WOODZ,네이슨(NATHAN),HOHO",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 2; TJ no. 83945; Drowning — WOODZ(조승연); lyricist: WOODZ; composer: WOODZ,네이슨(NATHAN),HOHO",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=NbKH4iZqq1Y",
+          "quote": "Drowning (Drowning) — WOODZ. Provided to YouTube by Kakao Entertainment Drowning (Drowning) · WOODZ · NATHAN · HOHO · WOODZ · NATHAN · HOHO ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://namu.wiki/w/Drowning(WOODZ)",
+          "quote": "그중의 한 곡이 드라우닝이었다.",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/NbKH4iZqq1Y.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 244.99366666666666,
+        "byteLength": 1502494,
+        "sha256": "2544db1cc5d279438ceeb32bf72f986df37c2da449b2c7f7fe5d9d56c42997fa"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 3,
+      "rank": 3,
+      "tjNumber": 14515,
+      "videoId": "TXvU0ZdfhGY",
+      "id": "a20ad67f-80d6-533e-b3ff-e536053c416d",
+      "youtubeUrl": "https://www.youtube.com/watch?v=TXvU0ZdfhGY",
+      "title": "응급실(쾌걸춘향OST)",
+      "sourceTitle": "응급실(쾌걸춘향OST)",
+      "singer": "izi",
+      "writers": [
+        "신동우"
+      ],
+      "tags": [
+        "신동우",
+        "izi",
+        "응급실쾌걸춘향OST",
+        "응급실"
+      ],
+      "aliases": [
+        {
+          "kind": "punctuation",
+          "name": "응급실쾌걸춘향OST",
+          "url": null,
+          "quote": "응급실(쾌걸춘향OST)"
+        },
+        {
+          "kind": "title",
+          "name": "응급실",
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 3; TJ no. 14515; 응급실(쾌걸춘향OST) — izi; lyricist: 신동우; composer: 신동우"
+        }
+      ],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 3; TJ no. 14515; 응급실(쾌걸춘향OST) — izi; lyricist: 신동우; composer: 신동우",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 3; TJ no. 14515; 응급실(쾌걸춘향OST) — izi; lyricist: 신동우; composer: 신동우",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=TXvU0ZdfhGY",
+          "quote": "이지(izi) - 응급실(쾌걸춘향 ost). — 음악한줌. 쾌걸춘향 ost.",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/TXvU0ZdfhGY.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 224.04475,
+        "byteLength": 1372697,
+        "sha256": "b3df7345b2366a7f3b6264d1eb7d4726aac7047e7c69d64d484461bfd8a4d4c8"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 4,
+      "rank": 4,
+      "tjNumber": 14352,
+      "videoId": "0RyGCQV2koM",
+      "id": "b6664bdc-67c5-5716-9b16-d0b48cbaa0d9",
+      "youtubeUrl": "https://www.youtube.com/watch?v=0RyGCQV2koM",
+      "title": "참 다행이야",
+      "sourceTitle": "참 다행이야",
+      "singer": "SPAPA",
+      "writers": [
+        "이태건",
+        "김건우"
+      ],
+      "tags": [
+        "이태건",
+        "김건우",
+        "SPAPA"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 4; TJ no. 14352; 참 다행이야 — SPAPA; lyricist: 이태건; composer: 김건우",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 4; TJ no. 14352; 참 다행이야 — SPAPA; lyricist: 이태건; composer: 김건우",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=0RyGCQV2koM",
+          "quote": "탁재훈(S.PAPA) X 아일 - 참 다행이야 — I'll_Official 아일. 함께 노래해 주신 탁재훈 선배님께 감사드립니다. ▷ I'll Official Youtube : https://www.youtube.com/@IllOfficial ▷ I'll Official Fancafe ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/0RyGCQV2koM.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 302.11022916666667,
+        "byteLength": 1854382,
+        "sha256": "15c4a76336e312166ad326e4e38758eed1c923255aadd5bb69b9cb16f5d7f726"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 5,
+      "rank": 5,
+      "tjNumber": 98524,
+      "videoId": "Jc2ObCSe52w",
+      "id": "9a70d68c-3177-5632-9d4c-a3d808c78448",
+      "youtubeUrl": "https://www.youtube.com/watch?v=Jc2ObCSe52w",
+      "title": "가을 타나 봐",
+      "sourceTitle": "가을 타나 봐",
+      "singer": "바이브",
+      "writers": [
+        "류재현",
+        "민연재"
+      ],
+      "tags": [
+        "류재현",
+        "민연재",
+        "바이브"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 5; TJ no. 98524; 가을 타나 봐 — 바이브; lyricist: 류재현,민연재; composer: 류재현",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 5; TJ no. 98524; 가을 타나 봐 — 바이브; lyricist: 류재현,민연재; composer: 류재현",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Jc2ObCSe52w",
+          "quote": "[Audio] 바이브 (Vibe) - 가을 타나 봐 — 땅도라의 음악상자 Ddangdora music box. [Audio] 바이브 (Vibe) - 가을 타나 봐.",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/Jc2ObCSe52w.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 235.06260416666666,
+        "byteLength": 1425147,
+        "sha256": "1ec5ee002912fde636210653e80c88477455566dbc54ecd878dce516c739b4d3"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 6,
+      "rank": 6,
+      "tjNumber": 86059,
+      "videoId": "wOxVJB6lHcw",
+      "id": "21ac9b71-7ee7-5106-bf98-98597289beab",
+      "youtubeUrl": "https://www.youtube.com/watch?v=wOxVJB6lHcw",
+      "title": "천상연(웹툰 '선녀외전' X 이창섭(LEE CHANGSUB))",
+      "sourceTitle": "천상연(웹툰 '선녀외전' X 이창섭(LEE CHANGSUB))",
+      "singer": "이창섭",
+      "writers": [
+        "유해준"
+      ],
+      "tags": [
+        "유해준",
+        "이창섭",
+        "천상연웹툰 선녀외전 X 이창섭LEE CHANGSUB",
+        "천상연"
+      ],
+      "aliases": [
+        {
+          "kind": "punctuation",
+          "name": "천상연웹툰 선녀외전 X 이창섭LEE CHANGSUB",
+          "url": null,
+          "quote": "천상연(웹툰 '선녀외전' X 이창섭(LEE CHANGSUB))"
+        },
+        {
+          "kind": "title",
+          "name": "천상연",
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 6; TJ no. 86059; 천상연(웹툰 '선녀외전' X 이창섭(LEE CHANGSUB)) — 이창섭; lyricist: 유해준; composer: 유해준"
+        }
+      ],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 6; TJ no. 86059; 천상연(웹툰 '선녀외전' X 이창섭(LEE CHANGSUB)) — 이창섭; lyricist: 유해준; composer: 유해준",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 6; TJ no. 86059; 천상연(웹툰 '선녀외전' X 이창섭(LEE CHANGSUB)) — 이창섭; lyricist: 유해준; composer: 유해준",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=wOxVJB6lHcw",
+          "quote": "이창섭 - 천상연 [웹툰 '선녀외전' X 이창섭 (LEE CHANGSUB)] [가사/Lyrics] — 웅키. 이창섭 - 천상연 [웹툰 '선녀외전' X 이창섭 (LEE CHANGSUB)] [가사/Lyrics] #이창섭 #천상연 #선녀외전 #LEECHANGSUB 발매 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/wOxVJB6lHcw.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 271.1928541666667,
+        "byteLength": 1653409,
+        "sha256": "84b52355462207df990c5f61ed09d14603cb780ca068f3d35df96db648f25e7a"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 7,
+      "rank": 7,
+      "tjNumber": 49818,
+      "videoId": "b1kQvZhQ6_M",
+      "id": "0b5f711f-c7bd-5d5c-a804-f5a7d709f5f8",
+      "youtubeUrl": "https://www.youtube.com/watch?v=b1kQvZhQ6_M",
+      "title": "좋니",
+      "sourceTitle": "좋니",
+      "singer": "윤종신",
+      "writers": [
+        "윤종신",
+        "POSTINO"
+      ],
+      "tags": [
+        "윤종신",
+        "POSTINO",
+        "Like it"
+      ],
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "Like it",
+          "url": "https://www.youtube.com/watch?v=b1kQvZhQ6_M",
+          "quote": "[MV] Jong Shin Yoon(윤종신) _ Like it(좋니)"
+        }
+      ],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 7; TJ no. 49818; 좋니 — 윤종신; lyricist: 윤종신; composer: POSTINO",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 7; TJ no. 49818; 좋니 — 윤종신; lyricist: 윤종신; composer: POSTINO",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=b1kQvZhQ6_M",
+          "quote": "[MV] Jong Shin Yoon(윤종신) _ Like it(좋니) — 1theK (원더케이). [MV] Jong Shin Yoon(윤종신) _ Like it(좋니) *English subtitles are now available. :D (Please click on 'CC' button or activate ...",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/b1kQvZhQ6_M.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 328.34877083333333,
+        "byteLength": 2015024,
+        "sha256": "7de0b4a1ca13cb0391ffd45c02fa537f3eff81efd277101299edf1d1f7ce02d3"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 8,
+      "rank": 8,
+      "tjNumber": 71009,
+      "videoId": "7mDDM0eBWR0",
+      "id": "01d9004c-29bf-51c5-bd09-bd91e117e73f",
+      "youtubeUrl": "https://www.youtube.com/watch?v=7mDDM0eBWR0",
+      "title": "퇴사할게여",
+      "sourceTitle": "퇴사할게여",
+      "singer": "소연(SOYEON)(Narr.기안84)",
+      "writers": [
+        "소연",
+        "POP TIME",
+        "DAILY",
+        "LIKEY",
+        "익스프레션",
+        "익스"
+      ],
+      "tags": [
+        "소연",
+        "POP TIME",
+        "DAILY",
+        "LIKEY",
+        "익스프레션",
+        "익스",
+        "소연(SOYEON)(Narr.기안84)"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 8; TJ no. 71009; 퇴사할게여 — 소연(SOYEON)(Narr.기안84); lyricist: 소연; composer: POP TIME,DAILY,소연,LIKEY,익스프레션,익스",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 8; TJ no. 71009; 퇴사할게여 — 소연(SOYEON)(Narr.기안84); lyricist: 소연; composer: POP TIME,DAILY,소연,LIKEY,익스프레션,익스",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=7mDDM0eBWR0",
+          "quote": "소연 (SOYEON) '퇴사할게여 (Narr. 기안84)' Official Music Video — i-dle (아이들). 소연 (SOYEON) '퇴사할게여 (Narr. 기안84)' Official Music Video [  ] [끝내주는 인생] https://SOYEON.lnk.to/WAWL Composed ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/7mDDM0eBWR0.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 211.35504166666666,
+        "byteLength": 1289662,
+        "sha256": "b5a10a7eaf02e7b51e7930ac42d60a906fc393a12d0db5f132fac9148b763837"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 9,
+      "rank": 9,
+      "tjNumber": 13588,
+      "videoId": "",
+      "id": "a4240227-a0bc-5590-9625-7bec301f4138",
+      "youtubeUrl": "",
+      "title": "삭제",
+      "sourceTitle": "삭제",
+      "singer": "이승기",
+      "writers": [
+        "싸이"
+      ],
+      "tags": [
+        "싸이",
+        "이승기"
+      ],
+      "aliases": [],
+      "reviewRequired": true,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 9; TJ no. 13588; 삭제 — 이승기; lyricist: 싸이; composer: 싸이",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 9; TJ no. 13588; 삭제 — 이승기; lyricist: 싸이; composer: 싸이",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "failed",
+        "reason": "Targeted searches found lyrics and unrelated re-recordings, but no official or label-attributed full-length Lee Seung Gi original upload.",
+        "failureCode": "SOURCE_UNVERIFIED"
+      },
+      "reviewReasons": [
+        "audio_source_missing"
+      ]
+    },
+    {
+      "index": 10,
+      "rank": 10,
+      "tjNumber": 13584,
+      "videoId": "",
+      "id": "1dd1a426-fe39-5b46-8a21-8a1fb10e3b3e",
+      "youtubeUrl": "",
+      "title": "나였으면(황태자의첫사랑OST)",
+      "sourceTitle": "나였으면(황태자의첫사랑OST)",
+      "singer": "나윤권",
+      "writers": [
+        "김형석"
+      ],
+      "tags": [
+        "김형석",
+        "나윤권",
+        "나였으면황태자의첫사랑OST",
+        "나였으면"
+      ],
+      "aliases": [
+        {
+          "kind": "punctuation",
+          "name": "나였으면황태자의첫사랑OST",
+          "url": null,
+          "quote": "나였으면(황태자의첫사랑OST)"
+        },
+        {
+          "kind": "title",
+          "name": "나였으면",
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 10; TJ no. 13584; 나였으면(황태자의첫사랑OST) — 나윤권; lyricist: 김형석; composer: 김형석"
+        }
+      ],
+      "reviewRequired": true,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 10; TJ no. 13584; 나였으면(황태자의첫사랑OST) — 나윤권; lyricist: 김형석; composer: 김형석",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 10; TJ no. 13584; 나였으면(황태자의첫사랑OST) — 나윤권; lyricist: 김형석; composer: 김형석",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "failed",
+        "reason": "Targeted searches found third-party reposts but no official or label-attributed full-length Na Yoon Kwon original upload.",
+        "failureCode": "SOURCE_UNVERIFIED"
+      },
+      "reviewReasons": [
+        "audio_source_missing"
+      ]
+    },
+    {
+      "index": 11,
+      "rank": 11,
+      "tjNumber": 46009,
+      "videoId": "va5rf20Un24",
+      "id": "789db99a-a752-5ec6-bcae-49d5528fa8d5",
+      "youtubeUrl": "https://www.youtube.com/watch?v=va5rf20Un24",
+      "title": "어디에도",
+      "sourceTitle": "어디에도",
+      "singer": "MC THE MAX",
+      "writers": [
+        "이수",
+        "송양하",
+        "김재현"
+      ],
+      "tags": [
+        "이수",
+        "송양하",
+        "김재현",
+        "MC THE MAX"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 11; TJ no. 46009; 어디에도 — MC THE MAX; lyricist: 이수,송양하; composer: 이수,송양하,김재현",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 11; TJ no. 46009; 어디에도 — MC THE MAX; lyricist: 이수,송양하; composer: 이수,송양하,김재현",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=va5rf20Un24",
+          "quote": "[MV] M.C THE MAX(엠씨더맥스) - No matter where(어디에도) — MUSIC&NEW 뮤직앤뉴. 엠씨더맥스 #어디에도 #mcthemax COMEBACK OF THE WHOLE GROUP IN TWO YEARS A MASTER OF AUTHENTIC ROCK ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/va5rf20Un24.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 345.566375,
+        "byteLength": 2107007,
+        "sha256": "a5cd9b15f350e26cc4b56bc69fd20800b9b369de414a574eb58042ca7f904f09"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 12,
+      "rank": 12,
+      "tjNumber": 8941,
+      "videoId": "CtFoQ7W9xIg",
+      "id": "9b3365c0-c465-52e6-83cd-8161f09643c0",
+      "youtubeUrl": "https://www.youtube.com/watch?v=CtFoQ7W9xIg",
+      "title": "말리꽃(비천무OST)",
+      "sourceTitle": "말리꽃(비천무OST)",
+      "singer": "이승철",
+      "writers": [
+        "이근상",
+        "박준배"
+      ],
+      "tags": [
+        "이근상",
+        "박준배",
+        "이승철",
+        "Jasmine",
+        "말리꽃비천무OST",
+        "말리꽃"
+      ],
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "Jasmine",
+          "url": "https://www.youtube.com/watch?v=CtFoQ7W9xIg",
+          "quote": "Jasmine (말리꽃)"
+        },
+        {
+          "kind": "punctuation",
+          "name": "말리꽃비천무OST",
+          "url": null,
+          "quote": "말리꽃(비천무OST)"
+        },
+        {
+          "kind": "title",
+          "name": "말리꽃",
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 12; TJ no. 8941; 말리꽃(비천무OST) — 이승철; lyricist: 이근상,박준배; composer: 이근상"
+        }
+      ],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 12; TJ no. 8941; 말리꽃(비천무OST) — 이승철; lyricist: 이근상,박준배; composer: 이근상",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 12; TJ no. 8941; 말리꽃(비천무OST) — 이승철; lyricist: 이근상,박준배; composer: 이근상",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=CtFoQ7W9xIg",
+          "quote": "Jasmine (말리꽃) — LEE SEUNGCHUL. Provided to YouTube by Kakao Entertainment Jasmine (말리꽃) · Lee Seung Chul · 이근상 · 이근상 · 박준배 · 이근상 Blue Swallow ...",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/CtFoQ7W9xIg.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 290.5350833333333,
+        "byteLength": 1774106,
+        "sha256": "8113ade37c6535fef531d251e1398b7be28f48b24a76d10b39a007f1d342c5bf"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 13,
+      "rank": 13,
+      "tjNumber": 76409,
+      "videoId": "mTonMiKVZRw",
+      "id": "5c22ee84-9948-56fb-8bb0-933868bf087f",
+      "youtubeUrl": "https://www.youtube.com/watch?v=mTonMiKVZRw",
+      "title": "좋은 밤 좋은 꿈",
+      "sourceTitle": "좋은 밤 좋은 꿈",
+      "singer": "너드커넥션(Nerd Connection)",
+      "writers": [
+        "NERD CONNECTION(서영주)",
+        "NERD CONNECTION (박재현)",
+        "NERD CONNECTION (최승원)",
+        "NERD CONNECTION (신연태)"
+      ],
+      "tags": [
+        "NERD CONNECTION(서영주)",
+        "NERD CONNECTION (박재현)",
+        "NERD CONNECTION (최승원)",
+        "NERD CONNECTION (신연태)",
+        "너드커넥션(Nerd Connection)"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 13; TJ no. 76409; 좋은 밤 좋은 꿈 — 너드커넥션(Nerd Connection); lyricist: NERD CONNECTION(서영주),NERD CONNECTION (박재현),NERD CONNECTION (최승원),NERD CONNECTION (신연태); composer: NERD CONNECTION(서영주),NERD CONNECTION (박재현),NERD CONNECTION (최승원),NERD CONNECTION (신연태)",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 13; TJ no. 76409; 좋은 밤 좋은 꿈 — 너드커넥션(Nerd Connection); lyricist: NERD CONNECTION(서영주),NERD CONNECTION (박재현),NERD CONNECTION (최승원),NERD CONNECTION (신연태); composer: NERD CONNECTION(서영주),NERD CONNECTION (박재현),NERD CONNECTION (최승원),NERD CONNECTION (신연태)",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=mTonMiKVZRw",
+          "quote": "너드커넥션(Nerd Connection) - 좋은 밤 좋은 꿈 [가사/Lyrics] — 웅키. 너드커넥션(Nerd Connection) - 좋은 밤 좋은 꿈 [가사/Lyrics] #너드커넥션 #NerdConnection #좋은밤좋은꿈 발매 : 2020.03.23 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/mTonMiKVZRw.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 266.0148125,
+        "byteLength": 1632829,
+        "sha256": "72938308167730d75c7f8719fedeaba0c937167e3db32281cf40f14b71394bae"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 14,
+      "rank": 14,
+      "tjNumber": 15978,
+      "videoId": "z3s59YDjeBI",
+      "id": "717ed6ba-3393-54f3-b205-6be55d7c5d0d",
+      "youtubeUrl": "https://www.youtube.com/watch?v=z3s59YDjeBI",
+      "title": "남자를 몰라",
+      "sourceTitle": "남자를 몰라",
+      "singer": "버즈",
+      "writers": [
+        "김진아",
+        "이상준"
+      ],
+      "tags": [
+        "김진아",
+        "이상준",
+        "버즈"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 14; TJ no. 15978; 남자를 몰라 — 버즈; lyricist: 김진아; composer: 이상준",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 14; TJ no. 15978; 남자를 몰라 — 버즈; lyricist: 김진아; composer: 이상준",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=z3s59YDjeBI",
+          "quote": "남자를 몰라 — BUZZ. Provided to YouTube by Mound Media Inc. 남자를 몰라 · 버즈 Buzz 2006 Live & Acoustic ℗ 예전미디어, under license to VOSTOK ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/z3s59YDjeBI.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 253.11366666666666,
+        "byteLength": 1553901,
+        "sha256": "11e58e8a6b1bb2937d1958d55de42293ada95e1ece6972715bcdd41ef4f56121"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 15,
+      "rank": 15,
+      "tjNumber": 38028,
+      "videoId": "1qzbXDsUd2E",
+      "id": "e00c7106-d936-59fc-b036-282bf3c017b8",
+      "youtubeUrl": "https://www.youtube.com/watch?v=1qzbXDsUd2E",
+      "title": "너의 모든 순간(별에서온그대OST)",
+      "sourceTitle": "너의 모든 순간(별에서온그대OST)",
+      "singer": "성시경",
+      "writers": [
+        "심현보",
+        "성시경"
+      ],
+      "tags": [
+        "심현보",
+        "성시경",
+        "너의 모든 순간별에서온그대OST",
+        "너의 모든 순간"
+      ],
+      "aliases": [
+        {
+          "kind": "punctuation",
+          "name": "너의 모든 순간별에서온그대OST",
+          "url": null,
+          "quote": "너의 모든 순간(별에서온그대OST)"
+        },
+        {
+          "kind": "title",
+          "name": "너의 모든 순간",
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 15; TJ no. 38028; 너의 모든 순간(별에서온그대OST) — 성시경; lyricist: 심현보; composer: 성시경"
+        }
+      ],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 15; TJ no. 38028; 너의 모든 순간(별에서온그대OST) — 성시경; lyricist: 심현보; composer: 성시경",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 15; TJ no. 38028; 너의 모든 순간(별에서온그대OST) — 성시경; lyricist: 심현보; composer: 성시경",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=1qzbXDsUd2E",
+          "quote": "성시경 - 너의 모든 순간 [별에서 온 그대 OST] [가사/Lyrics] — 웅키. 성시경 - 너의 모든 순간 [별에서 온 그대 OST] [가사/Lyrics] #성시경 #너의모든순간 #별에서온그대OST 발매 : 2014.02.12 아티스트 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/1qzbXDsUd2E.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 243.86297916666666,
+        "byteLength": 1493482,
+        "sha256": "e7774e2b790769a98eff7b03fe4436089927cc328b4bdb45e57903ade058c641"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 16,
+      "rank": 16,
+      "tjNumber": 8122,
+      "videoId": "3knRgHGj7ug",
+      "id": "02f20761-588a-56b3-8b7a-cad3ced8f232",
+      "youtubeUrl": "https://www.youtube.com/watch?v=3knRgHGj7ug",
+      "title": "이미 슬픈 사랑",
+      "sourceTitle": "이미 슬픈 사랑",
+      "singer": "야다",
+      "writers": [
+        "이재혁"
+      ],
+      "tags": [
+        "이재혁",
+        "야다"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 16; TJ no. 8122; 이미 슬픈 사랑 — 야다; lyricist: 이재혁; composer: 이재혁",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 16; TJ no. 8122; 이미 슬픈 사랑 — 야다; lyricist: 이재혁; composer: 이재혁",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=3knRgHGj7ug",
+          "quote": "야다(YADA) - 이미 슬픈 사랑 [가사/Lyrics] — 웅키. 야다(YADA) - 이미 슬픈 사랑 [가사/Lyrics] #야다 #이미슬픈사랑 #YADA 발매 : 1999.04.27 아티스트 : 야다 앨범 : Wear To Healing ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/3knRgHGj7ug.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 244.29254166666666,
+        "byteLength": 1478174,
+        "sha256": "8cb4b3858401b7b05976213823768d7036ae97d9dcb704ee23a8c9c8e5ef0178"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 17,
+      "rank": 17,
+      "tjNumber": 4509,
+      "videoId": "mwt-TpwRhvI",
+      "id": "aa323006-fbfc-52fc-805c-f0f7f06fa535",
+      "youtubeUrl": "https://www.youtube.com/watch?v=mwt-TpwRhvI",
+      "title": "애상",
+      "sourceTitle": "애상",
+      "singer": "쿨",
+      "writers": [
+        "이승호",
+        "윤일상"
+      ],
+      "tags": [
+        "이승호",
+        "윤일상",
+        "쿨"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 17; TJ no. 4509; 애상 — 쿨; lyricist: 이승호; composer: 윤일상",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 17; TJ no. 4509; 애상 — 쿨; lyricist: 이승호; composer: 윤일상",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=mwt-TpwRhvI",
+          "quote": "애상 — COOL - Topic. Provided to YouTube by YouTube CSV2DDEX 애상 · 쿨 Cool Cool Best ℗ Cool Released on: 2004-04-19 Auto-generated by ...",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/mwt-TpwRhvI.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 209.71802083333333,
+        "byteLength": 1287278,
+        "sha256": "8efff2ad8af6a9a3c872ab0ebbc240c881f12f25937db43ddcaf79ad8b8efffe"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 18,
+      "rank": 18,
+      "tjNumber": 44352,
+      "videoId": "-g0MOHe-Lik",
+      "id": "1bbfe92b-09bd-59f3-a730-4e627d5d12c4",
+      "youtubeUrl": "https://www.youtube.com/watch?v=-g0MOHe-Lik",
+      "title": "...사랑했잖아...(2024)",
+      "sourceTitle": "...사랑했잖아...(2024)",
+      "singer": "고경표",
+      "writers": [
+        "린",
+        "김세진"
+      ],
+      "tags": [
+        "린",
+        "김세진",
+        "고경표",
+        "사랑했잖아2024",
+        "...사랑했잖아..."
+      ],
+      "aliases": [
+        {
+          "kind": "punctuation",
+          "name": "사랑했잖아2024",
+          "url": null,
+          "quote": "...사랑했잖아...(2024)"
+        },
+        {
+          "kind": "title",
+          "name": "...사랑했잖아...",
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 18; TJ no. 44352; ...사랑했잖아...(2024) — 고경표; lyricist: 린; composer: 김세진"
+        }
+      ],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 18; TJ no. 44352; ...사랑했잖아...(2024) — 고경표; lyricist: 린; composer: 김세진",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 18; TJ no. 44352; ...사랑했잖아...(2024) — 고경표; lyricist: 린; composer: 김세진",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=-g0MOHe-Lik",
+          "quote": "[MV] ko kyung pyo(고경표) _ we were in love(2024)(...사랑했잖아...(2024)) — 1theK (원더케이). [MV] ko kyung pyo(고경표) _ we were in love(2024)(...사랑했잖아...(2024)) K-POP Wonderland, 1theK K-POP의 모든 즐거움을 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/-g0MOHe-Lik.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 251.8158125,
+        "byteLength": 1542847,
+        "sha256": "214f5fe3bb52d26d83822cd9098a049a16096f9d87e12658ec368ee0ad3f3375"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 19,
+      "rank": 19,
+      "tjNumber": 2730,
+      "videoId": "DPT0KDphC5Y",
+      "id": "39a2f923-9be0-5993-a556-d8d1e205ec8e",
+      "youtubeUrl": "https://www.youtube.com/watch?v=DPT0KDphC5Y",
+      "title": "가질 수 없는 너",
+      "sourceTitle": "가질 수 없는 너",
+      "singer": "뱅크",
+      "writers": [
+        "강은경",
+        "정시로"
+      ],
+      "tags": [
+        "강은경",
+        "정시로",
+        "뱅크"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 19; TJ no. 2730; 가질 수 없는 너 — 뱅크; lyricist: 강은경; composer: 정시로",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 19; TJ no. 2730; 가질 수 없는 너 — 뱅크; lyricist: 강은경; composer: 정시로",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=DPT0KDphC5Y",
+          "quote": "♥ 가질 수 없는 너 (뱅크) — 철원촌놈음악방송 ....★(길성배). ",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/DPT0KDphC5Y.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 282.1224583333333,
+        "byteLength": 1716805,
+        "sha256": "c6f2db1e022dad593b21d3f905e94e955206762150f5d2cdf7fbc4c3822d91c5"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 20,
+      "rank": 20,
+      "tjNumber": 13721,
+      "videoId": "fuCmW_1_wxs",
+      "id": "452a925b-a6ee-5d06-a385-4069c458e015",
+      "youtubeUrl": "https://www.youtube.com/watch?v=fuCmW_1_wxs",
+      "title": "사랑의 바보",
+      "sourceTitle": "사랑의 바보",
+      "singer": "The Nuts",
+      "writers": [
+        "SHOU UESUGI",
+        "MIHO NAKAYAMA",
+        "TETSURO ODA"
+      ],
+      "tags": [
+        "SHOU UESUGI",
+        "MIHO NAKAYAMA",
+        "TETSURO ODA",
+        "The Nuts"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 20; TJ no. 13721; 사랑의 바보 — The Nuts; lyricist: SHOU UESUGI,MIHO NAKAYAMA; composer: TETSURO ODA",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 20; TJ no. 13721; 사랑의 바보 — The Nuts; lyricist: SHOU UESUGI,MIHO NAKAYAMA; composer: TETSURO ODA",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=fuCmW_1_wxs",
+          "quote": "더 넛츠(The NuTs) - 사랑의 바보 [가사/Lyrics] — 웅키. 더 넛츠(The NuTs) - 사랑의 바보 [가사/Lyrics] #더넛츠 #TheNuTs #사랑의바보 발매 : 2004.07.27 아티스트 : 더 넛츠(The NuTs) 앨범 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/fuCmW_1_wxs.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 261.904875,
+        "byteLength": 1605911,
+        "sha256": "40d8586badd6c9c97f0905cbbde1d813ef96d318ceae8206cd342ecbf6f2f1ba"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 21,
+      "rank": 21,
+      "tjNumber": 48470,
+      "videoId": "2FhBGUkI4vs",
+      "id": "5713ec8c-ccdd-5733-8029-6decb264ef06",
+      "youtubeUrl": "https://www.youtube.com/watch?v=2FhBGUkI4vs",
+      "title": "첫눈처럼 너에게 가겠다(도깨비OST)",
+      "sourceTitle": "첫눈처럼 너에게 가겠다(도깨비OST)",
+      "singer": "에일리",
+      "writers": [
+        "이미나",
+        "로코",
+        "코난"
+      ],
+      "tags": [
+        "이미나",
+        "로코",
+        "코난",
+        "에일리",
+        "첫눈처럼 너에게 가겠다도깨비OST",
+        "첫눈처럼 너에게 가겠다"
+      ],
+      "aliases": [
+        {
+          "kind": "punctuation",
+          "name": "첫눈처럼 너에게 가겠다도깨비OST",
+          "url": null,
+          "quote": "첫눈처럼 너에게 가겠다(도깨비OST)"
+        },
+        {
+          "kind": "title",
+          "name": "첫눈처럼 너에게 가겠다",
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 21; TJ no. 48470; 첫눈처럼 너에게 가겠다(도깨비OST) — 에일리; lyricist: 이미나; composer: 로코,코난"
+        }
+      ],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 21; TJ no. 48470; 첫눈처럼 너에게 가겠다(도깨비OST) — 에일리; lyricist: 이미나; composer: 로코,코난",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 21; TJ no. 48470; 첫눈처럼 너에게 가겠다(도깨비OST) — 에일리; lyricist: 이미나; composer: 로코,코난",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=2FhBGUkI4vs",
+          "quote": "에일리(Ailee) - 첫눈처럼 너에게 가겠다 [도깨비 OST] [가사/Lyrics] — 웅키. 에일리(Ailee) - 첫눈처럼 너에게 가겠다 [도깨비 OST] [가사/Lyrics] #에일리 #Ailee #첫눈처럼너에게가겠다 #도깨비ost 발매 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/2FhBGUkI4vs.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 230.13997916666668,
+        "byteLength": 1409849,
+        "sha256": "19a0da6704eb576f215b5e34a7f33a9934402740a32323922a6caec7708030b2"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 22,
+      "rank": 22,
+      "tjNumber": 96636,
+      "videoId": "U7EMw5ulPZ4",
+      "id": "61d69088-30c6-5fc0-8ad0-8d921d4c7a22",
+      "youtubeUrl": "https://www.youtube.com/watch?v=U7EMw5ulPZ4",
+      "title": "가을 안부",
+      "sourceTitle": "가을 안부",
+      "singer": "먼데이키즈",
+      "writers": [
+        "강은경",
+        "LOHI 2",
+        "한상원",
+        "이진성"
+      ],
+      "tags": [
+        "강은경",
+        "LOHI 2",
+        "한상원",
+        "이진성",
+        "먼데이키즈"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 22; TJ no. 96636; 가을 안부 — 먼데이키즈; lyricist: 강은경; composer: LOHI 2,한상원,이진성",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 22; TJ no. 96636; 가을 안부 — 먼데이키즈; lyricist: 강은경; composer: LOHI 2,한상원,이진성",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=U7EMw5ulPZ4",
+          "quote": "[Official Audio] 먼데이 키즈 - 가을 안부 (Monday Kiz - When Autumn Comes) — 먼데이 키즈 Monday Kiz. [Official Audio] 먼데이 키즈 - 가을 안부 (Monday Kiz - When Autumn Comes) |▷Monday Kiz Facebook ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/U7EMw5ulPZ4.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 300.937625,
+        "byteLength": 1846631,
+        "sha256": "21cae785cfe806aa014e9838d8460c0db015b0cf088a70a64ba48177d3b9e561"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 23,
+      "rank": 23,
+      "tjNumber": 85215,
+      "videoId": "pNi9PjmbUrI",
+      "id": "39e67d43-73b4-570c-a151-c591373b9c5f",
+      "youtubeUrl": "https://www.youtube.com/watch?v=pNi9PjmbUrI",
+      "title": "입춘",
+      "sourceTitle": "입춘",
+      "singer": "한로로",
+      "writers": [
+        "한로로"
+      ],
+      "tags": [
+        "한로로",
+        "Let Me Love My Youth"
+      ],
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "Let Me Love My Youth",
+          "url": "https://www.youtube.com/watch?v=pNi9PjmbUrI",
+          "quote": "[MV] 한로로 (HANRORO) - 입춘 (Let Me Love My Youth)"
+        }
+      ],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 23; TJ no. 85215; 입춘 — 한로로; lyricist: 한로로; composer: 한로로",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 23; TJ no. 85215; 입춘 — 한로로; lyricist: 한로로; composer: 한로로",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=pNi9PjmbUrI",
+          "quote": "[MV] 한로로 (HANRORO) - 입춘 (Let Me Love My Youth) — 한로로 HANRORO. 한로로 (HANRORO) SINGLE '입춘 (Let Me Love My Youth)' OFFICIAL MV 나의 발화(發花)를 기록하기 위한 곡입니다. 불확실한 ...",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/pNi9PjmbUrI.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 248.46052083333333,
+        "byteLength": 1511319,
+        "sha256": "4e471f42faf5970e3001c7b4841e909728c72926130ce7275eb0ed3ac4ae31e2"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 24,
+      "rank": 24,
+      "tjNumber": 15922,
+      "videoId": "dZ508GjFhvA",
+      "id": "0bbccc9c-70b4-510e-b702-2ebc8ef7ccd1",
+      "youtubeUrl": "https://www.youtube.com/watch?v=dZ508GjFhvA",
+      "title": "My Love(And)",
+      "sourceTitle": "My Love(And)",
+      "singer": "버즈",
+      "writers": [
+        "이재경",
+        "이상준"
+      ],
+      "tags": [
+        "이재경",
+        "이상준",
+        "버즈",
+        "My LoveAnd",
+        "My Love"
+      ],
+      "aliases": [
+        {
+          "kind": "punctuation",
+          "name": "My LoveAnd",
+          "url": null,
+          "quote": "My Love(And)"
+        },
+        {
+          "kind": "title",
+          "name": "My Love",
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 24; TJ no. 15922; My Love(And) — 버즈; lyricist: 이재경; composer: 이상준"
+        }
+      ],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 24; TJ no. 15922; My Love(And) — 버즈; lyricist: 이재경; composer: 이상준",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 24; TJ no. 15922; My Love(And) — 버즈; lyricist: 이재경; composer: 이상준",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=dZ508GjFhvA",
+          "quote": "BUZZ (버즈) • My Love (and) Lyrics Han_Rom_Eng — Fly Butterfly Entertainment. ",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/dZ508GjFhvA.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 242.81808333333333,
+        "byteLength": 1490033,
+        "sha256": "4def20b2d531eca13a2668b94d7bede1c8334e760975b3d41f450b5a4376a5ee"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 25,
+      "rank": 25,
+      "tjNumber": 84392,
+      "videoId": "iFtDTa99HKI",
+      "id": "42d67373-fcc1-5fc3-bd8a-103807080615",
+      "youtubeUrl": "https://www.youtube.com/watch?v=iFtDTa99HKI",
+      "title": "그대만 있다면(여름날우리 X 너드커넥션(Nerd Connection))",
+      "sourceTitle": "그대만 있다면(여름날우리 X 너드커넥션(Nerd Connection))",
+      "singer": "너드커넥션(Nerd Connection)",
+      "writers": [
+        "강현민"
+      ],
+      "tags": [
+        "강현민",
+        "너드커넥션(Nerd Connection)",
+        "그대만 있다면"
+      ],
+      "aliases": [
+        {
+          "kind": "punctuation",
+          "name": "그대만 있다면여름날우리 X 너드커넥션Nerd Connection",
+          "url": null,
+          "quote": "그대만 있다면(여름날우리 X 너드커넥션(Nerd Connection))"
+        },
+        {
+          "kind": "title",
+          "name": "그대만 있다면",
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 25; TJ no. 84392; 그대만 있다면(여름날우리 X 너드커넥션(Nerd Connection)) — 너드커넥션(Nerd Connection); lyricist: 강현민; composer: 강현민"
+        }
+      ],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 25; TJ no. 84392; 그대만 있다면(여름날우리 X 너드커넥션(Nerd Connection)) — 너드커넥션(Nerd Connection); lyricist: 강현민; composer: 강현민",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 25; TJ no. 84392; 그대만 있다면(여름날우리 X 너드커넥션(Nerd Connection)) — 너드커넥션(Nerd Connection); lyricist: 강현민; composer: 강현민",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=iFtDTa99HKI",
+          "quote": "너드커넥션(Nerd Connection) - 그대만 있다면 (여름날 우리 X 너드커넥션 (Nerd Connection)) [가사/Lyrics] — 웅키. 너드커넥션(Nerd Connection) - 그대만 있다면 (여름날 우리 X 너드커넥션 (Nerd Connection)) [가사/Lyrics] #너드커넥션 #그대만 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/iFtDTa99HKI.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 250.5619375,
+        "byteLength": 1532900,
+        "sha256": "ecacaf7dc13b18cec30f533d0e1c65830f86f6ba236205170180eb7ffde0654e"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 26,
+      "rank": 26,
+      "tjNumber": 14684,
+      "videoId": "ZhI9tQP4Abw",
+      "id": "eae464a5-07f0-5ea4-95c0-b8e3de89f2d8",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ZhI9tQP4Abw",
+      "title": "가시",
+      "sourceTitle": "가시",
+      "singer": "버즈",
+      "writers": [
+        "임선아",
+        "윤우현"
+      ],
+      "tags": [
+        "임선아",
+        "윤우현",
+        "버즈"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 26; TJ no. 14684; 가시 — 버즈; lyricist: 임선아; composer: 윤우현",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 26; TJ no. 14684; 가시 — 버즈; lyricist: 임선아; composer: 윤우현",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ZhI9tQP4Abw",
+          "quote": "[MV] 버즈 (Buzz) - 가시 (Thorn) | Official Music Video — VOSTOK_MUSIC / 보스토크뮤직. 버즈 #가시 #VOSTOK_MUSIC #Buzz #Thorn 버즈 - 가시 [Buzz Effect] Buzz - Thorn [Buzz Effect] ▷NOW ON - Melon ...",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/ZhI9tQP4Abw.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 254.83439583333333,
+        "byteLength": 1563038,
+        "sha256": "44ca170e8b16eeacc8f8cd316ea4085c94aaf3d29cb581d4db77b32a875d0eca"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 27,
+      "rank": 27,
+      "tjNumber": 96763,
+      "videoId": "",
+      "id": "10e36732-61d3-5565-9e58-b12ca0de1dc8",
+      "youtubeUrl": "",
+      "title": "꿈속에 너",
+      "sourceTitle": "꿈속에 너",
+      "singer": "에이치코드(Feat.전상근)",
+      "writers": [
+        "한희준",
+        "조효제"
+      ],
+      "tags": [
+        "한희준",
+        "조효제",
+        "에이치코드(Feat.전상근)"
+      ],
+      "aliases": [],
+      "reviewRequired": true,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 27; TJ no. 96763; 꿈속에 너 — 에이치코드(Feat.전상근); lyricist: 한희준,조효제; composer: 한희준,조효제",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 27; TJ no. 96763; 꿈속에 너 — 에이치코드(Feat.전상근); lyricist: 한희준,조효제; composer: 한희준,조효제",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "failed",
+        "reason": "The selected H:CODE MV is “그대 없는 밤에”, not TJ rank 27 “꿈속에 너”; targeted searches found no verified official upload for the chart track.",
+        "failureCode": "SOURCE_MISMATCH"
+      },
+      "reviewReasons": [
+        "youtube_source_track_mismatch",
+        "audio_source_missing"
+      ]
+    },
+    {
+      "index": 28,
+      "rank": 28,
+      "tjNumber": 81601,
+      "videoId": "Rl22BJ5TxbM",
+      "id": "6b00ea5a-2e0c-54e2-803b-e3f253e6046d",
+      "youtubeUrl": "https://www.youtube.com/watch?v=Rl22BJ5TxbM",
+      "title": "오르막길",
+      "sourceTitle": "오르막길",
+      "singer": "윤종신",
+      "writers": [
+        "윤종신",
+        "이근호"
+      ],
+      "tags": [
+        "윤종신",
+        "이근호"
+      ],
+      "aliases": [],
+      "reviewRequired": true,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 28; TJ no. 81601; 오르막길 — 윤종신; lyricist: 윤종신; composer: 윤종신,이근호",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 28; TJ no. 81601; 오르막길 — 윤종신; lyricist: 윤종신; composer: 윤종신,이근호",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Rl22BJ5TxbM",
+          "quote": "Uphill (Live) (오르막길) — 월간 윤종신. Provided to YouTube by Kakao Entertainment Uphill (Live) (오르막길) · Yoon Jong Shin Monthly Project 2015 Yoon Jong Shin ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/Rl22BJ5TxbM.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 289.07283333333334,
+        "byteLength": 1774600,
+        "sha256": "6f2ea3ed14b475eed1132118dcc12d66131924c660a834875be1a93deccc868c"
+      },
+      "reviewReasons": [
+        "official_live_version_source"
+      ]
+    },
+    {
+      "index": 29,
+      "rank": 29,
+      "tjNumber": 11271,
+      "videoId": "7Zs7UM-EBLs",
+      "id": "b8f3a204-cbab-5bfb-bd59-eea112001061",
+      "youtubeUrl": "https://www.youtube.com/watch?v=7Zs7UM-EBLs",
+      "title": "사랑합니다",
+      "sourceTitle": "사랑합니다",
+      "singer": "Tim",
+      "writers": [
+        "강은경",
+        "윤상"
+      ],
+      "tags": [
+        "강은경",
+        "윤상",
+        "Tim"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 29; TJ no. 11271; 사랑합니다 — Tim; lyricist: 강은경; composer: 윤상",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 29; TJ no. 11271; 사랑합니다 — Tim; lyricist: 강은경; composer: 윤상",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=7Zs7UM-EBLs",
+          "quote": "사랑합니다... — Tim - Topic. Provided to YouTube by Mound Media Inc. 사랑합니다... · 팀 Tim 영민 ℗ 예전미디어, under license to VOSTOK Released on: ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/7Zs7UM-EBLs.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 228.95366666666666,
+        "byteLength": 1401714,
+        "sha256": "7dacb4ee1231ac48f06f4b9ffb28dd4dbd7ea3a82f84712e1af4e1d895c49cae"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 30,
+      "rank": 30,
+      "tjNumber": 35819,
+      "videoId": "LMyH5WT7JEM",
+      "id": "eadf5873-6db5-52ab-a079-c079603fd890",
+      "youtubeUrl": "https://www.youtube.com/watch?v=LMyH5WT7JEM",
+      "title": "오래된 노래",
+      "sourceTitle": "오래된 노래",
+      "singer": "스탠딩에그",
+      "writers": [
+        "EGG 1",
+        "EGG 2",
+        "EGG 3"
+      ],
+      "tags": [
+        "EGG 1",
+        "EGG 2",
+        "EGG 3",
+        "스탠딩에그"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 30; TJ no. 35819; 오래된 노래 — 스탠딩에그; lyricist: EGG 1, EGG 2, EGG 3; composer: EGG 1, EGG 2, EGG 3",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 30; TJ no. 35819; 오래된 노래 — 스탠딩에그; lyricist: EGG 1, EGG 2, EGG 3; composer: EGG 1, EGG 2, EGG 3",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=LMyH5WT7JEM",
+          "quote": "스탠딩 에그(Standing Egg) - 오래된 노래 [가사/Lyrics] — 웅키. 스탠딩 에그(Standing Egg) - 오래된 노래 [가사/Lyrics] #스탠딩에그 #StandingEgg #오래된노래 발매 : 2012.09.04 아티스트 : 스탠딩 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/LMyH5WT7JEM.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 272.74860416666667,
+        "byteLength": 1673136,
+        "sha256": "a3d0e65bd73f91bd9324710f690a0c1a295da84e5d616ac6567360d3152ca389"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 31,
+      "rank": 31,
+      "tjNumber": 31729,
+      "videoId": "ppjRIEgcXIY",
+      "id": "cb512cbb-e1b4-59e2-b99c-f083b4217e7e",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ppjRIEgcXIY",
+      "title": "죽일 놈(Guilty)",
+      "sourceTitle": "죽일 놈(Guilty)",
+      "singer": "다이나믹듀오",
+      "writers": [
+        "최재호",
+        "김윤성",
+        "최동훈"
+      ],
+      "tags": [
+        "최재호",
+        "김윤성",
+        "최동훈",
+        "다이나믹듀오",
+        "죽일 놈Guilty",
+        "죽일 놈"
+      ],
+      "aliases": [
+        {
+          "kind": "punctuation",
+          "name": "죽일 놈Guilty",
+          "url": null,
+          "quote": "죽일 놈(Guilty)"
+        },
+        {
+          "kind": "title",
+          "name": "죽일 놈",
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 31; TJ no. 31729; 죽일 놈(Guilty) — 다이나믹듀오; lyricist: 최재호,김윤성; composer: 최재호,김윤성,최동훈"
+        }
+      ],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 31; TJ no. 31729; 죽일 놈(Guilty) — 다이나믹듀오; lyricist: 최재호,김윤성; composer: 최재호,김윤성,최동훈",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 31; TJ no. 31729; 죽일 놈(Guilty) — 다이나믹듀오; lyricist: 최재호,김윤성; composer: 최재호,김윤성,최동훈",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ppjRIEgcXIY",
+          "quote": "다이나믹 듀오 - 죽일 놈 (Guilty) [가사/Lyrics] — 웅키. 다이나믹 듀오 - 죽일 놈 (Guilty) [가사/Lyrics] #다이나믹듀오 #죽일놈 발매 : 2009.10.07 아티스트 : 다이나믹 듀오 앨범 : Band Of ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/ppjRIEgcXIY.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 223.97508333333334,
+        "byteLength": 1373541,
+        "sha256": "cd9481e59e37f57cf58dbc96097c7b5d9d3cb4a700992a67e4ac7c397778b31b"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 32,
+      "rank": 32,
+      "tjNumber": 83138,
+      "videoId": "ckJlE2G4LQ4",
+      "id": "72eeee74-0cb2-5e9f-8420-1236bbe2e576",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ckJlE2G4LQ4",
+      "title": "심(心)",
+      "sourceTitle": "심(心)",
+      "singer": "DK(디셈버)",
+      "writers": [
+        "박준배",
+        "YARN",
+        "이근상"
+      ],
+      "tags": [
+        "박준배",
+        "YARN",
+        "이근상",
+        "DK(디셈버)",
+        "Heart",
+        "심心"
+      ],
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "Heart",
+          "url": "https://www.youtube.com/watch?v=ckJlE2G4LQ4",
+          "quote": "Heart (심(心))"
+        },
+        {
+          "kind": "punctuation",
+          "name": "심心",
+          "url": null,
+          "quote": "심(心)"
+        }
+      ],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 32; TJ no. 83138; 심(心) — DK(디셈버); lyricist: 박준배,YARN; composer: 이근상",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 32; TJ no. 83138; 심(心) — DK(디셈버); lyricist: 박준배,YARN; composer: 이근상",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ckJlE2G4LQ4",
+          "quote": "Heart (심(心)) — 디셈버 DK. Provided to YouTube by Kakao Entertainment Heart (심(心)) · DK Heart ℗ 2023 Room Casting,under license to Kakao ...",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/ckJlE2G4LQ4.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 257.03366666666665,
+        "byteLength": 1576748,
+        "sha256": "c47812d3d22aa184f3b243aa3868d0b7437b314fc26f74284a1ca76dd74270ca"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 33,
+      "rank": 33,
+      "tjNumber": 11491,
+      "videoId": "JUsx0zuQSmo",
+      "id": "cfe50d15-2559-549d-b8fe-cb777c18b0c9",
+      "youtubeUrl": "https://www.youtube.com/watch?v=JUsx0zuQSmo",
+      "title": "소주 한잔",
+      "sourceTitle": "소주 한잔",
+      "singer": "임창정",
+      "writers": [
+        "임창정",
+        "이동원"
+      ],
+      "tags": [
+        "임창정",
+        "이동원"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 33; TJ no. 11491; 소주 한잔 — 임창정; lyricist: 임창정; composer: 이동원",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 33; TJ no. 11491; 소주 한잔 — 임창정; lyricist: 임창정; composer: 이동원",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=JUsx0zuQSmo",
+          "quote": "a glass of soju (소주한잔) — IM CHANG JUNG. Provided to YouTube by Kakao M a glass of soju (소주한잔) · Lim Chang Jung(임창정) REMIND ℗ msmedia Released on: ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/JUsx0zuQSmo.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 273.26033333333334,
+        "byteLength": 1668589,
+        "sha256": "e0050007d6b5f4a4f5f9c2fd06118c027772e7b9dea591c47095b1db4ff933a2"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 34,
+      "rank": 34,
+      "tjNumber": 8990,
+      "videoId": "2rqAdWXmerc",
+      "id": "065a2715-1983-5e0d-a8c3-799447dce0bb",
+      "youtubeUrl": "https://www.youtube.com/watch?v=2rqAdWXmerc",
+      "title": "바다의 왕자",
+      "sourceTitle": "바다의 왕자",
+      "singer": "박명수",
+      "writers": [
+        "임용수",
+        "이주호"
+      ],
+      "tags": [
+        "임용수",
+        "이주호",
+        "박명수"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 34; TJ no. 8990; 바다의 왕자 — 박명수; lyricist: 임용수; composer: 이주호",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 34; TJ no. 8990; 바다의 왕자 — 박명수; lyricist: 임용수; composer: 이주호",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=2rqAdWXmerc",
+          "quote": "박명수 - 바다의 왕자 [가사/Lyrics] — 웅키. 박명수 - 바다의 왕자 [가사/Lyrics] #박명수 #바다의왕자 발매 : 2000.08.16 아티스트 : 박명수 앨범 : Dr. Park 작곡 : 신피디 작사 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/2rqAdWXmerc.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 247.49689583333333,
+        "byteLength": 1495837,
+        "sha256": "65f69a359b7a48664754bddb75a26832d05e2bc92c4d0687337aa4880ac28acd"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 35,
+      "rank": 35,
+      "tjNumber": 16503,
+      "videoId": "8WYz-UEcLks",
+      "id": "600e4840-2967-567e-b6ff-94eb46ba4ac0",
+      "youtubeUrl": "https://www.youtube.com/watch?v=8WYz-UEcLks",
+      "title": "거리에서",
+      "sourceTitle": "거리에서",
+      "singer": "성시경",
+      "writers": [
+        "윤종신",
+        "이근호"
+      ],
+      "tags": [
+        "윤종신",
+        "이근호",
+        "성시경"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 35; TJ no. 16503; 거리에서 — 성시경; lyricist: 윤종신; composer: 윤종신,이근호",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 35; TJ no. 16503; 거리에서 — 성시경; lyricist: 윤종신; composer: 윤종신,이근호",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=8WYz-UEcLks",
+          "quote": "성시경 - 거리에서 [가사/Lyrics] — 웅키. 성시경 - 거리에서 [가사/Lyrics] #성시경 #거리에서 발매 : 2006.10.10 아티스트 : 성시경 앨범 : The Ballads 작곡 : 윤종신, 이근호 작사 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/8WYz-UEcLks.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 279.62170833333334,
+        "byteLength": 1698845,
+        "sha256": "715da7ff5c180af5868199b3a91fabab28e8340f966f59ea7b4b574fdace62f2"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 36,
+      "rank": 36,
+      "tjNumber": 70512,
+      "videoId": "qZlu2j2SiBA",
+      "id": "c1e71249-52f9-514b-84f3-8b580eb4ad52",
+      "youtubeUrl": "https://www.youtube.com/watch?v=qZlu2j2SiBA",
+      "title": "Pretty Girl",
+      "sourceTitle": "Pretty Girl",
+      "singer": "RESCENE(리센느)",
+      "writers": [
+        "한재호",
+        "김승수",
+        "송수윤"
+      ],
+      "tags": [
+        "한재호",
+        "김승수",
+        "송수윤",
+        "RESCENE(리센느)"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 36; TJ no. 70512; Pretty Girl — RESCENE(리센느); lyricist: 한재호,김승수,송수윤; composer: 한재호,김승수",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 36; TJ no. 70512; Pretty Girl — RESCENE(리센느); lyricist: 한재호,김승수,송수윤; composer: 한재호,김승수",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=qZlu2j2SiBA",
+          "quote": "RESCENE (리센느) 'Pretty Girl' Special Video — RESCENE. RESCENE (리센느) 'Pretty Girl' Special Video [Pretty Girl - Special Single] : https://rescene.lnk.to/PrettyGirl RESCENE Plus ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/qZlu2j2SiBA.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 213.43322916666668,
+        "byteLength": 1289922,
+        "sha256": "2b3064c086ee8fee4ee688b17692c926d64864a2e15f339852f8f1b2d43a1df7"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 37,
+      "rank": 37,
+      "tjNumber": 83490,
+      "videoId": "EYzgL19wj2g",
+      "id": "2d7001c8-6e30-57f9-9868-df3d09c3e0a6",
+      "youtubeUrl": "https://www.youtube.com/watch?v=EYzgL19wj2g",
+      "title": "헤어지자 말해요",
+      "sourceTitle": "헤어지자 말해요",
+      "singer": "박재정",
+      "writers": [
+        "박재정",
+        "박현중"
+      ],
+      "tags": [
+        "박재정",
+        "박현중"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 37; TJ no. 83490; 헤어지자 말해요 — 박재정; lyricist: 박재정; composer: 박재정,박현중",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 37; TJ no. 83490; 헤어지자 말해요 — 박재정; lyricist: 박재정; composer: 박재정,박현중",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=EYzgL19wj2g",
+          "quote": "헤어지자 말해요 - 박재정 [더 시즌즈-최정훈의 밤의공원] | KBS 230521 방송 — KBS Kpop. 헤어지자 말해요 - 박재정 #더시즌즈 #박재정 #헤어지자말해요 #최정훈 #음악 #뮤직 #최정훈의밤의공원 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/EYzgL19wj2g.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 261.0109166666667,
+        "byteLength": 1602204,
+        "sha256": "1b80d5f9a93a7646ad685bba2e006eb1badd5eff0e87c3d58304d5ac2c9800ba"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 38,
+      "rank": 38,
+      "tjNumber": 50313,
+      "videoId": "_Ngk-DCHfD0",
+      "id": "ed4fbd5c-5edb-5086-8f72-9b83fdb9ee55",
+      "youtubeUrl": "https://www.youtube.com/watch?v=_Ngk-DCHfD0",
+      "title": "0+0",
+      "sourceTitle": "0+0",
+      "singer": "한로로",
+      "writers": [
+        "한로로",
+        "RYO",
+        "STEVEN"
+      ],
+      "tags": [
+        "한로로",
+        "RYO",
+        "STEVEN",
+        "00"
+      ],
+      "aliases": [
+        {
+          "kind": "punctuation",
+          "name": "00",
+          "url": null,
+          "quote": "0+0"
+        }
+      ],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 38; TJ no. 50313; 0+0 — 한로로; lyricist: 한로로; composer: RYO,STEVEN,한로로",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 38; TJ no. 50313; 0+0 — 한로로; lyricist: 한로로; composer: RYO,STEVEN,한로로",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=_Ngk-DCHfD0",
+          "quote": "[MV] 한로로 (HANRORO) - 0+0 — 한로로 HANRORO. 한로로 (HANRORO) 3rd EP [자몽살구클럽] 0+0 Official MV 한참을 달리자 숲 끝자락에서 희미한 빛이 보였다. 모여있는 빌라 단지의 ...",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/_Ngk-DCHfD0.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 192.5933125,
+        "byteLength": 1179005,
+        "sha256": "59f8e04d159da21f90c2e79e5f001f551878aa3b057c7f2cc4e40efa41e3c09c"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 39,
+      "rank": 39,
+      "tjNumber": 47835,
+      "videoId": "WYy2fROj7uU",
+      "id": "4eba7e95-66f0-5d6f-b54d-cbfcb9852f48",
+      "youtubeUrl": "https://www.youtube.com/watch?v=WYy2fROj7uU",
+      "title": "그대라는 사치",
+      "sourceTitle": "그대라는 사치",
+      "singer": "한동근",
+      "writers": [
+        "XEPY",
+        "라이머",
+        "CIEN",
+        "1MAD",
+        "MASTERKEY"
+      ],
+      "tags": [
+        "XEPY",
+        "라이머",
+        "CIEN",
+        "1MAD",
+        "MASTERKEY",
+        "한동근"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 39; TJ no. 47835; 그대라는 사치 — 한동근; lyricist: XEPY,라이머,CIEN; composer: 1MAD,MASTERKEY,XEPY",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 39; TJ no. 47835; 그대라는 사치 — 한동근; lyricist: XEPY,라이머,CIEN; composer: 1MAD,MASTERKEY,XEPY",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=WYy2fROj7uU",
+          "quote": "[MV] Han Dong Geun(한동근) _ Amazing You(그대라는 사치) — 1theK (원더케이). [MV] Han Dong Geun(한동근) _ Amazing You(그대라는 사치) *English subtitles are now available. :D (Please click on 'CC' button ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/WYy2fROj7uU.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 301.32075,
+        "byteLength": 1822678,
+        "sha256": "0cedef7e162dea602265ac6d9b4f24f3ec518acc2d40baee39b046a5b139c64d"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 40,
+      "rank": 40,
+      "tjNumber": 89245,
+      "videoId": "3DOkxQ3HDXE",
+      "id": "0ffe2bb5-996a-5ae4-9a4f-055df10f3354",
+      "youtubeUrl": "https://www.youtube.com/watch?v=3DOkxQ3HDXE",
+      "title": "아로하(슬기로운의사생활OST)",
+      "sourceTitle": "아로하(슬기로운의사생활OST)",
+      "singer": "조정석",
+      "writers": [
+        "김태훈",
+        "위종수"
+      ],
+      "tags": [
+        "김태훈",
+        "위종수",
+        "조정석",
+        "Aloha",
+        "아로하슬기로운의사생활OST",
+        "아로하"
+      ],
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "Aloha",
+          "url": "https://www.youtube.com/watch?v=3DOkxQ3HDXE",
+          "quote": "[슬기로운 의사생활 OST Part 3] 조정석 (CHO JUNG SEOK) - 아로하 (Aloha) MV"
+        },
+        {
+          "kind": "punctuation",
+          "name": "아로하슬기로운의사생활OST",
+          "url": null,
+          "quote": "아로하(슬기로운의사생활OST)"
+        },
+        {
+          "kind": "title",
+          "name": "아로하",
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 40; TJ no. 89245; 아로하(슬기로운의사생활OST) — 조정석; lyricist: 김태훈; composer: 위종수"
+        }
+      ],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 40; TJ no. 89245; 아로하(슬기로운의사생활OST) — 조정석; lyricist: 김태훈; composer: 위종수",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 40; TJ no. 89245; 아로하(슬기로운의사생활OST) — 조정석; lyricist: 김태훈; composer: 위종수",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=3DOkxQ3HDXE",
+          "quote": "[슬기로운 의사생활 OST Part 3] 조정석 (CHO JUNG SEOK) - 아로하 (Aloha) MV — STONE MUSIC. Available on iTunes, Apple Music : https://apple.co/2xvhlvk Listen on Spotify : https://spoti.fi/2UPhv8L [슬기로운 의사생활 OST Part ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/3DOkxQ3HDXE.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 250.81735416666666,
+        "byteLength": 1503950,
+        "sha256": "1e639beea22c16c1b07c3783c214c3fc7adf3cde4cd11850c866d95e6f1449f7"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 41,
+      "rank": 41,
+      "tjNumber": 35774,
+      "videoId": "3Jb_K-8fDLA",
+      "id": "7b0d283d-a625-559b-a582-86a8896aa86c",
+      "youtubeUrl": "https://www.youtube.com/watch?v=3Jb_K-8fDLA",
+      "title": "All For You(응답하라1997 OST)",
+      "sourceTitle": "All For You(응답하라1997 OST)",
+      "singer": "서인국,정은지",
+      "writers": [
+        "정진환",
+        "김한범"
+      ],
+      "tags": [
+        "정진환",
+        "김한범",
+        "서인국,정은지",
+        "All For You응답하라1997 OST",
+        "All For You"
+      ],
+      "aliases": [
+        {
+          "kind": "punctuation",
+          "name": "All For You응답하라1997 OST",
+          "url": null,
+          "quote": "All For You(응답하라1997 OST)"
+        },
+        {
+          "kind": "title",
+          "name": "All For You",
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 41; TJ no. 35774; All For You(응답하라1997 OST) — 서인국,정은지; lyricist: 정진환; composer: 김한범"
+        }
+      ],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 41; TJ no. 35774; All For You(응답하라1997 OST) — 서인국,정은지; lyricist: 정진환; composer: 김한범",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 41; TJ no. 35774; All For You(응답하라1997 OST) — 서인국,정은지; lyricist: 정진환; composer: 김한범",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=3Jb_K-8fDLA",
+          "quote": "서인국, 정은지 - All For You [응답하라 1997 OST] [가사/Lyrics] — 웅키. 서인국, 정은지 - All For You [응답하라 1997 OST] [가사/Lyrics] #서인국 #정은지 #AllForYou #응답하라1997OST 발매일 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/3Jb_K-8fDLA.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 248.59985416666666,
+        "byteLength": 1522641,
+        "sha256": "d474e3378253579026bbf9780b8be253203c60163ddc07d3d337af560e899387"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 42,
+      "rank": 42,
+      "tjNumber": 43883,
+      "videoId": "h0KIWaUEIgQ",
+      "id": "0eeb8d81-ebaa-58d5-9012-59e71146a8c7",
+      "youtubeUrl": "https://www.youtube.com/watch?v=h0KIWaUEIgQ",
+      "title": "사랑하게 될 거야",
+      "sourceTitle": "사랑하게 될 거야",
+      "singer": "한로로",
+      "writers": [
+        "한로로"
+      ],
+      "tags": [
+        "한로로"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 42; TJ no. 43883; 사랑하게 될 거야 — 한로로; lyricist: 한로로; composer: 한로로",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 42; TJ no. 43883; 사랑하게 될 거야 — 한로로; lyricist: 한로로; composer: 한로로",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=h0KIWaUEIgQ",
+          "quote": "[MV] 한로로 (HANRORO) - 사랑하게 될 거야 (Landing in Love) — 한로로 HANRORO. 한로로 (HANRORO) 1st EP [이상비행] 사랑하게 될 거야 (Landing in Love) Official MV 이 마지막 종이를 날리기 전까지 정말 많이 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/h0KIWaUEIgQ.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 166.42441666666667,
+        "byteLength": 1002468,
+        "sha256": "f73b4b422edef489b0fe1b90016055cafe3e304f10ddd41616a31d83aa2cc6fe"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 43,
+      "rank": 43,
+      "tjNumber": 46108,
+      "videoId": "DxS-64T7xA4",
+      "id": "c12fb2c2-a6a4-5a25-8798-a5b498548a98",
+      "youtubeUrl": "https://www.youtube.com/watch?v=DxS-64T7xA4",
+      "title": "다시 사랑한다면(니글니글버터플라이)",
+      "sourceTitle": "다시 사랑한다면(니글니글버터플라이)",
+      "singer": "김필",
+      "writers": [
+        "강은경",
+        "김태원"
+      ],
+      "tags": [
+        "강은경",
+        "김태원",
+        "김필",
+        "If We Love Again",
+        "다시 사랑한다면니글니글버터플라이",
+        "다시 사랑한다면"
+      ],
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "If We Love Again",
+          "url": "https://www.youtube.com/watch?v=DxS-64T7xA4",
+          "quote": "[Focus Live] 김필 (Kim Feel) - 다시 사랑한다면 (If We Love Again) (원곡: 도원경)"
+        },
+        {
+          "kind": "punctuation",
+          "name": "다시 사랑한다면니글니글버터플라이",
+          "url": null,
+          "quote": "다시 사랑한다면(니글니글버터플라이)"
+        },
+        {
+          "kind": "title",
+          "name": "다시 사랑한다면",
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 43; TJ no. 46108; 다시 사랑한다면(니글니글버터플라이) — 김필; lyricist: 강은경; composer: 김태원"
+        }
+      ],
+      "reviewRequired": true,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 43; TJ no. 46108; 다시 사랑한다면(니글니글버터플라이) — 김필; lyricist: 강은경; composer: 김태원",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 43; TJ no. 46108; 다시 사랑한다면(니글니글버터플라이) — 김필; lyricist: 강은경; composer: 김태원",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=DxS-64T7xA4",
+          "quote": "[Focus Live] 김필 (Kim Feel) - 다시 사랑한다면 (If We Love Again) (원곡: 도원경) — 김필 KIM FEEL. More About Kim Feel Official YouTube: www.youtube.com/kimfeelofficial Official Facebook: www.facebook.com/kimfeel Official ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/DxS-64T7xA4.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 235.99633333333333,
+        "byteLength": 1445211,
+        "sha256": "0603e2add922066a0bad9ea33899a7d152d650666e5099f8f136b3bdf5b27982"
+      },
+      "reviewReasons": [
+        "live_performance_version_of_original_song"
+      ]
+    },
+    {
+      "index": 44,
+      "rank": 44,
+      "tjNumber": 30639,
+      "videoId": "NwO0H2bUhSQ",
+      "id": "9ce9796d-c83c-5b13-91cd-72927b3eb5f4",
+      "youtubeUrl": "https://www.youtube.com/watch?v=NwO0H2bUhSQ",
+      "title": "내 머리가 나빠서(드라마'꽃보다남자'OST)",
+      "sourceTitle": "내 머리가 나빠서(드라마'꽃보다남자'OST)",
+      "singer": "SS501",
+      "writers": [
+        "오준성",
+        "은종태"
+      ],
+      "tags": [
+        "오준성",
+        "은종태",
+        "SS501",
+        "내 머리가 나빠서드라마꽃보다남자OST",
+        "내 머리가 나빠서"
+      ],
+      "aliases": [
+        {
+          "kind": "punctuation",
+          "name": "내 머리가 나빠서드라마꽃보다남자OST",
+          "url": null,
+          "quote": "내 머리가 나빠서(드라마'꽃보다남자'OST)"
+        },
+        {
+          "kind": "title",
+          "name": "내 머리가 나빠서",
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 44; TJ no. 30639; 내 머리가 나빠서(드라마'꽃보다남자'OST) — SS501; lyricist: 오준성,은종태; composer: 오준성"
+        }
+      ],
+      "reviewRequired": true,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 44; TJ no. 30639; 내 머리가 나빠서(드라마'꽃보다남자'OST) — SS501; lyricist: 오준성,은종태; composer: 오준성",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 44; TJ no. 30639; 내 머리가 나빠서(드라마'꽃보다남자'OST) — SS501; lyricist: 오준성,은종태; composer: 오준성",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=NwO0H2bUhSQ",
+          "quote": "내 머리가 나빠서 — Release - Topic. Provided to YouTube by UMAG 내 머리가 나빠서 · Various Artists 꽃보다 남자 (Original Television Soundtrack) ℗ 2009 다해이엔티, ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/NwO0H2bUhSQ.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 263.047,
+        "byteLength": 1602772,
+        "sha256": "9e3d7efb07128f8920395d84ce84ace36471b40babcad1eae6f514bcd9cb788b"
+      },
+      "reviewReasons": [
+        "uploader_performer_credit_ambiguous"
+      ]
+    },
+    {
+      "index": 45,
+      "rank": 45,
+      "tjNumber": 49057,
+      "videoId": "TABbjHLEwKE",
+      "id": "5397afd1-751e-5f0b-ab4f-ffea3f2de34d",
+      "youtubeUrl": "https://www.youtube.com/watch?v=TABbjHLEwKE",
+      "title": "어제보다 슬픈 오늘",
+      "sourceTitle": "어제보다 슬픈 오늘",
+      "singer": "우디",
+      "writers": [
+        "김창환",
+        "김건모"
+      ],
+      "tags": [
+        "김창환",
+        "김건모",
+        "우디"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 45; TJ no. 49057; 어제보다 슬픈 오늘 — 우디; lyricist: 김창환; composer: 김건모",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 45; TJ no. 49057; 어제보다 슬픈 오늘 — 우디; lyricist: 김창환; composer: 김건모",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=TABbjHLEwKE",
+          "quote": "GDM ㅣ우디 (Woody) '어제 보다 슬픈 오늘 (Sadder than Yesterday)' OFFICIAL MV [KOR/ENG SUB] — 골든문 GDM and 김상우디 [Woody Official]. 우디 (Woody) '어제 보다 슬픈 오늘 (Sadder than Yesterday)' OFFICIAL MV ⠀ ⠀ ⠀ ⠀ 서로 숨바꼭질하는 듯 끝을 향해가는 감정에 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/TABbjHLEwKE.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 236.0816875,
+        "byteLength": 1448813,
+        "sha256": "b727b3e783c36d4b7a90b58ab6c883f3450e16592e3a446974901fa224bf8453"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 46,
+      "rank": 46,
+      "tjNumber": 91507,
+      "videoId": "8MAYpc7Tjt0",
+      "id": "59a2458f-3d19-56f4-9f7e-918f4c050d33",
+      "youtubeUrl": "https://www.youtube.com/watch?v=8MAYpc7Tjt0",
+      "title": "포장마차",
+      "sourceTitle": "포장마차",
+      "singer": "황인욱",
+      "writers": [
+        "황인욱",
+        "전태익"
+      ],
+      "tags": [
+        "황인욱",
+        "전태익"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 46; TJ no. 91507; 포장마차 — 황인욱; lyricist: 황인욱; composer: 황인욱,전태익",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 46; TJ no. 91507; 포장마차 — 황인욱; lyricist: 황인욱; composer: 황인욱,전태익",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=8MAYpc7Tjt0",
+          "quote": "[MV] Hwang In Wook(황인욱) _ Phocha(포장마차) — 1theK (원더케이). [MV] Hwang In Wook(황인욱) _ Phocha(포장마차) [공지] 1theK YouTube는 MV를 유통하는 공식 채널로, 해당 영상의 권리가 1theK에 있습니다.",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/8MAYpc7Tjt0.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 234.16864583333333,
+        "byteLength": 1435173,
+        "sha256": "31601f05143ae1c15b8f416441116818b2fa1b43d5b9dfa5831dbb90588e1219"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 47,
+      "rank": 47,
+      "tjNumber": 30751,
+      "videoId": "9QpzvH3O4KI",
+      "id": "fe8d05b0-0046-5eef-a7c8-e7fe6179013e",
+      "youtubeUrl": "https://www.youtube.com/watch?v=9QpzvH3O4KI",
+      "title": "그런 사람 또 없습니다",
+      "sourceTitle": "그런 사람 또 없습니다",
+      "singer": "이승철",
+      "writers": [
+        "강은경",
+        "조영수"
+      ],
+      "tags": [
+        "강은경",
+        "조영수",
+        "이승철"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 47; TJ no. 30751; 그런 사람 또 없습니다 — 이승철; lyricist: 강은경; composer: 조영수",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 47; TJ no. 30751; 그런 사람 또 없습니다 — 이승철; lyricist: 강은경; composer: 조영수",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=9QpzvH3O4KI",
+          "quote": "그런사람 또 없습니다 — LEE SEUNGCHUL. Provided to YouTube by Danal Entertainment 그런사람 또 없습니다 · 이승철 Lee Seung Chul 10th the Land of Dreams Mutopia ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/9QpzvH3O4KI.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 226.327,
+        "byteLength": 1383914,
+        "sha256": "8ee54fae923cd2a807355ce80d7dabff120c1d1fa19405b387434ad4c47dd9ff"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 48,
+      "rank": 48,
+      "tjNumber": 14980,
+      "videoId": "8X51AVO41o8",
+      "id": "fda8acf2-d3be-5fa3-93c5-8d35dd338df0",
+      "youtubeUrl": "https://www.youtube.com/watch?v=8X51AVO41o8",
+      "title": "서울의 달",
+      "sourceTitle": "서울의 달",
+      "singer": "김건모",
+      "writers": [
+        "최준영",
+        "김건모"
+      ],
+      "tags": [
+        "최준영",
+        "김건모"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 48; TJ no. 14980; 서울의 달 — 김건모; lyricist: 최준영; composer: 김건모",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 48; TJ no. 14980; 서울의 달 — 김건모; lyricist: 최준영; composer: 김건모",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=8X51AVO41o8",
+          "quote": "Kim Gun Mo(김건모) - The moon of Seoul(서울의 달) (Official Audio) — MUSIC&NEW 뮤직앤뉴. Kim Gun Mo(김건모) - The moon of Seoul(서울의 달) (Official Audio) 9집 이후 방송매체가 아닌 콘서트로만 팬을 찾아가겠다던 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/8X51AVO41o8.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 223.367,
+        "byteLength": 1361629,
+        "sha256": "8cb72aab3e40bc2b70621ec4c4a87a9de2b3c22ae0782d78ee712c8f6c243aaa"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 49,
+      "rank": 49,
+      "tjNumber": 18792,
+      "videoId": "Ng2HAbFqnSg",
+      "id": "5089635f-4063-5fe7-a33e-185c5a537fcb",
+      "youtubeUrl": "https://www.youtube.com/watch?v=Ng2HAbFqnSg",
+      "title": "사랑한만큼",
+      "sourceTitle": "사랑한만큼",
+      "singer": "Tim",
+      "writers": [
+        "김영후"
+      ],
+      "tags": [
+        "김영후",
+        "Tim",
+        "As Much As I Love You"
+      ],
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "As Much As I Love You",
+          "url": "https://www.youtube.com/watch?v=Ng2HAbFqnSg",
+          "quote": "[MV] Tim (팀) - As Much As I Love You(사랑한 만큼) (Official Music Video)"
+        }
+      ],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 49; TJ no. 18792; 사랑한만큼 — Tim; lyricist: 김영후; composer: 김영후",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 49; TJ no. 18792; 사랑한만큼 — Tim; lyricist: 김영후; composer: 김영후",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Ng2HAbFqnSg",
+          "quote": "[MV] Tim (팀) - As Much As I Love You(사랑한 만큼) (Official Music Video) — MUSIC&NEW 뮤직앤뉴. 2007년 가을, 우리들의 사랑은 죽지 않았다. [LOVE MESSENGER로 변신한 TIM] 수줍은 미소와 감미로운 목소리로 데뷔 초부터 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/Ng2HAbFqnSg.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 316.167,
+        "byteLength": 1937312,
+        "sha256": "7db8adc456a870cd74537c8ef88b70ec9f43872c80cbe7e61a3be733182cddac"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 50,
+      "rank": 50,
+      "tjNumber": 11954,
+      "videoId": "vEMX387gBG4",
+      "id": "30c067b7-4f42-5184-a59c-c700c23f36de",
+      "youtubeUrl": "https://www.youtube.com/watch?v=vEMX387gBG4",
+      "title": "당신을 위하여",
+      "sourceTitle": "당신을 위하여",
+      "singer": "더 크로스",
+      "writers": [
+        "Siha"
+      ],
+      "tags": [
+        "Siha",
+        "더 크로스"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 50; TJ no. 11954; 당신을 위하여 — 더 크로스; lyricist: Siha; composer: Siha",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 50; TJ no. 11954; 당신을 위하여 — 더 크로스; lyricist: Siha; composer: Siha",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=vEMX387gBG4",
+          "quote": "[Official Audio] 더크로스 - 당신을 위하여 — OGAM Entertainment. 락 #더크로스 #당신을위하여 Artist: 더크로스 Track: 당신을 위하여 Album: Melody Quus Release Date: 2003-08-01 【 OGAM ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/vEMX387gBG4.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 243.48435416666666,
+        "byteLength": 1492423,
+        "sha256": "9d142f37d56264c86ffd6237de29aea76a0b6abe83689b29ce1adfded2b27ca1"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 51,
+      "rank": 51,
+      "tjNumber": 9318,
+      "videoId": "x59B0NTrgQI",
+      "id": "6df20e07-7445-587f-a685-e63043e4034e",
+      "youtubeUrl": "https://www.youtube.com/watch?v=x59B0NTrgQI",
+      "title": "그런일은",
+      "sourceTitle": "그런일은",
+      "singer": "박화요비",
+      "writers": [
+        "윤사라",
+        "이현정"
+      ],
+      "tags": [
+        "윤사라",
+        "이현정",
+        "박화요비"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 51; TJ no. 9318; 그런일은 — 박화요비; lyricist: 윤사라; composer: 이현정",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 51; TJ no. 9318; 그런일은 — 박화요비; lyricist: 윤사라; composer: 이현정",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=x59B0NTrgQI",
+          "quote": "박화요비 - 그런 일은 [가사/Lyrics] — 웅키. 박화요비 - 그런 일은 [가사/Lyrics] #박화요비 #그런일은 발매 : 2000.06.14 아티스트 : 박화요비 앨범 : My All 작곡 : 이현정 작사 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/x59B0NTrgQI.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 266.31666666666666,
+        "byteLength": 1617644,
+        "sha256": "816f1151f9549a366ab8cfdd6b531b661700270f1ab7aa32406b59623d6a905c"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 52,
+      "rank": 52,
+      "tjNumber": 70427,
+      "videoId": "VVO05mYGFY8",
+      "id": "7a29be87-68c8-5bdb-a50e-c987e44febe0",
+      "youtubeUrl": "https://www.youtube.com/watch?v=VVO05mYGFY8",
+      "title": "만찬가",
+      "sourceTitle": "만찬가",
+      "singer": "태연",
+      "writers": [
+        "이스란",
+        "TUKI."
+      ],
+      "tags": [
+        "이스란",
+        "TUKI.",
+        "태연"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 52; TJ no. 70427; 만찬가 — 태연; lyricist: 이스란; composer: TUKI.",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 52; TJ no. 70427; 만찬가 — 태연; lyricist: 이스란; composer: TUKI.",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=VVO05mYGFY8",
+          "quote": "[MV] 태연 (TAEYEON)_ 만찬가 (晩餐歌 / BANSANKA) : J-POP REMAKE Vol.1 — 1theK (원더케이) and 동네친구 강나미 [Kangnami]. [MV] 태연 (TAEYEON)_ 만찬가 (晩餐歌 / BANSANKA) : J-POP REMAKE Vol.1 K-POP Wonderland, 1theK K-POP의 모든 즐거움을 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/VVO05mYGFY8.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 221.17708333333334,
+        "byteLength": 1344202,
+        "sha256": "ca7c2a1017fcf7163a839b76ac8b2c1c2725d2591797774a7d50096261c5eb26"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 53,
+      "rank": 53,
+      "tjNumber": 4975,
+      "videoId": "nuAiFzEkFZM",
+      "id": "e91cc368-8df2-5d68-931a-0c7195461fc2",
+      "youtubeUrl": "https://www.youtube.com/watch?v=nuAiFzEkFZM",
+      "title": "여전히 아름다운지",
+      "sourceTitle": "여전히 아름다운지",
+      "singer": "토이",
+      "writers": [
+        "유희열"
+      ],
+      "tags": [
+        "유희열",
+        "토이"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 53; TJ no. 4975; 여전히 아름다운지 — 토이; lyricist: 유희열; composer: 유희열",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 53; TJ no. 4975; 여전히 아름다운지 — 토이; lyricist: 유희열; composer: 유희열",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=nuAiFzEkFZM",
+          "quote": "여전히 아름다운지 — Toy - Topic. Provided to YouTube by Collab Asia Music 여전히 아름다운지 · 토이|Toy (유희열) A Night In Seoul (4집) Auto-generated by ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/nuAiFzEkFZM.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 255.11366666666666,
+        "byteLength": 1560642,
+        "sha256": "dd4799cd844f0aef17d04b4a942ed9a453ca77b327c2b52476aa3635fdd2bfcb"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 54,
+      "rank": 54,
+      "tjNumber": 46490,
+      "videoId": "7L3F9EEvidE",
+      "id": "28bea56b-8359-55bb-af61-f2c14a7d901d",
+      "youtubeUrl": "https://www.youtube.com/watch?v=7L3F9EEvidE",
+      "title": "너였다면(또오해영OST)",
+      "sourceTitle": "너였다면(또오해영OST)",
+      "singer": "정승환",
+      "writers": [
+        "김미진",
+        "1601",
+        "1601A"
+      ],
+      "tags": [
+        "김미진",
+        "1601",
+        "1601A",
+        "정승환",
+        "너였다면또오해영OST",
+        "너였다면"
+      ],
+      "aliases": [
+        {
+          "kind": "punctuation",
+          "name": "너였다면또오해영OST",
+          "url": null,
+          "quote": "너였다면(또오해영OST)"
+        },
+        {
+          "kind": "title",
+          "name": "너였다면",
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 54; TJ no. 46490; 너였다면(또오해영OST) — 정승환; lyricist: 김미진; composer: 1601,1601A"
+        }
+      ],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 54; TJ no. 46490; 너였다면(또오해영OST) — 정승환; lyricist: 김미진; composer: 1601,1601A",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 54; TJ no. 46490; 너였다면(또오해영OST) — 정승환; lyricist: 김미진; composer: 1601,1601A",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=7L3F9EEvidE",
+          "quote": "정승환 - 너였다면 [또 오해영 OST] [가사/Lyrics] — 웅키. 정승환 - 너였다면 [또 오해영 OST] [가사/Lyrics] #정승환 #너였다면 #또오해영 발매일 : 2016.05.31 아티스트 : 정승환 앨범명 : 또 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/7L3F9EEvidE.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 273.3523125,
+        "byteLength": 1676391,
+        "sha256": "32903f79f9e2b1b7b52d0954d2f62f641148011b2846270f55174618454596c2"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 55,
+      "rank": 55,
+      "tjNumber": 16677,
+      "videoId": "QNt7KUUk_d8",
+      "id": "8d8eb6da-e6f0-5487-9f74-23cf877bba7d",
+      "youtubeUrl": "https://www.youtube.com/watch?v=QNt7KUUk_d8",
+      "title": "기다리다",
+      "sourceTitle": "기다리다",
+      "singer": "윤하",
+      "writers": [
+        "심재희",
+        "윤하"
+      ],
+      "tags": [
+        "심재희",
+        "윤하"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 55; TJ no. 16677; 기다리다 — 윤하; lyricist: 심재희; composer: 윤하",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 55; TJ no. 16677; 기다리다 — 윤하; lyricist: 심재희; composer: 윤하",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=QNt7KUUk_d8",
+          "quote": "기다리다 — YOUNHA OFFICIAL. Provided to YouTube by NHN BUGS 기다리다 · 윤하 Audition (Time2Rock) ℗ 스탐 Released on: 2006-12-04 Auto-generated by ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/QNt7KUUk_d8.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 277.527,
+        "byteLength": 1702424,
+        "sha256": "42d41406e225f7872305f3d81dd3c3622e4393728ac4e2001a6c4ea237ab1316"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 56,
+      "rank": 56,
+      "tjNumber": 97309,
+      "videoId": "MEqHS1bybMQ",
+      "id": "adb07e99-71c9-5b4f-8b9c-8fa5cfee0a68",
+      "youtubeUrl": "https://www.youtube.com/watch?v=MEqHS1bybMQ",
+      "title": "눈사람",
+      "sourceTitle": "눈사람",
+      "singer": "정승환",
+      "writers": [
+        "아이유",
+        "김제휘"
+      ],
+      "tags": [
+        "아이유",
+        "김제휘",
+        "정승환"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 56; TJ no. 97309; 눈사람 — 정승환; lyricist: 아이유; composer: 김제휘",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 56; TJ no. 97309; 눈사람 — 정승환; lyricist: 아이유; composer: 김제휘",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=MEqHS1bybMQ",
+          "quote": "정승환 - 눈사람 [가사/Lyrics] — 웅키. 정승환 - 눈사람 [가사/Lyrics] #정승환 #눈사람 발매 : 2018.02.19 아티스트 : 정승환 앨범 : 그리고 봄 작곡 : 제휘 작사 : 아이유(IU) 편곡 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/MEqHS1bybMQ.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 236.42097916666665,
+        "byteLength": 1451034,
+        "sha256": "6bef2b90bc39e581ff05d05a322e84121a5194a54a244b7cd132c7b78c596d4b"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 57,
+      "rank": 57,
+      "tjNumber": 16223,
+      "videoId": "yCzg389Ut6w",
+      "id": "72881395-7b97-56b1-8faa-532ed5ab50c4",
+      "youtubeUrl": "https://www.youtube.com/watch?v=yCzg389Ut6w",
+      "title": "비행기",
+      "sourceTitle": "비행기",
+      "singer": "거북이",
+      "writers": [
+        "임성훈"
+      ],
+      "tags": [
+        "임성훈",
+        "거북이"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 57; TJ no. 16223; 비행기 — 거북이; lyricist: 임성훈; composer: 임성훈",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 57; TJ no. 16223; 비행기 — 거북이; lyricist: 임성훈; composer: 임성훈",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=yCzg389Ut6w",
+          "quote": "거북이 - 비행기 [가사/Lyrics] — 웅키. 거북이 - 비행기 [가사/Lyrics] #거북이 #비행기 발매 : 2006.07.20 아티스트 : 거북이 앨범 : 거북이 사요!! 해당 영상은 수익 창출이 되지 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/yCzg389Ut6w.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 213.42160416666667,
+        "byteLength": 1300884,
+        "sha256": "5e484bc959e0935d66c76cc0391d9dd05be9f20595e59d0ab19a240d0671e5ce"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 58,
+      "rank": 58,
+      "tjNumber": 31981,
+      "videoId": "TekCz8uvfCU",
+      "id": "f372a135-c08b-5a35-a483-5332d772ecb8",
+      "youtubeUrl": "https://www.youtube.com/watch?v=TekCz8uvfCU",
+      "title": "술 한잔 해요",
+      "sourceTitle": "술 한잔 해요",
+      "singer": "지아",
+      "writers": [
+        "원태연",
+        "최은하",
+        "이주호"
+      ],
+      "tags": [
+        "원태연",
+        "최은하",
+        "이주호",
+        "지아"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 58; TJ no. 31981; 술 한잔 해요 — 지아; lyricist: 원태연,최은하; composer: 이주호",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 58; TJ no. 31981; 술 한잔 해요 — 지아; lyricist: 원태연,최은하; composer: 이주호",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=TekCz8uvfCU",
+          "quote": "Miss You (오늘 술 한잔해요) — 지아 ZIA Official. Provided to YouTube by Loen Entertainment Inc Miss You (오늘 술 한잔해요) · ZIA Miss You ℗ 2020 722STUDIO,under license to ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/TekCz8uvfCU.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 206.367,
+        "byteLength": 1265134,
+        "sha256": "2ff6e5a35185fb487ce718faf71ac8a8bdcceedeae832fe6a0db3f9a530e2a8b"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 59,
+      "rank": 59,
+      "tjNumber": 272,
+      "videoId": "fnEsPUT3jWI",
+      "id": "8bf0171a-d99a-54f9-b21a-b9fe46cc2697",
+      "youtubeUrl": "https://www.youtube.com/watch?v=fnEsPUT3jWI",
+      "title": "내 사랑 내 곁에",
+      "sourceTitle": "내 사랑 내 곁에",
+      "singer": "김현식",
+      "writers": [
+        "오태호"
+      ],
+      "tags": [
+        "오태호",
+        "김현식"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 59; TJ no. 272; 내 사랑 내 곁에 — 김현식; lyricist: 오태호; composer: 오태호",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 59; TJ no. 272; 내 사랑 내 곁에 — 김현식; lyricist: 오태호; composer: 오태호",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=fnEsPUT3jWI",
+          "quote": "[Official Audio] 김현식 (Kim Hyun Sik) - 내 사랑 내곁에 (My Love by My Side) — BEYOND MUSIC 비욘드 뮤직. 김현식 (Kim Hyun Sik) - 내 사랑 내곁에 (My Love by My Side) Melon https://bit.ly/31dwShX Genie https://bit.ly/3BziZHB Bugs ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/fnEsPUT3jWI.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 267.6518125,
+        "byteLength": 1617281,
+        "sha256": "1a35a67879a72fa0596a3fc902f8f64c224df3802eaeffc85ad6d736f15ffd13"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 60,
+      "rank": 60,
+      "tjNumber": 30399,
+      "videoId": "eyUZPAIGcvc",
+      "id": "6e566cb6-afc0-570f-a506-4ef11327f27c",
+      "youtubeUrl": "https://www.youtube.com/watch?v=eyUZPAIGcvc",
+      "title": "붉은 노을",
+      "sourceTitle": "붉은 노을",
+      "singer": "빅뱅",
+      "writers": [
+        "이영훈"
+      ],
+      "tags": [
+        "이영훈",
+        "빅뱅"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 60; TJ no. 30399; 붉은 노을 — 빅뱅; lyricist: 이영훈; composer: 이영훈",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 60; TJ no. 30399; 붉은 노을 — 빅뱅; lyricist: 이영훈; composer: 이영훈",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=eyUZPAIGcvc",
+          "quote": "BIGBANG (빅뱅) - 붉은 노을 [가사/Lyrics] — 웅키. BIGBANG (빅뱅) - 붉은 노을 [가사/Lyrics] #BIGBANG #빅뱅 #붉은노을 발매 : 2008.11.05 아티스트 : BIGBANG (빅뱅) 앨범 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/eyUZPAIGcvc.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 207.98814583333333,
+        "byteLength": 1257259,
+        "sha256": "ce62588ed0babd881948fa57c7fec8e504c76125c8f78bdaed3d6498a25ae4e5"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 61,
+      "rank": 61,
+      "tjNumber": 9308,
+      "videoId": "YmzY2lTSnko",
+      "id": "6c6e6cdf-4dcb-5a5e-91ce-c63a74b1fb46",
+      "youtubeUrl": "https://www.youtube.com/watch?v=YmzY2lTSnko",
+      "title": "I Love You",
+      "sourceTitle": "I Love You",
+      "singer": "포지션",
+      "writers": [
+        "OZAKI YUTAKA"
+      ],
+      "tags": [
+        "OZAKI YUTAKA",
+        "포지션"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 61; TJ no. 9308; I Love You — 포지션; lyricist: OZAKI YUTAKA; composer: OZAKI YUTAKA",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 61; TJ no. 9308; I Love You — 포지션; lyricist: OZAKI YUTAKA; composer: OZAKI YUTAKA",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=YmzY2lTSnko",
+          "quote": "[Audio] 포지션 (Position) - I Love You — 땅도라의 음악상자 Ddangdora music box. [Audio] 포지션 (Position) - I Love You.",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/YmzY2lTSnko.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 335.07095833333335,
+        "byteLength": 2015621,
+        "sha256": "762f7bb3e3654f2e36ba86e6c87c489c1b5862e1baffb805611d87629c90204d"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 62,
+      "rank": 62,
+      "tjNumber": 8937,
+      "videoId": "B1gr1G5CXP4",
+      "id": "eec719ec-168b-5500-88d1-6d449f5098b7",
+      "youtubeUrl": "https://www.youtube.com/watch?v=B1gr1G5CXP4",
+      "title": "중독된 사랑",
+      "sourceTitle": "중독된 사랑",
+      "singer": "조장혁",
+      "writers": [
+        "조은희",
+        "조장혁"
+      ],
+      "tags": [
+        "조은희",
+        "조장혁"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 62; TJ no. 8937; 중독된 사랑 — 조장혁; lyricist: 조은희; composer: 조장혁",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 62; TJ no. 8937; 중독된 사랑 — 조장혁; lyricist: 조은희; composer: 조장혁",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=B1gr1G5CXP4",
+          "quote": "[클린버전] 국가부ㅣ조장혁-중독된 사랑 #국가가부른다 TV CHOSUN 221006 방송 — TVCHOSUN MUSIC. 오직 [ 내일은 국민가수 ] 공식계정에서만 볼 수 있는 자막 없는 클린버전   [ Official ] HOMEPAGE ▶️ https://www.nchworld.com ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/B1gr1G5CXP4.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 171.02197916666665,
+        "byteLength": 1050278,
+        "sha256": "9c0aed3497e084087787707452520a73009808afa4889bfba22a78cc6add151d"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 63,
+      "rank": 63,
+      "tjNumber": 35198,
+      "videoId": "vepz3RlTd4M",
+      "id": "1e685ad2-77ca-5c56-bb8b-5ec61fd6b64d",
+      "youtubeUrl": "https://www.youtube.com/watch?v=vepz3RlTd4M",
+      "title": "나를 사랑했던 사람아",
+      "sourceTitle": "나를 사랑했던 사람아",
+      "singer": "허각",
+      "writers": [
+        "최규성"
+      ],
+      "tags": [
+        "최규성",
+        "허각"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 63; TJ no. 35198; 나를 사랑했던 사람아 — 허각; lyricist: 최규성; composer: 최규성",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 63; TJ no. 35198; 나를 사랑했던 사람아 — 허각; lyricist: 최규성; composer: 최규성",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=vepz3RlTd4M",
+          "quote": "허각 - 나를 사랑했던 사람아 [가사/Lyrics] — 웅키. 허각 - 나를 사랑했던 사람아 [가사/Lyrics] #허각 #나를사랑했던사람아 발매 : 2012.04.03 아티스트 : 허각 앨범 : LACRIMOSO 해당 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/vepz3RlTd4M.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 239.4511875,
+        "byteLength": 1465870,
+        "sha256": "e8ca9c88c4e2ac0ab2e2e000e51a02e6a59c0b3193456f760f80890885a0dd58"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 64,
+      "rank": 64,
+      "tjNumber": 14238,
+      "videoId": "IR1iDjwC-sA",
+      "id": "1c63e792-baf6-5a84-9e6d-a3086c9f77f7",
+      "youtubeUrl": "https://www.youtube.com/watch?v=IR1iDjwC-sA",
+      "title": "눈의 꽃(미안하다사랑한다OST)",
+      "sourceTitle": "눈의 꽃(미안하다사랑한다OST)",
+      "singer": "박효신",
+      "writers": [
+        "SATOMI",
+        "MATSUMOTO",
+        "RYOKI"
+      ],
+      "tags": [
+        "SATOMI",
+        "MATSUMOTO",
+        "RYOKI",
+        "박효신",
+        "눈의 꽃미안하다사랑한다OST",
+        "눈의 꽃"
+      ],
+      "aliases": [
+        {
+          "kind": "punctuation",
+          "name": "눈의 꽃미안하다사랑한다OST",
+          "url": null,
+          "quote": "눈의 꽃(미안하다사랑한다OST)"
+        },
+        {
+          "kind": "title",
+          "name": "눈의 꽃",
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 64; TJ no. 14238; 눈의 꽃(미안하다사랑한다OST) — 박효신; lyricist: SATOMI; composer: MATSUMOTO,RYOKI"
+        }
+      ],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 64; TJ no. 14238; 눈의 꽃(미안하다사랑한다OST) — 박효신; lyricist: SATOMI; composer: MATSUMOTO,RYOKI",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 64; TJ no. 14238; 눈의 꽃(미안하다사랑한다OST) — 박효신; lyricist: SATOMI; composer: MATSUMOTO,RYOKI",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=IR1iDjwC-sA",
+          "quote": "[BEST SELLER] 박효신 - 눈의 꽃 (미안하다 사랑한다 OST) — OGAM Entertainment. OST #박효신 #눈의꽃 #미안하다사랑한다 Artist: 박효신 Track: 눈의 꽃 Album: 미안하다 사랑한다 OST Release Date: 2004-11-12.",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/IR1iDjwC-sA.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 339.847,
+        "byteLength": 2085210,
+        "sha256": "c14d4bb3ac6db2e3a0bc339e7f2314a3e00fe8280441ce6986583c8fe4e6e089"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 65,
+      "rank": 65,
+      "tjNumber": 35017,
+      "videoId": "4imNVpLiJws",
+      "id": "c44c8ce0-618d-581f-ad3f-b55024f3c0fb",
+      "youtubeUrl": "https://www.youtube.com/watch?v=4imNVpLiJws",
+      "title": "잊었니(신들의만찬OST)",
+      "sourceTitle": "잊었니(신들의만찬OST)",
+      "singer": "이승철",
+      "writers": [
+        "홍진영"
+      ],
+      "tags": [
+        "홍진영",
+        "이승철",
+        "Did You Forget",
+        "잊었니신들의만찬OST",
+        "잊었니"
+      ],
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "Did You Forget",
+          "url": "https://www.youtube.com/watch?v=4imNVpLiJws",
+          "quote": "[Official Audio] 이승철(Lee Seung Chul) - 잊었니(Did You Forget)"
+        },
+        {
+          "kind": "punctuation",
+          "name": "잊었니신들의만찬OST",
+          "url": null,
+          "quote": "잊었니(신들의만찬OST)"
+        },
+        {
+          "kind": "title",
+          "name": "잊었니",
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 65; TJ no. 35017; 잊었니(신들의만찬OST) — 이승철; lyricist: 홍진영; composer: 홍진영"
+        }
+      ],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 65; TJ no. 35017; 잊었니(신들의만찬OST) — 이승철; lyricist: 홍진영; composer: 홍진영",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 65; TJ no. 35017; 잊었니(신들의만찬OST) — 이승철; lyricist: 홍진영; composer: 홍진영",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=4imNVpLiJws",
+          "quote": "[Official Audio] 이승철(Lee Seung Chul) - 잊었니(Did You Forget) — RIAK OFFICIAL. Album Title : 이승철(Lee Seung Chul) - 신들의 만찬 OST Part.1 Artist : 이승철(Lee Seung Chul) Song Title : 잊었니(Did You Forget) ...",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/4imNVpLiJws.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 193.92845833333334,
+        "byteLength": 1187075,
+        "sha256": "976c4f213ed367c25f1a3e31ec938db509bbbbb9fd9bcd0126fa14194a09ab9e"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 66,
+      "rank": 66,
+      "tjNumber": 11019,
+      "videoId": "ULfAaYIuldI",
+      "id": "b49d5e82-204b-563e-81b4-251fa138d3d1",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ULfAaYIuldI",
+      "title": "체념",
+      "sourceTitle": "체념",
+      "singer": "빅마마",
+      "writers": [
+        "이영현"
+      ],
+      "tags": [
+        "이영현",
+        "빅마마"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 66; TJ no. 11019; 체념 — 빅마마; lyricist: 이영현; composer: 이영현",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 66; TJ no. 11019; 체념 — 빅마마; lyricist: 이영현; composer: 이영현",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ULfAaYIuldI",
+          "quote": "체념 (After Resignatoion / Retiment) — Big Mama - Topic. Provided to YouTube by YG Entertainment 체념 (After Resignatoion / Retiment) · BIGMAMA LIKE THE BIBLE ℗ YG Entertainment ...",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/ULfAaYIuldI.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 299.2135416666667,
+        "byteLength": 1833634,
+        "sha256": "8f2828651e20e9a0a681843f92f99229303f18757fa8b6a20a43a0124071aa9f"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 67,
+      "rank": 67,
+      "tjNumber": 10594,
+      "videoId": "MwBOUnzYB-8",
+      "id": "0dcb0d1d-fce4-521d-94ba-7219c49081f2",
+      "youtubeUrl": "https://www.youtube.com/watch?v=MwBOUnzYB-8",
+      "title": "One Love",
+      "sourceTitle": "One Love",
+      "singer": "MC THE MAX",
+      "writers": [
+        "이수"
+      ],
+      "tags": [
+        "이수",
+        "MC THE MAX"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 67; TJ no. 10594; One Love — MC THE MAX; lyricist: 이수; composer: 이수",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 67; TJ no. 10594; One Love — MC THE MAX; lyricist: 이수; composer: 이수",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=MwBOUnzYB-8",
+          "quote": "[Audio] 엠씨더맥스 (M.C The MAX) - One Love — 땅도라의 음악상자 Ddangdora music box. [Audio] 엠씨더맥스 (M.C The MAX) - One Love.",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/MwBOUnzYB-8.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 265.06279166666667,
+        "byteLength": 1607051,
+        "sha256": "63f6a16e7b0070b6f68d1d87fa3c1ec934c45e5d26877d5756f110d86217f82e"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 68,
+      "rank": 68,
+      "tjNumber": 71127,
+      "videoId": "GxChUrrY4bc",
+      "id": "ee192ccd-dfdb-5512-b7ad-8a01dada1ba3",
+      "youtubeUrl": "https://www.youtube.com/watch?v=GxChUrrY4bc",
+      "title": "꿈꾸던 어른이 되었나요?",
+      "sourceTitle": "꿈꾸던 어른이 되었나요?",
+      "singer": "머무르",
+      "writers": [
+        "머무르 (1)",
+        "머무르 (2)",
+        "머무르 (2)(생성형 AI 활용)"
+      ],
+      "tags": [
+        "머무르 (1)",
+        "머무르 (2)",
+        "머무르 (2)(생성형 AI 활용)",
+        "머무르",
+        "꿈꾸던 어른이 되었나요"
+      ],
+      "aliases": [
+        {
+          "kind": "punctuation",
+          "name": "꿈꾸던 어른이 되었나요",
+          "url": null,
+          "quote": "꿈꾸던 어른이 되었나요?"
+        }
+      ],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 68; TJ no. 71127; 꿈꾸던 어른이 되었나요? — 머무르; lyricist: 머무르 (1),머무르 (2); composer: 머무르 (1),머무르 (2)(생성형 AI 활용)",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 68; TJ no. 71127; 꿈꾸던 어른이 되었나요? — 머무르; lyricist: 머무르 (1),머무르 (2); composer: 머무르 (1),머무르 (2)(생성형 AI 활용)",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=GxChUrrY4bc",
+          "quote": "꿈꾸던 어른이 되었나요? — MEOMURU. \"어릴 적 꿈꾸던 어른에게, 지금의 내가 묻는 조용한 안부.\" 🎙️ 머무르(MEOMURU) - 꿈꾸던 어른이 되었나요? 거울에 비친 내가 잘 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/GxChUrrY4bc.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 204.2845625,
+        "byteLength": 1254109,
+        "sha256": "cd914770e070ea2259ba9da17cc98be0d4e3daa6499ada31d7e9ce8def4b0f6f"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 69,
+      "rank": 69,
+      "tjNumber": 62438,
+      "videoId": "gRV8pMtyzvI",
+      "id": "56ae2a84-8c77-57e9-9c6c-5b8b4569ce33",
+      "youtubeUrl": "https://www.youtube.com/watch?v=gRV8pMtyzvI",
+      "title": "Tears",
+      "sourceTitle": "Tears",
+      "singer": "소찬휘",
+      "writers": [
+        "정성윤",
+        "주태영"
+      ],
+      "tags": [
+        "정성윤",
+        "주태영",
+        "소찬휘"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 69; TJ no. 62438; Tears — 소찬휘; lyricist: 정성윤; composer: 주태영",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 69; TJ no. 62438; Tears — 소찬휘; lyricist: 정성윤; composer: 주태영",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=gRV8pMtyzvI",
+          "quote": "Tears — 소찬휘 - Topic. Provided to YouTube by Recording Industry Association of Korea Tears · So Chanhwi First Bridge Released on: 2000-03-23 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/gRV8pMtyzvI.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 236.90033333333332,
+        "byteLength": 1442091,
+        "sha256": "e3afb35355cda88af7e9652b7f63f0af8c1ed87e826925b4355fac1938afb232"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 70,
+      "rank": 70,
+      "tjNumber": 18470,
+      "videoId": "mbg1Cn6Ua9U",
+      "id": "a8c2aefb-ccbe-59c0-87b3-65426c6ccf2f",
+      "youtubeUrl": "https://www.youtube.com/watch?v=mbg1Cn6Ua9U",
+      "title": "다시 만난 세계",
+      "sourceTitle": "다시 만난 세계",
+      "singer": "소녀시대",
+      "writers": [
+        "김정배",
+        "KENZIE"
+      ],
+      "tags": [
+        "김정배",
+        "KENZIE",
+        "소녀시대"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 70; TJ no. 18470; 다시 만난 세계 — 소녀시대; lyricist: 김정배; composer: KENZIE",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 70; TJ no. 18470; 다시 만난 세계 — 소녀시대; lyricist: 김정배; composer: KENZIE",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=mbg1Cn6Ua9U",
+          "quote": "다시 만난 세계 Into The New World — GIRLS' GENERATION. Provided to YouTube by SM Entertainment 다시 만난 세계 Into The New World · Girls' Generation 소녀시대 Girls' Generation ℗ SM ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/mbg1Cn6Ua9U.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 265.767,
+        "byteLength": 1629397,
+        "sha256": "097d7782f38b814d72c23e86be978a98e48d1bc5f8c65fe24c6d7b81e9f00204"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 71,
+      "rank": 71,
+      "tjNumber": 52157,
+      "videoId": "llsR2eTdlI4",
+      "id": "f1813de4-12e5-5a5f-b1f1-0181d3b90b4d",
+      "youtubeUrl": "https://www.youtube.com/watch?v=llsR2eTdlI4",
+      "title": "REDRED",
+      "sourceTitle": "REDRED",
+      "singer": "CORTIS(코르티스)",
+      "writers": [
+        "SUPREME BOI",
+        "HISS NOISE",
+        "MARTIN",
+        "JAMES",
+        "성현",
+        "주훈",
+        "건호",
+        "HITMAN BANG"
+      ],
+      "tags": [
+        "SUPREME BOI",
+        "HISS NOISE",
+        "MARTIN",
+        "JAMES",
+        "성현",
+        "주훈",
+        "건호",
+        "HITMAN BANG",
+        "CORTIS(코르티스)"
+      ],
+      "aliases": [],
+      "reviewRequired": true,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 71; TJ no. 52157; REDRED — CORTIS(코르티스); lyricist: SUPREME BOI,HISS NOISE,MARTIN,JAMES,성현,주훈,건호,HITMAN BANG,AARON JACOB 외 3명; composer: SUPREME BOI,HISS NOISE,MARTIN,JAMES,성현,주훈,건호,HITMAN BANG,AARON JACOB 외 3명",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 71; TJ no. 52157; REDRED — CORTIS(코르티스); lyricist: SUPREME BOI,HISS NOISE,MARTIN,JAMES,성현,주훈,건호,HITMAN BANG,AARON JACOB 외 3명; composer: SUPREME BOI,HISS NOISE,MARTIN,JAMES,성현,주훈,건호,HITMAN BANG,AARON JACOB 외 3명",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=llsR2eTdlI4",
+          "quote": "CORTIS (코르티스) 'REDRED' (Color Coded Lyrics) — Jaeguchi. All Rights Administered by Bighit Entertainment • Artist: CORTIS (코르티스) • Song ♫: 'REDRED' .",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/llsR2eTdlI4.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 161.9778125,
+        "byteLength": 993600,
+        "sha256": "f546a66c7bc23ababd2f114d5fbca96320626ffb45641adb1916f09d46ef4b9a"
+      },
+      "reviewReasons": [
+        "partial_official_tj_writer_credits"
+      ]
+    },
+    {
+      "index": 72,
+      "rank": 72,
+      "tjNumber": 97404,
+      "videoId": "lLznXRNaJg8",
+      "id": "e4eb88f7-b718-5699-a5bf-9a24f2d8adb4",
+      "youtubeUrl": "https://www.youtube.com/watch?v=lLznXRNaJg8",
+      "title": "지나오다",
+      "sourceTitle": "지나오다",
+      "singer": "닐로",
+      "writers": [
+        "닐로(Nil_O)"
+      ],
+      "tags": [
+        "닐로(Nil_O)",
+        "닐로"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 72; TJ no. 97404; 지나오다 — 닐로; lyricist: 닐로(Nil_O); composer: 닐로(Nil_O)",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 72; TJ no. 97404; 지나오다 — 닐로; lyricist: 닐로(Nil_O); composer: 닐로(Nil_O)",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=lLznXRNaJg8",
+          "quote": "권인하 - 지나오다 (원곡 : 닐로) — 권인하 Kwon InHa. 안녕하세요 유투브 친구 여러분 오랜만에 인사드리네요 ^^ 요즘 연습하고 있는 곡 올려봅니다 ..",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/lLznXRNaJg8.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 170.8594375,
+        "byteLength": 1046830,
+        "sha256": "53596d58e916b0dc073795d1f2717177ab69cac1769b50440b40cc89fe940fed"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 73,
+      "rank": 73,
+      "tjNumber": 48585,
+      "videoId": "BS7tz2rAOSA",
+      "id": "7a3b0dfa-2ebe-56a8-a07b-4c8e589b6f48",
+      "youtubeUrl": "https://www.youtube.com/watch?v=BS7tz2rAOSA",
+      "title": "예뻤어",
+      "sourceTitle": "예뻤어",
+      "singer": "데이식스",
+      "writers": [
+        "강영현",
+        "김원필",
+        "홍지상",
+        "이우민"
+      ],
+      "tags": [
+        "강영현",
+        "김원필",
+        "홍지상",
+        "이우민",
+        "데이식스"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 73; TJ no. 48585; 예뻤어 — 데이식스; lyricist: 강영현; composer: 강영현,김원필,홍지상,이우민",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 73; TJ no. 48585; 예뻤어 — 데이식스; lyricist: 강영현; composer: 강영현,김원필,홍지상,이우민",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=BS7tz2rAOSA",
+          "quote": "DAY6(데이식스) \"예뻤어\" M/V — JYP Entertainment. DAY6(데이식스) \"예뻤어(You Were Beautiful)\" M/V\n\nListen to DAY6 \"Every DAY6 February\" on iTunes & Apple Music:\nhttps://itunes ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/BS7tz2rAOSA.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 283.29045833333333,
+        "byteLength": 1738199,
+        "sha256": "f38f0a6e8c28e63bcb835fdbebe1397d47d3e83187d7744122a4d4ce5d2db746"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 74,
+      "rank": 74,
+      "tjNumber": 86150,
+      "videoId": "CBXFCnzhjZs",
+      "id": "a0301012-c22a-58d4-b318-511b1c26731b",
+      "youtubeUrl": "https://www.youtube.com/watch?v=CBXFCnzhjZs",
+      "title": "봄이 와도",
+      "sourceTitle": "봄이 와도",
+      "singer": "로이킴",
+      "writers": [
+        "로이킴"
+      ],
+      "tags": [
+        "로이킴"
+      ],
+      "aliases": [],
+      "reviewRequired": true,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 74; TJ no. 86150; 봄이 와도 — 로이킴; lyricist: 로이킴; composer: 로이킴",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 74; TJ no. 86150; 봄이 와도 — 로이킴; lyricist: 로이킴; composer: 로이킴",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=CBXFCnzhjZs",
+          "quote": "로이킴 (Roy Kim) - 봄이 와도 Live Clip @ 2024 ROY KIM CONCERT [R♥y actually] — 로이킴 Roy Kim. 2024 ROY KIM CONCERT [R♥y actually] 봄이 와도 #로이킴 #RoyKim #ROYACTUALLY #봄이와도 Meet Roy Kim on ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/CBXFCnzhjZs.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 350.69797916666664,
+        "byteLength": 2148841,
+        "sha256": "2a4811bd4abac639d6f7e585577bc5035b6b1dc23106e6876c7ab3db7d2b328f"
+      },
+      "reviewReasons": [
+        "live_performance_source"
+      ]
+    },
+    {
+      "index": 75,
+      "rank": 75,
+      "tjNumber": 9551,
+      "videoId": "jRaSaMIfvC4",
+      "id": "59df4419-054c-5716-9119-5809e707f102",
+      "youtubeUrl": "https://www.youtube.com/watch?v=jRaSaMIfvC4",
+      "title": "벌써 일년",
+      "sourceTitle": "벌써 일년",
+      "singer": "브라운아이즈",
+      "writers": [
+        "한경혜",
+        "윤건"
+      ],
+      "tags": [
+        "한경혜",
+        "윤건",
+        "브라운아이즈"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 75; TJ no. 9551; 벌써 일년 — 브라운아이즈; lyricist: 한경혜; composer: 윤건",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 75; TJ no. 9551; 벌써 일년 — 브라운아이즈; lyricist: 한경혜; composer: 윤건",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=jRaSaMIfvC4",
+          "quote": "벌써일년 (MR) — Brown Eyes - Topic. Provided to YouTube by Genie Music Corporation 벌써일년 (MR) · 브라운 아이즈 Brown Eyes ℗ 2001 갑엔터테인먼트 Released ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/jRaSaMIfvC4.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 208.0200625,
+        "byteLength": 1271190,
+        "sha256": "f22b01dbe131ee12a0bf9b30b636f870db19cebd6d52fbdb21bbca8fb1858530"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 76,
+      "rank": 76,
+      "tjNumber": 31829,
+      "videoId": "VS59fbapYns",
+      "id": "e3ead4aa-93b1-5ecb-83fb-395eab235c5d",
+      "youtubeUrl": "https://www.youtube.com/watch?v=VS59fbapYns",
+      "title": "빵빵",
+      "sourceTitle": "빵빵",
+      "singer": "박상철",
+      "writers": [
+        "박진복",
+        "박상철"
+      ],
+      "tags": [
+        "박진복",
+        "박상철",
+        "Honk Honk"
+      ],
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "Honk Honk",
+          "url": "https://www.youtube.com/watch?v=VS59fbapYns",
+          "quote": "Honk Honk (빵빵)"
+        }
+      ],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 76; TJ no. 31829; 빵빵 — 박상철; lyricist: 박진복; composer: 박상철",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 76; TJ no. 31829; 빵빵 — 박상철; lyricist: 박진복; composer: 박상철",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=VS59fbapYns",
+          "quote": "Honk Honk (빵빵) — Park Sangchul - Topic. Provided to YouTube by Kakao Entertainment Honk Honk (빵빵) · Park Sang Chul Bang Bang ℗ 2010 Park Jin-bok,under license ...",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/VS59fbapYns.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 225.207,
+        "byteLength": 1381366,
+        "sha256": "2503795a3d17082ad4854b6aac72443cd23ce7f872364ebfff5eb931370e70ca"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 77,
+      "rank": 77,
+      "tjNumber": 44491,
+      "videoId": "tfmwbxBKPh0",
+      "id": "82d10391-c369-5490-8fa1-6ea5499971b3",
+      "youtubeUrl": "https://www.youtube.com/watch?v=tfmwbxBKPh0",
+      "title": "모르시나요",
+      "sourceTitle": "모르시나요",
+      "singer": "조째즈(Prod.로코베리)",
+      "writers": [
+        "안영민",
+        "K-SMITH"
+      ],
+      "tags": [
+        "안영민",
+        "K-SMITH",
+        "조째즈(Prod.로코베리)"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 77; TJ no. 44491; 모르시나요 — 조째즈(Prod.로코베리); lyricist: 안영민,K-SMITH; composer: 안영민",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 77; TJ no. 44491; 모르시나요 — 조째즈(Prod.로코베리); lyricist: 안영민,K-SMITH; composer: 안영민",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=tfmwbxBKPh0",
+          "quote": "[MV] ZO ZAZZ(조째즈) _ Don`t you know(PROD.ROCOBERRY)(모르시나요(PROD.로코베리)) — 1theK (원더케이). [MV] ZO ZAZZ(조째즈) _ Don`t you know(PROD.ROCOBERRY)(모르시나요(PROD.로코베리)) K-POP Wonderland, 1theK K-POP의 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/tfmwbxBKPh0.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 306.56845833333335,
+        "byteLength": 1851088,
+        "sha256": "e968c7093b75b4b3fa27ece2fa7d4965c669c166671e059be17efe8fc203eada"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 78,
+      "rank": 78,
+      "tjNumber": 43329,
+      "videoId": "JOBURHZFQBI",
+      "id": "18d12257-20aa-5a51-9c70-81c2d6da15dd",
+      "youtubeUrl": "https://www.youtube.com/watch?v=JOBURHZFQBI",
+      "title": "내게 사랑이 뭐냐고 물어본다면",
+      "sourceTitle": "내게 사랑이 뭐냐고 물어본다면",
+      "singer": "로이킴",
+      "writers": [
+        "로이킴"
+      ],
+      "tags": [
+        "로이킴"
+      ],
+      "aliases": [],
+      "reviewRequired": true,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 78; TJ no. 43329; 내게 사랑이 뭐냐고 물어본다면 — 로이킴; lyricist: 로이킴; composer: 로이킴",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 78; TJ no. 43329; 내게 사랑이 뭐냐고 물어본다면 — 로이킴; lyricist: 로이킴; composer: 로이킴",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=JOBURHZFQBI",
+          "quote": "로이킴 - 내게 사랑이 뭐냐고 물어본다면 Special Live Clip (Piano ver.) — 로이킴 Roy Kim. 로이킴 - 내게 사랑이 뭐냐고 물어본다면 Special Live Clip (Piano ver.) Meet Roy Kim on ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/JOBURHZFQBI.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 227.98052083333334,
+        "byteLength": 1395493,
+        "sha256": "a1884b5a9496443c5e432d38ba19f7c52d3eb9d19ac7b545dded813257951593"
+      },
+      "reviewReasons": [
+        "piano_live_alternate_version"
+      ]
+    },
+    {
+      "index": 79,
+      "rank": 79,
+      "tjNumber": 31818,
+      "videoId": "ZtbopMxY-2Y",
+      "id": "e4ecb75c-4ca1-581c-9baf-dd235171d729",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ZtbopMxY-2Y",
+      "title": "사랑참...",
+      "sourceTitle": "사랑참...",
+      "singer": "디셈버",
+      "writers": [
+        "나인",
+        "박정욱"
+      ],
+      "tags": [
+        "나인",
+        "박정욱",
+        "디셈버",
+        "Love is so...",
+        "사랑참"
+      ],
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "Love is so...",
+          "url": "https://www.youtube.com/watch?v=ZtbopMxY-2Y",
+          "quote": "Decemver - Love is so... (디셈버 - 사랑 참) @ SBS Inkigayo 인기가요 091206"
+        },
+        {
+          "kind": "punctuation",
+          "name": "사랑참",
+          "url": null,
+          "quote": "사랑참..."
+        }
+      ],
+      "reviewRequired": true,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 79; TJ no. 31818; 사랑참... — 디셈버; lyricist: 나인; composer: 박정욱",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 79; TJ no. 31818; 사랑참... — 디셈버; lyricist: 나인; composer: 박정욱",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ZtbopMxY-2Y",
+          "quote": "Decemver - Love is so... (디셈버 - 사랑 참) @ SBS Inkigayo 인기가요 091206 — SBSKPOP X INKIGAYO. 12월 06일 오후 4시 00분 생방송 SBS 인기가요! * 12월! 그들의 계절이 왔다! 더욱 깊어진 애절함...December의 환상적인 하모니.",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/ZtbopMxY-2Y.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 180.76275,
+        "byteLength": 1107170,
+        "sha256": "7645746288242f1fa7e2d635905e1355b83c3e6fadffd631ef7b5cff2e098da8"
+      },
+      "reviewReasons": [
+        "official_broadcast_live_version"
+      ]
+    },
+    {
+      "index": 80,
+      "rank": 80,
+      "tjNumber": 97511,
+      "videoId": "OVOy235mX3s",
+      "id": "48b2c25b-f064-57d6-b32f-24995c2d1987",
+      "youtubeUrl": "https://www.youtube.com/watch?v=OVOy235mX3s",
+      "title": "모든 날, 모든 순간 (Every Day, Every Moment)(키스먼저할까요? OST)",
+      "sourceTitle": "모든 날, 모든 순간 (Every Day, Every Moment)(키스먼저할까요? OST)",
+      "singer": "폴킴",
+      "writers": [
+        "어깨깡패1"
+      ],
+      "tags": [
+        "어깨깡패1",
+        "폴킴",
+        "모든 날, 모든 순간"
+      ],
+      "aliases": [
+        {
+          "kind": "punctuation",
+          "name": "모든 날 모든 순간 Every Day Every Moment키스먼저할까요 OST",
+          "url": null,
+          "quote": "모든 날, 모든 순간 (Every Day, Every Moment)(키스먼저할까요? OST)"
+        },
+        {
+          "kind": "title",
+          "name": "모든 날, 모든 순간",
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 80; TJ no. 97511; 모든 날, 모든 순간 (Every Day, Every Moment)(키스먼저할까요? OST) — 폴킴; lyricist: 어깨깡패1; composer: 어깨깡패1"
+        }
+      ],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 80; TJ no. 97511; 모든 날, 모든 순간 (Every Day, Every Moment)(키스먼저할까요? OST) — 폴킴; lyricist: 어깨깡패1; composer: 어깨깡패1",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 80; TJ no. 97511; 모든 날, 모든 순간 (Every Day, Every Moment)(키스먼저할까요? OST) — 폴킴; lyricist: 어깨깡패1; composer: 어깨깡패1",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=OVOy235mX3s",
+          "quote": "[Audio] 폴킴 (Paul Kim) - 모든 날, 모든 순간 (Every day, Every Moment) (키스 먼저 할까요 OST) — 땅도라의 음악상자 Ddangdora music box. [Audio] 폴킴 (Paul Kim) - 모든 날, 모든 순간 (Every day, Every Moment) (키스 먼저 할까요 OST)",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/OVOy235mX3s.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 215.07022916666668,
+        "byteLength": 1292661,
+        "sha256": "0087d6e343120edd6c53dc59b9063627ab4ba021b513b1f95660baf1aea816a5"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 81,
+      "rank": 81,
+      "tjNumber": 46213,
+      "videoId": "--knPjoSlNE",
+      "id": "01f5b148-5522-5a96-8b9f-e6818f78b80f",
+      "youtubeUrl": "https://www.youtube.com/watch?v=--knPjoSlNE",
+      "title": "Marry Me",
+      "sourceTitle": "Marry Me",
+      "singer": "마크툽(MAKTUB),구윤회",
+      "writers": [
+        "마크툽(MAKTUB)"
+      ],
+      "tags": [
+        "마크툽(MAKTUB)",
+        "마크툽(MAKTUB),구윤회"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 81; TJ no. 46213; Marry Me — 마크툽(MAKTUB),구윤회; lyricist: 마크툽(MAKTUB); composer: 마크툽(MAKTUB)",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 81; TJ no. 46213; Marry Me — 마크툽(MAKTUB),구윤회; lyricist: 마크툽(MAKTUB); composer: 마크툽(MAKTUB)",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=--knPjoSlNE",
+          "quote": "마크툽(MAKTUB) _ Marry Me [마크툽 프로젝트 Vol.03(MAKTUB Project Vol.03)] (Feat.구윤회) — 마크툽 MAKTUB Official. Instagram : https://www.instagram.com/maktub_world 비내리는 날엔 우산이 되주고 어둠이 오면 빛이 되줄게 추운 겨울이면 난로가 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/--knPjoSlNE.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 261.428875,
+        "byteLength": 1599488,
+        "sha256": "a11899dc1ad375278bbe0cea58872e419ae7bf46f7da27fbb12fee0e42f73b76"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 82,
+      "rank": 82,
+      "tjNumber": 14946,
+      "videoId": "47s7qUHA1-o",
+      "id": "f46f0f4e-6d62-54cf-8d2f-df48949b2be9",
+      "youtubeUrl": "https://www.youtube.com/watch?v=47s7qUHA1-o",
+      "title": "떠나가요, 떠나지마요",
+      "sourceTitle": "떠나가요, 떠나지마요",
+      "singer": "더 크로스",
+      "writers": [
+        "SiHa"
+      ],
+      "tags": [
+        "SiHa",
+        "더 크로스",
+        "떠나가요 떠나지마요"
+      ],
+      "aliases": [
+        {
+          "kind": "punctuation",
+          "name": "떠나가요 떠나지마요",
+          "url": null,
+          "quote": "떠나가요, 떠나지마요"
+        }
+      ],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 82; TJ no. 14946; 떠나가요, 떠나지마요 — 더 크로스; lyricist: SiHa; composer: SiHa",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 82; TJ no. 14946; 떠나가요, 떠나지마요 — 더 크로스; lyricist: SiHa; composer: SiHa",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=47s7qUHA1-o",
+          "quote": "더 크로스 - 떠나가요 떠나지마요 — 소은미서니(음악에 물들다). 더크로스#떠나가요_떠나지마요 ✒️가사~ 이제 더 이상 날 보지말아요 날 안아 줄 수없는거라면 이젠 그만 뒤돌아서 나를 떠나가줘요 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/47s7qUHA1-o.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 260.5232916666667,
+        "byteLength": 1585349,
+        "sha256": "a06e5ad22280454f8939af5020967155759775c6b2095a63c82e5827fbbb1628"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 83,
+      "rank": 83,
+      "tjNumber": 34687,
+      "videoId": "1zp7MV26B24",
+      "id": "9a694117-61ff-58c7-9317-400e37da1f91",
+      "youtubeUrl": "https://www.youtube.com/watch?v=1zp7MV26B24",
+      "title": "안아줘",
+      "sourceTitle": "안아줘",
+      "singer": "정준일",
+      "writers": [
+        "정준일"
+      ],
+      "tags": [
+        "정준일"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 83; TJ no. 34687; 안아줘 — 정준일; lyricist: 정준일; composer: 정준일",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 83; TJ no. 34687; 안아줘 — 정준일; lyricist: 정준일; composer: 정준일",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=1zp7MV26B24",
+          "quote": "[MV] JOONIL JUNG(정준일) _ Hug Me(안아줘) — 1theK (원더케이). [MV] JOONIL JUNG(정준일) _ Hug Me(안아줘) ***** Hello, this is 1theK. We are working on subtitles now! Please come back and ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/1zp7MV26B24.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 292.20691666666664,
+        "byteLength": 1778065,
+        "sha256": "261b92932a034d05c86862fb6124e0879d783945f4399d19ff43cd4b5a547fd7"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 84,
+      "rank": 84,
+      "tjNumber": 43348,
+      "videoId": "9XttLI0oH0I",
+      "id": "666e7c06-5a40-58e8-8c9e-e55de25843e2",
+      "youtubeUrl": "https://www.youtube.com/watch?v=9XttLI0oH0I",
+      "title": "LOVE ATTACK",
+      "sourceTitle": "LOVE ATTACK",
+      "singer": "RESCENE(리센느)",
+      "writers": [
+        "THE MUZE 1",
+        "방혜현",
+        "THE MUZE 2",
+        "THE MUZE 3",
+        "JONASSON SIMON ERIK HENRIK",
+        "LANDELL GUSTAV",
+        "EURENIUS KARIN WILHELMINA"
+      ],
+      "tags": [
+        "THE MUZE 1",
+        "방혜현",
+        "THE MUZE 2",
+        "THE MUZE 3",
+        "JONASSON SIMON ERIK HENRIK",
+        "LANDELL GUSTAV",
+        "EURENIUS KARIN WILHELMINA",
+        "RESCENE(리센느)"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 84; TJ no. 43348; LOVE ATTACK — RESCENE(리센느); lyricist: THE MUZE 1,방혜현,THE MUZE 2,THE MUZE 3; composer: THE MUZE 1,THE MUZE 2,THE MUZE 3,JONASSON SIMON ERIK HENRIK,LANDELL GUSTAV,EURENIUS KARIN WILHELMINA",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 84; TJ no. 43348; LOVE ATTACK — RESCENE(리센느); lyricist: THE MUZE 1,방혜현,THE MUZE 2,THE MUZE 3; composer: THE MUZE 1,THE MUZE 2,THE MUZE 3,JONASSON SIMON ERIK HENRIK,LANDELL GUSTAV,EURENIUS KARIN WILHELMINA",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=9XttLI0oH0I",
+          "quote": "RESCENE (리센느) ‘LOVE ATTACK’ Official MV — RESCENE. RESCENE (리센느) 'LOVE ATTACK' Official MV RESCENE Plus Chat: https://artist.mnetplus.world/main/stg/rescene-official ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/9XttLI0oH0I.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 197.12120833333333,
+        "byteLength": 1171308,
+        "sha256": "4bca566ef9e91fa47023cc3ebd2f37c2e23afe5ea47ac45f3bdf2d316edc0372"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 85,
+      "rank": 85,
+      "tjNumber": 34049,
+      "videoId": "5k8XqCJF_cM",
+      "id": "1bdac229-a03a-5ed7-a293-c19144cbc6b1",
+      "youtubeUrl": "https://www.youtube.com/watch?v=5k8XqCJF_cM",
+      "title": "끝사랑",
+      "sourceTitle": "끝사랑",
+      "singer": "김범수",
+      "writers": [
+        "윤사라",
+        "윤일상"
+      ],
+      "tags": [
+        "윤사라",
+        "윤일상",
+        "김범수"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 85; TJ no. 34049; 끝사랑 — 김범수; lyricist: 윤사라; composer: 윤일상",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 85; TJ no. 34049; 끝사랑 — 김범수; lyricist: 윤사라; composer: 윤일상",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=5k8XqCJF_cM",
+          "quote": "🎵 김범수 💘 끝사랑 (오직 그대만ost)... — 음악의소리. ",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/5k8XqCJF_cM.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 252.95358333333334,
+        "byteLength": 1543506,
+        "sha256": "6fecda56c21e129c0af835f2384067dc0de69e85019801d1ca92c6aeb7df54c6"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 86,
+      "rank": 86,
+      "tjNumber": 31943,
+      "videoId": "FnTR4v5ToOU",
+      "id": "824f370a-51b2-555b-9101-48448a2648f3",
+      "youtubeUrl": "https://www.youtube.com/watch?v=FnTR4v5ToOU",
+      "title": "형(兄)",
+      "sourceTitle": "형(兄)",
+      "singer": "노라조",
+      "writers": [
+        "이영준",
+        "이상준"
+      ],
+      "tags": [
+        "이영준",
+        "이상준",
+        "노라조",
+        "형兄"
+      ],
+      "aliases": [
+        {
+          "kind": "punctuation",
+          "name": "형兄",
+          "url": null,
+          "quote": "형(兄)"
+        }
+      ],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 86; TJ no. 31943; 형(兄) — 노라조; lyricist: 이영준; composer: 이상준",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 86; TJ no. 31943; 형(兄) — 노라조; lyricist: 이영준; composer: 이상준",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=FnTR4v5ToOU",
+          "quote": "[Official Audio] 노라조 - 형 (兄) — OGAM Entertainment. 발라드 #노라조 #형 Artist: 노라조 Track: 형 (兄) Album: 환골탈태 (換骨奪胎) Release Date: 2010-04-20 【 OGAM ...",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/FnTR4v5ToOU.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 258.71633333333335,
+        "byteLength": 1552352,
+        "sha256": "f57805ea723196ccaa09ac542106ed7c789b338e9aaf0d6c2f503541fb85314a"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 87,
+      "rank": 87,
+      "tjNumber": 34683,
+      "videoId": "",
+      "id": "701dd9fd-c3a5-5147-87c8-25376f70e29e",
+      "youtubeUrl": "",
+      "title": "흰수염고래",
+      "sourceTitle": "흰수염고래",
+      "singer": "윤도현밴드",
+      "writers": [
+        "윤도현",
+        "허준"
+      ],
+      "tags": [
+        "윤도현",
+        "허준",
+        "윤도현밴드"
+      ],
+      "aliases": [],
+      "reviewRequired": true,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 87; TJ no. 34683; 흰수염고래 — 윤도현밴드; lyricist: 윤도현; composer: 윤도현,허준",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 87; TJ no. 34683; 흰수염고래 — 윤도현밴드; lyricist: 윤도현; composer: 윤도현,허준",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "failed",
+        "reason": "Search results were lyric/fan reposts or a later remake by another singer; no official YB full-length original upload was verified.",
+        "failureCode": "SOURCE_UNVERIFIED"
+      },
+      "reviewReasons": [
+        "audio_source_missing"
+      ]
+    },
+    {
+      "index": 88,
+      "rank": 88,
+      "tjNumber": 10842,
+      "videoId": "",
+      "id": "d94a6f30-dfc3-500e-a13e-b02db0cfb62c",
+      "youtubeUrl": "",
+      "title": "희재(국화꽃향기OST)",
+      "sourceTitle": "희재(국화꽃향기OST)",
+      "singer": "성시경",
+      "writers": [
+        "양재선",
+        "MGR"
+      ],
+      "tags": [
+        "양재선",
+        "MGR",
+        "성시경",
+        "희재국화꽃향기OST",
+        "희재"
+      ],
+      "aliases": [
+        {
+          "kind": "punctuation",
+          "name": "희재국화꽃향기OST",
+          "url": null,
+          "quote": "희재(국화꽃향기OST)"
+        },
+        {
+          "kind": "title",
+          "name": "희재",
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 88; TJ no. 10842; 희재(국화꽃향기OST) — 성시경; lyricist: 양재선; composer: MGR"
+        }
+      ],
+      "reviewRequired": true,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 88; TJ no. 10842; 희재(국화꽃향기OST) — 성시경; lyricist: 양재선; composer: MGR",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 88; TJ no. 10842; 희재(국화꽃향기OST) — 성시경; lyricist: 양재선; composer: MGR",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "failed",
+        "reason": "Search results were fan lyric videos, unrelated covers, and karaoke/MR uploads; no official or label-attributed Sung Si Kyung original upload was verified.",
+        "failureCode": "SOURCE_UNVERIFIED"
+      },
+      "reviewReasons": [
+        "audio_source_missing"
+      ]
+    },
+    {
+      "index": 89,
+      "rank": 89,
+      "tjNumber": 43770,
+      "videoId": "xL_cd1DJan8",
+      "id": "c2c27048-62cc-53e4-a4bc-9a92a9ca935e",
+      "youtubeUrl": "https://www.youtube.com/watch?v=xL_cd1DJan8",
+      "title": "나는 반딧불",
+      "sourceTitle": "나는 반딧불",
+      "singer": "황가람",
+      "writers": [
+        "정중식"
+      ],
+      "tags": [
+        "정중식",
+        "황가람"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 89; TJ no. 43770; 나는 반딧불 — 황가람; lyricist: 정중식; composer: 정중식",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 89; TJ no. 43770; 나는 반딧불 — 황가람; lyricist: 정중식; composer: 정중식",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=xL_cd1DJan8",
+          "quote": "[Official Audio] 황가람(Hwang Karam) - 나는 반딧불 —  더블엑스엔터테인먼트 xxentertainment. 나는 내가 빛나는 별인 줄 알았어요 한 번도 의심한 적 없었죠 몰랐어요 난 내가 벌레라는 것을 그래도 괜찮아 난 눈부시니까 하늘에서 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/xL_cd1DJan8.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 215.43014583333334,
+        "byteLength": 1319176,
+        "sha256": "6a5cc5d8d8d708a92961098532d4dae90f7831d2bee5099b812c1197fe140663"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 90,
+      "rank": 90,
+      "tjNumber": 16468,
+      "videoId": "u2ecJcG4Ps0",
+      "id": "d45332aa-2fca-51a7-a600-0c7afa82a2ac",
+      "youtubeUrl": "https://www.youtube.com/watch?v=u2ecJcG4Ps0",
+      "title": "까만안경",
+      "sourceTitle": "까만안경",
+      "singer": "이루(Feat.Daylight)",
+      "writers": [
+        "윤명선"
+      ],
+      "tags": [
+        "윤명선",
+        "이루(Feat.Daylight)"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 90; TJ no. 16468; 까만안경 — 이루(Feat.Daylight); lyricist: 윤명선; composer: 윤명선",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 90; TJ no. 16468; 까만안경 — 이루(Feat.Daylight); lyricist: 윤명선; composer: 윤명선",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=u2ecJcG4Ps0",
+          "quote": "이루 (Eru) - 까만안경 — LROCK MUSIC 엘락뮤직. 이루 (Eru) - 까만안경 #이루 #eru #까만안경 #발라드 #ballad.",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/u2ecJcG4Ps0.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 227.3768125,
+        "byteLength": 1391244,
+        "sha256": "c24a0111e059604ca7410080a781caeb080b4be9fbc4b64b703d0c2f60ead4d2"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 91,
+      "rank": 91,
+      "tjNumber": 97017,
+      "videoId": "v6_GwXU1lkg",
+      "id": "b55122d2-4059-5c2b-ac52-708c2fda9328",
+      "youtubeUrl": "https://www.youtube.com/watch?v=v6_GwXU1lkg",
+      "title": "그날처럼",
+      "sourceTitle": "그날처럼",
+      "singer": "장덕철",
+      "writers": [
+        "덕인",
+        "장중혁"
+      ],
+      "tags": [
+        "덕인",
+        "장중혁",
+        "장덕철"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 91; TJ no. 97017; 그날처럼 — 장덕철; lyricist: 덕인; composer: 덕인,장중혁",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 91; TJ no. 97017; 그날처럼 — 장덕철; lyricist: 덕인; composer: 덕인,장중혁",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=v6_GwXU1lkg",
+          "quote": "[MV] JANG DEOK CHEOL(장덕철) _ Good old days(그날처럼) — 1theK (원더케이). [MV] JANG DEOK CHEOL(장덕철) _ Good old days(그날처럼) *English subtitles are now available. (Please click on 'CC' button or ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/v6_GwXU1lkg.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 246.68433333333334,
+        "byteLength": 1509763,
+        "sha256": "994dd645c5f1972578748c9368593acbb00a6f73df14a72f6cb823aaefc28ec9"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 92,
+      "rank": 92,
+      "tjNumber": 3699,
+      "videoId": "KhZ-_b_Sy-w",
+      "id": "f15c5321-e027-5480-8b4d-2a6f94eb81cf",
+      "youtubeUrl": "https://www.youtube.com/watch?v=KhZ-_b_Sy-w",
+      "title": "버스 안에서",
+      "sourceTitle": "버스 안에서",
+      "singer": "자자",
+      "writers": [
+        "강원석"
+      ],
+      "tags": [
+        "강원석",
+        "자자"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 92; TJ no. 3699; 버스 안에서 — 자자; lyricist: 강원석; composer: 강원석",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 92; TJ no. 3699; 버스 안에서 — 자자; lyricist: 강원석; composer: 강원석",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=KhZ-_b_Sy-w",
+          "quote": "버스안에서 — DJ DOC - Topic. Provided to YouTube by Recording Industry Association of Korea 버스안에서 · 자자 S.M.K 첫번째(올여름 가까이 두고 사귀어야할 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/KhZ-_b_Sy-w.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 193.07366666666667,
+        "byteLength": 1169659,
+        "sha256": "71cb0ed49351ee816348d161a5a5893e3501aeb2e9e1f89790a6e096d64cfea5"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 93,
+      "rank": 93,
+      "tjNumber": 8890,
+      "videoId": "GiKvLl1V6mY",
+      "id": "863ae312-f162-5633-9ec4-910aa1fb4ce0",
+      "youtubeUrl": "https://www.youtube.com/watch?v=GiKvLl1V6mY",
+      "title": "너를 위해",
+      "sourceTitle": "너를 위해",
+      "singer": "임재범",
+      "writers": [
+        "채정은",
+        "신재홍"
+      ],
+      "tags": [
+        "채정은",
+        "신재홍",
+        "임재범"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 93; TJ no. 8890; 너를 위해 — 임재범; lyricist: 채정은; composer: 신재홍",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 93; TJ no. 8890; 너를 위해 — 임재범; lyricist: 채정은; composer: 신재홍",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=GiKvLl1V6mY",
+          "quote": "너를 위해 — 임재범 공식채널 Yimjaebeum Official. Provided to YouTube by OGAM 너를 위해 · Lim Jae Bum Memories ℗ 오감엔터테인먼트 Released on: 2000-11-09 Auto-generated ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/GiKvLl1V6mY.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 247.18033333333332,
+        "byteLength": 1509117,
+        "sha256": "8fe7bd7a7c2559ec74138f3dd223b275113abb19495e9076d5771bc7585cd84f"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 94,
+      "rank": 94,
+      "tjNumber": 753,
+      "videoId": "M9xf145HRTs",
+      "id": "62451c3c-f9f7-5d9b-a21b-e772e192fd03",
+      "youtubeUrl": "https://www.youtube.com/watch?v=M9xf145HRTs",
+      "title": "숙녀에게",
+      "sourceTitle": "숙녀에게",
+      "singer": "변진섭",
+      "writers": [
+        "박주연",
+        "하광훈"
+      ],
+      "tags": [
+        "박주연",
+        "하광훈",
+        "변진섭"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 94; TJ no. 753; 숙녀에게 — 변진섭; lyricist: 박주연 ; composer: 하광훈 ",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 94; TJ no. 753; 숙녀에게 — 변진섭; lyricist: 박주연 ; composer: 하광훈 ",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=M9xf145HRTs",
+          "quote": "숙녀에게 — Byeon Jin Seob - Topic. Provided to YouTube by Recording Industry Association of Korea 숙녀에게 · Byeon Jin Seob · 하광훈 · 박주연 변진섭 The Golden ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/M9xf145HRTs.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 226.67366666666666,
+        "byteLength": 1377097,
+        "sha256": "10758eb01e8bec2896026a6a2522696c1d97e4923e591a256934a94e9d07abee"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 95,
+      "rank": 95,
+      "tjNumber": 46165,
+      "videoId": "5iSlfF8TQ9k",
+      "id": "e1c50dc0-7f15-5d69-b1bc-461cf33eb47a",
+      "youtubeUrl": "https://www.youtube.com/watch?v=5iSlfF8TQ9k",
+      "title": "한숨",
+      "sourceTitle": "한숨",
+      "singer": "이하이",
+      "writers": [
+        "김종현",
+        "위프리키2"
+      ],
+      "tags": [
+        "김종현",
+        "위프리키2",
+        "이하이",
+        "BREATHE"
+      ],
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "BREATHE",
+          "url": "https://www.youtube.com/watch?v=5iSlfF8TQ9k",
+          "quote": "LEE HI - '한숨 (BREATHE)' M/V"
+        }
+      ],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 95; TJ no. 46165; 한숨 — 이하이; lyricist: 김종현; composer: 김종현,위프리키2",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 95; TJ no. 46165; 한숨 — 이하이; lyricist: 김종현; composer: 김종현,위프리키2",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=5iSlfF8TQ9k",
+          "quote": "LEE HI - '한숨 (BREATHE)' M/V — OfficialLEEHI. TVcast로 보기 : http://tvcast.naver.com/v/779433 Download on iTunes @ http://smarturl.it/LEEHI_SEOULITE_HALF Available on ...",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/5iSlfF8TQ9k.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 294.43604166666665,
+        "byteLength": 1806897,
+        "sha256": "dd06a085db27305d56360d3a6a13d0a8f08858c16ce87992ccd4b411d443f0d5"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 96,
+      "rank": 96,
+      "tjNumber": 14828,
+      "videoId": "SiCbj3z3KK4",
+      "id": "32703215-e581-5d52-a195-1e4d7c966a60",
+      "youtubeUrl": "https://www.youtube.com/watch?v=SiCbj3z3KK4",
+      "title": "나에게로 떠나는 여행",
+      "sourceTitle": "나에게로 떠나는 여행",
+      "singer": "버즈",
+      "writers": [
+        "한경혜",
+        "고석영"
+      ],
+      "tags": [
+        "한경혜",
+        "고석영",
+        "버즈"
+      ],
+      "aliases": [],
+      "reviewRequired": true,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 96; TJ no. 14828; 나에게로 떠나는 여행 — 버즈; lyricist: 한경혜; composer: 고석영",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 96; TJ no. 14828; 나에게로 떠나는 여행 — 버즈; lyricist: 한경혜; composer: 고석영",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=SiCbj3z3KK4",
+          "quote": "[이슬라이브] 버즈 - 나에게로 떠나는 여행 — 딩고 뮤직 / dingo music. 안녕하세요 Dingo Music(딩고 뮤직)  입니다.\n\n이번 영상은 버즈의 '나에게로 떠나는 여행' 이슬라이브!\n\n함께 들어볼까요?\n\n\n- Dingo ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "failed",
+        "reason": "Official Dingo original-singer live source is age-restricted; yt-dlp reports sign-in required and no alternate downloadable original source was verified.",
+        "failureCode": "AGE_RESTRICTED"
+      },
+      "reviewReasons": [
+        "audio_download_age_restricted"
+      ]
+    },
+    {
+      "index": 97,
+      "rank": 97,
+      "tjNumber": 76684,
+      "videoId": "RaTCjhIS4AY",
+      "id": "d09c0071-0951-5aa3-a2f8-6336143e5c8a",
+      "youtubeUrl": "https://www.youtube.com/watch?v=RaTCjhIS4AY",
+      "title": "봄 내음보다 너를",
+      "sourceTitle": "봄 내음보다 너를",
+      "singer": "김나영",
+      "writers": [
+        "김나영",
+        "김세진"
+      ],
+      "tags": [
+        "김나영",
+        "김세진"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 97; TJ no. 76684; 봄 내음보다 너를 — 김나영; lyricist: 김나영; composer: 김세진",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 97; TJ no. 76684; 봄 내음보다 너를 — 김나영; lyricist: 김나영; composer: 김세진",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=RaTCjhIS4AY",
+          "quote": "[MV] KimNaYoung(김나영) _ A Letter For You(봄 내음보다 너를) — 1theK (원더케이). [MV] KimNaYoung(김나영) _ A Letter For You(봄 내음보다 너를) K-POP Wonderland, 1theK K-POP의 모든 즐거움을 1theK(원더 ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/RaTCjhIS4AY.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 227.330375,
+        "byteLength": 1332780,
+        "sha256": "a32a49c47ff64fa2179858b234087445b6f5293502847aafb3c88894c1c7a6d9"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 98,
+      "rank": 98,
+      "tjNumber": 34409,
+      "videoId": "yY7dRwJnJZ0",
+      "id": "78574b96-cde4-59e0-ac34-f9a8b63e8712",
+      "youtubeUrl": "https://www.youtube.com/watch?v=yY7dRwJnJZ0",
+      "title": "Hello",
+      "sourceTitle": "Hello",
+      "singer": "허각",
+      "writers": [
+        "최규성",
+        "라도"
+      ],
+      "tags": [
+        "최규성",
+        "라도",
+        "허각",
+        "헬로"
+      ],
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "헬로",
+          "url": "https://namu.wiki/w/Hello",
+          "quote": "Hello - 허각의 미니 1집 타이틀곡; 한국어 외래어 표기법에 따르면 헬로가 공식적인 표기다."
+        }
+      ],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 98; TJ no. 34409; Hello — 허각; lyricist: 최규성,라도; composer: 최규성,라도",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 98; TJ no. 34409; Hello — 허각; lyricist: 최규성,라도; composer: 최규성,라도",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=yY7dRwJnJZ0",
+          "quote": "[MV] HuhGak(허각) _ Hello — 1theK (원더케이). [MV] HuhGak(허각) _ Hello *English subtitles are now available. :D (Please click on 'CC' button or activate 'Interactive Transcript' ...",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://namu.wiki/w/Hello",
+          "quote": "Hello - 허각의 미니 1집 타이틀곡; 한국어 외래어 표기법에 따르면 헬로가 공식적인 표기다.",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/yY7dRwJnJZ0.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 319.80383333333333,
+        "byteLength": 1960648,
+        "sha256": "01224852da4daeacc62ff3dfe7a578264737505013f900bf1bbcc6defbd1ec8d"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 99,
+      "rank": 99,
+      "tjNumber": 45676,
+      "videoId": "aLX3b3j6z3g",
+      "id": "a78ddede-2c28-573b-85da-d316edc996bd",
+      "youtubeUrl": "https://www.youtube.com/watch?v=aLX3b3j6z3g",
+      "title": "소녀(응답하라1988 OST)",
+      "sourceTitle": "소녀(응답하라1988 OST)",
+      "singer": "오혁",
+      "writers": [
+        "이영훈"
+      ],
+      "tags": [
+        "이영훈",
+        "오혁",
+        "A Little Girl",
+        "소녀응답하라1988 OST",
+        "소녀"
+      ],
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "A Little Girl",
+          "url": "https://www.youtube.com/watch?v=aLX3b3j6z3g",
+          "quote": "A Little Girl"
+        },
+        {
+          "kind": "punctuation",
+          "name": "소녀응답하라1988 OST",
+          "url": null,
+          "quote": "소녀(응답하라1988 OST)"
+        },
+        {
+          "kind": "title",
+          "name": "소녀",
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 99; TJ no. 45676; 소녀(응답하라1988 OST) — 오혁; lyricist: 이영훈; composer: 이영훈"
+        }
+      ],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 99; TJ no. 45676; 소녀(응답하라1988 OST) — 오혁; lyricist: 이영훈; composer: 이영훈",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 99; TJ no. 45676; 소녀(응답하라1988 OST) — 오혁; lyricist: 이영훈; composer: 이영훈",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=aLX3b3j6z3g",
+          "quote": "A Little Girl — OHHYUK. Provided to YouTube by Genie Music Corporation A Little Girl · OHHYUK Reply 1988 Director's Cut (Original Television ...",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/aLX3b3j6z3g.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 226.35802083333334,
+        "byteLength": 1385252,
+        "sha256": "d572d103bc885d42b2e893e6b720bc7f88da44b29893964f868fc6086459d62a"
+      },
+      "reviewReasons": []
+    },
+    {
+      "index": 100,
+      "rank": 100,
+      "tjNumber": 76385,
+      "videoId": "_iP6_RAd9zY",
+      "id": "b070a29a-27dc-5ec6-b75c-db8525ac62ff",
+      "youtubeUrl": "https://www.youtube.com/watch?v=_iP6_RAd9zY",
+      "title": "추억은 만남보다 이별에 남아",
+      "sourceTitle": "추억은 만남보다 이별에 남아",
+      "singer": "정동하",
+      "writers": [
+        "문성욱",
+        "방민규"
+      ],
+      "tags": [
+        "문성욱",
+        "방민규",
+        "정동하"
+      ],
+      "aliases": [],
+      "reviewRequired": false,
+      "evidence": [
+        {
+          "url": "https://www.tjmedia.com/chart/top100",
+          "quote": "rank 100; TJ no. 76385; 추억은 만남보다 이별에 남아 — 정동하; lyricist: 문성욱; composer: 문성욱,방민규",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
+          "quote": "rank 100; TJ no. 76385; 추억은 만남보다 이별에 남아 — 정동하; lyricist: 문성욱; composer: 문성욱,방민규",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=_iP6_RAd9zY",
+          "quote": "정동하 - 추억은 만남보다 이별에 남아 | 가사 — SHINGAM - 신감. 정동하 - 추억은 만남보다 이별에 남아 | 가사.",
+          "kind": "search_snippet",
+          "retrievedEvidenceMatched": true
+        }
+      ],
+      "audio": {
+        "status": "ready",
+        "path": "audio/_iP6_RAd9zY.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 267.0132708333333,
+        "byteLength": 1627473,
+        "sha256": "87d20e2feee18bca10779a06b4a8087143390d53a48b019d8dc94b222526264f"
+      },
+      "reviewReasons": []
+    }
+  ],
+  "punctuationTags": {
+    "changed": 24,
+    "limitedRanks": [
+      25,
+      80
+    ]
+  }
+}

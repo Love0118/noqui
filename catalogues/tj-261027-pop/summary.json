@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "playlistId": "tj-261027-pop",
+  "playlistTitle": "TJ인기차트-261027팝송",
+  "sourceDate": "2026-10-27",
+  "chartPeriod": "2026-10-01~2026-10-27",
+  "chartPeriodVerified": true,
+  "chartEntries": 100,
+  "rankRange": "1-100",
+  "reviewRequired": 4,
+  "reviewed": 96,
+  "audioReady": 98,
+  "audioFailed": 2,
+  "playable": 96,
+  "audioFormat": "Ogg Opus, stereo, nominal 48 kbps, full length",
+  "audioBytes": 140756001,
+  "titleAliases": 5,
+  "singerAliases": 11,
+  "writerPlaceholderHandling": "TJ raw credits are retained separately; “외 N명” is absent from canonical writers and answer tags.",
+  "reviewItems": [
+    {
+      "rank": 25,
+      "tjNumber": "21776",
+      "title": "Love",
+      "reason": [
+        "Original studio recording remains unresolved: exact-title and artist/Topic searches found only the artist channel’s alternate rendition, unrelated unofficial uploads, and live or karaoke versions. No substitute was used."
+      ]
+    },
+    {
+      "rank": 30,
+      "tjNumber": "23090",
+      "title": "Believer",
+      "reason": [
+        "TJ’s raw writer credit represents seven credited names, while the independently retrieved full-songwriter source lists eight. Retained the full sourced list and raw chart credit separately; author-count discrepancy still needs reconciliation."
+      ]
+    },
+    {
+      "rank": 56,
+      "tjNumber": "23439",
+      "title": "Teeth",
+      "reason": [
+        "TJ’s raw credit names Louis Bell and indicates six additional writers, while the full-songwriter source lists a different 11-name set and omits Louis Bell. Retained both records separately; credit-set discrepancy still needs reconciliation."
+      ]
+    },
+    {
+      "rank": 78,
+      "tjNumber": "23035",
+      "title": "Too Good To Say Goodbye",
+      "reason": [
+        "Original studio recording remains unresolved: exact-title Bruno Mars searches surfaced no Bruno Mars official/Topic upload; a similarly titled Topic result belongs to Heaven is Shining, and other results were reposts, lyrics, or karaoke. No substitute was used."
+      ]
+    }
+  ],
+  "audioFailures": [
+    {
+      "rank": 25,
+      "title": "Love",
+      "failureCode": "SOURCE_UNVERIFIED",
+      "reason": "Original studio recording was not found on a credible artist or label channel; available results were an unofficial upload, alternate version, and live performance."
+    },
+    {
+      "rank": 78,
+      "title": "Too Good To Say Goodbye",
+      "failureCode": "SOURCE_UNVERIFIED",
+      "reason": "Original studio recording was not found on a credible artist or label channel; available results were lyric and repost uploads."
+    }
+  ],
+  "validationCommand": "python tools/validate_playlist_catalogues.py --audio catalogues/tj-261027-pop/catalogue.json",
+  "validationResult": "passed: 100 entries, 96 reviewed, 98 downloaded, 96 playable"
+}

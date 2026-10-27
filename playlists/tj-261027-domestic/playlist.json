@@ -1,0 +1,1694 @@
+{
+  "schemaVersion": 1,
+  "id": "tj-261027-domestic",
+  "name": "TJ인기차트-261027국내",
+  "songs": [
+    {
+      "song": {
+        "id": "3df46bf9-d6ed-5501-9ed0-4ab766a72b8d",
+        "youtubeUrl": "https://www.youtube.com/watch?v=NbKH4iZqq1Y",
+        "title": "Drowning",
+        "tags": [
+          "WOODZ",
+          "네이슨(NATHAN)",
+          "HOHO",
+          "WOODZ(조승연)",
+          "드라우닝"
+        ]
+      },
+      "audio": {
+        "path": "audio/NbKH4iZqq1Y.ogg",
+        "sha256": "56b4f6bc6e69d4e823df23543287a1ffb4c61d7861976665c068e4f7372c83c2",
+        "byteLength": 1499812,
+        "durationMs": 244994
+      }
+    },
+    {
+      "song": {
+        "id": "a20ad67f-80d6-533e-b3ff-e536053c416d",
+        "youtubeUrl": "https://www.youtube.com/watch?v=TXvU0ZdfhGY",
+        "title": "응급실(쾌걸춘향OST)",
+        "tags": [
+          "신동우",
+          "izi",
+          "응급실쾌걸춘향OST",
+          "응급실"
+        ]
+      },
+      "audio": {
+        "path": "audio/TXvU0ZdfhGY.ogg",
+        "sha256": "0d142dd9d6673be9d7373682eb5ea416028f15da80e82e3eacea3a3bb168a5c0",
+        "byteLength": 1372586,
+        "durationMs": 224045
+      }
+    },
+    {
+      "song": {
+        "id": "b6664bdc-67c5-5716-9b16-d0b48cbaa0d9",
+        "youtubeUrl": "https://www.youtube.com/watch?v=0RyGCQV2koM",
+        "title": "참 다행이야",
+        "tags": [
+          "이태건",
+          "김건우",
+          "SPAPA"
+        ]
+      },
+      "audio": {
+        "path": "audio/0RyGCQV2koM.ogg",
+        "sha256": "a501e30ea27063d9aa49facdfcb8bc5cedee820433a9502ec2995dd584db2ebb",
+        "byteLength": 1851371,
+        "durationMs": 302110
+      }
+    },
+    {
+      "song": {
+        "id": "9a70d68c-3177-5632-9d4c-a3d808c78448",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Jc2ObCSe52w",
+        "title": "가을 타나 봐",
+        "tags": [
+          "류재현",
+          "민연재",
+          "바이브"
+        ]
+      },
+      "audio": {
+        "path": "audio/Jc2ObCSe52w.ogg",
+        "sha256": "18c7f32af76ce661284bc5c03fefb6ded1df55a8f13a929610c872170cee9208",
+        "byteLength": 1422561,
+        "durationMs": 235063
+      }
+    },
+    {
+      "song": {
+        "id": "21ac9b71-7ee7-5106-bf98-98597289beab",
+        "youtubeUrl": "https://www.youtube.com/watch?v=wOxVJB6lHcw",
+        "title": "천상연(웹툰 '선녀외전' X 이창섭(LEE CHANGSUB))",
+        "tags": [
+          "유해준",
+          "이창섭",
+          "천상연웹툰 선녀외전 X 이창섭LEE CHANGSUB",
+          "천상연"
+        ]
+      },
+      "audio": {
+        "path": "audio/wOxVJB6lHcw.ogg",
+        "sha256": "3e63caac922de933de176f7e656143b6fe671d9ac3346c2a8f4e49db2fc5cd1a",
+        "byteLength": 1653260,
+        "durationMs": 271193
+      }
+    },
+    {
+      "song": {
+        "id": "0b5f711f-c7bd-5d5c-a804-f5a7d709f5f8",
+        "youtubeUrl": "https://www.youtube.com/watch?v=b1kQvZhQ6_M",
+        "title": "좋니",
+        "tags": [
+          "윤종신",
+          "POSTINO",
+          "Like it"
+        ]
+      },
+      "audio": {
+        "path": "audio/b1kQvZhQ6_M.ogg",
+        "sha256": "eb215400437891789292b5dc90a8bce7d4da09d7912626eac8122ebe2dc92078",
+        "byteLength": 2011860,
+        "durationMs": 328349
+      }
+    },
+    {
+      "song": {
+        "id": "01d9004c-29bf-51c5-bd09-bd91e117e73f",
+        "youtubeUrl": "https://www.youtube.com/watch?v=7mDDM0eBWR0",
+        "title": "퇴사할게여",
+        "tags": [
+          "소연",
+          "POP TIME",
+          "DAILY",
+          "LIKEY",
+          "익스프레션",
+          "익스",
+          "소연(SOYEON)(Narr.기안84)"
+        ]
+      },
+      "audio": {
+        "path": "audio/7mDDM0eBWR0.ogg",
+        "sha256": "92482c878ebdb67e94b40a5378c573cfa41bf5dd36f58cca5d2f6fb0b64331cc",
+        "byteLength": 1287114,
+        "durationMs": 211355
+      }
+    },
+    {
+      "song": {
+        "id": "789db99a-a752-5ec6-bcae-49d5528fa8d5",
+        "youtubeUrl": "https://www.youtube.com/watch?v=va5rf20Un24",
+        "title": "어디에도",
+        "tags": [
+          "이수",
+          "송양하",
+          "김재현",
+          "MC THE MAX"
+        ]
+      },
+      "audio": {
+        "path": "audio/va5rf20Un24.ogg",
+        "sha256": "2cc89b57810f5eca4a894d80af06b076549b3e27233d470a47b868dbe42ab1a8",
+        "byteLength": 2103723,
+        "durationMs": 345566
+      }
+    },
+    {
+      "song": {
+        "id": "9b3365c0-c465-52e6-83cd-8161f09643c0",
+        "youtubeUrl": "https://www.youtube.com/watch?v=CtFoQ7W9xIg",
+        "title": "말리꽃(비천무OST)",
+        "tags": [
+          "이근상",
+          "박준배",
+          "이승철",
+          "Jasmine",
+          "말리꽃비천무OST",
+          "말리꽃"
+        ]
+      },
+      "audio": {
+        "path": "audio/CtFoQ7W9xIg.ogg",
+        "sha256": "5ba6255ac15f3a05155b68b97bf0f1f1aefc2de0df65961289280d6066dcd4a4",
+        "byteLength": 1771164,
+        "durationMs": 290535
+      }
+    },
+    {
+      "song": {
+        "id": "5c22ee84-9948-56fb-8bb0-933868bf087f",
+        "youtubeUrl": "https://www.youtube.com/watch?v=mTonMiKVZRw",
+        "title": "좋은 밤 좋은 꿈",
+        "tags": [
+          "NERD CONNECTION(서영주)",
+          "NERD CONNECTION (박재현)",
+          "NERD CONNECTION (최승원)",
+          "NERD CONNECTION (신연태)",
+          "너드커넥션(Nerd Connection)"
+        ]
+      },
+      "audio": {
+        "path": "audio/mTonMiKVZRw.ogg",
+        "sha256": "dc3fcb20db91fe7a8f4f10c3b3118f0abf01e71a5e4108aa946ae239895e360f",
+        "byteLength": 1629893,
+        "durationMs": 266015
+      }
+    },
+    {
+      "song": {
+        "id": "717ed6ba-3393-54f3-b205-6be55d7c5d0d",
+        "youtubeUrl": "https://www.youtube.com/watch?v=z3s59YDjeBI",
+        "title": "남자를 몰라",
+        "tags": [
+          "김진아",
+          "이상준",
+          "버즈"
+        ]
+      },
+      "audio": {
+        "path": "audio/z3s59YDjeBI.ogg",
+        "sha256": "78f971950f96c6e2f4b8ee28eb3420eef7d63bb55ff530261327988268370963",
+        "byteLength": 1551190,
+        "durationMs": 253114
+      }
+    },
+    {
+      "song": {
+        "id": "e00c7106-d936-59fc-b036-282bf3c017b8",
+        "youtubeUrl": "https://www.youtube.com/watch?v=1qzbXDsUd2E",
+        "title": "너의 모든 순간(별에서온그대OST)",
+        "tags": [
+          "심현보",
+          "성시경",
+          "너의 모든 순간별에서온그대OST",
+          "너의 모든 순간"
+        ]
+      },
+      "audio": {
+        "path": "audio/1qzbXDsUd2E.ogg",
+        "sha256": "41a758e0033ae6faf15149af1a57aa3467b5583ee0a0f29b9a0d9c118356b686",
+        "byteLength": 1490802,
+        "durationMs": 243863
+      }
+    },
+    {
+      "song": {
+        "id": "02f20761-588a-56b3-8b7a-cad3ced8f232",
+        "youtubeUrl": "https://www.youtube.com/watch?v=3knRgHGj7ug",
+        "title": "이미 슬픈 사랑",
+        "tags": [
+          "이재혁",
+          "야다"
+        ]
+      },
+      "audio": {
+        "path": "audio/3knRgHGj7ug.ogg",
+        "sha256": "0406e94c4f8fabe51746596e0a2a4f7c797a2b240df05dc9e1b5c6a38e792e2a",
+        "byteLength": 1478066,
+        "durationMs": 244293
+      }
+    },
+    {
+      "song": {
+        "id": "aa323006-fbfc-52fc-805c-f0f7f06fa535",
+        "youtubeUrl": "https://www.youtube.com/watch?v=mwt-TpwRhvI",
+        "title": "애상",
+        "tags": [
+          "이승호",
+          "윤일상",
+          "쿨"
+        ]
+      },
+      "audio": {
+        "path": "audio/mwt-TpwRhvI.ogg",
+        "sha256": "2d6570a1cf11ab4f8ff241b9c3435359f7b8f22f0f3a71361600e8e0326682d0",
+        "byteLength": 1284848,
+        "durationMs": 209718
+      }
+    },
+    {
+      "song": {
+        "id": "1bbfe92b-09bd-59f3-a730-4e627d5d12c4",
+        "youtubeUrl": "https://www.youtube.com/watch?v=-g0MOHe-Lik",
+        "title": "...사랑했잖아...(2024)",
+        "tags": [
+          "린",
+          "김세진",
+          "고경표",
+          "사랑했잖아2024",
+          "...사랑했잖아..."
+        ]
+      },
+      "audio": {
+        "path": "audio/-g0MOHe-Lik.ogg",
+        "sha256": "2603ca7ff506870b5e96e7c43fc75bfab4acfed1c801df5e7c5e112416ecc875",
+        "byteLength": 1540139,
+        "durationMs": 251816
+      }
+    },
+    {
+      "song": {
+        "id": "39a2f923-9be0-5993-a556-d8d1e205ec8e",
+        "youtubeUrl": "https://www.youtube.com/watch?v=DPT0KDphC5Y",
+        "title": "가질 수 없는 너",
+        "tags": [
+          "강은경",
+          "정시로",
+          "뱅크"
+        ]
+      },
+      "audio": {
+        "path": "audio/DPT0KDphC5Y.ogg",
+        "sha256": "0224662c818fd4a737029e792f71f09b1ef70ed41f3b4d8bc4ff58b0b47ec818",
+        "byteLength": 1713926,
+        "durationMs": 282122
+      }
+    },
+    {
+      "song": {
+        "id": "452a925b-a6ee-5d06-a385-4069c458e015",
+        "youtubeUrl": "https://www.youtube.com/watch?v=fuCmW_1_wxs",
+        "title": "사랑의 바보",
+        "tags": [
+          "SHOU UESUGI",
+          "MIHO NAKAYAMA",
+          "TETSURO ODA",
+          "The Nuts"
+        ]
+      },
+      "audio": {
+        "path": "audio/fuCmW_1_wxs.ogg",
+        "sha256": "025f800fae258e48f7cb12f0dc94f55850bc19d66dce0d05690b8067ec30fada",
+        "byteLength": 1603115,
+        "durationMs": 261905
+      }
+    },
+    {
+      "song": {
+        "id": "5713ec8c-ccdd-5733-8029-6decb264ef06",
+        "youtubeUrl": "https://www.youtube.com/watch?v=2FhBGUkI4vs",
+        "title": "첫눈처럼 너에게 가겠다(도깨비OST)",
+        "tags": [
+          "이미나",
+          "로코",
+          "코난",
+          "에일리",
+          "첫눈처럼 너에게 가겠다도깨비OST",
+          "첫눈처럼 너에게 가겠다"
+        ]
+      },
+      "audio": {
+        "path": "audio/2FhBGUkI4vs.ogg",
+        "sha256": "6b56de102e3f3e4acba98a5c855ffd578e33599227bf5e80c168e7c94657d07a",
+        "byteLength": 1407233,
+        "durationMs": 230140
+      }
+    },
+    {
+      "song": {
+        "id": "61d69088-30c6-5fc0-8ad0-8d921d4c7a22",
+        "youtubeUrl": "https://www.youtube.com/watch?v=U7EMw5ulPZ4",
+        "title": "가을 안부",
+        "tags": [
+          "강은경",
+          "LOHI 2",
+          "한상원",
+          "이진성",
+          "먼데이키즈"
+        ]
+      },
+      "audio": {
+        "path": "audio/U7EMw5ulPZ4.ogg",
+        "sha256": "ef2a8a0b780ea8dee4eaed9706f854e145523273c130455c3d21d2145ef5b9ba",
+        "byteLength": 1843579,
+        "durationMs": 300938
+      }
+    },
+    {
+      "song": {
+        "id": "39e67d43-73b4-570c-a151-c591373b9c5f",
+        "youtubeUrl": "https://www.youtube.com/watch?v=pNi9PjmbUrI",
+        "title": "입춘",
+        "tags": [
+          "한로로",
+          "Let Me Love My Youth"
+        ]
+      },
+      "audio": {
+        "path": "audio/pNi9PjmbUrI.ogg",
+        "sha256": "9310fb0f37c96a496361960f2b87261bec91be0cdf3f22e3eb97febcea2cc2a6",
+        "byteLength": 1511222,
+        "durationMs": 248461
+      }
+    },
+    {
+      "song": {
+        "id": "0bbccc9c-70b4-510e-b702-2ebc8ef7ccd1",
+        "youtubeUrl": "https://www.youtube.com/watch?v=dZ508GjFhvA",
+        "title": "My Love(And)",
+        "tags": [
+          "이재경",
+          "이상준",
+          "버즈",
+          "My LoveAnd",
+          "My Love"
+        ]
+      },
+      "audio": {
+        "path": "audio/dZ508GjFhvA.ogg",
+        "sha256": "2366921ccf5dd7f174d126ac4196bf0409e0ad430bb8bb5fbe111c128bd3ec14",
+        "byteLength": 1487390,
+        "durationMs": 242818
+      }
+    },
+    {
+      "song": {
+        "id": "42d67373-fcc1-5fc3-bd8a-103807080615",
+        "youtubeUrl": "https://www.youtube.com/watch?v=iFtDTa99HKI",
+        "title": "그대만 있다면(여름날우리 X 너드커넥션(Nerd Connection))",
+        "tags": [
+          "강현민",
+          "너드커넥션(Nerd Connection)",
+          "그대만 있다면"
+        ]
+      },
+      "audio": {
+        "path": "audio/iFtDTa99HKI.ogg",
+        "sha256": "bf0dd2a6766b96c58d8a93227a8893dca526f9d6b07a2ec4930b5dcbf29babeb",
+        "byteLength": 1532715,
+        "durationMs": 250562
+      }
+    },
+    {
+      "song": {
+        "id": "eae464a5-07f0-5ea4-95c0-b8e3de89f2d8",
+        "youtubeUrl": "https://www.youtube.com/watch?v=ZhI9tQP4Abw",
+        "title": "가시",
+        "tags": [
+          "임선아",
+          "윤우현",
+          "버즈"
+        ]
+      },
+      "audio": {
+        "path": "audio/ZhI9tQP4Abw.ogg",
+        "sha256": "36e4982ddf9f91459841c8743c32dbb4bce200b637902ed5068e6a01eadf0a8b",
+        "byteLength": 1560328,
+        "durationMs": 254834
+      }
+    },
+    {
+      "song": {
+        "id": "b8f3a204-cbab-5bfb-bd59-eea112001061",
+        "youtubeUrl": "https://www.youtube.com/watch?v=7Zs7UM-EBLs",
+        "title": "사랑합니다",
+        "tags": [
+          "강은경",
+          "윤상",
+          "Tim"
+        ]
+      },
+      "audio": {
+        "path": "audio/7Zs7UM-EBLs.ogg",
+        "sha256": "527985d9707384300aa4850bf360ccc4df2f99135971ce9c285093186627e4c1",
+        "byteLength": 1399162,
+        "durationMs": 228954
+      }
+    },
+    {
+      "song": {
+        "id": "eadf5873-6db5-52ab-a079-c079603fd890",
+        "youtubeUrl": "https://www.youtube.com/watch?v=LMyH5WT7JEM",
+        "title": "오래된 노래",
+        "tags": [
+          "EGG 1",
+          "EGG 2",
+          "EGG 3",
+          "스탠딩에그"
+        ]
+      },
+      "audio": {
+        "path": "audio/LMyH5WT7JEM.ogg",
+        "sha256": "db8de56bc4da9ec0360fa388d6d91f699489b32ca09c175585d9cc65c5ab4c65",
+        "byteLength": 1670286,
+        "durationMs": 272749
+      }
+    },
+    {
+      "song": {
+        "id": "cb512cbb-e1b4-59e2-b99c-f083b4217e7e",
+        "youtubeUrl": "https://www.youtube.com/watch?v=ppjRIEgcXIY",
+        "title": "죽일 놈(Guilty)",
+        "tags": [
+          "최재호",
+          "김윤성",
+          "최동훈",
+          "다이나믹듀오",
+          "죽일 놈Guilty",
+          "죽일 놈"
+        ]
+      },
+      "audio": {
+        "path": "audio/ppjRIEgcXIY.ogg",
+        "sha256": "430bd61c80206a88f7efc3b97014d898809a5ab520f97f69ca9aa9752ed32e9c",
+        "byteLength": 1370975,
+        "durationMs": 223975
+      }
+    },
+    {
+      "song": {
+        "id": "72eeee74-0cb2-5e9f-8420-1236bbe2e576",
+        "youtubeUrl": "https://www.youtube.com/watch?v=ckJlE2G4LQ4",
+        "title": "심(心)",
+        "tags": [
+          "박준배",
+          "YARN",
+          "이근상",
+          "DK(디셈버)",
+          "Heart",
+          "심心"
+        ]
+      },
+      "audio": {
+        "path": "audio/ckJlE2G4LQ4.ogg",
+        "sha256": "ab5944e58324a008321f92c9499bf2c37d1089660c22292f3cf1bb4e08885264",
+        "byteLength": 1573999,
+        "durationMs": 257034
+      }
+    },
+    {
+      "song": {
+        "id": "cfe50d15-2559-549d-b8fe-cb777c18b0c9",
+        "youtubeUrl": "https://www.youtube.com/watch?v=JUsx0zuQSmo",
+        "title": "소주 한잔",
+        "tags": [
+          "임창정",
+          "이동원"
+        ]
+      },
+      "audio": {
+        "path": "audio/JUsx0zuQSmo.ogg",
+        "sha256": "4d34bd96958b7d8f0c05681f4a5bf72fcab37f9a651b8c23e4191cd99a659ea8",
+        "byteLength": 1665763,
+        "durationMs": 273260
+      }
+    },
+    {
+      "song": {
+        "id": "065a2715-1983-5e0d-a8c3-799447dce0bb",
+        "youtubeUrl": "https://www.youtube.com/watch?v=2rqAdWXmerc",
+        "title": "바다의 왕자",
+        "tags": [
+          "임용수",
+          "이주호",
+          "박명수"
+        ]
+      },
+      "audio": {
+        "path": "audio/2rqAdWXmerc.ogg",
+        "sha256": "2ad4716e2d0658f550d13c6c3725d6c5352d912c61a869b559bb9b3b308e8096",
+        "byteLength": 1493181,
+        "durationMs": 247497
+      }
+    },
+    {
+      "song": {
+        "id": "600e4840-2967-567e-b6ff-94eb46ba4ac0",
+        "youtubeUrl": "https://www.youtube.com/watch?v=8WYz-UEcLks",
+        "title": "거리에서",
+        "tags": [
+          "윤종신",
+          "이근호",
+          "성시경"
+        ]
+      },
+      "audio": {
+        "path": "audio/8WYz-UEcLks.ogg",
+        "sha256": "0af85caea4da8d1b724efa87204c084269cce92f0870e0040014aa8da0a73479",
+        "byteLength": 1695990,
+        "durationMs": 279622
+      }
+    },
+    {
+      "song": {
+        "id": "c1e71249-52f9-514b-84f3-8b580eb4ad52",
+        "youtubeUrl": "https://www.youtube.com/watch?v=qZlu2j2SiBA",
+        "title": "Pretty Girl",
+        "tags": [
+          "한재호",
+          "김승수",
+          "송수윤",
+          "RESCENE(리센느)"
+        ]
+      },
+      "audio": {
+        "path": "audio/qZlu2j2SiBA.ogg",
+        "sha256": "d0c42ab0f1fd73d4dc357ea35c56a534524d7861ac7427f365e04b4342c86024",
+        "byteLength": 1287447,
+        "durationMs": 213433
+      }
+    },
+    {
+      "song": {
+        "id": "2d7001c8-6e30-57f9-9868-df3d09c3e0a6",
+        "youtubeUrl": "https://www.youtube.com/watch?v=EYzgL19wj2g",
+        "title": "헤어지자 말해요",
+        "tags": [
+          "박재정",
+          "박현중"
+        ]
+      },
+      "audio": {
+        "path": "audio/EYzgL19wj2g.ogg",
+        "sha256": "429c1c6816a827df4b752eb217fcb07c5a76014dfe4ae98c3865c4115a849a6f",
+        "byteLength": 1599436,
+        "durationMs": 261011
+      }
+    },
+    {
+      "song": {
+        "id": "ed4fbd5c-5edb-5086-8f72-9b83fdb9ee55",
+        "youtubeUrl": "https://www.youtube.com/watch?v=_Ngk-DCHfD0",
+        "title": "0+0",
+        "tags": [
+          "한로로",
+          "RYO",
+          "STEVEN",
+          "00"
+        ]
+      },
+      "audio": {
+        "path": "audio/_Ngk-DCHfD0.ogg",
+        "sha256": "2056e8d3c6573d39fcc12173abb7dd9bc20fcc343455c5796bd254866d9fcf26",
+        "byteLength": 1176667,
+        "durationMs": 192593
+      }
+    },
+    {
+      "song": {
+        "id": "4eba7e95-66f0-5d6f-b54d-cbfcb9852f48",
+        "youtubeUrl": "https://www.youtube.com/watch?v=WYy2fROj7uU",
+        "title": "그대라는 사치",
+        "tags": [
+          "XEPY",
+          "라이머",
+          "CIEN",
+          "1MAD",
+          "MASTERKEY",
+          "한동근"
+        ]
+      },
+      "audio": {
+        "path": "audio/WYy2fROj7uU.ogg",
+        "sha256": "d3be2f8f6186e032e6dbe3957ca1b1311b27d6b96aa7441d9c74a4898faa3553",
+        "byteLength": 1819641,
+        "durationMs": 301321
+      }
+    },
+    {
+      "song": {
+        "id": "0ffe2bb5-996a-5ae4-9a4f-055df10f3354",
+        "youtubeUrl": "https://www.youtube.com/watch?v=3DOkxQ3HDXE",
+        "title": "아로하(슬기로운의사생활OST)",
+        "tags": [
+          "김태훈",
+          "위종수",
+          "조정석",
+          "Aloha",
+          "아로하슬기로운의사생활OST",
+          "아로하"
+        ]
+      },
+      "audio": {
+        "path": "audio/3DOkxQ3HDXE.ogg",
+        "sha256": "dbf97d068d89957eca821836d41c24c10e8b762c1c8602f66a33c0247f3bea46",
+        "byteLength": 1501264,
+        "durationMs": 250817
+      }
+    },
+    {
+      "song": {
+        "id": "7b0d283d-a625-559b-a582-86a8896aa86c",
+        "youtubeUrl": "https://www.youtube.com/watch?v=3Jb_K-8fDLA",
+        "title": "All For You(응답하라1997 OST)",
+        "tags": [
+          "정진환",
+          "김한범",
+          "서인국,정은지",
+          "All For You응답하라1997 OST",
+          "All For You"
+        ]
+      },
+      "audio": {
+        "path": "audio/3Jb_K-8fDLA.ogg",
+        "sha256": "7c5f3f681c0c165d562e09c1438c8ade767345b246c03160acf98bd978af13c1",
+        "byteLength": 1519932,
+        "durationMs": 248600
+      }
+    },
+    {
+      "song": {
+        "id": "0eeb8d81-ebaa-58d5-9012-59e71146a8c7",
+        "youtubeUrl": "https://www.youtube.com/watch?v=h0KIWaUEIgQ",
+        "title": "사랑하게 될 거야",
+        "tags": [
+          "한로로"
+        ]
+      },
+      "audio": {
+        "path": "audio/h0KIWaUEIgQ.ogg",
+        "sha256": "8f1e8a3fc517a4130b21a6a467ee54e98fc6e65e7ef2b1eac1e157dc65a566fe",
+        "byteLength": 1002354,
+        "durationMs": 166424
+      }
+    },
+    {
+      "song": {
+        "id": "5397afd1-751e-5f0b-ab4f-ffea3f2de34d",
+        "youtubeUrl": "https://www.youtube.com/watch?v=TABbjHLEwKE",
+        "title": "어제보다 슬픈 오늘",
+        "tags": [
+          "김창환",
+          "김건모",
+          "우디"
+        ]
+      },
+      "audio": {
+        "path": "audio/TABbjHLEwKE.ogg",
+        "sha256": "e2197af40f1a0846768ec338d2a0341c9f5964475fdcdf5c122e09c8d9ab5def",
+        "byteLength": 1446197,
+        "durationMs": 236082
+      }
+    },
+    {
+      "song": {
+        "id": "59a2458f-3d19-56f4-9f7e-918f4c050d33",
+        "youtubeUrl": "https://www.youtube.com/watch?v=8MAYpc7Tjt0",
+        "title": "포장마차",
+        "tags": [
+          "황인욱",
+          "전태익"
+        ]
+      },
+      "audio": {
+        "path": "audio/8MAYpc7Tjt0.ogg",
+        "sha256": "9d7271473af5d0219704cdaed403277dbc2f83e2a8f4f614bab24d2e1f05bb92",
+        "byteLength": 1432582,
+        "durationMs": 234169
+      }
+    },
+    {
+      "song": {
+        "id": "fe8d05b0-0046-5eef-a7c8-e7fe6179013e",
+        "youtubeUrl": "https://www.youtube.com/watch?v=9QpzvH3O4KI",
+        "title": "그런 사람 또 없습니다",
+        "tags": [
+          "강은경",
+          "조영수",
+          "이승철"
+        ]
+      },
+      "audio": {
+        "path": "audio/9QpzvH3O4KI.ogg",
+        "sha256": "2e82d794a2e17b5431e6dc0e1f5ab6395751eb2518a090d4ca72941f60a1ed7f",
+        "byteLength": 1381356,
+        "durationMs": 226327
+      }
+    },
+    {
+      "song": {
+        "id": "fda8acf2-d3be-5fa3-93c5-8d35dd338df0",
+        "youtubeUrl": "https://www.youtube.com/watch?v=8X51AVO41o8",
+        "title": "서울의 달",
+        "tags": [
+          "최준영",
+          "김건모"
+        ]
+      },
+      "audio": {
+        "path": "audio/8X51AVO41o8.ogg",
+        "sha256": "0c43d8e0849a8b8fd27bb0decf071fbdbb9b282c88523088210ea0136b884e68",
+        "byteLength": 1359111,
+        "durationMs": 223367
+      }
+    },
+    {
+      "song": {
+        "id": "5089635f-4063-5fe7-a33e-185c5a537fcb",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Ng2HAbFqnSg",
+        "title": "사랑한만큼",
+        "tags": [
+          "김영후",
+          "Tim",
+          "As Much As I Love You"
+        ]
+      },
+      "audio": {
+        "path": "audio/Ng2HAbFqnSg.ogg",
+        "sha256": "a5c779abff0f28259bce97244087dae7c87c1156331b7a12f47fb3b731756f23",
+        "byteLength": 1937212,
+        "durationMs": 316167
+      }
+    },
+    {
+      "song": {
+        "id": "30c067b7-4f42-5184-a59c-c700c23f36de",
+        "youtubeUrl": "https://www.youtube.com/watch?v=vEMX387gBG4",
+        "title": "당신을 위하여",
+        "tags": [
+          "Siha",
+          "더 크로스"
+        ]
+      },
+      "audio": {
+        "path": "audio/vEMX387gBG4.ogg",
+        "sha256": "66920e00cc8e835e5889bea83d615d17ab42bf597c80ec4de2f232ea53387ddb",
+        "byteLength": 1492314,
+        "durationMs": 243484
+      }
+    },
+    {
+      "song": {
+        "id": "6df20e07-7445-587f-a685-e63043e4034e",
+        "youtubeUrl": "https://www.youtube.com/watch?v=x59B0NTrgQI",
+        "title": "그런일은",
+        "tags": [
+          "윤사라",
+          "이현정",
+          "박화요비"
+        ]
+      },
+      "audio": {
+        "path": "audio/x59B0NTrgQI.ogg",
+        "sha256": "760fd3f2ff723a518965e4480aa138dbd33ea36ecff9eb3e86877c2d5b00c941",
+        "byteLength": 1614868,
+        "durationMs": 266317
+      }
+    },
+    {
+      "song": {
+        "id": "7a29be87-68c8-5bdb-a50e-c987e44febe0",
+        "youtubeUrl": "https://www.youtube.com/watch?v=VVO05mYGFY8",
+        "title": "만찬가",
+        "tags": [
+          "이스란",
+          "TUKI.",
+          "태연"
+        ]
+      },
+      "audio": {
+        "path": "audio/VVO05mYGFY8.ogg",
+        "sha256": "51a4b4a9bb8c7124da36206dc2d03ddc614329e18a8d383ad41faffd375b1e76",
+        "byteLength": 1341713,
+        "durationMs": 221177
+      }
+    },
+    {
+      "song": {
+        "id": "e91cc368-8df2-5d68-931a-0c7195461fc2",
+        "youtubeUrl": "https://www.youtube.com/watch?v=nuAiFzEkFZM",
+        "title": "여전히 아름다운지",
+        "tags": [
+          "유희열",
+          "토이"
+        ]
+      },
+      "audio": {
+        "path": "audio/nuAiFzEkFZM.ogg",
+        "sha256": "c20ece4356793e0f6f3e0313cba78d616b98dc819fa391afbbf8ec483b0561ce",
+        "byteLength": 1560529,
+        "durationMs": 255114
+      }
+    },
+    {
+      "song": {
+        "id": "28bea56b-8359-55bb-af61-f2c14a7d901d",
+        "youtubeUrl": "https://www.youtube.com/watch?v=7L3F9EEvidE",
+        "title": "너였다면(또오해영OST)",
+        "tags": [
+          "김미진",
+          "1601",
+          "1601A",
+          "정승환",
+          "너였다면또오해영OST",
+          "너였다면"
+        ]
+      },
+      "audio": {
+        "path": "audio/7L3F9EEvidE.ogg",
+        "sha256": "7562a1376dce75085a66a5fdaf7927e7c292cacbe3d09c7b7ec4bf7ddb353332",
+        "byteLength": 1673528,
+        "durationMs": 273352
+      }
+    },
+    {
+      "song": {
+        "id": "8d8eb6da-e6f0-5487-9f74-23cf877bba7d",
+        "youtubeUrl": "https://www.youtube.com/watch?v=QNt7KUUk_d8",
+        "title": "기다리다",
+        "tags": [
+          "심재희",
+          "윤하"
+        ]
+      },
+      "audio": {
+        "path": "audio/QNt7KUUk_d8.ogg",
+        "sha256": "dfdbb583f0c086897a7f08dad0b557b85be60e5366c5d7e84801bc5dad455921",
+        "byteLength": 1699571,
+        "durationMs": 277527
+      }
+    },
+    {
+      "song": {
+        "id": "adb07e99-71c9-5b4f-8b9c-8fa5cfee0a68",
+        "youtubeUrl": "https://www.youtube.com/watch?v=MEqHS1bybMQ",
+        "title": "눈사람",
+        "tags": [
+          "아이유",
+          "김제휘",
+          "정승환"
+        ]
+      },
+      "audio": {
+        "path": "audio/MEqHS1bybMQ.ogg",
+        "sha256": "cdae1bbe21eef28075ab36032cdf3f1326d62a87188642cffc12024b4873e40c",
+        "byteLength": 1448430,
+        "durationMs": 236421
+      }
+    },
+    {
+      "song": {
+        "id": "72881395-7b97-56b1-8faa-532ed5ab50c4",
+        "youtubeUrl": "https://www.youtube.com/watch?v=yCzg389Ut6w",
+        "title": "비행기",
+        "tags": [
+          "임성훈",
+          "거북이"
+        ]
+      },
+      "audio": {
+        "path": "audio/yCzg389Ut6w.ogg",
+        "sha256": "7d5ba8a9b2ccc14e726056fdd5c9b7e6ca6ca946aae41fbda5f770b498b2a935",
+        "byteLength": 1300784,
+        "durationMs": 213422
+      }
+    },
+    {
+      "song": {
+        "id": "f372a135-c08b-5a35-a483-5332d772ecb8",
+        "youtubeUrl": "https://www.youtube.com/watch?v=TekCz8uvfCU",
+        "title": "술 한잔 해요",
+        "tags": [
+          "원태연",
+          "최은하",
+          "이주호",
+          "지아"
+        ]
+      },
+      "audio": {
+        "path": "audio/TekCz8uvfCU.ogg",
+        "sha256": "7597106e5a48a21ed8ad1913638f99787587b558566a552af240b1352581c951",
+        "byteLength": 1262690,
+        "durationMs": 206367
+      }
+    },
+    {
+      "song": {
+        "id": "8bf0171a-d99a-54f9-b21a-b9fe46cc2697",
+        "youtubeUrl": "https://www.youtube.com/watch?v=fnEsPUT3jWI",
+        "title": "내 사랑 내 곁에",
+        "tags": [
+          "오태호",
+          "김현식"
+        ]
+      },
+      "audio": {
+        "path": "audio/fnEsPUT3jWI.ogg",
+        "sha256": "a4ff124dfc020781115a9aae353250c54ffd5c0db687b91bb4f481d8503de3be",
+        "byteLength": 1617169,
+        "durationMs": 267652
+      }
+    },
+    {
+      "song": {
+        "id": "6e566cb6-afc0-570f-a506-4ef11327f27c",
+        "youtubeUrl": "https://www.youtube.com/watch?v=eyUZPAIGcvc",
+        "title": "붉은 노을",
+        "tags": [
+          "이영훈",
+          "빅뱅"
+        ]
+      },
+      "audio": {
+        "path": "audio/eyUZPAIGcvc.ogg",
+        "sha256": "61e9a54642fb24f9c268cecb30dd2e1d860a6e9a0cf64582632d1993772bd373",
+        "byteLength": 1257158,
+        "durationMs": 207988
+      }
+    },
+    {
+      "song": {
+        "id": "6c6e6cdf-4dcb-5a5e-91ce-c63a74b1fb46",
+        "youtubeUrl": "https://www.youtube.com/watch?v=YmzY2lTSnko",
+        "title": "I Love You",
+        "tags": [
+          "OZAKI YUTAKA",
+          "포지션"
+        ]
+      },
+      "audio": {
+        "path": "audio/YmzY2lTSnko.ogg",
+        "sha256": "432a0b9b6a7713a0fe8d01436acae4a46b59aa1b3f2f316db54e01f1d30ec7b4",
+        "byteLength": 2015517,
+        "durationMs": 335071
+      }
+    },
+    {
+      "song": {
+        "id": "eec719ec-168b-5500-88d1-6d449f5098b7",
+        "youtubeUrl": "https://www.youtube.com/watch?v=B1gr1G5CXP4",
+        "title": "중독된 사랑",
+        "tags": [
+          "조은희",
+          "조장혁"
+        ]
+      },
+      "audio": {
+        "path": "audio/B1gr1G5CXP4.ogg",
+        "sha256": "a90da009344a684b241d43fece161918da849384ea9baab5c822008d2a5a0dc1",
+        "byteLength": 1048069,
+        "durationMs": 171022
+      }
+    },
+    {
+      "song": {
+        "id": "1e685ad2-77ca-5c56-bb8b-5ec61fd6b64d",
+        "youtubeUrl": "https://www.youtube.com/watch?v=vepz3RlTd4M",
+        "title": "나를 사랑했던 사람아",
+        "tags": [
+          "최규성",
+          "허각"
+        ]
+      },
+      "audio": {
+        "path": "audio/vepz3RlTd4M.ogg",
+        "sha256": "6ec5782623f3dd80c8b5ed922ec32ffea27179abd312e44771324ec2ee405dd0",
+        "byteLength": 1465753,
+        "durationMs": 239451
+      }
+    },
+    {
+      "song": {
+        "id": "1c63e792-baf6-5a84-9e6d-a3086c9f77f7",
+        "youtubeUrl": "https://www.youtube.com/watch?v=IR1iDjwC-sA",
+        "title": "눈의 꽃(미안하다사랑한다OST)",
+        "tags": [
+          "SATOMI",
+          "MATSUMOTO",
+          "RYOKI",
+          "박효신",
+          "눈의 꽃미안하다사랑한다OST",
+          "눈의 꽃"
+        ]
+      },
+      "audio": {
+        "path": "audio/IR1iDjwC-sA.ogg",
+        "sha256": "5c9f3a4be1e74fd993124d35f26b8422c0d88e480530767106c61507f80b38a6",
+        "byteLength": 2081926,
+        "durationMs": 339847
+      }
+    },
+    {
+      "song": {
+        "id": "c44c8ce0-618d-581f-ad3f-b55024f3c0fb",
+        "youtubeUrl": "https://www.youtube.com/watch?v=4imNVpLiJws",
+        "title": "잊었니(신들의만찬OST)",
+        "tags": [
+          "홍진영",
+          "이승철",
+          "Did You Forget",
+          "잊었니신들의만찬OST",
+          "잊었니"
+        ]
+      },
+      "audio": {
+        "path": "audio/4imNVpLiJws.ogg",
+        "sha256": "a93b7aa7c666ba97c06b7f0107965e14c50a3ab170eeb30deb62cea564a68a9a",
+        "byteLength": 1186955,
+        "durationMs": 193928
+      }
+    },
+    {
+      "song": {
+        "id": "b49d5e82-204b-563e-81b4-251fa138d3d1",
+        "youtubeUrl": "https://www.youtube.com/watch?v=ULfAaYIuldI",
+        "title": "체념",
+        "tags": [
+          "이영현",
+          "빅마마"
+        ]
+      },
+      "audio": {
+        "path": "audio/ULfAaYIuldI.ogg",
+        "sha256": "e802e92eb457095f651d6b9830f502e23288fa148b2456cdbac6aed1fc1488b6",
+        "byteLength": 1833537,
+        "durationMs": 299214
+      }
+    },
+    {
+      "song": {
+        "id": "0dcb0d1d-fce4-521d-94ba-7219c49081f2",
+        "youtubeUrl": "https://www.youtube.com/watch?v=MwBOUnzYB-8",
+        "title": "One Love",
+        "tags": [
+          "이수",
+          "MC THE MAX"
+        ]
+      },
+      "audio": {
+        "path": "audio/MwBOUnzYB-8.ogg",
+        "sha256": "c7451a823cc11145c0998b8b4994ef4e8d4d83cfc7209ef46ed3d5be1c583748",
+        "byteLength": 1606954,
+        "durationMs": 265063
+      }
+    },
+    {
+      "song": {
+        "id": "ee192ccd-dfdb-5512-b7ad-8a01dada1ba3",
+        "youtubeUrl": "https://www.youtube.com/watch?v=GxChUrrY4bc",
+        "title": "꿈꾸던 어른이 되었나요?",
+        "tags": [
+          "머무르 (1)",
+          "머무르 (2)",
+          "머무르 (2)(생성형 AI 활용)",
+          "머무르",
+          "꿈꾸던 어른이 되었나요"
+        ]
+      },
+      "audio": {
+        "path": "audio/GxChUrrY4bc.ogg",
+        "sha256": "b95cd95bcae69ef759d5e1e23f03ccea6c5a47867a92b650b29e6b8e331e4df1",
+        "byteLength": 1251624,
+        "durationMs": 204285
+      }
+    },
+    {
+      "song": {
+        "id": "56ae2a84-8c77-57e9-9c6c-5b8b4569ce33",
+        "youtubeUrl": "https://www.youtube.com/watch?v=gRV8pMtyzvI",
+        "title": "Tears",
+        "tags": [
+          "정성윤",
+          "주태영",
+          "소찬휘"
+        ]
+      },
+      "audio": {
+        "path": "audio/gRV8pMtyzvI.ogg",
+        "sha256": "d8a7c19852ded4c28b89d424d3a349e51ef47423871e6444cbd995d3f8363ac9",
+        "byteLength": 1439500,
+        "durationMs": 236900
+      }
+    },
+    {
+      "song": {
+        "id": "a8c2aefb-ccbe-59c0-87b3-65426c6ccf2f",
+        "youtubeUrl": "https://www.youtube.com/watch?v=mbg1Cn6Ua9U",
+        "title": "다시 만난 세계",
+        "tags": [
+          "김정배",
+          "KENZIE",
+          "소녀시대"
+        ]
+      },
+      "audio": {
+        "path": "audio/mbg1Cn6Ua9U.ogg",
+        "sha256": "318c43933ef3be743f2cbbdff187543d3aecbe3676ae92c9ab0bcbe68b3e088f",
+        "byteLength": 1626603,
+        "durationMs": 265767
+      }
+    },
+    {
+      "song": {
+        "id": "e4eb88f7-b718-5699-a5bf-9a24f2d8adb4",
+        "youtubeUrl": "https://www.youtube.com/watch?v=lLznXRNaJg8",
+        "title": "지나오다",
+        "tags": [
+          "닐로(Nil_O)",
+          "닐로"
+        ]
+      },
+      "audio": {
+        "path": "audio/lLznXRNaJg8.ogg",
+        "sha256": "bd71670d8a9b7ece93c58a7bd1e603d5ea7de0f10c58a8e3e04d043939a937ec",
+        "byteLength": 1046726,
+        "durationMs": 170859
+      }
+    },
+    {
+      "song": {
+        "id": "7a3b0dfa-2ebe-56a8-a07b-4c8e589b6f48",
+        "youtubeUrl": "https://www.youtube.com/watch?v=BS7tz2rAOSA",
+        "title": "예뻤어",
+        "tags": [
+          "강영현",
+          "김원필",
+          "홍지상",
+          "이우민",
+          "데이식스"
+        ]
+      },
+      "audio": {
+        "path": "audio/BS7tz2rAOSA.ogg",
+        "sha256": "d74d3e6671a8f8db730fac04e300391358129e6a245a7983637a70e01589bab2",
+        "byteLength": 1735260,
+        "durationMs": 283290
+      }
+    },
+    {
+      "song": {
+        "id": "59df4419-054c-5716-9119-5809e707f102",
+        "youtubeUrl": "https://www.youtube.com/watch?v=jRaSaMIfvC4",
+        "title": "벌써 일년",
+        "tags": [
+          "한경혜",
+          "윤건",
+          "브라운아이즈"
+        ]
+      },
+      "audio": {
+        "path": "audio/jRaSaMIfvC4.ogg",
+        "sha256": "40f7b59456aafc60f728efbd13657e61d0a30c476b56f54b1ce8f1c7d8ea2382",
+        "byteLength": 1268757,
+        "durationMs": 208020
+      }
+    },
+    {
+      "song": {
+        "id": "e3ead4aa-93b1-5ecb-83fb-395eab235c5d",
+        "youtubeUrl": "https://www.youtube.com/watch?v=VS59fbapYns",
+        "title": "빵빵",
+        "tags": [
+          "박진복",
+          "박상철",
+          "Honk Honk"
+        ]
+      },
+      "audio": {
+        "path": "audio/VS59fbapYns.ogg",
+        "sha256": "61e7e3d168008805ff0d8751859321830f77d19970f44bde65d2d2b8cfe06d31",
+        "byteLength": 1378836,
+        "durationMs": 225207
+      }
+    },
+    {
+      "song": {
+        "id": "82d10391-c369-5490-8fa1-6ea5499971b3",
+        "youtubeUrl": "https://www.youtube.com/watch?v=tfmwbxBKPh0",
+        "title": "모르시나요",
+        "tags": [
+          "안영민",
+          "K-SMITH",
+          "조째즈(Prod.로코베리)"
+        ]
+      },
+      "audio": {
+        "path": "audio/tfmwbxBKPh0.ogg",
+        "sha256": "1f4b66af4f56f7633c60d0c281b812e3608759bb72d56318b852e2571456b20a",
+        "byteLength": 1848060,
+        "durationMs": 306568
+      }
+    },
+    {
+      "song": {
+        "id": "48b2c25b-f064-57d6-b32f-24995c2d1987",
+        "youtubeUrl": "https://www.youtube.com/watch?v=OVOy235mX3s",
+        "title": "모든 날, 모든 순간 (Every Day, Every Moment)(키스먼저할까요? OST)",
+        "tags": [
+          "어깨깡패1",
+          "폴킴",
+          "모든 날, 모든 순간"
+        ]
+      },
+      "audio": {
+        "path": "audio/OVOy235mX3s.ogg",
+        "sha256": "67be6dd8176bc7d843a892ccb7bb1b342acf9070d8626ab8068c6d649436b002",
+        "byteLength": 1292490,
+        "durationMs": 215070
+      }
+    },
+    {
+      "song": {
+        "id": "01f5b148-5522-5a96-8b9f-e6818f78b80f",
+        "youtubeUrl": "https://www.youtube.com/watch?v=--knPjoSlNE",
+        "title": "Marry Me",
+        "tags": [
+          "마크툽(MAKTUB)",
+          "마크툽(MAKTUB),구윤회"
+        ]
+      },
+      "audio": {
+        "path": "audio/--knPjoSlNE.ogg",
+        "sha256": "a0ac8afd36bf74b9cb2546e408f7feca4f3e51736f3a9675c4eb19de7ceafaeb",
+        "byteLength": 1599363,
+        "durationMs": 261429
+      }
+    },
+    {
+      "song": {
+        "id": "f46f0f4e-6d62-54cf-8d2f-df48949b2be9",
+        "youtubeUrl": "https://www.youtube.com/watch?v=47s7qUHA1-o",
+        "title": "떠나가요, 떠나지마요",
+        "tags": [
+          "SiHa",
+          "더 크로스",
+          "떠나가요 떠나지마요"
+        ]
+      },
+      "audio": {
+        "path": "audio/47s7qUHA1-o.ogg",
+        "sha256": "e39a4462e737d4ec51ed2db46845f925b8ad5fd07815754dc689514465d8ac66",
+        "byteLength": 1585230,
+        "durationMs": 260523
+      }
+    },
+    {
+      "song": {
+        "id": "9a694117-61ff-58c7-9317-400e37da1f91",
+        "youtubeUrl": "https://www.youtube.com/watch?v=1zp7MV26B24",
+        "title": "안아줘",
+        "tags": [
+          "정준일"
+        ]
+      },
+      "audio": {
+        "path": "audio/1zp7MV26B24.ogg",
+        "sha256": "4459a3643e2c90d55e2f0203d178b50ea34aeba2c999df88c191fad8b0a416a8",
+        "byteLength": 1777965,
+        "durationMs": 292207
+      }
+    },
+    {
+      "song": {
+        "id": "666e7c06-5a40-58e8-8c9e-e55de25843e2",
+        "youtubeUrl": "https://www.youtube.com/watch?v=9XttLI0oH0I",
+        "title": "LOVE ATTACK",
+        "tags": [
+          "THE MUZE 1",
+          "방혜현",
+          "THE MUZE 2",
+          "THE MUZE 3",
+          "JONASSON SIMON ERIK HENRIK",
+          "LANDELL GUSTAV",
+          "EURENIUS KARIN WILHELMINA",
+          "RESCENE(리센느)"
+        ]
+      },
+      "audio": {
+        "path": "audio/9XttLI0oH0I.ogg",
+        "sha256": "a7ef459f19ded36f6c2382857f705738c8a81780cbfa2fd9328127e2d86a334d",
+        "byteLength": 1168823,
+        "durationMs": 197121
+      }
+    },
+    {
+      "song": {
+        "id": "1bdac229-a03a-5ed7-a293-c19144cbc6b1",
+        "youtubeUrl": "https://www.youtube.com/watch?v=5k8XqCJF_cM",
+        "title": "끝사랑",
+        "tags": [
+          "윤사라",
+          "윤일상",
+          "김범수"
+        ]
+      },
+      "audio": {
+        "path": "audio/5k8XqCJF_cM.ogg",
+        "sha256": "000eade74b3750f3866ac0f6e3a7873a354c379702d32f509cec91c249d8acf6",
+        "byteLength": 1540810,
+        "durationMs": 252954
+      }
+    },
+    {
+      "song": {
+        "id": "824f370a-51b2-555b-9101-48448a2648f3",
+        "youtubeUrl": "https://www.youtube.com/watch?v=FnTR4v5ToOU",
+        "title": "형(兄)",
+        "tags": [
+          "이영준",
+          "이상준",
+          "노라조",
+          "형兄"
+        ]
+      },
+      "audio": {
+        "path": "audio/FnTR4v5ToOU.ogg",
+        "sha256": "92ca187e3aceb42c473e02ebe9cae10f4e26feeec8ebde164e5c58bca786dfa0",
+        "byteLength": 1549648,
+        "durationMs": 258716
+      }
+    },
+    {
+      "song": {
+        "id": "c2c27048-62cc-53e4-a4bc-9a92a9ca935e",
+        "youtubeUrl": "https://www.youtube.com/watch?v=xL_cd1DJan8",
+        "title": "나는 반딧불",
+        "tags": [
+          "정중식",
+          "황가람"
+        ]
+      },
+      "audio": {
+        "path": "audio/xL_cd1DJan8.ogg",
+        "sha256": "320fd257211747ba3f123efb2f983fb978f3080ccd5f7451b0a707ee1e8354d0",
+        "byteLength": 1319069,
+        "durationMs": 215430
+      }
+    },
+    {
+      "song": {
+        "id": "d45332aa-2fca-51a7-a600-0c7afa82a2ac",
+        "youtubeUrl": "https://www.youtube.com/watch?v=u2ecJcG4Ps0",
+        "title": "까만안경",
+        "tags": [
+          "윤명선",
+          "이루(Feat.Daylight)"
+        ]
+      },
+      "audio": {
+        "path": "audio/u2ecJcG4Ps0.ogg",
+        "sha256": "7da920027f921210ad9c9646033387f746320b5a89f2a142c87abdace4de26cd",
+        "byteLength": 1391129,
+        "durationMs": 227377
+      }
+    },
+    {
+      "song": {
+        "id": "b55122d2-4059-5c2b-ac52-708c2fda9328",
+        "youtubeUrl": "https://www.youtube.com/watch?v=v6_GwXU1lkg",
+        "title": "그날처럼",
+        "tags": [
+          "덕인",
+          "장중혁",
+          "장덕철"
+        ]
+      },
+      "audio": {
+        "path": "audio/v6_GwXU1lkg.ogg",
+        "sha256": "6d2e0a73973f0832163105cfdecc16e6a78e0a1d0821abf9b44f4442d482dce0",
+        "byteLength": 1507100,
+        "durationMs": 246684
+      }
+    },
+    {
+      "song": {
+        "id": "f15c5321-e027-5480-8b4d-2a6f94eb81cf",
+        "youtubeUrl": "https://www.youtube.com/watch?v=KhZ-_b_Sy-w",
+        "title": "버스 안에서",
+        "tags": [
+          "강원석",
+          "자자"
+        ]
+      },
+      "audio": {
+        "path": "audio/KhZ-_b_Sy-w.ogg",
+        "sha256": "e04b01fc8615843e2fbf50adbe8d250c02589a8cf96b596c27eaad5b131fb8be",
+        "byteLength": 1169555,
+        "durationMs": 193074
+      }
+    },
+    {
+      "song": {
+        "id": "863ae312-f162-5633-9ec4-910aa1fb4ce0",
+        "youtubeUrl": "https://www.youtube.com/watch?v=GiKvLl1V6mY",
+        "title": "너를 위해",
+        "tags": [
+          "채정은",
+          "신재홍",
+          "임재범"
+        ]
+      },
+      "audio": {
+        "path": "audio/GiKvLl1V6mY.ogg",
+        "sha256": "ef003250e0622a03235d36136053f8531f959cc01d2510f4f19e6a7016980ad9",
+        "byteLength": 1506451,
+        "durationMs": 247180
+      }
+    },
+    {
+      "song": {
+        "id": "62451c3c-f9f7-5d9b-a21b-e772e192fd03",
+        "youtubeUrl": "https://www.youtube.com/watch?v=M9xf145HRTs",
+        "title": "숙녀에게",
+        "tags": [
+          "박주연",
+          "하광훈",
+          "변진섭"
+        ]
+      },
+      "audio": {
+        "path": "audio/M9xf145HRTs.ogg",
+        "sha256": "af105e35d4bbb17dc84931766c561afae35ffcd91a76dbef87cb7a59a6209195",
+        "byteLength": 1374565,
+        "durationMs": 226674
+      }
+    },
+    {
+      "song": {
+        "id": "e1c50dc0-7f15-5d69-b1bc-461cf33eb47a",
+        "youtubeUrl": "https://www.youtube.com/watch?v=5iSlfF8TQ9k",
+        "title": "한숨",
+        "tags": [
+          "김종현",
+          "위프리키2",
+          "이하이",
+          "BREATHE"
+        ]
+      },
+      "audio": {
+        "path": "audio/5iSlfF8TQ9k.ogg",
+        "sha256": "6360bed8f548c634e9f9c80358b7b0cf1e99c67b11d160fe1bc52fc997c09312",
+        "byteLength": 1803936,
+        "durationMs": 294436
+      }
+    },
+    {
+      "song": {
+        "id": "d09c0071-0951-5aa3-a2f8-6336143e5c8a",
+        "youtubeUrl": "https://www.youtube.com/watch?v=RaTCjhIS4AY",
+        "title": "봄 내음보다 너를",
+        "tags": [
+          "김나영",
+          "김세진"
+        ]
+      },
+      "audio": {
+        "path": "audio/RaTCjhIS4AY.ogg",
+        "sha256": "fb8959a307d47498e750afe09926357d444501a3a3e858fb13691313f36e4aa6",
+        "byteLength": 1330281,
+        "durationMs": 227330
+      }
+    },
+    {
+      "song": {
+        "id": "78574b96-cde4-59e0-ac34-f9a8b63e8712",
+        "youtubeUrl": "https://www.youtube.com/watch?v=yY7dRwJnJZ0",
+        "title": "Hello",
+        "tags": [
+          "최규성",
+          "라도",
+          "허각",
+          "헬로"
+        ]
+      },
+      "audio": {
+        "path": "audio/yY7dRwJnJZ0.ogg",
+        "sha256": "4b58689ffc23172ad2c20c43f5de8729ce9b98466d77d1a824917a02bae4bb6b",
+        "byteLength": 1957543,
+        "durationMs": 319804
+      }
+    },
+    {
+      "song": {
+        "id": "a78ddede-2c28-573b-85da-d316edc996bd",
+        "youtubeUrl": "https://www.youtube.com/watch?v=aLX3b3j6z3g",
+        "title": "소녀(응답하라1988 OST)",
+        "tags": [
+          "이영훈",
+          "오혁",
+          "A Little Girl",
+          "소녀응답하라1988 OST",
+          "소녀"
+        ]
+      },
+      "audio": {
+        "path": "audio/aLX3b3j6z3g.ogg",
+        "sha256": "2b2578915310cd627d8eee8eda8690a30f2d0dc013aaa100b6a7e18f43d07319",
+        "byteLength": 1385136,
+        "durationMs": 226358
+      }
+    },
+    {
+      "song": {
+        "id": "b070a29a-27dc-5ec6-b75c-db8525ac62ff",
+        "youtubeUrl": "https://www.youtube.com/watch?v=_iP6_RAd9zY",
+        "title": "추억은 만남보다 이별에 남아",
+        "tags": [
+          "문성욱",
+          "방민규",
+          "정동하"
+        ]
+      },
+      "audio": {
+        "path": "audio/_iP6_RAd9zY.ogg",
+        "sha256": "bea17d3d960792f5577944da89ef4383edbd27fa72a27745675563d6bd9109b0",
+        "byteLength": 1624662,
+        "durationMs": 267013
+      }
+    }
+  ],
+  "excludedSongs": [
+    {
+      "index": 1,
+      "title": "행복하지 말아요",
+      "reasons": [
+        "tj_composer_credit_generic"
+      ]
+    },
+    {
+      "index": 9,
+      "title": "삭제",
+      "reasons": [
+        "audio_source_missing"
+      ]
+    },
+    {
+      "index": 10,
+      "title": "나였으면(황태자의첫사랑OST)",
+      "reasons": [
+        "audio_source_missing"
+      ]
+    },
+    {
+      "index": 27,
+      "title": "꿈속에 너",
+      "reasons": [
+        "youtube_source_track_mismatch",
+        "audio_source_missing"
+      ]
+    },
+    {
+      "index": 28,
+      "title": "오르막길",
+      "reasons": [
+        "official_live_version_source"
+      ]
+    },
+    {
+      "index": 43,
+      "title": "다시 사랑한다면(니글니글버터플라이)",
+      "reasons": [
+        "live_performance_version_of_original_song"
+      ]
+    },
+    {
+      "index": 44,
+      "title": "내 머리가 나빠서(드라마'꽃보다남자'OST)",
+      "reasons": [
+        "uploader_performer_credit_ambiguous"
+      ]
+    },
+    {
+      "index": 71,
+      "title": "REDRED",
+      "reasons": [
+        "partial_official_tj_writer_credits"
+      ]
+    },
+    {
+      "index": 74,
+      "title": "봄이 와도",
+      "reasons": [
+        "live_performance_source"
+      ]
+    },
+    {
+      "index": 78,
+      "title": "내게 사랑이 뭐냐고 물어본다면",
+      "reasons": [
+        "piano_live_alternate_version"
+      ]
+    },
+    {
+      "index": 79,
+      "title": "사랑참...",
+      "reasons": [
+        "official_broadcast_live_version"
+      ]
+    },
+    {
+      "index": 87,
+      "title": "흰수염고래",
+      "reasons": [
+        "audio_source_missing"
+      ]
+    },
+    {
+      "index": 88,
+      "title": "희재(국화꽃향기OST)",
+      "reasons": [
+        "audio_source_missing"
+      ]
+    },
+    {
+      "index": 96,
+      "title": "나에게로 떠나는 여행",
+      "reasons": [
+        "audio_download_age_restricted"
+      ]
+    }
+  ]
+}

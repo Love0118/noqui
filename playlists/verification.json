@@ -1,0 +1,34 @@
+[
+  {
+    "id": "ssip-noqui",
+    "name": "씹노퀴",
+    "entries": 541,
+    "playable": 536,
+    "audioVerified": true,
+    "answerCommentsStripped": true
+  },
+  {
+    "id": "tj-261027-domestic",
+    "name": "TJ인기차트-261027국내",
+    "entries": 100,
+    "playable": 86,
+    "audioVerified": true,
+    "answerCommentsStripped": true
+  },
+  {
+    "id": "tj-261027-japan",
+    "name": "TJ인기차트-261027일본노래",
+    "entries": 100,
+    "playable": 98,
+    "audioVerified": true,
+    "answerCommentsStripped": true
+  },
+  {
+    "id": "tj-261027-pop",
+    "name": "TJ인기차트-261027팝송",
+    "entries": 100,
+    "playable": 96,
+    "audioVerified": true,
+    "answerCommentsStripped": true
+  }
+]

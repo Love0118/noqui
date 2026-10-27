@@ -1,0 +1,1041 @@
+{
+  "research": [
+    {
+      "batch": "output-titles-7.json",
+      "entries": 35,
+      "acceptedNames": 6
+    },
+    {
+      "batch": "output-titles-8.json",
+      "entries": 36,
+      "acceptedNames": 5
+    },
+    {
+      "batch": "output-writers-1.json",
+      "entries": 25,
+      "acceptedNames": 3
+    },
+    {
+      "batch": "output-writers-2.json",
+      "entries": 26,
+      "acceptedNames": 18
+    },
+    {
+      "batch": "output-writers-3.json",
+      "entries": 25,
+      "acceptedNames": 3
+    },
+    {
+      "batch": "output-writers-4.json",
+      "entries": 26,
+      "acceptedNames": 12
+    },
+    {
+      "batch": "output-writers-5.json",
+      "entries": 25,
+      "acceptedNames": 11
+    },
+    {
+      "batch": "output-writers-6.json",
+      "entries": 26,
+      "acceptedNames": 3
+    }
+  ],
+  "unresolved": [
+    {
+      "kind": "title",
+      "key": "E4tIHBx7bqc",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean title alias with a specific supporting source page was found."
+    },
+    {
+      "kind": "title",
+      "key": "TVeIDmk3rBo",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean title alias with a specific supporting source page was found."
+    },
+    {
+      "kind": "title",
+      "key": "iuZ2M6LYhB4",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean title alias with a specific supporting source page was found."
+    },
+    {
+      "kind": "title",
+      "key": "cQKGUgOfD8U",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean title alias with a specific supporting source page was found."
+    },
+    {
+      "kind": "title",
+      "key": "UquPv9WpuB4",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean title alias with a specific supporting source page was found."
+    },
+    {
+      "kind": "title",
+      "key": "TcHvEFxk_78",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean title alias with a specific supporting source page was found."
+    },
+    {
+      "kind": "title",
+      "key": "DmAFyJ-7ZsY",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean title alias with a specific supporting source page was found."
+    },
+    {
+      "kind": "title",
+      "key": "KhAcM0Nbtr8",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean title alias with a specific supporting source page was found."
+    },
+    {
+      "kind": "title",
+      "key": "9eyyhtOrKPI",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean title alias with a specific supporting source page was found."
+    },
+    {
+      "kind": "title",
+      "key": "lXma6qKonnk",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean title alias with a specific supporting source page was found."
+    },
+    {
+      "kind": "title",
+      "key": "txvsf2Zaquo",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean title alias with a specific supporting source page was found."
+    },
+    {
+      "kind": "title",
+      "key": "EYLCHz16m2c",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean title alias with a specific supporting source page was found."
+    },
+    {
+      "kind": "title",
+      "key": "IMB-t2j02XQ",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean title alias with a specific supporting source page was found."
+    },
+    {
+      "kind": "title",
+      "key": "RKtoreimcQ8",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean title alias with a specific supporting source page was found."
+    },
+    {
+      "kind": "title",
+      "key": "243vPl8HdVk",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean title alias with a specific supporting source page was found."
+    },
+    {
+      "kind": "title",
+      "key": "Q_QEPrkwZ-Q",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean title alias with a specific supporting source page was found."
+    },
+    {
+      "kind": "title",
+      "key": "OVwCr2MESfo",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean title alias with a specific supporting source page was found."
+    },
+    {
+      "kind": "title",
+      "key": "Dun11cIEo9s",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean title alias with a specific supporting source page was found."
+    },
+    {
+      "kind": "title",
+      "key": "dJc0vpT5UT0",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean title alias with a specific supporting source page was found."
+    },
+    {
+      "kind": "title",
+      "key": "p-o_bMkzOW0",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean title alias with a specific supporting source page was found."
+    },
+    {
+      "kind": "title",
+      "key": "7sr1H6emuyk",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean title alias with a specific supporting source page was found."
+    },
+    {
+      "kind": "title",
+      "key": "NocXEwsJGOQ",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean title alias with a specific supporting source page was found."
+    },
+    {
+      "kind": "title",
+      "key": "httB2UoZ44s",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean title alias with a specific supporting source page was found."
+    },
+    {
+      "kind": "title",
+      "key": "rkaNKAvksDE",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean title alias with a specific supporting source page was found."
+    },
+    {
+      "kind": "title",
+      "key": "H_WXMJ6dUGY",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean title alias with a specific supporting source page was found."
+    },
+    {
+      "kind": "title",
+      "key": "t0B6QJFJ0LM",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean title alias with a specific supporting source page was found."
+    },
+    {
+      "kind": "title",
+      "key": "tOt_FlJg9zw",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean title alias with a specific supporting source page was found."
+    },
+    {
+      "kind": "title",
+      "key": "ocAKhyWuawo",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean title alias with a specific supporting source page was found."
+    },
+    {
+      "kind": "title",
+      "key": "N55NsP_G1es",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean title alias with a specific supporting source page was found."
+    },
+    {
+      "kind": "title",
+      "key": "_qLCdom6AiM",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean usage for an alias of this exact song title was found."
+    },
+    {
+      "kind": "title",
+      "key": "cZbdgG86wZc",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean usage for an alias of this exact song title was found."
+    },
+    {
+      "kind": "title",
+      "key": "7E8sVvPkrRg",
+      "aliases": [],
+      "unresolvedReason": null
+    },
+    {
+      "kind": "title",
+      "key": "oGQnn9vbvk0",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean usage for an alias of this exact song title was found."
+    },
+    {
+      "kind": "title",
+      "key": "2UE9XnUverk",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean usage for an alias of this exact song title was found."
+    },
+    {
+      "kind": "title",
+      "key": "KxBy9b5gAHI",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean usage for an alias of this exact song title was found."
+    },
+    {
+      "kind": "title",
+      "key": "UgK6n1KKUxY",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean usage for an alias of this exact song title was found."
+    },
+    {
+      "kind": "title",
+      "key": "VemXOuPyr8k",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean usage for an alias of this exact song title was found."
+    },
+    {
+      "kind": "title",
+      "key": "WNA7LPF3qwA",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean usage for an alias of this exact song title was found."
+    },
+    {
+      "kind": "title",
+      "key": "MwzFh1hbPvw",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean usage for an alias of this exact song title was found."
+    },
+    {
+      "kind": "title",
+      "key": "XjcfzyAtzug",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean usage for an alias of this exact song title was found."
+    },
+    {
+      "kind": "title",
+      "key": "PBjSHA2b5gM",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean usage for an alias of this exact song title was found."
+    },
+    {
+      "kind": "title",
+      "key": "PEfF4YIj9V4",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean usage for an alias of this exact song title was found."
+    },
+    {
+      "kind": "title",
+      "key": "Dif7rDd94B8",
+      "aliases": [],
+      "unresolvedReason": null
+    },
+    {
+      "kind": "title",
+      "key": "YVD1RLI7klc",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean usage for an alias of this exact song title was found."
+    },
+    {
+      "kind": "title",
+      "key": "nfpYhYtHuKo",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean usage for an alias of this exact song title was found."
+    },
+    {
+      "kind": "title",
+      "key": "jCQuNYbKGe4",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean usage for an alias of this exact song title was found."
+    },
+    {
+      "kind": "title",
+      "key": "BUyrhLRzAwU",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean usage for an alias of this exact song title was found."
+    },
+    {
+      "kind": "title",
+      "key": "jvoW9lJdirk",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean usage for an alias of this exact song title was found."
+    },
+    {
+      "kind": "title",
+      "key": "RcQxAqtNeKA",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean usage for an alias of this exact song title was found."
+    },
+    {
+      "kind": "title",
+      "key": "_TeOj59LA0g",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean usage for an alias of this exact song title was found."
+    },
+    {
+      "kind": "title",
+      "key": "36SxEHQeDi8",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean usage for an alias of this exact song title was found."
+    },
+    {
+      "kind": "title",
+      "key": "rXee9CxYmTY",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean usage for an alias of this exact song title was found."
+    },
+    {
+      "kind": "title",
+      "key": "hAbu1AHsqhc",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean usage for an alias of this exact song title was found."
+    },
+    {
+      "kind": "title",
+      "key": "yiqEEL7ac6M",
+      "aliases": [],
+      "unresolvedReason": null
+    },
+    {
+      "kind": "title",
+      "key": "QWFw2ueFdnQ",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean usage for an alias of this exact song title was found."
+    },
+    {
+      "kind": "title",
+      "key": "H0RHgnFLJ3A",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean usage for an alias of this exact song title was found."
+    },
+    {
+      "kind": "title",
+      "key": "uGZ0I71Yawo",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean usage for an alias of this exact song title was found."
+    },
+    {
+      "kind": "title",
+      "key": "9LRMzRCYMlw",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean usage for an alias of this exact song title was found."
+    },
+    {
+      "kind": "title",
+      "key": "crCS77wqxTI",
+      "aliases": [],
+      "unresolvedReason": "No sufficiently verified Korean usage for an alias of this exact song title was found."
+    },
+    {
+      "kind": "title",
+      "key": "zGMftuCqLhk",
+      "aliases": [],
+      "unresolvedReason": null
+    },
+    {
+      "kind": "writer",
+      "key": "*Luna",
+      "aliases": [],
+      "unresolvedReason": "No verified commonly used Korean writer alias found in accessible Korean usage sources; romanized/transliterated guesses were excluded."
+    },
+    {
+      "kind": "writer",
+      "key": "164",
+      "aliases": [],
+      "unresolvedReason": "No verified commonly used Korean writer alias found in accessible Korean usage sources; romanized/transliterated guesses were excluded."
+    },
+    {
+      "kind": "writer",
+      "key": "23.exe",
+      "aliases": [],
+      "unresolvedReason": "No verified commonly used Korean writer alias found in accessible Korean usage sources; romanized/transliterated guesses were excluded."
+    },
+    {
+      "kind": "writer",
+      "key": "40mP",
+      "aliases": [],
+      "unresolvedReason": "No verified commonly used Korean writer alias found in accessible Korean usage sources; romanized/transliterated guesses were excluded."
+    },
+    {
+      "kind": "writer",
+      "key": "A4。",
+      "aliases": [],
+      "unresolvedReason": "No verified commonly used Korean writer alias found in accessible Korean usage sources; romanized/transliterated guesses were excluded."
+    },
+    {
+      "kind": "writer",
+      "key": "APG550",
+      "aliases": [],
+      "unresolvedReason": "No verified commonly used Korean writer alias found in accessible Korean usage sources; romanized/transliterated guesses were excluded."
+    },
+    {
+      "kind": "writer",
+      "key": "ARM",
+      "aliases": [],
+      "unresolvedReason": "No verified commonly used Korean writer alias found in accessible Korean usage sources; romanized/transliterated guesses were excluded."
+    },
+    {
+      "kind": "writer",
+      "key": "Anamanaguchi",
+      "aliases": [],
+      "unresolvedReason": "No verified commonly used Korean writer alias found in accessible Korean usage sources; romanized/transliterated guesses were excluded."
+    },
+    {
+      "kind": "writer",
+      "key": "Aqu3ra",
+      "aliases": [],
+      "unresolvedReason": "No verified commonly used Korean writer alias found in accessible Korean usage sources; romanized/transliterated guesses were excluded."
+    },
+    {
+      "kind": "writer",
+      "key": "Ayase",
+      "aliases": [],
+      "unresolvedReason": "No verified commonly used Korean writer alias found in accessible Korean usage sources; romanized/transliterated guesses were excluded."
+    },
+    {
+      "kind": "writer",
+      "key": "Balloon",
+      "aliases": [],
+      "unresolvedReason": "No verified commonly used Korean writer alias found in accessible Korean usage sources; romanized/transliterated guesses were excluded."
+    },
+    {
+      "kind": "writer",
+      "key": "Chinozo",
+      "aliases": [],
+      "unresolvedReason": "No verified commonly used Korean writer alias found in accessible Korean usage sources; romanized/transliterated guesses were excluded."
+    },
+    {
+      "kind": "writer",
+      "key": "Circus-P",
+      "aliases": [],
+      "unresolvedReason": "No verified commonly used Korean writer alias found in accessible Korean usage sources; romanized/transliterated guesses were excluded."
+    },
+    {
+      "kind": "writer",
+      "key": "Crusher-P",
+      "aliases": [],
+      "unresolvedReason": "No verified commonly used Korean writer alias found in accessible Korean usage sources; romanized/transliterated guesses were excluded."
+    },
+    {
+      "kind": "writer",
+      "key": "DATEKEN",
+      "aliases": [],
+      "unresolvedReason": "No verified commonly used Korean writer alias found in accessible Korean usage sources; romanized/transliterated guesses were excluded."
+    },
+    {
+      "kind": "writer",
+      "key": "Dixie Flatline",
+      "aliases": [],
+      "unresolvedReason": "No verified commonly used Korean writer alias found in accessible Korean usage sources; romanized/transliterated guesses were excluded."
+    },
+    {
+      "kind": "writer",
+      "key": "EINZ",
+      "aliases": [],
+      "unresolvedReason": "No verified commonly used Korean writer alias found in accessible Korean usage sources; romanized/transliterated guesses were excluded."
+    },
+    {
+      "kind": "writer",
+      "key": "EasyPop",
+      "aliases": [],
+      "unresolvedReason": "No verified commonly used Korean writer alias found in accessible Korean usage sources; romanized/transliterated guesses were excluded."
+    },
+    {
+      "kind": "writer",
+      "key": "Eight",
+      "aliases": [],
+      "unresolvedReason": "No verified commonly used Korean writer alias found in accessible Korean usage sources; romanized/transliterated guesses were excluded."
+    },
+    {
+      "kind": "writer",
+      "key": "Fushi",
+      "aliases": [],
+      "unresolvedReason": "No verified commonly used Korean writer alias found in accessible Korean usage sources; romanized/transliterated guesses were excluded."
+    },
+    {
+      "kind": "writer",
+      "key": "FuwariP",
+      "aliases": [],
+      "unresolvedReason": "No verified commonly used Korean writer alias found in accessible Korean usage sources; romanized/transliterated guesses were excluded."
+    },
+    {
+      "kind": "writer",
+      "key": "Guiano",
+      "aliases": [],
+      "unresolvedReason": "No verified commonly used Korean writer alias found in accessible Korean usage sources; romanized/transliterated guesses were excluded."
+    },
+    {
+      "kind": "writer",
+      "key": "HAMO",
+      "aliases": [],
+      "unresolvedReason": "확인 가능한 한국어 사용 근거를 찾지 못해 별칭을 보류했습니다."
+    },
+    {
+      "kind": "writer",
+      "key": "Heavenz",
+      "aliases": [],
+      "unresolvedReason": "확인한 한국어 자료에서 이름은 Heavenz로만 표기되어 한국어 별칭 근거가 부족합니다."
+    },
+    {
+      "kind": "writer",
+      "key": "Junky",
+      "aliases": [],
+      "unresolvedReason": "한국어 검색에서 동명 활동자 정키와 혼동될 수 있어 동일 작가의 별칭으로 확정하지 않았습니다."
+    },
+    {
+      "kind": "writer",
+      "key": "KISARA",
+      "aliases": [],
+      "unresolvedReason": "동일 작가임을 확인할 한국어 표기 근거를 찾지 못했습니다."
+    },
+    {
+      "kind": "writer",
+      "key": "Kai",
+      "aliases": [],
+      "unresolvedReason": "이름이 짧고 동명 활동자가 많아 동일 작가를 확인할 수 없었습니다."
+    },
+    {
+      "kind": "writer",
+      "key": "Last Note.",
+      "aliases": [],
+      "unresolvedReason": "확인 가능한 한국어 자료에서 통용되는 별도 한글 표기를 확인하지 못했습니다."
+    },
+    {
+      "kind": "writer",
+      "key": "Lefty Monster P",
+      "aliases": [],
+      "unresolvedReason": "확인 가능한 출처로 뒷받침되는 한국어 별칭을 찾지 못했습니다."
+    },
+    {
+      "kind": "writer",
+      "key": "LonePi",
+      "aliases": [],
+      "unresolvedReason": "동일 작가를 가리키는 한국어 사용 근거를 찾지 못해 별칭을 보류했습니다."
+    },
+    {
+      "kind": "writer",
+      "key": "MIMI",
+      "aliases": [],
+      "unresolvedReason": "동명이인이 많고 이 입력이 해당 보컬로이드 작가임을 뒷받침하는 한국어 페이지를 확인하지 못했습니다."
+    },
+    {
+      "kind": "writer",
+      "key": "MikitoP",
+      "aliases": [],
+      "unresolvedReason": "Could not confirm a common Korean alias and a direct supporting page for this writer identity."
+    },
+    {
+      "kind": "writer",
+      "key": "Mitchie M",
+      "aliases": [],
+      "unresolvedReason": "Could not find a source page establishing a Korean form as this writer’s commonly used alias."
+    },
+    {
+      "kind": "writer",
+      "key": "Natsushiro Takaki",
+      "aliases": [],
+      "unresolvedReason": "Search results mixed this name with singers and possible namesakes; writer identity and a common Korean alias remain unconfirmed."
+    },
+    {
+      "kind": "writer",
+      "key": "Nayutalien",
+      "aliases": [],
+      "unresolvedReason": "May be a spelling variant of NayutalieN, but no page connecting this exact input form to a Korean alias was verified."
+    },
+    {
+      "kind": "writer",
+      "key": "Nem",
+      "aliases": [],
+      "unresolvedReason": "Could not verify a Korean alias for the writer on a directly supporting source page."
+    },
+    {
+      "kind": "writer",
+      "key": "OSTER project",
+      "aliases": [],
+      "unresolvedReason": "Could not find a source page establishing a Korean form as this writer’s commonly used alias."
+    },
+    {
+      "kind": "writer",
+      "key": "Omoi",
+      "aliases": [],
+      "unresolvedReason": "Could not find a Korean source page naming a commonly used alias for the writer."
+    },
+    {
+      "kind": "writer",
+      "key": "Orangestar",
+      "aliases": [],
+      "unresolvedReason": "Could not find a reliable page connecting this writer identity with a commonly used Korean alias."
+    },
+    {
+      "kind": "writer",
+      "key": "Otomania",
+      "aliases": [],
+      "unresolvedReason": "Could not find a reliable page connecting this writer identity with a commonly used Korean alias."
+    },
+    {
+      "kind": "writer",
+      "key": "P.I.N.A.",
+      "aliases": [],
+      "unresolvedReason": "Found Korean song pages, but none directly supported a commonly used Korean alias for P.I.N.A."
+    },
+    {
+      "kind": "writer",
+      "key": "Police Piccadilly",
+      "aliases": [],
+      "unresolvedReason": "Could not find a Korean source page naming a commonly used alias for the writer."
+    },
+    {
+      "kind": "writer",
+      "key": "R Sound Design",
+      "aliases": [],
+      "unresolvedReason": "Results were mixed with song and other writer information, so a common alias could not be confirmed."
+    },
+    {
+      "kind": "writer",
+      "key": "Reol",
+      "aliases": [],
+      "unresolvedReason": "Korean references found mainly identify Reol as a cover singer, so they were not accepted as evidence for the original writer."
+    },
+    {
+      "kind": "writer",
+      "key": "Rerulili",
+      "aliases": [],
+      "unresolvedReason": "Found Japanese spellings, but no direct source page supporting a commonly used Korean alias."
+    },
+    {
+      "kind": "writer",
+      "key": "RuLu",
+      "aliases": [],
+      "unresolvedReason": "Korean search results used inconsistent forms, so a commonly used alias could not be established."
+    },
+    {
+      "kind": "writer",
+      "key": "SEVENTHLINKS",
+      "aliases": [],
+      "unresolvedReason": "Could not find a Korean source page naming a commonly used alias for the writer."
+    },
+    {
+      "kind": "writer",
+      "key": "SLAVE.V-V-R",
+      "aliases": [],
+      "unresolvedReason": "Could not find a Korean source page naming a commonly used alias for the writer."
+    },
+    {
+      "kind": "writer",
+      "key": "SOOOO",
+      "aliases": [],
+      "unresolvedReason": "Could not verify a direct Korean page connecting the writer identity with a Korean alias."
+    },
+    {
+      "kind": "writer",
+      "key": "Satsuki ga Tenkomori",
+      "aliases": [],
+      "unresolvedReason": "Could not find a direct source establishing a Korean form as the writer’s commonly used alias."
+    },
+    {
+      "kind": "writer",
+      "key": "Sota",
+      "aliases": [],
+      "unresolvedReason": "The short name has many possible namesakes; the writer identity and Korean alias could not be confirmed."
+    },
+    {
+      "kind": "writer",
+      "key": "T-POCKET",
+      "aliases": [],
+      "unresolvedReason": "Could not find a Korean source page naming a commonly used alias for the writer."
+    },
+    {
+      "kind": "writer",
+      "key": "TOKOTOKO",
+      "aliases": [],
+      "unresolvedReason": "Could not find a Korean source page naming a commonly used alias for the writer."
+    },
+    {
+      "kind": "writer",
+      "key": "Tarae",
+      "aliases": [],
+      "unresolvedReason": "Could not verify a commonly used Korean alias for this writer."
+    },
+    {
+      "kind": "writer",
+      "key": "ToraborutaP",
+      "aliases": [],
+      "unresolvedReason": "Could not verify Korean usage for a Korean alias; transliteration alone is insufficient."
+    },
+    {
+      "kind": "writer",
+      "key": "UraCommanderP",
+      "aliases": [],
+      "unresolvedReason": "Could not verify a Korean-language source that identifies this writer and a Korean alias."
+    },
+    {
+      "kind": "writer",
+      "key": "Van de Shop",
+      "aliases": [],
+      "unresolvedReason": "Korean sources mention a member name alongside Van de Shop, but I could not verify it as an alias of the group credit itself."
+    },
+    {
+      "kind": "writer",
+      "key": "Yama△",
+      "aliases": [],
+      "unresolvedReason": "Search results were ambiguous with the unrelated singer yama; I could not verify a Korean alias for this writer."
+    },
+    {
+      "kind": "writer",
+      "key": "YasuoP",
+      "aliases": [],
+      "unresolvedReason": "Search snippets were insufficient to verify a specific Korean-language source and the exact writer identity."
+    },
+    {
+      "kind": "writer",
+      "key": "ZUN",
+      "aliases": [],
+      "unresolvedReason": "Korean pages use the writer credit ZUN; I could not verify a distinct commonly used Korean alias."
+    },
+    {
+      "kind": "writer",
+      "key": "buzzG",
+      "aliases": [],
+      "unresolvedReason": "The Korean page retains buzzG as the writer name; I could not verify a commonly used Korean alias."
+    },
+    {
+      "kind": "writer",
+      "key": "cosMo@폭주P",
+      "aliases": [],
+      "unresolvedReason": null
+    },
+    {
+      "kind": "writer",
+      "key": "devilishP",
+      "aliases": [],
+      "unresolvedReason": "Could not find reliable Korean usage for a Korean alias."
+    },
+    {
+      "kind": "writer",
+      "key": "emon(Tes.)",
+      "aliases": [],
+      "unresolvedReason": "Korean sources I found retain emon(Tes.) and did not establish a commonly used Korean alias."
+    },
+    {
+      "kind": "writer",
+      "key": "hako",
+      "aliases": [],
+      "unresolvedReason": "Could not verify a Korean alias for this writer independently of other writer credits."
+    },
+    {
+      "kind": "writer",
+      "key": "halyosy",
+      "aliases": [],
+      "unresolvedReason": "Korean search results did not establish a commonly used Korean spelling for this writer."
+    },
+    {
+      "kind": "writer",
+      "key": "ika_mo",
+      "aliases": [],
+      "unresolvedReason": "Could not verify Korean usage for a distinct alias; spelling it in Hangul would be transliteration."
+    },
+    {
+      "kind": "writer",
+      "key": "iroha(sasaki)",
+      "aliases": [],
+      "unresolvedReason": "The Korean page I found identifies the creator as iroha(sasaki) and does not establish a Korean alias."
+    },
+    {
+      "kind": "writer",
+      "key": "jon-YAKITORY",
+      "aliases": [],
+      "unresolvedReason": "한국어 통용 별칭을 확인할 수 있는 신뢰 가능한 한국어 기사/페이지 근거를 찾지 못함"
+    },
+    {
+      "kind": "writer",
+      "key": "kahimi",
+      "aliases": [],
+      "unresolvedReason": "한국어 통용 별칭을 확인할 수 있는 신뢰 가능한 한국어 기사/페이지 근거를 찾지 못함"
+    },
+    {
+      "kind": "writer",
+      "key": "kentax",
+      "aliases": [],
+      "unresolvedReason": "한국어 통용 별칭을 확인할 수 있는 신뢰 가능한 한국어 기사/페이지 근거를 찾지 못함"
+    },
+    {
+      "kind": "writer",
+      "key": "kyotn",
+      "aliases": [],
+      "unresolvedReason": "한국어 통용 별칭을 확인할 수 있는 신뢰 가능한 한국어 기사/페이지 근거를 찾지 못함"
+    },
+    {
+      "kind": "writer",
+      "key": "kz",
+      "aliases": [],
+      "unresolvedReason": "한국어 통용 별칭을 확인할 수 있는 신뢰 가능한 한국어 기사/페이지 근거를 찾지 못함"
+    },
+    {
+      "kind": "writer",
+      "key": "meiyo",
+      "aliases": [],
+      "unresolvedReason": "한국어 통용 별칭을 확인할 수 있는 신뢰 가능한 한국어 기사/페이지 근거를 찾지 못함"
+    },
+    {
+      "kind": "writer",
+      "key": "mothy_악의P",
+      "aliases": [],
+      "unresolvedReason": "한국어 통용 별칭을 확인할 수 있는 신뢰 가능한 한국어 기사/페이지 근거를 찾지 못함"
+    },
+    {
+      "kind": "writer",
+      "key": "n.k",
+      "aliases": [],
+      "unresolvedReason": "한국어 통용 별칭을 확인할 수 있는 신뢰 가능한 한국어 기사/페이지 근거를 찾지 못함"
+    },
+    {
+      "kind": "writer",
+      "key": "niki",
+      "aliases": [],
+      "unresolvedReason": "한국어 통용 별칭을 확인할 수 있는 신뢰 가능한 한국어 기사/페이지 근거를 찾지 못함"
+    },
+    {
+      "kind": "writer",
+      "key": "okameP",
+      "aliases": [],
+      "unresolvedReason": "한국어 통용 별칭을 확인할 수 있는 신뢰 가능한 한국어 기사/페이지 근거를 찾지 못함"
+    },
+    {
+      "kind": "writer",
+      "key": "peeuf",
+      "aliases": [],
+      "unresolvedReason": "한국어 통용 별칭을 확인할 수 있는 신뢰 가능한 한국어 기사/페이지 근거를 찾지 못함"
+    },
+    {
+      "kind": "writer",
+      "key": "r-906",
+      "aliases": [],
+      "unresolvedReason": "한국어 통용 별칭을 확인할 수 있는 신뢰 가능한 한국어 기사/페이지 근거를 찾지 못함"
+    },
+    {
+      "kind": "writer",
+      "key": "ryo",
+      "aliases": [],
+      "unresolvedReason": "한국어 통용 별칭을 확인할 수 있는 신뢰 가능한 한국어 기사/페이지 근거를 찾지 못함"
+    },
+    {
+      "kind": "writer",
+      "key": "samfree",
+      "aliases": [],
+      "unresolvedReason": "한국어 통용 별칭 근거를 찾지 못함; SAM은 로마자 표기이므로 제외"
+    },
+    {
+      "kind": "writer",
+      "key": "seibin",
+      "aliases": [],
+      "unresolvedReason": "Korean usage evidence that identifies this writer under a commonly used Korean alias was not verified."
+    },
+    {
+      "kind": "writer",
+      "key": "wotaku",
+      "aliases": [],
+      "unresolvedReason": "Korean usage evidence that identifies this writer under a commonly used Korean alias was not verified."
+    },
+    {
+      "kind": "writer",
+      "key": "yamada",
+      "aliases": [],
+      "unresolvedReason": "Korean usage evidence that identifies this writer under a commonly used Korean alias was not verified."
+    },
+    {
+      "kind": "writer",
+      "key": "you맨",
+      "aliases": [],
+      "unresolvedReason": null
+    },
+    {
+      "kind": "writer",
+      "key": "yuuyu",
+      "aliases": [],
+      "unresolvedReason": "Korean usage evidence that identifies this writer under a commonly used Korean alias was not verified."
+    },
+    {
+      "kind": "writer",
+      "key": "z'5",
+      "aliases": [],
+      "unresolvedReason": "Korean usage evidence that identifies this writer under a commonly used Korean alias was not verified."
+    },
+    {
+      "kind": "writer",
+      "key": "고지마지P",
+      "aliases": [],
+      "unresolvedReason": null
+    },
+    {
+      "kind": "writer",
+      "key": "라마즈P",
+      "aliases": [],
+      "unresolvedReason": null
+    },
+    {
+      "kind": "writer",
+      "key": "미키토P",
+      "aliases": [],
+      "unresolvedReason": null
+    },
+    {
+      "kind": "writer",
+      "key": "오와타P",
+      "aliases": [],
+      "unresolvedReason": null
+    },
+    {
+      "kind": "writer",
+      "key": "유가미P",
+      "aliases": [],
+      "unresolvedReason": null
+    },
+    {
+      "kind": "writer",
+      "key": "지미섬P",
+      "aliases": [],
+      "unresolvedReason": null
+    },
+    {
+      "kind": "writer",
+      "key": "지저스P",
+      "aliases": [],
+      "unresolvedReason": null
+    },
+    {
+      "kind": "writer",
+      "key": "진(자연의 적P)",
+      "aliases": [],
+      "unresolvedReason": null
+    },
+    {
+      "kind": "writer",
+      "key": "집 뒤에 개복치가 죽어 있어P",
+      "aliases": [],
+      "unresolvedReason": null
+    },
+    {
+      "kind": "writer",
+      "key": "쵸쵸P",
+      "aliases": [],
+      "unresolvedReason": null
+    },
+    {
+      "kind": "writer",
+      "key": "쿠라게P",
+      "aliases": [],
+      "unresolvedReason": null
+    },
+    {
+      "kind": "writer",
+      "key": "키무라 와이P",
+      "aliases": [],
+      "unresolvedReason": null
+    },
+    {
+      "kind": "writer",
+      "key": "타다노Co",
+      "aliases": [],
+      "unresolvedReason": null
+    },
+    {
+      "kind": "writer",
+      "key": "하치오지P",
+      "aliases": [],
+      "unresolvedReason": null
+    },
+    {
+      "kind": "writer",
+      "key": "호보니치P",
+      "aliases": [],
+      "unresolvedReason": null
+    },
+    {
+      "kind": "writer",
+      "key": "흑토끼P",
+      "aliases": [],
+      "unresolvedReason": null
+    },
+    {
+      "kind": "writer",
+      "key": "히토시즈쿠P",
+      "aliases": [],
+      "unresolvedReason": null
+    }
+  ],
+  "tagLimit": [],
+  "songsWithAliases": 211,
+  "writerAliasSongs": 166,
+  "titleAliasSongs": 11,
+  "punctuationSongs": 54
+}

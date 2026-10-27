@@ -1,0 +1,1907 @@
+{
+  "schemaVersion": 1,
+  "id": "tj-261027-pop",
+  "name": "TJ인기차트-261027팝송",
+  "songs": [
+    {
+      "song": {
+        "id": "b9d548c2-7d4b-57bc-b60f-a3dfa90f365c",
+        "youtubeUrl": "https://www.youtube.com/watch?v=FnpJBkAMk44",
+        "title": "Let It Go(Frozen(겨울왕국) OST)",
+        "tags": [
+          "IdinaMenzel",
+          "LOPEZROBERTJ",
+          "ANDERSONKRISTEN",
+          "Let It GoFrozen겨울왕국 OST",
+          "Let It Go"
+        ]
+      },
+      "audio": {
+        "path": "audio/FnpJBkAMk44.ogg",
+        "sha256": "d066d73722064f6c2afc5874bdf5ca505a3e3be01c2dcd13c9c4b30a40a41bd0",
+        "byteLength": 1379417,
+        "durationMs": 231881
+      }
+    },
+    {
+      "song": {
+        "id": "ca7ada3c-ef61-50dc-bc4c-9ea8578e9252",
+        "youtubeUrl": "https://www.youtube.com/watch?v=XFkzRNyygfk",
+        "title": "Creep",
+        "tags": [
+          "Radiohead",
+          "ColinGreenwood",
+          "JonnyGreenwood",
+          "EdObrien",
+          "PhilSelway",
+          "ThomYorke"
+        ]
+      },
+      "audio": {
+        "path": "audio/XFkzRNyygfk.ogg",
+        "sha256": "e331ad13b81060e754930db9d6d703fb9fc7dc0f515d7d99ce7e4a90e8628268",
+        "byteLength": 1444672,
+        "durationMs": 236537
+      }
+    },
+    {
+      "song": {
+        "id": "6a4e02b0-dce2-5717-8c2f-8b9461035ea9",
+        "youtubeUrl": "https://www.youtube.com/watch?v=oplra1FJxWI",
+        "title": "Don't Look Back In Anger",
+        "tags": [
+          "Oasis",
+          "NoelGallagher",
+          "Dont Look Back In Anger"
+        ]
+      },
+      "audio": {
+        "path": "audio/oplra1FJxWI.ogg",
+        "sha256": "6277a7f696cf61a30cf6f944e171fd156f5dee4fcb344d2d716666cdacb1d210",
+        "byteLength": 1774272,
+        "durationMs": 289567
+      }
+    },
+    {
+      "song": {
+        "id": "8f7b4375-dcc8-57ab-8342-8aa7099bc454",
+        "youtubeUrl": "https://www.youtube.com/watch?v=DwTogmKwYWo",
+        "title": "Speechless(Aladdin OST)",
+        "tags": [
+          "NaomiScott",
+          "PASEKBENJ",
+          "PAULJUSTINNOBLE",
+          "MENKENALAN",
+          "SpeechlessAladdin OST",
+          "Speechless"
+        ]
+      },
+      "audio": {
+        "path": "audio/DwTogmKwYWo.ogg",
+        "sha256": "cc18d0ff4a175b1c4d1a98d858b4640a3063f2931a3ccad40e770576c6b68bc8",
+        "byteLength": 1254529,
+        "durationMs": 209265
+      }
+    },
+    {
+      "song": {
+        "id": "2f435045-eb28-5438-97d8-6c643ab70b67",
+        "youtubeUrl": "https://www.youtube.com/watch?v=kQDw88hEr2c",
+        "title": "Love Is An Open Door(Frozen(겨울왕국) OST)",
+        "tags": [
+          "KristenBell",
+          "SantinoFontana",
+          "LOPEZROBERTJ",
+          "ANDERSONKRISTEN",
+          "Love Is An Open Door"
+        ]
+      },
+      "audio": {
+        "path": "audio/kQDw88hEr2c.ogg",
+        "sha256": "f2e386d8d96ddcf05c930eb8ec05e7876e20503c70f7a0ea62a1038310e08432",
+        "byteLength": 739263,
+        "durationMs": 125232
+      }
+    },
+    {
+      "song": {
+        "id": "2055c502-71fd-5583-b395-6b261785774a",
+        "youtubeUrl": "https://www.youtube.com/watch?v=bDtjO-R0QSo",
+        "title": "Rolling In The Deep",
+        "tags": [
+          "Adele",
+          "ADKINSADELELAURIEBLUE",
+          "EPWORTHPAUL"
+        ]
+      },
+      "audio": {
+        "path": "audio/bDtjO-R0QSo.ogg",
+        "sha256": "ae72727afd981f81e072ec4e2322d687c7d75dd611a4313b7bca05185ef2123d",
+        "byteLength": 1387445,
+        "durationMs": 227737
+      }
+    },
+    {
+      "song": {
+        "id": "eefbe3d6-c9db-5ad2-99b5-f8baf203b6da",
+        "youtubeUrl": "https://www.youtube.com/watch?v=8xg3vE8Ie_E",
+        "title": "Love Story",
+        "tags": [
+          "TaylorSwift"
+        ]
+      },
+      "audio": {
+        "path": "audio/8xg3vE8Ie_E.ogg",
+        "sha256": "483a156c506da3faebe089a539102f3c9984812dde1b16243c477ae66450e858",
+        "byteLength": 1442308,
+        "durationMs": 236502
+      }
+    },
+    {
+      "song": {
+        "id": "de1eb4fb-7d84-567a-a559-21080ba66c14",
+        "youtubeUrl": "https://www.youtube.com/watch?v=EvYy27Qc3Ug",
+        "title": "I'm Not The Only One",
+        "tags": [
+          "SamSmith",
+          "JAMESNAPIER",
+          "SAMSMITH",
+          "Im Not The Only One"
+        ]
+      },
+      "audio": {
+        "path": "audio/EvYy27Qc3Ug.ogg",
+        "sha256": "2a71c2dee040e06fd1f012a147c028ea8fe40099c19e4a1bf0672d80fd547f07",
+        "byteLength": 1364384,
+        "durationMs": 223322
+      }
+    },
+    {
+      "song": {
+        "id": "e754a932-2a3d-599a-9258-08ed5a0c45e5",
+        "youtubeUrl": "https://www.youtube.com/watch?v=gdjR2lvIfJ4",
+        "title": "Rewrite The Stars(The Greatest Showman OST)",
+        "tags": [
+          "ZacEfron",
+          "Zendaya",
+          "PASEKBENJ",
+          "PAULJUSTINNOBLE",
+          "Rewrite The Stars"
+        ]
+      },
+      "audio": {
+        "path": "audio/gdjR2lvIfJ4.ogg",
+        "sha256": "4ab84eac741f1a356bd17cc2d90732df2fa5f5a04c2632795cfa6781bc787bc6",
+        "byteLength": 1324561,
+        "durationMs": 216185
+      }
+    },
+    {
+      "song": {
+        "id": "db3e3072-cfb7-5be5-9260-6659b1962821",
+        "youtubeUrl": "https://www.youtube.com/watch?v=PfH7jq_uSCM",
+        "title": "Die With A Smile",
+        "tags": [
+          "LadyGaga",
+          "BrunoMars",
+          "EMILEDERNST",
+          "FAUNTLEROYJAMESEDWARD",
+          "GERMANOTTASTEFANIJ",
+          "HERNANDEZPETERGENE",
+          "WATTANDREW"
+        ]
+      },
+      "audio": {
+        "path": "audio/PfH7jq_uSCM.ogg",
+        "sha256": "028d818b6ba5763a8019ea9c05fbc6aef24c1ad3dca09077504f1943c9b56ae8",
+        "byteLength": 1536749,
+        "durationMs": 251723
+      }
+    },
+    {
+      "song": {
+        "id": "6ae806fc-bf49-5bab-a0fb-e0fe8c54c33b",
+        "youtubeUrl": "https://www.youtube.com/watch?v=1tvLIhEaEKo",
+        "title": "2002",
+        "tags": [
+          "AnneMarie",
+          "앤마리",
+          "BenjaminLevin",
+          "JuliaCavazos",
+          "SteveMcCutcheon",
+          "EdwardChristopherSheeran",
+          "AnneMarieNicholson",
+          "AndreasCarlsson",
+          "GeorgeClinton",
+          "ElDeBarge"
+        ]
+      },
+      "audio": {
+        "path": "audio/1tvLIhEaEKo.ogg",
+        "sha256": "9967f9c4bccf1d8ce16e8f946eb492cad7c13f5a288e05c0d4670778a3593624",
+        "byteLength": 1142508,
+        "durationMs": 186802
+      }
+    },
+    {
+      "song": {
+        "id": "16ad0749-ddfe-515f-9566-133f9eec8cf5",
+        "youtubeUrl": "https://www.youtube.com/watch?v=ICJs1CxCRt0",
+        "title": "She's Gone",
+        "tags": [
+          "Steelheart",
+          "MATTJEVICMICHAEL",
+          "Shes Gone"
+        ]
+      },
+      "audio": {
+        "path": "audio/ICJs1CxCRt0.ogg",
+        "sha256": "aeafe37fb18b1aa7b38d56bc0e6b0c2f9ae3c5471c9bc2878f03f84b7ca4faa5",
+        "byteLength": 1778969,
+        "durationMs": 291069
+      }
+    },
+    {
+      "song": {
+        "id": "cd6f8d84-48fc-518f-8179-ebcfff6c8a3d",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Xc695u4RFeI",
+        "title": "Dangerously",
+        "tags": [
+          "CharliePuth",
+          "ALEXANDERIZQUIERDO",
+          "CHARLIEPUTH",
+          "JAMESJOHNABRAHART",
+          "MARCOANTONIORODRIGUEZDIAZ",
+          "ROTEMJONATHAN"
+        ]
+      },
+      "audio": {
+        "path": "audio/Xc695u4RFeI.ogg",
+        "sha256": "06fddfadd64983a3c96dfb6df78260790e00a6f5af0903f2a2c88fd48b7c8a17",
+        "byteLength": 1213010,
+        "durationMs": 199580
+      }
+    },
+    {
+      "song": {
+        "id": "06cfbccc-485c-5e93-a12c-2987fe13abed",
+        "youtubeUrl": "https://www.youtube.com/watch?v=5U-JroWwFkw",
+        "title": "Lost Stars(Begin Again OST)",
+        "tags": [
+          "AdamLevine",
+          "ALEXANDERGREGG",
+          "BRISEBOISDANIELLEA",
+          "LASHLEYNICKP",
+          "NICKYSOUTHWOOD",
+          "Lost StarsBegin Again OST",
+          "Lost Stars"
+        ]
+      },
+      "audio": {
+        "path": "audio/5U-JroWwFkw.ogg",
+        "sha256": "0e1ab7fd11f1dbf411e2a3ff3f17fd95b67ece52aba73044bf406aae7e0910b2",
+        "byteLength": 1635339,
+        "durationMs": 267927
+      }
+    },
+    {
+      "song": {
+        "id": "cb47d286-081c-5a84-9bf7-9f245f1c2d95",
+        "youtubeUrl": "https://www.youtube.com/watch?v=q0hyYWKXF0Q",
+        "title": "Dance Monkey",
+        "tags": [
+          "TonesAndI",
+          "WATSONTONI"
+        ]
+      },
+      "audio": {
+        "path": "audio/q0hyYWKXF0Q.ogg",
+        "sha256": "e7e1edec9918016b1eaecaf7cd0792f2a8682880ee080ad7968a1182b8db0e55",
+        "byteLength": 1430289,
+        "durationMs": 236421
+      }
+    },
+    {
+      "song": {
+        "id": "6ecd50a2-eed8-58ca-b2c6-0c52a0fffab1",
+        "youtubeUrl": "https://www.youtube.com/watch?v=bRmvUC7B_zs",
+        "title": "Lemon Tree",
+        "tags": [
+          "FoolsGarden",
+          "FREUDENTHALERPETER",
+          "HINKELVOLKER"
+        ]
+      },
+      "audio": {
+        "path": "audio/bRmvUC7B_zs.ogg",
+        "sha256": "e28e5bc0e0e9017d56cf15861c98b0b0ee2affa35770675ca574c949eef358f2",
+        "byteLength": 1166354,
+        "durationMs": 190450
+      }
+    },
+    {
+      "song": {
+        "id": "8eb19b26-22a1-50a7-be40-8d815c83e696",
+        "youtubeUrl": "https://www.youtube.com/watch?v=v3I5zneFEkY",
+        "title": "Baby",
+        "tags": [
+          "JustinBieber",
+          "YoungdellNash",
+          "NashBieber",
+          "Bridges",
+          "TheDream",
+          "StewartBridges",
+          "StewartMilian"
+        ]
+      },
+      "audio": {
+        "path": "audio/v3I5zneFEkY.ogg",
+        "sha256": "b67f82c05d07167320864c4f648d8ff3d3b1802d79ff89333c63d45080fb202b",
+        "byteLength": 1297405,
+        "durationMs": 212063
+      }
+    },
+    {
+      "song": {
+        "id": "b87ff2cc-034c-5c9c-84c4-28ad0a2e8869",
+        "youtubeUrl": "https://www.youtube.com/watch?v=J_QGZspO4gg",
+        "title": "Snowman",
+        "tags": [
+          "Sia",
+          "GREGKURSTIN",
+          "SIAFURLER"
+        ]
+      },
+      "audio": {
+        "path": "audio/J_QGZspO4gg.ogg",
+        "sha256": "bbca5e3bc66a03bdd5347492716bdf0e630cc2093da95f7e9068338384416bca",
+        "byteLength": 1012620,
+        "durationMs": 168154
+      }
+    },
+    {
+      "song": {
+        "id": "a64b301a-a0bd-5425-8644-7403e1b55e2c",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Lf9OgcXV5cE",
+        "title": "Beauty And A Beat",
+        "tags": [
+          "JustinBieberFeatNickiMinaj",
+          "ZEDD",
+          "SAVANKOTECHA",
+          "MAXMARTIN",
+          "NICKIMINAJ"
+        ]
+      },
+      "audio": {
+        "path": "audio/Lf9OgcXV5cE.ogg",
+        "sha256": "aa03b28efb941da537b1a327204e9a3e0d68d45f5d7eab3f78d5efc96c7a0ab8",
+        "byteLength": 1395026,
+        "durationMs": 228329
+      }
+    },
+    {
+      "song": {
+        "id": "9d3fe26e-fc1e-5a90-bffa-b2d5c01b0596",
+        "youtubeUrl": "https://www.youtube.com/watch?v=MlThQTo6D8A",
+        "title": "Until I Found You",
+        "tags": [
+          "StephenSanchez",
+          "SANCHEZSTEPHENCHRISTOPHER"
+        ]
+      },
+      "audio": {
+        "path": "audio/MlThQTo6D8A.ogg",
+        "sha256": "b6690316777f9a6f3e715e8be6a78cbe86434679f194afcfa5c86cb6c813d6cb",
+        "byteLength": 1082594,
+        "durationMs": 178012
+      }
+    },
+    {
+      "song": {
+        "id": "412c190d-1573-5b3a-838a-3d2b31297d4c",
+        "youtubeUrl": "https://www.youtube.com/watch?v=1wbtvNA8GaA",
+        "title": "When I Was Your Man",
+        "tags": [
+          "BrunoMars",
+          "LAWRENCEPHILIPMARTINII",
+          "LEVINEARI",
+          "MARSBRUNO",
+          "WYATTANDREW"
+        ]
+      },
+      "audio": {
+        "path": "audio/1wbtvNA8GaA.ogg",
+        "sha256": "3d9ebd6d570c078641444ba36d104e5dcdae258c40ec9b26adc30682dcffc443",
+        "byteLength": 1304214,
+        "durationMs": 214060
+      }
+    },
+    {
+      "song": {
+        "id": "c03ed1bc-a840-5ca0-8e52-67f207d49dd4",
+        "youtubeUrl": "https://www.youtube.com/watch?v=atc8RAtl-Ms",
+        "title": "A Whole New World(Aladdin OST)",
+        "tags": [
+          "MenaMassoud",
+          "NaomiScott",
+          "MENKENALANIRWIN",
+          "RICETIMOTHYMILESBINDON",
+          "A Whole New WorldAladdin OST",
+          "A Whole New World"
+        ]
+      },
+      "audio": {
+        "path": "audio/atc8RAtl-Ms.ogg",
+        "sha256": "c70dc654cc6fdaf2944c0b50167bd1d0fc066a923e9d9931e74926936bbf369e",
+        "byteLength": 1058961,
+        "durationMs": 177396
+      }
+    },
+    {
+      "song": {
+        "id": "10dacbf4-b977-54ba-87f5-6273ce7e8a6d",
+        "youtubeUrl": "https://www.youtube.com/watch?v=oyEuk8j8imI",
+        "title": "Love Yourself",
+        "tags": [
+          "JustinBieber",
+          "EDSHEERAN",
+          "BENNYBLANCO",
+          "JUSTINBIEBER"
+        ]
+      },
+      "audio": {
+        "path": "audio/oyEuk8j8imI.ogg",
+        "sha256": "a12f1a2102f8052ad413647484aa0b1d92fe9fd2f6cff8ac650c2ef7a585331a",
+        "byteLength": 1494327,
+        "durationMs": 272226
+      }
+    },
+    {
+      "song": {
+        "id": "b6f0eb64-d76d-5588-bb3c-5634bb9e6aa3",
+        "youtubeUrl": "https://www.youtube.com/watch?v=22c3_LoIfZQ",
+        "title": "Someone Like You",
+        "tags": [
+          "Adele",
+          "DanWilson"
+        ]
+      },
+      "audio": {
+        "path": "audio/22c3_LoIfZQ.ogg",
+        "sha256": "cbd51c4664d5f9d5522af8dd04cb127f2c8ae47f05938121058b98f204093706",
+        "byteLength": 1742907,
+        "durationMs": 290106
+      }
+    },
+    {
+      "song": {
+        "id": "4d0a62d2-d53b-5830-a3e9-bb2317bfa0bf",
+        "youtubeUrl": "https://www.youtube.com/watch?v=T6tTohWiu5A",
+        "title": "Bad",
+        "tags": [
+          "Christopher",
+          "LINJAMALENNOSAKARI",
+          "LUNDCHRISTOPHER",
+          "BLOMARONROLF"
+        ]
+      },
+      "audio": {
+        "path": "audio/T6tTohWiu5A.ogg",
+        "sha256": "5713400df0ccc233c74d4f807b8af5726e494104941e57f2bc277ed385d07e51",
+        "byteLength": 1166235,
+        "durationMs": 190376
+      }
+    },
+    {
+      "song": {
+        "id": "5fd0ebee-7c82-5cfd-8a62-aadc2adeaed9",
+        "youtubeUrl": "https://www.youtube.com/watch?v=dvgZkm1xWPE",
+        "title": "Viva La Vida",
+        "tags": [
+          "Coldplay",
+          "GuyBerryman",
+          "JonBuckland",
+          "WillChampion",
+          "ChrisMartin"
+        ]
+      },
+      "audio": {
+        "path": "audio/dvgZkm1xWPE.ogg",
+        "sha256": "74c7740642e56af510742ecfb38a053afa0d447078197b6125eaeebb83be4733",
+        "byteLength": 1478754,
+        "durationMs": 242110
+      }
+    },
+    {
+      "song": {
+        "id": "3843f5b8-c6f6-5cb2-be43-4ca4ffb85471",
+        "youtubeUrl": "https://www.youtube.com/watch?v=ic8j13piAhQ",
+        "title": "Cruel Summer",
+        "tags": [
+          "TaylorSwift",
+          "ANTONOFFJACK",
+          "CLARKANNIE",
+          "SWIFTTAYLORALISON"
+        ]
+      },
+      "audio": {
+        "path": "audio/ic8j13piAhQ.ogg",
+        "sha256": "5c12ecb9f44f0536864a34db369eac3e407b0a27281cc4b8d29caec922c2a606",
+        "byteLength": 1085257,
+        "durationMs": 179399
+      }
+    },
+    {
+      "song": {
+        "id": "84c47cb6-6d22-5aa6-b758-2b50d4e0e94e",
+        "youtubeUrl": "https://www.youtube.com/watch?v=dT2owtxkU8k",
+        "title": "There's Nothing Holdin' Me Back",
+        "tags": [
+          "ShawnMendes",
+          "TEDDYGEIGER",
+          "SHAWNMENDES",
+          "SCOTTHARRIS",
+          "GEOFFREYWARBURTON",
+          "Theres Nothing Holdin Me Back"
+        ]
+      },
+      "audio": {
+        "path": "audio/dT2owtxkU8k.ogg",
+        "sha256": "67e07692c297dad8f402d91a88b728b680fe7f56e18456fa6bc07a29dc070345",
+        "byteLength": 1454551,
+        "durationMs": 237396
+      }
+    },
+    {
+      "song": {
+        "id": "6f3a5260-8c2d-5178-b2f8-8a28106c0f47",
+        "youtubeUrl": "https://www.youtube.com/watch?v=_dK2tDK9grQ",
+        "title": "Shape Of You",
+        "tags": [
+          "EdSheeran",
+          "STEVEMAC",
+          "JOHNNYMCDAID",
+          "EDSHEERAN"
+        ]
+      },
+      "audio": {
+        "path": "audio/_dK2tDK9grQ.ogg",
+        "sha256": "5188561249fe7df93fcd455c4e4f1d51f9c8d389c74e7455642fe18bedfa53d7",
+        "byteLength": 1418973,
+        "durationMs": 235016
+      }
+    },
+    {
+      "song": {
+        "id": "74aa365a-0886-595d-91a0-13154a6d5613",
+        "youtubeUrl": "https://www.youtube.com/watch?v=KRaWnd3LJfs",
+        "title": "Payphone",
+        "tags": [
+          "Maroon5FeatWizKhalifa",
+          "LEVINBENJAMIN",
+          "LEVINEADAM",
+          "MALIKAMMAR",
+          "OMELIODAN",
+          "SCHUSTERJOHANKARL",
+          "THOMAZCAMERON"
+        ]
+      },
+      "audio": {
+        "path": "audio/KRaWnd3LJfs.ogg",
+        "sha256": "e3faa4fb9ff6eaadc53812d4ba04b6d8229fe0d2b229ec93621b81d5f7234840",
+        "byteLength": 1695019,
+        "durationMs": 279424
+      }
+    },
+    {
+      "song": {
+        "id": "8a4b2ff3-7bd8-5fe7-9d86-2a694e926397",
+        "youtubeUrl": "https://www.youtube.com/watch?v=7_vDnvX49IU",
+        "title": "Last Night On Earth",
+        "tags": [
+          "GreenDay",
+          "BILLIEJOEARMSTRONG",
+          "FRANKEIIIWRIGHT",
+          "MICHAELRYANPRITCHARD"
+        ]
+      },
+      "audio": {
+        "path": "audio/7_vDnvX49IU.ogg",
+        "sha256": "975489eb30468710f1dd0e5f79117fd5eb4988ced967774f1249e9ad6965181e",
+        "byteLength": 1440431,
+        "durationMs": 235122
+      }
+    },
+    {
+      "song": {
+        "id": "1d324877-d5bb-5042-9a62-d069ef263c63",
+        "youtubeUrl": "https://www.youtube.com/watch?v=kTJczUoc26U",
+        "title": "Stay",
+        "tags": [
+          "TheKidLAROI",
+          "JustinBieber",
+          "더키드라로이",
+          "저스틴비버",
+          "CharltonHoward",
+          "MagnusHiberg",
+          "CharliePuth",
+          "OmerFedi",
+          "BlakeSlatkin",
+          "MichaelMule"
+        ]
+      },
+      "audio": {
+        "path": "audio/kTJczUoc26U.ogg",
+        "sha256": "de3b824f1aaddcccaf5db3e9d7271b52b846c62a9348e069954c766e6aba7749",
+        "byteLength": 965151,
+        "durationMs": 157671
+      }
+    },
+    {
+      "song": {
+        "id": "41bec61d-2c9a-57ff-925a-3a3dff8289e3",
+        "youtubeUrl": "https://www.youtube.com/watch?v=bXlk2q_kt3I",
+        "title": "All I Want For Christmas Is You",
+        "tags": [
+          "MariahCarey",
+          "AFANASIEFFWALTERN",
+          "CAREYMARIAH"
+        ]
+      },
+      "audio": {
+        "path": "audio/bXlk2q_kt3I.ogg",
+        "sha256": "bc7ff485468c4e9a573fb0849b9dc94dd971ac69e2f55ed663069ef7ed97a1f3",
+        "byteLength": 1657681,
+        "durationMs": 271431
+      }
+    },
+    {
+      "song": {
+        "id": "fd6bb828-1523-569a-98fc-b02e85a5b31d",
+        "youtubeUrl": "https://www.youtube.com/watch?v=D557gnClcwc",
+        "title": "Beggin'",
+        "tags": [
+          "Maneskin",
+          "BOBGAUDIO",
+          "PEGGYFARINA",
+          "Beggin"
+        ]
+      },
+      "audio": {
+        "path": "audio/D557gnClcwc.ogg",
+        "sha256": "50885db5fb91fb913019a3d1c3ed9ed03cbc44e70054b7735f1092fdc06783cf",
+        "byteLength": 1290695,
+        "durationMs": 210767
+      }
+    },
+    {
+      "song": {
+        "id": "e8d2ec90-2bd8-5c00-b52d-80befda75999",
+        "youtubeUrl": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
+        "title": "Bohemian Rhapsody",
+        "tags": [
+          "Queen",
+          "FreddieMercury"
+        ]
+      },
+      "audio": {
+        "path": "audio/fJ9rUzIMcZQ.ogg",
+        "sha256": "8e6dc86a2455fd1eb9f88570d2749428c75d80be67939c514ee19954fa58b92f",
+        "byteLength": 2174441,
+        "durationMs": 359452
+      }
+    },
+    {
+      "song": {
+        "id": "34e03825-a86d-5174-9b06-87539fbb15a4",
+        "youtubeUrl": "https://www.youtube.com/watch?v=AeZxDcjXbzE",
+        "title": "Off My Face",
+        "tags": [
+          "JustinBieber",
+          "BIEBERJUSTIN",
+          "PRINGLEDANIELJAMES",
+          "PRINGLELEAHJAQUELINE",
+          "SCOLATIAMARIE",
+          "TORREYJACOB"
+        ]
+      },
+      "audio": {
+        "path": "audio/AeZxDcjXbzE.ogg",
+        "sha256": "65212bab97af5bb684435560e32f48ae236485c5e586f139f08fbdd599376abb",
+        "byteLength": 959224,
+        "durationMs": 156551
+      }
+    },
+    {
+      "song": {
+        "id": "d3c7551c-bb40-5606-b7bd-a1bdbd4610c9",
+        "youtubeUrl": "https://www.youtube.com/watch?v=09R8_2nJtjg",
+        "title": "Sugar",
+        "tags": [
+          "Maroon5",
+          "MICHAELPOSNER",
+          "HENRYWALTER",
+          "ADAMLEVINE",
+          "JOSHUACOLEMAN",
+          "JACOBHINDLIN",
+          "LUKASZGOTTWALD"
+        ]
+      },
+      "audio": {
+        "path": "audio/09R8_2nJtjg.ogg",
+        "sha256": "98f7f6ae722eb66fd4b50f0d91dfdfb54d23cb2a90a1888f8ade8973caee178b",
+        "byteLength": 1801185,
+        "durationMs": 301367
+      }
+    },
+    {
+      "song": {
+        "id": "70e70988-e424-5670-b7ff-512f24573641",
+        "youtubeUrl": "https://www.youtube.com/watch?v=XPpTgCho5ZA",
+        "title": "This Love",
+        "tags": [
+          "Maroon5",
+          "Carmichael",
+          "Levine"
+        ]
+      },
+      "audio": {
+        "path": "audio/XPpTgCho5ZA.ogg",
+        "sha256": "c79f46ee68c8139415ff99edee40911e015f8be6505c31cf5a2e8ad30cc5d7c8",
+        "byteLength": 1242997,
+        "durationMs": 205260
+      }
+    },
+    {
+      "song": {
+        "id": "cb9aa8cc-43bc-5669-ae53-bb77751709a4",
+        "youtubeUrl": "https://www.youtube.com/watch?v=G2zxzaWgVRA",
+        "title": "The Phantom Of The Opera",
+        "tags": [
+          "SarahBrightman",
+          "MikeBatt",
+          "CharlesHart",
+          "AndrewLloydWebber",
+          "RichardStilgoe"
+        ]
+      },
+      "audio": {
+        "path": "audio/G2zxzaWgVRA.ogg",
+        "sha256": "145e4020939cb40d74cb620b46a4a07f7d9f802701af581903354fff79985010",
+        "byteLength": 1628683,
+        "durationMs": 266108
+      }
+    },
+    {
+      "song": {
+        "id": "2f5a62ab-5826-57b1-897e-2fa7cffeb753",
+        "youtubeUrl": "https://www.youtube.com/watch?v=6IO74QV6wHY",
+        "title": "Just The Two Of Us",
+        "tags": [
+          "BillWithers",
+          "RalphMacDonald",
+          "WilliamSalter"
+        ]
+      },
+      "audio": {
+        "path": "audio/6IO74QV6wHY.ogg",
+        "sha256": "c7ffaadfa00365be5064e1c5141a8910d84d99775f553133fa47de94400e7fa3",
+        "byteLength": 2720824,
+        "durationMs": 446457
+      }
+    },
+    {
+      "song": {
+        "id": "adf7bf4b-c4e9-5314-984f-3d5bf4dbe9be",
+        "youtubeUrl": "https://www.youtube.com/watch?v=dTwj7PhpY9M",
+        "title": "Painkiller",
+        "tags": [
+          "Ruel",
+          "VANDIJKRUELVINCENT",
+          "AARONSSARAHPAIGE",
+          "LANDONMARK"
+        ]
+      },
+      "audio": {
+        "path": "audio/dTwj7PhpY9M.ogg",
+        "sha256": "010c96d4f5fd791f6baa43d12354d820146270b6dcb2a73494ff4db09f4c771f",
+        "byteLength": 1312470,
+        "durationMs": 216007
+      }
+    },
+    {
+      "song": {
+        "id": "c7e7d50e-809a-5a05-af6f-0e40cf0496e5",
+        "youtubeUrl": "https://www.youtube.com/watch?v=JYuyWrkwpok",
+        "title": "Fly Me To The Moon",
+        "tags": [
+          "FrankSinatra",
+          "BartHoward"
+        ]
+      },
+      "audio": {
+        "path": "audio/JYuyWrkwpok.ogg",
+        "sha256": "1c09ebf6400eb6ca36d5aaacde59ac89b3d10a70c2453a987a0d3c158a93296d",
+        "byteLength": 898711,
+        "durationMs": 147198
+      }
+    },
+    {
+      "song": {
+        "id": "28e78b1a-6ca4-5017-854f-9b09dadb31fb",
+        "youtubeUrl": "https://www.youtube.com/watch?v=fWNaR-rxAic",
+        "title": "Call Me Maybe",
+        "tags": [
+          "CarlyRaeJepsen",
+          "CROWETAVISH",
+          "JEPSENCARLYRAE",
+          "RAMSAYJOSHUAKEELER"
+        ]
+      },
+      "audio": {
+        "path": "audio/fWNaR-rxAic.ogg",
+        "sha256": "d22ee22b857725edfebf901f39c61c0582129d5c89ff760072cba5e79a912328",
+        "byteLength": 1187505,
+        "durationMs": 199408
+      }
+    },
+    {
+      "song": {
+        "id": "5cc9292c-285f-535e-810d-9c68d07b488c",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Ju8Hr50Ckwk",
+        "title": "If I Ain't Got You",
+        "tags": [
+          "AliciaKeys",
+          "AUGELLOCOOKALICIA",
+          "If I Aint Got You"
+        ]
+      },
+      "audio": {
+        "path": "audio/Ju8Hr50Ckwk.ogg",
+        "sha256": "a3bc068af230c1cb400bd7dfd67553d104877883660b668b2021a8aa094058a2",
+        "byteLength": 1282102,
+        "durationMs": 209637
+      }
+    },
+    {
+      "song": {
+        "id": "0dca0bfa-0846-5291-831f-8d6a864fbb25",
+        "youtubeUrl": "https://www.youtube.com/watch?v=BxuY9FET9Y4",
+        "title": "One Call Away",
+        "tags": [
+          "CharliePuth",
+          "찰리푸스",
+          "JustinFranks",
+          "MattPrime",
+          "ShyCarter",
+          "MaureenMcDonald",
+          "BreyanIsaac"
+        ]
+      },
+      "audio": {
+        "path": "audio/BxuY9FET9Y4.ogg",
+        "sha256": "3cd3e02da0ec47f5a118a78210cc6ce090c3ead8c923095ca0327bed0c806c07",
+        "byteLength": 1379861,
+        "durationMs": 241878
+      }
+    },
+    {
+      "song": {
+        "id": "83c86830-0297-5131-8633-13dbbfa6abad",
+        "youtubeUrl": "https://www.youtube.com/watch?v=rtOvBOTyX00",
+        "title": "A Thousand Years(Twilight Saga : Breaking Dawn Part 1 OST)",
+        "tags": [
+          "ChristinaPerri",
+          "HODGESDAVID",
+          "PERRICHRISTINA",
+          "A Thousand Years"
+        ]
+      },
+      "audio": {
+        "path": "audio/rtOvBOTyX00.ogg",
+        "sha256": "d69c857512b2051f00d80ac06d3a809aeba4748ba4caf044378435c3aa72e20f",
+        "byteLength": 1744934,
+        "durationMs": 287795
+      }
+    },
+    {
+      "song": {
+        "id": "1969e61b-5de6-575b-ab1e-f526082f4598",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Zi_XLOBDo_Y",
+        "title": "Billie Jean",
+        "tags": [
+          "MichaelJackson"
+        ]
+      },
+      "audio": {
+        "path": "audio/Zi_XLOBDo_Y.ogg",
+        "sha256": "d9850429f8fb90a57bf23c3d36871f551d593547679ce9e44dd78504198c8b01",
+        "byteLength": 1799031,
+        "durationMs": 295841
+      }
+    },
+    {
+      "song": {
+        "id": "f65b745c-7501-5e8a-9c2c-746360b826eb",
+        "youtubeUrl": "https://www.youtube.com/watch?v=8DS-h67qEiY",
+        "title": "Chandelier",
+        "tags": [
+          "Sia",
+          "SIAFURLER",
+          "JESSESHATKIN"
+        ]
+      },
+      "audio": {
+        "path": "audio/8DS-h67qEiY.ogg",
+        "sha256": "e09f7485ec3ee4fca97da1545a911905c7e5c8607c7f62c0aa48de622dd9a5b2",
+        "byteLength": 1319572,
+        "durationMs": 215794
+      }
+    },
+    {
+      "song": {
+        "id": "58dc9918-163a-564f-897d-b5af20482826",
+        "youtubeUrl": "https://www.youtube.com/watch?v=iKzRIweSBLA",
+        "title": "Perfect",
+        "tags": [
+          "EdSheeran",
+          "SHEERANED"
+        ]
+      },
+      "audio": {
+        "path": "audio/iKzRIweSBLA.ogg",
+        "sha256": "98af10148cff50959e533c35275762e8c767f68f0bfdf19dde0537371a698c3e",
+        "byteLength": 1613845,
+        "durationMs": 263367
+      }
+    },
+    {
+      "song": {
+        "id": "0f7ab3de-739a-5679-8676-ae401f6b67af",
+        "youtubeUrl": "https://www.youtube.com/watch?v=5vheNbQlsyU",
+        "title": "Always Remember Us This Way(A Star Is Born OST)",
+        "tags": [
+          "LadyGaga",
+          "GERMANOTTASTEFANI",
+          "HEMBYNATALIE",
+          "LINDSEYHILLARY",
+          "MCKENNALORI",
+          "Always Remember Us This Way"
+        ]
+      },
+      "audio": {
+        "path": "audio/5vheNbQlsyU.ogg",
+        "sha256": "febcc80b8b02cc6b52bf8a5e2e4db0897c185fd6520436cf6627429c8b24fd72",
+        "byteLength": 1476616,
+        "durationMs": 241756
+      }
+    },
+    {
+      "song": {
+        "id": "c4853623-d80c-5028-bbe6-ca16bbb96c85",
+        "youtubeUrl": "https://www.youtube.com/watch?v=jnXxxKZ57Tw",
+        "title": "Santa Tell Me",
+        "tags": [
+          "ArianaGrande",
+          "SAVANHARISHKOTECHA",
+          "ILYA",
+          "ARIANAGRANDE"
+        ]
+      },
+      "audio": {
+        "path": "audio/jnXxxKZ57Tw.ogg",
+        "sha256": "43750dac24d71b6d2265ac5807c92751565f550e2641266192ddcb66ea4227a8",
+        "byteLength": 1249216,
+        "durationMs": 204029
+      }
+    },
+    {
+      "song": {
+        "id": "f42951d6-32d7-50d1-b062-2f415df5e734",
+        "youtubeUrl": "https://www.youtube.com/watch?v=mNsm2P0l_7Y",
+        "title": "My Heart Will Go On",
+        "tags": [
+          "CelineDion",
+          "HORNERJAMES",
+          "JENNINGSWILL"
+        ]
+      },
+      "audio": {
+        "path": "audio/mNsm2P0l_7Y.ogg",
+        "sha256": "7d2b06eadab7008df4a90f79196a07d0965a40c3ed0ed266df63439596055dc4",
+        "byteLength": 1713788,
+        "durationMs": 280539
+      }
+    },
+    {
+      "song": {
+        "id": "3cc017df-5f5a-5498-9bb7-a4c35af83551",
+        "youtubeUrl": "https://www.youtube.com/watch?v=UlANZSYZ2Js",
+        "title": "What Makes You Beautiful",
+        "tags": [
+          "OneDirection",
+          "FALKCARL",
+          "KOTECHASAVANHARISH",
+          "YACOUBRAMI"
+        ]
+      },
+      "audio": {
+        "path": "audio/UlANZSYZ2Js.ogg",
+        "sha256": "199c57975caba683ba418f75a43d969b21b4e930cb0923e685f7f7c62edd54a4",
+        "byteLength": 1215044,
+        "durationMs": 200348
+      }
+    },
+    {
+      "song": {
+        "id": "7c76ec89-3ffe-5882-8c33-0e469254de7d",
+        "youtubeUrl": "https://www.youtube.com/watch?v=ApXoWvfEYVU",
+        "title": "Sunflower(Spider-Man: Into the Spider-Verse OST)",
+        "tags": [
+          "PostMalone",
+          "SwaeLee",
+          "BROWNKHALIF",
+          "WILLIAMWALSH",
+          "CARTERLANG",
+          "CARLAUSTINROSEN",
+          "LOUISBELL",
+          "AUSTINPOST",
+          "Sunflower"
+        ]
+      },
+      "audio": {
+        "path": "audio/ApXoWvfEYVU.ogg",
+        "sha256": "460fd08e1f28cbcc52c16410b4742d874c714238d9e144b07ec131847491ba1a",
+        "byteLength": 971251,
+        "durationMs": 161676
+      }
+    },
+    {
+      "song": {
+        "id": "09a95459-4fd2-5c21-847e-efed188f5b86",
+        "youtubeUrl": "https://www.youtube.com/watch?v=HU08BcK5SUY",
+        "title": "Beautiful Things",
+        "tags": [
+          "BensonBoone",
+          "BENSONBOONE",
+          "EVANBLAIR",
+          "JACKLAFRANTZ"
+        ]
+      },
+      "audio": {
+        "path": "audio/HU08BcK5SUY.ogg",
+        "sha256": "799b4dfb34f93ed9ce250c52ca3b48d8a878c1fb648ad064aa0b903744b694fb",
+        "byteLength": 1098819,
+        "durationMs": 180322
+      }
+    },
+    {
+      "song": {
+        "id": "45dd6e72-a6a7-59ea-bf01-9ed2d9abb037",
+        "youtubeUrl": "https://www.youtube.com/watch?v=07kWy4mJES8",
+        "title": "Into the Unknown(Frozen2(겨울왕국2) OST)",
+        "tags": [
+          "IdinaMenzel",
+          "Aurora",
+          "KRISTENANDERSONLOPEZ",
+          "ROBERTLOPEZ",
+          "Into the UnknownFrozen2겨울왕국2 OST",
+          "Into the Unknown"
+        ]
+      },
+      "audio": {
+        "path": "audio/07kWy4mJES8.ogg",
+        "sha256": "3e160bd0621fe94212a06d1b55e7efc1e67aac16b5855c366c72cedd233fb28a",
+        "byteLength": 1196289,
+        "durationMs": 199884
+      }
+    },
+    {
+      "song": {
+        "id": "9843e17d-bee2-58a5-b5fb-95bd02a7e127",
+        "youtubeUrl": "https://www.youtube.com/watch?v=gzbLODUb1sA",
+        "title": "I Really Want to Stay at Your House(Cyberpunk OST)",
+        "tags": [
+          "RosaWalton",
+          "HallieCoggins",
+          "WALTONROSAJEWEL"
+        ]
+      },
+      "audio": {
+        "path": "audio/gzbLODUb1sA.ogg",
+        "sha256": "21c1bb4d9d017014a57d3ab410cf406fd18fe92570b087dfb92969e9a2271670",
+        "byteLength": 1511552,
+        "durationMs": 246684
+      }
+    },
+    {
+      "song": {
+        "id": "5e46c88e-61d7-5045-bb70-bc198c864414",
+        "youtubeUrl": "https://www.youtube.com/watch?v=FVdjZYfDuLE",
+        "title": "Wonderwall",
+        "tags": [
+          "Oasis",
+          "NoelGallagher"
+        ]
+      },
+      "audio": {
+        "path": "audio/FVdjZYfDuLE.ogg",
+        "sha256": "c8fbb49d83ac2b0ff099715dff7e62bb341a21bf0c55d6847af6320fd77283e0",
+        "byteLength": 1585606,
+        "durationMs": 258780
+      }
+    },
+    {
+      "song": {
+        "id": "3cfb3d04-8a3f-5be4-bea8-e4cc921200af",
+        "youtubeUrl": "https://www.youtube.com/watch?v=66u3OPuiA1I",
+        "title": "Reality",
+        "tags": [
+          "RichardSanderson",
+          "VladimirCosma",
+          "JJordan"
+        ]
+      },
+      "audio": {
+        "path": "audio/66u3OPuiA1I.ogg",
+        "sha256": "c1df930c7796f6c416753d412e8bc16d38c931850f435f27ad43e4305a602054",
+        "byteLength": 1750738,
+        "durationMs": 288968
+      }
+    },
+    {
+      "song": {
+        "id": "24132cfb-aa52-5e9c-9530-5599df877b28",
+        "youtubeUrl": "https://www.youtube.com/watch?v=xrcMgO2fgpA",
+        "title": "Someone You Loved",
+        "tags": [
+          "LewisCapaldi",
+          "BENJAMINALEXANDERKOHN",
+          "THOMASBARNES",
+          "PETERKELLEHERLEWISCAPALDI",
+          "SAMUELELLIOTROMAN"
+        ]
+      },
+      "audio": {
+        "path": "audio/xrcMgO2fgpA.ogg",
+        "sha256": "508b4dd897d371cd3e3a480ff13b73280b3213d38c3df1a29de09e49ad2111dc",
+        "byteLength": 1112925,
+        "durationMs": 182812
+      }
+    },
+    {
+      "song": {
+        "id": "0d0bbf86-b197-5bf7-8e9a-a8092085ec56",
+        "youtubeUrl": "https://www.youtube.com/watch?v=fHI8X4OXluQ",
+        "title": "Blinding Lights",
+        "tags": [
+          "TheWeeknd",
+          "BALSHEAHMAD",
+          "HOLTEROSCARTHOMAS",
+          "MARTINMAX",
+          "QUENNEVILLEJASONMATTHEW",
+          "TESFAYEABEL"
+        ]
+      },
+      "audio": {
+        "path": "audio/fHI8X4OXluQ.ogg",
+        "sha256": "307fc2af86d3c5d9cd70bbcba369d5581ca824c6ac3510e29a6e3133801cc582",
+        "byteLength": 1238169,
+        "durationMs": 203216
+      }
+    },
+    {
+      "song": {
+        "id": "1dea42b3-c4bb-5e98-8ae7-b67a6ec45b04",
+        "youtubeUrl": "https://www.youtube.com/watch?v=hT_nvWreIhg",
+        "title": "Counting Stars",
+        "tags": [
+          "OneRepublic",
+          "TEDDERRYANB"
+        ]
+      },
+      "audio": {
+        "path": "audio/hT_nvWreIhg.ogg",
+        "sha256": "f6c57590667db3a887ade05e45f1de22cfdcdc52eda1e92053ddb4627127553e",
+        "byteLength": 1704963,
+        "durationMs": 283047
+      }
+    },
+    {
+      "song": {
+        "id": "a9442913-b96a-5a89-a941-6221c240979f",
+        "youtubeUrl": "https://www.youtube.com/watch?v=_HATOKmdaKc",
+        "title": "Englishman In New York",
+        "tags": [
+          "Sting"
+        ]
+      },
+      "audio": {
+        "path": "audio/_HATOKmdaKc.ogg",
+        "sha256": "ccad41cdd05d3951596c6c1f502e28b79390e19a324536922c9c4fbc2431425c",
+        "byteLength": 1638698,
+        "durationMs": 267454
+      }
+    },
+    {
+      "song": {
+        "id": "c8a35ff0-c8d5-565d-947e-4c91d583de87",
+        "youtubeUrl": "https://www.youtube.com/watch?v=2bHBUs-k3ac",
+        "title": "Despacito",
+        "tags": [
+          "LuisFonsiFeatDaddyYankee",
+          "ERIKAENDER",
+          "LUISFONSI"
+        ]
+      },
+      "audio": {
+        "path": "audio/2bHBUs-k3ac.ogg",
+        "sha256": "7a643b77623c13ec1376681fc7f817e95e8d6de5c4ef867899ed7eab74b37ee5",
+        "byteLength": 1395974,
+        "durationMs": 228352
+      }
+    },
+    {
+      "song": {
+        "id": "188ad64d-8e5d-5544-95b8-92e4076760a4",
+        "youtubeUrl": "https://www.youtube.com/watch?v=h0djuhl97Kw",
+        "title": "SAIKAI(림버스컴퍼니OST)",
+        "tags": [
+          "Mili",
+          "CASSIEWEI",
+          "HAMO",
+          "SAIKAI림버스컴퍼니OST",
+          "SAIKAI"
+        ]
+      },
+      "audio": {
+        "path": "audio/h0djuhl97Kw.ogg",
+        "sha256": "37a8c9ce304cd7421810ed3179f5a1354a5b61b9a8474b467b1cdbb30b008be7",
+        "byteLength": 1981338,
+        "durationMs": 323925
+      }
+    },
+    {
+      "song": {
+        "id": "08fc2772-80fd-5b35-998a-0b3be5e19f7d",
+        "youtubeUrl": "https://www.youtube.com/watch?v=wEJd2RyGm8Q",
+        "title": "This Is Me(The Greatest Showman OST)",
+        "tags": [
+          "VariousArtists",
+          "PASEKBENJ",
+          "PAULJUSTINNOBLE",
+          "This Is Me"
+        ]
+      },
+      "audio": {
+        "path": "audio/wEJd2RyGm8Q.ogg",
+        "sha256": "705835717fd5f1604731ccae0a88307f117e8763bbafd3868b86f65a925277c3",
+        "byteLength": 1434452,
+        "durationMs": 234679
+      }
+    },
+    {
+      "song": {
+        "id": "931c08d2-b6a0-5af5-9c54-357c907b6d21",
+        "youtubeUrl": "https://www.youtube.com/watch?v=2AH5l-vrY9Q",
+        "title": "Die For You(Explicit Ver.)",
+        "tags": [
+          "TheWeeknd",
+          "위켄드",
+          "AbelTesfaye",
+          "MartinMcKinney",
+          "MejdiRhars",
+          "DylanWiggins",
+          "MagnusHiberg",
+          "WilliamThomasWalsh",
+          "HenryWalter",
+          "Die For YouExplicit Ver"
+        ]
+      },
+      "audio": {
+        "path": "audio/2AH5l-vrY9Q.ogg",
+        "sha256": "dd1f88a6c3f4c0d6edde1f4bc00ab4b115b07b9cbb0ca96bc8e9b40b7e987b63",
+        "byteLength": 1589450,
+        "durationMs": 260396
+      }
+    },
+    {
+      "song": {
+        "id": "2b498b38-e42b-5b84-b64a-c4cf3205d214",
+        "youtubeUrl": "https://www.youtube.com/watch?v=yGxHDmHoqXc",
+        "title": "Zombie",
+        "tags": [
+          "TheCranberries",
+          "ORiordian",
+          "DoloresORiordan"
+        ]
+      },
+      "audio": {
+        "path": "audio/yGxHDmHoqXc.ogg",
+        "sha256": "c744a66c8636f64da2ecda49f7ef809be1924ba0375cb3cce754535015a4cc2b",
+        "byteLength": 1876916,
+        "durationMs": 306447
+      }
+    },
+    {
+      "song": {
+        "id": "592c7421-5607-5a51-89a3-706199ac3d3f",
+        "youtubeUrl": "https://www.youtube.com/watch?v=EkHTsc9PU2A",
+        "title": "I'm Yours",
+        "tags": [
+          "JasonMraz",
+          "MRAZJASONTHOMAS",
+          "Im Yours"
+        ]
+      },
+      "audio": {
+        "path": "audio/EkHTsc9PU2A.ogg",
+        "sha256": "5f147bfcfa986ba3d51fc5e6a46911437de09fc924c29a6904cf295c1e25fec6",
+        "byteLength": 1348571,
+        "durationMs": 221781
+      }
+    },
+    {
+      "song": {
+        "id": "a4b61e86-2618-5f6a-bdb0-1c4d676543a1",
+        "youtubeUrl": "https://www.youtube.com/watch?v=450p7goxZqg",
+        "title": "All Of Me",
+        "tags": [
+          "JohnLegend",
+          "GADTOBY",
+          "LEGENDJOHN"
+        ]
+      },
+      "audio": {
+        "path": "audio/450p7goxZqg.ogg",
+        "sha256": "62ee2a1a3676dc9a2d555829e7b3ff1cb21b480960dfa72a721db25e81d2179c",
+        "byteLength": 1720675,
+        "durationMs": 307195
+      }
+    },
+    {
+      "song": {
+        "id": "9d778a86-4aed-567b-82b9-fd73b07fec1e",
+        "youtubeUrl": "https://www.youtube.com/watch?v=ulOb9gIGGd0",
+        "title": "My Love",
+        "tags": [
+          "Westlife",
+          "JorgenElofsson",
+          "DaveKreuger",
+          "PerNylen"
+        ]
+      },
+      "audio": {
+        "path": "audio/ulOb9gIGGd0.ogg",
+        "sha256": "2cf99a737d2d772e7329fb3b3e9f1ccee2ad170fe1bebd25784def5e5bf7fa55",
+        "byteLength": 1546025,
+        "durationMs": 253105
+      }
+    },
+    {
+      "song": {
+        "id": "fb4106ad-efb2-5ef0-ae10-b3866857f3b4",
+        "youtubeUrl": "https://www.youtube.com/watch?v=tjv0zFFKmwk",
+        "title": "When We Were Young",
+        "tags": [
+          "Adele",
+          "JESSOTOBIASMACDONALD",
+          "ADKINSADELELAURIEBLUE"
+        ]
+      },
+      "audio": {
+        "path": "audio/tjv0zFFKmwk.ogg",
+        "sha256": "74f5791c08a4890e04301285632036d88a0a3dca8dd846bc52cd6894a59882e1",
+        "byteLength": 1743532,
+        "durationMs": 292532
+      }
+    },
+    {
+      "song": {
+        "id": "5ad5cfda-3f3d-58f0-8ecc-051a5b5abee8",
+        "youtubeUrl": "https://www.youtube.com/watch?v=ZNra8eK0K6k",
+        "title": "How Far I'll Go(Moana OST)",
+        "tags": [
+          "AlessiaCara",
+          "MIRANDALINMANUEL",
+          "How Far Ill GoMoana OST",
+          "How Far I'll Go"
+        ]
+      },
+      "audio": {
+        "path": "audio/ZNra8eK0K6k.ogg",
+        "sha256": "cd7ddf55f4733bfcc5141d5ff0b5470d1f42330794d52e0d82ab98320c30f7c0",
+        "byteLength": 1100872,
+        "durationMs": 182411
+      }
+    },
+    {
+      "song": {
+        "id": "c1520616-db63-57e7-b106-eb15e8657e0c",
+        "youtubeUrl": "https://www.youtube.com/watch?v=-sVB91NTa4A",
+        "title": "Dancing Queen",
+        "tags": [
+          "ABBA",
+          "StigAnderson",
+          "BennyAndersson",
+          "BjornUlvaeus"
+        ]
+      },
+      "audio": {
+        "path": "audio/-sVB91NTa4A.ogg",
+        "sha256": "c2b51649c991a8a21edaca84fb2dccdfbbd4f22ba39373593e6fdd40b4a402c6",
+        "byteLength": 1421060,
+        "durationMs": 233948
+      }
+    },
+    {
+      "song": {
+        "id": "583fcaa2-143f-59ba-b744-703013f1216d",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Ob7vObnFUJc",
+        "title": "Love On Top",
+        "tags": [
+          "Beyonce",
+          "KNOWLESBEYONCEGISSELLE",
+          "NASHTERIUSYOUNGDELL",
+          "TAYLORROBERTSHEA"
+        ]
+      },
+      "audio": {
+        "path": "audio/Ob7vObnFUJc.ogg",
+        "sha256": "fdd1d751e353691a3f3717fa26e01292e874cc7fc1c0760f3f635c1932f6ad13",
+        "byteLength": 1184515,
+        "durationMs": 196332
+      }
+    },
+    {
+      "song": {
+        "id": "ae38fd7e-f078-584e-8b50-baa953a38529",
+        "youtubeUrl": "https://www.youtube.com/watch?v=VArOUfVOjqI",
+        "title": "From The Start",
+        "tags": [
+          "Laufey",
+          "JONSDOTTIRLAUFEYLIN",
+          "STEWARTSPENCEREUGENE"
+        ]
+      },
+      "audio": {
+        "path": "audio/VArOUfVOjqI.ogg",
+        "sha256": "d4ba14d8244c69465906275582f6f585259dc466d99e093dfdb31c000ed22069",
+        "byteLength": 1032043,
+        "durationMs": 169559
+      }
+    },
+    {
+      "song": {
+        "id": "3913604d-6887-5533-a44a-471c4a9d08f2",
+        "youtubeUrl": "https://www.youtube.com/watch?v=qQzdAsjWGPg",
+        "title": "My Way",
+        "tags": [
+          "FrankSinatra",
+          "ANKAPAUL",
+          "FRANCOISCLAUDE",
+          "REVAUXJACQUES",
+          "THIBAUTGILLES"
+        ]
+      },
+      "audio": {
+        "path": "audio/qQzdAsjWGPg.ogg",
+        "sha256": "1869e7752695d60b40ff48f40bc83c4cae1a287f6a884fc8b2b81dbccf4e48e0",
+        "byteLength": 1683768,
+        "durationMs": 276260
+      }
+    },
+    {
+      "song": {
+        "id": "5aa1b61b-7f8b-527d-9c93-14926ab3112d",
+        "youtubeUrl": "https://www.youtube.com/watch?v=RgKAFK5djSk",
+        "title": "See You Again(폴워커추모엔딩곡)",
+        "tags": [
+          "WizKhalifa",
+          "CharliePuth",
+          "CHARLIEPUTH",
+          "CEDARANDREW",
+          "FRANKSJUSTINSCOTT",
+          "WIZKHALIFA",
+          "See You Again폴워커추모엔딩곡",
+          "See You Again"
+        ]
+      },
+      "audio": {
+        "path": "audio/RgKAFK5djSk.ogg",
+        "sha256": "18a9e06dca33bfcf24d3833b45a85a5213d5a49ae4e10ac7e08f5c55968b415c",
+        "byteLength": 1407678,
+        "durationMs": 237373
+      }
+    },
+    {
+      "song": {
+        "id": "43249097-b257-53ba-810d-69af3f14669e",
+        "youtubeUrl": "https://www.youtube.com/watch?v=RRKJiM9Njr8",
+        "title": "Welcome To The Black Parade",
+        "tags": [
+          "MyChemicalRomance",
+          "BRYARBOB",
+          "IEROFRANK",
+          "TORORAY",
+          "WAYGERARD",
+          "WAYMICHAEL"
+        ]
+      },
+      "audio": {
+        "path": "audio/RRKJiM9Njr8.ogg",
+        "sha256": "216a94c54fb39211bc158720c0038b68ecef8af331889d422bd6f49f2c7348c9",
+        "byteLength": 1923567,
+        "durationMs": 314707
+      }
+    },
+    {
+      "song": {
+        "id": "8014abd3-805b-5ca2-9ca7-af6005936ce3",
+        "youtubeUrl": "https://www.youtube.com/watch?v=pQV0WEdT_OE",
+        "title": "Circles",
+        "tags": [
+          "PostMalone",
+          "FEENEYADAMKING",
+          "POSTAUSTINRICHARD",
+          "BELLLOUISRUSSELL",
+          "WALSHBILLY",
+          "GUNESBERKKAAN"
+        ]
+      },
+      "audio": {
+        "path": "audio/pQV0WEdT_OE.ogg",
+        "sha256": "50d1ee42d05f205bc6ccdc4ce22cb13b85eecd668a666b9ca00554e7c119c82b",
+        "byteLength": 1314789,
+        "durationMs": 215360
+      }
+    },
+    {
+      "song": {
+        "id": "25e983c4-a857-5ce1-b0a8-cc4a0658449c",
+        "youtubeUrl": "https://www.youtube.com/watch?v=nUe1MtJfZuY",
+        "title": "GHOST TOWN",
+        "tags": [
+          "BensonBoone",
+          "BENSONBOONE",
+          "NOLANWINFIELDSIPE",
+          "TUSHARAPTE"
+        ]
+      },
+      "audio": {
+        "path": "audio/nUe1MtJfZuY.ogg",
+        "sha256": "82f256e9530b11a145aa254ea1d1f58c5c03475b284f55a2028a931a7a8b1615",
+        "byteLength": 1184555,
+        "durationMs": 193731
+      }
+    },
+    {
+      "song": {
+        "id": "5828ea87-339f-5b92-b2e5-0642aba875c0",
+        "youtubeUrl": "https://www.youtube.com/watch?v=QwVjTlTdIDQ",
+        "title": "Piano Man",
+        "tags": [
+          "BillyJoel"
+        ]
+      },
+      "audio": {
+        "path": "audio/QwVjTlTdIDQ.ogg",
+        "sha256": "eefc50ca808a120c718865ae0bdcf9dc0e1b80f6fa441f70e1fa32a9193df195",
+        "byteLength": 2079145,
+        "durationMs": 339970
+      }
+    },
+    {
+      "song": {
+        "id": "4fb326ae-f04f-5b76-815a-7633e18cb7c9",
+        "youtubeUrl": "https://www.youtube.com/watch?v=kxgj5af8zg4",
+        "title": "Out of Time",
+        "tags": [
+          "TheWeeknd",
+          "ARANTOMOKO",
+          "HAMADATETSURO",
+          "HOLTEROSCARTHOMAS",
+          "LOPATINDANIEL",
+          "MAXMARTIN",
+          "TESFAYEABEL"
+        ]
+      },
+      "audio": {
+        "path": "audio/kxgj5af8zg4.ogg",
+        "sha256": "8148e7f3662905fe8bf3ca654930bd3a9928042556ca45230b020e9c62b239b2",
+        "byteLength": 1313552,
+        "durationMs": 214316
+      }
+    },
+    {
+      "song": {
+        "id": "bb6d1de3-61fd-55ee-88e3-27310f52451d",
+        "youtubeUrl": "https://www.youtube.com/watch?v=S2Cti12XBw4",
+        "title": "Sunday Morning",
+        "tags": [
+          "Maroon5",
+          "Carmichael",
+          "Levine"
+        ]
+      },
+      "audio": {
+        "path": "audio/S2Cti12XBw4.ogg",
+        "sha256": "5722a91dc739985003486a0cb060ebe102e8ff0175e9373450c0039ca274cd95",
+        "byteLength": 1606040,
+        "durationMs": 264331
+      }
+    },
+    {
+      "song": {
+        "id": "7d831039-9831-5acf-9a1c-e8662a8f2092",
+        "youtubeUrl": "https://www.youtube.com/watch?v=bo_efYhYU2A",
+        "title": "Shallow(A Star Is Born OST)",
+        "tags": [
+          "LadyGaga",
+          "BradleyCooper",
+          "GERMANOTTASTEFANI",
+          "RONSONMARK",
+          "ROSSOMANDOANTHONY",
+          "WYATTANDREW",
+          "ShallowA Star Is Born OST",
+          "Shallow"
+        ]
+      },
+      "audio": {
+        "path": "audio/bo_efYhYU2A.ogg",
+        "sha256": "a90115d0489aed7b77c6390f03c2c6fca24092594ad859afc04a0fc2cb0fd1de",
+        "byteLength": 1321946,
+        "durationMs": 216199
+      }
+    },
+    {
+      "song": {
+        "id": "0425577a-97a3-56c0-a4f4-3ac4c9d7f997",
+        "youtubeUrl": "https://www.youtube.com/watch?v=dElRVQFqj-k",
+        "title": "Marry You",
+        "tags": [
+          "BrunoMars",
+          "HERNANDEZPETERGENE",
+          "LAWRENCEPHILIPMARTIN",
+          "LEVINEARI"
+        ]
+      },
+      "audio": {
+        "path": "audio/dElRVQFqj-k.ogg",
+        "sha256": "6d2d86743720c57c11536b8095fe16ada623431241b0069cf684cc01c5d462af",
+        "byteLength": 1393628,
+        "durationMs": 227435
+      }
+    },
+    {
+      "song": {
+        "id": "aa6bb707-fe5e-588f-b5df-16ab2ddfe19e",
+        "youtubeUrl": "https://www.youtube.com/watch?v=z0GKGpObgPY",
+        "title": "Sign Of The Times",
+        "tags": [
+          "HarryStyles",
+          "해리스타일스",
+          "JeffBhasker",
+          "MitchRowland",
+          "RyanNasci",
+          "AlexSalibian",
+          "TylerJohnson"
+        ]
+      },
+      "audio": {
+        "path": "audio/z0GKGpObgPY.ogg",
+        "sha256": "1dfb391575817799a64df20d58e1d8e5485b113f488e1b994cdc5c0cd8ed4f06",
+        "byteLength": 2084523,
+        "durationMs": 341816
+      }
+    },
+    {
+      "song": {
+        "id": "357f3724-643f-5d3c-9e75-9f32707d7545",
+        "youtubeUrl": "https://www.youtube.com/watch?v=n3kDc9M2kqE",
+        "title": "High Hopes",
+        "tags": [
+          "PanicAtTheDisco",
+          "패닉앳더디스코",
+          "BrendonUrie",
+          "JakeSinclair",
+          "JennyOwenYoungs",
+          "LaurenPritchard",
+          "SamHollander",
+          "WilliamLobbanBean",
+          "JonasJeberg",
+          "TaylorParks"
+        ]
+      },
+      "audio": {
+        "path": "audio/n3kDc9M2kqE.ogg",
+        "sha256": "3dc1d0998d44e6457872c05b46bce37956f744e4772f0e7e134ecac2212902e0",
+        "byteLength": 1164156,
+        "durationMs": 190980
+      }
+    },
+    {
+      "song": {
+        "id": "fd659bf6-fccb-5cb3-b56e-aa3efec69735",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Pvcc5yEPpTc",
+        "title": "We Don't Talk Anymore",
+        "tags": [
+          "CharliePuthFeatSelenaGomez",
+          "CHARLIEPUTH",
+          "JACOBKASHERHINDLIN",
+          "SELENAMARIEGOMEZ",
+          "We Dont Talk Anymore"
+        ]
+      },
+      "audio": {
+        "path": "audio/Pvcc5yEPpTc.ogg",
+        "sha256": "759468f1c83075ce027bfcf631d47aa84739b7d71dbe1e5a2e245ac4ab2b1cd2",
+        "byteLength": 1326110,
+        "durationMs": 217706
+      }
+    },
+    {
+      "song": {
+        "id": "5b798a03-f7a7-58d8-83fb-6d9a16c3f252",
+        "youtubeUrl": "https://www.youtube.com/watch?v=zxXAxLuZAzY",
+        "title": "Lay Me Down",
+        "tags": [
+          "SamSmithFeatJohnLegend",
+          "SAMSMITH",
+          "JAMESNAPIER",
+          "ELVINSMITH"
+        ]
+      },
+      "audio": {
+        "path": "audio/zxXAxLuZAzY.ogg",
+        "sha256": "b0291240012468c38bd5c2251fcc267d37e52656ff5095b9c5c63314a6ac19c2",
+        "byteLength": 1557757,
+        "durationMs": 254207
+      }
+    },
+    {
+      "song": {
+        "id": "f604219c-6a2a-5825-a5e7-e7f8835d9aa8",
+        "youtubeUrl": "https://www.youtube.com/watch?v=ZuifkacZ0TA",
+        "title": "Hero(림버스컴퍼니OST)",
+        "tags": [
+          "Mili",
+          "CASSIEWEI",
+          "SAKAIHIROKAZU",
+          "Hero림버스컴퍼니OST",
+          "Hero"
+        ]
+      },
+      "audio": {
+        "path": "audio/ZuifkacZ0TA.ogg",
+        "sha256": "c2bce73c94b53db8d7077dd892381db1a73176548044b50e1f39581f126808f2",
+        "byteLength": 1280298,
+        "durationMs": 214768
+      }
+    },
+    {
+      "song": {
+        "id": "764dc25d-c905-58a5-ad36-7638a35c7b2b",
+        "youtubeUrl": "https://www.youtube.com/watch?v=3pYqVj-FyBk",
+        "title": "Can't Take My Eyes Off You",
+        "tags": [
+          "MortenHarket",
+          "BobCrewe",
+          "BobGaudio",
+          "Cant Take My Eyes Off You"
+        ]
+      },
+      "audio": {
+        "path": "audio/3pYqVj-FyBk.ogg",
+        "sha256": "eb23b49597a5e2772bc47459dd199c25e02dde7889129634b1b2fe9e1e860bd9",
+        "byteLength": 1366269,
+        "durationMs": 223874
+      }
+    },
+    {
+      "song": {
+        "id": "aa88ce59-4b86-5c93-ab72-5631dd2fa1d8",
+        "youtubeUrl": "https://www.youtube.com/watch?v=lY5V4hSLWY8",
+        "title": "Risk It All",
+        "tags": [
+          "BrunoMars",
+          "ARJONAVAZQUEZJOHAN",
+          "HERNANDEZPETERGENE"
+        ]
+      },
+      "audio": {
+        "path": "audio/lY5V4hSLWY8.ogg",
+        "sha256": "d2be0e03b0e37eb9c5b7f7694e5487d05e997818f892649f9a5d6d967af2f891",
+        "byteLength": 1276273,
+        "durationMs": 210682
+      }
+    },
+    {
+      "song": {
+        "id": "968fac20-60f5-597f-a5d5-e2cf8fe74120",
+        "youtubeUrl": "https://www.youtube.com/watch?v=agf4tUnxotA",
+        "title": "Falling Slowly(Once OST)",
+        "tags": [
+          "GlenHansardMarketaIrglova",
+          "GlenHansard",
+          "MarketaIrglova",
+          "Falling SlowlyOnce OST",
+          "Falling Slowly"
+        ]
+      },
+      "audio": {
+        "path": "audio/agf4tUnxotA.ogg",
+        "sha256": "48c580d05001d5e106b78297ba6e25f6e3f08a302b0ca790f2272933329626c7",
+        "byteLength": 1490066,
+        "durationMs": 244140
+      }
+    },
+    {
+      "song": {
+        "id": "2ef8df92-564a-59ae-93a3-9f0507696904",
+        "youtubeUrl": "https://www.youtube.com/watch?v=T1tl66trXTQ",
+        "title": "Hello",
+        "tags": [
+          "Adele",
+          "ADKINSADELE",
+          "KURSTINGREGORYALLEN"
+        ]
+      },
+      "audio": {
+        "path": "audio/T1tl66trXTQ.ogg",
+        "sha256": "0cac52ca7b8c066d537ac9bbd15b03f36be4a6205b00a580c985fee52c9f3bde",
+        "byteLength": 1807935,
+        "durationMs": 295539
+      }
+    },
+    {
+      "song": {
+        "id": "592f8a0e-833a-50da-b851-44cced82ebdd",
+        "youtubeUrl": "https://www.youtube.com/watch?v=bnVUHWCynig",
+        "title": "Halo",
+        "tags": [
+          "Beyonce",
+          "EKiddBogart",
+          "BeyonceKnowles",
+          "RyanTedder"
+        ]
+      },
+      "audio": {
+        "path": "audio/bnVUHWCynig.ogg",
+        "sha256": "5f1304e4e1562b4bf51a50826b49df0f7cc2babb4621ca92bdc309aff2415ab0",
+        "byteLength": 1370606,
+        "durationMs": 224776
+      }
+    }
+  ],
+  "excludedSongs": [
+    {
+      "index": 25,
+      "title": "Love",
+      "reasons": [
+        "Original studio recording remains unresolved: exact-title and artist/Topic searches found only the artist channel’s alternate rendition, unrelated unofficial uploads, and live or karaoke versions. No substitute was used."
+      ]
+    },
+    {
+      "index": 30,
+      "title": "Believer",
+      "reasons": [
+        "TJ’s raw writer credit represents seven credited names, while the independently retrieved full-songwriter source lists eight. Retained the full sourced list and raw chart credit separately; author-count discrepancy still needs reconciliation."
+      ]
+    },
+    {
+      "index": 56,
+      "title": "Teeth",
+      "reasons": [
+        "TJ’s raw credit names Louis Bell and indicates six additional writers, while the full-songwriter source lists a different 11-name set and omits Louis Bell. Retained both records separately; credit-set discrepancy still needs reconciliation."
+      ]
+    },
+    {
+      "index": 78,
+      "title": "Too Good To Say Goodbye",
+      "reasons": [
+        "Original studio recording remains unresolved: exact-title Bruno Mars searches surfaced no Bruno Mars official/Topic upload; a similarly titled Topic result belongs to Heaven is Shining, and other results were reposts, lyrics, or karaoke. No substitute was used."
+      ]
+    }
+  ]
+}

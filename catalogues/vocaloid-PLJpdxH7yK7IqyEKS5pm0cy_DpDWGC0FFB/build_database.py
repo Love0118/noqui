@@ -3,6 +3,8 @@ import json
 from pathlib import Path
 import sqlite3
 import tempfile
+import time
+from contextlib import closing
 
 
 ROOT = Path(__file__).resolve().parent
@@ -33,10 +35,15 @@ def populate(connection, catalogue):
              song.get('channel'), song.get('durationSeconds'), song['youtubeUrl'],
              song['confidence'], int(song['reviewRequired']), song.get('notes', '')),
         )
-        for position, writer in enumerate(song['tags']):
+        for position, writer in enumerate(song.get('writers', song['tags'])):
             connection.execute('INSERT INTO writers(name) VALUES (?) ON CONFLICT(name) DO NOTHING', (writer,))
             writer_id = connection.execute('SELECT id FROM writers WHERE name = ?', (writer,)).fetchone()[0]
             connection.execute('INSERT INTO song_writers VALUES (?, ?, ?)', (song_id, writer_id, position))
+        for position, tag in enumerate(song['tags']):
+            connection.execute('INSERT INTO song_tags VALUES (?, ?, ?)', (song_id, position, tag))
+        for position, alias in enumerate(song.get('aliases', [])):
+            connection.execute('INSERT INTO aliases VALUES (?, ?, ?, ?, ?, ?, ?)',
+                               (song_id, position, alias['kind'], alias['name'], alias.get('writer'), alias.get('url'), alias['quote']))
         audio = song['audio']
         connection.execute(
             'INSERT INTO audio VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
@@ -64,8 +71,10 @@ def verify_database(connection, catalogue):
     expected = {
         'songs': len(songs),
         'audio': len(songs),
-        'writers': len({tag for song in songs for tag in song['tags']}),
-        'song_writers': sum(len(song['tags']) for song in songs),
+        'writers': len({tag for song in songs for tag in song.get('writers', song['tags'])}),
+        'song_writers': sum(len(song.get('writers', song['tags'])) for song in songs),
+        'song_tags': sum(len(song['tags']) for song in songs),
+        'aliases': sum(len(song.get('aliases', [])) for song in songs),
         'evidence': sum(len(song['evidence']) for song in songs),
         'review_issues': sum(len(song['validationWarnings']) for song in songs),
         '전체곡': len(songs),
@@ -82,7 +91,7 @@ def verify_database(connection, catalogue):
             'SELECT w.name FROM song_writers sw JOIN writers w ON w.id = sw.writer_id '
             'WHERE sw.song_id = ? ORDER BY sw.tag_order', (song['id'],),
         )]
-        if actual_tags != song['tags']:
+        if actual_tags != song.get('writers', song['tags']):
             raise ValueError(f'Writer order or identity changed: {song["videoId"]}')
     if connection.execute('PRAGMA integrity_check').fetchall() != [('ok',)]:
         raise ValueError('SQLite integrity check failed')
@@ -109,7 +118,18 @@ def build_database(source=ROOT / 'catalogue.json', destination=ROOT / 'catalogue
             connection.execute('VACUUM')
         finally:
             connection.close()
-        temporary.replace(destination)
+        try:
+            temporary.replace(destination)
+        except PermissionError:
+            # Windows viewers may deny file replacement while still allowing SQLite writes.
+            # SQLite backup updates an open destination atomically, preserving existing readers.
+            deadline = time.monotonic() + 10
+            def progress(status, remaining, total):
+                if time.monotonic() > deadline:
+                    raise TimeoutError('Catalogue database is locked by another application')
+            with closing(sqlite3.connect(temporary)) as prepared, closing(sqlite3.connect(destination, timeout=2)) as existing:
+                prepared.backup(existing, pages=256, progress=progress, sleep=.1)
+            temporary.unlink()
         return counts
     finally:
         temporary.unlink(missing_ok=True)

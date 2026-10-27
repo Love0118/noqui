@@ -26,6 +26,22 @@ Paper 26.3 / Java 25용 노래퀴즈 플러그인입니다. 오디오는 Rust �
 
 DB는 같은 폴더의 `build_database.py`로 `catalogue.json`에서 재생성할 수 있습니다. 재생성하면 DB의 직접 수정 내용 대신 JSON에 저장된 검수 결과를 반영합니다. 음원 경로는 DB와 같은 폴더를 기준으로 한 상대 경로입니다.
 
+## 서버 플레이리스트
+
+OP의 `/noqui playlist`에서 설치된 목록과 전체/재생 가능 곡 수를 보고 선택하면 셔플로 시작합니다. 콘솔은 `/noqui playlist <id>`를 사용합니다. 출제권을 소모하지 않으며 곡 제출은 받지 않습니다. 기존 스킵·힌트·일시정지·점수·시간 설정을 사용하고 목록이 끝나면 종료합니다. `/noqui limit <라운드 수>`는 현재 셔플 순서를 유지하면서 뒤의 대기곡을 자릅니다. 제한을 늘리거나 0으로 되돌려도 잘린 곡은 복구하지 않습니다.
+
+`playlists/ssip-noqui/playlist.json`의 **씹노퀴**는 검수 완료 541곡만 포함합니다. 그중 원본 다운로드 불가 5곡은 목록에 보존하고 재생에서 제외하므로 현재 재생 가능 곡은 536곡입니다. `audio/`는 전체 길이 Opus의 정답 메타데이터를 제거한 서버용 파일이며 로컬에만 보관합니다. 원본 정제 음원의 제목·작가 태그는 유지합니다.
+
+```powershell
+python tools/build_playlist.py catalogues/vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB/catalogue.json playlists/ssip-noqui --id ssip-noqui --name 씹노퀴
+```
+
+서버에 해당 폴더를 복사하고 오디오 서비스를 정지한 뒤 `web` 릴리스의 `install-playlist /var/lib/noqui /전송경로/ssip-noqui/playlist.json`을 서비스 계정으로 실행하고 재시작합니다. 설치기는 해시·파일 크기·Opus 전체 길이·경로를 검증합니다. 설치 음원은 `/var/lib/noqui/library/`에 저장하여 **5 GiB 임시 재생 캐시의 용량 계산·자동 삭제에서 제외**합니다. 동일 ID는 덮어쓰지 않으므로 교체 시 기존 폴더를 library 밖으로 보관한 후 설치합니다. library 폴더를 웹 정적 경로로 공개하지 마세요.
+
+작가 원명은 `writers`, 조사한 한국어 별칭·곡명 발음·특수문자 제거 이름은 `aliases`로 구분하고 게임용 `tags`에 합칩니다. DB의 `전체곡.정답태그`와 `별칭목록`에서 확인할 수 있습니다. `alias-research.json`에는 미확인 이름을 남깁니다. 직접 번역·추측한 발음은 추가하지 않습니다.
+
+`TJ인기차트-261027국내`, `TJ인기차트-261027팝송`, `TJ인기차트-261027일본노래`는 TJ 공식 TOP100을 2026-10-01~2026-10-27 기간으로 조회한 각각 100곡의 스냅샷입니다. 정제 원본은 `catalogues/tj-261027-*/`, 설치 번들은 `playlists/tj-261027-*/`에 있습니다. 검토 대기곡도 목록 총계와 DB에 보존하고 재생에서 제외합니다. `playlists/catalogue.sqlite3`의 `플레이리스트`, `전체곡`, `재생가능곡`, `검토필요곡`, `출처목록` 뷰에서 네 목록을 함께 확인합니다. `python tools/build_playlist_database.py`로 DB를 갱신하고 `python tools/validate_playlist_catalogues.py --audio`로 정제 목록과 원본 음원을 검사합니다.
+
 ## 빌드
 
 플러그인 저장소 루트에서 실행합니다. Java 25, Maven, Python 3이 필요합니다.

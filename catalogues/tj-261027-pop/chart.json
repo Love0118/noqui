@@ -1,0 +1,1531 @@
+{
+  "sourceDate": "2026-10-27",
+  "chartName": "TJ미디어 TOP 100 - POP",
+  "chartPeriod": "2026-10-01~2026-10-27",
+  "category": "팝송",
+  "categoryCode": "2",
+  "chartType": "TOP",
+  "sourceUrl": "https://www.tjmedia.com/chart/top100",
+  "apiUrl": "https://www.tjmedia.com/legacy/api/topAndHot100",
+  "retrievedAt": "2026-10-27",
+  "itemsTotalCount": 100,
+  "entries": [
+    {
+      "rank": 1,
+      "tjNumber": "22567",
+      "title": "Let It Go(Frozen(겨울왕국) OST)",
+      "singer": "Idina Menzel",
+      "songwriterCredit": "LOPEZ ROBERT J,ANDERSON KRISTEN",
+      "composerCredit": "LOPEZ ROBERT J,ANDERSON KRISTEN",
+      "raw": {
+        "word": "LOPEZ ROBERT J,ANDERSON KRISTEN",
+        "com": "LOPEZ ROBERT J,ANDERSON KRISTEN",
+        "icongubun": "",
+        "mv_yn": "Y",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/022567_thumb.jpg"
+      }
+    },
+    {
+      "rank": 2,
+      "tjNumber": "7740",
+      "title": "Creep",
+      "singer": "Radiohead",
+      "songwriterCredit": "Colin Greenwood, Jonny Greenwood, Ed Obrien, Phil Selway, Thom Yorke",
+      "composerCredit": "Colin Greenwood, Jonny Greenwood, Ed Obrien, Phil Selway, Thom Yorke",
+      "raw": {
+        "word": "Colin Greenwood, Jonny Greenwood, Ed Obrien, Phil Selway, Thom Yorke",
+        "com": "Colin Greenwood, Jonny Greenwood, Ed Obrien, Phil Selway, Thom Yorke",
+        "icongubun": "",
+        "mv_yn": "Y",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/007740_thumb.jpg"
+      }
+    },
+    {
+      "rank": 3,
+      "tjNumber": "20456",
+      "title": "Don't Look Back In Anger",
+      "singer": "Oasis",
+      "songwriterCredit": "Noel Gallagher",
+      "composerCredit": "Noel Gallagher",
+      "raw": {
+        "word": "Noel Gallagher",
+        "com": "Noel Gallagher",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/020456_thumb.jpg"
+      }
+    },
+    {
+      "rank": 4,
+      "tjNumber": "23363",
+      "title": "Speechless(Aladdin OST)",
+      "singer": "Naomi Scott",
+      "songwriterCredit": "PASEK BENJ,PAUL JUSTIN NOBLE ",
+      "composerCredit": "MENKEN ALAN",
+      "raw": {
+        "word": "PASEK BENJ,PAUL JUSTIN NOBLE ",
+        "com": "MENKEN ALAN",
+        "icongubun": "",
+        "mv_yn": "Y",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023363_thumb.jpg"
+      }
+    },
+    {
+      "rank": 5,
+      "tjNumber": "22571",
+      "title": "Love Is An Open Door(Frozen(겨울왕국) OST)",
+      "singer": "Kristen Bell,Santino Fontana",
+      "songwriterCredit": "LOPEZ ROBERT J,ANDERSON KRISTEN",
+      "composerCredit": "LOPEZ ROBERT J,ANDERSON KRISTEN",
+      "raw": {
+        "word": "LOPEZ ROBERT J,ANDERSON KRISTEN",
+        "com": "LOPEZ ROBERT J,ANDERSON KRISTEN",
+        "icongubun": "",
+        "mv_yn": "Y",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/022571_thumb.jpg"
+      }
+    },
+    {
+      "rank": 6,
+      "tjNumber": "22213",
+      "title": "Rolling In The Deep",
+      "singer": "Adele",
+      "songwriterCredit": "ADKINS ADELE LAURIE BLUE,EPWORTH PAUL",
+      "composerCredit": "ADKINS ADELE LAURIE BLUE,EPWORTH PAUL",
+      "raw": {
+        "word": "ADKINS ADELE LAURIE BLUE,EPWORTH PAUL",
+        "com": "ADKINS ADELE LAURIE BLUE,EPWORTH PAUL",
+        "icongubun": "",
+        "mv_yn": "Y",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/022213_thumb.jpg"
+      }
+    },
+    {
+      "rank": 7,
+      "tjNumber": "21958",
+      "title": "Love Story",
+      "singer": "Taylor Swift",
+      "songwriterCredit": "Taylor Swift",
+      "composerCredit": "Taylor Swift",
+      "raw": {
+        "word": "Taylor Swift",
+        "com": "Taylor Swift",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/021958_thumb.jpg"
+      }
+    },
+    {
+      "rank": 8,
+      "tjNumber": "22692",
+      "title": "I'm Not The Only One",
+      "singer": "Sam Smith",
+      "songwriterCredit": "JAMES NAPIER,SAM SMITH",
+      "composerCredit": "JAMES NAPIER,SAM SMITH",
+      "raw": {
+        "word": "JAMES NAPIER,SAM SMITH",
+        "com": "JAMES NAPIER,SAM SMITH",
+        "icongubun": "",
+        "mv_yn": "Y",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/022692_thumb.jpg"
+      }
+    },
+    {
+      "rank": 9,
+      "tjNumber": "23165",
+      "title": "Rewrite The Stars(The Greatest Showman OST)",
+      "singer": "Zac Efron,Zendaya",
+      "songwriterCredit": "PASEK BENJ,PAUL JUSTIN NOBLE",
+      "composerCredit": "PASEK BENJ,PAUL JUSTIN NOBLE",
+      "raw": {
+        "word": "PASEK BENJ,PAUL JUSTIN NOBLE",
+        "com": "PASEK BENJ,PAUL JUSTIN NOBLE",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023165_thumb.jpg"
+      }
+    },
+    {
+      "rank": 10,
+      "tjNumber": "79696",
+      "title": "Die With A Smile",
+      "singer": "Lady Gaga,Bruno Mars",
+      "songwriterCredit": "EMILE DERNST,FAUNTLEROY JAMES EDWARD,GERMANOTTA STEFANI J,HERNANDEZ PETER GENE,WATT ANDREW",
+      "composerCredit": "EMILE DERNST,FAUNTLEROY JAMES EDWARD,GERMANOTTA STEFANI J,HERNANDEZ PETER GENE,WATT ANDREW",
+      "raw": {
+        "word": "EMILE DERNST,FAUNTLEROY JAMES EDWARD,GERMANOTTA STEFANI J,HERNANDEZ PETER GENE,WATT ANDREW",
+        "com": "EMILE DERNST,FAUNTLEROY JAMES EDWARD,GERMANOTTA STEFANI J,HERNANDEZ PETER GENE,WATT ANDREW",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/079696_thumb.jpg"
+      }
+    },
+    {
+      "rank": 11,
+      "tjNumber": "23190",
+      "title": "2002",
+      "singer": "Anne-Marie",
+      "songwriterCredit": "CARLSSON ANDREAS MIKAEL 외 17명",
+      "composerCredit": "CARLSSON ANDREAS MIKAEL 외 17명",
+      "raw": {
+        "word": "CARLSSON ANDREAS MIKAEL 외 17명",
+        "com": "CARLSSON ANDREAS MIKAEL 외 17명",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023190_thumb.jpg"
+      }
+    },
+    {
+      "rank": 12,
+      "tjNumber": "7095",
+      "title": "She's Gone",
+      "singer": "Steelheart",
+      "songwriterCredit": "MATTJEVIC MICHAEL",
+      "composerCredit": "MATTJEVIC MICHAEL",
+      "raw": {
+        "word": "MATTJEVIC MICHAEL",
+        "com": "MATTJEVIC MICHAEL",
+        "icongubun": "",
+        "mv_yn": "Y",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/007095_thumb.jpg"
+      }
+    },
+    {
+      "rank": 13,
+      "tjNumber": "22993",
+      "title": "Dangerously",
+      "singer": "Charlie Puth",
+      "songwriterCredit": "ALEXANDER IZQUIERDO,CHARLIE PUTH,JAMES JOHN ABRAHART,MARCO ANTONIO RODRIGUEZ-DIAZ,ROTEM JONATHAN",
+      "composerCredit": "ALEXANDER IZQUIERDO,CHARLIE PUTH,JAMES JOHN ABRAHART,MARCO ANTONIO RODRIGUEZ-DIAZ,ROTEM JONATHAN",
+      "raw": {
+        "word": "ALEXANDER IZQUIERDO,CHARLIE PUTH,JAMES JOHN ABRAHART,MARCO ANTONIO RODRIGUEZ-DIAZ,ROTEM JONATHAN",
+        "com": "ALEXANDER IZQUIERDO,CHARLIE PUTH,JAMES JOHN ABRAHART,MARCO ANTONIO RODRIGUEZ-DIAZ,ROTEM JONATHAN",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/022993_thumb.jpg"
+      }
+    },
+    {
+      "rank": 14,
+      "tjNumber": "22660",
+      "title": "Lost Stars(Begin Again OST)",
+      "singer": "Adam Levine",
+      "songwriterCredit": "ALEXANDER GREGG,BRISEBOIS DANIELLE A,LASHLEY NICK P,NICKY SOUTHWOOD",
+      "composerCredit": "ALEXANDER GREGG,BRISEBOIS DANIELLE A,LASHLEY NICK P,NICKY SOUTHWOOD",
+      "raw": {
+        "word": "ALEXANDER GREGG,BRISEBOIS DANIELLE A,LASHLEY NICK P,NICKY SOUTHWOOD",
+        "com": "ALEXANDER GREGG,BRISEBOIS DANIELLE A,LASHLEY NICK P,NICKY SOUTHWOOD",
+        "icongubun": "",
+        "mv_yn": "Y",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/022660_thumb.jpg"
+      }
+    },
+    {
+      "rank": 15,
+      "tjNumber": "23483",
+      "title": "Dance Monkey",
+      "singer": "Tones And I",
+      "songwriterCredit": "WATSON TONI",
+      "composerCredit": "WATSON TONI",
+      "raw": {
+        "word": "WATSON TONI",
+        "com": "WATSON TONI",
+        "icongubun": "",
+        "mv_yn": "Y",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023483_thumb.jpg"
+      }
+    },
+    {
+      "rank": 16,
+      "tjNumber": "7761",
+      "title": "Lemon Tree",
+      "singer": "Fool's Garden",
+      "songwriterCredit": "FREUDENTHALER PETER, HINKEL VOLKER, FREUDENTHALER PETER, HINKEL VOLKER",
+      "composerCredit": "FREUDENTHALER PETER, HINKEL VOLKER, FREUDENTHALER PETER, HINKEL VOLKER",
+      "raw": {
+        "word": "FREUDENTHALER PETER, HINKEL VOLKER, FREUDENTHALER PETER, HINKEL VOLKER",
+        "com": "FREUDENTHALER PETER, HINKEL VOLKER, FREUDENTHALER PETER, HINKEL VOLKER",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/007761_thumb.jpg"
+      }
+    },
+    {
+      "rank": 17,
+      "tjNumber": "22073",
+      "title": "Baby",
+      "singer": "Justin Bieber",
+      "songwriterCredit": "Youngdell Nash, Nash Bieber, Bridges, The-Dream, Stewart Bridges, Stewart Milian ",
+      "composerCredit": "Youngdell Nash, Nash Bieber, Bridges, The-Dream, Stewart Bridges, Stewart Milian ",
+      "raw": {
+        "word": "Youngdell Nash, Nash Bieber, Bridges, The-Dream, Stewart Bridges, Stewart Milian ",
+        "com": "Youngdell Nash, Nash Bieber, Bridges, The-Dream, Stewart Bridges, Stewart Milian ",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/022073_thumb.jpg"
+      }
+    },
+    {
+      "rank": 18,
+      "tjNumber": "23268",
+      "title": "Snowman",
+      "singer": "Sia",
+      "songwriterCredit": "GREG KURSTIN,SIA FURLER",
+      "composerCredit": "GREG KURSTIN,SIA FURLER",
+      "raw": {
+        "word": "GREG KURSTIN,SIA FURLER",
+        "com": "GREG KURSTIN,SIA FURLER",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023268_thumb.jpg"
+      }
+    },
+    {
+      "rank": 19,
+      "tjNumber": "22422",
+      "title": "Beauty And A Beat",
+      "singer": "Justin Bieber(Feat.Nicki Minaj)",
+      "songwriterCredit": "ZEDD,SAVAN KOTECHA,MAX MARTIN,NICKI MINAJ",
+      "composerCredit": "ZEDD,SAVAN KOTECHA,MAX MARTIN,NICKI MINAJ",
+      "raw": {
+        "word": "ZEDD,SAVAN KOTECHA,MAX MARTIN,NICKI MINAJ",
+        "com": "ZEDD,SAVAN KOTECHA,MAX MARTIN,NICKI MINAJ",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/022422_thumb.jpg"
+      }
+    },
+    {
+      "rank": 20,
+      "tjNumber": "23924",
+      "title": "Until I Found You",
+      "singer": "Stephen Sanchez",
+      "songwriterCredit": "SANCHEZ STEPHEN CHRISTOPHER",
+      "composerCredit": "SANCHEZ STEPHEN CHRISTOPHER",
+      "raw": {
+        "word": "SANCHEZ STEPHEN CHRISTOPHER",
+        "com": "SANCHEZ STEPHEN CHRISTOPHER",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023924_thumb.jpg"
+      }
+    },
+    {
+      "rank": 21,
+      "tjNumber": "22435",
+      "title": "When I Was Your Man",
+      "singer": "Bruno Mars",
+      "songwriterCredit": "LAWRENCE PHILIP MARTIN II,LEVINE ARI,MARS BRUNO, WYATT ANDREW",
+      "composerCredit": "LAWRENCE PHILIP MARTIN II,LEVINE ARI,MARS BRUNO, WYATT ANDREW",
+      "raw": {
+        "word": "LAWRENCE PHILIP MARTIN II,LEVINE ARI,MARS BRUNO, WYATT ANDREW",
+        "com": "LAWRENCE PHILIP MARTIN II,LEVINE ARI,MARS BRUNO, WYATT ANDREW",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/022435_thumb.jpg"
+      }
+    },
+    {
+      "rank": 22,
+      "tjNumber": "23443",
+      "title": "A Whole New World(Aladdin OST)",
+      "singer": "Mena Massoud,Naomi Scott",
+      "songwriterCredit": "MENKEN ALAN IRWIN,RICE TIMOTHY MILES BINDON",
+      "composerCredit": "MENKEN ALAN IRWIN,RICE TIMOTHY MILES BINDON",
+      "raw": {
+        "word": "MENKEN ALAN IRWIN,RICE TIMOTHY MILES BINDON",
+        "com": "MENKEN ALAN IRWIN,RICE TIMOTHY MILES BINDON",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023443_thumb.jpg"
+      }
+    },
+    {
+      "rank": 23,
+      "tjNumber": "22852",
+      "title": "Love Yourself",
+      "singer": "Justin Bieber",
+      "songwriterCredit": "ED SHEERAN,BENNY BLANCO,JUSTIN BIEBER",
+      "composerCredit": "ED SHEERAN,BENNY BLANCO,JUSTIN BIEBER",
+      "raw": {
+        "word": "ED SHEERAN,BENNY BLANCO,JUSTIN BIEBER",
+        "com": "ED SHEERAN,BENNY BLANCO,JUSTIN BIEBER",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/022852_thumb.jpg"
+      }
+    },
+    {
+      "rank": 24,
+      "tjNumber": "22204",
+      "title": "Someone Like You",
+      "singer": "Adele",
+      "songwriterCredit": "Adele, Dan Wilson",
+      "composerCredit": "Adele, Dan Wilson",
+      "raw": {
+        "word": "Adele, Dan Wilson",
+        "com": "Adele, Dan Wilson",
+        "icongubun": "",
+        "mv_yn": "Y",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/022204_thumb.jpg"
+      }
+    },
+    {
+      "rank": 25,
+      "tjNumber": "21776",
+      "title": "Love",
+      "singer": "Keyshia Cole",
+      "songwriterCredit": "K. Cole, G. Curtis",
+      "composerCredit": "K. Cole, G. Curtis",
+      "raw": {
+        "word": "K. Cole, G. Curtis",
+        "com": "K. Cole, G. Curtis",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/021776_thumb.jpg"
+      }
+    },
+    {
+      "rank": 26,
+      "tjNumber": "23321",
+      "title": "Bad",
+      "singer": "Christopher",
+      "songwriterCredit": "TIDEBRINK STOMBERG ALEXANDER MICHAEL,LINJAMA LENNO SAKARI,LUND CHRISTOPHER,BLOM ARON ROLF",
+      "composerCredit": "TIDEBRINK STOMBERG ALEXANDER MICHAEL,LINJAMA LENNO SAKARI,LUND CHRISTOPHER,BLOM ARON ROLF",
+      "raw": {
+        "word": "TIDEBRINK STOMBERG ALEXANDER MICHAEL,LINJAMA LENNO SAKARI,LUND CHRISTOPHER,BLOM ARON ROLF",
+        "com": "TIDEBRINK STOMBERG ALEXANDER MICHAEL,LINJAMA LENNO SAKARI,LUND CHRISTOPHER,BLOM ARON ROLF",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023321_thumb.jpg"
+      }
+    },
+    {
+      "rank": 27,
+      "tjNumber": "21847",
+      "title": "Viva La Vida",
+      "singer": "Coldplay",
+      "songwriterCredit": "Guy Berryman, Jon Buckland, Will Champion, Chris Martin",
+      "composerCredit": "Guy Berryman, Jon Buckland, Will Champion, Chris Martin",
+      "raw": {
+        "word": "Guy Berryman, Jon Buckland, Will Champion, Chris Martin",
+        "com": "Guy Berryman, Jon Buckland, Will Champion, Chris Martin",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/021847_thumb.jpg"
+      }
+    },
+    {
+      "rank": 28,
+      "tjNumber": "23826",
+      "title": "Cruel Summer",
+      "singer": "Taylor Swift",
+      "songwriterCredit": "ANTONOFF JACK,CLARK ANNIE,SWIFT TAYLOR ALISON",
+      "composerCredit": "ANTONOFF JACK,CLARK ANNIE,SWIFT TAYLOR ALISON",
+      "raw": {
+        "word": "ANTONOFF JACK,CLARK ANNIE,SWIFT TAYLOR ALISON",
+        "com": "ANTONOFF JACK,CLARK ANNIE,SWIFT TAYLOR ALISON",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023826_thumb.jpg"
+      }
+    },
+    {
+      "rank": 29,
+      "tjNumber": "23054",
+      "title": "There's Nothing Holdin' Me Back",
+      "singer": "Shawn Mendes",
+      "songwriterCredit": "TEDDY GEIGER,SHAWN MENDES,SCOTT HARRIS,GEOFFREY WARBURTON",
+      "composerCredit": "TEDDY GEIGER,SHAWN MENDES,SCOTT HARRIS,GEOFFREY WARBURTON",
+      "raw": {
+        "word": "TEDDY GEIGER,SHAWN MENDES,SCOTT HARRIS,GEOFFREY WARBURTON",
+        "com": "TEDDY GEIGER,SHAWN MENDES,SCOTT HARRIS,GEOFFREY WARBURTON",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023054_thumb.jpg"
+      }
+    },
+    {
+      "rank": 30,
+      "tjNumber": "23090",
+      "title": "Believer",
+      "singer": "Imagine Dragons",
+      "songwriterCredit": "SERMON DANIEL WAYNE 외 6명",
+      "composerCredit": "SERMON DANIEL WAYNE 외 6명",
+      "raw": {
+        "word": "SERMON DANIEL WAYNE 외 6명",
+        "com": "SERMON DANIEL WAYNE 외 6명",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023090_thumb.jpg"
+      }
+    },
+    {
+      "rank": 31,
+      "tjNumber": "22966",
+      "title": "Shape Of You",
+      "singer": "Ed Sheeran",
+      "songwriterCredit": "STEVE MAC,JOHNNY MCDAID,ED SHEERAN",
+      "composerCredit": "STEVE MAC,JOHNNY MCDAID,ED SHEERAN",
+      "raw": {
+        "word": "STEVE MAC,JOHNNY MCDAID,ED SHEERAN",
+        "com": "STEVE MAC,JOHNNY MCDAID,ED SHEERAN",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/022966_thumb.jpg"
+      }
+    },
+    {
+      "rank": 32,
+      "tjNumber": "22348",
+      "title": "Payphone",
+      "singer": "Maroon 5(Feat.Wiz Khalifa)",
+      "songwriterCredit": "LEVIN BENJAMIN,LEVINE ADAM,MALIK AMMAR,OMELIO DAN,SCHUSTER JOHAN KARL,THOMAZ CAMERON",
+      "composerCredit": "LEVIN BENJAMIN,LEVINE ADAM,MALIK AMMAR,OMELIO DAN,SCHUSTER JOHAN KARL,THOMAZ CAMERON",
+      "raw": {
+        "word": "LEVIN BENJAMIN,LEVINE ADAM,MALIK AMMAR,OMELIO DAN,SCHUSTER JOHAN KARL,THOMAZ CAMERON",
+        "com": "LEVIN BENJAMIN,LEVINE ADAM,MALIK AMMAR,OMELIO DAN,SCHUSTER JOHAN KARL,THOMAZ CAMERON",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/022348_thumb.jpg"
+      }
+    },
+    {
+      "rank": 33,
+      "tjNumber": "79233",
+      "title": "Last Night On Earth",
+      "singer": "Green Day",
+      "songwriterCredit": "BILLIE JOE ARMSTRONG,FRANK E III WRIGHT,MICHAEL RYAN PRITCHARD",
+      "composerCredit": "BILLIE JOE ARMSTRONG,FRANK E III WRIGHT,MICHAEL RYAN PRITCHARD",
+      "raw": {
+        "word": "BILLIE JOE ARMSTRONG,FRANK E III WRIGHT,MICHAEL RYAN PRITCHARD",
+        "com": "BILLIE JOE ARMSTRONG,FRANK E III WRIGHT,MICHAEL RYAN PRITCHARD",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/079233_thumb.jpg"
+      }
+    },
+    {
+      "rank": 34,
+      "tjNumber": "23762",
+      "title": "Stay",
+      "singer": "The Kid LAROI,Justin Bieber",
+      "songwriterCredit": "BIEBER JUSTIN,DEBONI ISAAC 외 7명",
+      "composerCredit": "BIEBER JUSTIN,DEBONI ISAAC 외 7명",
+      "raw": {
+        "word": "BIEBER JUSTIN,DEBONI ISAAC 외 7명",
+        "com": "BIEBER JUSTIN,DEBONI ISAAC 외 7명",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023762_thumb.jpg"
+      }
+    },
+    {
+      "rank": 35,
+      "tjNumber": "20422",
+      "title": "All I Want For Christmas Is You",
+      "singer": "Mariah Carey",
+      "songwriterCredit": "AFANASIEFF WALTER N,CAREY MARIAH",
+      "composerCredit": "AFANASIEFF WALTER N,CAREY MARIAH",
+      "raw": {
+        "word": "AFANASIEFF WALTER N,CAREY MARIAH",
+        "com": "AFANASIEFF WALTER N,CAREY MARIAH",
+        "icongubun": "",
+        "mv_yn": "Y",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/020422_thumb.jpg"
+      }
+    },
+    {
+      "rank": 36,
+      "tjNumber": "23765",
+      "title": "Beggin'",
+      "singer": "Maneskin",
+      "songwriterCredit": "BOB GAUDIO,PEGGY FARINA",
+      "composerCredit": "BOB GAUDIO,PEGGY FARINA",
+      "raw": {
+        "word": "BOB GAUDIO,PEGGY FARINA",
+        "com": "BOB GAUDIO,PEGGY FARINA",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023765_thumb.jpg"
+      }
+    },
+    {
+      "rank": 37,
+      "tjNumber": "7745",
+      "title": "Bohemian Rhapsody",
+      "singer": "Queen",
+      "songwriterCredit": "Freddie Mercury, Queen ",
+      "composerCredit": "Freddie Mercury, Queen ",
+      "raw": {
+        "word": "Freddie Mercury, Queen ",
+        "com": "Freddie Mercury, Queen ",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/007745_thumb.jpg"
+      }
+    },
+    {
+      "rank": 38,
+      "tjNumber": "23719",
+      "title": "Off My Face",
+      "singer": "Justin Bieber",
+      "songwriterCredit": "BIEBER JUSTIN,PRINGLE DANIEL JAMES,PRINGLE LEAH JAQUELINE,SCOLA TIA MARIE,TORREY JACOB",
+      "composerCredit": "BIEBER JUSTIN,PRINGLE DANIEL JAMES,PRINGLE LEAH JAQUELINE,SCOLA TIA MARIE,TORREY JACOB",
+      "raw": {
+        "word": "BIEBER JUSTIN,PRINGLE DANIEL JAMES,PRINGLE LEAH JAQUELINE,SCOLA TIA MARIE,TORREY JACOB",
+        "com": "BIEBER JUSTIN,PRINGLE DANIEL JAMES,PRINGLE LEAH JAQUELINE,SCOLA TIA MARIE,TORREY JACOB",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023719_thumb.jpg"
+      }
+    },
+    {
+      "rank": 39,
+      "tjNumber": "22720",
+      "title": "Sugar",
+      "singer": "Maroon 5",
+      "songwriterCredit": "MICHAEL POSNER,HENRY WALTER,ADAM LEVINE,JOSHUA COLEMAN,JACOB HINDLIN,LUKASZ GOTTWALD",
+      "composerCredit": "MICHAEL POSNER,HENRY WALTER,ADAM LEVINE,JOSHUA COLEMAN,JACOB HINDLIN,LUKASZ GOTTWALD",
+      "raw": {
+        "word": "MICHAEL POSNER,HENRY WALTER,ADAM LEVINE,JOSHUA COLEMAN,JACOB HINDLIN,LUKASZ GOTTWALD",
+        "com": "MICHAEL POSNER,HENRY WALTER,ADAM LEVINE,JOSHUA COLEMAN,JACOB HINDLIN,LUKASZ GOTTWALD",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/022720_thumb.jpg"
+      }
+    },
+    {
+      "rank": 40,
+      "tjNumber": "21040",
+      "title": "This Love",
+      "singer": "Maroon 5",
+      "songwriterCredit": "Carmichael, Levine",
+      "composerCredit": "Carmichael, Levine",
+      "raw": {
+        "word": "Carmichael, Levine",
+        "com": "Carmichael, Levine",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/021040_thumb.jpg"
+      }
+    },
+    {
+      "rank": 41,
+      "tjNumber": "20294",
+      "title": "The Phantom Of The Opera",
+      "singer": "Sarah Brightman",
+      "songwriterCredit": "Mike Batt, Charles Hart, Andrew Lloyd Webber, Richard Stilgoe",
+      "composerCredit": "Mike Batt, Charles Hart, Andrew Lloyd Webber, Richard Stilgoe",
+      "raw": {
+        "word": "Mike Batt, Charles Hart, Andrew Lloyd Webber, Richard Stilgoe",
+        "com": "Mike Batt, Charles Hart, Andrew Lloyd Webber, Richard Stilgoe",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/020294_thumb.jpg"
+      }
+    },
+    {
+      "rank": 42,
+      "tjNumber": "7907",
+      "title": "Just The Two Of Us",
+      "singer": "Bill Withers",
+      "songwriterCredit": "Ralph MacDonald, William Salter, Bill Withers",
+      "composerCredit": "Ralph MacDonald, William Salter, Bill Withers",
+      "raw": {
+        "word": "Ralph MacDonald, William Salter, Bill Withers",
+        "com": "Ralph MacDonald, William Salter, Bill Withers",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/007907_thumb.jpg"
+      }
+    },
+    {
+      "rank": 43,
+      "tjNumber": "23455",
+      "title": "Painkiller",
+      "singer": "Ruel",
+      "songwriterCredit": "VAN DIJK RUEL VINCENT,AARONS SARAH PAIGE,LANDON MARK",
+      "composerCredit": "VAN DIJK RUEL VINCENT,AARONS SARAH PAIGE,LANDON MARK",
+      "raw": {
+        "word": "VAN DIJK RUEL VINCENT,AARONS SARAH PAIGE,LANDON MARK",
+        "com": "VAN DIJK RUEL VINCENT,AARONS SARAH PAIGE,LANDON MARK",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023455_thumb.jpg"
+      }
+    },
+    {
+      "rank": 44,
+      "tjNumber": "21420",
+      "title": "Fly Me To The Moon",
+      "singer": "Frank Sinatra",
+      "songwriterCredit": "Bart Howard",
+      "composerCredit": "Bart Howard",
+      "raw": {
+        "word": "Bart Howard",
+        "com": "Bart Howard",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/021420_thumb.jpg"
+      }
+    },
+    {
+      "rank": 45,
+      "tjNumber": "22368",
+      "title": "Call Me Maybe",
+      "singer": "Carly Rae Jepsen",
+      "songwriterCredit": "CROWE TAVISH,JEPSEN CARLY RAE,RAMSAY JOSHUA KEELER",
+      "composerCredit": "CROWE TAVISH,JEPSEN CARLY RAE,RAMSAY JOSHUA KEELER",
+      "raw": {
+        "word": "CROWE TAVISH,JEPSEN CARLY RAE,RAMSAY JOSHUA KEELER",
+        "com": "CROWE TAVISH,JEPSEN CARLY RAE,RAMSAY JOSHUA KEELER",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/022368_thumb.jpg"
+      }
+    },
+    {
+      "rank": 46,
+      "tjNumber": "21045",
+      "title": "If I Ain't Got You",
+      "singer": "Alicia Keys",
+      "songwriterCredit": "AUGELLO-COOK ALICIA",
+      "composerCredit": "AUGELLO-COOK ALICIA",
+      "raw": {
+        "word": "AUGELLO-COOK ALICIA",
+        "com": "AUGELLO-COOK ALICIA",
+        "icongubun": "",
+        "mv_yn": "Y",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/021045_thumb.jpg"
+      }
+    },
+    {
+      "rank": 47,
+      "tjNumber": "22854",
+      "title": "One Call Away",
+      "singer": "Charlie Puth",
+      "songwriterCredit": "MCDONALD MAUREEN ANNE,CARTER BLAKE ANTHONY 외 4명",
+      "composerCredit": "MCDONALD MAUREEN ANNE,CARTER BLAKE ANTHONY 외 4명",
+      "raw": {
+        "word": "MCDONALD MAUREEN ANNE,CARTER BLAKE ANTHONY 외 4명",
+        "com": "MCDONALD MAUREEN ANNE,CARTER BLAKE ANTHONY 외 4명",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/022854_thumb.jpg"
+      }
+    },
+    {
+      "rank": 48,
+      "tjNumber": "22429",
+      "title": "A Thousand Years(Twilight Saga : Breaking Dawn Part 1 OST)",
+      "singer": "Christina Perri",
+      "songwriterCredit": "HODGES DAVID,PERRI CHRISTINA",
+      "composerCredit": "HODGES DAVID,PERRI CHRISTINA",
+      "raw": {
+        "word": "HODGES DAVID,PERRI CHRISTINA",
+        "com": "HODGES DAVID,PERRI CHRISTINA",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/022429_thumb.jpg"
+      }
+    },
+    {
+      "rank": 49,
+      "tjNumber": "7013",
+      "title": "Billie Jean",
+      "singer": "Michael Jackson",
+      "songwriterCredit": "Michael Jackson",
+      "composerCredit": "Michael Jackson",
+      "raw": {
+        "word": "Michael Jackson",
+        "com": "Michael Jackson",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/007013_thumb.jpg"
+      }
+    },
+    {
+      "rank": 50,
+      "tjNumber": "22678",
+      "title": "Chandelier",
+      "singer": "Sia",
+      "songwriterCredit": "SIA FURLER,JESSE SHATKIN",
+      "composerCredit": "SIA FURLER,JESSE SHATKIN",
+      "raw": {
+        "word": "SIA FURLER,JESSE SHATKIN",
+        "com": "SIA FURLER,JESSE SHATKIN",
+        "icongubun": "",
+        "mv_yn": "Y",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/022678_thumb.jpg"
+      }
+    },
+    {
+      "rank": 51,
+      "tjNumber": "23075",
+      "title": "Perfect",
+      "singer": "Ed Sheeran",
+      "songwriterCredit": "SHEERAN ED",
+      "composerCredit": "SHEERAN ED",
+      "raw": {
+        "word": "SHEERAN ED",
+        "com": "SHEERAN ED",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023075_thumb.jpg"
+      }
+    },
+    {
+      "rank": 52,
+      "tjNumber": "23276",
+      "title": "Always Remember Us This Way(A Star Is Born OST)",
+      "singer": "Lady Gaga",
+      "songwriterCredit": "GERMANOTTA STEFANI,HEMBY NATALIE,LINDSEY HILLARY,MCKENNA LORI",
+      "composerCredit": "GERMANOTTA STEFANI,HEMBY NATALIE,LINDSEY HILLARY,MCKENNA LORI",
+      "raw": {
+        "word": "GERMANOTTA STEFANI,HEMBY NATALIE,LINDSEY HILLARY,MCKENNA LORI",
+        "com": "GERMANOTTA STEFANI,HEMBY NATALIE,LINDSEY HILLARY,MCKENNA LORI",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023276_thumb.jpg"
+      }
+    },
+    {
+      "rank": 53,
+      "tjNumber": "22833",
+      "title": "Santa Tell Me",
+      "singer": "Ariana Grande",
+      "songwriterCredit": "SAVAN HARISH KOTECHA,ILYA,ARIANA GRANDE",
+      "composerCredit": "SAVAN HARISH KOTECHA,ILYA,ARIANA GRANDE",
+      "raw": {
+        "word": "SAVAN HARISH KOTECHA,ILYA,ARIANA GRANDE",
+        "com": "SAVAN HARISH KOTECHA,ILYA,ARIANA GRANDE",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/022833_thumb.jpg"
+      }
+    },
+    {
+      "rank": 54,
+      "tjNumber": "7736",
+      "title": "My Heart Will Go On",
+      "singer": "Celine Dion",
+      "songwriterCredit": "HORNER JAMES,JENNINGS WILL",
+      "composerCredit": "HORNER JAMES,JENNINGS WILL",
+      "raw": {
+        "word": "HORNER JAMES,JENNINGS WILL",
+        "com": "HORNER JAMES,JENNINGS WILL",
+        "icongubun": "",
+        "mv_yn": "Y",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/007736_thumb.jpg"
+      }
+    },
+    {
+      "rank": 55,
+      "tjNumber": "22336",
+      "title": "What Makes You Beautiful",
+      "singer": "One Direction",
+      "songwriterCredit": "FALK CARL,KOTECHA SAVAN HARISH,YACOUB RAMI",
+      "composerCredit": "FALK CARL,KOTECHA SAVAN HARISH,YACOUB RAMI",
+      "raw": {
+        "word": "FALK CARL,KOTECHA SAVAN HARISH,YACOUB RAMI",
+        "com": "FALK CARL,KOTECHA SAVAN HARISH,YACOUB RAMI",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/022336_thumb.jpg"
+      }
+    },
+    {
+      "rank": 56,
+      "tjNumber": "23439",
+      "title": "Teeth",
+      "singer": "5 Seconds Of Summer",
+      "songwriterCredit": "GILBERT GILLIAN LESLEY,HOOK PETER,MORRIS STEPHEN PAUL DAVID,SUMNER BERNARD,BELL LOUIS RUSSELL 외 6명",
+      "composerCredit": "GILBERT GILLIAN LESLEY,HOOK PETER,MORRIS STEPHEN PAUL DAVID,SUMNER BERNARD,BELL LOUIS RUSSELL 외 6명",
+      "raw": {
+        "word": "GILBERT GILLIAN LESLEY,HOOK PETER,MORRIS STEPHEN PAUL DAVID,SUMNER BERNARD,BELL LOUIS RUSSELL 외 6명",
+        "com": "GILBERT GILLIAN LESLEY,HOOK PETER,MORRIS STEPHEN PAUL DAVID,SUMNER BERNARD,BELL LOUIS RUSSELL 외 6명",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023439_thumb.jpg"
+      }
+    },
+    {
+      "rank": 57,
+      "tjNumber": "23293",
+      "title": "Sunflower(Spider-Man: Into the Spider-Verse OST)",
+      "singer": "Post Malone,Swae Lee",
+      "songwriterCredit": "BROWN KHALIF,WILLIAM WALSH,CARTER LANG,CARL AUSTIN ROSEN,LOUIS BELL,AUSTIN POST",
+      "composerCredit": "BROWN KHALIF,WILLIAM WALSH,CARTER LANG,CARL AUSTIN ROSEN,LOUIS BELL,AUSTIN POST",
+      "raw": {
+        "word": "BROWN KHALIF,WILLIAM WALSH,CARTER LANG,CARL AUSTIN ROSEN,LOUIS BELL,AUSTIN POST",
+        "com": "BROWN KHALIF,WILLIAM WALSH,CARTER LANG,CARL AUSTIN ROSEN,LOUIS BELL,AUSTIN POST",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023293_thumb.jpg"
+      }
+    },
+    {
+      "rank": 58,
+      "tjNumber": "79463",
+      "title": "Beautiful Things",
+      "singer": "Benson Boone",
+      "songwriterCredit": "BENSON BOONE,EVAN BLAIR,JACK LAFRANTZ",
+      "composerCredit": "BENSON BOONE,EVAN BLAIR,JACK LAFRANTZ",
+      "raw": {
+        "word": "BENSON BOONE,EVAN BLAIR,JACK LAFRANTZ",
+        "com": "BENSON BOONE,EVAN BLAIR,JACK LAFRANTZ",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/079463_thumb.jpg"
+      }
+    },
+    {
+      "rank": 59,
+      "tjNumber": "23459",
+      "title": "Into the Unknown(Frozen2(겨울왕국2) OST)",
+      "singer": "Idina Menzel,Aurora",
+      "songwriterCredit": "KRISTEN ANDERSON-LOPEZ,ROBERT LOPEZ",
+      "composerCredit": "KRISTEN ANDERSON-LOPEZ,ROBERT LOPEZ",
+      "raw": {
+        "word": "KRISTEN ANDERSON-LOPEZ,ROBERT LOPEZ",
+        "com": "KRISTEN ANDERSON-LOPEZ,ROBERT LOPEZ",
+        "icongubun": "",
+        "mv_yn": "Y",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023459_thumb.jpg"
+      }
+    },
+    {
+      "rank": 60,
+      "tjNumber": "79185",
+      "title": "I Really Want to Stay at Your House(Cyberpunk OST)",
+      "singer": "Rosa Walton,Hallie Coggins",
+      "songwriterCredit": "WALTON ROSA JEWEL",
+      "composerCredit": "WALTON ROSA JEWEL",
+      "raw": {
+        "word": "WALTON ROSA JEWEL",
+        "com": "WALTON ROSA JEWEL",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/079185_thumb.jpg"
+      }
+    },
+    {
+      "rank": 61,
+      "tjNumber": "7963",
+      "title": "Wonderwall",
+      "singer": "Oasis",
+      "songwriterCredit": "Noel Gallagher",
+      "composerCredit": "Noel Gallagher",
+      "raw": {
+        "word": "Noel Gallagher",
+        "com": "Noel Gallagher",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/007963_thumb.jpg"
+      }
+    },
+    {
+      "rank": 62,
+      "tjNumber": "7548",
+      "title": "Reality",
+      "singer": "Richard Sanderson",
+      "songwriterCredit": "Vladimir Cosma, J. Jordan",
+      "composerCredit": "Vladimir Cosma, J. Jordan",
+      "raw": {
+        "word": "Vladimir Cosma, J. Jordan",
+        "com": "Vladimir Cosma, J. Jordan",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/007548_thumb.jpg"
+      }
+    },
+    {
+      "rank": 63,
+      "tjNumber": "23434",
+      "title": "Someone You Loved",
+      "singer": "Lewis Capaldi",
+      "songwriterCredit": "BENJAMIN ALEXANDER KOHN,THOMAS BARNES,PETER KELLEHER.LEWIS CAPALDI,SAMUEL ELLIOT ROMAN",
+      "composerCredit": "BENJAMIN ALEXANDER KOHN,THOMAS BARNES,PETER KELLEHER.LEWIS CAPALDI,SAMUEL ELLIOT ROMAN",
+      "raw": {
+        "word": "BENJAMIN ALEXANDER KOHN,THOMAS BARNES,PETER KELLEHER.LEWIS CAPALDI,SAMUEL ELLIOT ROMAN",
+        "com": "BENJAMIN ALEXANDER KOHN,THOMAS BARNES,PETER KELLEHER.LEWIS CAPALDI,SAMUEL ELLIOT ROMAN",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023434_thumb.jpg"
+      }
+    },
+    {
+      "rank": 64,
+      "tjNumber": "23501",
+      "title": "Blinding Lights",
+      "singer": "The Weeknd",
+      "songwriterCredit": "BALSHE AHMAD,HOLTER OSCAR THOMAS,MARTIN MAX,QUENNEVILLE JASON MATTHEW,TESFAYE ABEL",
+      "composerCredit": "BALSHE AHMAD,HOLTER OSCAR THOMAS,MARTIN MAX,QUENNEVILLE JASON MATTHEW,TESFAYE ABEL",
+      "raw": {
+        "word": "BALSHE AHMAD,HOLTER OSCAR THOMAS,MARTIN MAX,QUENNEVILLE JASON MATTHEW,TESFAYE ABEL",
+        "com": "BALSHE AHMAD,HOLTER OSCAR THOMAS,MARTIN MAX,QUENNEVILLE JASON MATTHEW,TESFAYE ABEL",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023501_thumb.jpg"
+      }
+    },
+    {
+      "rank": 65,
+      "tjNumber": "22725",
+      "title": "Counting Stars",
+      "singer": "OneRepublic",
+      "songwriterCredit": "TEDDER RYAN B",
+      "composerCredit": "TEDDER RYAN B",
+      "raw": {
+        "word": "TEDDER RYAN B",
+        "com": "TEDDER RYAN B",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/022725_thumb.jpg"
+      }
+    },
+    {
+      "rank": 66,
+      "tjNumber": "7386",
+      "title": "Englishman In New York",
+      "singer": "Sting",
+      "songwriterCredit": "Sting",
+      "composerCredit": "Sting",
+      "raw": {
+        "word": "Sting",
+        "com": "Sting",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/007386_thumb.jpg"
+      }
+    },
+    {
+      "rank": 67,
+      "tjNumber": "23396",
+      "title": "Despacito",
+      "singer": "Luis Fonsi(Feat.Daddy Yankee)",
+      "songwriterCredit": "ERIKA ENDER,LUIS FONSI",
+      "composerCredit": "ERIKA ENDER,LUIS FONSI",
+      "raw": {
+        "word": "ERIKA ENDER,LUIS FONSI",
+        "com": "ERIKA ENDER,LUIS FONSI",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023396_thumb.jpg"
+      }
+    },
+    {
+      "rank": 68,
+      "tjNumber": "74133",
+      "title": "SAIKAI(림버스컴퍼니OST)",
+      "singer": "Mili",
+      "songwriterCredit": "CASSIE WEI,HAMO",
+      "composerCredit": "CASSIE WEI,HAMO",
+      "raw": {
+        "word": "CASSIE WEI,HAMO",
+        "com": "CASSIE WEI,HAMO",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/074133_thumb.jpg"
+      }
+    },
+    {
+      "rank": 69,
+      "tjNumber": "23113",
+      "title": "This Is Me(The Greatest Showman OST)",
+      "singer": "Various Artists",
+      "songwriterCredit": "PASEK BENJ,PAUL JUSTIN NOBLE",
+      "composerCredit": "PASEK BENJ,PAUL JUSTIN NOBLE",
+      "raw": {
+        "word": "PASEK BENJ,PAUL JUSTIN NOBLE",
+        "com": "PASEK BENJ,PAUL JUSTIN NOBLE",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023113_thumb.jpg"
+      }
+    },
+    {
+      "rank": 70,
+      "tjNumber": "23999",
+      "title": "Die For You(Explicit Ver.)",
+      "singer": "The Weeknd",
+      "songwriterCredit": "HOIBERG MAGNUS,MCKINNEY MARTIN DANIEL,RHARS MEJDI 외 4명",
+      "composerCredit": "HOIBERG MAGNUS,MCKINNEY MARTIN DANIEL,RHARS MEJDI 외 4명",
+      "raw": {
+        "word": "HOIBERG MAGNUS,MCKINNEY MARTIN DANIEL,RHARS MEJDI 외 4명",
+        "com": "HOIBERG MAGNUS,MCKINNEY MARTIN DANIEL,RHARS MEJDI 외 4명",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023999_thumb.jpg"
+      }
+    },
+    {
+      "rank": 71,
+      "tjNumber": "7895",
+      "title": "Zombie",
+      "singer": "The Cranberries",
+      "songwriterCredit": "O'Riordian, Dolores ORiordan",
+      "composerCredit": "O'Riordian, Dolores ORiordan",
+      "raw": {
+        "word": "O'Riordian, Dolores ORiordan",
+        "com": "O'Riordian, Dolores ORiordan",
+        "icongubun": "",
+        "mv_yn": "Y",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/007895_thumb.jpg"
+      }
+    },
+    {
+      "rank": 72,
+      "tjNumber": "21945",
+      "title": "I'm Yours",
+      "singer": "Jason Mraz",
+      "songwriterCredit": "MRAZ JASON THOMAS",
+      "composerCredit": "MRAZ JASON THOMAS",
+      "raw": {
+        "word": "MRAZ JASON THOMAS",
+        "com": "MRAZ JASON THOMAS",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/021945_thumb.jpg"
+      }
+    },
+    {
+      "rank": 73,
+      "tjNumber": "22512",
+      "title": "All Of Me",
+      "singer": "John Legend",
+      "songwriterCredit": "GAD TOBY,LEGEND JOHN",
+      "composerCredit": "GAD TOBY,LEGEND JOHN",
+      "raw": {
+        "word": "GAD TOBY,LEGEND JOHN",
+        "com": "GAD TOBY,LEGEND JOHN",
+        "icongubun": "",
+        "mv_yn": "Y",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/022512_thumb.jpg"
+      }
+    },
+    {
+      "rank": 74,
+      "tjNumber": "7686",
+      "title": "My Love",
+      "singer": "Westlife",
+      "songwriterCredit": "Jorgen Elofsson, Dave Kreuger, Per Nylen",
+      "composerCredit": "Jorgen Elofsson, Dave Kreuger, Per Nylen",
+      "raw": {
+        "word": "Jorgen Elofsson, Dave Kreuger, Per Nylen",
+        "com": "Jorgen Elofsson, Dave Kreuger, Per Nylen",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/007686_thumb.jpg"
+      }
+    },
+    {
+      "rank": 75,
+      "tjNumber": "22855",
+      "title": "When We Were Young",
+      "singer": "Adele",
+      "songwriterCredit": "JESSO TOBIAS MACDONALD,ADKINS ADELE LAURIE BLUE",
+      "composerCredit": "JESSO TOBIAS MACDONALD,ADKINS ADELE LAURIE BLUE",
+      "raw": {
+        "word": "JESSO TOBIAS MACDONALD,ADKINS ADELE LAURIE BLUE",
+        "com": "JESSO TOBIAS MACDONALD,ADKINS ADELE LAURIE BLUE",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/022855_thumb.jpg"
+      }
+    },
+    {
+      "rank": 76,
+      "tjNumber": "22965",
+      "title": "How Far I'll Go(Moana OST)",
+      "singer": "Alessia Cara",
+      "songwriterCredit": "MIRANDA LIN MANUEL",
+      "composerCredit": "MIRANDA LIN MANUEL",
+      "raw": {
+        "word": "MIRANDA LIN MANUEL",
+        "com": "MIRANDA LIN MANUEL",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/022965_thumb.jpg"
+      }
+    },
+    {
+      "rank": 77,
+      "tjNumber": "7166",
+      "title": "Dancing Queen",
+      "singer": "ABBA",
+      "songwriterCredit": "Stig Anderson, Benny Andersson, Bjorn Ulvaeus",
+      "composerCredit": "Stig Anderson, Benny Andersson, Bjorn Ulvaeus",
+      "raw": {
+        "word": "Stig Anderson, Benny Andersson, Bjorn Ulvaeus",
+        "com": "Stig Anderson, Benny Andersson, Bjorn Ulvaeus",
+        "icongubun": "",
+        "mv_yn": "Y",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/007166_thumb.jpg"
+      }
+    },
+    {
+      "rank": 78,
+      "tjNumber": "23035",
+      "title": "Too Good To Say Goodbye",
+      "singer": "Bruno Mars",
+      "songwriterCredit": "EDMONDS KENNETH BABYFACE,LAWRENCE PHILIP MARTIN II 외 3명",
+      "composerCredit": "EDMONDS KENNETH BABYFACE,LAWRENCE PHILIP MARTIN II 외 3명",
+      "raw": {
+        "word": "EDMONDS KENNETH BABYFACE,LAWRENCE PHILIP MARTIN II 외 3명",
+        "com": "EDMONDS KENNETH BABYFACE,LAWRENCE PHILIP MARTIN II 외 3명",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023035_thumb.jpg"
+      }
+    },
+    {
+      "rank": 79,
+      "tjNumber": "22340",
+      "title": "Love On Top",
+      "singer": "Beyonce",
+      "songwriterCredit": "KNOWLES BEYONCE GISSELLE,NASH TERIUS YOUNGDELL,TAYLOR ROBERT SHEA",
+      "composerCredit": "KNOWLES BEYONCE GISSELLE,NASH TERIUS YOUNGDELL,TAYLOR ROBERT SHEA",
+      "raw": {
+        "word": "KNOWLES BEYONCE GISSELLE,NASH TERIUS YOUNGDELL,TAYLOR ROBERT SHEA",
+        "com": "KNOWLES BEYONCE GISSELLE,NASH TERIUS YOUNGDELL,TAYLOR ROBERT SHEA",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/022340_thumb.jpg"
+      }
+    },
+    {
+      "rank": 80,
+      "tjNumber": "73620",
+      "title": "From The Start",
+      "singer": "Laufey",
+      "songwriterCredit": "JONSDOTTIR LAUFEY LIN,STEWART SPENCER EUGENE",
+      "composerCredit": "JONSDOTTIR LAUFEY LIN,STEWART SPENCER EUGENE",
+      "raw": {
+        "word": "JONSDOTTIR LAUFEY LIN,STEWART SPENCER EUGENE",
+        "com": "JONSDOTTIR LAUFEY LIN,STEWART SPENCER EUGENE",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/073620_thumb.jpg"
+      }
+    },
+    {
+      "rank": 81,
+      "tjNumber": "7004",
+      "title": "My Way",
+      "singer": "Frank Sinatra",
+      "songwriterCredit": "ANKA PAUL,FRANCOIS CLAUDE,REVAUX JACQUES,THIBAUT GILLES",
+      "composerCredit": "ANKA PAUL,FRANCOIS CLAUDE,REVAUX JACQUES,THIBAUT GILLES",
+      "raw": {
+        "word": "ANKA PAUL,FRANCOIS CLAUDE,REVAUX JACQUES,THIBAUT GILLES",
+        "com": "ANKA PAUL,FRANCOIS CLAUDE,REVAUX JACQUES,THIBAUT GILLES",
+        "icongubun": "",
+        "mv_yn": "Y",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/007004_thumb.jpg"
+      }
+    },
+    {
+      "rank": 82,
+      "tjNumber": "22766",
+      "title": "See You Again(폴워커추모엔딩곡)",
+      "singer": "Wiz Khalifa,Charlie Puth",
+      "songwriterCredit": "CHARLIE PUTH,CEDAR ANDREW,FRANKS JUSTIN SCOTT,WIZ KHALIFA",
+      "composerCredit": "CHARLIE PUTH,CEDAR ANDREW,FRANKS JUSTIN SCOTT,WIZ KHALIFA",
+      "raw": {
+        "word": "CHARLIE PUTH,CEDAR ANDREW,FRANKS JUSTIN SCOTT,WIZ KHALIFA",
+        "com": "CHARLIE PUTH,CEDAR ANDREW,FRANKS JUSTIN SCOTT,WIZ KHALIFA",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/022766_thumb.jpg"
+      }
+    },
+    {
+      "rank": 83,
+      "tjNumber": "21533",
+      "title": "Welcome To The Black Parade",
+      "singer": "My Chemical Romance",
+      "songwriterCredit": "BRYAR BOB,IERO FRANK,TORO RAY,WAY GERARD,WAY MICHAEL",
+      "composerCredit": "BRYAR BOB,IERO FRANK,TORO RAY,WAY GERARD,WAY MICHAEL",
+      "raw": {
+        "word": "BRYAR BOB,IERO FRANK,TORO RAY,WAY GERARD,WAY MICHAEL",
+        "com": "BRYAR BOB,IERO FRANK,TORO RAY,WAY GERARD,WAY MICHAEL",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/021533_thumb.jpg"
+      }
+    },
+    {
+      "rank": 84,
+      "tjNumber": "23415",
+      "title": "Circles",
+      "singer": "Post Malone",
+      "songwriterCredit": "FEENEY ADAM KING,POST AUSTIN RICHARD,BELL LOUIS RUSSELL,WALSH BILLY,GUNESBERK KAAN",
+      "composerCredit": "FEENEY ADAM KING,POST AUSTIN RICHARD,BELL LOUIS RUSSELL,WALSH BILLY,GUNESBERK KAAN",
+      "raw": {
+        "word": "FEENEY ADAM KING,POST AUSTIN RICHARD,BELL LOUIS RUSSELL,WALSH BILLY,GUNESBERK KAAN",
+        "com": "FEENEY ADAM KING,POST AUSTIN RICHARD,BELL LOUIS RUSSELL,WALSH BILLY,GUNESBERK KAAN",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023415_thumb.jpg"
+      }
+    },
+    {
+      "rank": 85,
+      "tjNumber": "23838",
+      "title": "GHOST TOWN",
+      "singer": "Benson Boone",
+      "songwriterCredit": "BENSON BOONE, NOLAN WINFIELD SIPE, TUSHAR APTE",
+      "composerCredit": "BENSON BOONE, NOLAN WINFIELD SIPE, TUSHAR APTE",
+      "raw": {
+        "word": "BENSON BOONE, NOLAN WINFIELD SIPE, TUSHAR APTE",
+        "com": "BENSON BOONE, NOLAN WINFIELD SIPE, TUSHAR APTE",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023838_thumb.jpg"
+      }
+    },
+    {
+      "rank": 86,
+      "tjNumber": "20010",
+      "title": "Piano Man",
+      "singer": "Billy Joel",
+      "songwriterCredit": "Billy Joel",
+      "composerCredit": "Billy Joel",
+      "raw": {
+        "word": "Billy Joel",
+        "com": "Billy Joel",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/020010_thumb.jpg"
+      }
+    },
+    {
+      "rank": 87,
+      "tjNumber": "23847",
+      "title": "Out of Time",
+      "singer": "The Weeknd",
+      "songwriterCredit": "ARAN TOMOKO,HAMADA TETSURO,HOLTER OSCAR THOMAS,LOPATIN DANIEL,MAX MARTIN,TESFAYE ABEL",
+      "composerCredit": "ARAN TOMOKO,HAMADA TETSURO,HOLTER OSCAR THOMAS,LOPATIN DANIEL,MAX MARTIN,TESFAYE ABEL",
+      "raw": {
+        "word": "ARAN TOMOKO,HAMADA TETSURO,HOLTER OSCAR THOMAS,LOPATIN DANIEL,MAX MARTIN,TESFAYE ABEL",
+        "com": "ARAN TOMOKO,HAMADA TETSURO,HOLTER OSCAR THOMAS,LOPATIN DANIEL,MAX MARTIN,TESFAYE ABEL",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023847_thumb.jpg"
+      }
+    },
+    {
+      "rank": 88,
+      "tjNumber": "21232",
+      "title": "Sunday Morning",
+      "singer": "Maroon 5",
+      "songwriterCredit": "Carmichael, Levine",
+      "composerCredit": "Carmichael, Levine",
+      "raw": {
+        "word": "Carmichael, Levine",
+        "com": "Carmichael, Levine",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/021232_thumb.jpg"
+      }
+    },
+    {
+      "rank": 89,
+      "tjNumber": "23263",
+      "title": "Shallow(A Star Is Born OST)",
+      "singer": "Lady Gaga,Bradley Cooper",
+      "songwriterCredit": "GERMANOTTA STEFANI,RONSON MARK,ROSSOMANDO ANTHONY,WYATT ANDREW",
+      "composerCredit": "GERMANOTTA STEFANI,RONSON MARK,ROSSOMANDO ANTHONY,WYATT ANDREW",
+      "raw": {
+        "word": "GERMANOTTA STEFANI,RONSON MARK,ROSSOMANDO ANTHONY,WYATT ANDREW",
+        "com": "GERMANOTTA STEFANI,RONSON MARK,ROSSOMANDO ANTHONY,WYATT ANDREW",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023263_thumb.jpg"
+      }
+    },
+    {
+      "rank": 90,
+      "tjNumber": "22329",
+      "title": "Marry You",
+      "singer": "Bruno Mars",
+      "songwriterCredit": "HERNANDEZ PETER GENE,LAWRENCE PHILIP MARTIN,LEVINE ARI",
+      "composerCredit": "HERNANDEZ PETER GENE,LAWRENCE PHILIP MARTIN,LEVINE ARI",
+      "raw": {
+        "word": "HERNANDEZ PETER GENE,LAWRENCE PHILIP MARTIN,LEVINE ARI",
+        "com": "HERNANDEZ PETER GENE,LAWRENCE PHILIP MARTIN,LEVINE ARI",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/022329_thumb.jpg"
+      }
+    },
+    {
+      "rank": 91,
+      "tjNumber": "23044",
+      "title": "Sign Of The Times",
+      "singer": "Harry Styles",
+      "songwriterCredit": "RYAN THOMAS NASCI,MITCH ROWLAND,TYLER JOHNSON,HARRY EDWARD STYLES 외 2명",
+      "composerCredit": "RYAN THOMAS NASCI,MITCH ROWLAND,TYLER JOHNSON,HARRY EDWARD STYLES 외 2명",
+      "raw": {
+        "word": "RYAN THOMAS NASCI,MITCH ROWLAND,TYLER JOHNSON,HARRY EDWARD STYLES 외 2명",
+        "com": "RYAN THOMAS NASCI,MITCH ROWLAND,TYLER JOHNSON,HARRY EDWARD STYLES 외 2명",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023044_thumb.jpg"
+      }
+    },
+    {
+      "rank": 92,
+      "tjNumber": "23388",
+      "title": "High Hopes",
+      "singer": "Panic! At The Disco",
+      "songwriterCredit": "HOLLANDER SAMUEL,JEBERG JONAS 외 7명",
+      "composerCredit": "HOLLANDER SAMUEL,JEBERG JONAS 외 7명",
+      "raw": {
+        "word": "HOLLANDER SAMUEL,JEBERG JONAS 외 7명",
+        "com": "HOLLANDER SAMUEL,JEBERG JONAS 외 7명",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/023388_thumb.jpg"
+      }
+    },
+    {
+      "rank": 93,
+      "tjNumber": "22910",
+      "title": "We Don't Talk Anymore",
+      "singer": "Charlie Puth(Feat.Selena Gomez)",
+      "songwriterCredit": "CHARLIE PUTH,JACOB KASHER HINDLIN,SELENA MARIE GOMEZ",
+      "composerCredit": "CHARLIE PUTH,JACOB KASHER HINDLIN,SELENA MARIE GOMEZ",
+      "raw": {
+        "word": "CHARLIE PUTH,JACOB KASHER HINDLIN,SELENA MARIE GOMEZ",
+        "com": "CHARLIE PUTH,JACOB KASHER HINDLIN,SELENA MARIE GOMEZ",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/022910_thumb.jpg"
+      }
+    },
+    {
+      "rank": 94,
+      "tjNumber": "22749",
+      "title": "Lay Me Down",
+      "singer": "Sam Smith(Feat.John Legend)",
+      "songwriterCredit": "SAM SMITH,JAMES NAPIER,ELVIN SMITH",
+      "composerCredit": "SAM SMITH,JAMES NAPIER,ELVIN SMITH",
+      "raw": {
+        "word": "SAM SMITH,JAMES NAPIER,ELVIN SMITH",
+        "com": "SAM SMITH,JAMES NAPIER,ELVIN SMITH",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/022749_thumb.jpg"
+      }
+    },
+    {
+      "rank": 95,
+      "tjNumber": "74010",
+      "title": "Hero(림버스컴퍼니OST)",
+      "singer": "Mili",
+      "songwriterCredit": "CASSIE WEI,SAKAI HIROKAZU",
+      "composerCredit": "CASSIE WEI,SAKAI HIROKAZU",
+      "raw": {
+        "word": "CASSIE WEI,SAKAI HIROKAZU",
+        "com": "CASSIE WEI,SAKAI HIROKAZU",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/074010_thumb.jpg"
+      }
+    },
+    {
+      "rank": 96,
+      "tjNumber": "7737",
+      "title": "Can't Take My Eyes Off You",
+      "singer": "Morten Harket",
+      "songwriterCredit": "Bob Crewe, Bob Gaudio",
+      "composerCredit": "Bob Crewe, Bob Gaudio",
+      "raw": {
+        "word": "Bob Crewe, Bob Gaudio",
+        "com": "Bob Crewe, Bob Gaudio",
+        "icongubun": "",
+        "mv_yn": "Y",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/007737_thumb.jpg"
+      }
+    },
+    {
+      "rank": 97,
+      "tjNumber": "73991",
+      "title": "Risk It All",
+      "singer": "Bruno Mars",
+      "songwriterCredit": "ARJONA VAZQUEZ JOHAN,HERNANDEZ PETER GENE",
+      "composerCredit": "ARJONA VAZQUEZ JOHAN,HERNANDEZ PETER GENE",
+      "raw": {
+        "word": "ARJONA VAZQUEZ JOHAN,HERNANDEZ PETER GENE",
+        "com": "ARJONA VAZQUEZ JOHAN,HERNANDEZ PETER GENE",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/073991_thumb.jpg"
+      }
+    },
+    {
+      "rank": 98,
+      "tjNumber": "21751",
+      "title": "Falling Slowly(Once OST)",
+      "singer": "Glen Hansard & Marketa Irglova",
+      "songwriterCredit": "Glen Hansard, Marketa Irglova",
+      "composerCredit": "Glen Hansard, Marketa Irglova",
+      "raw": {
+        "word": "Glen Hansard, Marketa Irglova",
+        "com": "Glen Hansard, Marketa Irglova",
+        "icongubun": "",
+        "mv_yn": "Y",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/021751_thumb.jpg"
+      }
+    },
+    {
+      "rank": 99,
+      "tjNumber": "22816",
+      "title": "Hello",
+      "singer": "Adele",
+      "songwriterCredit": "ADKINS ADELE,KURSTIN GREGORY ALLEN",
+      "composerCredit": "ADKINS ADELE,KURSTIN GREGORY ALLEN",
+      "raw": {
+        "word": "ADKINS ADELE,KURSTIN GREGORY ALLEN",
+        "com": "ADKINS ADELE,KURSTIN GREGORY ALLEN",
+        "icongubun": "",
+        "mv_yn": "Y",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/022816_thumb.jpg"
+      }
+    },
+    {
+      "rank": 100,
+      "tjNumber": "20899",
+      "title": "Halo",
+      "singer": "Beyonce",
+      "songwriterCredit": "E. Kidd Bogart, Beyonce Knowles, Ryan Tedder",
+      "composerCredit": "E. Kidd Bogart, Beyonce Knowles, Ryan Tedder",
+      "raw": {
+        "word": "E. Kidd Bogart, Beyonce Knowles, Ryan Tedder",
+        "com": "E. Kidd Bogart, Beyonce Knowles, Ryan Tedder",
+        "icongubun": "",
+        "mv_yn": "N",
+        "imgthumb_path": "https://www.tjmedia.com/SONG_ALBUMIMG/SONG_MATCH/020899_thumb.jpg"
+      }
+    }
+  ],
+  "chartPeriodVerifiedByChangingQuery": true,
+  "periodVerification": {
+    "requestedWindow": {
+      "searchStartDate": "2026-10-01",
+      "searchEndDate": "2026-10-27",
+      "resultCount": 100,
+      "rank1": "Let It Go(Frozen(겨울왕국) OST)"
+    },
+    "comparisonWindow": {
+      "searchStartDate": "2024-10-01",
+      "searchEndDate": "2024-10-31",
+      "resultCount": 100,
+      "rank1": "Let It Go(Frozen(겨울왕국) OST)",
+      "rank2": "Love Is An Open Door(Frozen(겨울왕국) OST)"
+    },
+    "comparisonFinding": "Different rank order when the requested period changed, confirming the API applies the date filters."
+  }
+}

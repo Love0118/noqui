@@ -223,7 +223,7 @@ class QuizHudTest {
         assertTrue(a.chat().contains("정답: 『정답』  출제자: Gamma"));
         hud.reveal(a.p,UUID.randomUUID(),"정답",List.of(),List.of());hud.reveal(a.p,null,"정답",List.of(),List.of());
         int placeholders=(int)a.messages.stream().filter(m->plain(m).endsWith("출제자: 이름 없음")).count();
-        assertEquals(2,placeholders);assertTrue(a.messages.stream().noneMatch(m->plain(m).contains("null")));
+        assertEquals(1,placeholders);assertTrue(a.chat().contains("출제자: 플레이리스트"));assertTrue(a.messages.stream().noneMatch(m->plain(m).contains("null")));
         assertFalse(a.chat().contains("출제자: Alpha"));
     }
 }

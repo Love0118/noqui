@@ -25,7 +25,9 @@
       "stage": "download",
       "reason": "YouTube reports this playlist entry as private.",
       "failureCode": "PRIVATE_VIDEO"
-    }
+    },
+    "writers": [],
+    "aliases": []
   },
   {
     "index": 71,
@@ -56,7 +58,9 @@
       "durationSeconds": 214.002,
       "byteLength": 1281562,
       "sha256": "772194441b201f27db3694799d7d1f67ddd6aba0996bac3dbcd8ffafde8e3951"
-    }
+    },
+    "writers": [],
+    "aliases": []
   },
   {
     "index": 72,
@@ -67,7 +71,9 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=widZEAJc0QM",
     "id": "2adad48c-c877-5825-87ea-36b3931b8890",
     "title": "Ievan Polkka",
-    "tags": [],
+    "tags": [
+      "이에반 폴카"
+    ],
     "confidence": "low",
     "reviewRequired": true,
     "notes": "The underlying song is identifiable, but the original songwriter/producer for this video’s arrangement was not verified.",
@@ -88,7 +94,16 @@
       "durationSeconds": 149.369,
       "byteLength": 917227,
       "sha256": "18a6fab263a34f88085589d82d2458519f2f85db5ad9d1ef72485507aaf828c9"
-    }
+    },
+    "writers": [],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "이에반 폴카",
+        "url": "https://namu.wiki/w/Ievan%20Polkka",
+        "quote": "Ievan Polkka (이에반 폴카)"
+      }
+    ]
   },
   {
     "index": 81,
@@ -99,7 +114,9 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=vJHz_kxSODc",
     "id": "70d21e2e-ea0e-5d27-ad25-94369706d64d",
     "title": "【手描き】자캐로 다루마씨가 굴러간다 패러디【オリキャラ】",
-    "tags": [],
+    "tags": [
+      "手描き자캐로 다루마씨가 굴러간다 패러디オリキャラ"
+    ],
     "confidence": "low",
     "reviewRequired": true,
     "notes": "Source is a parody; the underlying song and original creator were not verified.",
@@ -119,7 +136,16 @@
       "durationSeconds": 264.587,
       "byteLength": 1623833,
       "sha256": "7d07117378a72374edec94f76913521c875fce42177c2f541e1b975c0bf70361"
-    }
+    },
+    "writers": [],
+    "aliases": [
+      {
+        "kind": "punctuation",
+        "name": "手描き자캐로 다루마씨가 굴러간다 패러디オリキャラ",
+        "url": null,
+        "quote": "【手描き】자캐로 다루마씨가 굴러간다 패러디【オリキャラ】"
+      }
+    ]
   },
   {
     "index": 96,
@@ -154,7 +180,9 @@
       "stage": "download",
       "reason": "YouTube reports this playlist entry as private.",
       "failureCode": "PRIVATE_VIDEO"
-    }
+    },
+    "writers": [],
+    "aliases": []
   },
   {
     "index": 141,
@@ -187,7 +215,9 @@
       "durationSeconds": 133.905,
       "byteLength": 819570,
       "sha256": "f4413a693b6c828ace58c3146775dfb1553c40ac53e363eaa4ff30f7d33d2435"
-    }
+    },
+    "writers": [],
+    "aliases": []
   },
   {
     "index": 156,
@@ -233,7 +263,11 @@
       "durationSeconds": 248.6,
       "byteLength": 1439034,
       "sha256": "0c25302e87f2a6f05ab2553a1124daacfcaa4ce29f4da503680a2f6eeb60e9af"
-    }
+    },
+    "writers": [
+      "진"
+    ],
+    "aliases": []
   },
   {
     "index": 165,
@@ -297,7 +331,11 @@
       "durationSeconds": 209.881,
       "byteLength": 1277139,
       "sha256": "202f0c3c7a87a1d62e92635f596a3d88b17e67ac5e066a9916e018dc3e8c47a2"
-    }
+    },
+    "writers": [
+      "23.exe"
+    ],
+    "aliases": []
   },
   {
     "index": 206,
@@ -325,7 +363,9 @@
       "stage": "download",
       "reason": "YouTube reports this playlist entry as private.",
       "failureCode": "PRIVATE_VIDEO"
-    }
+    },
+    "writers": [],
+    "aliases": []
   },
   {
     "index": 211,
@@ -353,7 +393,9 @@
       "stage": "download",
       "reason": "YouTube reports this playlist entry as private.",
       "failureCode": "PRIVATE_VIDEO"
-    }
+    },
+    "writers": [],
+    "aliases": []
   },
   {
     "index": 269,
@@ -401,7 +443,11 @@
       "durationSeconds": 565.053,
       "byteLength": 3454746,
       "sha256": "51043124050e4248a13d27dcf3d5aa49c4da89beb99944e3e7fd99dc25dbd61d"
-    }
+    },
+    "writers": [
+      "kahimi"
+    ],
+    "aliases": []
   },
   {
     "index": 280,
@@ -412,7 +458,9 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=YmzhBoxcVb0",
     "id": "c4654208-3362-5eaa-b585-f83db5822510",
     "title": "난세콘나센스 / 아마네. / 하츠네 미쿠[한글화]",
-    "tags": [],
+    "tags": [
+      "난세콘나센스 아마네 하츠네 미쿠한글화"
+    ],
     "confidence": "low",
     "reviewRequired": true,
     "notes": "Title and producer unresolved; no established Korean title or original title was verified.",
@@ -432,7 +480,16 @@
       "durationSeconds": 196.785,
       "byteLength": 1203492,
       "sha256": "c7c79efb4338918ba852e479db8219a76f561bdfb2eaa0aeec181c4d32cf24b2"
-    }
+    },
+    "writers": [],
+    "aliases": [
+      {
+        "kind": "punctuation",
+        "name": "난세콘나센스 아마네 하츠네 미쿠한글화",
+        "url": null,
+        "quote": "난세콘나센스 / 아마네. / 하츠네 미쿠[한글화]"
+      }
+    ]
   },
   {
     "index": 309,
@@ -460,7 +517,9 @@
       "stage": "download",
       "reason": "YouTube reports the uploader account as closed or terminated.",
       "failureCode": "UPLOADER_ACCOUNT_UNAVAILABLE"
-    }
+    },
+    "writers": [],
+    "aliases": []
   },
   {
     "index": 313,
@@ -508,7 +567,11 @@
       "durationSeconds": 258.774,
       "byteLength": 1588112,
       "sha256": "cbf117524c87dfbb2fe373c3443ac37db72395e67949fdcf020452ff35d46b27"
-    }
+    },
+    "writers": [
+      "okameP"
+    ],
+    "aliases": []
   },
   {
     "index": 315,
@@ -519,7 +582,9 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=-tCZYBrf_XM",
     "id": "14cda6bf-8a51-5b93-8194-357b8ccffb85",
     "title": "라이스 정식으로 먹어요.",
-    "tags": [],
+    "tags": [
+      "라이스 정식으로 먹어요"
+    ],
     "confidence": "low",
     "reviewRequired": true,
     "notes": "Korean upload title is verified in a community article linking this exact video. Original song/parody identity and songwriter remain unverified; downloaded description is empty. Targeted searches did not establish the original.",
@@ -546,7 +611,16 @@
       "durationSeconds": 84.11,
       "byteLength": 490428,
       "sha256": "f0ff5674c5555bd64c99f7cf961f13e07d870a3350bfff4ca1624dc0ff18f545"
-    }
+    },
+    "writers": [],
+    "aliases": [
+      {
+        "kind": "punctuation",
+        "name": "라이스 정식으로 먹어요",
+        "url": null,
+        "quote": "라이스 정식으로 먹어요."
+      }
+    ]
   },
   {
     "index": 316,
@@ -595,7 +669,11 @@
       "durationSeconds": 190.921,
       "byteLength": 1172751,
       "sha256": "21bb841c6628ba513a0ec00e31078c36a448e9a534e228605091861ec8193295"
-    }
+    },
+    "writers": [
+      "UraCommanderP"
+    ],
+    "aliases": []
   },
   {
     "index": 363,
@@ -623,7 +701,9 @@
       "stage": "download",
       "reason": "YouTube reports the uploader account as closed or terminated.",
       "failureCode": "UPLOADER_ACCOUNT_UNAVAILABLE"
-    }
+    },
+    "writers": [],
+    "aliases": []
   },
   {
     "index": 386,
@@ -651,7 +731,9 @@
       "stage": "download",
       "reason": "YouTube reports this playlist entry as private.",
       "failureCode": "PRIVATE_VIDEO"
-    }
+    },
+    "writers": [],
+    "aliases": []
   },
   {
     "index": 433,
@@ -683,7 +765,9 @@
       "durationSeconds": 268.314,
       "byteLength": 1641742,
       "sha256": "241e6f7736bfb9e4669fe0e62abc06c149c5cd12aa4151c7c280e4b59cfb02bf"
-    }
+    },
+    "writers": [],
+    "aliases": []
   },
   {
     "index": 478,
@@ -721,7 +805,11 @@
       "durationSeconds": 287.923,
       "byteLength": 1715698,
       "sha256": "126691308838e1dad278a339c3dca6f9c148d3450ee3063f94798fef0dc75cf2"
-    }
+    },
+    "writers": [
+      "Nem"
+    ],
+    "aliases": []
   },
   {
     "index": 490,
@@ -733,7 +821,8 @@
     "id": "0b52563a-609b-5321-970c-0ee896b2fa5f",
     "title": "笹舟",
     "tags": [
-      "doriko"
+      "doriko",
+      "키리땅P"
     ],
     "confidence": "low",
     "reviewRequired": true,
@@ -762,7 +851,19 @@
       "durationSeconds": 312.629,
       "byteLength": 1917027,
       "sha256": "7ac78c92837333ad8a7ba06e8f301fbdb870626613420568b4cb465056e07ac1"
-    }
+    },
+    "writers": [
+      "doriko"
+    ],
+    "aliases": [
+      {
+        "kind": "writer",
+        "writer": "doriko",
+        "name": "키리땅P",
+        "url": "https://namu.wiki/w/doriko",
+        "quote": "doriko, 다른 이름으로는 키리땅P(きりたんP)라고도 한다."
+      }
+    ]
   },
   {
     "index": 508,
@@ -802,7 +903,11 @@
       "durationSeconds": 182.151,
       "byteLength": 1108389,
       "sha256": "8f8a532ed100218d91e6642238fe85aefbf61469d85cc0225369029bcfa22baa"
-    }
+    },
+    "writers": [
+      "APG550"
+    ],
+    "aliases": []
   },
   {
     "index": 519,
@@ -830,7 +935,9 @@
       "stage": "download",
       "reason": "YouTube reports the uploader account as closed or terminated.",
       "failureCode": "UPLOADER_ACCOUNT_UNAVAILABLE"
-    }
+    },
+    "writers": [],
+    "aliases": []
   },
   {
     "index": 529,
@@ -863,6 +970,8 @@
       "durationSeconds": 256.75,
       "byteLength": 1561545,
       "sha256": "dab0ee0606dbc8aed7f097bd90b47802e0c3bb7f35ff59b60ab7004d7347c670"
-    }
+    },
+    "writers": [],
+    "aliases": []
   }
 ]

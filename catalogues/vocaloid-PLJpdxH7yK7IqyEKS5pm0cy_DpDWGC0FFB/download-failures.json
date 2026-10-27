@@ -9,7 +9,8 @@
     "id": "279c83bd-d523-51ce-a8e4-f23387f4bbb3",
     "title": "도넛 홀",
     "tags": [
-      "Hachi"
+      "Hachi",
+      "하치"
     ],
     "confidence": "high",
     "reviewRequired": false,
@@ -38,7 +39,19 @@
       "stage": "download",
       "reason": "YouTube reports this playlist entry as private.",
       "failureCode": "PRIVATE_VIDEO"
-    }
+    },
+    "writers": [
+      "Hachi"
+    ],
+    "aliases": [
+      {
+        "kind": "writer",
+        "writer": "Hachi",
+        "name": "하치",
+        "url": "https://namu.wiki/w/%EC%9A%94%EB%84%A4%EC%A6%88%20%EC%BC%84%EC%8B%9C",
+        "quote": "필명 하치(ハチ, hachi)"
+      }
+    ]
   },
   {
     "index": 42,
@@ -66,7 +79,9 @@
       "stage": "download",
       "reason": "YouTube reports this playlist entry as private.",
       "failureCode": "PRIVATE_VIDEO"
-    }
+    },
+    "writers": [],
+    "aliases": []
   },
   {
     "index": 46,
@@ -78,7 +93,8 @@
     "id": "dcb1cbe0-e272-5cac-a565-628c252618f6",
     "title": "꽃내림",
     "tags": [
-      "n-buna"
+      "n-buna",
+      "나부나"
     ],
     "confidence": "high",
     "reviewRequired": false,
@@ -99,7 +115,19 @@
       "stage": "download",
       "reason": "YouTube reports this playlist entry as private.",
       "failureCode": "PRIVATE_VIDEO"
-    }
+    },
+    "writers": [
+      "n-buna"
+    ],
+    "aliases": [
+      {
+        "kind": "writer",
+        "writer": "n-buna",
+        "name": "나부나",
+        "url": "https://namu.wiki/w/n-buna",
+        "quote": "n-buna 나부나"
+      }
+    ]
   },
   {
     "index": 96,
@@ -134,7 +162,9 @@
       "stage": "download",
       "reason": "YouTube reports this playlist entry as private.",
       "failureCode": "PRIVATE_VIDEO"
-    }
+    },
+    "writers": [],
+    "aliases": []
   },
   {
     "index": 206,
@@ -162,7 +192,9 @@
       "stage": "download",
       "reason": "YouTube reports this playlist entry as private.",
       "failureCode": "PRIVATE_VIDEO"
-    }
+    },
+    "writers": [],
+    "aliases": []
   },
   {
     "index": 211,
@@ -190,7 +222,9 @@
       "stage": "download",
       "reason": "YouTube reports this playlist entry as private.",
       "failureCode": "PRIVATE_VIDEO"
-    }
+    },
+    "writers": [],
+    "aliases": []
   },
   {
     "index": 287,
@@ -223,7 +257,11 @@
       "stage": "download",
       "reason": "YouTube requires an authenticated age-verified session for this video.",
       "failureCode": "AGE_RESTRICTED"
-    }
+    },
+    "writers": [
+      "하치"
+    ],
+    "aliases": []
   },
   {
     "index": 309,
@@ -251,7 +289,9 @@
       "stage": "download",
       "reason": "YouTube reports the uploader account as closed or terminated.",
       "failureCode": "UPLOADER_ACCOUNT_UNAVAILABLE"
-    }
+    },
+    "writers": [],
+    "aliases": []
   },
   {
     "index": 363,
@@ -279,7 +319,9 @@
       "stage": "download",
       "reason": "YouTube reports the uploader account as closed or terminated.",
       "failureCode": "UPLOADER_ACCOUNT_UNAVAILABLE"
-    }
+    },
+    "writers": [],
+    "aliases": []
   },
   {
     "index": 386,
@@ -307,7 +349,9 @@
       "stage": "download",
       "reason": "YouTube reports this playlist entry as private.",
       "failureCode": "PRIVATE_VIDEO"
-    }
+    },
+    "writers": [],
+    "aliases": []
   },
   {
     "index": 416,
@@ -340,7 +384,11 @@
       "stage": "download",
       "reason": "YouTube reports this video as blocked by a rights holder.",
       "failureCode": "RIGHTSHOLDER_BLOCKED"
-    }
+    },
+    "writers": [
+      "벌룬"
+    ],
+    "aliases": []
   },
   {
     "index": 519,
@@ -368,7 +416,9 @@
       "stage": "download",
       "reason": "YouTube reports the uploader account as closed or terminated.",
       "failureCode": "UPLOADER_ACCOUNT_UNAVAILABLE"
-    }
+    },
+    "writers": [],
+    "aliases": []
   },
   {
     "index": 534,
@@ -380,7 +430,8 @@
     "id": "b90b4941-818d-578f-a6d6-7dcbe0f65b8d",
     "title": "쿠루미☆퐁치오",
     "tags": [
-      "마다코"
+      "마다코",
+      "쿠루미퐁치오"
     ],
     "confidence": "high",
     "reviewRequired": false,
@@ -409,6 +460,17 @@
       "stage": "download",
       "reason": "YouTube requires an authenticated age-verified session for this video.",
       "failureCode": "AGE_RESTRICTED"
-    }
+    },
+    "writers": [
+      "마다코"
+    ],
+    "aliases": [
+      {
+        "kind": "punctuation",
+        "name": "쿠루미퐁치오",
+        "url": null,
+        "quote": "쿠루미☆퐁치오"
+      }
+    ]
   }
 ]
