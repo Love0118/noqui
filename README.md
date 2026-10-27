@@ -17,11 +17,14 @@ Paper 26.3 / Java 25용 노래퀴즈 플러그인입니다. 오디오는 Rust �
 [보컬로이드 플레이리스트 정제 데이터](catalogues/vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB/)에는 한국어 통용 제목·원곡 작가 태그·확인 출처와 검수 대기 목록이 들어 있습니다. 전체 길이 음원은 해당 폴더의 로컬 `audio/`에 보관하며 Git에는 포함하지 않습니다. 이 데이터 준비 작업은 운영 서버나 기존 120초 재생 캐시를 변경하지 않습니다.
 
 - `catalogue.json`: 원래 순서와 영상 ID를 보존한 전체 목록, 확인 출처, 음원 경로와 SHA-256.
+- `catalogue.sqlite3`: SQLite로 열어 보는 곡 DB. `전체곡` 뷰에 곡명·작가·검수 상태·음원 상태·재생시간·출처를 한글 열로 표시합니다. `검수완료곡`, `검토필요곡`, `다운로드불가곡`, `작가별곡`, `작가별집계`, `출처목록`, `집계` 뷰도 제공합니다.
 - `import-batch-*.json`: 검수를 통과한 메타데이터만 담은 최대 50곡 단위의 내부 API 입력 파일. 자동 전송하지 않습니다.
 - `review-required.json`, `download-failures.json`: 제목·작가 확인이 더 필요한 항목과 다운로드 불가 항목.
 - `summary.json`: 검수·다운로드 집계. 음원은 잘라내지 않은 48kbps 스테레오 Ogg Opus이며 제목과 작가를 파일 태그에도 기록합니다.
 
 `python catalogues/vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB/validate.py`로 목록을 검사합니다. 로컬 음원까지 보관한 체크아웃에서는 `--audio`를 추가해 파일 해시·전체 길이·내장 태그도 확인할 수 있습니다. 자체 번역한 제목은 사용하지 않으며 통용 한국어 제목을 확인하지 못한 곡은 검수 대기 목록에 남깁니다.
+
+DB는 같은 폴더의 `build_database.py`로 `catalogue.json`에서 재생성할 수 있습니다. 재생성하면 DB의 직접 수정 내용 대신 JSON에 저장된 검수 결과를 반영합니다. 음원 경로는 DB와 같은 폴더를 기준으로 한 상대 경로입니다.
 
 ## 빌드
 

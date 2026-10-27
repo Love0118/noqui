@@ -1,2 +1,4 @@
 # Full-length audio is kept in this checkout, outside Git history.
 /audio/
+# Reviewed catalogue snapshot; production databases remain globally ignored.
+!/catalogue.sqlite3
