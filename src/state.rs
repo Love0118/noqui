@@ -308,6 +308,14 @@ impl State {
     pub fn playback(&mut self, key: &str, p: Playback, now: i64) -> Result<Value> {
         let session = self.session(key, now)?;
         self.require_authority(now)?;
+        let buffer_limit = self
+            .snapshot
+            .as_ref()
+            .and_then(|s| s.rooms.iter().find(|r| r.room_id == session.player.room_id))
+            .and_then(|r| r.round.as_ref())
+            .and_then(|r| r.media_id.as_ref())
+            .and_then(|id| self.media.get(id))
+            .map_or(310000, |m| m.duration_ms.max(310000));
         if !uuid(&p.client_id)
             || ![
                 "CONNECTED",
@@ -322,7 +330,7 @@ impl State {
             .contains(&p.status.as_str())
             || p.position_ms.is_some_and(|v| !(0..=310000).contains(&v))
             || p.buffered_until_ms
-                .is_some_and(|v| !(0..=310000).contains(&v))
+                .is_some_and(|v| !(0..=buffer_limit).contains(&v))
             || p.last_event_id.as_ref().is_some_and(|v| v.len() > 100)
         {
             return Err(bad());

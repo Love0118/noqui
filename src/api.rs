@@ -304,8 +304,20 @@ async fn playback(State(app): State<App>, h: HeaderMap, b: Bytes) -> Result<Json
     let (key, s) = authorize(&app, &h)?;
     auth::csrf(&h, &s.csrf)?;
     let p: Playback = decode(&h, &b)?;
-    let value = app.inner.lock().unwrap().playback(&key, p, app.now())?;
-    app.notify();
+    let now = app.now();
+    let (value, presence_changed) = {
+        let mut state = app.inner.lock().unwrap();
+        let online = state
+            .sessions
+            .get(&key)
+            .and_then(|s| s.browser.as_ref())
+            .is_some_and(|b| b.until > now);
+        (state.playback(&key, p, now)?, !online)
+    };
+    // Playback progress is private bridge telemetry; only presence changes need a public broadcast.
+    if presence_changed {
+        app.notify();
+    }
     Ok(Json(value))
 }
 async fn events(State(app): State<App>, h: HeaderMap) -> Result<Response> {

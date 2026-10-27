@@ -11,6 +11,7 @@
   let gestureBlocked = false, userPaused = false, clientLeaseUntil = 0, authGeneration = 0, playbackGesture = 0;
   let countdownStarted = false, progressSample = null, progressStart = null, lastProgressAt = -Infinity;
   let outputCheck = null, checkedOutput = '', nextAutoplayAttemptAt = 0;
+  let nextPlayAttemptAt = 0, nextOutputAttemptAt = 0, listenerSignature = '';
   let authValid = false, eventEpoch = '', eventSeq = -1n, lastPoll = -Infinity;
   let lastReportSignature = '', inFlightSignature = '', lastReportAt = -Infinity, nextReportAt = 0, refreshing = null;
   let boundPlayer = sessionStorage.getItem('noqui-player') || '', boundCsrf = '';
@@ -56,6 +57,9 @@
     const head = $('avatar').cloneNode(true); head.removeAttribute('id'); avatar(head, hash); return head;
   }
   function players(list) {
+    const signature = JSON.stringify(list.map(p => [p.uuid, p.nickname, p.textureHash, p.browserOnline]));
+    if (signature === listenerSignature) return;
+    listenerSignature = signature;
     const fragment = document.createDocumentFragment();
     for (const player of list) {
       const item = document.createElement('div'); item.className = `listener${player.browserOnline ? ' live' : ''}`;
@@ -80,9 +84,9 @@
     try { seq = BigInt(next.eventId.slice(split + 1)); } catch { return; }
     if (epoch === eventEpoch && seq < eventSeq) return;
     if (epoch !== eventEpoch) { eventEpoch = epoch; eventSeq = -1n; }
-    if (next.round?.roundId !== state?.round?.roundId || next.media?.url !== currentMedia) { cancelOutputCheck(); checkedOutput = ''; }
+    if (next.round?.roundId !== state?.round?.roundId || next.media?.url !== currentMedia) { cancelOutputCheck(); checkedOutput = ''; nextOutputAttemptAt = 0; }
     eventSeq = seq; state = next; lastControl = performance.now(); authority = next.authorityLeaseExpiresAtMs;
-    if (next.round?.playbackGeneration !== lastGeneration) { lastGeneration = next.round?.playbackGeneration || ''; lastSeek = -Infinity; playPending = null; countdownStarted = false; resetProgress(); audio.pause(); }
+    if (next.round?.playbackGeneration !== lastGeneration) { lastGeneration = next.round?.playbackGeneration || ''; lastSeek = -Infinity; nextPlayAttemptAt = 0; playPending = null; countdownStarted = false; resetProgress(); audio.pause(); }
     if (!calibrated) offset = next.serverTimeMs - performance.now();
     $('nickname').textContent = next.me.nickname; avatar($('avatar'), next.me.textureHash); players(next.room.players);
     const revealed = next.room.phase === 'REVEAL' && next.reveal;
@@ -121,6 +125,7 @@
   }
   function checkOutput() {
     const attempt = { key: outputKey(), auth: authGeneration, gesture: playbackGesture, volume: audio.volume, muted: audio.muted };
+    nextOutputAttemptAt = performance.now() + 2000;
     outputCheck = attempt;
     // An unmuted silent WAV checks the browser's audible-playback permission on
     // this same element without revealing the quiz. It does not grant permission.
@@ -183,7 +188,8 @@
     inFlightSignature = signature;
     const generation = authGeneration;
     let bufferedUntilMs = null;
-    if (!outputCheck) for (let i = 0; i < audio.buffered.length; i++) if (audio.buffered.start(i) <= audio.currentTime && audio.buffered.end(i) >= audio.currentTime) bufferedUntilMs = Math.round(audio.buffered.end(i) * 1000);
+    // Report readiness for the playable clip. Full album tracks can buffer far beyond it.
+    if (!outputCheck && r) for (let i = 0; i < audio.buffered.length; i++) if (audio.buffered.start(i) <= audio.currentTime && audio.buffered.end(i) >= audio.currentTime) bufferedUntilMs = Math.min(r.clipEndMs, Math.round(audio.buffered.end(i) * 1000));
     try {
       const response = await request('/api/v1/playback', { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Noqui-CSRF': csrf }, body: JSON.stringify({ clientId, takeOver: takeover, roundId: r?.roundId ?? null, roundRevision: r?.revision ?? null, playbackGeneration: r?.playbackGeneration ?? null, status: current, positionMs: !outputCheck && currentMedia && Number.isFinite(audio.currentTime) ? Math.round(audio.currentTime * 1000) : null, bufferedUntilMs, lastEventId: state?.eventId ?? null }) });
       if (!authValid || generation !== authGeneration) return;
@@ -210,13 +216,13 @@
     if (!connected() || !leader || now() >= clientLeaseUntil || !r || !currentMedia || formatFailed || audio.error) { cancelOutputCheck(); resetProgress(); audio.pause(); return; }
     if (gestureBlocked && performance.now() >= nextAutoplayAttemptAt) gestureBlocked = false;
     if (outputCheck) return;
-    if (!userPaused && !gestureBlocked && checkedOutput !== outputKey() && (state.room.phase === 'PREPARING' || state.room.phase === 'COUNTDOWN' && now() < r.anchorAtMs)) { checkOutput(); return; }
+    if (!userPaused && !gestureBlocked && checkedOutput !== outputKey() && (state.room.phase === 'PREPARING' || state.room.phase === 'COUNTDOWN' && now() < r.anchorAtMs)) { if (performance.now() >= nextOutputAttemptAt) checkOutput(); return; }
     const target = expected(r) / 1000;
     if (!(state.room.phase === 'COUNTDOWN' && countdownStarted) && audio.readyState >= 1 && !audio.seeking && !playPending && Math.abs(audio.currentTime - target) > .5 && performance.now() - lastSeek >= 2000) {
       try { resetProgress(); audio.currentTime = target; lastSeek = performance.now(); } catch { /* Seek becomes available after metadata. */ }
     }
     if (!wantsPlayback()) { resetProgress(); audio.pause(); return; }
-    if (audio.paused && !playPending && audio.readyState >= 2 && !audio.seeking) {
+    if (audio.paused && !playPending && audio.readyState >= 2 && !audio.seeking && performance.now() >= nextPlayAttemptAt) {
       const attempt = { media: currentMedia, generation: lastGeneration, auth: authGeneration, gesture: playbackGesture };
       if (state.room.phase === 'COUNTDOWN') countdownStarted = true;
       playPending = attempt;
@@ -225,6 +231,8 @@
       }).catch(error => {
         if (playPending !== attempt || attempt.media !== currentMedia || attempt.generation !== lastGeneration || attempt.auth !== authGeneration) return;
         if (error.name === 'NotAllowedError') { gestureBlocked = attempt.gesture === playbackGesture; checkedOutput = ''; nextAutoplayAttemptAt = performance.now() + 15000; audio.pause(); }
+        else if (error.name === 'NotSupportedError') { formatFailed = true; message(errors.FORMAT_UNSUPPORTED); }
+        else nextPlayAttemptAt = performance.now() + 2000;
       }).finally(() => {
         if (playPending === attempt) {
           playPending = null;
@@ -294,14 +302,14 @@
     } catch (error) { if (error.status !== 401) { message('연결을 확인할 수 없습니다'); $('audio-status').textContent = '연결 대기'; } }
   }
   $('playback').addEventListener('click', event => {
-    if (userPaused || gestureBlocked || audio.paused && !playPending) { userPaused = false; gestureBlocked = false; if (event.isTrusted) playbackGesture++; align(); }
+    if (userPaused || gestureBlocked || audio.paused && !playPending) { userPaused = false; gestureBlocked = false; nextPlayAttemptAt = nextOutputAttemptAt = 0; if (event.isTrusted) playbackGesture++; align(); }
     else { userPaused = true; playPending = null; cancelOutputCheck(); audio.pause(); }
     paint();
   });
   const retryGesture = event => {
     if (!event.isTrusted || event.repeat || userPaused || event.target?.closest?.('#playback, #takeover, #logout')) return;
     if (event.type === 'keydown' && (event.ctrlKey || event.metaKey || event.altKey || ['Shift', 'Control', 'Alt', 'Meta', 'Tab'].includes(event.key))) return;
-    playbackGesture++; gestureBlocked = false; align(); paint();
+    playbackGesture++; gestureBlocked = false; nextPlayAttemptAt = nextOutputAttemptAt = 0; align(); paint();
   };
   for (const event of ['pointerup', 'click', 'keydown']) document.addEventListener(event, retryGesture);
   $('takeover').addEventListener('click', async event => { leader = true; takeover = true; clientLeaseUntil = 0; gestureBlocked = false; if (event.isTrusted) playbackGesture++; await report(); if (leader && authValid && now() < clientLeaseUntil) { $('takeover').hidden = true; align(); paint(); } });

@@ -13,12 +13,13 @@ let clientSequence = 0;
 function fixture(stored = new Map()) {
   const els = new Map(), documentEvents = new Map(), windowEvents = new Map(), intervals = [], timers = new Map(), streams = [], reports = [], requests = [];
   let clock = 1000, cookiePlayer = UUID_A, csrf = 'csrf-A', pendingState = null, denyCsrf = false, offline = false, expired = false, plays = 0;
-  let playOverride = null, checks = 0;
+  let playOverride = null, checks = 0, listenerRenders = 0;
   const storage = new Map(stored);
   function element() { return { textContent: '', hidden: false, disabled: false, attrs: {}, events: {}, classList: { toggle() {}, remove() {} }, querySelectorAll: () => [],
     addEventListener(type, fn) { this.events[type] = fn; }, setAttribute(k, v) { this.attrs[k] = v; }, removeAttribute() {}, replaceChildren() {}, closest: () => null }; }
   const get = id => { if (!els.has(id)) els.set(id, element()); return els.get(id); };
   const audio = get('audio');
+  get('listeners').replaceChildren = () => { listenerRenders++; };
   Object.assign(audio, { readyState: 4, paused: true, seeking: false, currentTime: 0, error: null,
     buffered: { length: 1, start: () => 0, end: () => 115.007 }, pause() { this.paused = true; }, load() {}, canPlayType: () => 'probably',
     play() { if (this.src === '/playback-check.wav') checks++; else plays++; if (playOverride) return playOverride(); this.paused = false; return Promise.resolve(); } });
@@ -61,7 +62,7 @@ function fixture(stored = new Map()) {
     },
   };
   vm.runInNewContext(source.replace('  void boot();', '  globalThis.api = { boot, apply, align, paint, status, report, revoke };'), context);
-  return { ...context.api, get, audio, streams, reports, requests, intervals, document, state, storage, plays: () => plays, checks: () => checks,
+  return { ...context.api, get, audio, streams, reports, requests, intervals, document, state, storage, plays: () => plays, checks: () => checks, listenerRenders: () => listenerRenders,
     setClock: value => { clock = value; }, setSnapshot: value => { snapshot = value; },
     switchPlayer: () => { cookiePlayer = UUID_B; csrf = 'csrf-B'; },
     denyCsrf: () => { denyCsrf = true; }, pendingState: promise => { pendingState = promise; },
@@ -84,6 +85,39 @@ test('new round revision reports PREPARED after the output check without a heart
   assert.equal(r.reports.at(-1).roundRevision, '2');
   assert.equal(r.reports.at(-1).status, 'PREPARED');
   assert.equal(r.checks(), 1); assert.equal(r.plays(), 0, 'the quiz track is not exposed during the check');
+});
+
+test('full length album buffers report only the quiz clip and preserve playback readiness', async () => {
+  const r = fixture(); r.audio.buffered.end = () => 600.016;
+  const state = r.state('PREPARING', '1'); state.media.durationMs = 600016;
+  r.setSnapshot(state); await r.boot(); await flush();
+  assert.equal(r.reports.at(-1).status, 'PREPARED');
+  assert.equal(r.reports.at(-1).bufferedUntilMs, 115000);
+});
+
+test('unchanged listener rosters do not rebuild on repeated playback updates', async () => {
+  const r = fixture(); await r.boot(); await flush(); const renders = r.listenerRenders();
+  for (let i = 2; i < 12; i++) { r.apply(r.state('PREPARING', String(i))); await flush(); }
+  assert.equal(r.listenerRenders(), renders);
+});
+
+test('rejected track play promises wait before retrying and never loop in microtasks', async () => {
+  const r = fixture(); await r.boot(); await flush();
+  r.setPlay(() => Promise.reject(Object.assign(new Error('device interrupted'), { name: 'AbortError' })));
+  r.apply(r.state('PLAYING', '2')); await flush(); const attempts = r.plays();
+  assert.equal(attempts, 1);
+  for (let i = 0; i < 20; i++) { await r.tick(); }
+  assert.equal(r.plays(), attempts);
+  r.setClock(3001); await r.tick(); assert.equal(r.plays(), attempts + 1);
+});
+
+test('aborted output checks cannot recursively retry in promise callbacks', async () => {
+  const r = fixture();
+  r.setPlay(() => Promise.reject(Object.assign(new Error('interrupted'), { name: 'AbortError' })));
+  await r.boot(); await flush(); assert.equal(r.checks(), 1);
+  for (let i = 0; i < 20; i++) await r.tick();
+  assert.equal(r.checks(), 1);
+  r.setClock(3001); await r.tick(); assert.equal(r.checks(), 2);
 });
 
 test('buffered preparation denied audible autoplay never reports readiness or a countdown', async () => {

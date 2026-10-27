@@ -2689,6 +2689,57 @@ fn encoded_cache_is_capped_at_120_seconds_while_private_source_may_be_360_second
 }
 
 #[tokio::test]
+async fn full_length_playlist_buffer_reports_use_the_selected_media_duration() {
+    let f = Fixture::new();
+    let mut media = f.seed();
+    media.duration_ms = 600016;
+    let mut s = f.snapshot(1, "PREPARING");
+    f.round(&mut s);
+    f.sync_direct(s, Some(media));
+    let (cookie, csrf) = f.login();
+    let client = uuid::Uuid::new_v4().to_string();
+    let mut changes = f.app.changed.subscribe();
+    for (position, buffered, expected) in [
+        (0, 600016, StatusCode::OK),
+        (250, 600016, StatusCode::OK),
+        (0, 600017, StatusCode::BAD_REQUEST),
+        (0, -1, StatusCode::BAD_REQUEST),
+        (310001, 600016, StatusCode::BAD_REQUEST),
+    ] {
+        let request = Request::builder()
+            .method("POST")
+            .uri("/api/v1/playback")
+            .header("cookie", &cookie)
+            .header("origin", noqui_web::ORIGIN)
+            .header("content-type", "application/json")
+            .header("x-noqui-csrf", &csrf)
+            .body(Body::from(
+                json!({"clientId":client,"takeOver":false,"roundId":ROUND,
+                "roundRevision":"1","playbackGeneration":GENERATION,"status":"PREPARED",
+                "positionMs":position,"bufferedUntilMs":buffered,"lastEventId":null})
+                .to_string(),
+            ))
+            .unwrap();
+        assert_eq!(
+            call(api::public(f.app.clone()), request).await.0,
+            expected,
+            "position={position}, buffered={buffered}"
+        );
+        if position == 0 && buffered == 600016 {
+            assert!(
+                changes.try_recv().is_ok(),
+                "first online presence is broadcast"
+            );
+        } else {
+            assert!(
+                changes.try_recv().is_err(),
+                "routine telemetry and errors do not fan out to all browsers"
+            );
+        }
+    }
+}
+
+#[tokio::test]
 async fn old_round_readiness_and_competing_tab_do_not_become_current_playback() {
     let f = Fixture::new();
     let m = f.seed();
