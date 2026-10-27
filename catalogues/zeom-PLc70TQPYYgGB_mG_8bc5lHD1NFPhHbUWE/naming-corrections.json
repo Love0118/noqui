@@ -1,0 +1,755 @@
+{
+  "changes": [
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 10,
+      "previousTitle": "블링 뱅 뱅 본",
+      "title": "블링 뱅 뱅 본",
+      "tags": [
+        "크리피 너츠",
+        "블링 뱅 뱅 본",
+        "BlingBangBangBorn",
+        "RShitei",
+        "DJ Matsunaga",
+        "알시테이",
+        "디제이 마츠나가"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 33,
+      "previousTitle": "잔향산가",
+      "title": "잔향산가",
+      "tags": [
+        "에메",
+        "잔향산가",
+        "Zankyosanka",
+        "Aimerrhythm",
+        "Masahiro Tobinai"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 35,
+      "previousTitle": "괴물",
+      "title": "괴물",
+      "tags": [
+        "요아소비",
+        "괴물",
+        "Ayase",
+        "아야세"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 38,
+      "previousTitle": "인페르노",
+      "title": "인페르노",
+      "tags": [
+        "미세스 그린애플",
+        "인페르노",
+        "Inferno",
+        "Motoki Ohmori",
+        "오모리 모토키"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 45,
+      "previousTitle": "혁명도중",
+      "title": "혁명도중",
+      "tags": [
+        "혁명도중",
+        "Shin Sakiura"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 53,
+      "previousTitle": "AMBITION",
+      "title": "AMBITION",
+      "tags": [
+        "AMBITION"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 56,
+      "previousTitle": "라일락",
+      "title": "라일락",
+      "tags": [
+        "미세스 그린애플",
+        "라일락",
+        "Lilac",
+        "Motoki Ohmori",
+        "오모리 모토키"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 60,
+      "previousTitle": "태양이 떠오르지 않는 세계",
+      "title": "태양이 떠오르지 않는 세계",
+      "tags": [
+        "에메",
+        "태양이 떠오르지 않는 세계",
+        "Go Shiina",
+        "Hikaru Kondo ufotable"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 95,
+      "previousTitle": "러브 앤 디스트로이",
+      "title": "러브 앤 디스트로이",
+      "tags": [
+        "러브 앤 디스트로이"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 96,
+      "previousTitle": "가라앉는 거리",
+      "title": "가라앉는 거리",
+      "tags": [
+        "쿠라하시 요에코",
+        "가라앉는 거리",
+        "Yoeko Kurahashi"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 105,
+      "previousTitle": "수고했어 여름",
+      "title": "수고했어 여름",
+      "tags": [
+        "수고했어 여름",
+        "Tomoyuki Tanaka",
+        "Masayuki Kumahara"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 106,
+      "previousTitle": "막차는 25시",
+      "title": "막차는 25시",
+      "tags": [
+        "막차는 25시",
+        "Taiyo Someya"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 111,
+      "previousTitle": "과호흡",
+      "title": "과호흡",
+      "tags": [
+        "래드윔프스",
+        "과호흡",
+        "Hyperventilation",
+        "Yojiro Noda"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 114,
+      "previousTitle": "ダブル - JiLL-Decoy association",
+      "title": "ダブル - JiLL-Decoy association",
+      "tags": [
+        "chihiRo",
+        "towada",
+        "Mamoru Ishida"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 123,
+      "previousTitle": "그런 bitter 한 이야기",
+      "title": "그런 bitter 한 이야기",
+      "tags": [
+        "그런 bitter 한 이야기",
+        "Vaundy",
+        "바운디"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 124,
+      "previousTitle": "ゆらめき - rourourourous",
+      "title": "ゆらめき - rourourourous",
+      "tags": [
+        "Atsushi Kobayashi",
+        "Daiki Okuno"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 140,
+      "previousTitle": "밤을 달리다",
+      "title": "밤을 달리다",
+      "tags": [
+        "요아소비",
+        "밤을 달리다",
+        "Into The Night",
+        "AYASE",
+        "아야세"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 144,
+      "previousTitle": "ブルボン - pomodorosa",
+      "title": "부르봉",
+      "tags": [
+        "부르봉"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 146,
+      "previousTitle": "만찬가",
+      "title": "만찬가",
+      "tags": [
+        "만찬가",
+        "tuki"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 149,
+      "previousTitle": "도넛 홀",
+      "title": "도넛 홀",
+      "tags": [
+        "하치",
+        "요네즈 켄시",
+        "도넛 홀",
+        "Doughnut Hole Cover",
+        "Doughnut Hole",
+        "Hachi"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 163,
+      "previousTitle": "말해 줘",
+      "title": "말해 줘",
+      "tags": [
+        "나부나",
+        "말해 줘",
+        "Nbuna"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 173,
+      "previousTitle": "수꽃",
+      "title": "수꽃",
+      "tags": [
+        "매버릭 맘",
+        "수꽃"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 176,
+      "previousTitle": "전전전세",
+      "title": "전전전세",
+      "tags": [
+        "래드윔프스",
+        "전전전세",
+        "Zenzenzense Original Version",
+        "Zenzenzense",
+        "Yojiro Noda"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 186,
+      "previousTitle": "괴수의 꽃노래",
+      "title": "괴수의 꽃노래",
+      "tags": [
+        "괴수의 꽃노래",
+        "Vaundy",
+        "바운디"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 198,
+      "previousTitle": "존재 A",
+      "title": "존재 A",
+      "tags": [
+        "존재 A"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 199,
+      "previousTitle": "개와 바보 고양이",
+      "title": "개와 바보 고양이",
+      "tags": [
+        "세컨드 백커",
+        "개와 바보 고양이"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 202,
+      "previousTitle": "1000일간",
+      "title": "1000일간",
+      "tags": [
+        "1000일간",
+        "noa"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 210,
+      "previousTitle": "역광",
+      "title": "역광",
+      "tags": [
+        "역광",
+        "Vaundy",
+        "바운디"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 214,
+      "previousTitle": "달마 그랑프리",
+      "title": "달마 그랑프리",
+      "tags": [
+        "래드윔프스",
+        "달마 그랑프리",
+        "Darma grand prix",
+        "Yojiro Noda"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 218,
+      "previousTitle": "Kakera",
+      "title": "조각",
+      "tags": [
+        "조각",
+        "Kakera",
+        "Lavt"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 219,
+      "previousTitle": "베란다",
+      "title": "베란다",
+      "tags": [
+        "베란다",
+        "Vranda",
+        "Kitaro Taniguchi"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 222,
+      "previousTitle": "가짜 우리",
+      "title": "가짜 우리",
+      "tags": [
+        "가짜 우리",
+        "도영 권"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 228,
+      "previousTitle": "너에게 100퍼센트",
+      "title": "너에게 100퍼센트",
+      "tags": [
+        "나카타 야스타카",
+        "너에게 100퍼센트",
+        "Kimini 100 Percent",
+        "Yasutaka Nakata"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 230,
+      "previousTitle": "축복",
+      "title": "축복",
+      "tags": [
+        "요아소비",
+        "축복",
+        "Ayase",
+        "아야세"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 243,
+      "previousTitle": "Mou Yume tune",
+      "title": "Mou Yume tune",
+      "tags": [
+        "Mou Yume tune",
+        "Susumu"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 245,
+      "previousTitle": "Torokeru kiss",
+      "title": "녹는키스",
+      "tags": [
+        "녹는키스",
+        "Torokeru kiss",
+        "susumu"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 252,
+      "previousTitle": "융해 sink",
+      "title": "융해 sink",
+      "tags": [
+        "융해 sink",
+        "Vaundy",
+        "바운디"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 254,
+      "previousTitle": "달링",
+      "title": "달링",
+      "tags": [
+        "달링"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 260,
+      "previousTitle": "브레인",
+      "title": "브레인",
+      "tags": [
+        "카나리아",
+        "브레인",
+        "BRAIN",
+        "Kanaria"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 261,
+      "previousTitle": "소녀 A",
+      "title": "소녀 A",
+      "tags": [
+        "소녀 A",
+        "siinamota",
+        "시이나 모타"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 269,
+      "previousTitle": "그저 네게 맑아라",
+      "title": "그저 네게 맑아라",
+      "tags": [
+        "나부나",
+        "그저 네게 맑아라",
+        "NBUNA"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 275,
+      "previousTitle": "時のゆらめき",
+      "title": "時のゆらめき",
+      "tags": [
+        "이츠에",
+        "Itsue",
+        "Mizuki"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 280,
+      "previousTitle": "달이 아름답다고 말해줘",
+      "title": "달이 아름답다고 말해줘",
+      "tags": [
+        "카키자키 유타",
+        "달이 아름답다고 말해줘",
+        "kakizaki yuta"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 283,
+      "previousTitle": "제대로 모르네",
+      "title": "제대로 모르네",
+      "tags": [
+        "제대로 모르네",
+        "mnmmmm"
+      ],
+      "namingReviewRequired": false
+    }
+  ],
+  "remainingNamingReview": [
+    {
+      "index": 36,
+      "title": "Prometheus",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    },
+    {
+      "index": 40,
+      "title": "エキスパート",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    },
+    {
+      "index": 42,
+      "title": "CROWNED",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    },
+    {
+      "index": 49,
+      "title": "Dance In The Game",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    },
+    {
+      "index": 53,
+      "title": "AMBITION",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    },
+    {
+      "index": 62,
+      "title": "To the Infinity Castle - Muzan vs Hashira Theme (from \"Demon Slayer\")",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    },
+    {
+      "index": 76,
+      "title": "LOST IN PARADISE",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    },
+    {
+      "index": 77,
+      "title": "bloom",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    },
+    {
+      "index": 90,
+      "title": "回転してから考える",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    },
+    {
+      "index": 107,
+      "title": "F・L・Y",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    },
+    {
+      "index": 113,
+      "title": "WATERLOO ROAD",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    },
+    {
+      "index": 114,
+      "title": "ダブル - JiLL-Decoy association",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    },
+    {
+      "index": 124,
+      "title": "ゆらめき - rourourourous",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    },
+    {
+      "index": 154,
+      "title": "Eeyo",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    },
+    {
+      "index": 162,
+      "title": "Lovey Dovey",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    },
+    {
+      "index": 168,
+      "title": "It's Going Down Now",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    },
+    {
+      "index": 181,
+      "title": "Coffee and Cigarette",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    },
+    {
+      "index": 183,
+      "title": "Innocent",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    },
+    {
+      "index": 195,
+      "title": "サースティデイズ",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    },
+    {
+      "index": 203,
+      "title": "Hollows...",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    },
+    {
+      "index": 205,
+      "title": "おまるドライブ",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    },
+    {
+      "index": 207,
+      "title": "Showdown",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    },
+    {
+      "index": 224,
+      "title": "Kakumei yori Bassui",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    },
+    {
+      "index": 229,
+      "title": "Nekokaburu",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    },
+    {
+      "index": 232,
+      "title": "When My Devil Rises",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    },
+    {
+      "index": 243,
+      "title": "Mou Yume tune",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    },
+    {
+      "index": 246,
+      "title": "Blood Drain Again Eltnum Theme",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    },
+    {
+      "index": 262,
+      "title": "Hello",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    },
+    {
+      "index": 275,
+      "title": "時のゆらめき",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    },
+    {
+      "index": 277,
+      "title": "Seamless",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    },
+    {
+      "index": 287,
+      "title": "絲",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ]
+    }
+  ]
+}

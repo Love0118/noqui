@@ -1,152 +1,5 @@
 [
   {
-    "index": 25,
-    "rank": 25,
-    "tjNumber": "21776",
-    "videoId": null,
-    "id": "f10bc6e8-6367-5d7b-ad13-51daed71dc76",
-    "youtubeUrl": null,
-    "title": "Love",
-    "singer": "Keyshia Cole",
-    "writers": [
-      "Keyshia Cole",
-      "Greg Curtis"
-    ],
-    "tags": [
-      "Love",
-      "Keyshia Cole",
-      "키샤 콜",
-      "Greg Curtis"
-    ],
-    "aliases": [
-      {
-        "kind": "title",
-        "name": "Love",
-        "url": "https://blog.naver.com/ant2001e/224419027601",
-        "quote": "Keyshia Cole (키샤 콜) - Love 가사 발음 해석; Keyshia Cole의 \"Love\"와 TJ 노래방 번호 21776."
-      },
-      {
-        "kind": "singer",
-        "name": "키샤 콜",
-        "url": "https://blog.naver.com/ant2001e/224419027601",
-        "quote": "Keyshia Cole (키샤 콜) - Love 가사 발음 해석; Keyshia Cole의 \"Love\"와 TJ 노래방 번호 21776."
-      }
-    ],
-    "reviewRequired": true,
-    "evidence": [
-      {
-        "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
-        "quote": "rank 25; TJ number 21776; title Love; singer Keyshia Cole; songwriter credit K. Cole, G. Curtis; composer credit K. Cole, G. Curtis",
-        "kind": "page",
-        "retrievedEvidenceMatched": true
-      },
-      {
-        "url": "https://blog.naver.com/ant2001e/224419027601",
-        "quote": "Keyshia Cole (키샤 콜) - Love 가사 발음 해석; Keyshia Cole의 \"Love\"와 TJ 노래방 번호 21776.",
-        "kind": "search_snippet",
-        "retrievedEvidenceMatched": true
-      },
-      {
-        "url": "https://musicbrainz.org/ws/2/work/1fa0d4a5-dd34-4b1a-b377-3a6faa2db894?inc=artist-rels&fmt=json",
-        "quote": "Love — writers: Keyshia Cole, Greg Curtis",
-        "kind": "page",
-        "retrievedEvidenceMatched": true
-      },
-      {
-        "url": "https://www.youtube.com/watch?v=9PBZy9j3H3I",
-        "quote": "Keyshia Cole - Love (Alt. Version) (Official Music Video) | Keyshia Cole",
-        "kind": "search_snippet",
-        "retrievedEvidenceMatched": true
-      },
-      {
-        "url": "https://www.youtube.com/watch?v=ETpU0obvKrY",
-        "quote": "Keyshia Cole - Love (Audio) | MC1738",
-        "kind": "search_snippet",
-        "retrievedEvidenceMatched": true
-      },
-      {
-        "url": "https://www.youtube.com/watch?v=THdm87PH23Y",
-        "quote": "Keyshia Cole - Love (Original Version) (2003) | KCDiamondOfficial",
-        "kind": "search_snippet",
-        "retrievedEvidenceMatched": true
-      }
-    ],
-    "audio": {
-      "status": "failed",
-      "reason": "Original studio recording was not found on a credible artist or label channel; available results were an unofficial upload, alternate version, and live performance.",
-      "failureCode": "SOURCE_UNVERIFIED"
-    },
-    "sourceTitle": "Love",
-    "rawChartWriterCredit": {
-      "songwriterCredit": "K. Cole, G. Curtis",
-      "composerCredit": "K. Cole, G. Curtis"
-    },
-    "writerCreditsComplete": true,
-    "reviewReasons": [
-      "Original studio recording remains unresolved: exact-title and artist/Topic searches found only the artist channel’s alternate rendition, unrelated unofficial uploads, and live or karaoke versions. No substitute was used."
-    ],
-    "notes": "Original studio recording remains unresolved: exact-title and artist/Topic searches found only the artist channel’s alternate rendition, unrelated unofficial uploads, and live or karaoke versions. No substitute was used.",
-    "sourceSearchAttempts": [
-      {
-        "query": "Keyshia Cole Love official audio",
-        "searchEngine": "YouTube",
-        "results": [
-          {
-            "videoId": "9PBZy9j3H3I",
-            "title": "Keyshia Cole - Love (Alt. Version) (Official Music Video)",
-            "channel": "Keyshia Cole"
-          },
-          {
-            "videoId": "ETpU0obvKrY",
-            "title": "Keyshia Cole - Love (Audio)",
-            "channel": "MC1738"
-          },
-          {
-            "videoId": "THdm87PH23Y",
-            "title": "Keyshia Cole - Love (Original Version) (2003)",
-            "channel": "KCDiamondOfficial"
-          }
-        ]
-      },
-      {
-        "query": "Keyshia Cole Love Topic",
-        "searchEngine": "YouTube",
-        "results": [
-          {
-            "videoId": "9PBZy9j3H3I",
-            "title": "Keyshia Cole - Love (Alt. Version) (Official Music Video)",
-            "channel": "Keyshia Cole"
-          },
-          {
-            "videoId": "ETpU0obvKrY",
-            "title": "Keyshia Cole - Love (Audio)",
-            "channel": "MC1738"
-          }
-        ]
-      },
-      {
-        "query": "Keyshia Cole Love official music video original",
-        "searchEngine": "YouTube",
-        "results": [
-          {
-            "videoId": "9PBZy9j3H3I",
-            "title": "Keyshia Cole - Love (Alt. Version) (Official Music Video)",
-            "channel": "Keyshia Cole"
-          },
-          {
-            "videoId": "THdm87PH23Y",
-            "title": "Keyshia Cole - Love (Original Version) (2003)",
-            "channel": "KCDiamondOfficial"
-          }
-        ]
-      }
-    ],
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "No song-specific source confirming a commonly used Korean title for “Love” was retained in this audit."
-    ]
-  },
-  {
     "index": 30,
     "rank": 30,
     "tjNumber": "23090",
@@ -216,6 +69,14 @@
         "quote": "이매진 드래곤스 (영어: Imagine Dragons)는 2008년 미국 네바다주 라스베이거스에서 결성한 얼터너티브 록 밴드이다.",
         "kind": "page",
         "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=bpDHtLrVc3M",
+        "quote": "Imagine Dragons - Believer (한국어 자막/해석/가사)",
+        "kind": "youtube_search",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://www.youtube.com/results?search_query=Believer%20%EA%B0%80%EC%82%AC",
+        "checkedAt": "2026-10-27T15:58:28.7935156Z"
       }
     ],
     "audio": {
@@ -228,7 +89,7 @@
       "sampleRate": 48000,
       "durationSeconds": 202.822,
       "byteLength": 1244635,
-      "sha256": "02c9e30f5b58419665e7aa25f705705ec2c6d1a7c1306f119d03fde4086e306f"
+      "sha256": "4bf7c68a71511e431e18f733fafcf9ec4bf5eed24a2fa5d008148843062285b3"
     },
     "sourceTitle": "Believer",
     "rawChartWriterCredit": {
@@ -242,16 +103,19 @@
     "notes": "TJ’s raw writer credit represents seven credited names, while the independently retrieved full-songwriter source lists eight. Retained the full sourced list and raw chart credit separately; author-count discrepancy still needs reconciliation.",
     "namingReviewRequired": true,
     "namingReviewReasons": [
-      "No song-specific source confirming a commonly used Korean title for “Believer” was retained in this audit."
+      "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
+    ],
+    "singerAliases": [
+      "이매진 드래곤스"
     ]
   },
   {
     "index": 56,
     "rank": 56,
     "tjNumber": "23439",
-    "videoId": "JWeJHN5P-E8",
+    "videoId": "6C33PKdV710",
     "id": "f21ebed9-1289-5928-a76a-542ca88b35ff",
-    "youtubeUrl": "https://www.youtube.com/watch?v=JWeJHN5P-E8",
+    "youtubeUrl": "https://www.youtube.com/watch?v=6C33PKdV710",
     "title": "Teeth",
     "singer": "5 Seconds Of Summer",
     "writers": [
@@ -318,19 +182,33 @@
         "quote": "파이브 세컨즈 오브 서머 (5 Seconds of Summer, 이하 5SOS)는 오스트레일리아의 팝 록 밴드이다.",
         "kind": "page",
         "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=8HA-ohZWdf4",
+        "quote": "5 seconds of summer-Teeth[한글가사/자막/해석]",
+        "kind": "youtube_search",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://www.youtube.com/results?search_query=Teeth%20%EA%B0%80%EC%82%AC",
+        "checkedAt": "2026-10-27T15:57:21.489Z"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=6C33PKdV710",
+        "quote": "5 Seconds of Summer - Teeth (Lyric Video)",
+        "kind": "youtube_search",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
       }
     ],
     "audio": {
       "status": "ready",
-      "path": "audio/JWeJHN5P-E8.ogg",
+      "path": "audio/6C33PKdV710.ogg",
       "format": "ogg",
       "codec": "opus",
       "nominalBitrate": 48000,
       "channels": 2,
-      "sampleRate": 48000,
-      "durationSeconds": 218.611,
-      "byteLength": 1337814,
-      "sha256": "83eb717d3b922676f5e1c7be63393215f62a708689ff5051dde1f8999b4fcf3d"
+      "durationSeconds": 203.47185416666667,
+      "byteLength": 1239847,
+      "sha256": "1be774e80b7f7aa895ddae91fa68dbcd9772f57fb5aa342416cdf453967dd927"
     },
     "sourceTitle": "Teeth",
     "rawChartWriterCredit": {
@@ -344,183 +222,39 @@
     "notes": "TJ’s raw credit names Louis Bell and indicates six additional writers, while the full-songwriter source lists a different 11-name set and omits Louis Bell. Retained both records separately; credit-set discrepancy still needs reconciliation.",
     "namingReviewRequired": true,
     "namingReviewReasons": [
-      "No song-specific source confirming a commonly used Korean title for “Teeth” was retained in this audit."
+      "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
     ],
-    "audioSourceReviewRequired": true,
-    "audioSourceReviewReasons": [
-      "Source is labelled as a music video; matched official audio-only recording still required"
-    ],
+    "audioSourceReviewRequired": false,
+    "audioSourceReviewReasons": [],
     "audioSourceEvidence": {
       "url": "https://www.youtube.com/watch?v=JWeJHN5P-E8",
       "kind": "search_snippet",
       "quote": "5 Seconds of Summer - Teeth (Official Video) | channel 5SOS | duration 219 seconds",
       "retrievedEvidenceMatched": true
-    }
-  },
-  {
-    "index": 78,
-    "rank": 78,
-    "tjNumber": "23035",
-    "videoId": null,
-    "id": "4ca17646-1903-5e07-8143-a341c5c22b97",
-    "youtubeUrl": null,
-    "title": "Too Good To Say Goodbye",
-    "singer": "Bruno Mars",
-    "writers": [
-      "Babyface",
-      "Jeff Bhasker",
-      "Brody Brown",
-      "Philip Lawrence",
-      "Bruno Mars"
-    ],
-    "tags": [
-      "Too Good To Say Goodbye",
-      "Bruno Mars",
-      "브루노 마스",
-      "Babyface",
-      "Jeff Bhasker",
-      "Brody Brown",
-      "Philip Lawrence"
-    ],
-    "aliases": [
-      {
-        "kind": "title",
-        "name": "Too Good To Say Goodbye",
-        "url": "https://m.blog.naver.com/kuss1203/224139030034",
-        "quote": "‘브루노 마스 Bruno Mars - Too Good to Say Goodbye’ 곡 해석 및 발음 해석; Too Good to Say Goodbye Bruno Mars [Verse 1] I've made mistakes"
-      },
-      {
-        "kind": "singer",
-        "name": "브루노 마스",
-        "url": "https://ko.wikipedia.org/wiki/브루노_마스",
-        "quote": "브루노 마스 (영어: Bruno Mars)라는 예명으로 활동하고 있는 미국의 싱어송라이터이자 음악 프로듀서이다."
-      }
-    ],
-    "reviewRequired": true,
-    "evidence": [
-      {
-        "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
-        "quote": "rank 78; TJ number 23035; title Too Good To Say Goodbye; singer Bruno Mars; songwriter credit EDMONDS KENNETH BABYFACE,LAWRENCE PHILIP MARTIN II 외 3명; composer credit EDMONDS KENNETH BABYFACE,LAWRENCE PHILIP MARTIN II 외 3명",
-        "kind": "page",
-        "retrievedEvidenceMatched": true
-      },
-      {
-        "url": "https://ko.wikipedia.org/wiki/브루노_마스",
-        "quote": "브루노 마스 (영어: Bruno Mars)라는 예명으로 활동하고 있는 미국의 싱어송라이터이자 음악 프로듀서이다.",
-        "kind": "page",
-        "retrievedEvidenceMatched": true
-      },
-      {
-        "url": "https://musicbrainz.org/ws/2/work/678b3d52-fb8b-4f0d-a306-6d3de2390c6d?inc=artist-rels&fmt=json",
-        "quote": "Too Good to Say Goodbye — writers: Babyface, Jeff Bhasker, Brody Brown, Philip Lawrence, Bruno Mars",
-        "kind": "page",
-        "retrievedEvidenceMatched": true
-      },
-      {
-        "url": "https://www.youtube.com/watch?v=8XO_vUr18RI",
-        "quote": "Bruno Mars - Too Good To Say Goodbye [Audio] | KiKi",
-        "kind": "search_snippet",
-        "retrievedEvidenceMatched": true
-      },
-      {
-        "url": "https://www.youtube.com/watch?v=vg1FQguDubM",
-        "quote": "Bruno Mars - Too Good to Say Goodbye | Top Songs | Lyrics | Top Songs | Top Songs | Lyrics | Top Songs",
-        "kind": "search_snippet",
-        "retrievedEvidenceMatched": true
-      },
-      {
-        "url": "https://www.youtube.com/watch?v=0SwQOFBCznA",
-        "quote": "Too Good to Say Goodbye | Heaven is Shining - Topic; extracted Topic metadata identifies artist=Heaven is Shining, album=Uptown, duration=281s.",
-        "kind": "search_snippet",
-        "retrievedEvidenceMatched": true
-      },
-      {
-        "url": "https://www.youtube.com/watch?v=C0RbvGjLaxM",
-        "quote": "Too Good To Say Goodbye (Originally Perfomed By Bruno Mars) | Release - Topic",
-        "kind": "search_snippet",
-        "retrievedEvidenceMatched": true
-      },
-      {
-        "url": "https://www.youtube.com/watch?v=iVW55QkKVaQ",
-        "quote": "Bruno Mars - Too Good To Say Goodbye | MAD Entertainment",
-        "kind": "search_snippet",
-        "retrievedEvidenceMatched": true
-      },
-      {
-        "url": "https://m.blog.naver.com/kuss1203/224139030034",
-        "quote": "‘브루노 마스 Bruno Mars - Too Good to Say Goodbye’ 곡 해석 및 발음 해석; Too Good to Say Goodbye Bruno Mars [Verse 1] I've made mistakes",
-        "kind": "search_snippet",
-        "retrievedEvidenceMatched": true
-      }
-    ],
-    "audio": {
-      "status": "failed",
-      "reason": "Original studio recording was not found on a credible artist or label channel; available results were lyric and repost uploads.",
-      "failureCode": "SOURCE_UNVERIFIED"
     },
-    "sourceTitle": "Too Good To Say Goodbye",
-    "rawChartWriterCredit": {
-      "songwriterCredit": "EDMONDS KENNETH BABYFACE,LAWRENCE PHILIP MARTIN II 외 3명",
-      "composerCredit": "EDMONDS KENNETH BABYFACE,LAWRENCE PHILIP MARTIN II 외 3명"
-    },
-    "writerCreditsComplete": true,
-    "reviewReasons": [
-      "Original studio recording remains unresolved: exact-title Bruno Mars searches surfaced no Bruno Mars official/Topic upload; a similarly titled Topic result belongs to Heaven is Shining, and other results were reposts, lyrics, or karaoke. No substitute was used."
+    "singerAliases": [
+      "파이브 세컨즈 오브 서머"
     ],
-    "notes": "Original studio recording remains unresolved: exact-title Bruno Mars searches surfaced no Bruno Mars official/Topic upload; a similarly titled Topic result belongs to Heaven is Shining, and other results were reposts, lyrics, or karaoke. No substitute was used.",
-    "sourceSearchAttempts": [
+    "recordingHistory": [
       {
-        "query": "Bruno Mars Too Good To Say Goodbye official audio",
-        "searchEngine": "YouTube",
-        "results": [
-          {
-            "videoId": "8XO_vUr18RI",
-            "title": "Bruno Mars - Too Good To Say Goodbye [Audio]",
-            "channel": "KiKi"
-          },
-          {
-            "videoId": "vg1FQguDubM",
-            "title": "Bruno Mars - Too Good to Say Goodbye | Top Songs | Lyrics | Top Songs",
-            "channel": "Top Songs | Lyrics | Top Songs"
-          }
-        ]
-      },
-      {
-        "query": "Bruno Mars Too Good To Say Goodbye Topic official audio",
-        "searchEngine": "YouTube",
-        "results": [
-          {
-            "videoId": "0SwQOFBCznA",
-            "title": "Too Good to Say Goodbye",
-            "channel": "Heaven is Shining - Topic"
-          },
-          {
-            "videoId": "C0RbvGjLaxM",
-            "title": "Too Good To Say Goodbye (Originally Perfomed By Bruno Mars)",
-            "channel": "Release - Topic"
-          }
-        ]
-      },
-      {
-        "query": "Too Good To Say Goodbye Bruno Mars 24K Magic album audio",
-        "searchEngine": "YouTube",
-        "results": [
-          {
-            "videoId": "iVW55QkKVaQ",
-            "title": "Bruno Mars - Too Good To Say Goodbye",
-            "channel": "MAD Entertainment"
-          },
-          {
-            "videoId": "8XO_vUr18RI",
-            "title": "Bruno Mars - Too Good To Say Goodbye [Audio]",
-            "channel": "KiKi"
-          }
-        ]
+        "videoId": "JWeJHN5P-E8",
+        "youtubeUrl": "https://www.youtube.com/watch?v=JWeJHN5P-E8",
+        "audio": {
+          "status": "ready",
+          "path": "audio/JWeJHN5P-E8.ogg",
+          "format": "ogg",
+          "codec": "opus",
+          "nominalBitrate": 48000,
+          "channels": 2,
+          "sampleRate": 48000,
+          "durationSeconds": 218.611,
+          "byteLength": 1337814,
+          "sha256": "83eb717d3b922676f5e1c7be63393215f62a708689ff5051dde1f8999b4fcf3d"
+        },
+        "reason": "Replace music-video edit with matched song audio",
+        "replacementSourceType": "subtitled_audio"
       }
     ],
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "No song-specific source confirming a commonly used Korean title for “Too Good To Say Goodbye” was retained in this audit."
-    ]
+    "audioSourceType": "subtitled_audio"
   }
 ]

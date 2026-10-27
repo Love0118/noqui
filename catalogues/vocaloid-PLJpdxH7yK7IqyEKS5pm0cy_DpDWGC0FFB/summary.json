@@ -1,21 +1,30 @@
 {
   "total": 565,
   "audio": {
-    "ready": 552,
-    "failed": 13
+    "ready": 557,
+    "failed": 8
   },
   "reviewRequired": 24,
   "importable": 541,
-  "audioBytes": 749078730,
+  "audioBytes": 756489152,
   "playlistEntries": 565,
   "verifiedMetadata": 541,
   "downloadFailureReasons": {
-    "PRIVATE_VIDEO": 7,
-    "AGE_RESTRICTED": 2,
-    "UPLOADER_ACCOUNT_UNAVAILABLE": 3,
-    "RIGHTSHOLDER_BLOCKED": 1
+    "PRIVATE_VIDEO": 5,
+    "UPLOADER_ACCOUNT_UNAVAILABLE": 3
   },
   "fullLengthAudio": true,
   "nominalAudioBitrate": 48000,
-  "audioStoredInGit": false
+  "audioStoredInGit": false,
+  "entries": 565,
+  "reviewed": 541,
+  "playable": 541,
+  "downloaded": 557,
+  "namingReviewRequired": 46,
+  "audioSourceReviewRequired": 0,
+  "playlistId": "PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+  "lastResearchDate": "2026-10-28",
+  "audioReady": 557,
+  "audioFailed": 8,
+  "downloadFailures": 8
 }

@@ -1,0 +1,6351 @@
+{
+  "date": "2026-10-28",
+  "browser": "Chrome jamm",
+  "researchQueueCount": 295,
+  "acceptedAliases": [
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 1,
+      "name": "행복하지 말아요",
+      "url": "https://www.youtube.com/watch?v=J0TwJpMmbwc",
+      "quote": "엠씨더맥스(M.C the MAX) - 행복하지 말아요 [가사/Lyrics]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 26,
+      "name": "가시",
+      "url": "https://www.youtube.com/watch?v=1-Lm2LUR8Ss",
+      "quote": "버즈(Buzz) - 가시 [가사/Lyrics]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 44,
+      "name": "내 머리가 나빠서",
+      "url": "https://www.youtube.com/watch?v=JZu0ldjo-3Q",
+      "quote": "SS501 - 내 머리가 나빠서 [꽃보다 남자 OST] [가사/Lyrics]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 84,
+      "name": "러브어택",
+      "url": "https://www.youtube.com/watch?v=VnqgmOJaMGc",
+      "quote": "RESCENE (리센느) - LOVE ATTACK(러브어택) [가사 | Lyrics]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 3,
+      "name": "괴수의 꽃노래",
+      "url": "https://www.youtube.com/watch?v=3PVf3JbCFo4",
+      "quote": "Vaundy - 괴수의 꽃노래(怪獣の花唄) [가사/발음/해석]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 16,
+      "name": "무희",
+      "url": "https://www.youtube.com/watch?v=3ZKVP-9eFO0",
+      "quote": "Vaundy - 무희(踊り子, Odoriko) [가사/발음/한글 자막/해석]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 29,
+      "name": "내일의 밤하늘 초계반",
+      "url": "https://www.youtube.com/watch?v=oNYa1ErkgDc",
+      "quote": "Orangestar feat. IA - 내일의 밤하늘 초계반(アスノヨゾラ哨戒班) [가사/발음/해석]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 42,
+      "name": "메리골드",
+      "url": "https://www.youtube.com/watch?v=VyEZ-yjh-QQ",
+      "quote": "아이묭 - 메리골드(マリーゴールド) [가사/해석/번역]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 59,
+      "name": "좋아하니까",
+      "url": "https://www.youtube.com/watch?v=Qiuv7XEccT4",
+      "quote": "유이카 - 좋아하니까(好きだから) [가사/발음/해석]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 71,
+      "name": "날아오를 때",
+      "url": "https://www.youtube.com/watch?v=M2R_MkMjdzk",
+      "quote": "날아오를 때(飛ぶ時) / Vaundy, 황천의 츠가이 op [가사/발음]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 85,
+      "name": "녹황색사회",
+      "url": "https://www.youtube.com/watch?v=T59SXQlneLY",
+      "quote": "녹황색사회(Ryoku Shaka) - Mela! [가사/해석/발음]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 97,
+      "name": "커튼콜",
+      "url": "https://www.youtube.com/watch?v=oo7Z10xTSnQ",
+      "quote": "유우리 - 커튼콜(カーテンコール) [가사/발음/해석]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 38,
+      "name": "저스틴 비버",
+      "url": "https://www.youtube.com/watch?v=0810ztn8Pj0",
+      "quote": "Justin Bieber (저스틴 비버) - Off My Face [가사/Lyrics]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 46,
+      "name": "앨리샤 키스",
+      "url": "https://www.youtube.com/watch?v=fP4D3Fzw3qw",
+      "quote": "Alicia Keys(앨리샤 키스) - If I Ain't Got You 가사 한글 해석 자막 번역",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 54,
+      "name": "셀린 디온",
+      "url": "https://www.youtube.com/watch?v=k4WSxHoDf2U",
+      "quote": "My Heart Will Go On (타이타닉 OST) - 셀린 디온 가사 한글 해석",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 79,
+      "name": "비욘세",
+      "url": "https://www.youtube.com/watch?v=dGwRtjDgsAg",
+      "quote": "Beyonce (비욘세) - Love On Top (가사/해석/lyrics)",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 87,
+      "name": "위켄드",
+      "url": "https://www.youtube.com/watch?v=S0eUa8QTsFQ",
+      "quote": "The Weeknd 위켄드 - Out Of Time [가사/해석/번역]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 46,
+      "name": "꽃내림",
+      "url": "https://www.youtube.com/watch?v=Pd6EzE5GuZE",
+      "quote": "[가사 | 발음] n-buna - 꽃내림 feat.하츠네 미쿠",
+      "kind": "title"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 247,
+      "name": "이마와노키와",
+      "url": "https://www.youtube.com/watch?v=EHG6qyuaa6M",
+      "quote": "IMAWANOKIWA (이마와노키와) - 이요와 Feat. 하츠네 미쿠 / 노래방 자막 On Vocal",
+      "kind": "title"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 247,
+      "name": "이요와",
+      "url": "https://www.youtube.com/watch?v=EHG6qyuaa6M",
+      "quote": "IMAWANOKIWA (이마와노키와) - 이요와 Feat. 하츠네 미쿠 / 노래방 자막 On Vocal",
+      "kind": "writer",
+      "canonicalName": "iyowa",
+      "writer": "iyowa"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 376,
+      "name": "소녀A",
+      "url": "https://www.youtube.com/watch?v=7E8sVvPkrRg",
+      "quote": "[한국어 자막]시이나 모타(포와포와p) - 소녀A(少女A)",
+      "kind": "title"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 376,
+      "name": "시이나 모타",
+      "url": "https://www.youtube.com/watch?v=7E8sVvPkrRg",
+      "quote": "[한국어 자막]시이나 모타(포와포와p) - 소녀A(少女A)",
+      "kind": "writer",
+      "canonicalName": "시이나 모타",
+      "writer": "시이나 모타"
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 96,
+      "name": "가라앉는 거리",
+      "url": "https://www.youtube.com/watch?v=OznjBPOzDAs",
+      "quote": "쿠라하시 요에코 - 가라앉는 거리(沈める街) [가사/발음/해석]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 96,
+      "name": "쿠라하시 요에코",
+      "url": "https://www.youtube.com/watch?v=OznjBPOzDAs",
+      "quote": "쿠라하시 요에코 - 가라앉는 거리(沈める街) [가사/발음/해석]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 245,
+      "name": "녹는키스",
+      "url": "https://www.youtube.com/watch?v=Ogm6fKVgaVk",
+      "quote": "susumu - 녹는키스(蕩けるkiss) [가사/한글 자막/해석]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 7,
+      "name": "좋니",
+      "url": "https://www.youtube.com/watch?v=cQFgFD1TzWc",
+      "quote": "윤종신 - 좋니 [가사/Lyrics]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 27,
+      "name": "꿈속에 너",
+      "url": "https://www.youtube.com/watch?v=DhMLZlq_8gE",
+      "quote": "에이치코드(H:CODE) - 꿈속에 너 / 가사",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 45,
+      "name": "어제보다 슬픈 오늘",
+      "url": "https://www.youtube.com/watch?v=wI4ZXD7g1WA",
+      "quote": "우디 - 어제보다 슬픈 오늘 / Kpop / Lyrics / 가사",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 87,
+      "name": "흰수염고래",
+      "url": "https://www.youtube.com/watch?v=iD54IrEyiK8",
+      "quote": "YB - 흰수염고래 [가사/Lyrics]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 4,
+      "name": "베텔기우스",
+      "url": "https://www.youtube.com/watch?v=bkVp-B-wDH4",
+      "quote": "유우리 - 베텔기우스(BETELGEUSE) [가사/발음/한글 자막/해석]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 4,
+      "name": "유우리",
+      "url": "https://www.youtube.com/watch?v=bkVp-B-wDH4",
+      "quote": "유우리 - 베텔기우스(BETELGEUSE)",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 61,
+      "name": "아무것도 아니야",
+      "url": "https://www.youtube.com/watch?v=uL_4Ur696MU",
+      "quote": "RADWIMPS - 아무것도 아니야(なんでもないや) [가사/발음/해석]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 72,
+      "name": "오자키 유타카",
+      "url": "https://www.youtube.com/watch?v=bdMU8c8lP6I",
+      "quote": "오자키 유타카(尾崎豊) - I Love You [가사/발음/해석]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 98,
+      "name": "피스 사인",
+      "url": "https://www.youtube.com/watch?v=g8dyEXvKx2Y",
+      "quote": "[나의 히어로 아카데미아 2기 1쿨 OP] 요네즈 켄시 - 피스 사인(Peace Sign) 가사/발음",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 98,
+      "name": "요네즈 켄시",
+      "url": "https://www.youtube.com/watch?v=g8dyEXvKx2Y",
+      "quote": "요네즈 켄시 - 피스 사인(Peace Sign)",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 15,
+      "name": "톤스 앤 아이",
+      "url": "https://www.youtube.com/watch?v=NIvAkb21Y_M",
+      "quote": "Dance Monkey - 톤스 앤 아이 (Tones and I) [가사 해석/번역, 영어 한글 발음]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 23,
+      "name": "저스틴 비버",
+      "url": "https://www.youtube.com/watch?v=TKDpOEkT0cY",
+      "quote": "Justin Bieber(저스틴 비버) - Love Yourself [가사/Lyrics]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 31,
+      "name": "에드 시런",
+      "url": "https://www.youtube.com/watch?v=li4MBgyGYsQ",
+      "quote": "Shape of You - 에드 시런(Ed Sheeran) [가사 해석/번역 / 영어 한글 발음]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 39,
+      "name": "마룬 5",
+      "url": "https://www.youtube.com/watch?v=xyZbMHsrWaU",
+      "quote": "Maroon 5 - Sugar [가사 / Lyrics] 아티스트 : Maroon 5 (마룬 5)",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 47,
+      "name": "찰리 푸스",
+      "url": "https://www.youtube.com/watch?v=R71KeUoA-8U",
+      "quote": "Charlie Puth(찰리 푸스) - One Call Away [가사/Lyrics]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 55,
+      "name": "원 디렉션",
+      "url": "https://www.youtube.com/watch?v=CuNdgbcDBRk",
+      "quote": "One Direction (원 디렉션) - What Makes You Beautiful [가사/Lyrics]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 80,
+      "name": "레이베이",
+      "url": "https://www.youtube.com/watch?v=944jqBPIt0E",
+      "quote": "Laufey (레이베이)",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 69,
+      "name": "마피아",
+      "url": "https://www.youtube.com/watch?v=N7dqLRGVPeA",
+      "quote": "[발음] 마피아 - wotaku (feat. 하츠네 미쿠)",
+      "kind": "title"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 200,
+      "name": "Alice in 냉동고",
+      "url": "https://www.youtube.com/watch?v=23B_lDJYWVM",
+      "quote": "Orangestar feat. IA - Alice in 냉동고(Alice in 冷凍庫) [가사/발음/해석]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 249,
+      "name": "potato가 되어가",
+      "url": "https://www.youtube.com/watch?v=FDu2-2AS0cs",
+      "quote": "potato가 되어가 - 원더랜즈×쇼타임 가사(일어/독음/번역/파트)",
+      "kind": "title"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 301,
+      "name": "타마야",
+      "url": "https://www.youtube.com/watch?v=GnkOcLlqLT4",
+      "quote": "타마야 (TAMAYA) - v flower (chinozo) [한글가사]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 6,
+      "name": "레몬",
+      "url": "https://www.youtube.com/watch?v=5OCnP-DO-Fs",
+      "quote": "🍋 요네즈 켄시 - 레몬 (Yonezu Kenshi - Lemon)︱「레몬」",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 47,
+      "name": "소녀A",
+      "url": "https://www.youtube.com/watch?v=7E8sVvPkrRg",
+      "quote": "[한국어 자막]시이나 모타(포와포와p) - 소녀A(少女A)",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 62,
+      "name": "인페르노",
+      "url": "https://www.youtube.com/watch?v=l-7zAIQpGlw",
+      "quote": "Mrs. GREEN APPLE - 인페르노(インフェルノ)",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 73,
+      "name": "케세라세라",
+      "url": "https://www.youtube.com/watch?v=tXHXkDqn_Ic",
+      "quote": "미세스 그린애플 - 케세라세라(ケセラセラ)",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 87,
+      "name": "로키",
+      "url": "https://www.youtube.com/watch?v=lZTpof9Q5kk",
+      "quote": "ロキ(로키) - 카가미네 린, 미키토P",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 71,
+      "name": "코르티스",
+      "url": "https://www.youtube.com/watch?v=ZF49-rKzTLk",
+      "quote": "CORTIS (코르티스) - REDRED [가사/Lyrics]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 7,
+      "name": "사무라이 하트",
+      "url": "https://www.youtube.com/watch?v=4lNL-d6mzPw",
+      "quote": "SPYAIR - 사무라이 하트(Some Like It Hot)",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 19,
+      "name": "요네즈 켄시",
+      "url": "https://www.youtube.com/watch?v=7mjOhetFCqQ",
+      "quote": "요네즈 켄시 - KICK BACK [가사/발음/해석]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 65,
+      "name": "휴루리라팟파",
+      "url": "https://www.youtube.com/watch?v=WB1AK9JenNQ",
+      "quote": "tuki. - 휴루리라팟파(ひゅるりらぱっぱ) [가사/발음/해석]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 75,
+      "name": "요네즈 켄시",
+      "url": "https://www.youtube.com/watch?v=nExKn5ed03E",
+      "quote": "요네즈 켄시 - Lady [가사/발음/해석]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 89,
+      "name": "댄스홀",
+      "url": "https://www.youtube.com/watch?v=7KJWWY2pe8s",
+      "quote": "Mrs. Green Apple - ダンスホール(댄스홀) [가사/해석/번역/歌詞]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 89,
+      "name": "미세스 그린애플",
+      "url": "https://www.youtube.com/watch?v=-6xk0OH1_TM",
+      "quote": "미세스 그린애플 - 댄스홀(ダンスホール, Dance Hall)",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 1,
+      "name": "이디나 멘젤",
+      "url": "https://www.youtube.com/watch?v=ygoQ6vb-oqY",
+      "quote": "Idina Menzel(이디나 멘젤) - Let It Go [겨울왕국 OST] [가사/Lyrics]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 17,
+      "name": "저스틴 비버",
+      "url": "https://www.youtube.com/watch?v=2qiD8iB3CtI",
+      "quote": "저스틴 비버(Justin Bieber) - Baby (Feat. Ludacris)",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 33,
+      "name": "그린 데이",
+      "url": "https://www.youtube.com/watch?v=VGo2-JsNW84",
+      "quote": "아티스트 : 그린 데이 (Green Day)",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 41,
+      "name": "오페라의 유령",
+      "url": "https://www.youtube.com/watch?v=Ck_t8CByE-k",
+      "quote": "오페라의 유령 - 에미 로섬 & 제라드 버틀러 \"The Phantom Of The Opera\"",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 49,
+      "name": "마이클 잭슨",
+      "url": "https://www.youtube.com/watch?v=pepA734Abh0",
+      "quote": "Michael Jackson (마이클 잭슨) - Billie Jean",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 82,
+      "name": "위즈 칼리파",
+      "url": "https://www.youtube.com/watch?v=Ft6PKy2Yx4Q",
+      "quote": "Wiz Khalifa(위즈 칼리파) - See You Again",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 90,
+      "name": "브루노 마스",
+      "url": "https://www.youtube.com/watch?v=CP9PXe74mW8",
+      "quote": "Bruno Mars (브루노 마스) - Marry You",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 21,
+      "name": "루카루카★나이트 피버",
+      "quote": "루카루카★나이트 피버 - samfree / 메구리네 루카 [한국어해석/독음/일본어 자막]",
+      "url": "https://www.youtube.com/watch?v=PLsxz451Iuk",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 21,
+      "name": "메구리네 루카",
+      "quote": "루카루카★나이트 피버 - samfree / 메구리네 루카 [한국어해석/독음/일본어 자막]",
+      "url": "https://www.youtube.com/watch?v=PLsxz451Iuk",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 35,
+      "url": "https://www.youtube.com/watch?v=DtqOv9aemNo",
+      "quote": "호시노 겐 - 사랑(恋, koi) [도망치는 것은 부끄럽지만 도움이 된다 OST/가사/발음/한글 자막/해석]",
+      "name": "사랑",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 35,
+      "name": "호시노 겐",
+      "quote": "호시노 겐 - 사랑(恋, koi) [도망치는 것은 부끄럽지만 도움이 된다 OST/가사/발음/한글 자막/해석]",
+      "url": "https://www.youtube.com/watch?v=DtqOv9aemNo",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 66,
+      "url": "https://www.youtube.com/watch?v=2KPssk2cDoI",
+      "quote": "벌룬 feat. flower - 샤를(シャルル) [가사/발음/해석]",
+      "name": "샤를",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 76,
+      "url": "https://www.youtube.com/watch?v=YcxhmHEykPg",
+      "quote": "처형박수 (Execution Clap) / 카사네 테토",
+      "name": "처형박수",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 91,
+      "url": "https://www.youtube.com/watch?v=nKiDkdS8-38",
+      "name": "텔레캐스터 비보이",
+      "quote": "텔레캐스터 비보이 long ver. / 스리이 / 카가미네 렌[자막]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 91,
+      "url": "https://www.youtube.com/watch?v=nKiDkdS8-38",
+      "name": "스리이",
+      "quote": "텔레캐스터 비보이 long ver. / 스리이 / 카가미네 렌[자막]",
+      "kind": "writer",
+      "canonicalName": "すりぃ",
+      "writer": "すりぃ"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 10,
+      "url": "https://www.youtube.com/watch?v=3SGgL9uz9vk",
+      "name": "레이디 가가",
+      "quote": "[MV] 레이디 가가(Lady Gaga), 브루노 마스(Bruno Mars) - Die With A Smile | 한글자막 뮤직비디오",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 10,
+      "url": "https://www.youtube.com/watch?v=3SGgL9uz9vk",
+      "name": "브루노 마스",
+      "quote": "[MV] 레이디 가가(Lady Gaga), 브루노 마스(Bruno Mars) - Die With A Smile | 한글자막 뮤직비디오",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 18,
+      "url": "https://www.youtube.com/watch?v=liuUvw85mFk",
+      "name": "시아",
+      "quote": "Sia (시아) - Snowman [가사/Lyrics] #Sia #시아 #Snowman 발매 : 2022.12.30 아티스트 : Sia",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 58,
+      "url": "https://www.youtube.com/watch?v=OFMS8UPaZ3k",
+      "name": "벤슨 분",
+      "quote": "아티스트 : 벤슨 분 (Benson Boone) 제목 : Beautiful Things",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 83,
+      "url": "https://www.youtube.com/watch?v=TeddzBNuWls",
+      "name": "마이 케미컬 로맨스",
+      "quote": "마이 케미컬 로맨스 (My Chemical Romance) - Welcome To The Black Parade 가사 번역 뮤직비디오",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 99,
+      "url": "https://www.youtube.com/watch?v=J_19jsd61QU",
+      "name": "아델",
+      "quote": "Hello - Adele (아델) 가사 한글 해석",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 232,
+      "url": "https://www.youtube.com/watch?v=_5ypKfChVCA",
+      "name": "김박사",
+      "quote": "SeeU Re:Voice | HAKASE K(김박사) - Alone (feat. 시유) | New Voice",
+      "kind": "writer",
+      "canonicalName": "HAKASE K",
+      "writer": "HAKASE K"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 287,
+      "url": "https://www.youtube.com/watch?v=d8g9H88BAeE",
+      "name": "윤회",
+      "quote": "[자막] 윤회(リンネ) / 하치 / 初音ミク (유튜브/성인) https://www.youtube.com/watch?v=EahYs-8tTjQ",
+      "kind": "title"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 332,
+      "url": "https://www.youtube.com/watch?v=N55NsP_G1es",
+      "name": "시유",
+      "quote": "【SeeU/시유】I=Fantasy【전 = 판타지】",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 442,
+      "url": "https://www.youtube.com/watch?v=Dif7rDd94B8",
+      "name": "I랍니다",
+      "quote": "I랍니다 / 레루리리 / 하츠네 미쿠[자막] 원곡: https://www.youtube.com/watch?v=QYpL88jiWFs",
+      "kind": "title"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 442,
+      "url": "https://www.youtube.com/watch?v=Dif7rDd94B8",
+      "name": "레루리리",
+      "quote": "I랍니다 / 레루리리 / 하츠네 미쿠[자막] 원곡: https://www.youtube.com/watch?v=QYpL88jiWFs",
+      "kind": "writer",
+      "canonicalName": "레루리리",
+      "writer": "레루리리"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 442,
+      "url": "https://www.youtube.com/watch?v=Dif7rDd94B8",
+      "name": "하츠네 미쿠",
+      "quote": "I랍니다 / 레루리리 / 하츠네 미쿠[자막] 원곡: https://www.youtube.com/watch?v=QYpL88jiWFs",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 275,
+      "name": "이츠에",
+      "url": "https://www.youtube.com/watch?v=bSE3ruODs1I",
+      "quote": "[가사/해석] イツエ(이츠에) - 時のゆらめき(시간의 흔들림)",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 344,
+      "url": "https://www.youtube.com/watch?v=CYEGUs7WFGU",
+      "quote": "Giga - 기간틱 O.T.N feat. 카가미네 렌 | 가사 / 발음 / 해석",
+      "name": "기간틱 O.T.N",
+      "kind": "title"
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 144,
+      "url": "https://www.youtube.com/watch?v=97z9eTstGNg",
+      "quote": "pomodorosa - 부르봉 ( ブルボン ) [ 가사/ 발음/ 한글 자막 ]",
+      "name": "부르봉",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 18,
+      "name": "...사랑했잖아...(2024)",
+      "url": "https://www.youtube.com/watch?v=ywYUUJYkDqg",
+      "quote": "고경표 - ...사랑했잖아...(2024) // 가사 4분 1초",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 42,
+      "name": "사랑하게 될 거야",
+      "url": "https://www.youtube.com/watch?v=eKtSbXHaqLM",
+      "quote": "한로로 - 사랑하게 될 거야 [가사 | Lyrics] 2:45",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 78,
+      "name": "내게 사랑이 뭐냐고 물어본다면",
+      "url": "https://www.youtube.com/watch?v=OPiqXf9gwFc",
+      "quote": "로이킴 - 내게 사랑이 뭐냐고 물어본다면 [가사/Lyrics]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 98,
+      "name": "Hello",
+      "url": "https://www.youtube.com/watch?v=k6rJS0ek-a4",
+      "quote": "허각(HuhGak) - Hello [가사/Lyrics] 4:13",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 39,
+      "name": "마루노우치 새디스틱",
+      "url": "https://www.youtube.com/watch?v=k7856QJZvT4",
+      "quote": "시이나 링고 - 마루노우치 새디스틱(丸ノ内サディスティック) [가사/발음/해석]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 39,
+      "name": "시이나 링고",
+      "url": "https://www.youtube.com/watch?v=k7856QJZvT4",
+      "quote": "시이나 링고 - 마루노우치 새디스틱(丸ノ内サディスティック) [가사/발음/해석]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 81,
+      "name": "레인",
+      "url": "https://www.youtube.com/watch?v=TEmiYkwmbSw",
+      "quote": "SID - レイン(레인) [가사/발음/해석]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 4,
+      "name": "나오미 스콧",
+      "url": "https://www.youtube.com/watch?v=yikgLLRQu_8",
+      "quote": "Naomi Scott(나오미 스콧) - Speechless (Full) [알라딘 OST] [가사/Lyrics] 3:29",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 44,
+      "name": "프랭크 시나트라",
+      "url": "https://www.youtube.com/watch?v=7nuk15r3SC0",
+      "quote": "프랭크 시나트라 - Fly Me To The Moon [한국어 가사 포함]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 15,
+      "name": "하치",
+      "url": "https://www.youtube.com/watch?v=HRC8kVVyZ2o",
+      "quote": "ハチ(하치) 『ドーナツホール』(도넛홀) | 가사/번역/발음 | J-pop",
+      "kind": "writer",
+      "canonicalName": "Hachi",
+      "writer": "Hachi"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 416,
+      "name": "노매드",
+      "url": "https://www.youtube.com/watch?v=GuKlvb0INHQ",
+      "quote": "[ 발음 ] 노매드 - 벌룬 ( feat. v flower ) 3:52",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 2,
+      "name": "프리텐더",
+      "url": "https://www.youtube.com/watch?v=AWoiW4c0frE",
+      "quote": "프리텐더(영화\"컨피던스 맨 제이피\") - 오피셜히게단디즘(Pretender (映画\"コンフィデンスマンJP\") - Official髭男dism)(KY.44438) / KY Karaoke",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 2,
+      "name": "오피셜히게단디즘",
+      "url": "https://www.youtube.com/watch?v=AWoiW4c0frE",
+      "quote": "프리텐더(영화\"컨피던스 맨 제이피\") - 오피셜히게단디즘(Pretender (映画\"コンフィデンスマンJP\") - Official髭男dism)(KY.44438) / KY Karaoke",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 12,
+      "name": "워킹 위드 유",
+      "url": "https://www.youtube.com/watch?v=Rfff0JJGIT4",
+      "quote": "워킹 위드 유 - 노벨브라이트 (Walking with you - Novelbright) (KY.44686) / KY KARAOKE",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 12,
+      "name": "노벨브라이트",
+      "url": "https://www.youtube.com/watch?v=Rfff0JJGIT4",
+      "quote": "워킹 위드 유 - 노벨브라이트 (Walking with you - Novelbright) (KY.44686) / KY KARAOKE",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 25,
+      "name": "실루엣",
+      "url": "https://www.youtube.com/watch?v=4DxqW1ANSZg",
+      "quote": "카나분 - 실루엣(シルエット) [가사/발음/해석]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 25,
+      "name": "카나분",
+      "url": "https://www.youtube.com/watch?v=4DxqW1ANSZg",
+      "quote": "카나분 - 실루엣(シルエット) [가사/발음/해석]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 41,
+      "name": "프로포즈",
+      "url": "https://www.youtube.com/watch?v=tZ1WjTQIRRM",
+      "quote": "나토리 - 프로포즈(プロポーズ) [가사/발음/해석]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 41,
+      "name": "나토리",
+      "url": "https://www.youtube.com/watch?v=tZ1WjTQIRRM",
+      "quote": "나토리 - 프로포즈(プロポーズ) [가사/발음/해석]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 56,
+      "name": "꽃다발",
+      "url": "https://www.youtube.com/watch?v=kdPWwrfUFCM",
+      "quote": "몇 번이라도, 몇 십번이라도 너를💐: Back number - 꽃다발(hanataba) [가사/발음/한글 자막]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 56,
+      "name": "꽃다발",
+      "url": "https://www.youtube.com/watch?v=vTWnUHOf4ow",
+      "quote": "Back Number - 花束(꽃다발) [꽃다발같은사랑을했다/가사해석]\n#백넘버 #꽃다발 #backnumber",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 56,
+      "name": "백넘버",
+      "url": "https://www.youtube.com/watch?v=vTWnUHOf4ow",
+      "quote": "Back Number - 花束(꽃다발) [꽃다발같은사랑을했다/가사해석]\n#백넘버 #꽃다발 #backnumber",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 70,
+      "name": "갓 노우즈",
+      "url": "https://www.youtube.com/watch?v=3ddq1_5m22U",
+      "quote": "갓 노우즈 \"스즈미야하루히의 우울\" - 히라노아야 (God knows... (\"涼宮ハルヒの憂鬱\"OST) - 平野綾) (KY.40798) / KY KARAOKE",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 70,
+      "name": "히라노아야",
+      "url": "https://www.youtube.com/watch?v=3ddq1_5m22U",
+      "quote": "갓 노우즈 \"스즈미야하루히의 우울\" - 히라노아야 (God knows... (\"涼宮ハルヒの憂鬱\"OST) - 平野綾) (KY.40798) / KY KARAOKE",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 82,
+      "name": "전전전세",
+      "url": "https://www.youtube.com/watch?v=lPuPdiC5th8",
+      "quote": "RADWIMPS - 전전전세(前前前世) [가사/발음/해석]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 96,
+      "name": "소녀 레이",
+      "url": "https://www.youtube.com/watch?v=s6Y3BGrE0gU",
+      "quote": "소녀 레이 [少女レイ] - 미키토P 한국어 [가사/발음/번역]\n《소녀 레이(少女レイ)》는 보컬로이드 프로듀서 미키토P(みきとP)가 2018년에 발표한 하츠네 미쿠의 오리지널 악곡입니다.",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 96,
+      "name": "미키토P",
+      "url": "https://www.youtube.com/watch?v=s6Y3BGrE0gU",
+      "quote": "소녀 레이 [少女レイ] - 미키토P 한국어 [가사/발음/번역]\n《소녀 레이(少女レイ)》는 보컬로이드 프로듀서 미키토P(みきとP)가 2018년에 발표한 하츠네 미쿠의 오리지널 악곡입니다.",
+      "canonicalName": "みきとP",
+      "kind": "writer",
+      "writer": "みきとP"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 5,
+      "name": "크리스틴 벨",
+      "url": "https://www.youtube.com/watch?v=pap4VopA54w",
+      "quote": "Love Is An Open Door - 겨울왕국1 OST [가사 해석/번역, 영어 한글 발음] - 크리스틴 벨 & 산티노 폰태나",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 5,
+      "name": "산티노 폰태나",
+      "url": "https://www.youtube.com/watch?v=pap4VopA54w",
+      "quote": "Love Is An Open Door - 겨울왕국1 OST [가사 해석/번역, 영어 한글 발음] - 크리스틴 벨 & 산티노 폰태나",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 5,
+      "name": "사랑은열린문",
+      "url": "https://www.youtube.com/watch?v=TSw3VWbinT0",
+      "quote": "[TJ노래방] 사랑은열린문(겨울왕국OST) - 박지윤,윤승욱 / TJ Karaoke",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 13,
+      "name": "찰리 푸스",
+      "url": "https://www.youtube.com/watch?v=1OKW170JTnU",
+      "quote": "Charlie Puth(찰리 푸스) - Dangerously [가사/Lyrics]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 21,
+      "name": "브루노 마스",
+      "url": "https://www.youtube.com/watch?v=B7Kqd5WSwJY",
+      "quote": "When I Was Your Man - 브루노 마스 (Bruno Mars) 가사 해석 한글",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 29,
+      "name": "숀 멘데스",
+      "url": "https://www.youtube.com/watch?v=jebXGyLLqfw",
+      "quote": "There's Nothing Holdin' Me Back - 숀 멘데스 (Shawn Mendes)[가사 해석/번역 / 영어 한글 발음 / 팝송모음 / 팝송대회 / 빌보드차트]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 37,
+      "name": "보헤미안 랩소디",
+      "url": "https://www.youtube.com/watch?v=SEKB7DTsFz8",
+      "quote": "Queen - Bohemian Rhapsody(가사/번역)\n작년에 나온 보헤미안 랩소디때문에 퀸을 몰랐던 사람들도 영화를통해서 퀸의 노래를 접할 기회가 늘었다는 것에 정말 고무됩니다.",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 37,
+      "name": "퀸",
+      "url": "https://www.youtube.com/watch?v=SEKB7DTsFz8",
+      "quote": "Queen - Bohemian Rhapsody(가사/번역)\n작년에 나온 보헤미안 랩소디때문에 퀸을 몰랐던 사람들도 영화를통해서 퀸의 노래를 접할 기회가 늘었다는 것에 정말 고무됩니다.",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 45,
+      "name": "콜 미 메이비",
+      "url": "https://www.youtube.com/watch?v=FcFyp1pqe_c",
+      "quote": "Call me maybe, Carly Rae Jepsen 방금 당신을 만났고 이런 건 미친 짓이지만, 여기 전화번호 있으니 혹시 전화 하세요, 칼리 래이 잽슨, 콜 미 메이비",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 45,
+      "name": "칼리 래이 잽슨",
+      "url": "https://www.youtube.com/watch?v=FcFyp1pqe_c",
+      "quote": "Call me maybe, Carly Rae Jepsen 방금 당신을 만났고 이런 건 미친 짓이지만, 여기 전화번호 있으니 혹시 전화 하세요, 칼리 래이 잽슨, 콜 미 메이비",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 53,
+      "name": "아리아나 그란데",
+      "url": "https://www.youtube.com/watch?v=-zA3S7vrXgo",
+      "quote": "Ariana Grande(아리아나 그란데) - Santa Tell Me [가사/Lyrics]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 69,
+      "name": "케알라 세틀",
+      "url": "https://www.youtube.com/watch?v=7S7j9pgqKn4",
+      "quote": "This Is Me (위대한 쇼맨 ost) - Keala Settle(케알라 세틀) [가사 해석/번역, 영어 한글 발음]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 78,
+      "name": "브루노 마스",
+      "url": "https://www.youtube.com/watch?v=y82-7klxNbQ",
+      "quote": "Too Good to Say Goodbye - 브루노 마스 (Bruno Mars) 가사 한글 해석",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 86,
+      "name": "피아노 맨",
+      "url": "https://www.youtube.com/watch?v=OHuWRKIL44M",
+      "quote": "60위: 피아노 맨 - 빌리 조엘: 영어가사, 한글가사, 한글발음 (Billy Joel - Piano Man)",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 86,
+      "name": "빌리 조엘",
+      "url": "https://www.youtube.com/watch?v=OHuWRKIL44M",
+      "quote": "60위: 피아노 맨 - 빌리 조엘: 영어가사, 한글가사, 한글발음 (Billy Joel - Piano Man)",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 6,
+      "name": "아델",
+      "url": "https://www.youtube.com/watch?v=PF5uH0W7ZjY",
+      "quote": "아델 - Rolling In The Deep 가사 번역",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 25,
+      "name": "키샤 콜",
+      "url": "https://www.youtube.com/watch?v=d3LfmnQJI_c",
+      "quote": "[가사 해석/발음] Keyshia Cole(키샤 콜) - Love [한글/자막/번역/lyrics] #1",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 37,
+      "name": "블레싱",
+      "url": "https://www.youtube.com/watch?v=EU4BY8XJNR0",
+      "quote": "Blessing - VOCALOID 한국어 가사 자막\nBlessing 블레싱 (feat. 하츠네 미쿠, 카가미네 린, 카가미네 렌, 메구리네 루카, KAITO 카이토, MEIKO 메이코) by halyosy",
+      "kind": "title"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 243,
+      "name": "카피캣",
+      "url": "https://www.youtube.com/watch?v=Q_QEPrkwZ-Q",
+      "quote": "【보컬로이드 오리지널】 카피캣(Copycat) 【구미 영어(GUMI English)】",
+      "kind": "title"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 428,
+      "name": "저니",
+      "url": "https://www.youtube.com/watch?v=yqHB6v_PzRE",
+      "quote": "「JOURNEY」저니- Deco*27/ 하츠네 미쿠 [한글 가사] [한글자막]\n원곡: https://youtu.be/BTekXS9d-no 가사: 나무위키 Comments: 저저저저니 데코니나 그는 신.",
+      "kind": "title"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 428,
+      "name": "데코니나",
+      "url": "https://www.youtube.com/watch?v=yqHB6v_PzRE",
+      "quote": "「JOURNEY」저니- Deco*27/ 하츠네 미쿠 [한글 가사] [한글자막]\n원곡: https://youtu.be/BTekXS9d-no 가사: 나무위키 Comments: 저저저저니 데코니나 그는 신.",
+      "canonicalName": "DECO*27",
+      "kind": "writer",
+      "writer": "DECO*27"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 455,
+      "name": "커넥팅",
+      "url": "https://www.youtube.com/watch?v=gzuaofCUqcw",
+      "quote": "【한국어 자막】 Halyosy - Connecting 【보컬로이드 6人 합창】\n한국어 *~*~ 드디어! kokoaSound(현재 SD SkyKlouD(SD꽁치))의 두 번째 자막 작업, [Connecting](커넥팅) 입니다!",
+      "kind": "title"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 495,
+      "name": "익명M",
+      "url": "https://www.youtube.com/watch?v=VSHLQbt5FyE",
+      "quote": "익명M / 피노키오피 / 하츠네 미쿠 X ARuFa[한글화]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 495,
+      "name": "피노키오피",
+      "url": "https://www.youtube.com/watch?v=VSHLQbt5FyE",
+      "quote": "익명M / 피노키오피 / 하츠네 미쿠 X ARuFa[한글화]",
+      "canonicalName": "PinocchioP",
+      "kind": "writer",
+      "writer": "PinocchioP"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 74,
+      "name": "플로스",
+      "url": "https://www.youtube.com/watch?v=sJhhKvXXA3Q",
+      "quote": "[프로세카] flos full ver. | MORE MORE JUMP！ × 하츠네 미쿠(初音ミク) 파트별 가사 영상\n원곡: R Sound Design - flos(플로스)",
+      "kind": "title"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 208,
+      "name": "Mrs.Pumpkin의 우스꽝스러운 꿈",
+      "url": "https://www.youtube.com/watch?v=EYLCHz16m2c",
+      "quote": "[오리지널 곡PV] Mrs.Pumpkin의 우스꽝스러운 꿈 [하츠네 미쿠] sm8489562_youtube",
+      "kind": "title"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 321,
+      "name": "나의 R",
+      "url": "https://www.youtube.com/watch?v=ocAKhyWuawo",
+      "quote": "나의 R - 와다 타케아키(쿠라게P) / R - KurageP",
+      "kind": "title"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 321,
+      "name": "와다 타케아키",
+      "url": "https://www.youtube.com/watch?v=ocAKhyWuawo",
+      "quote": "나의 R - 와다 타케아키(쿠라게P) / R - KurageP",
+      "canonicalName": "Wada Takeaki",
+      "kind": "writer",
+      "writer": "Wada Takeaki"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 321,
+      "name": "쿠라게P",
+      "url": "https://www.youtube.com/watch?v=ocAKhyWuawo",
+      "quote": "나의 R - 와다 타케아키(쿠라게P) / R - KurageP",
+      "canonicalName": "Wada Takeaki",
+      "kind": "writer",
+      "writer": "Wada Takeaki"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 438,
+      "name": "저스트 비 프렌즈",
+      "url": "https://www.youtube.com/watch?v=pV3ZUGkmEUE",
+      "quote": "저스트 비 프렌즈(feat.메구리네루카) - 딕시 플랫라인(Just Be Friends - Dixie Flatline feat.巡音ルカ) (KY.43131) / KY Karaoke",
+      "kind": "title"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 438,
+      "name": "딕시 플랫라인",
+      "url": "https://www.youtube.com/watch?v=pV3ZUGkmEUE",
+      "quote": "저스트 비 프렌즈(feat.메구리네루카) - 딕시 플랫라인(Just Be Friends - Dixie Flatline feat.巡音ルカ) (KY.43131) / KY Karaoke",
+      "canonicalName": "Dixie Flatline",
+      "kind": "writer",
+      "writer": "Dixie Flatline"
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 95,
+      "name": "MI8k",
+      "url": "https://www.youtube.com/watch?v=wuYIVacOTF8",
+      "quote": "MI8k様の ラブ＆デストロイ を歌わせていただきました。 詞曲：MI8k様",
+      "canonicalName": "みやけ",
+      "kind": "writer",
+      "writer": "みやけ"
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 157,
+      "name": "8월 31일",
+      "url": "https://www.youtube.com/watch?v=vlketIk4DVk",
+      "quote": "8月31日 (8월 31일) - クレナズム (culenasm)【가사 | 독음 | Lyrics】",
+      "kind": "title"
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 199,
+      "name": "개와 바보 고양이",
+      "url": "https://www.youtube.com/watch?v=kZi7oxVOesA",
+      "quote": "지금은, 안돼👀: 세컨드 백커(Second Backer) - 개와 바보 고양이(犬とバカ猫) [가사/발음/한글 자막/해석]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 199,
+      "name": "세컨드 백커",
+      "url": "https://www.youtube.com/watch?v=kZi7oxVOesA",
+      "quote": "지금은, 안돼👀: 세컨드 백커(Second Backer) - 개와 바보 고양이(犬とバカ猫) [가사/발음/한글 자막/해석]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 218,
+      "name": "조각",
+      "url": "https://www.youtube.com/watch?v=h7MRHDxKHV8",
+      "quote": "어둠 속에서도 나로 있고 싶어 🌌 | Lavt - 조각 [MV+가사해석/발음]\n가사 보기 https://yure.me/translation/lavt-kakera Lavt - 欠片 Lavt - 조각",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 1,
+      "name": "히로세 코미",
+      "url": "https://www.youtube.com/watch?v=J0TwJpMmbwc",
+      "quote": "엠씨더맥스(M.C the MAX) - 행복하지 말아요 [가사/Lyrics]\n발매 : 2004.11.18 아티스트 : 엠씨더맥스(M.C the MAX) 앨범 : Solitude Love… 작곡 : Kohmi Hirose(히로세 코미/広瀬香美) 작사 : 양재선 편곡 : 김승현",
+      "canonicalName": "Kohmi Hirose",
+      "kind": "writer",
+      "writer": "Kohmi Hirose"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 50,
+      "name": "언라벨",
+      "url": "https://www.youtube.com/watch?v=HDpXLS7rPcc",
+      "quote": "언라벨 \"도쿄 구울\" - 티케이 from 린토시테 시구레 (unravel (\"東京喰種トーキョーグール\"OP) - TK from 凛として時雨) (KY.43825)",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 50,
+      "name": "티케이 from 린토시테 시구레",
+      "url": "https://www.youtube.com/watch?v=HDpXLS7rPcc",
+      "quote": "언라벨 \"도쿄 구울\" - 티케이 from 린토시테 시구레 (unravel (\"東京喰種トーキョーグール\"OP) - TK from 凛として時雨) (KY.43825)",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 77,
+      "name": "사신",
+      "url": "https://www.youtube.com/watch?v=Oi28j-pfBsc",
+      "quote": "요네즈 켄시 - 사신(死神) [가사/발음/해석]\nShinigami · Kenshi Yonezu · Pale Blue",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 77,
+      "name": "요네즈 켄시",
+      "url": "https://www.youtube.com/watch?v=Oi28j-pfBsc",
+      "quote": "요네즈 켄시 - 사신(死神) [가사/발음/해석]\nShinigami · Kenshi Yonezu · Pale Blue",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 2,
+      "name": "크립",
+      "url": "https://www.youtube.com/watch?v=CiCU2nZhuJY",
+      "quote": "6위: 라디오헤드 - 크립: 영어가사, 한글가사, 한글발음 (Radiohead - Creep)",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 2,
+      "name": "라디오헤드",
+      "url": "https://www.youtube.com/watch?v=CiCU2nZhuJY",
+      "quote": "6위: 라디오헤드 - 크립: 영어가사, 한글가사, 한글발음 (Radiohead - Creep)",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 12,
+      "name": "쉬즈곤",
+      "url": "https://www.youtube.com/watch?v=6B8W12VWVj8",
+      "quote": "She's Gone (쉬즈곤) - Steelheart 스틸하트 / 한글발음 가사 Lyrics",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 12,
+      "name": "스틸하트",
+      "url": "https://www.youtube.com/watch?v=6B8W12VWVj8",
+      "quote": "She's Gone (쉬즈곤) - Steelheart 스틸하트 / 한글발음 가사 Lyrics",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 1,
+      "name": "렛잇고",
+      "url": "https://www.youtube.com/watch?v=oAhxsFsrZW4",
+      "quote": "렛잇고 1시간 듣기 반복재생 ❄️ 겨울왕국 OST \"Let It Go\" 가사, 한글 발음, 해석 (Frozen OST) 따라부르기",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 22,
+      "name": "미나 마수드",
+      "url": "https://www.youtube.com/watch?v=ed0gDpi_QPw",
+      "quote": "A Whole New World - 미나 마수드 & 나오미 스콧 영화 알라딘 OST[2019][가사 해석/번역, 영어 한글 발음 ,팝송대회, 팝송모음]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 22,
+      "name": "나오미 스콧",
+      "url": "https://www.youtube.com/watch?v=ed0gDpi_QPw",
+      "quote": "A Whole New World - 미나 마수드 & 나오미 스콧 영화 알라딘 OST[2019][가사 해석/번역, 영어 한글 발음 ,팝송대회, 팝송모음]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 54,
+      "name": "마이 하트 윌 고 온",
+      "url": "https://www.youtube.com/watch?v=cmLvoHCVF-Y",
+      "quote": "[풀영상] My Heart Will Go On - Celine Dion [ 마이 하트 윌 고 온 - 셀린 디온 ] [가사번역] [팝송영어공부]",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 54,
+      "name": "셀린 디온",
+      "url": "https://www.youtube.com/watch?v=cmLvoHCVF-Y",
+      "quote": "[풀영상] My Heart Will Go On - Celine Dion [ 마이 하트 윌 고 온 - 셀린 디온 ] [가사번역] [팝송영어공부]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 71,
+      "name": "좀비",
+      "url": "https://www.youtube.com/watch?v=gVS9rwDdM8s",
+      "quote": "The Cranberries (크랜베리) – Zombie (좀비) 가사 번역 및 해석.",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 71,
+      "name": "크랜베리",
+      "url": "https://www.youtube.com/watch?v=gVS9rwDdM8s",
+      "quote": "The Cranberries (크랜베리) – Zombie (좀비) 가사 번역 및 해석.",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 61,
+      "name": "원더월",
+      "url": "https://www.youtube.com/watch?v=aIX_UDUYqDw",
+      "quote": "넌 나의 원더월이야｜Oasis - Wonderwall",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 77,
+      "name": "댄싱 퀸",
+      "url": "https://www.youtube.com/watch?v=51ptG9QnoCA",
+      "quote": "Dancing Queen, ABBA, 유 캔 댄스, 그대는 춤의 여왕, 젊고 싱그럽죠! 불타는 금요일 밤 춤과 음악을 찾아 나서요!, 아바 유 아 댄싱 퀸 가사, 팝송풀이 노래방",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 77,
+      "name": "아바",
+      "url": "https://www.youtube.com/watch?v=51ptG9QnoCA",
+      "quote": "Dancing Queen, ABBA, 유 캔 댄스, 그대는 춤의 여왕, 젊고 싱그럽죠! 불타는 금요일 밤 춤과 음악을 찾아 나서요!, 아바 유 아 댄싱 퀸 가사, 팝송풀이 노래방",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 14,
+      "name": "애덤 리바인",
+      "url": "https://www.youtube.com/watch?v=2H2hWroh0c0",
+      "quote": "Lost Stars - Adam Levine (애덤 리바인) 비긴어게인OST [가사 해석/번역, 영어 한글 발음]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 8,
+      "name": "샘 스미스",
+      "url": "https://www.youtube.com/watch?v=vCUFwbzV7Yc",
+      "quote": "I’m Not the Only One - Sam Smith (샘 스미스) [가사 해석/번역]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 16,
+      "name": "풀스 가든",
+      "url": "https://www.youtube.com/watch?v=Tlw8qYoMXWk",
+      "quote": "Fool’s Garden(풀스 가든) - Lemon Tree [가사/Lyrics]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 81,
+      "name": "마이웨이",
+      "url": "https://www.youtube.com/watch?v=dv3ha4AZcrQ",
+      "quote": "My Way 마이웨이 - Frank Sinatra(프랭크 시나트라) 가사 해석 한글번역",
+      "kind": "title"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 81,
+      "name": "프랭크 시나트라",
+      "url": "https://www.youtube.com/watch?v=dv3ha4AZcrQ",
+      "quote": "My Way 마이웨이 - Frank Sinatra(프랭크 시나트라) 가사 해석 한글번역",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 43,
+      "name": "루엘",
+      "url": "https://www.youtube.com/watch?v=DrrRMdU7KpI",
+      "quote": "Painkiller - 루엘(Ruel) [가사 해석/번역, 영어 한글 발음]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 84,
+      "name": "포스트 말론",
+      "url": "https://www.youtube.com/watch?v=M4ZQwnv5WME",
+      "quote": "포스트 말론(Post Malone) - Circles [가사/해석/한국어 자막]",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 93,
+      "name": "찰리 푸스",
+      "url": "https://www.youtube.com/watch?v=B0N7DbHijvw",
+      "quote": "찰리 푸스 & 셀레나 고메즈 (Charlie Puth & Selena Gomez) - We Don't Talk Anymore 가사 번역 라이브 비디오",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 93,
+      "name": "셀레나 고메즈",
+      "url": "https://www.youtube.com/watch?v=B0N7DbHijvw",
+      "quote": "찰리 푸스 & 셀레나 고메즈 (Charlie Puth & Selena Gomez) - We Don't Talk Anymore 가사 번역 라이브 비디오",
+      "kind": "singer"
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 23,
+      "name": "입춘",
+      "url": "https://www.youtube.com/watch?v=niazCi1AqqA",
+      "quote": "한로로 - 입춘 [입춘] / 가사 Audio Lyrics",
+      "kind": "title"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 153,
+      "name": "일본인들이 뽑은 JPOP 지겨운 가사 TOP5",
+      "url": "https://www.youtube.com/watch?v=DmAFyJ-7ZsY",
+      "quote": "일본인들이 뽑은 J-POP 지겨운 가사 TOP5",
+      "kind": "title"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 153,
+      "name": "빙쑤",
+      "url": "https://www.youtube.com/watch?v=DmAFyJ-7ZsY",
+      "quote": "노래만든놈,,, 빙쑤 부른애들,,, 린렌 00:00 1위부터 순서대로 (카가미네 린) 00:29 5위부터 반대로 (카가미네 렌)",
+      "kind": "writer",
+      "canonicalName": "빙쑤",
+      "writer": "빙쑤"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 534,
+      "kind": "writer",
+      "name": "Madaco",
+      "canonicalName": "마다코",
+      "writer": "마다코",
+      "url": "https://www.youtube.com/watch?v=rB2Ii1LcE2Y",
+      "quote": "【Hatsune Miku】Kurumi☆Ponchio【Legendado / Subtitled】\nMusic, lyrics: Madaco Illust: Kojima\nOriginal Video: Miku Hatsune \"KURUMI☆PONCHIO\" https://www.youtube.com/watch?v=fIjsGF61tWo\n(まだ仔 Madaco 小島 Kojima VOCALOID ボーカロイド ボカロ 初音ミク Hatsune Miku Dino Kun くるみ☆ぽんちお Kurumi☆Ponchio)"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 534,
+      "kind": "title",
+      "name": "Kurumi Ponchio",
+      "url": "https://www.youtube.com/watch?v=rB2Ii1LcE2Y",
+      "quote": "【Hatsune Miku】Kurumi☆Ponchio【Legendado / Subtitled】\nMusic, lyrics: Madaco Illust: Kojima\nOriginal Video: Miku Hatsune \"KURUMI☆PONCHIO\" https://www.youtube.com/watch?v=fIjsGF61tWo\n(まだ仔 Madaco 小島 Kojima VOCALOID ボーカロイド ボカロ 初音ミク Hatsune Miku Dino Kun くるみ☆ぽんちお Kurumi☆Ponchio)"
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 71,
+      "kind": "writer",
+      "canonicalName": "MARTIN",
+      "writer": "MARTIN",
+      "name": "마틴",
+      "url": "https://www.youtube.com/watch?v=ZF49-rKzTLk",
+      "quote": "발매 : 2026.04.20 아티스트 : CORTIS (코르티스) 앨범 : GREENGREEN 작곡 : Supreme Boi, ''hitman''bang, Hiss noise, 마틴, Jasper Harris, Skillies, 성현, 건호, skai, 제임스, 주훈, Derrick Milano, Jacob Aaron (THE HUB) 작사 : Supreme Boi, ''hitman''bang, Hiss noise, 마틴, Jasper Harris, Skillies, 성현, 건호, skai, 제임스, 주훈, Derrick Milano, Jacob Aaron (THE HUB)"
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 71,
+      "kind": "writer",
+      "canonicalName": "JAMES",
+      "writer": "JAMES",
+      "name": "제임스",
+      "url": "https://www.youtube.com/watch?v=ZF49-rKzTLk",
+      "quote": "발매 : 2026.04.20 아티스트 : CORTIS (코르티스) 앨범 : GREENGREEN 작곡 : Supreme Boi, ''hitman''bang, Hiss noise, 마틴, Jasper Harris, Skillies, 성현, 건호, skai, 제임스, 주훈, Derrick Milano, Jacob Aaron (THE HUB) 작사 : Supreme Boi, ''hitman''bang, Hiss noise, 마틴, Jasper Harris, Skillies, 성현, 건호, skai, 제임스, 주훈, Derrick Milano, Jacob Aaron (THE HUB)"
+    }
+  ],
+  "correctedNaming": [
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 1,
+      "previousTitle": "행복하지 말아요",
+      "title": "행복하지 말아요",
+      "tags": [
+        "히로세 코미",
+        "양재선",
+        "MC THE MAX"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 2,
+      "previousTitle": "Drowning",
+      "title": "Drowning",
+      "tags": [
+        "WOODZ",
+        "네이슨NATHAN",
+        "HOHO",
+        "WOODZ조승연",
+        "드라우닝"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 8,
+      "previousTitle": "퇴사할게여",
+      "title": "퇴사할게여",
+      "tags": [
+        "소연",
+        "POP TIME",
+        "DAILY",
+        "LIKEY",
+        "익스프레션",
+        "익스",
+        "소연SOYEONNarr기안84"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 13,
+      "previousTitle": "좋은 밤 좋은 꿈",
+      "title": "좋은 밤 좋은 꿈",
+      "tags": [
+        "NERD CONNECTION서영주",
+        "NERD CONNECTION 박재현",
+        "NERD CONNECTION 최승원",
+        "NERD CONNECTION 신연태",
+        "너드커넥션Nerd Connection"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 18,
+      "previousTitle": "...사랑했잖아...(2024)",
+      "title": "...사랑했잖아...(2024)",
+      "tags": [
+        "린",
+        "김세진",
+        "고경표",
+        "사랑했잖아2024",
+        "사랑했잖아"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 25,
+      "previousTitle": "그대만 있다면(여름날우리 X 너드커넥션(Nerd Connection))",
+      "title": "그대만 있다면(여름날우리 X 너드커넥션(Nerd Connection))",
+      "tags": [
+        "강현민",
+        "너드커넥션Nerd Connection",
+        "그대만 있다면"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 27,
+      "previousTitle": "꿈속에 너",
+      "title": "꿈속에 너",
+      "tags": [
+        "한희준",
+        "조효제",
+        "에이치코드Feat전상근"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 32,
+      "previousTitle": "심(心)",
+      "title": "심(心)",
+      "tags": [
+        "박준배",
+        "YARN",
+        "이근상",
+        "DK디셈버",
+        "Heart"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 36,
+      "previousTitle": "Pretty Girl",
+      "title": "Pretty Girl",
+      "tags": [
+        "한재호",
+        "김승수",
+        "송수윤",
+        "RESCENE리센느"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 41,
+      "previousTitle": "All For You(응답하라1997 OST)",
+      "title": "All For You(응답하라1997 OST)",
+      "tags": [
+        "정진환",
+        "김한범",
+        "서인국정은지",
+        "All For You응답하라1997 OST",
+        "All For You"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 52,
+      "previousTitle": "만찬가",
+      "title": "만찬가",
+      "tags": [
+        "이스란",
+        "TUKI",
+        "태연"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 68,
+      "previousTitle": "꿈꾸던 어른이 되었나요?",
+      "title": "꿈꾸던 어른이 되었나요?",
+      "tags": [
+        "머무르 1",
+        "머무르 2",
+        "머무르 2생성형 AI 활용",
+        "머무르",
+        "꿈꾸던 어른이 되었나요"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 71,
+      "previousTitle": "REDRED",
+      "title": "REDRED",
+      "tags": [
+        "마틴",
+        "제임스",
+        "코르티스",
+        "SUPREME BOI",
+        "HISS NOISE",
+        "MARTIN",
+        "JAMES",
+        "성현",
+        "주훈",
+        "건호"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 72,
+      "previousTitle": "지나오다",
+      "title": "지나오다",
+      "tags": [
+        "닐로NilO",
+        "닐로"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 77,
+      "previousTitle": "모르시나요",
+      "title": "모르시나요",
+      "tags": [
+        "안영민",
+        "KSMITH",
+        "조째즈Prod로코베리"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 79,
+      "previousTitle": "사랑참...",
+      "title": "사랑참...",
+      "tags": [
+        "나인",
+        "박정욱",
+        "디셈버",
+        "Love is so",
+        "사랑참"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 80,
+      "previousTitle": "모든 날, 모든 순간 (Every Day, Every Moment)(키스먼저할까요? OST)",
+      "title": "모든 날, 모든 순간 (Every Day, Every Moment)(키스먼저할까요? OST)",
+      "tags": [
+        "어깨깡패1",
+        "폴킴",
+        "모든 날 모든 순간"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 81,
+      "previousTitle": "Marry Me",
+      "title": "Marry Me",
+      "tags": [
+        "마크툽MAKTUB",
+        "마크툽MAKTUB구윤회"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 84,
+      "previousTitle": "LOVE ATTACK",
+      "title": "LOVE ATTACK",
+      "tags": [
+        "러브어택",
+        "THE MUZE 1",
+        "방혜현",
+        "THE MUZE 2",
+        "THE MUZE 3",
+        "JONASSON SIMON ERIK HENRIK",
+        "LANDELL GUSTAV",
+        "EURENIUS KARIN WILHELMINA",
+        "RESCENE리센느"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 86,
+      "previousTitle": "형(兄)",
+      "title": "형(兄)",
+      "tags": [
+        "이영준",
+        "이상준",
+        "노라조"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 90,
+      "previousTitle": "까만안경",
+      "title": "까만안경",
+      "tags": [
+        "윤명선",
+        "이루FeatDaylight"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 2,
+      "previousTitle": "Pretender",
+      "title": "프리텐더",
+      "tags": [
+        "프리텐더",
+        "Pretender",
+        "오피셜 히게단디즘",
+        "후지와라사토시"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 6,
+      "previousTitle": "레몬",
+      "title": "레몬",
+      "tags": [
+        "레몬",
+        "Lemon",
+        "요네즈켄시"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 7,
+      "previousTitle": "사무라이하트",
+      "title": "사무라이하트",
+      "tags": [
+        "사무라이하트",
+        "Some Like It Hot",
+        "MOMIKEN",
+        "UZ",
+        "스파이에어",
+        "SPYAIR"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 12,
+      "previousTitle": "Walking with you",
+      "title": "워킹 위드 유",
+      "tags": [
+        "워킹 위드 유",
+        "Walking with you",
+        "노벨브라이트",
+        "Novelbright"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 20,
+      "previousTitle": "혼잣말",
+      "title": "혼잣말",
+      "tags": [
+        "혼잣말",
+        "하치와레CV타나카 마사토",
+        "nagano"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 21,
+      "previousTitle": "루카루카★나이트 피버",
+      "title": "루카루카★나이트 피버",
+      "tags": [
+        "메구리네 루카",
+        "루카루카나이트 피버",
+        "samfree",
+        "samfreeFeat준오토루카",
+        "SAM",
+        "Luka LukaNight Fever"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 22,
+      "previousTitle": "레오",
+      "title": "레오",
+      "tags": [
+        "레오",
+        "유우리",
+        "Leo"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 25,
+      "previousTitle": "실루엣",
+      "title": "실루엣",
+      "tags": [
+        "실루엣",
+        "Silhouette",
+        "카나분",
+        "KANABOON",
+        "타니구치마구로"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 28,
+      "previousTitle": "모니터링",
+      "title": "모니터링",
+      "tags": [
+        "데코",
+        "모니터링",
+        "DECO27",
+        "데코니나"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 30,
+      "previousTitle": "PPPP",
+      "title": "PPPP",
+      "tags": [
+        "PPPP",
+        "TAK",
+        "하츠네 미쿠"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 35,
+      "previousTitle": "코이",
+      "title": "사랑",
+      "tags": [
+        "사랑",
+        "호시노 겐",
+        "Koi"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 39,
+      "previousTitle": "마루노우치사디스티쿠",
+      "title": "마루노우치 새디스틱",
+      "tags": [
+        "마루노우치 새디스틱",
+        "Marunouchi Sadistic",
+        "시이나 링고"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 40,
+      "previousTitle": "신 같네",
+      "title": "신 같네",
+      "tags": [
+        "신 같네",
+        "Godish",
+        "하츠네 미쿠",
+        "피노키오피"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 41,
+      "previousTitle": "프로포즈",
+      "title": "프로포즈",
+      "tags": [
+        "프로포즈",
+        "나토리"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 42,
+      "previousTitle": "마리고루도",
+      "title": "메리골드",
+      "tags": [
+        "메리골드",
+        "아이묜",
+        "Marigold"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 47,
+      "previousTitle": "소녀A",
+      "title": "소녀A",
+      "tags": [
+        "소녀A",
+        "시이나모타Feat쿄우온린",
+        "시이나모타"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 50,
+      "previousTitle": "언라벨",
+      "title": "언라벨",
+      "tags": [
+        "티케이 from 린토시테 시구레",
+        "언라벨",
+        "TK From 린토시테시구레",
+        "Unravel",
+        "TK"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 53,
+      "previousTitle": "우세에와",
+      "title": "우세에와",
+      "tags": [
+        "슈도우",
+        "우세에와",
+        "Usseewa",
+        "SYUDOU",
+        "아도",
+        "Ado"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 56,
+      "previousTitle": "하나타바",
+      "title": "꽃다발",
+      "tags": [
+        "꽃다발",
+        "백 넘버",
+        "back number",
+        "시미즈이요리",
+        "Hanataba"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 57,
+      "previousTitle": "115만 킬로의 필름",
+      "title": "115만 킬로의 필름",
+      "tags": [
+        "115만 킬로의 필름",
+        "오피셜 히게단디즘",
+        "후지와라사토시"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 58,
+      "previousTitle": "그저 네게 맑아라",
+      "title": "그저 네게 맑아라",
+      "tags": [
+        "나부나",
+        "그저 네게 맑아라",
+        "NBUNA",
+        "요루시카",
+        "Tada Kimi ni Hare"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 59,
+      "previousTitle": "스키다카라。",
+      "title": "좋아하니까",
+      "tags": [
+        "좋아하니까",
+        "Suki Dakara"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 61,
+      "previousTitle": "난데모나이야",
+      "title": "아무것도 아니야",
+      "tags": [
+        "아무것도 아니야",
+        "Nandemonaiya",
+        "래드윔프스",
+        "RADWIMPS",
+        "노다요지로"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 62,
+      "previousTitle": "인페루노",
+      "title": "인페르노",
+      "tags": [
+        "인페르노",
+        "Inferno",
+        "미세스 그린 애플",
+        "Mrs Green Apple"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 63,
+      "previousTitle": "로스트 원의 호곡",
+      "title": "로스트 원의 호곡",
+      "tags": [
+        "네루",
+        "로스트 원의 호곡",
+        "Lost Ones Weeping",
+        "NERU",
+        "카가미오토린"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 65,
+      "previousTitle": "휴루리라팟파",
+      "title": "휴루리라팟파",
+      "tags": [
+        "휴루리라팟파",
+        "HYURURIRAPAPPA",
+        "TUKI",
+        "츠키"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 66,
+      "previousTitle": "샤를",
+      "title": "샤를",
+      "tags": [
+        "샤를",
+        "바룬FeatFlower",
+        "balloon",
+        "Charles"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 67,
+      "previousTitle": "크라이 베이비",
+      "title": "크라이 베이비",
+      "tags": [
+        "크라이 베이비",
+        "Cry Baby",
+        "오피셜 히게단디즘",
+        "후지와라사토시"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 70,
+      "previousTitle": "갓노우즈",
+      "title": "갓노우즈",
+      "tags": [
+        "히라노아야",
+        "갓노우즈",
+        "God knows",
+        "료우미야하루히헤이야아야",
+        "하타아키",
+        "코사키사토루"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 71,
+      "previousTitle": "날아오를 때",
+      "title": "날아오를 때",
+      "tags": [
+        "날아오를 때",
+        "VAUNDY",
+        "바운디",
+        "Fly Away"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 75,
+      "previousTitle": "레이디",
+      "title": "레이디",
+      "tags": [
+        "레이디",
+        "LADY",
+        "요네즈켄시"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 76,
+      "previousTitle": "Execution Clap",
+      "title": "처형박수",
+      "tags": [
+        "처형박수",
+        "Execution Clap",
+        "TRAP CHICK",
+        "TRAP CHICKFeat주우오토테토"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 77,
+      "previousTitle": "사신",
+      "title": "사신",
+      "tags": [
+        "사신",
+        "Shinigami",
+        "요네즈켄시"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 81,
+      "previousTitle": "비",
+      "title": "레인",
+      "tags": [
+        "레인",
+        "Rain",
+        "시드"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 82,
+      "previousTitle": "젠젠젠세이",
+      "title": "전전전세",
+      "tags": [
+        "전전전세",
+        "Zenzenzense",
+        "래드윔프스",
+        "RADWIMPS",
+        "노다요지로"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 84,
+      "previousTitle": "연애재판",
+      "title": "연애재판",
+      "tags": [
+        "연애재판",
+        "Love Trial",
+        "40MP",
+        "하츠네 미쿠",
+        "Renai Saiban"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 86,
+      "previousTitle": "블링-뱅-뱅-본",
+      "title": "블링-뱅-뱅-본",
+      "tags": [
+        "블링뱅뱅본",
+        "크리피 너츠",
+        "Creepy Nuts",
+        "BlingBangBangBorn"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 87,
+      "previousTitle": "로키",
+      "title": "로키",
+      "tags": [
+        "미키토P",
+        "로키",
+        "미키토PFeat쿄우온린",
+        "Roki"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 89,
+      "previousTitle": "단스호루",
+      "title": "댄스홀",
+      "tags": [
+        "댄스홀",
+        "미세스 그린 애플",
+        "Mrs GREEN APPLE",
+        "Dance Hall"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 91,
+      "previousTitle": "텔레캐스터 비보이",
+      "title": "텔레캐스터 비보이",
+      "tags": [
+        "텔레캐스터 비보이",
+        "스리이",
+        "Telecaster BBoy"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 92,
+      "previousTitle": "마음탓",
+      "title": "마음탓",
+      "tags": [
+        "마음탓",
+        "PAPIYON",
+        "초우초우PFeatGUMI"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 93,
+      "previousTitle": "악의 하인",
+      "title": "악의 하인",
+      "tags": [
+        "악의P",
+        "악의 하인",
+        "Servant of Evil",
+        "mothy",
+        "카가미오토렌"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 96,
+      "previousTitle": "소녀 레이",
+      "title": "소녀 레이",
+      "tags": [
+        "미키토P",
+        "소녀 레이",
+        "하츠네 미쿠"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 97,
+      "previousTitle": "커튼콜",
+      "title": "커튼콜",
+      "tags": [
+        "커튼콜",
+        "유우리",
+        "CHIMERAZ",
+        "Curtain Call"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 98,
+      "previousTitle": "피스 사인",
+      "title": "피스 사인",
+      "tags": [
+        "피스 사인",
+        "Peace Sign",
+        "요네즈켄시"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 100,
+      "previousTitle": "Ray",
+      "title": "Ray",
+      "tags": [
+        "Ray",
+        "범프 오브 치킨",
+        "후지와라모토오"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 1,
+      "previousTitle": "Let It Go",
+      "title": "Let It Go",
+      "tags": [
+        "이디나 멘젤",
+        "Let It Go",
+        "렛 잇 고",
+        "Idina Menzel",
+        "LOPEZ ROBERT J",
+        "ANDERSON KRISTEN"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 2,
+      "previousTitle": "Creep",
+      "title": "Creep",
+      "tags": [
+        "크립",
+        "라디오헤드",
+        "Creep",
+        "Radiohead",
+        "Colin Greenwood",
+        "Jonny Greenwood",
+        "Ed Obrien",
+        "Phil Selway",
+        "Thom Yorke"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 4,
+      "previousTitle": "Speechless",
+      "title": "Speechless",
+      "tags": [
+        "나오미 스콧",
+        "Speechless",
+        "Naomi Scott",
+        "PASEK BENJ",
+        "PAUL JUSTIN NOBLE",
+        "MENKEN ALAN"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 5,
+      "previousTitle": "Love Is An Open Door",
+      "title": "Love Is An Open Door",
+      "tags": [
+        "사랑은열린문",
+        "크리스틴 벨",
+        "산티노 폰태나",
+        "Love Is An Open Door",
+        "Kristen Bell",
+        "Santino Fontana",
+        "LOPEZ ROBERT J",
+        "ANDERSON KRISTEN"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 6,
+      "previousTitle": "Rolling In The Deep",
+      "title": "Rolling In The Deep",
+      "tags": [
+        "아델",
+        "Rolling In The Deep",
+        "Adele",
+        "ADKINS ADELE LAURIE BLUE",
+        "EPWORTH PAUL"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 8,
+      "previousTitle": "I'm Not The Only One",
+      "title": "I'm Not The Only One",
+      "tags": [
+        "샘 스미스",
+        "Im Not The Only One",
+        "Sam Smith",
+        "JAMES NAPIER"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 10,
+      "previousTitle": "Die With A Smile",
+      "title": "Die With A Smile",
+      "tags": [
+        "레이디 가가",
+        "브루노 마스",
+        "Die With A Smile",
+        "Lady Gaga",
+        "Bruno Mars",
+        "EMILE DERNST",
+        "FAUNTLEROY JAMES EDWARD",
+        "GERMANOTTA STEFANI J",
+        "HERNANDEZ PETER GENE",
+        "WATT ANDREW"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 12,
+      "previousTitle": "She's Gone",
+      "title": "She's Gone",
+      "tags": [
+        "쉬즈곤",
+        "스틸하트",
+        "Shes Gone",
+        "Steelheart",
+        "MATTJEVIC MICHAEL"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 13,
+      "previousTitle": "Dangerously",
+      "title": "Dangerously",
+      "tags": [
+        "찰리 푸스",
+        "Dangerously",
+        "Charlie Puth",
+        "ALEXANDER IZQUIERDO",
+        "JAMES JOHN ABRAHART",
+        "MARCO ANTONIO RODRIGUEZDIAZ",
+        "ROTEM JONATHAN"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 14,
+      "previousTitle": "Lost Stars",
+      "title": "Lost Stars",
+      "tags": [
+        "애덤 리바인",
+        "Lost Stars",
+        "로스트 스타스",
+        "Adam Levine",
+        "ALEXANDER GREGG",
+        "BRISEBOIS DANIELLE A",
+        "LASHLEY NICK P",
+        "NICKY SOUTHWOOD"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 15,
+      "previousTitle": "Dance Monkey",
+      "title": "Dance Monkey",
+      "tags": [
+        "톤스 앤 아이",
+        "Dance Monkey",
+        "댄스몽키",
+        "Tones And I",
+        "WATSON TONI"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 16,
+      "previousTitle": "Lemon Tree",
+      "title": "Lemon Tree",
+      "tags": [
+        "풀스 가든",
+        "Lemon Tree",
+        "Fools Garden",
+        "FREUDENTHALER PETER",
+        "HINKEL VOLKER"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 17,
+      "previousTitle": "Baby",
+      "title": "Baby",
+      "tags": [
+        "저스틴 비버",
+        "Baby",
+        "Justin Bieber",
+        "Youngdell Nash",
+        "Nash Bieber",
+        "Bridges",
+        "TheDream",
+        "Stewart Bridges",
+        "Stewart Milian"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 18,
+      "previousTitle": "Snowman",
+      "title": "Snowman",
+      "tags": [
+        "시아",
+        "Snowman",
+        "Sia",
+        "GREG KURSTIN",
+        "SIA FURLER"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 19,
+      "previousTitle": "Beauty And A Beat",
+      "title": "Beauty And A Beat",
+      "tags": [
+        "저스틴 비버",
+        "Beauty And A Beat",
+        "Justin BieberFeatNicki Minaj",
+        "ZEDD",
+        "SAVAN KOTECHA",
+        "MAX MARTIN",
+        "NICKI MINAJ"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 21,
+      "previousTitle": "When I Was Your Man",
+      "title": "When I Was Your Man",
+      "tags": [
+        "브루노 마스",
+        "When I Was Your Man",
+        "Bruno Mars",
+        "LAWRENCE PHILIP MARTIN II",
+        "LEVINE ARI",
+        "MARS BRUNO",
+        "WYATT ANDREW"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 22,
+      "previousTitle": "A Whole New World",
+      "title": "A Whole New World",
+      "tags": [
+        "미나 마수드",
+        "나오미 스콧",
+        "A Whole New World",
+        "Mena Massoud",
+        "Naomi Scott",
+        "MENKEN ALAN IRWIN",
+        "RICE TIMOTHY MILES BINDON"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 23,
+      "previousTitle": "Love Yourself",
+      "title": "Love Yourself",
+      "tags": [
+        "저스틴 비버",
+        "Love Yourself",
+        "Justin Bieber",
+        "ED SHEERAN",
+        "BENNY BLANCO"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 24,
+      "previousTitle": "Someone Like You",
+      "title": "Someone Like You",
+      "tags": [
+        "아델",
+        "Someone Like You",
+        "Adele",
+        "Dan Wilson"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 29,
+      "previousTitle": "There's Nothing Holdin' Me Back",
+      "title": "There's Nothing Holdin' Me Back",
+      "tags": [
+        "숀 멘데스",
+        "Theres Nothing Holdin Me Back",
+        "Shawn Mendes",
+        "TEDDY GEIGER",
+        "SCOTT HARRIS",
+        "GEOFFREY WARBURTON"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 31,
+      "previousTitle": "Shape Of You",
+      "title": "Shape Of You",
+      "tags": [
+        "에드 시런",
+        "Shape Of You",
+        "Ed Sheeran",
+        "STEVE MAC",
+        "JOHNNY MCDAID"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 32,
+      "previousTitle": "Payphone",
+      "title": "Payphone",
+      "tags": [
+        "마룬 5",
+        "Payphone",
+        "Maroon 5FeatWiz Khalifa",
+        "LEVIN BENJAMIN",
+        "LEVINE ADAM",
+        "MALIK AMMAR",
+        "OMELIO DAN",
+        "SCHUSTER JOHAN KARL",
+        "THOMAZ CAMERON"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 33,
+      "previousTitle": "Last Night On Earth",
+      "title": "Last Night On Earth",
+      "tags": [
+        "그린 데이",
+        "Last Night On Earth",
+        "Green Day",
+        "BILLIE JOE ARMSTRONG",
+        "FRANK E III WRIGHT",
+        "MICHAEL RYAN PRITCHARD"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 34,
+      "previousTitle": "Stay",
+      "title": "Stay",
+      "tags": [
+        "저스틴 비버",
+        "Stay",
+        "The Kid LAROI",
+        "Justin Bieber",
+        "더 키드 라로이",
+        "Charlton Howard",
+        "Magnus Hiberg",
+        "Charlie Puth",
+        "Omer Fedi",
+        "Blake Slatkin"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 37,
+      "previousTitle": "Bohemian Rhapsody",
+      "title": "Bohemian Rhapsody",
+      "tags": [
+        "보헤미안 랩소디",
+        "퀸",
+        "Bohemian Rhapsody",
+        "Queen",
+        "Freddie Mercury"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 38,
+      "previousTitle": "Off My Face",
+      "title": "Off My Face",
+      "tags": [
+        "저스틴 비버",
+        "Off My Face",
+        "Justin Bieber",
+        "BIEBER JUSTIN",
+        "PRINGLE DANIEL JAMES",
+        "PRINGLE LEAH JAQUELINE",
+        "SCOLA TIA MARIE",
+        "TORREY JACOB"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 39,
+      "previousTitle": "Sugar",
+      "title": "Sugar",
+      "tags": [
+        "마룬 5",
+        "Sugar",
+        "Maroon 5",
+        "MICHAEL POSNER",
+        "HENRY WALTER",
+        "ADAM LEVINE",
+        "JOSHUA COLEMAN",
+        "JACOB HINDLIN",
+        "LUKASZ GOTTWALD"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 40,
+      "previousTitle": "This Love",
+      "title": "This Love",
+      "tags": [
+        "마룬 5",
+        "This Love",
+        "Maroon 5",
+        "Carmichael",
+        "Levine"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 41,
+      "previousTitle": "The Phantom Of The Opera",
+      "title": "The Phantom Of The Opera",
+      "tags": [
+        "오페라의 유령",
+        "The Phantom Of The Opera",
+        "Sarah Brightman",
+        "Mike Batt",
+        "Charles Hart",
+        "Andrew Lloyd Webber",
+        "Richard Stilgoe"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 43,
+      "previousTitle": "Painkiller",
+      "title": "Painkiller",
+      "tags": [
+        "루엘",
+        "Painkiller",
+        "Ruel",
+        "VAN DIJK RUEL VINCENT",
+        "AARONS SARAH PAIGE",
+        "LANDON MARK"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 44,
+      "previousTitle": "Fly Me To The Moon",
+      "title": "Fly Me To The Moon",
+      "tags": [
+        "프랭크 시나트라",
+        "Fly Me To The Moon",
+        "Frank Sinatra",
+        "Bart Howard"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 45,
+      "previousTitle": "Call Me Maybe",
+      "title": "Call Me Maybe",
+      "tags": [
+        "칼리 래이 잽슨",
+        "Call Me Maybe",
+        "콜 미 메이비",
+        "Carly Rae Jepsen",
+        "CROWE TAVISH",
+        "JEPSEN CARLY RAE",
+        "RAMSAY JOSHUA KEELER"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 46,
+      "previousTitle": "If I Ain't Got You",
+      "title": "If I Ain't Got You",
+      "tags": [
+        "앨리샤 키스",
+        "If I Aint Got You",
+        "Alicia Keys",
+        "AUGELLOCOOK ALICIA"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 49,
+      "previousTitle": "Billie Jean",
+      "title": "Billie Jean",
+      "tags": [
+        "마이클 잭슨",
+        "Billie Jean",
+        "Michael Jackson"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 50,
+      "previousTitle": "Chandelier",
+      "title": "Chandelier",
+      "tags": [
+        "시아",
+        "Chandelier",
+        "Sia",
+        "SIA FURLER",
+        "JESSE SHATKIN"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 51,
+      "previousTitle": "Perfect",
+      "title": "Perfect",
+      "tags": [
+        "에드 시런",
+        "Perfect",
+        "Ed Sheeran",
+        "SHEERAN ED"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 52,
+      "previousTitle": "Always Remember Us This Way",
+      "title": "Always Remember Us This Way",
+      "tags": [
+        "레이디 가가",
+        "Always Remember Us This Way",
+        "Lady Gaga",
+        "GERMANOTTA STEFANI",
+        "HEMBY NATALIE",
+        "LINDSEY HILLARY",
+        "MCKENNA LORI"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 53,
+      "previousTitle": "Santa Tell Me",
+      "title": "Santa Tell Me",
+      "tags": [
+        "아리아나 그란데",
+        "Santa Tell Me",
+        "Ariana Grande",
+        "SAVAN HARISH KOTECHA",
+        "ILYA"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 54,
+      "previousTitle": "My Heart Will Go On",
+      "title": "My Heart Will Go On",
+      "tags": [
+        "마이 하트 윌 고 온",
+        "셀린 디온",
+        "My Heart Will Go On",
+        "Celine Dion",
+        "HORNER JAMES",
+        "JENNINGS WILL"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 55,
+      "previousTitle": "What Makes You Beautiful",
+      "title": "What Makes You Beautiful",
+      "tags": [
+        "원 디렉션",
+        "What Makes You Beautiful",
+        "One Direction",
+        "FALK CARL",
+        "KOTECHA SAVAN HARISH",
+        "YACOUB RAMI"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 57,
+      "previousTitle": "Sunflower",
+      "title": "Sunflower",
+      "tags": [
+        "포스트 말론",
+        "Sunflower",
+        "Post Malone",
+        "Swae Lee",
+        "BROWN KHALIF",
+        "WILLIAM WALSH",
+        "CARTER LANG",
+        "CARL AUSTIN ROSEN",
+        "LOUIS BELL",
+        "AUSTIN POST"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 58,
+      "previousTitle": "Beautiful Things",
+      "title": "Beautiful Things",
+      "tags": [
+        "벤슨 분",
+        "Beautiful Things",
+        "Benson Boone",
+        "EVAN BLAIR",
+        "JACK LAFRANTZ"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 61,
+      "previousTitle": "Wonderwall",
+      "title": "Wonderwall",
+      "tags": [
+        "원더월",
+        "Wonderwall",
+        "Oasis",
+        "Noel Gallagher"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 64,
+      "previousTitle": "Blinding Lights",
+      "title": "Blinding Lights",
+      "tags": [
+        "위켄드",
+        "Blinding Lights",
+        "The Weeknd",
+        "BALSHE AHMAD",
+        "HOLTER OSCAR THOMAS",
+        "MARTIN MAX",
+        "QUENNEVILLE JASON MATTHEW",
+        "TESFAYE ABEL"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 69,
+      "previousTitle": "This Is Me",
+      "title": "This Is Me",
+      "tags": [
+        "케알라 세틀",
+        "This Is Me",
+        "Various Artists",
+        "PASEK BENJ",
+        "PAUL JUSTIN NOBLE"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 70,
+      "previousTitle": "Die For You",
+      "title": "Die For You",
+      "tags": [
+        "Die For You",
+        "다이포유",
+        "The Weeknd",
+        "위켄드",
+        "Abel Tesfaye",
+        "Martin McKinney",
+        "Mejdi Rhars",
+        "Dylan Wiggins",
+        "Magnus Hiberg",
+        "William Thomas Walsh"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 71,
+      "previousTitle": "Zombie",
+      "title": "Zombie",
+      "tags": [
+        "좀비",
+        "크랜베리",
+        "Zombie",
+        "The Cranberries",
+        "ORiordian",
+        "Dolores ORiordan"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 75,
+      "previousTitle": "When We Were Young",
+      "title": "When We Were Young",
+      "tags": [
+        "아델",
+        "When We Were Young",
+        "Adele",
+        "JESSO TOBIAS MACDONALD",
+        "ADKINS ADELE LAURIE BLUE"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 76,
+      "previousTitle": "How Far I'll Go",
+      "title": "How Far I'll Go",
+      "tags": [
+        "시아",
+        "How Far Ill Go",
+        "Alessia Cara",
+        "MIRANDA LIN MANUEL"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 77,
+      "previousTitle": "Dancing Queen",
+      "title": "Dancing Queen",
+      "tags": [
+        "아바",
+        "Dancing Queen",
+        "댄싱퀸",
+        "ABBA",
+        "Stig Anderson",
+        "Benny Andersson",
+        "Bjorn Ulvaeus"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 79,
+      "previousTitle": "Love On Top",
+      "title": "Love On Top",
+      "tags": [
+        "비욘세",
+        "Love On Top",
+        "Beyonce",
+        "KNOWLES BEYONCE GISSELLE",
+        "NASH TERIUS YOUNGDELL",
+        "TAYLOR ROBERT SHEA"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 80,
+      "previousTitle": "From The Start",
+      "title": "From The Start",
+      "tags": [
+        "레이베이",
+        "From The Start",
+        "Laufey",
+        "JONSDOTTIR LAUFEY LIN",
+        "STEWART SPENCER EUGENE"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 81,
+      "previousTitle": "My Way",
+      "title": "My Way",
+      "tags": [
+        "프랭크 시나트라",
+        "My Way",
+        "마이 웨이",
+        "Frank Sinatra",
+        "ANKA PAUL",
+        "FRANCOIS CLAUDE",
+        "REVAUX JACQUES",
+        "THIBAUT GILLES"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 82,
+      "previousTitle": "See You Again",
+      "title": "See You Again",
+      "tags": [
+        "위즈 칼리파",
+        "찰리 푸스",
+        "See You Again",
+        "Wiz Khalifa",
+        "Charlie Puth",
+        "CEDAR ANDREW",
+        "FRANKS JUSTIN SCOTT"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 83,
+      "previousTitle": "Welcome To The Black Parade",
+      "title": "Welcome To The Black Parade",
+      "tags": [
+        "마이 케미컬 로맨스",
+        "Welcome To The Black Parade",
+        "My Chemical Romance",
+        "BRYAR BOB",
+        "IERO FRANK",
+        "TORO RAY",
+        "WAY GERARD",
+        "WAY MICHAEL"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 84,
+      "previousTitle": "Circles",
+      "title": "Circles",
+      "tags": [
+        "포스트 말론",
+        "Circles",
+        "Post Malone",
+        "FEENEY ADAM KING",
+        "POST AUSTIN RICHARD",
+        "BELL LOUIS RUSSELL",
+        "WALSH BILLY",
+        "GUNESBERK KAAN"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 85,
+      "previousTitle": "GHOST TOWN",
+      "title": "GHOST TOWN",
+      "tags": [
+        "벤슨 분",
+        "GHOST TOWN",
+        "Benson Boone",
+        "NOLAN WINFIELD SIPE",
+        "TUSHAR APTE"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 86,
+      "previousTitle": "Piano Man",
+      "title": "Piano Man",
+      "tags": [
+        "피아노 맨",
+        "빌리 조엘",
+        "Piano Man",
+        "Billy Joel"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 87,
+      "previousTitle": "Out of Time",
+      "title": "Out of Time",
+      "tags": [
+        "위켄드",
+        "Out of Time",
+        "The Weeknd",
+        "ARAN TOMOKO",
+        "HAMADA TETSURO",
+        "HOLTER OSCAR THOMAS",
+        "LOPATIN DANIEL",
+        "MAX MARTIN",
+        "TESFAYE ABEL"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 88,
+      "previousTitle": "Sunday Morning",
+      "title": "Sunday Morning",
+      "tags": [
+        "마룬 5",
+        "Sunday Morning",
+        "Maroon 5",
+        "Carmichael",
+        "Levine"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 89,
+      "previousTitle": "Shallow",
+      "title": "Shallow",
+      "tags": [
+        "레이디 가가",
+        "Shallow",
+        "Lady Gaga",
+        "Bradley Cooper",
+        "GERMANOTTA STEFANI",
+        "RONSON MARK",
+        "ROSSOMANDO ANTHONY",
+        "WYATT ANDREW"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 90,
+      "previousTitle": "Marry You",
+      "title": "Marry You",
+      "tags": [
+        "브루노 마스",
+        "Marry You",
+        "Bruno Mars",
+        "HERNANDEZ PETER GENE",
+        "LAWRENCE PHILIP MARTIN",
+        "LEVINE ARI"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 93,
+      "previousTitle": "We Don't Talk Anymore",
+      "title": "We Don't Talk Anymore",
+      "tags": [
+        "찰리 푸스",
+        "셀레나 고메즈",
+        "We Dont Talk Anymore",
+        "Charlie PuthFeatSelena Gomez",
+        "CHARLIE PUTH",
+        "JACOB KASHER HINDLIN",
+        "SELENA MARIE GOMEZ"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 94,
+      "previousTitle": "Lay Me Down",
+      "title": "Lay Me Down",
+      "tags": [
+        "샘 스미스",
+        "Lay Me Down",
+        "Sam SmithFeatJohn Legend",
+        "SAM SMITH",
+        "JAMES NAPIER",
+        "ELVIN SMITH"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 97,
+      "previousTitle": "Risk It All",
+      "title": "Risk It All",
+      "tags": [
+        "브루노 마스",
+        "Risk It All",
+        "Bruno Mars",
+        "ARJONA VAZQUEZ JOHAN",
+        "HERNANDEZ PETER GENE"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 99,
+      "previousTitle": "Hello",
+      "title": "Hello",
+      "tags": [
+        "아델",
+        "Hello",
+        "Adele",
+        "ADKINS ADELE",
+        "KURSTIN GREGORY ALLEN"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 100,
+      "previousTitle": "Halo",
+      "title": "Halo",
+      "tags": [
+        "비욘세",
+        "Halo",
+        "Beyonce",
+        "E Kidd Bogart",
+        "Beyonce Knowles",
+        "Ryan Tedder"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 4,
+      "previousTitle": "하츠네 미쿠의 소실",
+      "title": "하츠네 미쿠의 소실",
+      "tags": [
+        "cosMo폭주P"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 5,
+      "previousTitle": "미쿠미쿠하게 해줄게♪",
+      "title": "미쿠미쿠하게 해줄게♪",
+      "tags": [
+        "ikamo",
+        "미쿠미쿠하게 해줄게"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 8,
+      "previousTitle": "모자이크 롤",
+      "title": "모자이크 롤",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "데코"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 9,
+      "previousTitle": "고스트 룰",
+      "title": "고스트 룰",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "데코"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 10,
+      "previousTitle": "뱀파이어",
+      "title": "뱀파이어",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "데코"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 13,
+      "previousTitle": "뇌장작렬 걸",
+      "title": "뇌장작렬 걸",
+      "tags": [
+        "레루리리",
+        "Rerulili"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 22,
+      "previousTitle": "히바나",
+      "title": "히바나",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "데코"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 26,
+      "previousTitle": "상상 포레스트",
+      "title": "상상 포레스트",
+      "tags": [
+        "Jin",
+        "진자연의 적P"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 27,
+      "previousTitle": "망상감상대상연맹",
+      "title": "망상감상대상연맹",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "데코"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 35,
+      "previousTitle": "사랑의 말 Ⅲ",
+      "title": "사랑의 말 Ⅲ",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "데코",
+        "사랑의 말 III"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 36,
+      "previousTitle": "하얀 눈의 프린세스는",
+      "title": "하얀 눈의 프린세스는",
+      "tags": [
+        "노보루"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 37,
+      "previousTitle": "Blessing",
+      "title": "블레싱",
+      "tags": [
+        "블레싱",
+        "halyosy",
+        "Blessing"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 44,
+      "previousTitle": "투명 엘레지",
+      "title": "투명 엘레지",
+      "tags": [
+        "nbuna",
+        "나부나"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 46,
+      "previousTitle": "꽃내림",
+      "title": "꽃내림",
+      "tags": [
+        "nbuna",
+        "나부나"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 48,
+      "previousTitle": "새벽과 반딧불이",
+      "title": "새벽과 반딧불이",
+      "tags": [
+        "nbuna",
+        "나부나"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 50,
+      "previousTitle": "방해쟁이",
+      "title": "방해쟁이",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "데코"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 56,
+      "previousTitle": "아지랑이 데이즈",
+      "title": "아지랑이 데이즈",
+      "tags": [
+        "Jin",
+        "진자연의 적P"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 58,
+      "previousTitle": "노심융해",
+      "title": "노심융해",
+      "tags": [
+        "irohasasaki"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 62,
+      "previousTitle": "소녀해부",
+      "title": "소녀해부",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "데코"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 69,
+      "previousTitle": "Mafia",
+      "title": "마피아",
+      "tags": [
+        "wotaku",
+        "마피아",
+        "Mafia"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 74,
+      "previousTitle": "flos",
+      "title": "플로스",
+      "tags": [
+        "플로스",
+        "R Sound Design",
+        "flos"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 79,
+      "previousTitle": "로스타임 메모리",
+      "title": "로스타임 메모리",
+      "tags": [
+        "Jin",
+        "진자연의 적P"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 81,
+      "previousTitle": "【手描き】자캐로 다루마씨가 굴러간다 패러디【オリキャラ】",
+      "title": "【手描き】자캐로 다루마씨가 굴러간다 패러디【オリキャラ】",
+      "tags": [],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 86,
+      "previousTitle": "아우터 사이언스",
+      "title": "아우터 사이언스",
+      "tags": [
+        "진자연의 적P"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 87,
+      "previousTitle": "서머타임 레코드",
+      "title": "서머타임 레코드",
+      "tags": [
+        "진자연의 적P"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 103,
+      "previousTitle": "신데렐라",
+      "title": "신데렐라",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "데코"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 121,
+      "previousTitle": "이 실없이 멋진 세계는, 나를 위해 있어",
+      "title": "이 실없이 멋진 세계는, 나를 위해 있어",
+      "tags": [
+        "nk",
+        "이 실없이 멋진 세계는 나를 위해 있어"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 126,
+      "previousTitle": "애니멀",
+      "title": "애니멀",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "데코"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 153,
+      "previousTitle": "일본인들이 뽑은 J-POP 지겨운 가사 TOP5",
+      "title": "일본인들이 뽑은 J-POP 지겨운 가사 TOP5",
+      "tags": [
+        "빙쑤",
+        "일본인들이 뽑은 JPOP 지겨운 가사 TOP5"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 158,
+      "previousTitle": "불꽃",
+      "title": "불꽃",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "데코"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 166,
+      "previousTitle": "래트가 죽었다",
+      "title": "래트가 죽었다",
+      "tags": [
+        "PINA"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 168,
+      "previousTitle": "레드・퍼지!!!",
+      "title": "레드・퍼지!!!",
+      "tags": [
+        "PINA",
+        "레드퍼지"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 174,
+      "previousTitle": "샐러맨더",
+      "title": "샐러맨더",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "데코"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 179,
+      "previousTitle": "리얼 하츠네 미쿠의 소실",
+      "title": "리얼 하츠네 미쿠의 소실",
+      "tags": [
+        "cosMo폭주P"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 184,
+      "previousTitle": "사랑의 말 Ⅳ",
+      "title": "사랑의 말 Ⅳ",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "데코",
+        "사랑의 말 IV"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 200,
+      "previousTitle": "Alice in 냉동고",
+      "title": "Alice in 냉동고",
+      "tags": [
+        "Orangestar",
+        "Alice in 냉동고"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 208,
+      "previousTitle": "Mrs.Pumpkin의 우스꽝스러운 꿈",
+      "title": "Mrs.Pumpkin의 우스꽝스러운 꿈",
+      "tags": [
+        "하치",
+        "MrsPumpkin의 우스꽝스러운 꿈"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 209,
+      "previousTitle": "키메라",
+      "title": "키메라",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "데코"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 219,
+      "previousTitle": "이식보행",
+      "title": "이식보행",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "데코"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 220,
+      "previousTitle": "망상세",
+      "title": "망상세",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "데코"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 221,
+      "previousTitle": "병명은 사랑이었다",
+      "title": "병명은 사랑이었다",
+      "tags": [
+        "Neru",
+        "z5",
+        "네루"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 228,
+      "previousTitle": "안드로이드 걸",
+      "title": "안드로이드 걸",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "데코"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 232,
+      "previousTitle": "Alone",
+      "title": "Alone",
+      "tags": [
+        "김박사",
+        "HAKASE K",
+        "하카세 K",
+        "Alone"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 233,
+      "previousTitle": "드리밍 츄츄",
+      "title": "드리밍 츄츄",
+      "tags": [
+        "emonTes"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 235,
+      "previousTitle": "갯나리 해저담",
+      "title": "갯나리 해저담",
+      "tags": [
+        "nbuna",
+        "나부나"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 243,
+      "previousTitle": "Copycat",
+      "title": "카피캣",
+      "tags": [
+        "카피캣",
+        "CircusP",
+        "Copycat"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 247,
+      "previousTitle": "IMAWANOKIWA",
+      "title": "이마와노키와",
+      "tags": [
+        "이마와노키와",
+        "iyowa",
+        "이요와",
+        "IMAWANOKIWA"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 249,
+      "previousTitle": "potato가 되어가",
+      "title": "potato가 되어가",
+      "tags": [
+        "Neru",
+        "네루",
+        "potato가 되어가"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 251,
+      "previousTitle": "첫차와 카프카",
+      "title": "첫차와 카프카",
+      "tags": [
+        "nbuna",
+        "나부나"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 257,
+      "previousTitle": "톤데모 원더즈",
+      "title": "톤데모 원더즈",
+      "tags": [
+        "sasakureUK",
+        "사사쿠레P"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 260,
+      "previousTitle": "사랑의 말",
+      "title": "사랑의 말",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "데코"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 270,
+      "previousTitle": "이 피아노로 너를 8759632145번 후려갈긴다",
+      "title": "이 피아노로 너를 8759632145번 후려갈긴다",
+      "tags": [
+        "SLAVEVVR"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 290,
+      "previousTitle": "*헬로, 플래닛.",
+      "title": "*헬로, 플래닛.",
+      "tags": [
+        "sasakureUK",
+        "사사쿠레P",
+        "헬로 플래닛"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 294,
+      "previousTitle": "8.32",
+      "title": "8.32",
+      "tags": [
+        "Luna",
+        "832"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 295,
+      "previousTitle": "매닉",
+      "title": "매닉",
+      "tags": [
+        "Luna"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 301,
+      "previousTitle": "TAMAYA",
+      "title": "타마야",
+      "tags": [
+        "타마야",
+        "Chinozo",
+        "TAMAYA"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 321,
+      "previousTitle": "나의 R",
+      "title": "나의 R",
+      "tags": [
+        "Wada Takeaki",
+        "와다 타케아키",
+        "쿠라게P",
+        "나의 R"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 323,
+      "previousTitle": "스타 나이트 스노우",
+      "title": "스타 나이트 스노우",
+      "tags": [
+        "Orangestar",
+        "nbuna",
+        "나부나"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 329,
+      "previousTitle": "사신 레코드",
+      "title": "사신 레코드",
+      "tags": [
+        "진자연의 적P"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 332,
+      "previousTitle": "I=Fantasy",
+      "title": "I=Fantasy",
+      "tags": [
+        "시유",
+        "방시혁",
+        "IFantasy"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 337,
+      "previousTitle": "로켓사이다",
+      "title": "로켓사이다",
+      "tags": [
+        "나유탄 성인",
+        "Nayutalien"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 338,
+      "previousTitle": "패럴렐리즘 연심",
+      "title": "패럴렐리즘 연심",
+      "tags": [
+        "나유탄 성인",
+        "Nayutalien"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 339,
+      "previousTitle": "퍼펙트 생명",
+      "title": "퍼펙트 생명",
+      "tags": [
+        "나유탄 성인",
+        "Nayutalien"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 344,
+      "previousTitle": "기간틱 O.T.N",
+      "title": "기간틱 O.T.N",
+      "tags": [
+        "Giga",
+        "Reol",
+        "기가P",
+        "기간틱 OTN"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 359,
+      "previousTitle": "1925",
+      "title": "1925",
+      "tags": [
+        "TPOCKET"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 367,
+      "previousTitle": "퓨처 이브",
+      "title": "퓨처 이브",
+      "tags": [
+        "sasakureUK",
+        "사사쿠레P"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 370,
+      "previousTitle": "하츠네 미쿠의 폭주",
+      "title": "하츠네 미쿠의 폭주",
+      "tags": [
+        "cosMo폭주P"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 371,
+      "previousTitle": "카가미네 렌의 폭주",
+      "title": "카가미네 렌의 폭주",
+      "tags": [
+        "cosMo폭주P"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 372,
+      "previousTitle": "악의 딸",
+      "title": "악의 딸",
+      "tags": [
+        "mothy악의P"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 376,
+      "previousTitle": "소녀A",
+      "title": "소녀A",
+      "tags": [
+        "시이나 모타",
+        "소녀A"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 378,
+      "previousTitle": "좀비",
+      "title": "좀비",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "데코"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 380,
+      "previousTitle": "하츠네 미쿠의 격창",
+      "title": "하츠네 미쿠의 격창",
+      "tags": [
+        "cosMo폭주P"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 382,
+      "previousTitle": "발레리코",
+      "title": "발레리코",
+      "tags": [
+        "미키토P",
+        "MikitoP"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 394,
+      "previousTitle": "뇌내 디스코",
+      "title": "뇌내 디스코",
+      "tags": [
+        "r906"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 410,
+      "previousTitle": "유정천 비바체",
+      "title": "유정천 비바체",
+      "tags": [
+        "Last Note"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 428,
+      "previousTitle": "Journey",
+      "title": "저니",
+      "tags": [
+        "저니",
+        "데코니나",
+        "DECO27",
+        "데코",
+        "Journey"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 429,
+      "previousTitle": "메류",
+      "title": "메류",
+      "tags": [
+        "nbuna",
+        "나부나"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 430,
+      "previousTitle": "ANTI THE∞HOLiC",
+      "title": "ANTI THE∞HOLiC",
+      "tags": [
+        "cosMo폭주P",
+        "ANTI THEHOLiC"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 431,
+      "previousTitle": "죄와 벌",
+      "title": "죄와 벌",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "데코"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 435,
+      "previousTitle": "스트리밍 하트",
+      "title": "스트리밍 하트",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "데코"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 438,
+      "previousTitle": "Just Be Friends",
+      "title": "저스트 비 프렌즈",
+      "tags": [
+        "저스트 비 프렌즈",
+        "딕시 플랫라인",
+        "Dixie Flatline",
+        "Just Be Friends"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 440,
+      "previousTitle": "88☆彡",
+      "title": "88☆彡",
+      "tags": [
+        "marasy",
+        "kemu",
+        "마라시",
+        "케무"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 442,
+      "previousTitle": "I랍니다",
+      "title": "I랍니다",
+      "tags": [
+        "하츠네 미쿠",
+        "레루리리",
+        "I랍니다"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 449,
+      "previousTitle": "가짜 소리 이야기",
+      "title": "가짜 소리 이야기",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "데코"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 450,
+      "previousTitle": "래빗 홀",
+      "title": "래빗 홀",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "데코"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 453,
+      "previousTitle": "유성의 펄스",
+      "title": "유성의 펄스",
+      "tags": [
+        "Luna"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 455,
+      "previousTitle": "Connecting",
+      "title": "커넥팅",
+      "tags": [
+        "커넥팅",
+        "halyosy",
+        "Connecting"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 469,
+      "previousTitle": "twitter",
+      "title": "twitter",
+      "tags": [
+        "devilishP",
+        "twitter"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 485,
+      "previousTitle": "세츠나 트립",
+      "title": "세츠나 트립",
+      "tags": [
+        "Last Note"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 488,
+      "previousTitle": "사계절의 날개",
+      "title": "사계절의 날개",
+      "tags": [
+        "히토시즈쿠P",
+        "야마"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 495,
+      "previousTitle": "익명M",
+      "title": "익명M",
+      "tags": [
+        "PinocchioP",
+        "피노키오피",
+        "익명M"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 496,
+      "previousTitle": "데빌이 아닌걸",
+      "title": "데빌이 아닌걸",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "PinocchioP",
+        "데코",
+        "피노키오피"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 501,
+      "previousTitle": "절망",
+      "title": "절망",
+      "tags": [
+        "A4"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 511,
+      "previousTitle": "쇠사슬의 소녀",
+      "title": "쇠사슬의 소녀",
+      "tags": [
+        "노보루"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 521,
+      "previousTitle": "0",
+      "title": "0",
+      "tags": [
+        "cosMo폭주P"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 523,
+      "previousTitle": "초승달 스텝",
+      "title": "초승달 스텝",
+      "tags": [
+        "r906"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 530,
+      "previousTitle": "축복의 메시아와 슬픔의 탑",
+      "title": "축복의 메시아와 슬픔의 탑",
+      "tags": [
+        "히토시즈쿠P",
+        "야마"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 535,
+      "previousTitle": "볼트태클",
+      "title": "볼트태클",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "데코"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 542,
+      "previousTitle": "천사의 날개.",
+      "title": "천사의 날개.",
+      "tags": [
+        "A4",
+        "천사의 날개"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 546,
+      "previousTitle": "뜻대로",
+      "title": "뜻대로",
+      "tags": [
+        "r906"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 551,
+      "previousTitle": "39",
+      "title": "39",
+      "tags": [
+        "데코니나",
+        "sasakureUK",
+        "DECO27",
+        "사사쿠레P",
+        "데코"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 556,
+      "previousTitle": "혼돈 부기",
+      "title": "혼돈 부기",
+      "tags": [
+        "jonYAKITORY"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 561,
+      "previousTitle": "하오",
+      "title": "하오",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "데코"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 565,
+      "previousTitle": "새드 걸・섹스",
+      "title": "새드 걸・섹스",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "데코",
+        "새드 걸섹스"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 10,
+      "previousTitle": "블링 뱅 뱅 본",
+      "title": "블링 뱅 뱅 본",
+      "tags": [
+        "크리피 너츠",
+        "블링 뱅 뱅 본",
+        "BlingBangBangBorn",
+        "RShitei",
+        "DJ Matsunaga",
+        "알시테이",
+        "디제이 마츠나가"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 33,
+      "previousTitle": "잔향산가",
+      "title": "잔향산가",
+      "tags": [
+        "에메",
+        "잔향산가",
+        "Zankyosanka",
+        "Aimerrhythm",
+        "Masahiro Tobinai"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 35,
+      "previousTitle": "괴물",
+      "title": "괴물",
+      "tags": [
+        "요아소비",
+        "괴물",
+        "Ayase",
+        "아야세"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 38,
+      "previousTitle": "인페르노",
+      "title": "인페르노",
+      "tags": [
+        "미세스 그린애플",
+        "인페르노",
+        "Inferno",
+        "Motoki Ohmori",
+        "오모리 모토키"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 45,
+      "previousTitle": "혁명도중",
+      "title": "혁명도중",
+      "tags": [
+        "혁명도중",
+        "Shin Sakiura"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 53,
+      "previousTitle": "AMBITION",
+      "title": "AMBITION",
+      "tags": [
+        "AMBITION"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 56,
+      "previousTitle": "라일락",
+      "title": "라일락",
+      "tags": [
+        "미세스 그린애플",
+        "라일락",
+        "Lilac",
+        "Motoki Ohmori",
+        "오모리 모토키"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 60,
+      "previousTitle": "태양이 떠오르지 않는 세계",
+      "title": "태양이 떠오르지 않는 세계",
+      "tags": [
+        "에메",
+        "태양이 떠오르지 않는 세계",
+        "Go Shiina",
+        "Hikaru Kondo ufotable"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 95,
+      "previousTitle": "러브 앤 디스트로이",
+      "title": "러브 앤 디스트로이",
+      "tags": [
+        "러브 앤 디스트로이"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 96,
+      "previousTitle": "가라앉는 거리",
+      "title": "가라앉는 거리",
+      "tags": [
+        "쿠라하시 요에코",
+        "가라앉는 거리",
+        "Yoeko Kurahashi"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 105,
+      "previousTitle": "수고했어 여름",
+      "title": "수고했어 여름",
+      "tags": [
+        "수고했어 여름",
+        "Tomoyuki Tanaka",
+        "Masayuki Kumahara"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 106,
+      "previousTitle": "막차는 25시",
+      "title": "막차는 25시",
+      "tags": [
+        "막차는 25시",
+        "Taiyo Someya"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 111,
+      "previousTitle": "과호흡",
+      "title": "과호흡",
+      "tags": [
+        "래드윔프스",
+        "과호흡",
+        "Hyperventilation",
+        "Yojiro Noda"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 114,
+      "previousTitle": "ダブル - JiLL-Decoy association",
+      "title": "ダブル - JiLL-Decoy association",
+      "tags": [
+        "chihiRo",
+        "towada",
+        "Mamoru Ishida"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 123,
+      "previousTitle": "그런 bitter 한 이야기",
+      "title": "그런 bitter 한 이야기",
+      "tags": [
+        "그런 bitter 한 이야기",
+        "Vaundy",
+        "바운디"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 124,
+      "previousTitle": "ゆらめき - rourourourous",
+      "title": "ゆらめき - rourourourous",
+      "tags": [
+        "Atsushi Kobayashi",
+        "Daiki Okuno"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 140,
+      "previousTitle": "밤을 달리다",
+      "title": "밤을 달리다",
+      "tags": [
+        "요아소비",
+        "밤을 달리다",
+        "Into The Night",
+        "AYASE",
+        "아야세"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 144,
+      "previousTitle": "ブルボン - pomodorosa",
+      "title": "부르봉",
+      "tags": [
+        "부르봉"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 146,
+      "previousTitle": "만찬가",
+      "title": "만찬가",
+      "tags": [
+        "만찬가",
+        "tuki"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 149,
+      "previousTitle": "도넛 홀",
+      "title": "도넛 홀",
+      "tags": [
+        "하치",
+        "요네즈 켄시",
+        "도넛 홀",
+        "Doughnut Hole Cover",
+        "Doughnut Hole",
+        "Hachi"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 163,
+      "previousTitle": "말해 줘",
+      "title": "말해 줘",
+      "tags": [
+        "나부나",
+        "말해 줘",
+        "Nbuna"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 173,
+      "previousTitle": "수꽃",
+      "title": "수꽃",
+      "tags": [
+        "매버릭 맘",
+        "수꽃"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 176,
+      "previousTitle": "전전전세",
+      "title": "전전전세",
+      "tags": [
+        "래드윔프스",
+        "전전전세",
+        "Zenzenzense Original Version",
+        "Zenzenzense",
+        "Yojiro Noda"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 186,
+      "previousTitle": "괴수의 꽃노래",
+      "title": "괴수의 꽃노래",
+      "tags": [
+        "괴수의 꽃노래",
+        "Vaundy",
+        "바운디"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 198,
+      "previousTitle": "존재 A",
+      "title": "존재 A",
+      "tags": [
+        "존재 A"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 199,
+      "previousTitle": "개와 바보 고양이",
+      "title": "개와 바보 고양이",
+      "tags": [
+        "세컨드 백커",
+        "개와 바보 고양이"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 202,
+      "previousTitle": "1000일간",
+      "title": "1000일간",
+      "tags": [
+        "1000일간",
+        "noa"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 210,
+      "previousTitle": "역광",
+      "title": "역광",
+      "tags": [
+        "역광",
+        "Vaundy",
+        "바운디"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 214,
+      "previousTitle": "달마 그랑프리",
+      "title": "달마 그랑프리",
+      "tags": [
+        "래드윔프스",
+        "달마 그랑프리",
+        "Darma grand prix",
+        "Yojiro Noda"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 218,
+      "previousTitle": "Kakera",
+      "title": "조각",
+      "tags": [
+        "조각",
+        "Kakera",
+        "Lavt"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 219,
+      "previousTitle": "베란다",
+      "title": "베란다",
+      "tags": [
+        "베란다",
+        "Vranda",
+        "Kitaro Taniguchi"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 222,
+      "previousTitle": "가짜 우리",
+      "title": "가짜 우리",
+      "tags": [
+        "가짜 우리",
+        "도영 권"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 228,
+      "previousTitle": "너에게 100퍼센트",
+      "title": "너에게 100퍼센트",
+      "tags": [
+        "나카타 야스타카",
+        "너에게 100퍼센트",
+        "Kimini 100 Percent",
+        "Yasutaka Nakata"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 230,
+      "previousTitle": "축복",
+      "title": "축복",
+      "tags": [
+        "요아소비",
+        "축복",
+        "Ayase",
+        "아야세"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 243,
+      "previousTitle": "Mou Yume tune",
+      "title": "Mou Yume tune",
+      "tags": [
+        "Mou Yume tune",
+        "Susumu"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 245,
+      "previousTitle": "Torokeru kiss",
+      "title": "녹는키스",
+      "tags": [
+        "녹는키스",
+        "Torokeru kiss",
+        "susumu"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 252,
+      "previousTitle": "융해 sink",
+      "title": "융해 sink",
+      "tags": [
+        "융해 sink",
+        "Vaundy",
+        "바운디"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 254,
+      "previousTitle": "달링",
+      "title": "달링",
+      "tags": [
+        "달링"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 260,
+      "previousTitle": "브레인",
+      "title": "브레인",
+      "tags": [
+        "카나리아",
+        "브레인",
+        "BRAIN",
+        "Kanaria"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 261,
+      "previousTitle": "소녀 A",
+      "title": "소녀 A",
+      "tags": [
+        "소녀 A",
+        "siinamota",
+        "시이나 모타"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 269,
+      "previousTitle": "그저 네게 맑아라",
+      "title": "그저 네게 맑아라",
+      "tags": [
+        "나부나",
+        "그저 네게 맑아라",
+        "NBUNA"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 275,
+      "previousTitle": "時のゆらめき",
+      "title": "時のゆらめき",
+      "tags": [
+        "이츠에",
+        "Itsue",
+        "Mizuki"
+      ],
+      "namingReviewRequired": true
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 280,
+      "previousTitle": "달이 아름답다고 말해줘",
+      "title": "달이 아름답다고 말해줘",
+      "tags": [
+        "카키자키 유타",
+        "달이 아름답다고 말해줘",
+        "kakizaki yuta"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 283,
+      "previousTitle": "제대로 모르네",
+      "title": "제대로 모르네",
+      "tags": [
+        "제대로 모르네",
+        "mnmmmm"
+      ],
+      "namingReviewRequired": false
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 534,
+      "previousTitle": "쿠루미☆퐁치오",
+      "title": "쿠루미☆퐁치오",
+      "tags": [
+        "마다코",
+        "쿠루미퐁치오",
+        "Madaco",
+        "Kurumi Ponchio"
+      ],
+      "namingReviewRequired": false
+    }
+  ],
+  "rejectedOrReassignedProposals": [
+    {
+      "batch": 4,
+      "catalogue": "tj-261027-pop",
+      "index": 25,
+      "reason": "Stale search results were reassigned by their actual song and performer; attached audio candidate was independently reviewed."
+    },
+    {
+      "batch": 4,
+      "catalogue": "tj-261027-pop",
+      "index": 33,
+      "reason": "Stale search results were reassigned by their actual song and performer; attached audio candidate was independently reviewed."
+    },
+    {
+      "batch": 4,
+      "catalogue": "tj-261027-pop",
+      "index": 41,
+      "reason": "Stale search results were reassigned by their actual song and performer; attached audio candidate was independently reviewed."
+    },
+    {
+      "batch": 4,
+      "catalogue": "tj-261027-pop",
+      "index": 49,
+      "reason": "Stale search results were reassigned by their actual song and performer; attached audio candidate was independently reviewed."
+    },
+    {
+      "batch": 4,
+      "catalogue": "tj-261027-pop",
+      "index": 57,
+      "reason": "Stale search results were reassigned by their actual song and performer; attached audio candidate was independently reviewed."
+    },
+    {
+      "batch": 4,
+      "catalogue": "tj-261027-pop",
+      "index": 65,
+      "reason": "Stale search results were reassigned by their actual song and performer; attached audio candidate was independently reviewed."
+    },
+    {
+      "batch": 4,
+      "catalogue": "tj-261027-pop",
+      "index": 74,
+      "reason": "Stale search results were reassigned by their actual song and performer; attached audio candidate was independently reviewed."
+    },
+    {
+      "batch": 4,
+      "catalogue": "tj-261027-pop",
+      "index": 82,
+      "reason": "Stale search results were reassigned by their actual song and performer; attached audio candidate was independently reviewed."
+    },
+    {
+      "batch": 4,
+      "catalogue": "tj-261027-pop",
+      "index": 90,
+      "reason": "Stale search results were reassigned by their actual song and performer; attached audio candidate was independently reviewed."
+    },
+    {
+      "batch": 5,
+      "catalogue": "tj-261027-pop",
+      "index": 2,
+      "reason": "Snowman/Sia evidence does not belong to Radiohead Creep."
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 300,
+      "alias": {
+        "name": "오렌지스타",
+        "url": "https://www.youtube.com/watch?v=rkaNKAvksDE",
+        "quote": "Orangestar - Surges (feat. IA & 初音ミク) Official Video — 2분 25초; Orangestar Official; description identifies music by Orangestar."
+      },
+      "reason": "The proposed alias does not literally occur in its published quote."
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 203,
+      "alias": {
+        "name": "쿠지라",
+        "url": "https://www.youtube.com/watch?v=5zUpr_pP68o",
+        "quote": "くじら - Hollows...（Official Video） — 3분 31초; くじらofficial; description: 28作目, Music & Vocal くじら."
+      },
+      "reason": "The proposed alias does not literally occur in its published quote."
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 88,
+      "alias": {
+        "name": "마룬 5",
+        "url": "https://www.youtube.com/watch?v=2cEgApe0mVw",
+        "quote": "Maroon5 - Sunday Morning 한글/가사/해석"
+      },
+      "reason": "The proposed alias does not literally occur in its published quote."
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 66,
+      "alias": {
+        "url": "https://www.youtube.com/watch?v=gy733fh-fDQ",
+        "name": "스팅",
+        "quote": "Sting - Englishman In New York 한글가사,해석"
+      },
+      "reason": "The proposed alias does not literally occur in its published quote."
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 75,
+      "alias": {
+        "url": "https://www.youtube.com/watch?v=mHc3mp6_k90",
+        "name": "아델",
+        "quote": "Adele - When We Were Young [한국어 가사/자막/번역]"
+      },
+      "reason": "The proposed alias does not literally occur in its published quote."
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 91,
+      "alias": {
+        "url": "https://www.youtube.com/watch?v=WlphAe9cgHM",
+        "name": "해리 스타일스",
+        "quote": "Harry Styles - Sign of the Times (한국어 자막/해석/가사)"
+      },
+      "reason": "The proposed alias does not literally occur in its published quote."
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 229,
+      "alias": {
+        "url": "https://www.youtube.com/watch?v=ncm5FvfJWZ4",
+        "quote": "2019.1.30 新成人ライブ1 猫かぶる / MOSHIMO Neko Kaburu",
+        "name": "네코카부루"
+      },
+      "reason": "The proposed alias does not literally occur in its published quote."
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 52,
+      "alias": {
+        "name": "레이디 가가",
+        "url": "https://www.youtube.com/watch?v=szMrDMSFQ60",
+        "quote": "Lady Gaga - Always Remember Us This Way (가사/lyrics) 3:28"
+      },
+      "reason": "The proposed alias does not literally occur in its published quote."
+    }
+  ],
+  "recordingReplacements": [
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 7,
+      "previousVideoId": "b1kQvZhQ6_M",
+      "videoId": "cQFgFD1TzWc",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=cQFgFD1TzWc",
+        "quote": "윤종신 - 좋니 [가사/Lyrics] 발매 : 2017.06.22 아티스트 : 윤종신 앨범 : LISTEN 010 좋니 작곡 : Postino 작사 : 윤종신",
+        "kind": "youtube_search",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://www.youtube.com/results?search_query=%EC%A2%8B%EB%8B%88%20%EA%B0%80%EC%82%AC",
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 27,
+      "previousVideoId": "",
+      "videoId": "DhMLZlq_8gE",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=DhMLZlq_8gE",
+        "quote": "에이치코드(H:CODE) - 꿈속에 너 Executive Producer H:CODE Producer H:CODE Compose: H:CODE Lyrics: H:CODE",
+        "kind": "youtube_search",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://www.youtube.com/results?search_query=%EA%BF%88%EC%86%8D%EC%97%90%20%EB%84%88%20%EA%B0%80%EC%82%AC",
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 45,
+      "previousVideoId": "TABbjHLEwKE",
+      "videoId": "wI4ZXD7g1WA",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=wI4ZXD7g1WA",
+        "quote": "우디 - 어제보다 슬픈 오늘 / Kpop / Lyrics / 가사",
+        "kind": "youtube_search",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://www.youtube.com/results?search_query=%EC%96%B4%EC%A0%9C%EB%B3%B4%EB%8B%A4%20%EC%8A%AC%ED%94%88%20%EC%98%A4%EB%8A%98%20%EA%B0%80%EC%82%AC",
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 87,
+      "previousVideoId": "",
+      "videoId": "iD54IrEyiK8",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=iD54IrEyiK8",
+        "quote": "YB - 흰수염고래 [가사/Lyrics] 발매일 : 2011.11.24 아티스트 : YB 앨범명 : 흰수염고래 작곡 : 윤도현, 허준",
+        "kind": "youtube_search",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://www.youtube.com/results?search_query=%ED%9D%B0%EC%88%98%EC%97%BC%EA%B3%A0%EB%9E%98%20%EA%B0%80%EC%82%AC",
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 9,
+      "previousVideoId": "",
+      "videoId": "GpUelwfBe-w",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=GpUelwfBe-w",
+        "quote": "이승기 - 삭제 [가사/Lyrics] • 웅키 • 4분 14초 • 발매일 : 2004.06.25 아티스트 : 이승기 앨범명 : 나방의 꿈 작곡가 : 싸이 (PSY) 작사가 : 싸이",
+        "kind": "youtube_search",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://www.youtube.com/results?search_query=%EC%82%AD%EC%A0%9C+%EA%B0%80%EC%82%AC",
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 38,
+      "previousVideoId": "_Ngk-DCHfD0",
+      "videoId": "xMx3R4HHrME",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=xMx3R4HHrME",
+        "quote": "한로로 - 0+0 [가사/Lyrics] • 웅키 • 3분 12초 • 발매 : 2025.08.04 아티스트 : 한로로 앨범 : 자몽살구클럽 작곡 : 한로로, Ryo, steven 작사 : 한로로",
+        "kind": "youtube_search",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://www.youtube.com/results?search_query=0%2B0+%EA%B0%80%EC%82%AC",
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 91,
+      "previousVideoId": "v6_GwXU1lkg",
+      "videoId": "jjh-jx8D520",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=jjh-jx8D520",
+        "quote": "장덕철 - 그날처럼 // 가사 • KKumu Music • 3분 53초",
+        "kind": "youtube_search",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://www.youtube.com/results?search_query=%EA%B7%B8%EB%82%A0%EC%B2%98%EB%9F%BC+%EA%B0%80%EC%82%AC",
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 10,
+      "previousVideoId": "",
+      "videoId": "9nuJKtKnGCM",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "quote": "나윤권 - 나였으면 [가사/Lyrics] #나윤권 #나였으면 발매 : 2004.09.13 아티스트 : 나윤권 앨범 : 중독 (中毒) 작곡 : 김형석 작사 : 김형석",
+        "kind": "youtube_search",
+        "retrievedEvidenceMatched": true,
+        "url": "https://www.youtube.com/watch?v=9nuJKtKnGCM",
+        "checkedAt": "2026-10-28",
+        "retrievalUrl": "https://www.youtube.com/results?search_query=%EB%82%98%EC%98%80%EC%9C%BC%EB%A9%B4%28%ED%99%A9%ED%83%9C%EC%9E%90%EC%9D%98%EC%B2%AB%EC%82%AC%EB%9E%91OST%29%20%EA%B0%80%EC%82%AC"
+      }
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 39,
+      "previousVideoId": "WYy2fROj7uU",
+      "videoId": "c-5aOVglCUo",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "quote": "한동근 - 그대라는 사치 [가사/Lyrics] #한동근 #그대라는사치 발매 : 2016.08.24 아티스트 : 한동근 앨범 : The 3rd Digital Single",
+        "kind": "youtube_search",
+        "retrievedEvidenceMatched": true,
+        "url": "https://www.youtube.com/watch?v=c-5aOVglCUo",
+        "checkedAt": "2026-10-28",
+        "retrievalUrl": "https://www.youtube.com/results?search_query=%EA%B7%B8%EB%8C%80%EB%9D%BC%EB%8A%94%20%EC%82%AC%EC%B9%98%20%EA%B0%80%EC%82%AC"
+      }
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 96,
+      "previousVideoId": "SiCbj3z3KK4",
+      "videoId": "iYvYpvG0FFA",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "quote": "버즈(Buzz) - 나에게로 떠나는 여행 [가사/Lyrics] #버즈 #Buzz #나에게로떠나는여행 발매 : 2005.03.03 아티스트 : 버즈",
+        "retrievalUrl": "https://www.youtube.com/results?search_query=%EB%82%98%EC%97%90%EA%B2%8C%EB%A1%9C%20%EB%96%A0%EB%82%98%EB%8A%94%20%EC%97%AC%ED%96%89%20%EA%B0%80%EC%82%AC",
+        "checkedAt": "2026-10-28",
+        "retrievedEvidenceMatched": true,
+        "kind": "youtube_search",
+        "url": "https://www.youtube.com/watch?v=iYvYpvG0FFA"
+      }
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 11,
+      "previousVideoId": "va5rf20Un24",
+      "videoId": "CiF5ikqrnRI",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=CiF5ikqrnRI",
+        "kind": "youtube_search",
+        "retrievalUrl": "https://www.youtube.com/results?search_query=%EC%96%B4%EB%94%94%EC%97%90%EB%8F%84+%EA%B0%80%EC%82%AC",
+        "quote": "엠씨더맥스(M.C the MAX) - 어디에도 [가사/Lyrics]",
+        "checkedAt": "2026-10-28",
+        "retrievedEvidenceMatched": true
+      }
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 40,
+      "previousVideoId": "3DOkxQ3HDXE",
+      "videoId": "boPnvWOTtgo",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=boPnvWOTtgo",
+        "kind": "youtube_search",
+        "retrievalUrl": "https://www.youtube.com/results?search_query=%EC%95%84%EB%A1%9C%ED%95%98%20%EC%A1%B0%EC%A0%95%EC%84%9D%20%EA%B0%80%EC%82%AC",
+        "quote": "조정석 - 아로하 [슬기로운 의사생활 OST] [가사/Lyrics]",
+        "checkedAt": "2026-10-28",
+        "retrievedEvidenceMatched": true
+      }
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 77,
+      "previousVideoId": "tfmwbxBKPh0",
+      "videoId": "_2t30SD0xQo",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=_2t30SD0xQo",
+        "kind": "youtube_search",
+        "retrievalUrl": "https://www.youtube.com/results?search_query=%EB%AA%A8%EB%A5%B4%EC%8B%9C%EB%82%98%EC%9A%94%20%EC%A1%B0%EC%A7%B8%EC%A6%88%20%EA%B0%80%EC%82%AC",
+        "quote": "조째즈 - 모르시나요 [모르시나요]ㅣ가사/Lyrics",
+        "checkedAt": "2026-10-28",
+        "retrievedEvidenceMatched": true
+      }
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 97,
+      "previousVideoId": "RaTCjhIS4AY",
+      "videoId": "fO36kiw-bUE",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=fO36kiw-bUE",
+        "kind": "youtube_search",
+        "retrievalUrl": "https://www.youtube.com/results?search_query=%EB%B4%84%20%EB%82%B4%EC%9D%8C%EB%B3%B4%EB%8B%A4%20%EB%84%88%EB%A5%BC%20%EA%B9%80%EB%82%98%EC%98%81%20%EA%B0%80%EC%82%AC",
+        "quote": "김나영 - 봄 내음보다 너를 / 가사",
+        "checkedAt": "2026-10-28",
+        "retrievedEvidenceMatched": true
+      }
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 18,
+      "previousVideoId": "-g0MOHe-Lik",
+      "videoId": "ywYUUJYkDqg",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "quote": "고경표 - ...사랑했잖아...(2024) // 가사 4분 1초 — KKumu Music",
+        "retrievalUrl": "https://www.youtube.com/results?search_query=...%EC%82%AC%EB%9E%91%ED%96%88%EC%9E%96%EC%95%84...%282024%29%20%EA%B0%80%EC%82%AC",
+        "kind": "youtube_search",
+        "checkedAt": "2026-10-27T15:58:20Z",
+        "url": "https://www.youtube.com/watch?v=ywYUUJYkDqg",
+        "retrievedEvidenceMatched": true
+      }
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 42,
+      "previousVideoId": "h0KIWaUEIgQ",
+      "videoId": "eKtSbXHaqLM",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "quote": "한로로 - 사랑하게 될 거야 [가사 | Lyrics] 2:45; description: 아티스트: 한로로 노래: 사랑하게 될 거야 앨범: 이상비행",
+        "retrievalUrl": "https://www.youtube.com/results?search_query=%EC%82%AC%EB%9E%91%ED%95%98%EA%B2%8C%20%EB%90%A0%20%EA%B1%B0%EC%95%BC%20%EA%B0%80%EC%82%AC",
+        "kind": "youtube_search",
+        "checkedAt": "2026-10-27T15:58:20Z",
+        "url": "https://www.youtube.com/watch?v=eKtSbXHaqLM",
+        "retrievedEvidenceMatched": true
+      }
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 98,
+      "previousVideoId": "yY7dRwJnJZ0",
+      "videoId": "k6rJS0ek-a4",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "quote": "허각(HuhGak) - Hello [가사/Lyrics] 4:13; description: #허각 #Hello",
+        "retrievalUrl": "https://www.youtube.com/results?search_query=Hello%20%ED%97%88%EA%B0%81%20%EA%B0%80%EC%82%AC",
+        "kind": "youtube_search",
+        "checkedAt": "2026-10-27T15:58:20Z",
+        "url": "https://www.youtube.com/watch?v=k6rJS0ek-a4",
+        "retrievedEvidenceMatched": true
+      }
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 23,
+      "previousVideoId": "pNi9PjmbUrI",
+      "videoId": "niazCi1AqqA",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=niazCi1AqqA",
+        "quote": "한로로 [입춘] 나의 발화(發花)를 기록하기 위한 곡입니다. 불확실한 봄맞이를 결심해 준 그대에게 이 곡을 전합니다. [Credit] Lyrics by 한로로 Composed by 한로로 Produce & Arranged by 이지훈 Guitar & Bass 이지훈 Drums 김동현 Mixed by 강은구 @eunstudio Mastered by bk! at AB Room ※ 본 영상은 가사 자막 영상입니다.",
+        "kind": "youtube_description",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://www.youtube.com/results?search_query=%EC%9E%85%EC%B6%98%20%EA%B0%80%EC%82%AC",
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 43,
+      "previousVideoId": "DxS-64T7xA4",
+      "videoId": "YyKSZARBcGo",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=YyKSZARBcGo",
+        "quote": "발매 : 2016.02.21 아티스트 : 김필 앨범 : 복면가왕 47회 작곡 : 김태원 작사 : 강은경 편곡 : 팻뮤직",
+        "kind": "youtube_description",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://www.youtube.com/results?search_query=다시+사랑한다면+김필+가사",
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 79,
+      "previousVideoId": "ZtbopMxY-2Y",
+      "videoId": "Y7uKz3g-k98",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=Y7uKz3g-k98",
+        "quote": "사랑참…(가사Lyrics) - 디셈버\n아티스트 - 디셈버 (December) 앨범명 - Dear My Lover 장르 - 가요 / 발라드",
+        "kind": "youtube_search",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://www.youtube.com/results?search_query=사랑참+디셈버+가사",
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 1,
+      "previousVideoId": "NfDeBiVy_IY",
+      "videoId": "J0TwJpMmbwc",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=J0TwJpMmbwc",
+        "quote": "엠씨더맥스(M.C the MAX) - 행복하지 말아요 [가사/Lyrics]",
+        "kind": "youtube_search",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 8,
+      "previousVideoId": "7mDDM0eBWR0",
+      "videoId": "q4POz-VZQrQ",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=q4POz-VZQrQ",
+        "quote": "소연 - 퇴사할게여 [끝내주는 인생]ㅣ가사/Lyrics",
+        "kind": "youtube_search",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 26,
+      "previousVideoId": "ZhI9tQP4Abw",
+      "videoId": "1-Lm2LUR8Ss",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=1-Lm2LUR8Ss",
+        "quote": "버즈(Buzz) - 가시 [가사/Lyrics]",
+        "kind": "youtube_search",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 44,
+      "previousVideoId": "NwO0H2bUhSQ",
+      "videoId": "JZu0ldjo-3Q",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=JZu0ldjo-3Q",
+        "quote": "SS501 - 내 머리가 나빠서 [꽃보다 남자 OST] [가사/Lyrics]",
+        "kind": "youtube_search",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 52,
+      "previousVideoId": "VVO05mYGFY8",
+      "videoId": "8i_8532Vjmk",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=8i_8532Vjmk",
+        "quote": "태연 (TAEYEON) - 만찬가 [가사 | Lyrics]",
+        "kind": "youtube_search",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 74,
+      "previousVideoId": "CBXFCnzhjZs",
+      "videoId": "G-QwCal8Vgo",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=G-QwCal8Vgo",
+        "quote": "로이킴 - 봄이 와도 [가사/Lyrics]",
+        "kind": "youtube_search",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 78,
+      "previousVideoId": "JOBURHZFQBI",
+      "videoId": "OPiqXf9gwFc",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=OPiqXf9gwFc",
+        "quote": "로이킴 - 내게 사랑이 뭐냐고 물어본다면 [가사/Lyrics]",
+        "kind": "youtube_search",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 84,
+      "previousVideoId": "9XttLI0oH0I",
+      "videoId": "VnqgmOJaMGc",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=VnqgmOJaMGc",
+        "quote": "RESCENE (리센느) - LOVE ATTACK(러브어택) [가사 | Lyrics]",
+        "kind": "youtube_search",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 88,
+      "previousVideoId": "",
+      "videoId": "3_nnLq4D3tc",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=3_nnLq4D3tc",
+        "quote": "성시경 - 희재 [국화꽃 향기 OST] [가사/Lyrics]",
+        "kind": "youtube_search",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 21,
+      "previousVideoId": null,
+      "videoId": "PLsxz451Iuk",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "kind": "youtube_search",
+        "retrievalUrl": "https://www.youtube.com/results?search_query=%E3%83%AB%E3%82%AB%E3%83%AB%E3%82%AB%E2%98%85%20%E3%83%8A%E3%82%A4%E3%83%88%E3%83%95%E3%82%A3%E3%83%BC%E3%83%90%E3%83%BC%20%EA%B0%80%EC%82%AC",
+        "url": "https://www.youtube.com/watch?v=PLsxz451Iuk",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28",
+        "quote": "루카루카★나이트 피버 - samfree / 메구리네 루카 [한국어해석/독음/일본어 자막]"
+      }
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 35,
+      "previousVideoId": "jhOVibLEDhA",
+      "videoId": "DtqOv9aemNo",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "quote": "호시노 겐 - 사랑(恋, koi) [도망치는 것은 부끄럽지만 도움이 된다 OST/가사/발음/한글 자막/해석]",
+        "retrievalUrl": "https://www.youtube.com/results?search_query=%E6%81%8B%28%E3%83%89%E3%83%A9%E3%83%9E%27%E9%80%83%E3%81%92%E3%82%8B%E3%81%AF%E6%81%A5%E3%81%A0%E3%81%8C%E5%BD%B9%E3%81%AB%E7%AB%8B%E3%81%A4%27%20OST%29%20%EA%B0%80%EC%82%AC",
+        "checkedAt": "2026-10-28",
+        "retrievedEvidenceMatched": true,
+        "kind": "youtube_search",
+        "url": "https://www.youtube.com/watch?v=DtqOv9aemNo"
+      }
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 50,
+      "previousVideoId": "Fve_lHIPa-I",
+      "videoId": "IRlCBydj6_k",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=IRlCBydj6_k",
+        "quote": "TK from 린토시테시구레 - unravel [가사/발음/해석]\nTJ : 28153 / 금영 : 43825 도쿄 구울 OP 원곡 : https://www.youtube.com/watch?v=C0ppulkmXPw\nUnravel · TK from Ling tosite sigure · Fantastic Magic",
+        "kind": "youtube_description",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 3,
+      "previousVideoId": "UM9XNpgrqVk",
+      "videoId": "3PVf3JbCFo4",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=3PVf3JbCFo4",
+        "quote": "Vaundy - 괴수의 꽃노래(怪獣の花唄) [가사/발음/해석]",
+        "kind": "youtube_description",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 16,
+      "previousVideoId": "7HgJIAUtICU",
+      "videoId": "3ZKVP-9eFO0",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=3ZKVP-9eFO0",
+        "quote": "Vaundy - 무희(踊り子, Odoriko) [가사/발음/한글 자막/해석]",
+        "kind": "youtube_description",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 29,
+      "previousVideoId": "XogSflwXgpw",
+      "videoId": "oNYa1ErkgDc",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=oNYa1ErkgDc",
+        "quote": "Orangestar feat. IA - 내일의 밤하늘 초계반(アスノヨゾラ哨戒班) [가사/발음/해석]",
+        "kind": "youtube_description",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 4,
+      "previousVideoId": "cbqvxDTLMps",
+      "videoId": "bkVp-B-wDH4",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=bkVp-B-wDH4",
+        "quote": "백 년을 지나 도착한 별빛처럼⭐️: 유우리 - 베텔기우스(BETELGEUSE) [가사/발음/한글 자막/해석]",
+        "kind": "youtube_description",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 73,
+      "previousVideoId": "Jy-QS27q7lA",
+      "videoId": "tXHXkDqn_Ic",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=tXHXkDqn_Ic",
+        "quote": "미세스 그린애플 - 케세라세라(ケセラセラ) [가사/한글 자막/해석]",
+        "kind": "youtube_description",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 77,
+      "previousVideoId": null,
+      "videoId": "Oi28j-pfBsc",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=Oi28j-pfBsc",
+        "quote": "요네즈 켄시 - 사신(死神) [가사/발음/해석]\nTJ : 52430 / 금영 : 원곡 : https://www.youtube.com/watch?v=L_pRTyuZ9fk\nShinigami · Kenshi Yonezu · Pale Blue",
+        "kind": "youtube_description",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 15,
+      "previousVideoId": "q0hyYWKXF0Q",
+      "videoId": "NIvAkb21Y_M",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=NIvAkb21Y_M",
+        "quote": "Dance Monkey - 톤스 앤 아이 (Tones and I) [가사 해석/번역, 영어 한글 발음]",
+        "kind": "youtube_search",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://www.youtube.com/results?search_query=Dance%20Monkey%20%EA%B0%80%EC%82%AC",
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 75,
+      "previousVideoId": "tjv0zFFKmwk",
+      "videoId": "mHc3mp6_k90",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "checkedAt": "2026-10-28",
+        "retrievedEvidenceMatched": true,
+        "url": "https://www.youtube.com/watch?v=mHc3mp6_k90",
+        "retrievalUrl": "https://www.youtube.com/results?search_query=When%20We%20Were%20Young%20%EA%B0%80%EC%82%AC",
+        "quote": "Adele - When We Were Young [한국어 가사/자막/번역]",
+        "kind": "youtube_search"
+      }
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 83,
+      "previousVideoId": "RRKJiM9Njr8",
+      "videoId": "wjdKgR5coOw",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=wjdKgR5coOw",
+        "quote": "My Chemical Romance - Welcome to the Black Parade (한국어 가사/해석/자막)",
+        "kind": "youtube_search",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 52,
+      "previousVideoId": "5vheNbQlsyU",
+      "videoId": "szMrDMSFQ60",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "quote": "Lady Gaga - Always Remember Us This Way (가사/lyrics) 3:28",
+        "retrievalUrl": "https://www.youtube.com/results?search_query=Always%20Remember%20Us%20This%20Way%20Lady%20Gaga%20%EA%B0%80%EC%82%AC",
+        "kind": "youtube_search",
+        "checkedAt": "2026-10-27T15:58:20Z",
+        "url": "https://www.youtube.com/watch?v=szMrDMSFQ60",
+        "retrievedEvidenceMatched": true
+      }
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 25,
+      "previousVideoId": null,
+      "videoId": "YKuHdOxj46I",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=YKuHdOxj46I",
+        "quote": "Keyshia Cole - Love (Lyrics)",
+        "kind": "youtube_search",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 29,
+      "previousVideoId": "dT2owtxkU8k",
+      "videoId": "hB2veGBjoF0",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=hB2veGBjoF0",
+        "quote": "Shawn Mendes (숀 멘데스) - There's Nothing Holdin' Me Back (가사/해석/lyrics)",
+        "kind": "youtube_search",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 37,
+      "previousVideoId": "fJ9rUzIMcZQ",
+      "videoId": "SEKB7DTsFz8",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=SEKB7DTsFz8",
+        "quote": "Queen - Bohemian Rhapsody(가사/번역)\nOnly translated to Korean lyrics. All the parts of the song belongs to Queen and the music producing company. Original video link : Bohemian Rhapsody (Remastered 2011)",
+        "kind": "youtube_description",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 74,
+      "previousVideoId": "ulOb9gIGGd0",
+      "videoId": "_mlWHMHQ8f0",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=_mlWHMHQ8f0",
+        "quote": "Westlife - My Love (Lyrics)",
+        "kind": "youtube_search",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 78,
+      "previousVideoId": null,
+      "videoId": "y82-7klxNbQ",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=y82-7klxNbQ",
+        "quote": "Too Good to Say Goodbye - 브루노 마스 (Bruno Mars) 가사 한글 해석",
+        "kind": "youtube_search",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 79,
+      "previousVideoId": "Ob7vObnFUJc",
+      "videoId": "dGwRtjDgsAg",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=dGwRtjDgsAg",
+        "quote": "Beyonce (비욘세) - Love On Top (가사/해석/lyrics)",
+        "kind": "youtube_description",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 47,
+      "previousVideoId": "BxuY9FET9Y4",
+      "videoId": "R71KeUoA-8U",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=R71KeUoA-8U",
+        "quote": "Charlie Puth(찰리 푸스) - One Call Away [가사/Lyrics] 발매 : 2016.11.11 아티스트 : Charlie Puth",
+        "kind": "youtube_description",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 72,
+      "previousVideoId": "EkHTsc9PU2A",
+      "videoId": "NLfaLVgSRaY",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=NLfaLVgSRaY",
+        "quote": "Jason Mraz - I'm Yours (한국어 자막/해석/가사)",
+        "kind": "youtube_description",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 48,
+      "previousVideoId": "rtOvBOTyX00",
+      "videoId": "17EIEqosI_s",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=17EIEqosI_s",
+        "quote": "Christina Perri - A Thousand Years [가사/해석]",
+        "kind": "youtube_description",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 73,
+      "previousVideoId": "450p7goxZqg",
+      "videoId": "sY1vJLf0Juo",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=sY1vJLf0Juo",
+        "quote": "John Legend - All of me (한국어 가사/해석/자막)",
+        "kind": "youtube_description",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 89,
+      "previousVideoId": "bo_efYhYU2A",
+      "videoId": "u2fNz3_YnDo",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=u2fNz3_YnDo",
+        "quote": "Lady Gaga & Bradley Cooper - Shallow [가사해석/번역]",
+        "kind": "youtube_description",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 27,
+      "previousVideoId": "dvgZkm1xWPE",
+      "videoId": "R8UAFE21BN4",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=R8UAFE21BN4",
+        "quote": "Coldplay - Viva La Vida (한글 가사 해석)",
+        "kind": "youtube_description",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 43,
+      "previousVideoId": "dTwj7PhpY9M",
+      "videoId": "DrrRMdU7KpI",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=DrrRMdU7KpI",
+        "quote": "Painkiller - 루엘(Ruel) [가사 해석/번역, 영어 한글 발음]",
+        "kind": "youtube_description",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 76,
+      "previousVideoId": "ZNra8eK0K6k",
+      "videoId": "Iuc-XRxeT74",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=Iuc-XRxeT74",
+        "quote": "Alessia Cara - How Far I'll Go (Lyrics)",
+        "kind": "youtube_description",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 56,
+      "previousVideoId": "JWeJHN5P-E8",
+      "videoId": "6C33PKdV710",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=6C33PKdV710",
+        "quote": "5 Seconds of Summer - Teeth (Lyric Video)",
+        "kind": "youtube_search",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 97,
+      "previousVideoId": "lY5V4hSLWY8",
+      "videoId": "VvNJUBYDM8w",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=VvNJUBYDM8w",
+        "quote": "정규앨범 나옴 💎 [가사 번역] 브루노 마스(Bruno Mars) - Risk It All\n아티스트 : Bruno Mars 제목 : Risk It All",
+        "kind": "youtube_description",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 46,
+      "previousVideoId": "GeMFeUKvjm0",
+      "videoId": "Pd6EzE5GuZE",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=Pd6EzE5GuZE",
+        "quote": "[가사 | 발음] n-buna - 꽃내림 feat.하츠네 미쿠 — 5분; 베타갤럭틱; description: music by n-buna, original song/mv link.",
+        "kind": "youtube_search",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://www.youtube.com/results?search_query=%EA%BD%83%EB%82%B4%EB%A6%BC%20%EA%B0%80%EC%82%AC",
+        "checkedAt": "2026-10-27T15:58:28.8028525Z"
+      }
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 416,
+      "previousVideoId": "KOeY7WRNWKk",
+      "videoId": "GuKlvb0INHQ",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "quote": "[ 발음 ] 노매드 - 벌룬 ( feat. v flower ) 3:52; description links バルーン source",
+        "retrievalUrl": "https://www.youtube.com/results?search_query=%EB%85%B8%EB%A7%A4%EB%93%9C%20%EB%B2%8C%EB%A3%AC%20v%20flower%20%EA%B0%80%EC%82%AC",
+        "kind": "youtube_search",
+        "checkedAt": "2026-10-27T15:58:20Z",
+        "url": "https://www.youtube.com/watch?v=GuKlvb0INHQ",
+        "retrievedEvidenceMatched": true
+      }
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 534,
+      "previousVideoId": "JBfPcDQ2heg",
+      "videoId": "rB2Ii1LcE2Y",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=rB2Ii1LcE2Y",
+        "quote": "【Hatsune Miku】Kurumi☆Ponchio【Legendado / Subtitled】\nMusic, lyrics: Madaco Illust: Kojima\nOriginal Video: Miku Hatsune \"KURUMI☆PONCHIO\" https://www.youtube.com/watch?v=fIjsGF61tWo\n(まだ仔 Madaco 小島 Kojima VOCALOID ボーカロイド ボカロ 初音ミク Hatsune Miku Dino Kun くるみ☆ぽんちお Kurumi☆Ponchio)",
+        "kind": "youtube_description",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      },
+      "supersededCandidateVideoId": "MhzCkt8pZXw"
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 287,
+      "previousVideoId": "EahYs-8tTjQ",
+      "videoId": "d8g9H88BAeE",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=d8g9H88BAeE",
+        "quote": "[자막] 윤회(リンネ) / 하치 / 初音ミク (유튜브/성인) https://www.youtube.com/watch?v=EahYs-8tTjQ",
+        "kind": "youtube_description",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "index": 15,
+      "previousVideoId": "7sKMLQlSX58",
+      "videoId": "HRC8kVVyZ2o",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=HRC8kVVyZ2o",
+        "quote": "ハチ(하치) 『ドーナツホール』(도넛홀) | 가사/번역/발음 | J-pop",
+        "kind": "youtube_description",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 199,
+      "previousVideoId": "KIyc-yYf5eY",
+      "videoId": "kZi7oxVOesA",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=kZi7oxVOesA",
+        "quote": "세컨드 백커(Second Backer) - 개와 바보 고양이(犬とバカ猫) [가사/발음/한글 자막/해석]\n[원곡] https://www.youtube.com/watch?v=8yqzI4KcoZY\n음악: 犬とバカ猫 · Secondbacker · 犬とバカ猫",
+        "kind": "youtube_description",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 181,
+      "previousVideoId": "wMTCTKo1lac",
+      "videoId": "QbvRwf75LSk",
+      "sourceType": "official_album_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=QbvRwf75LSk",
+        "quote": "Provided to YouTube by Ditto Music\nCoffee and Cigarette · Shiho Tamiya\n今夜Coffee and Cigarettes\n℗ ST Record\nReleased on: 2026-09-05\nLead Vocals: Shiho Tamiya\nProducer: Shiho Tamiya\nComposer: Shiho Tamiya\nAuto-generated by YouTube.",
+        "kind": "youtube_description",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "index": 96,
+      "previousVideoId": "LkKmIlTiVj8",
+      "videoId": "OznjBPOzDAs",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=OznjBPOzDAs",
+        "quote": "쿠라하시 요에코 - 가라앉는 거리(沈める街) [가사/발음/해석]",
+        "kind": "youtube_description",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 28,
+      "previousVideoId": "Rl22BJ5TxbM",
+      "videoId": "Rl22BJ5TxbM",
+      "sourceType": "official_album_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=Rl22BJ5TxbM",
+        "quote": "Provided to YouTube by Kakao Entertainment\nUphill (Live) (오르막길) · Yoon Jong Shin\nMonthly Project 2015 Yoon Jong Shin\n℗ 2024 MONTHLY YOONJONGSHIN,under license to Kakao Entertainment\nReleased on: 2016-01-20\nAuthor: 윤종신\nComposer: 윤종신\nComposer: 이근호\nArranger: 조정치\nAuto-generated by YouTube.",
+        "kind": "youtube_description",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 71,
+      "previousVideoId": "llsR2eTdlI4",
+      "videoId": "ZF49-rKzTLk",
+      "sourceType": "subtitled_audio",
+      "evidence": {
+        "url": "https://www.youtube.com/watch?v=ZF49-rKzTLk",
+        "quote": "CORTIS (코르티스) - REDRED [가사/Lyrics]\n발매 : 2026.04.20 아티스트 : CORTIS (코르티스) 앨범 : GREENGREEN 작곡 : Supreme Boi, ''hitman''bang, Hiss noise, 마틴, Jasper Harris, Skillies, 성현, 건호, skai, 제임스, 주훈, Derrick Milano, Jacob Aaron (THE HUB) 작사 : Supreme Boi, ''hitman''bang, Hiss noise, 마틴, Jasper Harris, Skillies, 성현, 건호, skai, 제임스, 주훈, Derrick Milano, Jacob Aaron (THE HUB)",
+        "kind": "youtube_description",
+        "retrievedEvidenceMatched": true,
+        "checkedAt": "2026-10-28"
+      }
+    }
+  ],
+  "limitations": [
+    "No blanket auditory dialogue-free certification was performed. Visible release/version, artist, lyrics-upload description and duration were checked.",
+    "Rows without published Korean usage or exact writer/recording identity remain pending.",
+    "Luna workers hit HTTP 429; parent reviewed and completed the unfinished searches."
+  ],
+  "currentCounts": [
+    {
+      "catalogue": "tj-261027-domestic",
+      "playlistId": "tj-261027-domestic",
+      "entries": 100,
+      "reviewed": 100,
+      "playable": 100,
+      "downloaded": 100,
+      "reviewRequired": 0,
+      "namingReviewRequired": 0,
+      "selectedNamingReviewRequired": 0,
+      "audioSourceReviewRequired": 0,
+      "audioBytes": 151965091
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "playlistId": "tj-261027-japan",
+      "entries": 100,
+      "reviewed": 100,
+      "playable": 100,
+      "downloaded": 100,
+      "reviewRequired": 0,
+      "namingReviewRequired": 22,
+      "selectedNamingReviewRequired": 22,
+      "audioSourceReviewRequired": 0,
+      "audioBytes": 148028396
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "playlistId": "tj-261027-pop",
+      "entries": 100,
+      "reviewed": 98,
+      "playable": 98,
+      "downloaded": 100,
+      "reviewRequired": 2,
+      "namingReviewRequired": 86,
+      "selectedNamingReviewRequired": 84,
+      "audioSourceReviewRequired": 0,
+      "audioBytes": 142815035
+    },
+    {
+      "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "playlistId": "PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+      "entries": 565,
+      "reviewed": 541,
+      "playable": 541,
+      "downloaded": 557,
+      "reviewRequired": 24,
+      "namingReviewRequired": 46,
+      "selectedNamingReviewRequired": 41,
+      "audioSourceReviewRequired": 0,
+      "audioBytes": 756489152
+    },
+    {
+      "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+      "playlistId": "japan-zeom",
+      "entries": 289,
+      "reviewed": 252,
+      "playable": 252,
+      "downloaded": 288,
+      "reviewRequired": 37,
+      "namingReviewRequired": 31,
+      "selectedNamingReviewRequired": 0,
+      "audioSourceReviewRequired": 3,
+      "audioBytes": 387040525
+    }
+  ]
+}

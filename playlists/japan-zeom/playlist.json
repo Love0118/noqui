@@ -182,6 +182,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=Jg73p9udbAQ",
         "title": "블링 뱅 뱅 본",
         "tags": [
+          "크리피 너츠",
           "블링 뱅 뱅 본",
           "BlingBangBangBorn",
           "RShitei",
@@ -611,6 +612,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=d6NPs3OQIAU",
         "title": "잔향산가",
         "tags": [
+          "에메",
           "잔향산가",
           "Zankyosanka",
           "Aimerrhythm",
@@ -649,6 +651,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=k0g04t7ZeSw",
         "title": "괴물",
         "tags": [
+          "요아소비",
           "괴물",
           "Ayase",
           "아야세"
@@ -686,6 +689,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=wNjvuRZtQeI",
         "title": "인페르노",
         "tags": [
+          "미세스 그린애플",
           "인페르노",
           "Inferno",
           "Motoki Ohmori",
@@ -781,7 +785,6 @@
         "title": "혁명도중",
         "tags": [
           "혁명도중",
-          "革命道中 On The Way",
           "Shin Sakiura"
         ]
       },
@@ -944,6 +947,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=DO_aopUeFnw",
         "title": "라일락",
         "tags": [
+          "미세스 그린애플",
           "라일락",
           "Lilac",
           "Motoki Ohmori",
@@ -1018,6 +1022,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=rspzC40lGVk",
         "title": "태양이 떠오르지 않는 세계",
         "tags": [
+          "에메",
           "태양이 떠오르지 않는 세계",
           "Go Shiina",
           "Hikaru Kondo ufotable"
@@ -1592,6 +1597,24 @@
     },
     {
       "song": {
+        "id": "b6b2ece0-8d94-5240-b5e0-bd5225cc4d5a",
+        "youtubeUrl": "https://www.youtube.com/watch?v=OznjBPOzDAs",
+        "title": "가라앉는 거리",
+        "tags": [
+          "쿠라하시 요에코",
+          "가라앉는 거리",
+          "Yoeko Kurahashi"
+        ]
+      },
+      "audio": {
+        "path": "audio/OznjBPOzDAs.ogg",
+        "sha256": "76f809f96d45dcb189624390fbfbde56ecf15e2cbfceb8235026fe8c306e8104",
+        "byteLength": 1100330,
+        "durationMs": 180871
+      }
+    },
+    {
+      "song": {
         "id": "b20b9309-55b2-511b-8c21-822a396e6458",
         "youtubeUrl": "https://www.youtube.com/watch?v=ZeVQdlOQZ20",
         "title": "덧없는 여름",
@@ -1742,7 +1765,6 @@
         "title": "수고했어 여름",
         "tags": [
           "수고했어 여름",
-          "おつかれSUMMER",
           "Tomoyuki Tanaka",
           "Masayuki Kumahara"
         ]
@@ -1761,7 +1783,6 @@
         "title": "막차는 25시",
         "tags": [
           "막차는 25시",
-          "最終列車は25時",
           "Taiyo Someya"
         ]
       },
@@ -1832,6 +1853,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=OEPmMz2Y0c8",
         "title": "과호흡",
         "tags": [
+          "래드윔프스",
           "과호흡",
           "Hyperventilation",
           "Yojiro Noda"
@@ -2016,7 +2038,6 @@
         "title": "그런 bitter 한 이야기",
         "tags": [
           "그런 bitter 한 이야기",
-          "そんなbitterな話",
           "Vaundy",
           "바운디"
         ]
@@ -2309,6 +2330,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=mJ1N7-HyH1A",
         "title": "밤을 달리다",
         "tags": [
+          "요아소비",
           "밤을 달리다",
           "Into The Night",
           "AYASE",
@@ -2379,6 +2401,22 @@
     },
     {
       "song": {
+        "id": "92980f2d-17fe-594f-b317-0e77a326a8ec",
+        "youtubeUrl": "https://www.youtube.com/watch?v=qyFUWScKLoY",
+        "title": "부르봉",
+        "tags": [
+          "부르봉"
+        ]
+      },
+      "audio": {
+        "path": "audio/qyFUWScKLoY.ogg",
+        "sha256": "d05f87964dea3b987da20ee3182b0eff9b3e082d5275c22ad264fb86dfebc0c2",
+        "byteLength": 1377761,
+        "durationMs": 225007
+      }
+    },
+    {
+      "song": {
         "id": "c9e08f56-ffc7-5bdc-a4f3-5c37ebfc669a",
         "youtubeUrl": "https://www.youtube.com/watch?v=RUSBABcGf2c",
         "title": "등불",
@@ -2403,7 +2441,6 @@
         "title": "만찬가",
         "tags": [
           "만찬가",
-          "晩餐歌 Bansanka",
           "tuki"
         ]
       },
@@ -2456,6 +2493,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=UE5-ydAIqIE",
         "title": "도넛 홀",
         "tags": [
+          "하치",
+          "요네즈 켄시",
           "도넛 홀",
           "Doughnut Hole Cover",
           "Doughnut Hole",
@@ -2660,6 +2699,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=WHdL2vstvL8",
         "title": "말해 줘",
         "tags": [
+          "나부나",
           "말해 줘",
           "Nbuna"
         ]
@@ -2860,6 +2900,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=Mw66DyjQxBI",
         "title": "전전전세",
         "tags": [
+          "래드윔프스",
           "전전전세",
           "Zenzenzense Original Version",
           "Zenzenzense",
@@ -3007,7 +3048,6 @@
         "title": "괴수의 꽃노래",
         "tags": [
           "괴수의 꽃노래",
-          "怪獣の花唄 replica",
           "Vaundy",
           "바운디"
         ]
@@ -3248,7 +3288,6 @@
         "title": "1000일간",
         "tags": [
           "1000일간",
-          "1000日間",
           "noa"
         ]
       },
@@ -3341,7 +3380,6 @@
         "title": "역광",
         "tags": [
           "역광",
-          "逆光 replica",
           "Vaundy",
           "바운디"
         ]
@@ -3415,6 +3453,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=9SO84HCMgeM",
         "title": "달마 그랑프리",
         "tags": [
+          "래드윔프스",
           "달마 그랑프리",
           "Darma grand prix",
           "Yojiro Noda"
@@ -3487,12 +3526,30 @@
     },
     {
       "song": {
+        "id": "a61f03f3-6d44-572c-b4b2-df641f1a0f5d",
+        "youtubeUrl": "https://www.youtube.com/watch?v=y-Dj5ydMCIc",
+        "title": "조각",
+        "tags": [
+          "조각",
+          "Kakera",
+          "Lavt"
+        ]
+      },
+      "audio": {
+        "path": "audio/y-Dj5ydMCIc.ogg",
+        "sha256": "e0007e4079715c6552baacbfda61b7611e3d69a364938e34f2acc49af5f8c8a9",
+        "byteLength": 976075,
+        "durationMs": 160474
+      }
+    },
+    {
+      "song": {
         "id": "3b266bb0-a2be-5c8c-8b8c-6247c4d8f196",
         "youtubeUrl": "https://www.youtube.com/watch?v=_ltbn_kbt0k",
         "title": "베란다",
         "tags": [
           "베란다",
-          "Véranda",
+          "Vranda",
           "Kitaro Taniguchi"
         ]
       },
@@ -3544,7 +3601,6 @@
         "title": "가짜 우리",
         "tags": [
           "가짜 우리",
-          "ニセモノの檻 feat 重音テト",
           "도영 권"
         ]
       },
@@ -3632,6 +3688,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=nSCqFvQesb0",
         "title": "너에게 100퍼센트",
         "tags": [
+          "나카타 야스타카",
           "너에게 100퍼센트",
           "Kimini 100 Percent",
           "Yasutaka Nakata"
@@ -3650,6 +3707,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=2eNEQ0cQtkI",
         "title": "축복",
         "tags": [
+          "요아소비",
           "축복",
           "Ayase",
           "아야세"
@@ -3881,6 +3939,24 @@
     },
     {
       "song": {
+        "id": "bed89a53-7c1f-523e-a61f-73fb489a4a87",
+        "youtubeUrl": "https://www.youtube.com/watch?v=8WQdSOXDedQ",
+        "title": "녹는키스",
+        "tags": [
+          "녹는키스",
+          "Torokeru kiss",
+          "susumu"
+        ]
+      },
+      "audio": {
+        "path": "audio/8WQdSOXDedQ.ogg",
+        "sha256": "c8b67fbbc1b2d6427b10b22cba08ce47b1e4c8bb1971ce4c562876e03f45ef9f",
+        "byteLength": 992857,
+        "durationMs": 162207
+      }
+    },
+    {
+      "song": {
         "id": "7f1ba33c-eda5-5189-a703-b3476b7830b5",
         "youtubeUrl": "https://www.youtube.com/watch?v=Vtv1HsDFUio",
         "title": "이 노래를 타고",
@@ -3974,7 +4050,6 @@
         "title": "융해 sink",
         "tags": [
           "융해 sink",
-          "融解sink",
           "Vaundy",
           "바운디"
         ]
@@ -4100,6 +4175,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=vqsdUXUxdq8",
         "title": "브레인",
         "tags": [
+          "카나리아",
           "브레인",
           "BRAIN",
           "Kanaria"
@@ -4119,8 +4195,6 @@
         "title": "소녀 A",
         "tags": [
           "소녀 A",
-          "少女A feat 鏡音リン",
-          "少女A",
           "siinamota",
           "시이나 모타"
         ]
@@ -4253,6 +4327,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=ZdzoLCLliW0",
         "title": "그저 네게 맑아라",
         "tags": [
+          "나부나",
           "그저 네게 맑아라",
           "NBUNA"
         ]
@@ -4419,6 +4494,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=KKEAwRpiix8",
         "title": "달이 아름답다고 말해줘",
         "tags": [
+          "카키자키 유타",
           "달이 아름답다고 말해줘",
           "kakizaki yuta"
         ]
@@ -4475,7 +4551,6 @@
         "title": "제대로 모르네",
         "tags": [
           "제대로 모르네",
-          "分かっちゃいないね feat花隈千冬",
           "mnmmmm"
         ]
       },
@@ -4653,14 +4728,6 @@
       "index": 95,
       "title": "러브 앤 디스트로이",
       "reasons": [
-        "작가 원명은 확인했으나 게임에서 사용할 한국어·영문 작가 태그의 출처 추가 확인 필요",
-        "동일 곡·가수·버전의 대사·추가 인트로 없는 음원 확인 필요. 개인 자막 업로드 허용."
-      ]
-    },
-    {
-      "index": 96,
-      "title": "가라앉는 거리",
-      "reasons": [
         "동일 곡·가수·버전의 대사·추가 인트로 없는 음원 확인 필요. 개인 자막 업로드 허용."
       ]
     },
@@ -4688,13 +4755,6 @@
     {
       "index": 124,
       "title": "ゆらめき - rourourourous",
-      "reasons": [
-        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-      ]
-    },
-    {
-      "index": 144,
-      "title": "ブルボン - pomodorosa",
       "reasons": [
         "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
@@ -4739,8 +4799,7 @@
       "index": 181,
       "title": "Coffee and Cigarette",
       "reasons": [
-        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요",
-        "동일 곡·가수·버전의 대사·추가 인트로 없는 음원 확인 필요. 개인 자막 업로드 허용."
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
     },
     {
@@ -4768,9 +4827,7 @@
       "index": 199,
       "title": "개와 바보 고양이",
       "reasons": [
-        "작가 원명은 확인했으나 게임에서 사용할 한국어·영문 작가 태그의 출처 추가 확인 필요",
-        "전체 길이 음원 다운로드 실패: 대체 음원 확인 필요",
-        "동일 곡·가수·버전의 대사·추가 인트로 없는 음원 확인 필요. 개인 자막 업로드 허용."
+        "작가 원명은 확인했으나 게임에서 사용할 한국어·영문 작가 태그의 출처 추가 확인 필요"
       ]
     },
     {
@@ -4790,13 +4847,6 @@
     {
       "index": 207,
       "title": "Showdown",
-      "reasons": [
-        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-      ]
-    },
-    {
-      "index": 218,
-      "title": "Kakera",
       "reasons": [
         "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
@@ -4829,13 +4879,6 @@
     {
       "index": 243,
       "title": "Mou Yume tune",
-      "reasons": [
-        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-      ]
-    },
-    {
-      "index": 245,
-      "title": "Torokeru kiss",
       "reasons": [
         "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]

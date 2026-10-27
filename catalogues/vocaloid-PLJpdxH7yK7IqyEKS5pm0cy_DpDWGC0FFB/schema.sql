@@ -1,5 +1,5 @@
 PRAGMA foreign_keys = ON;
-PRAGMA user_version = 2;
+PRAGMA user_version = 3;
 
 CREATE TABLE catalogue_info (
     key TEXT PRIMARY KEY,
@@ -42,7 +42,7 @@ CREATE TABLE song_tags (
 CREATE TABLE aliases (
     song_id TEXT NOT NULL REFERENCES songs(id),
     alias_order INTEGER NOT NULL,
-    kind TEXT NOT NULL CHECK (kind IN ('writer', 'title', 'punctuation')),
+    kind TEXT NOT NULL CHECK (kind IN ('writer', 'title', 'punctuation', 'singer')),
     name TEXT NOT NULL,
     writer TEXT,
     url TEXT,
@@ -51,7 +51,7 @@ CREATE TABLE aliases (
 );
 CREATE VIEW 별칭목록 AS
 SELECT s.playlist_position AS 번호, s.title AS 곡명,
-       CASE a.kind WHEN 'writer' THEN '작가 별칭' WHEN 'title' THEN '곡명 발음' ELSE '특수문자 제거' END AS 종류,
+       CASE a.kind WHEN 'writer' THEN '작가 별칭' WHEN 'title' THEN '곡명 별칭' WHEN 'singer' THEN '가수 별칭' ELSE '특수문자 제거' END AS 종류,
        a.name AS 태그, a.writer AS 원래작가, a.url AS 출처URL, a.quote AS 확인문구
 FROM aliases a JOIN songs s ON s.id=a.song_id ORDER BY s.playlist_position,a.alias_order;
 
@@ -77,7 +77,7 @@ CREATE TABLE evidence (
     evidence_order INTEGER NOT NULL CHECK (evidence_order >= 0),
     url TEXT NOT NULL,
     quote TEXT NOT NULL,
-    kind TEXT NOT NULL CHECK (kind IN ('search_snippet', 'page')),
+    kind TEXT NOT NULL CHECK (kind IN ('search_snippet', 'page', 'youtube_search', 'youtube_description')),
     retrieved_evidence_matched INTEGER NOT NULL CHECK (retrieved_evidence_matched IN (0, 1)),
     retrieval_url TEXT,
     retrieved_at TEXT,
@@ -159,7 +159,7 @@ GROUP BY w.id ORDER BY 전체곡수 DESC, w.name;
 CREATE VIEW 출처목록 AS
 SELECT c.번호, c.곡명, c.작가, e.evidence_order + 1 AS 출처번호,
        e.url AS 출처URL, e.quote AS 확인문구,
-       CASE e.kind WHEN 'page' THEN '원문 페이지' ELSE '검색 결과 인용' END AS 확인방법,
+       CASE e.kind WHEN 'page' THEN '원문 페이지' WHEN 'youtube_search' THEN '유튜브 검색 결과' WHEN 'youtube_description' THEN '유튜브 설명' ELSE '검색 결과 인용' END AS 확인방법,
        CASE e.retrieved_evidence_matched WHEN 1 THEN '일치' ELSE '미확인' END AS 원문대조,
        e.retrieval_url AS 조회URL, e.retrieved_at AS 조회시각
 FROM evidence e JOIN 전체곡 c ON c.곡ID = e.song_id

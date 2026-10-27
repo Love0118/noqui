@@ -1,59 +1,5 @@
 [
   {
-    "index": 15,
-    "videoId": "7sKMLQlSX58",
-    "sourceTitle": null,
-    "channel": null,
-    "durationSeconds": null,
-    "youtubeUrl": "https://www.youtube.com/watch?v=7sKMLQlSX58",
-    "id": "279c83bd-d523-51ce-a8e4-f23387f4bbb3",
-    "title": "도넛 홀",
-    "tags": [
-      "Hachi",
-      "하치"
-    ],
-    "confidence": "high",
-    "reviewRequired": false,
-    "notes": "",
-    "validationWarnings": [],
-    "evidence": [
-      {
-        "url": "https://namu.wiki/w/%EB%8F%84%EB%84%9B%20%ED%99%80(VOCALOID%20%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90%20%EA%B3%A1)",
-        "quote": "도넛 홀 (VOCALOID 오리지널 곡)",
-        "kind": "search_snippet",
-        "retrievedEvidenceMatched": true,
-        "retrievalUrl": "https://m.search.naver.com/search.naver?query=%EB%8F%84%EB%84%9B%ED%99%80+%ED%95%98%EC%B9%98",
-        "retrievedAt": "2026-10-27T10:52:02.237790+00:00"
-      },
-      {
-        "url": "https://namu.wiki/w/%EB%8F%84%EB%84%9B%20%ED%99%80(VOCALOID%20%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90%20%EA%B3%A1)",
-        "quote": "작곡가 하치",
-        "kind": "search_snippet",
-        "retrievedEvidenceMatched": true,
-        "retrievalUrl": "https://m.search.naver.com/search.naver?query=%EB%8F%84%EB%84%9B%ED%99%80+%ED%95%98%EC%B9%98",
-        "retrievedAt": "2026-10-27T10:52:02.237790+00:00"
-      }
-    ],
-    "audio": {
-      "status": "failed",
-      "stage": "download",
-      "reason": "YouTube reports this playlist entry as private.",
-      "failureCode": "PRIVATE_VIDEO"
-    },
-    "writers": [
-      "Hachi"
-    ],
-    "aliases": [
-      {
-        "kind": "writer",
-        "writer": "Hachi",
-        "name": "하치",
-        "url": "https://namu.wiki/w/%EC%9A%94%EB%84%A4%EC%A6%88%20%EC%BC%84%EC%8B%9C",
-        "quote": "필명 하치(ハチ, hachi)"
-      }
-    ]
-  },
-  {
     "index": 42,
     "videoId": "VqmA_LdvBmk",
     "sourceTitle": null,
@@ -81,53 +27,8 @@
       "failureCode": "PRIVATE_VIDEO"
     },
     "writers": [],
-    "aliases": []
-  },
-  {
-    "index": 46,
-    "videoId": "GeMFeUKvjm0",
-    "sourceTitle": null,
-    "channel": null,
-    "durationSeconds": null,
-    "youtubeUrl": "https://www.youtube.com/watch?v=GeMFeUKvjm0",
-    "id": "dcb1cbe0-e272-5cac-a565-628c252618f6",
-    "title": "꽃내림",
-    "tags": [
-      "n-buna",
-      "나부나"
-    ],
-    "confidence": "high",
-    "reviewRequired": false,
-    "notes": "",
-    "validationWarnings": [],
-    "evidence": [
-      {
-        "url": "https://chordu.com/chords-tabs-%E3%81%B1%E3%81%98-pazi-%ED%8C%8C%EC%A7%80-%EA%BD%83%EB%82%B4%EB%A6%BC-%EB%B0%9C%EC%9D%8C-%EB%8F%85%EC%9D%8C--id_GeMFeUKvjm0",
-        "quote": "ぱじ(Pazi,파지) - 꽃내림(발음,독음)",
-        "kind": "search_snippet",
-        "retrievedEvidenceMatched": true,
-        "retrievalUrl": "https://search.naver.com/search.naver?query=GeMFeUKvjm0",
-        "retrievedAt": "2026-10-27T10:00:19.554448+00:00"
-      }
-    ],
-    "audio": {
-      "status": "failed",
-      "stage": "download",
-      "reason": "YouTube reports this playlist entry as private.",
-      "failureCode": "PRIVATE_VIDEO"
-    },
-    "writers": [
-      "n-buna"
-    ],
-    "aliases": [
-      {
-        "kind": "writer",
-        "writer": "n-buna",
-        "name": "나부나",
-        "url": "https://namu.wiki/w/n-buna",
-        "quote": "n-buna 나부나"
-      }
-    ]
+    "aliases": [],
+    "singerAliases": []
   },
   {
     "index": 96,
@@ -164,7 +65,8 @@
       "failureCode": "PRIVATE_VIDEO"
     },
     "writers": [],
-    "aliases": []
+    "aliases": [],
+    "singerAliases": []
   },
   {
     "index": 206,
@@ -194,7 +96,8 @@
       "failureCode": "PRIVATE_VIDEO"
     },
     "writers": [],
-    "aliases": []
+    "aliases": [],
+    "singerAliases": []
   },
   {
     "index": 211,
@@ -224,44 +127,8 @@
       "failureCode": "PRIVATE_VIDEO"
     },
     "writers": [],
-    "aliases": []
-  },
-  {
-    "index": 287,
-    "videoId": "EahYs-8tTjQ",
-    "sourceTitle": "ハチ MV「リンネ」HACHI / Rinne",
-    "channel": "Kenshi Yonezu  米津玄師",
-    "durationSeconds": 262,
-    "youtubeUrl": "https://www.youtube.com/watch?v=EahYs-8tTjQ",
-    "id": "b64995ef-abec-50dd-823c-02b0806e3734",
-    "title": "윤회",
-    "tags": [
-      "하치"
-    ],
-    "confidence": "high",
-    "reviewRequired": false,
-    "notes": "",
-    "validationWarnings": [],
-    "evidence": [
-      {
-        "url": "https://namu.wiki/w/%EC%9C%A4%ED%9A%8C(%ED%95%98%EC%B9%98)",
-        "quote": "윤회(하치) - 나무위키",
-        "kind": "search_snippet",
-        "retrievedEvidenceMatched": true,
-        "retrievalUrl": "https://search.naver.com/search.naver?query=%E3%83%AA%E3%83%B3%E3%83%8D+%E3%83%8F%E3%83%81",
-        "retrievedAt": "2026-10-27T10:03:44.919979+00:00"
-      }
-    ],
-    "audio": {
-      "status": "failed",
-      "stage": "download",
-      "reason": "YouTube requires an authenticated age-verified session for this video.",
-      "failureCode": "AGE_RESTRICTED"
-    },
-    "writers": [
-      "하치"
-    ],
-    "aliases": []
+    "aliases": [],
+    "singerAliases": []
   },
   {
     "index": 309,
@@ -291,7 +158,8 @@
       "failureCode": "UPLOADER_ACCOUNT_UNAVAILABLE"
     },
     "writers": [],
-    "aliases": []
+    "aliases": [],
+    "singerAliases": []
   },
   {
     "index": 363,
@@ -321,7 +189,8 @@
       "failureCode": "UPLOADER_ACCOUNT_UNAVAILABLE"
     },
     "writers": [],
-    "aliases": []
+    "aliases": [],
+    "singerAliases": []
   },
   {
     "index": 386,
@@ -351,44 +220,8 @@
       "failureCode": "PRIVATE_VIDEO"
     },
     "writers": [],
-    "aliases": []
-  },
-  {
-    "index": 416,
-    "videoId": "KOeY7WRNWKk",
-    "sourceTitle": "노매드 / 벌룬 / v flower[한글화]",
-    "channel": "작업용",
-    "durationSeconds": 231,
-    "youtubeUrl": "https://www.youtube.com/watch?v=KOeY7WRNWKk",
-    "id": "8cc1c70a-60f7-5b79-89b4-1c349418c115",
-    "title": "노매드",
-    "tags": [
-      "벌룬"
-    ],
-    "confidence": "high",
-    "reviewRequired": false,
-    "notes": "",
-    "validationWarnings": [],
-    "evidence": [
-      {
-        "url": "https://namu.wiki/w/%EB%85%B8%EB%A7%A4%EB%93%9C(%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%84%B8%EC%B9%B4%EC%9D%B4%20%EC%BB%AC%EB%9F%AC%ED%92%80%20%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%A7%80!%20feat.%ED%95%98%EC%B8%A0%EB%84%A4%20%EB%AF%B8%EC%BF%A0)",
-        "quote": "노매드 ノマド 는 벌룬 (스다 케이나)이 작사·작곡한",
-        "kind": "search_snippet",
-        "retrievedEvidenceMatched": true,
-        "retrievalUrl": "https://search.naver.com/search.naver?query=%EB%85%B8%EB%A7%A4%EB%93%9C+%EB%B2%8C%EB%A3%AC&where=web",
-        "retrievedAt": "2026-10-27T10:05:46.962432+00:00"
-      }
-    ],
-    "audio": {
-      "status": "failed",
-      "stage": "download",
-      "reason": "YouTube reports this video as blocked by a rights holder.",
-      "failureCode": "RIGHTSHOLDER_BLOCKED"
-    },
-    "writers": [
-      "벌룬"
-    ],
-    "aliases": []
+    "aliases": [],
+    "singerAliases": []
   },
   {
     "index": 519,
@@ -418,59 +251,7 @@
       "failureCode": "UPLOADER_ACCOUNT_UNAVAILABLE"
     },
     "writers": [],
-    "aliases": []
-  },
-  {
-    "index": 534,
-    "videoId": "JBfPcDQ2heg",
-    "sourceTitle": "하츠네미쿠 - 쿠루미♥퐁치오",
-    "channel": "뉴뉴",
-    "durationSeconds": 221,
-    "youtubeUrl": "https://www.youtube.com/watch?v=JBfPcDQ2heg",
-    "id": "b90b4941-818d-578f-a6d6-7dcbe0f65b8d",
-    "title": "쿠루미☆퐁치오",
-    "tags": [
-      "마다코",
-      "쿠루미퐁치오"
-    ],
-    "confidence": "high",
-    "reviewRequired": false,
-    "notes": "",
-    "validationWarnings": [],
-    "evidence": [
-      {
-        "url": "https://namu.wiki/w/%EC%BF%A0%EB%A3%A8%EB%AF%B8%E2%98%86%ED%90%81%EC%B9%98%EC%98%A4",
-        "quote": "쿠루미 ☆ 퐁치오 - 나무위키",
-        "kind": "search_snippet",
-        "retrievedEvidenceMatched": true,
-        "retrievalUrl": "https://search.naver.com/search.naver?query=%EC%BF%A0%EB%A3%A8%EB%AF%B8+%ED%90%81%EC%B9%98%EC%98%A4+%EB%A7%88%EB%8B%A4%EC%BD%94",
-        "retrievedAt": "2026-10-27T10:47:24.194287+00:00"
-      },
-      {
-        "url": "https://namu.wiki/w/%EC%BF%A0%EB%A3%A8%EB%AF%B8%E2%98%86%ED%90%81%EC%B9%98%EC%98%A4",
-        "quote": "くるみ☆ぽんちお( 쿠루미 ☆ 퐁치오 )는 마다코 가",
-        "kind": "search_snippet",
-        "retrievedEvidenceMatched": true,
-        "retrievalUrl": "https://search.naver.com/search.naver?query=%EC%BF%A0%EB%A3%A8%EB%AF%B8+%ED%90%81%EC%B9%98%EC%98%A4+%EB%A7%88%EB%8B%A4%EC%BD%94",
-        "retrievedAt": "2026-10-27T10:47:24.194287+00:00"
-      }
-    ],
-    "audio": {
-      "status": "failed",
-      "stage": "download",
-      "reason": "YouTube requires an authenticated age-verified session for this video.",
-      "failureCode": "AGE_RESTRICTED"
-    },
-    "writers": [
-      "마다코"
-    ],
-    "aliases": [
-      {
-        "kind": "punctuation",
-        "name": "쿠루미퐁치오",
-        "url": null,
-        "quote": "쿠루미☆퐁치오"
-      }
-    ]
+    "aliases": [],
+    "singerAliases": []
   }
 ]

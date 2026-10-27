@@ -17,37 +17,20 @@
   "unfilteredReference": "chart-unfiltered-reference.json",
   "counts": {
     "entries": 100,
-    "audioReady": 98,
-    "playable": 98,
-    "baseReviewRequired": 2,
+    "audioReady": 100,
+    "playable": 100,
+    "baseReviewRequired": 0,
     "aliasReviewRequired": 14,
-    "titleAliases": 96,
-    "writerAliasInstances": 52
+    "titleAliases": 125,
+    "writerAliasInstances": 107,
+    "namingReviewRequired": 22
   },
-  "baseReviewRequiredRows": [
-    {
-      "rank": 21,
-      "tjNumber": 27031,
-      "title": "루카루카★나이트 피버",
-      "sourceTitle": "ルカルカ★ ナイトフィーバー",
-      "reason": "No verified official original vocal upload established.",
-      "failureCode": "original_source_unverified"
-    },
-    {
-      "rank": 77,
-      "tjNumber": 52430,
-      "title": "사신",
-      "sourceTitle": "死神",
-      "reason": "The official artist-channel upload is 120 seconds; the official audio catalog lists the full track at 180 seconds.",
-      "failureCode": "source_duration_short"
-    }
-  ],
+  "baseReviewRequiredRows": [],
   "aliasReviewRows": [
     {
       "rank": 8,
       "tjNumber": 25246,
       "title": "잔혹한 천사의 테제",
-      "sourceTitle": "残酷な天使のテーゼ(新世紀エヴァンゲリオン OP)",
       "reasons": [
         "Writer alias unresolved: 及川眠子: 확인된 Latin 표기 Neko Oikawa는 허용 문자 형식에 공백을 포함하므로 출력 별칭으로 사용할 수 없습니다.",
         "Writer alias unresolved: 佐藤英敏: 한국어 통용명 또는 공식 Latin 표기를 이 songwriter identity와 직접 연결하는 구체적인 출처 페이지를 확인하지 못했습니다."
@@ -57,7 +40,6 @@
       "rank": 11,
       "tjNumber": 68986,
       "title": "파자마파티즈노우타",
-      "sourceTitle": "パジャマパーティーズのうた(アニメ 'ちいかわ' OST)",
       "reasons": [
         "No sourced Java-valid singer answer alias currently available."
       ]
@@ -65,8 +47,7 @@
     {
       "rank": 12,
       "tjNumber": 68419,
-      "title": "Walking with you",
-      "sourceTitle": "Walking with you",
+      "title": "워킹 위드 유",
       "reasons": [
         "Writer alias unresolved: 雄大: 단일 이름만으로는 writer identity를 특정할 수 없어 별칭을 부여하지 않았습니다.",
         "Writer alias unresolved: 勇太朗: 이 이름만으로 동일 인물을 확정할 수 없고, 공식 Latin 표기를 확인할 구체적인 출처도 찾지 못했습니다."
@@ -76,7 +57,6 @@
       "rank": 20,
       "tjNumber": 68989,
       "title": "혼잣말",
-      "sourceTitle": "ひとりごつ(アニメ 'ちいかわ' OST)",
       "reasons": [
         "Writer alias unresolved: トクマルシューゴ: 확인된 공식 Latin 표기 Shugo Tokumaru는 허용 문자 형식에 공백을 포함하므로 출력 별칭으로 사용할 수 없습니다."
       ]
@@ -85,7 +65,6 @@
       "rank": 26,
       "tjNumber": 68127,
       "title": "푸름과 여름",
-      "sourceTitle": "青と夏(映画'青夏 きみに恋した30日' OST)",
       "reasons": [
         "Writer alias unresolved: 大森元貴: 한국어 통용명 또는 공식 Latin 표기와 이 일본어 이름을 직접 연결하는 구체적인 출처 페이지를 확인하지 못했습니다."
       ]
@@ -94,7 +73,6 @@
       "rank": 34,
       "tjNumber": 68461,
       "title": "라일락",
-      "sourceTitle": "ライラック(アニメ '忘却バッテリー' OST)",
       "reasons": [
         "Writer alias unresolved: 大森元貴: 한국어 통용명 또는 공식 Latin 표기와 이 일본어 이름을 직접 연결하는 구체적인 출처 페이지를 확인하지 못했습니다."
       ]
@@ -102,8 +80,7 @@
     {
       "rank": 38,
       "tjNumber": 68815,
-      "title": "아나타노코이비토니나리타이",
-      "sourceTitle": "貴方の恋人になりたい",
+      "title": "당신의 연인이 되고 싶어",
       "reasons": [
         "Writer alias unresolved: 麗: 짧고 여러 인물에 해당할 수 있는 credit이라 writer identity를 특정할 수 없어 별칭을 부여하지 않았습니다."
       ]
@@ -111,8 +88,7 @@
     {
       "rank": 49,
       "tjNumber": 68248,
-      "title": "보쿠노코토",
-      "sourceTitle": "僕のこと",
+      "title": "나라는 것",
       "reasons": [
         "Writer alias unresolved: 大森元貴: 한국어 통용명 또는 공식 Latin 표기와 이 일본어 이름을 직접 연결하는 구체적인 출처 페이지를 확인하지 못했습니다."
       ]
@@ -120,8 +96,7 @@
     {
       "rank": 55,
       "tjNumber": 27121,
-      "title": "아오이산고쇼우",
-      "sourceTitle": "青い珊瑚礁",
+      "title": "푸른 산호초",
       "reasons": [
         "Writer alias unresolved: 三浦徳子: 한국어 통용명 또는 공식 Latin 표기를 이 songwriter identity와 직접 연결하는 구체적인 출처 페이지를 확인하지 못했습니다.",
         "Writer alias unresolved: 小田裕一郎: 한국어 통용명 또는 공식 Latin 표기를 이 songwriter identity와 직접 연결하는 구체적인 출처 페이지를 확인하지 못했습니다."
@@ -130,8 +105,7 @@
     {
       "rank": 59,
       "tjNumber": 68523,
-      "title": "스키다카라。",
-      "sourceTitle": "好きだから。",
+      "title": "좋아하니까",
       "reasons": [
         "No sourced Java-valid singer answer alias currently available.",
         "Writer alias unresolved: 『ユイカ』: 공식적으로 사용되는 한국어명 또는 Latin 표기를 확인할 수 있는 구체적인 출처 페이지를 찾지 못했습니다."
@@ -140,8 +114,7 @@
     {
       "rank": 62,
       "tjNumber": 68095,
-      "title": "인페루노",
-      "sourceTitle": "インフェルノ(炎炎ノ消防隊 OP)",
+      "title": "인페르노",
       "reasons": [
         "Writer alias unresolved: 大森元貴: 한국어 통용명 또는 공식 Latin 표기와 이 일본어 이름을 직접 연결하는 구체적인 출처 페이지를 확인하지 못했습니다."
       ]
@@ -149,8 +122,7 @@
     {
       "rank": 81,
       "tjNumber": 27062,
-      "title": "비",
-      "sourceTitle": "レイン(鋼の錬金術師 FULLMETAL ALCHEMIST OP)",
+      "title": "레인",
       "reasons": [
         "Writer alias unresolved: マオ: 짧은 이름이라 동명이인을 구분할 수 없고, 이 songwriter credit과 한국어명 또는 공식 Latin 표기를 직접 연결하는 페이지를 확인하지 못했습니다.",
         "Writer alias unresolved: ゆうや: 동명이인 가능성을 배제하면서 이 작곡가의 공인 Latin 표기와 일본어 이름을 함께 확인할 수 있는 출처를 찾지 못했습니다."
@@ -160,7 +132,6 @@
       "rank": 85,
       "tjNumber": 68562,
       "title": "Mela!",
-      "sourceTitle": "Mela!",
       "reasons": [
         "Writer alias unresolved: 小林壱誓: 확인된 Latin 표기 Issei Kobayashi는 허용 문자 형식에 공백을 포함하므로 출력 별칭으로 사용할 수 없습니다."
       ]
@@ -168,8 +139,7 @@
     {
       "rank": 89,
       "tjNumber": 68620,
-      "title": "단스호루",
-      "sourceTitle": "ダンスホール(めざましテレビ OST)",
+      "title": "댄스홀",
       "reasons": [
         "Writer alias unresolved: 大森元貴: 한국어 통용명 또는 공식 Latin 표기와 이 일본어 이름을 직접 연결하는 구체적인 출처 페이지를 확인하지 못했습니다."
       ]
@@ -184,5 +154,6 @@
       "downloaded": 98,
       "playable": 98
     }
-  }
+  },
+  "lastResearchDate": "2026-10-28"
 }

@@ -13,21 +13,38 @@
       "index": 1,
       "rank": 1,
       "tjNumber": 14260,
-      "videoId": "NfDeBiVy_IY",
+      "videoId": "J0TwJpMmbwc",
       "id": "00143f9c-db35-5d32-bac5-673359fd646b",
-      "youtubeUrl": "https://www.youtube.com/watch?v=NfDeBiVy_IY",
+      "youtubeUrl": "https://www.youtube.com/watch?v=J0TwJpMmbwc",
       "title": "행복하지 말아요",
       "sourceTitle": "행복하지 말아요",
       "singer": "MC THE MAX",
       "writers": [
-        "양재선"
+        "양재선",
+        "Kohmi Hirose"
       ],
       "tags": [
+        "히로세 코미",
         "양재선",
         "MC THE MAX"
       ],
-      "aliases": [],
-      "reviewRequired": true,
+      "aliases": [
+        {
+          "name": "행복하지 말아요",
+          "url": "https://www.youtube.com/watch?v=J0TwJpMmbwc",
+          "quote": "엠씨더맥스(M.C the MAX) - 행복하지 말아요 [가사/Lyrics]",
+          "kind": "title"
+        },
+        {
+          "name": "히로세 코미",
+          "url": "https://www.youtube.com/watch?v=J0TwJpMmbwc",
+          "quote": "엠씨더맥스(M.C the MAX) - 행복하지 말아요 [가사/Lyrics]\n발매 : 2004.11.18 아티스트 : 엠씨더맥스(M.C the MAX) 앨범 : Solitude Love… 작곡 : Kohmi Hirose(히로세 코미/広瀬香美) 작사 : 양재선 편곡 : 김승현",
+          "canonicalName": "Kohmi Hirose",
+          "kind": "writer",
+          "writer": "Kohmi Hirose"
+        }
+      ],
+      "reviewRequired": false,
       "evidence": [
         {
           "url": "https://www.tjmedia.com/chart/top100",
@@ -46,22 +63,73 @@
           "quote": "행복하지 말아요 — M.C the MAX Official. Provided to YouTube by OGAM 행복하지 말아요 · M.C The Max Solitude Love ℗ 오감엔터테인먼트 Released on: 2004-11-19 ...",
           "kind": "search_snippet",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=J0TwJpMmbwc",
+          "quote": "엠씨더맥스(M.C the MAX) - 행복하지 말아요 [가사/Lyrics]",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "retrievalUrl": "https://www.youtube.com/results?search_query=%ED%96%89%EB%B3%B5%ED%95%98%EC%A7%80%20%EB%A7%90%EC%95%84%EC%9A%94%20%EA%B0%80%EC%82%AC",
+          "checkedAt": "2026-10-27T15:56:05.9035634Z"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=J0TwJpMmbwc",
+          "quote": "엠씨더맥스(M.C the MAX) - 행복하지 말아요 [가사/Lyrics]",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=J0TwJpMmbwc",
+          "quote": "엠씨더맥스(M.C the MAX) - 행복하지 말아요 [가사/Lyrics]\n발매 : 2004.11.18 아티스트 : 엠씨더맥스(M.C the MAX) 앨범 : Solitude Love… 작곡 : Kohmi Hirose(히로세 코미/広瀬香美) 작사 : 양재선 편곡 : 김승현",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "checkedAt": "2026-10-28"
         }
       ],
       "audio": {
         "status": "ready",
-        "path": "audio/NfDeBiVy_IY.ogg",
+        "path": "audio/J0TwJpMmbwc.ogg",
         "format": "ogg",
         "codec": "opus",
         "nominalBitrate": 48000,
         "channels": 2,
-        "durationSeconds": 358.880375,
-        "byteLength": 2198698,
-        "sha256": "1a913e1365cb58460a859ae64f1380861e4010cfaba6d36065316e377faafe56"
+        "durationSeconds": 358.9758958333333,
+        "byteLength": 2201902,
+        "sha256": "dd5ca36ee1ee2e1f8381722681cd82b8105b172760483f2fa3b69fdab2c2c395"
       },
-      "reviewReasons": [
-        "tj_composer_credit_generic"
-      ]
+      "reviewReasons": [],
+      "creditHistory": [
+        {
+          "previousWriters": [
+            "양재선"
+          ],
+          "reason": "Recovered explicitly labelled composer credit from the published lyrics upload."
+        }
+      ],
+      "singerAliases": [],
+      "recordingHistory": [
+        {
+          "videoId": "NfDeBiVy_IY",
+          "youtubeUrl": "https://www.youtube.com/watch?v=NfDeBiVy_IY",
+          "audio": {
+            "status": "ready",
+            "path": "audio/NfDeBiVy_IY.ogg",
+            "format": "ogg",
+            "codec": "opus",
+            "nominalBitrate": 48000,
+            "channels": 2,
+            "durationSeconds": 358.880375,
+            "byteLength": 2198698,
+            "sha256": "1a913e1365cb58460a859ae64f1380861e4010cfaba6d36065316e377faafe56"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "subtitled_audio"
+        }
+      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
+      "audioSourceType": "subtitled_audio"
     },
     {
       "index": 2,
@@ -80,9 +148,9 @@
       ],
       "tags": [
         "WOODZ",
-        "네이슨(NATHAN)",
+        "네이슨NATHAN",
         "HOHO",
-        "WOODZ(조승연)",
+        "WOODZ조승연",
         "드라우닝"
       ],
       "aliases": [
@@ -129,9 +197,10 @@
         "channels": 2,
         "durationSeconds": 244.99366666666666,
         "byteLength": 1502494,
-        "sha256": "2544db1cc5d279438ceeb32bf72f986df37c2da449b2c7f7fe5d9d56c42997fa"
+        "sha256": "48cbe14e44e80d5440c929af5fdcb562d3fc9f082bfda17876c84d2b5535515a"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 3,
@@ -195,10 +264,11 @@
         "nominalBitrate": 48000,
         "channels": 2,
         "durationSeconds": 224.04475,
-        "byteLength": 1372697,
-        "sha256": "b3df7345b2366a7f3b6264d1eb7d4726aac7047e7c69d64d484461bfd8a4d4c8"
+        "byteLength": 1375301,
+        "sha256": "7bab7fc12db7d55d5101195e2cc4fe2efdfd8746b8b2886373d13cd6ad803c65"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 4,
@@ -250,9 +320,10 @@
         "channels": 2,
         "durationSeconds": 302.11022916666667,
         "byteLength": 1854382,
-        "sha256": "15c4a76336e312166ad326e4e38758eed1c923255aadd5bb69b9cb16f5d7f726"
+        "sha256": "579644ad20657551cb5fc6a5bc90ff1545e2bd7521c2dd3445bd1edae76b84f1"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 5,
@@ -304,9 +375,10 @@
         "channels": 2,
         "durationSeconds": 235.06260416666666,
         "byteLength": 1425147,
-        "sha256": "1ec5ee002912fde636210653e80c88477455566dbc54ecd878dce516c739b4d3"
+        "sha256": "c1201894dd662da4aba454287ee7e1126460952949e4a404084f9dacece3a7fb"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 6,
@@ -370,18 +442,19 @@
         "nominalBitrate": 48000,
         "channels": 2,
         "durationSeconds": 271.1928541666667,
-        "byteLength": 1653409,
-        "sha256": "84b52355462207df990c5f61ed09d14603cb780ca068f3d35df96db648f25e7a"
+        "byteLength": 1656330,
+        "sha256": "7cea303fd20ebaf94af2f4616fae451224f4c44419000bc7651e32456156028a"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 7,
       "rank": 7,
       "tjNumber": 49818,
-      "videoId": "b1kQvZhQ6_M",
+      "videoId": "cQFgFD1TzWc",
       "id": "0b5f711f-c7bd-5d5c-a804-f5a7d709f5f8",
-      "youtubeUrl": "https://www.youtube.com/watch?v=b1kQvZhQ6_M",
+      "youtubeUrl": "https://www.youtube.com/watch?v=cQFgFD1TzWc",
       "title": "좋니",
       "sourceTitle": "좋니",
       "singer": "윤종신",
@@ -400,6 +473,12 @@
           "name": "Like it",
           "url": "https://www.youtube.com/watch?v=b1kQvZhQ6_M",
           "quote": "[MV] Jong Shin Yoon(윤종신) _ Like it(좋니)"
+        },
+        {
+          "name": "좋니",
+          "url": "https://www.youtube.com/watch?v=cQFgFD1TzWc",
+          "quote": "윤종신 - 좋니 [가사/Lyrics]",
+          "kind": "title"
         }
       ],
       "reviewRequired": false,
@@ -421,38 +500,72 @@
           "quote": "[MV] Jong Shin Yoon(윤종신) _ Like it(좋니) — 1theK (원더케이). [MV] Jong Shin Yoon(윤종신) _ Like it(좋니) *English subtitles are now available. :D (Please click on 'CC' button or activate ...",
           "kind": "page",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=cQFgFD1TzWc",
+          "quote": "윤종신 - 좋니 [가사/Lyrics] 발매 : 2017.06.22 아티스트 : 윤종신 앨범 : LISTEN 010 좋니 작곡 : Postino 작사 : 윤종신",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "retrievalUrl": "https://www.youtube.com/results?search_query=%EC%A2%8B%EB%8B%88%20%EA%B0%80%EC%82%AC",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=cQFgFD1TzWc",
+          "quote": "윤종신 - 좋니 [가사/Lyrics]",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "checkedAt": "2026-10-28"
         }
       ],
       "audio": {
         "status": "ready",
-        "path": "audio/b1kQvZhQ6_M.ogg",
+        "path": "audio/cQFgFD1TzWc.ogg",
         "format": "ogg",
         "codec": "opus",
         "nominalBitrate": 48000,
         "channels": 2,
-        "durationSeconds": 328.34877083333333,
-        "byteLength": 2015024,
-        "sha256": "7de0b4a1ca13cb0391ffd45c02fa537f3eff81efd277101299edf1d1f7ce02d3"
+        "durationSeconds": 328.7435208333333,
+        "byteLength": 2015735,
+        "sha256": "4119765d7e492115a206fad94d69276538c5acf3cfd42a42d910e6be3ac73360"
       },
       "reviewReasons": [],
-      "audioSourceReviewRequired": true,
-      "audioSourceReviewReasons": [
-        "Source is labelled as a music video; matched official audio-only recording still required"
-      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
       "audioSourceEvidence": {
         "url": "https://www.youtube.com/watch?v=b1kQvZhQ6_M",
         "kind": "search_snippet",
         "quote": "[MV] Jong Shin Yoon(윤종신) _ Like it(좋니) | channel 1theK (원더케이) | duration 329 seconds",
         "retrievedEvidenceMatched": true
-      }
+      },
+      "singerAliases": [],
+      "recordingHistory": [
+        {
+          "videoId": "b1kQvZhQ6_M",
+          "youtubeUrl": "https://www.youtube.com/watch?v=b1kQvZhQ6_M",
+          "audio": {
+            "status": "ready",
+            "path": "audio/b1kQvZhQ6_M.ogg",
+            "format": "ogg",
+            "codec": "opus",
+            "nominalBitrate": 48000,
+            "channels": 2,
+            "durationSeconds": 328.34877083333333,
+            "byteLength": 2015024,
+            "sha256": "7de0b4a1ca13cb0391ffd45c02fa537f3eff81efd277101299edf1d1f7ce02d3"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "subtitled_audio"
+        }
+      ],
+      "audioSourceType": "subtitled_audio"
     },
     {
       "index": 8,
       "rank": 8,
       "tjNumber": 71009,
-      "videoId": "7mDDM0eBWR0",
+      "videoId": "q4POz-VZQrQ",
       "id": "01d9004c-29bf-51c5-bd09-bd91e117e73f",
-      "youtubeUrl": "https://www.youtube.com/watch?v=7mDDM0eBWR0",
+      "youtubeUrl": "https://www.youtube.com/watch?v=q4POz-VZQrQ",
       "title": "퇴사할게여",
       "sourceTitle": "퇴사할게여",
       "singer": "소연(SOYEON)(Narr.기안84)",
@@ -471,7 +584,7 @@
         "LIKEY",
         "익스프레션",
         "익스",
-        "소연(SOYEON)(Narr.기안84)"
+        "소연SOYEONNarr기안84"
       ],
       "aliases": [],
       "reviewRequired": false,
@@ -493,38 +606,72 @@
           "quote": "소연 (SOYEON) '퇴사할게여 (Narr. 기안84)' Official Music Video — i-dle (아이들). 소연 (SOYEON) '퇴사할게여 (Narr. 기안84)' Official Music Video [  ] [끝내주는 인생] https://SOYEON.lnk.to/WAWL Composed ...",
           "kind": "search_snippet",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=q4POz-VZQrQ",
+          "quote": "소연 - 퇴사할게여 [끝내주는 인생]ㅣ가사/Lyrics 3분 32초",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "retrievalUrl": "https://www.youtube.com/results?search_query=%ED%87%B4%EC%82%AC%ED%95%A0%EA%B2%8C%EC%97%AC%20%EA%B0%80%EC%82%AC",
+          "checkedAt": "2026-10-27T15:57:21.489Z"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=q4POz-VZQrQ",
+          "quote": "소연 - 퇴사할게여 [끝내주는 인생]ㅣ가사/Lyrics",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "checkedAt": "2026-10-28"
         }
       ],
       "audio": {
         "status": "ready",
-        "path": "audio/7mDDM0eBWR0.ogg",
+        "path": "audio/q4POz-VZQrQ.ogg",
         "format": "ogg",
         "codec": "opus",
         "nominalBitrate": 48000,
         "channels": 2,
-        "durationSeconds": 211.35504166666666,
-        "byteLength": 1289662,
-        "sha256": "b5a10a7eaf02e7b51e7930ac42d60a906fc393a12d0db5f132fac9148b763837"
+        "durationSeconds": 211.0531875,
+        "byteLength": 1287637,
+        "sha256": "200284ea2096e05c1df573b0d09aa8022b0875df23f606c57b11133556eee0b1"
       },
       "reviewReasons": [],
-      "audioSourceReviewRequired": true,
-      "audioSourceReviewReasons": [
-        "Source is labelled as a music video; matched official audio-only recording still required"
-      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
       "audioSourceEvidence": {
         "url": "https://www.youtube.com/watch?v=7mDDM0eBWR0",
         "kind": "search_snippet",
         "quote": "소연 (SOYEON) '퇴사할게여 (Narr. 기안84)' Official Music Video | channel i-dle (아이들) | duration 212 seconds",
         "retrievedEvidenceMatched": true
-      }
+      },
+      "singerAliases": [],
+      "recordingHistory": [
+        {
+          "videoId": "7mDDM0eBWR0",
+          "youtubeUrl": "https://www.youtube.com/watch?v=7mDDM0eBWR0",
+          "audio": {
+            "status": "ready",
+            "path": "audio/7mDDM0eBWR0.ogg",
+            "format": "ogg",
+            "codec": "opus",
+            "nominalBitrate": 48000,
+            "channels": 2,
+            "durationSeconds": 211.35504166666666,
+            "byteLength": 1289662,
+            "sha256": "b5a10a7eaf02e7b51e7930ac42d60a906fc393a12d0db5f132fac9148b763837"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "subtitled_audio"
+        }
+      ],
+      "audioSourceType": "subtitled_audio"
     },
     {
       "index": 9,
       "rank": 9,
       "tjNumber": 13588,
-      "videoId": "",
+      "videoId": "GpUelwfBe-w",
       "id": "a4240227-a0bc-5590-9625-7bec301f4138",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://www.youtube.com/watch?v=GpUelwfBe-w",
       "title": "삭제",
       "sourceTitle": "삭제",
       "singer": "이승기",
@@ -536,7 +683,7 @@
         "이승기"
       ],
       "aliases": [],
-      "reviewRequired": true,
+      "reviewRequired": false,
       "evidence": [
         {
           "url": "https://www.tjmedia.com/chart/top100",
@@ -549,24 +696,53 @@
           "quote": "rank 9; TJ no. 13588; 삭제 — 이승기; lyricist: 싸이; composer: 싸이",
           "kind": "page",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=GpUelwfBe-w",
+          "quote": "이승기 - 삭제 [가사/Lyrics] • 웅키 • 4분 14초 • 발매일 : 2004.06.25 아티스트 : 이승기 앨범명 : 나방의 꿈 작곡가 : 싸이 (PSY) 작사가 : 싸이",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "retrievalUrl": "https://www.youtube.com/results?search_query=%EC%82%AD%EC%A0%9C+%EA%B0%80%EC%82%AC",
+          "checkedAt": "2026-10-28"
         }
       ],
       "audio": {
-        "status": "failed",
-        "reason": "Targeted searches found lyrics and unrelated re-recordings, but no official or label-attributed full-length Lee Seung Gi original upload.",
-        "failureCode": "SOURCE_UNVERIFIED"
+        "status": "ready",
+        "path": "audio/GpUelwfBe-w.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 253.5456875,
+        "byteLength": 1549169,
+        "sha256": "2c270d7a8ac05cb8d5f1623b6bae302f4a2f1ae870f32442eb3169374ae4f855"
       },
-      "reviewReasons": [
-        "audio_source_missing"
-      ]
+      "reviewReasons": [],
+      "singerAliases": [],
+      "recordingHistory": [
+        {
+          "videoId": "",
+          "youtubeUrl": "",
+          "audio": {
+            "status": "failed",
+            "reason": "Targeted searches found lyrics and unrelated re-recordings, but no official or label-attributed full-length Lee Seung Gi original upload.",
+            "failureCode": "SOURCE_UNVERIFIED"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "subtitled_audio"
+        }
+      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
+      "audioSourceType": "subtitled_audio"
     },
     {
       "index": 10,
       "rank": 10,
       "tjNumber": 13584,
-      "videoId": "",
+      "videoId": "9nuJKtKnGCM",
       "id": "1dd1a426-fe39-5b46-8a21-8a1fb10e3b3e",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://www.youtube.com/watch?v=9nuJKtKnGCM",
       "title": "나였으면(황태자의첫사랑OST)",
       "sourceTitle": "나였으면(황태자의첫사랑OST)",
       "singer": "나윤권",
@@ -593,7 +769,7 @@
           "quote": "rank 10; TJ no. 13584; 나였으면(황태자의첫사랑OST) — 나윤권; lyricist: 김형석; composer: 김형석"
         }
       ],
-      "reviewRequired": true,
+      "reviewRequired": false,
       "evidence": [
         {
           "url": "https://www.tjmedia.com/chart/top100",
@@ -606,24 +782,53 @@
           "quote": "rank 10; TJ no. 13584; 나였으면(황태자의첫사랑OST) — 나윤권; lyricist: 김형석; composer: 김형석",
           "kind": "page",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "quote": "나윤권 - 나였으면 [가사/Lyrics] #나윤권 #나였으면 발매 : 2004.09.13 아티스트 : 나윤권 앨범 : 중독 (中毒) 작곡 : 김형석 작사 : 김형석",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "url": "https://www.youtube.com/watch?v=9nuJKtKnGCM",
+          "checkedAt": "2026-10-28",
+          "retrievalUrl": "https://www.youtube.com/results?search_query=%EB%82%98%EC%98%80%EC%9C%BC%EB%A9%B4%28%ED%99%A9%ED%83%9C%EC%9E%90%EC%9D%98%EC%B2%AB%EC%82%AC%EB%9E%91OST%29%20%EA%B0%80%EC%82%AC"
         }
       ],
       "audio": {
-        "status": "failed",
-        "reason": "Targeted searches found third-party reposts but no official or label-attributed full-length Na Yoon Kwon original upload.",
-        "failureCode": "SOURCE_UNVERIFIED"
+        "status": "ready",
+        "path": "audio/9nuJKtKnGCM.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 262.57825,
+        "byteLength": 1598581,
+        "sha256": "682f88e55724d23022484f388639232c33a9dc9836ebdb9920c2cbe55ab13763"
       },
-      "reviewReasons": [
-        "audio_source_missing"
-      ]
+      "reviewReasons": [],
+      "singerAliases": [],
+      "recordingHistory": [
+        {
+          "videoId": "",
+          "youtubeUrl": "",
+          "audio": {
+            "status": "failed",
+            "reason": "Targeted searches found third-party reposts but no official or label-attributed full-length Na Yoon Kwon original upload.",
+            "failureCode": "SOURCE_UNVERIFIED"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "subtitled_audio"
+        }
+      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
+      "audioSourceType": "subtitled_audio"
     },
     {
       "index": 11,
       "rank": 11,
       "tjNumber": 46009,
-      "videoId": "va5rf20Un24",
+      "videoId": "CiF5ikqrnRI",
       "id": "789db99a-a752-5ec6-bcae-49d5528fa8d5",
-      "youtubeUrl": "https://www.youtube.com/watch?v=va5rf20Un24",
+      "youtubeUrl": "https://www.youtube.com/watch?v=CiF5ikqrnRI",
       "title": "어디에도",
       "sourceTitle": "어디에도",
       "singer": "MC THE MAX",
@@ -658,30 +863,57 @@
           "quote": "[MV] M.C THE MAX(엠씨더맥스) - No matter where(어디에도) — MUSIC&NEW 뮤직앤뉴. 엠씨더맥스 #어디에도 #mcthemax COMEBACK OF THE WHOLE GROUP IN TWO YEARS A MASTER OF AUTHENTIC ROCK ...",
           "kind": "search_snippet",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=CiF5ikqrnRI",
+          "kind": "youtube_search",
+          "retrievalUrl": "https://www.youtube.com/results?search_query=%EC%96%B4%EB%94%94%EC%97%90%EB%8F%84+%EA%B0%80%EC%82%AC",
+          "quote": "엠씨더맥스(M.C the MAX) - 어디에도 [가사/Lyrics]",
+          "checkedAt": "2026-10-28",
+          "retrievedEvidenceMatched": true
         }
       ],
       "audio": {
         "status": "ready",
-        "path": "audio/va5rf20Un24.ogg",
+        "path": "audio/CiF5ikqrnRI.ogg",
         "format": "ogg",
         "codec": "opus",
         "nominalBitrate": 48000,
         "channels": 2,
-        "durationSeconds": 345.566375,
-        "byteLength": 2107007,
-        "sha256": "a5cd9b15f350e26cc4b56bc69fd20800b9b369de414a574eb58042ca7f904f09"
+        "durationSeconds": 331.23966666666666,
+        "byteLength": 2032224,
+        "sha256": "7a0f21e72913e5199ee5858889f8f2c7eff7352f2168baa4cc1a1783594bb9d1"
       },
       "reviewReasons": [],
-      "audioSourceReviewRequired": true,
-      "audioSourceReviewReasons": [
-        "Source is labelled as a music video; matched official audio-only recording still required"
-      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
       "audioSourceEvidence": {
         "url": "https://www.youtube.com/watch?v=va5rf20Un24",
         "kind": "search_snippet",
         "quote": "[MV] M.C THE MAX(엠씨더맥스) - No matter where(어디에도) | channel MUSIC&NEW 뮤직앤뉴 | duration 346 seconds",
         "retrievedEvidenceMatched": true
-      }
+      },
+      "singerAliases": [],
+      "recordingHistory": [
+        {
+          "videoId": "va5rf20Un24",
+          "youtubeUrl": "https://www.youtube.com/watch?v=va5rf20Un24",
+          "audio": {
+            "status": "ready",
+            "path": "audio/va5rf20Un24.ogg",
+            "format": "ogg",
+            "codec": "opus",
+            "nominalBitrate": 48000,
+            "channels": 2,
+            "durationSeconds": 345.566375,
+            "byteLength": 2107007,
+            "sha256": "a5cd9b15f350e26cc4b56bc69fd20800b9b369de414a574eb58042ca7f904f09"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "subtitled_audio"
+        }
+      ],
+      "audioSourceType": "subtitled_audio"
     },
     {
       "index": 12,
@@ -755,9 +987,10 @@
         "channels": 2,
         "durationSeconds": 290.5350833333333,
         "byteLength": 1774106,
-        "sha256": "8113ade37c6535fef531d251e1398b7be28f48b24a76d10b39a007f1d342c5bf"
+        "sha256": "a3b86c016ceacec9a86d60399a4d4e91ad05effb95150df625bc048cd03c8568"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 13,
@@ -776,11 +1009,11 @@
         "NERD CONNECTION (신연태)"
       ],
       "tags": [
-        "NERD CONNECTION(서영주)",
-        "NERD CONNECTION (박재현)",
-        "NERD CONNECTION (최승원)",
-        "NERD CONNECTION (신연태)",
-        "너드커넥션(Nerd Connection)"
+        "NERD CONNECTION서영주",
+        "NERD CONNECTION 박재현",
+        "NERD CONNECTION 최승원",
+        "NERD CONNECTION 신연태",
+        "너드커넥션Nerd Connection"
       ],
       "aliases": [],
       "reviewRequired": false,
@@ -813,9 +1046,10 @@
         "channels": 2,
         "durationSeconds": 266.0148125,
         "byteLength": 1632829,
-        "sha256": "72938308167730d75c7f8719fedeaba0c937167e3db32281cf40f14b71394bae"
+        "sha256": "fde3e2b8b47c485a0e68efbfa2ce0740d346ff708b959f77288d3432e4c69405"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 14,
@@ -867,9 +1101,10 @@
         "channels": 2,
         "durationSeconds": 253.11366666666666,
         "byteLength": 1553901,
-        "sha256": "11e58e8a6b1bb2937d1958d55de42293ada95e1ece6972715bcdd41ef4f56121"
+        "sha256": "d4a239297fa0e6c44f727de87fb46e2bf287f72187c4b2281a3142941d522774"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 15,
@@ -935,9 +1170,10 @@
         "channels": 2,
         "durationSeconds": 243.86297916666666,
         "byteLength": 1493482,
-        "sha256": "e7774e2b790769a98eff7b03fe4436089927cc328b4bdb45e57903ade058c641"
+        "sha256": "2eb05ca042cc86f0f0ebf2820dccd3d7d73f5d8d44e3ac28b5c533c43869f955"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 16,
@@ -986,10 +1222,11 @@
         "nominalBitrate": 48000,
         "channels": 2,
         "durationSeconds": 244.29254166666666,
-        "byteLength": 1478174,
-        "sha256": "8cb4b3858401b7b05976213823768d7036ae97d9dcb704ee23a8c9c8e5ef0178"
+        "byteLength": 1480824,
+        "sha256": "4eb03a481259d9d3ecfacd6cfb0e4bf59b5e2d4cfd718a68f5a61cf63326215b"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 17,
@@ -1041,17 +1278,18 @@
         "channels": 2,
         "durationSeconds": 209.71802083333333,
         "byteLength": 1287278,
-        "sha256": "8efff2ad8af6a9a3c872ab0ebbc240c881f12f25937db43ddcaf79ad8b8efffe"
+        "sha256": "13db1e987817e4226c5daf22e571ca7bf51b24bbee0bcd949470c8e9ed1cea9b"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 18,
       "rank": 18,
       "tjNumber": 44352,
-      "videoId": "-g0MOHe-Lik",
+      "videoId": "ywYUUJYkDqg",
       "id": "1bbfe92b-09bd-59f3-a730-4e627d5d12c4",
-      "youtubeUrl": "https://www.youtube.com/watch?v=-g0MOHe-Lik",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ywYUUJYkDqg",
       "title": "...사랑했잖아...(2024)",
       "sourceTitle": "...사랑했잖아...(2024)",
       "singer": "고경표",
@@ -1064,7 +1302,7 @@
         "김세진",
         "고경표",
         "사랑했잖아2024",
-        "...사랑했잖아..."
+        "사랑했잖아"
       ],
       "aliases": [
         {
@@ -1078,6 +1316,12 @@
           "name": "...사랑했잖아...",
           "url": "https://www.tjmedia.com/chart/top100",
           "quote": "rank 18; TJ no. 44352; ...사랑했잖아...(2024) — 고경표; lyricist: 린; composer: 김세진"
+        },
+        {
+          "name": "...사랑했잖아...(2024)",
+          "url": "https://www.youtube.com/watch?v=ywYUUJYkDqg",
+          "quote": "고경표 - ...사랑했잖아...(2024) // 가사 4분 1초",
+          "kind": "title"
         }
       ],
       "reviewRequired": false,
@@ -1099,30 +1343,72 @@
           "quote": "[MV] ko kyung pyo(고경표) _ we were in love(2024)(...사랑했잖아...(2024)) — 1theK (원더케이). [MV] ko kyung pyo(고경표) _ we were in love(2024)(...사랑했잖아...(2024)) K-POP Wonderland, 1theK K-POP의 모든 즐거움을 ...",
           "kind": "search_snippet",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "quote": "고경표 - ...사랑했잖아...(2024) // 가사 4분 1초",
+          "retrievalUrl": "https://www.youtube.com/results?search_query=...%EC%82%AC%EB%9E%91%ED%96%88%EC%9E%96%EC%95%84...%282024%29%20%EA%B0%80%EC%82%AC",
+          "kind": "youtube_search",
+          "checkedAt": "2026-10-27T15:58:20Z",
+          "url": "https://www.youtube.com/watch?v=ywYUUJYkDqg",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ywYUUJYkDqg",
+          "quote": "고경표 - ...사랑했잖아...(2024) // 가사 4분 1초",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "quote": "고경표 - ...사랑했잖아...(2024) // 가사 4분 1초 — KKumu Music",
+          "retrievalUrl": "https://www.youtube.com/results?search_query=...%EC%82%AC%EB%9E%91%ED%96%88%EC%9E%96%EC%95%84...%282024%29%20%EA%B0%80%EC%82%AC",
+          "kind": "youtube_search",
+          "checkedAt": "2026-10-27T15:58:20Z",
+          "url": "https://www.youtube.com/watch?v=ywYUUJYkDqg",
+          "retrievedEvidenceMatched": true
         }
       ],
       "audio": {
         "status": "ready",
-        "path": "audio/-g0MOHe-Lik.ogg",
+        "path": "audio/ywYUUJYkDqg.ogg",
         "format": "ogg",
         "codec": "opus",
         "nominalBitrate": 48000,
         "channels": 2,
-        "durationSeconds": 251.8158125,
-        "byteLength": 1542847,
-        "sha256": "214f5fe3bb52d26d83822cd9098a049a16096f9d87e12658ec368ee0ad3f3375"
+        "durationSeconds": 240.35677083333334,
+        "byteLength": 1475062,
+        "sha256": "bb54ead501f506e579e4197077ec94d5c1c6539fc63fd2069a634f55c64a7e8b"
       },
       "reviewReasons": [],
-      "audioSourceReviewRequired": true,
-      "audioSourceReviewReasons": [
-        "Source is labelled as a music video; matched official audio-only recording still required"
-      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
       "audioSourceEvidence": {
         "url": "https://www.youtube.com/watch?v=-g0MOHe-Lik",
         "kind": "search_snippet",
         "quote": "[MV] ko kyung pyo(고경표) _ we were in love(2024)(...사랑했잖아...(2024)) | channel 1theK (원더케이) | duration 252 seconds",
         "retrievedEvidenceMatched": true
-      }
+      },
+      "singerAliases": [],
+      "recordingHistory": [
+        {
+          "videoId": "-g0MOHe-Lik",
+          "youtubeUrl": "https://www.youtube.com/watch?v=-g0MOHe-Lik",
+          "audio": {
+            "status": "ready",
+            "path": "audio/-g0MOHe-Lik.ogg",
+            "format": "ogg",
+            "codec": "opus",
+            "nominalBitrate": 48000,
+            "channels": 2,
+            "durationSeconds": 251.8158125,
+            "byteLength": 1542847,
+            "sha256": "214f5fe3bb52d26d83822cd9098a049a16096f9d87e12658ec368ee0ad3f3375"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "subtitled_audio"
+        }
+      ],
+      "audioSourceType": "subtitled_audio"
     },
     {
       "index": 19,
@@ -1174,9 +1460,10 @@
         "channels": 2,
         "durationSeconds": 282.1224583333333,
         "byteLength": 1716805,
-        "sha256": "c6f2db1e022dad593b21d3f905e94e955206762150f5d2cdf7fbc4c3822d91c5"
+        "sha256": "4b5dbf9bc66244deef8315606c04e404af20ae9815eb3311b72b1f30b22144ea"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 20,
@@ -1230,9 +1517,10 @@
         "channels": 2,
         "durationSeconds": 261.904875,
         "byteLength": 1605911,
-        "sha256": "40d8586badd6c9c97f0905cbbde1d813ef96d318ceae8206cd342ecbf6f2f1ba"
+        "sha256": "068428cf52750308236ed291a771c04da2926272cb23cf6305d3d752562eb681"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 21,
@@ -1301,9 +1589,10 @@
         "channels": 2,
         "durationSeconds": 230.13997916666668,
         "byteLength": 1409849,
-        "sha256": "19a0da6704eb576f215b5e34a7f33a9934402740a32323922a6caec7708030b2"
+        "sha256": "bf5d83b32cfec7dbd3f4858476b919db40a47ab6953673ecf451ade2d0229f0a"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 22,
@@ -1359,17 +1648,18 @@
         "channels": 2,
         "durationSeconds": 300.937625,
         "byteLength": 1846631,
-        "sha256": "21cae785cfe806aa014e9838d8460c0db015b0cf088a70a64ba48177d3b9e561"
+        "sha256": "8d3d60b9e11e9d1a388df48c772b91939cf0ec14384a908a95a7941a55c43f8e"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 23,
       "rank": 23,
       "tjNumber": 85215,
-      "videoId": "pNi9PjmbUrI",
+      "videoId": "niazCi1AqqA",
       "id": "39e67d43-73b4-570c-a151-c591373b9c5f",
-      "youtubeUrl": "https://www.youtube.com/watch?v=pNi9PjmbUrI",
+      "youtubeUrl": "https://www.youtube.com/watch?v=niazCi1AqqA",
       "title": "입춘",
       "sourceTitle": "입춘",
       "singer": "한로로",
@@ -1386,6 +1676,12 @@
           "name": "Let Me Love My Youth",
           "url": "https://www.youtube.com/watch?v=pNi9PjmbUrI",
           "quote": "[MV] 한로로 (HANRORO) - 입춘 (Let Me Love My Youth)"
+        },
+        {
+          "name": "입춘",
+          "url": "https://www.youtube.com/watch?v=niazCi1AqqA",
+          "quote": "한로로 - 입춘 [입춘] / 가사 Audio Lyrics",
+          "kind": "title"
         }
       ],
       "reviewRequired": false,
@@ -1407,30 +1703,64 @@
           "quote": "[MV] 한로로 (HANRORO) - 입춘 (Let Me Love My Youth) — 한로로 HANRORO. 한로로 (HANRORO) SINGLE '입춘 (Let Me Love My Youth)' OFFICIAL MV 나의 발화(發花)를 기록하기 위한 곡입니다. 불확실한 ...",
           "kind": "page",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=niazCi1AqqA",
+          "quote": "한로로 [입춘] 나의 발화(發花)를 기록하기 위한 곡입니다. 불확실한 봄맞이를 결심해 준 그대에게 이 곡을 전합니다. [Credit] Lyrics by 한로로 Composed by 한로로 Produce & Arranged by 이지훈 Guitar & Bass 이지훈 Drums 김동현 Mixed by 강은구 @eunstudio Mastered by bk! at AB Room ※ 본 영상은 가사 자막 영상입니다.",
+          "kind": "youtube_description",
+          "retrievedEvidenceMatched": true,
+          "retrievalUrl": "https://www.youtube.com/results?search_query=%EC%9E%85%EC%B6%98%20%EA%B0%80%EC%82%AC",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=niazCi1AqqA",
+          "quote": "한로로 - 입춘 [입춘] / 가사 Audio Lyrics",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "checkedAt": "2026-10-28"
         }
       ],
       "audio": {
         "status": "ready",
-        "path": "audio/pNi9PjmbUrI.ogg",
+        "path": "audio/niazCi1AqqA.ogg",
         "format": "ogg",
         "codec": "opus",
         "nominalBitrate": 48000,
         "channels": 2,
-        "durationSeconds": 248.46052083333333,
-        "byteLength": 1511319,
-        "sha256": "4e471f42faf5970e3001c7b4841e909728c72926130ce7275eb0ed3ac4ae31e2"
+        "durationSeconds": 248.83204166666667,
+        "byteLength": 1514797,
+        "sha256": "c4d296219a26f44ceeb6ffcf300578f5342de33585237c3971d9973104d8510c"
       },
       "reviewReasons": [],
-      "audioSourceReviewRequired": true,
-      "audioSourceReviewReasons": [
-        "Source is labelled as a music video; matched official audio-only recording still required"
-      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
       "audioSourceEvidence": {
         "url": "https://www.youtube.com/watch?v=pNi9PjmbUrI",
         "kind": "search_snippet",
         "quote": "[MV] 한로로 (HANRORO) - 입춘 (Let Me Love My Youth) | channel 한로로 HANRORO | duration 249 seconds",
         "retrievedEvidenceMatched": true
-      }
+      },
+      "singerAliases": [],
+      "recordingHistory": [
+        {
+          "videoId": "pNi9PjmbUrI",
+          "youtubeUrl": "https://www.youtube.com/watch?v=pNi9PjmbUrI",
+          "audio": {
+            "status": "ready",
+            "path": "audio/pNi9PjmbUrI.ogg",
+            "format": "ogg",
+            "codec": "opus",
+            "nominalBitrate": 48000,
+            "channels": 2,
+            "durationSeconds": 248.46052083333333,
+            "byteLength": 1511319,
+            "sha256": "4e471f42faf5970e3001c7b4841e909728c72926130ce7275eb0ed3ac4ae31e2"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "subtitled_audio"
+        }
+      ],
+      "audioSourceType": "subtitled_audio"
     },
     {
       "index": 24,
@@ -1497,9 +1827,10 @@
         "channels": 2,
         "durationSeconds": 242.81808333333333,
         "byteLength": 1490033,
-        "sha256": "4def20b2d531eca13a2668b94d7bede1c8334e760975b3d41f450b5a4376a5ee"
+        "sha256": "90d645208ab46723510732013ca9b8e0c015a2e50140c96756824768c68362e2"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 25,
@@ -1516,7 +1847,7 @@
       ],
       "tags": [
         "강현민",
-        "너드커넥션(Nerd Connection)",
+        "너드커넥션Nerd Connection",
         "그대만 있다면"
       ],
       "aliases": [
@@ -1562,18 +1893,19 @@
         "nominalBitrate": 48000,
         "channels": 2,
         "durationSeconds": 250.5619375,
-        "byteLength": 1532900,
-        "sha256": "ecacaf7dc13b18cec30f533d0e1c65830f86f6ba236205170180eb7ffde0654e"
+        "byteLength": 1535663,
+        "sha256": "7eaa984afdf4bcd7eeda459b548106776bb256e1d64cfb6e28703ebbe20f9e47"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 26,
       "rank": 26,
       "tjNumber": 14684,
-      "videoId": "ZhI9tQP4Abw",
+      "videoId": "1-Lm2LUR8Ss",
       "id": "eae464a5-07f0-5ea4-95c0-b8e3de89f2d8",
-      "youtubeUrl": "https://www.youtube.com/watch?v=ZhI9tQP4Abw",
+      "youtubeUrl": "https://www.youtube.com/watch?v=1-Lm2LUR8Ss",
       "title": "가시",
       "sourceTitle": "가시",
       "singer": "버즈",
@@ -1586,7 +1918,14 @@
         "윤우현",
         "버즈"
       ],
-      "aliases": [],
+      "aliases": [
+        {
+          "name": "가시",
+          "url": "https://www.youtube.com/watch?v=1-Lm2LUR8Ss",
+          "quote": "버즈(Buzz) - 가시 [가사/Lyrics]",
+          "kind": "title"
+        }
+      ],
       "reviewRequired": false,
       "evidence": [
         {
@@ -1606,38 +1945,72 @@
           "quote": "[MV] 버즈 (Buzz) - 가시 (Thorn) | Official Music Video — VOSTOK_MUSIC / 보스토크뮤직. 버즈 #가시 #VOSTOK_MUSIC #Buzz #Thorn 버즈 - 가시 [Buzz Effect] Buzz - Thorn [Buzz Effect] ▷NOW ON - Melon ...",
           "kind": "page",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=1-Lm2LUR8Ss",
+          "quote": "버즈(Buzz) - 가시 [가사/Lyrics]",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "retrievalUrl": "https://www.youtube.com/results?search_query=%EA%B0%80%EC%8B%9C%20%EA%B0%80%EC%82%AC",
+          "checkedAt": "2026-10-27T15:56:05.9179438Z"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=1-Lm2LUR8Ss",
+          "quote": "버즈(Buzz) - 가시 [가사/Lyrics]",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "checkedAt": "2026-10-28"
         }
       ],
       "audio": {
         "status": "ready",
-        "path": "audio/ZhI9tQP4Abw.ogg",
+        "path": "audio/1-Lm2LUR8Ss.ogg",
         "format": "ogg",
         "codec": "opus",
         "nominalBitrate": 48000,
         "channels": 2,
-        "durationSeconds": 254.83439583333333,
-        "byteLength": 1563038,
-        "sha256": "44ca170e8b16eeacc8f8cd316ea4085c94aaf3d29cb581d4db77b32a875d0eca"
+        "durationSeconds": 241.88927083333334,
+        "byteLength": 1467501,
+        "sha256": "584771201bdc99cbcf9abddff442a0321b0e4ce6ae6529f0aa4abaf624622460"
       },
       "reviewReasons": [],
-      "audioSourceReviewRequired": true,
-      "audioSourceReviewReasons": [
-        "Source is labelled as a music video; matched official audio-only recording still required"
-      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
       "audioSourceEvidence": {
         "url": "https://www.youtube.com/watch?v=ZhI9tQP4Abw",
         "kind": "search_snippet",
         "quote": "[MV] 버즈 (Buzz) - 가시 (Thorn) | Official Music Video | channel VOSTOK_MUSIC / 보스토크뮤직 | duration 255 seconds",
         "retrievedEvidenceMatched": true
-      }
+      },
+      "singerAliases": [],
+      "recordingHistory": [
+        {
+          "videoId": "ZhI9tQP4Abw",
+          "youtubeUrl": "https://www.youtube.com/watch?v=ZhI9tQP4Abw",
+          "audio": {
+            "status": "ready",
+            "path": "audio/ZhI9tQP4Abw.ogg",
+            "format": "ogg",
+            "codec": "opus",
+            "nominalBitrate": 48000,
+            "channels": 2,
+            "durationSeconds": 254.83439583333333,
+            "byteLength": 1563038,
+            "sha256": "44ca170e8b16eeacc8f8cd316ea4085c94aaf3d29cb581d4db77b32a875d0eca"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "subtitled_audio"
+        }
+      ],
+      "audioSourceType": "subtitled_audio"
     },
     {
       "index": 27,
       "rank": 27,
       "tjNumber": 96763,
-      "videoId": "",
+      "videoId": "DhMLZlq_8gE",
       "id": "10e36732-61d3-5565-9e58-b12ca0de1dc8",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://www.youtube.com/watch?v=DhMLZlq_8gE",
       "title": "꿈속에 너",
       "sourceTitle": "꿈속에 너",
       "singer": "에이치코드(Feat.전상근)",
@@ -1648,10 +2021,17 @@
       "tags": [
         "한희준",
         "조효제",
-        "에이치코드(Feat.전상근)"
+        "에이치코드Feat전상근"
       ],
-      "aliases": [],
-      "reviewRequired": true,
+      "aliases": [
+        {
+          "name": "꿈속에 너",
+          "url": "https://www.youtube.com/watch?v=DhMLZlq_8gE",
+          "quote": "에이치코드(H:CODE) - 꿈속에 너 / 가사",
+          "kind": "title"
+        }
+      ],
+      "reviewRequired": false,
       "evidence": [
         {
           "url": "https://www.tjmedia.com/chart/top100",
@@ -1664,17 +2044,52 @@
           "quote": "rank 27; TJ no. 96763; 꿈속에 너 — 에이치코드(Feat.전상근); lyricist: 한희준,조효제; composer: 한희준,조효제",
           "kind": "page",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=DhMLZlq_8gE",
+          "quote": "에이치코드(H:CODE) - 꿈속에 너 Executive Producer H:CODE Producer H:CODE Compose: H:CODE Lyrics: H:CODE",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "retrievalUrl": "https://www.youtube.com/results?search_query=%EA%BF%88%EC%86%8D%EC%97%90%20%EB%84%88%20%EA%B0%80%EC%82%AC",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=DhMLZlq_8gE",
+          "quote": "에이치코드(H:CODE) - 꿈속에 너 / 가사",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "checkedAt": "2026-10-28"
         }
       ],
       "audio": {
-        "status": "failed",
-        "reason": "The selected H:CODE MV is “그대 없는 밤에”, not TJ rank 27 “꿈속에 너”; targeted searches found no verified official upload for the chart track.",
-        "failureCode": "SOURCE_MISMATCH"
+        "status": "ready",
+        "path": "audio/DhMLZlq_8gE.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 266.7578541666667,
+        "byteLength": 1635243,
+        "sha256": "9b7536870558e042f0686483851fd674c374ea5ba54d5d75ba5fecf5f1c51e81"
       },
-      "reviewReasons": [
-        "youtube_source_track_mismatch",
-        "audio_source_missing"
-      ]
+      "reviewReasons": [],
+      "singerAliases": [],
+      "recordingHistory": [
+        {
+          "videoId": "",
+          "youtubeUrl": "",
+          "audio": {
+            "status": "failed",
+            "reason": "The selected H:CODE MV is “그대 없는 밤에”, not TJ rank 27 “꿈속에 너”; targeted searches found no verified official upload for the chart track.",
+            "failureCode": "SOURCE_MISMATCH"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "subtitled_audio"
+        }
+      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
+      "audioSourceType": "subtitled_audio"
     },
     {
       "index": 28,
@@ -1695,7 +2110,7 @@
         "이근호"
       ],
       "aliases": [],
-      "reviewRequired": true,
+      "reviewRequired": false,
       "evidence": [
         {
           "url": "https://www.tjmedia.com/chart/top100",
@@ -1714,6 +2129,21 @@
           "quote": "Uphill (Live) (오르막길) — 월간 윤종신. Provided to YouTube by Kakao Entertainment Uphill (Live) (오르막길) · Yoon Jong Shin Monthly Project 2015 Yoon Jong Shin ...",
           "kind": "search_snippet",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=TA06nvaT72Q",
+          "quote": "정인, 윤종신 - 오르막길 [가사/Lyrics] 4분 43초",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "retrievalUrl": "https://www.youtube.com/results?search_query=%EC%98%A4%EB%A5%B4%EB%A7%89%EA%B8%B8%20%EA%B0%80%EC%82%AC",
+          "checkedAt": "2026-10-27T15:57:21.489Z"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Rl22BJ5TxbM",
+          "quote": "Provided to YouTube by Kakao Entertainment\nUphill (Live) (오르막길) · Yoon Jong Shin\nMonthly Project 2015 Yoon Jong Shin\n℗ 2024 MONTHLY YOONJONGSHIN,under license to Kakao Entertainment\nReleased on: 2016-01-20\nAuthor: 윤종신\nComposer: 윤종신\nComposer: 이근호\nArranger: 조정치\nAuto-generated by YouTube.",
+          "kind": "youtube_description",
+          "retrievedEvidenceMatched": true,
+          "checkedAt": "2026-10-28"
         }
       ],
       "audio": {
@@ -1724,12 +2154,34 @@
         "nominalBitrate": 48000,
         "channels": 2,
         "durationSeconds": 289.07283333333334,
-        "byteLength": 1774600,
-        "sha256": "6f2ea3ed14b475eed1132118dcc12d66131924c660a834875be1a93deccc868c"
+        "byteLength": 1774741,
+        "sha256": "71d5f769552a6e01b1a74b5b9f982002b989711ed87646fc83d6dd0a21acdcd8"
       },
-      "reviewReasons": [
-        "official_live_version_source"
-      ]
+      "reviewReasons": [],
+      "singerAliases": [],
+      "recordingHistory": [
+        {
+          "videoId": "Rl22BJ5TxbM",
+          "youtubeUrl": "https://www.youtube.com/watch?v=Rl22BJ5TxbM",
+          "audio": {
+            "status": "ready",
+            "path": "audio/Rl22BJ5TxbM.ogg",
+            "format": "ogg",
+            "codec": "opus",
+            "nominalBitrate": 48000,
+            "channels": 2,
+            "durationSeconds": 289.07283333333334,
+            "byteLength": 1774600,
+            "sha256": "f8a72cf9ba1ff31c4e9b9b561889d879878a788423363f891b1cc3aada6f0a04"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "official_album_audio"
+        }
+      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
+      "audioSourceType": "official_album_audio",
+      "audioVersion": "2016-01-20 released live album recording, 행보 2015 윤종신 / 작사가 윤종신 Live Part.1"
     },
     {
       "index": 29,
@@ -1781,9 +2233,10 @@
         "channels": 2,
         "durationSeconds": 228.95366666666666,
         "byteLength": 1401714,
-        "sha256": "7dacb4ee1231ac48f06f4b9ffb28dd4dbd7ea3a82f84712e1af4e1d895c49cae"
+        "sha256": "4ab656b76063c3af54b12104964eb76c1a0937a7158f06b1b4eb98ff7d2bf29b"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 30,
@@ -1837,9 +2290,10 @@
         "channels": 2,
         "durationSeconds": 272.74860416666667,
         "byteLength": 1673136,
-        "sha256": "a3d0e65bd73f91bd9324710f690a0c1a295da84e5d616ac6567360d3152ca389"
+        "sha256": "baa9779f3069fb0b868783dfa6b38539a993b90b92d167261667fd6626db51f3"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 31,
@@ -1908,9 +2362,10 @@
         "channels": 2,
         "durationSeconds": 223.97508333333334,
         "byteLength": 1373541,
-        "sha256": "cd9481e59e37f57cf58dbc96097c7b5d9d3cb4a700992a67e4ac7c397778b31b"
+        "sha256": "b3857710d43209722d7b6e63afdd7c6eb062743819147d46deeeaf4da1eeedae"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 32,
@@ -1931,9 +2386,8 @@
         "박준배",
         "YARN",
         "이근상",
-        "DK(디셈버)",
-        "Heart",
-        "심心"
+        "DK디셈버",
+        "Heart"
       ],
       "aliases": [
         {
@@ -1979,9 +2433,10 @@
         "channels": 2,
         "durationSeconds": 257.03366666666665,
         "byteLength": 1576748,
-        "sha256": "c47812d3d22aa184f3b243aa3868d0b7437b314fc26f74284a1ca76dd74270ca"
+        "sha256": "f29288761bd039cd4fd98bf3941ca0bb040386d1c97081e45b2ae3ee9852790e"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 33,
@@ -2032,9 +2487,10 @@
         "channels": 2,
         "durationSeconds": 273.26033333333334,
         "byteLength": 1668589,
-        "sha256": "e0050007d6b5f4a4f5f9c2fd06118c027772e7b9dea591c47095b1db4ff933a2"
+        "sha256": "a1c2cee0cb2eb3e4cdbf56c039773c25916391ef33407dd1b8d4862631da7f56"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 34,
@@ -2086,9 +2542,10 @@
         "channels": 2,
         "durationSeconds": 247.49689583333333,
         "byteLength": 1495837,
-        "sha256": "65f69a359b7a48664754bddb75a26832d05e2bc92c4d0687337aa4880ac28acd"
+        "sha256": "e54552bb48165a346ba8baf8c95e4adbacfd3ad163005f55a4746614ff80e4ac"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 35,
@@ -2140,9 +2597,10 @@
         "channels": 2,
         "durationSeconds": 279.62170833333334,
         "byteLength": 1698845,
-        "sha256": "715da7ff5c180af5868199b3a91fabab28e8340f966f59ea7b4b574fdace62f2"
+        "sha256": "a788b124cb76f45ef56e101fd2a60139aa7707d7dbbce78a1b5b4cacc208a89f"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 36,
@@ -2163,7 +2621,7 @@
         "한재호",
         "김승수",
         "송수윤",
-        "RESCENE(리센느)"
+        "RESCENE리센느"
       ],
       "aliases": [],
       "reviewRequired": false,
@@ -2196,9 +2654,10 @@
         "channels": 2,
         "durationSeconds": 213.43322916666668,
         "byteLength": 1289922,
-        "sha256": "2b3064c086ee8fee4ee688b17692c926d64864a2e15f339852f8f1b2d43a1df7"
+        "sha256": "899e5fda11ac80a83f0c9ae8e509c22518161ce4c32f5a42e600f54625835a74"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 37,
@@ -2249,17 +2708,18 @@
         "channels": 2,
         "durationSeconds": 261.0109166666667,
         "byteLength": 1602204,
-        "sha256": "1b80d5f9a93a7646ad685bba2e006eb1badd5eff0e87c3d58304d5ac2c9800ba"
+        "sha256": "3b3586534f3620641a235394e461eb4063b9ca2605cce25a8df5d9f955f6d3e5"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 38,
       "rank": 38,
       "tjNumber": 50313,
-      "videoId": "_Ngk-DCHfD0",
+      "videoId": "xMx3R4HHrME",
       "id": "ed4fbd5c-5edb-5086-8f72-9b83fdb9ee55",
-      "youtubeUrl": "https://www.youtube.com/watch?v=_Ngk-DCHfD0",
+      "youtubeUrl": "https://www.youtube.com/watch?v=xMx3R4HHrME",
       "title": "0+0",
       "sourceTitle": "0+0",
       "singer": "한로로",
@@ -2301,38 +2761,65 @@
           "quote": "[MV] 한로로 (HANRORO) - 0+0 — 한로로 HANRORO. 한로로 (HANRORO) 3rd EP [자몽살구클럽] 0+0 Official MV 한참을 달리자 숲 끝자락에서 희미한 빛이 보였다. 모여있는 빌라 단지의 ...",
           "kind": "page",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=xMx3R4HHrME",
+          "quote": "한로로 - 0+0 [가사/Lyrics] • 웅키 • 3분 12초 • 발매 : 2025.08.04 아티스트 : 한로로 앨범 : 자몽살구클럽 작곡 : 한로로, Ryo, steven 작사 : 한로로",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "retrievalUrl": "https://www.youtube.com/results?search_query=0%2B0+%EA%B0%80%EC%82%AC",
+          "checkedAt": "2026-10-28"
         }
       ],
       "audio": {
         "status": "ready",
-        "path": "audio/_Ngk-DCHfD0.ogg",
+        "path": "audio/xMx3R4HHrME.ogg",
         "format": "ogg",
         "codec": "opus",
         "nominalBitrate": 48000,
         "channels": 2,
-        "durationSeconds": 192.5933125,
-        "byteLength": 1179005,
-        "sha256": "59f8e04d159da21f90c2e79e5f001f551878aa3b057c7f2cc4e40efa41e3c09c"
+        "durationSeconds": 192.00120833333332,
+        "byteLength": 1179083,
+        "sha256": "135cd90890eb567e8e03b7ad4e823a3231d69ad862365e3d97c94d2f2ff42c40"
       },
       "reviewReasons": [],
-      "audioSourceReviewRequired": true,
-      "audioSourceReviewReasons": [
-        "Source is labelled as a music video; matched official audio-only recording still required"
-      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
       "audioSourceEvidence": {
         "url": "https://www.youtube.com/watch?v=_Ngk-DCHfD0",
         "kind": "search_snippet",
         "quote": "[MV] 한로로 (HANRORO) - 0+0 | channel 한로로 HANRORO | duration 193 seconds",
         "retrievedEvidenceMatched": true
-      }
+      },
+      "singerAliases": [],
+      "recordingHistory": [
+        {
+          "videoId": "_Ngk-DCHfD0",
+          "youtubeUrl": "https://www.youtube.com/watch?v=_Ngk-DCHfD0",
+          "audio": {
+            "status": "ready",
+            "path": "audio/_Ngk-DCHfD0.ogg",
+            "format": "ogg",
+            "codec": "opus",
+            "nominalBitrate": 48000,
+            "channels": 2,
+            "durationSeconds": 192.5933125,
+            "byteLength": 1179005,
+            "sha256": "59f8e04d159da21f90c2e79e5f001f551878aa3b057c7f2cc4e40efa41e3c09c"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "subtitled_audio"
+        }
+      ],
+      "audioSourceType": "subtitled_audio"
     },
     {
       "index": 39,
       "rank": 39,
       "tjNumber": 47835,
-      "videoId": "WYy2fROj7uU",
+      "videoId": "c-5aOVglCUo",
       "id": "4eba7e95-66f0-5d6f-b54d-cbfcb9852f48",
-      "youtubeUrl": "https://www.youtube.com/watch?v=WYy2fROj7uU",
+      "youtubeUrl": "https://www.youtube.com/watch?v=c-5aOVglCUo",
       "title": "그대라는 사치",
       "sourceTitle": "그대라는 사치",
       "singer": "한동근",
@@ -2371,38 +2858,65 @@
           "quote": "[MV] Han Dong Geun(한동근) _ Amazing You(그대라는 사치) — 1theK (원더케이). [MV] Han Dong Geun(한동근) _ Amazing You(그대라는 사치) *English subtitles are now available. :D (Please click on 'CC' button ...",
           "kind": "search_snippet",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "quote": "한동근 - 그대라는 사치 [가사/Lyrics] #한동근 #그대라는사치 발매 : 2016.08.24 아티스트 : 한동근 앨범 : The 3rd Digital Single",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "url": "https://www.youtube.com/watch?v=c-5aOVglCUo",
+          "checkedAt": "2026-10-28",
+          "retrievalUrl": "https://www.youtube.com/results?search_query=%EA%B7%B8%EB%8C%80%EB%9D%BC%EB%8A%94%20%EC%82%AC%EC%B9%98%20%EA%B0%80%EC%82%AC"
         }
       ],
       "audio": {
         "status": "ready",
-        "path": "audio/WYy2fROj7uU.ogg",
+        "path": "audio/c-5aOVglCUo.ogg",
         "format": "ogg",
         "codec": "opus",
         "nominalBitrate": 48000,
         "channels": 2,
-        "durationSeconds": 301.32075,
-        "byteLength": 1822678,
-        "sha256": "0cedef7e162dea602265ac6d9b4f24f3ec518acc2d40baee39b046a5b139c64d"
+        "durationSeconds": 296.94379166666664,
+        "byteLength": 1822716,
+        "sha256": "13fb80695b237857b02203eadf711d2aed171a8e0a2c60cd527dcc34840091f2"
       },
       "reviewReasons": [],
-      "audioSourceReviewRequired": true,
-      "audioSourceReviewReasons": [
-        "Source is labelled as a music video; matched official audio-only recording still required"
-      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
       "audioSourceEvidence": {
         "url": "https://www.youtube.com/watch?v=WYy2fROj7uU",
         "kind": "search_snippet",
         "quote": "[MV] Han Dong Geun(한동근) _ Amazing You(그대라는 사치) | channel 1theK (원더케이) | duration 302 seconds",
         "retrievedEvidenceMatched": true
-      }
+      },
+      "singerAliases": [],
+      "recordingHistory": [
+        {
+          "videoId": "WYy2fROj7uU",
+          "youtubeUrl": "https://www.youtube.com/watch?v=WYy2fROj7uU",
+          "audio": {
+            "status": "ready",
+            "path": "audio/WYy2fROj7uU.ogg",
+            "format": "ogg",
+            "codec": "opus",
+            "nominalBitrate": 48000,
+            "channels": 2,
+            "durationSeconds": 301.32075,
+            "byteLength": 1822678,
+            "sha256": "0cedef7e162dea602265ac6d9b4f24f3ec518acc2d40baee39b046a5b139c64d"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "subtitled_audio"
+        }
+      ],
+      "audioSourceType": "subtitled_audio"
     },
     {
       "index": 40,
       "rank": 40,
       "tjNumber": 89245,
-      "videoId": "3DOkxQ3HDXE",
+      "videoId": "boPnvWOTtgo",
       "id": "0ffe2bb5-996a-5ae4-9a4f-055df10f3354",
-      "youtubeUrl": "https://www.youtube.com/watch?v=3DOkxQ3HDXE",
+      "youtubeUrl": "https://www.youtube.com/watch?v=boPnvWOTtgo",
       "title": "아로하(슬기로운의사생활OST)",
       "sourceTitle": "아로하(슬기로운의사생활OST)",
       "singer": "조정석",
@@ -2457,30 +2971,57 @@
           "quote": "[슬기로운 의사생활 OST Part 3] 조정석 (CHO JUNG SEOK) - 아로하 (Aloha) MV — STONE MUSIC. Available on iTunes, Apple Music : https://apple.co/2xvhlvk Listen on Spotify : https://spoti.fi/2UPhv8L [슬기로운 의사생활 OST Part ...",
           "kind": "search_snippet",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=boPnvWOTtgo",
+          "kind": "youtube_search",
+          "retrievalUrl": "https://www.youtube.com/results?search_query=%EC%95%84%EB%A1%9C%ED%95%98%20%EC%A1%B0%EC%A0%95%EC%84%9D%20%EA%B0%80%EC%82%AC",
+          "quote": "조정석 - 아로하 [슬기로운 의사생활 OST] [가사/Lyrics]",
+          "checkedAt": "2026-10-28",
+          "retrievedEvidenceMatched": true
         }
       ],
       "audio": {
         "status": "ready",
-        "path": "audio/3DOkxQ3HDXE.ogg",
+        "path": "audio/boPnvWOTtgo.ogg",
         "format": "ogg",
         "codec": "opus",
         "nominalBitrate": 48000,
         "channels": 2,
-        "durationSeconds": 250.81735416666666,
-        "byteLength": 1503950,
-        "sha256": "1e639beea22c16c1b07c3783c214c3fc7adf3cde4cd11850c866d95e6f1449f7"
+        "durationSeconds": 245.02397916666666,
+        "byteLength": 1501829,
+        "sha256": "5e386de6ce78b3d35075883146ebb3e1cb49c72a8b94f8c1c98f72a58cc53579"
       },
       "reviewReasons": [],
-      "audioSourceReviewRequired": true,
-      "audioSourceReviewReasons": [
-        "Source is labelled as a music video; matched official audio-only recording still required"
-      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
       "audioSourceEvidence": {
         "url": "https://www.youtube.com/watch?v=3DOkxQ3HDXE",
         "kind": "search_snippet",
         "quote": "[슬기로운 의사생활 OST Part 3] 조정석 (CHO JUNG SEOK) - 아로하 (Aloha) MV | channel STONE MUSIC | duration 251 seconds",
         "retrievedEvidenceMatched": true
-      }
+      },
+      "singerAliases": [],
+      "recordingHistory": [
+        {
+          "videoId": "3DOkxQ3HDXE",
+          "youtubeUrl": "https://www.youtube.com/watch?v=3DOkxQ3HDXE",
+          "audio": {
+            "status": "ready",
+            "path": "audio/3DOkxQ3HDXE.ogg",
+            "format": "ogg",
+            "codec": "opus",
+            "nominalBitrate": 48000,
+            "channels": 2,
+            "durationSeconds": 250.81735416666666,
+            "byteLength": 1503950,
+            "sha256": "1e639beea22c16c1b07c3783c214c3fc7adf3cde4cd11850c866d95e6f1449f7"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "subtitled_audio"
+        }
+      ],
+      "audioSourceType": "subtitled_audio"
     },
     {
       "index": 41,
@@ -2499,7 +3040,7 @@
       "tags": [
         "정진환",
         "김한범",
-        "서인국,정은지",
+        "서인국정은지",
         "All For You응답하라1997 OST",
         "All For You"
       ],
@@ -2547,17 +3088,18 @@
         "channels": 2,
         "durationSeconds": 248.59985416666666,
         "byteLength": 1522641,
-        "sha256": "d474e3378253579026bbf9780b8be253203c60163ddc07d3d337af560e899387"
+        "sha256": "a4bfecd4812c6583d202aa6b8eb3fb2e5454184baebbde515337acaf3c0f985a"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 42,
       "rank": 42,
       "tjNumber": 43883,
-      "videoId": "h0KIWaUEIgQ",
+      "videoId": "eKtSbXHaqLM",
       "id": "0eeb8d81-ebaa-58d5-9012-59e71146a8c7",
-      "youtubeUrl": "https://www.youtube.com/watch?v=h0KIWaUEIgQ",
+      "youtubeUrl": "https://www.youtube.com/watch?v=eKtSbXHaqLM",
       "title": "사랑하게 될 거야",
       "sourceTitle": "사랑하게 될 거야",
       "singer": "한로로",
@@ -2567,7 +3109,14 @@
       "tags": [
         "한로로"
       ],
-      "aliases": [],
+      "aliases": [
+        {
+          "name": "사랑하게 될 거야",
+          "url": "https://www.youtube.com/watch?v=eKtSbXHaqLM",
+          "quote": "한로로 - 사랑하게 될 거야 [가사 | Lyrics] 2:45",
+          "kind": "title"
+        }
+      ],
       "reviewRequired": false,
       "evidence": [
         {
@@ -2587,38 +3136,80 @@
           "quote": "[MV] 한로로 (HANRORO) - 사랑하게 될 거야 (Landing in Love) — 한로로 HANRORO. 한로로 (HANRORO) 1st EP [이상비행] 사랑하게 될 거야 (Landing in Love) Official MV 이 마지막 종이를 날리기 전까지 정말 많이 ...",
           "kind": "search_snippet",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "quote": "한로로 - 사랑하게 될 거야 [가사 | Lyrics] 2:45",
+          "retrievalUrl": "https://www.youtube.com/results?search_query=%EC%82%AC%EB%9E%91%ED%95%98%EA%B2%8C%20%EB%90%A0%20%EA%B1%B0%EC%95%BC%20%EA%B0%80%EC%82%AC",
+          "kind": "youtube_search",
+          "checkedAt": "2026-10-27T15:58:20Z",
+          "url": "https://www.youtube.com/watch?v=eKtSbXHaqLM",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=eKtSbXHaqLM",
+          "quote": "한로로 - 사랑하게 될 거야 [가사 | Lyrics] 2:45",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "quote": "한로로 - 사랑하게 될 거야 [가사 | Lyrics] 2:45; description: 아티스트: 한로로 노래: 사랑하게 될 거야 앨범: 이상비행",
+          "retrievalUrl": "https://www.youtube.com/results?search_query=%EC%82%AC%EB%9E%91%ED%95%98%EA%B2%8C%20%EB%90%A0%20%EA%B1%B0%EC%95%BC%20%EA%B0%80%EC%82%AC",
+          "kind": "youtube_search",
+          "checkedAt": "2026-10-27T15:58:20Z",
+          "url": "https://www.youtube.com/watch?v=eKtSbXHaqLM",
+          "retrievedEvidenceMatched": true
         }
       ],
       "audio": {
         "status": "ready",
-        "path": "audio/h0KIWaUEIgQ.ogg",
+        "path": "audio/eKtSbXHaqLM.ogg",
         "format": "ogg",
         "codec": "opus",
         "nominalBitrate": 48000,
         "channels": 2,
-        "durationSeconds": 166.42441666666667,
-        "byteLength": 1002468,
-        "sha256": "f73b4b422edef489b0fe1b90016055cafe3e304f10ddd41616a31d83aa2cc6fe"
+        "durationSeconds": 165.019625,
+        "byteLength": 1010573,
+        "sha256": "134d06019c8cf37afe280096fcbe5b08d7a8cfb1ee7e83458469360af663e8e4"
       },
       "reviewReasons": [],
-      "audioSourceReviewRequired": true,
-      "audioSourceReviewReasons": [
-        "Source is labelled as a music video; matched official audio-only recording still required"
-      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
       "audioSourceEvidence": {
         "url": "https://www.youtube.com/watch?v=h0KIWaUEIgQ",
         "kind": "search_snippet",
         "quote": "[MV] 한로로 (HANRORO) - 사랑하게 될 거야 (Landing in Love) | channel 한로로 HANRORO | duration 167 seconds",
         "retrievedEvidenceMatched": true
-      }
+      },
+      "singerAliases": [],
+      "recordingHistory": [
+        {
+          "videoId": "h0KIWaUEIgQ",
+          "youtubeUrl": "https://www.youtube.com/watch?v=h0KIWaUEIgQ",
+          "audio": {
+            "status": "ready",
+            "path": "audio/h0KIWaUEIgQ.ogg",
+            "format": "ogg",
+            "codec": "opus",
+            "nominalBitrate": 48000,
+            "channels": 2,
+            "durationSeconds": 166.42441666666667,
+            "byteLength": 1002468,
+            "sha256": "f73b4b422edef489b0fe1b90016055cafe3e304f10ddd41616a31d83aa2cc6fe"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "subtitled_audio"
+        }
+      ],
+      "audioSourceType": "subtitled_audio"
     },
     {
       "index": 43,
       "rank": 43,
       "tjNumber": 46108,
-      "videoId": "DxS-64T7xA4",
+      "videoId": "YyKSZARBcGo",
       "id": "c12fb2c2-a6a4-5a25-8798-a5b498548a98",
-      "youtubeUrl": "https://www.youtube.com/watch?v=DxS-64T7xA4",
+      "youtubeUrl": "https://www.youtube.com/watch?v=YyKSZARBcGo",
       "title": "다시 사랑한다면(니글니글버터플라이)",
       "sourceTitle": "다시 사랑한다면(니글니글버터플라이)",
       "singer": "김필",
@@ -2654,7 +3245,7 @@
           "quote": "rank 43; TJ no. 46108; 다시 사랑한다면(니글니글버터플라이) — 김필; lyricist: 강은경; composer: 김태원"
         }
       ],
-      "reviewRequired": true,
+      "reviewRequired": false,
       "evidence": [
         {
           "url": "https://www.tjmedia.com/chart/top100",
@@ -2673,30 +3264,59 @@
           "quote": "[Focus Live] 김필 (Kim Feel) - 다시 사랑한다면 (If We Love Again) (원곡: 도원경) — 김필 KIM FEEL. More About Kim Feel Official YouTube: www.youtube.com/kimfeelofficial Official Facebook: www.facebook.com/kimfeel Official ...",
           "kind": "search_snippet",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=YyKSZARBcGo",
+          "quote": "발매 : 2016.02.21 아티스트 : 김필 앨범 : 복면가왕 47회 작곡 : 김태원 작사 : 강은경 편곡 : 팻뮤직",
+          "kind": "youtube_description",
+          "retrievedEvidenceMatched": true,
+          "retrievalUrl": "https://www.youtube.com/results?search_query=다시+사랑한다면+김필+가사",
+          "checkedAt": "2026-10-28"
         }
       ],
       "audio": {
         "status": "ready",
-        "path": "audio/DxS-64T7xA4.ogg",
+        "path": "audio/YyKSZARBcGo.ogg",
         "format": "ogg",
         "codec": "opus",
         "nominalBitrate": 48000,
         "channels": 2,
-        "durationSeconds": 235.99633333333333,
-        "byteLength": 1445211,
-        "sha256": "0603e2add922066a0bad9ea33899a7d152d650666e5099f8f136b3bdf5b27982"
+        "durationSeconds": 242.45816666666667,
+        "byteLength": 1485561,
+        "sha256": "9c124fda6a7c687a830b7aec82c5c8d2b242f9e9400ecfe06c919211f71530f0"
       },
-      "reviewReasons": [
-        "live_performance_version_of_original_song"
-      ]
+      "reviewReasons": [],
+      "singerAliases": [],
+      "recordingHistory": [
+        {
+          "videoId": "DxS-64T7xA4",
+          "youtubeUrl": "https://www.youtube.com/watch?v=DxS-64T7xA4",
+          "audio": {
+            "status": "ready",
+            "path": "audio/DxS-64T7xA4.ogg",
+            "format": "ogg",
+            "codec": "opus",
+            "nominalBitrate": 48000,
+            "channels": 2,
+            "durationSeconds": 235.99633333333333,
+            "byteLength": 1445211,
+            "sha256": "0603e2add922066a0bad9ea33899a7d152d650666e5099f8f136b3bdf5b27982"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "subtitled_audio"
+        }
+      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
+      "audioSourceType": "subtitled_audio"
     },
     {
       "index": 44,
       "rank": 44,
       "tjNumber": 30639,
-      "videoId": "NwO0H2bUhSQ",
+      "videoId": "JZu0ldjo-3Q",
       "id": "9ce9796d-c83c-5b13-91cd-72927b3eb5f4",
-      "youtubeUrl": "https://www.youtube.com/watch?v=NwO0H2bUhSQ",
+      "youtubeUrl": "https://www.youtube.com/watch?v=JZu0ldjo-3Q",
       "title": "내 머리가 나빠서(드라마'꽃보다남자'OST)",
       "sourceTitle": "내 머리가 나빠서(드라마'꽃보다남자'OST)",
       "singer": "SS501",
@@ -2723,9 +3343,15 @@
           "name": "내 머리가 나빠서",
           "url": "https://www.tjmedia.com/chart/top100",
           "quote": "rank 44; TJ no. 30639; 내 머리가 나빠서(드라마'꽃보다남자'OST) — SS501; lyricist: 오준성,은종태; composer: 오준성"
+        },
+        {
+          "name": "내 머리가 나빠서",
+          "url": "https://www.youtube.com/watch?v=JZu0ldjo-3Q",
+          "quote": "SS501 - 내 머리가 나빠서 [꽃보다 남자 OST] [가사/Lyrics]",
+          "kind": "title"
         }
       ],
-      "reviewRequired": true,
+      "reviewRequired": false,
       "evidence": [
         {
           "url": "https://www.tjmedia.com/chart/top100",
@@ -2744,30 +3370,66 @@
           "quote": "내 머리가 나빠서 — Release - Topic. Provided to YouTube by UMAG 내 머리가 나빠서 · Various Artists 꽃보다 남자 (Original Television Soundtrack) ℗ 2009 다해이엔티, ...",
           "kind": "search_snippet",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=JZu0ldjo-3Q",
+          "quote": "SS501 - 내 머리가 나빠서 [꽃보다 남자 OST] [가사/Lyrics]",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "retrievalUrl": "https://www.youtube.com/results?search_query=%EB%82%B4%20%EB%A8%B8%EB%A6%AC%EA%B0%80%20%EB%82%98%EB%B9%A0%EC%84%9C%28%EB%93%9C%EB%9D%BC%EB%A7%88%27%EA%BD%83%EB%B3%B4%EB%8B%A4%EB%82%A8%EC%9E%90%27OST%29%20%EA%B0%80%EC%82%AC",
+          "checkedAt": "2026-10-27T15:56:05.9183696Z"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=JZu0ldjo-3Q",
+          "quote": "SS501 - 내 머리가 나빠서 [꽃보다 남자 OST] [가사/Lyrics]",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "checkedAt": "2026-10-28"
         }
       ],
       "audio": {
         "status": "ready",
-        "path": "audio/NwO0H2bUhSQ.ogg",
+        "path": "audio/JZu0ldjo-3Q.ogg",
         "format": "ogg",
         "codec": "opus",
         "nominalBitrate": 48000,
         "channels": 2,
-        "durationSeconds": 263.047,
-        "byteLength": 1602772,
-        "sha256": "9e3d7efb07128f8920395d84ce84ace36471b40babcad1eae6f514bcd9cb788b"
+        "durationSeconds": 259.11847916666665,
+        "byteLength": 1590799,
+        "sha256": "f8934046e8f90f7631113ef02125b5bda470a6a2868596b21b3ba3346ab2dc55"
       },
-      "reviewReasons": [
-        "uploader_performer_credit_ambiguous"
-      ]
+      "reviewReasons": [],
+      "singerAliases": [],
+      "recordingHistory": [
+        {
+          "videoId": "NwO0H2bUhSQ",
+          "youtubeUrl": "https://www.youtube.com/watch?v=NwO0H2bUhSQ",
+          "audio": {
+            "status": "ready",
+            "path": "audio/NwO0H2bUhSQ.ogg",
+            "format": "ogg",
+            "codec": "opus",
+            "nominalBitrate": 48000,
+            "channels": 2,
+            "durationSeconds": 263.047,
+            "byteLength": 1602772,
+            "sha256": "9e3d7efb07128f8920395d84ce84ace36471b40babcad1eae6f514bcd9cb788b"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "subtitled_audio"
+        }
+      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
+      "audioSourceType": "subtitled_audio"
     },
     {
       "index": 45,
       "rank": 45,
       "tjNumber": 49057,
-      "videoId": "TABbjHLEwKE",
+      "videoId": "wI4ZXD7g1WA",
       "id": "5397afd1-751e-5f0b-ab4f-ffea3f2de34d",
-      "youtubeUrl": "https://www.youtube.com/watch?v=TABbjHLEwKE",
+      "youtubeUrl": "https://www.youtube.com/watch?v=wI4ZXD7g1WA",
       "title": "어제보다 슬픈 오늘",
       "sourceTitle": "어제보다 슬픈 오늘",
       "singer": "우디",
@@ -2780,7 +3442,14 @@
         "김건모",
         "우디"
       ],
-      "aliases": [],
+      "aliases": [
+        {
+          "name": "어제보다 슬픈 오늘",
+          "url": "https://www.youtube.com/watch?v=wI4ZXD7g1WA",
+          "quote": "우디 - 어제보다 슬픈 오늘 / Kpop / Lyrics / 가사",
+          "kind": "title"
+        }
+      ],
       "reviewRequired": false,
       "evidence": [
         {
@@ -2800,30 +3469,64 @@
           "quote": "GDM ㅣ우디 (Woody) '어제 보다 슬픈 오늘 (Sadder than Yesterday)' OFFICIAL MV [KOR/ENG SUB] — 골든문 GDM and 김상우디 [Woody Official]. 우디 (Woody) '어제 보다 슬픈 오늘 (Sadder than Yesterday)' OFFICIAL MV ⠀ ⠀ ⠀ ⠀ 서로 숨바꼭질하는 듯 끝을 향해가는 감정에 ...",
           "kind": "search_snippet",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=wI4ZXD7g1WA",
+          "quote": "우디 - 어제보다 슬픈 오늘 / Kpop / Lyrics / 가사",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "retrievalUrl": "https://www.youtube.com/results?search_query=%EC%96%B4%EC%A0%9C%EB%B3%B4%EB%8B%A4%20%EC%8A%AC%ED%94%88%20%EC%98%A4%EB%8A%98%20%EA%B0%80%EC%82%AC",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=wI4ZXD7g1WA",
+          "quote": "우디 - 어제보다 슬픈 오늘 / Kpop / Lyrics / 가사",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "checkedAt": "2026-10-28"
         }
       ],
       "audio": {
         "status": "ready",
-        "path": "audio/TABbjHLEwKE.ogg",
+        "path": "audio/wI4ZXD7g1WA.ogg",
         "format": "ogg",
         "codec": "opus",
         "nominalBitrate": 48000,
         "channels": 2,
-        "durationSeconds": 236.0816875,
-        "byteLength": 1448813,
-        "sha256": "b727b3e783c36d4b7a90b58ab6c883f3450e16592e3a446974901fa224bf8453"
+        "durationSeconds": 236.28166666666667,
+        "byteLength": 1446160,
+        "sha256": "ee0440b5cb8f62a25376a58f7cbf652f6cd6f460c76563221251ce28c34f67ad"
       },
       "reviewReasons": [],
-      "audioSourceReviewRequired": true,
-      "audioSourceReviewReasons": [
-        "Source is labelled as a music video; matched official audio-only recording still required"
-      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
       "audioSourceEvidence": {
         "url": "https://www.youtube.com/watch?v=TABbjHLEwKE",
         "kind": "search_snippet",
         "quote": "GDM ㅣ우디 (Woody) '어제 보다 슬픈 오늘 (Sadder than Yesterday)' OFFICIAL MV [KOR/ENG SUB] | channel 골든문 GDM and 김상우디 [Woody Official] | duration 237 seconds",
         "retrievedEvidenceMatched": true
-      }
+      },
+      "singerAliases": [],
+      "recordingHistory": [
+        {
+          "videoId": "TABbjHLEwKE",
+          "youtubeUrl": "https://www.youtube.com/watch?v=TABbjHLEwKE",
+          "audio": {
+            "status": "ready",
+            "path": "audio/TABbjHLEwKE.ogg",
+            "format": "ogg",
+            "codec": "opus",
+            "nominalBitrate": 48000,
+            "channels": 2,
+            "durationSeconds": 236.0816875,
+            "byteLength": 1448813,
+            "sha256": "b727b3e783c36d4b7a90b58ab6c883f3450e16592e3a446974901fa224bf8453"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "subtitled_audio"
+        }
+      ],
+      "audioSourceType": "subtitled_audio"
     },
     {
       "index": 46,
@@ -2874,9 +3577,10 @@
         "channels": 2,
         "durationSeconds": 234.16864583333333,
         "byteLength": 1435173,
-        "sha256": "31601f05143ae1c15b8f416441116818b2fa1b43d5b9dfa5831dbb90588e1219"
+        "sha256": "817aa06cad515030e01725a8e0b7c35f0f386412796270b388426106a9a019a1"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 47,
@@ -2928,9 +3632,10 @@
         "channels": 2,
         "durationSeconds": 226.327,
         "byteLength": 1383914,
-        "sha256": "8ee54fae923cd2a807355ce80d7dabff120c1d1fa19405b387434ad4c47dd9ff"
+        "sha256": "f699f5e13dbb15d9d3dac9ad5c99b8e3bc7548badc4c7b3b97df38842977f2f1"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 48,
@@ -2981,9 +3686,10 @@
         "channels": 2,
         "durationSeconds": 223.367,
         "byteLength": 1361629,
-        "sha256": "8cb72aab3e40bc2b70621ec4c4a87a9de2b3c22ae0782d78ee712c8f6c243aaa"
+        "sha256": "543e30fe344c2bdfd90ff7d959a52903dc1046959efa0bd54f6eb8a712c21bec"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 49,
@@ -3040,10 +3746,11 @@
         "nominalBitrate": 48000,
         "channels": 2,
         "durationSeconds": 316.167,
-        "byteLength": 1937312,
-        "sha256": "7db8adc456a870cd74537c8ef88b70ec9f43872c80cbe7e61a3be733182cddac"
+        "byteLength": 1940456,
+        "sha256": "777f669f3ba8933f9fa5b2497473cb3785b632ab8eb29702d01faf70c4b017c3"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 50,
@@ -3092,10 +3799,11 @@
         "nominalBitrate": 48000,
         "channels": 2,
         "durationSeconds": 243.48435416666666,
-        "byteLength": 1492423,
-        "sha256": "9d142f37d56264c86ffd6237de29aea76a0b6abe83689b29ce1adfded2b27ca1"
+        "byteLength": 1495089,
+        "sha256": "8c33b5ce46ef90ebf4ba50157b0aaaef344667ac560fdb6f12e2c88b50143a93"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 51,
@@ -3147,17 +3855,18 @@
         "channels": 2,
         "durationSeconds": 266.31666666666666,
         "byteLength": 1617644,
-        "sha256": "816f1151f9549a366ab8cfdd6b531b661700270f1ab7aa32406b59623d6a905c"
+        "sha256": "4bf7d606b8f405b23382c46f5f7f777ca00d3ff07ba3a5c33c8da10d58c50ef7"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 52,
       "rank": 52,
       "tjNumber": 70427,
-      "videoId": "VVO05mYGFY8",
+      "videoId": "8i_8532Vjmk",
       "id": "7a29be87-68c8-5bdb-a50e-c987e44febe0",
-      "youtubeUrl": "https://www.youtube.com/watch?v=VVO05mYGFY8",
+      "youtubeUrl": "https://www.youtube.com/watch?v=8i_8532Vjmk",
       "title": "만찬가",
       "sourceTitle": "만찬가",
       "singer": "태연",
@@ -3167,7 +3876,7 @@
       ],
       "tags": [
         "이스란",
-        "TUKI.",
+        "TUKI",
         "태연"
       ],
       "aliases": [],
@@ -3190,30 +3899,64 @@
           "quote": "[MV] 태연 (TAEYEON)_ 만찬가 (晩餐歌 / BANSANKA) : J-POP REMAKE Vol.1 — 1theK (원더케이) and 동네친구 강나미 [Kangnami]. [MV] 태연 (TAEYEON)_ 만찬가 (晩餐歌 / BANSANKA) : J-POP REMAKE Vol.1 K-POP Wonderland, 1theK K-POP의 모든 즐거움을 ...",
           "kind": "search_snippet",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=8i_8532Vjmk",
+          "quote": "태연 (TAEYEON) - 만찬가 [가사 | Lyrics] 3분 39초",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "retrievalUrl": "https://www.youtube.com/results?search_query=%EB%A7%8C%EC%B0%AC%EA%B0%80%20%EA%B0%80%EC%82%AC",
+          "checkedAt": "2026-10-27T15:57:21.489Z"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=8i_8532Vjmk",
+          "quote": "태연 (TAEYEON) - 만찬가 [가사 | Lyrics]",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "checkedAt": "2026-10-28"
         }
       ],
       "audio": {
         "status": "ready",
-        "path": "audio/VVO05mYGFY8.ogg",
+        "path": "audio/8i_8532Vjmk.ogg",
         "format": "ogg",
         "codec": "opus",
         "nominalBitrate": 48000,
         "channels": 2,
-        "durationSeconds": 221.17708333333334,
-        "byteLength": 1344202,
-        "sha256": "ca7c2a1017fcf7163a839b76ac8b2c1c2725d2591797774a7d50096261c5eb26"
+        "durationSeconds": 218.99439583333333,
+        "byteLength": 1340909,
+        "sha256": "da453a7b4dfdfbf8457f6aadbc2a1be833bc136a284d9ba679e9e69d4bca2e90"
       },
       "reviewReasons": [],
-      "audioSourceReviewRequired": true,
-      "audioSourceReviewReasons": [
-        "Source is labelled as a music video; matched official audio-only recording still required"
-      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
       "audioSourceEvidence": {
         "url": "https://www.youtube.com/watch?v=VVO05mYGFY8",
         "kind": "search_snippet",
         "quote": "[MV] 태연 (TAEYEON)_ 만찬가 (晩餐歌 / BANSANKA) : J-POP REMAKE Vol.1 | channel 1theK (원더케이) and 동네친구 강나미 [Kangnami] | duration 222 seconds",
         "retrievedEvidenceMatched": true
-      }
+      },
+      "singerAliases": [],
+      "recordingHistory": [
+        {
+          "videoId": "VVO05mYGFY8",
+          "youtubeUrl": "https://www.youtube.com/watch?v=VVO05mYGFY8",
+          "audio": {
+            "status": "ready",
+            "path": "audio/VVO05mYGFY8.ogg",
+            "format": "ogg",
+            "codec": "opus",
+            "nominalBitrate": 48000,
+            "channels": 2,
+            "durationSeconds": 221.17708333333334,
+            "byteLength": 1344202,
+            "sha256": "ca7c2a1017fcf7163a839b76ac8b2c1c2725d2591797774a7d50096261c5eb26"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "subtitled_audio"
+        }
+      ],
+      "audioSourceType": "subtitled_audio"
     },
     {
       "index": 53,
@@ -3262,10 +4005,11 @@
         "nominalBitrate": 48000,
         "channels": 2,
         "durationSeconds": 255.11366666666666,
-        "byteLength": 1560642,
-        "sha256": "dd4799cd844f0aef17d04b4a942ed9a453ca77b327c2b52476aa3635fdd2bfcb"
+        "byteLength": 1563375,
+        "sha256": "52ed6003db81576acdc82377297c41831b6aaf4f8597b6512443b0bc4c145f7b"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 54,
@@ -3334,9 +4078,10 @@
         "channels": 2,
         "durationSeconds": 273.3523125,
         "byteLength": 1676391,
-        "sha256": "32903f79f9e2b1b7b52d0954d2f62f641148011b2846270f55174618454596c2"
+        "sha256": "18c27b93b832f11b26c6000640459ad661c51370c972759fbcf2301bf5d1e71f"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 55,
@@ -3387,9 +4132,10 @@
         "channels": 2,
         "durationSeconds": 277.527,
         "byteLength": 1702424,
-        "sha256": "42d41406e225f7872305f3d81dd3c3622e4393728ac4e2001a6c4ea237ab1316"
+        "sha256": "c022b9399092dcf891981e74d995d4c53135714187ac5a356500d461f6793eb7"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 56,
@@ -3441,9 +4187,10 @@
         "channels": 2,
         "durationSeconds": 236.42097916666665,
         "byteLength": 1451034,
-        "sha256": "6bef2b90bc39e581ff05d05a322e84121a5194a54a244b7cd132c7b78c596d4b"
+        "sha256": "de13b31d3fd0eaedc3a0cfe1d5ca4a9ccfb7db7a48e9bbad0ef9150538639be3"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 57,
@@ -3492,10 +4239,11 @@
         "nominalBitrate": 48000,
         "channels": 2,
         "durationSeconds": 213.42160416666667,
-        "byteLength": 1300884,
-        "sha256": "5e484bc959e0935d66c76cc0391d9dd05be9f20595e59d0ab19a240d0671e5ce"
+        "byteLength": 1303359,
+        "sha256": "8feae7d02655e8c93f44452cef3ae4ca99a3d6880deed12883134ec40f6fd49c"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 58,
@@ -3549,9 +4297,10 @@
         "channels": 2,
         "durationSeconds": 206.367,
         "byteLength": 1265134,
-        "sha256": "2ff6e5a35185fb487ce718faf71ac8a8bdcceedeae832fe6a0db3f9a530e2a8b"
+        "sha256": "3aa7bc99110aa63b682fccee5a0a41cde316cf4d9d859f0b59d845aac1f875aa"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 59,
@@ -3600,10 +4349,11 @@
         "nominalBitrate": 48000,
         "channels": 2,
         "durationSeconds": 267.6518125,
-        "byteLength": 1617281,
-        "sha256": "1a35a67879a72fa0596a3fc902f8f64c224df3802eaeffc85ad6d736f15ffd13"
+        "byteLength": 1620074,
+        "sha256": "6a3203333c0ea6cc00c50672a3e616b8c35d60d89595cc703d997def6682c412"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 60,
@@ -3652,10 +4402,11 @@
         "nominalBitrate": 48000,
         "channels": 2,
         "durationSeconds": 207.98814583333333,
-        "byteLength": 1257259,
-        "sha256": "ce62588ed0babd881948fa57c7fec8e504c76125c8f78bdaed3d6498a25ae4e5"
+        "byteLength": 1259687,
+        "sha256": "9bde710a7e608fda58b1204a5b5e0306103c0fdba2a869d476a9cd14bcf5f256"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 61,
@@ -3704,10 +4455,11 @@
         "nominalBitrate": 48000,
         "channels": 2,
         "durationSeconds": 335.07095833333335,
-        "byteLength": 2015621,
-        "sha256": "762f7bb3e3654f2e36ba86e6c87c489c1b5862e1baffb805611d87629c90204d"
+        "byteLength": 2018816,
+        "sha256": "3d00fbabb50f22ff4faa33f732553a7eae9047a87f614f6923c96d93ddc08253"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 62,
@@ -3758,9 +4510,10 @@
         "channels": 2,
         "durationSeconds": 171.02197916666665,
         "byteLength": 1050278,
-        "sha256": "9c0aed3497e084087787707452520a73009808afa4889bfba22a78cc6add151d"
+        "sha256": "580600b8d609c449c87621c7835d639448aa5dac0c3c1a582765fba969f1ae3d"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 63,
@@ -3809,10 +4562,11 @@
         "nominalBitrate": 48000,
         "channels": 2,
         "durationSeconds": 239.4511875,
-        "byteLength": 1465870,
-        "sha256": "e8ca9c88c4e2ac0ab2e2e000e51a02e6a59c0b3193456f760f80890885a0dd58"
+        "byteLength": 1468507,
+        "sha256": "9a23feb7e77fe5d771de2cc160456a2870871f4336859d5cbc58c8688ede0b37"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 64,
@@ -3881,9 +4635,10 @@
         "channels": 2,
         "durationSeconds": 339.847,
         "byteLength": 2085210,
-        "sha256": "c14d4bb3ac6db2e3a0bc339e7f2314a3e00fe8280441ce6986583c8fe4e6e089"
+        "sha256": "21b49ac6792c2bc0e0b951753191a7269ade99519396225d780e43398c6e54d4"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 65,
@@ -3954,10 +4709,11 @@
         "nominalBitrate": 48000,
         "channels": 2,
         "durationSeconds": 193.92845833333334,
-        "byteLength": 1187075,
-        "sha256": "976c4f213ed367c25f1a3e31ec938db509bbbbb9fd9bcd0126fa14194a09ab9e"
+        "byteLength": 1189531,
+        "sha256": "25a2635ad4c55606fd3a3bbf96f5d3d6004006bdde9f575e12dc60f11998f8ab"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 66,
@@ -4006,10 +4762,11 @@
         "nominalBitrate": 48000,
         "channels": 2,
         "durationSeconds": 299.2135416666667,
-        "byteLength": 1833634,
-        "sha256": "8f2828651e20e9a0a681843f92f99229303f18757fa8b6a20a43a0124071aa9f"
+        "byteLength": 1836644,
+        "sha256": "2a7377296eca82aa5140bebca2d7b56082236ef1032602555790a465be22162f"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 67,
@@ -4058,10 +4815,11 @@
         "nominalBitrate": 48000,
         "channels": 2,
         "durationSeconds": 265.06279166666667,
-        "byteLength": 1607051,
-        "sha256": "63f6a16e7b0070b6f68d1d87fa3c1ec934c45e5d26877d5756f110d86217f82e"
+        "byteLength": 1609831,
+        "sha256": "b8a7691d6d96d6d31363b20f86cb465a473290d6d8fd5bd61ab2434f35a26515"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 68,
@@ -4079,9 +4837,9 @@
         "머무르 (2)(생성형 AI 활용)"
       ],
       "tags": [
-        "머무르 (1)",
-        "머무르 (2)",
-        "머무르 (2)(생성형 AI 활용)",
+        "머무르 1",
+        "머무르 2",
+        "머무르 2생성형 AI 활용",
         "머무르",
         "꿈꾸던 어른이 되었나요"
       ],
@@ -4123,9 +4881,10 @@
         "channels": 2,
         "durationSeconds": 204.2845625,
         "byteLength": 1254109,
-        "sha256": "cd914770e070ea2259ba9da17cc98be0d4e3daa6499ada31d7e9ce8def4b0f6f"
+        "sha256": "eb83363fffaf41bbe63bc7def24a7364182aa428b446d98b47730d3ce8a5d3df"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 69,
@@ -4177,9 +4936,10 @@
         "channels": 2,
         "durationSeconds": 236.90033333333332,
         "byteLength": 1442091,
-        "sha256": "e3afb35355cda88af7e9652b7f63f0af8c1ed87e826925b4355fac1938afb232"
+        "sha256": "ce3471f25336ff22ae4cba8837b7eca3669e106ffc60b203d00cb83dbba2ea75"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 70,
@@ -4231,17 +4991,18 @@
         "channels": 2,
         "durationSeconds": 265.767,
         "byteLength": 1629397,
-        "sha256": "097d7782f38b814d72c23e86be978a98e48d1bc5f8c65fe24c6d7b81e9f00204"
+        "sha256": "8d6cd6b37a5f9b1220376b653de22391b5ac286a26eb1b199a88b79260f408cb"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 71,
       "rank": 71,
       "tjNumber": 52157,
-      "videoId": "llsR2eTdlI4",
+      "videoId": "ZF49-rKzTLk",
       "id": "f1813de4-12e5-5a5f-b1f1-0181d3b90b4d",
-      "youtubeUrl": "https://www.youtube.com/watch?v=llsR2eTdlI4",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ZF49-rKzTLk",
       "title": "REDRED",
       "sourceTitle": "REDRED",
       "singer": "CORTIS(코르티스)",
@@ -4253,21 +5014,50 @@
         "성현",
         "주훈",
         "건호",
-        "HITMAN BANG"
+        "HITMAN BANG",
+        "Jasper Harris",
+        "Skillies",
+        "skai",
+        "Derrick Milano",
+        "Jacob Aaron (THE HUB)"
       ],
       "tags": [
+        "마틴",
+        "제임스",
+        "코르티스",
         "SUPREME BOI",
         "HISS NOISE",
         "MARTIN",
         "JAMES",
         "성현",
         "주훈",
-        "건호",
-        "HITMAN BANG",
-        "CORTIS(코르티스)"
+        "건호"
       ],
-      "aliases": [],
-      "reviewRequired": true,
+      "aliases": [
+        {
+          "name": "코르티스",
+          "url": "https://www.youtube.com/watch?v=ZF49-rKzTLk",
+          "quote": "CORTIS (코르티스) - REDRED [가사/Lyrics]",
+          "kind": "singer"
+        },
+        {
+          "kind": "writer",
+          "canonicalName": "MARTIN",
+          "writer": "MARTIN",
+          "name": "마틴",
+          "url": "https://www.youtube.com/watch?v=ZF49-rKzTLk",
+          "quote": "발매 : 2026.04.20 아티스트 : CORTIS (코르티스) 앨범 : GREENGREEN 작곡 : Supreme Boi, ''hitman''bang, Hiss noise, 마틴, Jasper Harris, Skillies, 성현, 건호, skai, 제임스, 주훈, Derrick Milano, Jacob Aaron (THE HUB) 작사 : Supreme Boi, ''hitman''bang, Hiss noise, 마틴, Jasper Harris, Skillies, 성현, 건호, skai, 제임스, 주훈, Derrick Milano, Jacob Aaron (THE HUB)"
+        },
+        {
+          "kind": "writer",
+          "canonicalName": "JAMES",
+          "writer": "JAMES",
+          "name": "제임스",
+          "url": "https://www.youtube.com/watch?v=ZF49-rKzTLk",
+          "quote": "발매 : 2026.04.20 아티스트 : CORTIS (코르티스) 앨범 : GREENGREEN 작곡 : Supreme Boi, ''hitman''bang, Hiss noise, 마틴, Jasper Harris, Skillies, 성현, 건호, skai, 제임스, 주훈, Derrick Milano, Jacob Aaron (THE HUB) 작사 : Supreme Boi, ''hitman''bang, Hiss noise, 마틴, Jasper Harris, Skillies, 성현, 건호, skai, 제임스, 주훈, Derrick Milano, Jacob Aaron (THE HUB)"
+        }
+      ],
+      "reviewRequired": false,
       "evidence": [
         {
           "url": "https://www.tjmedia.com/chart/top100",
@@ -4286,22 +5076,82 @@
           "quote": "CORTIS (코르티스) 'REDRED' (Color Coded Lyrics) — Jaeguchi. All Rights Administered by Bighit Entertainment • Artist: CORTIS (코르티스) • Song ♫: 'REDRED' .",
           "kind": "search_snippet",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ZF49-rKzTLk",
+          "quote": "CORTIS (코르티스) - REDRED [가사/Lyrics] • 웅키 • 2분 43초 • 아티스트 : CORTIS (코르티스)",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "retrievalUrl": "https://www.youtube.com/results?search_query=REDRED+%EA%B0%80%EC%82%AC",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ZF49-rKzTLk",
+          "quote": "CORTIS (코르티스) - REDRED [가사/Lyrics]",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ZF49-rKzTLk",
+          "quote": "CORTIS (코르티스) - REDRED [가사/Lyrics]\n발매 : 2026.04.20 아티스트 : CORTIS (코르티스) 앨범 : GREENGREEN 작곡 : Supreme Boi, ''hitman''bang, Hiss noise, 마틴, Jasper Harris, Skillies, 성현, 건호, skai, 제임스, 주훈, Derrick Milano, Jacob Aaron (THE HUB) 작사 : Supreme Boi, ''hitman''bang, Hiss noise, 마틴, Jasper Harris, Skillies, 성현, 건호, skai, 제임스, 주훈, Derrick Milano, Jacob Aaron (THE HUB)",
+          "kind": "youtube_description",
+          "retrievedEvidenceMatched": true,
+          "checkedAt": "2026-10-28"
         }
       ],
       "audio": {
         "status": "ready",
-        "path": "audio/llsR2eTdlI4.ogg",
+        "path": "audio/ZF49-rKzTLk.ogg",
         "format": "ogg",
         "codec": "opus",
         "nominalBitrate": 48000,
         "channels": 2,
-        "durationSeconds": 161.9778125,
-        "byteLength": 993600,
-        "sha256": "f546a66c7bc23ababd2f114d5fbca96320626ffb45641adb1916f09d46ef4b9a"
+        "durationSeconds": 163.015,
+        "byteLength": 1000990,
+        "sha256": "f67af9f43e171b778ad1644918beede84b2b8a6ad967a5a1093f4c6b5713f7b2"
       },
-      "reviewReasons": [
-        "partial_official_tj_writer_credits"
-      ]
+      "reviewReasons": [],
+      "singerAliases": [
+        "코르티스"
+      ],
+      "creditHistory": [
+        {
+          "previousWriters": [
+            "SUPREME BOI",
+            "HISS NOISE",
+            "MARTIN",
+            "JAMES",
+            "성현",
+            "주훈",
+            "건호",
+            "HITMAN BANG"
+          ],
+          "reason": "Complete explicitly labelled composer/lyricist list recovered from the published lyrics upload; the partial TJ raw credit remains in existing evidence."
+        }
+      ],
+      "recordingHistory": [
+        {
+          "videoId": "llsR2eTdlI4",
+          "youtubeUrl": "https://www.youtube.com/watch?v=llsR2eTdlI4",
+          "audio": {
+            "status": "ready",
+            "path": "audio/llsR2eTdlI4.ogg",
+            "format": "ogg",
+            "codec": "opus",
+            "nominalBitrate": 48000,
+            "channels": 2,
+            "durationSeconds": 161.9778125,
+            "byteLength": 993600,
+            "sha256": "5df2a83ff45003e0b5eb200fbbff8f218c96968c83410cb440068a0cc15c9ba0"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "subtitled_audio"
+        }
+      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
+      "audioSourceType": "subtitled_audio"
     },
     {
       "index": 72,
@@ -4317,7 +5167,7 @@
         "닐로(Nil_O)"
       ],
       "tags": [
-        "닐로(Nil_O)",
+        "닐로NilO",
         "닐로"
       ],
       "aliases": [],
@@ -4350,10 +5200,11 @@
         "nominalBitrate": 48000,
         "channels": 2,
         "durationSeconds": 170.8594375,
-        "byteLength": 1046830,
-        "sha256": "53596d58e916b0dc073795d1f2717177ab69cac1769b50440b40cc89fe940fed"
+        "byteLength": 1049048,
+        "sha256": "f6fb11e55fe69d0cba2d53d7743542e170e3f4c76bb1a40f65d142d5ca5a237f"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 73,
@@ -4409,17 +5260,18 @@
         "channels": 2,
         "durationSeconds": 283.29045833333333,
         "byteLength": 1738199,
-        "sha256": "f38f0a6e8c28e63bcb835fdbebe1397d47d3e83187d7744122a4d4ce5d2db746"
+        "sha256": "cf7a22a93ac918fe524e4b7a2836e4f0ff9b93d26132d041b8b193ac6ac469c5"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 74,
       "rank": 74,
       "tjNumber": 86150,
-      "videoId": "CBXFCnzhjZs",
+      "videoId": "G-QwCal8Vgo",
       "id": "a0301012-c22a-58d4-b318-511b1c26731b",
-      "youtubeUrl": "https://www.youtube.com/watch?v=CBXFCnzhjZs",
+      "youtubeUrl": "https://www.youtube.com/watch?v=G-QwCal8Vgo",
       "title": "봄이 와도",
       "sourceTitle": "봄이 와도",
       "singer": "로이킴",
@@ -4430,7 +5282,7 @@
         "로이킴"
       ],
       "aliases": [],
-      "reviewRequired": true,
+      "reviewRequired": false,
       "evidence": [
         {
           "url": "https://www.tjmedia.com/chart/top100",
@@ -4449,22 +5301,58 @@
           "quote": "로이킴 (Roy Kim) - 봄이 와도 Live Clip @ 2024 ROY KIM CONCERT [R♥y actually] — 로이킴 Roy Kim. 2024 ROY KIM CONCERT [R♥y actually] 봄이 와도 #로이킴 #RoyKim #ROYACTUALLY #봄이와도 Meet Roy Kim on ...",
           "kind": "search_snippet",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "quote": "로이킴 - 봄이 와도 [가사/Lyrics] #로이킴 #봄이와도 발매 : 2024.03.04 아티스트 : 로이킴 앨범 : 봄이 와도 작곡 : 로이킴 작사 : 로이킴",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "url": "https://www.youtube.com/watch?v=G-QwCal8Vgo",
+          "checkedAt": "2026-10-28",
+          "retrievalUrl": "https://www.youtube.com/results?search_query=%EB%B4%84%EC%9D%B4%20%EC%99%80%EB%8F%84%20%EA%B0%80%EC%82%AC"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=G-QwCal8Vgo",
+          "quote": "로이킴 - 봄이 와도 [가사/Lyrics]",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "checkedAt": "2026-10-28"
         }
       ],
       "audio": {
         "status": "ready",
-        "path": "audio/CBXFCnzhjZs.ogg",
+        "path": "audio/G-QwCal8Vgo.ogg",
         "format": "ogg",
         "codec": "opus",
         "nominalBitrate": 48000,
         "channels": 2,
-        "durationSeconds": 350.69797916666664,
-        "byteLength": 2148841,
-        "sha256": "2a4811bd4abac639d6f7e585577bc5035b6b1dc23106e6876c7ab3db7d2b328f"
+        "durationSeconds": 238.3830625,
+        "byteLength": 1459934,
+        "sha256": "639bc5bb1f182fc9f745111e4f16356ae484ad16e385028bf3df0b231f7583a6"
       },
-      "reviewReasons": [
-        "live_performance_source"
-      ]
+      "reviewReasons": [],
+      "singerAliases": [],
+      "recordingHistory": [
+        {
+          "videoId": "CBXFCnzhjZs",
+          "youtubeUrl": "https://www.youtube.com/watch?v=CBXFCnzhjZs",
+          "audio": {
+            "status": "ready",
+            "path": "audio/CBXFCnzhjZs.ogg",
+            "format": "ogg",
+            "codec": "opus",
+            "nominalBitrate": 48000,
+            "channels": 2,
+            "durationSeconds": 350.69797916666664,
+            "byteLength": 2148841,
+            "sha256": "2a4811bd4abac639d6f7e585577bc5035b6b1dc23106e6876c7ab3db7d2b328f"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "subtitled_audio"
+        }
+      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
+      "audioSourceType": "subtitled_audio"
     },
     {
       "index": 75,
@@ -4516,9 +5404,10 @@
         "channels": 2,
         "durationSeconds": 208.0200625,
         "byteLength": 1271190,
-        "sha256": "f22b01dbe131ee12a0bf9b30b636f870db19cebd6d52fbdb21bbca8fb1858530"
+        "sha256": "c35e8d51d37c2bfb555611a571485303f48b8ea948c3545c5f18b2aa1ba18d86"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 76,
@@ -4577,17 +5466,18 @@
         "channels": 2,
         "durationSeconds": 225.207,
         "byteLength": 1381366,
-        "sha256": "2503795a3d17082ad4854b6aac72443cd23ce7f872364ebfff5eb931370e70ca"
+        "sha256": "d566c56684fe0d0896cb4fd1180fd5e18924599112b0f33c00ef9db862d1c8bd"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 77,
       "rank": 77,
       "tjNumber": 44491,
-      "videoId": "tfmwbxBKPh0",
+      "videoId": "_2t30SD0xQo",
       "id": "82d10391-c369-5490-8fa1-6ea5499971b3",
-      "youtubeUrl": "https://www.youtube.com/watch?v=tfmwbxBKPh0",
+      "youtubeUrl": "https://www.youtube.com/watch?v=_2t30SD0xQo",
       "title": "모르시나요",
       "sourceTitle": "모르시나요",
       "singer": "조째즈(Prod.로코베리)",
@@ -4597,8 +5487,8 @@
       ],
       "tags": [
         "안영민",
-        "K-SMITH",
-        "조째즈(Prod.로코베리)"
+        "KSMITH",
+        "조째즈Prod로코베리"
       ],
       "aliases": [],
       "reviewRequired": false,
@@ -4620,38 +5510,65 @@
           "quote": "[MV] ZO ZAZZ(조째즈) _ Don`t you know(PROD.ROCOBERRY)(모르시나요(PROD.로코베리)) — 1theK (원더케이). [MV] ZO ZAZZ(조째즈) _ Don`t you know(PROD.ROCOBERRY)(모르시나요(PROD.로코베리)) K-POP Wonderland, 1theK K-POP의 ...",
           "kind": "search_snippet",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=_2t30SD0xQo",
+          "kind": "youtube_search",
+          "retrievalUrl": "https://www.youtube.com/results?search_query=%EB%AA%A8%EB%A5%B4%EC%8B%9C%EB%82%98%EC%9A%94%20%EC%A1%B0%EC%A7%B8%EC%A6%88%20%EA%B0%80%EC%82%AC",
+          "quote": "조째즈 - 모르시나요 [모르시나요]ㅣ가사/Lyrics",
+          "checkedAt": "2026-10-28",
+          "retrievedEvidenceMatched": true
         }
       ],
       "audio": {
         "status": "ready",
-        "path": "audio/tfmwbxBKPh0.ogg",
+        "path": "audio/_2t30SD0xQo.ogg",
         "format": "ogg",
         "codec": "opus",
         "nominalBitrate": 48000,
         "channels": 2,
-        "durationSeconds": 306.56845833333335,
-        "byteLength": 1851088,
-        "sha256": "e968c7093b75b4b3fa27ece2fa7d4965c669c166671e059be17efe8fc203eada"
+        "durationSeconds": 301.063,
+        "byteLength": 1840952,
+        "sha256": "b7aab34c9bf7e0972f30f9c14e870645f14d89a092a90fad4a4f5bc7fc037dfb"
       },
       "reviewReasons": [],
-      "audioSourceReviewRequired": true,
-      "audioSourceReviewReasons": [
-        "Source is labelled as a music video; matched official audio-only recording still required"
-      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
       "audioSourceEvidence": {
         "url": "https://www.youtube.com/watch?v=tfmwbxBKPh0",
         "kind": "search_snippet",
         "quote": "[MV] ZO ZAZZ(조째즈) _ Don`t you know(PROD.ROCOBERRY)(모르시나요(PROD.로코베리)) | channel 1theK (원더케이) | duration 307 seconds",
         "retrievedEvidenceMatched": true
-      }
+      },
+      "singerAliases": [],
+      "recordingHistory": [
+        {
+          "videoId": "tfmwbxBKPh0",
+          "youtubeUrl": "https://www.youtube.com/watch?v=tfmwbxBKPh0",
+          "audio": {
+            "status": "ready",
+            "path": "audio/tfmwbxBKPh0.ogg",
+            "format": "ogg",
+            "codec": "opus",
+            "nominalBitrate": 48000,
+            "channels": 2,
+            "durationSeconds": 306.56845833333335,
+            "byteLength": 1851088,
+            "sha256": "e968c7093b75b4b3fa27ece2fa7d4965c669c166671e059be17efe8fc203eada"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "subtitled_audio"
+        }
+      ],
+      "audioSourceType": "subtitled_audio"
     },
     {
       "index": 78,
       "rank": 78,
       "tjNumber": 43329,
-      "videoId": "JOBURHZFQBI",
+      "videoId": "OPiqXf9gwFc",
       "id": "18d12257-20aa-5a51-9c70-81c2d6da15dd",
-      "youtubeUrl": "https://www.youtube.com/watch?v=JOBURHZFQBI",
+      "youtubeUrl": "https://www.youtube.com/watch?v=OPiqXf9gwFc",
       "title": "내게 사랑이 뭐냐고 물어본다면",
       "sourceTitle": "내게 사랑이 뭐냐고 물어본다면",
       "singer": "로이킴",
@@ -4661,8 +5578,15 @@
       "tags": [
         "로이킴"
       ],
-      "aliases": [],
-      "reviewRequired": true,
+      "aliases": [
+        {
+          "name": "내게 사랑이 뭐냐고 물어본다면",
+          "url": "https://www.youtube.com/watch?v=OPiqXf9gwFc",
+          "quote": "로이킴 - 내게 사랑이 뭐냐고 물어본다면 [가사/Lyrics]",
+          "kind": "title"
+        }
+      ],
+      "reviewRequired": false,
       "evidence": [
         {
           "url": "https://www.tjmedia.com/chart/top100",
@@ -4681,30 +5605,66 @@
           "quote": "로이킴 - 내게 사랑이 뭐냐고 물어본다면 Special Live Clip (Piano ver.) — 로이킴 Roy Kim. 로이킴 - 내게 사랑이 뭐냐고 물어본다면 Special Live Clip (Piano ver.) Meet Roy Kim on ...",
           "kind": "search_snippet",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "quote": "로이킴 - 내게 사랑이 뭐냐고 물어본다면 [가사/Lyrics]",
+          "retrievalUrl": "https://www.youtube.com/results?search_query=%EB%82%B4%EA%B2%8C%20%EC%82%AC%EB%9E%91%EC%9D%B4%20%EB%AD%90%EB%83%90%EA%B3%A0%20%EB%AC%BC%EC%96%B4%EB%B3%B8%EB%8B%A4%EB%A9%B4%20%EA%B0%80%EC%82%AC",
+          "kind": "youtube_search",
+          "checkedAt": "2026-10-27T15:58:20Z",
+          "url": "https://www.youtube.com/watch?v=OPiqXf9gwFc",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=OPiqXf9gwFc",
+          "quote": "로이킴 - 내게 사랑이 뭐냐고 물어본다면 [가사/Lyrics]",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "checkedAt": "2026-10-28"
         }
       ],
       "audio": {
         "status": "ready",
-        "path": "audio/JOBURHZFQBI.ogg",
+        "path": "audio/OPiqXf9gwFc.ogg",
         "format": "ogg",
         "codec": "opus",
         "nominalBitrate": 48000,
         "channels": 2,
-        "durationSeconds": 227.98052083333334,
-        "byteLength": 1395493,
-        "sha256": "a1884b5a9496443c5e432d38ba19f7c52d3eb9d19ac7b545dded813257951593"
+        "durationSeconds": 223.04629166666666,
+        "byteLength": 1366562,
+        "sha256": "0538e51b6ba40ebd9d26a25515f6ec0fb4d42ec30803534c9c033cb80d10c0e1"
       },
-      "reviewReasons": [
-        "piano_live_alternate_version"
-      ]
+      "reviewReasons": [],
+      "singerAliases": [],
+      "recordingHistory": [
+        {
+          "videoId": "JOBURHZFQBI",
+          "youtubeUrl": "https://www.youtube.com/watch?v=JOBURHZFQBI",
+          "audio": {
+            "status": "ready",
+            "path": "audio/JOBURHZFQBI.ogg",
+            "format": "ogg",
+            "codec": "opus",
+            "nominalBitrate": 48000,
+            "channels": 2,
+            "durationSeconds": 227.98052083333334,
+            "byteLength": 1395493,
+            "sha256": "a1884b5a9496443c5e432d38ba19f7c52d3eb9d19ac7b545dded813257951593"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "subtitled_audio"
+        }
+      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
+      "audioSourceType": "subtitled_audio"
     },
     {
       "index": 79,
       "rank": 79,
       "tjNumber": 31818,
-      "videoId": "ZtbopMxY-2Y",
+      "videoId": "Y7uKz3g-k98",
       "id": "e4ecb75c-4ca1-581c-9baf-dd235171d729",
-      "youtubeUrl": "https://www.youtube.com/watch?v=ZtbopMxY-2Y",
+      "youtubeUrl": "https://www.youtube.com/watch?v=Y7uKz3g-k98",
       "title": "사랑참...",
       "sourceTitle": "사랑참...",
       "singer": "디셈버",
@@ -4716,7 +5676,7 @@
         "나인",
         "박정욱",
         "디셈버",
-        "Love is so...",
+        "Love is so",
         "사랑참"
       ],
       "aliases": [
@@ -4733,7 +5693,7 @@
           "quote": "사랑참..."
         }
       ],
-      "reviewRequired": true,
+      "reviewRequired": false,
       "evidence": [
         {
           "url": "https://www.tjmedia.com/chart/top100",
@@ -4752,22 +5712,59 @@
           "quote": "Decemver - Love is so... (디셈버 - 사랑 참) @ SBS Inkigayo 인기가요 091206 — SBSKPOP X INKIGAYO. 12월 06일 오후 4시 00분 생방송 SBS 인기가요! * 12월! 그들의 계절이 왔다! 더욱 깊어진 애절함...December의 환상적인 하모니.",
           "kind": "search_snippet",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Y7uKz3g-k98",
+          "quote": "사랑참…(가사Lyrics) - 디셈버\n아티스트 - 디셈버 (December) 앨범명 - Dear My Lover 장르 - 가요 / 발라드",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "retrievalUrl": "https://www.youtube.com/results?search_query=사랑참+디셈버+가사",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Y7uKz3g-k98",
+          "quote": "아티스트 - 디셈버 (December) 앨범명 - Dear My Lover 장르 - 가요 / 발라드",
+          "kind": "youtube_description",
+          "retrievedEvidenceMatched": true,
+          "retrievalUrl": "https://www.youtube.com/watch?v=Y7uKz3g-k98",
+          "checkedAt": "2026-10-28"
         }
       ],
       "audio": {
         "status": "ready",
-        "path": "audio/ZtbopMxY-2Y.ogg",
+        "path": "audio/Y7uKz3g-k98.ogg",
         "format": "ogg",
         "codec": "opus",
         "nominalBitrate": 48000,
         "channels": 2,
-        "durationSeconds": 180.76275,
-        "byteLength": 1107170,
-        "sha256": "7645746288242f1fa7e2d635905e1355b83c3e6fadffd631ef7b5cff2e098da8"
+        "durationSeconds": 208.3364375,
+        "byteLength": 1278092,
+        "sha256": "d733b49a5cabcef2bf35de6e006087a90d94e184bfe50a28e23c848f41258fe5"
       },
-      "reviewReasons": [
-        "official_broadcast_live_version"
-      ]
+      "reviewReasons": [],
+      "singerAliases": [],
+      "recordingHistory": [
+        {
+          "videoId": "ZtbopMxY-2Y",
+          "youtubeUrl": "https://www.youtube.com/watch?v=ZtbopMxY-2Y",
+          "audio": {
+            "status": "ready",
+            "path": "audio/ZtbopMxY-2Y.ogg",
+            "format": "ogg",
+            "codec": "opus",
+            "nominalBitrate": 48000,
+            "channels": 2,
+            "durationSeconds": 180.76275,
+            "byteLength": 1107170,
+            "sha256": "7645746288242f1fa7e2d635905e1355b83c3e6fadffd631ef7b5cff2e098da8"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "subtitled_audio"
+        }
+      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
+      "audioSourceType": "subtitled_audio"
     },
     {
       "index": 80,
@@ -4785,7 +5782,7 @@
       "tags": [
         "어깨깡패1",
         "폴킴",
-        "모든 날, 모든 순간"
+        "모든 날 모든 순간"
       ],
       "aliases": [
         {
@@ -4830,10 +5827,11 @@
         "nominalBitrate": 48000,
         "channels": 2,
         "durationSeconds": 215.07022916666668,
-        "byteLength": 1292661,
-        "sha256": "0087d6e343120edd6c53dc59b9063627ab4ba021b513b1f95660baf1aea816a5"
+        "byteLength": 1295168,
+        "sha256": "8de871c14228a6250be8ffcce0eb5f5db87009a7bf98c72640366f66cffa68d9"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 81,
@@ -4849,8 +5847,8 @@
         "마크툽(MAKTUB)"
       ],
       "tags": [
-        "마크툽(MAKTUB)",
-        "마크툽(MAKTUB),구윤회"
+        "마크툽MAKTUB",
+        "마크툽MAKTUB구윤회"
       ],
       "aliases": [],
       "reviewRequired": false,
@@ -4882,10 +5880,11 @@
         "nominalBitrate": 48000,
         "channels": 2,
         "durationSeconds": 261.428875,
-        "byteLength": 1599488,
-        "sha256": "a11899dc1ad375278bbe0cea58872e419ae7bf46f7da27fbb12fee0e42f73b76"
+        "byteLength": 1602284,
+        "sha256": "929f901335a24f24a2758f777295f6dc63c7b37cb0f51656277dc19114b6798d"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 82,
@@ -4942,10 +5941,11 @@
         "nominalBitrate": 48000,
         "channels": 2,
         "durationSeconds": 260.5232916666667,
-        "byteLength": 1585349,
-        "sha256": "a06e5ad22280454f8939af5020967155759775c6b2095a63c82e5827fbbb1628"
+        "byteLength": 1588152,
+        "sha256": "aec2c2fbea203b6b5c0447d45f5cbb3da9f7660ba616a2514a51556d4eaab297"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 83,
@@ -4993,18 +5993,19 @@
         "nominalBitrate": 48000,
         "channels": 2,
         "durationSeconds": 292.20691666666664,
-        "byteLength": 1778065,
-        "sha256": "261b92932a034d05c86862fb6124e0879d783945f4399d19ff43cd4b5a547fd7"
+        "byteLength": 1780994,
+        "sha256": "9ae7bc46c4b39532f7cd55cd4ffc141334cd2672e161db43da967b33a8f8914c"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 84,
       "rank": 84,
       "tjNumber": 43348,
-      "videoId": "9XttLI0oH0I",
+      "videoId": "VnqgmOJaMGc",
       "id": "666e7c06-5a40-58e8-8c9e-e55de25843e2",
-      "youtubeUrl": "https://www.youtube.com/watch?v=9XttLI0oH0I",
+      "youtubeUrl": "https://www.youtube.com/watch?v=VnqgmOJaMGc",
       "title": "LOVE ATTACK",
       "sourceTitle": "LOVE ATTACK",
       "singer": "RESCENE(리센느)",
@@ -5018,6 +6019,7 @@
         "EURENIUS KARIN WILHELMINA"
       ],
       "tags": [
+        "러브어택",
         "THE MUZE 1",
         "방혜현",
         "THE MUZE 2",
@@ -5025,9 +6027,16 @@
         "JONASSON SIMON ERIK HENRIK",
         "LANDELL GUSTAV",
         "EURENIUS KARIN WILHELMINA",
-        "RESCENE(리센느)"
+        "RESCENE리센느"
       ],
-      "aliases": [],
+      "aliases": [
+        {
+          "name": "러브어택",
+          "url": "https://www.youtube.com/watch?v=VnqgmOJaMGc",
+          "quote": "RESCENE (리센느) - LOVE ATTACK(러브어택) [가사 | Lyrics]",
+          "kind": "title"
+        }
+      ],
       "reviewRequired": false,
       "evidence": [
         {
@@ -5047,30 +6056,64 @@
           "quote": "RESCENE (리센느) ‘LOVE ATTACK’ Official MV — RESCENE. RESCENE (리센느) 'LOVE ATTACK' Official MV RESCENE Plus Chat: https://artist.mnetplus.world/main/stg/rescene-official ...",
           "kind": "search_snippet",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=VnqgmOJaMGc",
+          "quote": "RESCENE (리센느) - LOVE ATTACK(러브어택) [가사 | Lyrics]",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "retrievalUrl": "https://www.youtube.com/results?search_query=LOVE%20ATTACK%20%EA%B0%80%EC%82%AC",
+          "checkedAt": "2026-10-27T15:56:05.9186552Z"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=VnqgmOJaMGc",
+          "quote": "RESCENE (리센느) - LOVE ATTACK(러브어택) [가사 | Lyrics]",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "checkedAt": "2026-10-28"
         }
       ],
       "audio": {
         "status": "ready",
-        "path": "audio/9XttLI0oH0I.ogg",
+        "path": "audio/VnqgmOJaMGc.ogg",
         "format": "ogg",
         "codec": "opus",
         "nominalBitrate": 48000,
         "channels": 2,
-        "durationSeconds": 197.12120833333333,
-        "byteLength": 1171308,
-        "sha256": "4bca566ef9e91fa47023cc3ebd2f37c2e23afe5ea47ac45f3bdf2d316edc0372"
+        "durationSeconds": 181.56383333333332,
+        "byteLength": 1115441,
+        "sha256": "38fc684f549aaee7e260cf7aeb22b744e7abf8a29080d4092ce9c4f0debb3e83"
       },
       "reviewReasons": [],
-      "audioSourceReviewRequired": true,
-      "audioSourceReviewReasons": [
-        "Source is labelled as a music video; matched official audio-only recording still required"
-      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
       "audioSourceEvidence": {
         "url": "https://www.youtube.com/watch?v=9XttLI0oH0I",
         "kind": "search_snippet",
         "quote": "RESCENE (리센느) ‘LOVE ATTACK’ Official MV | channel RESCENE | duration 198 seconds",
         "retrievedEvidenceMatched": true
-      }
+      },
+      "singerAliases": [],
+      "recordingHistory": [
+        {
+          "videoId": "9XttLI0oH0I",
+          "youtubeUrl": "https://www.youtube.com/watch?v=9XttLI0oH0I",
+          "audio": {
+            "status": "ready",
+            "path": "audio/9XttLI0oH0I.ogg",
+            "format": "ogg",
+            "codec": "opus",
+            "nominalBitrate": 48000,
+            "channels": 2,
+            "durationSeconds": 197.12120833333333,
+            "byteLength": 1171308,
+            "sha256": "4bca566ef9e91fa47023cc3ebd2f37c2e23afe5ea47ac45f3bdf2d316edc0372"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "subtitled_audio"
+        }
+      ],
+      "audioSourceType": "subtitled_audio"
     },
     {
       "index": 85,
@@ -5122,9 +6165,10 @@
         "channels": 2,
         "durationSeconds": 252.95358333333334,
         "byteLength": 1543506,
-        "sha256": "6fecda56c21e129c0af835f2384067dc0de69e85019801d1ca92c6aeb7df54c6"
+        "sha256": "30c4f12d7bb57c9c8c1c52eb8bcf7745321dc4b0b1873c4ad1b7a62b30ab6012"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 86,
@@ -5143,8 +6187,7 @@
       "tags": [
         "이영준",
         "이상준",
-        "노라조",
-        "형兄"
+        "노라조"
       ],
       "aliases": [
         {
@@ -5184,17 +6227,18 @@
         "channels": 2,
         "durationSeconds": 258.71633333333335,
         "byteLength": 1552352,
-        "sha256": "f57805ea723196ccaa09ac542106ed7c789b338e9aaf0d6c2f503541fb85314a"
+        "sha256": "6750792892cceb7c02c5287d0dcc2c17a46e7ce3354a96fbc8c84833284efb7b"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 87,
       "rank": 87,
       "tjNumber": 34683,
-      "videoId": "",
+      "videoId": "iD54IrEyiK8",
       "id": "701dd9fd-c3a5-5147-87c8-25376f70e29e",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://www.youtube.com/watch?v=iD54IrEyiK8",
       "title": "흰수염고래",
       "sourceTitle": "흰수염고래",
       "singer": "윤도현밴드",
@@ -5207,8 +6251,15 @@
         "허준",
         "윤도현밴드"
       ],
-      "aliases": [],
-      "reviewRequired": true,
+      "aliases": [
+        {
+          "name": "흰수염고래",
+          "url": "https://www.youtube.com/watch?v=iD54IrEyiK8",
+          "quote": "YB - 흰수염고래 [가사/Lyrics]",
+          "kind": "title"
+        }
+      ],
+      "reviewRequired": false,
       "evidence": [
         {
           "url": "https://www.tjmedia.com/chart/top100",
@@ -5221,24 +6272,60 @@
           "quote": "rank 87; TJ no. 34683; 흰수염고래 — 윤도현밴드; lyricist: 윤도현; composer: 윤도현,허준",
           "kind": "page",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=iD54IrEyiK8",
+          "quote": "YB - 흰수염고래 [가사/Lyrics] 발매일 : 2011.11.24 아티스트 : YB 앨범명 : 흰수염고래 작곡 : 윤도현, 허준",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "retrievalUrl": "https://www.youtube.com/results?search_query=%ED%9D%B0%EC%88%98%EC%97%BC%EA%B3%A0%EB%9E%98%20%EA%B0%80%EC%82%AC",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=iD54IrEyiK8",
+          "quote": "YB - 흰수염고래 [가사/Lyrics]",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "checkedAt": "2026-10-28"
         }
       ],
       "audio": {
-        "status": "failed",
-        "reason": "Search results were lyric/fan reposts or a later remake by another singer; no official YB full-length original upload was verified.",
-        "failureCode": "SOURCE_UNVERIFIED"
+        "status": "ready",
+        "path": "audio/iD54IrEyiK8.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 279.0296041666667,
+        "byteLength": 1701870,
+        "sha256": "7f9d1c5598fd1e505268f307eacaee2720b323b065237ef4e73c6704a50a4c36"
       },
-      "reviewReasons": [
-        "audio_source_missing"
-      ]
+      "reviewReasons": [],
+      "singerAliases": [],
+      "recordingHistory": [
+        {
+          "videoId": "",
+          "youtubeUrl": "",
+          "audio": {
+            "status": "failed",
+            "reason": "Search results were lyric/fan reposts or a later remake by another singer; no official YB full-length original upload was verified.",
+            "failureCode": "SOURCE_UNVERIFIED"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "subtitled_audio"
+        }
+      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
+      "audioSourceType": "subtitled_audio"
     },
     {
       "index": 88,
       "rank": 88,
       "tjNumber": 10842,
-      "videoId": "",
+      "videoId": "3_nnLq4D3tc",
       "id": "d94a6f30-dfc3-500e-a13e-b02db0cfb62c",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://www.youtube.com/watch?v=3_nnLq4D3tc",
       "title": "희재(국화꽃향기OST)",
       "sourceTitle": "희재(국화꽃향기OST)",
       "singer": "성시경",
@@ -5267,7 +6354,7 @@
           "quote": "rank 88; TJ no. 10842; 희재(국화꽃향기OST) — 성시경; lyricist: 양재선; composer: MGR"
         }
       ],
-      "reviewRequired": true,
+      "reviewRequired": false,
       "evidence": [
         {
           "url": "https://www.tjmedia.com/chart/top100",
@@ -5280,16 +6367,52 @@
           "quote": "rank 88; TJ no. 10842; 희재(국화꽃향기OST) — 성시경; lyricist: 양재선; composer: MGR",
           "kind": "page",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=3_nnLq4D3tc",
+          "quote": "성시경 - 희재 [국화꽃 향기 OST] [가사/Lyrics] 4분 42초",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "retrievalUrl": "https://www.youtube.com/results?search_query=%ED%9D%AC%EC%9E%AC(%EA%B5%AD%ED%99%94%EA%BD%83%ED%96%A5%EA%B8%B0OST)%20%EA%B0%80%EC%82%AC",
+          "checkedAt": "2026-10-27T15:57:21.489Z"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=3_nnLq4D3tc",
+          "quote": "성시경 - 희재 [국화꽃 향기 OST] [가사/Lyrics]",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "checkedAt": "2026-10-28"
         }
       ],
       "audio": {
-        "status": "failed",
-        "reason": "Search results were fan lyric videos, unrelated covers, and karaoke/MR uploads; no official or label-attributed Sung Si Kyung original upload was verified.",
-        "failureCode": "SOURCE_UNVERIFIED"
+        "status": "ready",
+        "path": "audio/3_nnLq4D3tc.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 281.79277083333335,
+        "byteLength": 1712325,
+        "sha256": "a83d7efd1c797533a6552b41914d60f748459296ec8fa0f718cdfec7990f7a22"
       },
-      "reviewReasons": [
-        "audio_source_missing"
-      ]
+      "reviewReasons": [],
+      "singerAliases": [],
+      "recordingHistory": [
+        {
+          "videoId": "",
+          "youtubeUrl": "",
+          "audio": {
+            "status": "failed",
+            "reason": "Search results were fan lyric videos, unrelated covers, and karaoke/MR uploads; no official or label-attributed Sung Si Kyung original upload was verified.",
+            "failureCode": "SOURCE_UNVERIFIED"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "subtitled_audio"
+        }
+      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
+      "audioSourceType": "subtitled_audio"
     },
     {
       "index": 89,
@@ -5338,10 +6461,11 @@
         "nominalBitrate": 48000,
         "channels": 2,
         "durationSeconds": 215.43014583333334,
-        "byteLength": 1319176,
-        "sha256": "6a5cc5d8d8d708a92961098532d4dae90f7831d2bee5099b812c1197fe140663"
+        "byteLength": 1321670,
+        "sha256": "30e5ef6ea5b6ada775fba7c81a2ae29b066430c6b4e2b0d62db8b089336ace8d"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 90,
@@ -5358,7 +6482,7 @@
       ],
       "tags": [
         "윤명선",
-        "이루(Feat.Daylight)"
+        "이루FeatDaylight"
       ],
       "aliases": [],
       "reviewRequired": false,
@@ -5390,18 +6514,19 @@
         "nominalBitrate": 48000,
         "channels": 2,
         "durationSeconds": 227.3768125,
-        "byteLength": 1391244,
-        "sha256": "c24a0111e059604ca7410080a781caeb080b4be9fbc4b64b703d0c2f60ead4d2"
+        "byteLength": 1393819,
+        "sha256": "77987f9d905a9ac5f1beb149861d6f63dfaa72dfbc1bc7f680159943762a62b5"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 91,
       "rank": 91,
       "tjNumber": 97017,
-      "videoId": "v6_GwXU1lkg",
+      "videoId": "jjh-jx8D520",
       "id": "b55122d2-4059-5c2b-ac52-708c2fda9328",
-      "youtubeUrl": "https://www.youtube.com/watch?v=v6_GwXU1lkg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=jjh-jx8D520",
       "title": "그날처럼",
       "sourceTitle": "그날처럼",
       "singer": "장덕철",
@@ -5434,30 +6559,65 @@
           "quote": "[MV] JANG DEOK CHEOL(장덕철) _ Good old days(그날처럼) — 1theK (원더케이). [MV] JANG DEOK CHEOL(장덕철) _ Good old days(그날처럼) *English subtitles are now available. (Please click on 'CC' button or ...",
           "kind": "search_snippet",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=jjh-jx8D520",
+          "quote": "장덕철 - 그날처럼 // 가사 • KKumu Music • 3분 53초",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "retrievalUrl": "https://www.youtube.com/results?search_query=%EA%B7%B8%EB%82%A0%EC%B2%98%EB%9F%BC+%EA%B0%80%EC%82%AC",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=v6_GwXU1lkg",
+          "quote": "[MV] JANG DEOK CHEOL(장덕철) _ Good old days(그날처럼)",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "retrievalUrl": "https://www.youtube.com/results?search_query=%EA%B7%B8%EB%82%A0%EC%B2%98%EB%9F%BC+%EA%B0%80%EC%82%AC",
+          "checkedAt": "2026-10-28"
         }
       ],
       "audio": {
         "status": "ready",
-        "path": "audio/v6_GwXU1lkg.ogg",
+        "path": "audio/jjh-jx8D520.ogg",
         "format": "ogg",
         "codec": "opus",
         "nominalBitrate": 48000,
         "channels": 2,
-        "durationSeconds": 246.68433333333334,
-        "byteLength": 1509763,
-        "sha256": "994dd645c5f1972578748c9368593acbb00a6f73df14a72f6cb823aaefc28ec9"
+        "durationSeconds": 232.345875,
+        "byteLength": 1424024,
+        "sha256": "3f6e1e887616629b69c95bf78e7d640cc32050b3489d68c16c8d9f8684c79858"
       },
       "reviewReasons": [],
-      "audioSourceReviewRequired": true,
-      "audioSourceReviewReasons": [
-        "Source is labelled as a music video; matched official audio-only recording still required"
-      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
       "audioSourceEvidence": {
         "url": "https://www.youtube.com/watch?v=v6_GwXU1lkg",
         "kind": "search_snippet",
         "quote": "[MV] JANG DEOK CHEOL(장덕철) _ Good old days(그날처럼) | channel 1theK (원더케이) | duration 247 seconds",
         "retrievedEvidenceMatched": true
-      }
+      },
+      "singerAliases": [],
+      "recordingHistory": [
+        {
+          "videoId": "v6_GwXU1lkg",
+          "youtubeUrl": "https://www.youtube.com/watch?v=v6_GwXU1lkg",
+          "audio": {
+            "status": "ready",
+            "path": "audio/v6_GwXU1lkg.ogg",
+            "format": "ogg",
+            "codec": "opus",
+            "nominalBitrate": 48000,
+            "channels": 2,
+            "durationSeconds": 246.68433333333334,
+            "byteLength": 1509763,
+            "sha256": "994dd645c5f1972578748c9368593acbb00a6f73df14a72f6cb823aaefc28ec9"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "subtitled_audio"
+        }
+      ],
+      "audioSourceType": "subtitled_audio"
     },
     {
       "index": 92,
@@ -5506,10 +6666,11 @@
         "nominalBitrate": 48000,
         "channels": 2,
         "durationSeconds": 193.07366666666667,
-        "byteLength": 1169659,
-        "sha256": "71cb0ed49351ee816348d161a5a5893e3501aeb2e9e1f89790a6e096d64cfea5"
+        "byteLength": 1171999,
+        "sha256": "9ebbfd43e176fc6ab830d87f711317284b6fa276e5f869932f58de98e9f70339"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 93,
@@ -5561,9 +6722,10 @@
         "channels": 2,
         "durationSeconds": 247.18033333333332,
         "byteLength": 1509117,
-        "sha256": "8fe7bd7a7c2559ec74138f3dd223b275113abb19495e9076d5771bc7585cd84f"
+        "sha256": "4b92e99e5a454da8d22c2f9740ae6426667b271b4abce3d664365b0223d81377"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 94,
@@ -5615,9 +6777,10 @@
         "channels": 2,
         "durationSeconds": 226.67366666666666,
         "byteLength": 1377097,
-        "sha256": "10758eb01e8bec2896026a6a2522696c1d97e4923e591a256934a94e9d07abee"
+        "sha256": "a7a07f7ebee243a1e0b91b2562afdb0e358fbd3b529435099538d5dc044f7ca8"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 95,
@@ -5677,17 +6840,18 @@
         "channels": 2,
         "durationSeconds": 294.43604166666665,
         "byteLength": 1806897,
-        "sha256": "dd06a085db27305d56360d3a6a13d0a8f08858c16ce87992ccd4b411d443f0d5"
+        "sha256": "9be2c394fe8c87947b458d3a19c82f192ef779a03b8caece56097badbfcea671"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 96,
       "rank": 96,
       "tjNumber": 14828,
-      "videoId": "SiCbj3z3KK4",
+      "videoId": "iYvYpvG0FFA",
       "id": "32703215-e581-5d52-a195-1e4d7c966a60",
-      "youtubeUrl": "https://www.youtube.com/watch?v=SiCbj3z3KK4",
+      "youtubeUrl": "https://www.youtube.com/watch?v=iYvYpvG0FFA",
       "title": "나에게로 떠나는 여행",
       "sourceTitle": "나에게로 떠나는 여행",
       "singer": "버즈",
@@ -5701,7 +6865,7 @@
         "버즈"
       ],
       "aliases": [],
-      "reviewRequired": true,
+      "reviewRequired": false,
       "evidence": [
         {
           "url": "https://www.tjmedia.com/chart/top100",
@@ -5720,24 +6884,53 @@
           "quote": "[이슬라이브] 버즈 - 나에게로 떠나는 여행 — 딩고 뮤직 / dingo music. 안녕하세요 Dingo Music(딩고 뮤직)  입니다.\n\n이번 영상은 버즈의 '나에게로 떠나는 여행' 이슬라이브!\n\n함께 들어볼까요?\n\n\n- Dingo ...",
           "kind": "search_snippet",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "quote": "버즈(Buzz) - 나에게로 떠나는 여행 [가사/Lyrics] #버즈 #Buzz #나에게로떠나는여행 발매 : 2005.03.03 아티스트 : 버즈",
+          "retrievalUrl": "https://www.youtube.com/results?search_query=%EB%82%98%EC%97%90%EA%B2%8C%EB%A1%9C%20%EB%96%A0%EB%82%98%EB%8A%94%20%EC%97%AC%ED%96%89%20%EA%B0%80%EC%82%AC",
+          "checkedAt": "2026-10-28",
+          "retrievedEvidenceMatched": true,
+          "kind": "youtube_search",
+          "url": "https://www.youtube.com/watch?v=iYvYpvG0FFA"
         }
       ],
       "audio": {
-        "status": "failed",
-        "reason": "Official Dingo original-singer live source is age-restricted; yt-dlp reports sign-in required and no alternate downloadable original source was verified.",
-        "failureCode": "AGE_RESTRICTED"
+        "status": "ready",
+        "path": "audio/iYvYpvG0FFA.ogg",
+        "format": "ogg",
+        "codec": "opus",
+        "nominalBitrate": 48000,
+        "channels": 2,
+        "durationSeconds": 208.35966666666667,
+        "byteLength": 1264339,
+        "sha256": "5f17f738d1fc164882ecd3ed3c140fa5f0a93b729cfc52b1fb14daba9e7f7a86"
       },
-      "reviewReasons": [
-        "audio_download_age_restricted"
-      ]
+      "reviewReasons": [],
+      "singerAliases": [],
+      "recordingHistory": [
+        {
+          "videoId": "SiCbj3z3KK4",
+          "youtubeUrl": "https://www.youtube.com/watch?v=SiCbj3z3KK4",
+          "audio": {
+            "status": "failed",
+            "reason": "Official Dingo original-singer live source is age-restricted; yt-dlp reports sign-in required and no alternate downloadable original source was verified.",
+            "failureCode": "AGE_RESTRICTED"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "subtitled_audio"
+        }
+      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
+      "audioSourceType": "subtitled_audio"
     },
     {
       "index": 97,
       "rank": 97,
       "tjNumber": 76684,
-      "videoId": "RaTCjhIS4AY",
+      "videoId": "fO36kiw-bUE",
       "id": "d09c0071-0951-5aa3-a2f8-6336143e5c8a",
-      "youtubeUrl": "https://www.youtube.com/watch?v=RaTCjhIS4AY",
+      "youtubeUrl": "https://www.youtube.com/watch?v=fO36kiw-bUE",
       "title": "봄 내음보다 너를",
       "sourceTitle": "봄 내음보다 너를",
       "singer": "김나영",
@@ -5769,38 +6962,65 @@
           "quote": "[MV] KimNaYoung(김나영) _ A Letter For You(봄 내음보다 너를) — 1theK (원더케이). [MV] KimNaYoung(김나영) _ A Letter For You(봄 내음보다 너를) K-POP Wonderland, 1theK K-POP의 모든 즐거움을 1theK(원더 ...",
           "kind": "search_snippet",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=fO36kiw-bUE",
+          "kind": "youtube_search",
+          "retrievalUrl": "https://www.youtube.com/results?search_query=%EB%B4%84%20%EB%82%B4%EC%9D%8C%EB%B3%B4%EB%8B%A4%20%EB%84%88%EB%A5%BC%20%EA%B9%80%EB%82%98%EC%98%81%20%EA%B0%80%EC%82%AC",
+          "quote": "김나영 - 봄 내음보다 너를 / 가사",
+          "checkedAt": "2026-10-28",
+          "retrievedEvidenceMatched": true
         }
       ],
       "audio": {
         "status": "ready",
-        "path": "audio/RaTCjhIS4AY.ogg",
+        "path": "audio/fO36kiw-bUE.ogg",
         "format": "ogg",
         "codec": "opus",
         "nominalBitrate": 48000,
         "channels": 2,
-        "durationSeconds": 227.330375,
-        "byteLength": 1332780,
-        "sha256": "a32a49c47ff64fa2179858b234087445b6f5293502847aafb3c88894c1c7a6d9"
+        "durationSeconds": 217.19485416666666,
+        "byteLength": 1327188,
+        "sha256": "3492f9a625191edd6a14e371170ee541395bdb4e1dd79a787709d6beb9b64037"
       },
       "reviewReasons": [],
-      "audioSourceReviewRequired": true,
-      "audioSourceReviewReasons": [
-        "Source is labelled as a music video; matched official audio-only recording still required"
-      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
       "audioSourceEvidence": {
         "url": "https://www.youtube.com/watch?v=RaTCjhIS4AY",
         "kind": "search_snippet",
         "quote": "[MV] KimNaYoung(김나영) _ A Letter For You(봄 내음보다 너를) | channel 1theK (원더케이) | duration 228 seconds",
         "retrievedEvidenceMatched": true
-      }
+      },
+      "singerAliases": [],
+      "recordingHistory": [
+        {
+          "videoId": "RaTCjhIS4AY",
+          "youtubeUrl": "https://www.youtube.com/watch?v=RaTCjhIS4AY",
+          "audio": {
+            "status": "ready",
+            "path": "audio/RaTCjhIS4AY.ogg",
+            "format": "ogg",
+            "codec": "opus",
+            "nominalBitrate": 48000,
+            "channels": 2,
+            "durationSeconds": 227.330375,
+            "byteLength": 1332780,
+            "sha256": "a32a49c47ff64fa2179858b234087445b6f5293502847aafb3c88894c1c7a6d9"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "subtitled_audio"
+        }
+      ],
+      "audioSourceType": "subtitled_audio"
     },
     {
       "index": 98,
       "rank": 98,
       "tjNumber": 34409,
-      "videoId": "yY7dRwJnJZ0",
+      "videoId": "k6rJS0ek-a4",
       "id": "78574b96-cde4-59e0-ac34-f9a8b63e8712",
-      "youtubeUrl": "https://www.youtube.com/watch?v=yY7dRwJnJZ0",
+      "youtubeUrl": "https://www.youtube.com/watch?v=k6rJS0ek-a4",
       "title": "Hello",
       "sourceTitle": "Hello",
       "singer": "허각",
@@ -5820,6 +7040,12 @@
           "name": "헬로",
           "url": "https://namu.wiki/w/Hello",
           "quote": "Hello - 허각의 미니 1집 타이틀곡; 한국어 외래어 표기법에 따르면 헬로가 공식적인 표기다."
+        },
+        {
+          "name": "Hello",
+          "url": "https://www.youtube.com/watch?v=k6rJS0ek-a4",
+          "quote": "허각(HuhGak) - Hello [가사/Lyrics] 4:13",
+          "kind": "title"
         }
       ],
       "reviewRequired": false,
@@ -5847,30 +7073,72 @@
           "quote": "Hello - 허각의 미니 1집 타이틀곡; 한국어 외래어 표기법에 따르면 헬로가 공식적인 표기다.",
           "kind": "page",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "quote": "허각(HuhGak) - Hello [가사/Lyrics] 4:13",
+          "retrievalUrl": "https://www.youtube.com/results?search_query=Hello%20%ED%97%88%EA%B0%81%20%EA%B0%80%EC%82%AC",
+          "kind": "youtube_search",
+          "checkedAt": "2026-10-27T15:58:20Z",
+          "url": "https://www.youtube.com/watch?v=k6rJS0ek-a4",
+          "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=k6rJS0ek-a4",
+          "quote": "허각(HuhGak) - Hello [가사/Lyrics] 4:13",
+          "kind": "youtube_search",
+          "retrievedEvidenceMatched": true,
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "quote": "허각(HuhGak) - Hello [가사/Lyrics] 4:13; description: #허각 #Hello",
+          "retrievalUrl": "https://www.youtube.com/results?search_query=Hello%20%ED%97%88%EA%B0%81%20%EA%B0%80%EC%82%AC",
+          "kind": "youtube_search",
+          "checkedAt": "2026-10-27T15:58:20Z",
+          "url": "https://www.youtube.com/watch?v=k6rJS0ek-a4",
+          "retrievedEvidenceMatched": true
         }
       ],
       "audio": {
         "status": "ready",
-        "path": "audio/yY7dRwJnJZ0.ogg",
+        "path": "audio/k6rJS0ek-a4.ogg",
         "format": "ogg",
         "codec": "opus",
         "nominalBitrate": 48000,
         "channels": 2,
-        "durationSeconds": 319.80383333333333,
-        "byteLength": 1960648,
-        "sha256": "01224852da4daeacc62ff3dfe7a578264737505013f900bf1bbcc6defbd1ec8d"
+        "durationSeconds": 252.09445833333334,
+        "byteLength": 1540982,
+        "sha256": "f92605b69dd55ad847a46b6b29fac4a39fbc3b097774d94650c7387db90bbe02"
       },
       "reviewReasons": [],
-      "audioSourceReviewRequired": true,
-      "audioSourceReviewReasons": [
-        "Source is labelled as a music video; matched official audio-only recording still required"
-      ],
+      "audioSourceReviewRequired": false,
+      "audioSourceReviewReasons": [],
       "audioSourceEvidence": {
         "url": "https://www.youtube.com/watch?v=yY7dRwJnJZ0",
         "kind": "search_snippet",
         "quote": "[MV] HuhGak(허각) _ Hello | channel 1theK (원더케이) | duration 320 seconds",
         "retrievedEvidenceMatched": true
-      }
+      },
+      "singerAliases": [],
+      "recordingHistory": [
+        {
+          "videoId": "yY7dRwJnJZ0",
+          "youtubeUrl": "https://www.youtube.com/watch?v=yY7dRwJnJZ0",
+          "audio": {
+            "status": "ready",
+            "path": "audio/yY7dRwJnJZ0.ogg",
+            "format": "ogg",
+            "codec": "opus",
+            "nominalBitrate": 48000,
+            "channels": 2,
+            "durationSeconds": 319.80383333333333,
+            "byteLength": 1960648,
+            "sha256": "01224852da4daeacc62ff3dfe7a578264737505013f900bf1bbcc6defbd1ec8d"
+          },
+          "reason": "Replace music-video edit with matched song audio",
+          "replacementSourceType": "subtitled_audio"
+        }
+      ],
+      "audioSourceType": "subtitled_audio"
     },
     {
       "index": 99,
@@ -5941,10 +7209,11 @@
         "nominalBitrate": 48000,
         "channels": 2,
         "durationSeconds": 226.35802083333334,
-        "byteLength": 1385252,
-        "sha256": "d572d103bc885d42b2e893e6b720bc7f88da44b29893964f868fc6086459d62a"
+        "byteLength": 1387899,
+        "sha256": "352e62d91fa2c517685dc59e59d1e7be952cc0339544abc6a4826422f74023a0"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     },
     {
       "index": 100,
@@ -5996,9 +7265,10 @@
         "channels": 2,
         "durationSeconds": 267.0132708333333,
         "byteLength": 1627473,
-        "sha256": "87d20e2feee18bca10779a06b4a8087143390d53a48b019d8dc94b222526264f"
+        "sha256": "df91813d7495381109586410e6ffd45cdbae9625e48ea09c2a87dce6c9db67a7"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "singerAliases": []
     }
   ],
   "punctuationTags": {

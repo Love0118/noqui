@@ -57,7 +57,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=VWVtIg5cdDU",
         "title": "하츠네 미쿠의 소실",
         "tags": [
-          "cosMo@폭주P"
+          "cosMo폭주P"
         ]
       },
       "audio": {
@@ -73,7 +73,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=veZ9-V5p71A",
         "title": "미쿠미쿠하게 해줄게♪",
         "tags": [
-          "ika_mo",
+          "ikamo",
           "미쿠미쿠하게 해줄게"
         ]
       },
@@ -123,7 +123,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=83GL3kE23eI",
         "title": "모자이크 롤",
         "tags": [
-          "DECO*27",
+          "데코니나",
+          "DECO27",
           "데코"
         ]
       },
@@ -140,7 +141,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=KushW6zvazM",
         "title": "고스트 룰",
         "tags": [
-          "DECO*27",
+          "데코니나",
+          "DECO27",
           "데코"
         ]
       },
@@ -157,7 +159,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=0BxSC1NjzeE",
         "title": "뱀파이어",
         "tags": [
-          "DECO*27",
+          "데코니나",
+          "DECO27",
           "데코"
         ]
       },
@@ -207,6 +210,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=1du5OjNBe5w",
         "title": "뇌장작렬 걸",
         "tags": [
+          "레루리리",
           "Rerulili"
         ]
       },
@@ -237,14 +241,19 @@
     {
       "song": {
         "id": "279c83bd-d523-51ce-a8e4-f23387f4bbb3",
-        "youtubeUrl": "https://www.youtube.com/watch?v=7sKMLQlSX58",
+        "youtubeUrl": "https://www.youtube.com/watch?v=HRC8kVVyZ2o",
         "title": "도넛 홀",
         "tags": [
           "Hachi",
           "하치"
         ]
       },
-      "audio": null
+      "audio": {
+        "path": "audio/HRC8kVVyZ2o.ogg",
+        "sha256": "dc21a467d05973dcc18445300545954f879dfd2e4cfc41bac8ff063ff0d577e6",
+        "byteLength": 1252986,
+        "durationMs": 205875
+      }
     },
     {
       "song": {
@@ -352,7 +361,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=e7jY3YAinJE",
         "title": "히바나",
         "tags": [
-          "DECO*27",
+          "데코니나",
+          "DECO27",
           "데코"
         ]
       },
@@ -422,7 +432,7 @@
         "title": "상상 포레스트",
         "tags": [
           "Jin",
-          "진(자연의 적P)"
+          "진자연의 적P"
         ]
       },
       "audio": {
@@ -438,7 +448,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=tqrlGQ3lEho",
         "title": "망상감상대상연맹",
         "tags": [
-          "DECO*27",
+          "데코니나",
+          "DECO27",
           "데코"
         ]
       },
@@ -574,8 +585,10 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=iuf-wAhpTCs",
         "title": "사랑의 말 Ⅲ",
         "tags": [
-          "DECO*27",
-          "데코"
+          "데코니나",
+          "DECO27",
+          "데코",
+          "사랑의 말 III"
         ]
       },
       "audio": {
@@ -591,7 +604,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=BSaxXRLXleI",
         "title": "하얀 눈의 프린세스는",
         "tags": [
-          "노보루↑"
+          "노보루"
         ]
       },
       "audio": {
@@ -605,8 +618,9 @@
       "song": {
         "id": "8a166a2c-c9bf-5d7e-ba3a-75adf4c515fb",
         "youtubeUrl": "https://www.youtube.com/watch?v=E4tIHBx7bqc",
-        "title": "Blessing",
+        "title": "블레싱",
         "tags": [
+          "블레싱",
           "halyosy",
           "Blessing"
         ]
@@ -706,7 +720,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=U2-K_eFGtJM",
         "title": "투명 엘레지",
         "tags": [
-          "n-buna",
+          "nbuna",
           "나부나"
         ]
       },
@@ -736,14 +750,19 @@
     {
       "song": {
         "id": "dcb1cbe0-e272-5cac-a565-628c252618f6",
-        "youtubeUrl": "https://www.youtube.com/watch?v=GeMFeUKvjm0",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Pd6EzE5GuZE",
         "title": "꽃내림",
         "tags": [
-          "n-buna",
+          "nbuna",
           "나부나"
         ]
       },
-      "audio": null
+      "audio": {
+        "path": "audio/Pd6EzE5GuZE.ogg",
+        "sha256": "9af24caabce0865cf14bf592a1a93171b19e25271caf1dd22c4fab9fa6d0f7b9",
+        "byteLength": 1833239,
+        "durationMs": 299207
+      }
     },
     {
       "song": {
@@ -767,7 +786,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=IMOvaplcQhE",
         "title": "새벽과 반딧불이",
         "tags": [
-          "n-buna",
+          "nbuna",
           "나부나"
         ]
       },
@@ -801,7 +820,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=SqKR-w6myvA",
         "title": "방해쟁이",
         "tags": [
-          "DECO*27",
+          "데코니나",
+          "DECO27",
           "데코"
         ]
       },
@@ -899,7 +919,7 @@
         "title": "아지랑이 데이즈",
         "tags": [
           "Jin",
-          "진(자연의 적P)"
+          "진자연의 적P"
         ]
       },
       "audio": {
@@ -931,7 +951,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=0mMWQ5ndDz4",
         "title": "노심융해",
         "tags": [
-          "iroha(sasaki)"
+          "irohasasaki"
         ]
       },
       "audio": {
@@ -997,7 +1017,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=7zwCIz-Ohn4",
         "title": "소녀해부",
         "tags": [
-          "DECO*27",
+          "데코니나",
+          "DECO27",
           "데코"
         ]
       },
@@ -1112,7 +1133,7 @@
       "song": {
         "id": "1d374fb5-3131-5716-80f1-22ec7ffd8b0a",
         "youtubeUrl": "https://www.youtube.com/watch?v=43gCuHxQDy0",
-        "title": "Mafia",
+        "title": "마피아",
         "tags": [
           "wotaku",
           "마피아",
@@ -1165,8 +1186,9 @@
       "song": {
         "id": "e9e8c4ac-d8c2-526f-94d5-9a3255e4b6ae",
         "youtubeUrl": "https://www.youtube.com/watch?v=iuZ2M6LYhB4",
-        "title": "flos",
+        "title": "플로스",
         "tags": [
+          "플로스",
           "R Sound Design",
           "flos"
         ]
@@ -1251,7 +1273,7 @@
         "title": "로스타임 메모리",
         "tags": [
           "Jin",
-          "진(자연의 적P)"
+          "진자연의 적P"
         ]
       },
       "audio": {
@@ -1353,7 +1375,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=j7X9NYggBco",
         "title": "아우터 사이언스",
         "tags": [
-          "진(자연의 적P)"
+          "진자연의 적P"
         ]
       },
       "audio": {
@@ -1369,7 +1391,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=jepQxGTO0X0",
         "title": "서머타임 레코드",
         "tags": [
-          "진(자연의 적P)"
+          "진자연의 적P"
         ]
       },
       "audio": {
@@ -1612,7 +1634,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=AP0faQxAHPw",
         "title": "신데렐라",
         "tags": [
-          "DECO*27",
+          "데코니나",
+          "DECO27",
           "데코"
         ]
       },
@@ -1908,7 +1931,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=FtYXNCFkFGI",
         "title": "이 실없이 멋진 세계는, 나를 위해 있어",
         "tags": [
-          "n.k",
+          "nk",
           "이 실없이 멋진 세계는 나를 위해 있어"
         ]
       },
@@ -1990,7 +2013,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=-zDucXxjIBI",
         "title": "애니멀",
         "tags": [
-          "DECO*27",
+          "데코니나",
+          "DECO27",
           "데코"
         ]
       },
@@ -2479,7 +2503,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=wfzC8qMmOlY",
         "title": "불꽃",
         "tags": [
-          "DECO*27",
+          "데코니나",
+          "DECO27",
           "데코"
         ]
       },
@@ -2594,7 +2619,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=o2tPQeX27-s",
         "title": "래트가 죽었다",
         "tags": [
-          "P.I.N.A."
+          "PINA"
         ]
       },
       "audio": {
@@ -2626,7 +2651,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=bA0FBlMNv4Q",
         "title": "레드・퍼지!!!",
         "tags": [
-          "P.I.N.A.",
+          "PINA",
           "레드퍼지"
         ]
       },
@@ -2724,7 +2749,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=_XUbtmzR2pA",
         "title": "샐러맨더",
         "tags": [
-          "DECO*27",
+          "데코니나",
+          "DECO27",
           "데코"
         ]
       },
@@ -2807,7 +2833,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=Qs1spSzwSPE",
         "title": "리얼 하츠네 미쿠의 소실",
         "tags": [
-          "cosMo@폭주P"
+          "cosMo폭주P"
         ]
       },
       "audio": {
@@ -2892,8 +2918,10 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=YZHkyR37Qpk",
         "title": "사랑의 말 Ⅳ",
         "tags": [
-          "DECO*27",
-          "데코"
+          "데코니나",
+          "DECO27",
+          "데코",
+          "사랑의 말 IV"
         ]
       },
       "audio": {
@@ -3286,7 +3314,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=nce7Pkd0gyQ",
         "title": "키메라",
         "tags": [
-          "DECO*27",
+          "데코니나",
+          "DECO27",
           "데코"
         ]
       },
@@ -3433,7 +3462,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=iM8d0SzJTIU",
         "title": "이식보행",
         "tags": [
-          "DECO*27",
+          "데코니나",
+          "DECO27",
           "데코"
         ]
       },
@@ -3450,7 +3480,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=HPmPpNIGubM",
         "title": "망상세",
         "tags": [
-          "DECO*27",
+          "데코니나",
+          "DECO27",
           "데코"
         ]
       },
@@ -3468,7 +3499,7 @@
         "title": "병명은 사랑이었다",
         "tags": [
           "Neru",
-          "z'5",
+          "z5",
           "네루"
         ]
       },
@@ -3583,7 +3614,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=uFRPeiAEO0M",
         "title": "안드로이드 걸",
         "tags": [
-          "DECO*27",
+          "데코니나",
+          "DECO27",
           "데코"
         ]
       },
@@ -3649,6 +3681,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=IMB-t2j02XQ",
         "title": "Alone",
         "tags": [
+          "김박사",
           "HAKASE K",
           "하카세 K",
           "Alone"
@@ -3667,7 +3700,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=oEqcSQVmsj8",
         "title": "드리밍 츄츄",
         "tags": [
-          "emon(Tes.)"
+          "emonTes"
         ]
       },
       "audio": {
@@ -3700,7 +3733,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=7JANm3jOb2k",
         "title": "갯나리 해저담",
         "tags": [
-          "n-buna",
+          "nbuna",
           "나부나"
         ]
       },
@@ -3831,8 +3864,9 @@
       "song": {
         "id": "67265be6-1f73-5743-9d72-3ad395389599",
         "youtubeUrl": "https://www.youtube.com/watch?v=Q_QEPrkwZ-Q",
-        "title": "Copycat",
+        "title": "카피캣",
         "tags": [
+          "카피캣",
           "CircusP",
           "Copycat"
         ]
@@ -3896,8 +3930,9 @@
       "song": {
         "id": "8e3a048f-45ec-5f7c-96c4-99f2c0f874b1",
         "youtubeUrl": "https://www.youtube.com/watch?v=OVwCr2MESfo",
-        "title": "IMAWANOKIWA",
+        "title": "이마와노키와",
         "tags": [
+          "이마와노키와",
           "iyowa",
           "이요와",
           "IMAWANOKIWA"
@@ -3967,7 +4002,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=j-cQ97A0OPM",
         "title": "첫차와 카프카",
         "tags": [
-          "n-buna",
+          "nbuna",
           "나부나"
         ]
       },
@@ -4073,7 +4108,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=Uqkd_ThsjlU",
         "title": "톤데모 원더즈",
         "tags": [
-          "sasakure.UK",
+          "sasakureUK",
           "사사쿠레P"
         ]
       },
@@ -4123,7 +4158,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=74qWskcyOO4",
         "title": "사랑의 말",
         "tags": [
-          "DECO*27",
+          "데코니나",
+          "DECO27",
           "데코"
         ]
       },
@@ -4271,7 +4307,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=EDfIgucXQyg",
         "title": "이 피아노로 너를 8759632145번 후려갈긴다",
         "tags": [
-          "SLAVE.V-V-R"
+          "SLAVEVVR"
         ]
       },
       "audio": {
@@ -4533,13 +4569,18 @@
     {
       "song": {
         "id": "b64995ef-abec-50dd-823c-02b0806e3734",
-        "youtubeUrl": "https://www.youtube.com/watch?v=EahYs-8tTjQ",
+        "youtubeUrl": "https://www.youtube.com/watch?v=d8g9H88BAeE",
         "title": "윤회",
         "tags": [
           "하치"
         ]
       },
-      "audio": null
+      "audio": {
+        "path": "audio/d8g9H88BAeE.ogg",
+        "sha256": "6ac0905ec509bbeb728b46ad91b0a0072abd0aea7794f8c61b6c8f8f28f66e74",
+        "byteLength": 1591340,
+        "durationMs": 262021
+      }
     },
     {
       "song": {
@@ -4583,7 +4624,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=TcjNgA-J3SA",
         "title": "*헬로, 플래닛.",
         "tags": [
-          "sasakure.UK",
+          "sasakureUK",
           "사사쿠레P",
           "헬로 플래닛"
         ]
@@ -4651,7 +4692,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=rpEObcGvxP4",
         "title": "8.32",
         "tags": [
-          "*Luna",
+          "Luna",
           "832"
         ]
       },
@@ -4668,7 +4709,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=i5qKMUG4Nrc",
         "title": "매닉",
         "tags": [
-          "*Luna"
+          "Luna"
         ]
       },
       "audio": {
@@ -4764,8 +4805,9 @@
       "song": {
         "id": "15beb931-7e36-5a09-9e14-e10d6688b95f",
         "youtubeUrl": "https://www.youtube.com/watch?v=H_WXMJ6dUGY",
-        "title": "TAMAYA",
+        "title": "타마야",
         "tags": [
+          "타마야",
           "Chinozo",
           "TAMAYA"
         ]
@@ -5067,7 +5109,7 @@
         "title": "스타 나이트 스노우",
         "tags": [
           "Orangestar",
-          "n-buna",
+          "nbuna",
           "나부나"
         ]
       },
@@ -5165,7 +5207,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=K0vYyOJLTDw",
         "title": "사신 레코드",
         "tags": [
-          "진(자연의 적P)"
+          "진자연의 적P"
         ]
       },
       "audio": {
@@ -5215,6 +5257,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=N55NsP_G1es",
         "title": "I=Fantasy",
         "tags": [
+          "시유",
           "방시혁",
           "IFantasy"
         ]
@@ -5300,6 +5343,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=3x9_LpnRtAk",
         "title": "로켓사이다",
         "tags": [
+          "나유탄 성인",
           "Nayutalien"
         ]
       },
@@ -5316,6 +5360,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=wq85OvQjNUU",
         "title": "패럴렐리즘 연심",
         "tags": [
+          "나유탄 성인",
           "Nayutalien"
         ]
       },
@@ -5332,6 +5377,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=ou-ZYF0WO20",
         "title": "퍼펙트 생명",
         "tags": [
+          "나유탄 성인",
           "Nayutalien"
         ]
       },
@@ -5663,7 +5709,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=oMvdt_sxtNI",
         "title": "1925",
         "tags": [
-          "T-POCKET"
+          "TPOCKET"
         ]
       },
       "audio": {
@@ -5777,7 +5823,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=EinrfUGvidI",
         "title": "퓨처 이브",
         "tags": [
-          "sasakure.UK",
+          "sasakureUK",
           "사사쿠레P"
         ]
       },
@@ -5827,7 +5873,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=FDMmFR1PUFw",
         "title": "하츠네 미쿠의 폭주",
         "tags": [
-          "cosMo@폭주P"
+          "cosMo폭주P"
         ]
       },
       "audio": {
@@ -5843,7 +5889,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=gg8mJzb81eQ",
         "title": "카가미네 렌의 폭주",
         "tags": [
-          "cosMo@폭주P"
+          "cosMo폭주P"
         ]
       },
       "audio": {
@@ -5859,7 +5905,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=GQhn0KNwW44",
         "title": "악의 딸",
         "tags": [
-          "mothy_악의P"
+          "mothy악의P"
         ]
       },
       "audio": {
@@ -5958,7 +6004,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=NkBq2bYuvJI",
         "title": "좀비",
         "tags": [
-          "DECO*27",
+          "데코니나",
+          "DECO27",
           "데코"
         ]
       },
@@ -5994,7 +6041,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=UlNnXV_f0rw",
         "title": "하츠네 미쿠의 격창",
         "tags": [
-          "cosMo@폭주P"
+          "cosMo폭주P"
         ]
       },
       "audio": {
@@ -6026,6 +6073,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=4Ohpj2GDbRQ",
         "title": "발레리코",
         "tags": [
+          "미키토P",
           "MikitoP"
         ]
       },
@@ -6209,7 +6257,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=jFGX907VwnU",
         "title": "뇌내 디스코",
         "tags": [
-          "r-906"
+          "r906"
         ]
       },
       "audio": {
@@ -6475,7 +6523,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=n5jL22joR28",
         "title": "유정천 비바체",
         "tags": [
-          "Last Note."
+          "Last Note"
         ]
       },
       "audio": {
@@ -6571,13 +6619,18 @@
     {
       "song": {
         "id": "8cc1c70a-60f7-5b79-89b4-1c349418c115",
-        "youtubeUrl": "https://www.youtube.com/watch?v=KOeY7WRNWKk",
+        "youtubeUrl": "https://www.youtube.com/watch?v=GuKlvb0INHQ",
         "title": "노매드",
         "tags": [
           "벌룬"
         ]
       },
-      "audio": null
+      "audio": {
+        "path": "audio/GuKlvb0INHQ.ogg",
+        "sha256": "f2dcbcebaae078c744593b607789cab7438e92cd0016fc353b75b7ced0827958",
+        "byteLength": 1413910,
+        "durationMs": 231138
+      }
     },
     {
       "song": {
@@ -6766,8 +6819,10 @@
       "song": {
         "id": "99d678b2-2201-5989-9913-2eacdff5ca18",
         "youtubeUrl": "https://www.youtube.com/watch?v=WNA7LPF3qwA",
-        "title": "Journey",
+        "title": "저니",
         "tags": [
+          "저니",
+          "데코니나",
           "DECO27",
           "데코",
           "Journey"
@@ -6786,7 +6841,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=Jak2qiq_jJo",
         "title": "메류",
         "tags": [
-          "n-buna",
+          "nbuna",
           "나부나"
         ]
       },
@@ -6804,7 +6859,6 @@
         "title": "ANTI THE∞HOLiC",
         "tags": [
           "cosMo폭주P",
-          "안티 디 인피니트 홀릭",
           "ANTI THEHOLiC"
         ]
       },
@@ -6821,7 +6875,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=3xAzQ8-WXMQ",
         "title": "죄와 벌",
         "tags": [
-          "DECO*27",
+          "데코니나",
+          "DECO27",
           "데코"
         ]
       },
@@ -6872,7 +6927,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=9DD6JvY06Ok",
         "title": "스트리밍 하트",
         "tags": [
-          "DECO*27",
+          "데코니나",
+          "DECO27",
           "데코"
         ]
       },
@@ -6921,8 +6977,10 @@
       "song": {
         "id": "f783a039-9d32-53dc-9cd0-22c2a77d6a65",
         "youtubeUrl": "https://www.youtube.com/watch?v=PEfF4YIj9V4",
-        "title": "Just Be Friends",
+        "title": "저스트 비 프렌즈",
         "tags": [
+          "저스트 비 프렌즈",
+          "딕시 플랫라인",
           "Dixie Flatline",
           "Just Be Friends"
         ]
@@ -6959,8 +7017,7 @@
           "marasy",
           "kemu",
           "마라시",
-          "케무",
-          "88彡"
+          "케무"
         ]
       },
       "audio": {
@@ -6993,6 +7050,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=Dif7rDd94B8",
         "title": "I랍니다",
         "tags": [
+          "하츠네 미쿠",
           "레루리리",
           "I랍니다"
         ]
@@ -7109,7 +7167,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=m0IL13q_XC4",
         "title": "가짜 소리 이야기",
         "tags": [
-          "DECO*27",
+          "데코니나",
+          "DECO27",
           "데코"
         ]
       },
@@ -7126,7 +7185,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=eSW2LVbPThw",
         "title": "래빗 홀",
         "tags": [
-          "DECO*27",
+          "데코니나",
+          "DECO27",
           "데코"
         ]
       },
@@ -7175,7 +7235,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=8Zds1FvEtKw",
         "title": "유성의 펄스",
         "tags": [
-          "*Luna"
+          "Luna"
         ]
       },
       "audio": {
@@ -7206,8 +7266,9 @@
       "song": {
         "id": "4314ae11-e383-593b-889f-15e3675ce592",
         "youtubeUrl": "https://www.youtube.com/watch?v=jCQuNYbKGe4",
-        "title": "Connecting",
+        "title": "커넥팅",
         "tags": [
+          "커넥팅",
           "halyosy",
           "Connecting"
         ]
@@ -7438,7 +7499,6 @@
         "title": "twitter",
         "tags": [
           "devilishP",
-          "에러",
           "twitter"
         ]
       },
@@ -7686,7 +7746,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=yayXXFGqMv8",
         "title": "세츠나 트립",
         "tags": [
-          "Last Note."
+          "Last Note"
         ]
       },
       "audio": {
@@ -7735,7 +7795,7 @@
         "title": "사계절의 날개",
         "tags": [
           "히토시즈쿠P",
-          "야마△"
+          "야마"
         ]
       },
       "audio": {
@@ -7853,7 +7913,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=XErmJC7T3uc",
         "title": "데빌이 아닌걸",
         "tags": [
-          "DECO*27",
+          "데코니나",
+          "DECO27",
           "PinocchioP",
           "데코",
           "피노키오피"
@@ -7939,7 +8000,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=Np3e6WUUEso",
         "title": "절망",
         "tags": [
-          "A4。"
+          "A4"
         ]
       },
       "audio": {
@@ -8086,7 +8147,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=qu03zWp82qE",
         "title": "쇠사슬의 소녀",
         "tags": [
-          "노보루↑"
+          "노보루"
         ]
       },
       "audio": {
@@ -8231,7 +8292,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=OnczLTtCWk0",
         "title": "0",
         "tags": [
-          "cosMo@폭주P"
+          "cosMo폭주P"
         ]
       },
       "audio": {
@@ -8263,7 +8324,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=8Flr-W1omgo",
         "title": "초승달 스텝",
         "tags": [
-          "r-906"
+          "r906"
         ]
       },
       "audio": {
@@ -8360,7 +8421,7 @@
         "title": "축복의 메시아와 슬픔의 탑",
         "tags": [
           "히토시즈쿠P",
-          "야마△"
+          "야마"
         ]
       },
       "audio": {
@@ -8425,14 +8486,21 @@
     {
       "song": {
         "id": "b90b4941-818d-578f-a6d6-7dcbe0f65b8d",
-        "youtubeUrl": "https://www.youtube.com/watch?v=JBfPcDQ2heg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=rB2Ii1LcE2Y",
         "title": "쿠루미☆퐁치오",
         "tags": [
           "마다코",
-          "쿠루미퐁치오"
+          "쿠루미퐁치오",
+          "Madaco",
+          "Kurumi Ponchio"
         ]
       },
-      "audio": null
+      "audio": {
+        "path": "audio/rB2Ii1LcE2Y.ogg",
+        "sha256": "909dafea1e40109203274868182083527e90436c11a66d2afb1db32ee89c3ee3",
+        "byteLength": 1305248,
+        "durationMs": 220074
+      }
     },
     {
       "song": {
@@ -8440,7 +8508,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=ebnBB9txp6I",
         "title": "볼트태클",
         "tags": [
-          "DECO*27",
+          "데코니나",
+          "DECO27",
           "데코"
         ]
       },
@@ -8554,7 +8623,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=fvjjnY2dhh0",
         "title": "천사의 날개.",
         "tags": [
-          "A4。",
+          "A4",
           "천사의 날개"
         ]
       },
@@ -8621,7 +8690,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=9O2VyUM5MlQ",
         "title": "뜻대로",
         "tags": [
-          "r-906"
+          "r906"
         ]
       },
       "audio": {
@@ -8702,8 +8771,9 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=ecU_uJRzhfk",
         "title": "39",
         "tags": [
-          "sasakure.UK",
-          "DECO*27",
+          "데코니나",
+          "sasakureUK",
+          "DECO27",
           "사사쿠레P",
           "데코"
         ]
@@ -8786,7 +8856,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=1Swg-aBO9eY",
         "title": "혼돈 부기",
         "tags": [
-          "jon-YAKITORY"
+          "jonYAKITORY"
         ]
       },
       "audio": {
@@ -8866,7 +8936,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=3GzRDW3hZ1k",
         "title": "하오",
         "tags": [
-          "DECO*27",
+          "데코니나",
+          "DECO27",
           "데코"
         ]
       },
@@ -8934,7 +9005,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=GVXhyFPDClw",
         "title": "새드 걸・섹스",
         "tags": [
-          "DECO*27",
+          "데코니나",
+          "DECO27",
           "데코",
           "새드 걸섹스"
         ]

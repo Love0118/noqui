@@ -57,7 +57,7 @@ def populate(connection, catalogue):
                 'INSERT INTO evidence VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
                 (song_id, position, source['url'], source['quote'], source['kind'],
                  int(source.get('retrievedEvidenceMatched', False)), source.get('retrievalUrl'),
-                 source.get('retrievedAt')),
+                 source.get('retrievedAt') or source.get('checkedAt')),
             )
         for position, message in enumerate(song['validationWarnings']):
             connection.execute(

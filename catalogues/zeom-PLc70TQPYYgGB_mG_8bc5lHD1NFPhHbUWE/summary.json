@@ -2,9 +2,15 @@
   "playlistId": "japan-zeom",
   "name": "일본 - ZEOM",
   "entries": 289,
-  "reviewed": 248,
-  "downloaded": 287,
-  "playable": 248,
-  "reviewRequired": 41,
-  "downloadFailures": 2
+  "reviewed": 252,
+  "downloaded": 288,
+  "playable": 252,
+  "reviewRequired": 37,
+  "downloadFailures": 1,
+  "namingReviewRequired": 31,
+  "audioSourceReviewRequired": 3,
+  "audioBytes": 387040525,
+  "lastResearchDate": "2026-10-28",
+  "audioReady": 288,
+  "audioFailed": 1
 }

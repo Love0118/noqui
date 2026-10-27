@@ -27,7 +27,8 @@
       "failureCode": "PRIVATE_VIDEO"
     },
     "writers": [],
-    "aliases": []
+    "aliases": [],
+    "singerAliases": []
   },
   {
     "index": 71,
@@ -57,10 +58,11 @@
       "channels": 2,
       "durationSeconds": 214.002,
       "byteLength": 1281562,
-      "sha256": "772194441b201f27db3694799d7d1f67ddd6aba0996bac3dbcd8ffafde8e3951"
+      "sha256": "3ac47240f2a01cb03f3ddda9cbae7d94cc0f0b5a1da10638eab7da9a1a9b44bd"
     },
     "writers": [],
-    "aliases": []
+    "aliases": [],
+    "singerAliases": []
   },
   {
     "index": 72,
@@ -101,7 +103,7 @@
       "channels": 2,
       "durationSeconds": 149.369,
       "byteLength": 917227,
-      "sha256": "cd2691db2e01efac5717bae5064b811736b61ddba0a2923308a8c93e2aaa13bd"
+      "sha256": "bf7ec68e4b1934ad6b1a3a584986a18bf12b7f5d543d7068ee35d60da123a32a"
     },
     "writers": [],
     "aliases": [
@@ -111,7 +113,8 @@
         "url": "https://namu.wiki/w/Ievan%20Polkka",
         "quote": "Ievan Polkka (이에반 폴카)"
       }
-    ]
+    ],
+    "singerAliases": []
   },
   {
     "index": 81,
@@ -122,9 +125,7 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=vJHz_kxSODc",
     "id": "70d21e2e-ea0e-5d27-ad25-94369706d64d",
     "title": "【手描き】자캐로 다루마씨가 굴러간다 패러디【オリキャラ】",
-    "tags": [
-      "手描き자캐로 다루마씨가 굴러간다 패러디オリキャラ"
-    ],
+    "tags": [],
     "confidence": "low",
     "reviewRequired": true,
     "notes": "Source is a parody; the underlying song and original creator were not verified.",
@@ -143,7 +144,7 @@
       "channels": 2,
       "durationSeconds": 264.587,
       "byteLength": 1623833,
-      "sha256": "7d07117378a72374edec94f76913521c875fce42177c2f541e1b975c0bf70361"
+      "sha256": "8eb5cb5b861e4721433c9e54c3713e3924a7dd474229a08c68530fbab62d8332"
     },
     "writers": [],
     "aliases": [
@@ -153,7 +154,8 @@
         "url": null,
         "quote": "【手描き】자캐로 다루마씨가 굴러간다 패러디【オリキャラ】"
       }
-    ]
+    ],
+    "singerAliases": []
   },
   {
     "index": 96,
@@ -190,7 +192,8 @@
       "failureCode": "PRIVATE_VIDEO"
     },
     "writers": [],
-    "aliases": []
+    "aliases": [],
+    "singerAliases": []
   },
   {
     "index": 141,
@@ -222,10 +225,11 @@
       "channels": 2,
       "durationSeconds": 133.905,
       "byteLength": 819570,
-      "sha256": "f4413a693b6c828ace58c3146775dfb1553c40ac53e363eaa4ff30f7d33d2435"
+      "sha256": "fdd503ae418eb45bae0fdb61abf3ae200a8a77f2473b249008ba01bedadd5425"
     },
     "writers": [],
-    "aliases": []
+    "aliases": [],
+    "singerAliases": []
   },
   {
     "index": 156,
@@ -270,12 +274,13 @@
       "channels": 2,
       "durationSeconds": 248.6,
       "byteLength": 1439034,
-      "sha256": "0c25302e87f2a6f05ab2553a1124daacfcaa4ce29f4da503680a2f6eeb60e9af"
+      "sha256": "3de59217b813fcc92ebc5876b58cb9123c72561c8ace5bc349ba6272f287634a"
     },
     "writers": [
       "진"
     ],
-    "aliases": []
+    "aliases": [],
+    "singerAliases": []
   },
   {
     "index": 165,
@@ -339,7 +344,7 @@
       "channels": 2,
       "durationSeconds": 209.881,
       "byteLength": 1277139,
-      "sha256": "7411ba2b12ccd8b7bdbfd79c4da0bb3ca30a8f9051df30609f016f4cb31b2652"
+      "sha256": "db2248e53b1df8bba5da3d1bd568767808d6b1606e7e5f47860f437b890c3b90"
     },
     "writers": [
       "23.exe"
@@ -348,7 +353,8 @@
     "namingReviewRequired": true,
     "namingReviewReasons": [
       "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
-    ]
+    ],
+    "singerAliases": []
   },
   {
     "index": 206,
@@ -378,7 +384,8 @@
       "failureCode": "PRIVATE_VIDEO"
     },
     "writers": [],
-    "aliases": []
+    "aliases": [],
+    "singerAliases": []
   },
   {
     "index": 211,
@@ -408,7 +415,8 @@
       "failureCode": "PRIVATE_VIDEO"
     },
     "writers": [],
-    "aliases": []
+    "aliases": [],
+    "singerAliases": []
   },
   {
     "index": 269,
@@ -455,12 +463,13 @@
       "channels": 2,
       "durationSeconds": 565.053,
       "byteLength": 3454746,
-      "sha256": "51043124050e4248a13d27dcf3d5aa49c4da89beb99944e3e7fd99dc25dbd61d"
+      "sha256": "2fb36013bc724d72a2ba940d4fb756148d40acdfb5b7a687c631fb08df5873bb"
     },
     "writers": [
       "kahimi"
     ],
-    "aliases": []
+    "aliases": [],
+    "singerAliases": []
   },
   {
     "index": 280,
@@ -492,7 +501,7 @@
       "channels": 2,
       "durationSeconds": 196.785,
       "byteLength": 1203492,
-      "sha256": "c7c79efb4338918ba852e479db8219a76f561bdfb2eaa0aeec181c4d32cf24b2"
+      "sha256": "01438e7b102a4b8f49accf3c9ba1f1ea9fa0ae3c2db4df0f0945f99d9840d7cb"
     },
     "writers": [],
     "aliases": [
@@ -502,7 +511,8 @@
         "url": null,
         "quote": "난세콘나센스 / 아마네. / 하츠네 미쿠[한글화]"
       }
-    ]
+    ],
+    "singerAliases": []
   },
   {
     "index": 309,
@@ -532,7 +542,8 @@
       "failureCode": "UPLOADER_ACCOUNT_UNAVAILABLE"
     },
     "writers": [],
-    "aliases": []
+    "aliases": [],
+    "singerAliases": []
   },
   {
     "index": 313,
@@ -580,7 +591,7 @@
       "channels": 2,
       "durationSeconds": 258.774,
       "byteLength": 1588112,
-      "sha256": "0c33b6f817bb84fcb6f1fcc80e258ad1d609feffba6f8e371be95aacd1e1b6af"
+      "sha256": "c3b326bdfed098b57d67933cf536f5ceaa54104f8e922a1011b166f48087f5e9"
     },
     "writers": [
       "okameP"
@@ -589,7 +600,8 @@
     "namingReviewRequired": true,
     "namingReviewReasons": [
       "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
-    ]
+    ],
+    "singerAliases": []
   },
   {
     "index": 315,
@@ -628,7 +640,7 @@
       "channels": 2,
       "durationSeconds": 84.11,
       "byteLength": 490428,
-      "sha256": "f0ff5674c5555bd64c99f7cf961f13e07d870a3350bfff4ca1624dc0ff18f545"
+      "sha256": "f9fda23ad05b86c8e9739d3525891856479187de09afe4c7e1bf60ceba183001"
     },
     "writers": [],
     "aliases": [
@@ -638,7 +650,8 @@
         "url": null,
         "quote": "라이스 정식으로 먹어요."
       }
-    ]
+    ],
+    "singerAliases": []
   },
   {
     "index": 316,
@@ -686,12 +699,13 @@
       "channels": 2,
       "durationSeconds": 190.921,
       "byteLength": 1172751,
-      "sha256": "21bb841c6628ba513a0ec00e31078c36a448e9a534e228605091861ec8193295"
+      "sha256": "38236f4748bcb8270750ff8d2989e3b4429e2ddc65c68863ea3a38f937f14fd9"
     },
     "writers": [
       "UraCommanderP"
     ],
-    "aliases": []
+    "aliases": [],
+    "singerAliases": []
   },
   {
     "index": 363,
@@ -721,7 +735,8 @@
       "failureCode": "UPLOADER_ACCOUNT_UNAVAILABLE"
     },
     "writers": [],
-    "aliases": []
+    "aliases": [],
+    "singerAliases": []
   },
   {
     "index": 386,
@@ -751,7 +766,8 @@
       "failureCode": "PRIVATE_VIDEO"
     },
     "writers": [],
-    "aliases": []
+    "aliases": [],
+    "singerAliases": []
   },
   {
     "index": 433,
@@ -784,14 +800,15 @@
       "channels": 2,
       "durationSeconds": 268.314,
       "byteLength": 1641742,
-      "sha256": "bb789f9e47b0118b466c6aa295123be98c1ef60573e1c6784ade58f80c5d2c7c"
+      "sha256": "0d45015a28c316f996a2a1fca9dc97feae4ed96525e7dfe891845b0a47dcb6d9"
     },
     "writers": [],
     "aliases": [],
     "namingReviewRequired": true,
     "namingReviewReasons": [
       "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
-    ]
+    ],
+    "singerAliases": []
   },
   {
     "index": 478,
@@ -829,7 +846,7 @@
       "channels": 2,
       "durationSeconds": 287.923,
       "byteLength": 1715698,
-      "sha256": "f85447587cc255b326282efa44d94ebe36e7b5d403719a655395c552eb027eb3"
+      "sha256": "e367dfe8d98145be311516a8b58603f718c7ee2c2cbd6e46facc9ca2aa444803"
     },
     "writers": [
       "Nem"
@@ -838,7 +855,8 @@
     "namingReviewRequired": true,
     "namingReviewReasons": [
       "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
-    ]
+    ],
+    "singerAliases": []
   },
   {
     "index": 490,
@@ -879,7 +897,7 @@
       "channels": 2,
       "durationSeconds": 312.629,
       "byteLength": 1917027,
-      "sha256": "7ac78c92837333ad8a7ba06e8f301fbdb870626613420568b4cb465056e07ac1"
+      "sha256": "887888b38f5c87c3414cc0919e4909ff7e2cb74ba1f81b9c00e7b14bda3896d0"
     },
     "writers": [
       "doriko"
@@ -892,7 +910,8 @@
         "url": "https://namu.wiki/w/doriko",
         "quote": "doriko, 다른 이름으로는 키리땅P(きりたんP)라고도 한다."
       }
-    ]
+    ],
+    "singerAliases": []
   },
   {
     "index": 508,
@@ -932,7 +951,7 @@
       "channels": 2,
       "durationSeconds": 182.151,
       "byteLength": 1108389,
-      "sha256": "0b9754d610799352b2f586801b20a18b7d51d47ed64d9e6f3aab8475687d1dbe"
+      "sha256": "793dbeb1b3e9768f94c54f52826a8c3d7384e720bbf2ef1850e8c87a47723ee4"
     },
     "writers": [
       "APG550"
@@ -941,7 +960,8 @@
     "namingReviewRequired": true,
     "namingReviewReasons": [
       "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
-    ]
+    ],
+    "singerAliases": []
   },
   {
     "index": 519,
@@ -971,7 +991,8 @@
       "failureCode": "UPLOADER_ACCOUNT_UNAVAILABLE"
     },
     "writers": [],
-    "aliases": []
+    "aliases": [],
+    "singerAliases": []
   },
   {
     "index": 529,
@@ -1003,9 +1024,10 @@
       "channels": 2,
       "durationSeconds": 256.75,
       "byteLength": 1561545,
-      "sha256": "dab0ee0606dbc8aed7f097bd90b47802e0c3bb7f35ff59b60ab7004d7347c670"
+      "sha256": "5ee8fc30169f5071a5c1fbc790e6fd57f8f843b90e6e923a11eb537b6e7921b4"
     },
     "writers": [],
-    "aliases": []
+    "aliases": [],
+    "singerAliases": []
   }
 ]

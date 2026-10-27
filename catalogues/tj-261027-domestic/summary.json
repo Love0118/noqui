@@ -4,8 +4,16 @@
   "sourceDate": "2026-10-27",
   "chartPeriod": "2026-10-01~2026-10-27 (TJ TOP100 selected search range)",
   "chartEntries": 100,
-  "reviewed": 86,
-  "reviewRequired": 14,
-  "audioReady": 94,
-  "playable": 86
+  "reviewed": 100,
+  "reviewRequired": 0,
+  "audioReady": 100,
+  "playable": 100,
+  "entries": 100,
+  "downloaded": 100,
+  "namingReviewRequired": 0,
+  "audioSourceReviewRequired": 0,
+  "audioBytes": 151965091,
+  "lastResearchDate": "2026-10-28",
+  "audioFailed": 0,
+  "downloadFailures": 0
 }

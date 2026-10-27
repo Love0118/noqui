@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import sqlite3
 import tempfile
+import time
 
 
 def build(workspace, destination):
@@ -73,7 +74,16 @@ def build(workspace, destination):
             if db.execute('PRAGMA integrity_check').fetchall()!=[('ok',)] or db.execute('PRAGMA foreign_key_check').fetchall():
                 raise ValueError('Playlist database failed integrity checks')
             counts=db.execute('SELECT * FROM 플레이리스트').fetchall()
-        temporary.replace(destination)
+        try:
+            temporary.replace(destination)
+        except PermissionError:
+            # Windows viewers can hold the path open while still permitting SQLite writes.
+            deadline = time.monotonic() + 10
+            def progress(status, remaining, total):
+                if time.monotonic() > deadline:
+                    raise TimeoutError('Playlist database is locked by another application')
+            with closing(sqlite3.connect(temporary)) as prepared, closing(sqlite3.connect(destination, timeout=2)) as existing:
+                prepared.backup(existing, pages=256, progress=progress, sleep=.1)
         return counts
     finally:
         temporary.unlink(missing_ok=True)

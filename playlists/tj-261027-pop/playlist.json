@@ -9,6 +9,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=FnpJBkAMk44",
         "title": "Let It Go",
         "tags": [
+          "이디나 멘젤",
           "Let It Go",
           "렛 잇 고",
           "Idina Menzel",
@@ -29,6 +30,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=XFkzRNyygfk",
         "title": "Creep",
         "tags": [
+          "크립",
+          "라디오헤드",
           "Creep",
           "Radiohead",
           "Colin Greenwood",
@@ -69,6 +72,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=DwTogmKwYWo",
         "title": "Speechless",
         "tags": [
+          "나오미 스콧",
           "Speechless",
           "Naomi Scott",
           "PASEK BENJ",
@@ -89,6 +93,9 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=kQDw88hEr2c",
         "title": "Love Is An Open Door",
         "tags": [
+          "사랑은열린문",
+          "크리스틴 벨",
+          "산티노 폰태나",
           "Love Is An Open Door",
           "Kristen Bell",
           "Santino Fontana",
@@ -109,6 +116,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=bDtjO-R0QSo",
         "title": "Rolling In The Deep",
         "tags": [
+          "아델",
           "Rolling In The Deep",
           "Adele",
           "ADKINS ADELE LAURIE BLUE",
@@ -145,6 +153,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=EvYy27Qc3Ug",
         "title": "I'm Not The Only One",
         "tags": [
+          "샘 스미스",
           "Im Not The Only One",
           "Sam Smith",
           "JAMES NAPIER"
@@ -183,6 +192,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=PfH7jq_uSCM",
         "title": "Die With A Smile",
         "tags": [
+          "레이디 가가",
+          "브루노 마스",
           "Die With A Smile",
           "Lady Gaga",
           "Bruno Mars",
@@ -231,6 +242,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=ICJs1CxCRt0",
         "title": "She's Gone",
         "tags": [
+          "쉬즈곤",
+          "스틸하트",
           "Shes Gone",
           "Steelheart",
           "MATTJEVIC MICHAEL"
@@ -249,6 +262,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=Xc695u4RFeI",
         "title": "Dangerously",
         "tags": [
+          "찰리 푸스",
           "Dangerously",
           "Charlie Puth",
           "ALEXANDER IZQUIERDO",
@@ -270,6 +284,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=5U-JroWwFkw",
         "title": "Lost Stars",
         "tags": [
+          "애덤 리바인",
           "Lost Stars",
           "로스트 스타스",
           "Adam Levine",
@@ -289,16 +304,22 @@
     {
       "song": {
         "id": "cb47d286-081c-5a84-9bf7-9f245f1c2d95",
-        "youtubeUrl": "https://www.youtube.com/watch?v=q0hyYWKXF0Q",
+        "youtubeUrl": "https://www.youtube.com/watch?v=NIvAkb21Y_M",
         "title": "Dance Monkey",
         "tags": [
+          "톤스 앤 아이",
           "Dance Monkey",
           "댄스몽키",
           "Tones And I",
           "WATSON TONI"
         ]
       },
-      "audio": null
+      "audio": {
+        "path": "audio/NIvAkb21Y_M.ogg",
+        "sha256": "de8a27a5b50229ecc7f1a87ea06394b5343a4880afc7bfff2bf57531807cb97f",
+        "byteLength": 1298064,
+        "durationMs": 226413
+      }
     },
     {
       "song": {
@@ -306,6 +327,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=bRmvUC7B_zs",
         "title": "Lemon Tree",
         "tags": [
+          "풀스 가든",
           "Lemon Tree",
           "Fools Garden",
           "FREUDENTHALER PETER",
@@ -325,6 +347,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=v3I5zneFEkY",
         "title": "Baby",
         "tags": [
+          "저스틴 비버",
           "Baby",
           "Justin Bieber",
           "Youngdell Nash",
@@ -348,6 +371,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=J_QGZspO4gg",
         "title": "Snowman",
         "tags": [
+          "시아",
           "Snowman",
           "Sia",
           "GREG KURSTIN",
@@ -367,6 +391,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=Lf9OgcXV5cE",
         "title": "Beauty And A Beat",
         "tags": [
+          "저스틴 비버",
           "Beauty And A Beat",
           "Justin BieberFeatNicki Minaj",
           "ZEDD",
@@ -406,6 +431,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=1wbtvNA8GaA",
         "title": "When I Was Your Man",
         "tags": [
+          "브루노 마스",
           "When I Was Your Man",
           "Bruno Mars",
           "LAWRENCE PHILIP MARTIN II",
@@ -427,6 +453,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=atc8RAtl-Ms",
         "title": "A Whole New World",
         "tags": [
+          "미나 마수드",
+          "나오미 스콧",
           "A Whole New World",
           "Mena Massoud",
           "Naomi Scott",
@@ -447,6 +475,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=oyEuk8j8imI",
         "title": "Love Yourself",
         "tags": [
+          "저스틴 비버",
           "Love Yourself",
           "Justin Bieber",
           "ED SHEERAN",
@@ -466,6 +495,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=22c3_LoIfZQ",
         "title": "Someone Like You",
         "tags": [
+          "아델",
           "Someone Like You",
           "Adele",
           "Dan Wilson"
@@ -476,6 +506,25 @@
         "sha256": "cbd51c4664d5f9d5522af8dd04cb127f2c8ae47f05938121058b98f204093706",
         "byteLength": 1742907,
         "durationMs": 290106
+      }
+    },
+    {
+      "song": {
+        "id": "f10bc6e8-6367-5d7b-ad13-51daed71dc76",
+        "youtubeUrl": "https://www.youtube.com/watch?v=YKuHdOxj46I",
+        "title": "Love",
+        "tags": [
+          "Love",
+          "Keyshia Cole",
+          "키샤 콜",
+          "Greg Curtis"
+        ]
+      },
+      "audio": {
+        "path": "audio/YKuHdOxj46I.ogg",
+        "sha256": "a56a48b7572b213f67f4aefde0fc12878856bdd3a6645064e0f61ae4c7721ea4",
+        "byteLength": 1560801,
+        "durationMs": 257481
       }
     },
     {
@@ -501,7 +550,7 @@
     {
       "song": {
         "id": "5fd0ebee-7c82-5cfd-8a62-aadc2adeaed9",
-        "youtubeUrl": "https://www.youtube.com/watch?v=dvgZkm1xWPE",
+        "youtubeUrl": "https://www.youtube.com/watch?v=R8UAFE21BN4",
         "title": "Viva La Vida",
         "tags": [
           "Viva La Vida",
@@ -512,7 +561,12 @@
           "Chris Martin"
         ]
       },
-      "audio": null
+      "audio": {
+        "path": "audio/R8UAFE21BN4.ogg",
+        "sha256": "4fe93b051eb07d3d2488ac759ee4583491f4493ff6c4cac11f87bea92ad2da29",
+        "byteLength": 1480070,
+        "durationMs": 242783
+      }
     },
     {
       "song": {
@@ -537,9 +591,10 @@
     {
       "song": {
         "id": "84c47cb6-6d22-5aa6-b758-2b50d4e0e94e",
-        "youtubeUrl": "https://www.youtube.com/watch?v=dT2owtxkU8k",
+        "youtubeUrl": "https://www.youtube.com/watch?v=hB2veGBjoF0",
         "title": "There's Nothing Holdin' Me Back",
         "tags": [
+          "숀 멘데스",
           "Theres Nothing Holdin Me Back",
           "Shawn Mendes",
           "TEDDY GEIGER",
@@ -547,7 +602,12 @@
           "GEOFFREY WARBURTON"
         ]
       },
-      "audio": null
+      "audio": {
+        "path": "audio/hB2veGBjoF0.ogg",
+        "sha256": "4ba0b32cfa34dffbc38ffe5b1497321a50bceff842ac5b3b45aae14405858163",
+        "byteLength": 1218296,
+        "durationMs": 199594
+      }
     },
     {
       "song": {
@@ -555,6 +615,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=_dK2tDK9grQ",
         "title": "Shape Of You",
         "tags": [
+          "에드 시런",
           "Shape Of You",
           "Ed Sheeran",
           "STEVE MAC",
@@ -574,6 +635,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=7V9AgjVMlHU",
         "title": "Payphone",
         "tags": [
+          "마룬 5",
           "Payphone",
           "Maroon 5FeatWiz Khalifa",
           "LEVIN BENJAMIN",
@@ -597,6 +659,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=7_vDnvX49IU",
         "title": "Last Night On Earth",
         "tags": [
+          "그린 데이",
           "Last Night On Earth",
           "Green Day",
           "BILLIE JOE ARMSTRONG",
@@ -617,16 +680,16 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=rkYlZnIbe2E",
         "title": "Stay",
         "tags": [
+          "저스틴 비버",
           "Stay",
           "The Kid LAROI",
           "Justin Bieber",
           "더 키드 라로이",
           "Charlton Howard",
-          "Magnus Høiberg",
+          "Magnus Hiberg",
           "Charlie Puth",
           "Omer Fedi",
-          "Blake Slatkin",
-          "Michael Mule"
+          "Blake Slatkin"
         ]
       },
       "audio": {
@@ -677,15 +740,22 @@
     {
       "song": {
         "id": "e8d2ec90-2bd8-5c00-b52d-80befda75999",
-        "youtubeUrl": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
+        "youtubeUrl": "https://www.youtube.com/watch?v=SEKB7DTsFz8",
         "title": "Bohemian Rhapsody",
         "tags": [
+          "보헤미안 랩소디",
+          "퀸",
           "Bohemian Rhapsody",
           "Queen",
           "Freddie Mercury"
         ]
       },
-      "audio": null
+      "audio": {
+        "path": "audio/SEKB7DTsFz8.ogg",
+        "sha256": "58a1b6a7ac15e4871fa6e266adf6f0b50415bd26b9f372ac9bf6e736c0e1380d",
+        "byteLength": 2174299,
+        "durationMs": 355075
+      }
     },
     {
       "song": {
@@ -693,6 +763,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=AeZxDcjXbzE",
         "title": "Off My Face",
         "tags": [
+          "저스틴 비버",
           "Off My Face",
           "Justin Bieber",
           "BIEBER JUSTIN",
@@ -715,6 +786,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=ynWkkACSB28",
         "title": "Sugar",
         "tags": [
+          "마룬 5",
           "Sugar",
           "Maroon 5",
           "MICHAEL POSNER",
@@ -738,6 +810,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=XPpTgCho5ZA",
         "title": "This Love",
         "tags": [
+          "마룬 5",
           "This Love",
           "Maroon 5",
           "Carmichael",
@@ -757,6 +830,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=G2zxzaWgVRA",
         "title": "The Phantom Of The Opera",
         "tags": [
+          "오페라의 유령",
           "The Phantom Of The Opera",
           "Sarah Brightman",
           "Mike Batt",
@@ -794,9 +868,10 @@
     {
       "song": {
         "id": "adf7bf4b-c4e9-5314-984f-3d5bf4dbe9be",
-        "youtubeUrl": "https://www.youtube.com/watch?v=dTwj7PhpY9M",
+        "youtubeUrl": "https://www.youtube.com/watch?v=DrrRMdU7KpI",
         "title": "Painkiller",
         "tags": [
+          "루엘",
           "Painkiller",
           "Ruel",
           "VAN DIJK RUEL VINCENT",
@@ -804,7 +879,12 @@
           "LANDON MARK"
         ]
       },
-      "audio": null
+      "audio": {
+        "path": "audio/DrrRMdU7KpI.ogg",
+        "sha256": "003f324a91cdd817f1752633d0255224f3d0066a71a303d9e01943fd591853ed",
+        "byteLength": 1319945,
+        "durationMs": 230442
+      }
     },
     {
       "song": {
@@ -812,6 +892,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=JYuyWrkwpok",
         "title": "Fly Me To The Moon",
         "tags": [
+          "프랭크 시나트라",
           "Fly Me To The Moon",
           "Frank Sinatra",
           "Bart Howard"
@@ -830,6 +911,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=fWNaR-rxAic",
         "title": "Call Me Maybe",
         "tags": [
+          "칼리 래이 잽슨",
           "Call Me Maybe",
           "콜 미 메이비",
           "Carly Rae Jepsen",
@@ -851,6 +933,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=Ju8Hr50Ckwk",
         "title": "If I Ain't Got You",
         "tags": [
+          "앨리샤 키스",
           "If I Aint Got You",
           "Alicia Keys",
           "AUGELLOCOOK ALICIA"
@@ -866,7 +949,7 @@
     {
       "song": {
         "id": "0dca0bfa-0846-5291-831f-8d6a864fbb25",
-        "youtubeUrl": "https://www.youtube.com/watch?v=BxuY9FET9Y4",
+        "youtubeUrl": "https://www.youtube.com/watch?v=R71KeUoA-8U",
         "title": "One Call Away",
         "tags": [
           "One Call Away",
@@ -879,12 +962,17 @@
           "Breyan Isaac"
         ]
       },
-      "audio": null
+      "audio": {
+        "path": "audio/R71KeUoA-8U.ogg",
+        "sha256": "9e2a4c51b207fdd2f33ab440aab1e6668768b269170cc04ec8c40ddedd59aba1",
+        "byteLength": 1170315,
+        "durationMs": 194439
+      }
     },
     {
       "song": {
         "id": "83c86830-0297-5131-8633-13dbbfa6abad",
-        "youtubeUrl": "https://www.youtube.com/watch?v=rtOvBOTyX00",
+        "youtubeUrl": "https://www.youtube.com/watch?v=17EIEqosI_s",
         "title": "A Thousand Years",
         "tags": [
           "A Thousand Years",
@@ -893,7 +981,12 @@
           "PERRI CHRISTINA"
         ]
       },
-      "audio": null
+      "audio": {
+        "path": "audio/17EIEqosI_s.ogg",
+        "sha256": "6b9742b96212553f75fe93df5b44199bab083c59df8502eadd9a229212d6bfb2",
+        "byteLength": 1747541,
+        "durationMs": 285183
+      }
     },
     {
       "song": {
@@ -901,6 +994,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=7CTJcHjkq0E",
         "title": "Billie Jean",
         "tags": [
+          "마이클 잭슨",
           "Billie Jean",
           "Michael Jackson"
         ]
@@ -918,6 +1012,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=8DS-h67qEiY",
         "title": "Chandelier",
         "tags": [
+          "시아",
           "Chandelier",
           "Sia",
           "SIA FURLER",
@@ -937,6 +1032,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=iKzRIweSBLA",
         "title": "Perfect",
         "tags": [
+          "에드 시런",
           "Perfect",
           "Ed Sheeran",
           "SHEERAN ED"
@@ -952,9 +1048,10 @@
     {
       "song": {
         "id": "0f7ab3de-739a-5679-8676-ae401f6b67af",
-        "youtubeUrl": "https://www.youtube.com/watch?v=5vheNbQlsyU",
+        "youtubeUrl": "https://www.youtube.com/watch?v=szMrDMSFQ60",
         "title": "Always Remember Us This Way",
         "tags": [
+          "레이디 가가",
           "Always Remember Us This Way",
           "Lady Gaga",
           "GERMANOTTA STEFANI",
@@ -963,7 +1060,12 @@
           "MCKENNA LORI"
         ]
       },
-      "audio": null
+      "audio": {
+        "path": "audio/szMrDMSFQ60.ogg",
+        "sha256": "3286ce4a8350213f64c438196c1591dfa0667662cfa692f888b13afafffd5b18",
+        "byteLength": 1267715,
+        "durationMs": 207025
+      }
     },
     {
       "song": {
@@ -971,6 +1073,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=jnXxxKZ57Tw",
         "title": "Santa Tell Me",
         "tags": [
+          "아리아나 그란데",
           "Santa Tell Me",
           "Ariana Grande",
           "SAVAN HARISH KOTECHA",
@@ -990,6 +1093,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=mNsm2P0l_7Y",
         "title": "My Heart Will Go On",
         "tags": [
+          "마이 하트 윌 고 온",
+          "셀린 디온",
           "My Heart Will Go On",
           "Celine Dion",
           "HORNER JAMES",
@@ -1009,6 +1114,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=UlANZSYZ2Js",
         "title": "What Makes You Beautiful",
         "tags": [
+          "원 디렉션",
           "What Makes You Beautiful",
           "One Direction",
           "FALK CARL",
@@ -1029,6 +1135,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=ApXoWvfEYVU",
         "title": "Sunflower",
         "tags": [
+          "포스트 말론",
           "Sunflower",
           "Post Malone",
           "Swae Lee",
@@ -1053,6 +1160,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=HU08BcK5SUY",
         "title": "Beautiful Things",
         "tags": [
+          "벤슨 분",
           "Beautiful Things",
           "Benson Boone",
           "EVAN BLAIR",
@@ -1110,6 +1218,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=FVdjZYfDuLE",
         "title": "Wonderwall",
         "tags": [
+          "원더월",
           "Wonderwall",
           "Oasis",
           "Noel Gallagher"
@@ -1168,6 +1277,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=fHI8X4OXluQ",
         "title": "Blinding Lights",
         "tags": [
+          "위켄드",
           "Blinding Lights",
           "The Weeknd",
           "BALSHE AHMAD",
@@ -1264,6 +1374,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=wEJd2RyGm8Q",
         "title": "This Is Me",
         "tags": [
+          "케알라 세틀",
           "This Is Me",
           "Various Artists",
           "PASEK BENJ",
@@ -1291,7 +1402,7 @@
           "Martin McKinney",
           "Mejdi Rhars",
           "Dylan Wiggins",
-          "Magnus Høiberg",
+          "Magnus Hiberg",
           "William Thomas Walsh"
         ]
       },
@@ -1308,6 +1419,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=yGxHDmHoqXc",
         "title": "Zombie",
         "tags": [
+          "좀비",
+          "크랜베리",
           "Zombie",
           "The Cranberries",
           "ORiordian",
@@ -1324,7 +1437,7 @@
     {
       "song": {
         "id": "592c7421-5607-5a51-89a3-706199ac3d3f",
-        "youtubeUrl": "https://www.youtube.com/watch?v=EkHTsc9PU2A",
+        "youtubeUrl": "https://www.youtube.com/watch?v=NLfaLVgSRaY",
         "title": "I'm Yours",
         "tags": [
           "Im Yours",
@@ -1332,12 +1445,17 @@
           "MRAZ JASON THOMAS"
         ]
       },
-      "audio": null
+      "audio": {
+        "path": "audio/NLfaLVgSRaY.ogg",
+        "sha256": "ab38974d2e2e4e64acb6a830cdcd07772c8ddd9f75452263e288fa591c58f2e8",
+        "byteLength": 1472697,
+        "durationMs": 241019
+      }
     },
     {
       "song": {
         "id": "a4b61e86-2618-5f6a-bdb0-1c4d676543a1",
-        "youtubeUrl": "https://www.youtube.com/watch?v=450p7goxZqg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=sY1vJLf0Juo",
         "title": "All Of Me",
         "tags": [
           "All Of Me",
@@ -1346,12 +1464,17 @@
           "LEGEND JOHN"
         ]
       },
-      "audio": null
+      "audio": {
+        "path": "audio/sY1vJLf0Juo.ogg",
+        "sha256": "ac925c0cfd953abf3ec5b5f24723f9583567c6572d75ee587a0db482c211a68e",
+        "byteLength": 1699823,
+        "durationMs": 278020
+      }
     },
     {
       "song": {
         "id": "9d778a86-4aed-567b-82b9-fd73b07fec1e",
-        "youtubeUrl": "https://www.youtube.com/watch?v=ulOb9gIGGd0",
+        "youtubeUrl": "https://www.youtube.com/watch?v=_mlWHMHQ8f0",
         "title": "My Love",
         "tags": [
           "My Love",
@@ -1361,34 +1484,51 @@
           "Per Nylen"
         ]
       },
-      "audio": null
+      "audio": {
+        "path": "audio/_mlWHMHQ8f0.ogg",
+        "sha256": "582c612c3ca70e0f2ae7160ba000e856506b1b79c2525026b68a32a32ba5f739",
+        "byteLength": 1411859,
+        "durationMs": 231847
+      }
     },
     {
       "song": {
         "id": "fb4106ad-efb2-5ef0-ae10-b3866857f3b4",
-        "youtubeUrl": "https://www.youtube.com/watch?v=tjv0zFFKmwk",
+        "youtubeUrl": "https://www.youtube.com/watch?v=mHc3mp6_k90",
         "title": "When We Were Young",
         "tags": [
+          "아델",
           "When We Were Young",
           "Adele",
           "JESSO TOBIAS MACDONALD",
           "ADKINS ADELE LAURIE BLUE"
         ]
       },
-      "audio": null
+      "audio": {
+        "path": "audio/mHc3mp6_k90.ogg",
+        "sha256": "6db3a144b5fdd141e741cf053cf4f971f0846b832a5f6e8c124d47f6196f3d7b",
+        "byteLength": 1789017,
+        "durationMs": 292369
+      }
     },
     {
       "song": {
         "id": "5ad5cfda-3f3d-58f0-8ecc-051a5b5abee8",
-        "youtubeUrl": "https://www.youtube.com/watch?v=ZNra8eK0K6k",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Iuc-XRxeT74",
         "title": "How Far I'll Go",
         "tags": [
+          "시아",
           "How Far Ill Go",
           "Alessia Cara",
           "MIRANDA LIN MANUEL"
         ]
       },
-      "audio": null
+      "audio": {
+        "path": "audio/Iuc-XRxeT74.ogg",
+        "sha256": "f59fca17b9b4a4efa395bae16603003fc884f7de3e5b8e3a0ad95c033d3aee64",
+        "byteLength": 1108384,
+        "durationMs": 182040
+      }
     },
     {
       "song": {
@@ -1396,6 +1536,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=-sVB91NTa4A",
         "title": "Dancing Queen",
         "tags": [
+          "아바",
           "Dancing Queen",
           "댄싱퀸",
           "ABBA",
@@ -1413,10 +1554,33 @@
     },
     {
       "song": {
+        "id": "4ca17646-1903-5e07-8143-a341c5c22b97",
+        "youtubeUrl": "https://www.youtube.com/watch?v=y82-7klxNbQ",
+        "title": "Too Good To Say Goodbye",
+        "tags": [
+          "Too Good To Say Goodbye",
+          "Bruno Mars",
+          "브루노 마스",
+          "Babyface",
+          "Jeff Bhasker",
+          "Brody Brown",
+          "Philip Lawrence"
+        ]
+      },
+      "audio": {
+        "path": "audio/y82-7klxNbQ.ogg",
+        "sha256": "8e4dad60b8d311f15ed89c3fae8f70772ee823678f85e4c1b4d0e7cf6b10e278",
+        "byteLength": 1720051,
+        "durationMs": 281201
+      }
+    },
+    {
+      "song": {
         "id": "583fcaa2-143f-59ba-b744-703013f1216d",
-        "youtubeUrl": "https://www.youtube.com/watch?v=Ob7vObnFUJc",
+        "youtubeUrl": "https://www.youtube.com/watch?v=dGwRtjDgsAg",
         "title": "Love On Top",
         "tags": [
+          "비욘세",
           "Love On Top",
           "Beyonce",
           "KNOWLES BEYONCE GISSELLE",
@@ -1424,7 +1588,12 @@
           "TAYLOR ROBERT SHEA"
         ]
       },
-      "audio": null
+      "audio": {
+        "path": "audio/dGwRtjDgsAg.ogg",
+        "sha256": "985f6d835012f37d7115e3e15510b78e8fbb0c244db60c0746af789b76369847",
+        "byteLength": 1631128,
+        "durationMs": 267826
+      }
     },
     {
       "song": {
@@ -1432,6 +1601,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=VArOUfVOjqI",
         "title": "From The Start",
         "tags": [
+          "레이베이",
           "From The Start",
           "Laufey",
           "JONSDOTTIR LAUFEY LIN",
@@ -1451,6 +1621,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=qQzdAsjWGPg",
         "title": "My Way",
         "tags": [
+          "프랭크 시나트라",
           "My Way",
           "마이 웨이",
           "Frank Sinatra",
@@ -1473,6 +1644,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=9LBbmPt6Se0",
         "title": "See You Again",
         "tags": [
+          "위즈 칼리파",
+          "찰리 푸스",
           "See You Again",
           "Wiz Khalifa",
           "Charlie Puth",
@@ -1490,9 +1663,10 @@
     {
       "song": {
         "id": "43249097-b257-53ba-810d-69af3f14669e",
-        "youtubeUrl": "https://www.youtube.com/watch?v=RRKJiM9Njr8",
+        "youtubeUrl": "https://www.youtube.com/watch?v=wjdKgR5coOw",
         "title": "Welcome To The Black Parade",
         "tags": [
+          "마이 케미컬 로맨스",
           "Welcome To The Black Parade",
           "My Chemical Romance",
           "BRYAR BOB",
@@ -1502,7 +1676,12 @@
           "WAY MICHAEL"
         ]
       },
-      "audio": null
+      "audio": {
+        "path": "audio/wjdKgR5coOw.ogg",
+        "sha256": "fe9a50d4bac38cee8697b79bf9f8c40c92637c4b199e463b47f394ec86b7428d",
+        "byteLength": 1906943,
+        "durationMs": 312048
+      }
     },
     {
       "song": {
@@ -1510,6 +1689,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=pQV0WEdT_OE",
         "title": "Circles",
         "tags": [
+          "포스트 말론",
           "Circles",
           "Post Malone",
           "FEENEY ADAM KING",
@@ -1532,6 +1712,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=nUe1MtJfZuY",
         "title": "GHOST TOWN",
         "tags": [
+          "벤슨 분",
           "GHOST TOWN",
           "Benson Boone",
           "NOLAN WINFIELD SIPE",
@@ -1551,6 +1732,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=QwVjTlTdIDQ",
         "title": "Piano Man",
         "tags": [
+          "피아노 맨",
+          "빌리 조엘",
           "Piano Man",
           "Billy Joel"
         ]
@@ -1568,6 +1751,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=kxgj5af8zg4",
         "title": "Out of Time",
         "tags": [
+          "위켄드",
           "Out of Time",
           "The Weeknd",
           "ARAN TOMOKO",
@@ -1591,6 +1775,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=S2Cti12XBw4",
         "title": "Sunday Morning",
         "tags": [
+          "마룬 5",
           "Sunday Morning",
           "Maroon 5",
           "Carmichael",
@@ -1607,9 +1792,10 @@
     {
       "song": {
         "id": "7d831039-9831-5acf-9a1c-e8662a8f2092",
-        "youtubeUrl": "https://www.youtube.com/watch?v=bo_efYhYU2A",
+        "youtubeUrl": "https://www.youtube.com/watch?v=u2fNz3_YnDo",
         "title": "Shallow",
         "tags": [
+          "레이디 가가",
           "Shallow",
           "Lady Gaga",
           "Bradley Cooper",
@@ -1619,7 +1805,12 @@
           "WYATT ANDREW"
         ]
       },
-      "audio": null
+      "audio": {
+        "path": "audio/u2fNz3_YnDo.ogg",
+        "sha256": "22d62729568abbcc997de8990a21dccb568f2a8f5957e0869e93170b6a9b71ac",
+        "byteLength": 1324313,
+        "durationMs": 216138
+      }
     },
     {
       "song": {
@@ -1627,6 +1818,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=dElRVQFqj-k",
         "title": "Marry You",
         "tags": [
+          "브루노 마스",
           "Marry You",
           "Bruno Mars",
           "HERNANDEZ PETER GENE",
@@ -1695,6 +1887,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=Pvcc5yEPpTc",
         "title": "We Don't Talk Anymore",
         "tags": [
+          "찰리 푸스",
+          "셀레나 고메즈",
           "We Dont Talk Anymore",
           "Charlie PuthFeatSelena Gomez",
           "CHARLIE PUTH",
@@ -1715,6 +1909,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=zxXAxLuZAzY",
         "title": "Lay Me Down",
         "tags": [
+          "샘 스미스",
           "Lay Me Down",
           "Sam SmithFeatJohn Legend",
           "SAM SMITH",
@@ -1770,16 +1965,22 @@
     {
       "song": {
         "id": "aa88ce59-4b86-5c93-ab72-5631dd2fa1d8",
-        "youtubeUrl": "https://www.youtube.com/watch?v=lY5V4hSLWY8",
+        "youtubeUrl": "https://www.youtube.com/watch?v=VvNJUBYDM8w",
         "title": "Risk It All",
         "tags": [
+          "브루노 마스",
           "Risk It All",
           "Bruno Mars",
           "ARJONA VAZQUEZ JOHAN",
           "HERNANDEZ PETER GENE"
         ]
       },
-      "audio": null
+      "audio": {
+        "path": "audio/VvNJUBYDM8w.ogg",
+        "sha256": "9dc78e5fbcfda8cc8135695431d6374997a64813874755c6d3557a2b3cc846d7",
+        "byteLength": 1209527,
+        "durationMs": 197682
+      }
     },
     {
       "song": {
@@ -1805,6 +2006,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=T1tl66trXTQ",
         "title": "Hello",
         "tags": [
+          "아델",
           "Hello",
           "Adele",
           "ADKINS ADELE",
@@ -1824,6 +2026,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=bnVUHWCynig",
         "title": "Halo",
         "tags": [
+          "비욘세",
           "Halo",
           "Beyonce",
           "E Kidd Bogart",
@@ -1841,13 +2044,6 @@
   ],
   "excludedSongs": [
     {
-      "index": 25,
-      "title": "Love",
-      "reasons": [
-        "Original studio recording remains unresolved: exact-title and artist/Topic searches found only the artist channel’s alternate rendition, unrelated unofficial uploads, and live or karaoke versions. No substitute was used."
-      ]
-    },
-    {
       "index": 30,
       "title": "Believer",
       "reasons": [
@@ -1859,13 +2055,6 @@
       "title": "Teeth",
       "reasons": [
         "TJ’s raw credit names Louis Bell and indicates six additional writers, while the full-songwriter source lists a different 11-name set and omits Louis Bell. Retained both records separately; credit-set discrepancy still needs reconciliation."
-      ]
-    },
-    {
-      "index": 78,
-      "title": "Too Good To Say Goodbye",
-      "reasons": [
-        "Original studio recording remains unresolved: exact-title Bruno Mars searches surfaced no Bruno Mars official/Topic upload; a similarly titled Topic result belongs to Heaven is Shining, and other results were reposts, lyrics, or karaoke. No substitute was used."
       ]
     }
   ]

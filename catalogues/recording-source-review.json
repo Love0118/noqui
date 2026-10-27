@@ -1455,5 +1455,77 @@
     "replaced": 7,
     "stillWithheld": 42,
     "liveCatalogueUnchanged": true
+  },
+  "latestUpdate": {
+    "date": "2026-10-28",
+    "source": "youtube-jamm-research-20261028.json",
+    "counts": [
+      {
+        "catalogue": "tj-261027-domestic",
+        "playlistId": "tj-261027-domestic",
+        "entries": 100,
+        "reviewed": 100,
+        "playable": 100,
+        "downloaded": 100,
+        "reviewRequired": 0,
+        "namingReviewRequired": 0,
+        "selectedNamingReviewRequired": 0,
+        "audioSourceReviewRequired": 0,
+        "audioBytes": 151965091
+      },
+      {
+        "catalogue": "tj-261027-japan",
+        "playlistId": "tj-261027-japan",
+        "entries": 100,
+        "reviewed": 100,
+        "playable": 100,
+        "downloaded": 100,
+        "reviewRequired": 0,
+        "namingReviewRequired": 22,
+        "selectedNamingReviewRequired": 22,
+        "audioSourceReviewRequired": 0,
+        "audioBytes": 148028396
+      },
+      {
+        "catalogue": "tj-261027-pop",
+        "playlistId": "tj-261027-pop",
+        "entries": 100,
+        "reviewed": 98,
+        "playable": 98,
+        "downloaded": 100,
+        "reviewRequired": 2,
+        "namingReviewRequired": 86,
+        "selectedNamingReviewRequired": 84,
+        "audioSourceReviewRequired": 0,
+        "audioBytes": 142815035
+      },
+      {
+        "catalogue": "vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+        "playlistId": "PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+        "entries": 565,
+        "reviewed": 541,
+        "playable": 541,
+        "downloaded": 557,
+        "reviewRequired": 24,
+        "namingReviewRequired": 46,
+        "selectedNamingReviewRequired": 41,
+        "audioSourceReviewRequired": 0,
+        "audioBytes": 756489152
+      },
+      {
+        "catalogue": "zeom-PLc70TQPYYgGB_mG_8bc5lHD1NFPhHbUWE",
+        "playlistId": "japan-zeom",
+        "entries": 289,
+        "reviewed": 252,
+        "playable": 252,
+        "downloaded": 288,
+        "reviewRequired": 37,
+        "namingReviewRequired": 31,
+        "selectedNamingReviewRequired": 0,
+        "audioSourceReviewRequired": 3,
+        "audioBytes": 387040525
+      }
+    ],
+    "note": "Earlier replacementProposals are historical discovery records. Current catalogue audioSourceReviewRequired flags and the linked update describe the current state."
   }
 }
