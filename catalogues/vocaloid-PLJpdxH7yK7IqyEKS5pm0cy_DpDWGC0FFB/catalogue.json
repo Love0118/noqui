@@ -1148,7 +1148,8 @@
       "title": "DAYBREAK FRONTLINE",
       "tags": [
         "Orangestar",
-        "데이브레이크 프론트라인"
+        "데이브레이크 프론트라인",
+        "DAYBREAK FRONTLINE"
       ],
       "confidence": "medium",
       "reviewRequired": false,
@@ -1162,6 +1163,12 @@
           "retrievedEvidenceMatched": true,
           "retrievalUrl": "https://search.naver.com/search.naver?query=DAYBREAK+FRONTLINE+Orangestar",
           "retrievedAt": "2026-10-27T10:14:02.190965+00:00"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=I8hFyN32Ysk",
+          "quote": "#DAYBREAK_FRONTLINE #데이브레이크_프론트라인",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
         }
       ],
       "audio": {
@@ -1173,7 +1180,7 @@
         "channels": 2,
         "durationSeconds": 217.659,
         "byteLength": 1334890,
-        "sha256": "d033d9c11c27443dc24d2ca135b1070c96eb66d74b939a4ecaef8cd88f4e0980"
+        "sha256": "04676360c3f75e39f15fe0a2a345820e78bfc714c77f39755e266ff11cd6b939"
       },
       "writers": [
         "Orangestar"
@@ -1198,7 +1205,8 @@
       "title": "Henceforth",
       "tags": [
         "Orangestar",
-        "헨스포스"
+        "헨스포스",
+        "Henceforth"
       ],
       "confidence": "medium",
       "reviewRequired": false,
@@ -1212,6 +1220,12 @@
           "retrievedEvidenceMatched": true,
           "retrievalUrl": "https://search.naver.com/search.naver?query=Henceforth+Orangestar",
           "retrievedAt": "2026-10-27T10:24:45.596407+00:00"
+        },
+        {
+          "url": "https://www.fmkorea.com/9934983964",
+          "quote": "Henceforth (헨스포스) - Orangestar",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
         }
       ],
       "audio": {
@@ -1223,7 +1237,7 @@
         "channels": 2,
         "durationSeconds": 235.713,
         "byteLength": 1446347,
-        "sha256": "073e4ed0a3abda67f9ebdd2faef08ed3bde5da318801b6398bb928c38db2b3ec"
+        "sha256": "6498082aa044402bc13f3bafeec06c0efb9cae0b99fe479b66b3fe8b8c0e6de8"
       },
       "writers": [
         "Orangestar"
@@ -1359,7 +1373,8 @@
       "tags": [
         "Kanaria",
         "카나리아",
-        "킹"
+        "킹",
+        "KING"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -1373,6 +1388,12 @@
           "retrievedEvidenceMatched": true,
           "retrievalUrl": "https://search.naver.com/search.naver?query=cm-l2h6GB8Q+KING",
           "retrievedAt": "2026-10-27T09:59:43.950014+00:00"
+        },
+        {
+          "url": "https://m.blog.naver.com/playlist_010/224383195216",
+          "quote": "https://youtu.be/cm-l2h6GB8Q 원곡 킹 KING",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
         }
       ],
       "audio": {
@@ -1384,7 +1405,7 @@
         "channels": 2,
         "durationSeconds": 134.88,
         "byteLength": 828239,
-        "sha256": "76b3c8a59b4b73d2447fcbc8d1fd5332ceea59a76f1b9ac2a866c4ba643d624b"
+        "sha256": "a5decc33c0b64399e3255a03a18d0c79aee2e405dc74c0f7f98eb8c69c224b56"
       },
       "writers": [
         "Kanaria"
@@ -1819,7 +1840,8 @@
       "id": "8a166a2c-c9bf-5d7e-ba3a-75adf4c515fb",
       "title": "Blessing",
       "tags": [
-        "halyosy"
+        "halyosy",
+        "Blessing"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -1852,12 +1874,16 @@
         "channels": 2,
         "durationSeconds": 279.146,
         "byteLength": 1666164,
-        "sha256": "2545f836752a04e43a6b514578e5e662a6713683b6beb6752f0683f773c3be5b"
+        "sha256": "1db31fb460dfac61b8b12a4aafc36d35da69d95ecddb662ad6db663820fcdb55"
       },
       "writers": [
         "halyosy"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 38,
@@ -3352,7 +3378,8 @@
       "title": "Mafia",
       "tags": [
         "wotaku",
-        "마피아"
+        "마피아",
+        "Mafia"
       ],
       "confidence": "medium",
       "reviewRequired": false,
@@ -3377,18 +3404,15 @@
         "channels": 2,
         "durationSeconds": 187.462,
         "byteLength": 1142863,
-        "sha256": "eba56a8f0c6a5d8c379b4963deecbdc4bed51547e1daf8f5fb628d267b111185"
+        "sha256": "26ba037ccff18ab83253e33f8b794051b9702f4127cddf89c7b905665e342b10"
       },
       "writers": [
         "wotaku"
       ],
-      "aliases": [
-        {
-          "kind": "title",
-          "name": "마피아",
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=mikuhatsune&no=333652",
-          "quote": "마피아 투고 버전하고 앨범버전하고 믹싱 다르구나"
-        }
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
       ]
     },
     {
@@ -3401,7 +3425,7 @@
       "id": "adfc69ca-fbe4-5474-8458-42a982677b6c",
       "title": "Calc.",
       "tags": [
-        "JimmyThumb-P",
+        "JimmyThumbP",
         "지미섬P",
         "Calc"
       ],
@@ -3452,7 +3476,7 @@
         "channels": 2,
         "durationSeconds": 235.933,
         "byteLength": 1441407,
-        "sha256": "cc0e61120301fd9b83073ab0e98a44db9423ae875f7b82334dad6a6ae678ce74"
+        "sha256": "cd1183ac2a91920508d2528fb77eb4eedfb931f5644ea00840aa6fc0198b2444"
       },
       "writers": [
         "JimmyThumb-P"
@@ -3471,6 +3495,10 @@
           "url": null,
           "quote": "Calc."
         }
+      ],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
       ]
     },
     {
@@ -3516,7 +3544,8 @@
       "id": "2adad48c-c877-5825-87ea-36b3931b8890",
       "title": "Ievan Polkka",
       "tags": [
-        "이에반 폴카"
+        "이에반 폴카",
+        "Ievan Polkka"
       ],
       "confidence": "low",
       "reviewRequired": true,
@@ -3527,7 +3556,14 @@
         "Korean usage of the retained international title is not established",
         "Original songwriter/producer is unresolved"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "url": "https://namu.wiki/w/Ievan%20Polkka",
+          "quote": "Ievan Polkka (이에반 폴카)",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
+        }
+      ],
       "audio": {
         "status": "ready",
         "path": "audio/widZEAJc0QM.ogg",
@@ -3537,7 +3573,7 @@
         "channels": 2,
         "durationSeconds": 149.369,
         "byteLength": 917227,
-        "sha256": "18a6fab263a34f88085589d82d2458519f2f85db5ad9d1ef72485507aaf828c9"
+        "sha256": "cd2691db2e01efac5717bae5064b811736b61ddba0a2923308a8c93e2aaa13bd"
       },
       "writers": [],
       "aliases": [
@@ -3610,7 +3646,8 @@
       "id": "e9e8c4ac-d8c2-526f-94d5-9a3255e4b6ae",
       "title": "flos",
       "tags": [
-        "R Sound Design"
+        "R Sound Design",
+        "flos"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -3643,12 +3680,16 @@
         "channels": 2,
         "durationSeconds": 275.036,
         "byteLength": 1684949,
-        "sha256": "8827398a17751086e25ec28390f8cad751e71b6e222263bd0bc95913c2c7ac1f"
+        "sha256": "68ba3c151a49c7578b727bc6cadcf260a48ecdcf874509a2cfe9ed043c534260"
       },
       "writers": [
         "R Sound Design"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 75,
@@ -5241,7 +5282,8 @@
       "id": "bed213ac-e157-5385-a1fd-6fef4f16dc10",
       "title": "ECHO",
       "tags": [
-        "Crusher-P"
+        "CrusherP",
+        "ECHO"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -5274,12 +5316,16 @@
         "channels": 2,
         "durationSeconds": 244.931,
         "byteLength": 1440491,
-        "sha256": "a53c3de87d9db0365f271dcfdf9978fd9d212a05be55637a20587b3aa16ba782"
+        "sha256": "b683602a5cbf2bda129841bb6bb69a1c2509d68230d2989f3bac4a83507730e9"
       },
       "writers": [
         "Crusher-P"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 108,
@@ -5910,7 +5956,7 @@
       "id": "f77ac249-b7d7-52db-9df8-82046ee95cea",
       "title": "R.I.P.가십의 바다",
       "tags": [
-        "cosMo@폭주P",
+        "cosMo폭주P",
         "RIP가십의 바다"
       ],
       "confidence": "high",
@@ -5944,7 +5990,7 @@
         "channels": 2,
         "durationSeconds": 221.073,
         "byteLength": 1342042,
-        "sha256": "d87bbf6ce8b553bc588e63023478c306a2aef593454fa22121a46dcef4222951"
+        "sha256": "0dbd66114574c1937aa8a92923d10930deb44ffa65450590a1cb85def6a2f972"
       },
       "writers": [
         "cosMo@폭주P"
@@ -5956,6 +6002,10 @@
           "url": null,
           "quote": "R.I.P.가십의 바다"
         }
+      ],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
       ]
     },
     {
@@ -6795,7 +6845,8 @@
       "id": "3504a3cd-539a-574e-951a-0ec2afadfe5b",
       "title": "YY",
       "tags": [
-        "23.exe"
+        "23exe",
+        "YY"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -6828,12 +6879,16 @@
         "channels": 2,
         "durationSeconds": 194.114,
         "byteLength": 1173160,
-        "sha256": "d2aaeb64ac117b1d65d51d59b9c1e81a52acf2eb7da63068707686a8ab1dab29"
+        "sha256": "86989d6658b16e9f4f075f2c10f838c0ad9e8c2fc830368d5a869c601f57b080"
       },
       "writers": [
         "23.exe"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 138,
@@ -7637,6 +7692,10 @@
           "url": null,
           "quote": "일본인들이 뽑은 J-POP 지겨운 가사 TOP5"
         }
+      ],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
       ]
     },
     {
@@ -8221,7 +8280,8 @@
       "id": "dedf7693-a4e9-5163-86d1-4c9d58ee9c98",
       "title": "Clipping Radio",
       "tags": [
-        "23.exe"
+        "23exe",
+        "Clipping Radio"
       ],
       "confidence": "high",
       "reviewRequired": true,
@@ -8272,12 +8332,16 @@
         "channels": 2,
         "durationSeconds": 209.881,
         "byteLength": 1277139,
-        "sha256": "202f0c3c7a87a1d62e92635f596a3d88b17e67ac5e066a9916e018dc3e8c47a2"
+        "sha256": "7411ba2b12ccd8b7bdbfd79c4da0bb3ca30a8f9051df30609f016f4cb31b2652"
       },
       "writers": [
         "23.exe"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 166,
@@ -9188,7 +9252,8 @@
       "tags": [
         "Reol",
         "Giga",
-        "기가P"
+        "기가P",
+        "drop pop candy"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -9221,7 +9286,7 @@
         "channels": 2,
         "durationSeconds": 227.098,
         "byteLength": 1391015,
-        "sha256": "189f105ec37047337e6ed963b7c069dce41cd0e8808dbafc4b16dee3b34412e6"
+        "sha256": "20e64b67fffa457b33edf95396c1ad86f4ed06f779aae5eae0131c69876a40d6"
       },
       "writers": [
         "Reol",
@@ -9235,6 +9300,10 @@
           "url": "https://namu.wiki/w/%EC%9D%8C%EC%84%B1%20%ED%95%A9%EC%84%B1%20%EC%97%94%EC%A7%84/%ED%94%84%EB%A1%9C%EB%93%80%EC%84%9C",
           "quote": "Giga (=기가P)"
         }
+      ],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
       ]
     },
     {
@@ -10050,7 +10119,8 @@
       "id": "2d9f4a23-3c2f-5520-9e70-fd0e9d876670",
       "title": "Alice in 냉동고",
       "tags": [
-        "Orangestar"
+        "Orangestar",
+        "Alice in 냉동고"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -10083,12 +10153,16 @@
         "channels": 2,
         "durationSeconds": 344.196,
         "byteLength": 2093599,
-        "sha256": "21080c8b9f148669ad6592e74b1a123c1a288dc6effe1f9b14d7843d094d6a28"
+        "sha256": "af51bae052718399edd8c55507bc177d844004408573ba0cb6f269fc1dd06693"
       },
       "writers": [
         "Orangestar"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 201,
@@ -10146,6 +10220,10 @@
           "url": null,
           "quote": "Love & Death"
         }
+      ],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
       ]
     },
     {
@@ -10495,6 +10573,10 @@
           "url": null,
           "quote": "Mrs.Pumpkin의 우스꽝스러운 꿈"
         }
+      ],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
       ]
     },
     {
@@ -11642,7 +11724,8 @@
       "title": "Alone",
       "tags": [
         "HAKASE K",
-        "하카세 K"
+        "하카세 K",
+        "Alone"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -11667,7 +11750,7 @@
         "channels": 2,
         "durationSeconds": 298.685,
         "byteLength": 1790106,
-        "sha256": "b5d8fe337142acfdd7299325f58e1235d9e52f07858baa02cab05d8a82d69bbd"
+        "sha256": "1339590e2e1e217d3a6878695752e62fe3f6a62c417a12c9b7132c95206daabd"
       },
       "writers": [
         "HAKASE K"
@@ -11680,6 +11763,10 @@
           "url": "https://namu.wiki/w/HAKASE%20K",
           "quote": "대신 일본어로 하카세 K라는 가명으로 활동중이다."
         }
+      ],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
       ]
     },
     {
@@ -11734,7 +11821,8 @@
       "id": "8d933db4-14b1-51e4-ab7c-a46f4087bb3e",
       "title": "Hand in Hand",
       "tags": [
-        "kz"
+        "kz",
+        "Hand in Hand"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -11767,12 +11855,16 @@
         "channels": 2,
         "durationSeconds": 319.038,
         "byteLength": 1908383,
-        "sha256": "91e6cc41106792cdd50e202049cd90b78cb984f06d74c9932ea604c754f90b3a"
+        "sha256": "92b971cd0593486d46be99f3a7c03ea9c92f67a580aa99097e86776d54b6b9f1"
       },
       "writers": [
         "kz"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 235,
@@ -12104,7 +12196,8 @@
       "id": "77c5c219-f8df-5a19-9b96-b0aed05b61f8",
       "title": "Redial",
       "tags": [
-        "kz"
+        "kz",
+        "Redial"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -12129,12 +12222,16 @@
         "channels": 2,
         "durationSeconds": 311.456,
         "byteLength": 1808294,
-        "sha256": "81132b860044997066c76192779f05f3d9ebe1170b111a90b2ab2968f3aa085b"
+        "sha256": "3050d214eeba05254732739866905092eb95bc52a2656d3bfefbb399b09403b8"
       },
       "writers": [
         "kz"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 242,
@@ -12196,7 +12293,8 @@
       "id": "67265be6-1f73-5743-9d72-3ad395389599",
       "title": "Copycat",
       "tags": [
-        "Circus-P"
+        "CircusP",
+        "Copycat"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -12221,12 +12319,16 @@
         "channels": 2,
         "durationSeconds": 284.626,
         "byteLength": 1720295,
-        "sha256": "775140e25295832da54b3064df4ed94d1b10513ce2cd905decac5494dfc9b9d0"
+        "sha256": "b6c0b7d86cff23f4d276292d29b2aeb50338605e52003cac1d3c8366204f15c4"
       },
       "writers": [
         "Circus-P"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 244,
@@ -12365,7 +12467,8 @@
       "title": "IMAWANOKIWA",
       "tags": [
         "iyowa",
-        "이요와"
+        "이요와",
+        "IMAWANOKIWA"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -12390,7 +12493,7 @@
         "channels": 2,
         "durationSeconds": 255.357,
         "byteLength": 1547579,
-        "sha256": "2874cbbdf00b0cca9a842e13df869b9aadf3b2501ce6d5843e56b7a6fac8768e"
+        "sha256": "5e7521fa0f4cccf162101d79ecacd790830d5533ca3c189cc92d563124893d7b"
       },
       "writers": [
         "iyowa"
@@ -12403,6 +12506,10 @@
           "url": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%9A%94%EC%99%80",
           "quote": "이요와"
         }
+      ],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
       ]
     },
     {
@@ -12475,7 +12582,8 @@
       "title": "potato가 되어가",
       "tags": [
         "Neru",
-        "네루"
+        "네루",
+        "potato가 되어가"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -12508,7 +12616,7 @@
         "channels": 2,
         "durationSeconds": 189.308,
         "byteLength": 1152262,
-        "sha256": "59bb110a74cb2894fd1d72caa346caf3b0bfb60eb95a9ca78579cc249bcf7efa"
+        "sha256": "d87e5a66650a77f9c37df2f7643ea51baeb613dd24108f52ca83789bb0777f2c"
       },
       "writers": [
         "Neru"
@@ -12521,6 +12629,10 @@
           "url": "https://blog.naver.com/glsaem_hero/224437674109",
           "quote": "로스트 원의 호곡 가사 네루 Neru feat. 카가미네 린"
         }
+      ],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
       ]
     },
     {
@@ -12684,7 +12796,8 @@
       "id": "6837669a-780e-59c5-a4ed-b5dc233a5ef9",
       "title": "quiet room",
       "tags": [
-        "유기산"
+        "유기산",
+        "quiet room"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -12717,12 +12830,16 @@
         "channels": 2,
         "durationSeconds": 219.993,
         "byteLength": 1340656,
-        "sha256": "5fb86b88a9b50b895aa3b61478d4e10868cb0ff174225ad5bf9d7d10c4bc5e20"
+        "sha256": "4fb6029e5689f9dd55ce8091adcb18d5064b522498d916e7271316a9c5cfdc34"
       },
       "writers": [
         "유기산"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 254,
@@ -12782,6 +12899,10 @@
           "url": null,
           "quote": "LUVORATORRRRRY!"
         }
+      ],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
       ]
     },
     {
@@ -14702,7 +14823,8 @@
       "id": "7aed0ecf-1299-5ed2-a5b4-9eecb391ecb0",
       "title": "Tell Your World",
       "tags": [
-        "kz"
+        "kz",
+        "Tell Your World"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -14735,12 +14857,16 @@
         "channels": 2,
         "durationSeconds": 253.557,
         "byteLength": 1555180,
-        "sha256": "4ad5a37ecc2353955a8df6713101d22fb91a868a7ece435fa60a7bc5d21e6631"
+        "sha256": "cc8be08f52866ab0868e512732e286df8f16d9f94df5b521dde5cd2b7446c664"
       },
       "writers": [
         "kz"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 293,
@@ -14752,7 +14878,8 @@
       "id": "4b2acc2e-bd27-5368-adff-88f0e71d4e51",
       "title": "Miku",
       "tags": [
-        "Anamanaguchi"
+        "Anamanaguchi",
+        "Miku"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -14777,12 +14904,16 @@
         "channels": 2,
         "durationSeconds": 238.557,
         "byteLength": 1372650,
-        "sha256": "881b54096b8c08cec75f38ea36ddb88482750d41d6e464a6e9a486eb1f917244"
+        "sha256": "0aed913a3eda01047e40f6a311af8dac14dfc26914ea39fb8d1e79f772b19b9e"
       },
       "writers": [
         "Anamanaguchi"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 294,
@@ -14974,6 +15105,10 @@
           "url": null,
           "quote": "p.h."
         }
+      ],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
       ]
     },
     {
@@ -15086,7 +15221,8 @@
       "id": "2de34890-d057-509e-952b-b2834903620c",
       "title": "Surges",
       "tags": [
-        "Orangestar"
+        "Orangestar",
+        "Surges"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -15111,12 +15247,16 @@
         "channels": 2,
         "durationSeconds": 144.574,
         "byteLength": 884853,
-        "sha256": "6618d00c836eb2ae45ee12e0be784f27920e8a4b43ae333a42852673359c2aa8"
+        "sha256": "329ee8a1e493764e7109dd07e8c4907cd59102f717a272dfd2620fb2e35c05b4"
       },
       "writers": [
         "Orangestar"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 301,
@@ -15128,7 +15268,8 @@
       "id": "15beb931-7e36-5a09-9e14-e10d6688b95f",
       "title": "TAMAYA",
       "tags": [
-        "Chinozo"
+        "Chinozo",
+        "TAMAYA"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -15153,12 +15294,16 @@
         "channels": 2,
         "durationSeconds": 181.332,
         "byteLength": 1107666,
-        "sha256": "42202a9955bcd4d00dea52d6391e6d35acf5563619736dc19431399af577aec4"
+        "sha256": "f948e2c4748dd0152c0d52d0075f71041f457aa46de1e4e90c098767008b3f33"
       },
       "writers": [
         "Chinozo"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 302,
@@ -15356,7 +15501,8 @@
       "tags": [
         "doriko",
         "키리땅P",
-        "레터송"
+        "레터송",
+        "letter song"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -15370,6 +15516,12 @@
           "retrievedEvidenceMatched": true,
           "retrievalUrl": "https://search.naver.com/search.naver?query=Letter+Song+doriko",
           "retrievedAt": "2026-10-27T10:03:59.574010+00:00"
+        },
+        {
+          "url": "https://www.mymusic5.com/ko/meowguro/44690",
+          "quote": "곡명 : Letter Song (레터송), 아티스트 : doriko 도리코",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
         }
       ],
       "audio": {
@@ -15381,7 +15533,7 @@
         "channels": 2,
         "durationSeconds": 334.966,
         "byteLength": 2049349,
-        "sha256": "990188f45fb523ae25d91eff687bf23d7dbff596f261818be6e6a8f3d610c286"
+        "sha256": "06b47803ee65ddb670654c4e4c7ad00f782a2366f4e3e2dbee84086649c84ae1"
       },
       "writers": [
         "doriko"
@@ -15634,7 +15786,8 @@
       "id": "91dd171f-91d0-58be-8ce8-84934af76210",
       "title": "Corruption",
       "tags": [
-        "오누마 파슬리"
+        "오누마 파슬리",
+        "Corruption"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -15659,12 +15812,16 @@
         "channels": 2,
         "durationSeconds": 192.001,
         "byteLength": 1165822,
-        "sha256": "b411d90801aaa6f0534210f7a23c58f1bfbb4d27306092f1b95fddcc87971091"
+        "sha256": "8920c62fef7ae4867122af4ac552c459d753b7a87d336d8372668b9908a039d1"
       },
       "writers": [
         "오누마 파슬리"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 313,
@@ -15676,7 +15833,8 @@
       "id": "0aab7327-66ed-589c-ad49-54cf649803a2",
       "title": "Erica",
       "tags": [
-        "okameP"
+        "okameP",
+        "Erica"
       ],
       "confidence": "low",
       "reviewRequired": true,
@@ -15711,12 +15869,16 @@
         "channels": 2,
         "durationSeconds": 258.774,
         "byteLength": 1588112,
-        "sha256": "cbf117524c87dfbb2fe373c3443ac37db72395e67949fdcf020452ff35d46b27"
+        "sha256": "0c33b6f817bb84fcb6f1fcc80e258ad1d609feffba6f8e371be95aacd1e1b6af"
       },
       "writers": [
         "okameP"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 314,
@@ -16075,7 +16237,8 @@
       "tags": [
         "Wada Takeaki",
         "와다 타케아키",
-        "쿠라게P"
+        "쿠라게P",
+        "나의 R"
       ],
       "confidence": "medium",
       "reviewRequired": false,
@@ -16100,7 +16263,7 @@
         "channels": 2,
         "durationSeconds": 214.025,
         "byteLength": 1294554,
-        "sha256": "c05c92d7854fc218ccdab3266587eb76a5f966e2c2343f4be1fffad20c2721df"
+        "sha256": "81c7f936c8ad441f4334ba43a5204b11efa40a79ccb37a130105b63df6a4801c"
       },
       "writers": [
         "Wada Takeaki"
@@ -16120,6 +16283,10 @@
           "url": "https://namu.wiki/w/%EC%99%80%EB%8B%A4%20%ED%83%80%EC%BC%80%EC%95%84%ED%82%A4",
           "quote": "프로듀서명 くらげP (Kurage-P / electripper, 쿠라게P)"
         }
+      ],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
       ]
     },
     {
@@ -16677,6 +16844,10 @@
           "url": null,
           "quote": "I=Fantasy"
         }
+      ],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
       ]
     },
     {
@@ -17271,7 +17442,6 @@
         "Giga",
         "Reol",
         "기가P",
-        "오즈 앤 엔즈",
         "기간틱 OTN"
       ],
       "confidence": "medium",
@@ -17297,7 +17467,7 @@
         "channels": 2,
         "durationSeconds": 199.536,
         "byteLength": 1221976,
-        "sha256": "86124435b344ab327d40ba12996a3203fdfeff9c8d784acae6ba4cbb91519054"
+        "sha256": "19a2a110ccd4cdd8c357d0d3c95d6f0d75da067b350db9c93a69dd985554dbfc"
       },
       "writers": [
         "Giga",
@@ -17312,17 +17482,15 @@
           "quote": "Giga (=기가P)"
         },
         {
-          "kind": "title",
-          "name": "오즈 앤 엔즈",
-          "url": "https://gall.dcinside.com/mgallery/board/view/?id=stellive&no=7173024",
-          "quote": "〈ODDS&ENDS〉(오즈 앤 엔즈)는 일본의 유명 크리에이터 그룹"
-        },
-        {
           "kind": "punctuation",
           "name": "기간틱 OTN",
           "url": null,
           "quote": "기간틱 O.T.N"
         }
+      ],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
       ]
     },
     {
@@ -17808,6 +17976,10 @@
           "url": null,
           "quote": "ODDS & ENDS"
         }
+      ],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
       ]
     },
     {
@@ -18438,7 +18610,8 @@
       "id": "6ae6dc5d-de4d-5bc6-8aab-818c9fc28301",
       "title": "Q",
       "tags": [
-        "시이나 모타"
+        "시이나 모타",
+        "Q"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -18463,12 +18636,16 @@
         "channels": 2,
         "durationSeconds": 258.972,
         "byteLength": 1581538,
-        "sha256": "30b41123cb9f18be7ceabcb3578fc04e13dd20a1439324d029f09a05e92170ba"
+        "sha256": "f5b4fbee00492f6e8d21ae05af28055361ff0410289e00a2921654d318bf42aa"
       },
       "writers": [
         "시이나 모타"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 369,
@@ -18839,7 +19016,8 @@
       "id": "d39303f2-f681-57d0-b41c-56b3fc5c4050",
       "title": "소녀A",
       "tags": [
-        "시이나 모타"
+        "시이나 모타",
+        "소녀A"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -18864,12 +19042,16 @@
         "channels": 2,
         "durationSeconds": 242.087,
         "byteLength": 1481141,
-        "sha256": "e3239f35ac6619ce4ccfc989486fc3b64bc4a784612dcc1d32b3b199b2df30f4"
+        "sha256": "49cf97a69fbf9b1a56d17bc26ac96d04798d80b09a3cd8e8183b9e30251dc8ad"
       },
       "writers": [
         "시이나 모타"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 377,
@@ -18992,7 +19174,8 @@
       "tags": [
         "Kanaria",
         "카나리아",
-        "퀸"
+        "퀸",
+        "QUEEN"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -19014,6 +19197,12 @@
           "retrievedEvidenceMatched": true,
           "retrievalUrl": "https://search.naver.com/search.naver?query=%E3%80%90%EB%8F%85%EC%9D%8C%E3%80%91QUEEN+-+Kanaria+%2F+%ED%95%9C%EA%B5%AD%EC%96%B4+%EB%B2%88%EC%97%AD+%2F+%ED%95%9C%EA%B5%AD%EC%96%B4+%EC%9E%90%EB%A7%89+%2F%EB%B0%9C%EC%9D%8C%2FQUEEN+LYRICS+%EB%B3%B4%EC%BB%AC%EB%A1%9C%EC%9D%B4%EB%93%9C+%EA%B3%A1",
           "retrievedAt": "2026-10-27T10:00:05.383721+00:00"
+        },
+        {
+          "url": "https://m.blog.naver.com/chicscene/224371010583",
+          "quote": "이후에도 카나리아의 창작열은 멈추지 않았습니다. EYE (아이), YUI (유이), QUEEN (퀸) 등 발표하는 곡마다 연달아 히트시키며, 명실상부한 2020년대 최고의 보컬로이드 프로듀서 반열에 올랐습니다.",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
         }
       ],
       "audio": {
@@ -19025,7 +19214,7 @@
         "channels": 2,
         "durationSeconds": 157.044,
         "byteLength": 879685,
-        "sha256": "7dffdb41205058d2c2035df8c15a5c1e5953fcff6ae5d0332b980dd28932b90c"
+        "sha256": "91ce7164d636d926783d6d3dfe193fe5b62666e09de9becc403e96c49c84c16b"
       },
       "writers": [
         "Kanaria"
@@ -19042,7 +19231,7 @@
           "kind": "title",
           "name": "퀸",
           "url": "https://m.blog.naver.com/chicscene/224371010583",
-          "quote": "EYE (아이), YUI (유이), QUEEN (퀸) 등 발표하는 곡마다 연달아 히트시키며"
+          "quote": "이후에도 카나리아의 창작열은 멈추지 않았습니다. EYE (아이), YUI (유이), QUEEN (퀸) 등 발표하는 곡마다 연달아 히트시키며, 명실상부한 2020년대 최고의 보컬로이드 프로듀서 반열에 올랐습니다."
         }
       ]
     },
@@ -19637,7 +19826,8 @@
       "id": "d2dd42e1-7801-5bfe-abd9-2d47dfc40d7a",
       "title": "ONE OFF MIND",
       "tags": [
-        "Van de Shop"
+        "Van de Shop",
+        "ONE OFF MIND"
       ],
       "confidence": "medium",
       "reviewRequired": false,
@@ -19670,12 +19860,16 @@
         "channels": 2,
         "durationSeconds": 219.145,
         "byteLength": 1336156,
-        "sha256": "a67d23f4817da880eca10fb4866143241dfff705404cc02c461db2d18f856a05"
+        "sha256": "86231b81482ca98fd14d457d634bdfface9d1abd6399a659e7fb370f3e6d32e8"
       },
       "writers": [
         "Van de Shop"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 393,
@@ -19916,7 +20110,8 @@
       "title": "MIRA",
       "tags": [
         "Kanaria",
-        "카나리아"
+        "카나리아",
+        "MIRA"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -19941,7 +20136,7 @@
         "channels": 2,
         "durationSeconds": 136.413,
         "byteLength": 833518,
-        "sha256": "0707d85164b111dbecff71a44acfe471107f8d8121ba1c0540af8ea59537f316"
+        "sha256": "dc4e9f2887cd2535a457c5ed8d7a0c0ceba0b41c308748c7ba7ef54ca686ede7"
       },
       "writers": [
         "Kanaria"
@@ -19954,6 +20149,10 @@
           "url": "https://namu.wiki/w/Kanaria",
           "quote": "Kanaria カナリア | 카나리아"
         }
+      ],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
       ]
     },
     {
@@ -20429,7 +20628,8 @@
       "id": "20b03eea-924e-576f-aee4-aeddb268ac4c",
       "title": "snooze",
       "tags": [
-        "wotaku"
+        "wotaku",
+        "snooze"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -20462,12 +20662,16 @@
         "channels": 2,
         "durationSeconds": 176.328,
         "byteLength": 1080485,
-        "sha256": "bbef8bb0d59fa4df2568dd7b61a06732dab2b4101611190a8494a8b530eda883"
+        "sha256": "5a4146964fc26ad7a301aa041bd307c681560c0eec813f19fcf2c2220f3b98e7"
       },
       "writers": [
         "wotaku"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 409,
@@ -20713,7 +20917,8 @@
       "id": "44374e35-1174-5a22-893c-36fb05734a8b",
       "title": "About Me",
       "tags": [
-        "쵸쵸P"
+        "쵸쵸P",
+        "About Me"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -20746,12 +20951,16 @@
         "channels": 2,
         "durationSeconds": 245.488,
         "byteLength": 1496593,
-        "sha256": "5d0cfbe32df4309bee57e60393ae30261262c9ebdcb7a758263a96eeb7241352"
+        "sha256": "87a81d6a2d666af5f75144f583745410afbc61e72625af1b172e67dcd711cb1e"
       },
       "writers": [
         "쵸쵸P"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 415,
@@ -20763,7 +20972,8 @@
       "id": "45b2b369-785d-5148-b787-4b86449fa340",
       "title": "Beat Eater",
       "tags": [
-        "Police Piccadilly"
+        "Police Piccadilly",
+        "Beat Eater"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -20796,12 +21006,16 @@
         "channels": 2,
         "durationSeconds": 216.928,
         "byteLength": 1327464,
-        "sha256": "49b67d3ab3dba26475a3975d80f93d13f3c920135c8649b0d046ea84ae984fd6"
+        "sha256": "f5b343a772a40feda64fd4598a7fd0dd4613ab1b330990aeeaf1fba5f1f4773b"
       },
       "writers": [
         "Police Piccadilly"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 416,
@@ -21277,8 +21491,8 @@
       "id": "679cfd23-d944-5e76-b952-58da71d8b500",
       "title": "Bad ∞ End ∞ Night",
       "tags": [
-        "Hitoshizuku-P",
-        "Yama△",
+        "HitoshizukuP",
+        "Yama",
         "히토시즈쿠P",
         "배드 엔드 나이트",
         "Bad End Night"
@@ -21303,6 +21517,12 @@
           "retrievedEvidenceMatched": true,
           "retrievalUrl": "https://search.naver.com/search.naver?query=Bad+%E2%88%9E+End+%E2%88%9E+Night+%ED%9E%88%ED%86%A0%EC%8B%9C%EC%A6%88%EC%BF%A0P&where=web",
           "retrievedAt": "2026-10-27T10:33:12.735315+00:00"
+        },
+        {
+          "url": "https://m.blog.naver.com/skhbber/223832855392",
+          "quote": "Hitoshizuku-P × Yama - Bad ∞ End ∞ Night (배드 엔드 나이트)",
+          "kind": "page",
+          "retrievedEvidenceMatched": true
         }
       ],
       "audio": {
@@ -21314,7 +21534,7 @@
         "channels": 2,
         "durationSeconds": 252.57,
         "byteLength": 1525810,
-        "sha256": "a3c98a41c9979ad7726745d8b422367273595ef8eae28e3ce8abe89cd6965f94"
+        "sha256": "fcdda601104818e87357b16eb14271f4dc699b69e52ddb851a93d2d4d669ade4"
       },
       "writers": [
         "Hitoshizuku-P",
@@ -21329,16 +21549,16 @@
           "quote": "ひとしずくP 히토시즈쿠P / Hitoshizuku-P"
         },
         {
-          "kind": "title",
-          "name": "배드 엔드 나이트",
-          "url": "https://m.blog.naver.com/skhbber/223832855392",
-          "quote": "Hitoshizuku-P × Yama - Bad ∞ End ∞ Night (배드 엔드 나이트)"
-        },
-        {
           "kind": "punctuation",
           "name": "Bad End Night",
           "url": null,
           "quote": "Bad ∞ End ∞ Night"
+        },
+        {
+          "kind": "title",
+          "name": "배드 엔드 나이트",
+          "url": "https://m.blog.naver.com/skhbber/223832855392",
+          "quote": "Hitoshizuku-P × Yama - Bad ∞ End ∞ Night (배드 엔드 나이트)"
         }
       ]
     },
@@ -21419,8 +21639,9 @@
       "id": "99d678b2-2201-5989-9913-2eacdff5ca18",
       "title": "Journey",
       "tags": [
-        "DECO*27",
-        "데코"
+        "DECO27",
+        "데코",
+        "Journey"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -21445,7 +21666,7 @@
         "channels": 2,
         "durationSeconds": 167.179,
         "byteLength": 1012025,
-        "sha256": "4b954666734daf2964d318c06529f9fc6e98f019701b4e05c51f14573d98e5d4"
+        "sha256": "f1e0e47f9b9aa8c23469dcca0a3f4e9121d599aefb2e2b3627484da2778ef063"
       },
       "writers": [
         "DECO*27"
@@ -21458,6 +21679,10 @@
           "url": "https://ko.wikipedia.org/wiki/DECO*27",
           "quote": "DECO*27 ( 데코 * 27 , 일본어: デコ・ニーナ 데코 니나 )는 일본의 뮤지션"
         }
+      ],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
       ]
     },
     {
@@ -21521,7 +21746,7 @@
       "id": "26261bf2-171c-5fef-99fa-a587ac0feaae",
       "title": "ANTI THE∞HOLiC",
       "tags": [
-        "cosMo@폭주P",
+        "cosMo폭주P",
         "안티 디 인피니트 홀릭",
         "ANTI THEHOLiC"
       ],
@@ -21556,24 +21781,22 @@
         "channels": 2,
         "durationSeconds": 308.743,
         "byteLength": 1885324,
-        "sha256": "5212bfea93ac0e273ee467dc1810601e9c492cc7295a7465693c0954f7806f5e"
+        "sha256": "6bdefddfa372f0ffcec8be9bc48931164d7fedf70a7713c9bd68c3fee0b3b823"
       },
       "writers": [
         "cosMo@폭주P"
       ],
       "aliases": [
         {
-          "kind": "title",
-          "name": "안티 디 인피니트 홀릭",
-          "url": "https://namu.wiki/w/ANTI%20THE%E2%88%9EHOLiC",
-          "quote": "제목은 안티 디 인피니트 홀릭으로 읽는다."
-        },
-        {
           "kind": "punctuation",
           "name": "ANTI THEHOLiC",
           "url": null,
           "quote": "ANTI THE∞HOLiC"
         }
+      ],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
       ]
     },
     {
@@ -21686,7 +21909,9 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=MwzFh1hbPvw",
       "id": "d392a1db-ada6-5b88-9306-54f9fba876d3",
       "title": "NEXT STAGE",
-      "tags": [],
+      "tags": [
+        "NEXT STAGE"
+      ],
       "confidence": "low",
       "reviewRequired": true,
       "notes": "Established Korean title and songwriter/producer were not verified.",
@@ -21706,10 +21931,14 @@
         "channels": 2,
         "durationSeconds": 268.314,
         "byteLength": 1641742,
-        "sha256": "241e6f7736bfb9e4669fe0e62abc06c149c5cd12aa4151c7c280e4b59cfb02bf"
+        "sha256": "bb789f9e47b0118b466c6aa295123be98c1ef60573e1c6784ade58f80c5d2c7c"
       },
       "writers": [],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 434,
@@ -21721,8 +21950,9 @@
       "id": "ef7c9e42-92f7-517e-9182-f59e26e4772e",
       "title": "Black Board",
       "tags": [
-        "chouchou-P",
-        "쵸쵸P"
+        "chouchouP",
+        "쵸쵸P",
+        "Black Board"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -21763,7 +21993,7 @@
         "channels": 2,
         "durationSeconds": 221.596,
         "byteLength": 1351766,
-        "sha256": "3f4841b421b9f1e2401a945fd9121c3bd580aab2cf1c8932daa94c8dab52f938"
+        "sha256": "9ccf2b42c0bfd30c32d69553e826d2a50f3e1e24db9149dce179bf31650d6fad"
       },
       "writers": [
         "chouchou-P"
@@ -21776,6 +22006,10 @@
           "url": "https://namu.wiki/w/%EC%B5%B8%EC%B5%B8P",
           "quote": "(Chouchou-P / papiyon / Ichinose Yuu) (쵸쵸P / 이치노세 유우)"
         }
+      ],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
       ]
     },
     {
@@ -21847,7 +22081,7 @@
       "id": "2c01b84c-6d6b-5a88-9bd4-bcbb53da1d7a",
       "title": "Calc.",
       "tags": [
-        "JimmyThumb-P",
+        "JimmyThumbP",
         "지미섬P",
         "Calc"
       ],
@@ -21898,7 +22132,7 @@
         "channels": 2,
         "durationSeconds": 240.008,
         "byteLength": 1447466,
-        "sha256": "a8077a250a432b018d16d8939ae5ffcc4709bc6023fbebdfcee9cd7ab69d5d5c"
+        "sha256": "3ca97900998182f454b06310417b6dfa4932801c0a8df2defd86807056a881a2"
       },
       "writers": [
         "JimmyThumb-P"
@@ -21917,6 +22151,10 @@
           "url": null,
           "quote": "Calc."
         }
+      ],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
       ]
     },
     {
@@ -21987,7 +22225,8 @@
       "id": "f783a039-9d32-53dc-9cd0-22c2a77d6a65",
       "title": "Just Be Friends",
       "tags": [
-        "Dixie Flatline"
+        "Dixie Flatline",
+        "Just Be Friends"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -22012,12 +22251,16 @@
         "channels": 2,
         "durationSeconds": 304.548,
         "byteLength": 1834766,
-        "sha256": "0f776d539f25806997eca156532c4c1e47f09b5265fff716e293e449910a01db"
+        "sha256": "6deaff5f737993df9d21c103ceb43a1caccac694300e1ef1ab2713de66bdbaa9"
       },
       "writers": [
         "Dixie Flatline"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 439,
@@ -22215,7 +22458,8 @@
       "id": "b115f97b-a173-5a9b-bedd-7e4256fce524",
       "title": "I랍니다",
       "tags": [
-        "레루리리"
+        "레루리리",
+        "I랍니다"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -22240,12 +22484,16 @@
         "channels": 2,
         "durationSeconds": 147.271,
         "byteLength": 904448,
-        "sha256": "a2942048ba3899731bed204384284f8a36fc299d8d73ea4b79697f28671702fe"
+        "sha256": "9574e2858a1fc820ae17f97b5c209f57525186369100b5874ad734c484f672f6"
       },
       "writers": [
         "레루리리"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 443,
@@ -22258,7 +22506,8 @@
       "title": "STAGE OF SEKAI",
       "tags": [
         "HarryP",
-        "하리P"
+        "하리P",
+        "STAGE OF SEKAI"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -22291,7 +22540,7 @@
         "channels": 2,
         "durationSeconds": 239.962,
         "byteLength": 1470122,
-        "sha256": "fee2e9fe772831145d019a6efc8cfdcd76ff4b6562e2132436401958b84f45fe"
+        "sha256": "990d5159d13cd67e1f37a2dd38e2311a48d8cfa5b9cec6823349e75baab13b14"
       },
       "writers": [
         "HarryP"
@@ -22304,6 +22553,10 @@
           "url": "https://namu.wiki/w/%ED%95%98%EB%A6%ACP",
           "quote": "HarryP はりーP | 하리P"
         }
+      ],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
       ]
     },
     {
@@ -22849,6 +23102,10 @@
           "url": null,
           "quote": "Flyer!"
         }
+      ],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
       ]
     },
     {
@@ -22861,7 +23118,8 @@
       "id": "4314ae11-e383-593b-889f-15e3675ce592",
       "title": "Connecting",
       "tags": [
-        "halyosy"
+        "halyosy",
+        "Connecting"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -22886,12 +23144,16 @@
         "channels": 2,
         "durationSeconds": 300.009,
         "byteLength": 1825337,
-        "sha256": "5df75ad7113993d69ccba556325496b4635874e2b695126860b46c75c580ed87"
+        "sha256": "67bcd9e7449803628c2ef59152d589dc50bd642adab211d28ce63096b9374065"
       },
       "writers": [
         "halyosy"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 456,
@@ -22904,7 +23166,8 @@
       "title": "Awake Now",
       "tags": [
         "Yunosuke",
-        "유노스케"
+        "유노스케",
+        "Awake Now"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -22937,7 +23200,7 @@
         "channels": 2,
         "durationSeconds": 205.515,
         "byteLength": 1222917,
-        "sha256": "95c54b4cf09968c5a77ea28e216a84be23d04a99c88867fd56611b11f78ff5ee"
+        "sha256": "50056180df41431f7b4d12b33469792dbbb6932cac817992da1fe1d05308c135"
       },
       "writers": [
         "Yunosuke"
@@ -22950,6 +23213,10 @@
           "url": "https://namu.wiki/w/%EC%9C%A0%EB%85%B8%EC%8A%A4%EC%BC%80",
           "quote": "이름 雄之助 유노스케 / Yunosuke"
         }
+      ],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
       ]
     },
     {
@@ -23377,6 +23644,10 @@
           "url": null,
           "quote": "-ERROR"
         }
+      ],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
       ]
     },
     {
@@ -23540,7 +23811,8 @@
       "title": "twitter",
       "tags": [
         "devilishP",
-        "에러"
+        "에러",
+        "twitter"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -23573,18 +23845,15 @@
         "channels": 2,
         "durationSeconds": 252.999,
         "byteLength": 1552897,
-        "sha256": "6b50066cc07a429997904687a1ebdc482c01e912b7410c06e8d56250b2b23fb1"
+        "sha256": "3a0761cfd68c609ea75c25e6ac210c5f3814f6a5cb12cfba7d9c6f5ee15603e8"
       },
       "writers": [
         "devilishP"
       ],
-      "aliases": [
-        {
-          "kind": "title",
-          "name": "에러",
-          "url": "https://m.blog.naver.com/bibi9902/224283500086",
-          "quote": "니키 f. 릴리 (nikiP feat.Lily) - 에러 (-ERROR)"
-        }
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
       ]
     },
     {
@@ -23924,7 +24193,8 @@
       "id": "1ba67a80-176a-5ea5-8936-9d04f9a67eca",
       "title": "Close to you",
       "tags": [
-        "niki"
+        "niki",
+        "Close to you"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -23957,12 +24227,16 @@
         "channels": 2,
         "durationSeconds": 292.01,
         "byteLength": 1788133,
-        "sha256": "2eb4e07d6b11eb3fd8c86a956a47ca3590ace8ccd500b5fa340e29d461b9b02c"
+        "sha256": "374d32b5685b89705242f9e03f9611a60a8b7d215397acd5f8622d778f8bcc2b"
       },
       "writers": [
         "niki"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 478,
@@ -23974,7 +24248,8 @@
       "id": "0da78bfd-e587-5071-adaf-454e4d7642fc",
       "title": "I am a broken umbrella",
       "tags": [
-        "Nem"
+        "Nem",
+        "I am a broken umbrella"
       ],
       "confidence": "low",
       "reviewRequired": true,
@@ -23999,12 +24274,16 @@
         "channels": 2,
         "durationSeconds": 287.923,
         "byteLength": 1715698,
-        "sha256": "126691308838e1dad278a339c3dca6f9c148d3450ee3063f94798fef0dc75cf2"
+        "sha256": "f85447587cc255b326282efa44d94ebe36e7b5d403719a655395c552eb027eb3"
       },
       "writers": [
         "Nem"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 479,
@@ -24067,7 +24346,8 @@
       "id": "46aedc8c-9c34-58c5-9f15-d28eab7fbbbf",
       "title": "WAVE",
       "tags": [
-        "niki"
+        "niki",
+        "WAVE"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -24100,12 +24380,16 @@
         "channels": 2,
         "durationSeconds": 203.576,
         "byteLength": 1235326,
-        "sha256": "6f6b97a219208ef9d47337b30001c9be609757899748572a95407ac8aec83449"
+        "sha256": "915568e24a3badba7e0558edbee446661b2916258b6a0d94ccc04ee2fd30b8c4"
       },
       "writers": [
         "niki"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 481,
@@ -24506,7 +24790,8 @@
       "id": "f3ead26c-26dd-55b6-9b42-9c739d939b9c",
       "title": "ELECT",
       "tags": [
-        "niki"
+        "niki",
+        "ELECT"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -24539,12 +24824,16 @@
         "channels": 2,
         "durationSeconds": 193.244,
         "byteLength": 1180490,
-        "sha256": "27638ab5ed3c2d0cc5513f19a015c4314357b82f7dc9bfdb0123a5153f0c0e38"
+        "sha256": "19dc1fdac3414032349ed1ebfa3cdc50f90be3b1456d82fcd61b95784c946a6d"
       },
       "writers": [
         "niki"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 490,
@@ -24663,7 +24952,8 @@
       "title": "HEAVEN",
       "tags": [
         "HarryP",
-        "하리P"
+        "하리P",
+        "HEAVEN"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -24688,7 +24978,7 @@
         "channels": 2,
         "durationSeconds": 288.007,
         "byteLength": 1751385,
-        "sha256": "530c7bcab57d7dcf9e8b44ffff3a931315b4bf39d1b8daabf41f7cb4f378bdbc"
+        "sha256": "a6d3950a6c43f086274a5fe0ec0ea2033d8b7f2af2e6ea633828cd92a1bdff49"
       },
       "writers": [
         "HarryP"
@@ -24701,6 +24991,10 @@
           "url": "https://namu.wiki/w/%ED%95%98%EB%A6%ACP",
           "quote": "HarryP はりーP | 하리P"
         }
+      ],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
       ]
     },
     {
@@ -24806,7 +25100,8 @@
       "title": "익명M",
       "tags": [
         "PinocchioP",
-        "피노키오피"
+        "피노키오피",
+        "익명M"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -24831,7 +25126,7 @@
         "channels": 2,
         "durationSeconds": 159.888,
         "byteLength": 979432,
-        "sha256": "aced6e270d3b16b33efe0ce579de4d695d2491678320eadf5fc91d500ab57627"
+        "sha256": "7a88e14cfb01be380e0fe6bd0765c2336ea19717a5607277a9f6b94bb259b28c"
       },
       "writers": [
         "PinocchioP"
@@ -24844,6 +25139,10 @@
           "url": "https://namu.wiki/w/%EB%9F%AC%EB%B9%97(VOCALOID%20%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90%20%EA%B3%A1)",
           "quote": "러빗은 피노키오피가 작사·작곡하여"
         }
+      ],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
       ]
     },
     {
@@ -25148,7 +25447,7 @@
       "id": "f041ec32-e15b-5b2b-9b74-07bac6f966bd",
       "title": "Catchy !?",
       "tags": [
-        "r-906",
+        "r906",
         "Catchy"
       ],
       "confidence": "high",
@@ -25174,7 +25473,7 @@
         "channels": 2,
         "durationSeconds": 180.008,
         "byteLength": 1103321,
-        "sha256": "e126a7fa29192c7288cdefd7282f01f7636aa9834bbe22e2dce2d951fe5259a9"
+        "sha256": "be09f61fa124697a719ae4881086d6582454ef38fa1fac62860bece6d1d658e9"
       },
       "writers": [
         "r-906"
@@ -25186,6 +25485,10 @@
           "url": null,
           "quote": "Catchy !?"
         }
+      ],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
       ]
     },
     {
@@ -25441,7 +25744,8 @@
       "id": "1c55fc4b-2237-543c-b1b4-70d17e4641f0",
       "title": "NEVERLAND",
       "tags": [
-        "APG550"
+        "APG550",
+        "NEVERLAND"
       ],
       "confidence": "low",
       "reviewRequired": true,
@@ -25468,12 +25772,16 @@
         "channels": 2,
         "durationSeconds": 182.151,
         "byteLength": 1108389,
-        "sha256": "8f8a532ed100218d91e6642238fe85aefbf61469d85cc0225369029bcfa22baa"
+        "sha256": "0b9754d610799352b2f586801b20a18b7d51d47ed64d9e6f3aab8475687d1dbe"
       },
       "writers": [
         "APG550"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 509,
@@ -25644,7 +25952,8 @@
       "id": "1e5c0ea6-5899-5d03-9f48-328c5666fb2a",
       "title": "Happppy song",
       "tags": [
-        "SOOOO"
+        "SOOOO",
+        "Happppy song"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -25669,12 +25978,16 @@
         "channels": 2,
         "durationSeconds": 324.134,
         "byteLength": 1960410,
-        "sha256": "0577831e5553a73f3080829f685873396b9a1256f67a69d7feb9910e05a562e0"
+        "sha256": "28ea60c63c1488f7a148a39f6039dc783c1e9242e20814a1b9ef1e790b03db05"
       },
       "writers": [
         "SOOOO"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 513,
@@ -26663,7 +26976,8 @@
       "title": "SPiCa",
       "tags": [
         "토쿠",
-        "kentax"
+        "kentax",
+        "SPiCa"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -26688,13 +27002,17 @@
         "channels": 2,
         "durationSeconds": 217.172,
         "byteLength": 1330099,
-        "sha256": "d0e79cdf8fd3365519efb030aae36e4451022610320d139afb23a457d0e5bd5c"
+        "sha256": "5817a918466e8aa4f06e3b75968527a11438f180d003aaafd982ad7c4322d699"
       },
       "writers": [
         "토쿠",
         "kentax"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 534,
@@ -27145,7 +27463,8 @@
       "id": "fdad22f6-9080-59a4-a5ba-d5e19e8b55df",
       "title": "Forward",
       "tags": [
-        "R Sound Design"
+        "R Sound Design",
+        "Forward"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -27170,12 +27489,16 @@
         "channels": 2,
         "durationSeconds": 193.754,
         "byteLength": 1189551,
-        "sha256": "9fd9ee73f02d66c045e0a99a45093db37be421c51268b7c2f9b1dc5eb2072ca1"
+        "sha256": "c7b4d7c2b5323b1fab320f04e02334ca19e6510494f16bfd4b92dba8f9a9aee8"
       },
       "writers": [
         "R Sound Design"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 544,
@@ -28155,7 +28478,8 @@
       "id": "97c6c004-15c3-5726-95c3-62a5fc00680a",
       "title": "야마다 PERFECT",
       "tags": [
-        "jon-YAKITORY"
+        "jonYAKITORY",
+        "야마다 PERFECT"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -28196,12 +28520,16 @@
         "channels": 2,
         "durationSeconds": 134.845,
         "byteLength": 825214,
-        "sha256": "cc9c35e8ad86b6e234a64bbc8d53e159cb9c85a352e66cf3310fff2161c05923"
+        "sha256": "78cd579c0dacc34293b1ae61e829b2aafab80fedcae34b34cc71f1aeb6963ebe"
       },
       "writers": [
         "jon-YAKITORY"
       ],
-      "aliases": []
+      "aliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+      ]
     },
     {
       "index": 565,

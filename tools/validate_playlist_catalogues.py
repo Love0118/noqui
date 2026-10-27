@@ -52,7 +52,7 @@ def validate(source, audio=False):
                 assert comments.get('composer',[])==song.get('writers',song['tags']),f'{label}: embedded writer mismatch'
     return {'name':data['playlistTitle'],'entries':len(songs),'reviewed':sum(not s['reviewRequired'] for s in songs),
             'downloaded':sum(s['audio']['status']=='ready' for s in songs),
-            'playable':sum(not s['reviewRequired'] and s['audio']['status']=='ready' for s in songs)}
+            'playable':sum(not s['reviewRequired'] and not s.get('audioSourceReviewRequired',False) and s['audio']['status']=='ready' for s in songs)}
 
 
 if __name__=='__main__':

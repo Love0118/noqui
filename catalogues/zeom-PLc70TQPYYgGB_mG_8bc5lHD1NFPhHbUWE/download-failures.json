@@ -1,0 +1,205 @@
+[
+  {
+    "index": 47,
+    "playlistPosition": 47,
+    "videoId": "8FBhgZ5DRqI",
+    "id": "979a260e-9824-519d-8f7d-7c0ab637f297",
+    "youtubeUrl": "https://www.youtube.com/watch?v=8FBhgZ5DRqI",
+    "sourceTitle": "Carmine",
+    "channel": "ELLEGARDEN_OFFICIAL",
+    "durationSeconds": 205,
+    "title": "Carmine",
+    "writers": [],
+    "tags": [
+      "Carmine"
+    ],
+    "aliases": [],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+      "Original writer credits are unresolved",
+      "Conventional Korean title and bilingual aliases remain under review",
+      "Official audio-only recording still needs review"
+    ],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=8FBhgZ5DRqI",
+        "quote": "Carmine — Ellegarden - Topic",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      }
+    ],
+    "notes": "",
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "곡 제목별 한국어 통용 표기를 입증하는 출처를 확인하지 못함; 공식 원제를 유지함."
+    ],
+    "audioSourceType": "unverified_recording",
+    "audioSourceReviewRequired": true,
+    "audio": {
+      "status": "failed",
+      "failureCode": "MUSIC_PREMIUM_REQUIRED",
+      "reason": "Full-length source could not be downloaded; see local download audit",
+      "stage": "remote-download"
+    }
+  },
+  {
+    "index": 199,
+    "playlistPosition": 199,
+    "videoId": "KIyc-yYf5eY",
+    "id": "e1b33793-a5f8-5bdd-846c-b7deb034d1fe",
+    "youtubeUrl": "https://www.youtube.com/watch?v=KIyc-yYf5eY",
+    "sourceTitle": "犬とバカ猫",
+    "channel": "セカンドバッカー",
+    "durationSeconds": 197,
+    "title": "개와 바보 고양이",
+    "writers": [
+      "Composer: こうへい"
+    ],
+    "tags": [
+      "Composer こうへい",
+      "개와 바보 고양이"
+    ],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "개와 바보 고양이",
+        "url": "https://j-pop-playlist.tistory.com/1456",
+        "quote": "セカンドバッカー - 犬とバカ猫 (세컨드 백커 - 개와 바보 고양이)가수: セカンドバッカー"
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "Official audio-only recording still needs review"
+    ],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=KIyc-yYf5eY",
+        "quote": "Provided to YouTube by IIP-DDS; ℗ セカンドバッカー; Lyricist, Composer: こうへい",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://j-pop-playlist.tistory.com/1456",
+        "quote": "セカンドバッカー - 犬とバカ猫 (세컨드 백커 - 개와 바보 고양이)가수: セカンドバッカー",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      }
+    ],
+    "notes": "",
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "audioSourceType": "unverified_recording",
+    "audioSourceReviewRequired": true,
+    "audio": {
+      "status": "failed",
+      "failureCode": "SOURCE_UNAVAILABLE",
+      "reason": "Full-length source could not be downloaded; see local download audit",
+      "stage": "remote-download"
+    }
+  },
+  {
+    "index": 229,
+    "playlistPosition": 229,
+    "videoId": "htv2mRvaqhk",
+    "id": "7dede442-32c7-59ea-8943-4539d25247e8",
+    "youtubeUrl": "https://www.youtube.com/watch?v=htv2mRvaqhk",
+    "sourceTitle": "Nekokaburu",
+    "channel": "MOSHIMO Channel",
+    "durationSeconds": 244,
+    "title": "Nekokaburu",
+    "writers": [],
+    "tags": [
+      "MOSHIMO Channel"
+    ],
+    "aliases": [],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "Writer credits not confirmed by an explicit lyricist/composer/author source.",
+      "Original writer credits are unresolved",
+      "Conventional Korean title and bilingual aliases remain under review",
+      "Official audio-only recording still needs review"
+    ],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=htv2mRvaqhk",
+        "quote": "YouTube oEmbed title: Nekokaburu; author: MOSHIMO - Topic",
+        "kind": "youtube_oembed",
+        "retrievedEvidenceMatched": true
+      }
+    ],
+    "notes": "Credits and Korean title aliases are retained only when supported by a source matching this recording; unsupported fields remain unresolved.",
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "A commonly used Korean title was not verified from a matching Korean source; original title retained."
+    ],
+    "audioSourceType": "unverified_recording",
+    "audioSourceReviewRequired": true,
+    "audio": {
+      "status": "failed",
+      "failureCode": "MUSIC_PREMIUM_REQUIRED",
+      "reason": "Full-length source could not be downloaded; see local download audit",
+      "stage": "remote-download"
+    }
+  },
+  {
+    "index": 239,
+    "playlistPosition": 239,
+    "videoId": "Ui88jlfPz84",
+    "id": "bd6aabdc-5db5-53e7-b0aa-7a1d0c037b82",
+    "youtubeUrl": "https://www.youtube.com/watch?v=Ui88jlfPz84",
+    "sourceTitle": "どうして、わたしじゃないんですか？",
+    "channel": "susumu.",
+    "durationSeconds": 165,
+    "title": "Doushite, Watashi ja Nai n Desu ka?",
+    "writers": [
+      "susumu."
+    ],
+    "tags": [
+      "susumu",
+      "DoushiteWatashijaNainDesuka"
+    ],
+    "aliases": [
+      {
+        "kind": "punctuation",
+        "name": "Doushite Watashi ja Nai n Desu ka",
+        "url": null,
+        "quote": "Doushite, Watashi ja Nai n Desu ka?"
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "Title or credit evidence has not been matched to a source",
+      "Display title is absent from the evidence quotes",
+      "Conventional Korean title and bilingual aliases remain under review",
+      "Official audio-only recording still needs review"
+    ],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=Ui88jlfPz84",
+        "quote": "YouTube oEmbed title: どうして、わたしじゃないんですか？; author: susumu. - Topic",
+        "kind": "youtube_oembed",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=Ui88jlfPz84",
+        "quote": "Provided to YouTube by IIP-DDS | Lyricist, Composer: susumu.",
+        "kind": "page",
+        "retrievedEvidenceMatched": false
+      }
+    ],
+    "notes": "Credits and Korean title aliases are retained only when supported by a source matching this recording; unsupported fields remain unresolved.",
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "A commonly used Korean title was not verified from a matching Korean source; original title retained."
+    ],
+    "audioSourceType": "unverified_recording",
+    "audioSourceReviewRequired": true,
+    "audio": {
+      "status": "failed",
+      "failureCode": "SOURCE_UNAVAILABLE",
+      "reason": "Full-length source could not be downloaded; see local download audit",
+      "stage": "remote-download"
+    }
+  }
+]

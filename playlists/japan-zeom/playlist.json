@@ -1,0 +1,2522 @@
+{
+  "schemaVersion": 1,
+  "id": "japan-zeom",
+  "name": "일본 - ZEOM",
+  "songs": [
+    {
+      "song": {
+        "id": "c7b1a2fb-4d4c-5240-9b79-30f81a669737",
+        "youtubeUrl": "https://www.youtube.com/watch?v=CnlMTBwsBHs",
+        "title": "무희",
+        "tags": [
+          "Vaundy",
+          "무희"
+        ]
+      },
+      "audio": {
+        "path": "audio/CnlMTBwsBHs.ogg",
+        "sha256": "08e1fb098d21b2a276e15ec91c87ec81de0ff490cbd3539a50e0a20b1744fdc1",
+        "byteLength": 1410063,
+        "durationMs": 230117
+      }
+    },
+    {
+      "song": {
+        "id": "7f53d73e-74b0-5bea-93d2-203b9d31a5ff",
+        "youtubeUrl": "https://www.youtube.com/watch?v=hS2BVRnQiYI",
+        "title": "도쿄 플래시",
+        "tags": [
+          "Vaundy",
+          "도쿄 플래시"
+        ]
+      },
+      "audio": {
+        "path": "audio/hS2BVRnQiYI.ogg",
+        "sha256": "b52256ddb7bdefe249bfc8ac15f936bad1a001f0211460cbaae9dbcdddb1b990",
+        "byteLength": 1573806,
+        "durationMs": 258374
+      }
+    },
+    {
+      "song": {
+        "id": "2e12edc5-7783-53a9-bd2e-dc68536dd968",
+        "youtubeUrl": "https://www.youtube.com/watch?v=kJEPeKPtZyw",
+        "title": "꽃점",
+        "tags": [
+          "Vaundy",
+          "꽃점"
+        ]
+      },
+      "audio": {
+        "path": "audio/kJEPeKPtZyw.ogg",
+        "sha256": "4434b5c774b1538ad6bbebe3b514304642b58acfc1118be5459795fde3912024",
+        "byteLength": 1259769,
+        "durationMs": 207494
+      }
+    },
+    {
+      "song": {
+        "id": "8c2cd18c-e19d-5a90-b358-02dfab7de6c6",
+        "youtubeUrl": "https://www.youtube.com/watch?v=3NNhrqHZqlI",
+        "title": "레몬",
+        "tags": [
+          "요네즈켄시",
+          "레몬",
+          "Lemon"
+        ]
+      },
+      "audio": {
+        "path": "audio/3NNhrqHZqlI.ogg",
+        "sha256": "a59f9bdad210511518d646a1292da9ca15ea1a35b0f7e147eb013142a8899f2a",
+        "byteLength": 1563116,
+        "durationMs": 256114
+      }
+    },
+    {
+      "song": {
+        "id": "4fe0e634-8450-5dc0-b493-43e252143479",
+        "youtubeUrl": "https://www.youtube.com/watch?v=KMdTrqzEI0I",
+        "title": "사랑",
+        "tags": [
+          "사랑"
+        ]
+      },
+      "audio": {
+        "path": "audio/KMdTrqzEI0I.ogg",
+        "sha256": "6bf067ef7885accc400ad83d674e6a91255270a5ae71a7c518d08ff7f06856c2",
+        "byteLength": 1531508,
+        "durationMs": 253340
+      }
+    },
+    {
+      "song": {
+        "id": "077f158b-5c97-5466-b2dd-09f1cace111f",
+        "youtubeUrl": "https://www.youtube.com/watch?v=RWFW1OSlMkM",
+        "title": "청춘 콤플렉스",
+        "tags": [
+          "Ai Higuchi",
+          "otoha",
+          "청춘 콤플렉스",
+          "seisyun complex"
+        ]
+      },
+      "audio": {
+        "path": "audio/RWFW1OSlMkM.ogg",
+        "sha256": "4bad62ebf4b4592c5458d64aaef24a5ab0bd972cb0108fe1f744ebc03c000fc0",
+        "byteLength": 1243445,
+        "durationMs": 203634
+      }
+    },
+    {
+      "song": {
+        "id": "539caf70-1b63-5c27-ac10-efaffaa52f26",
+        "youtubeUrl": "https://www.youtube.com/watch?v=8OZpBLAULNI",
+        "title": "거짓말",
+        "tags": [
+          "Mao",
+          "Yuya",
+          "거짓말",
+          "Uso"
+        ]
+      },
+      "audio": {
+        "path": "audio/8OZpBLAULNI.ogg",
+        "sha256": "6e095f473c7c1a3a370eda2c691fa85a6ce10783076726af6f90035289a35ec1",
+        "byteLength": 1248923,
+        "durationMs": 205980
+      }
+    },
+    {
+      "song": {
+        "id": "4f728631-0dae-591e-aa7c-a5a548ce7118",
+        "youtubeUrl": "https://www.youtube.com/watch?v=nmYDYalgb5w",
+        "title": "안녕 또 언젠가",
+        "tags": [
+          "요네즈 켄시",
+          "SayonaraMataItsuka",
+          "안녕 또 언젠가"
+        ]
+      },
+      "audio": {
+        "path": "audio/nmYDYalgb5w.ogg",
+        "sha256": "ef9276129fb2b3a63ee5b24dab895d4a19c0ad8727e67fae45493275aee1d52d",
+        "byteLength": 1226437,
+        "durationMs": 201287
+      }
+    },
+    {
+      "song": {
+        "id": "7609f151-2efa-5d04-9f48-8273a83b9b69",
+        "youtubeUrl": "https://www.youtube.com/watch?v=DO_aopUeFnw",
+        "title": "라일락",
+        "tags": [
+          "Motoki Ohmori",
+          "라일락",
+          "Lilac"
+        ]
+      },
+      "audio": {
+        "path": "audio/DO_aopUeFnw.ogg",
+        "sha256": "280c5d88bdb823185c9636c1aecafebb97db88a0af5ccf6fde9d80d4a83f65af",
+        "byteLength": 1758492,
+        "durationMs": 288207
+      }
+    },
+    {
+      "song": {
+        "id": "7a06c992-ef3d-5f0a-b3ee-eaecd992e786",
+        "youtubeUrl": "https://www.youtube.com/watch?v=XMCxgVHD0Iw",
+        "title": "잔혹한 밤에 빛나라",
+        "tags": [
+          "Yuki Kajiura",
+          "잔혹한 밤에 빛나라",
+          "Shine in the Cruel Night"
+        ]
+      },
+      "audio": {
+        "path": "audio/XMCxgVHD0Iw.ogg",
+        "sha256": "4119bf242f2f05ce887394844529970baa8f602137f7f1ed6f06f89272965e12",
+        "byteLength": 2343893,
+        "durationMs": 383369
+      }
+    },
+    {
+      "song": {
+        "id": "7d88788e-40a9-55c3-bbbe-43d34ab0e38f",
+        "youtubeUrl": "https://www.youtube.com/watch?v=8Selo-P1Ovc",
+        "title": "잊어주지 않을 거야",
+        "tags": [
+          "ZAQ",
+          "Daichi Yoshioka",
+          "잊어주지 않을 거야",
+          "Never forget"
+        ]
+      },
+      "audio": {
+        "path": "audio/8Selo-P1Ovc.ogg",
+        "sha256": "b71906124b1f3f4137642e5bec96faa67d1b45148dae1d842b1e0c108bee5a7e",
+        "byteLength": 1360977,
+        "durationMs": 223367
+      }
+    },
+    {
+      "song": {
+        "id": "94d5218f-1f4d-573e-8879-f679a2db0fd9",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Fyos7dBZT5E",
+        "title": "절대영도",
+        "tags": [
+          "절대영도",
+          "natori"
+        ]
+      },
+      "audio": {
+        "path": "audio/Fyos7dBZT5E.ogg",
+        "sha256": "f22def72a9289df10bcb5c9f56eed62a64491073ca73b8595f3c10ae4b6ef12f",
+        "byteLength": 1215673,
+        "durationMs": 198490
+      }
+    },
+    {
+      "song": {
+        "id": "328f4232-4df2-5bc4-acc1-1c35f0d1b6f8",
+        "youtubeUrl": "https://www.youtube.com/watch?v=tc0FL9JROGQ",
+        "title": "당신의 연인이 되고 싶어",
+        "tags": [
+          "Cho Q May",
+          "당신의 연인이 되고 싶어"
+        ]
+      },
+      "audio": {
+        "path": "audio/tc0FL9JROGQ.ogg",
+        "sha256": "ace9b7c4dcbf232b9a10a189c58aae7bf69c3da8fd9cc43f2cef47722d1d5f0e",
+        "byteLength": 1433561,
+        "durationMs": 234125
+      }
+    },
+    {
+      "song": {
+        "id": "94d71e5b-a626-5c67-a846-4a9cb9ec9b33",
+        "youtubeUrl": "https://www.youtube.com/watch?v=yDOx_Duc498",
+        "title": "막차는 25시",
+        "tags": [
+          "Taiyo Someya",
+          "Lamp YouTube Official Channel",
+          "막차는 25시"
+        ]
+      },
+      "audio": {
+        "path": "audio/yDOx_Duc498.ogg",
+        "sha256": "945831d9fec38f47945a5e235898da3365dd443e091056d11f39eb014e72943b",
+        "byteLength": 1615127,
+        "durationMs": 263847
+      }
+    },
+    {
+      "song": {
+        "id": "7c3eb4f3-0945-5d6c-a6d4-3f40214477f0",
+        "youtubeUrl": "https://www.youtube.com/watch?v=EaC8Dgtvrb0",
+        "title": "그런 bitter 한 이야기",
+        "tags": [
+          "Vaundy",
+          "그런 bitter한 이야기"
+        ]
+      },
+      "audio": {
+        "path": "audio/EaC8Dgtvrb0.ogg",
+        "sha256": "40b939f681c4db52c5bf01a634db3ad05419f92f3250f52ca26bdb38d3861011",
+        "byteLength": 1689192,
+        "durationMs": 276090
+      }
+    },
+    {
+      "song": {
+        "id": "a14a3c12-4d28-5329-8002-75861a311e8a",
+        "youtubeUrl": "https://www.youtube.com/watch?v=4flRaFrBqFU",
+        "title": "재회",
+        "tags": [
+          "Vaundy",
+          "재회"
+        ]
+      },
+      "audio": {
+        "path": "audio/4flRaFrBqFU.ogg",
+        "sha256": "868ddd3a9021d9b8234582fa2fd2c32ca35340e28f20958f1c9b255a866a9d1c",
+        "byteLength": 1591169,
+        "durationMs": 260837
+      }
+    },
+    {
+      "song": {
+        "id": "b459c3e3-28b0-595b-8153-7541311fc261",
+        "youtubeUrl": "https://www.youtube.com/watch?v=_GXbXU4g_CA",
+        "title": "바니 걸",
+        "tags": [
+          "AKASAKI",
+          "바니 걸"
+        ]
+      },
+      "audio": {
+        "path": "audio/_GXbXU4g_CA.ogg",
+        "sha256": "d6886ef3e69246e2dd163f69abebdefd39ba296e7673b0f7121003d7aa2d7949",
+        "byteLength": 1323000,
+        "durationMs": 217499
+      }
+    },
+    {
+      "song": {
+        "id": "68fb7632-0361-5db3-9fdf-0fa32a707cb9",
+        "youtubeUrl": "https://www.youtube.com/watch?v=mJ1N7-HyH1A",
+        "title": "밤을 달리다",
+        "tags": [
+          "YOASOBI",
+          "밤을 달리다",
+          "AYASE",
+          "Into The Night"
+        ]
+      },
+      "audio": {
+        "path": "audio/mJ1N7-HyH1A.ogg",
+        "sha256": "1ab6484c846e6c76f6dd796633742e0348ecfa88e05f919af7d9ff68cc36bc21",
+        "byteLength": 1584222,
+        "durationMs": 258847
+      }
+    },
+    {
+      "song": {
+        "id": "032f6a4f-c90a-5c4f-821e-4fd9b3b05b8a",
+        "youtubeUrl": "https://www.youtube.com/watch?v=p1tsL0YmNqU",
+        "title": "만찬가",
+        "tags": [
+          "tuki",
+          "만찬가",
+          "晩餐歌 Bansanka"
+        ]
+      },
+      "audio": {
+        "path": "audio/p1tsL0YmNqU.ogg",
+        "sha256": "e00063150d852b5b975069fe208a1301c8eb99e058cf8a1546a086ee53c6dce3",
+        "byteLength": 1317468,
+        "durationMs": 217767
+      }
+    },
+    {
+      "song": {
+        "id": "de7b3cb5-5901-52cc-a949-eb1cebe6eae6",
+        "youtubeUrl": "https://www.youtube.com/watch?v=yPdqcADl5U4",
+        "title": "벌거벗은 용사",
+        "tags": [
+          "Vaundy",
+          "벌거벗은 용사"
+        ]
+      },
+      "audio": {
+        "path": "audio/yPdqcADl5U4.ogg",
+        "sha256": "70e736b4768c6e44d790587dcfee9a3f94c7c39b3b7cecedc70469337d93083c",
+        "byteLength": 1224107,
+        "durationMs": 202028
+      }
+    },
+    {
+      "song": {
+        "id": "795f9ed4-3c75-5e3e-bad2-4da2ba31a4f4",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Mw66DyjQxBI",
+        "title": "전전전세",
+        "tags": [
+          "Yojiro Noda",
+          "전전전세",
+          "Zenzenzense"
+        ]
+      },
+      "audio": {
+        "path": "audio/Mw66DyjQxBI.ogg",
+        "sha256": "29728c65bde774e8a69f3065409123ac951974556acd230413fa8ebdbf2ee929",
+        "byteLength": 1685010,
+        "durationMs": 275074
+      }
+    },
+    {
+      "song": {
+        "id": "d3958af1-47eb-5ce7-94f7-066617ae807e",
+        "youtubeUrl": "https://www.youtube.com/watch?v=ENQANfv2ANQ",
+        "title": "괴수의 꽃노래",
+        "tags": [
+          "Vaundy",
+          "괴수의 꽃노래"
+        ]
+      },
+      "audio": {
+        "path": "audio/ENQANfv2ANQ.ogg",
+        "sha256": "6d034cb2c89d27c71196b3eba34f0c0f5c5ca2b82adbf607e05b6e2a6899c552",
+        "byteLength": 1363354,
+        "durationMs": 224813
+      }
+    },
+    {
+      "song": {
+        "id": "886f14ad-ba9f-5d54-9ccf-4ae6bc025f95",
+        "youtubeUrl": "https://www.youtube.com/watch?v=16gZm9oeLtI",
+        "title": "괴수의 꽃노래",
+        "tags": [
+          "Vaundy",
+          "괴수의 꽃노래 replica",
+          "괴수의 꽃노래",
+          "怪獣の花唄 replica"
+        ]
+      },
+      "audio": {
+        "path": "audio/16gZm9oeLtI.ogg",
+        "sha256": "ddcdffb3c843d130ee5d0d7b83af2087a458252adaf7d7b0d3d1842448239c46",
+        "byteLength": 1364948,
+        "durationMs": 222888
+      }
+    },
+    {
+      "song": {
+        "id": "0b614891-fa0e-5c7a-980a-b45c682aa8b6",
+        "youtubeUrl": "https://www.youtube.com/watch?v=qNU-SUKjMz0",
+        "title": "1000일간",
+        "tags": [
+          "noa",
+          "1000일간",
+          "1000日間"
+        ]
+      },
+      "audio": {
+        "path": "audio/qNU-SUKjMz0.ogg",
+        "sha256": "9e15f052152ac337b9fcb8fd4119a815515012eb4a4f2b6b0a570d649ca45393",
+        "byteLength": 1245471,
+        "durationMs": 203388
+      }
+    },
+    {
+      "song": {
+        "id": "fae4455b-7af8-5f89-91b4-33aa4e0acbe4",
+        "youtubeUrl": "https://www.youtube.com/watch?v=ZdzoLCLliW0",
+        "title": "그저 네게 맑아라",
+        "tags": [
+          "그저 네게 맑아라",
+          "NBUNA"
+        ]
+      },
+      "audio": {
+        "path": "audio/ZdzoLCLliW0.ogg",
+        "sha256": "f656363bd02e69648524fc04689a5ce383163b13acd489b58e00c50c22c2e4c8",
+        "byteLength": 1208040,
+        "durationMs": 198978
+      }
+    },
+    {
+      "song": {
+        "id": "9b01243e-3799-5b65-9238-6a61d2cf3efc",
+        "youtubeUrl": "https://www.youtube.com/watch?v=gprY11OD0cA",
+        "title": "신령님 시작했습니다",
+        "tags": [
+          "신령님 시작했습니다",
+          "Shuichi Mabe"
+        ]
+      },
+      "audio": {
+        "path": "audio/gprY11OD0cA.ogg",
+        "sha256": "1c21ec917485255931c3968c0ebd05fc0a7e7ebd54c93f94332f9ab022be20af",
+        "byteLength": 1233434,
+        "durationMs": 204140
+      }
+    }
+  ],
+  "excludedSongs": [
+    {
+      "index": 1,
+      "title": "회회기담",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Original writer credits are unresolved"
+      ]
+    },
+    {
+      "index": 2,
+      "title": "LADY",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Overdose",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Kizuna No Kiseki",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Zankyosanka",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 6,
+      "title": "MUGEN",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Gurenge",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 9,
+      "title": "Otonoke",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 10,
+      "title": "Bling-Bang-Bang-Born",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 11,
+      "title": "春を告げる",
+      "reasons": [
+        "Title does not satisfy game metadata constraints",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 12,
+      "title": "Melodrama",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 13,
+      "title": "이상적인 여자",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Original writer credits are unresolved"
+      ]
+    },
+    {
+      "index": 14,
+      "title": "BETELGEUSE",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 15,
+      "title": "Kanden",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 16,
+      "title": "Ai Wo Tsutaetaidatoka",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 17,
+      "title": "Dream lantern",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 19,
+      "title": "Universe",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 21,
+      "title": "Nekko",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 22,
+      "title": "Ame Sansan",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 23,
+      "title": "Ichizu",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 24,
+      "title": "Fiction",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 27,
+      "title": "Koi to Byounetsu",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 28,
+      "title": "CHAMELEON",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 29,
+      "title": "napori",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 30,
+      "title": "golden hour (Fujii Kaze Remix)",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 31,
+      "title": "Shinunoga E-Wa",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 32,
+      "title": "はいよろこんで",
+      "reasons": [
+        "Title does not satisfy game metadata constraints",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 33,
+      "title": "Zankyosanka",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 34,
+      "title": "Dramaturgy",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 35,
+      "title": "怪物",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Title does not satisfy game metadata constraints",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 36,
+      "title": "Prometheus",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 37,
+      "title": "color",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 38,
+      "title": "Inferno",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 39,
+      "title": "Crossing Field",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 40,
+      "title": "エキスパート",
+      "reasons": [
+        "Title does not satisfy game metadata constraints",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 42,
+      "title": "CROWNED",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 43,
+      "title": "Silhouette",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 44,
+      "title": "IRIS OUT",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 45,
+      "title": "革命道中 - On The Way",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 47,
+      "title": "Carmine",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review",
+        "Official audio-only recording still needs review"
+      ]
+    },
+    {
+      "index": 49,
+      "title": "Dance In The Game",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 50,
+      "title": "Polaris",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 51,
+      "title": "Peace Sign",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 52,
+      "title": "HOME",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 53,
+      "title": "AMBITION",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 54,
+      "title": "Orange",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 55,
+      "title": "Pretender",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 57,
+      "title": "King Gnu - SPECIALZ",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review",
+        "Official audio-only recording still needs review"
+      ]
+    },
+    {
+      "index": 58,
+      "title": "Where Our Blue Is",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 60,
+      "title": "A World Where the Sun Never Rises",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 61,
+      "title": "Flaming Thunder God (from \"Demon Slayer: Infinity Castle\")",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 62,
+      "title": "To the Infinity Castle - Muzan vs Hashira Theme (from \"Demon Slayer\")",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 63,
+      "title": "BOY",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 64,
+      "title": "BLOODY STREAM",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 65,
+      "title": "KICK BACK",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 66,
+      "title": "Eureka",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 67,
+      "title": "ダイヤモンドは砕けない～メインテーマ～",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Title does not satisfy game metadata constraints",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 68,
+      "title": "PANOPTICON",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 70,
+      "title": "一難",
+      "reasons": [
+        "Title does not satisfy game metadata constraints",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 71,
+      "title": "Sakayume (King Gnu Dome Tour THE GREATEST UNKNOWN at TOKYO DOME)",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 72,
+      "title": "Last Dance",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 74,
+      "title": "LOSER",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 75,
+      "title": "Ame Sansan",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 76,
+      "title": "LOST IN PARADISE",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 77,
+      "title": "bloom",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 78,
+      "title": "Shunrai",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 79,
+      "title": "Doron",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 80,
+      "title": "Osmanthus",
+      "reasons": [
+        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
+        "Original writer credits are unresolved",
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 81,
+      "title": "Sakuramitsutsuki",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 82,
+      "title": "매드 헤드 러브",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 83,
+      "title": "TAIDADA",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 84,
+      "title": "Chained",
+      "reasons": [
+        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 85,
+      "title": "JOJO SONO CHINO SADAME",
+      "reasons": [
+        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 86,
+      "title": "꽃점",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 87,
+      "title": "Mahi",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 88,
+      "title": "Propose",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 89,
+      "title": "POP SONG",
+      "reasons": [
+        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 90,
+      "title": "回転してから考える",
+      "reasons": [
+        "Title does not satisfy game metadata constraints",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 91,
+      "title": "Haikei Shounenyo",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 92,
+      "title": "Rapport",
+      "reasons": [
+        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 93,
+      "title": "more than words",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 94,
+      "title": "CHAINSAW BLOOD",
+      "reasons": [
+        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
+        "Original writer credits are unresolved",
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 95,
+      "title": "ラブ＆デストロイ",
+      "reasons": [
+        "Title does not satisfy game metadata constraints",
+        "Title or credit evidence has not been matched to a source",
+        "Conventional Korean title and bilingual aliases remain under review",
+        "Official audio-only recording still needs review"
+      ]
+    },
+    {
+      "index": 96,
+      "title": "沈める街",
+      "reasons": [
+        "Title does not satisfy game metadata constraints",
+        "Conventional Korean title and bilingual aliases remain under review",
+        "Official audio-only recording still needs review"
+      ]
+    },
+    {
+      "index": 97,
+      "title": "덧없는 여름",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 98,
+      "title": "Fly-day Chinatown",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 99,
+      "title": "A Double Suicide",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 100,
+      "title": "スマイリーを探して",
+      "reasons": [
+        "Title does not satisfy game metadata constraints",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 101,
+      "title": "Dramatic",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 102,
+      "title": "Yoru Wo Nobashite",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 104,
+      "title": "That Classmate",
+      "reasons": [
+        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 105,
+      "title": "おつかれSUMMER",
+      "reasons": [
+        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
+        "Original writer credits are unresolved",
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 107,
+      "title": "F・L・Y",
+      "reasons": [
+        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 108,
+      "title": "femme fatale A",
+      "reasons": [
+        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 109,
+      "title": "프로포즈",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 110,
+      "title": "좋아하니까",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source",
+        "Display title is absent from the evidence quotes"
+      ]
+    },
+    {
+      "index": 111,
+      "title": "Hyperventilation",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 112,
+      "title": "제인 도",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 113,
+      "title": "WATERLOO ROAD",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 114,
+      "title": "ダブル - JiLL-Decoy association",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 115,
+      "title": "지구본",
+      "reasons": [
+        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
+        "Original writer credits are unresolved"
+      ]
+    },
+    {
+      "index": 116,
+      "title": "渇愛エチュード - susumu.",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 117,
+      "title": "역몽",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 118,
+      "title": "Garakuta - JUNK",
+      "reasons": [
+        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 119,
+      "title": "Ryuseigun",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 120,
+      "title": "Glide",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 121,
+      "title": "Kirari",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 122,
+      "title": "Kajitsu",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 124,
+      "title": "ゆらめき - rourourourous",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 125,
+      "title": "空間、事情、時間、事象。 - kinoue64",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 126,
+      "title": "Ame Sansan",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 127,
+      "title": "Shinigami",
+      "reasons": [
+        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
+        "Original writer credits are unresolved",
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 128,
+      "title": "忘れる前に - Vaundy",
+      "reasons": [
+        "Conventional Korean title remains unresolved"
+      ]
+    },
+    {
+      "index": 129,
+      "title": "사랑 감기에 실려",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 130,
+      "title": "Plazma",
+      "reasons": [
+        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
+        "Original writer credits are unresolved",
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 131,
+      "title": "츄, 다양성",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 132,
+      "title": "극상",
+      "reasons": [
+        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
+        "Original writer credits are unresolved",
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 133,
+      "title": "HAWATARI NIOKU CENTI [2-hundred-million-centimeter-long blades] (TV edit)",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 136,
+      "title": "아웃사이더",
+      "reasons": [
+        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
+        "Original writer credits are unresolved"
+      ]
+    },
+    {
+      "index": 137,
+      "title": "HERO",
+      "reasons": [
+        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
+        "Original writer credits are unresolved",
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 138,
+      "title": "Categorize",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 139,
+      "title": "tablet",
+      "reasons": [
+        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 141,
+      "title": "불가행력",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 142,
+      "title": "WINDSDAY",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 143,
+      "title": "DND",
+      "reasons": [
+        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 144,
+      "title": "ブルボン - pomodorosa",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 145,
+      "title": "등불",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Original writer credits are unresolved"
+      ]
+    },
+    {
+      "index": 147,
+      "title": "名前を呼ぶよ",
+      "reasons": [
+        "Title does not satisfy game metadata constraints",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 148,
+      "title": "폭도",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Original writer credits are unresolved"
+      ]
+    },
+    {
+      "index": 149,
+      "title": "Doughnut Hole (Cover)",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 150,
+      "title": "Oddloop",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 151,
+      "title": "瞳惚れ",
+      "reasons": [
+        "Title does not satisfy game metadata constraints",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 152,
+      "title": "Planetary",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 153,
+      "title": "そぐわな",
+      "reasons": [
+        "Title does not satisfy game metadata constraints",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 154,
+      "title": "Eeyo",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 155,
+      "title": "Atashiwa Yuurei",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 156,
+      "title": "夏雪セレナーデ",
+      "reasons": [
+        "Title does not satisfy game metadata constraints",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 157,
+      "title": "8gatsu31nichi",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 158,
+      "title": "GLASS WINDOW",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 159,
+      "title": "Dramaturgy (Live Film Ver.)",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 160,
+      "title": "Metrocity",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 161,
+      "title": "ボクらの夏休み戦争",
+      "reasons": [
+        "Title does not satisfy game metadata constraints",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 162,
+      "title": "Lovey Dovey",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 163,
+      "title": "말해줘",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Original writer credits are unresolved"
+      ]
+    },
+    {
+      "index": 164,
+      "title": "心に雲を持つ少年",
+      "reasons": [
+        "Title does not satisfy game metadata constraints",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 165,
+      "title": "リップサービス",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Title does not satisfy game metadata constraints",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 166,
+      "title": "Overwritten",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 167,
+      "title": "Saijyouei",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 168,
+      "title": "It's Going Down Now",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 169,
+      "title": "常熱",
+      "reasons": [
+        "Title does not satisfy game metadata constraints",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 170,
+      "title": "MIRROR TUNE",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 171,
+      "title": "목숨을 먹는 방법",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Original writer credits are unresolved"
+      ]
+    },
+    {
+      "index": 172,
+      "title": "veil",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 173,
+      "title": "徒花",
+      "reasons": [
+        "Title does not satisfy game metadata constraints",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 174,
+      "title": "ヘッドライナー",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Title does not satisfy game metadata constraints",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 177,
+      "title": "Sorrows",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 178,
+      "title": "TOMODACHI",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 180,
+      "title": "Sleepwalk",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 181,
+      "title": "Coffee and Cigarette",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Original writer credits are unresolved",
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review",
+        "Official audio-only recording still needs review"
+      ]
+    },
+    {
+      "index": 182,
+      "title": "Caffeine",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Original writer credits are unresolved",
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 183,
+      "title": "Innocent",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 184,
+      "title": "安眠剤",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Title does not satisfy game metadata constraints",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 185,
+      "title": "Rika",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 187,
+      "title": "Ah,Mou.",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 188,
+      "title": "Kawakiwoameku",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 189,
+      "title": "SPECIALZ (King Gnu Dome Tour THE GREATEST UNKNOWN at TOKYO DOME)",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 190,
+      "title": "If I could be a constellation",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 191,
+      "title": "涙のスイマー",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Title does not satisfy game metadata constraints",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 192,
+      "title": "カーニバル",
+      "reasons": [
+        "Title does not satisfy game metadata constraints",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 193,
+      "title": "優しさを失くした",
+      "reasons": [
+        "Title does not satisfy game metadata constraints",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 194,
+      "title": "Vinyl",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 195,
+      "title": "サースティデイズ",
+      "reasons": [
+        "Title does not satisfy game metadata constraints",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 196,
+      "title": "Melancholy Kitchen",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 197,
+      "title": "Summer Planning",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 198,
+      "title": "存在A",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 199,
+      "title": "개와 바보 고양이",
+      "reasons": [
+        "Official audio-only recording still needs review"
+      ]
+    },
+    {
+      "index": 200,
+      "title": "Take Me With You (Tsuretette)",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 201,
+      "title": "Hoshigaoyogu",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 203,
+      "title": "Hollows...",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Original writer credits are unresolved",
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 204,
+      "title": "Hippocampal Pain",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 205,
+      "title": "おまるドライブ",
+      "reasons": [
+        "Title does not satisfy game metadata constraints",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 206,
+      "title": "劣等感",
+      "reasons": [
+        "Title does not satisfy game metadata constraints",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 207,
+      "title": "Showdown",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 208,
+      "title": "antlion",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 209,
+      "title": "fool's table",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Original writer credits are unresolved",
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 210,
+      "title": "逆光 - replica -",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 211,
+      "title": "Rarabaisayonara",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 212,
+      "title": "광란 Hey Kids!!",
+      "reasons": [
+        "Alias evidence quote does not contain the selected name: 광란 Hey Kids!!",
+        "Display title is absent from the evidence quotes"
+      ]
+    },
+    {
+      "index": 213,
+      "title": "That band",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 214,
+      "title": "Darma grand prix",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 215,
+      "title": "벌거벗은 용사",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Original writer credits are unresolved"
+      ]
+    },
+    {
+      "index": 216,
+      "title": "Futaribanashi",
+      "reasons": [
+        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
+        "Original writer credits are unresolved",
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 217,
+      "title": "Niwakaamenimomakezu (Album Mix)",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 218,
+      "title": "Kakera",
+      "reasons": [
+        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
+        "Original writer credits are unresolved",
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 219,
+      "title": "Véranda",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 220,
+      "title": "Guu Guu Guu",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 221,
+      "title": "Hanashitai Koto",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 222,
+      "title": "Nisemono no Ori",
+      "reasons": [
+        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
+        "Original writer credits are unresolved",
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 223,
+      "title": "Nareai Serve",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 224,
+      "title": "Kakumei yori Bassui",
+      "reasons": [
+        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
+        "Original writer credits are unresolved",
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 225,
+      "title": "Yume o Miru",
+      "reasons": [
+        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
+        "Original writer credits are unresolved",
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 226,
+      "title": "정이란",
+      "reasons": [
+        "Display title is absent from the evidence quotes"
+      ]
+    },
+    {
+      "index": 227,
+      "title": "기타와 고독과 푸른 행성",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 228,
+      "title": "Kimini 100 Percent",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 229,
+      "title": "Nekokaburu",
+      "reasons": [
+        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review",
+        "Official audio-only recording still needs review"
+      ]
+    },
+    {
+      "index": 230,
+      "title": "축복",
+      "reasons": [
+        "Original writer credits are unresolved",
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 231,
+      "title": "MASCARA",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 232,
+      "title": "When My Devil Rises",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 233,
+      "title": "Jigoku Sensei",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 234,
+      "title": "Dance Decadance",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 235,
+      "title": "Gege",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 236,
+      "title": "Natsu ni Negai o",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source",
+        "Display title is absent from the evidence quotes"
+      ]
+    },
+    {
+      "index": 237,
+      "title": "Mugagen Jujutsu",
+      "reasons": [
+        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
+        "Original writer credits are unresolved",
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 238,
+      "title": "Sakura Loop",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 239,
+      "title": "Doushite, Watashi ja Nai n Desu ka?",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source",
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review",
+        "Official audio-only recording still needs review"
+      ]
+    },
+    {
+      "index": 240,
+      "title": "RED OUT",
+      "reasons": [
+        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 241,
+      "title": "Banquet",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 242,
+      "title": "Wonderland",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 243,
+      "title": "Mou Yume tune",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 244,
+      "title": "Knock Boots",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 245,
+      "title": "Torokeru kiss",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 246,
+      "title": "Blood Drain Again Eltnum Theme",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 247,
+      "title": "Kono Uta ni Notte",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 248,
+      "title": "Sayonara ni Narimashita",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 249,
+      "title": "Keso",
+      "reasons": [
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 250,
+      "title": "Kimi ga Naku nara",
+      "reasons": [
+        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
+        "Original writer credits are unresolved",
+        "Display title is absent from the evidence quotes",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 251,
+      "title": "괴수",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 252,
+      "title": "Yuukai sink",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source",
+        "Display title is absent from the evidence quotes"
+      ]
+    },
+    {
+      "index": 253,
+      "title": "바보같이",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 254,
+      "title": "ダーリン",
+      "reasons": [
+        "Title does not satisfy game metadata constraints",
+        "Conventional Korean title and bilingual aliases remain under review",
+        "Official audio-only recording still needs review"
+      ]
+    },
+    {
+      "index": 255,
+      "title": "Mental Rental",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 256,
+      "title": "세레나데",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 257,
+      "title": "사랑받고 싶을 뿐",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 258,
+      "title": "mosi mosi?",
+      "reasons": [
+        "Conventional Korean title remains unresolved"
+      ]
+    },
+    {
+      "index": 259,
+      "title": "데드라인 증후군",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 260,
+      "title": "BRAIN",
+      "reasons": [
+        "Writer credit not confirmed by an explicit composer/lyricist/author source.",
+        "Original writer credits are unresolved"
+      ]
+    },
+    {
+      "index": 261,
+      "title": "少女A (feat. 鏡音リン)",
+      "reasons": [
+        "Writer credit not confirmed by an explicit composer/lyricist/author source.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 262,
+      "title": "Hello",
+      "reasons": [
+        "Writer credit not confirmed by an explicit composer/lyricist/author source.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 263,
+      "title": "life hack",
+      "reasons": [
+        "Conventional Korean title remains unresolved"
+      ]
+    },
+    {
+      "index": 264,
+      "title": "TAIDADA",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 265,
+      "title": "초침을 깨물다",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 266,
+      "title": "감이 좋아서 분해",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 267,
+      "title": "月が綺麗ねと言われたい！",
+      "reasons": [
+        "Title does not satisfy game metadata constraints",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 268,
+      "title": "감이 좋아서 분해",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 270,
+      "title": "Anoko secret",
+      "reasons": [
+        "Writer credit not confirmed by an explicit composer/lyricist/author source.",
+        "Original writer credits are unresolved",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 271,
+      "title": "Underdog",
+      "reasons": [
+        "Writer credit not confirmed by an explicit composer/lyricist/author source.",
+        "Original writer credits are unresolved"
+      ]
+    },
+    {
+      "index": 272,
+      "title": "공부해 둬",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 273,
+      "title": "저 녀석들 전원 동창회",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 274,
+      "title": "Cubism",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 275,
+      "title": "時のゆらめき",
+      "reasons": [
+        "Title does not satisfy game metadata constraints",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 276,
+      "title": "akanesasu",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 277,
+      "title": "Seamless",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 278,
+      "title": "크로노스타시스",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 279,
+      "title": "sunday driver",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 280,
+      "title": "月が綺麗ねと言われたい！",
+      "reasons": [
+        "Title does not satisfy game metadata constraints",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 281,
+      "title": "MILABO",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 282,
+      "title": "SHADE",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 283,
+      "title": "分かっちゃいないね (feat.花隈千冬)",
+      "reasons": [
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 284,
+      "title": "크림으로 만나러 갈 수 있나요",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 285,
+      "title": "올바르게 될 수 없어",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 286,
+      "title": "TABOO",
+      "reasons": [
+        "Title or credit evidence has not been matched to a source"
+      ]
+    },
+    {
+      "index": 287,
+      "title": "絲",
+      "reasons": [
+        "Title does not satisfy game metadata constraints",
+        "Conventional Korean title and bilingual aliases remain under review"
+      ]
+    },
+    {
+      "index": 288,
+      "title": "chase",
+      "reasons": [
+        "Original writer credits are unresolved",
+        "Title or credit evidence has not been matched to a source"
+      ]
+    }
+  ]
+}

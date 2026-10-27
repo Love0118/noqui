@@ -25,9 +25,9 @@ def build(source, output, playlist_id, name, ffmpeg='ffmpeg'):
     with tempfile.TemporaryDirectory(prefix='.playlist-export-', dir=output.parent) as temporary:
         staging = Path(temporary) / 'bundle'
         staging.mkdir()
-        excluded=[{'index':row['index'],'title':row['title'],
+        excluded=[{'index':row['index'],'title':row['title'][:160],
                    'reasons':row.get('reviewReasons') or [row.get('notes') or 'Song identity, title or credits require review']}
-                  for row in data['songs'] if row['reviewRequired']] if playlist_id.startswith('tj-') else []
+                  for row in data['songs'] if row['reviewRequired']] if playlist_id!='ssip-noqui' else []
         result = export_rows(source, staging, playlist_id, name, rows, ffmpeg, excluded)
         staging.replace(output)
     return result
@@ -43,7 +43,7 @@ def export_rows(source, output, playlist_id, name, rows, ffmpeg, excluded):
             raise ValueError(f'Invalid reviewed game metadata: {row.get("index")}: {row["title"]}')
         track = {'song': {key: row[key] for key in ('id', 'youtubeUrl', 'title', 'tags')}, 'audio': None}
         audio = row['audio']
-        if audio['status'] == 'ready':
+        if audio['status'] == 'ready' and not row.get('audioSourceReviewRequired',False):
             original = (source.parent / audio['path']).resolve()
             if not original.is_relative_to(source.parent) or hashlib.sha256(original.read_bytes()).hexdigest() != audio['sha256']:
                 raise ValueError(f'Invalid source audio: {row["videoId"]}')

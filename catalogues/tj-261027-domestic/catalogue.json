@@ -434,7 +434,17 @@
         "byteLength": 2015024,
         "sha256": "7de0b4a1ca13cb0391ffd45c02fa537f3eff81efd277101299edf1d1f7ce02d3"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "audioSourceReviewRequired": true,
+      "audioSourceReviewReasons": [
+        "Source is labelled as a music video; matched official audio-only recording still required"
+      ],
+      "audioSourceEvidence": {
+        "url": "https://www.youtube.com/watch?v=b1kQvZhQ6_M",
+        "kind": "search_snippet",
+        "quote": "[MV] Jong Shin Yoon(윤종신) _ Like it(좋니) | channel 1theK (원더케이) | duration 329 seconds",
+        "retrievedEvidenceMatched": true
+      }
     },
     {
       "index": 8,
@@ -496,7 +506,17 @@
         "byteLength": 1289662,
         "sha256": "b5a10a7eaf02e7b51e7930ac42d60a906fc393a12d0db5f132fac9148b763837"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "audioSourceReviewRequired": true,
+      "audioSourceReviewReasons": [
+        "Source is labelled as a music video; matched official audio-only recording still required"
+      ],
+      "audioSourceEvidence": {
+        "url": "https://www.youtube.com/watch?v=7mDDM0eBWR0",
+        "kind": "search_snippet",
+        "quote": "소연 (SOYEON) '퇴사할게여 (Narr. 기안84)' Official Music Video | channel i-dle (아이들) | duration 212 seconds",
+        "retrievedEvidenceMatched": true
+      }
     },
     {
       "index": 9,
@@ -651,7 +671,17 @@
         "byteLength": 2107007,
         "sha256": "a5cd9b15f350e26cc4b56bc69fd20800b9b369de414a574eb58042ca7f904f09"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "audioSourceReviewRequired": true,
+      "audioSourceReviewReasons": [
+        "Source is labelled as a music video; matched official audio-only recording still required"
+      ],
+      "audioSourceEvidence": {
+        "url": "https://www.youtube.com/watch?v=va5rf20Un24",
+        "kind": "search_snippet",
+        "quote": "[MV] M.C THE MAX(엠씨더맥스) - No matter where(어디에도) | channel MUSIC&NEW 뮤직앤뉴 | duration 346 seconds",
+        "retrievedEvidenceMatched": true
+      }
     },
     {
       "index": 12,
@@ -1082,7 +1112,17 @@
         "byteLength": 1542847,
         "sha256": "214f5fe3bb52d26d83822cd9098a049a16096f9d87e12658ec368ee0ad3f3375"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "audioSourceReviewRequired": true,
+      "audioSourceReviewReasons": [
+        "Source is labelled as a music video; matched official audio-only recording still required"
+      ],
+      "audioSourceEvidence": {
+        "url": "https://www.youtube.com/watch?v=-g0MOHe-Lik",
+        "kind": "search_snippet",
+        "quote": "[MV] ko kyung pyo(고경표) _ we were in love(2024)(...사랑했잖아...(2024)) | channel 1theK (원더케이) | duration 252 seconds",
+        "retrievedEvidenceMatched": true
+      }
     },
     {
       "index": 19,
@@ -1380,7 +1420,17 @@
         "byteLength": 1511319,
         "sha256": "4e471f42faf5970e3001c7b4841e909728c72926130ce7275eb0ed3ac4ae31e2"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "audioSourceReviewRequired": true,
+      "audioSourceReviewReasons": [
+        "Source is labelled as a music video; matched official audio-only recording still required"
+      ],
+      "audioSourceEvidence": {
+        "url": "https://www.youtube.com/watch?v=pNi9PjmbUrI",
+        "kind": "search_snippet",
+        "quote": "[MV] 한로로 (HANRORO) - 입춘 (Let Me Love My Youth) | channel 한로로 HANRORO | duration 249 seconds",
+        "retrievedEvidenceMatched": true
+      }
     },
     {
       "index": 24,
@@ -1569,7 +1619,17 @@
         "byteLength": 1563038,
         "sha256": "44ca170e8b16eeacc8f8cd316ea4085c94aaf3d29cb581d4db77b32a875d0eca"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "audioSourceReviewRequired": true,
+      "audioSourceReviewReasons": [
+        "Source is labelled as a music video; matched official audio-only recording still required"
+      ],
+      "audioSourceEvidence": {
+        "url": "https://www.youtube.com/watch?v=ZhI9tQP4Abw",
+        "kind": "search_snippet",
+        "quote": "[MV] 버즈 (Buzz) - 가시 (Thorn) | Official Music Video | channel VOSTOK_MUSIC / 보스토크뮤직 | duration 255 seconds",
+        "retrievedEvidenceMatched": true
+      }
     },
     {
       "index": 27,
@@ -2254,7 +2314,17 @@
         "byteLength": 1179005,
         "sha256": "59f8e04d159da21f90c2e79e5f001f551878aa3b057c7f2cc4e40efa41e3c09c"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "audioSourceReviewRequired": true,
+      "audioSourceReviewReasons": [
+        "Source is labelled as a music video; matched official audio-only recording still required"
+      ],
+      "audioSourceEvidence": {
+        "url": "https://www.youtube.com/watch?v=_Ngk-DCHfD0",
+        "kind": "search_snippet",
+        "quote": "[MV] 한로로 (HANRORO) - 0+0 | channel 한로로 HANRORO | duration 193 seconds",
+        "retrievedEvidenceMatched": true
+      }
     },
     {
       "index": 39,
@@ -2314,7 +2384,17 @@
         "byteLength": 1822678,
         "sha256": "0cedef7e162dea602265ac6d9b4f24f3ec518acc2d40baee39b046a5b139c64d"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "audioSourceReviewRequired": true,
+      "audioSourceReviewReasons": [
+        "Source is labelled as a music video; matched official audio-only recording still required"
+      ],
+      "audioSourceEvidence": {
+        "url": "https://www.youtube.com/watch?v=WYy2fROj7uU",
+        "kind": "search_snippet",
+        "quote": "[MV] Han Dong Geun(한동근) _ Amazing You(그대라는 사치) | channel 1theK (원더케이) | duration 302 seconds",
+        "retrievedEvidenceMatched": true
+      }
     },
     {
       "index": 40,
@@ -2390,7 +2470,17 @@
         "byteLength": 1503950,
         "sha256": "1e639beea22c16c1b07c3783c214c3fc7adf3cde4cd11850c866d95e6f1449f7"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "audioSourceReviewRequired": true,
+      "audioSourceReviewReasons": [
+        "Source is labelled as a music video; matched official audio-only recording still required"
+      ],
+      "audioSourceEvidence": {
+        "url": "https://www.youtube.com/watch?v=3DOkxQ3HDXE",
+        "kind": "search_snippet",
+        "quote": "[슬기로운 의사생활 OST Part 3] 조정석 (CHO JUNG SEOK) - 아로하 (Aloha) MV | channel STONE MUSIC | duration 251 seconds",
+        "retrievedEvidenceMatched": true
+      }
     },
     {
       "index": 41,
@@ -2510,7 +2600,17 @@
         "byteLength": 1002468,
         "sha256": "f73b4b422edef489b0fe1b90016055cafe3e304f10ddd41616a31d83aa2cc6fe"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "audioSourceReviewRequired": true,
+      "audioSourceReviewReasons": [
+        "Source is labelled as a music video; matched official audio-only recording still required"
+      ],
+      "audioSourceEvidence": {
+        "url": "https://www.youtube.com/watch?v=h0KIWaUEIgQ",
+        "kind": "search_snippet",
+        "quote": "[MV] 한로로 (HANRORO) - 사랑하게 될 거야 (Landing in Love) | channel 한로로 HANRORO | duration 167 seconds",
+        "retrievedEvidenceMatched": true
+      }
     },
     {
       "index": 43,
@@ -2713,7 +2813,17 @@
         "byteLength": 1448813,
         "sha256": "b727b3e783c36d4b7a90b58ab6c883f3450e16592e3a446974901fa224bf8453"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "audioSourceReviewRequired": true,
+      "audioSourceReviewReasons": [
+        "Source is labelled as a music video; matched official audio-only recording still required"
+      ],
+      "audioSourceEvidence": {
+        "url": "https://www.youtube.com/watch?v=TABbjHLEwKE",
+        "kind": "search_snippet",
+        "quote": "GDM ㅣ우디 (Woody) '어제 보다 슬픈 오늘 (Sadder than Yesterday)' OFFICIAL MV [KOR/ENG SUB] | channel 골든문 GDM and 김상우디 [Woody Official] | duration 237 seconds",
+        "retrievedEvidenceMatched": true
+      }
     },
     {
       "index": 46,
@@ -3093,7 +3203,17 @@
         "byteLength": 1344202,
         "sha256": "ca7c2a1017fcf7163a839b76ac8b2c1c2725d2591797774a7d50096261c5eb26"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "audioSourceReviewRequired": true,
+      "audioSourceReviewReasons": [
+        "Source is labelled as a music video; matched official audio-only recording still required"
+      ],
+      "audioSourceEvidence": {
+        "url": "https://www.youtube.com/watch?v=VVO05mYGFY8",
+        "kind": "search_snippet",
+        "quote": "[MV] 태연 (TAEYEON)_ 만찬가 (晩餐歌 / BANSANKA) : J-POP REMAKE Vol.1 | channel 1theK (원더케이) and 동네친구 강나미 [Kangnami] | duration 222 seconds",
+        "retrievedEvidenceMatched": true
+      }
     },
     {
       "index": 53,
@@ -4513,7 +4633,17 @@
         "byteLength": 1851088,
         "sha256": "e968c7093b75b4b3fa27ece2fa7d4965c669c166671e059be17efe8fc203eada"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "audioSourceReviewRequired": true,
+      "audioSourceReviewReasons": [
+        "Source is labelled as a music video; matched official audio-only recording still required"
+      ],
+      "audioSourceEvidence": {
+        "url": "https://www.youtube.com/watch?v=tfmwbxBKPh0",
+        "kind": "search_snippet",
+        "quote": "[MV] ZO ZAZZ(조째즈) _ Don`t you know(PROD.ROCOBERRY)(모르시나요(PROD.로코베리)) | channel 1theK (원더케이) | duration 307 seconds",
+        "retrievedEvidenceMatched": true
+      }
     },
     {
       "index": 78,
@@ -4930,7 +5060,17 @@
         "byteLength": 1171308,
         "sha256": "4bca566ef9e91fa47023cc3ebd2f37c2e23afe5ea47ac45f3bdf2d316edc0372"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "audioSourceReviewRequired": true,
+      "audioSourceReviewReasons": [
+        "Source is labelled as a music video; matched official audio-only recording still required"
+      ],
+      "audioSourceEvidence": {
+        "url": "https://www.youtube.com/watch?v=9XttLI0oH0I",
+        "kind": "search_snippet",
+        "quote": "RESCENE (리센느) ‘LOVE ATTACK’ Official MV | channel RESCENE | duration 198 seconds",
+        "retrievedEvidenceMatched": true
+      }
     },
     {
       "index": 85,
@@ -5307,7 +5447,17 @@
         "byteLength": 1509763,
         "sha256": "994dd645c5f1972578748c9368593acbb00a6f73df14a72f6cb823aaefc28ec9"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "audioSourceReviewRequired": true,
+      "audioSourceReviewReasons": [
+        "Source is labelled as a music video; matched official audio-only recording still required"
+      ],
+      "audioSourceEvidence": {
+        "url": "https://www.youtube.com/watch?v=v6_GwXU1lkg",
+        "kind": "search_snippet",
+        "quote": "[MV] JANG DEOK CHEOL(장덕철) _ Good old days(그날처럼) | channel 1theK (원더케이) | duration 247 seconds",
+        "retrievedEvidenceMatched": true
+      }
     },
     {
       "index": 92,
@@ -5632,7 +5782,17 @@
         "byteLength": 1332780,
         "sha256": "a32a49c47ff64fa2179858b234087445b6f5293502847aafb3c88894c1c7a6d9"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "audioSourceReviewRequired": true,
+      "audioSourceReviewReasons": [
+        "Source is labelled as a music video; matched official audio-only recording still required"
+      ],
+      "audioSourceEvidence": {
+        "url": "https://www.youtube.com/watch?v=RaTCjhIS4AY",
+        "kind": "search_snippet",
+        "quote": "[MV] KimNaYoung(김나영) _ A Letter For You(봄 내음보다 너를) | channel 1theK (원더케이) | duration 228 seconds",
+        "retrievedEvidenceMatched": true
+      }
     },
     {
       "index": 98,
@@ -5700,7 +5860,17 @@
         "byteLength": 1960648,
         "sha256": "01224852da4daeacc62ff3dfe7a578264737505013f900bf1bbcc6defbd1ec8d"
       },
-      "reviewReasons": []
+      "reviewReasons": [],
+      "audioSourceReviewRequired": true,
+      "audioSourceReviewReasons": [
+        "Source is labelled as a music video; matched official audio-only recording still required"
+      ],
+      "audioSourceEvidence": {
+        "url": "https://www.youtube.com/watch?v=yY7dRwJnJZ0",
+        "kind": "search_snippet",
+        "quote": "[MV] HuhGak(허각) _ Hello | channel 1theK (원더케이) | duration 320 seconds",
+        "retrievedEvidenceMatched": true
+      }
     },
     {
       "index": 99,

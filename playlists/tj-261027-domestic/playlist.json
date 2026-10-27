@@ -108,12 +108,7 @@
           "Like it"
         ]
       },
-      "audio": {
-        "path": "audio/b1kQvZhQ6_M.ogg",
-        "sha256": "eb215400437891789292b5dc90a8bce7d4da09d7912626eac8122ebe2dc92078",
-        "byteLength": 2011860,
-        "durationMs": 328349
-      }
+      "audio": null
     },
     {
       "song": {
@@ -130,12 +125,7 @@
           "소연(SOYEON)(Narr.기안84)"
         ]
       },
-      "audio": {
-        "path": "audio/7mDDM0eBWR0.ogg",
-        "sha256": "92482c878ebdb67e94b40a5378c573cfa41bf5dd36f58cca5d2f6fb0b64331cc",
-        "byteLength": 1287114,
-        "durationMs": 211355
-      }
+      "audio": null
     },
     {
       "song": {
@@ -149,12 +139,7 @@
           "MC THE MAX"
         ]
       },
-      "audio": {
-        "path": "audio/va5rf20Un24.ogg",
-        "sha256": "2cc89b57810f5eca4a894d80af06b076549b3e27233d470a47b868dbe42ab1a8",
-        "byteLength": 2103723,
-        "durationMs": 345566
-      }
+      "audio": null
     },
     {
       "song": {
@@ -282,12 +267,7 @@
           "...사랑했잖아..."
         ]
       },
-      "audio": {
-        "path": "audio/-g0MOHe-Lik.ogg",
-        "sha256": "2603ca7ff506870b5e96e7c43fc75bfab4acfed1c801df5e7c5e112416ecc875",
-        "byteLength": 1540139,
-        "durationMs": 251816
-      }
+      "audio": null
     },
     {
       "song": {
@@ -377,12 +357,7 @@
           "Let Me Love My Youth"
         ]
       },
-      "audio": {
-        "path": "audio/pNi9PjmbUrI.ogg",
-        "sha256": "9310fb0f37c96a496361960f2b87261bec91be0cdf3f22e3eb97febcea2cc2a6",
-        "byteLength": 1511222,
-        "durationMs": 248461
-      }
+      "audio": null
     },
     {
       "song": {
@@ -433,12 +408,7 @@
           "버즈"
         ]
       },
-      "audio": {
-        "path": "audio/ZhI9tQP4Abw.ogg",
-        "sha256": "36e4982ddf9f91459841c8743c32dbb4bce200b637902ed5068e6a01eadf0a8b",
-        "byteLength": 1560328,
-        "durationMs": 254834
-      }
+      "audio": null
     },
     {
       "song": {
@@ -620,12 +590,7 @@
           "00"
         ]
       },
-      "audio": {
-        "path": "audio/_Ngk-DCHfD0.ogg",
-        "sha256": "2056e8d3c6573d39fcc12173abb7dd9bc20fcc343455c5796bd254866d9fcf26",
-        "byteLength": 1176667,
-        "durationMs": 192593
-      }
+      "audio": null
     },
     {
       "song": {
@@ -641,12 +606,7 @@
           "한동근"
         ]
       },
-      "audio": {
-        "path": "audio/WYy2fROj7uU.ogg",
-        "sha256": "d3be2f8f6186e032e6dbe3957ca1b1311b27d6b96aa7441d9c74a4898faa3553",
-        "byteLength": 1819641,
-        "durationMs": 301321
-      }
+      "audio": null
     },
     {
       "song": {
@@ -662,12 +622,7 @@
           "아로하"
         ]
       },
-      "audio": {
-        "path": "audio/3DOkxQ3HDXE.ogg",
-        "sha256": "dbf97d068d89957eca821836d41c24c10e8b762c1c8602f66a33c0247f3bea46",
-        "byteLength": 1501264,
-        "durationMs": 250817
-      }
+      "audio": null
     },
     {
       "song": {
@@ -698,12 +653,7 @@
           "한로로"
         ]
       },
-      "audio": {
-        "path": "audio/h0KIWaUEIgQ.ogg",
-        "sha256": "8f1e8a3fc517a4130b21a6a467ee54e98fc6e65e7ef2b1eac1e157dc65a566fe",
-        "byteLength": 1002354,
-        "durationMs": 166424
-      }
+      "audio": null
     },
     {
       "song": {
@@ -716,12 +666,7 @@
           "우디"
         ]
       },
-      "audio": {
-        "path": "audio/TABbjHLEwKE.ogg",
-        "sha256": "e2197af40f1a0846768ec338d2a0341c9f5964475fdcdf5c122e09c8d9ab5def",
-        "byteLength": 1446197,
-        "durationMs": 236082
-      }
+      "audio": null
     },
     {
       "song": {
@@ -839,12 +784,7 @@
           "태연"
         ]
       },
-      "audio": {
-        "path": "audio/VVO05mYGFY8.ogg",
-        "sha256": "51a4b4a9bb8c7124da36206dc2d03ddc614329e18a8d383ad41faffd375b1e76",
-        "byteLength": 1341713,
-        "durationMs": 221177
-      }
+      "audio": null
     },
     {
       "song": {
@@ -1255,12 +1195,7 @@
           "조째즈(Prod.로코베리)"
         ]
       },
-      "audio": {
-        "path": "audio/tfmwbxBKPh0.ogg",
-        "sha256": "1f4b66af4f56f7633c60d0c281b812e3608759bb72d56318b852e2571456b20a",
-        "byteLength": 1848060,
-        "durationMs": 306568
-      }
+      "audio": null
     },
     {
       "song": {
@@ -1347,12 +1282,7 @@
           "RESCENE(리센느)"
         ]
       },
-      "audio": {
-        "path": "audio/9XttLI0oH0I.ogg",
-        "sha256": "a7ef459f19ded36f6c2382857f705738c8a81780cbfa2fd9328127e2d86a334d",
-        "byteLength": 1168823,
-        "durationMs": 197121
-      }
+      "audio": null
     },
     {
       "song": {
@@ -1436,12 +1366,7 @@
           "장덕철"
         ]
       },
-      "audio": {
-        "path": "audio/v6_GwXU1lkg.ogg",
-        "sha256": "6d2e0a73973f0832163105cfdecc16e6a78e0a1d0821abf9b44f4442d482dce0",
-        "byteLength": 1507100,
-        "durationMs": 246684
-      }
+      "audio": null
     },
     {
       "song": {
@@ -1525,12 +1450,7 @@
           "김세진"
         ]
       },
-      "audio": {
-        "path": "audio/RaTCjhIS4AY.ogg",
-        "sha256": "fb8959a307d47498e750afe09926357d444501a3a3e858fb13691313f36e4aa6",
-        "byteLength": 1330281,
-        "durationMs": 227330
-      }
+      "audio": null
     },
     {
       "song": {
@@ -1544,12 +1464,7 @@
           "헬로"
         ]
       },
-      "audio": {
-        "path": "audio/yY7dRwJnJZ0.ogg",
-        "sha256": "4b58689ffc23172ad2c20c43f5de8729ce9b98466d77d1a824917a02bae4bb6b",
-        "byteLength": 1957543,
-        "durationMs": 319804
-      }
+      "audio": null
     },
     {
       "song": {

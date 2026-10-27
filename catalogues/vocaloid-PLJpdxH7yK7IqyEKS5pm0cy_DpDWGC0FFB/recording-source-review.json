@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "playlistId": "PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB",
+  "status": "incomplete",
+  "sourceReviewedCounts": {
+    "catalogueMetadataRowsScanned": 565,
+    "localAudioAssetsPresent": 552,
+    "catalogueRowsWithoutLocalAudio": 13,
+    "targetedYouTubeTopicSearches": 81,
+    "TopicResultCandidatesIdentityReviewed": 10,
+    "retainedVerifiedOriginalAudioSources": 1,
+    "excludedTitleOnlyOrWrongVersionMatches": 9,
+    "confirmedDialogueOrIntroDefects": 0
+  },
+  "missingLocalAudioVideoIds": [
+    "7sKMLQlSX58",
+    "VqmA_LdvBmk",
+    "GeMFeUKvjm0",
+    "9hbTX02By9E",
+    "e2LJBskoJ-g",
+    "PpxaCNRT8kg",
+    "EahYs-8tTjQ",
+    "-pH-nDPgDFQ",
+    "67jCsBAYaPU",
+    "fjHTr9CpG0k",
+    "KOeY7WRNWKk",
+    "viZSgo0f6Io",
+    "JBfPcDQ2heg"
+  ],
+  "scopeNote": "Catalogue metadata was screened and a bounded set of likely source alternatives was checked. Audio-level audition of the existing files is incomplete, so no dialogue or long-intro defect is confirmed.",
+  "automaticChanges": [],
+  "verifiedOriginalAudioSourceOptions": [
+    {
+      "priority": 1,
+      "index": 1,
+      "catalogueVideoId": "XNXZVhOXXdw",
+      "catalogueTitle": "즌다 셰이킹",
+      "catalogueArtist": [
+        "나미구루"
+      ],
+      "currentSource": {
+        "videoId": "XNXZVhOXXdw",
+        "url": "https://www.youtube.com/watch?v=XNXZVhOXXdw",
+        "title": "즌다 셰이킹 | 나미구루 | 즌다몬 | 카스카베 츠무기 | [한글 자막]",
+        "channel": "Chuing",
+        "durationSeconds": 175
+      },
+      "officialAudio": {
+        "videoId": "4s6MXII7lJs",
+        "url": "https://www.youtube.com/watch?v=4s6MXII7lJs",
+        "title": "ずんだシェイキング",
+        "channel": "namigroove - Topic",
+        "channelUrl": "https://www.youtube.com/channel/UCDIAHuD3zg1I0bikA2crP5Q",
+        "sourceType": "YouTube Topic audio",
+        "duration": "2:56",
+        "sourceMetadataEvidence": {
+          "provider": "YouTube oEmbed",
+          "title": "ずんだシェイキング",
+          "channel": "namigroove - Topic"
+        }
+      },
+      "artistIdentityCrossCheck": {
+        "videoId": "DVSlQuF0Pcg",
+        "url": "https://www.youtube.com/watch?v=DVSlQuF0Pcg",
+        "title": "ずんだシェイキング / なみぐる feat.ずんだもん 春日部つむぎ",
+        "channel": "なみぐる - namigroove",
+        "channelUrl": "https://www.youtube.com/@namigroove_2",
+        "sourceMetadataEvidence": {
+          "provider": "YouTube oEmbed",
+          "title": "ずんだシェイキング / なみぐる feat.ずんだもん 春日部つむぎ",
+          "channel": "なみぐる - namigroove"
+        }
+      },
+      "identityAssessment": "The Topic audio has the exact Japanese song title and is published under namigroove - Topic. Namiguru’s official upload explicitly identifies ずんだシェイキング and the original vocalists ずんだもん and 春日部つむぎ. Topic duration is 2:56, consistent with the catalogue recording duration of 175 seconds.",
+      "dialogueOrIntroIssueConfirmed": false,
+      "applyStatus": "review-only; do not replace without parent playback review"
+    }
+  ],
+  "excludedMatches": [
+    {
+      "index": 44,
+      "reason": "The N-buna Topic result is the same song, but the current catalogue source is already the writer’s official channel upload."
+    },
+    {
+      "index": 53,
+      "reason": "Fuwari-P Topic is the original version, while the catalogue recording is an ENE cover; excluded because it changes the vocal performance."
+    },
+    {
+      "index": 200,
+      "reason": "Topic title match belongs to DELUTAYA, not Orangestar or the catalogue vocal recording."
+    },
+    {
+      "index": 354,
+      "reason": "Topic result is a Tokyo Philharmonic live performance, not the original Vocaloid vocal recording."
+    },
+    {
+      "index": 438,
+      "reason": "Topic result is a Project Sekai unit performance, not the catalogue vocal recording."
+    }
+  ]
+}

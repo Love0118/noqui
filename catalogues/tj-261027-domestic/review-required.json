@@ -110,9 +110,24 @@
     ],
     "tags": [
       "김형석",
-      "나윤권"
+      "나윤권",
+      "나였으면황태자의첫사랑OST",
+      "나였으면"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "punctuation",
+        "name": "나였으면황태자의첫사랑OST",
+        "url": null,
+        "quote": "나였으면(황태자의첫사랑OST)"
+      },
+      {
+        "kind": "title",
+        "name": "나였으면",
+        "url": "https://www.tjmedia.com/chart/top100",
+        "quote": "rank 10; TJ no. 13584; 나였으면(황태자의첫사랑OST) — 나윤권; lyricist: 김형석; composer: 김형석"
+      }
+    ],
     "reviewRequired": true,
     "evidence": [
       {
@@ -255,7 +270,9 @@
       "강은경",
       "김태원",
       "김필",
-      "If We Love Again"
+      "If We Love Again",
+      "다시 사랑한다면니글니글버터플라이",
+      "다시 사랑한다면"
     ],
     "aliases": [
       {
@@ -263,6 +280,18 @@
         "name": "If We Love Again",
         "url": "https://www.youtube.com/watch?v=DxS-64T7xA4",
         "quote": "[Focus Live] 김필 (Kim Feel) - 다시 사랑한다면 (If We Love Again) (원곡: 도원경)"
+      },
+      {
+        "kind": "punctuation",
+        "name": "다시 사랑한다면니글니글버터플라이",
+        "url": null,
+        "quote": "다시 사랑한다면(니글니글버터플라이)"
+      },
+      {
+        "kind": "title",
+        "name": "다시 사랑한다면",
+        "url": "https://www.tjmedia.com/chart/top100",
+        "quote": "rank 43; TJ no. 46108; 다시 사랑한다면(니글니글버터플라이) — 김필; lyricist: 강은경; composer: 김태원"
       }
     ],
     "reviewRequired": true,
@@ -318,9 +347,24 @@
     "tags": [
       "오준성",
       "은종태",
-      "SS501"
+      "SS501",
+      "내 머리가 나빠서드라마꽃보다남자OST",
+      "내 머리가 나빠서"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "punctuation",
+        "name": "내 머리가 나빠서드라마꽃보다남자OST",
+        "url": null,
+        "quote": "내 머리가 나빠서(드라마'꽃보다남자'OST)"
+      },
+      {
+        "kind": "title",
+        "name": "내 머리가 나빠서",
+        "url": "https://www.tjmedia.com/chart/top100",
+        "quote": "rank 44; TJ no. 30639; 내 머리가 나빠서(드라마'꽃보다남자'OST) — SS501; lyricist: 오준성,은종태; composer: 오준성"
+      }
+    ],
     "reviewRequired": true,
     "evidence": [
       {
@@ -549,7 +593,8 @@
       "나인",
       "박정욱",
       "디셈버",
-      "Love is so..."
+      "Love is so...",
+      "사랑참"
     ],
     "aliases": [
       {
@@ -557,6 +602,12 @@
         "name": "Love is so...",
         "url": "https://www.youtube.com/watch?v=ZtbopMxY-2Y",
         "quote": "Decemver - Love is so... (디셈버 - 사랑 참) @ SBS Inkigayo 인기가요 091206"
+      },
+      {
+        "kind": "punctuation",
+        "name": "사랑참",
+        "url": null,
+        "quote": "사랑참..."
       }
     ],
     "reviewRequired": true,
@@ -656,9 +707,24 @@
     "tags": [
       "양재선",
       "MGR",
-      "성시경"
+      "성시경",
+      "희재국화꽃향기OST",
+      "희재"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "punctuation",
+        "name": "희재국화꽃향기OST",
+        "url": null,
+        "quote": "희재(국화꽃향기OST)"
+      },
+      {
+        "kind": "title",
+        "name": "희재",
+        "url": "https://www.tjmedia.com/chart/top100",
+        "quote": "rank 88; TJ no. 10842; 희재(국화꽃향기OST) — 성시경; lyricist: 양재선; composer: MGR"
+      }
+    ],
     "reviewRequired": true,
     "evidence": [
       {

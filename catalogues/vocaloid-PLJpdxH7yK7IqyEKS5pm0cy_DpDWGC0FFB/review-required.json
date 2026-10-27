@@ -72,7 +72,8 @@
     "id": "2adad48c-c877-5825-87ea-36b3931b8890",
     "title": "Ievan Polkka",
     "tags": [
-      "이에반 폴카"
+      "이에반 폴카",
+      "Ievan Polkka"
     ],
     "confidence": "low",
     "reviewRequired": true,
@@ -83,7 +84,14 @@
       "Korean usage of the retained international title is not established",
       "Original songwriter/producer is unresolved"
     ],
-    "evidence": [],
+    "evidence": [
+      {
+        "url": "https://namu.wiki/w/Ievan%20Polkka",
+        "quote": "Ievan Polkka (이에반 폴카)",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      }
+    ],
     "audio": {
       "status": "ready",
       "path": "audio/widZEAJc0QM.ogg",
@@ -93,7 +101,7 @@
       "channels": 2,
       "durationSeconds": 149.369,
       "byteLength": 917227,
-      "sha256": "18a6fab263a34f88085589d82d2458519f2f85db5ad9d1ef72485507aaf828c9"
+      "sha256": "cd2691db2e01efac5717bae5064b811736b61ddba0a2923308a8c93e2aaa13bd"
     },
     "writers": [],
     "aliases": [
@@ -279,7 +287,8 @@
     "id": "dedf7693-a4e9-5163-86d1-4c9d58ee9c98",
     "title": "Clipping Radio",
     "tags": [
-      "23.exe"
+      "23exe",
+      "Clipping Radio"
     ],
     "confidence": "high",
     "reviewRequired": true,
@@ -330,12 +339,16 @@
       "channels": 2,
       "durationSeconds": 209.881,
       "byteLength": 1277139,
-      "sha256": "202f0c3c7a87a1d62e92635f596a3d88b17e67ac5e066a9916e018dc3e8c47a2"
+      "sha256": "7411ba2b12ccd8b7bdbfd79c4da0bb3ca30a8f9051df30609f016f4cb31b2652"
     },
     "writers": [
       "23.exe"
     ],
-    "aliases": []
+    "aliases": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+    ]
   },
   {
     "index": 206,
@@ -531,7 +544,8 @@
     "id": "0aab7327-66ed-589c-ad49-54cf649803a2",
     "title": "Erica",
     "tags": [
-      "okameP"
+      "okameP",
+      "Erica"
     ],
     "confidence": "low",
     "reviewRequired": true,
@@ -566,12 +580,16 @@
       "channels": 2,
       "durationSeconds": 258.774,
       "byteLength": 1588112,
-      "sha256": "cbf117524c87dfbb2fe373c3443ac37db72395e67949fdcf020452ff35d46b27"
+      "sha256": "0c33b6f817bb84fcb6f1fcc80e258ad1d609feffba6f8e371be95aacd1e1b6af"
     },
     "writers": [
       "okameP"
     ],
-    "aliases": []
+    "aliases": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+    ]
   },
   {
     "index": 315,
@@ -744,7 +762,9 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=MwzFh1hbPvw",
     "id": "d392a1db-ada6-5b88-9306-54f9fba876d3",
     "title": "NEXT STAGE",
-    "tags": [],
+    "tags": [
+      "NEXT STAGE"
+    ],
     "confidence": "low",
     "reviewRequired": true,
     "notes": "Established Korean title and songwriter/producer were not verified.",
@@ -764,10 +784,14 @@
       "channels": 2,
       "durationSeconds": 268.314,
       "byteLength": 1641742,
-      "sha256": "241e6f7736bfb9e4669fe0e62abc06c149c5cd12aa4151c7c280e4b59cfb02bf"
+      "sha256": "bb789f9e47b0118b466c6aa295123be98c1ef60573e1c6784ade58f80c5d2c7c"
     },
     "writers": [],
-    "aliases": []
+    "aliases": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+    ]
   },
   {
     "index": 478,
@@ -779,7 +803,8 @@
     "id": "0da78bfd-e587-5071-adaf-454e4d7642fc",
     "title": "I am a broken umbrella",
     "tags": [
-      "Nem"
+      "Nem",
+      "I am a broken umbrella"
     ],
     "confidence": "low",
     "reviewRequired": true,
@@ -804,12 +829,16 @@
       "channels": 2,
       "durationSeconds": 287.923,
       "byteLength": 1715698,
-      "sha256": "126691308838e1dad278a339c3dca6f9c148d3450ee3063f94798fef0dc75cf2"
+      "sha256": "f85447587cc255b326282efa44d94ebe36e7b5d403719a655395c552eb027eb3"
     },
     "writers": [
       "Nem"
     ],
-    "aliases": []
+    "aliases": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+    ]
   },
   {
     "index": 490,
@@ -875,7 +904,8 @@
     "id": "1c55fc4b-2237-543c-b1b4-70d17e4641f0",
     "title": "NEVERLAND",
     "tags": [
-      "APG550"
+      "APG550",
+      "NEVERLAND"
     ],
     "confidence": "low",
     "reviewRequired": true,
@@ -902,12 +932,16 @@
       "channels": 2,
       "durationSeconds": 182.151,
       "byteLength": 1108389,
-      "sha256": "8f8a532ed100218d91e6642238fe85aefbf61469d85cc0225369029bcfa22baa"
+      "sha256": "0b9754d610799352b2f586801b20a18b7d51d47ed64d9e6f3aab8475687d1dbe"
     },
     "writers": [
       "APG550"
     ],
-    "aliases": []
+    "aliases": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
+    ]
   },
   {
     "index": 519,

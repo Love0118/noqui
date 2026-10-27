@@ -1,5 +1,13 @@
 [
   {
+    "id": "japan-zeom",
+    "name": "일본 - ZEOM",
+    "entries": 289,
+    "playable": 26,
+    "audioVerified": true,
+    "answerCommentsStripped": true
+  },
+  {
     "id": "ssip-noqui",
     "name": "씹노퀴",
     "entries": 541,
@@ -11,7 +19,7 @@
     "id": "tj-261027-domestic",
     "name": "TJ인기차트-261027국내",
     "entries": 100,
-    "playable": 86,
+    "playable": 69,
     "audioVerified": true,
     "answerCommentsStripped": true
   },
@@ -19,7 +27,7 @@
     "id": "tj-261027-japan",
     "name": "TJ인기차트-261027일본노래",
     "entries": 100,
-    "playable": 98,
+    "playable": 91,
     "audioVerified": true,
     "answerCommentsStripped": true
   },
@@ -27,7 +35,7 @@
     "id": "tj-261027-pop",
     "name": "TJ인기차트-261027팝송",
     "entries": 100,
-    "playable": 96,
+    "playable": 79,
     "audioVerified": true,
     "answerCommentsStripped": true
   }

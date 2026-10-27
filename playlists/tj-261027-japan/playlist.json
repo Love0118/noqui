@@ -6,38 +6,38 @@
     {
       "song": {
         "id": "f9b144f4-ce2e-59a3-84cc-d496a7ecb0a6",
-        "youtubeUrl": "https://www.youtube.com/watch?v=oZpYEEcvu5I",
+        "youtubeUrl": "https://www.youtube.com/watch?v=p1tsL0YmNqU",
         "title": "만찬가",
         "tags": [
-          "TUKI.",
           "만찬가",
-          "tuki.",
+          "TUKI",
           "츠키"
         ]
       },
       "audio": {
-        "path": "audio/oZpYEEcvu5I.ogg",
-        "sha256": "2ed767f704a2f68f4fbe0023368bbe34de83258817560a7a8e9f109f638ca2fc",
-        "byteLength": 1321144,
-        "durationMs": 220016
+        "path": "audio/p1tsL0YmNqU.ogg",
+        "sha256": "e00063150d852b5b975069fe208a1301c8eb99e058cf8a1546a086ee53c6dce3",
+        "byteLength": 1317468,
+        "durationMs": 217767
       }
     },
     {
       "song": {
         "id": "1a78ea0a-c6e2-5474-bcae-958f78ebbb01",
-        "youtubeUrl": "https://www.youtube.com/watch?v=TQ8WlA2GXbk",
+        "youtubeUrl": "https://www.youtube.com/watch?v=37W7Y2RRyiM",
         "title": "Pretender",
         "tags": [
-          "Official髭男dism",
+          "Pretender",
           "오피셜 히게단디즘",
+          "Official髭男dism",
           "후지와라사토시"
         ]
       },
       "audio": {
-        "path": "audio/TQ8WlA2GXbk.ogg",
-        "sha256": "2b799cd3e4e94a0520e852e2642476c8704d4734e077447c23a7a9f8116d38a7",
-        "byteLength": 1992847,
-        "durationMs": 335593
+        "path": "audio/37W7Y2RRyiM.ogg",
+        "sha256": "e07689b9d7309494b005c15c2f085d576b44a833535e2dffa4fc2242fad4ab78",
+        "byteLength": 1991956,
+        "durationMs": 326447
       }
     },
     {
@@ -46,35 +46,25 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=UM9XNpgrqVk",
         "title": "괴수의 꽃노래",
         "tags": [
-          "VAUNDY",
           "괴수의 꽃노래",
-          "Vaundy",
+          "Kaiju no Hanauta",
+          "VAUNDY",
           "바운디"
         ]
       },
-      "audio": {
-        "path": "audio/UM9XNpgrqVk.ogg",
-        "sha256": "3f5831002935b820f98377d574906e55976df8b29e426f1ef9d4ac402636dbd4",
-        "byteLength": 1414616,
-        "durationMs": 232810
-      }
+      "audio": null
     },
     {
       "song": {
         "id": "7206d628-825b-556f-bd90-a2fa0ee76680",
         "youtubeUrl": "https://www.youtube.com/watch?v=cbqvxDTLMps",
-        "title": "베테루기우스",
+        "title": "베텔기우스",
         "tags": [
-          "유우리",
-          "베테루기우스"
+          "베텔기우스",
+          "유우리"
         ]
       },
-      "audio": {
-        "path": "audio/cbqvxDTLMps.ogg",
-        "sha256": "80191452386860c71b30c41ca25df2f7e2a6dedbd8e95e0db99c2fb8eaf2088d",
-        "byteLength": 1737357,
-        "durationMs": 291394
-      }
+      "audio": null
     },
     {
       "song": {
@@ -83,8 +73,8 @@
         "title": "히로인",
         "tags": [
           "히로인",
-          "back number",
           "백 넘버",
+          "back number",
           "시미즈이요리"
         ]
       },
@@ -101,9 +91,9 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=SX_ViT4Ra7k",
         "title": "레몬",
         "tags": [
-          "요네즈켄시",
           "레몬",
-          "Lemon"
+          "Lemon",
+          "요네즈켄시"
         ]
       },
       "audio": {
@@ -119,11 +109,12 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=gqsMJ1wezOY",
         "title": "사무라이하트",
         "tags": [
+          "사무라이하트",
+          "Some Like It Hot",
           "MOMIKEN",
           "UZ",
-          "사무라이하트",
-          "SPYAIR",
-          "스파이에어"
+          "스파이에어",
+          "SPYAIR"
         ]
       },
       "audio": {
@@ -156,8 +147,9 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=LmZD-TU96q4",
         "title": "아이리스 아웃",
         "tags": [
+          "아이리스 아웃",
           "요네즈켄시",
-          "아이리스 아웃"
+          "IRIS OUT"
         ]
       },
       "audio": {
@@ -174,8 +166,9 @@
         "title": "제인 도",
         "tags": [
           "제인 도",
-          "요네츠겐시 & 우타다히카루",
-          "요네즈켄시"
+          "요네츠겐시 우타다히카루",
+          "요네즈켄시",
+          "JANE DOE"
         ]
       },
       "audio": {
@@ -209,8 +202,9 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=OxzdMNTJXmg",
         "title": "Walking with you",
         "tags": [
-          "Novelbright",
-          "노벨브라이트"
+          "Walking with you",
+          "노벨브라이트",
+          "Novelbright"
         ]
       },
       "audio": {
@@ -224,11 +218,11 @@
       "song": {
         "id": "6ac2db74-85d2-5937-b71f-859533227183",
         "youtubeUrl": "https://www.youtube.com/watch?v=iqEr3P78fz8",
-        "title": "스이헤이센",
+        "title": "수평선",
         "tags": [
-          "스이헤이센",
-          "back number",
+          "수평선",
           "백 넘버",
+          "back number",
           "시미즈이요리"
         ]
       },
@@ -243,10 +237,11 @@
       "song": {
         "id": "86045c24-c2d8-5b0a-997d-8b277dc6846b",
         "youtubeUrl": "https://www.youtube.com/watch?v=kzZ6KXDM1RI",
-        "title": "도라이후라와",
+        "title": "드라이플라워",
         "tags": [
-          "유우리",
-          "도라이후라와"
+          "드라이플라워",
+          "Dried Flowers",
+          "유우리"
         ]
       },
       "audio": {
@@ -260,12 +255,13 @@
       "song": {
         "id": "6e737453-84da-5d69-861a-d0357e4834c3",
         "youtubeUrl": "https://www.youtube.com/watch?v=gt-v_YCkaMY",
-        "title": "갸코우",
+        "title": "역광",
         "tags": [
+          "역광",
+          "Backlight",
           "VAUNDY",
-          "갸코우",
-          "Ado",
-          "아도"
+          "아도",
+          "Ado"
         ]
       },
       "audio": {
@@ -279,20 +275,15 @@
       "song": {
         "id": "bbfc840e-92a2-5c5c-8704-1049ad47c6eb",
         "youtubeUrl": "https://www.youtube.com/watch?v=7HgJIAUtICU",
-        "title": "오도리코",
+        "title": "무희",
         "tags": [
+          "무희",
           "VAUNDY",
-          "오도리코",
-          "Vaundy",
-          "바운디"
+          "바운디",
+          "Odoriko"
         ]
       },
-      "audio": {
-        "path": "audio/7HgJIAUtICU.ogg",
-        "sha256": "b651ccd2566cf1688536b587ef977a9e045b95d4a196f89d5f576c5f60ef775e",
-        "byteLength": 1408454,
-        "durationMs": 245384
-      }
+      "audio": null
     },
     {
       "song": {
@@ -300,6 +291,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=RCltAg_iK0E",
         "title": "Bunny Girl",
         "tags": [
+          "Bunny Girl",
           "AKASAKI"
         ]
       },
@@ -316,9 +308,9 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=jvoW9lJdirk",
         "title": "-ERROR",
         "tags": [
+          "ERROR",
           "NIKI",
-          "niki(Feat.Lily)",
-          "ERROR"
+          "nikiFeatLily"
         ]
       },
       "audio": {
@@ -334,8 +326,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=M2cckDmNLMI",
         "title": "킥백",
         "tags": [
-          "요네즈켄시",
           "킥백",
+          "요네즈켄시",
           "KICK BACK"
         ]
       },
@@ -353,8 +345,8 @@
         "title": "혼잣말",
         "tags": [
           "혼잣말",
-          "ハチワレ(CV:田中 誠人)",
-          "하치와레(CV:타나카 마사토)",
+          "하치와레CV타나카 마사토",
+          "ハチワレCV田中 誠人",
           "nagano"
         ]
       },
@@ -371,8 +363,9 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=uxYLXaXtH9I",
         "title": "레오",
         "tags": [
+          "레오",
           "유우리",
-          "레오"
+          "Leo"
         ]
       },
       "audio": {
@@ -386,11 +379,11 @@
       "song": {
         "id": "ad08cbf5-646b-5271-9fe0-4049bf6c1bdd",
         "youtubeUrl": "https://www.youtube.com/watch?v=JwmGruvGt_I",
-        "title": "시와아와세",
+        "title": "주름맞추기",
         "tags": [
+          "주름맞추기",
+          "Shiwaawase",
           "VAUNDY",
-          "시와아와세",
-          "Vaundy",
           "바운디"
         ]
       },
@@ -407,9 +400,9 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=mp2-w15SXms",
         "title": "W / X / Y",
         "tags": [
+          "W X Y",
           "Tani Yuuki",
-          "타니 유우키",
-          "W X Y"
+          "타니 유우키"
         ]
       },
       "audio": {
@@ -426,8 +419,9 @@
         "title": "실루엣",
         "tags": [
           "실루엣",
-          "KANA-BOON",
+          "Silhouette",
           "카나분",
+          "KANABOON",
           "타니구치마구로"
         ]
       },
@@ -445,8 +439,9 @@
         "title": "푸름과 여름",
         "tags": [
           "푸름과 여름",
-          "Mrs. Green Apple",
-          "미세스 그린 애플"
+          "Ao to Natsu",
+          "미세스 그린 애플",
+          "Mrs Green Apple"
         ]
       },
       "audio": {
@@ -460,12 +455,13 @@
       "song": {
         "id": "aa65c529-f37c-5723-b006-36b213feb352",
         "youtubeUrl": "https://www.youtube.com/watch?v=SII-S-zCg-c",
-        "title": "타카네노하나코산",
+        "title": "높은 산의 하나코씨",
         "tags": [
-          "타카네노하나코산",
-          "back number",
+          "높은 산의 하나코씨",
           "백 넘버",
-          "시미즈이요리"
+          "back number",
+          "시미즈이요리",
+          "Takane no Hanakosan"
         ]
       },
       "audio": {
@@ -481,10 +477,10 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=kbNdx0yqbZE",
         "title": "모니터링",
         "tags": [
-          "DECO*27",
           "모니터링",
-          "DECO*27(Feat.初音ミク)",
-          "데코니나"
+          "DECO27",
+          "데코니나",
+          "DECO27Feat初音ミク"
         ]
       },
       "audio": {
@@ -500,17 +496,12 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=XogSflwXgpw",
         "title": "내일의 밤하늘 초계반",
         "tags": [
-          "ORANGESTAR",
           "내일의 밤하늘 초계반",
-          "Orangestar(Feat.IA)"
+          "ORANGESTAR",
+          "OrangestarFeatIA"
         ]
       },
-      "audio": {
-        "path": "audio/XogSflwXgpw.ogg",
-        "sha256": "6414a8b8f2e3746595aa3606d05e2c98a27b30e524dc3b877a3dc312edb921d1",
-        "byteLength": 1074937,
-        "durationMs": 176583
-      }
+      "audio": null
     },
     {
       "song": {
@@ -518,9 +509,10 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=8Cm-7oCq9HA",
         "title": "PPPP",
         "tags": [
+          "PPPP",
           "TAK",
-          "TAK(Feat.初音ミク,重音テト)",
-          "하츠네 미쿠"
+          "하츠네 미쿠",
+          "TAKFeat初音ミク重音テト"
         ]
       },
       "audio": {
@@ -536,9 +528,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=1FIhcdocT-k",
         "title": "사랑 감기에 실려",
         "tags": [
-          "VAUNDY",
           "사랑 감기에 실려",
-          "Vaundy",
+          "VAUNDY",
           "바운디"
         ]
       },
@@ -553,12 +544,14 @@
       "song": {
         "id": "4b10744e-dc2c-5946-b097-43ccb3e28753",
         "youtubeUrl": "https://www.youtube.com/watch?v=by4SYYWlhEs",
-        "title": "요루니카케루",
+        "title": "밤을 달리다",
         "tags": [
+          "밤을 달리다",
+          "Into The Night",
+          "Yoru ni Kakeru",
           "AYASE",
-          "요루니카케루",
-          "YOASOBI",
-          "요아소비"
+          "요아소비",
+          "YOASOBI"
         ]
       },
       "audio": {
@@ -574,8 +567,9 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=emrt46SRyYs",
         "title": "DAYBREAK FRONTLINE",
         "tags": [
+          "DAYBREAK FRONTLINE",
           "ORANGESTAR",
-          "Orangestar(Feat.IA)"
+          "OrangestarFeatIA"
         ]
       },
       "audio": {
@@ -592,8 +586,9 @@
         "title": "라일락",
         "tags": [
           "라일락",
-          "Mrs. GREEN APPLE",
-          "미세스 그린 애플"
+          "미세스 그린 애플",
+          "Mrs GREEN APPLE",
+          "Lilac"
         ]
       },
       "audio": {
@@ -609,18 +604,12 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=jhOVibLEDhA",
         "title": "코이",
         "tags": [
-          "호시노 겐",
           "코이",
-          "Koi",
-          "호시노겐"
+          "호시노 겐",
+          "Koi"
         ]
       },
-      "audio": {
-        "path": "audio/jhOVibLEDhA.ogg",
-        "sha256": "1fe73a81d99afb2f56b529220973368f20425e6a8ff4e3ec67e5bf31cb7eb06f",
-        "byteLength": 1712820,
-        "durationMs": 292927
-      }
+      "audio": null
     },
     {
       "song": {
@@ -628,8 +617,9 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=L13gCEZJVRU",
         "title": "Henceforth",
         "tags": [
+          "Henceforth",
           "ORANGESTAR",
-          "Orangestar(Feat.IA)"
+          "OrangestarFeatIA"
         ]
       },
       "audio": {
@@ -645,10 +635,10 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=ony539T074w",
         "title": "백일",
         "tags": [
-          "King Gnu",
-          "킹 누",
           "백일",
           "Hakujitsu",
+          "킹 누",
+          "King Gnu",
           "츠네타다이키"
         ]
       },
@@ -663,10 +653,11 @@
       "song": {
         "id": "826bad9b-0687-5f00-83d7-9e0c170519b5",
         "youtubeUrl": "https://www.youtube.com/watch?v=dJhp6awU5Z8",
-        "title": "아나타노코이비토니나리타이",
+        "title": "당신의 연인이 되고 싶어",
         "tags": [
-          "아나타노코이비토니나리타이",
-          "초큐메이"
+          "당신의 연인이 되고 싶어",
+          "초큐메이",
+          "Anata no Koibito ni Naritai"
         ]
       },
       "audio": {
@@ -682,8 +673,9 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=4tlUwgtgdZA",
         "title": "마루노우치사디스티쿠",
         "tags": [
-          "시이나 링고",
-          "마루노우치사디스티쿠"
+          "마루노우치사디스티쿠",
+          "Marunouchi Sadistic",
+          "시이나 링고"
         ]
       },
       "audio": {
@@ -700,8 +692,9 @@
         "title": "신 같네",
         "tags": [
           "신 같네",
-          "ピノキオピー(Feat.初音ミク)",
+          "Godish",
           "하츠네 미쿠",
+          "ピノキオピーFeat初音ミク",
           "피노키오피"
         ]
       },
@@ -718,8 +711,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=VDdLF1YubI0",
         "title": "프로포즈",
         "tags": [
-          "나토리",
-          "프로포즈"
+          "프로포즈",
+          "나토리"
         ]
       },
       "audio": {
@@ -735,8 +728,9 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=0xSiBpUdW4E",
         "title": "마리고루도",
         "tags": [
+          "마리고루도",
           "아이묜",
-          "마리고루도"
+          "Marigold"
         ]
       },
       "audio": {
@@ -750,11 +744,11 @@
       "song": {
         "id": "4120a2db-c9b0-5a74-b7f0-3ca2f446f02e",
         "youtubeUrl": "https://www.youtube.com/watch?v=ZH-amYi7_o4",
-        "title": "보쿠가시노우토오모타노하",
+        "title": "내가 죽으려고 생각한 것은",
         "tags": [
-          "보쿠가시노우토오모타노하",
-          "amazarashi",
+          "내가 죽으려고 생각한 것은",
           "아마자라시",
+          "amazarashi",
           "아키타히로무"
         ]
       },
@@ -772,6 +766,7 @@
         "title": "친애하는 소년이여",
         "tags": [
           "친애하는 소년이여",
+          "Haikei Shounenyo",
           "Hump Back",
           "하야시모모코"
         ]
@@ -789,10 +784,11 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=ZRtdQ81jPUQ",
         "title": "아이돌",
         "tags": [
-          "AYASE",
           "아이돌",
+          "AYASE",
+          "요아소비",
           "YOASOBI",
-          "요아소비"
+          "Idol"
         ]
       },
       "audio": {
@@ -808,9 +804,10 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=QhOFg_3RV5Q",
         "title": "Endless Rain",
         "tags": [
+          "Endless Rain",
           "YOSHIKI",
-          "X-JAPAN",
-          "엑스 재팬"
+          "엑스 재팬",
+          "XJAPAN"
         ]
       },
       "audio": {
@@ -827,9 +824,10 @@
         "title": "소녀A",
         "tags": [
           "소녀A",
-          "椎名もた(Feat.鏡音リン)",
-          "시이나모타(Feat.쿄우온린)",
-          "시이나모타"
+          "시이나모타Feat쿄우온린",
+          "椎名もたFeat鏡音リン",
+          "시이나모타",
+          "少女A"
         ]
       },
       "audio": {
@@ -843,12 +841,12 @@
       "song": {
         "id": "18d94e04-f6e9-534d-b5ac-e0d68e536c0a",
         "youtubeUrl": "https://www.youtube.com/watch?v=sk1Z-Hqwwog",
-        "title": "와타시하사이쿄우",
+        "title": "나는 최강",
         "tags": [
+          "나는 최강",
           "OOMORI MOTOKI",
-          "와타시하사이쿄우",
-          "Ado",
-          "아도"
+          "아도",
+          "Ado"
         ]
       },
       "audio": {
@@ -862,11 +860,11 @@
       "song": {
         "id": "5a4302cd-e375-5425-a7eb-4a3ebe9c06ff",
         "youtubeUrl": "https://www.youtube.com/watch?v=xefpHEg5UIA",
-        "title": "보쿠노코토",
+        "title": "나라는 것",
         "tags": [
-          "보쿠노코토",
-          "Mrs. Green Apple",
-          "미세스 그린 애플"
+          "나라는 것",
+          "미세스 그린 애플",
+          "Mrs Green Apple"
         ]
       },
       "audio": {
@@ -882,19 +880,14 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=Fve_lHIPa-I",
         "title": "언라벨",
         "tags": [
-          "TK From 凛として時雨",
-          "TK From 린토시테시구레",
           "언라벨",
+          "TK From 린토시테시구레",
+          "TK From 凛として時雨",
           "Unravel",
           "TK"
         ]
       },
-      "audio": {
-        "path": "audio/Fve_lHIPa-I.ogg",
-        "sha256": "31cf61a4cfb8ed4ec8b8a8c570ed2816f3d3c1a95eb55b8577e86c756089c6d1",
-        "byteLength": 1447594,
-        "durationMs": 242319
-      }
+      "audio": null
     },
     {
       "song": {
@@ -902,8 +895,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=kagoEGKHZvU",
         "title": "NIGHT DANCER",
         "tags": [
+          "NIGHT DANCER",
           "IMASE",
-          "imase",
           "이마세"
         ]
       },
@@ -920,10 +913,10 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=vB8sxY_PJ_w",
         "title": "취한 줄을 모르고",
         "tags": [
-          "Kanaria",
           "취한 줄을 모르고",
-          "Kanaria(Feat.GUMI)",
-          "카나리아"
+          "Kanaria",
+          "카나리아",
+          "KanariaFeatGUMI"
         ]
       },
       "audio": {
@@ -939,10 +932,11 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=Qp3b-RXtz4w",
         "title": "우세에와",
         "tags": [
-          "SYUDOU",
           "우세에와",
-          "Ado",
-          "아도"
+          "Usseewa",
+          "SYUDOU",
+          "아도",
+          "Ado"
         ]
       },
       "audio": {
@@ -958,10 +952,10 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=aS2B6tJCdiE",
         "title": "우타타네",
         "tags": [
-          "LEINA",
           "우타타네",
-          "Leina",
-          "레이나"
+          "LEINA",
+          "레이나",
+          "Utatane"
         ]
       },
       "audio": {
@@ -975,9 +969,9 @@
       "song": {
         "id": "f34a7cf2-235a-57f9-8b0e-816a00fb6ef6",
         "youtubeUrl": "https://www.youtube.com/watch?v=DVOgvzl395w",
-        "title": "아오이산고쇼우",
+        "title": "푸른 산호초",
         "tags": [
-          "아오이산고쇼우",
+          "푸른 산호초",
           "마츠다세이코"
         ]
       },
@@ -995,9 +989,10 @@
         "title": "하나타바",
         "tags": [
           "하나타바",
-          "back number",
           "백 넘버",
-          "시미즈이요리"
+          "back number",
+          "시미즈이요리",
+          "Hanataba"
         ]
       },
       "audio": {
@@ -1014,9 +1009,10 @@
         "title": "115만 킬로의 필름",
         "tags": [
           "115만 킬로의 필름",
-          "Official髭男dism",
           "오피셜 히게단디즘",
-          "후지와라사토시"
+          "Official髭男dism",
+          "후지와라사토시",
+          "115万キロのフィルム"
         ]
       },
       "audio": {
@@ -1032,9 +1028,10 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=-VKIqrvVOpo",
         "title": "그저 네게 맑아라",
         "tags": [
-          "N-BUNA",
           "그저 네게 맑아라",
-          "요루시카"
+          "NBUNA",
+          "요루시카",
+          "Tada Kimi ni Hare"
         ]
       },
       "audio": {
@@ -1050,7 +1047,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=eYAd4uDotF0",
         "title": "스키다카라。",
         "tags": [
-          "스키다카라"
+          "스키다카라",
+          "Suki Dakara"
         ]
       },
       "audio": {
@@ -1064,11 +1062,11 @@
       "song": {
         "id": "b7724149-8c61-5e78-aa5f-475a7510f2f3",
         "youtubeUrl": "https://www.youtube.com/watch?v=7zBeQezaz4U",
-        "title": "쿠리스마스손구",
+        "title": "크리스마스송",
         "tags": [
-          "쿠리스마스손구",
-          "back number",
+          "크리스마스송",
           "백 넘버",
+          "back number",
           "시미즈이요리"
         ]
       },
@@ -1086,8 +1084,9 @@
         "title": "난데모나이야",
         "tags": [
           "난데모나이야",
-          "RADWIMPS",
+          "Nandemonaiya",
           "래드윔프스",
+          "RADWIMPS",
           "노다요지로"
         ]
       },
@@ -1105,8 +1104,9 @@
         "title": "인페루노",
         "tags": [
           "인페루노",
-          "Mrs. Green Apple",
-          "미세스 그린 애플"
+          "Inferno",
+          "미세스 그린 애플",
+          "Mrs Green Apple"
         ]
       },
       "audio": {
@@ -1122,8 +1122,9 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=8oBV3jPTW4s",
         "title": "로스트 원의 호곡",
         "tags": [
-          "NERU",
           "로스트 원의 호곡",
+          "Lost Ones Weeping",
+          "NERU",
           "카가미오토린"
         ]
       },
@@ -1138,10 +1139,10 @@
       "song": {
         "id": "bb8628e0-cd30-52dd-8e94-03e2580b6259",
         "youtubeUrl": "https://www.youtube.com/watch?v=9qRCARM_LfE",
-        "title": "아이오츠타에타이다토카",
+        "title": "사랑을 전하고 싶다던가",
         "tags": [
-          "아이묜",
-          "아이오츠타에타이다토카"
+          "사랑을 전하고 싶다던가",
+          "아이묜"
         ]
       },
       "audio": {
@@ -1157,9 +1158,9 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=AOfaWrBwo7I",
         "title": "휴루리라팟파",
         "tags": [
-          "TUKI.",
           "휴루리라팟파",
-          "tuki.",
+          "HYURURIRAPAPPA",
+          "TUKI",
           "츠키"
         ]
       },
@@ -1177,9 +1178,10 @@
         "title": "샤를",
         "tags": [
           "샤를",
-          "バルーン(Feat.Flower)",
-          "바룬(Feat.Flower)",
-          "balloon"
+          "바룬FeatFlower",
+          "バルーンFeatFlower",
+          "balloon",
+          "Charles"
         ]
       },
       "audio": {
@@ -1195,10 +1197,10 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=O1bhZgkC4Gw",
         "title": "크라이 베이비",
         "tags": [
-          "Official髭男dism",
-          "오피셜 히게단디즘",
           "크라이 베이비",
           "Cry Baby",
+          "오피셜 히게단디즘",
+          "Official髭男dism",
           "후지와라사토시"
         ]
       },
@@ -1216,8 +1218,8 @@
         "title": "역몽",
         "tags": [
           "역몽",
-          "King Gnu",
           "킹 누",
+          "King Gnu",
           "츠네타다이키"
         ]
       },
@@ -1235,6 +1237,7 @@
         "title": "아무것도 없어",
         "tags": [
           "아무것도 없어",
+          "Nannmonee",
           "와스레란네에요",
           "시바타타카히로"
         ]
@@ -1252,9 +1255,9 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=YvIsU9kgZz4",
         "title": "갓노우즈",
         "tags": [
-          "료우미야하루히(헤이야아야)",
           "갓노우즈",
-          "God knows...",
+          "God knows",
+          "료우미야하루히헤이야아야",
           "하타아키",
           "코사키사토루"
         ]
@@ -1272,10 +1275,10 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=ARj1adoUoEU",
         "title": "날아오를 때",
         "tags": [
-          "VAUNDY",
           "날아오를 때",
-          "Vaundy",
-          "바운디"
+          "VAUNDY",
+          "바운디",
+          "Fly Away"
         ]
       },
       "audio": {
@@ -1291,6 +1294,7 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=EsOsc-sajMk",
         "title": "I love you",
         "tags": [
+          "I love you",
           "오자키유타카"
         ]
       },
@@ -1307,19 +1311,14 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=Jy-QS27q7lA",
         "title": "케세라세라",
         "tags": [
-          "OOMORI MOTOKI",
-          "Mrs. GREEN APPLE",
-          "미세스 그린 애플",
           "케세라세라",
+          "OOMORI MOTOKI",
+          "미세스 그린 애플",
+          "Mrs GREEN APPLE",
           "Que Sera Sera"
         ]
       },
-      "audio": {
-        "path": "audio/Jy-QS27q7lA.ogg",
-        "sha256": "b95bbbcbe315e3b3e0017edf6f893ed25dd7ed0145d2798d75c56a896bcf51c0",
-        "byteLength": 1798430,
-        "durationMs": 313581
-      }
+      "audio": null
     },
     {
       "song": {
@@ -1327,9 +1326,9 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=oi8ArKYLwBY",
         "title": "숨바꼭질",
         "tags": [
+          "숨바꼭질",
           "TKT",
           "EREN",
-          "숨바꼭질",
           "ALIA"
         ]
       },
@@ -1346,10 +1345,10 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=DdF-u3fe5pg",
         "title": "레이디",
         "tags": [
-          "YONEZU KENSHI 米津玄師",
-          "요네즈켄시",
           "레이디",
-          "LADY"
+          "LADY",
+          "YONEZU KENSHI 米津玄師",
+          "요네즈켄시"
         ]
       },
       "audio": {
@@ -1365,9 +1364,10 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=YcxhmHEykPg",
         "title": "Execution Clap",
         "tags": [
+          "Execution Clap",
           "TRAP CHICK",
-          "TRAP CHICK(Feat.重音テト)",
-          "TRAP CHICK(Feat.주우오토테토)"
+          "TRAP CHICKFeat주우오토테토",
+          "TRAP CHICKFeat重音テト"
         ]
       },
       "audio": {
@@ -1383,9 +1383,9 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=2-zPY0vrpjQ",
         "title": "천성의 약함",
         "tags": [
-          "164",
           "천성의 약함",
-          "164(Feat.GUMI)"
+          "164",
+          "164FeatGUMI"
         ]
       },
       "audio": {
@@ -1399,12 +1399,13 @@
       "song": {
         "id": "7b1f7597-5cb2-5de9-bdc2-e23694a8b47e",
         "youtubeUrl": "https://www.youtube.com/watch?v=ERLEeGVWYxg",
-        "title": "슈과송과 비터스텝",
+        "title": "슈가송과 비터스텝",
         "tags": [
-          "슈과송과 비터스텝",
-          "Unison Square Garden",
+          "슈가송과 비터스텝",
           "유니즌 스퀘어 가든",
-          "타부치토모야"
+          "Unison Square Garden",
+          "타부치토모야",
+          "Sugar Song and Bitter Step"
         ]
       },
       "audio": {
@@ -1418,11 +1419,11 @@
       "song": {
         "id": "ba2de14f-80a1-5e05-848c-1006d54adf88",
         "youtubeUrl": "https://www.youtube.com/watch?v=T8y_RsF4TSw",
-        "title": "하피엔도",
+        "title": "해피 엔드",
         "tags": [
-          "하피엔도",
-          "back number",
+          "해피 엔드",
           "백 넘버",
+          "back number",
           "시미즈이요리"
         ]
       },
@@ -1440,6 +1441,7 @@
         "title": "비",
         "tags": [
           "비",
+          "Rain",
           "시드"
         ]
       },
@@ -1457,8 +1459,9 @@
         "title": "젠젠젠세이",
         "tags": [
           "젠젠젠세이",
-          "RADWIMPS",
+          "Zenzenzense",
           "래드윔프스",
+          "RADWIMPS",
           "노다요지로"
         ]
       },
@@ -1475,8 +1478,9 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=N4F3bjlL_H4",
         "title": "악마의 아이",
         "tags": [
-          "히구치아이",
-          "악마의 아이"
+          "악마의 아이",
+          "Akuma no Ko",
+          "히구치아이"
         ]
       },
       "audio": {
@@ -1492,10 +1496,12 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=TXzfQ0cP1P0",
         "title": "연애재판",
         "tags": [
-          "40MP",
           "연애재판",
-          "40mP(Feat.初音ミク)",
-          "하츠네 미쿠"
+          "Love Trial",
+          "40MP",
+          "하츠네 미쿠",
+          "40mPFeat初音ミク",
+          "Renai Saiban"
         ]
       },
       "audio": {
@@ -1511,11 +1517,11 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=aRDURmIYBZ4",
         "title": "Mela!",
         "tags": [
+          "Mela",
           "PEPPE",
           "녹황색사회",
           "나가야하루코",
-          "아나미싱고",
-          "Mela"
+          "아나미싱고"
         ]
       },
       "audio": {
@@ -1531,12 +1537,12 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=mLW35YMzELE",
         "title": "블링-뱅-뱅-본",
         "tags": [
-          "R-指定",
-          "DJ松永",
-          "Creepy Nuts",
-          "크리피 너츠",
           "블링뱅뱅본",
-          "Bling-Bang-Bang-Born"
+          "R指定",
+          "DJ松永",
+          "크리피 너츠",
+          "Creepy Nuts",
+          "BlingBangBangBorn"
         ]
       },
       "audio": {
@@ -1552,10 +1558,11 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=Xg-qfsKN2_E",
         "title": "로키",
         "tags": [
-          "みきとP",
           "로키",
-          "みきとP(Feat.鏡音リン)",
-          "미키토P(Feat.쿄우온린)"
+          "みきとP",
+          "미키토PFeat쿄우온린",
+          "みきとPFeat鏡音リン",
+          "Roki"
         ]
       },
       "audio": {
@@ -1571,9 +1578,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=Gbz2C2gQREI",
         "title": "불가행력",
         "tags": [
-          "VAUNDY",
           "불가행력",
-          "Vaundy",
+          "VAUNDY",
           "바운디"
         ]
       },
@@ -1591,8 +1597,9 @@
         "title": "단스호루",
         "tags": [
           "단스호루",
-          "Mrs. GREEN APPLE",
-          "미세스 그린 애플"
+          "미세스 그린 애플",
+          "Mrs GREEN APPLE",
+          "Dance Hall"
         ]
       },
       "audio": {
@@ -1606,11 +1613,10 @@
       "song": {
         "id": "d938a8fa-a618-5b16-8783-5a93eae8ed44",
         "youtubeUrl": "https://www.youtube.com/watch?v=SIuF37EWaLU",
-        "title": "도쿄 플래쉬",
+        "title": "도쿄 플래시",
         "tags": [
+          "도쿄 플래시",
           "VAUNDY",
-          "도쿄 플래쉬",
-          "Vaundy",
           "바운디"
         ]
       },
@@ -1627,8 +1633,9 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=i-DZukWFR64",
         "title": "텔레캐스터 비보이",
         "tags": [
+          "텔레캐스터 비보이",
           "스리이",
-          "텔레캐스터 비보이"
+          "Telecaster BBoy"
         ]
       },
       "audio": {
@@ -1644,10 +1651,10 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=3SkNrZnoK5w",
         "title": "마음탓",
         "tags": [
-          "PAPIYON",
           "마음탓",
-          "蝶々P(Feat.GUMI)",
-          "초우초우P(Feat.GUMI)"
+          "PAPIYON",
+          "초우초우PFeatGUMI",
+          "蝶々PFeatGUMI"
         ]
       },
       "audio": {
@@ -1663,8 +1670,9 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=yzpNpaS0uLc",
         "title": "악의 하인",
         "tags": [
-          "mothy",
           "악의 하인",
+          "Servant of Evil",
+          "mothy",
           "카가미오토렌"
         ]
       },
@@ -1681,10 +1689,11 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=cm-l2h6GB8Q",
         "title": "킹",
         "tags": [
-          "Kanaria",
           "킹",
-          "Kanaria(Feat.GUMI)",
-          "카나리아"
+          "Kanaria",
+          "카나리아",
+          "KanariaFeatGUMI",
+          "KING"
         ]
       },
       "audio": {
@@ -1700,11 +1709,11 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=YkVjY1F-Eoc",
         "title": "오렌지",
         "tags": [
+          "오렌지",
           "MOMIKEN",
           "UZ",
-          "오렌지",
-          "SPYAIR",
-          "스파이에어"
+          "스파이에어",
+          "SPYAIR"
         ]
       },
       "audio": {
@@ -1720,10 +1729,10 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=JW3N-HvU0MA",
         "title": "소녀 레이",
         "tags": [
-          "みきとP",
           "소녀 레이",
-          "みきとP(Feat.初音ミク)",
-          "하츠네 미쿠"
+          "みきとP",
+          "하츠네 미쿠",
+          "みきとPFeat初音ミク"
         ]
       },
       "audio": {
@@ -1739,9 +1748,10 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=9E_gqQ7V5P0",
         "title": "커튼콜",
         "tags": [
-          "유우리",
           "커튼콜",
-          "CHIMERAZ"
+          "유우리",
+          "CHIMERAZ",
+          "Curtain Call"
         ]
       },
       "audio": {
@@ -1757,8 +1767,9 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=9aJVr5tTTWk",
         "title": "피스 사인",
         "tags": [
-          "요네즈켄시",
-          "피스 사인"
+          "피스 사인",
+          "Peace Sign",
+          "요네즈켄시"
         ]
       },
       "audio": {
@@ -1772,11 +1783,11 @@
       "song": {
         "id": "b003c21f-2697-5920-b3e2-0cf2f7b456a5",
         "youtubeUrl": "https://www.youtube.com/watch?v=FT0GKCuSaW0",
-        "title": "하다카노유우샤",
+        "title": "벌거벗은 용사",
         "tags": [
+          "벌거벗은 용사",
+          "Hadaka No Yusha",
           "VAUNDY",
-          "하다카노유우샤",
-          "Vaundy",
           "바운디"
         ]
       },
@@ -1793,8 +1804,9 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=yT_ylSCgY6Q",
         "title": "Ray",
         "tags": [
-          "BUMP OF CHICKEN(Feat.初音ミク)",
+          "Ray",
           "범프 오브 치킨",
+          "BUMP OF CHICKENFeat初音ミク",
           "후지와라모토오"
         ]
       },

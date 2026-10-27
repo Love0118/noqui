@@ -13,11 +13,18 @@
       "Greg Curtis"
     ],
     "tags": [
-      "KeyshiaCole",
-      "키샤콜",
-      "GregCurtis"
+      "Love",
+      "Keyshia Cole",
+      "키샤 콜",
+      "Greg Curtis"
     ],
     "aliases": [
+      {
+        "kind": "title",
+        "name": "Love",
+        "url": "https://blog.naver.com/ant2001e/224419027601",
+        "quote": "Keyshia Cole (키샤 콜) - Love 가사 발음 해석; Keyshia Cole의 \"Love\"와 TJ 노래방 번호 21776."
+      },
       {
         "kind": "singer",
         "name": "키샤 콜",
@@ -133,6 +140,10 @@
           }
         ]
       }
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "No song-specific source confirming a commonly used Korean title for “Love” was retained in this audit."
     ]
   },
   {
@@ -155,18 +166,24 @@
       "Justin Tranter"
     ],
     "tags": [
-      "ImagineDragons",
-      "이매진드래곤스",
-      "DanReynolds",
-      "WayneSermon",
-      "BenMcKee",
-      "DanielPlatzman",
-      "AlexdaKid",
-      "RobinFredriksson",
-      "MattiasLarsson",
-      "JustinTranter"
+      "Believer",
+      "Imagine Dragons",
+      "이매진 드래곤스",
+      "Dan Reynolds",
+      "Wayne Sermon",
+      "Ben McKee",
+      "Daniel Platzman",
+      "Alex da Kid",
+      "Robin Fredriksson",
+      "Mattias Larsson"
     ],
     "aliases": [
+      {
+        "kind": "title",
+        "name": "Believer",
+        "url": "https://www.youtube.com/watch?v=IhP3J0j9JmY",
+        "quote": "Imagine Dragons - Believer (Audio) | ImagineDragons"
+      },
       {
         "kind": "singer",
         "name": "이매진 드래곤스",
@@ -211,7 +228,7 @@
       "sampleRate": 48000,
       "durationSeconds": 202.822,
       "byteLength": 1244635,
-      "sha256": "b8eef12ceaaeaa492cf2662fd7a2879b359496a415f6f59fb313420c71372278"
+      "sha256": "02c9e30f5b58419665e7aa25f705705ec2c6d1a7c1306f119d03fde4086e306f"
     },
     "sourceTitle": "Believer",
     "rawChartWriterCredit": {
@@ -222,7 +239,11 @@
     "reviewReasons": [
       "TJ’s raw writer credit represents seven credited names, while the independently retrieved full-songwriter source lists eight. Retained the full sourced list and raw chart credit separately; author-count discrepancy still needs reconciliation."
     ],
-    "notes": "TJ’s raw writer credit represents seven credited names, while the independently retrieved full-songwriter source lists eight. Retained the full sourced list and raw chart credit separately; author-count discrepancy still needs reconciliation."
+    "notes": "TJ’s raw writer credit represents seven credited names, while the independently retrieved full-songwriter source lists eight. Retained the full sourced list and raw chart credit separately; author-count discrepancy still needs reconciliation.",
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "No song-specific source confirming a commonly used Korean title for “Believer” was retained in this audit."
+    ]
   },
   {
     "index": 56,
@@ -247,18 +268,24 @@
       "Stephen Morris"
     ],
     "tags": [
-      "5SecondsOfSummer",
-      "파이브세컨즈오브서머",
-      "AliTamposi",
-      "AshtonIrwin",
-      "LukeHemmings",
-      "AndrewWatt",
-      "BernardSumner",
-      "CarlSturken",
-      "EvanRogers",
-      "PeterHook"
+      "Teeth",
+      "5 Seconds Of Summer",
+      "파이브 세컨즈 오브 서머",
+      "Ali Tamposi",
+      "Ashton Irwin",
+      "Luke Hemmings",
+      "Andrew Watt",
+      "Bernard Sumner",
+      "Carl Sturken",
+      "Evan Rogers"
     ],
     "aliases": [
+      {
+        "kind": "title",
+        "name": "Teeth",
+        "url": "https://www.youtube.com/watch?v=JWeJHN5P-E8",
+        "quote": "5 Seconds of Summer - Teeth (Official Video) | 5SOS"
+      },
       {
         "kind": "singer",
         "name": "파이브 세컨즈 오브 서머",
@@ -303,7 +330,7 @@
       "sampleRate": 48000,
       "durationSeconds": 218.611,
       "byteLength": 1337814,
-      "sha256": "273bf92a4a67a8cad1b8601222243d3f14caed51becf57695d6c1887c7e2b35a"
+      "sha256": "83eb717d3b922676f5e1c7be63393215f62a708689ff5051dde1f8999b4fcf3d"
     },
     "sourceTitle": "Teeth",
     "rawChartWriterCredit": {
@@ -314,7 +341,21 @@
     "reviewReasons": [
       "TJ’s raw credit names Louis Bell and indicates six additional writers, while the full-songwriter source lists a different 11-name set and omits Louis Bell. Retained both records separately; credit-set discrepancy still needs reconciliation."
     ],
-    "notes": "TJ’s raw credit names Louis Bell and indicates six additional writers, while the full-songwriter source lists a different 11-name set and omits Louis Bell. Retained both records separately; credit-set discrepancy still needs reconciliation."
+    "notes": "TJ’s raw credit names Louis Bell and indicates six additional writers, while the full-songwriter source lists a different 11-name set and omits Louis Bell. Retained both records separately; credit-set discrepancy still needs reconciliation.",
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "No song-specific source confirming a commonly used Korean title for “Teeth” was retained in this audit."
+    ],
+    "audioSourceReviewRequired": true,
+    "audioSourceReviewReasons": [
+      "Source is labelled as a music video; matched official audio-only recording still required"
+    ],
+    "audioSourceEvidence": {
+      "url": "https://www.youtube.com/watch?v=JWeJHN5P-E8",
+      "kind": "search_snippet",
+      "quote": "5 Seconds of Summer - Teeth (Official Video) | channel 5SOS | duration 219 seconds",
+      "retrievedEvidenceMatched": true
+    }
   },
   {
     "index": 78,
@@ -333,14 +374,21 @@
       "Bruno Mars"
     ],
     "tags": [
-      "BrunoMars",
-      "브루노마스",
+      "Too Good To Say Goodbye",
+      "Bruno Mars",
+      "브루노 마스",
       "Babyface",
-      "JeffBhasker",
-      "BrodyBrown",
-      "PhilipLawrence"
+      "Jeff Bhasker",
+      "Brody Brown",
+      "Philip Lawrence"
     ],
     "aliases": [
+      {
+        "kind": "title",
+        "name": "Too Good To Say Goodbye",
+        "url": "https://m.blog.naver.com/kuss1203/224139030034",
+        "quote": "‘브루노 마스 Bruno Mars - Too Good to Say Goodbye’ 곡 해석 및 발음 해석; Too Good to Say Goodbye Bruno Mars [Verse 1] I've made mistakes"
+      },
       {
         "kind": "singer",
         "name": "브루노 마스",
@@ -395,6 +443,12 @@
       {
         "url": "https://www.youtube.com/watch?v=iVW55QkKVaQ",
         "quote": "Bruno Mars - Too Good To Say Goodbye | MAD Entertainment",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://m.blog.naver.com/kuss1203/224139030034",
+        "quote": "‘브루노 마스 Bruno Mars - Too Good to Say Goodbye’ 곡 해석 및 발음 해석; Too Good to Say Goodbye Bruno Mars [Verse 1] I've made mistakes",
         "kind": "search_snippet",
         "retrievedEvidenceMatched": true
       }
@@ -463,6 +517,10 @@
           }
         ]
       }
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "No song-specific source confirming a commonly used Korean title for “Too Good To Say Goodbye” was retained in this audit."
     ]
   }
 ]

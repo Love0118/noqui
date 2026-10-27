@@ -1,1 +1,2 @@
 nbtlib==2.0.4
+mutagen==1.48.1
