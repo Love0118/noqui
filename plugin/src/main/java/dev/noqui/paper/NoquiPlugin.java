@@ -328,7 +328,7 @@ public final class NoquiPlugin extends JavaPlugin implements QuizService,TabExec
             if(p!=null){boolean owned=ownsCabin(id);
                 try{try{hud.finish(p,scores);}finally{restore(p,true);}
                     if(owned){var service=defense();if(service!=null)service.sendLobby(p);}
-                }catch(RuntimeException error){getLogger().warning("Noqui player cleanup retained recovery markers for reconnect.");}
+                }catch(RuntimeException error){getLogger().log(java.util.logging.Level.WARNING,"Noqui player cleanup failed for "+id+"; retained recovery markers for reconnect.",error);}
             }else{members.remove(id);cabinOwners.remove(id);handoffs.remove(id);if(connections!=null)connections.forget(id);}
         }
         names.clear();

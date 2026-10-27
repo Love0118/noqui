@@ -53,4 +53,19 @@ class PlaylistGameTest {
         play(game);assertThrows(IllegalArgumentException.class,()->game.limit(0-1));var state=game.snapshot();game.stop();
         assertFalse(game.confirmPlayback(player,state.roundId(),state.playbackGeneration(),20,now));assertEquals(2,game.credits(player));
     }
+    @Test void skippingUnconfirmedPlaylistRoundsPreservesRoundNumbersAndLimit() {
+        var game=game();game.grant(player,2);game.startPlaylist(List.of(player),tracks(4),0);
+        game.forceSkip(game.snapshot().roundId());
+        assertEquals(1,game.snapshot().round());assertEquals(4,game.snapshot().registeredSongs());
+        now+=1000;game.tick();assertEquals(2,game.snapshot().round());
+        game.limit(3);assertEquals(3,game.snapshot().registeredSongs());
+        game.browsersReady(game.snapshot().revision(),true,true);
+        var pending=game.snapshot();assertEquals(QuizGame.Phase.COUNTDOWN,pending.phase());
+        assertTrue(game.voteSkip(player,pending.roundId()));
+        assertEquals(2,game.snapshot().round());assertEquals(3,game.snapshot().registeredSongs());
+        assertFalse(game.confirmPlayback(player,pending.roundId(),pending.playbackGeneration(),1,now));
+        now+=1000;game.tick();assertEquals(3,game.snapshot().round());
+        play(game);finish(game);assertFalse(game.started());assertEquals(3,game.snapshot().registeredSongs());
+        assertEquals(2,game.credits(player));
+    }
 }

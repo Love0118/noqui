@@ -247,6 +247,8 @@ public final class QuizGame {
     private void finishRound(boolean skipped) {
         if(current==null||phase==Phase.REVEAL&&!playing)return;
         pendingAnswers.clear();
+        // A skipped managed track consumes its playlist slot even if no browser started it.
+        if(playlist&&!roundStarted){roundStarted=true;roundsStarted++;}
         anchorPosition=position(clock.getAsLong());cancelSubmission(current);if(!roundStarted)refund(current);
         phase=Phase.REVEAL;playing=false;this.skipped=skipped;answerSkipAt=0;skipRemaining=-1;endsAt=clock.getAsLong()+1000;emit();output.roundEnded();
     }
