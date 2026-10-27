@@ -33,12 +33,26 @@ final class CabinNavigation {
         var item=new ItemStack(type);var meta=item.getItemMeta();meta.setMaxStackSize(1);
         meta.displayName(Component.text(name,color).decoration(TextDecoration.ITALIC,false));
         meta.lore(List.of(Component.text(lore,NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false)));
-        meta.getPersistentDataContainer().set(KEY,PersistentDataType.STRING,id);item.setItemMeta(meta);return item;
+        meta.getPersistentDataContainer().set(KEY,PersistentDataType.STRING,id);
+        if("wardrobe".equals(id)){
+            var wearable=meta.getEquippable();wearable.setAllowedEntities(List.of());
+            wearable.setEquipOnInteract(false);wearable.setSwappable(false);wearable.setDispensable(false);meta.setEquippable(wearable);
+        }
+        item.setItemMeta(meta);return item;
     }
     void ensure(Player player) {
         var inventory=player.getInventory();var present=new HashSet<String>();
-        for(var item:inventory.getContents()){String id=id(item);if(id!=null)present.add(id);}
-        String cursor=id(player.getItemOnCursor());if(cursor!=null)present.add(cursor);
+        var contents=inventory.getContents();
+        for(int slot=0;slot<contents.length;slot++){
+            var item=contents[slot];String id=id(item);if(id==null)continue;
+            if("wardrobe".equals(id)){
+                if(slot>=36&&slot<=39){inventory.setItem(slot,null);continue;}
+                if(item.getItemMeta().hasEquippable()&&item.getItemMeta().getEquippable().isEquipOnInteract())inventory.setItem(slot,factory.apply(id));
+            }
+            present.add(id);
+        }
+        var cursorItem=player.getItemOnCursor();String cursor=id(cursorItem);
+        if(cursor!=null){present.add(cursor);if("wardrobe".equals(cursor)&&cursorItem.getItemMeta().hasEquippable()&&cursorItem.getItemMeta().getEquippable().isEquipOnInteract())player.setItemOnCursor(factory.apply(cursor));}
         int storage=inventory.getStorageContents().length;
         for(String id:IDS)if(!present.contains(id))for(int slot=0;slot<storage;slot++){
             var item=inventory.getItem(slot);if(item==null||item.getType()==Material.AIR){inventory.setItem(slot,factory.apply(id));break;}

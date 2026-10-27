@@ -1,4 +1,4 @@
-# Noqui 1.0.16
+# Noqui 1.0.17
 
 Paper 26.3 / Java 25용 노래퀴즈 플러그인입니다. 오디오는 Rust 서비스가 원본 길이 6분 이하인 영상의 처음 최대 120초(짧은 곡은 전체)를 약 48kbps Ogg Opus로 캐시하고 브라우저가 재생합니다. 게임·출제권·정답·점수는 Paper가 결정합니다.
 
@@ -28,7 +28,7 @@ python -m unittest discover -s tools -p 'test_*.py'
 mvn -B -ntp -f plugin/pom.xml clean install
 ```
 
-산출물은 `plugin/target/noqui-plugin-1.0.16.jar`입니다. Linux 전용 배포 도구 검사는 Linux 또는 CI에서 `python -m unittest discover -s hint-assets/tools -p 'test_*.py'`로 실행합니다. GitHub Actions가 플러그인과 팩을 검증하고 `beta-build-<commit>` 릴리스에 `Noqui.jar`와 팩 ZIP을 게시합니다. 웹 빌드와 배포는 `web` 브랜치의 독립 워크플로를 사용합니다. 웹 코드는 `git clone --branch web --single-branch https://github.com/Love0118/noqui.git noqui-web`으로 별도 폴더에 받습니다.
+산출물은 `plugin/target/noqui-plugin-1.0.17.jar`입니다. Linux 전용 배포 도구 검사는 Linux 또는 CI에서 `python -m unittest discover -s hint-assets/tools -p 'test_*.py'`로 실행합니다. GitHub Actions가 플러그인과 팩을 검증하고 `beta-build-<commit>` 릴리스에 `Noqui.jar`와 팩 ZIP을 게시합니다. 웹 빌드와 배포는 `web` 브랜치의 독립 워크플로를 사용합니다. 웹 코드는 `git clone --branch web --single-branch https://github.com/Love0118/noqui.git noqui-web`으로 별도 폴더에 받습니다.
 
 Moma는 Noqui API에 provided 의존성을 사용하며 API는 Noqui JAR에만 포함됩니다. Moma를 빌드할 때 먼저 `git submodule update --init --recursive`로 고정된 Noqui를 받고 `mvn -B -ntp -f noqui/plugin/pom.xml install`을 실행합니다. Moma 런타임은 매번 현재 서비스 제공자를 조회합니다.
 
@@ -50,13 +50,13 @@ Java는 내부 `/internal/v1/sync`의 최상위 `retainedMediaIds`에 현재 세
 
 ## 설정과 이용
 
-정제된 `noqui_cabin` 월드를 서버 정지 중 반입합니다. 기본 스폰은 `(411.5, 11, -205.5)`, 경계 중심은 `(416, -192)`, 크기는 250입니다. 바깥 청크는 void generator를 사용하며 스폰 안전성과 월드 보호를 적용합니다.
+정제된 `noqui_cabin` 월드를 서버 정지 중 반입합니다. 기본 스폰은 `(411.5, 11, -205.5)`, 이동 경계 중심은 `(416, -192)`, 크기는 250입니다. 물리적 월드보더는 초기화하며, 경계를 벗어나거나 월드 아래로 떨어지면 스폰으로 이동시킵니다. 바깥 청크는 void generator를 사용하며 스폰 안전성과 월드 보호를 적용합니다. 치장 메뉴 아이콘은 가죽갑옷 모양을 유지하지만 착용·장비 교환·발사기 장착을 허용하지 않으며, 기존에 잘못 입은 메뉴 아이템은 인벤토리로 돌려줍니다.
 
 `plugins/Noqui/config.yml`의 bridge 주소는 루프백 `http://127.0.0.1:8788`, 공개 주소는 `https://noqui.danta.qzz.io`입니다. `bridge.secret-file`에는 Rust와 같은 32바이트 키 파일 또는 64자리 16진수 키 파일을 지정합니다. 실제 키와 `credits.json`, Rust의 `media.sqlite` 안에 있는 `song_catalogue`는 비공개 서버 데이터입니다. 웹 설정은 [`web` 브랜치의 deploy/](https://github.com/Love0118/noqui/tree/web/deploy)를 따르며 Minecraft 주소는 `mud.danta.qzz.io`입니다.
 
 OP 명령은 `/noqui start [rounds]`, `limit <rounds>`, `time <1~120초>`, `stop`, `skip force`, `hint`, `pause`, `resume`, `give <nickname|@a> [amount]`, `status`, `admin`입니다. 일반 참가자는 `/noqui`로 메뉴를 열고 `/noqui skip`으로 투표하며 `/noqui bgm`으로 BGM을 켜거나 끄고 `/noqui leave`로 퀴즈에서 나갑니다. `/noqui start`는 무제한, `/noqui start 200`은 최대 200라운드입니다. `/noqui limit 0`으로 무제한 전환하며 양의 정수로 실행 중 제한을 바꿉니다. 이미 시작한 라운드보다 낮은 양수 제한은 거절하고, 남은 제한을 초과한 대기 곡은 취소·반환합니다. 콘솔은 접속자가 없어도 시작할 수 있습니다.
 
-퀴즈 시작 시 활성 디펜스·관전 세션이 없는 접속자는 cabin으로 안내합니다. 디펜스·관전은 현재 위치에서 동시에 참여합니다. Moma에서는 퀴즈가 진행 중일 때만 보호된 `노래퀴즈` 아이콘 하나가 표시됩니다. 로비는 3번 칸, 게임·관전은 4번 칸이며, 수량은 출제권 보유량에 맞춰 최대 64개로 표시하고 설명에 정확한 장수를 적습니다. 0장도 아이콘은 남습니다. 우클릭 메뉴는 `로비`와 `출제`뿐입니다. 로비 이동은 기존 세션 나가기 잠금·정리 절차를 따르며, 출제는 진행 중인 게임을 유지합니다. 두 로비의 `미니게임` 나침반은 이동할 로비를 고르는 메뉴를 엽니다. 기존 F키, `/mud`, 포털의 게임 참가 경로는 유지합니다. cabin에는 Moma와 같은 이름과 색의 `환경설정` 비교기와 `특성 선택` 마법이 부여된 책도 제공합니다. Noqui 전용 키를 사용하며 기존 이동 위치, 보조 손, 커서를 존중하고 빈 슬롯에만 부족한 도구를 넣습니다. 공간이 없으면 기존 아이템을 덮어쓰지 않습니다. 이동 도구만 버리기와 외부 보관, 제작 투입을 막으며 출제권과 가젯의 이동 및 버리기는 유지합니다. cabin의 F키는 기본 보조 손 교환이며 Moma의 기존 F 메뉴는 유지합니다.
+퀴즈 시작 시 활성 디펜스·관전 세션이 없는 접속자는 cabin으로 안내합니다. 디펜스·관전은 현재 위치에서 동시에 참여합니다. Moma에서는 퀴즈가 진행 중일 때만 보호된 `노래퀴즈` 아이콘 하나가 표시됩니다. 로비는 3번 칸, 게임·관전은 4번 칸이며, 수량은 출제권 보유량에 맞춰 최대 64개로 표시하고 설명에 정확한 장수를 적습니다. 0장도 아이콘은 남습니다. 우클릭 메뉴는 `로비`와 `출제`뿐입니다. 로비 이동은 기존 세션 나가기 잠금·정리 절차를 따르며, 출제는 진행 중인 게임을 유지합니다. 노퀴 로비의 `미니게임` 나침반은 미니게임 선택 창을 열고, 마운디 로비·관전 중에는 노퀴가 진행되지 않을 때 마운디 참가·관전 창을 바로 엽니다. 기존 F키, `/mud`, 포털의 게임 참가 경로는 유지합니다. cabin에는 Moma와 같은 이름과 색의 `환경설정` 비교기와 `특성 선택` 마법이 부여된 책도 제공합니다. Noqui 전용 키를 사용하며 기존 이동 위치, 보조 손, 커서를 존중하고 빈 슬롯에만 부족한 도구를 넣습니다. 공간이 없으면 기존 아이템을 덮어쓰지 않습니다. 이동 도구만 버리기와 외부 보관, 제작 투입을 막으며 출제권과 가젯의 이동 및 버리기는 유지합니다. cabin의 F키는 기본 보조 손 교환이며 Moma의 기존 F 메뉴는 유지합니다.
 
 브라우저 연결 창은 퀴즈 참가자에 대해 웹 서비스가 최근 연결 끊김을 확인한 경우에 자동으로 열립니다. 오디오 준비 상태와 브라우저 접속 상태는 별개이며, 서비스 장애나 오래된 응답은 연결 끊김으로 취급하지 않습니다. 출제 입력 창·상점 등 다른 화면을 덮지 않고, 연결되면 자신의 연결 창만 닫습니다. 다시 표시하기 전에는 유예 시간을 둡니다. 명시적으로 퀴즈에서 나간 사람은 자동으로 재참가시키지 않습니다. F키와 제어 종이의 브라우저 기능은 제거했습니다. 수동 복구는 `/noqui connect`, 제출 취소·넘기기 투표는 `/noqui`를 사용합니다. cabin 출제권은 손에 들고 우클릭하며, 인벤토리 안에서는 일반적인 이동·분할·보조 손 교환이 가능합니다.
 

@@ -22,7 +22,7 @@ final class Cabin {
         spawn.checkFinite();
         if(outside(spawn) || !world.getBlockAt(spawn.clone().subtract(0,1,0)).getType().isSolid()
                 || !world.getBlockAt(spawn).isPassable() || !world.getBlockAt(spawn.clone().add(0,1,0)).isPassable())throw new IllegalStateException("Noqui spawn needs a solid floor and two clear blocks");
-        world.getWorldBorder().setCenter(centerX,centerZ);world.getWorldBorder().setSize(size);world.setSpawnLocation(spawn);
+        world.getWorldBorder().reset();world.setSpawnLocation(spawn);
         world.setGameRule(GameRules.SPAWN_MOBS,false);world.setGameRule(GameRules.ADVANCE_TIME,false);world.setGameRule(GameRules.ADVANCE_WEATHER,false);
         world.setGameRule(GameRules.RANDOM_TICK_SPEED,0);world.setGameRule(GameRules.FIRE_SPREAD_RADIUS_AROUND_PLAYER,0);
         world.setGameRule(GameRules.PVP,true);world.setGameRule(GameRules.KEEP_INVENTORY,true);

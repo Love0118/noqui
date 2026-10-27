@@ -35,6 +35,11 @@ class CabinNavigationTest {
         f.navigation.ensure(f.player);assertArrayEquals(before,f.slots);verify(f.inventory,never()).setItem(anyInt(),any());
         f.slots[17]=null;f.navigation.ensure(f.player);assertEquals("settings",CabinNavigation.id(f.slots[17]));f.slots[25]=null;f.navigation.ensure(f.player);assertEquals("traits",CabinNavigation.id(f.slots[25]));assertSame(before[20],f.slots[20]);
     }
+    @Test void accidentallyWornWardrobeMenuIsRestoredToStorageWithoutRemovingRealCosmetics(){
+        var f=new Fixture();f.slots[38]=tool("wardrobe");var cosmetic=mock(ItemStack.class);f.slots[39]=cosmetic;
+        f.navigation.ensure(f.player);
+        assertNull(f.slots[38]);assertSame(cosmetic,f.slots[39]);assertEquals("wardrobe",CabinNavigation.id(f.slots[3]));
+    }
     @Test void playerInventoryMovesStayFreeButDropsCraftingAndContainerTransfersAreBlocked(){
         var f=new Fixture();var event=mock(InventoryClickEvent.class);var view=mock(InventoryView.class);var top=mock(CraftingInventory.class);var tool=tool("settings");
         when(event.getWhoClicked()).thenReturn(f.player);when(event.getView()).thenReturn(view);when(view.getTopInventory()).thenReturn(top);when(top.getMatrix()).thenReturn(new ItemStack[4]);when(top.getSize()).thenReturn(5);
