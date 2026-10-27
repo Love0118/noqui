@@ -1,0 +1,2067 @@
+{
+  "updatedAt": "2026-10-27T15:31:48.511275+00:00",
+  "playlistId": "japan-zeom",
+  "pendingBefore": 263,
+  "reviewedBefore": 26,
+  "after": {
+    "playlistId": "japan-zeom",
+    "name": "일본 - ZEOM",
+    "entries": 289,
+    "reviewed": 248,
+    "downloaded": 287,
+    "playable": 248,
+    "reviewRequired": 41,
+    "downloadFailures": 2
+  },
+  "newlyReviewed": 222,
+  "searchEngines": [
+    "daum",
+    "ddg"
+  ],
+  "retrievedQueries": 1365,
+  "namingPolicy": "Only literal Korean usage retrieved for the same composition/artist; no self translation or invented Hangul pronunciation. Original English names remain parallel answer tags when within the game limit.",
+  "writerPolicy": "All explicit source composer/lyricist roles retained. Apple Music track IDs matched before accepting composer fields. Composer-only sources do not establish lyricist completeness.",
+  "replacements": [
+    {
+      "index": 47,
+      "previousVideoId": "8FBhgZ5DRqI",
+      "videoId": "g7hCg9HCfRQ",
+      "sourceType": "subtitled_audio"
+    },
+    {
+      "index": 57,
+      "previousVideoId": "fhzKLBZJC3w",
+      "videoId": "5RaU8K8sLTM",
+      "sourceType": "official_album_audio"
+    },
+    {
+      "index": 239,
+      "previousVideoId": "Ui88jlfPz84",
+      "videoId": "49wDEtaKrJw",
+      "sourceType": "subtitled_audio"
+    }
+  ],
+  "changed": [
+    {
+      "index": 1,
+      "previousTitle": "회회기담",
+      "title": "회회기담",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 2,
+      "previousTitle": "LADY",
+      "title": "레이디",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 3,
+      "previousTitle": "Overdose",
+      "title": "오버도즈",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 4,
+      "previousTitle": "Kizuna No Kiseki",
+      "title": "인연의 기적",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 5,
+      "previousTitle": "Zankyosanka",
+      "title": "잔향산가",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 6,
+      "previousTitle": "MUGEN",
+      "title": "몽환",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 7,
+      "previousTitle": "Gurenge",
+      "title": "홍련화",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 9,
+      "previousTitle": "Otonoke",
+      "title": "오토노케",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 10,
+      "previousTitle": "Bling-Bang-Bang-Born",
+      "title": "블링 뱅 뱅 본",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 11,
+      "previousTitle": "春を告げる",
+      "title": "봄을 고하다",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 12,
+      "previousTitle": "Melodrama",
+      "title": "멜로드라마",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 13,
+      "previousTitle": "이상적인 여자",
+      "title": "이상적인 여자",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 14,
+      "previousTitle": "BETELGEUSE",
+      "title": "베텔기우스",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 15,
+      "previousTitle": "Kanden",
+      "title": "감전",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 16,
+      "previousTitle": "Ai Wo Tsutaetaidatoka",
+      "title": "사랑을 전하고 싶다던가",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 17,
+      "previousTitle": "Dream lantern",
+      "title": "꿈의 등불",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 19,
+      "previousTitle": "Universe",
+      "title": "유니버스",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 21,
+      "previousTitle": "Nekko",
+      "title": "넷코",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 22,
+      "previousTitle": "Ame Sansan",
+      "title": "비가 찬란히",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 23,
+      "previousTitle": "Ichizu",
+      "title": "일도",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 24,
+      "previousTitle": "Fiction",
+      "title": "픽션",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 27,
+      "previousTitle": "Koi to Byounetsu",
+      "title": "사랑과 병열",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 28,
+      "previousTitle": "CHAMELEON",
+      "title": "카멜레온",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 29,
+      "previousTitle": "napori",
+      "title": "나폴리",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 30,
+      "previousTitle": "golden hour (Fujii Kaze Remix)",
+      "title": "골드 아워",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 31,
+      "previousTitle": "Shinunoga E-Wa",
+      "title": "죽는 게 나아",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 32,
+      "previousTitle": "はいよろこんで",
+      "title": "네 기꺼이",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 33,
+      "previousTitle": "Zankyosanka",
+      "title": "잔향산가",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 34,
+      "previousTitle": "Dramaturgy",
+      "title": "드라마투르기",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 35,
+      "previousTitle": "怪物",
+      "title": "괴물",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 37,
+      "previousTitle": "color",
+      "title": "색채",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 38,
+      "previousTitle": "Inferno",
+      "title": "인페르노",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 39,
+      "previousTitle": "Crossing Field",
+      "title": "크로싱 필드",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 43,
+      "previousTitle": "Silhouette",
+      "title": "실루엣",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 44,
+      "previousTitle": "IRIS OUT",
+      "title": "아이리스 아웃",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 45,
+      "previousTitle": "革命道中 - On The Way",
+      "title": "혁명도중",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 47,
+      "previousTitle": "Carmine",
+      "title": "카마인",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 50,
+      "previousTitle": "Polaris",
+      "title": "폴라리스",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 51,
+      "previousTitle": "Peace Sign",
+      "title": "피스 사인",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 52,
+      "previousTitle": "HOME",
+      "title": "홈",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 54,
+      "previousTitle": "Orange",
+      "title": "오렌지",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 55,
+      "previousTitle": "Pretender",
+      "title": "프리텐더",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 57,
+      "previousTitle": "King Gnu - SPECIALZ",
+      "title": "스페셜즈",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 58,
+      "previousTitle": "Where Our Blue Is",
+      "title": "푸르름이 사는 곳",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 60,
+      "previousTitle": "A World Where the Sun Never Rises",
+      "title": "태양이 떠오르지 않는 세계",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 61,
+      "previousTitle": "Flaming Thunder God (from \"Demon Slayer: Infinity Castle\")",
+      "title": "화뢰신",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 63,
+      "previousTitle": "BOY",
+      "title": "보이",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 64,
+      "previousTitle": "BLOODY STREAM",
+      "title": "블러디 스트림",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 65,
+      "previousTitle": "KICK BACK",
+      "title": "킥백",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 66,
+      "previousTitle": "Eureka",
+      "title": "유레카",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 67,
+      "previousTitle": "ダイヤモンドは砕けない～メインテーマ～",
+      "title": "다이아몬드는 부서지지 않는다 메인 테마",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 68,
+      "previousTitle": "PANOPTICON",
+      "title": "파놉티콘",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 70,
+      "previousTitle": "一難",
+      "title": "이치난",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 71,
+      "previousTitle": "Sakayume (King Gnu Dome Tour THE GREATEST UNKNOWN at TOKYO DOME)",
+      "title": "역몽",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 72,
+      "previousTitle": "Last Dance",
+      "title": "라스트댄스",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 74,
+      "previousTitle": "LOSER",
+      "title": "루저",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 75,
+      "previousTitle": "Ame Sansan",
+      "title": "비가 찬란히",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 78,
+      "previousTitle": "Shunrai",
+      "title": "춘뢰",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 79,
+      "previousTitle": "Doron",
+      "title": "도롱",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 80,
+      "previousTitle": "Osmanthus",
+      "title": "금목서",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 81,
+      "previousTitle": "Sakuramitsutsuki",
+      "title": "벚꽃만월",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 82,
+      "previousTitle": "매드 헤드 러브",
+      "title": "매드 헤드 러브",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 83,
+      "previousTitle": "TAIDADA",
+      "title": "타이다다",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 84,
+      "previousTitle": "Chained",
+      "title": "필요 없는 것",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 85,
+      "previousTitle": "JOJO SONO CHINO SADAME",
+      "title": "죠죠 그 피의 운명",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 86,
+      "previousTitle": "꽃점",
+      "title": "꽃점",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 87,
+      "previousTitle": "Mahi",
+      "title": "마비",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 88,
+      "previousTitle": "Propose",
+      "title": "프로포즈",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 89,
+      "previousTitle": "POP SONG",
+      "title": "팝송",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 91,
+      "previousTitle": "Haikei Shounenyo",
+      "title": "친애하는 소년이여",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 92,
+      "previousTitle": "Rapport",
+      "title": "라포르",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 93,
+      "previousTitle": "more than words",
+      "title": "모어 댄 워즈",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 94,
+      "previousTitle": "CHAINSAW BLOOD",
+      "title": "체인소 블러드",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 95,
+      "previousTitle": "ラブ＆デストロイ",
+      "title": "러브 앤 디스트로이",
+      "previousReviewRequired": true,
+      "reviewRequired": true
+    },
+    {
+      "index": 96,
+      "previousTitle": "沈める街",
+      "title": "가라앉는 거리",
+      "previousReviewRequired": true,
+      "reviewRequired": true
+    },
+    {
+      "index": 97,
+      "previousTitle": "덧없는 여름",
+      "title": "덧없는 여름",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 98,
+      "previousTitle": "Fly-day Chinatown",
+      "title": "플라이데이 차이나타운",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 99,
+      "previousTitle": "A Double Suicide",
+      "title": "살얼음심중",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 100,
+      "previousTitle": "スマイリーを探して",
+      "title": "스마일리를 찾아서",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 101,
+      "previousTitle": "Dramatic",
+      "title": "드라마틱",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 102,
+      "previousTitle": "Yoru Wo Nobashite",
+      "title": "밤을 늘려서",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 104,
+      "previousTitle": "That Classmate",
+      "title": "소문의 그 아이",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 105,
+      "previousTitle": "おつかれSUMMER",
+      "title": "수고했어 여름",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 108,
+      "previousTitle": "femme fatale A",
+      "title": "마성의 여자 A",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 109,
+      "previousTitle": "프로포즈",
+      "title": "프로포즈",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 110,
+      "previousTitle": "좋아하니까",
+      "title": "좋아하니까",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 111,
+      "previousTitle": "Hyperventilation",
+      "title": "과호흡",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 112,
+      "previousTitle": "제인 도",
+      "title": "제인 도",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 115,
+      "previousTitle": "지구본",
+      "title": "지구본",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 116,
+      "previousTitle": "渇愛エチュード - susumu.",
+      "title": "갈애 에튀드",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 117,
+      "previousTitle": "역몽",
+      "title": "역몽",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 118,
+      "previousTitle": "Garakuta - JUNK",
+      "title": "잡동사니",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 119,
+      "previousTitle": "Ryuseigun",
+      "title": "유성군",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 120,
+      "previousTitle": "Glide",
+      "title": "글라이드",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 121,
+      "previousTitle": "Kirari",
+      "title": "키라리",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 122,
+      "previousTitle": "Kajitsu",
+      "title": "과실",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 125,
+      "previousTitle": "空間、事情、時間、事象。 - kinoue64",
+      "title": "공간 사정 시간 사상",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 126,
+      "previousTitle": "Ame Sansan",
+      "title": "비가 찬란히",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 127,
+      "previousTitle": "Shinigami",
+      "title": "사신",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 128,
+      "previousTitle": "忘れる前に - Vaundy",
+      "title": "잊어버리기 전에",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 129,
+      "previousTitle": "사랑 감기에 실려",
+      "title": "사랑 감기에 실려",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 130,
+      "previousTitle": "Plazma",
+      "title": "플라즈마",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 131,
+      "previousTitle": "츄, 다양성",
+      "title": "츄, 다양성",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 132,
+      "previousTitle": "극상",
+      "title": "극상",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 133,
+      "previousTitle": "HAWATARI NIOKU CENTI [2-hundred-million-centimeter-long blades] (TV edit)",
+      "title": "칼날 길이 2억 센티미터",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 136,
+      "previousTitle": "아웃사이더",
+      "title": "아웃사이더",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 137,
+      "previousTitle": "HERO",
+      "title": "히어로",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 138,
+      "previousTitle": "Categorize",
+      "title": "카테고라이즈",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 139,
+      "previousTitle": "tablet",
+      "title": "정제",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 141,
+      "previousTitle": "불가행력",
+      "title": "불가 행력",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 142,
+      "previousTitle": "WINDSDAY",
+      "title": "윈즈데이",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 143,
+      "previousTitle": "DND",
+      "title": "디앤디",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 145,
+      "previousTitle": "등불",
+      "title": "등불",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 147,
+      "previousTitle": "名前を呼ぶよ",
+      "title": "이름을 부를게",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 148,
+      "previousTitle": "폭도",
+      "title": "폭도",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 149,
+      "previousTitle": "Doughnut Hole (Cover)",
+      "title": "도넛 홀",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 150,
+      "previousTitle": "Oddloop",
+      "title": "오도루프",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 151,
+      "previousTitle": "瞳惚れ",
+      "title": "눈동자에 반하다",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 152,
+      "previousTitle": "Planetary",
+      "title": "플라네타 리",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 153,
+      "previousTitle": "そぐわな",
+      "title": "소구와 나",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 155,
+      "previousTitle": "Atashiwa Yuurei",
+      "title": "나는 유령",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 156,
+      "previousTitle": "夏雪セレナーデ",
+      "title": "여름눈 세레나데",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 157,
+      "previousTitle": "8gatsu31nichi",
+      "title": "8월 31일",
+      "previousReviewRequired": true,
+      "reviewRequired": true
+    },
+    {
+      "index": 158,
+      "previousTitle": "GLASS WINDOW",
+      "title": "유리창",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 159,
+      "previousTitle": "Dramaturgy (Live Film Ver.)",
+      "title": "드라마투르기",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 160,
+      "previousTitle": "Metrocity",
+      "title": "메트로시티",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 161,
+      "previousTitle": "ボクらの夏休み戦争",
+      "title": "우리들의 여름방학 전쟁",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 163,
+      "previousTitle": "말해줘",
+      "title": "말해 줘",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 164,
+      "previousTitle": "心に雲を持つ少年",
+      "title": "마음에 구름을 지닌 소년",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 165,
+      "previousTitle": "リップサービス",
+      "title": "립서비스",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 166,
+      "previousTitle": "Overwritten",
+      "title": "덮어써 버렸어",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 167,
+      "previousTitle": "Saijyouei",
+      "title": "재상영",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 169,
+      "previousTitle": "常熱",
+      "title": "상열",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 170,
+      "previousTitle": "MIRROR TUNE",
+      "title": "미러튠",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 171,
+      "previousTitle": "목숨을 먹는 방법",
+      "title": "목숨을 먹는 방법",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 172,
+      "previousTitle": "veil",
+      "title": "베일",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 173,
+      "previousTitle": "徒花",
+      "title": "수꽃",
+      "previousReviewRequired": true,
+      "reviewRequired": true
+    },
+    {
+      "index": 174,
+      "previousTitle": "ヘッドライナー",
+      "title": "헤드라이너",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 177,
+      "previousTitle": "Sorrows",
+      "title": "소로우즈",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 178,
+      "previousTitle": "TOMODACHI",
+      "title": "친구",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 180,
+      "previousTitle": "Sleepwalk",
+      "title": "슬립 워크",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 182,
+      "previousTitle": "Caffeine",
+      "title": "카페인",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 184,
+      "previousTitle": "安眠剤",
+      "title": "수면제",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 185,
+      "previousTitle": "Rika",
+      "title": "리카",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 187,
+      "previousTitle": "Ah,Mou.",
+      "title": "아아 이젠",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 188,
+      "previousTitle": "Kawakiwoameku",
+      "title": "목마름을 외치다",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 189,
+      "previousTitle": "SPECIALZ (King Gnu Dome Tour THE GREATEST UNKNOWN at TOKYO DOME)",
+      "title": "스페셜즈",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 190,
+      "previousTitle": "If I could be a constellation",
+      "title": "별자리가 될 수 있다면",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 191,
+      "previousTitle": "涙のスイマー",
+      "title": "눈물의 스위머",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 192,
+      "previousTitle": "カーニバル",
+      "title": "카니발",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 193,
+      "previousTitle": "優しさを失くした",
+      "title": "상냥함을 잃었다",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 194,
+      "previousTitle": "Vinyl",
+      "title": "비닐",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 196,
+      "previousTitle": "Melancholy Kitchen",
+      "title": "멜랑콜리 키친",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 197,
+      "previousTitle": "Summer Planning",
+      "title": "여름 계획",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 198,
+      "previousTitle": "存在A",
+      "title": "존재 A",
+      "previousReviewRequired": true,
+      "reviewRequired": true
+    },
+    {
+      "index": 200,
+      "previousTitle": "Take Me With You (Tsuretette)",
+      "title": "데려가 줘",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 201,
+      "previousTitle": "Hoshigaoyogu",
+      "title": "별이 헤엄치다",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 204,
+      "previousTitle": "Hippocampal Pain",
+      "title": "해마 성장통",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 206,
+      "previousTitle": "劣等感",
+      "title": "열등감",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 208,
+      "previousTitle": "antlion",
+      "title": "앤트라이온",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 209,
+      "previousTitle": "fool's table",
+      "title": "식탁",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 210,
+      "previousTitle": "逆光 - replica -",
+      "title": "역광",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 211,
+      "previousTitle": "Rarabaisayonara",
+      "title": "라라바이사요나라",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 212,
+      "previousTitle": "광란 Hey Kids!!",
+      "title": "광란 Hey Kids !!",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 213,
+      "previousTitle": "That band",
+      "title": "그 밴드",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 214,
+      "previousTitle": "Darma grand prix",
+      "title": "달마 그랑프리",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 215,
+      "previousTitle": "벌거벗은 용사",
+      "title": "벌거벗은 용사",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 216,
+      "previousTitle": "Futaribanashi",
+      "title": "두 사람 이야기",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 217,
+      "previousTitle": "Niwakaamenimomakezu (Album Mix)",
+      "title": "소나기에도 지지 않고",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 219,
+      "previousTitle": "Véranda",
+      "title": "베란다",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 220,
+      "previousTitle": "Guu Guu Guu",
+      "title": "구구구",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 221,
+      "previousTitle": "Hanashitai Koto",
+      "title": "말하고 싶은 것",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 222,
+      "previousTitle": "Nisemono no Ori",
+      "title": "가짜 우리",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 223,
+      "previousTitle": "Nareai Serve",
+      "title": "짜고 치는 서브",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 225,
+      "previousTitle": "Yume o Miru",
+      "title": "꿈을 꾸다",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 226,
+      "previousTitle": "정이란",
+      "title": "정이라는 건",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 227,
+      "previousTitle": "기타와 고독과 푸른 행성",
+      "title": "기타와 고독과 푸른 행성",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 228,
+      "previousTitle": "Kimini 100 Percent",
+      "title": "너에게 100퍼센트",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 230,
+      "previousTitle": "축복",
+      "title": "축복",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 231,
+      "previousTitle": "MASCARA",
+      "title": "마스카라",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 233,
+      "previousTitle": "Jigoku Sensei",
+      "title": "지옥 선생",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 234,
+      "previousTitle": "Dance Decadance",
+      "title": "댄스 데카당스",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 235,
+      "previousTitle": "Gege",
+      "title": "해하",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 236,
+      "previousTitle": "Natsu ni Negai o",
+      "title": "여름에 소원을",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 237,
+      "previousTitle": "Mugagen Jujutsu",
+      "title": "무하한 주술",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 238,
+      "previousTitle": "Sakura Loop",
+      "title": "사쿠라 루프",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 239,
+      "previousTitle": "Doushite, Watashi ja Nai n Desu ka?",
+      "title": "어째서 제가 아닌가요",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 240,
+      "previousTitle": "RED OUT",
+      "title": "레드 아웃",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 241,
+      "previousTitle": "Banquet",
+      "title": "반켓트",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 242,
+      "previousTitle": "Wonderland",
+      "title": "원더랜드",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 244,
+      "previousTitle": "Knock Boots",
+      "title": "노크부츠",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 247,
+      "previousTitle": "Kono Uta ni Notte",
+      "title": "이 노래를 타고",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 248,
+      "previousTitle": "Sayonara ni Narimashita",
+      "title": "헤어지게 되었습니다",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 249,
+      "previousTitle": "Keso",
+      "title": "연모",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 250,
+      "previousTitle": "Kimi ga Naku nara",
+      "title": "네가 운다면",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 251,
+      "previousTitle": "괴수",
+      "title": "괴수",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 252,
+      "previousTitle": "Yuukai sink",
+      "title": "융해 sink",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 253,
+      "previousTitle": "바보같이",
+      "title": "바보같이",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 254,
+      "previousTitle": "ダーリン",
+      "title": "달링",
+      "previousReviewRequired": true,
+      "reviewRequired": true
+    },
+    {
+      "index": 255,
+      "previousTitle": "Mental Rental",
+      "title": "멘탈 렌탈",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 256,
+      "previousTitle": "세레나데",
+      "title": "세레나데",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 257,
+      "previousTitle": "사랑받고 싶을 뿐",
+      "title": "사랑받고 싶을 뿐",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 258,
+      "previousTitle": "mosi mosi?",
+      "title": "모시모시",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 259,
+      "previousTitle": "데드라인 증후군",
+      "title": "데드라인 증후군",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 260,
+      "previousTitle": "BRAIN",
+      "title": "브레인",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 261,
+      "previousTitle": "少女A (feat. 鏡音リン)",
+      "title": "소녀 A",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 263,
+      "previousTitle": "life hack",
+      "title": "라이프 핵",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 264,
+      "previousTitle": "TAIDADA",
+      "title": "타이다다",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 265,
+      "previousTitle": "초침을 깨물다",
+      "title": "초침을 깨물다",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 266,
+      "previousTitle": "감이 좋아서 분해",
+      "title": "감이 좋아서 분해",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 267,
+      "previousTitle": "月が綺麗ねと言われたい！",
+      "title": "달이 아름답다고 말해줘!",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 268,
+      "previousTitle": "감이 좋아서 분해",
+      "title": "감이 좋아서 분해",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 270,
+      "previousTitle": "Anoko secret",
+      "title": "그 아이 시크릿",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 271,
+      "previousTitle": "Underdog",
+      "title": "언더독",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 272,
+      "previousTitle": "공부해 둬",
+      "title": "공부해 줘",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 273,
+      "previousTitle": "저 녀석들 전원 동창회",
+      "title": "저 녀석들 전원 동창회",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 274,
+      "previousTitle": "Cubism",
+      "title": "큐비즘",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 276,
+      "previousTitle": "akanesasu",
+      "title": "노을빛이 비출 무렵",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 278,
+      "previousTitle": "크로노스타시스",
+      "title": "크로노스타시스",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 279,
+      "previousTitle": "sunday driver",
+      "title": "선데이 드라이버",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 280,
+      "previousTitle": "月が綺麗ねと言われたい！",
+      "title": "달이 아름답다고 말해줘",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 281,
+      "previousTitle": "MILABO",
+      "title": "미라보",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 282,
+      "previousTitle": "SHADE",
+      "title": "쉐이드",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 283,
+      "previousTitle": "分かっちゃいないね (feat.花隈千冬)",
+      "title": "제대로 모르네",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 284,
+      "previousTitle": "크림으로 만나러 갈 수 있나요",
+      "title": "크림",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 285,
+      "previousTitle": "올바르게 될 수 없어",
+      "title": "올바를 수 없어",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 286,
+      "previousTitle": "TABOO",
+      "title": "타부",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    },
+    {
+      "index": 288,
+      "previousTitle": "chase",
+      "title": "체이스",
+      "previousReviewRequired": true,
+      "reviewRequired": false
+    }
+  ],
+  "remaining": [
+    {
+      "index": 36,
+      "title": "Prometheus",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ],
+      "researchNotes": [
+        "Daum query “Prometheus sanetii 프로메테우스” returned 0 results; no Korean title source found, so the original title remains."
+      ]
+    },
+    {
+      "index": 40,
+      "title": "エキスパート",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요",
+        "작가 원명은 확인했으나 게임에서 사용할 한국어·영문 작가 태그의 출처 추가 확인 필요"
+      ],
+      "researchNotes": []
+    },
+    {
+      "index": 42,
+      "title": "CROWNED",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ],
+      "researchNotes": [
+        "Targeted title + artist search found no reliable Korean title match; original title retained."
+      ]
+    },
+    {
+      "index": 49,
+      "title": "Dance In The Game",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ],
+      "researchNotes": [
+        "Korean title unresolved: ZAQ Dance In The Game 댄스 인 더 게임 한글 (results did not identify a title-specific Korean rendering)."
+      ]
+    },
+    {
+      "index": 53,
+      "title": "AMBITION",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ],
+      "researchNotes": [
+        "곡별 검색에서 한국어 제목 표기를 확인하지 못해 입력된 원제를 유지함.",
+        "UTAHIME DREAM AMBITION + 작사/작곡 검색에서 곡별 writer 역할을 표시한 결과가 없었음."
+      ]
+    },
+    {
+      "index": 62,
+      "title": "To the Infinity Castle - Muzan vs Hashira Theme (from \"Demon Slayer\")",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ],
+      "researchNotes": [
+        "Targeted title + artist search found no reliable Korean title match; original title retained.",
+        "작곡·작사·저자 역할을 명시한 곡별 근거를 확인하지 못함"
+      ]
+    },
+    {
+      "index": 76,
+      "title": "LOST IN PARADISE",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ],
+      "researchNotes": [
+        "한국어 통용 제목을 뒷받침하는 곡별 검색 결과를 찾지 못해 원제를 유지"
+      ]
+    },
+    {
+      "index": 77,
+      "title": "bloom",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ],
+      "researchNotes": [
+        "Korean title unresolved: NECRY TALKIE bloom 블룸 (query returned no results)."
+      ]
+    },
+    {
+      "index": 90,
+      "title": "回転してから考える",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ],
+      "researchNotes": [
+        "한국어 제목 미확인: query=\"回転してから考える Haku. 노래 한국어 제목 작사 작곡\"; Daum 결과 6건, 검색 결과에 곡과 아티스트가 함께 확인되는 한국어 제목 근거 없음. 원제 유지."
+      ]
+    },
+    {
+      "index": 95,
+      "title": "러브 앤 디스트로이",
+      "reasons": [
+        "작가 원명은 확인했으나 게임에서 사용할 한국어·영문 작가 태그의 출처 추가 확인 필요",
+        "동일 곡·가수·버전의 대사·추가 인트로 없는 음원 확인 필요. 개인 자막 업로드 허용."
+      ],
+      "researchNotes": [
+        "곡별 출처에서 통용되는 한국어 제목 표기를 확인하지 못함.",
+        "작사·작곡가를 명시한 곡별 근거를 확인하지 못함."
+      ]
+    },
+    {
+      "index": 96,
+      "title": "가라앉는 거리",
+      "reasons": [
+        "동일 곡·가수·버전의 대사·추가 인트로 없는 음원 확인 필요. 개인 자막 업로드 허용."
+      ],
+      "researchNotes": []
+    },
+    {
+      "index": 107,
+      "title": "F・L・Y",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ],
+      "researchNotes": [
+        "곡별 검색에서 한국어 제목 표기를 확인하지 못해 입력된 원제를 유지함.",
+        "F・L・Y SPECTRUM + 작사/작곡 검색 결과는 다른 곡/아티스트였음."
+      ]
+    },
+    {
+      "index": 113,
+      "title": "WATERLOO ROAD",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ],
+      "researchNotes": []
+    },
+    {
+      "index": 114,
+      "title": "ダブル - JiLL-Decoy association",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ],
+      "researchNotes": [
+        "Targeted title + artist search found no reliable Korean title match; original title retained."
+      ]
+    },
+    {
+      "index": 124,
+      "title": "ゆらめき - rourourourous",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ],
+      "researchNotes": [
+        "곡별 검색에서 한국어 제목 표기를 확인하지 못해 입력된 원제를 유지함."
+      ]
+    },
+    {
+      "index": 144,
+      "title": "ブルボン - pomodorosa",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ],
+      "researchNotes": [
+        "한국어 제목 미확인: query=\"ブルボン pomodorosa 작사 작곡 한국어\"; Daum 결과 4건, 검색 결과에 곡과 아티스트가 함께 확인되는 한국어 제목 근거 없음. 원제 유지."
+      ]
+    },
+    {
+      "index": 154,
+      "title": "Eeyo",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ],
+      "researchNotes": [
+        "Daum query “Eeyo Gestalt Girl 이에요” returned 0 results; no matching Korean title source found, so the original title remains."
+      ]
+    },
+    {
+      "index": 157,
+      "title": "8월 31일",
+      "reasons": [
+        "작가 원명은 확인했으나 게임에서 사용할 한국어·영문 작가 태그의 출처 추가 확인 필요"
+      ],
+      "researchNotes": []
+    },
+    {
+      "index": 162,
+      "title": "Lovey Dovey",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ],
+      "researchNotes": [
+        "Parent/cache queries for “Lovey Dovey” returned song-specific lyrics snippets but none displaying a Korean title; the candidate “러비더비” was not supported in a retrieved quote."
+      ]
+    },
+    {
+      "index": 168,
+      "title": "It's Going Down Now",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요",
+        "작가 원명은 확인했으나 게임에서 사용할 한국어·영문 작가 태그의 출처 추가 확인 필요"
+      ],
+      "researchNotes": [
+        "곡별 검색에서 한국어 제목 표기를 확인하지 못해 입력된 원제를 유지함."
+      ]
+    },
+    {
+      "index": 173,
+      "title": "수꽃",
+      "reasons": [
+        "작가 원명은 확인했으나 게임에서 사용할 한국어·영문 작가 태그의 출처 추가 확인 필요"
+      ],
+      "researchNotes": [
+        "곡별 한국어 통용 제목을 뒷받침하는 검색 근거를 찾지 못함"
+      ]
+    },
+    {
+      "index": 181,
+      "title": "Coffee and Cigarette",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요",
+        "동일 곡·가수·버전의 대사·추가 인트로 없는 음원 확인 필요. 개인 자막 업로드 허용."
+      ],
+      "researchNotes": [
+        "Daum query “Coffee and Cigarette Shiho Tamiya 한국어 제목” returned 0 results; no Korean title source found, so the original title remains."
+      ]
+    },
+    {
+      "index": 183,
+      "title": "Innocent",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ],
+      "researchNotes": [
+        "Korean title unresolved: yama Innocent 한글 제목 (results did not identify a title-specific Korean rendering)."
+      ]
+    },
+    {
+      "index": 195,
+      "title": "サースティデイズ",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ],
+      "researchNotes": [
+        "Targeted title + artist search found no reliable Korean title match; original title retained."
+      ]
+    },
+    {
+      "index": 198,
+      "title": "존재 A",
+      "reasons": [
+        "작가 원명은 확인했으나 게임에서 사용할 한국어·영문 작가 태그의 출처 추가 확인 필요"
+      ],
+      "researchNotes": []
+    },
+    {
+      "index": 199,
+      "title": "개와 바보 고양이",
+      "reasons": [
+        "작가 원명은 확인했으나 게임에서 사용할 한국어·영문 작가 태그의 출처 추가 확인 필요",
+        "전체 길이 음원 다운로드 실패: 대체 음원 확인 필요",
+        "동일 곡·가수·버전의 대사·추가 인트로 없는 음원 확인 필요. 개인 자막 업로드 허용."
+      ],
+      "researchNotes": []
+    },
+    {
+      "index": 203,
+      "title": "Hollows...",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ],
+      "researchNotes": [
+        "작사·작곡가를 명시한 곡별 근거를 확인하지 못함."
+      ]
+    },
+    {
+      "index": 205,
+      "title": "おまるドライブ",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ],
+      "researchNotes": [
+        "곡별 검색에서 한국어 제목 표기를 확인하지 못해 입력된 원제를 유지함."
+      ]
+    },
+    {
+      "index": 207,
+      "title": "Showdown",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ],
+      "researchNotes": [
+        "Daum query “FIVE NEW OLD Showdown 쇼다운 가사” returned results but none matched this song; no Korean title source found, so the original title remains."
+      ]
+    },
+    {
+      "index": 218,
+      "title": "Kakera",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ],
+      "researchNotes": [
+        "작사·작곡가의 명시적 크레딧을 확인하지 못함"
+      ]
+    },
+    {
+      "index": 224,
+      "title": "Kakumei yori Bassui",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요",
+        "작가 원명은 확인했으나 게임에서 사용할 한국어·영문 작가 태그의 출처 추가 확인 필요"
+      ],
+      "researchNotes": [
+        "작사·작곡가의 명시적 크레딧을 확인하지 못함",
+        "한국어 통용 제목을 뒷받침하는 곡별 검색 결과를 찾지 못해 원제를 유지"
+      ]
+    },
+    {
+      "index": 229,
+      "title": "Nekokaburu",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요",
+        "작가 원명은 확인했으나 게임에서 사용할 한국어·영문 작가 태그의 출처 추가 확인 필요",
+        "전체 길이 음원 다운로드 실패: 대체 음원 확인 필요",
+        "동일 곡·가수·버전의 대사·추가 인트로 없는 음원 확인 필요. 개인 자막 업로드 허용."
+      ],
+      "researchNotes": [
+        "곡별 검색에서 한국어 제목 표기를 확인하지 못해 입력된 원제를 유지함.",
+        "Nekokaburu MOSHIMO + 작사/작곡 검색에서 해당 곡·아티스트와 일치하는 크레딧 결과가 없었음."
+      ]
+    },
+    {
+      "index": 232,
+      "title": "When My Devil Rises",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ],
+      "researchNotes": [
+        "한국어 통용 제목을 뒷받침하는 곡별 검색 결과를 찾지 못해 원제를 유지"
+      ]
+    },
+    {
+      "index": 243,
+      "title": "Mou Yume tune",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ],
+      "researchNotes": []
+    },
+    {
+      "index": 245,
+      "title": "Torokeru kiss",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ],
+      "researchNotes": [
+        "곡별 검색에서 한국어 제목 표기를 확인하지 못해 입력된 원제를 유지함."
+      ]
+    },
+    {
+      "index": 246,
+      "title": "Blood Drain Again Eltnum Theme",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ],
+      "researchNotes": [
+        "한국어 제목 미확인: query=\"\"Blood Drain -Again- (Eltnum Theme)\" \"Raito\" 한국어 제목\"; Daum 결과 0건, 검색 결과 없음. 원제 유지."
+      ]
+    },
+    {
+      "index": 254,
+      "title": "달링",
+      "reasons": [
+        "작가 원명은 확인했으나 게임에서 사용할 한국어·영문 작가 태그의 출처 추가 확인 필요",
+        "동일 곡·가수·버전의 대사·추가 인트로 없는 음원 확인 필요. 개인 자막 업로드 허용."
+      ],
+      "researchNotes": []
+    },
+    {
+      "index": 262,
+      "title": "Hello",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요",
+        "작가 원명은 확인했으나 게임에서 사용할 한국어·영문 작가 태그의 출처 추가 확인 필요"
+      ],
+      "researchNotes": [
+        "한국어 제목 미확인: query=\"Hello capsule 노래 한국어 제목 작사 작곡\"; Daum 결과 6건, 검색 결과에 곡과 아티스트가 함께 확인되는 한국어 제목 근거 없음. 원제 유지.",
+        "작사·작곡 또는 Writer 역할이 명시된 곡별 출처 미확인"
+      ]
+    },
+    {
+      "index": 275,
+      "title": "時のゆらめき",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ],
+      "researchNotes": [
+        "곡별 한국어 통용 제목을 뒷받침하는 검색 근거를 찾지 못함"
+      ]
+    },
+    {
+      "index": 277,
+      "title": "Seamless",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ],
+      "researchNotes": [
+        "Targeted title + artist search found no reliable Korean title match; original title retained."
+      ]
+    },
+    {
+      "index": 287,
+      "title": "絲",
+      "reasons": [
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+      ],
+      "researchNotes": [
+        "한국어 제목 미확인: query=\"絲 Hanayui 노래 한국어 제목 작사 작곡\"; Daum 결과 4건, 검색 결과에 곡과 아티스트가 함께 확인되는 한국어 제목 근거 없음. 원제 유지."
+      ]
+    }
+  ],
+  "verified": {
+    "completeAudioFiles": 287,
+    "allAudioHashesAndLengths": true,
+    "embeddedTitlesAndComposers": true,
+    "originalPlaylistOrderAndSongIds": true,
+    "priorReviewedSongsPreserved": true
+  },
+  "liveActivation": false,
+  "serverRestarted": false,
+  "pluginReloaded": false
+}

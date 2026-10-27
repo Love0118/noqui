@@ -5,12 +5,148 @@
   "songs": [
     {
       "song": {
+        "id": "351c7d20-4e57-5f19-ad6e-7bfa5b16c508",
+        "youtubeUrl": "https://www.youtube.com/watch?v=isY3rtuSsK8",
+        "title": "회회기담",
+        "tags": [
+          "회회기담",
+          "Kaikai Kitan",
+          "Eve",
+          "이브"
+        ]
+      },
+      "audio": {
+        "path": "audio/isY3rtuSsK8.ogg",
+        "sha256": "8d4f827c1026bce00d00e24f98373c105f30ebe0bd3afacb93db7ab3302ff31a",
+        "byteLength": 1356870,
+        "durationMs": 221433
+      }
+    },
+    {
+      "song": {
+        "id": "df5989fe-018d-516c-9899-792a2b1ccf0e",
+        "youtubeUrl": "https://www.youtube.com/watch?v=zOkIe3RcTCs",
+        "title": "레이디",
+        "tags": [
+          "레이디",
+          "LADY",
+          "Kenshi Yonezu",
+          "요네즈 켄시"
+        ]
+      },
+      "audio": {
+        "path": "audio/zOkIe3RcTCs.ogg",
+        "sha256": "cbdc94c602c0c854d5f380351396526562e31bce2cc7e5dd9127354de3f2a2e2",
+        "byteLength": 1262197,
+        "durationMs": 207174
+      }
+    },
+    {
+      "song": {
+        "id": "20583bdd-2972-56a6-9f46-c9f358b8483a",
+        "youtubeUrl": "https://www.youtube.com/watch?v=--zACCrlmFQ",
+        "title": "오버도즈",
+        "tags": [
+          "오버도즈",
+          "Overdose",
+          "natori",
+          "나토리"
+        ]
+      },
+      "audio": {
+        "path": "audio/--zACCrlmFQ.ogg",
+        "sha256": "b63ed5fe6bd80f606ee8e6604be00ecf447d9c368b6e610e7e04ea4a7d2d7c5a",
+        "byteLength": 1180410,
+        "durationMs": 194114
+      }
+    },
+    {
+      "song": {
+        "id": "f795ca82-7566-5de0-89c5-9bf2c94ffc98",
+        "youtubeUrl": "https://www.youtube.com/watch?v=fR8iPh9S9qg",
+        "title": "인연의 기적",
+        "tags": [
+          "인연의 기적",
+          "Kizuna No Kiseki",
+          "JeanKen Johnny"
+        ]
+      },
+      "audio": {
+        "path": "audio/fR8iPh9S9qg.ogg",
+        "sha256": "82261e3cbb455aa764cc5bf6845cc54d090d212f04b7af6b445c030dbf431c31",
+        "byteLength": 1345157,
+        "durationMs": 223327
+      }
+    },
+    {
+      "song": {
+        "id": "46991b88-4e6d-5f09-a21b-2f09eb391cc9",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Nc0sB1Bmf-A",
+        "title": "잔향산가",
+        "tags": [
+          "잔향산가",
+          "Zankyosanka",
+          "Aimerrhythm",
+          "Masahiro Tobinai",
+          "에메"
+        ]
+      },
+      "audio": {
+        "path": "audio/Nc0sB1Bmf-A.ogg",
+        "sha256": "31da83ff07d72e7f023c5387d209d11b788b9d874fdba825e0017c4bd46f53a6",
+        "byteLength": 1116582,
+        "durationMs": 184900
+      }
+    },
+    {
+      "song": {
+        "id": "96009fc3-49e8-51f1-beec-8772670644f7",
+        "youtubeUrl": "https://www.youtube.com/watch?v=U4pM3yB9KtU",
+        "title": "몽환",
+        "tags": [
+          "몽환",
+          "MUGEN",
+          "MY FIRST STORY",
+          "CHIMERAZ"
+        ]
+      },
+      "audio": {
+        "path": "audio/U4pM3yB9KtU.ogg",
+        "sha256": "1293e3014cf7f44e374b39a5ddd40c77c35e5e88af138d4c55351cb34ab8eb2b",
+        "byteLength": 1468627,
+        "durationMs": 241163
+      }
+    },
+    {
+      "song": {
+        "id": "9eb2aa59-4585-5572-b84e-e9ff2150a1bc",
+        "youtubeUrl": "https://www.youtube.com/watch?v=TqyfmFaZlqw",
+        "title": "홍련화",
+        "tags": [
+          "홍련화",
+          "Gurenge",
+          "LiSA",
+          "Kayoko Kusano",
+          "리사",
+          "쿠사노 카요코"
+        ]
+      },
+      "audio": {
+        "path": "audio/TqyfmFaZlqw.ogg",
+        "sha256": "504a6b2a4632f96d41b872d6742c0a104aeb7bf24b2c3bf177604ed61e13eda4",
+        "byteLength": 1443731,
+        "durationMs": 237594
+      }
+    },
+    {
+      "song": {
         "id": "c7b1a2fb-4d4c-5240-9b79-30f81a669737",
         "youtubeUrl": "https://www.youtube.com/watch?v=CnlMTBwsBHs",
         "title": "무희",
         "tags": [
+          "무희",
           "Vaundy",
-          "무희"
+          "바운디"
         ]
       },
       "audio": {
@@ -22,12 +158,184 @@
     },
     {
       "song": {
+        "id": "73d8047c-b13a-5678-9d35-d9fe3241e48b",
+        "youtubeUrl": "https://www.youtube.com/watch?v=wsKw_Astidg",
+        "title": "오토노케",
+        "tags": [
+          "오토노케",
+          "Otonoke",
+          "RShitei",
+          "DJ Matsunaga",
+          "크리피 너츠"
+        ]
+      },
+      "audio": {
+        "path": "audio/wsKw_Astidg.ogg",
+        "sha256": "4f4cd04ffe7fdb61fcc9e197fddfd3dc623259db6e4130260ce762f5eb7d0daa",
+        "byteLength": 1133635,
+        "durationMs": 185634
+      }
+    },
+    {
+      "song": {
+        "id": "04d88b43-0ae1-5d3a-bf77-43ca08046253",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Jg73p9udbAQ",
+        "title": "블링 뱅 뱅 본",
+        "tags": [
+          "블링 뱅 뱅 본",
+          "BlingBangBangBorn",
+          "RShitei",
+          "DJ Matsunaga",
+          "알시테이",
+          "디제이 마츠나가"
+        ]
+      },
+      "audio": {
+        "path": "audio/Jg73p9udbAQ.ogg",
+        "sha256": "75689fbec6b923d2e2ea2149757a12e1ebeae553516c5ebf21b9aac9939919da",
+        "byteLength": 1025600,
+        "durationMs": 168143
+      }
+    },
+    {
+      "song": {
+        "id": "cb0902e3-f48c-57e4-8914-8c30cf953d57",
+        "youtubeUrl": "https://www.youtube.com/watch?v=EwpKUV0ECvQ",
+        "title": "봄을 고하다",
+        "tags": [
+          "봄을 고하다",
+          "KUJIRA",
+          "쿠지라"
+        ]
+      },
+      "audio": {
+        "path": "audio/EwpKUV0ECvQ.ogg",
+        "sha256": "b0f8c48880e48cf6204a2ba40c4ad7303cfa83376981e793f9035b9f52d3a414",
+        "byteLength": 1202312,
+        "durationMs": 196504
+      }
+    },
+    {
+      "song": {
+        "id": "c59bdd3b-7a04-5472-a920-3a48c0fded21",
+        "youtubeUrl": "https://www.youtube.com/watch?v=AkLbul1GzsE",
+        "title": "멜로드라마",
+        "tags": [
+          "멜로드라마",
+          "Melodrama",
+          "imase",
+          "나토리"
+        ]
+      },
+      "audio": {
+        "path": "audio/AkLbul1GzsE.ogg",
+        "sha256": "4bb4e116e089f828de8f12177c66868572b895fc6dc30af7b5df025f29960e1e",
+        "byteLength": 1393986,
+        "durationMs": 227583
+      }
+    },
+    {
+      "song": {
+        "id": "2bcbfddc-2093-5776-822c-fef1210cfb8f",
+        "youtubeUrl": "https://www.youtube.com/watch?v=SB_xigmpv58",
+        "title": "이상적인 여자",
+        "tags": [
+          "이상적인 여자",
+          "카와니시 나츠키"
+        ]
+      },
+      "audio": {
+        "path": "audio/SB_xigmpv58.ogg",
+        "sha256": "518e095ff300b8ec49c3faa4e048b2e91bfe8cb094d9ba38a6e50639655fd46e",
+        "byteLength": 1312976,
+        "durationMs": 214707
+      }
+    },
+    {
+      "song": {
+        "id": "0102440a-ef98-5798-807f-d2f43fd590ac",
+        "youtubeUrl": "https://www.youtube.com/watch?v=HFtn3y77Vs0",
+        "title": "베텔기우스",
+        "tags": [
+          "베텔기우스",
+          "BETELGEUSE",
+          "Yuuri",
+          "유우리"
+        ]
+      },
+      "audio": {
+        "path": "audio/HFtn3y77Vs0.ogg",
+        "sha256": "5e7204f456f7c6d75c17817cdf0d9c7861ab0a880ef889f1f3c06fdb5e8b1440",
+        "byteLength": 1409572,
+        "durationMs": 230607
+      }
+    },
+    {
+      "song": {
+        "id": "3fedbedd-33d5-5b92-9826-4e80b0528ecc",
+        "youtubeUrl": "https://www.youtube.com/watch?v=XuTIkXPCKQY",
+        "title": "감전",
+        "tags": [
+          "감전",
+          "Kanden",
+          "Kenshi Yonezu",
+          "요네즈 켄시"
+        ]
+      },
+      "audio": {
+        "path": "audio/XuTIkXPCKQY.ogg",
+        "sha256": "d74874e236b05ca10a629d3050b1122e9b6e67b94b5602b80b621328dd28a288",
+        "byteLength": 1620199,
+        "durationMs": 264540
+      }
+    },
+    {
+      "song": {
+        "id": "996c96b4-efba-50fb-b656-2ea36b5315b2",
+        "youtubeUrl": "https://www.youtube.com/watch?v=TSGOZyt2iDI",
+        "title": "사랑을 전하고 싶다던가",
+        "tags": [
+          "사랑을 전하고 싶다던가",
+          "Ai Wo Tsutaetaidatoka",
+          "aimyon",
+          "아이묭"
+        ]
+      },
+      "audio": {
+        "path": "audio/TSGOZyt2iDI.ogg",
+        "sha256": "76244b1b9eecc7ce4f6caf4b4d267fc074d38adf6e0df4d88bef2975a6a69405",
+        "byteLength": 1441131,
+        "durationMs": 235248
+      }
+    },
+    {
+      "song": {
+        "id": "a40e03bd-bc79-5706-9dd9-f439cd5bb30b",
+        "youtubeUrl": "https://www.youtube.com/watch?v=MtLHwqbE1eI",
+        "title": "꿈의 등불",
+        "tags": [
+          "꿈의 등불",
+          "Dream lantern",
+          "Yojiro Noda",
+          "래드윔프스"
+        ]
+      },
+      "audio": {
+        "path": "audio/MtLHwqbE1eI.ogg",
+        "sha256": "5c5d1f0fce1e6ae1d3b8ee0ed78b9f0ac3357293d68605b0ac101e81f4ea08ef",
+        "byteLength": 789461,
+        "durationMs": 131674
+      }
+    },
+    {
+      "song": {
         "id": "7f53d73e-74b0-5bea-93d2-203b9d31a5ff",
         "youtubeUrl": "https://www.youtube.com/watch?v=hS2BVRnQiYI",
         "title": "도쿄 플래시",
         "tags": [
+          "도쿄 플래시",
           "Vaundy",
-          "도쿄 플래시"
+          "바운디"
         ]
       },
       "audio": {
@@ -39,12 +347,31 @@
     },
     {
       "song": {
+        "id": "a6bc9c49-6b15-5341-ad09-e2d0770f0385",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Oa-Vc2amuA0",
+        "title": "유니버스",
+        "tags": [
+          "유니버스",
+          "Universe",
+          "Satoshi Fujihara"
+        ]
+      },
+      "audio": {
+        "path": "audio/Oa-Vc2amuA0.ogg",
+        "sha256": "c1cc53179826ef116e8b8074f1c329ca3f1472661d6a7aa8a826ed4eb36e3f63",
+        "byteLength": 1734154,
+        "durationMs": 285820
+      }
+    },
+    {
+      "song": {
         "id": "2e12edc5-7783-53a9-bd2e-dc68536dd968",
         "youtubeUrl": "https://www.youtube.com/watch?v=kJEPeKPtZyw",
         "title": "꽃점",
         "tags": [
+          "꽃점",
           "Vaundy",
-          "꽃점"
+          "바운디"
         ]
       },
       "audio": {
@@ -56,13 +383,88 @@
     },
     {
       "song": {
+        "id": "90527de3-7b0f-50ce-9c05-873df912589b",
+        "youtubeUrl": "https://www.youtube.com/watch?v=eYGUboWTtDw",
+        "title": "넷코",
+        "tags": [
+          "넷코",
+          "Nekko",
+          "DAIKI TSUNETA",
+          "츠네타 다이키"
+        ]
+      },
+      "audio": {
+        "path": "audio/eYGUboWTtDw.ogg",
+        "sha256": "d52cd631e2e885f584e74e8cf0fd0137d7e048809f761ff81bfbf87e2703922f",
+        "byteLength": 1466343,
+        "durationMs": 239736
+      }
+    },
+    {
+      "song": {
+        "id": "c1bb4da5-2b93-5a01-985d-60b01ca9f573",
+        "youtubeUrl": "https://www.youtube.com/watch?v=7rpl6blm3Hw",
+        "title": "비가 찬란히",
+        "tags": [
+          "비가 찬란히",
+          "Ame Sansan",
+          "Daiki Tsuneta",
+          "츠네타 다이키"
+        ]
+      },
+      "audio": {
+        "path": "audio/7rpl6blm3Hw.ogg",
+        "sha256": "62ff2bf0369d146c38e6418de160fc1272382282b02a3a1f85b46ad23b587afd",
+        "byteLength": 1807495,
+        "durationMs": 295688
+      }
+    },
+    {
+      "song": {
+        "id": "601ef7ec-9f8a-5bb5-a5ce-b00585243a01",
+        "youtubeUrl": "https://www.youtube.com/watch?v=oMeFtedQS0E",
+        "title": "일도",
+        "tags": [
+          "일도",
+          "Ichizu",
+          "Daiki Tsuneta",
+          "츠네타 다이키"
+        ]
+      },
+      "audio": {
+        "path": "audio/oMeFtedQS0E.ogg",
+        "sha256": "140db1a8a4ce87457702de16fe624ae9e6e2b4309998f7841cef043e6c2afd7e",
+        "byteLength": 1329672,
+        "durationMs": 220220
+      }
+    },
+    {
+      "song": {
+        "id": "8a716be2-c2af-50dd-9362-19a1e3f71b89",
+        "youtubeUrl": "https://www.youtube.com/watch?v=XyuLpZAywH0",
+        "title": "픽션",
+        "tags": [
+          "픽션",
+          "Fiction",
+          "Kenta Kataoka"
+        ]
+      },
+      "audio": {
+        "path": "audio/XyuLpZAywH0.ogg",
+        "sha256": "8718017ea2636b5e72c12cd38ec60afd8bb6c7ade63119666e8002f6b58baea5",
+        "byteLength": 1412429,
+        "durationMs": 233260
+      }
+    },
+    {
+      "song": {
         "id": "8c2cd18c-e19d-5a90-b358-02dfab7de6c6",
         "youtubeUrl": "https://www.youtube.com/watch?v=3NNhrqHZqlI",
         "title": "레몬",
         "tags": [
-          "요네즈켄시",
           "레몬",
-          "Lemon"
+          "Lemon",
+          "요네즈 켄시"
         ]
       },
       "audio": {
@@ -78,7 +480,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=KMdTrqzEI0I",
         "title": "사랑",
         "tags": [
-          "사랑"
+          "사랑",
+          "호시노 겐"
         ]
       },
       "audio": {
@@ -90,14 +493,240 @@
     },
     {
       "song": {
+        "id": "350b6294-587b-5ff5-88dc-a274b74f412d",
+        "youtubeUrl": "https://www.youtube.com/watch?v=uAPkivh6Jlo",
+        "title": "사랑과 병열",
+        "tags": [
+          "사랑과 병열",
+          "Koi to Byounetsu",
+          "Kenshi Yonezu",
+          "요네즈 켄시"
+        ]
+      },
+      "audio": {
+        "path": "audio/uAPkivh6Jlo.ogg",
+        "sha256": "d82f9e1cb1f1b3165b178ebe00d74c25f3dc97ab524dc4953a4346c6db4a3ec0",
+        "byteLength": 1586864,
+        "durationMs": 262540
+      }
+    },
+    {
+      "song": {
+        "id": "ff1d353d-347f-5d7e-98f0-5b4852caad02",
+        "youtubeUrl": "https://www.youtube.com/watch?v=HSiI37OzyGc",
+        "title": "카멜레온",
+        "tags": [
+          "카멜레온",
+          "CHAMELEON",
+          "Daiki Tsuneta",
+          "츠네타 다이키"
+        ]
+      },
+      "audio": {
+        "path": "audio/HSiI37OzyGc.ogg",
+        "sha256": "b029723c5e577cd5fcd8b8f895c76374bca13e857fde73076607e0513112eecd",
+        "byteLength": 1175892,
+        "durationMs": 191860
+      }
+    },
+    {
+      "song": {
+        "id": "04ad49c5-8f2a-5dad-ae00-38f724004749",
+        "youtubeUrl": "https://www.youtube.com/watch?v=ZeIGVnkYX04",
+        "title": "나폴리",
+        "tags": [
+          "나폴리",
+          "napori",
+          "Vaundy",
+          "바운디"
+        ]
+      },
+      "audio": {
+        "path": "audio/ZeIGVnkYX04.ogg",
+        "sha256": "402b90b3a53c744eb9d880cd78b76d26663d236ce2654b4531a1771c36d60808",
+        "byteLength": 1236836,
+        "durationMs": 203794
+      }
+    },
+    {
+      "song": {
+        "id": "19ac598b-6269-5c87-b93f-540e722307c8",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Gqll-ptU2_o",
+        "title": "골드 아워",
+        "tags": [
+          "골드 아워",
+          "golden hour Fujii Kaze Remix",
+          "golden hour",
+          "골든 아워",
+          "Jake Lawson",
+          "Zac Lawson"
+        ]
+      },
+      "audio": {
+        "path": "audio/Gqll-ptU2_o.ogg",
+        "sha256": "de6d5567429bbddcb0dac36e5378eae104cce738db4e5cc793937c47aa8625d5",
+        "byteLength": 963682,
+        "durationMs": 159007
+      }
+    },
+    {
+      "song": {
+        "id": "9a311402-773a-52b2-a332-d5380e94765c",
+        "youtubeUrl": "https://www.youtube.com/watch?v=3zh9Wb1KuW8",
+        "title": "죽는 게 나아",
+        "tags": [
+          "죽는 게 나아",
+          "Shinunoga EWa",
+          "Fujii Kaze"
+        ]
+      },
+      "audio": {
+        "path": "audio/3zh9Wb1KuW8.ogg",
+        "sha256": "61b8c52145590390c1d0693df3da5360f9ec850a045df7e5f8ca1ed306f77f6b",
+        "byteLength": 1128008,
+        "durationMs": 185580
+      }
+    },
+    {
+      "song": {
+        "id": "cfc578fc-a610-51c8-b367-b4f23a960eb8",
+        "youtubeUrl": "https://www.youtube.com/watch?v=KAaUyVJoNAE",
+        "title": "네 기꺼이",
+        "tags": [
+          "네 기꺼이",
+          "GRP",
+          "Kocchi no Kento"
+        ]
+      },
+      "audio": {
+        "path": "audio/KAaUyVJoNAE.ogg",
+        "sha256": "9fb675a764ff459345577c957a8ec6390b40388d13b7e68254db8ef29ef92a31",
+        "byteLength": 987221,
+        "durationMs": 161640
+      }
+    },
+    {
+      "song": {
+        "id": "7b31ab26-aa24-53a3-836e-12542dba05c9",
+        "youtubeUrl": "https://www.youtube.com/watch?v=d6NPs3OQIAU",
+        "title": "잔향산가",
+        "tags": [
+          "잔향산가",
+          "Zankyosanka",
+          "Aimerrhythm",
+          "Masahiro Tobinai"
+        ]
+      },
+      "audio": {
+        "path": "audio/d6NPs3OQIAU.ogg",
+        "sha256": "d6591e48c0a31eff6cb0b3f951a43a1930bdac591e91aa54211eb13b08b5ef63",
+        "byteLength": 1117526,
+        "durationMs": 184900
+      }
+    },
+    {
+      "song": {
+        "id": "7615cfda-8703-5fff-9402-9cf89b2262ce",
+        "youtubeUrl": "https://www.youtube.com/watch?v=dEfl-ObuapA",
+        "title": "드라마투르기",
+        "tags": [
+          "드라마투르기",
+          "Dramaturgy",
+          "Eve",
+          "이브"
+        ]
+      },
+      "audio": {
+        "path": "audio/dEfl-ObuapA.ogg",
+        "sha256": "7f5c4b841ec6c2b9fc55c2ae3737fb89562042fe706852644e07e97c1c328170",
+        "byteLength": 1458471,
+        "durationMs": 238188
+      }
+    },
+    {
+      "song": {
+        "id": "e063ac0a-0a1b-5a38-a10b-b11c857a47cc",
+        "youtubeUrl": "https://www.youtube.com/watch?v=k0g04t7ZeSw",
+        "title": "괴물",
+        "tags": [
+          "괴물",
+          "Ayase",
+          "아야세"
+        ]
+      },
+      "audio": {
+        "path": "audio/k0g04t7ZeSw.ogg",
+        "sha256": "1b2f416eb8959eaf26a7ec649ebd515e8aba9af567397dff88cb129e8517dd33",
+        "byteLength": 1257440,
+        "durationMs": 205487
+      }
+    },
+    {
+      "song": {
+        "id": "9453b808-f827-50e1-bbdb-67412b12e947",
+        "youtubeUrl": "https://www.youtube.com/watch?v=n8F-E5f-cos",
+        "title": "색채",
+        "tags": [
+          "색채",
+          "color",
+          "whaledontsleep",
+          "쿠지라"
+        ]
+      },
+      "audio": {
+        "path": "audio/n8F-E5f-cos.ogg",
+        "sha256": "e40a291f85c1069f6784802542b368ec66fc2c756c6de8d33c100eaec6bba8d7",
+        "byteLength": 1168792,
+        "durationMs": 192927
+      }
+    },
+    {
+      "song": {
+        "id": "bdfb1508-2926-5357-b308-030f6873475b",
+        "youtubeUrl": "https://www.youtube.com/watch?v=wNjvuRZtQeI",
+        "title": "인페르노",
+        "tags": [
+          "인페르노",
+          "Inferno",
+          "Motoki Ohmori",
+          "오모리 모토키"
+        ]
+      },
+      "audio": {
+        "path": "audio/wNjvuRZtQeI.ogg",
+        "sha256": "93dd595ceea7c98d10e54584640d82b0f57754d67f3201ad49802ef31b2c468c",
+        "byteLength": 1296920,
+        "durationMs": 212554
+      }
+    },
+    {
+      "song": {
+        "id": "5c9aaed2-402e-5dc6-913d-b5eb7667ebea",
+        "youtubeUrl": "https://www.youtube.com/watch?v=F9GXgPHeKfA",
+        "title": "크로싱 필드",
+        "tags": [
+          "크로싱 필드",
+          "Crossing Field",
+          "Sho Watanabe"
+        ]
+      },
+      "audio": {
+        "path": "audio/F9GXgPHeKfA.ogg",
+        "sha256": "4cc791cadb2c00d74d0e13c8d1abbb3ad144b00103bafac40e6c30ab794b68e2",
+        "byteLength": 1525432,
+        "durationMs": 248954
+      }
+    },
+    {
+      "song": {
         "id": "077f158b-5c97-5466-b2dd-09f1cace111f",
         "youtubeUrl": "https://www.youtube.com/watch?v=RWFW1OSlMkM",
         "title": "청춘 콤플렉스",
         "tags": [
-          "Ai Higuchi",
-          "otoha",
           "청춘 콤플렉스",
-          "seisyun complex"
+          "seisyun complex",
+          "Ai Higuchi",
+          "otoha"
         ]
       },
       "audio": {
@@ -109,14 +738,70 @@
     },
     {
       "song": {
+        "id": "abe2979f-5d97-552d-b2cd-32e0ee1c9dda",
+        "youtubeUrl": "https://www.youtube.com/watch?v=zqKrpw36xnU",
+        "title": "실루엣",
+        "tags": [
+          "실루엣",
+          "Silhouette",
+          "Maguro Taniguchi",
+          "카나분"
+        ]
+      },
+      "audio": {
+        "path": "audio/zqKrpw36xnU.ogg",
+        "sha256": "c2932d3062d3ecc17220788c7fd8c372d28a573e4aa15d293f9ecf9788f0d689",
+        "byteLength": 1459369,
+        "durationMs": 240140
+      }
+    },
+    {
+      "song": {
+        "id": "95eee454-0374-5513-9e9b-31b328c11e4c",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Cb0JZhdmjtg",
+        "title": "아이리스 아웃",
+        "tags": [
+          "아이리스 아웃",
+          "IRIS OUT",
+          "Kenshi Yonezu",
+          "요네즈 켄시"
+        ]
+      },
+      "audio": {
+        "path": "audio/Cb0JZhdmjtg.ogg",
+        "sha256": "2e068fa5a360471e27b40d4cfa796ff8416a0e81292e316b50bcea1e59e19533",
+        "byteLength": 899218,
+        "durationMs": 151580
+      }
+    },
+    {
+      "song": {
+        "id": "2b40d674-7e2f-5b08-b3e9-de9fc43a018a",
+        "youtubeUrl": "https://www.youtube.com/watch?v=ntRVm85--b4",
+        "title": "혁명도중",
+        "tags": [
+          "혁명도중",
+          "革命道中 On The Way",
+          "Shin Sakiura"
+        ]
+      },
+      "audio": {
+        "path": "audio/ntRVm85--b4.ogg",
+        "sha256": "449419227c0b73d3054a310f4cdb8f4146e27846b82647de8b8741b366c1b7bc",
+        "byteLength": 1208461,
+        "durationMs": 197675
+      }
+    },
+    {
+      "song": {
         "id": "539caf70-1b63-5c27-ac10-efaffaa52f26",
         "youtubeUrl": "https://www.youtube.com/watch?v=8OZpBLAULNI",
         "title": "거짓말",
         "tags": [
-          "Mao",
-          "Yuya",
           "거짓말",
-          "Uso"
+          "Uso",
+          "Mao",
+          "Yuya"
         ]
       },
       "audio": {
@@ -128,13 +813,31 @@
     },
     {
       "song": {
+        "id": "979a260e-9824-519d-8f7d-7c0ab637f297",
+        "youtubeUrl": "https://www.youtube.com/watch?v=g7hCg9HCfRQ",
+        "title": "카마인",
+        "tags": [
+          "카마인",
+          "Carmine",
+          "호소미 타케시"
+        ]
+      },
+      "audio": {
+        "path": "audio/g7hCg9HCfRQ.ogg",
+        "sha256": "c73437134c4908e93f332a4db447b66a45ae10d1195f478cc6c60e8fc267eac4",
+        "byteLength": 1251998,
+        "durationMs": 205016
+      }
+    },
+    {
+      "song": {
         "id": "4f728631-0dae-591e-aa7c-a5a548ce7118",
         "youtubeUrl": "https://www.youtube.com/watch?v=nmYDYalgb5w",
         "title": "안녕 또 언젠가",
         "tags": [
-          "요네즈 켄시",
-          "SayonaraMataItsuka",
-          "안녕 또 언젠가"
+          "안녕 또 언젠가",
+          "Sayonara Mata Itsuka Sayonara",
+          "요네즈 켄시"
         ]
       },
       "audio": {
@@ -146,13 +849,105 @@
     },
     {
       "song": {
+        "id": "2c39f2b3-009f-52ae-97e9-9ab2f7e70bcf",
+        "youtubeUrl": "https://www.youtube.com/watch?v=fMU6nclDzNs",
+        "title": "폴라리스",
+        "tags": [
+          "폴라리스",
+          "Polaris",
+          "Shunichi Tanabe"
+        ]
+      },
+      "audio": {
+        "path": "audio/fMU6nclDzNs.ogg",
+        "sha256": "2430b2a0990304511da70e58ffaa9fd7798b03811ae2c183dbaf2c986f477006",
+        "byteLength": 1364076,
+        "durationMs": 224220
+      }
+    },
+    {
+      "song": {
+        "id": "8f0f62b8-9dfc-5450-98f3-16b83532056d",
+        "youtubeUrl": "https://www.youtube.com/watch?v=EJAEzPwcQPs",
+        "title": "피스 사인",
+        "tags": [
+          "피스 사인",
+          "Peace Sign",
+          "요네즈 켄시"
+        ]
+      },
+      "audio": {
+        "path": "audio/EJAEzPwcQPs.ogg",
+        "sha256": "bfb2e52cc73e13f74b3b372499fb15c1a6335eafbbd3f559e025b39a8dc99ce4",
+        "byteLength": 1444143,
+        "durationMs": 237287
+      }
+    },
+    {
+      "song": {
+        "id": "6fa0701d-e47f-556a-88a9-b9a6cefe707e",
+        "youtubeUrl": "https://www.youtube.com/watch?v=CA1b9naUJMU",
+        "title": "홈",
+        "tags": [
+          "홈",
+          "HOME",
+          "sabio"
+        ]
+      },
+      "audio": {
+        "path": "audio/CA1b9naUJMU.ogg",
+        "sha256": "c63bbba71bdd2c0e42b4f939ba82818c1d665a79cbd63b08334bbdba11cf786d",
+        "byteLength": 1375429,
+        "durationMs": 224769
+      }
+    },
+    {
+      "song": {
+        "id": "9c599bf8-c25e-5f2a-a5ab-484196ae1a33",
+        "youtubeUrl": "https://www.youtube.com/watch?v=fXTrlx2oByk",
+        "title": "오렌지",
+        "tags": [
+          "오렌지",
+          "Orange",
+          "Momiken",
+          "UZ"
+        ]
+      },
+      "audio": {
+        "path": "audio/fXTrlx2oByk.ogg",
+        "sha256": "3a0540a5178824cd94c42b893254adab05bbdd01017a1b570f1cf6872942c6d7",
+        "byteLength": 1411384,
+        "durationMs": 235207
+      }
+    },
+    {
+      "song": {
+        "id": "e4fcee76-2833-56ca-af5e-a265194a642d",
+        "youtubeUrl": "https://www.youtube.com/watch?v=37W7Y2RRyiM",
+        "title": "프리텐더",
+        "tags": [
+          "프리텐더",
+          "Pretender",
+          "Satoshi Fujiwara"
+        ]
+      },
+      "audio": {
+        "path": "audio/37W7Y2RRyiM.ogg",
+        "sha256": "e07689b9d7309494b005c15c2f085d576b44a833535e2dffa4fc2242fad4ab78",
+        "byteLength": 1991956,
+        "durationMs": 326447
+      }
+    },
+    {
+      "song": {
         "id": "7609f151-2efa-5d04-9f48-8273a83b9b69",
         "youtubeUrl": "https://www.youtube.com/watch?v=DO_aopUeFnw",
         "title": "라일락",
         "tags": [
-          "Motoki Ohmori",
           "라일락",
-          "Lilac"
+          "Lilac",
+          "Motoki Ohmori",
+          "오모리 모토키"
         ]
       },
       "audio": {
@@ -164,13 +959,50 @@
     },
     {
       "song": {
+        "id": "a8af1064-1156-50d2-90bd-981ab80d0403",
+        "youtubeUrl": "https://www.youtube.com/watch?v=5RaU8K8sLTM",
+        "title": "스페셜즈",
+        "tags": [
+          "스페셜즈",
+          "King Gnu SPECIALZ",
+          "츠네타 다이키"
+        ]
+      },
+      "audio": {
+        "path": "audio/5RaU8K8sLTM.ogg",
+        "sha256": "f0f9f87d32916f370e0908b0c60e0844a6d72f5b16c4ba75cf0bc199fcc046b1",
+        "byteLength": 1433890,
+        "durationMs": 238994
+      }
+    },
+    {
+      "song": {
+        "id": "1d27e32a-b9cb-5126-9664-efc11fa12141",
+        "youtubeUrl": "https://www.youtube.com/watch?v=65xX7zyr-fA",
+        "title": "푸르름이 사는 곳",
+        "tags": [
+          "푸르름이 사는 곳",
+          "Where Our Blue Is",
+          "Tatsuya Kitani",
+          "키타니 타츠야"
+        ]
+      },
+      "audio": {
+        "path": "audio/65xX7zyr-fA.ogg",
+        "sha256": "da71336ad7a13c6490664880ea867c5b4dd7dcad28f4501a2e9740ac97ffabcc",
+        "byteLength": 1199380,
+        "durationMs": 196647
+      }
+    },
+    {
+      "song": {
         "id": "7a06c992-ef3d-5f0a-b3ee-eaecd992e786",
         "youtubeUrl": "https://www.youtube.com/watch?v=XMCxgVHD0Iw",
         "title": "잔혹한 밤에 빛나라",
         "tags": [
-          "Yuki Kajiura",
           "잔혹한 밤에 빛나라",
-          "Shine in the Cruel Night"
+          "Shine in the Cruel Night",
+          "Yuki Kajiura"
         ]
       },
       "audio": {
@@ -182,14 +1014,160 @@
     },
     {
       "song": {
+        "id": "8f129e9a-2690-55a1-aa8a-1e305ca2ec72",
+        "youtubeUrl": "https://www.youtube.com/watch?v=rspzC40lGVk",
+        "title": "태양이 떠오르지 않는 세계",
+        "tags": [
+          "태양이 떠오르지 않는 세계",
+          "Go Shiina",
+          "Hikaru Kondo ufotable"
+        ]
+      },
+      "audio": {
+        "path": "audio/rspzC40lGVk.ogg",
+        "sha256": "8179fb0bdf46ddc0631d59321cd7477bbb0478bd9e2631c40ba3543f97c97f77",
+        "byteLength": 1031514,
+        "durationMs": 170314
+      }
+    },
+    {
+      "song": {
+        "id": "0f83f1b3-8f83-5290-9c6d-fb6a09378307",
+        "youtubeUrl": "https://www.youtube.com/watch?v=lawxxhiqEGc",
+        "title": "화뢰신",
+        "tags": [
+          "화뢰신",
+          "Flaming Thunder God",
+          "Go Shiina"
+        ]
+      },
+      "audio": {
+        "path": "audio/lawxxhiqEGc.ogg",
+        "sha256": "a2e41cd20d9ea4e40db8e73fb8cc0207f51ffa9c6f9673049613d860bb9d8ce8",
+        "byteLength": 681331,
+        "durationMs": 111340
+      }
+    },
+    {
+      "song": {
+        "id": "85b96066-9e9a-50eb-89b5-afae40496b13",
+        "youtubeUrl": "https://www.youtube.com/watch?v=EUF47UGmREU",
+        "title": "보이",
+        "tags": [
+          "보이",
+          "BOY",
+          "Daiki Tsuneta",
+          "츠네타 다이키"
+        ]
+      },
+      "audio": {
+        "path": "audio/EUF47UGmREU.ogg",
+        "sha256": "273f2013c6001afd5651182e45272ff4ba00f2387e09334752c3aed7cf3852e5",
+        "byteLength": 1425170,
+        "durationMs": 234740
+      }
+    },
+    {
+      "song": {
+        "id": "56c4b4d0-5743-530b-bf3c-bf70f1e4d12f",
+        "youtubeUrl": "https://www.youtube.com/watch?v=uz9NT98_ulk",
+        "title": "블러디 스트림",
+        "tags": [
+          "블러디 스트림",
+          "BLOODY STREAM",
+          "코다마 사오리",
+          "오오모리 토시유키"
+        ]
+      },
+      "audio": {
+        "path": "audio/uz9NT98_ulk.ogg",
+        "sha256": "2cdab9b21abe16c554f4e2264adc97914d33638abcd688f50f31fa019f1c4d11",
+        "byteLength": 1585065,
+        "durationMs": 261927
+      }
+    },
+    {
+      "song": {
+        "id": "3df11815-7129-561f-b02e-71318b446e13",
+        "youtubeUrl": "https://www.youtube.com/watch?v=NMA_isZYsYQ",
+        "title": "킥백",
+        "tags": [
+          "킥백",
+          "KICK BACK",
+          "요네즈 켄시"
+        ]
+      },
+      "audio": {
+        "path": "audio/NMA_isZYsYQ.ogg",
+        "sha256": "34819e9992490df73b1b7cbe8231110cb539f9ddab89f7a3a1a9742fa358be93",
+        "byteLength": 1180294,
+        "durationMs": 193502
+      }
+    },
+    {
+      "song": {
+        "id": "306b886a-ae12-5494-a676-ef084d4541d4",
+        "youtubeUrl": "https://www.youtube.com/watch?v=C99g5zkB-E4",
+        "title": "유레카",
+        "tags": [
+          "유레카",
+          "Eureka",
+          "나토리"
+        ]
+      },
+      "audio": {
+        "path": "audio/C99g5zkB-E4.ogg",
+        "sha256": "ffdc49f5379c12d1bd9e64e3825619eb1ad124c42d98696ad3e807383cc86003",
+        "byteLength": 1122032,
+        "durationMs": 184407
+      }
+    },
+    {
+      "song": {
+        "id": "8cd47a81-37c4-535a-9480-92016b0ca78d",
+        "youtubeUrl": "https://www.youtube.com/watch?v=pqDqIMUo2OU",
+        "title": "다이아몬드는 부서지지 않는다 메인 테마",
+        "tags": [
+          "다이아몬드는 부서지지 않는다 메인 테마",
+          "Yugo Kanno"
+        ]
+      },
+      "audio": {
+        "path": "audio/pqDqIMUo2OU.ogg",
+        "sha256": "436726cedd3108b5ca160dc9c66a67df1923fa1fe3ad33b68bc6b48c2c774786",
+        "byteLength": 1497627,
+        "durationMs": 247887
+      }
+    },
+    {
+      "song": {
+        "id": "76940d51-13fb-5ca3-bf92-db4873923bab",
+        "youtubeUrl": "https://www.youtube.com/watch?v=t19JNA8KVQY",
+        "title": "파놉티콘",
+        "tags": [
+          "파놉티콘",
+          "PANOPTICON",
+          "Tatsuya Kitani",
+          "키타니 타츠야"
+        ]
+      },
+      "audio": {
+        "path": "audio/t19JNA8KVQY.ogg",
+        "sha256": "10fd4b4b7ecc57e40b0f2e313476a9a61f331ab157c5228b8addde2ff7761c13",
+        "byteLength": 1372280,
+        "durationMs": 225060
+      }
+    },
+    {
+      "song": {
         "id": "7d88788e-40a9-55c3-bbbe-43d34ab0e38f",
         "youtubeUrl": "https://www.youtube.com/watch?v=8Selo-P1Ovc",
         "title": "잊어주지 않을 거야",
         "tags": [
-          "ZAQ",
-          "Daichi Yoshioka",
           "잊어주지 않을 거야",
-          "Never forget"
+          "Never forget",
+          "ZAQ",
+          "Daichi Yoshioka"
         ]
       },
       "audio": {
@@ -201,12 +1179,70 @@
     },
     {
       "song": {
+        "id": "3863da45-f3fb-52d6-a192-facf67b25bac",
+        "youtubeUrl": "https://www.youtube.com/watch?v=2vFfbXdHi4k",
+        "title": "이치난",
+        "tags": [
+          "이치난",
+          "나미오카 신타로",
+          "오오하라 타쿠마"
+        ]
+      },
+      "audio": {
+        "path": "audio/2vFfbXdHi4k.ogg",
+        "sha256": "70ac397c4d9ebe01876729faca8643ddd2f6655b0a9ba53bacb1bd5eef3ee096",
+        "byteLength": 1305760,
+        "durationMs": 215127
+      }
+    },
+    {
+      "song": {
+        "id": "d06bfa06-ae29-5cec-988f-a812d28f2bd9",
+        "youtubeUrl": "https://www.youtube.com/watch?v=nqKJ2GOSxJQ",
+        "title": "역몽",
+        "tags": [
+          "역몽",
+          "Sakayume",
+          "DAIKI TSUNETA",
+          "츠네타 다이키"
+        ]
+      },
+      "audio": {
+        "path": "audio/nqKJ2GOSxJQ.ogg",
+        "sha256": "47d703dc995da345c1b4c4049aa869f8b3bddfd22456cb9be65f4caa51df9469",
+        "byteLength": 1842749,
+        "durationMs": 300781
+      }
+    },
+    {
+      "song": {
+        "id": "cc85fc5f-d423-5e48-9eec-de3e0ea1d383",
+        "youtubeUrl": "https://www.youtube.com/watch?v=WFRB9zl8tS8",
+        "title": "라스트댄스",
+        "tags": [
+          "라스트댄스",
+          "Last Dance",
+          "Eve",
+          "이브"
+        ]
+      },
+      "audio": {
+        "path": "audio/WFRB9zl8tS8.ogg",
+        "sha256": "5a3a2b46f88add41c03a7d05efe0cc61e1994d96cac5d572a9eb85de31c5dfd1",
+        "byteLength": 1462332,
+        "durationMs": 240504
+      }
+    },
+    {
+      "song": {
         "id": "94d5218f-1f4d-573e-8879-f679a2db0fd9",
         "youtubeUrl": "https://www.youtube.com/watch?v=Fyos7dBZT5E",
         "title": "절대영도",
         "tags": [
           "절대영도",
-          "natori"
+          "Absolute zero",
+          "natori",
+          "나토리"
         ]
       },
       "audio": {
@@ -218,12 +1254,460 @@
     },
     {
       "song": {
+        "id": "f443cd9b-ec9c-5174-844c-9ea21af265dc",
+        "youtubeUrl": "https://www.youtube.com/watch?v=mzVbYUBo8_Y",
+        "title": "루저",
+        "tags": [
+          "루저",
+          "LOSER",
+          "Kenshi Yonezu",
+          "요네즈 켄시"
+        ]
+      },
+      "audio": {
+        "path": "audio/mzVbYUBo8_Y.ogg",
+        "sha256": "0326ff853c1b7feb1864ca7da353d4f56b866013b2d91f151e59ac5aff962875",
+        "byteLength": 1477925,
+        "durationMs": 245234
+      }
+    },
+    {
+      "song": {
+        "id": "ef30b1ef-75f6-580c-b253-afbbd97949ff",
+        "youtubeUrl": "https://www.youtube.com/watch?v=FkuiZU3CpTg",
+        "title": "비가 찬란히",
+        "tags": [
+          "비가 찬란히",
+          "Ame Sansan",
+          "DAIKI TSUNETA",
+          "츠네타 다이키"
+        ]
+      },
+      "audio": {
+        "path": "audio/FkuiZU3CpTg.ogg",
+        "sha256": "5912c17772fc01e226ef57894ab1d19c91d9e67188a091f706af8c726331b92e",
+        "byteLength": 1932736,
+        "durationMs": 315402
+      }
+    },
+    {
+      "song": {
+        "id": "7ea31838-ce2d-5614-a2ea-bb6a910cb1ac",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Vc3vuOaiejU",
+        "title": "춘뢰",
+        "tags": [
+          "춘뢰",
+          "Shunrai",
+          "Kenshi Yonezu",
+          "요네즈 켄시"
+        ]
+      },
+      "audio": {
+        "path": "audio/Vc3vuOaiejU.ogg",
+        "sha256": "24e87e92672a9122d33044ecca9ca57a6ac0d149b09553fd56e8e6c467820e0c",
+        "byteLength": 1757566,
+        "durationMs": 288900
+      }
+    },
+    {
+      "song": {
+        "id": "08a3166b-de70-553e-9d54-d814d011e4cb",
+        "youtubeUrl": "https://www.youtube.com/watch?v=FEo4PRgcpF0",
+        "title": "도롱",
+        "tags": [
+          "도롱",
+          "Doron",
+          "Daiki Tsuneta",
+          "츠네타 다이키"
+        ]
+      },
+      "audio": {
+        "path": "audio/FEo4PRgcpF0.ogg",
+        "sha256": "f6377dea4aa9b0ecd8d5cf179965ad9f9a8ea801b3e2161781a2bf9c3eddf9c6",
+        "byteLength": 1119445,
+        "durationMs": 182860
+      }
+    },
+    {
+      "song": {
+        "id": "93b7fda1-b78c-56ad-a871-7b1ecc02a29a",
+        "youtubeUrl": "https://www.youtube.com/watch?v=cSUVCJjOimo",
+        "title": "금목서",
+        "tags": [
+          "금목서",
+          "Osmanthus",
+          "나토리"
+        ]
+      },
+      "audio": {
+        "path": "audio/cSUVCJjOimo.ogg",
+        "sha256": "31ec7ee2ec266795b85cd88b987463732a1351112322a0c050af30768253343e",
+        "byteLength": 1685947,
+        "durationMs": 276780
+      }
+    },
+    {
+      "song": {
+        "id": "50e54ce3-d19b-57e2-9cf2-2c180e4547dc",
+        "youtubeUrl": "https://www.youtube.com/watch?v=ozPtL1R6mZ8",
+        "title": "벚꽃만월",
+        "tags": [
+          "벚꽃만월",
+          "Sakuramitsutsuki",
+          "Momiken",
+          "UZ"
+        ]
+      },
+      "audio": {
+        "path": "audio/ozPtL1R6mZ8.ogg",
+        "sha256": "a41e16df3d60361cd60d6f2f602bde2e22118a5b87ca5da258488004b28c711f",
+        "byteLength": 1305420,
+        "durationMs": 218247
+      }
+    },
+    {
+      "song": {
+        "id": "274b1ad6-e34c-5d8b-b46d-7327462a5015",
+        "youtubeUrl": "https://www.youtube.com/watch?v=kvvpD5ol4jM",
+        "title": "매드 헤드 러브",
+        "tags": [
+          "매드 헤드 러브",
+          "MAD HEAD LOVE",
+          "Kenshi Yonezu",
+          "요네즈 켄시"
+        ]
+      },
+      "audio": {
+        "path": "audio/kvvpD5ol4jM.ogg",
+        "sha256": "a82a7016253ee87936c9587301df126d80cb2ac30e6c733597a8a8a83a0ec5a0",
+        "byteLength": 1328911,
+        "durationMs": 217260
+      }
+    },
+    {
+      "song": {
+        "id": "e63e1484-62a8-5899-a5bf-6f3fd8b29c58",
+        "youtubeUrl": "https://www.youtube.com/watch?v=0RkX1mBIjRA",
+        "title": "타이다다",
+        "tags": [
+          "타이다다",
+          "TAIDADA",
+          "ACANE",
+          "아카네"
+        ]
+      },
+      "audio": {
+        "path": "audio/0RkX1mBIjRA.ogg",
+        "sha256": "85914ef249cfbef82417413fcd1e2fa2cbef19bcf875a90906853a65172f4772",
+        "byteLength": 1372328,
+        "durationMs": 226034
+      }
+    },
+    {
+      "song": {
+        "id": "21852390-1428-5d7b-9ac0-3b975bb5ab03",
+        "youtubeUrl": "https://www.youtube.com/watch?v=_L_M8kIynhE",
+        "title": "필요 없는 것",
+        "tags": [
+          "필요 없는 것",
+          "Chained",
+          "Tatsuya Kitani",
+          "나토리",
+          "키타니 타츠야"
+        ]
+      },
+      "audio": {
+        "path": "audio/_L_M8kIynhE.ogg",
+        "sha256": "69ddce084549c326a03dd19167cf503b9e269bad2520cd03f64b20fea55fc29c",
+        "byteLength": 1133839,
+        "durationMs": 185574
+      }
+    },
+    {
+      "song": {
+        "id": "c6bd3f8d-19ce-5516-948a-e56fbc9bbffa",
+        "youtubeUrl": "https://www.youtube.com/watch?v=_N_Uqd7JBcM",
+        "title": "죠죠 그 피의 운명",
+        "tags": [
+          "죠죠 그 피의 운명",
+          "JOJO SONO CHINO SADAME",
+          "후지바야시 쇼코",
+          "타나카 코헤이"
+        ]
+      },
+      "audio": {
+        "path": "audio/_N_Uqd7JBcM.ogg",
+        "sha256": "fe098ff0cb63a6734c9b9bd1873e3c635ea6d37bad2735eaae96c5bb73b06f0c",
+        "byteLength": 1603085,
+        "durationMs": 262574
+      }
+    },
+    {
+      "song": {
+        "id": "0df3ecf3-9020-5d7d-b458-469184bf933e",
+        "youtubeUrl": "https://www.youtube.com/watch?v=3UbBjzFDkd4",
+        "title": "꽃점",
+        "tags": [
+          "꽃점",
+          "Vaundy",
+          "바운디"
+        ]
+      },
+      "audio": {
+        "path": "audio/3UbBjzFDkd4.ogg",
+        "sha256": "c7bd7e3c2443e442017d4209aafc5ae4e48c118c7c961ca2cba18f53767ba9d9",
+        "byteLength": 1271108,
+        "durationMs": 207563
+      }
+    },
+    {
+      "song": {
+        "id": "64d36056-87be-5f76-ae9b-7775d126be30",
+        "youtubeUrl": "https://www.youtube.com/watch?v=fVmlf3-AOrQ",
+        "title": "마비",
+        "tags": [
+          "마비",
+          "Mahi",
+          "TOOBOE"
+        ]
+      },
+      "audio": {
+        "path": "audio/fVmlf3-AOrQ.ogg",
+        "sha256": "0649d6d6cae57cc7cf014ebc8ed545316a1c506984898ad631c258127703289a",
+        "byteLength": 1203922,
+        "durationMs": 199100
+      }
+    },
+    {
+      "song": {
+        "id": "8aa395c1-4162-5241-87ca-2dd107c98fa2",
+        "youtubeUrl": "https://www.youtube.com/watch?v=cp1FtCHTW2I",
+        "title": "프로포즈",
+        "tags": [
+          "프로포즈",
+          "Propose",
+          "natori",
+          "나토리"
+        ]
+      },
+      "audio": {
+        "path": "audio/cp1FtCHTW2I.ogg",
+        "sha256": "b655cda5835132a485ba516f54c033c531913d963c3be2587135cc0a27cd6dae",
+        "byteLength": 1089278,
+        "durationMs": 178388
+      }
+    },
+    {
+      "song": {
+        "id": "f57b578e-0fbd-54c2-ba81-bb7bf6cb0a4e",
+        "youtubeUrl": "https://www.youtube.com/watch?v=gB1ll9VLlUo",
+        "title": "팝송",
+        "tags": [
+          "팝송",
+          "POP SONG",
+          "요네즈 켄시"
+        ]
+      },
+      "audio": {
+        "path": "audio/gB1ll9VLlUo.ogg",
+        "sha256": "b65a4ece52ee35efba5d241cbeb8c6a7de9de16edd46af014446900533d0a036",
+        "byteLength": 1219317,
+        "durationMs": 199194
+      }
+    },
+    {
+      "song": {
+        "id": "8a1bf55c-d1b5-54ef-8402-93f2c8224a15",
+        "youtubeUrl": "https://www.youtube.com/watch?v=DsjnKOQE0wI",
+        "title": "친애하는 소년이여",
+        "tags": [
+          "친애하는 소년이여",
+          "Haikei Shounenyo Album Version",
+          "Haikei Shounenyo",
+          "Momoko Hayashi"
+        ]
+      },
+      "audio": {
+        "path": "audio/DsjnKOQE0wI.ogg",
+        "sha256": "d6136ea817f6ec67ec71923be9c8cd90cc993090217354cb60797283ac5bd826",
+        "byteLength": 1153976,
+        "durationMs": 188867
+      }
+    },
+    {
+      "song": {
+        "id": "606bce9c-7f6c-5cca-81ea-b8528c43c040",
+        "youtubeUrl": "https://www.youtube.com/watch?v=mp4USEgu1sY",
+        "title": "라포르",
+        "tags": [
+          "라포르",
+          "Rapport",
+          "키타니 타츠야"
+        ]
+      },
+      "audio": {
+        "path": "audio/mp4USEgu1sY.ogg",
+        "sha256": "5c8eef3d60cb0d570444326764ced905102ebfab336bec700278eafbe97f147e",
+        "byteLength": 1333364,
+        "durationMs": 219034
+      }
+    },
+    {
+      "song": {
+        "id": "9f943faf-2839-5986-8012-02c9f03d1f8b",
+        "youtubeUrl": "https://www.youtube.com/watch?v=-sZ3vZ0RiMk",
+        "title": "모어 댄 워즈",
+        "tags": [
+          "모어 댄 워즈",
+          "more than words",
+          "Moeka Shiotsuka",
+          "시오츠카 모에카"
+        ]
+      },
+      "audio": {
+        "path": "audio/-sZ3vZ0RiMk.ogg",
+        "sha256": "e4a619e81b44ff17c6c0874d22603a716444ba0c249a4b3c813b4663d364d898",
+        "byteLength": 1771733,
+        "durationMs": 289180
+      }
+    },
+    {
+      "song": {
+        "id": "bbd0c0f4-8bf4-5dd3-8931-f852db8b04ab",
+        "youtubeUrl": "https://www.youtube.com/watch?v=wiJO_OgsyPE",
+        "title": "체인소 블러드",
+        "tags": [
+          "체인소 블러드",
+          "CHAINSAW BLOOD",
+          "Vaundy",
+          "바운디"
+        ]
+      },
+      "audio": {
+        "path": "audio/wiJO_OgsyPE.ogg",
+        "sha256": "6d7c3e415265df375d8059030513cb7ed92a767f6b3927e68257dc960c9db2ec",
+        "byteLength": 1230713,
+        "durationMs": 201004
+      }
+    },
+    {
+      "song": {
+        "id": "b20b9309-55b2-511b-8c21-822a396e6458",
+        "youtubeUrl": "https://www.youtube.com/watch?v=ZeVQdlOQZ20",
+        "title": "덧없는 여름",
+        "tags": [
+          "덧없는 여름",
+          "ON",
+          "매버릭 맘",
+          "미나미데 다이시"
+        ]
+      },
+      "audio": {
+        "path": "audio/ZeVQdlOQZ20.ogg",
+        "sha256": "280699c2302c59d37c05fd7760659b86b6de62a80e572839c085adfd5150c6e8",
+        "byteLength": 1521666,
+        "durationMs": 251007
+      }
+    },
+    {
+      "song": {
+        "id": "c5006e25-86cf-5691-b545-76658170836d",
+        "youtubeUrl": "https://www.youtube.com/watch?v=hci81q8Q49Q",
+        "title": "플라이데이 차이나타운",
+        "tags": [
+          "플라이데이 차이나타운",
+          "Flyday Chinatown",
+          "Toyohisa Araki",
+          "Yasuha Ebina"
+        ]
+      },
+      "audio": {
+        "path": "audio/hci81q8Q49Q.ogg",
+        "sha256": "c14d37287fffd1bae59597fa74b489f71e41745ffa110ca902d5ccc2761f301a",
+        "byteLength": 1270430,
+        "durationMs": 210247
+      }
+    },
+    {
+      "song": {
+        "id": "1b7a1151-79cf-529e-bbb0-90ebd7908d3e",
+        "youtubeUrl": "https://www.youtube.com/watch?v=hbckxFs-obM",
+        "title": "살얼음심중",
+        "tags": [
+          "살얼음심중",
+          "A Double Suicide",
+          "Sheena Ringo"
+        ]
+      },
+      "audio": {
+        "path": "audio/hbckxFs-obM.ogg",
+        "sha256": "ca96a58fa22a883c67b1fb2cd8bf186fa2c4bbe0b343e802dced30384b38d4cf",
+        "byteLength": 1180761,
+        "durationMs": 192687
+      }
+    },
+    {
+      "song": {
+        "id": "2ddebb04-73d4-5267-9d53-aff1bbe60c45",
+        "youtubeUrl": "https://www.youtube.com/watch?v=p3e_HwISnqs",
+        "title": "스마일리를 찾아서",
+        "tags": [
+          "스마일리를 찾아서",
+          "Looking for Smiley",
+          "사사키 토모코"
+        ]
+      },
+      "audio": {
+        "path": "audio/p3e_HwISnqs.ogg",
+        "sha256": "716c3571b6e5fd484b44bcbce943117a2c68459fcbaffc23414d20db21caaf72",
+        "byteLength": 1656837,
+        "durationMs": 271940
+      }
+    },
+    {
+      "song": {
+        "id": "5b5b143e-f98b-5254-ac50-34e86d166f72",
+        "youtubeUrl": "https://www.youtube.com/watch?v=6w2sWIvPJmc",
+        "title": "드라마틱",
+        "tags": [
+          "드라마틱",
+          "Dramatic",
+          "Natsuko Miyamoto"
+        ]
+      },
+      "audio": {
+        "path": "audio/6w2sWIvPJmc.ogg",
+        "sha256": "36d81a6205e7afc6108499ea9a4ca09134a5b91a62819730c661934fce6ee9cf",
+        "byteLength": 1373023,
+        "durationMs": 227007
+      }
+    },
+    {
+      "song": {
+        "id": "ad29978a-365c-5c82-be2d-b2696403abde",
+        "youtubeUrl": "https://www.youtube.com/watch?v=R5AlE90IWjI",
+        "title": "밤을 늘려서",
+        "tags": [
+          "밤을 늘려서",
+          "Yoru Wo Nobashite",
+          "우라 코유키"
+        ]
+      },
+      "audio": {
+        "path": "audio/R5AlE90IWjI.ogg",
+        "sha256": "67e0f21a91b1b35722aa56fbfe4c13052a60584a97898aa323120bfe4c4d6f44",
+        "byteLength": 1565126,
+        "durationMs": 255514
+      }
+    },
+    {
+      "song": {
         "id": "328f4232-4df2-5bc4-acc1-1c35f0d1b6f8",
         "youtubeUrl": "https://www.youtube.com/watch?v=tc0FL9JROGQ",
         "title": "당신의 연인이 되고 싶어",
         "tags": [
-          "Cho Q May",
-          "당신의 연인이 되고 싶어"
+          "당신의 연인이 되고 싶어",
+          "우라라"
         ]
       },
       "audio": {
@@ -235,13 +1719,50 @@
     },
     {
       "song": {
+        "id": "b0374051-a25f-551a-9953-884e540bb227",
+        "youtubeUrl": "https://www.youtube.com/watch?v=GVUlHIa12lI",
+        "title": "소문의 그 아이",
+        "tags": [
+          "소문의 그 아이",
+          "That Classmate",
+          "무라사키 이마"
+        ]
+      },
+      "audio": {
+        "path": "audio/GVUlHIa12lI.ogg",
+        "sha256": "939f8dbcce7f725a3f2f1cb146da1fbe014222a4340c7400a23a280e323b2d4d",
+        "byteLength": 1182969,
+        "durationMs": 193309
+      }
+    },
+    {
+      "song": {
+        "id": "8cfbb38a-b1d2-5b70-a511-816567644cdf",
+        "youtubeUrl": "https://www.youtube.com/watch?v=j1DnOm0DdQU",
+        "title": "수고했어 여름",
+        "tags": [
+          "수고했어 여름",
+          "おつかれSUMMER",
+          "Tomoyuki Tanaka",
+          "Masayuki Kumahara"
+        ]
+      },
+      "audio": {
+        "path": "audio/j1DnOm0DdQU.ogg",
+        "sha256": "abf02b00d8dba729f6fc4e9b8174766108a38d75d5e3456b74e08272780fd34b",
+        "byteLength": 1450309,
+        "durationMs": 239540
+      }
+    },
+    {
+      "song": {
         "id": "94d71e5b-a626-5c67-a846-4a9cb9ec9b33",
         "youtubeUrl": "https://www.youtube.com/watch?v=yDOx_Duc498",
         "title": "막차는 25시",
         "tags": [
-          "Taiyo Someya",
-          "Lamp YouTube Official Channel",
-          "막차는 25시"
+          "막차는 25시",
+          "最終列車は25時",
+          "Taiyo Someya"
         ]
       },
       "audio": {
@@ -253,12 +1774,251 @@
     },
     {
       "song": {
+        "id": "9157d844-0c48-5c64-89cb-100bd358f49f",
+        "youtubeUrl": "https://www.youtube.com/watch?v=RQbs99v1K6Q",
+        "title": "마성의 여자 A",
+        "tags": [
+          "마성의 여자 A",
+          "femme fatale A",
+          "Mulasaki Ima"
+        ]
+      },
+      "audio": {
+        "path": "audio/RQbs99v1K6Q.ogg",
+        "sha256": "6c4cc01a295aff92222e635992bf017860237ef400eb2744b9dadc19db6fcd94",
+        "byteLength": 1352794,
+        "durationMs": 220840
+      }
+    },
+    {
+      "song": {
+        "id": "33d09bc4-b2a9-5663-9e3f-875b2269e1b5",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Yjo_NQUyBa8",
+        "title": "프로포즈",
+        "tags": [
+          "프로포즈",
+          "propose",
+          "Naisho no Pierced Earrings"
+        ]
+      },
+      "audio": {
+        "path": "audio/Yjo_NQUyBa8.ogg",
+        "sha256": "82a2ca0874312dbec01eea93aba4fe8b501756323ef0a8e7e54cd7e8ce62617e",
+        "byteLength": 1435928,
+        "durationMs": 234407
+      }
+    },
+    {
+      "song": {
+        "id": "2a2dc87b-a9a5-58b5-a231-cfbbf755f0aa",
+        "youtubeUrl": "https://www.youtube.com/watch?v=SVkGRoLicuA",
+        "title": "좋아하니까",
+        "tags": [
+          "좋아하니까",
+          "Sukidakara",
+          "Yuika"
+        ]
+      },
+      "audio": {
+        "path": "audio/SVkGRoLicuA.ogg",
+        "sha256": "86db7bb04bf8e00fca4807282b0e99cc09000e6a2a09d4b1118389f66f1c4d21",
+        "byteLength": 1817827,
+        "durationMs": 298671
+      }
+    },
+    {
+      "song": {
+        "id": "a388d570-ba81-5731-b3c7-e2bdd11b82fb",
+        "youtubeUrl": "https://www.youtube.com/watch?v=OEPmMz2Y0c8",
+        "title": "과호흡",
+        "tags": [
+          "과호흡",
+          "Hyperventilation",
+          "Yojiro Noda"
+        ]
+      },
+      "audio": {
+        "path": "audio/OEPmMz2Y0c8.ogg",
+        "sha256": "f68fe2dd61b5759d6bbbdea394f7c3baf25d77be707df251a015cc56e2366257",
+        "byteLength": 1606573,
+        "durationMs": 263594
+      }
+    },
+    {
+      "song": {
+        "id": "b46aacba-d237-50ed-9e9c-710b10805f70",
+        "youtubeUrl": "https://www.youtube.com/watch?v=zuO2fClon98",
+        "title": "제인 도",
+        "tags": [
+          "제인 도",
+          "JANE DOE",
+          "Kenshi Yonezu",
+          "요네즈 켄시"
+        ]
+      },
+      "audio": {
+        "path": "audio/zuO2fClon98.ogg",
+        "sha256": "921511efa846c49f2620749a6436b01b952c610529830e23a992524df9115da9",
+        "byteLength": 1430438,
+        "durationMs": 235954
+      }
+    },
+    {
+      "song": {
+        "id": "8d0fc83f-b034-56f9-9044-346c0026cc79",
+        "youtubeUrl": "https://www.youtube.com/watch?v=zO-iApOlZHE",
+        "title": "지구본",
+        "tags": [
+          "지구본",
+          "Chikyugi Spinning Globe",
+          "Kenshi Yonezu",
+          "요네즈 켄시"
+        ]
+      },
+      "audio": {
+        "path": "audio/zO-iApOlZHE.ogg",
+        "sha256": "01ee3e237c59d745e3ced70f713ac3d50e4d812a68688f2d810950837dacd7a5",
+        "byteLength": 1665679,
+        "durationMs": 274607
+      }
+    },
+    {
+      "song": {
+        "id": "e49ba42b-7c10-5e84-b6c0-c02ab72ae47d",
+        "youtubeUrl": "https://www.youtube.com/watch?v=S_9HiT-5vPc",
+        "title": "갈애 에튀드",
+        "tags": [
+          "갈애 에튀드",
+          "susumu"
+        ]
+      },
+      "audio": {
+        "path": "audio/S_9HiT-5vPc.ogg",
+        "sha256": "ae192b3f35042a22f8d056664700a85509d25d95c0ec1f9f959c9ab8d17759f2",
+        "byteLength": 1047144,
+        "durationMs": 171420
+      }
+    },
+    {
+      "song": {
+        "id": "db25bc97-82cf-5183-847f-5e8662a7cd42",
+        "youtubeUrl": "https://www.youtube.com/watch?v=9y5iaRtS3hU",
+        "title": "역몽",
+        "tags": [
+          "역몽",
+          "Sakayume",
+          "Daiki Tsuneta",
+          "츠네타 다이키"
+        ]
+      },
+      "audio": {
+        "path": "audio/9y5iaRtS3hU.ogg",
+        "sha256": "3438a46e3ce2318e32c47f584e5bb63acf4e6b19614b06e81e9da94aab15e0d4",
+        "byteLength": 1888528,
+        "durationMs": 308220
+      }
+    },
+    {
+      "song": {
+        "id": "286ddc81-978b-57e4-b565-b1f5ca158871",
+        "youtubeUrl": "https://www.youtube.com/watch?v=infl2yeucIU",
+        "title": "잡동사니",
+        "tags": [
+          "잡동사니",
+          "Garakuta JUNK",
+          "요네즈 켄시"
+        ]
+      },
+      "audio": {
+        "path": "audio/infl2yeucIU.ogg",
+        "sha256": "90bfb2e4d3f8e0e64b045368b1d325f039a063e6ca011692cbbe0a1bea280a3c",
+        "byteLength": 1446326,
+        "durationMs": 237607
+      }
+    },
+    {
+      "song": {
+        "id": "cc4d8a69-812f-5a9d-9909-7e6c962d9f3e",
+        "youtubeUrl": "https://www.youtube.com/watch?v=hjepvLX-Gfs",
+        "title": "유성군",
+        "tags": [
+          "유성군",
+          "Ryuseigun",
+          "TAKU INOUE"
+        ]
+      },
+      "audio": {
+        "path": "audio/hjepvLX-Gfs.ogg",
+        "sha256": "efb0c512f4c2cab419a3854ce7cfbb4ffed3bd5820bf1cda93b4bcc9e950553d",
+        "byteLength": 1701807,
+        "durationMs": 280007
+      }
+    },
+    {
+      "song": {
+        "id": "2452be2e-8ee5-5220-a2b0-8c4cb25bf20c",
+        "youtubeUrl": "https://www.youtube.com/watch?v=QEyAC6F1PEc",
+        "title": "글라이드",
+        "tags": [
+          "글라이드",
+          "Glide",
+          "Ryota Saito",
+          "knoak"
+        ]
+      },
+      "audio": {
+        "path": "audio/QEyAC6F1PEc.ogg",
+        "sha256": "d9a2f7194075f858ac13e1a476cc9016b7b90540b43f9fd4846cccce4c7180a9",
+        "byteLength": 1289119,
+        "durationMs": 210540
+      }
+    },
+    {
+      "song": {
+        "id": "703f3b84-bbfa-55bd-bb1a-4a8795fd6ac5",
+        "youtubeUrl": "https://www.youtube.com/watch?v=IFCDLIKSArs",
+        "title": "키라리",
+        "tags": [
+          "키라리",
+          "Kirari",
+          "Fujii Kaze"
+        ]
+      },
+      "audio": {
+        "path": "audio/IFCDLIKSArs.ogg",
+        "sha256": "d87336bc4830c2aaaab98a36b4c5f9adb609674a340dcdf24ac44b4a3061e6e3",
+        "byteLength": 1394145,
+        "durationMs": 227900
+      }
+    },
+    {
+      "song": {
+        "id": "4bfa77f5-df80-5cad-bb11-2528da8531c3",
+        "youtubeUrl": "https://www.youtube.com/watch?v=8s9vljW8HLA",
+        "title": "과실",
+        "tags": [
+          "과실",
+          "Kajitsu",
+          "AKASAKI"
+        ]
+      },
+      "audio": {
+        "path": "audio/8s9vljW8HLA.ogg",
+        "sha256": "6df51ca2cda34b75ea152336d09e5f0367ffac5ad3afff61a8e67c5789dfe0d2",
+        "byteLength": 1879572,
+        "durationMs": 307228
+      }
+    },
+    {
+      "song": {
         "id": "7c3eb4f3-0945-5d6c-a6d4-3f40214477f0",
         "youtubeUrl": "https://www.youtube.com/watch?v=EaC8Dgtvrb0",
         "title": "그런 bitter 한 이야기",
         "tags": [
+          "그런 bitter 한 이야기",
+          "そんなbitterな話",
           "Vaundy",
-          "그런 bitter한 이야기"
+          "바운디"
         ]
       },
       "audio": {
@@ -270,12 +2030,177 @@
     },
     {
       "song": {
+        "id": "4d82d292-9bf2-5f86-8d3e-3fc6aa76bd11",
+        "youtubeUrl": "https://www.youtube.com/watch?v=JI2jR9VfMFk",
+        "title": "공간 사정 시간 사상",
+        "tags": [
+          "공간 사정 시간 사상",
+          "kinoue64"
+        ]
+      },
+      "audio": {
+        "path": "audio/JI2jR9VfMFk.ogg",
+        "sha256": "208e4875ad187f6ccf9745e3e4bf41b629010774d246d0d42ec51fd2b086bc5d",
+        "byteLength": 1858485,
+        "durationMs": 303243
+      }
+    },
+    {
+      "song": {
+        "id": "1fabc2f9-7e25-5171-b879-792d89ae1f52",
+        "youtubeUrl": "https://www.youtube.com/watch?v=XOaSFj7Q6HY",
+        "title": "비가 찬란히",
+        "tags": [
+          "비가 찬란히",
+          "Ame Sansan",
+          "Daiki Tsuneta",
+          "츠네타 다이키"
+        ]
+      },
+      "audio": {
+        "path": "audio/XOaSFj7Q6HY.ogg",
+        "sha256": "485fc857b133efeec237a6caaea47360a2894efd3f3190fd18588e68ae233ce4",
+        "byteLength": 1826388,
+        "durationMs": 298047
+      }
+    },
+    {
+      "song": {
+        "id": "91d6df6f-afb8-5861-87b7-022eaf0b2e86",
+        "youtubeUrl": "https://www.youtube.com/watch?v=L_pRTyuZ9fk",
+        "title": "사신",
+        "tags": [
+          "사신",
+          "Shinigami",
+          "요네즈 켄시"
+        ]
+      },
+      "audio": {
+        "path": "audio/L_pRTyuZ9fk.ogg",
+        "sha256": "a22a91014974c3f1ff5bbbfdf42ad81a444ddd347f33bff1745d4c58136d8004",
+        "byteLength": 1104675,
+        "durationMs": 180767
+      }
+    },
+    {
+      "song": {
+        "id": "aa20929a-4efd-5e4d-90f9-7dc533705aeb",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Hy7GWPkrZv0",
+        "title": "잊어버리기 전에",
+        "tags": [
+          "잊어버리기 전에",
+          "Vaundy",
+          "바운디"
+        ]
+      },
+      "audio": {
+        "path": "audio/Hy7GWPkrZv0.ogg",
+        "sha256": "83a0771b0aa5d16375ac11595635c616d34f975413470d9abe29b42773b7756e",
+        "byteLength": 1480644,
+        "durationMs": 242702
+      }
+    },
+    {
+      "song": {
+        "id": "5c52d68b-39f3-5b14-95c9-f945decf2167",
+        "youtubeUrl": "https://www.youtube.com/watch?v=6aP_zJ21Jmw",
+        "title": "사랑 감기에 실려",
+        "tags": [
+          "사랑 감기에 실려",
+          "Vaundy",
+          "바운디"
+        ]
+      },
+      "audio": {
+        "path": "audio/6aP_zJ21Jmw.ogg",
+        "sha256": "ca84ab536cfe6a2b429560a932b4a6393231d52365cbff6f554f475ef323007b",
+        "byteLength": 1568302,
+        "durationMs": 255921
+      }
+    },
+    {
+      "song": {
+        "id": "bf3ce3b2-5140-5009-b997-94391ae49f11",
+        "youtubeUrl": "https://www.youtube.com/watch?v=02Ap3uMNiw8",
+        "title": "플라즈마",
+        "tags": [
+          "플라즈마",
+          "Plazma",
+          "요네즈 켄시"
+        ]
+      },
+      "audio": {
+        "path": "audio/02Ap3uMNiw8.ogg",
+        "sha256": "da11820dcb9fb72d0be371cfe1a0a194b129c0cf29dbaa0ff813aced89c757a2",
+        "byteLength": 1099142,
+        "durationMs": 180840
+      }
+    },
+    {
+      "song": {
+        "id": "f347b584-ca61-5634-99ed-07ad71ca95da",
+        "youtubeUrl": "https://www.youtube.com/watch?v=EXTXw2u5tMM",
+        "title": "츄, 다양성",
+        "tags": [
+          "츄 다양성",
+          "ChuTayousei",
+          "아노",
+          "마베 슈이치"
+        ]
+      },
+      "audio": {
+        "path": "audio/EXTXw2u5tMM.ogg",
+        "sha256": "704abaa88b91d7fe452689677da461f93612a728fee31c4eabf726bcbe499ea8",
+        "byteLength": 1138044,
+        "durationMs": 185760
+      }
+    },
+    {
+      "song": {
+        "id": "c0fd4eb7-af71-574a-8f73-d887db4dd78b",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Lnk6HKYPHUk",
+        "title": "극상",
+        "tags": [
+          "극상",
+          "Ayase",
+          "요아소비",
+          "아야세"
+        ]
+      },
+      "audio": {
+        "path": "audio/Lnk6HKYPHUk.ogg",
+        "sha256": "2cf847adc43d80a2fbca0079405fc9362465ca7e57c241ca31ab5c4f77c67fc1",
+        "byteLength": 1218150,
+        "durationMs": 198889
+      }
+    },
+    {
+      "song": {
+        "id": "6dd4a9a7-dac1-5fe5-88ac-141128d7dcc9",
+        "youtubeUrl": "https://www.youtube.com/watch?v=QtLDltsBzsU",
+        "title": "칼날 길이 2억 센티미터",
+        "tags": [
+          "칼날 길이 2억 센티미터",
+          "HAWATARI NIOKU CENTI",
+          "MAXIMUM THE RYOKUN"
+        ]
+      },
+      "audio": {
+        "path": "audio/QtLDltsBzsU.ogg",
+        "sha256": "d5aa25ce999613fbe7e078ce3738ec4088a47c95fe98d99038c15c5f7412e676",
+        "byteLength": 548639,
+        "durationMs": 89571
+      }
+    },
+    {
+      "song": {
         "id": "a14a3c12-4d28-5329-8002-75861a311e8a",
         "youtubeUrl": "https://www.youtube.com/watch?v=4flRaFrBqFU",
         "title": "재회",
         "tags": [
+          "재회",
           "Vaundy",
-          "재회"
+          "바운디"
         ]
       },
       "audio": {
@@ -291,8 +2216,9 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=_GXbXU4g_CA",
         "title": "바니 걸",
         "tags": [
-          "AKASAKI",
-          "바니 걸"
+          "바니 걸",
+          "Bunny Girl",
+          "AKASAKI"
         ]
       },
       "audio": {
@@ -304,14 +2230,89 @@
     },
     {
       "song": {
+        "id": "0d2cd16d-3a1f-548a-9841-6459787d24ac",
+        "youtubeUrl": "https://www.youtube.com/watch?v=0R5uXlT54hs",
+        "title": "아웃사이더",
+        "tags": [
+          "아웃사이더",
+          "Outsider",
+          "Eve",
+          "이브"
+        ]
+      },
+      "audio": {
+        "path": "audio/0R5uXlT54hs.ogg",
+        "sha256": "c519e48abbf178cf2692eaf49db66b5be09258f02be534e9539828a426ff580e",
+        "byteLength": 1260169,
+        "durationMs": 207654
+      }
+    },
+    {
+      "song": {
+        "id": "29143aac-ca31-5967-b546-483a956dd671",
+        "youtubeUrl": "https://www.youtube.com/watch?v=1o1rKSsYaGY",
+        "title": "히어로",
+        "tags": [
+          "히어로",
+          "HERO",
+          "Vaundy",
+          "바운디"
+        ]
+      },
+      "audio": {
+        "path": "audio/1o1rKSsYaGY.ogg",
+        "sha256": "e8aa181ef0459f06f4323220295c1037b982ef39a9ce9c2fd4eb13a2e32e2468",
+        "byteLength": 1227590,
+        "durationMs": 200420
+      }
+    },
+    {
+      "song": {
+        "id": "1c81149f-4b21-564d-98bb-0cb35a46bdf0",
+        "youtubeUrl": "https://www.youtube.com/watch?v=PLrTZjOTVKI",
+        "title": "카테고라이즈",
+        "tags": [
+          "카테고라이즈",
+          "Categorize",
+          "Suzune",
+          "스즈네"
+        ]
+      },
+      "audio": {
+        "path": "audio/PLrTZjOTVKI.ogg",
+        "sha256": "8741c5f276a0447ae17c4748a403d548493bed7a32b67fc3dc36fdef95db47fb",
+        "byteLength": 1386158,
+        "durationMs": 227367
+      }
+    },
+    {
+      "song": {
+        "id": "60557695-930a-503c-9fd5-e2a8ab26efb8",
+        "youtubeUrl": "https://www.youtube.com/watch?v=IyFWUpQw16o",
+        "title": "정제",
+        "tags": [
+          "정제",
+          "tablet",
+          "TOOBOE"
+        ]
+      },
+      "audio": {
+        "path": "audio/IyFWUpQw16o.ogg",
+        "sha256": "bf06c34efedae27a493163a45ba99b4106c80a49d494bbba77ffbb83d902ff32",
+        "byteLength": 1241626,
+        "durationMs": 204807
+      }
+    },
+    {
+      "song": {
         "id": "68fb7632-0361-5db3-9fdf-0fa32a707cb9",
         "youtubeUrl": "https://www.youtube.com/watch?v=mJ1N7-HyH1A",
         "title": "밤을 달리다",
         "tags": [
-          "YOASOBI",
           "밤을 달리다",
+          "Into The Night",
           "AYASE",
-          "Into The Night"
+          "아야세"
         ]
       },
       "audio": {
@@ -323,13 +2324,87 @@
     },
     {
       "song": {
+        "id": "172b2140-4cbe-5b80-b2d0-b773fad0c791",
+        "youtubeUrl": "https://www.youtube.com/watch?v=bGQQfNgtlz8",
+        "title": "불가 행력",
+        "tags": [
+          "불가 행력",
+          "Vaundy",
+          "바운디"
+        ]
+      },
+      "audio": {
+        "path": "audio/bGQQfNgtlz8.ogg",
+        "sha256": "272ac90128e1000c8346e8b4602e0b3adc030b01dee85d0c7d01938e151dd7f6",
+        "byteLength": 1216049,
+        "durationMs": 199794
+      }
+    },
+    {
+      "song": {
+        "id": "06f32aa4-b53d-5103-a35c-a15d6ee3bfd4",
+        "youtubeUrl": "https://www.youtube.com/watch?v=52QM9yF0G3E",
+        "title": "윈즈데이",
+        "tags": [
+          "윈즈데이",
+          "WINDSDAY",
+          "yacco",
+          "SHINTA"
+        ]
+      },
+      "audio": {
+        "path": "audio/52QM9yF0G3E.ogg",
+        "sha256": "912121ce697a3c3f7662796dbd82c03047a126c245761183f4548cc46e3deef3",
+        "byteLength": 1131338,
+        "durationMs": 185101
+      }
+    },
+    {
+      "song": {
+        "id": "6fd6435e-e56b-5532-b215-8a5609aab806",
+        "youtubeUrl": "https://www.youtube.com/watch?v=6qv_XcLOhsA",
+        "title": "디앤디",
+        "tags": [
+          "디앤디",
+          "DND",
+          "스즈네"
+        ]
+      },
+      "audio": {
+        "path": "audio/6qv_XcLOhsA.ogg",
+        "sha256": "d6c706b6a015080d5b425b4e0d64beef04ed57056965ba9f9cffd17d8464b7ac",
+        "byteLength": 1247953,
+        "durationMs": 205249
+      }
+    },
+    {
+      "song": {
+        "id": "c9e08f56-ffc7-5bdc-a4f3-5c37ebfc669a",
+        "youtubeUrl": "https://www.youtube.com/watch?v=RUSBABcGf2c",
+        "title": "등불",
+        "tags": [
+          "등불",
+          "Akari",
+          "Soushi Sakiyama",
+          "사키야마 소우시"
+        ]
+      },
+      "audio": {
+        "path": "audio/RUSBABcGf2c.ogg",
+        "sha256": "415c932f8ad9ecb6d8f07e6cc3fb59e2557cbbe885cb839c94f70665132905a3",
+        "byteLength": 1461130,
+        "durationMs": 238727
+      }
+    },
+    {
+      "song": {
         "id": "032f6a4f-c90a-5c4f-821e-4fd9b3b05b8a",
         "youtubeUrl": "https://www.youtube.com/watch?v=p1tsL0YmNqU",
         "title": "만찬가",
         "tags": [
-          "tuki",
           "만찬가",
-          "晩餐歌 Bansanka"
+          "晩餐歌 Bansanka",
+          "tuki"
         ]
       },
       "audio": {
@@ -341,12 +2416,435 @@
     },
     {
       "song": {
+        "id": "5062282c-5d2f-5ce1-a29a-56329f901a3a",
+        "youtubeUrl": "https://www.youtube.com/watch?v=y8bRrsQ7Sd0",
+        "title": "이름을 부를게",
+        "tags": [
+          "이름을 부를게",
+          "PON"
+        ]
+      },
+      "audio": {
+        "path": "audio/y8bRrsQ7Sd0.ogg",
+        "sha256": "45011da1e436314716713e7b670481b19411d4b0df71e20d6a69e12a2542c974",
+        "byteLength": 1646396,
+        "durationMs": 272700
+      }
+    },
+    {
+      "song": {
+        "id": "97bcd9d8-52be-581e-a0fa-57c6419d82ee",
+        "youtubeUrl": "https://www.youtube.com/watch?v=17_t3o1hEXg",
+        "title": "폭도",
+        "tags": [
+          "폭도",
+          "Bouto",
+          "Eve",
+          "이브"
+        ]
+      },
+      "audio": {
+        "path": "audio/17_t3o1hEXg.ogg",
+        "sha256": "daacf27762c9e5df5591a35f788b69d10f32aa7c18b96a48fc0df3bdd1784276",
+        "byteLength": 1379647,
+        "durationMs": 225186
+      }
+    },
+    {
+      "song": {
+        "id": "619536b9-9577-5c22-a888-db9fd8261da2",
+        "youtubeUrl": "https://www.youtube.com/watch?v=UE5-ydAIqIE",
+        "title": "도넛 홀",
+        "tags": [
+          "도넛 홀",
+          "Doughnut Hole Cover",
+          "Doughnut Hole",
+          "Hachi"
+        ]
+      },
+      "audio": {
+        "path": "audio/UE5-ydAIqIE.ogg",
+        "sha256": "a1be7569efc19839b2467384115036e171d92e3156b6d8b6dcca4bfda2ce2f4e",
+        "byteLength": 1245679,
+        "durationMs": 205100
+      }
+    },
+    {
+      "song": {
+        "id": "65d8017c-028d-59d4-b36a-0457e6425dd9",
+        "youtubeUrl": "https://www.youtube.com/watch?v=9mWbCPJuoIo",
+        "title": "오도루프",
+        "tags": [
+          "오도루프",
+          "Oddloop",
+          "Koji Mihara"
+        ]
+      },
+      "audio": {
+        "path": "audio/9mWbCPJuoIo.ogg",
+        "sha256": "e95f360a47e1ee436e1630400decfed92733d9ab507e446fe4c534c3562d4112",
+        "byteLength": 1552817,
+        "durationMs": 253994
+      }
+    },
+    {
+      "song": {
+        "id": "9f04975d-315b-572a-a27a-1255c4554557",
+        "youtubeUrl": "https://www.youtube.com/watch?v=eL3_n6vnPS4",
+        "title": "눈동자에 반하다",
+        "tags": [
+          "눈동자에 반하다",
+          "Vaundy",
+          "바운디"
+        ]
+      },
+      "audio": {
+        "path": "audio/eL3_n6vnPS4.ogg",
+        "sha256": "ef8de8550e1fb8a9630738396ffef5803677133f589c303fa8aeb124f1148acd",
+        "byteLength": 1577973,
+        "durationMs": 257694
+      }
+    },
+    {
+      "song": {
+        "id": "a6b83c84-0ee5-565c-95f7-ff3efa040200",
+        "youtubeUrl": "https://www.youtube.com/watch?v=xe5LAqOtft8",
+        "title": "플라네타 리",
+        "tags": [
+          "플라네타 리",
+          "Planetary",
+          "오오하라 타쿠마",
+          "나미오카 신타로"
+        ]
+      },
+      "audio": {
+        "path": "audio/xe5LAqOtft8.ogg",
+        "sha256": "795603777ca71913da3cf6a9f08b8b832fa7a9c1860c218bc4db4754b1f18f5a",
+        "byteLength": 1080457,
+        "durationMs": 177497
+      }
+    },
+    {
+      "song": {
+        "id": "09081981-7f73-56f7-87b8-104c87fabf71",
+        "youtubeUrl": "https://www.youtube.com/watch?v=O5mrt1rNL8E",
+        "title": "소구와 나",
+        "tags": [
+          "소구와 나",
+          "4na"
+        ]
+      },
+      "audio": {
+        "path": "audio/O5mrt1rNL8E.ogg",
+        "sha256": "79903380796c59bd4d187df1838a7133b540f42433d93c04c1ec1207ce55dc72",
+        "byteLength": 1358415,
+        "durationMs": 222852
+      }
+    },
+    {
+      "song": {
+        "id": "84e6972f-edff-526b-bd38-8dea62923dad",
+        "youtubeUrl": "https://www.youtube.com/watch?v=NzfYNdIKnzA",
+        "title": "나는 유령",
+        "tags": [
+          "나는 유령",
+          "Atashiwa Yuurei",
+          "Kenshi Yonezu",
+          "요네즈 켄시"
+        ]
+      },
+      "audio": {
+        "path": "audio/NzfYNdIKnzA.ogg",
+        "sha256": "1f9a50e995ef7fb5cdc4b664e4dfd75012aaae16ca4e7f0a9229cbc47178dee1",
+        "byteLength": 1490271,
+        "durationMs": 243514
+      }
+    },
+    {
+      "song": {
+        "id": "6bc9e79c-b6b3-5f4d-86fd-e7d7812289e6",
+        "youtubeUrl": "https://www.youtube.com/watch?v=z3lXnvbwqlA",
+        "title": "여름눈 세레나데",
+        "tags": [
+          "여름눈 세레나데",
+          "Susumu"
+        ]
+      },
+      "audio": {
+        "path": "audio/z3lXnvbwqlA.ogg",
+        "sha256": "9e66ff36917c10c676c542c3e79124b32ce50ef289f6bf796756709453d222e0",
+        "byteLength": 1131291,
+        "durationMs": 184567
+      }
+    },
+    {
+      "song": {
+        "id": "fa6a4025-181f-5340-8ad1-cce0615c24c1",
+        "youtubeUrl": "https://www.youtube.com/watch?v=2BWZN71ahNI",
+        "title": "유리창",
+        "tags": [
+          "유리창",
+          "GLASS WINDOW",
+          "Daiki Tsuneta",
+          "츠네타 다이키"
+        ]
+      },
+      "audio": {
+        "path": "audio/2BWZN71ahNI.ogg",
+        "sha256": "e05c033752008fda95f32cd4b8458d876d8e4f37974e09bb2d55053384bbeba5",
+        "byteLength": 1342587,
+        "durationMs": 219234
+      }
+    },
+    {
+      "song": {
+        "id": "bf61b0f6-0078-59b8-a4ec-6ddfe8ce24f6",
+        "youtubeUrl": "https://www.youtube.com/watch?v=OK5EOqnigeA",
+        "title": "드라마투르기",
+        "tags": [
+          "드라마투르기",
+          "Dramaturgy Live Film Ver",
+          "Dramaturgy",
+          "Eve",
+          "이브"
+        ]
+      },
+      "audio": {
+        "path": "audio/OK5EOqnigeA.ogg",
+        "sha256": "6282cd2ab84f8b4555e3d3ee7c338e09963c26d12c3731c586092c66600817d1",
+        "byteLength": 1453860,
+        "durationMs": 237316
+      }
+    },
+    {
+      "song": {
+        "id": "cc03631b-e572-5177-990a-8fa77e6c4a6a",
+        "youtubeUrl": "https://www.youtube.com/watch?v=vxPmk8ueQ1c",
+        "title": "메트로시티",
+        "tags": [
+          "메트로시티",
+          "Metrocity",
+          "imase",
+          "natori",
+          "나토리"
+        ]
+      },
+      "audio": {
+        "path": "audio/vxPmk8ueQ1c.ogg",
+        "sha256": "a0c66e91fd47ed70b5b41287d9dea60a26de4c4f4754d487fc792003c7bdee00",
+        "byteLength": 1227625,
+        "durationMs": 200518
+      }
+    },
+    {
+      "song": {
+        "id": "ff6d6943-b522-58a9-b623-da6ed0203ec6",
+        "youtubeUrl": "https://www.youtube.com/watch?v=akj0gTV2Iq0",
+        "title": "우리들의 여름방학 전쟁",
+        "tags": [
+          "우리들의 여름방학 전쟁",
+          "Chevon",
+          "야기누마 유우"
+        ]
+      },
+      "audio": {
+        "path": "audio/akj0gTV2Iq0.ogg",
+        "sha256": "2c8536aa6abdee045b30cdbc5c07a66e3d1215a940eb144e6c2a8497357e41db",
+        "byteLength": 1279530,
+        "durationMs": 210824
+      }
+    },
+    {
+      "song": {
+        "id": "1ab99d43-9d6d-5fbc-bbf5-80d23661c037",
+        "youtubeUrl": "https://www.youtube.com/watch?v=WHdL2vstvL8",
+        "title": "말해 줘",
+        "tags": [
+          "말해 줘",
+          "Nbuna"
+        ]
+      },
+      "audio": {
+        "path": "audio/WHdL2vstvL8.ogg",
+        "sha256": "94e5efe1a55d9666229803d08aebd2592958a922ca1b1a0150f626a1ffe94074",
+        "byteLength": 1470664,
+        "durationMs": 242189
+      }
+    },
+    {
+      "song": {
+        "id": "1109ac2b-08f6-537b-9c4c-cac7eaa385be",
+        "youtubeUrl": "https://www.youtube.com/watch?v=BsdU-IiSwsE",
+        "title": "마음에 구름을 지닌 소년",
+        "tags": [
+          "마음에 구름을 지닌 소년",
+          "Keiichi Sokabe",
+          "Takashi Tanaka",
+          "Mikio Daikuhara"
+        ]
+      },
+      "audio": {
+        "path": "audio/BsdU-IiSwsE.ogg",
+        "sha256": "c506a1109f4284228d97300f40b02890ceb5ddea5cd49ace1a9c503ee57fb055",
+        "byteLength": 1401062,
+        "durationMs": 229106
+      }
+    },
+    {
+      "song": {
+        "id": "06c9008f-3a44-5cd1-9394-0e4396f44783",
+        "youtubeUrl": "https://www.youtube.com/watch?v=gQtbq9X6O3o",
+        "title": "립서비스",
+        "tags": [
+          "립서비스",
+          "The Floor"
+        ]
+      },
+      "audio": {
+        "path": "audio/gQtbq9X6O3o.ogg",
+        "sha256": "c8bd8cfea978450459a56fbf09741c9d303de20bc8b2354b6779e083a8f73b72",
+        "byteLength": 1271226,
+        "durationMs": 207506
+      }
+    },
+    {
+      "song": {
+        "id": "ed4f3eda-1865-5e5c-aa37-e59118120c4e",
+        "youtubeUrl": "https://www.youtube.com/watch?v=WN7w2YEV9DU",
+        "title": "덮어써 버렸어",
+        "tags": [
+          "덮어써 버렸어",
+          "Overwritten",
+          "나토리",
+          "키타니 타츠야"
+        ]
+      },
+      "audio": {
+        "path": "audio/WN7w2YEV9DU.ogg",
+        "sha256": "ed84cc369d77b3d4766650f20c7c65b4b16f1f955c42f69201e58d039976ece8",
+        "byteLength": 989697,
+        "durationMs": 163954
+      }
+    },
+    {
+      "song": {
+        "id": "0446d9a3-12ec-55bc-ae70-d9e906153890",
+        "youtubeUrl": "https://www.youtube.com/watch?v=yqLOGavSFbY",
+        "title": "재상영",
+        "tags": [
+          "재상영",
+          "Saijyouei",
+          "Kenshi Yonezu",
+          "요네즈 켄시"
+        ]
+      },
+      "audio": {
+        "path": "audio/yqLOGavSFbY.ogg",
+        "sha256": "73200d27a74d30772aaf4318e0edb2765eb414d37ee0d83342d7481f0c9e3b3e",
+        "byteLength": 1298024,
+        "durationMs": 212180
+      }
+    },
+    {
+      "song": {
+        "id": "4bc3d2ef-d714-51b5-9059-2260f688e04e",
+        "youtubeUrl": "https://www.youtube.com/watch?v=fxtQ4Dsmqo0",
+        "title": "상열",
+        "tags": [
+          "상열",
+          "Vaundy",
+          "바운디"
+        ]
+      },
+      "audio": {
+        "path": "audio/fxtQ4Dsmqo0.ogg",
+        "sha256": "b7d4de67d41a896ae0ed7274c285d5073383f48a87106c949097d7ee4e6079eb",
+        "byteLength": 1464922,
+        "durationMs": 239615
+      }
+    },
+    {
+      "song": {
+        "id": "ddf0ca99-d4e1-55bd-86ed-c7ada52e36c0",
+        "youtubeUrl": "https://www.youtube.com/watch?v=mYUKb84KT14",
+        "title": "미러튠",
+        "tags": [
+          "미러튠",
+          "MIRROR TUNE",
+          "ACANE",
+          "아카네"
+        ]
+      },
+      "audio": {
+        "path": "audio/mYUKb84KT14.ogg",
+        "sha256": "600938a1313f1dc3d11488be5f4796b0cc0d09e983956882a8985e3c94affc8e",
+        "byteLength": 1515883,
+        "durationMs": 249807
+      }
+    },
+    {
+      "song": {
+        "id": "03d2dab3-21c5-5d92-b095-c471d9e2fc1f",
+        "youtubeUrl": "https://www.youtube.com/watch?v=2qtvPBymDxo",
+        "title": "목숨을 먹는 방법",
+        "tags": [
+          "목숨을 먹는 방법",
+          "Inochi No Tabekata",
+          "Eve",
+          "이브"
+        ]
+      },
+      "audio": {
+        "path": "audio/2qtvPBymDxo.ogg",
+        "sha256": "b5f0fe0e6405528e930e4fc1c3d34f68cfa1d75c870b8855f519d9399ad8ace2",
+        "byteLength": 1351264,
+        "durationMs": 224225
+      }
+    },
+    {
+      "song": {
+        "id": "f33e9c61-f703-5377-9f74-8a250b885862",
+        "youtubeUrl": "https://www.youtube.com/watch?v=xj-4fxPo2JQ",
+        "title": "베일",
+        "tags": [
+          "베일",
+          "veil",
+          "Keina Suda"
+        ]
+      },
+      "audio": {
+        "path": "audio/xj-4fxPo2JQ.ogg",
+        "sha256": "ef0402b4410ff61741a01d204f9726ac44450a4a0d38a96a6704bcf5a1d8ee6b",
+        "byteLength": 1271243,
+        "durationMs": 209643
+      }
+    },
+    {
+      "song": {
+        "id": "35cf5eb4-68c2-52da-8e99-9ee9554c1cac",
+        "youtubeUrl": "https://www.youtube.com/watch?v=gj4EmojEQmQ",
+        "title": "헤드라이너",
+        "tags": [
+          "헤드라이너",
+          "스즈네"
+        ]
+      },
+      "audio": {
+        "path": "audio/gj4EmojEQmQ.ogg",
+        "sha256": "d86834442f5b25f52becec78574a39b4b9d67fa1acaa871e1849e546b2b6825f",
+        "byteLength": 1421897,
+        "durationMs": 234574
+      }
+    },
+    {
+      "song": {
         "id": "de7b3cb5-5901-52cc-a949-eb1cebe6eae6",
         "youtubeUrl": "https://www.youtube.com/watch?v=yPdqcADl5U4",
         "title": "벌거벗은 용사",
         "tags": [
+          "벌거벗은 용사",
           "Vaundy",
-          "벌거벗은 용사"
+          "바운디"
         ]
       },
       "audio": {
@@ -362,9 +2860,10 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=Mw66DyjQxBI",
         "title": "전전전세",
         "tags": [
-          "Yojiro Noda",
           "전전전세",
-          "Zenzenzense"
+          "Zenzenzense Original Version",
+          "Zenzenzense",
+          "Yojiro Noda"
         ]
       },
       "audio": {
@@ -376,12 +2875,50 @@
     },
     {
       "song": {
+        "id": "f5054b97-d8a8-56a3-82a0-77778509d6bc",
+        "youtubeUrl": "https://www.youtube.com/watch?v=vNoJ-bAvcMc",
+        "title": "소로우즈",
+        "tags": [
+          "소로우즈",
+          "Sorrows",
+          "Daiki Tsuneta",
+          "츠네타 다이키"
+        ]
+      },
+      "audio": {
+        "path": "audio/vNoJ-bAvcMc.ogg",
+        "sha256": "f512fd965de5da996f29aaf311a6e6b9b80a89547645137a512598b964f7c76f",
+        "byteLength": 1350852,
+        "durationMs": 220900
+      }
+    },
+    {
+      "song": {
+        "id": "e61dc13a-e135-5747-be2f-d47e406a307f",
+        "youtubeUrl": "https://www.youtube.com/watch?v=VcGjH9RlfJA",
+        "title": "친구",
+        "tags": [
+          "친구",
+          "TOMODACHI",
+          "스즈네"
+        ]
+      },
+      "audio": {
+        "path": "audio/VcGjH9RlfJA.ogg",
+        "sha256": "ae6a313fe293cd7f71a350992629a973192ddf82f60810d4eb894c937e6090fb",
+        "byteLength": 1506784,
+        "durationMs": 248105
+      }
+    },
+    {
+      "song": {
         "id": "d3958af1-47eb-5ce7-94f7-066617ae807e",
         "youtubeUrl": "https://www.youtube.com/watch?v=ENQANfv2ANQ",
         "title": "괴수의 꽃노래",
         "tags": [
+          "괴수의 꽃노래",
           "Vaundy",
-          "괴수의 꽃노래"
+          "바운디"
         ]
       },
       "audio": {
@@ -393,14 +2930,86 @@
     },
     {
       "song": {
+        "id": "bd4a77df-638f-54e6-8c85-e56c381caf17",
+        "youtubeUrl": "https://www.youtube.com/watch?v=OSaVOYDg_fA",
+        "title": "슬립 워크",
+        "tags": [
+          "슬립 워크",
+          "Sleepwalk",
+          "나토리"
+        ]
+      },
+      "audio": {
+        "path": "audio/OSaVOYDg_fA.ogg",
+        "sha256": "c31aeb9176fcced7febe779098e86df15509e107f933ce124b82d0cca27ecdd1",
+        "byteLength": 894833,
+        "durationMs": 147527
+      }
+    },
+    {
+      "song": {
+        "id": "3681051f-ad8c-5564-8ebb-ac1ad3ab5244",
+        "youtubeUrl": "https://www.youtube.com/watch?v=1D5sm82yaFY",
+        "title": "카페인",
+        "tags": [
+          "카페인",
+          "Caffeine",
+          "아키야마 키이로"
+        ]
+      },
+      "audio": {
+        "path": "audio/1D5sm82yaFY.ogg",
+        "sha256": "1b16e7f9927991490ac389bf3c98f64e17f7167d0724bfd176d271cda5e2375a",
+        "byteLength": 1477856,
+        "durationMs": 243260
+      }
+    },
+    {
+      "song": {
+        "id": "f489d3fa-6ff6-557b-aedc-0c57296a378c",
+        "youtubeUrl": "https://www.youtube.com/watch?v=k2B_7cGzDFc",
+        "title": "수면제",
+        "tags": [
+          "수면제",
+          "우라야마 렌"
+        ]
+      },
+      "audio": {
+        "path": "audio/k2B_7cGzDFc.ogg",
+        "sha256": "f4811af63135bd2f9a663fd6ed7ae237caedde7defe980deda464d8f7e037e7a",
+        "byteLength": 1224227,
+        "durationMs": 199877
+      }
+    },
+    {
+      "song": {
+        "id": "49af0c81-e251-5bdb-9180-e8e025400d72",
+        "youtubeUrl": "https://www.youtube.com/watch?v=zNQle-Zgxl8",
+        "title": "리카",
+        "tags": [
+          "리카",
+          "Rika",
+          "Shintaro Nagamatsu",
+          "Shogo Kiyota"
+        ]
+      },
+      "audio": {
+        "path": "audio/zNQle-Zgxl8.ogg",
+        "sha256": "e6ca8ee3533af3785c185e0293152d129f7dace9eabf01202038c89e2649782f",
+        "byteLength": 1319858,
+        "durationMs": 216373
+      }
+    },
+    {
+      "song": {
         "id": "886f14ad-ba9f-5d54-9ccf-4ae6bc025f95",
         "youtubeUrl": "https://www.youtube.com/watch?v=16gZm9oeLtI",
         "title": "괴수의 꽃노래",
         "tags": [
-          "Vaundy",
-          "괴수의 꽃노래 replica",
           "괴수의 꽃노래",
-          "怪獣の花唄 replica"
+          "怪獣の花唄 replica",
+          "Vaundy",
+          "바운디"
         ]
       },
       "audio": {
@@ -412,13 +3021,235 @@
     },
     {
       "song": {
+        "id": "a158786f-0039-5b16-b21d-b3800a05b23f",
+        "youtubeUrl": "https://www.youtube.com/watch?v=9h57W4tQgko",
+        "title": "아아 이젠",
+        "tags": [
+          "아아 이젠",
+          "AhMou",
+          "Shinya Ishihara",
+          "Saucy Dog"
+        ]
+      },
+      "audio": {
+        "path": "audio/9h57W4tQgko.ogg",
+        "sha256": "d7085cdc9202a6a3917fea1fb4b902e9f0b07ff9c0c2803c33f0c434f607a562",
+        "byteLength": 1740848,
+        "durationMs": 284337
+      }
+    },
+    {
+      "song": {
+        "id": "428c3dce-0ad6-5a58-bc07-ec568faf9d97",
+        "youtubeUrl": "https://www.youtube.com/watch?v=gxp3R7l1iSk",
+        "title": "목마름을 외치다",
+        "tags": [
+          "목마름을 외치다",
+          "Kawakiwoameku",
+          "minami"
+        ]
+      },
+      "audio": {
+        "path": "audio/gxp3R7l1iSk.ogg",
+        "sha256": "b44b9b7900c04ad92720bacbee99969351425bdb688516757b717ca58ce2ff38",
+        "byteLength": 1526434,
+        "durationMs": 251940
+      }
+    },
+    {
+      "song": {
+        "id": "b18e6699-c683-538f-a0ce-a1dbd5296fe8",
+        "youtubeUrl": "https://www.youtube.com/watch?v=qJ1mUUI00cQ",
+        "title": "스페셜즈",
+        "tags": [
+          "스페셜즈",
+          "SPECIALZ",
+          "DAIKI TSUNETA",
+          "츠네타 다이키"
+        ]
+      },
+      "audio": {
+        "path": "audio/qJ1mUUI00cQ.ogg",
+        "sha256": "310329e7e6b04c2c025ccac9c75facda7bca91880689bdd7ee484c01c81728dd",
+        "byteLength": 1468149,
+        "durationMs": 239936
+      }
+    },
+    {
+      "song": {
+        "id": "99e656b5-46e7-53c9-8463-76840011c9fb",
+        "youtubeUrl": "https://www.youtube.com/watch?v=-LwBbLa_Vhc",
+        "title": "별자리가 될 수 있다면",
+        "tags": [
+          "별자리가 될 수 있다면",
+          "If I could be a constellation",
+          "Ai Higuchi",
+          "Hidemasa Naito"
+        ]
+      },
+      "audio": {
+        "path": "audio/-LwBbLa_Vhc.ogg",
+        "sha256": "2f89a38ae3498d22211055aae21f0828fc235d71612a53f36d631b6d6c8cfed6",
+        "byteLength": 1568111,
+        "durationMs": 258180
+      }
+    },
+    {
+      "song": {
+        "id": "4156def3-1521-5dc7-a2d3-da7cc617cf3a",
+        "youtubeUrl": "https://www.youtube.com/watch?v=JkEWRE8i6eg",
+        "title": "눈물의 스위머",
+        "tags": [
+          "눈물의 스위머",
+          "Lavt"
+        ]
+      },
+      "audio": {
+        "path": "audio/JkEWRE8i6eg.ogg",
+        "sha256": "22270375c56a5885b826c569f12b6e082937810e141e1b0171e45ed2ea9dc55f",
+        "byteLength": 1150331,
+        "durationMs": 189540
+      }
+    },
+    {
+      "song": {
+        "id": "635f299c-4dc2-51b5-8afd-8b470d1f84ce",
+        "youtubeUrl": "https://www.youtube.com/watch?v=gtQwNVznphg",
+        "title": "카니발",
+        "tags": [
+          "카니발",
+          "Vaundy",
+          "바운디"
+        ]
+      },
+      "audio": {
+        "path": "audio/gtQwNVznphg.ogg",
+        "sha256": "7f99055e5c9ea18865e1a4e9984e60cc2ceae5f34fd6b448032f365e3f55a577",
+        "byteLength": 1244849,
+        "durationMs": 203945
+      }
+    },
+    {
+      "song": {
+        "id": "a1b87ea7-7c8a-5b3f-b292-7f79f89c0b22",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Cjgz2n21KtA",
+        "title": "상냥함을 잃었다",
+        "tags": [
+          "상냥함을 잃었다",
+          "Cloudy",
+          "Koshiba Taketo"
+        ]
+      },
+      "audio": {
+        "path": "audio/Cjgz2n21KtA.ogg",
+        "sha256": "22caae9ec5436fc35b3f95344ba53962f40766ffc7dee68d17245b3aacc80525",
+        "byteLength": 1249643,
+        "durationMs": 203964
+      }
+    },
+    {
+      "song": {
+        "id": "cc9c1de9-b585-54e3-9696-2f8691a05842",
+        "youtubeUrl": "https://www.youtube.com/watch?v=JNzTgbeO_r4",
+        "title": "비닐",
+        "tags": [
+          "비닐",
+          "Vinyl",
+          "Daiki Tsuneta",
+          "츠네타 다이키"
+        ]
+      },
+      "audio": {
+        "path": "audio/JNzTgbeO_r4.ogg",
+        "sha256": "9c864055c782bbc9d1c6ec9527d3a8b691d574faac45da6ebe7c0a8375d1fd7d",
+        "byteLength": 1787148,
+        "durationMs": 294394
+      }
+    },
+    {
+      "song": {
+        "id": "665020c4-cc04-569f-b68b-fe6798508525",
+        "youtubeUrl": "https://www.youtube.com/watch?v=0GEoiLdCkUM",
+        "title": "멜랑콜리 키친",
+        "tags": [
+          "멜랑콜리 키친",
+          "Melancholy Kitchen",
+          "Kenshi Yonezu",
+          "요네즈 켄시"
+        ]
+      },
+      "audio": {
+        "path": "audio/0GEoiLdCkUM.ogg",
+        "sha256": "0fe9d59f8c072e155307482efcb30775be6f22c0ff1ab5abfa68b4d0d4d1428b",
+        "byteLength": 1336975,
+        "durationMs": 218660
+      }
+    },
+    {
+      "song": {
+        "id": "2534f14b-24c8-540e-8588-8d79f56bf07b",
+        "youtubeUrl": "https://www.youtube.com/watch?v=k8jtoLmTKsE",
+        "title": "여름 계획",
+        "tags": [
+          "여름 계획",
+          "Summer Planning",
+          "험브레더즈",
+          "무츠무로 아키라"
+        ]
+      },
+      "audio": {
+        "path": "audio/k8jtoLmTKsE.ogg",
+        "sha256": "bae43aeba891fe24906c0101b0bae7c53d46f7227daf4454c4a5d7eb30522098",
+        "byteLength": 1092768,
+        "durationMs": 179034
+      }
+    },
+    {
+      "song": {
+        "id": "6da97c24-1c7e-5e40-a3ac-30c3d801acf4",
+        "youtubeUrl": "https://www.youtube.com/watch?v=QVJseKjYRP8",
+        "title": "데려가 줘",
+        "tags": [
+          "데려가 줘",
+          "Take Me With You Tsuretette",
+          "Take Me With You",
+          "AKASAKI"
+        ]
+      },
+      "audio": {
+        "path": "audio/QVJseKjYRP8.ogg",
+        "sha256": "98a34b0f7fc4f9d3b2fcbb595d79c5290192fa9918feed82c6b1aac870ee8b34",
+        "byteLength": 1494924,
+        "durationMs": 244807
+      }
+    },
+    {
+      "song": {
+        "id": "e412220c-9c3d-5edd-950f-b97f689b3369",
+        "youtubeUrl": "https://www.youtube.com/watch?v=n-WBKL8wPuQ",
+        "title": "별이 헤엄치다",
+        "tags": [
+          "별이 헤엄치다",
+          "Hoshigaoyogu",
+          "핫토리"
+        ]
+      },
+      "audio": {
+        "path": "audio/n-WBKL8wPuQ.ogg",
+        "sha256": "bf3e646b357f1239da5c6b5ff8768eec50724225204f86605dea0d715fe28d11",
+        "byteLength": 1452609,
+        "durationMs": 240083
+      }
+    },
+    {
+      "song": {
         "id": "0b614891-fa0e-5c7a-980a-b45c682aa8b6",
         "youtubeUrl": "https://www.youtube.com/watch?v=qNU-SUKjMz0",
         "title": "1000일간",
         "tags": [
-          "noa",
           "1000일간",
-          "1000日間"
+          "1000日間",
+          "noa"
         ]
       },
       "audio": {
@@ -426,6 +3257,994 @@
         "sha256": "9e15f052152ac337b9fcb8fd4119a815515012eb4a4f2b6b0a570d649ca45393",
         "byteLength": 1245471,
         "durationMs": 203388
+      }
+    },
+    {
+      "song": {
+        "id": "dba3f7ef-7aa2-5058-b50f-ee3ca9486b8e",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Ee31wrZivNs",
+        "title": "해마 성장통",
+        "tags": [
+          "해마 성장통",
+          "Hippocampal Pain",
+          "ACANE",
+          "아카네"
+        ]
+      },
+      "audio": {
+        "path": "audio/Ee31wrZivNs.ogg",
+        "sha256": "cb0992a2da6a09f96737155d1572fb44934cda92221147627c58fed4d733df66",
+        "byteLength": 1149551,
+        "durationMs": 189540
+      }
+    },
+    {
+      "song": {
+        "id": "8467ec15-49f6-5e4f-993a-98df952319a1",
+        "youtubeUrl": "https://www.youtube.com/watch?v=sT1Bj7O8MLk",
+        "title": "열등감",
+        "tags": [
+          "열등감",
+          "HIMEGOTO",
+          "MATATABI"
+        ]
+      },
+      "audio": {
+        "path": "audio/sT1Bj7O8MLk.ogg",
+        "sha256": "40a106f6d9763a5dd3333eb6135369a4e6e8943fa0b67f891e726d7f98780689",
+        "byteLength": 1293324,
+        "durationMs": 212279
+      }
+    },
+    {
+      "song": {
+        "id": "953ca916-b251-5791-ac3e-72ba74f50816",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Fhvw5duav30",
+        "title": "앤트라이온",
+        "tags": [
+          "앤트라이온",
+          "antlion",
+          "개미지옥",
+          "Chevon",
+          "야기누마 유우"
+        ]
+      },
+      "audio": {
+        "path": "audio/Fhvw5duav30.ogg",
+        "sha256": "e50c1751bcd7db4d514b8ab03abb7c67b9c613109cc7ad6a698070cde492cc18",
+        "byteLength": 1226889,
+        "durationMs": 201513
+      }
+    },
+    {
+      "song": {
+        "id": "fa8cb6ce-b8d0-5c19-8f57-75af46473694",
+        "youtubeUrl": "https://www.youtube.com/watch?v=rz9AHdaZ9UI",
+        "title": "식탁",
+        "tags": [
+          "식탁",
+          "fools table",
+          "나토리"
+        ]
+      },
+      "audio": {
+        "path": "audio/rz9AHdaZ9UI.ogg",
+        "sha256": "a184c68b901d4373b6457c3c4f7c9355eb620bd6b2ba441f945f8764fdf9894a",
+        "byteLength": 1259385,
+        "durationMs": 206780
+      }
+    },
+    {
+      "song": {
+        "id": "f0902ee8-6d80-511f-a5de-99098832b5e5",
+        "youtubeUrl": "https://www.youtube.com/watch?v=RhDxXvn6YaQ",
+        "title": "역광",
+        "tags": [
+          "역광",
+          "逆光 replica",
+          "Vaundy",
+          "바운디"
+        ]
+      },
+      "audio": {
+        "path": "audio/RhDxXvn6YaQ.ogg",
+        "sha256": "74ef35df3be306d9b0e97f02f594c559fd6a63f8200c25103f1e543b821cb676",
+        "byteLength": 1451841,
+        "durationMs": 237931
+      }
+    },
+    {
+      "song": {
+        "id": "debd68e0-645e-5987-adb5-0435e50ca848",
+        "youtubeUrl": "https://www.youtube.com/watch?v=rfPGMHYTMcw",
+        "title": "라라바이사요나라",
+        "tags": [
+          "라라바이사요나라",
+          "Rarabaisayonara",
+          "Kenshi Yonezu",
+          "요네즈 켄시"
+        ]
+      },
+      "audio": {
+        "path": "audio/rfPGMHYTMcw.ogg",
+        "sha256": "84dc175de9c16e4712490af6b2558a14d0b2e23c783664a3d9862422618a5475",
+        "byteLength": 1377525,
+        "durationMs": 228714
+      }
+    },
+    {
+      "song": {
+        "id": "0d26ef22-67f1-53c9-8268-2b946b540642",
+        "youtubeUrl": "https://www.youtube.com/watch?v=IHaUGQVrBa8",
+        "title": "광란 Hey Kids !!",
+        "tags": [
+          "광란 Hey Kids",
+          "Kyouran Hey Kids",
+          "Takuya Yamanaka"
+        ]
+      },
+      "audio": {
+        "path": "audio/IHaUGQVrBa8.ogg",
+        "sha256": "09302bf8ba23da751bd55e1c99d5b914f064366b743c950471b4c05b187aba5a",
+        "byteLength": 1523321,
+        "durationMs": 250980
+      }
+    },
+    {
+      "song": {
+        "id": "3f606799-8715-5f72-981d-871d4701a281",
+        "youtubeUrl": "https://www.youtube.com/watch?v=MtuFP3Tl1kE",
+        "title": "그 밴드",
+        "tags": [
+          "그 밴드",
+          "That band",
+          "Ai Higuchi",
+          "Kayoko Kusano"
+        ]
+      },
+      "audio": {
+        "path": "audio/MtuFP3Tl1kE.ogg",
+        "sha256": "568b0a6745428801b7109e3c4b307affaf6d00015efc4d3a202af7d77bcfb5cb",
+        "byteLength": 1300435,
+        "durationMs": 213794
+      }
+    },
+    {
+      "song": {
+        "id": "17511611-f896-54f7-91dc-ae41ef2c8d92",
+        "youtubeUrl": "https://www.youtube.com/watch?v=9SO84HCMgeM",
+        "title": "달마 그랑프리",
+        "tags": [
+          "달마 그랑프리",
+          "Darma grand prix",
+          "Yojiro Noda"
+        ]
+      },
+      "audio": {
+        "path": "audio/9SO84HCMgeM.ogg",
+        "sha256": "6bcc931d9691f3c2f0b6ea9ef3ae9d9a3eba24bba90ba6169c1b3d57bc4013fa",
+        "byteLength": 1527249,
+        "durationMs": 249354
+      }
+    },
+    {
+      "song": {
+        "id": "f15d6b8d-3e59-5a19-a882-d112cb9e191c",
+        "youtubeUrl": "https://www.youtube.com/watch?v=wWnak7V8hr0",
+        "title": "벌거벗은 용사",
+        "tags": [
+          "벌거벗은 용사",
+          "Hadaka No Yusha",
+          "Vaundy",
+          "바운디"
+        ]
+      },
+      "audio": {
+        "path": "audio/wWnak7V8hr0.ogg",
+        "sha256": "3e89bcce3398fe54ef5614cc65af4ce8f0f2ec2ff1f3c1d974743b14add693d9",
+        "byteLength": 1226649,
+        "durationMs": 201980
+      }
+    },
+    {
+      "song": {
+        "id": "4d9863a5-3fbd-5edc-8b1a-67fb8f3d516a",
+        "youtubeUrl": "https://www.youtube.com/watch?v=o7aOhAYyTTU",
+        "title": "두 사람 이야기",
+        "tags": [
+          "두 사람 이야기",
+          "Futaribanashi",
+          "Vaundy",
+          "바운디"
+        ]
+      },
+      "audio": {
+        "path": "audio/o7aOhAYyTTU.ogg",
+        "sha256": "cee9beb62cfc070f85103040e21406b196ce82a58893e75fed3ccab3ebff4f6e",
+        "byteLength": 1254873,
+        "durationMs": 204900
+      }
+    },
+    {
+      "song": {
+        "id": "e50a1227-70ce-5517-94dd-54ae23d35a92",
+        "youtubeUrl": "https://www.youtube.com/watch?v=lTDgdtyqIuY",
+        "title": "소나기에도 지지 않고",
+        "tags": [
+          "소나기에도 지지 않고",
+          "Niwakaamenimomakezu Album Mix",
+          "Niwakaamenimomakezu",
+          "Tatsuya Mitsumura",
+          "Shotaro Tsushima"
+        ]
+      },
+      "audio": {
+        "path": "audio/lTDgdtyqIuY.ogg",
+        "sha256": "2f3c0b16c1d10dc849f99663a653587fbf42a9f730239200face2c33ba699ebd",
+        "byteLength": 1586257,
+        "durationMs": 263500
+      }
+    },
+    {
+      "song": {
+        "id": "3b266bb0-a2be-5c8c-8b8c-6247c4d8f196",
+        "youtubeUrl": "https://www.youtube.com/watch?v=_ltbn_kbt0k",
+        "title": "베란다",
+        "tags": [
+          "베란다",
+          "Véranda",
+          "Kitaro Taniguchi"
+        ]
+      },
+      "audio": {
+        "path": "audio/_ltbn_kbt0k.ogg",
+        "sha256": "1b6ac1ac3649568fd084054f859218512df80b260a6f3342815691118358c7cf",
+        "byteLength": 1231340,
+        "durationMs": 203087
+      }
+    },
+    {
+      "song": {
+        "id": "3ecd7096-6a9d-512a-90c1-7a3f05966b15",
+        "youtubeUrl": "https://www.youtube.com/watch?v=_A57BEeEdfg",
+        "title": "구구구",
+        "tags": [
+          "구구구",
+          "마사"
+        ]
+      },
+      "audio": {
+        "path": "audio/_A57BEeEdfg.ogg",
+        "sha256": "0a99bf1100449c5776c17d387dcf86847b9ad83ce386fad5f2289ac207f9d230",
+        "byteLength": 987659,
+        "durationMs": 161340
+      }
+    },
+    {
+      "song": {
+        "id": "59e00d51-e81d-5802-9d8c-52d49d4d81b2",
+        "youtubeUrl": "https://www.youtube.com/watch?v=WX0rh8vrBwM",
+        "title": "말하고 싶은 것",
+        "tags": [
+          "말하고 싶은 것",
+          "Ren"
+        ]
+      },
+      "audio": {
+        "path": "audio/WX0rh8vrBwM.ogg",
+        "sha256": "f9eedbe45e6ea117c94b51af37ef4f1c411ad24d51413c1fb6be414efeb562e0",
+        "byteLength": 1432165,
+        "durationMs": 235496
+      }
+    },
+    {
+      "song": {
+        "id": "61bd7171-93ca-54d6-a97c-d416024243fe",
+        "youtubeUrl": "https://www.youtube.com/watch?v=ITRT9zXCc0k",
+        "title": "가짜 우리",
+        "tags": [
+          "가짜 우리",
+          "ニセモノの檻 feat 重音テト",
+          "도영 권"
+        ]
+      },
+      "audio": {
+        "path": "audio/ITRT9zXCc0k.ogg",
+        "sha256": "6da82b1ff14278a07e94f58628cd9f817b059e5f53826915cc06d2f3d31197a3",
+        "byteLength": 1129661,
+        "durationMs": 184327
+      }
+    },
+    {
+      "song": {
+        "id": "0c6c90f9-3fdd-5883-9b9b-bfadcfdc139b",
+        "youtubeUrl": "https://www.youtube.com/watch?v=V7gnXpPLI1I",
+        "title": "짜고 치는 서브",
+        "tags": [
+          "짜고 치는 서브",
+          "Nareai Serve",
+          "ACANE",
+          "아카네"
+        ]
+      },
+      "audio": {
+        "path": "audio/V7gnXpPLI1I.ogg",
+        "sha256": "ad20c9a47f15330b9e590fabec03950018bde37be143f3efb93fd60888384a23",
+        "byteLength": 1453394,
+        "durationMs": 237874
+      }
+    },
+    {
+      "song": {
+        "id": "6077eda0-946d-5e87-b93c-9e4510884aa5",
+        "youtubeUrl": "https://www.youtube.com/watch?v=XxjZW0a8tYs",
+        "title": "꿈을 꾸다",
+        "tags": [
+          "꿈을 꾸다",
+          "스즈네"
+        ]
+      },
+      "audio": {
+        "path": "audio/XxjZW0a8tYs.ogg",
+        "sha256": "6de25a94b0771645db859d983914ea6d63d12473988a5679db5c0fca8363c183",
+        "byteLength": 1493504,
+        "durationMs": 246288
+      }
+    },
+    {
+      "song": {
+        "id": "e08e60d9-e066-5a5b-bc0d-3f28c6125d8b",
+        "youtubeUrl": "https://www.youtube.com/watch?v=-C9vbj9ZwUg",
+        "title": "정이라는 건",
+        "tags": [
+          "정이라는 건",
+          "Akitsugu Kikuchi"
+        ]
+      },
+      "audio": {
+        "path": "audio/-C9vbj9ZwUg.ogg",
+        "sha256": "988c67e03966bfb4aaabb7e35e64ae0a603768cf636309548c6a09d67c835f31",
+        "byteLength": 1780412,
+        "durationMs": 290747
+      }
+    },
+    {
+      "song": {
+        "id": "955f42c0-d11b-596b-9e86-725aa795846a",
+        "youtubeUrl": "https://www.youtube.com/watch?v=fYBQJfPBmRg",
+        "title": "기타와 고독과 푸른 행성",
+        "tags": [
+          "기타와 고독과 푸른 행성",
+          "ZAQ",
+          "otoha"
+        ]
+      },
+      "audio": {
+        "path": "audio/fYBQJfPBmRg.ogg",
+        "sha256": "f48eb2fcfa52cea2177ea04cd9df884d885cc2eda11d582d98fa264024a1df8a",
+        "byteLength": 1393492,
+        "durationMs": 228967
+      }
+    },
+    {
+      "song": {
+        "id": "25825d5e-1498-50e0-a15b-99f27fc2aca7",
+        "youtubeUrl": "https://www.youtube.com/watch?v=nSCqFvQesb0",
+        "title": "너에게 100퍼센트",
+        "tags": [
+          "너에게 100퍼센트",
+          "Kimini 100 Percent",
+          "Yasutaka Nakata"
+        ]
+      },
+      "audio": {
+        "path": "audio/nSCqFvQesb0.ogg",
+        "sha256": "306fea78b277764c0fe87b6c9cf8f65b45cfdf6a7c6459d49335b3936bf0257e",
+        "byteLength": 1219560,
+        "durationMs": 200260
+      }
+    },
+    {
+      "song": {
+        "id": "1fef3777-5679-5f54-add1-27da14a8eceb",
+        "youtubeUrl": "https://www.youtube.com/watch?v=2eNEQ0cQtkI",
+        "title": "축복",
+        "tags": [
+          "축복",
+          "Ayase",
+          "아야세"
+        ]
+      },
+      "audio": {
+        "path": "audio/2eNEQ0cQtkI.ogg",
+        "sha256": "5bced539bf63f46af6065300f70bd7865e81546f2b07dc82eb594bba35c48c18",
+        "byteLength": 1201784,
+        "durationMs": 196242
+      }
+    },
+    {
+      "song": {
+        "id": "7ce26de9-6ef9-5d9c-b2b0-3c515313c577",
+        "youtubeUrl": "https://www.youtube.com/watch?v=hkMNf8OBMyw",
+        "title": "마스카라",
+        "tags": [
+          "마스카라",
+          "MASCARA",
+          "DAIKI TSUNETA",
+          "츠네타 다이키"
+        ]
+      },
+      "audio": {
+        "path": "audio/hkMNf8OBMyw.ogg",
+        "sha256": "2dd7c8907dca7c7daa2c9165be5b4ded59824fc6d9117afb7a111e11ba8d30c9",
+        "byteLength": 1311001,
+        "durationMs": 215074
+      }
+    },
+    {
+      "song": {
+        "id": "b3b6f2d1-ba53-56c9-a564-81f5646c9267",
+        "youtubeUrl": "https://www.youtube.com/watch?v=nLYhsRiMOI4",
+        "title": "지옥 선생",
+        "tags": [
+          "지옥 선생",
+          "Jigoku Sensei",
+          "Shuichi Mabe",
+          "마베 슈이치"
+        ]
+      },
+      "audio": {
+        "path": "audio/nLYhsRiMOI4.ogg",
+        "sha256": "69f1ff06cd9cad8810c81c2da30368349ad31a2e98740819691581a214126f77",
+        "byteLength": 1154314,
+        "durationMs": 188940
+      }
+    },
+    {
+      "song": {
+        "id": "f913c719-98f1-5f84-8860-f48bbeac8975",
+        "youtubeUrl": "https://www.youtube.com/watch?v=B_ig7G5PCXA",
+        "title": "댄스 데카당스",
+        "tags": [
+          "댄스 데카당스",
+          "Chevon",
+          "야기누마 유우"
+        ]
+      },
+      "audio": {
+        "path": "audio/B_ig7G5PCXA.ogg",
+        "sha256": "763dfc378bcd61a65c791222678a72854c7e490737b584a972cccdcbe2c217d4",
+        "byteLength": 1195496,
+        "durationMs": 196113
+      }
+    },
+    {
+      "song": {
+        "id": "46d7b184-3637-5ee2-9e43-f720ad094945",
+        "youtubeUrl": "https://www.youtube.com/watch?v=qpvNi03oqgE",
+        "title": "해하",
+        "tags": [
+          "해하",
+          "WurtS"
+        ]
+      },
+      "audio": {
+        "path": "audio/qpvNi03oqgE.ogg",
+        "sha256": "d51c09d5e119a8dfa6e819904fe8bf5f884fb854b694c96366821fc74d7fae9c",
+        "byteLength": 1101490,
+        "durationMs": 182279
+      }
+    },
+    {
+      "song": {
+        "id": "01cda87a-6e7e-590b-af2d-11313e46ac41",
+        "youtubeUrl": "https://www.youtube.com/watch?v=iJRoBZKqHwk",
+        "title": "여름에 소원을",
+        "tags": [
+          "여름에 소원을",
+          "나미오카 신타로",
+          "오오하라 타쿠마"
+        ]
+      },
+      "audio": {
+        "path": "audio/iJRoBZKqHwk.ogg",
+        "sha256": "6e3ed6db343457e38d3fec6740a70295aee16abeba72c463692eb75ba5782b02",
+        "byteLength": 1112726,
+        "durationMs": 181625
+      }
+    },
+    {
+      "song": {
+        "id": "474b95b2-0de9-5c75-8ed8-59ad1c259bf1",
+        "youtubeUrl": "https://www.youtube.com/watch?v=l2xqvavI2N4",
+        "title": "무하한 주술",
+        "tags": [
+          "무하한 주술",
+          "테루이 요시마사"
+        ]
+      },
+      "audio": {
+        "path": "audio/l2xqvavI2N4.ogg",
+        "sha256": "704b9268ea050bd2f6246ee69256e725282e6bd520205eb69ec92175b82e77c9",
+        "byteLength": 850428,
+        "durationMs": 139007
+      }
+    },
+    {
+      "song": {
+        "id": "16b39923-8b3e-5c33-8f02-c27db0b518b1",
+        "youtubeUrl": "https://www.youtube.com/watch?v=iQIZmtaxZAM",
+        "title": "사쿠라 루프",
+        "tags": [
+          "사쿠라 루프",
+          "Chevon",
+          "야기누마 유우"
+        ]
+      },
+      "audio": {
+        "path": "audio/iQIZmtaxZAM.ogg",
+        "sha256": "65fc9f66f8a734e2fe52183e71f6f300afee4d7dad6f6c9d7a9dfc90029b5d16",
+        "byteLength": 1318250,
+        "durationMs": 217069
+      }
+    },
+    {
+      "song": {
+        "id": "bd6aabdc-5db5-53e7-b0aa-7a1d0c037b82",
+        "youtubeUrl": "https://www.youtube.com/watch?v=49wDEtaKrJw",
+        "title": "어째서 제가 아닌가요",
+        "tags": [
+          "어째서 제가 아닌가요",
+          "susumu"
+        ]
+      },
+      "audio": {
+        "path": "audio/49wDEtaKrJw.ogg",
+        "sha256": "5429a9fa1093e84cb476ea461ebc8b47ae2182f39fb1c095f9b29fe4f9c02c78",
+        "byteLength": 1009553,
+        "durationMs": 165618
+      }
+    },
+    {
+      "song": {
+        "id": "1276c63c-ae7f-5d66-9709-fccdcbbf9b8e",
+        "youtubeUrl": "https://www.youtube.com/watch?v=os4tzo0Vt9g",
+        "title": "레드 아웃",
+        "tags": [
+          "레드 아웃",
+          "RED OUT",
+          "요네즈 켄시"
+        ]
+      },
+      "audio": {
+        "path": "audio/os4tzo0Vt9g.ogg",
+        "sha256": "44d8fb59af4b80fccbf6cbb6543e2b56dbfed309353bd1cd0f8799b90591408f",
+        "byteLength": 922009,
+        "durationMs": 151634
+      }
+    },
+    {
+      "song": {
+        "id": "5a53bf74-3ada-5b22-9ae4-bc749c8598c5",
+        "youtubeUrl": "https://www.youtube.com/watch?v=jjUAEXYIC9c",
+        "title": "반켓트",
+        "tags": [
+          "반켓트",
+          "Banquet",
+          "Chevon",
+          "야기누마 유우"
+        ]
+      },
+      "audio": {
+        "path": "audio/jjUAEXYIC9c.ogg",
+        "sha256": "066b9531311df4283cc05c572c0f8a1ea94cbba03eaee573c6f7c3ce16f1b528",
+        "byteLength": 1413963,
+        "durationMs": 231756
+      }
+    },
+    {
+      "song": {
+        "id": "f855346a-7993-5e5e-9fec-568177800f69",
+        "youtubeUrl": "https://www.youtube.com/watch?v=wf6jbNksuSs",
+        "title": "원더랜드",
+        "tags": [
+          "원더랜드",
+          "Wonderland",
+          "iri",
+          "ESME MORI"
+        ]
+      },
+      "audio": {
+        "path": "audio/wf6jbNksuSs.ogg",
+        "sha256": "1262ad6d45e0dcdfcbaf79882e0a45f9175547aca4751accde3c43be27c5e3c5",
+        "byteLength": 1346166,
+        "durationMs": 224794
+      }
+    },
+    {
+      "song": {
+        "id": "88bee1d8-4c35-5812-9779-4f65c9adf121",
+        "youtubeUrl": "https://www.youtube.com/watch?v=x_69_IawTxc",
+        "title": "노크부츠",
+        "tags": [
+          "노크부츠",
+          "Chevon",
+          "야기누마 유우"
+        ]
+      },
+      "audio": {
+        "path": "audio/x_69_IawTxc.ogg",
+        "sha256": "5a64dc91dc5c9e39bbf0f400ee95448df2646582691e859e133facc6a86966d9",
+        "byteLength": 1171472,
+        "durationMs": 192164
+      }
+    },
+    {
+      "song": {
+        "id": "7f1ba33c-eda5-5189-a703-b3476b7830b5",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Vtv1HsDFUio",
+        "title": "이 노래를 타고",
+        "tags": [
+          "이 노래를 타고",
+          "Cettia"
+        ]
+      },
+      "audio": {
+        "path": "audio/Vtv1HsDFUio.ogg",
+        "sha256": "f05e4d5e8e225cd17321d5912bca78f0aebad3e4ee41f14aeda216160b48fcb1",
+        "byteLength": 1591101,
+        "durationMs": 259648
+      }
+    },
+    {
+      "song": {
+        "id": "001a5b15-9765-5909-92a4-e9b87186afb8",
+        "youtubeUrl": "https://www.youtube.com/watch?v=4lKcw94QqR4",
+        "title": "헤어지게 되었습니다",
+        "tags": [
+          "헤어지게 되었습니다",
+          "작별이 되었습니다",
+          "Chevon",
+          "야기누마 유우"
+        ]
+      },
+      "audio": {
+        "path": "audio/4lKcw94QqR4.ogg",
+        "sha256": "f31f0ca85f723fa1b6f66dfbfce434ccc29085509715220e1f4cd09c97325461",
+        "byteLength": 1404209,
+        "durationMs": 231342
+      }
+    },
+    {
+      "song": {
+        "id": "868ca2e7-508d-5656-b430-cab45ab3f90a",
+        "youtubeUrl": "https://www.youtube.com/watch?v=AmtHkr6JmS4",
+        "title": "연모",
+        "tags": [
+          "연모",
+          "Yuto Utsuki"
+        ]
+      },
+      "audio": {
+        "path": "audio/AmtHkr6JmS4.ogg",
+        "sha256": "a926b50e199ca17645dd6726d0de7aaacb632837e62f85f55ebe6470b88228aa",
+        "byteLength": 1150927,
+        "durationMs": 187813
+      }
+    },
+    {
+      "song": {
+        "id": "2d3581b2-96ed-55e6-9bb5-53e06b07b23d",
+        "youtubeUrl": "https://www.youtube.com/watch?v=-NtjNCM0Kn4",
+        "title": "네가 운다면",
+        "tags": [
+          "네가 운다면",
+          "소메야 타이요"
+        ]
+      },
+      "audio": {
+        "path": "audio/-NtjNCM0Kn4.ogg",
+        "sha256": "31f948c8713b626d4789ddb96fb662364cd9e8605f4c8fba865b85c08c3e7407",
+        "byteLength": 1822126,
+        "durationMs": 297354
+      }
+    },
+    {
+      "song": {
+        "id": "fc4c4b0b-ccc5-5ecc-99cd-15c6977fabee",
+        "youtubeUrl": "https://www.youtube.com/watch?v=ukYEgbe2QPw",
+        "title": "괴수",
+        "tags": [
+          "괴수",
+          "사카낙션",
+          "야마구치 이치로"
+        ]
+      },
+      "audio": {
+        "path": "audio/ukYEgbe2QPw.ogg",
+        "sha256": "31729987e01bdf7ddec72d1707b3d097780323424a00c84249ece9de7acd5cfe",
+        "byteLength": 1547383,
+        "durationMs": 252729
+      }
+    },
+    {
+      "song": {
+        "id": "84616036-2762-5dc5-8fba-76d63cd80b59",
+        "youtubeUrl": "https://www.youtube.com/watch?v=n13ULXp5--I",
+        "title": "융해 sink",
+        "tags": [
+          "융해 sink",
+          "融解sink",
+          "Vaundy",
+          "바운디"
+        ]
+      },
+      "audio": {
+        "path": "audio/n13ULXp5--I.ogg",
+        "sha256": "61367607cd0197087277bceb049a439ef4aba24f968c6741b742761dc93e0c06",
+        "byteLength": 1479894,
+        "durationMs": 242007
+      }
+    },
+    {
+      "song": {
+        "id": "84e2cba7-cb1a-5890-acc1-4e272852ceb1",
+        "youtubeUrl": "https://www.youtube.com/watch?v=5GdLVknEzvw",
+        "title": "바보같이",
+        "tags": [
+          "바보같이",
+          "kakizaki yuta",
+          "카키자키 유타"
+        ]
+      },
+      "audio": {
+        "path": "audio/5GdLVknEzvw.ogg",
+        "sha256": "8befe87e13ba8614c0684aea1fff421d532b748de4e76bf0324fa5126a91a1c4",
+        "byteLength": 798524,
+        "durationMs": 130520
+      }
+    },
+    {
+      "song": {
+        "id": "002b8fe1-66cf-560d-9a41-71abbd78e7d7",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Tgv7N3F0zuI",
+        "title": "멘탈 렌탈",
+        "tags": [
+          "멘탈 렌탈",
+          "Mental Rental",
+          "Mulasaki Ima"
+        ]
+      },
+      "audio": {
+        "path": "audio/Tgv7N3F0zuI.ogg",
+        "sha256": "9ec81dc2e0db8ed8e8d6f82b061eae6a4334acc5e420762acdadafb085947aa9",
+        "byteLength": 1184115,
+        "durationMs": 193438
+      }
+    },
+    {
+      "song": {
+        "id": "88b0acb9-cec5-521b-8e4d-670b5f83c887",
+        "youtubeUrl": "https://www.youtube.com/watch?v=WiYkBISlv0w",
+        "title": "세레나데",
+        "tags": [
+          "세레나데",
+          "Serenade",
+          "natori",
+          "나토리"
+        ]
+      },
+      "audio": {
+        "path": "audio/WiYkBISlv0w.ogg",
+        "sha256": "ec6d13931e5bfef00ab07a4735be7fd39eec49d7514e9d98a1e20fdd2ea00b64",
+        "byteLength": 1325276,
+        "durationMs": 219740
+      }
+    },
+    {
+      "song": {
+        "id": "fc8cdc08-d74a-5b62-bafd-ff1bb0afbdc3",
+        "youtubeUrl": "https://www.youtube.com/watch?v=q-2SO6Zknxk",
+        "title": "사랑받고 싶을 뿐",
+        "tags": [
+          "사랑받고 싶을 뿐",
+          "kakizaki yuta"
+        ]
+      },
+      "audio": {
+        "path": "audio/q-2SO6Zknxk.ogg",
+        "sha256": "28ba7ec14efb428dc58cbb80232af8297e65549cb61fa6858a9c2378d248f4d2",
+        "byteLength": 826937,
+        "durationMs": 134883
+      }
+    },
+    {
+      "song": {
+        "id": "6813040b-4767-56c5-8da2-69ca6608efd4",
+        "youtubeUrl": "https://www.youtube.com/watch?v=jcKUEQMCqYc",
+        "title": "모시모시",
+        "tags": [
+          "모시모시",
+          "mosi mosi",
+          "무코다 타미코"
+        ]
+      },
+      "audio": {
+        "path": "audio/jcKUEQMCqYc.ogg",
+        "sha256": "10d1881cc1959ed53d9c62484d83d2a1b7277a604d5ff5a7cc9f20d1493c597c",
+        "byteLength": 1002171,
+        "durationMs": 163757
+      }
+    },
+    {
+      "song": {
+        "id": "92794ac8-5dbf-51b3-a850-85066a45e637",
+        "youtubeUrl": "https://www.youtube.com/watch?v=05yw0gdT4W8",
+        "title": "데드라인 증후군",
+        "tags": [
+          "데드라인 증후군",
+          "Deadline Syndrome",
+          "irom"
+        ]
+      },
+      "audio": {
+        "path": "audio/05yw0gdT4W8.ogg",
+        "sha256": "742bd51bfb608e62363df03e5e19bb8a5d69971d70f80926a2a68d81617d6f64",
+        "byteLength": 1033599,
+        "durationMs": 169072
+      }
+    },
+    {
+      "song": {
+        "id": "b8269b75-4dad-54de-9b92-9253736a36c6",
+        "youtubeUrl": "https://www.youtube.com/watch?v=vqsdUXUxdq8",
+        "title": "브레인",
+        "tags": [
+          "브레인",
+          "BRAIN",
+          "Kanaria"
+        ]
+      },
+      "audio": {
+        "path": "audio/vqsdUXUxdq8.ogg",
+        "sha256": "f3f2af9f9f09e4a3499e4682052b2250057589d043851561dcd4981d3c5498bc",
+        "byteLength": 959921,
+        "durationMs": 156690
+      }
+    },
+    {
+      "song": {
+        "id": "9febcbc5-57e0-53e0-89ae-9747f2eb914e",
+        "youtubeUrl": "https://www.youtube.com/watch?v=VjsPYyUWUwY",
+        "title": "소녀 A",
+        "tags": [
+          "소녀 A",
+          "少女A feat 鏡音リン",
+          "少女A",
+          "siinamota",
+          "시이나 모타"
+        ]
+      },
+      "audio": {
+        "path": "audio/VjsPYyUWUwY.ogg",
+        "sha256": "14df7b7cf50ce580475d2270baa5d87e2d1e47aad6b26e83ce2491a5aa0b27ca",
+        "byteLength": 1494898,
+        "durationMs": 244007
+      }
+    },
+    {
+      "song": {
+        "id": "5f85c80c-869c-5d92-be63-4b80f4ad8214",
+        "youtubeUrl": "https://www.youtube.com/watch?v=YzgOC7dgBm4",
+        "title": "라이프 핵",
+        "tags": [
+          "라이프 핵",
+          "life hack",
+          "Vaundy",
+          "바운디"
+        ]
+      },
+      "audio": {
+        "path": "audio/YzgOC7dgBm4.ogg",
+        "sha256": "d2aa27c31193206d809d670a6cb1ff639d8c28cdae62a6b3e90e5b75be52a947",
+        "byteLength": 1388443,
+        "durationMs": 229559
+      }
+    },
+    {
+      "song": {
+        "id": "ca18a0d0-739d-5d00-91b8-99d2e16a0a33",
+        "youtubeUrl": "https://www.youtube.com/watch?v=WVBDFqBom7Q",
+        "title": "타이다다",
+        "tags": [
+          "타이다다",
+          "TAIDADA",
+          "ACANE",
+          "아카네"
+        ]
+      },
+      "audio": {
+        "path": "audio/WVBDFqBom7Q.ogg",
+        "sha256": "03a3a7b9beca98af92c990aa34a72ff24d8c698de0e640a05b8ad68ebfaff55a",
+        "byteLength": 1367653,
+        "durationMs": 223714
+      }
+    },
+    {
+      "song": {
+        "id": "c9214578-08d8-51f7-a820-a546651dc934",
+        "youtubeUrl": "https://www.youtube.com/watch?v=0ad7f0H5wmY",
+        "title": "초침을 깨물다",
+        "tags": [
+          "초침을 깨물다",
+          "Byoushinwo Kamu",
+          "nulut",
+          "ACANE",
+          "아카네"
+        ]
+      },
+      "audio": {
+        "path": "audio/0ad7f0H5wmY.ogg",
+        "sha256": "4fc86c192a177ee7a32730ef5ee8f6a7e6fb49ad327f0679711dde136243aae0",
+        "byteLength": 1571799,
+        "durationMs": 258634
+      }
+    },
+    {
+      "song": {
+        "id": "ed711b42-4603-59ad-87f5-132a218278f6",
+        "youtubeUrl": "https://www.youtube.com/watch?v=TRdnYZtnNis",
+        "title": "감이 좋아서 분해",
+        "tags": [
+          "감이 좋아서 분해",
+          "Kan Saete Kuyashiiwa",
+          "Ram Seeni",
+          "ACANE",
+          "아카네"
+        ]
+      },
+      "audio": {
+        "path": "audio/TRdnYZtnNis.ogg",
+        "sha256": "e4d2a431468b7d5956e838d198f5ef246e629cceb6178d20ca4b1b73416f10e5",
+        "byteLength": 1446412,
+        "durationMs": 236967
+      }
+    },
+    {
+      "song": {
+        "id": "444ed83d-eec8-5f56-ab4c-6f253fc17f9c",
+        "youtubeUrl": "https://www.youtube.com/watch?v=sP4bUWCDwmA",
+        "title": "달이 아름답다고 말해줘!",
+        "tags": [
+          "달이 아름답다고 말해줘",
+          "kakizaki yuta"
+        ]
+      },
+      "audio": {
+        "path": "audio/sP4bUWCDwmA.ogg",
+        "sha256": "556803b889cdc64e3522efa0216b0d8f7da0123f1f7c1eb22d2e0476b6030498",
+        "byteLength": 902015,
+        "durationMs": 147195
+      }
+    },
+    {
+      "song": {
+        "id": "6e17588f-e75f-5321-8468-45f720558673",
+        "youtubeUrl": "https://www.youtube.com/watch?v=MJhiY9Crd94",
+        "title": "감이 좋아서 분해",
+        "tags": [
+          "감이 좋아서 분해",
+          "Kan Saete Kuyashiiwa",
+          "Ram Seeni",
+          "ACANE",
+          "아카네"
+        ]
+      },
+      "audio": {
+        "path": "audio/MJhiY9Crd94.ogg",
+        "sha256": "f8a9bca6faadefa832435942daaa44800039368561407ca497c53781ab0414ee",
+        "byteLength": 1445808,
+        "durationMs": 236034
       }
     },
     {
@@ -447,12 +4266,314 @@
     },
     {
       "song": {
+        "id": "a6e53590-88af-5b80-a174-23febcdfbbcd",
+        "youtubeUrl": "https://www.youtube.com/watch?v=dMgdpPdR2K0",
+        "title": "그 아이 시크릿",
+        "tags": [
+          "그 아이 시크릿",
+          "Anoko secret",
+          "Eve",
+          "이브"
+        ]
+      },
+      "audio": {
+        "path": "audio/dMgdpPdR2K0.ogg",
+        "sha256": "adf45321a51c4e72c500ca553a36b299b264400d48911f85fcd3335031261181",
+        "byteLength": 1427382,
+        "durationMs": 233159
+      }
+    },
+    {
+      "song": {
+        "id": "73f58c2f-875c-5b43-8350-f152062f6b12",
+        "youtubeUrl": "https://www.youtube.com/watch?v=vV4zUFFnhms",
+        "title": "언더독",
+        "tags": [
+          "언더독",
+          "Underdog",
+          "Eve",
+          "이브"
+        ]
+      },
+      "audio": {
+        "path": "audio/vV4zUFFnhms.ogg",
+        "sha256": "320d2564292bc938b23bda389e0f39cc9a6ca1167c170c642ea8db5eea1990b9",
+        "byteLength": 1182443,
+        "durationMs": 193757
+      }
+    },
+    {
+      "song": {
+        "id": "ff91f2c0-df2a-5f7c-9eb8-e6303fbd9375",
+        "youtubeUrl": "https://www.youtube.com/watch?v=F6UxzaCj5o0",
+        "title": "공부해 줘",
+        "tags": [
+          "공부해 줘",
+          "Obenkyou Shitoiteyo",
+          "ACANE",
+          "아카네"
+        ]
+      },
+      "audio": {
+        "path": "audio/F6UxzaCj5o0.ogg",
+        "sha256": "5fcdecb02549620779d5560e31fa8eee05e11f5a7302213daa837616cf830584",
+        "byteLength": 1701155,
+        "durationMs": 279034
+      }
+    },
+    {
+      "song": {
+        "id": "90a36f64-35d6-5a7e-89ef-dcfb45e44505",
+        "youtubeUrl": "https://www.youtube.com/watch?v=rp2uTGHOYmk",
+        "title": "저 녀석들 전원 동창회",
+        "tags": [
+          "저 녀석들 전원 동창회",
+          "Inside Joke",
+          "ACANE",
+          "아카네"
+        ]
+      },
+      "audio": {
+        "path": "audio/rp2uTGHOYmk.ogg",
+        "sha256": "f5693e0b7d785df587df9230f9546ab82b2da33ad371db8d3144fb5dcc4419c8",
+        "byteLength": 1551731,
+        "durationMs": 254540
+      }
+    },
+    {
+      "song": {
+        "id": "42fa7456-db11-5626-9108-a378a87057e5",
+        "youtubeUrl": "https://www.youtube.com/watch?v=ssk177MxEvs",
+        "title": "큐비즘",
+        "tags": [
+          "큐비즘",
+          "nyalra",
+          "Haraguchi Sasuke"
+        ]
+      },
+      "audio": {
+        "path": "audio/ssk177MxEvs.ogg",
+        "sha256": "58bb7d00a12c7acc656963a572deafd7d4ad25f6a1f7d1a4ef5e268b1e4a9873",
+        "byteLength": 900583,
+        "durationMs": 147225
+      }
+    },
+    {
+      "song": {
+        "id": "448ddcbb-4f05-59a6-bf38-011764ee4138",
+        "youtubeUrl": "https://www.youtube.com/watch?v=L_vrDEBzd_M",
+        "title": "노을빛이 비출 무렵",
+        "tags": [
+          "노을빛이 비출 무렵",
+          "akanesasu",
+          "ACANE",
+          "아카네"
+        ]
+      },
+      "audio": {
+        "path": "audio/L_vrDEBzd_M.ogg",
+        "sha256": "4d6d2883650c1c978a2859b36713967628021ba3b52af2bdb4468678fd871ce0",
+        "byteLength": 1287082,
+        "durationMs": 210240
+      }
+    },
+    {
+      "song": {
+        "id": "5f0583d4-f14a-5ba5-a36f-6ab1ab2789a8",
+        "youtubeUrl": "https://www.youtube.com/watch?v=NSbGcVfya3s",
+        "title": "크로노스타시스",
+        "tags": [
+          "크로노스타시스",
+          "키노코 테이코쿠",
+          "사토 치아키"
+        ]
+      },
+      "audio": {
+        "path": "audio/NSbGcVfya3s.ogg",
+        "sha256": "e77001d2245c708b7dd812decdafba605c59d0f7b2b11354926c7a80a8a88eb3",
+        "byteLength": 1394203,
+        "durationMs": 227820
+      }
+    },
+    {
+      "song": {
+        "id": "9146157b-8497-5ef5-9af3-b23e048666fb",
+        "youtubeUrl": "https://www.youtube.com/watch?v=LEo8jF2RBSg",
+        "title": "선데이 드라이버",
+        "tags": [
+          "선데이 드라이버",
+          "sunday driver",
+          "Shotaro Shimizu"
+        ]
+      },
+      "audio": {
+        "path": "audio/LEo8jF2RBSg.ogg",
+        "sha256": "a93beafe63be348fe9f497d2fbc38c9f411206bee284acf95f1b3c7635928fd9",
+        "byteLength": 1341358,
+        "durationMs": 218855
+      }
+    },
+    {
+      "song": {
+        "id": "896253bc-a749-5b75-b508-73a310805363",
+        "youtubeUrl": "https://www.youtube.com/watch?v=KKEAwRpiix8",
+        "title": "달이 아름답다고 말해줘",
+        "tags": [
+          "달이 아름답다고 말해줘",
+          "kakizaki yuta"
+        ]
+      },
+      "audio": {
+        "path": "audio/KKEAwRpiix8.ogg",
+        "sha256": "e76056b8948064f4c0510f373a2960e2c79764b737b4b0dec98d4d6582dab303",
+        "byteLength": 901988,
+        "durationMs": 147194
+      }
+    },
+    {
+      "song": {
+        "id": "6027c223-ff19-5fa3-a2f8-c6d8d6163eef",
+        "youtubeUrl": "https://www.youtube.com/watch?v=JOB4t0k4fd4",
+        "title": "미라보",
+        "tags": [
+          "미라보",
+          "Milabo",
+          "ACANE",
+          "아카네"
+        ]
+      },
+      "audio": {
+        "path": "audio/JOB4t0k4fd4.ogg",
+        "sha256": "dc805e8d8abf07be871c34e9db59dcab4be7cffa04d3dfaff0a9cb859ee8c8c0",
+        "byteLength": 1636554,
+        "durationMs": 267914
+      }
+    },
+    {
+      "song": {
+        "id": "b2026d37-7148-5bbd-9562-db72d481aa06",
+        "youtubeUrl": "https://www.youtube.com/watch?v=t24S4ylJX4Y",
+        "title": "쉐이드",
+        "tags": [
+          "쉐이드",
+          "SHADE",
+          "ACANE",
+          "아카네"
+        ]
+      },
+      "audio": {
+        "path": "audio/t24S4ylJX4Y.ogg",
+        "sha256": "5922b7ef7345f64ce7fd64d38ee0da56158f9fb4c32094035d5fb5ad4aa24fac",
+        "byteLength": 1407702,
+        "durationMs": 230314
+      }
+    },
+    {
+      "song": {
+        "id": "47e15a95-f643-5671-a1e0-8a305979e1ab",
+        "youtubeUrl": "https://www.youtube.com/watch?v=W5N6e4yDOn0",
+        "title": "제대로 모르네",
+        "tags": [
+          "제대로 모르네",
+          "分かっちゃいないね feat花隈千冬",
+          "mnmmmm"
+        ]
+      },
+      "audio": {
+        "path": "audio/W5N6e4yDOn0.ogg",
+        "sha256": "7a9211979c3398e2ed435f4682824a158c11d02e0de7e92cb49948639ee1ef2a",
+        "byteLength": 1430054,
+        "durationMs": 236007
+      }
+    },
+    {
+      "song": {
+        "id": "728e2692-8b4a-54a5-9725-b33a8049c345",
+        "youtubeUrl": "https://www.youtube.com/watch?v=IFHlJUVo3gk",
+        "title": "크림",
+        "tags": [
+          "크림",
+          "CREAM",
+          "크림으로 만나러 갈 수 있나요",
+          "ACANE",
+          "아카네"
+        ]
+      },
+      "audio": {
+        "path": "audio/IFHlJUVo3gk.ogg",
+        "sha256": "b0d4bbecb980a1a633ced9e878577d2b88864760a1b6c1ce71fb8b811b00e980",
+        "byteLength": 1431938,
+        "durationMs": 234007
+      }
+    },
+    {
+      "song": {
+        "id": "ef51352f-1100-5103-8fcb-943d62aafefe",
+        "youtubeUrl": "https://www.youtube.com/watch?v=68aA_o4yGwo",
+        "title": "올바를 수 없어",
+        "tags": [
+          "올바를 수 없어",
+          "Cant Be Right",
+          "ACANE",
+          "아카네"
+        ]
+      },
+      "audio": {
+        "path": "audio/68aA_o4yGwo.ogg",
+        "sha256": "c612ca39f7b6717596887159e2f1ae1fb95c7cd8bf0c4846ab98a98821cf1721",
+        "byteLength": 1462649,
+        "durationMs": 240074
+      }
+    },
+    {
+      "song": {
+        "id": "76c9f4c6-eb06-5786-bec9-0ae59be5befe",
+        "youtubeUrl": "https://www.youtube.com/watch?v=7uOjpr6Kc78",
+        "title": "타부",
+        "tags": [
+          "타부",
+          "TABOO",
+          "Haruko Nagaya",
+          "Issei Kobayashi",
+          "Shingo Anami",
+          "Peppe"
+        ]
+      },
+      "audio": {
+        "path": "audio/7uOjpr6Kc78.ogg",
+        "sha256": "82ae04b0253f6ba220894c0a89afa7be0a715bb2eaddd94b793435b766e7cd94",
+        "byteLength": 1293983,
+        "durationMs": 211847
+      }
+    },
+    {
+      "song": {
+        "id": "995a8ceb-fe45-5189-9a08-fdf38dce7bcc",
+        "youtubeUrl": "https://www.youtube.com/watch?v=HP_DeZ3gRak",
+        "title": "체이스",
+        "tags": [
+          "체이스",
+          "chase",
+          "호시노 타츠"
+        ]
+      },
+      "audio": {
+        "path": "audio/HP_DeZ3gRak.ogg",
+        "sha256": "3f097a90aef352b3a3ce444c9dc2484f590e43942cdf1d6f80afe3570dd81ba1",
+        "byteLength": 884967,
+        "durationMs": 145407
+      }
+    },
+    {
+      "song": {
         "id": "9b01243e-3799-5b65-9238-6a61d2cf3efc",
         "youtubeUrl": "https://www.youtube.com/watch?v=gprY11OD0cA",
         "title": "신령님 시작했습니다",
         "tags": [
           "신령님 시작했습니다",
-          "Shuichi Mabe"
+          "Kamisama Hajimemashita",
+          "Shuichi Mabe",
+          "마베 슈이치"
         ]
       },
       "audio": {
@@ -465,2057 +4586,302 @@
   ],
   "excludedSongs": [
     {
-      "index": 1,
-      "title": "회회기담",
-      "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Original writer credits are unresolved"
-      ]
-    },
-    {
-      "index": 2,
-      "title": "LADY",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 3,
-      "title": "Overdose",
-      "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 4,
-      "title": "Kizuna No Kiseki",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 5,
-      "title": "Zankyosanka",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 6,
-      "title": "MUGEN",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 7,
-      "title": "Gurenge",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 9,
-      "title": "Otonoke",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 10,
-      "title": "Bling-Bang-Bang-Born",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 11,
-      "title": "春を告げる",
-      "reasons": [
-        "Title does not satisfy game metadata constraints",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 12,
-      "title": "Melodrama",
-      "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 13,
-      "title": "이상적인 여자",
-      "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Original writer credits are unresolved"
-      ]
-    },
-    {
-      "index": 14,
-      "title": "BETELGEUSE",
-      "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 15,
-      "title": "Kanden",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 16,
-      "title": "Ai Wo Tsutaetaidatoka",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 17,
-      "title": "Dream lantern",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 19,
-      "title": "Universe",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 21,
-      "title": "Nekko",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 22,
-      "title": "Ame Sansan",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 23,
-      "title": "Ichizu",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 24,
-      "title": "Fiction",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 27,
-      "title": "Koi to Byounetsu",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 28,
-      "title": "CHAMELEON",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 29,
-      "title": "napori",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 30,
-      "title": "golden hour (Fujii Kaze Remix)",
-      "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 31,
-      "title": "Shinunoga E-Wa",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 32,
-      "title": "はいよろこんで",
-      "reasons": [
-        "Title does not satisfy game metadata constraints",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 33,
-      "title": "Zankyosanka",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 34,
-      "title": "Dramaturgy",
-      "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 35,
-      "title": "怪物",
-      "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Title does not satisfy game metadata constraints",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
       "index": 36,
       "title": "Prometheus",
       "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 37,
-      "title": "color",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 38,
-      "title": "Inferno",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 39,
-      "title": "Crossing Field",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
     },
     {
       "index": 40,
       "title": "エキスパート",
       "reasons": [
-        "Title does not satisfy game metadata constraints",
-        "Conventional Korean title and bilingual aliases remain under review"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요",
+        "작가 원명은 확인했으나 게임에서 사용할 한국어·영문 작가 태그의 출처 추가 확인 필요"
       ]
     },
     {
       "index": 42,
       "title": "CROWNED",
       "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 43,
-      "title": "Silhouette",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 44,
-      "title": "IRIS OUT",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 45,
-      "title": "革命道中 - On The Way",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 47,
-      "title": "Carmine",
-      "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review",
-        "Official audio-only recording still needs review"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
     },
     {
       "index": 49,
       "title": "Dance In The Game",
       "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 50,
-      "title": "Polaris",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 51,
-      "title": "Peace Sign",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 52,
-      "title": "HOME",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
     },
     {
       "index": 53,
       "title": "AMBITION",
       "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 54,
-      "title": "Orange",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 55,
-      "title": "Pretender",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 57,
-      "title": "King Gnu - SPECIALZ",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review",
-        "Official audio-only recording still needs review"
-      ]
-    },
-    {
-      "index": 58,
-      "title": "Where Our Blue Is",
-      "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 60,
-      "title": "A World Where the Sun Never Rises",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 61,
-      "title": "Flaming Thunder God (from \"Demon Slayer: Infinity Castle\")",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
     },
     {
       "index": 62,
       "title": "To the Infinity Castle - Muzan vs Hashira Theme (from \"Demon Slayer\")",
       "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 63,
-      "title": "BOY",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 64,
-      "title": "BLOODY STREAM",
-      "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 65,
-      "title": "KICK BACK",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 66,
-      "title": "Eureka",
-      "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 67,
-      "title": "ダイヤモンドは砕けない～メインテーマ～",
-      "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Title does not satisfy game metadata constraints",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 68,
-      "title": "PANOPTICON",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 70,
-      "title": "一難",
-      "reasons": [
-        "Title does not satisfy game metadata constraints",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 71,
-      "title": "Sakayume (King Gnu Dome Tour THE GREATEST UNKNOWN at TOKYO DOME)",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 72,
-      "title": "Last Dance",
-      "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 74,
-      "title": "LOSER",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 75,
-      "title": "Ame Sansan",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
     },
     {
       "index": 76,
       "title": "LOST IN PARADISE",
       "reasons": [
-        "Title or credit evidence has not been matched to a source"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
     },
     {
       "index": 77,
       "title": "bloom",
       "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 78,
-      "title": "Shunrai",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 79,
-      "title": "Doron",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 80,
-      "title": "Osmanthus",
-      "reasons": [
-        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
-        "Original writer credits are unresolved",
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 81,
-      "title": "Sakuramitsutsuki",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 82,
-      "title": "매드 헤드 러브",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 83,
-      "title": "TAIDADA",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 84,
-      "title": "Chained",
-      "reasons": [
-        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 85,
-      "title": "JOJO SONO CHINO SADAME",
-      "reasons": [
-        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 86,
-      "title": "꽃점",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 87,
-      "title": "Mahi",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 88,
-      "title": "Propose",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 89,
-      "title": "POP SONG",
-      "reasons": [
-        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
     },
     {
       "index": 90,
       "title": "回転してから考える",
       "reasons": [
-        "Title does not satisfy game metadata constraints",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 91,
-      "title": "Haikei Shounenyo",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 92,
-      "title": "Rapport",
-      "reasons": [
-        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 93,
-      "title": "more than words",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 94,
-      "title": "CHAINSAW BLOOD",
-      "reasons": [
-        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
-        "Original writer credits are unresolved",
-        "Title or credit evidence has not been matched to a source"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
     },
     {
       "index": 95,
-      "title": "ラブ＆デストロイ",
+      "title": "러브 앤 디스트로이",
       "reasons": [
-        "Title does not satisfy game metadata constraints",
-        "Title or credit evidence has not been matched to a source",
-        "Conventional Korean title and bilingual aliases remain under review",
-        "Official audio-only recording still needs review"
+        "작가 원명은 확인했으나 게임에서 사용할 한국어·영문 작가 태그의 출처 추가 확인 필요",
+        "동일 곡·가수·버전의 대사·추가 인트로 없는 음원 확인 필요. 개인 자막 업로드 허용."
       ]
     },
     {
       "index": 96,
-      "title": "沈める街",
+      "title": "가라앉는 거리",
       "reasons": [
-        "Title does not satisfy game metadata constraints",
-        "Conventional Korean title and bilingual aliases remain under review",
-        "Official audio-only recording still needs review"
-      ]
-    },
-    {
-      "index": 97,
-      "title": "덧없는 여름",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 98,
-      "title": "Fly-day Chinatown",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 99,
-      "title": "A Double Suicide",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 100,
-      "title": "スマイリーを探して",
-      "reasons": [
-        "Title does not satisfy game metadata constraints",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 101,
-      "title": "Dramatic",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 102,
-      "title": "Yoru Wo Nobashite",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 104,
-      "title": "That Classmate",
-      "reasons": [
-        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 105,
-      "title": "おつかれSUMMER",
-      "reasons": [
-        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
-        "Original writer credits are unresolved",
-        "Title or credit evidence has not been matched to a source"
+        "동일 곡·가수·버전의 대사·추가 인트로 없는 음원 확인 필요. 개인 자막 업로드 허용."
       ]
     },
     {
       "index": 107,
       "title": "F・L・Y",
       "reasons": [
-        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 108,
-      "title": "femme fatale A",
-      "reasons": [
-        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 109,
-      "title": "프로포즈",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 110,
-      "title": "좋아하니까",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source",
-        "Display title is absent from the evidence quotes"
-      ]
-    },
-    {
-      "index": 111,
-      "title": "Hyperventilation",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 112,
-      "title": "제인 도",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
     },
     {
       "index": 113,
       "title": "WATERLOO ROAD",
       "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
     },
     {
       "index": 114,
       "title": "ダブル - JiLL-Decoy association",
       "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 115,
-      "title": "지구본",
-      "reasons": [
-        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
-        "Original writer credits are unresolved"
-      ]
-    },
-    {
-      "index": 116,
-      "title": "渇愛エチュード - susumu.",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 117,
-      "title": "역몽",
-      "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 118,
-      "title": "Garakuta - JUNK",
-      "reasons": [
-        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 119,
-      "title": "Ryuseigun",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 120,
-      "title": "Glide",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 121,
-      "title": "Kirari",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 122,
-      "title": "Kajitsu",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
     },
     {
       "index": 124,
       "title": "ゆらめき - rourourourous",
       "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 125,
-      "title": "空間、事情、時間、事象。 - kinoue64",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 126,
-      "title": "Ame Sansan",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 127,
-      "title": "Shinigami",
-      "reasons": [
-        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
-        "Original writer credits are unresolved",
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 128,
-      "title": "忘れる前に - Vaundy",
-      "reasons": [
-        "Conventional Korean title remains unresolved"
-      ]
-    },
-    {
-      "index": 129,
-      "title": "사랑 감기에 실려",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 130,
-      "title": "Plazma",
-      "reasons": [
-        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
-        "Original writer credits are unresolved",
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 131,
-      "title": "츄, 다양성",
-      "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 132,
-      "title": "극상",
-      "reasons": [
-        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
-        "Original writer credits are unresolved",
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 133,
-      "title": "HAWATARI NIOKU CENTI [2-hundred-million-centimeter-long blades] (TV edit)",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 136,
-      "title": "아웃사이더",
-      "reasons": [
-        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
-        "Original writer credits are unresolved"
-      ]
-    },
-    {
-      "index": 137,
-      "title": "HERO",
-      "reasons": [
-        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
-        "Original writer credits are unresolved",
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 138,
-      "title": "Categorize",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 139,
-      "title": "tablet",
-      "reasons": [
-        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 141,
-      "title": "불가행력",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 142,
-      "title": "WINDSDAY",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 143,
-      "title": "DND",
-      "reasons": [
-        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
     },
     {
       "index": 144,
       "title": "ブルボン - pomodorosa",
       "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 145,
-      "title": "등불",
-      "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Original writer credits are unresolved"
-      ]
-    },
-    {
-      "index": 147,
-      "title": "名前を呼ぶよ",
-      "reasons": [
-        "Title does not satisfy game metadata constraints",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 148,
-      "title": "폭도",
-      "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Original writer credits are unresolved"
-      ]
-    },
-    {
-      "index": 149,
-      "title": "Doughnut Hole (Cover)",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 150,
-      "title": "Oddloop",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 151,
-      "title": "瞳惚れ",
-      "reasons": [
-        "Title does not satisfy game metadata constraints",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 152,
-      "title": "Planetary",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 153,
-      "title": "そぐわな",
-      "reasons": [
-        "Title does not satisfy game metadata constraints",
-        "Conventional Korean title and bilingual aliases remain under review"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
     },
     {
       "index": 154,
       "title": "Eeyo",
       "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 155,
-      "title": "Atashiwa Yuurei",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 156,
-      "title": "夏雪セレナーデ",
-      "reasons": [
-        "Title does not satisfy game metadata constraints",
-        "Conventional Korean title and bilingual aliases remain under review"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
     },
     {
       "index": 157,
-      "title": "8gatsu31nichi",
+      "title": "8월 31일",
       "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 158,
-      "title": "GLASS WINDOW",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 159,
-      "title": "Dramaturgy (Live Film Ver.)",
-      "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 160,
-      "title": "Metrocity",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 161,
-      "title": "ボクらの夏休み戦争",
-      "reasons": [
-        "Title does not satisfy game metadata constraints",
-        "Conventional Korean title and bilingual aliases remain under review"
+        "작가 원명은 확인했으나 게임에서 사용할 한국어·영문 작가 태그의 출처 추가 확인 필요"
       ]
     },
     {
       "index": 162,
       "title": "Lovey Dovey",
       "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 163,
-      "title": "말해줘",
-      "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Original writer credits are unresolved"
-      ]
-    },
-    {
-      "index": 164,
-      "title": "心に雲を持つ少年",
-      "reasons": [
-        "Title does not satisfy game metadata constraints",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 165,
-      "title": "リップサービス",
-      "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Title does not satisfy game metadata constraints",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 166,
-      "title": "Overwritten",
-      "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 167,
-      "title": "Saijyouei",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
     },
     {
       "index": 168,
       "title": "It's Going Down Now",
       "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 169,
-      "title": "常熱",
-      "reasons": [
-        "Title does not satisfy game metadata constraints",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 170,
-      "title": "MIRROR TUNE",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 171,
-      "title": "목숨을 먹는 방법",
-      "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Original writer credits are unresolved"
-      ]
-    },
-    {
-      "index": 172,
-      "title": "veil",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요",
+        "작가 원명은 확인했으나 게임에서 사용할 한국어·영문 작가 태그의 출처 추가 확인 필요"
       ]
     },
     {
       "index": 173,
-      "title": "徒花",
+      "title": "수꽃",
       "reasons": [
-        "Title does not satisfy game metadata constraints",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 174,
-      "title": "ヘッドライナー",
-      "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Title does not satisfy game metadata constraints",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 177,
-      "title": "Sorrows",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 178,
-      "title": "TOMODACHI",
-      "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 180,
-      "title": "Sleepwalk",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
+        "작가 원명은 확인했으나 게임에서 사용할 한국어·영문 작가 태그의 출처 추가 확인 필요"
       ]
     },
     {
       "index": 181,
       "title": "Coffee and Cigarette",
       "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Original writer credits are unresolved",
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review",
-        "Official audio-only recording still needs review"
-      ]
-    },
-    {
-      "index": 182,
-      "title": "Caffeine",
-      "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Original writer credits are unresolved",
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요",
+        "동일 곡·가수·버전의 대사·추가 인트로 없는 음원 확인 필요. 개인 자막 업로드 허용."
       ]
     },
     {
       "index": 183,
       "title": "Innocent",
       "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 184,
-      "title": "安眠剤",
-      "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Title does not satisfy game metadata constraints",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 185,
-      "title": "Rika",
-      "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 187,
-      "title": "Ah,Mou.",
-      "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 188,
-      "title": "Kawakiwoameku",
-      "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 189,
-      "title": "SPECIALZ (King Gnu Dome Tour THE GREATEST UNKNOWN at TOKYO DOME)",
-      "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 190,
-      "title": "If I could be a constellation",
-      "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 191,
-      "title": "涙のスイマー",
-      "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Title does not satisfy game metadata constraints",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 192,
-      "title": "カーニバル",
-      "reasons": [
-        "Title does not satisfy game metadata constraints",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 193,
-      "title": "優しさを失くした",
-      "reasons": [
-        "Title does not satisfy game metadata constraints",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 194,
-      "title": "Vinyl",
-      "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
     },
     {
       "index": 195,
       "title": "サースティデイズ",
       "reasons": [
-        "Title does not satisfy game metadata constraints",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 196,
-      "title": "Melancholy Kitchen",
-      "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 197,
-      "title": "Summer Planning",
-      "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
     },
     {
       "index": 198,
-      "title": "存在A",
+      "title": "존재 A",
       "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
+        "작가 원명은 확인했으나 게임에서 사용할 한국어·영문 작가 태그의 출처 추가 확인 필요"
       ]
     },
     {
       "index": 199,
       "title": "개와 바보 고양이",
       "reasons": [
-        "Official audio-only recording still needs review"
-      ]
-    },
-    {
-      "index": 200,
-      "title": "Take Me With You (Tsuretette)",
-      "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 201,
-      "title": "Hoshigaoyogu",
-      "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
+        "작가 원명은 확인했으나 게임에서 사용할 한국어·영문 작가 태그의 출처 추가 확인 필요",
+        "전체 길이 음원 다운로드 실패: 대체 음원 확인 필요",
+        "동일 곡·가수·버전의 대사·추가 인트로 없는 음원 확인 필요. 개인 자막 업로드 허용."
       ]
     },
     {
       "index": 203,
       "title": "Hollows...",
       "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Original writer credits are unresolved",
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 204,
-      "title": "Hippocampal Pain",
-      "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
     },
     {
       "index": 205,
       "title": "おまるドライブ",
       "reasons": [
-        "Title does not satisfy game metadata constraints",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 206,
-      "title": "劣等感",
-      "reasons": [
-        "Title does not satisfy game metadata constraints",
-        "Conventional Korean title and bilingual aliases remain under review"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
     },
     {
       "index": 207,
       "title": "Showdown",
       "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 208,
-      "title": "antlion",
-      "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 209,
-      "title": "fool's table",
-      "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Original writer credits are unresolved",
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 210,
-      "title": "逆光 - replica -",
-      "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 211,
-      "title": "Rarabaisayonara",
-      "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 212,
-      "title": "광란 Hey Kids!!",
-      "reasons": [
-        "Alias evidence quote does not contain the selected name: 광란 Hey Kids!!",
-        "Display title is absent from the evidence quotes"
-      ]
-    },
-    {
-      "index": 213,
-      "title": "That band",
-      "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 214,
-      "title": "Darma grand prix",
-      "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 215,
-      "title": "벌거벗은 용사",
-      "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Original writer credits are unresolved"
-      ]
-    },
-    {
-      "index": 216,
-      "title": "Futaribanashi",
-      "reasons": [
-        "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-        "Original writer credits are unresolved",
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 217,
-      "title": "Niwakaamenimomakezu (Album Mix)",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
     },
     {
       "index": 218,
       "title": "Kakera",
       "reasons": [
-        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
-        "Original writer credits are unresolved",
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 219,
-      "title": "Véranda",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 220,
-      "title": "Guu Guu Guu",
-      "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 221,
-      "title": "Hanashitai Koto",
-      "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 222,
-      "title": "Nisemono no Ori",
-      "reasons": [
-        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
-        "Original writer credits are unresolved",
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 223,
-      "title": "Nareai Serve",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
     },
     {
       "index": 224,
       "title": "Kakumei yori Bassui",
       "reasons": [
-        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
-        "Original writer credits are unresolved",
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 225,
-      "title": "Yume o Miru",
-      "reasons": [
-        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
-        "Original writer credits are unresolved",
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 226,
-      "title": "정이란",
-      "reasons": [
-        "Display title is absent from the evidence quotes"
-      ]
-    },
-    {
-      "index": 227,
-      "title": "기타와 고독과 푸른 행성",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 228,
-      "title": "Kimini 100 Percent",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요",
+        "작가 원명은 확인했으나 게임에서 사용할 한국어·영문 작가 태그의 출처 추가 확인 필요"
       ]
     },
     {
       "index": 229,
       "title": "Nekokaburu",
       "reasons": [
-        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review",
-        "Official audio-only recording still needs review"
-      ]
-    },
-    {
-      "index": 230,
-      "title": "축복",
-      "reasons": [
-        "Original writer credits are unresolved",
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 231,
-      "title": "MASCARA",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요",
+        "작가 원명은 확인했으나 게임에서 사용할 한국어·영문 작가 태그의 출처 추가 확인 필요",
+        "전체 길이 음원 다운로드 실패: 대체 음원 확인 필요",
+        "동일 곡·가수·버전의 대사·추가 인트로 없는 음원 확인 필요. 개인 자막 업로드 허용."
       ]
     },
     {
       "index": 232,
       "title": "When My Devil Rises",
       "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 233,
-      "title": "Jigoku Sensei",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 234,
-      "title": "Dance Decadance",
-      "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 235,
-      "title": "Gege",
-      "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 236,
-      "title": "Natsu ni Negai o",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source",
-        "Display title is absent from the evidence quotes"
-      ]
-    },
-    {
-      "index": 237,
-      "title": "Mugagen Jujutsu",
-      "reasons": [
-        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
-        "Original writer credits are unresolved",
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 238,
-      "title": "Sakura Loop",
-      "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 239,
-      "title": "Doushite, Watashi ja Nai n Desu ka?",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source",
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review",
-        "Official audio-only recording still needs review"
-      ]
-    },
-    {
-      "index": 240,
-      "title": "RED OUT",
-      "reasons": [
-        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 241,
-      "title": "Banquet",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 242,
-      "title": "Wonderland",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
     },
     {
       "index": 243,
       "title": "Mou Yume tune",
       "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 244,
-      "title": "Knock Boots",
-      "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
     },
     {
       "index": 245,
       "title": "Torokeru kiss",
       "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
     },
     {
       "index": 246,
       "title": "Blood Drain Again Eltnum Theme",
       "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 247,
-      "title": "Kono Uta ni Notte",
-      "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 248,
-      "title": "Sayonara ni Narimashita",
-      "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 249,
-      "title": "Keso",
-      "reasons": [
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 250,
-      "title": "Kimi ga Naku nara",
-      "reasons": [
-        "Writer credits not confirmed by an explicit lyricist/composer/author source.",
-        "Original writer credits are unresolved",
-        "Display title is absent from the evidence quotes",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 251,
-      "title": "괴수",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 252,
-      "title": "Yuukai sink",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source",
-        "Display title is absent from the evidence quotes"
-      ]
-    },
-    {
-      "index": 253,
-      "title": "바보같이",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
     },
     {
       "index": 254,
-      "title": "ダーリン",
+      "title": "달링",
       "reasons": [
-        "Title does not satisfy game metadata constraints",
-        "Conventional Korean title and bilingual aliases remain under review",
-        "Official audio-only recording still needs review"
-      ]
-    },
-    {
-      "index": 255,
-      "title": "Mental Rental",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 256,
-      "title": "세레나데",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 257,
-      "title": "사랑받고 싶을 뿐",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 258,
-      "title": "mosi mosi?",
-      "reasons": [
-        "Conventional Korean title remains unresolved"
-      ]
-    },
-    {
-      "index": 259,
-      "title": "데드라인 증후군",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 260,
-      "title": "BRAIN",
-      "reasons": [
-        "Writer credit not confirmed by an explicit composer/lyricist/author source.",
-        "Original writer credits are unresolved"
-      ]
-    },
-    {
-      "index": 261,
-      "title": "少女A (feat. 鏡音リン)",
-      "reasons": [
-        "Writer credit not confirmed by an explicit composer/lyricist/author source.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
+        "작가 원명은 확인했으나 게임에서 사용할 한국어·영문 작가 태그의 출처 추가 확인 필요",
+        "동일 곡·가수·버전의 대사·추가 인트로 없는 음원 확인 필요. 개인 자막 업로드 허용."
       ]
     },
     {
       "index": 262,
       "title": "Hello",
       "reasons": [
-        "Writer credit not confirmed by an explicit composer/lyricist/author source.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 263,
-      "title": "life hack",
-      "reasons": [
-        "Conventional Korean title remains unresolved"
-      ]
-    },
-    {
-      "index": 264,
-      "title": "TAIDADA",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 265,
-      "title": "초침을 깨물다",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 266,
-      "title": "감이 좋아서 분해",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 267,
-      "title": "月が綺麗ねと言われたい！",
-      "reasons": [
-        "Title does not satisfy game metadata constraints",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 268,
-      "title": "감이 좋아서 분해",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 270,
-      "title": "Anoko secret",
-      "reasons": [
-        "Writer credit not confirmed by an explicit composer/lyricist/author source.",
-        "Original writer credits are unresolved",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 271,
-      "title": "Underdog",
-      "reasons": [
-        "Writer credit not confirmed by an explicit composer/lyricist/author source.",
-        "Original writer credits are unresolved"
-      ]
-    },
-    {
-      "index": 272,
-      "title": "공부해 둬",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 273,
-      "title": "저 녀석들 전원 동창회",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 274,
-      "title": "Cubism",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요",
+        "작가 원명은 확인했으나 게임에서 사용할 한국어·영문 작가 태그의 출처 추가 확인 필요"
       ]
     },
     {
       "index": 275,
       "title": "時のゆらめき",
       "reasons": [
-        "Title does not satisfy game metadata constraints",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 276,
-      "title": "akanesasu",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
     },
     {
       "index": 277,
       "title": "Seamless",
       "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 278,
-      "title": "크로노스타시스",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 279,
-      "title": "sunday driver",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 280,
-      "title": "月が綺麗ねと言われたい！",
-      "reasons": [
-        "Title does not satisfy game metadata constraints",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 281,
-      "title": "MILABO",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 282,
-      "title": "SHADE",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 283,
-      "title": "分かっちゃいないね (feat.花隈千冬)",
-      "reasons": [
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 284,
-      "title": "크림으로 만나러 갈 수 있나요",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 285,
-      "title": "올바르게 될 수 없어",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
-      ]
-    },
-    {
-      "index": 286,
-      "title": "TABOO",
-      "reasons": [
-        "Title or credit evidence has not been matched to a source"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
     },
     {
       "index": 287,
       "title": "絲",
       "reasons": [
-        "Title does not satisfy game metadata constraints",
-        "Conventional Korean title and bilingual aliases remain under review"
-      ]
-    },
-    {
-      "index": 288,
-      "title": "chase",
-      "reasons": [
-        "Original writer credits are unresolved",
-        "Title or credit evidence has not been matched to a source"
+        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
       ]
     }
   ]

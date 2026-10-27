@@ -1,122 +1,728 @@
-[
-  {
-    "index": 40,
-    "previousWriters": [
-      "花村想太",
-      "福田智樹"
-    ],
-    "writers": [
-      "花村想太/福田智樹",
-      "花村想太"
-    ]
-  },
-  {
-    "index": 42,
-    "previousWriters": [
-      "柳川 陽香",
-      "unoblaqlo",
-      "愛美"
-    ],
-    "writers": [
-      "柳川 陽香/unoblaqlo",
-      "愛美"
-    ]
-  },
-  {
-    "index": 45,
-    "previousWriters": [
-      "アイナ・ジ・エンド",
-      "Shin Sakiura"
-    ],
-    "writers": [
-      "アイナ・ジ・エンド/Shin Sakiura"
-    ]
-  },
-  {
-    "index": 52,
-    "previousWriters": [
-      "sabio",
-      "高村風太"
-    ],
-    "writers": [
-      "sabio/高村風太"
-    ]
-  },
-  {
-    "index": 70,
-    "previousWriters": [
-      "浪岡真太郎",
-      "大原拓真"
-    ],
-    "writers": [
-      "浪岡真太郎",
-      "大原拓真／浪岡真太郎"
-    ]
-  },
-  {
-    "index": 90,
-    "previousWriters": [
-      "SPACE SHOWER NETWORKS, INC.",
-      "Ai"
-    ],
-    "writers": [
-      "Ai"
-    ]
-  },
-  {
-    "index": 91,
-    "previousWriters": [
-      "THE NINTH APOLLO",
-      "NIPPON TELEVISION MUSIC CORPORATION",
-      "DAIICHIKOSHO MUSIC PUBLISHING, INC.",
-      "Momoko Hayashi"
-    ],
-    "writers": [
-      "Momoko Hayashi"
-    ]
-  },
-  {
-    "index": 152,
-    "previousWriters": [
-      "浪岡真太郎",
-      "大原拓真"
-    ],
-    "writers": [
-      "浪岡真太郎",
-      "浪岡真太郎／大原拓真"
-    ]
-  },
-  {
-    "index": 246,
-    "previousWriters": [
-      "Copyright Control",
-      "Masura Kuba"
-    ],
-    "writers": [
-      "Masura Kuba"
-    ]
-  },
-  {
-    "index": 275,
-    "previousWriters": [
-      "Copyright Control",
-      "Itsue",
-      "Mizuki"
-    ],
-    "writers": [
-      "Itsue",
-      "Mizuki"
-    ]
-  },
-  {
-    "index": 279,
-    "previousWriters": [
-      "CHIKAMATSU",
-      "Augusta Publishing LTD",
-      "Shotaro Shimizu"
-    ],
-    "writers": [
-      "Shotaro Shimizu"
-    ]
-  }
-]
+{
+  "policy": "Only explicitly credited composition/lyric writing; publishers, arrangers, performers and producers alone excluded.",
+  "appleMusicLimitation": "Apple composer fields confirm composers; a missing lyricist field is not treated as proof that no separate lyricist exists.",
+  "corrections": [
+    {
+      "index": 1,
+      "title": "회회기담",
+      "previousWriters": [],
+      "writers": [
+        "Eve"
+      ]
+    },
+    {
+      "index": 2,
+      "title": "레이디",
+      "previousWriters": [
+        "YONEZU KENSHI 米津玄師"
+      ],
+      "writers": [
+        "Kenshi Yonezu"
+      ]
+    },
+    {
+      "index": 3,
+      "title": "오버도즈",
+      "previousWriters": [],
+      "writers": [
+        "natori"
+      ]
+    },
+    {
+      "index": 6,
+      "title": "몽환",
+      "previousWriters": [
+        "CHIMERAZ"
+      ],
+      "writers": [
+        "MY FIRST STORY",
+        "CHIMERAZ"
+      ]
+    },
+    {
+      "index": 12,
+      "title": "멜로드라마",
+      "previousWriters": [],
+      "writers": [
+        "なとり",
+        "imase"
+      ]
+    },
+    {
+      "index": 13,
+      "title": "이상적인 여자",
+      "previousWriters": [],
+      "writers": [
+        "かわにしなつき"
+      ]
+    },
+    {
+      "index": 14,
+      "title": "베텔기우스",
+      "previousWriters": [],
+      "writers": [
+        "Yuuri"
+      ]
+    },
+    {
+      "index": 30,
+      "title": "골드 아워",
+      "previousWriters": [],
+      "writers": [
+        "Jake Lawson",
+        "Zac Lawson"
+      ]
+    },
+    {
+      "index": 34,
+      "title": "드라마투르기",
+      "previousWriters": [],
+      "writers": [
+        "Eve"
+      ]
+    },
+    {
+      "index": 35,
+      "title": "괴물",
+      "previousWriters": [],
+      "writers": [
+        "Ayase"
+      ]
+    },
+    {
+      "index": 40,
+      "title": "エキスパート",
+      "previousWriters": [
+        "花村想太/福田智樹",
+        "花村想太"
+      ],
+      "writers": [
+        "花村想太",
+        "福田智樹"
+      ]
+    },
+    {
+      "index": 42,
+      "title": "CROWNED",
+      "previousWriters": [
+        "柳川 陽香/unoblaqlo",
+        "愛美"
+      ],
+      "writers": [
+        "柳川 陽香",
+        "unoblaqlo",
+        "愛美"
+      ]
+    },
+    {
+      "index": 45,
+      "title": "혁명도중",
+      "previousWriters": [
+        "アイナ・ジ・エンド/Shin Sakiura"
+      ],
+      "writers": [
+        "アイナ・ジ・エンド",
+        "Shin Sakiura"
+      ]
+    },
+    {
+      "index": 47,
+      "title": "카마인",
+      "previousWriters": [],
+      "writers": [
+        "호소미 타케시"
+      ]
+    },
+    {
+      "index": 52,
+      "title": "홈",
+      "previousWriters": [
+        "sabio/高村風太"
+      ],
+      "writers": [
+        "sabio",
+        "高村風太"
+      ]
+    },
+    {
+      "index": 53,
+      "title": "AMBITION",
+      "previousWriters": [],
+      "writers": [
+        "岩橋星実(Elements Garden)"
+      ]
+    },
+    {
+      "index": 58,
+      "title": "푸르름이 사는 곳",
+      "previousWriters": [],
+      "writers": [
+        "Tatsuya Kitani"
+      ]
+    },
+    {
+      "index": 62,
+      "title": "To the Infinity Castle - Muzan vs Hashira Theme (from \"Demon Slayer\")",
+      "previousWriters": [],
+      "writers": [
+        "Go Shiina",
+        "Yuki Kajiura"
+      ]
+    },
+    {
+      "index": 64,
+      "title": "블러디 스트림",
+      "previousWriters": [],
+      "writers": [
+        "こだまさおり",
+        "大森俊之"
+      ]
+    },
+    {
+      "index": 65,
+      "title": "킥백",
+      "previousWriters": [
+        "米津玄師"
+      ],
+      "writers": [
+        "요네즈 켄시"
+      ]
+    },
+    {
+      "index": 66,
+      "title": "유레카",
+      "previousWriters": [],
+      "writers": [
+        "なとり"
+      ]
+    },
+    {
+      "index": 67,
+      "title": "다이아몬드는 부서지지 않는다 메인 테마",
+      "previousWriters": [],
+      "writers": [
+        "Yugo Kanno"
+      ]
+    },
+    {
+      "index": 70,
+      "title": "이치난",
+      "previousWriters": [
+        "浪岡真太郎",
+        "大原拓真／浪岡真太郎"
+      ],
+      "writers": [
+        "浪岡真太郎",
+        "大原拓真"
+      ]
+    },
+    {
+      "index": 72,
+      "title": "라스트댄스",
+      "previousWriters": [],
+      "writers": [
+        "Eve"
+      ]
+    },
+    {
+      "index": 80,
+      "title": "금목서",
+      "previousWriters": [],
+      "writers": [
+        "なとり"
+      ]
+    },
+    {
+      "index": 84,
+      "title": "필요 없는 것",
+      "previousWriters": [],
+      "writers": [
+        "Tatsuya Kitani",
+        "なとり"
+      ]
+    },
+    {
+      "index": 85,
+      "title": "죠죠 그 피의 운명",
+      "previousWriters": [],
+      "writers": [
+        "藤林聖子",
+        "田中公平"
+      ]
+    },
+    {
+      "index": 89,
+      "title": "팝송",
+      "previousWriters": [],
+      "writers": [
+        "米津玄師"
+      ]
+    },
+    {
+      "index": 92,
+      "title": "라포르",
+      "previousWriters": [],
+      "writers": [
+        "キタニタツヤ"
+      ]
+    },
+    {
+      "index": 94,
+      "title": "체인소 블러드",
+      "previousWriters": [],
+      "writers": [
+        "Vaundy"
+      ]
+    },
+    {
+      "index": 96,
+      "title": "가라앉는 거리",
+      "previousWriters": [
+        "Yoeko Kurahashi"
+      ],
+      "writers": [
+        "Yoeko Kurahashi",
+        "倉橋ヨエコ"
+      ]
+    },
+    {
+      "index": 102,
+      "title": "밤을 늘려서",
+      "previousWriters": [
+        "スマイル音楽出版"
+      ],
+      "writers": [
+        "浦小雪"
+      ]
+    },
+    {
+      "index": 104,
+      "title": "소문의 그 아이",
+      "previousWriters": [],
+      "writers": [
+        "무라사키 이마"
+      ]
+    },
+    {
+      "index": 105,
+      "title": "수고했어 여름",
+      "previousWriters": [],
+      "writers": [
+        "Tomoyuki Tanaka",
+        "Masayuki Kumahara"
+      ]
+    },
+    {
+      "index": 107,
+      "title": "F・L・Y",
+      "previousWriters": [],
+      "writers": [
+        "スペクトラム",
+        "MABO"
+      ]
+    },
+    {
+      "index": 108,
+      "title": "마성의 여자 A",
+      "previousWriters": [],
+      "writers": [
+        "Mulasaki Ima"
+      ]
+    },
+    {
+      "index": 115,
+      "title": "지구본",
+      "previousWriters": [],
+      "writers": [
+        "Kenshi Yonezu"
+      ]
+    },
+    {
+      "index": 118,
+      "title": "잡동사니",
+      "previousWriters": [],
+      "writers": [
+        "요네즈 켄시"
+      ]
+    },
+    {
+      "index": 127,
+      "title": "사신",
+      "previousWriters": [],
+      "writers": [
+        "米津玄師"
+      ]
+    },
+    {
+      "index": 130,
+      "title": "플라즈마",
+      "previousWriters": [],
+      "writers": [
+        "요네즈 켄시"
+      ]
+    },
+    {
+      "index": 132,
+      "title": "극상",
+      "previousWriters": [],
+      "writers": [
+        "Ayase"
+      ]
+    },
+    {
+      "index": 136,
+      "title": "아웃사이더",
+      "previousWriters": [],
+      "writers": [
+        "Eve"
+      ]
+    },
+    {
+      "index": 137,
+      "title": "히어로",
+      "previousWriters": [],
+      "writers": [
+        "Vaundy"
+      ]
+    },
+    {
+      "index": 139,
+      "title": "정제",
+      "previousWriters": [],
+      "writers": [
+        "TOOBOE"
+      ]
+    },
+    {
+      "index": 143,
+      "title": "디앤디",
+      "previousWriters": [],
+      "writers": [
+        "涼音"
+      ]
+    },
+    {
+      "index": 145,
+      "title": "등불",
+      "previousWriters": [],
+      "writers": [
+        "Soushi Sakiyama"
+      ]
+    },
+    {
+      "index": 148,
+      "title": "폭도",
+      "previousWriters": [],
+      "writers": [
+        "Eve"
+      ]
+    },
+    {
+      "index": 152,
+      "title": "플라네타 리",
+      "previousWriters": [
+        "浪岡真太郎",
+        "浪岡真太郎／大原拓真"
+      ],
+      "writers": [
+        "浪岡真太郎",
+        "大原拓真"
+      ]
+    },
+    {
+      "index": 157,
+      "title": "8월 31일",
+      "previousWriters": [
+        "moe",
+        "syuta"
+      ],
+      "writers": [
+        "萌映",
+        "しゅうた"
+      ]
+    },
+    {
+      "index": 159,
+      "title": "드라마투르기",
+      "previousWriters": [],
+      "writers": [
+        "Eve"
+      ]
+    },
+    {
+      "index": 163,
+      "title": "말해 줘",
+      "previousWriters": [],
+      "writers": [
+        "N-buna"
+      ]
+    },
+    {
+      "index": 165,
+      "title": "립서비스",
+      "previousWriters": [],
+      "writers": [
+        "The Floor",
+        "ササキハヤト"
+      ]
+    },
+    {
+      "index": 166,
+      "title": "덮어써 버렸어",
+      "previousWriters": [],
+      "writers": [
+        "나토리",
+        "키타니 타츠야"
+      ]
+    },
+    {
+      "index": 168,
+      "title": "It's Going Down Now",
+      "previousWriters": [],
+      "writers": [
+        "アトラスサウンドチーム"
+      ]
+    },
+    {
+      "index": 171,
+      "title": "목숨을 먹는 방법",
+      "previousWriters": [],
+      "writers": [
+        "Eve"
+      ]
+    },
+    {
+      "index": 174,
+      "title": "헤드라이너",
+      "previousWriters": [],
+      "writers": [
+        "涼音"
+      ]
+    },
+    {
+      "index": 178,
+      "title": "친구",
+      "previousWriters": [],
+      "writers": [
+        "涼音"
+      ]
+    },
+    {
+      "index": 181,
+      "title": "Coffee and Cigarette",
+      "previousWriters": [],
+      "writers": [
+        "Shiho Tamiya"
+      ]
+    },
+    {
+      "index": 182,
+      "title": "카페인",
+      "previousWriters": [],
+      "writers": [
+        "秋山黄色"
+      ]
+    },
+    {
+      "index": 184,
+      "title": "수면제",
+      "previousWriters": [],
+      "writers": [
+        "浦山蓮"
+      ]
+    },
+    {
+      "index": 191,
+      "title": "눈물의 스위머",
+      "previousWriters": [],
+      "writers": [
+        "Lavt"
+      ]
+    },
+    {
+      "index": 199,
+      "title": "개와 바보 고양이",
+      "previousWriters": [
+        "Composer: こうへい"
+      ],
+      "writers": [
+        "こうへい"
+      ]
+    },
+    {
+      "index": 203,
+      "title": "Hollows...",
+      "previousWriters": [],
+      "writers": [
+        "くじら"
+      ]
+    },
+    {
+      "index": 209,
+      "title": "식탁",
+      "previousWriters": [],
+      "writers": [
+        "なとり"
+      ]
+    },
+    {
+      "index": 215,
+      "title": "벌거벗은 용사",
+      "previousWriters": [],
+      "writers": [
+        "Vaundy"
+      ]
+    },
+    {
+      "index": 216,
+      "title": "두 사람 이야기",
+      "previousWriters": [],
+      "writers": [
+        "Vaundy"
+      ]
+    },
+    {
+      "index": 218,
+      "title": "Kakera",
+      "previousWriters": [],
+      "writers": [
+        "Lavt"
+      ]
+    },
+    {
+      "index": 222,
+      "title": "가짜 우리",
+      "previousWriters": [],
+      "writers": [
+        "도영 권"
+      ]
+    },
+    {
+      "index": 224,
+      "title": "Kakumei yori Bassui",
+      "previousWriters": [],
+      "writers": [
+        "伊藤純輔"
+      ]
+    },
+    {
+      "index": 225,
+      "title": "꿈을 꾸다",
+      "previousWriters": [],
+      "writers": [
+        "涼音"
+      ]
+    },
+    {
+      "index": 229,
+      "title": "Nekokaburu",
+      "previousWriters": [],
+      "writers": [
+        "一瀬貴之"
+      ]
+    },
+    {
+      "index": 230,
+      "title": "축복",
+      "previousWriters": [],
+      "writers": [
+        "Ayase"
+      ]
+    },
+    {
+      "index": 237,
+      "title": "무하한 주술",
+      "previousWriters": [],
+      "writers": [
+        "照井順政"
+      ]
+    },
+    {
+      "index": 240,
+      "title": "레드 아웃",
+      "previousWriters": [],
+      "writers": [
+        "米津玄師"
+      ]
+    },
+    {
+      "index": 242,
+      "title": "원더랜드",
+      "previousWriters": [
+        "iri、ESME MORI",
+        "iri"
+      ],
+      "writers": [
+        "iri",
+        "ESME MORI"
+      ]
+    },
+    {
+      "index": 250,
+      "title": "네가 운다면",
+      "previousWriters": [],
+      "writers": [
+        "染谷大陽"
+      ]
+    },
+    {
+      "index": 254,
+      "title": "달링",
+      "previousWriters": [
+        "須田景凪"
+      ],
+      "writers": [
+        "須田景凪",
+        "バルーン"
+      ]
+    },
+    {
+      "index": 260,
+      "title": "브레인",
+      "previousWriters": [],
+      "writers": [
+        "Kanaria"
+      ]
+    },
+    {
+      "index": 261,
+      "title": "소녀 A",
+      "previousWriters": [],
+      "writers": [
+        "siinamota"
+      ]
+    },
+    {
+      "index": 262,
+      "title": "Hello",
+      "previousWriters": [],
+      "writers": [
+        "中田ヤスタカ"
+      ]
+    },
+    {
+      "index": 270,
+      "title": "그 아이 시크릿",
+      "previousWriters": [],
+      "writers": [
+        "Eve"
+      ]
+    },
+    {
+      "index": 271,
+      "title": "언더독",
+      "previousWriters": [],
+      "writers": [
+        "Eve"
+      ]
+    },
+    {
+      "index": 288,
+      "title": "체이스",
+      "previousWriters": [],
+      "writers": [
+        "호시노 타츠"
+      ]
+    }
+  ]
+}

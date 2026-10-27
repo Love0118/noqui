@@ -2,8 +2,9 @@
   "playlistId": "japan-zeom",
   "name": "일본 - ZEOM",
   "entries": 289,
-  "reviewed": 26,
-  "reviewRequired": 263,
-  "downloaded": 285,
-  "playable": 26
+  "reviewed": 248,
+  "downloaded": 287,
+  "playable": 248,
+  "reviewRequired": 41,
+  "downloadFailures": 2
 }

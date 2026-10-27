@@ -1,49 +1,5 @@
 [
   {
-    "index": 47,
-    "playlistPosition": 47,
-    "videoId": "8FBhgZ5DRqI",
-    "id": "979a260e-9824-519d-8f7d-7c0ab637f297",
-    "youtubeUrl": "https://www.youtube.com/watch?v=8FBhgZ5DRqI",
-    "sourceTitle": "Carmine",
-    "channel": "ELLEGARDEN_OFFICIAL",
-    "durationSeconds": 205,
-    "title": "Carmine",
-    "writers": [],
-    "tags": [
-      "Carmine"
-    ],
-    "aliases": [],
-    "reviewRequired": true,
-    "reviewReasons": [
-      "작사·작곡 역할이 명시된 곡별 출처를 확인하지 못함.",
-      "Original writer credits are unresolved",
-      "Conventional Korean title and bilingual aliases remain under review",
-      "Official audio-only recording still needs review"
-    ],
-    "evidence": [
-      {
-        "url": "https://www.youtube.com/watch?v=8FBhgZ5DRqI",
-        "quote": "Carmine — Ellegarden - Topic",
-        "kind": "page",
-        "retrievedEvidenceMatched": true
-      }
-    ],
-    "notes": "",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "곡 제목별 한국어 통용 표기를 입증하는 출처를 확인하지 못함; 공식 원제를 유지함."
-    ],
-    "audioSourceType": "unverified_recording",
-    "audioSourceReviewRequired": true,
-    "audio": {
-      "status": "failed",
-      "failureCode": "MUSIC_PREMIUM_REQUIRED",
-      "reason": "Full-length source could not be downloaded; see local download audit",
-      "stage": "remote-download"
-    }
-  },
-  {
     "index": 199,
     "playlistPosition": 199,
     "videoId": "KIyc-yYf5eY",
@@ -54,10 +10,9 @@
     "durationSeconds": 197,
     "title": "개와 바보 고양이",
     "writers": [
-      "Composer: こうへい"
+      "こうへい"
     ],
     "tags": [
-      "Composer こうへい",
       "개와 바보 고양이"
     ],
     "aliases": [
@@ -65,25 +20,53 @@
         "kind": "title",
         "name": "개와 바보 고양이",
         "url": "https://j-pop-playlist.tistory.com/1456",
-        "quote": "セカンドバッカー - 犬とバカ猫 (세컨드 백커 - 개와 바보 고양이)가수: セカンドバッカー"
+        "quote": "セカ ンド バッ カー - 犬 と バカ 猫 (세컨드 백커 - 개와 바보 고양이) [ 가사 / 발음 / 번역 ] 犬 と バカ 猫 セカ ンド バッ カー - 犬 と バカ 猫 (세컨드 백커 - 개와 바보 고양이) 가수: セカ ンド バッ カー 작사: こうへい 작곡: こうへい 발매일: 2025年07月09日 TJ: - KY: - JOYSOUND: 640767 가사 私やっぱ好きだわ 와타시 얏파 스키다와 나 아무래도 역시 좋아해 君がいちいち律儀に 키미가 이치이치 리치기니 네가..."
       }
     ],
     "reviewRequired": true,
     "reviewReasons": [
-      "Official audio-only recording still needs review"
+      "작가 원명은 확인했으나 게임에서 사용할 한국어·영문 작가 태그의 출처 추가 확인 필요",
+      "전체 길이 음원 다운로드 실패: 대체 음원 확인 필요",
+      "동일 곡·가수·버전의 대사·추가 인트로 없는 음원 확인 필요. 개인 자막 업로드 허용."
     ],
     "evidence": [
       {
         "url": "https://www.youtube.com/watch?v=KIyc-yYf5eY",
-        "quote": "Provided to YouTube by IIP-DDS; ℗ セカンドバッカー; Lyricist, Composer: こうへい",
-        "kind": "page",
+        "quote": "犬とバカ猫",
+        "kind": "youtube_description",
         "retrievedEvidenceMatched": true
       },
       {
         "url": "https://j-pop-playlist.tistory.com/1456",
-        "quote": "セカンドバッカー - 犬とバカ猫 (세컨드 백커 - 개와 바보 고양이)가수: セカンドバッカー",
-        "kind": "page",
-        "retrievedEvidenceMatched": true
+        "heading": "セカ ンド バッ カー - 犬 と バカ 猫 (세컨드 백커 - 개와 바보 고양이) [ 가사 / 발음 / 번역 ]",
+        "quote": "セカ ンド バッ カー - 犬 と バカ 猫 (세컨드 백커 - 개와 바보 고양이) [ 가사 / 발음 / 번역 ] 犬 と バカ 猫 セカ ンド バッ カー - 犬 と バカ 猫 (세컨드 백커 - 개와 바보 고양이) 가수: セカ ンド バッ カー 작사: こうへい 작곡: こうへい 발매일: 2025年07月09日 TJ: - KY: - JOYSOUND: 640767 가사 私やっぱ好きだわ 와타시 얏파 스키다와 나 아무래도 역시 좋아해 君がいちいち律儀に 키미가 이치이치 리치기니 네가...",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://search.daum.net/search?w=tot&q=%E7%8A%AC%E3%81%A8%E3%83%90%E3%82%AB%E7%8C%AB+%E3%82%BB%E3%82%AB%E3%83%B3%E3%83%89%E3%83%90%E3%83%83%E3%82%AB%E3%83%BC+%EA%B0%80%EC%82%AC+%EB%B2%88%EC%97%AD+youtube",
+        "retrievedAt": "2026-10-27T14:57:40.281240+00:00"
+      },
+      {
+        "url": "https://j-pop-playlist.tistory.com/1456",
+        "quote": "セカ ンド バッ カー - 犬とバカ猫 (세컨드 백커 - 개와 바보 고양이 ) [가사 / 발음 / 번역] 犬とバカ猫 セカ ンド バッ カー - 犬とバカ猫 (세컨드 백커 - 개와 바보 고양이 ) 가수: セカ ンド バッ カー 작사: こうへい 작곡: こうへい 발매일: 2025年07月09日 TJ: - KY: - JOYSOUND: 640767 가사 私やっぱ好きだわ 와타시 얏파 스키다와 나 아무래도 역시 좋아해 君がいちいち律儀に 키미가 이치이치 리치기니 네가...",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://search.daum.net/search?w=tot&q=%EA%B0%9C%EC%99%80+%EB%B0%94%EB%B3%B4+%EA%B3%A0%EC%96%91%EC%9D%B4+%E3%82%BB%E3%82%AB%E3%83%B3%E3%83%89%E3%83%90%E3%83%83%E3%82%AB%E3%83%BC+%ED%95%9C%EA%B8%80",
+        "retrievedAt": "2026-10-27T14:48:18.446154+00:00"
+      },
+      {
+        "url": "https://j-pop-playlist.tistory.com/1456",
+        "quote": "セカ ンド バッ カー - 犬とバカ猫 (세컨드 백커 - 개와 바보 고양이 ) [가사 / 발음 / 번역] 犬とバカ猫 セカ ンド バッ カー - 犬とバカ猫 (세컨드 백커 - 개와 바보 고양이 ) 가수: セカ ンド バッ カー 작사 : こうへい 작곡 : こうへい 발매일: 2025年07月09日 TJ: - KY: - JOYSOUND: 640767 가사 私やっぱ好きだわ 와타시 얏파 스키다와 나 아무래도 역시 좋아해 君がいちいち律儀に 키미가 이치이치 리치기니 네가...",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://search.daum.net/search?w=tot&q=%EA%B0%9C%EC%99%80+%EB%B0%94%EB%B3%B4+%EA%B3%A0%EC%96%91%EC%9D%B4+%E3%82%BB%E3%82%AB%E3%83%B3%E3%83%89%E3%83%90%E3%83%83%E3%82%AB%E3%83%BC+%EC%9E%91%EC%82%AC+%EC%9E%91%EA%B3%A1",
+        "retrievedAt": "2026-10-27T14:53:39.739135+00:00"
+      },
+      {
+        "url": "https://j-pop-playlist.tistory.com/1456",
+        "quote": "セカ ンド バッ カー - 犬 と バカ 猫 (세컨드 백커 - 개와 바보 고양이) 犬 と バカ 猫 가수: セカ ンド バッ カー 작사: こうへい 작곡: こうへい",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://search.daum.net/search?w=tot&q=%E7%8A%AC%E3%81%A8%E3%83%90%E3%82%AB%E7%8C%AB+%E3%82%BB%E3%82%AB%E3%83%B3%E3%83%89%E3%83%90%E3%83%83%E3%82%AB%E3%83%BC+%EC%9E%91%EC%82%AC+%EC%9E%91%EA%B3%A1"
       }
     ],
     "notes": "",
@@ -96,7 +79,13 @@
       "failureCode": "SOURCE_UNAVAILABLE",
       "reason": "Full-length source could not be downloaded; see local download audit",
       "stage": "remote-download"
-    }
+    },
+    "singer": "セカンドバッカー",
+    "writerReviewRequired": false,
+    "audioSourceReviewReasons": [
+      "동일 곡·가수·버전의 대사·추가 인트로 없는 음원 확인 필요. 개인 자막 업로드 허용."
+    ],
+    "writerTagReviewRequired": true
   },
   {
     "index": 229,
@@ -108,30 +97,40 @@
     "channel": "MOSHIMO Channel",
     "durationSeconds": 244,
     "title": "Nekokaburu",
-    "writers": [],
+    "writers": [
+      "一瀬貴之"
+    ],
     "tags": [
-      "MOSHIMO Channel"
+      "Nekokaburu"
     ],
     "aliases": [],
     "reviewRequired": true,
     "reviewReasons": [
-      "Writer credits not confirmed by an explicit lyricist/composer/author source.",
-      "Original writer credits are unresolved",
-      "Conventional Korean title and bilingual aliases remain under review",
-      "Official audio-only recording still needs review"
+      "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요",
+      "작가 원명은 확인했으나 게임에서 사용할 한국어·영문 작가 태그의 출처 추가 확인 필요",
+      "전체 길이 음원 다운로드 실패: 대체 음원 확인 필요",
+      "동일 곡·가수·버전의 대사·추가 인트로 없는 음원 확인 필요. 개인 자막 업로드 허용."
     ],
     "evidence": [
       {
         "url": "https://www.youtube.com/watch?v=htv2mRvaqhk",
-        "quote": "YouTube oEmbed title: Nekokaburu; author: MOSHIMO - Topic",
-        "kind": "youtube_oembed",
+        "quote": "Nekokaburu",
+        "kind": "youtube_description",
         "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://music.apple.com/jp/album/%E7%8C%AB%E3%81%8B%E3%81%B6%E3%82%8B/1121209104?i=1121209115&uo=4",
+        "quote": "{\"title\":\"猫かぶる\",\"artistName\":\"MOSHIMO\",\"composer\":\"一瀬貴之\"}",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "trackId": "1121209115",
+        "rawTrackDataCache": ".runtime/zeom-google-repair/apple-music-cache/track-229.json"
       }
     ],
-    "notes": "Credits and Korean title aliases are retained only when supported by a source matching this recording; unsupported fields remain unresolved.",
+    "notes": "",
     "namingReviewRequired": true,
     "namingReviewReasons": [
-      "A commonly used Korean title was not verified from a matching Korean source; original title retained."
+      "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
     ],
     "audioSourceType": "unverified_recording",
     "audioSourceReviewRequired": true,
@@ -140,66 +139,12 @@
       "failureCode": "MUSIC_PREMIUM_REQUIRED",
       "reason": "Full-length source could not be downloaded; see local download audit",
       "stage": "remote-download"
-    }
-  },
-  {
-    "index": 239,
-    "playlistPosition": 239,
-    "videoId": "Ui88jlfPz84",
-    "id": "bd6aabdc-5db5-53e7-b0aa-7a1d0c037b82",
-    "youtubeUrl": "https://www.youtube.com/watch?v=Ui88jlfPz84",
-    "sourceTitle": "どうして、わたしじゃないんですか？",
-    "channel": "susumu.",
-    "durationSeconds": 165,
-    "title": "Doushite, Watashi ja Nai n Desu ka?",
-    "writers": [
-      "susumu."
+    },
+    "singer": "MOSHIMO Channel",
+    "writerReviewRequired": false,
+    "audioSourceReviewReasons": [
+      "동일 곡·가수·버전의 대사·추가 인트로 없는 음원 확인 필요. 개인 자막 업로드 허용."
     ],
-    "tags": [
-      "susumu",
-      "DoushiteWatashijaNainDesuka"
-    ],
-    "aliases": [
-      {
-        "kind": "punctuation",
-        "name": "Doushite Watashi ja Nai n Desu ka",
-        "url": null,
-        "quote": "Doushite, Watashi ja Nai n Desu ka?"
-      }
-    ],
-    "reviewRequired": true,
-    "reviewReasons": [
-      "Title or credit evidence has not been matched to a source",
-      "Display title is absent from the evidence quotes",
-      "Conventional Korean title and bilingual aliases remain under review",
-      "Official audio-only recording still needs review"
-    ],
-    "evidence": [
-      {
-        "url": "https://www.youtube.com/watch?v=Ui88jlfPz84",
-        "quote": "YouTube oEmbed title: どうして、わたしじゃないんですか？; author: susumu. - Topic",
-        "kind": "youtube_oembed",
-        "retrievedEvidenceMatched": true
-      },
-      {
-        "url": "https://www.youtube.com/watch?v=Ui88jlfPz84",
-        "quote": "Provided to YouTube by IIP-DDS | Lyricist, Composer: susumu.",
-        "kind": "page",
-        "retrievedEvidenceMatched": false
-      }
-    ],
-    "notes": "Credits and Korean title aliases are retained only when supported by a source matching this recording; unsupported fields remain unresolved.",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "A commonly used Korean title was not verified from a matching Korean source; original title retained."
-    ],
-    "audioSourceType": "unverified_recording",
-    "audioSourceReviewRequired": true,
-    "audio": {
-      "status": "failed",
-      "failureCode": "SOURCE_UNAVAILABLE",
-      "reason": "Full-length source could not be downloaded; see local download audit",
-      "stage": "remote-download"
-    }
+    "writerTagReviewRequired": true
   }
 ]
