@@ -2,6 +2,7 @@
 name = "noqui-web"
 version = "0.1.0"
 edition = "2024"
+default-run = "noqui-web"
 
 [dependencies]
 async-stream = "0.3"

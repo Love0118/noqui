@@ -7,6 +7,25 @@ struct Fixture {
     dir: tempfile::TempDir,
     jobs: Jobs,
 }
+#[tokio::test]
+async fn managed_library_is_never_charged_or_deleted_by_zero_budget_cache_eviction() {
+    let f = Fixture::new();
+    let library = f.jobs.root.join("library/preserved");
+    fs::create_dir_all(&library).unwrap();
+    fs::write(library.join("audio.ogg"), b"permanent library bytes").unwrap();
+    let cached = f.seed("AAAAAAAAAAA", 1);
+    f.room(0, 0, NOW + HANDOFF_MILLIS + 1).unwrap();
+    assert!(!f.ready(&cached));
+    assert!(library.join("audio.ogg").exists());
+    let used: i64 = f
+        .jobs
+        .db
+        .lock()
+        .unwrap()
+        .query_row("SELECT COALESCE(SUM(bytes),0) FROM media", [], |r| r.get(0))
+        .unwrap();
+    assert_eq!(used, 0);
+}
 impl Fixture {
     fn new() -> Self {
         let dir = tempfile::tempdir().unwrap();

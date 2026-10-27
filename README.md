@@ -17,6 +17,12 @@ Rust stable, Node.js 22 이상, Python 3이 필요합니다. 서비스 운영에
 
 프론트엔드는 `static/`, HTTP·인증·미디어·변환·캐시는 `src/`, 독립 서비스와 브라우저 검사는 `tests/`에 있습니다. 원래 `mc-luck-defense/noqui/web`의 변경 이력을 보존했습니다. 서로 다른 구성 요소를 담는 `beta`와 `web` 브랜치는 통째로 병합하지 않습니다.
 
+## 플레이리스트 설치
+
+Paper의 `/noqui playlist`는 내부 HMAC API로 설치 목록을 받아 선택한 목록을 셔플로 시작합니다. 전체 길이 음원은 `data/library/<id>/audio/`에 보관하며 기존 `media/`의 5 GiB LRU 용량 계산·삭제와 분리합니다. 브라우저는 기존 회원 인증과 현재 라운드 권한으로만 접근합니다.
+
+서비스를 정지한 뒤 서비스 계정으로 `install-playlist /var/lib/noqui /전송경로/playlist.json`을 실행하고 재시작합니다. 릴리스에 설치기를 함께 제공합니다. 원본 번들은 `beta`의 `tools/build_playlist.py`로 검수 완료곡만 내보내며, 정답이 들어 있는 오디오 태그를 제거하고 전체 재생 길이를 보존합니다. 설치 시 메타데이터·SHA-256·크기·Opus 길이와 안전한 상대 경로를 검사한 후 목록 전체를 원자적으로 게시합니다. 이미 있는 ID를 덮어쓰지 않습니다. 교체 시 기존 폴더를 library 밖으로 보관한 후 설치합니다. library를 nginx 정적 디렉터리로 공개하지 마세요.
+
 ## 배포
 
 GitHub Actions가 Rust·브라우저·쿠키 격리 검사를 실행한 후 Ubuntu ARM64에서 릴리스 바이너리를 빌드합니다. `web-build-<commit>` 릴리스의 `noqui-web-linux-arm64.tar.gz`에는 바이너리, 다운로드 래퍼와 배포 예제가 포함됩니다. 소스 변경만으로 운영 서비스가 자동 재시작되지는 않습니다.

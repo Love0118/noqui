@@ -43,6 +43,7 @@ pub struct Jobs {
     pub root: Arc<PathBuf>,
     wake: Arc<Notify>,
     cache: Arc<Cache>,
+    pub library: Arc<crate::library::Library>,
 }
 #[derive(Clone)]
 struct Work {
@@ -100,6 +101,7 @@ impl Jobs {
         let cache = Cache::new(root.clone());
         cache.initialize(&mut db, now).map_err(|e| e.code)?;
         Ok(Self {
+            library: Arc::new(crate::library::Library::open(&root.join("library"))?),
             db: Arc::new(Mutex::new(db)),
             root,
             wake: Arc::new(Notify::new()),
@@ -204,9 +206,11 @@ impl Jobs {
     }
     pub async fn protect(&self, ids: Vec<String>) -> Result<(HashMap<String, Media>, MediaPins)> {
         let cache = self.cache.clone();
+        let library = self.library.clone();
         self.access(move |db| {
             let mut out = HashMap::new();
             for id in ids {
+                if let Some((media,_))=library.asset(&id) {out.insert(id,media.clone());continue;}
                 if let Some(m) = db.query_row("SELECT m.id,m.sha256,m.duration,m.bytes FROM media m JOIN jobs j ON j.media_id=m.id WHERE m.id=? AND j.state='READY' AND j.profile IN (?,?)", params![id,PROFILE,PREVIOUS_PROFILE],read_media).optional().map_err(db_error)?.filter(|m|cache.valid_file(&m.sha256,m.byte_length)) {
                     out.insert(id,m);
                 }
@@ -260,7 +264,16 @@ impl Jobs {
         touch: bool,
     ) -> Result<(fs::File, MediaPins)> {
         let cache = self.cache.clone();
+        let library = self.library.clone();
         self.access(move |db| {
+            if let Some((registered, path)) = library.asset(&media.id) {
+                if registered.sha256 != media.sha256 || registered.byte_length != media.byte_length
+                {
+                    return Err(Error::new(404, "MEDIA_NOT_FOUND"));
+                }
+                let file = fs::File::open(path).map_err(|_| Error::new(404, "MEDIA_NOT_FOUND"))?;
+                return Ok((file, cache.pin(vec![media.id])));
+            }
             let registered: bool = db
                 .query_row(
                     "SELECT EXISTS(SELECT 1 FROM media WHERE id=? AND sha256=? AND bytes=?)",

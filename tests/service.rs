@@ -174,6 +174,36 @@ async fn call(
         .to_vec();
     (status, h, bytes)
 }
+#[tokio::test]
+async fn playlist_routes_require_internal_hmac_and_are_not_public() {
+    let f = Fixture::new();
+    let path = "/internal/v1/playlists";
+    let (status, _, _) = call(
+        api::internal(f.app.clone()),
+        Request::builder()
+            .uri(path)
+            .header("host", "127.0.0.1:8788")
+            .body(Body::empty())
+            .unwrap(),
+    )
+    .await;
+    assert_eq!(status, StatusCode::UNAUTHORIZED);
+    let (status, _, body) = call(api::internal(f.app.clone()), f.signed("GET", path, b"")).await;
+    assert_eq!(status, StatusCode::OK);
+    assert_eq!(
+        serde_json::from_slice::<Value>(&body).unwrap(),
+        json!({"playlists":[]})
+    );
+    let (status, _, _) = call(
+        api::public(f.app.clone()),
+        Request::builder().uri(path).body(Body::empty()).unwrap(),
+    )
+    .await;
+    assert_eq!(status, StatusCode::NOT_FOUND);
+    let path = "/internal/v1/playlists/missing/tracks/0";
+    let (status, _, _) = call(api::internal(f.app.clone()), f.signed("GET", path, b"")).await;
+    assert_eq!(status, StatusCode::NOT_FOUND);
+}
 fn job(video: &str) -> JobRequest {
     JobRequest {
         schema_version: 1,

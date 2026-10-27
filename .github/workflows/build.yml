@@ -37,7 +37,7 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p dist/package
-          cp target/release/noqui-web tools/yt-dlp-private-cookies.sh dist/package/
+          cp target/release/noqui-web target/release/install-playlist tools/yt-dlp-private-cookies.sh dist/package/
           cp -R deploy dist/package/
           cp README.md dist/package/
           tar -C dist/package -czf dist/noqui-web-linux-arm64.tar.gz .

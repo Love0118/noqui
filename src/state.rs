@@ -469,7 +469,7 @@ pub fn validate(s: &Snapshot, media: &HashMap<String, Media>, now: i64) -> Resul
                 if r.clip_start_ms < 0
                     || r.clip_end_ms <= r.clip_start_ms
                     || r.clip_end_ms > asset.duration_ms
-                    || r.clip_end_ms - r.clip_start_ms > 115000
+                    || r.clip_end_ms - r.clip_start_ms > 120000
                     || r.anchor_position_ms < r.clip_start_ms
                     || r.anchor_position_ms > r.clip_end_ms
                     || r.anchor_at_ms < 0

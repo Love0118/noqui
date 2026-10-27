@@ -3,6 +3,7 @@ pub mod auth;
 mod cache;
 pub mod catalogue;
 pub mod jobs;
+pub mod library;
 pub mod model;
 pub mod state;
 

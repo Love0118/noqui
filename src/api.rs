@@ -40,6 +40,11 @@ pub fn internal(app: App) -> Router {
         .route("/internal/v1/media/jobs", post(enqueue))
         .route("/internal/v1/media/jobs/{id}", get(job_status))
         .route("/internal/v1/catalogue/import", post(import_catalogue))
+        .route("/internal/v1/playlists", get(playlists))
+        .route(
+            "/internal/v1/playlists/{id}/tracks/{offset}",
+            get(playlist_tracks),
+        )
         .route("/internal/v1/sync", post(sync))
         .route("/internal/v1/join-tokens", post(token))
         .layer(DefaultBodyLimit::max(65536))
@@ -136,6 +141,19 @@ async fn enqueue(State(app): State<App>, h: HeaderMap, b: Bytes) -> Result<Respo
 }
 async fn job_status(State(app): State<App>, Path(id): Path<String>) -> Result<Json<Value>> {
     Ok(Json(app.jobs.status(id).await?))
+}
+async fn playlists(State(app): State<App>) -> Json<Value> {
+    Json(app.jobs.library.summaries())
+}
+async fn playlist_tracks(
+    State(app): State<App>,
+    Path((id, offset)): Path<(String, usize)>,
+) -> Result<Json<Value>> {
+    app.jobs
+        .library
+        .tracks(&id, offset)
+        .map(Json)
+        .ok_or(Error::new(404, "PLAYLIST_NOT_FOUND"))
 }
 async fn import_catalogue(State(app): State<App>, h: HeaderMap, b: Bytes) -> Result<Json<Value>> {
     let request: crate::catalogue::CatalogueImportRequest = decode(&h, &b)?;
