@@ -18,6 +18,8 @@ use std::{
     },
 };
 use tower::ServiceExt;
+#[path = "support/opus.rs"]
+mod opus;
 
 const PLAYER: &str = "10000000-0000-4000-8000-000000000001";
 const MEMBER: &str = "20000000-0000-4000-8000-000000000001";
@@ -110,6 +112,36 @@ impl Fixture {
             playing: s.rooms[0].phase != "PREPARING",
             playback_rate: 1,
         });
+    }
+    fn seed_audio(&self, duration: i64) -> Media {
+        let mut media = self.seed();
+        let old_path = self
+            .app
+            .jobs
+            .root
+            .join("media")
+            .join(format!("{}.ogg", media.sha256));
+        let bytes = opus::audio(duration);
+        media.sha256 = auth::digest(&bytes);
+        media.byte_length = bytes.len() as u64;
+        media.duration_ms = duration;
+        std::fs::write(
+            self.app
+                .jobs
+                .root
+                .join("media")
+                .join(format!("{}.ogg", media.sha256)),
+            bytes,
+        )
+        .unwrap();
+        std::fs::remove_file(old_path).unwrap();
+        let db = rusqlite::Connection::open(self.app.jobs.root.join("media.sqlite")).unwrap();
+        db.execute(
+            "UPDATE media SET sha256=?,duration=?,bytes=? WHERE id=?",
+            rusqlite::params![media.sha256, duration, media.byte_length, media.id],
+        )
+        .unwrap();
+        media
     }
     fn sync_direct(&self, s: Snapshot, media: Option<Media>) -> Value {
         let bytes = serde_json::to_vec(&s).unwrap();
@@ -1049,7 +1081,8 @@ async fn opus_padding_is_ready_metadata_while_public_round_keeps_exact_40_second
     assert_eq!(status, StatusCode::OK);
     let public: Value = serde_json::from_slice(&body).unwrap();
     assert_eq!(public["round"]["clipEndMs"], 40000);
-    assert_eq!(public["media"]["durationMs"], 40007);
+    assert_eq!(public["media"]["durationMs"], 40000);
+    assert_eq!(public["media"]["timeOffsetMs"], 0);
     assert!(public["reveal"].is_null());
     f.clock.0.store(START + 15000, Ordering::SeqCst);
     assert_eq!(
@@ -1718,6 +1751,137 @@ async fn reveal_can_keep_playing_then_idle_and_public_projection_never_leaks_sou
     assert!(v["round"].is_null());
     assert!(v["media"].is_null());
     assert!(v["reveal"].is_null());
+}
+
+#[tokio::test]
+async fn round_interval_is_a_memory_only_ogg_with_scoped_ranges_and_no_full_source_bypass() {
+    use ogg::reading::PacketReader;
+    fn files(root: &std::path::Path) -> Vec<std::path::PathBuf> {
+        let mut out = Vec::new();
+        for entry in std::fs::read_dir(root).unwrap() {
+            let path = entry.unwrap().path();
+            if path.is_dir() {
+                out.extend(files(&path));
+            } else {
+                out.push(path);
+            }
+        }
+        out.sort();
+        out
+    }
+    let f = Fixture::new();
+    let media = f.seed_audio(180000);
+    let mut snapshot = f.snapshot(1, "PREPARING");
+    f.round(&mut snapshot);
+    let round = snapshot.rooms[0].round.as_mut().unwrap();
+    round.clip_start_ms = 10000;
+    round.clip_end_ms = 50000;
+    round.anchor_position_ms = 10000;
+    f.sync_direct(snapshot.clone(), Some(media.clone()));
+    let (cookie, _) = f.login();
+    let original_path = f
+        .app
+        .jobs
+        .root
+        .join("media")
+        .join(format!("{}.ogg", media.sha256));
+    let original = std::fs::read(&original_path).unwrap();
+    let before = files(&f.app.jobs.root);
+    let (_, _, state) = call(api::public(f.app.clone()), get("/api/v1/state", &cookie)).await;
+    let public: Value = serde_json::from_slice(&state).unwrap();
+    assert_eq!(public["media"]["timeOffsetMs"], 10000);
+    assert_eq!(public["media"]["durationMs"], 40000);
+    let path = public["media"]["url"].as_str().unwrap();
+    let (status, headers, clip) = call(api::public(f.app.clone()), get(path, &cookie)).await;
+    assert_eq!(status, StatusCode::OK);
+    assert!(clip.len() < original.len() / 3);
+    let etag = headers[header::ETAG].clone();
+    let mut reader = PacketReader::new(std::io::Cursor::new(&clip));
+    let head = reader.read_packet_expected().unwrap();
+    let skip = u16::from_le_bytes(head.data[10..12].try_into().unwrap()) as u64;
+    let mut final_granule = 0;
+    while let Some(packet) = reader.read_packet().unwrap() {
+        final_granule = packet.absgp_page();
+    }
+    assert_eq!(final_granule - skip, 40000 * 48);
+    assert!(
+        !clip
+            .windows(b"Private Title".len())
+            .any(|w| w == b"Private Title")
+    );
+    let mut range = get(path, &cookie);
+    range
+        .headers_mut()
+        .insert(header::RANGE, "bytes=2-30".parse().unwrap());
+    let (status, h, bytes) = call(api::public(f.app.clone()), range).await;
+    assert_eq!(status, StatusCode::PARTIAL_CONTENT);
+    assert_eq!(bytes, clip[2..31]);
+    assert_eq!(
+        h[header::CONTENT_RANGE],
+        format!("bytes 2-30/{}", clip.len())
+    );
+    let mut head = get(path, &cookie);
+    *head.method_mut() = axum::http::Method::HEAD;
+    let (_, h, bytes) = call(api::public(f.app.clone()), head).await;
+    assert!(bytes.is_empty());
+    assert_eq!(h[header::CONTENT_LENGTH], clip.len().to_string());
+    assert_eq!(h[header::ETAG], etag);
+    for invalid in [
+        format!("/media/{}.ogg", media.sha256),
+        format!("/media/{}.ogg?startMs=0&endMs=180000", media.sha256),
+    ] {
+        assert_eq!(
+            call(api::public(f.app.clone()), get(&invalid, &cookie))
+                .await
+                .0,
+            StatusCode::NOT_FOUND
+        );
+    }
+    assert_eq!(
+        call(api::public(f.app.clone()), get(path, "")).await.0,
+        StatusCode::UNAUTHORIZED
+    );
+    snapshot.seq = "2".into();
+    snapshot.rooms[0].room_revision = "2".into();
+    let round = snapshot.rooms[0].round.as_mut().unwrap();
+    round.revision = "2".into();
+    round.clip_end_ms = 30000;
+    f.sync_direct(snapshot, Some(media));
+    assert_eq!(
+        call(api::public(f.app.clone()), get(path, &cookie)).await.0,
+        StatusCode::NOT_FOUND
+    );
+    let new_path = path.replace("endMs=50000", "endMs=30000");
+    let mut request = get(&new_path, &cookie);
+    request
+        .headers_mut()
+        .insert(header::IF_NONE_MATCH, etag.clone());
+    let (status, h, _) = call(api::public(f.app.clone()), request).await;
+    assert_eq!(status, StatusCode::OK);
+    assert_ne!(h[header::ETAG], etag);
+    let idle = serde_json::to_vec(&f.snapshot(3, "IDLE")).unwrap();
+    assert_eq!(
+        call(
+            api::internal(f.app.clone()),
+            f.signed("POST", "/internal/v1/sync", &idle)
+        )
+        .await
+        .0,
+        StatusCode::OK
+    );
+    assert_eq!(
+        call(api::public(f.app.clone()), get(&new_path, &cookie))
+            .await
+            .0,
+        StatusCode::NOT_FOUND
+    );
+    assert_eq!(std::fs::read(original_path).unwrap(), original);
+    assert_eq!(
+        files(&f.app.jobs.root),
+        before,
+        "GET, HEAD, ranges and round end must not create cut files"
+    );
+    assert!(f.app.inner.lock().unwrap().downloads.is_empty());
 }
 
 #[test]

@@ -2,7 +2,7 @@ use crate::{App, auth, model::*, state::Session};
 use axum::{
     Json, Router,
     body::{Body, Bytes},
-    extract::{DefaultBodyLimit, Path, Request, State},
+    extract::{DefaultBodyLimit, Path, Query, Request, State},
     http::{HeaderMap, HeaderValue, Method, StatusCode},
     middleware::{self, Next},
     response::{
@@ -11,7 +11,7 @@ use axum::{
     },
     routing::{get, post},
 };
-use serde::de::DeserializeOwned;
+use serde::{Deserialize, de::DeserializeOwned};
 use serde_json::{Value, json};
 use std::{
     convert::Infallible,
@@ -210,10 +210,25 @@ async fn sync(State(app): State<App>, h: HeaderMap, b: Bytes) -> Result<Json<Val
             })
             .collect()
     };
-    let (out, revision) = {
+    let (out, revision, clip_key) = {
         let mut inner = app.inner.lock().unwrap();
         let out = inner.sync(snapshot, auth::digest(&b), media, app.now())?;
-        (out, inner.event_seq)
+        let clip_key = inner
+            .snapshot
+            .as_ref()
+            .and_then(|s| s.rooms.first())
+            .and_then(|room| room.round.as_ref())
+            .and_then(|r| {
+                r.media_id
+                    .as_ref()
+                    .and_then(|id| inner.media.get(id))
+                    .map(|m| crate::clips::ClipKey {
+                        hash: m.sha256.clone(),
+                        start_ms: r.clip_start_ms,
+                        end_ms: r.clip_end_ms,
+                    })
+            });
+        (out, inner.event_seq, clip_key)
     };
     app.jobs
         .retain_selection(
@@ -229,6 +244,7 @@ async fn sync(State(app): State<App>, h: HeaderMap, b: Bytes) -> Result<Json<Val
             }),
         )
         .await?;
+    app.clips.retain(clip_key.as_ref()).await;
     app.notify();
     Ok(Json(out))
 }
@@ -404,9 +420,16 @@ impl Drop for Download {
         }
     }
 }
+#[derive(Default, Deserialize)]
+#[serde(rename_all = "camelCase", deny_unknown_fields)]
+struct MediaWindow {
+    start_ms: Option<i64>,
+    end_ms: Option<i64>,
+}
 async fn media(
     State(app): State<App>,
     Path(name): Path<String>,
+    Query(window): Query<MediaWindow>,
     method: Method,
     h: HeaderMap,
 ) -> Result<Response> {
@@ -415,30 +438,71 @@ async fn media(
         .strip_suffix(".ogg")
         .filter(|s| hex(s))
         .ok_or(Error::new(404, "MEDIA_NOT_FOUND"))?;
-    let m = app
+    let (m, clip_key) = app
         .inner
         .lock()
         .unwrap()
         .authorize_media(&key, hash, app.now())?;
+    let clipped = clip_key.start_ms != 0 || clip_key.end_ms != m.duration_ms;
+    // The query is part of the cache identity, never permission to select audio.
+    // Legacy URLs remain valid only when the entire asset is the quiz interval.
+    if (window.start_ms, window.end_ms) != (Some(clip_key.start_ms), Some(clip_key.end_ms))
+        && (clipped || window.start_ms.is_some() || window.end_ms.is_some())
+    {
+        return Err(Error::new(404, "MEDIA_NOT_FOUND"));
+    }
+    let guard = if method == Method::GET {
+        let mut inner = app.inner.lock().unwrap();
+        if inner.downloads.values().sum::<usize>() >= 64
+            || inner.downloads.get(&key).copied().unwrap_or(0) >= 4
+        {
+            return Err(Error::retry(429, "RATE_LIMITED", 1000));
+        }
+        *inner.downloads.entry(key.clone()).or_default() += 1;
+        Some(Download {
+            app: app.clone(),
+            key: key.clone(),
+        })
+    } else {
+        None
+    };
     let (file, media_guard) = app
         .jobs
         .open_media(m.clone(), app.now(), method == Method::GET)
         .await?;
-    let mut file = tokio::fs::File::from_std(file);
     let metadata = file
         .metadata()
-        .await
         .map_err(|_| Error::new(404, "MEDIA_NOT_FOUND"))?;
+    let (data, mut file) = if clipped {
+        (Some(app.clips.get(file, clip_key.clone()).await?), None)
+    } else {
+        (None, Some(tokio::fs::File::from_std(file)))
+    };
+    // Rendering runs outside the state mutex; a round can end in the meantime.
+    if app
+        .inner
+        .lock()
+        .unwrap()
+        .authorize_media(&key, hash, app.now())?
+        .1
+        != clip_key
+    {
+        return Err(Error::new(404, "MEDIA_NOT_FOUND"));
+    }
+    let length = data.as_ref().map_or(m.byte_length, |b| b.len() as u64);
     let modified = metadata.modified().unwrap_or(SystemTime::UNIX_EPOCH);
     let last_modified = httpdate::fmt_http_date(modified);
-    let tag = format!("\"sha256-{hash}\"");
+    let tag = format!(
+        "\"opus-clip-v1-{hash}-{}-{}\"",
+        clip_key.start_ms, clip_key.end_ms
+    );
     let mut response = Response::new(Body::empty());
     let headers = response.headers_mut();
     for (k, v) in [
         ("content-type", "audio/ogg; codecs=opus"),
         ("accept-ranges", "bytes"),
         ("cache-control", "private, max-age=31536000, immutable"),
-        ("content-length", &m.byte_length.to_string()),
+        ("content-length", &length.to_string()),
         ("etag", &tag),
         ("last-modified", &last_modified),
     ] {
@@ -447,12 +511,14 @@ async fn media(
     let not_modified = if let Some(v) = auth::header(&h, "if-none-match") {
         v.split(',')
             .any(|s| s.trim() == "*" || s.trim().trim_start_matches("W/") == tag)
-    } else {
+    } else if !clipped {
         auth::header(&h, "if-modified-since")
             .and_then(|v| httpdate::parse_http_date(v).ok())
             .is_some_and(|since| {
                 httpdate::parse_http_date(&last_modified).is_ok_and(|m| m <= since)
             })
+    } else {
+        false
     };
     if not_modified {
         *response.status_mut() = StatusCode::NOT_MODIFIED;
@@ -464,13 +530,14 @@ async fn media(
     }
     let range_allowed = auth::header(&h, "if-range").is_none_or(|v| {
         v == tag
-            || (!v.starts_with('"')
+            || (!clipped
+                && !v.starts_with('"')
                 && httpdate::parse_http_date(v).is_ok_and(|date| {
                     httpdate::parse_http_date(&last_modified).is_ok_and(|m| m <= date)
                 }))
     });
     let range = if range_allowed {
-        parse_range(auth::header(&h, "range"), m.byte_length)
+        parse_range(auth::header(&h, "range"), length)
     } else {
         ByteRange::Full
     };
@@ -479,7 +546,7 @@ async fn media(
             *response.status_mut() = StatusCode::RANGE_NOT_SATISFIABLE;
             response.headers_mut().insert(
                 "content-range",
-                HeaderValue::from_str(&format!("bytes */{}", m.byte_length)).unwrap(),
+                HeaderValue::from_str(&format!("bytes */{length}")).unwrap(),
             );
             response
                 .headers_mut()
@@ -490,7 +557,7 @@ async fn media(
             *response.status_mut() = StatusCode::PARTIAL_CONTENT;
             response.headers_mut().insert(
                 "content-range",
-                HeaderValue::from_str(&format!("bytes {a}-{b}/{}", m.byte_length)).unwrap(),
+                HeaderValue::from_str(&format!("bytes {a}-{b}/{length}")).unwrap(),
             );
             response.headers_mut().insert(
                 "content-length",
@@ -498,21 +565,17 @@ async fn media(
             );
             (a, b - a + 1)
         }
-        ByteRange::Full => (0, m.byte_length),
+        ByteRange::Full => (0, length),
     };
-    {
-        let mut inner = app.inner.lock().unwrap();
-        if inner.downloads.values().sum::<usize>() >= 64
-            || inner.downloads.get(&key).copied().unwrap_or(0) >= 4
-        {
-            return Err(Error::retry(429, "RATE_LIMITED", 1000));
-        }
-        *inner.downloads.entry(key.clone()).or_default() += 1;
+    if let Some(data) = data {
+        let data = data.slice(start as usize..(start + count) as usize);
+        *response.body_mut() = Body::from_stream(async_stream::stream! {
+            let _guard = guard; let _media_guard = media_guard;
+            for chunk in data.chunks(65536) { yield Ok::<_, std::io::Error>(Bytes::copy_from_slice(chunk)); }
+        });
+        return Ok(response);
     }
-    let guard = Download {
-        app: app.clone(),
-        key,
-    };
+    let mut file = file.take().unwrap();
     file.seek(std::io::SeekFrom::Start(start))
         .await
         .map_err(|_| Error::new(500, "MEDIA_UNAVAILABLE"))?;

@@ -17,6 +17,11 @@ jobs:
         with:
           node-version: '22'
       - run: cargo test --locked
+      - name: Check real Opus clipping without temporary audio files
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          cargo test --locked real_opus_clips -- --ignored
       - run: node --test tests/browser.cjs
       - run: python3 -m unittest discover -s tools -p 'test_*.py'
   publish-web:

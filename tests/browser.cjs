@@ -16,7 +16,7 @@ function fixture(stored = new Map()) {
   let playOverride = null, checks = 0, listenerRenders = 0;
   const storage = new Map(stored);
   function element() { return { textContent: '', hidden: false, disabled: false, attrs: {}, events: {}, classList: { toggle() {}, remove() {} }, querySelectorAll: () => [],
-    addEventListener(type, fn) { this.events[type] = fn; }, setAttribute(k, v) { this.attrs[k] = v; }, removeAttribute() {}, replaceChildren() {}, closest: () => null }; }
+    addEventListener(type, fn) { this.events[type] = fn; }, setAttribute(k, v) { this.attrs[k] = v; }, removeAttribute(k) { delete this[k]; }, replaceChildren() {}, closest: () => null }; }
   const get = id => { if (!els.has(id)) els.set(id, element()); return els.get(id); };
   const audio = get('audio');
   get('listeners').replaceChildren = () => { listenerRenders++; };
@@ -87,12 +87,44 @@ test('new round revision reports PREPARED after the output check without a heart
   assert.equal(r.checks(), 1); assert.equal(r.plays(), 0, 'the quiz track is not exposed during the check');
 });
 
-test('full length album buffers report only the quiz clip and preserve playback readiness', async () => {
+test('legacy full length album buffers report only the quiz clip and preserve playback readiness', async () => {
   const r = fixture(); r.audio.buffered.end = () => 600.016;
   const state = r.state('PREPARING', '1'); state.media.durationMs = 600016;
   r.setSnapshot(state); await r.boot(); await flush();
   assert.equal(r.reports.at(-1).status, 'PREPARED');
   assert.equal(r.reports.at(-1).bufferedUntilMs, 115000);
+});
+
+for (const rate of [1, 2]) test(`a clipped ${rate}x stream uses local audio time and source-time bridge reports`, async () => {
+  const r = fixture();
+  const prepare = r.state('PREPARING', '1');
+  Object.assign(prepare.round, { clipStartMs: 90000, clipEndMs: 120000, anchorPositionMs: 90000, playbackRate: rate });
+  Object.assign(prepare.media, { url: `${prepare.media.url}?startMs=90000&endMs=120000`, durationMs: 30000, timeOffsetMs: 90000 });
+  r.audio.buffered.end = () => 30;
+  r.setSnapshot(prepare); await r.boot(); await flush();
+  assert.equal(r.audio.currentTime, 0);
+  assert.equal(r.reports.at(-1).positionMs, 90000);
+  assert.equal(r.reports.at(-1).bufferedUntilMs, 120000);
+  assert.equal(r.status(), 'PREPARED');
+  const playing = structuredClone(prepare);
+  playing.eventId = 'epoch:2'; playing.room.phase = 'PLAYING';
+  Object.assign(playing.round, { revision: '2', playing: true, anchorPositionMs: 95000 });
+  r.apply(playing); await flush();
+  assert.equal(r.audio.currentTime, 5);
+  await r.advancePlayback(); await r.advancePlayback();
+  assert.equal(r.audio.currentTime, 5 + .5 * rate);
+  await r.report('PAUSED');
+  assert.equal(r.reports.at(-1).positionMs, 95000 + 500 * rate);
+  const ended = structuredClone(playing); ended.eventId = 'epoch:3'; ended.room.phase = 'REVEAL'; ended.round.playing = false;
+  r.apply(ended); await flush();
+  assert.equal(r.audio.src, undefined, 'round end releases the media source and cancels its transfer');
+});
+
+test('revocation and loss of the playback lease detach the audio source', async () => {
+  const r = fixture(); await r.boot(); await flush(); assert(r.audio.src);
+  r.setClock(70000); r.align(); assert.equal(r.audio.src, undefined);
+  r.setClock(1000); r.apply(r.state('PREPARING', '2')); await flush(); assert(r.audio.src);
+  r.revoke('SESSION_REVOKED'); assert.equal(r.audio.src, undefined);
 });
 
 test('unchanged listener rosters do not rebuild on repeated playback updates', async () => {

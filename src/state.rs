@@ -292,7 +292,10 @@ impl State {
             .ok_or(Error::new(404, "ROOM_NOT_FOUND"))?;
         self.sessions.get_mut(key).unwrap().connected_until = now + 20000;
         let players:Vec<_>=self.snapshot.as_ref().unwrap().roster.iter().filter(|p|p.room_id==room.room_id).map(|p|json!({"uuid":p.uuid,"nickname":p.nickname,"textureHash":p.texture_hash,"browserOnline":self.sessions.values().any(|s|s.player.uuid==p.uuid && s.browser.as_ref().is_some_and(|b|b.until>now))})).collect();
-        let media=room.round.as_ref().and_then(|r|r.media_id.as_ref()).and_then(|id|self.media.get(id)).map(|m|json!({"mediaId":m.id,"url":format!("/media/{}.ogg",m.sha256),"mime":"audio/ogg; codecs=opus","durationMs":m.duration_ms}));
+        let media = room.round.as_ref().and_then(|r| r.media_id.as_ref().and_then(|id| self.media.get(id)).map(|m| json!({
+            "mediaId":m.id,"url":format!("/media/{}.ogg?startMs={}&endMs={}",m.sha256,r.clip_start_ms,r.clip_end_ms),
+            "mime":"audio/ogg; codecs=opus","durationMs":r.clip_end_ms-r.clip_start_ms,"timeOffsetMs":r.clip_start_ms
+        })));
         let mut public_room = json!({"roomId":room.room_id,"revision":room.room_revision,"phase":room.phase,"players":players});
         if let (Some(number), Some(total)) = (room.round_number, room.total_rounds) {
             public_room["roundNumber"] = json!(number);
@@ -374,17 +377,34 @@ impl State {
             json!({"serverTimeMs":now,"leaseExpiresAtMs":now+60000,"activeClientId":p.client_id,"heartbeatAfterMs":15000}),
         )
     }
-    pub fn authorize_media(&mut self, key: &str, sha: &str, now: i64) -> Result<Media> {
+    pub(crate) fn authorize_media(
+        &mut self,
+        key: &str,
+        sha: &str,
+        now: i64,
+    ) -> Result<(Media, crate::clips::ClipKey)> {
         let session = self.session(key, now)?;
         self.require_authority(now)?;
         self.snapshot
             .as_ref()
             .and_then(|s| s.rooms.iter().find(|r| r.room_id == session.player.room_id))
             .and_then(|r| r.round.as_ref())
-            .and_then(|r| r.media_id.as_ref())
-            .and_then(|id| self.media.get(id))
-            .filter(|m| m.sha256 == sha)
-            .cloned()
+            .and_then(|r| {
+                r.media_id
+                    .as_ref()
+                    .and_then(|id| self.media.get(id))
+                    .filter(|m| m.sha256 == sha)
+                    .map(|m| {
+                        (
+                            m.clone(),
+                            crate::clips::ClipKey {
+                                hash: sha.to_owned(),
+                                start_ms: r.clip_start_ms,
+                                end_ms: r.clip_end_ms,
+                            },
+                        )
+                    })
+            })
             .ok_or(Error::new(404, "MEDIA_NOT_FOUND"))
     }
 }

@@ -11,6 +11,7 @@ base64 = "0.22"
 futures-util = "0.3"
 hmac = "0.12"
 httpdate = "1"
+ogg = "0.9.2"
 rand = "0.9"
 rusqlite = { version = "0.37", features = ["bundled"] }
 serde = { version = "1", features = ["derive"] }

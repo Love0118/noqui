@@ -2,10 +2,14 @@ pub mod api;
 pub mod auth;
 mod cache;
 pub mod catalogue;
+mod clips;
 pub mod jobs;
 pub mod library;
 pub mod model;
 pub mod state;
+#[cfg(test)]
+#[path = "../tests/support/opus.rs"]
+mod test_audio;
 
 use std::{
     path::PathBuf,
@@ -65,6 +69,7 @@ pub struct App {
     pub jobs: jobs::Jobs,
     pub changed: broadcast::Sender<()>,
     pub control_sync: Arc<tokio::sync::Mutex<()>>,
+    pub(crate) clips: clips::Clips,
 }
 impl App {
     pub fn open(config: Config, clock: Arc<dyn Clock>) -> Result<Self, String> {
@@ -77,6 +82,7 @@ impl App {
             jobs,
             changed,
             control_sync: Arc::new(tokio::sync::Mutex::new(())),
+            clips: clips::Clips::default(),
         })
     }
     pub fn now(&self) -> i64 {

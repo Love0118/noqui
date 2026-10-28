@@ -8,6 +8,7 @@
   let state = null, csrf = '', stream = null, connectionGeneration = 0, reconnectTimer = null, retries = 0;
   let offset = 0, calibrated = false, lastControl = -Infinity, authority = 0, leader = true;
   let currentMedia = '', lastGeneration = '', lastSeek = -Infinity, playPending = null, ackPending = false, ackAgain = false, takeover = false, formatFailed = false;
+  let mediaAttached = false;
   let gestureBlocked = false, userPaused = false, clientLeaseUntil = 0, authGeneration = 0, playbackGesture = 0;
   let countdownStarted = false, progressSample = null, progressStart = null, lastProgressAt = -Infinity;
   let outputCheck = null, checkedOutput = '', nextAutoplayAttemptAt = 0;
@@ -36,7 +37,7 @@
     return response.status === 204 ? null : response.json();
   }
   function revoke(code) {
-    authGeneration++; connectionGeneration++; authValid = false; clientLeaseUntil = 0; playPending = null; cancelOutputCheck(); checkedOutput = ''; audio.pause(); stream?.close(); clearTimeout(reconnectTimer);
+    authGeneration++; connectionGeneration++; authValid = false; clientLeaseUntil = 0; playPending = null; releaseMedia(); checkedOutput = ''; audio.pause(); currentMedia = ''; stream?.close(); clearTimeout(reconnectTimer);
     $('connection').classList.remove('connected'); $('connection-text').textContent = code === 'SESSION_CHANGED' ? '다른 연결' : '연결 끊김';
     $('logout').disabled = true;
     $('audio-status').textContent = '연결 대기'; $('playback').hidden = true; $('takeover').hidden = true; message(errors[code] || errors.AUTH_REQUIRED);
@@ -79,12 +80,13 @@
     if (samples[0]?.rtt < 1500) { offset = samples[0].offset; calibrated = true; }
   }
   function apply(next) {
+    const mediaUrl = next.round && !['IDLE', 'ENDED'].includes(next.room.phase) && (next.room.phase !== 'REVEAL' || next.round.playing) ? next.media?.url || '' : '';
     if (boundPlayer && next.me.uuid !== boundPlayer) { revoke('SESSION_CHANGED'); return; }
     const split = String(next.eventId).lastIndexOf(':'); const epoch = next.eventId.slice(0, split); let seq;
     try { seq = BigInt(next.eventId.slice(split + 1)); } catch { return; }
     if (epoch === eventEpoch && seq < eventSeq) return;
     if (epoch !== eventEpoch) { eventEpoch = epoch; eventSeq = -1n; }
-    if (next.round?.roundId !== state?.round?.roundId || next.media?.url !== currentMedia) { cancelOutputCheck(); checkedOutput = ''; nextOutputAttemptAt = 0; }
+    if (next.round?.roundId !== state?.round?.roundId || mediaUrl !== currentMedia) { cancelOutputCheck(); checkedOutput = ''; nextOutputAttemptAt = 0; }
     eventSeq = seq; state = next; lastControl = performance.now(); authority = next.authorityLeaseExpiresAtMs;
     if (next.round?.playbackGeneration !== lastGeneration) { lastGeneration = next.round?.playbackGeneration || ''; lastSeek = -Infinity; nextPlayAttemptAt = 0; playPending = null; countdownStarted = false; resetProgress(); audio.pause(); }
     if (!calibrated) offset = next.serverTimeMs - performance.now();
@@ -100,11 +102,11 @@
     setText('round-label', roundLabel);
     $('tags').hidden = !revealed || !next.reveal.tags.length;
     $('tags').replaceChildren(...(revealed ? next.reveal.tags.map(tag => { const el = document.createElement('span'); el.textContent = tag; return el; }) : []));
-    if (next.media?.url !== currentMedia) {
-      playPending = null; countdownStarted = false; resetProgress(); audio.pause(); currentMedia = next.media?.url || ''; lastSeek = -Infinity; formatFailed = false;
+    if (mediaUrl !== currentMedia) {
+      playPending = null; countdownStarted = false; releaseMedia(); resetProgress(); audio.pause(); currentMedia = mediaUrl; lastSeek = -Infinity; formatFailed = false;
       if (currentMedia) {
-        if (!/^\/media\/[a-f0-9]{64}\.ogg$/.test(currentMedia) || !audio.canPlayType('audio/ogg; codecs="opus"')) { formatFailed = true; message(errors.FORMAT_UNSUPPORTED); report('FAILED'); return; }
-        audio.preload = 'auto'; audio.src = currentMedia; audio.load();
+        if (!/^\/media\/[a-f0-9]{64}\.ogg(?:\?startMs=\d+&endMs=\d+)?$/.test(currentMedia) || !audio.canPlayType('audio/ogg; codecs="opus"')) { formatFailed = true; message(errors.FORMAT_UNSUPPORTED); report('FAILED'); return; }
+        audio.preload = 'auto';
       } else { audio.removeAttribute('src'); audio.load(); }
     }
     audio.defaultPlaybackRate = playbackRate(next.round);
@@ -114,13 +116,17 @@
     align(); paint();
   }
   function resetProgress() { progressSample = null; progressStart = null; lastProgressAt = -Infinity; }
+  function releaseMedia() {
+    if (!mediaAttached && !outputCheck) return;
+    mediaAttached = false; cancelOutputCheck(); resetProgress(); audio.pause(); audio.removeAttribute('src'); audio.load();
+  }
   function outputKey() { return `${state?.round?.roundId}:${currentMedia}`; }
   function cancelOutputCheck() {
     if (!outputCheck) return;
     const attempt = outputCheck;
     // Keep the guard in place during pause/load events from the temporary source.
     audio.pause(); audio.volume = attempt.volume; audio.muted = attempt.muted;
-    if (currentMedia) audio.src = currentMedia; else audio.removeAttribute('src');
+    if (currentMedia && mediaAttached) audio.src = currentMedia; else audio.removeAttribute('src');
     audio.load(); lastSeek = -Infinity; resetProgress(); outputCheck = null;
   }
   function checkOutput() {
@@ -160,6 +166,7 @@
     if (!leader) return 'CONNECTED';
     if (!state?.round || !currentMedia) return 'CONNECTED';
     if (audio.error || formatFailed) return 'FAILED';
+    if (!mediaAttached) return 'LOADING';
     if (userPaused) return 'PAUSED';
     if (gestureBlocked) return 'NEEDS_GESTURE';
     if (outputCheck) return 'BUFFERING';
@@ -168,8 +175,8 @@
     if (audio.seeking || audio.readyState < 3) return 'LOADING';
     if (state.room.phase === 'PREPARING' || state.room.phase === 'COUNTDOWN') {
       if (checkedOutput !== outputKey()) return 'LOADING';
-      const target = expected(state.round) / 1000;
-      const requiredEnd = Math.min(target + .5 * playbackRate(state.round), state.round.clipEndMs / 1000);
+      const target = audioTime(expected(state.round));
+      const requiredEnd = Math.min(target + .5 * playbackRate(state.round), audioTime(state.round.clipEndMs));
       let buffered = false;
       for (let i = 0; i < audio.buffered.length; i++) if (audio.buffered.start(i) <= target + .05 && audio.buffered.end(i) >= requiredEnd) buffered = true;
       return !audio.seeking && Math.abs(audio.currentTime - target) < .75 && buffered ? 'PREPARED' : 'LOADING';
@@ -188,36 +195,39 @@
     inFlightSignature = signature;
     const generation = authGeneration;
     let bufferedUntilMs = null;
-    // Report readiness for the playable clip. Full album tracks can buffer far beyond it.
-    if (!outputCheck && r) for (let i = 0; i < audio.buffered.length; i++) if (audio.buffered.start(i) <= audio.currentTime && audio.buffered.end(i) >= audio.currentTime) bufferedUntilMs = Math.min(r.clipEndMs, Math.round(audio.buffered.end(i) * 1000));
+    // The container clock starts at zero; bridge telemetry uses source time.
+    if (!outputCheck && r) for (let i = 0; i < audio.buffered.length; i++) if (audio.buffered.start(i) <= audio.currentTime && audio.buffered.end(i) >= audio.currentTime) bufferedUntilMs = Math.min(r.clipEndMs, Math.round(audio.buffered.end(i) * 1000) + mediaOffset());
     try {
-      const response = await request('/api/v1/playback', { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Noqui-CSRF': csrf }, body: JSON.stringify({ clientId, takeOver: takeover, roundId: r?.roundId ?? null, roundRevision: r?.revision ?? null, playbackGeneration: r?.playbackGeneration ?? null, status: current, positionMs: !outputCheck && currentMedia && Number.isFinite(audio.currentTime) ? Math.round(audio.currentTime * 1000) : null, bufferedUntilMs, lastEventId: state?.eventId ?? null }) });
+      const response = await request('/api/v1/playback', { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Noqui-CSRF': csrf }, body: JSON.stringify({ clientId, takeOver: takeover, roundId: r?.roundId ?? null, roundRevision: r?.revision ?? null, playbackGeneration: r?.playbackGeneration ?? null, status: current, positionMs: !outputCheck && currentMedia && Number.isFinite(audio.currentTime) ? Math.round(audio.currentTime * 1000) + mediaOffset() : null, bufferedUntilMs, lastEventId: state?.eventId ?? null }) });
       if (!authValid || generation !== authGeneration) return;
       clientLeaseUntil = response.leaseExpiresAtMs;
       takeover = false; lastReportSignature = signature; lastReportAt = performance.now(); nextReportAt = 0;
       align(); paint();
     } catch (error) {
       if (generation !== authGeneration) return;
-      if (error.message === 'ACTIVE_CLIENT') { leader = false; takeover = false; clientLeaseUntil = 0; playPending = null; cancelOutputCheck(); audio.pause(); $('takeover').hidden = false; message(errors.ACTIVE_CLIENT); }
+      if (error.message === 'ACTIVE_CLIENT') { leader = false; takeover = false; clientLeaseUntil = 0; playPending = null; releaseMedia(); audio.pause(); $('takeover').hidden = false; message(errors.ACTIVE_CLIENT); }
       else nextReportAt = performance.now() + 2000;
     } finally { ackPending = false; if (ackAgain) { ackAgain = false; void report(); } }
   }
   function playbackRate(r) { return r?.playbackRate === 2 ? 2 : 1; }
   function expected(r) { return Math.min(r.clipEndMs, Math.max(r.clipStartMs, r.anchorPositionMs + (r.playing && state?.room.phase !== 'COUNTDOWN' ? Math.max(0, now() - r.anchorAtMs) * playbackRate(r) : 0))); }
+  function mediaOffset() { return state?.media?.timeOffsetMs || 0; }
+  function audioTime(sourceMs) { return Math.max(0, sourceMs - mediaOffset()) / 1000; }
   function connected() { return authValid && navigator.onLine && now() < authority; }
   function wantsPlayback() {
     const r = state?.round;
     return connected() && leader && now() < clientLeaseUntil && !userPaused && !gestureBlocked && r && currentMedia && !formatFailed && !audio.error
       && r.playing && now() >= r.anchorAtMs && expected(r) < r.clipEndMs
-      && (state.room.phase !== 'COUNTDOWN' || audio.currentTime * 1000 < r.clipEndMs);
+      && (state.room.phase !== 'COUNTDOWN' || audio.currentTime < audioTime(r.clipEndMs));
   }
   function align() {
     const r = state?.round;
-    if (!connected() || !leader || now() >= clientLeaseUntil || !r || !currentMedia || formatFailed || audio.error) { cancelOutputCheck(); resetProgress(); audio.pause(); return; }
+    if (!connected() || !leader || now() >= clientLeaseUntil || !r || !currentMedia || formatFailed || audio.error) { releaseMedia(); resetProgress(); audio.pause(); return; }
+    if (!mediaAttached) { mediaAttached = true; audio.src = currentMedia; audio.load(); }
     if (gestureBlocked && performance.now() >= nextAutoplayAttemptAt) gestureBlocked = false;
     if (outputCheck) return;
     if (!userPaused && !gestureBlocked && checkedOutput !== outputKey() && (state.room.phase === 'PREPARING' || state.room.phase === 'COUNTDOWN' && now() < r.anchorAtMs)) { if (performance.now() >= nextOutputAttemptAt) checkOutput(); return; }
-    const target = expected(r) / 1000;
+    const target = audioTime(expected(r));
     if (!(state.room.phase === 'COUNTDOWN' && countdownStarted) && audio.readyState >= 1 && !audio.seeking && !playPending && Math.abs(audio.currentTime - target) > .5 && performance.now() - lastSeek >= 2000) {
       try { resetProgress(); audio.currentTime = target; lastSeek = performance.now(); } catch { /* Seek becomes available after metadata. */ }
     }
@@ -318,7 +328,7 @@
   $('reconnect').addEventListener('click', () => { if (authValid) { void refreshState(); connect(); } else void boot(); });
   $('logout').addEventListener('click', async () => { if (!authValid) return; try { await request('/api/v1/auth/logout', { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Noqui-CSRF': csrf }, body: '{}' }); } catch { /* A replaced login is already stopped by request(). */ } finally { if (authValid) revoke('SESSION_REVOKED'); } });
   for (const event of ['loadedmetadata', 'canplay', 'seeking', 'seeked', 'playing', 'timeupdate', 'pause', 'waiting', 'ended', 'error']) audio.addEventListener(event, () => {
-    if (event === 'error' && outputCheck) formatFailed = true;
+    if (event === 'error') formatFailed = true;
     // Let a completed seek play before chasing the clock again, even if loading took longer than the correction interval.
     if (event === 'seeked') lastSeek = performance.now();
     if (['seeking', 'seeked', 'pause', 'waiting', 'ended', 'error'].includes(event)) resetProgress();

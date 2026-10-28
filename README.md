@@ -27,9 +27,19 @@ Paper의 `/noqui playlist`는 내부 HMAC API로 설치 목록을 받아 선택�
 
 서비스를 정지한 뒤 서비스 계정으로 `install-playlist /var/lib/noqui /전송경로/playlist.json`을 실행하고 재시작합니다. 릴리스에 설치기를 함께 제공합니다. 원본 번들은 `beta`의 `tools/build_playlist.py`로 검수 완료곡만 내보내며, 정답이 들어 있는 오디오 태그를 제거하고 전체 재생 길이를 보존합니다. 설치 시 메타데이터·SHA-256·크기·Opus 길이와 안전한 상대 경로를 검사한 후 목록 전체를 원자적으로 게시합니다. 이미 있는 ID를 덮어쓰지 않습니다. 교체 시 기존 폴더를 library 밖으로 보관한 후 설치합니다. library를 nginx 정적 디렉터리로 공개하지 마세요.
 
+## 재생 구간 전달
+
+원본 음원은 기존 library/cache에 한 번만 보관합니다. 브라우저에는 현재 라운드의 `clipStartMs..clipEndMs` 구간만 제공합니다. 구간 URL은 `/media/<sha256>.ogg?startMs=<시작>&endMs=<끝>`이며, 서버에 등록된 현재 구간과 정확히 일치해야 합니다. 구간 파라미터를 없애거나 바꿔 전체 원본을 요청할 수 없습니다. 원본 전체가 해당 라운드 구간인 경우에만 기존 파일을 그대로 전달합니다.
+
+일부 구간이 필요하면 기존 Opus 패킷을 읽어 Ogg 헤더·시간 정보만 메모리에서 다시 구성합니다. 재인코딩, FFmpeg 실행, 잘린 음원 파일·임시 파일·별도 디렉터리 생성은 하지 않습니다. 패킷의 디코더 준비 구간은 pre-skip으로 숨기고 끝은 granule로 맞춥니다. 구간별 결과는 참가자 사이에 공유하며 최대 16 MiB·8항목, 단일 구간 최대 8 MiB로 제한합니다. 라운드 구간이 바뀌거나 종료되면 다음 정상 동기화에서 이전 캐시를 해제합니다. 실패도 5초 동안 공유해 요청마다 같은 원본을 반복 처리하지 않습니다. 다른 구간을 처리하는 작업은 하나씩 진행합니다.
+
+브라우저는 현재 라운드 구간 전체까지 미리 받을 수 있습니다. Ogg 부분 요청, HEAD와 구간별 ETag를 지원하고, 라운드 종료·연결 만료·재생 창 소유권 상실 시 오디오 주소를 제거해 진행 중인 수신을 중단합니다. 공개 `media.durationMs`는 제공 구간 길이, `media.timeOffsetMs`는 원본 기준 시작 위치입니다. 오디오 요소는 0부터 재생하고 브리지 재생 위치·버퍼 보고는 이 오프셋을 더한 원본 시간으로 유지합니다. Paper 계약은 그대로입니다.
+
+`cargo test --locked`와 `node --test tests/browser.cjs`가 구간 권한·부분 요청·동시 요청 공유·파일 미생성·시간 변환을 검사합니다. 실제 Opus 디코딩 검사는 FFmpeg가 있는 환경에서 `cargo test --locked real_opus_clips -- --ignored`로 실행합니다. 다른 경로의 FFmpeg는 `NOQUI_TEST_FFMPEG`로 지정합니다. FFmpeg는 이 검사에서만 원본 합성과 디코딩에 사용합니다.
+
 ## 배포
 
-GitHub Actions가 Rust·브라우저·쿠키 격리 검사를 실행한 후 Ubuntu ARM64에서 릴리스 바이너리를 빌드합니다. `web-build-<commit>` 릴리스의 `noqui-web-linux-arm64.tar.gz`에는 바이너리, 다운로드 래퍼와 배포 예제가 포함됩니다. 소스 변경만으로 운영 서비스가 자동 재시작되지는 않습니다.
+GitHub Actions가 Rust·브라우저·쿠키 격리 검사를 실행한 후 Ubuntu ARM64에서 릴리스 바이너리를 빌드합니다. `web-build-<commit>` 릴리스의 `noqui-web-linux-arm64.tar.gz`에는 바이너리, 다운로드 래퍼와 배포 예제가 포함됩니다. 소스 변경만으로 운영 서비스가 자동 재시작되지는 않습니다. 구간 전달 버전은 서비스와 내장 `app.js`를 함께 배포합니다. nginx가 과거 핫픽스 `app.js`를 별도 경로에서 제공한다면 해당 재정의를 해제하거나 같은 버전으로 교체해야 합니다. 열려 있던 브라우저도 새 페이지를 불러와야 합니다.
 
 [운영 안내](deploy/REVIEW.md)와 [systemd 예제](deploy/noqui-web.service.example)를 참고합니다. 바이너리는 `/opt/noqui/releases/<release>/`에 배치하고 `/opt/noqui/current`로 선택합니다. 환경설정과 브리지 키는 `/etc/noqui/`, DB·5 GiB LRU 오디오 캐시는 `/var/lib/noqui/`에 보관합니다. 키·쿠키·DB·브라우저 프로필은 Git이나 릴리스에 넣지 않습니다. 기존 서비스와 Moma BGM의 쿠키 갱신기는 운영 중인 경로를 유지합니다.
 
