@@ -1177,7 +1177,6 @@
       "index": 68,
       "title": "SAIKAI",
       "reasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
         "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
       ]
     },
@@ -3835,6 +3834,893 @@
       "namingReviewReasons": [
         "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
       ]
+    }
+  ],
+  "japanesePronunciationAndWriterChanges": [
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 2,
+      "id": "ca7ada3c-ef61-50dc-bc4c-9ea8578e9252",
+      "title": "Creep",
+      "previousTags": [
+        "크립",
+        "라디오헤드",
+        "Creep",
+        "Radiohead",
+        "Colin Greenwood",
+        "Jonny Greenwood",
+        "Ed Obrien",
+        "Phil Selway",
+        "Thom Yorke"
+      ],
+      "tags": [
+        "크립",
+        "라디오헤드",
+        "Radiohead",
+        "Colin Greenwood",
+        "Jonny Greenwood",
+        "콜린그린우드",
+        "조니그린우드",
+        "에드오브라이언",
+        "필셀웨이",
+        "톰요크"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "콜린그린우드",
+          "canonicalName": "Colin Greenwood",
+          "writer": "Colin Greenwood",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Colin Greenwood → 콜린그린우드. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "조니그린우드",
+          "canonicalName": "Jonny Greenwood",
+          "writer": "Jonny Greenwood",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Jonny Greenwood → 조니그린우드. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "에드오브라이언",
+          "canonicalName": "Ed Obrien",
+          "writer": "Ed Obrien",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Ed Obrien → 에드오브라이언. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "필셀웨이",
+          "canonicalName": "Phil Selway",
+          "writer": "Phil Selway",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Phil Selway → 필셀웨이. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "톰요크",
+          "canonicalName": "Thom Yorke",
+          "writer": "Thom Yorke",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Thom Yorke → 톰요크. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [
+        {
+          "tag": "Creep",
+          "reason": "Title accepted separately or writer represented by the new Korean tag; original credits retained."
+        },
+        {
+          "tag": "Ed Obrien",
+          "reason": "Title accepted separately or writer represented by the new Korean tag; original credits retained."
+        },
+        {
+          "tag": "Phil Selway",
+          "reason": "Title accepted separately or writer represented by the new Korean tag; original credits retained."
+        },
+        {
+          "tag": "Thom Yorke",
+          "reason": "Title accepted separately or writer represented by the new Korean tag; original credits retained."
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 3,
+      "id": "6a4e02b0-dce2-5717-8c2f-8b9461035ea9",
+      "title": "Don't Look Back In Anger",
+      "previousTags": [
+        "Dont Look Back In Anger",
+        "Oasis",
+        "Noel Gallagher",
+        "돈룩백인앵거"
+      ],
+      "tags": [
+        "Dont Look Back In Anger",
+        "Oasis",
+        "Noel Gallagher",
+        "돈룩백인앵거",
+        "노엘갤러거"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "노엘갤러거",
+          "canonicalName": "Noel Gallagher",
+          "writer": "Noel Gallagher",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Noel Gallagher → 노엘갤러거. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 7,
+      "id": "eefbe3d6-c9db-5ad2-99b5-f8baf203b6da",
+      "title": "Love Story",
+      "previousTags": [
+        "Love Story",
+        "Taylor Swift",
+        "러브스토리"
+      ],
+      "tags": [
+        "Love Story",
+        "Taylor Swift",
+        "러브스토리",
+        "테일러스위프트"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "테일러스위프트",
+          "canonicalName": "Taylor Swift",
+          "writer": "Taylor Swift",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Taylor Swift → 테일러스위프트. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 11,
+      "id": "6ae806fc-bf49-5bab-a0fb-e0fe8c54c33b",
+      "title": "2002",
+      "previousTags": [
+        "2002",
+        "AnneMarie",
+        "앤 마리",
+        "Benjamin Levin",
+        "Julia Cavazos",
+        "Steve McCutcheon",
+        "Edward Christopher Sheeran",
+        "AnneMarie Nicholson",
+        "Andreas Carlsson",
+        "George Clinton"
+      ],
+      "tags": [
+        "AnneMarie",
+        "앤 마리",
+        "Benjamin Levin",
+        "Julia Cavazos",
+        "Steve McCutcheon",
+        "Edward Christopher Sheeran",
+        "AnneMarie Nicholson",
+        "Andreas Carlsson",
+        "George Clinton",
+        "에드시런"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "에드시런",
+          "canonicalName": "Edward Christopher Sheeran",
+          "writer": "Edward Christopher Sheeran",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Edward Christopher Sheeran → 에드시런. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [
+        {
+          "tag": "2002",
+          "reason": "Title accepted separately or writer represented by the new Korean tag; original credits retained."
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 19,
+      "id": "a64b301a-a0bd-5425-8644-7403e1b55e2c",
+      "title": "Beauty And A Beat",
+      "previousTags": [
+        "저스틴 비버",
+        "Beauty And A Beat",
+        "Justin BieberFeatNicki Minaj",
+        "ZEDD",
+        "SAVAN KOTECHA",
+        "MAX MARTIN",
+        "NICKI MINAJ",
+        "뷰티앤어비트"
+      ],
+      "tags": [
+        "저스틴 비버",
+        "Beauty And A Beat",
+        "Justin BieberFeatNicki Minaj",
+        "ZEDD",
+        "SAVAN KOTECHA",
+        "MAX MARTIN",
+        "NICKI MINAJ",
+        "뷰티앤어비트",
+        "제드"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "제드",
+          "canonicalName": "ZEDD",
+          "writer": "ZEDD",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): ZEDD → 제드. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 23,
+      "id": "10dacbf4-b977-54ba-87f5-6273ce7e8a6d",
+      "title": "Love Yourself",
+      "previousTags": [
+        "저스틴 비버",
+        "Love Yourself",
+        "Justin Bieber",
+        "ED SHEERAN",
+        "BENNY BLANCO",
+        "러브유어셀프"
+      ],
+      "tags": [
+        "저스틴 비버",
+        "Love Yourself",
+        "Justin Bieber",
+        "ED SHEERAN",
+        "BENNY BLANCO",
+        "러브유어셀프",
+        "에드시런",
+        "베니블랑코"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "에드시런",
+          "canonicalName": "ED SHEERAN",
+          "writer": "ED SHEERAN",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): ED SHEERAN → 에드시런. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "베니블랑코",
+          "canonicalName": "BENNY BLANCO",
+          "writer": "BENNY BLANCO",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): BENNY BLANCO → 베니블랑코. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 27,
+      "id": "5fd0ebee-7c82-5cfd-8a62-aadc2adeaed9",
+      "title": "Viva La Vida",
+      "previousTags": [
+        "Viva La Vida",
+        "Coldplay",
+        "Guy Berryman",
+        "Jon Buckland",
+        "Will Champion",
+        "Chris Martin",
+        "비바라비다"
+      ],
+      "tags": [
+        "Coldplay",
+        "Guy Berryman",
+        "Jon Buckland",
+        "Will Champion",
+        "Chris Martin",
+        "비바라비다",
+        "가이버리먼",
+        "존버클랜드",
+        "윌챔피언",
+        "크리스마틴"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "가이버리먼",
+          "canonicalName": "Guy Berryman",
+          "writer": "Guy Berryman",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Guy Berryman → 가이버리먼. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "존버클랜드",
+          "canonicalName": "Jon Buckland",
+          "writer": "Jon Buckland",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Jon Buckland → 존버클랜드. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "윌챔피언",
+          "canonicalName": "Will Champion",
+          "writer": "Will Champion",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Will Champion → 윌챔피언. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "크리스마틴",
+          "canonicalName": "Chris Martin",
+          "writer": "Chris Martin",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Chris Martin → 크리스마틴. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [
+        {
+          "tag": "Viva La Vida",
+          "reason": "Title accepted separately or writer represented by the new Korean tag; original credits retained."
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 30,
+      "id": "aa11ee6d-582a-59f3-97b0-5328fee57654",
+      "title": "Believer",
+      "previousTags": [
+        "Imagine Dragons",
+        "이매진 드래곤스",
+        "Dan Reynolds",
+        "Wayne Sermon",
+        "Ben McKee",
+        "Daniel Platzman",
+        "Alex da Kid",
+        "Robin Fredriksson",
+        "Mattias Larsson",
+        "빌리버"
+      ],
+      "tags": [
+        "Imagine Dragons",
+        "이매진 드래곤스",
+        "Alex da Kid",
+        "Robin Fredriksson",
+        "Mattias Larsson",
+        "빌리버",
+        "댄레이놀즈",
+        "웨인서먼",
+        "벤맥키",
+        "대니얼플라츠먼"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "댄레이놀즈",
+          "canonicalName": "Dan Reynolds",
+          "writer": "Dan Reynolds",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Dan Reynolds → 댄레이놀즈. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "웨인서먼",
+          "canonicalName": "Wayne Sermon",
+          "writer": "Wayne Sermon",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Wayne Sermon → 웨인서먼. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "벤맥키",
+          "canonicalName": "Ben McKee",
+          "writer": "Ben McKee",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Ben McKee → 벤맥키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "대니얼플라츠먼",
+          "canonicalName": "Daniel Platzman",
+          "writer": "Daniel Platzman",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Daniel Platzman → 대니얼플라츠먼. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [
+        {
+          "tag": "Dan Reynolds",
+          "reason": "Title accepted separately or writer represented by the new Korean tag; original credits retained."
+        },
+        {
+          "tag": "Wayne Sermon",
+          "reason": "Title accepted separately or writer represented by the new Korean tag; original credits retained."
+        },
+        {
+          "tag": "Ben McKee",
+          "reason": "Title accepted separately or writer represented by the new Korean tag; original credits retained."
+        },
+        {
+          "tag": "Daniel Platzman",
+          "reason": "Title accepted separately or writer represented by the new Korean tag; original credits retained."
+        }
+      ],
+      "reviewRequired": true
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 32,
+      "id": "74aa365a-0886-595d-91a0-13154a6d5613",
+      "title": "Payphone",
+      "previousTags": [
+        "마룬 5",
+        "Payphone",
+        "Maroon 5FeatWiz Khalifa",
+        "LEVIN BENJAMIN",
+        "LEVINE ADAM",
+        "MALIK AMMAR",
+        "OMELIO DAN",
+        "SCHUSTER JOHAN KARL",
+        "THOMAZ CAMERON",
+        "페이폰"
+      ],
+      "tags": [
+        "마룬 5",
+        "Maroon 5FeatWiz Khalifa",
+        "LEVIN BENJAMIN",
+        "LEVINE ADAM",
+        "MALIK AMMAR",
+        "OMELIO DAN",
+        "SCHUSTER JOHAN KARL",
+        "THOMAZ CAMERON",
+        "페이폰",
+        "위즈칼리파"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "위즈칼리파",
+          "canonicalName": "THOMAZ CAMERON",
+          "writer": "THOMAZ CAMERON",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): THOMAZ CAMERON → 위즈칼리파. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [
+        {
+          "tag": "Payphone",
+          "reason": "Title accepted separately or writer represented by the new Korean tag; original credits retained."
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 34,
+      "id": "1d324877-d5bb-5042-9a62-d069ef263c63",
+      "title": "Stay",
+      "previousTags": [
+        "저스틴 비버",
+        "The Kid LAROI",
+        "Justin Bieber",
+        "더 키드 라로이",
+        "Charlton Howard",
+        "Magnus Hiberg",
+        "Charlie Puth",
+        "Omer Fedi",
+        "Blake Slatkin",
+        "스테이"
+      ],
+      "tags": [
+        "저스틴 비버",
+        "The Kid LAROI",
+        "Justin Bieber",
+        "더 키드 라로이",
+        "Charlton Howard",
+        "Magnus Hiberg",
+        "Omer Fedi",
+        "Blake Slatkin",
+        "스테이",
+        "찰리푸스"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "찰리푸스",
+          "canonicalName": "Charlie Puth",
+          "writer": "Charlie Puth",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Charlie Puth → 찰리푸스. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [
+        {
+          "tag": "Charlie Puth",
+          "reason": "Title accepted separately or writer represented by the new Korean tag; original credits retained."
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 37,
+      "id": "e8d2ec90-2bd8-5c00-b52d-80befda75999",
+      "title": "Bohemian Rhapsody",
+      "previousTags": [
+        "보헤미안 랩소디",
+        "퀸",
+        "Bohemian Rhapsody",
+        "Queen",
+        "Freddie Mercury"
+      ],
+      "tags": [
+        "보헤미안 랩소디",
+        "퀸",
+        "Bohemian Rhapsody",
+        "Queen",
+        "Freddie Mercury",
+        "프레디머큐리"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "프레디머큐리",
+          "canonicalName": "Freddie Mercury",
+          "writer": "Freddie Mercury",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Freddie Mercury → 프레디머큐리. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 57,
+      "id": "7c76ec89-3ffe-5882-8c33-0e469254de7d",
+      "title": "Sunflower",
+      "previousTags": [
+        "포스트 말론",
+        "Post Malone",
+        "Swae Lee",
+        "BROWN KHALIF",
+        "WILLIAM WALSH",
+        "CARTER LANG",
+        "CARL AUSTIN ROSEN",
+        "LOUIS BELL",
+        "AUSTIN POST",
+        "선플라워"
+      ],
+      "tags": [
+        "포스트 말론",
+        "Post Malone",
+        "Swae Lee",
+        "WILLIAM WALSH",
+        "CARTER LANG",
+        "CARL AUSTIN ROSEN",
+        "LOUIS BELL",
+        "AUSTIN POST",
+        "선플라워",
+        "스웨이리"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "스웨이리",
+          "canonicalName": "BROWN KHALIF",
+          "writer": "BROWN KHALIF",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): BROWN KHALIF → 스웨이리. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [
+        {
+          "tag": "BROWN KHALIF",
+          "reason": "Title accepted separately or writer represented by the new Korean tag; original credits retained."
+        }
+      ],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 61,
+      "id": "5e46c88e-61d7-5045-bb70-bc198c864414",
+      "title": "Wonderwall",
+      "previousTags": [
+        "원더월",
+        "Wonderwall",
+        "Oasis",
+        "Noel Gallagher"
+      ],
+      "tags": [
+        "원더월",
+        "Wonderwall",
+        "Oasis",
+        "Noel Gallagher",
+        "노엘갤러거"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "노엘갤러거",
+          "canonicalName": "Noel Gallagher",
+          "writer": "Noel Gallagher",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Noel Gallagher → 노엘갤러거. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 64,
+      "id": "0d0bbf86-b197-5bf7-8e9a-a8092085ec56",
+      "title": "Blinding Lights",
+      "previousTags": [
+        "위켄드",
+        "Blinding Lights",
+        "The Weeknd",
+        "BALSHE AHMAD",
+        "HOLTER OSCAR THOMAS",
+        "MARTIN MAX",
+        "QUENNEVILLE JASON MATTHEW",
+        "TESFAYE ABEL",
+        "블라인딩라이츠"
+      ],
+      "tags": [
+        "위켄드",
+        "Blinding Lights",
+        "The Weeknd",
+        "BALSHE AHMAD",
+        "HOLTER OSCAR THOMAS",
+        "MARTIN MAX",
+        "QUENNEVILLE JASON MATTHEW",
+        "TESFAYE ABEL",
+        "블라인딩라이츠",
+        "맥스마틴"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "맥스마틴",
+          "canonicalName": "MARTIN MAX",
+          "writer": "MARTIN MAX",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): MARTIN MAX → 맥스마틴. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 66,
+      "id": "a9442913-b96a-5a89-a941-6221c240979f",
+      "title": "Englishman In New York",
+      "previousTags": [
+        "Englishman In New York",
+        "Sting",
+        "잉글리시맨인뉴욕"
+      ],
+      "tags": [
+        "Englishman In New York",
+        "Sting",
+        "잉글리시맨인뉴욕",
+        "스팅"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "스팅",
+          "canonicalName": "Sting",
+          "writer": "Sting",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Sting → 스팅. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 68,
+      "id": "188ad64d-8e5d-5544-95b8-92e4076760a4",
+      "title": "SAIKAI",
+      "previousTags": [
+        "SAIKAI",
+        "Mili",
+        "CASSIE WEI",
+        "HAMO"
+      ],
+      "tags": [
+        "SAIKAI",
+        "Mili",
+        "CASSIE WEI",
+        "HAMO",
+        "사이카이",
+        "캐시웨이",
+        "하모"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "사이카이",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "SAIKAI",
+          "reading": "사이카이",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): SAIKAI → 사이카이. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "캐시웨이",
+          "canonicalName": "CASSIE WEI",
+          "writer": "CASSIE WEI",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): CASSIE WEI → 캐시웨이. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "하모",
+          "canonicalName": "HAMO",
+          "writer": "HAMO",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): HAMO → 하모. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 72,
+      "id": "592c7421-5607-5a51-89a3-706199ac3d3f",
+      "title": "I'm Yours",
+      "previousTags": [
+        "Im Yours",
+        "Jason Mraz",
+        "MRAZ JASON THOMAS",
+        "아임유어즈"
+      ],
+      "tags": [
+        "Im Yours",
+        "Jason Mraz",
+        "MRAZ JASON THOMAS",
+        "아임유어즈",
+        "제이슨므라즈"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "제이슨므라즈",
+          "canonicalName": "MRAZ JASON THOMAS",
+          "writer": "MRAZ JASON THOMAS",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): MRAZ JASON THOMAS → 제이슨므라즈. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 73,
+      "id": "a4b61e86-2618-5f6a-bdb0-1c4d676543a1",
+      "title": "All Of Me",
+      "previousTags": [
+        "All Of Me",
+        "John Legend",
+        "GAD TOBY",
+        "LEGEND JOHN",
+        "올오브미"
+      ],
+      "tags": [
+        "All Of Me",
+        "John Legend",
+        "GAD TOBY",
+        "LEGEND JOHN",
+        "올오브미",
+        "존레전드"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "존레전드",
+          "canonicalName": "LEGEND JOHN",
+          "writer": "LEGEND JOHN",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): LEGEND JOHN → 존레전드. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-pop",
+      "index": 95,
+      "id": "f604219c-6a2a-5825-a5e7-e7f8835d9aa8",
+      "title": "Hero",
+      "previousTags": [
+        "Hero",
+        "Mili",
+        "CASSIE WEI",
+        "SAKAI HIROKAZU",
+        "히어로"
+      ],
+      "tags": [
+        "Hero",
+        "Mili",
+        "CASSIE WEI",
+        "SAKAI HIROKAZU",
+        "히어로",
+        "캐시웨이"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "캐시웨이",
+          "canonicalName": "CASSIE WEI",
+          "writer": "CASSIE WEI",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): CASSIE WEI → 캐시웨이. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
     }
   ]
 }

@@ -21,14 +21,14 @@
     "tags": [
       "Imagine Dragons",
       "이매진 드래곤스",
-      "Dan Reynolds",
-      "Wayne Sermon",
-      "Ben McKee",
-      "Daniel Platzman",
       "Alex da Kid",
       "Robin Fredriksson",
       "Mattias Larsson",
-      "빌리버"
+      "빌리버",
+      "댄레이놀즈",
+      "웨인서먼",
+      "벤맥키",
+      "대니얼플라츠먼"
     ],
     "aliases": [
       {
@@ -49,6 +49,42 @@
         "url": null,
         "origin": "user_authorized_pronunciation",
         "quote": "사용자 승인 영어 제목 일반 발음: Believer → 빌리버 (2026-10-28). 외부 검색 인용 아님."
+      },
+      {
+        "kind": "writer",
+        "name": "댄레이놀즈",
+        "canonicalName": "Dan Reynolds",
+        "writer": "Dan Reynolds",
+        "origin": "user_authorized_writer_alias",
+        "url": null,
+        "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Dan Reynolds → 댄레이놀즈. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+      },
+      {
+        "kind": "writer",
+        "name": "웨인서먼",
+        "canonicalName": "Wayne Sermon",
+        "writer": "Wayne Sermon",
+        "origin": "user_authorized_writer_alias",
+        "url": null,
+        "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Wayne Sermon → 웨인서먼. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+      },
+      {
+        "kind": "writer",
+        "name": "벤맥키",
+        "canonicalName": "Ben McKee",
+        "writer": "Ben McKee",
+        "origin": "user_authorized_writer_alias",
+        "url": null,
+        "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Ben McKee → 벤맥키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+      },
+      {
+        "kind": "writer",
+        "name": "대니얼플라츠먼",
+        "canonicalName": "Daniel Platzman",
+        "writer": "Daniel Platzman",
+        "origin": "user_authorized_writer_alias",
+        "url": null,
+        "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Daniel Platzman → 대니얼플라츠먼. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
       }
     ],
     "reviewRequired": true,
@@ -96,7 +132,7 @@
       "sampleRate": 48000,
       "durationSeconds": 202.822,
       "byteLength": 1244635,
-      "sha256": "ff4a88f8690d066cef5a32a90764566b226301cf46b5ed8f56760526220eccc0"
+      "sha256": "b5b8a739a6a5a9c5a54c9f310748610a9819f7e55548b9586518523f80ca4067"
     },
     "sourceTitle": "Believer",
     "rawChartWriterCredit": {
@@ -119,6 +155,16 @@
         "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
         "addedTags": [
           "빌리버"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+        "addedTags": [
+          "댄레이놀즈",
+          "웨인서먼",
+          "벤맥키",
+          "대니얼플라츠먼"
         ]
       }
     ]

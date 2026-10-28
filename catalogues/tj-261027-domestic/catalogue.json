@@ -3916,9 +3916,20 @@
       "tags": [
         "이스란",
         "TUKI",
-        "태연"
+        "태연",
+        "츠키"
       ],
-      "aliases": [],
+      "aliases": [
+        {
+          "kind": "writer",
+          "name": "츠키",
+          "canonicalName": "TUKI.",
+          "writer": "TUKI.",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): TUKI. → 츠키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
       "reviewRequired": false,
       "evidence": [
         {
@@ -3964,7 +3975,7 @@
         "channels": 2,
         "durationSeconds": 218.99439583333333,
         "byteLength": 1340909,
-        "sha256": "da453a7b4dfdfbf8457f6aadbc2a1be833bc136a284d9ba679e9e69d4bca2e90"
+        "sha256": "6d91875a0a8bf3aa56f1432bdccfa986b69d67976240409a8504f35863491a61"
       },
       "reviewReasons": [],
       "audioSourceReviewRequired": false,
@@ -3995,7 +4006,16 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "츠키"
+          ]
+        }
+      ]
     },
     {
       "index": 53,
@@ -5124,13 +5144,13 @@
         "마틴",
         "제임스",
         "코르티스",
-        "SUPREME BOI",
-        "HISS NOISE",
-        "JAMES",
         "성현",
         "주훈",
         "건호",
-        "레드레드"
+        "레드레드",
+        "슈프림보이",
+        "히스노이즈",
+        "방시혁"
       ],
       "aliases": [
         {
@@ -5161,6 +5181,33 @@
           "url": null,
           "origin": "user_authorized_pronunciation",
           "quote": "사용자 승인 영어 제목 일반 발음: REDRED → 레드레드 (2026-10-28). 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "슈프림보이",
+          "canonicalName": "SUPREME BOI",
+          "writer": "SUPREME BOI",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): SUPREME BOI → 슈프림보이. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "히스노이즈",
+          "canonicalName": "HISS NOISE",
+          "writer": "HISS NOISE",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): HISS NOISE → 히스노이즈. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "방시혁",
+          "canonicalName": "HITMAN BANG",
+          "writer": "HITMAN BANG",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): HITMAN BANG → 방시혁. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -5215,7 +5262,7 @@
         "channels": 2,
         "durationSeconds": 163.015,
         "byteLength": 1000990,
-        "sha256": "081909e192dc61102d37c3d0e90aeb9206360eca9acfeff09c186a79d6f94682"
+        "sha256": "c4c794dc8044580aefb275d21a9536feb2932d01d41c57ef0e248d1e3b42da56"
       },
       "reviewReasons": [],
       "singerAliases": [
@@ -5266,6 +5313,14 @@
           "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
           "addedTags": [
             "레드레드"
+          ]
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "슈프림보이",
+            "히스노이즈"
           ]
         }
       ]

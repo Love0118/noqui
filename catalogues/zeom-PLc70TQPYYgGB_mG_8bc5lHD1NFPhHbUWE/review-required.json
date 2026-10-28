@@ -90,8 +90,31 @@
       "花村想太",
       "福田智樹"
     ],
-    "tags": [],
-    "aliases": [],
+    "tags": [
+      "에키스파토",
+      "후쿠다토모키"
+    ],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "에키스파토",
+        "origin": "user_authorized_pronunciation",
+        "language": "ja",
+        "originalTitle": "エキスパート",
+        "reading": "에키스파토",
+        "url": null,
+        "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): エキスパート → 에키스파토. 외부 검색 인용 아님."
+      },
+      {
+        "kind": "writer",
+        "name": "후쿠다토모키",
+        "canonicalName": "福田智樹",
+        "writer": "福田智樹",
+        "origin": "user_authorized_writer_alias",
+        "url": null,
+        "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 福田智樹 → 후쿠다토모키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+      }
+    ],
     "reviewRequired": true,
     "reviewReasons": [
       "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요",
@@ -113,10 +136,8 @@
       }
     ],
     "notes": "",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
     "audioSourceType": "official_album_audio",
     "audioSourceReviewRequired": false,
     "audio": {
@@ -128,12 +149,22 @@
       "channels": 2,
       "durationSeconds": 222.16916666666665,
       "byteLength": 1356863,
-      "sha256": "8b560501da293bea016032d4590a014211f0ee6060e67a8f5f2e162ab5976075"
+      "sha256": "dd1a2e9e3735a062e92e3f7ccb491efefc9a2e1c75c08fc1fab62ff77f93c9e3"
     },
     "singer": "Natural Lag",
     "writerReviewRequired": false,
     "writerTagReviewRequired": true,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-29",
+        "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+        "addedTags": [
+          "에키스파토",
+          "후쿠다토모키"
+        ]
+      }
+    ]
   },
   {
     "index": 42,
@@ -153,7 +184,8 @@
     "tags": [
       "CROWNED",
       "unoblaqlo",
-      "크라운드"
+      "크라운드",
+      "아이미"
     ],
     "aliases": [
       {
@@ -162,6 +194,15 @@
         "url": null,
         "origin": "user_authorized_pronunciation",
         "quote": "사용자 승인 영어 제목 일반 발음: CROWNED → 크라운드 (2026-10-28). 외부 검색 인용 아님."
+      },
+      {
+        "kind": "writer",
+        "name": "아이미",
+        "canonicalName": "愛美",
+        "writer": "愛美",
+        "origin": "user_authorized_writer_alias",
+        "url": null,
+        "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 愛美 → 아이미. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
       }
     ],
     "reviewRequired": true,
@@ -190,7 +231,7 @@
       "channels": 2,
       "durationSeconds": 200.66033333333334,
       "byteLength": 1230943,
-      "sha256": "57bf9472e139a4cd8db719ce46486c0b69336846070cf7acbe496a643c62e89f"
+      "sha256": "3211134aa7ad00ec541eb62650ab9c86f7494e68769b1ec645e198e5e5044f59"
     },
     "singer": "Aimi",
     "writerReviewRequired": false,
@@ -202,6 +243,13 @@
         "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
         "addedTags": [
           "크라운드"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+        "addedTags": [
+          "아이미"
         ]
       }
     ]
@@ -384,7 +432,9 @@
     "tags": [
       "Go Shiina",
       "Yuki Kajiura",
-      "투더인피니티캐슬"
+      "투더인피니티캐슬",
+      "시이나고",
+      "카지우라유키"
     ],
     "aliases": [
       {
@@ -393,6 +443,24 @@
         "url": null,
         "origin": "user_authorized_pronunciation",
         "quote": "사용자 승인 영어 제목 일반 발음: To the Infinity Castle - Muzan vs Hashira Theme (from \"Demon Slayer\") → 투더인피니티캐슬 (2026-10-28). 외부 검색 인용 아님."
+      },
+      {
+        "kind": "writer",
+        "name": "시이나고",
+        "canonicalName": "Go Shiina",
+        "writer": "Go Shiina",
+        "origin": "user_authorized_writer_alias",
+        "url": null,
+        "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Go Shiina → 시이나고. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+      },
+      {
+        "kind": "writer",
+        "name": "카지우라유키",
+        "canonicalName": "Yuki Kajiura",
+        "writer": "Yuki Kajiura",
+        "origin": "user_authorized_writer_alias",
+        "url": null,
+        "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Yuki Kajiura → 카지우라유키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
       }
     ],
     "reviewRequired": true,
@@ -435,7 +503,7 @@
       "channels": 2,
       "durationSeconds": 305.4327916666667,
       "byteLength": 1869749,
-      "sha256": "e86aff90a1ee2ef629401d7840323310b03e745006ca8c239e15a8cf5b3d19e5"
+      "sha256": "b6f16632b13c65cef8c9cdae6dc7564bc42f2de42587b7133daf73da4cf0fe87"
     },
     "singer": "Diego Mitre",
     "writerReviewRequired": false,
@@ -447,6 +515,14 @@
         "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
         "addedTags": [
           "투더인피니티캐슬"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+        "addedTags": [
+          "시이나고",
+          "카지우라유키"
         ]
       }
     ]
@@ -638,9 +714,20 @@
       "Ai"
     ],
     "tags": [
-      "Ai"
+      "Ai",
+      "아이"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "writer",
+        "name": "아이",
+        "canonicalName": "Ai",
+        "writer": "Ai",
+        "origin": "user_authorized_writer_alias",
+        "url": null,
+        "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Ai → 아이. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+      }
+    ],
     "reviewRequired": true,
     "reviewReasons": [
       "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
@@ -677,12 +764,21 @@
       "channels": 2,
       "durationSeconds": 253.545625,
       "byteLength": 1556498,
-      "sha256": "c2cc8c027f063ba0d2539adb78f9d9e90fb136effc94ed6fd8d5032e7dace806"
+      "sha256": "db20b0bbc2b2a567c510fa16e0ea1e58f3fd3499f5172d0c001f4b83769d7cfa"
     },
     "singer": "Haku.",
     "writerReviewRequired": false,
     "writerTagReviewRequired": false,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-29",
+        "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+        "addedTags": [
+          "아이"
+        ]
+      }
+    ]
   },
   {
     "index": 95,
@@ -698,7 +794,8 @@
       "みやけ"
     ],
     "tags": [
-      "러브 앤 디스트로이"
+      "러브 앤 디스트로이",
+      "미야케"
     ],
     "aliases": [
       {
@@ -714,6 +811,15 @@
         "canonicalName": "みやけ",
         "kind": "writer",
         "writer": "みやけ"
+      },
+      {
+        "kind": "writer",
+        "name": "미야케",
+        "canonicalName": "みやけ",
+        "writer": "みやけ",
+        "origin": "user_authorized_writer_alias",
+        "url": null,
+        "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): みやけ → 미야케. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
       }
     ],
     "reviewRequired": true,
@@ -764,7 +870,7 @@
       "channels": 2,
       "durationSeconds": 212.5973125,
       "byteLength": 1305190,
-      "sha256": "a23187c3a059a38cb37727fd6065559f98fcb1df67f1f8db18af7fd6f5a260c2"
+      "sha256": "b2feb190f162a355e8de5614e54f3c8d7f0282a6b7df3965d2ab2fa1c5ccb10f"
     },
     "singer": "LOLUET",
     "writerReviewRequired": false,
@@ -772,7 +878,16 @@
       "동일 곡·가수·버전의 대사·추가 인트로 없는 음원 확인 필요. 개인 자막 업로드 허용."
     ],
     "writerTagReviewRequired": false,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-29",
+        "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+        "addedTags": [
+          "미야케"
+        ]
+      }
+    ]
   },
   {
     "index": 107,
@@ -966,9 +1081,21 @@
     "tags": [
       "chihiRo",
       "towada",
-      "Mamoru Ishida"
+      "Mamoru Ishida",
+      "다부루"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "다부루",
+        "origin": "user_authorized_pronunciation",
+        "language": "ja",
+        "originalTitle": "ダブル",
+        "reading": "다부루",
+        "url": null,
+        "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): ダブル → 다부루. 외부 검색 인용 아님."
+      }
+    ],
     "reviewRequired": true,
     "reviewReasons": [
       "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
@@ -989,10 +1116,8 @@
       }
     ],
     "notes": "",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
     "audioSourceType": "official_album_audio",
     "audioSourceReviewRequired": false,
     "audio": {
@@ -1004,12 +1129,21 @@
       "channels": 2,
       "durationSeconds": 235.92972916666668,
       "byteLength": 1447702,
-      "sha256": "220b344128b40cdbde96532d16ea5fe12270b4b4eb29c8e0c0e1138ebb82d4a1"
+      "sha256": "3e5c15d2f6b51debec82e04694e19f4bfddfe84fafae416564a8a49759789be7"
     },
     "singer": "Jill-Decoy Association",
     "writerReviewRequired": false,
     "writerTagReviewRequired": false,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-29",
+        "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+        "addedTags": [
+          "다부루"
+        ]
+      }
+    ]
   },
   {
     "index": 124,
@@ -1167,7 +1301,8 @@
     ],
     "tags": [
       "8월 31일",
-      "8gatsu31nichi"
+      "8gatsu31nichi",
+      "하치가츠산쥬이치니치"
     ],
     "aliases": [
       {
@@ -1181,6 +1316,16 @@
         "url": "https://www.youtube.com/watch?v=vlketIk4DVk",
         "quote": "8月31日 (8월 31일) - クレナズム (culenasm)【가사 | 독음 | Lyrics】",
         "kind": "title"
+      },
+      {
+        "kind": "title",
+        "name": "하치가츠산쥬이치니치",
+        "origin": "user_authorized_pronunciation",
+        "language": "ja",
+        "originalTitle": "8月31日",
+        "reading": "하치가츠산쥬이치니치",
+        "url": null,
+        "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 8月31日 → 하치가츠산쥬이치니치. 외부 검색 인용 아님."
       }
     ],
     "reviewRequired": true,
@@ -1233,12 +1378,21 @@
       "channels": 2,
       "durationSeconds": 188.18808333333334,
       "byteLength": 1153803,
-      "sha256": "26cea9888f8522688f0cd78efa0832c3d29a7f6833cca6026f30380daa40c4d1"
+      "sha256": "3667239b4a8a2e2ba9e5c5bac81edc880b2ef240d577cbd9327decaef8835d2a"
     },
     "singer": "Culenasm, moe, syuta",
     "writerReviewRequired": false,
     "writerTagReviewRequired": true,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-29",
+        "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+        "addedTags": [
+          "하치가츠산쥬이치니치"
+        ]
+      }
+    ]
   },
   {
     "index": 162,
@@ -1332,7 +1486,8 @@
     ],
     "tags": [
       "Its Going Down Now",
-      "잇츠고잉다운나우"
+      "잇츠고잉다운나우",
+      "아틀러스사운드팀"
     ],
     "aliases": [
       {
@@ -1341,6 +1496,15 @@
         "url": null,
         "origin": "user_authorized_pronunciation",
         "quote": "사용자 승인 영어 제목 일반 발음: It's Going Down Now → 잇츠고잉다운나우 (2026-10-28). 외부 검색 인용 아님."
+      },
+      {
+        "kind": "writer",
+        "name": "아틀러스사운드팀",
+        "canonicalName": "アトラスサウンドチーム",
+        "writer": "アトラスサウンドチーム",
+        "origin": "user_authorized_writer_alias",
+        "url": null,
+        "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): アトラスサウンドチーム → 아틀러스사운드팀. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
       }
     ],
     "reviewRequired": true,
@@ -1386,7 +1550,7 @@
       "channels": 2,
       "durationSeconds": 186.10033333333334,
       "byteLength": 1126306,
-      "sha256": "bdf5ab0d790a2471a2db3b98bc61fc387d709ed6ec9c42a7198ee7df38487f9a"
+      "sha256": "6ea6947061817296dda2e96916909e8de3be2374e80425b468f63080eb0e518a"
     },
     "singer": "Azumi Takahashi, Lotus Juice, ATLUS Sound Team, ATLUS GAME MUSIC, Lotus Juice, ATLUS Sound Team, ATLUS Sound Team",
     "writerReviewRequired": false,
@@ -1398,6 +1562,13 @@
         "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
         "addedTags": [
           "잇츠고잉다운나우"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+        "addedTags": [
+          "아틀러스사운드팀"
         ]
       }
     ]
@@ -1604,7 +1775,8 @@
     "tags": [
       "Innocent",
       "komedawara",
-      "이노센트"
+      "이노센트",
+      "코메다와라"
     ],
     "aliases": [
       {
@@ -1613,6 +1785,15 @@
         "url": null,
         "origin": "user_authorized_pronunciation",
         "quote": "사용자 승인 영어 제목 일반 발음: Innocent → 이노센트 (2026-10-28). 외부 검색 인용 아님."
+      },
+      {
+        "kind": "writer",
+        "name": "코메다와라",
+        "canonicalName": "komedawara",
+        "writer": "komedawara",
+        "origin": "user_authorized_writer_alias",
+        "url": null,
+        "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): komedawara → 코메다와라. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
       }
     ],
     "reviewRequired": true,
@@ -1649,7 +1830,7 @@
       "channels": 2,
       "durationSeconds": 242.607,
       "byteLength": 1476165,
-      "sha256": "fcccc41e3b3302baeb1440176211b25be418e3614761d899cc2fb811e8072ba8"
+      "sha256": "daf6afb21dfb11a00d1ff1294993b0bf1f01dee3fd12db53d463897987f0d12a"
     },
     "singer": "yama",
     "writerReviewRequired": false,
@@ -1661,6 +1842,13 @@
         "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
         "addedTags": [
           "이노센트"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+        "addedTags": [
+          "코메다와라"
         ]
       }
     ]
@@ -1740,7 +1928,8 @@
       "中野 エイト"
     ],
     "tags": [
-      "존재 A"
+      "존재 A",
+      "손자이에이"
     ],
     "aliases": [
       {
@@ -1748,6 +1937,16 @@
         "name": "존재 A",
         "url": "https://blog.naver.com/youbin7409/223964960807",
         "quote": "[ DeNeel ] 存在 A ( 존재 A ) 存在 A DeNeel 後悔ばっかの日々で 코오카이 밧카노 히비데 후회 뿐인 나날로 ​ 私バラバラだバラバラな正体 와타시 바라바라다 바라바라나 쇼오타이 나는 산산조각이야 산산조각난 정체 ​ 存在 A と名づけた 손자이 에이토 나즈케타 존재 A 라고 이름지었어 ​ それに意味などない意味などない 소레니 이미나도 나이 이미나도..."
+      },
+      {
+        "kind": "title",
+        "name": "손자이에이",
+        "origin": "user_authorized_pronunciation",
+        "language": "ja",
+        "originalTitle": "存在A",
+        "reading": "손자이에이",
+        "url": null,
+        "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 存在A → 손자이에이. 외부 검색 인용 아님."
       }
     ],
     "reviewRequired": true,
@@ -1802,12 +2001,21 @@
       "channels": 2,
       "durationSeconds": 195.12402083333333,
       "byteLength": 1193034,
-      "sha256": "d3d6d25ae54704f66c742e18c85a63456eb3d9a3c35e0497d4c831be4e5e5a67"
+      "sha256": "7625ef8b601004a4ccdf1843cd4557b33d4fcc26730d27b54e73b6909729b6c3"
     },
     "singer": "DeNeel",
     "writerReviewRequired": false,
     "writerTagReviewRequired": true,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-29",
+        "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+        "addedTags": [
+          "손자이에이"
+        ]
+      }
+    ]
   },
   {
     "index": 199,
@@ -2054,9 +2262,21 @@
       "Miyake Buki"
     ],
     "tags": [
-      "Miyake Buki"
+      "Miyake Buki",
+      "오마루도라이브"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "오마루도라이브",
+        "origin": "user_authorized_pronunciation",
+        "language": "ja",
+        "originalTitle": "おまるドライブ",
+        "reading": "오마루도라이브",
+        "url": null,
+        "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): おまるドライブ → 오마루도라이브. 외부 검색 인용 아님."
+      }
+    ],
     "reviewRequired": true,
     "reviewReasons": [
       "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
@@ -2078,10 +2298,8 @@
       }
     ],
     "notes": "",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
     "audioSourceType": "official_album_audio",
     "audioSourceReviewRequired": false,
     "audio": {
@@ -2093,12 +2311,21 @@
       "channels": 2,
       "durationSeconds": 252.67366666666666,
       "byteLength": 1550556,
-      "sha256": "f90e582d578e3a03c509ca0810b10d345165fad2def5fd2f9b8bafbdbb8f40a4"
+      "sha256": "f906f9f268eb404ca0c01b29ca1e95f5e2ba446714a6a9c865551a524aee092e"
     },
     "singer": "Miyake Buki",
     "writerReviewRequired": false,
     "writerTagReviewRequired": false,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-29",
+        "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+        "addedTags": [
+          "오마루도라이브"
+        ]
+      }
+    ]
   },
   {
     "index": 207,
@@ -2122,7 +2349,8 @@
       "Hiroshi Nakahara",
       "Hayato Yamamoto",
       "Jamil Kazmi",
-      "쇼다운"
+      "쇼다운",
+      "파이브뉴올드"
     ],
     "aliases": [
       {
@@ -2131,6 +2359,15 @@
         "url": null,
         "origin": "user_authorized_pronunciation",
         "quote": "사용자 승인 영어 제목 일반 발음: Showdown → 쇼다운 (2026-10-28). 외부 검색 인용 아님."
+      },
+      {
+        "kind": "writer",
+        "name": "파이브뉴올드",
+        "canonicalName": "FIVE NEW OLD",
+        "writer": "FIVE NEW OLD",
+        "origin": "user_authorized_writer_alias",
+        "url": null,
+        "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): FIVE NEW OLD → 파이브뉴올드. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
       }
     ],
     "reviewRequired": true,
@@ -2167,7 +2404,7 @@
       "channels": 2,
       "durationSeconds": 206.32227083333333,
       "byteLength": 1243808,
-      "sha256": "0e032f4b24d81b5f229e13f7205fccd02d02f4ccceb6aaf65b1ee2c8f3ca634f"
+      "sha256": "30a48895b89961e88e9de9d40c762c08817ff2f3096bc1ec4cf573001b4d9a06"
     },
     "singer": "FIVE NEW OLD",
     "writerReviewRequired": false,
@@ -2179,6 +2416,13 @@
         "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
         "addedTags": [
           "쇼다운"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+        "addedTags": [
+          "파이브뉴올드"
         ]
       }
     ]
@@ -2197,9 +2441,21 @@
       "伊藤純輔"
     ],
     "tags": [
-      "Kakumei yori Bassui"
+      "Kakumei yori Bassui",
+      "카쿠메이요리밧스이"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "카쿠메이요리밧스이",
+        "origin": "user_authorized_pronunciation",
+        "language": "ja",
+        "originalTitle": "革命より抜粋",
+        "reading": "카쿠메이요리밧스이",
+        "url": null,
+        "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 革命より抜粋 → 카쿠메이요리밧스이. 외부 검색 인용 아님."
+      }
+    ],
     "reviewRequired": true,
     "reviewReasons": [
       "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요",
@@ -2230,10 +2486,8 @@
       }
     ],
     "notes": "",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
     "audioSourceType": "official_album_audio",
     "audioSourceReviewRequired": false,
     "audio": {
@@ -2245,12 +2499,21 @@
       "channels": 2,
       "durationSeconds": 257.6301041666667,
       "byteLength": 1581174,
-      "sha256": "570426212a02e1515803184249b53c44564b712aa269ccd2e8cda5366950519d"
+      "sha256": "2d57627c182024b160ced518e67d8600df9795216ee651efd83e460a37702bf7"
     },
     "singer": "UMEILO, 伊藤純輔",
     "writerReviewRequired": false,
     "writerTagReviewRequired": true,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-29",
+        "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+        "addedTags": [
+          "카쿠메이요리밧스이"
+        ]
+      }
+    ]
   },
   {
     "index": 229,
@@ -2266,9 +2529,21 @@
       "一瀬貴之"
     ],
     "tags": [
-      "Nekokaburu"
+      "Nekokaburu",
+      "네코카부루"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "네코카부루",
+        "origin": "user_authorized_pronunciation",
+        "language": "ja",
+        "originalTitle": "猫かぶる",
+        "reading": "네코카부루",
+        "url": null,
+        "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 猫かぶる → 네코카부루. 외부 검색 인용 아님."
+      }
+    ],
     "reviewRequired": true,
     "reviewReasons": [
       "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요",
@@ -2301,10 +2576,8 @@
       }
     ],
     "notes": "",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
     "audioSourceType": "unverified_recording",
     "audioSourceReviewRequired": true,
     "audio": {
@@ -2319,7 +2592,16 @@
       "동일 곡·가수·버전의 대사·추가 인트로 없는 음원 확인 필요. 개인 자막 업로드 허용."
     ],
     "writerTagReviewRequired": true,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-29",
+        "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+        "addedTags": [
+          "네코카부루"
+        ]
+      }
+    ]
   },
   {
     "index": 232,
@@ -2337,7 +2619,8 @@
     "tags": [
       "When My Devil Rises",
       "JeanKen Johnny",
-      "웬마이데블라이즈"
+      "웬마이데블라이즈",
+      "장켄조니"
     ],
     "aliases": [
       {
@@ -2346,6 +2629,15 @@
         "url": null,
         "origin": "user_authorized_pronunciation",
         "quote": "사용자 승인 영어 제목 일반 발음: When My Devil Rises → 웬마이데블라이즈 (2026-10-28). 외부 검색 인용 아님."
+      },
+      {
+        "kind": "writer",
+        "name": "장켄조니",
+        "canonicalName": "Jean-Ken Johnny",
+        "writer": "Jean-Ken Johnny",
+        "origin": "user_authorized_writer_alias",
+        "url": null,
+        "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Jean-Ken Johnny → 장켄조니. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
       }
     ],
     "reviewRequired": true,
@@ -2382,7 +2674,7 @@
       "channels": 2,
       "durationSeconds": 256.007,
       "byteLength": 1557962,
-      "sha256": "a3b002261a94a6b069c39571809a677a1d54c1b93aafee23e390e6a3d0cd4772"
+      "sha256": "7629d44ae46dbd37379ad4a5645bd3b38b54c81139fd2755d006f0c3be7fc590"
     },
     "singer": "MAN WITH A MISSION",
     "writerReviewRequired": false,
@@ -2394,6 +2686,13 @@
         "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
         "addedTags": [
           "웬마이데블라이즈"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+        "addedTags": [
+          "장켄조니"
         ]
       }
     ]
@@ -2413,9 +2712,21 @@
     ],
     "tags": [
       "Mou Yume tune",
-      "Susumu"
+      "Susumu",
+      "모우유메튠"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "모우유메튠",
+        "origin": "user_authorized_pronunciation",
+        "language": "ja",
+        "originalTitle": "もう夢tune",
+        "reading": "모우유메튠",
+        "url": null,
+        "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): もう夢tune → 모우유메튠. 외부 검색 인용 아님."
+      }
+    ],
     "reviewRequired": true,
     "reviewReasons": [
       "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
@@ -2436,10 +2747,8 @@
       }
     ],
     "notes": "",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
     "audioSourceType": "official_album_audio",
     "audioSourceReviewRequired": false,
     "audio": {
@@ -2451,12 +2760,21 @@
       "channels": 2,
       "durationSeconds": 152.882,
       "byteLength": 939020,
-      "sha256": "c6f9bc48447e992eb92ae460b80303b191e73002548ceba3108d40f2c8aad529"
+      "sha256": "17c3a3cf5c39c5df0474208f916c2197f91acab166ddfb229cb5be7293bc61bb"
     },
     "singer": "susumu.",
     "writerReviewRequired": false,
     "writerTagReviewRequired": false,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-29",
+        "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+        "addedTags": [
+          "모우유메튠"
+        ]
+      }
+    ]
   },
   {
     "index": 246,
@@ -2550,7 +2868,10 @@
       "バルーン"
     ],
     "tags": [
-      "달링"
+      "달링",
+      "다린",
+      "스다케이나",
+      "벌룬"
     ],
     "aliases": [
       {
@@ -2565,6 +2886,34 @@
         "name": "balloon",
         "url": "https://en.wikipedia.org/wiki/Keina_Suda",
         "quote": "under the name Balloon ( バルーン , stylized as balloon )"
+      },
+      {
+        "kind": "title",
+        "name": "다린",
+        "origin": "user_authorized_pronunciation",
+        "language": "ja",
+        "originalTitle": "ダーリン",
+        "reading": "다린",
+        "url": null,
+        "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): ダーリン → 다린. 외부 검색 인용 아님."
+      },
+      {
+        "kind": "writer",
+        "name": "스다케이나",
+        "canonicalName": "須田景凪",
+        "writer": "須田景凪",
+        "origin": "user_authorized_writer_alias",
+        "url": null,
+        "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 須田景凪 → 스다케이나. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+      },
+      {
+        "kind": "writer",
+        "name": "벌룬",
+        "canonicalName": "バルーン",
+        "writer": "バルーン",
+        "origin": "user_authorized_writer_alias",
+        "url": null,
+        "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): バルーン → 벌룬. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
       }
     ],
     "reviewRequired": true,
@@ -2611,7 +2960,7 @@
       "channels": 2,
       "durationSeconds": 146.59458333333333,
       "byteLength": 893963,
-      "sha256": "e75469b8405e1b8915e6599e98e678cdb6c04ae30e199bc2cdc2655a2b3ec54c"
+      "sha256": "768ef730685ae147fcd091720e0a0ad4c5ef741ba6bda1c1ab9613c2c49426de"
     },
     "singer": "いゔどっと",
     "writerReviewRequired": false,
@@ -2619,7 +2968,18 @@
       "동일 곡·가수·버전의 대사·추가 인트로 없는 음원 확인 필요. 개인 자막 업로드 허용."
     ],
     "writerTagReviewRequired": true,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-29",
+        "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+        "addedTags": [
+          "다린",
+          "스다케이나",
+          "벌룬"
+        ]
+      }
+    ]
   },
   {
     "index": 262,
@@ -2636,7 +2996,8 @@
     ],
     "tags": [
       "Hello",
-      "헬로"
+      "헬로",
+      "나카타야스타카"
     ],
     "aliases": [
       {
@@ -2645,6 +3006,15 @@
         "url": null,
         "origin": "user_authorized_pronunciation",
         "quote": "사용자 승인 영어 제목 일반 발음: Hello → 헬로 (2026-10-28). 외부 검색 인용 아님."
+      },
+      {
+        "kind": "writer",
+        "name": "나카타야스타카",
+        "canonicalName": "中田ヤスタカ",
+        "writer": "中田ヤスタカ",
+        "origin": "user_authorized_writer_alias",
+        "url": null,
+        "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 中田ヤスタカ → 나카타야스타카. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
       }
     ],
     "reviewRequired": true,
@@ -2689,7 +3059,7 @@
       "channels": 2,
       "durationSeconds": 101.78033333333333,
       "byteLength": 623188,
-      "sha256": "3009c5faa20be21d0375d8f92c65a93ac9ec790c7ef10c16c2a275948cc8bc08"
+      "sha256": "7bcc768636b2ba115cfb330492d8c18e6de3b7592339fb6223bf031095cbd6db"
     },
     "singer": "capsule",
     "writerReviewRequired": false,
@@ -2701,6 +3071,13 @@
         "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
         "addedTags": [
           "헬로"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+        "addedTags": [
+          "나카타야스타카"
         ]
       }
     ]
@@ -2722,7 +3099,8 @@
     "tags": [
       "이츠에",
       "Itsue",
-      "Mizuki"
+      "Mizuki",
+      "토키노유라메키"
     ],
     "aliases": [
       {
@@ -2730,6 +3108,16 @@
         "url": "https://www.youtube.com/watch?v=bSE3ruODs1I",
         "quote": "[가사/해석] イツエ(이츠에) - 時のゆらめき(시간의 흔들림)",
         "kind": "singer"
+      },
+      {
+        "kind": "title",
+        "name": "토키노유라메키",
+        "origin": "user_authorized_pronunciation",
+        "language": "ja",
+        "originalTitle": "時のゆらめき",
+        "reading": "토키노유라메키",
+        "url": null,
+        "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 時のゆらめき → 토키노유라메키. 외부 검색 인용 아님."
       }
     ],
     "reviewRequired": true,
@@ -2760,10 +3148,8 @@
       }
     ],
     "notes": "",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
     "audioSourceType": "official_album_audio",
     "audioSourceReviewRequired": false,
     "audio": {
@@ -2775,13 +3161,22 @@
       "channels": 2,
       "durationSeconds": 271.807,
       "byteLength": 1664933,
-      "sha256": "dc6781a7515c167fe5627aeff7d35ba487aef1001b6d1f2d9ad65916dbfa2457"
+      "sha256": "a43df5eb18b3beebc1f8ac5de40de07dc124d74a9dd275fde1a94aaf5d8e7b11"
     },
     "singer": "Itsue",
     "writerReviewRequired": false,
     "writerTagReviewRequired": false,
     "singerAliases": [
       "이츠에"
+    ],
+    "namingHistory": [
+      {
+        "date": "2026-10-29",
+        "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+        "addedTags": [
+          "토키노유라메키"
+        ]
+      }
     ]
   },
   {
@@ -2874,9 +3269,21 @@
       "niwaca"
     ],
     "tags": [
-      "niwaca"
+      "niwaca",
+      "이토"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "이토",
+        "origin": "user_authorized_pronunciation",
+        "language": "ja",
+        "originalTitle": "絲",
+        "reading": "이토",
+        "url": null,
+        "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 絲 → 이토. 외부 검색 인용 아님."
+      }
+    ],
     "reviewRequired": true,
     "reviewReasons": [
       "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
@@ -2898,10 +3305,8 @@
       }
     ],
     "notes": "",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
     "audioSourceType": "official_album_audio",
     "audioSourceReviewRequired": false,
     "audio": {
@@ -2913,11 +3318,20 @@
       "channels": 2,
       "durationSeconds": 178.460625,
       "byteLength": 1095630,
-      "sha256": "829951868f69d9fb3d028e8ea72f76327c87a2b78ee205a9e215ee79095762fa"
+      "sha256": "67556ca767f9ae726aaf70e223a66ac9d46609df67f034174d15fb0c6d910d96"
     },
     "singer": "Hanayui",
     "writerReviewRequired": false,
     "writerTagReviewRequired": false,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-29",
+        "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+        "addedTags": [
+          "이토"
+        ]
+      }
+    ]
   }
 ]

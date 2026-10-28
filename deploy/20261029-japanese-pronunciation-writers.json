@@ -1,0 +1,97 @@
+{
+  "activatedAt": "2026-10-28T18:24:46Z",
+  "minecraftRestarted": false,
+  "minecraftPID": "1561884",
+  "audioServiceRestarted": true,
+  "verifiedPlayableSongs": 1091,
+  "playlists": [
+    {
+      "id": "japan-zeom",
+      "name": "일본 - ZEOM",
+      "playableCount": 252,
+      "trackCount": 289
+    },
+    {
+      "id": "ssip-noqui",
+      "name": "씹노퀴",
+      "playableCount": 541,
+      "trackCount": 541
+    },
+    {
+      "id": "tj-261027-domestic",
+      "name": "TJ인기차트-261027국내",
+      "playableCount": 100,
+      "trackCount": 100
+    },
+    {
+      "id": "tj-261027-japan",
+      "name": "TJ인기차트-261027일본노래",
+      "playableCount": 100,
+      "trackCount": 100
+    },
+    {
+      "id": "tj-261027-pop",
+      "name": "TJ인기차트-261027팝송",
+      "playableCount": 98,
+      "trackCount": 100
+    }
+  ],
+  "examples": [
+    {
+      "id": "96009fc3-49e8-51f1-beec-8772670644f7",
+      "tags": [
+        "몽환",
+        "MUGEN",
+        "MY FIRST STORY",
+        "CHIMERAZ",
+        "무겐",
+        "마이퍼스트스토리",
+        "키메라즈"
+      ],
+      "title": "몽환",
+      "youtubeUrl": "https://www.youtube.com/watch?v=U4pM3yB9KtU"
+    },
+    {
+      "id": "69b18057-b667-5826-bce6-6fabe6dd55ff",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "데코"
+      ],
+      "title": "모자이크 롤",
+      "youtubeUrl": "https://www.youtube.com/watch?v=83GL3kE23eI"
+    },
+    {
+      "id": "06ebaa06-9589-598b-a888-ff69e48c67ad",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "데코"
+      ],
+      "title": "고스트 룰",
+      "youtubeUrl": "https://www.youtube.com/watch?v=KushW6zvazM"
+    },
+    {
+      "id": "679f116d-2584-586a-937e-7da5098e2df9",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "데코",
+        "반파이아"
+      ],
+      "title": "뱀파이어",
+      "youtubeUrl": "https://www.youtube.com/watch?v=0BxSC1NjzeE"
+    },
+    {
+      "id": "db06cada-63cd-5b51-bdad-51fae1ca0fe4",
+      "tags": [
+        "데코니나",
+        "DECO27",
+        "데코"
+      ],
+      "title": "히바나",
+      "youtubeUrl": "https://www.youtube.com/watch?v=e7jY3YAinJE"
+    }
+  ],
+  "audioReuploaded": false
+}

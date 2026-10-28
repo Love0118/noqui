@@ -32,13 +32,14 @@
         "tags": [
           "크립",
           "라디오헤드",
-          "Creep",
           "Radiohead",
           "Colin Greenwood",
           "Jonny Greenwood",
-          "Ed Obrien",
-          "Phil Selway",
-          "Thom Yorke"
+          "콜린그린우드",
+          "조니그린우드",
+          "에드오브라이언",
+          "필셀웨이",
+          "톰요크"
         ]
       },
       "audio": {
@@ -57,7 +58,8 @@
           "Dont Look Back In Anger",
           "Oasis",
           "Noel Gallagher",
-          "돈룩백인앵거"
+          "돈룩백인앵거",
+          "노엘갤러거"
         ]
       },
       "audio": {
@@ -141,7 +143,8 @@
         "tags": [
           "Love Story",
           "Taylor Swift",
-          "러브스토리"
+          "러브스토리",
+          "테일러스위프트"
         ]
       },
       "audio": {
@@ -223,7 +226,6 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=1tvLIhEaEKo",
         "title": "2002",
         "tags": [
-          "2002",
           "AnneMarie",
           "앤 마리",
           "Benjamin Levin",
@@ -232,7 +234,8 @@
           "Edward Christopher Sheeran",
           "AnneMarie Nicholson",
           "Andreas Carlsson",
-          "George Clinton"
+          "George Clinton",
+          "에드시런"
         ]
       },
       "audio": {
@@ -408,7 +411,8 @@
           "SAVAN KOTECHA",
           "MAX MARTIN",
           "NICKI MINAJ",
-          "뷰티앤어비트"
+          "뷰티앤어비트",
+          "제드"
         ]
       },
       "audio": {
@@ -494,7 +498,9 @@
           "Justin Bieber",
           "ED SHEERAN",
           "BENNY BLANCO",
-          "러브유어셀프"
+          "러브유어셀프",
+          "에드시런",
+          "베니블랑코"
         ]
       },
       "audio": {
@@ -571,13 +577,16 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=R8UAFE21BN4",
         "title": "Viva La Vida",
         "tags": [
-          "Viva La Vida",
           "Coldplay",
           "Guy Berryman",
           "Jon Buckland",
           "Will Champion",
           "Chris Martin",
-          "비바라비다"
+          "비바라비다",
+          "가이버리먼",
+          "존버클랜드",
+          "윌챔피언",
+          "크리스마틴"
         ]
       },
       "audio": {
@@ -658,7 +667,6 @@
         "title": "Payphone",
         "tags": [
           "마룬 5",
-          "Payphone",
           "Maroon 5FeatWiz Khalifa",
           "LEVIN BENJAMIN",
           "LEVINE ADAM",
@@ -666,7 +674,8 @@
           "OMELIO DAN",
           "SCHUSTER JOHAN KARL",
           "THOMAZ CAMERON",
-          "페이폰"
+          "페이폰",
+          "위즈칼리파"
         ]
       },
       "audio": {
@@ -710,10 +719,10 @@
           "더 키드 라로이",
           "Charlton Howard",
           "Magnus Hiberg",
-          "Charlie Puth",
           "Omer Fedi",
           "Blake Slatkin",
-          "스테이"
+          "스테이",
+          "찰리푸스"
         ]
       },
       "audio": {
@@ -773,7 +782,8 @@
           "퀸",
           "Bohemian Rhapsody",
           "Queen",
-          "Freddie Mercury"
+          "Freddie Mercury",
+          "프레디머큐리"
         ]
       },
       "audio": {
@@ -1179,13 +1189,13 @@
           "포스트 말론",
           "Post Malone",
           "Swae Lee",
-          "BROWN KHALIF",
           "WILLIAM WALSH",
           "CARTER LANG",
           "CARL AUSTIN ROSEN",
           "LOUIS BELL",
           "AUSTIN POST",
-          "선플라워"
+          "선플라워",
+          "스웨이리"
         ]
       },
       "audio": {
@@ -1265,7 +1275,8 @@
           "원더월",
           "Wonderwall",
           "Oasis",
-          "Noel Gallagher"
+          "Noel Gallagher",
+          "노엘갤러거"
         ]
       },
       "audio": {
@@ -1331,7 +1342,8 @@
           "MARTIN MAX",
           "QUENNEVILLE JASON MATTHEW",
           "TESFAYE ABEL",
-          "블라인딩라이츠"
+          "블라인딩라이츠",
+          "맥스마틴"
         ]
       },
       "audio": {
@@ -1368,7 +1380,8 @@
         "tags": [
           "Englishman In New York",
           "Sting",
-          "잉글리시맨인뉴욕"
+          "잉글리시맨인뉴욕",
+          "스팅"
         ]
       },
       "audio": {
@@ -1407,7 +1420,10 @@
           "SAIKAI",
           "Mili",
           "CASSIE WEI",
-          "HAMO"
+          "HAMO",
+          "사이카이",
+          "캐시웨이",
+          "하모"
         ]
       },
       "audio": {
@@ -1493,7 +1509,8 @@
           "Im Yours",
           "Jason Mraz",
           "MRAZ JASON THOMAS",
-          "아임유어즈"
+          "아임유어즈",
+          "제이슨므라즈"
         ]
       },
       "audio": {
@@ -1513,7 +1530,8 @@
           "John Legend",
           "GAD TOBY",
           "LEGEND JOHN",
-          "올오브미"
+          "올오브미",
+          "존레전드"
         ]
       },
       "audio": {
@@ -2003,7 +2021,8 @@
           "Mili",
           "CASSIE WEI",
           "SAKAI HIROKAZU",
-          "히어로"
+          "히어로",
+          "캐시웨이"
         ]
       },
       "audio": {

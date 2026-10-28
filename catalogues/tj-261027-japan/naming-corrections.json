@@ -963,5 +963,2319 @@
       ],
       "namingReviewReasons": []
     }
+  ],
+  "japanesePronunciationAndWriterChanges": [
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 1,
+      "id": "f9b144f4-ce2e-59a3-84cc-d496a7ecb0a6",
+      "title": "만찬가",
+      "previousTags": [
+        "만찬가",
+        "TUKI",
+        "츠키"
+      ],
+      "tags": [
+        "만찬가",
+        "TUKI",
+        "츠키",
+        "반산카"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "반산카",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "晩餐歌",
+          "reading": "반산카",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 晩餐歌 → 반산카. 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 3,
+      "id": "1abf2bd8-49ed-5e2c-9a21-130a705dab52",
+      "title": "괴수의 꽃노래",
+      "previousTags": [
+        "괴수의 꽃노래",
+        "Kaiju no Hanauta",
+        "VAUNDY",
+        "바운디"
+      ],
+      "tags": [
+        "괴수의 꽃노래",
+        "Kaiju no Hanauta",
+        "VAUNDY",
+        "바운디",
+        "카이쥬노하나우타"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "카이쥬노하나우타",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "怪獣の花唄",
+          "reading": "카이쥬노하나우타",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 怪獣の花唄 → 카이쥬노하나우타. 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 4,
+      "id": "7206d628-825b-556f-bd90-a2fa0ee76680",
+      "title": "베텔기우스",
+      "previousTags": [
+        "베텔기우스",
+        "유우리"
+      ],
+      "tags": [
+        "베텔기우스",
+        "유우리",
+        "베테루기우스"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "베테루기우스",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "ベテルギウス",
+          "reading": "베테루기우스",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): ベテルギウス → 베테루기우스. 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 7,
+      "id": "e8c88c4f-093b-57e6-b6c0-e20d96544dbb",
+      "title": "사무라이하트",
+      "previousTags": [
+        "사무라이하트",
+        "Some Like It Hot",
+        "MOMIKEN",
+        "UZ",
+        "스파이에어",
+        "SPYAIR"
+      ],
+      "tags": [
+        "사무라이하트",
+        "Some Like It Hot",
+        "MOMIKEN",
+        "UZ",
+        "스파이에어",
+        "SPYAIR",
+        "사무라이하토",
+        "모미켄",
+        "유지"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "사무라이하토",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "サムライハート",
+          "reading": "사무라이하토",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): サムライハート → 사무라이하토. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "모미켄",
+          "canonicalName": "MOMIKEN",
+          "writer": "MOMIKEN",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): MOMIKEN → 모미켄. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "유지",
+          "canonicalName": "UZ",
+          "writer": "UZ",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): UZ → 유지. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 8,
+      "id": "2a282ef9-e476-5340-b645-a474123ad5ed",
+      "title": "잔혹한 천사의 테제",
+      "previousTags": [
+        "잔혹한 천사의 테제",
+        "다카하시 요코"
+      ],
+      "tags": [
+        "잔혹한 천사의 테제",
+        "다카하시 요코",
+        "잔코쿠나텐시노테제",
+        "오이카와네코",
+        "사토히데토시"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "잔코쿠나텐시노테제",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "残酷な天使のテーゼ",
+          "reading": "잔코쿠나텐시노테제",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 残酷な天使のテーゼ → 잔코쿠나텐시노테제. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "오이카와네코",
+          "canonicalName": "及川眠子",
+          "writer": "及川眠子",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 及川眠子 → 오이카와네코. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "사토히데토시",
+          "canonicalName": "佐藤英敏",
+          "writer": "佐藤英敏",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 佐藤英敏 → 사토히데토시. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 11,
+      "id": "04e6fe40-a7b4-5fb6-9c96-c7b93cf965c2",
+      "title": "파자마파티즈노우타",
+      "previousTags": [
+        "파자마파티즈노우타",
+        "타테야마아키유키",
+        "nagano"
+      ],
+      "tags": [
+        "파자마파티즈노우타",
+        "타테야마아키유키",
+        "nagano",
+        "나가노"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "나가노",
+          "canonicalName": "ナガノ",
+          "writer": "ナガノ",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): ナガノ → 나가노. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 12,
+      "id": "e8bee1b0-b7f5-512b-96ab-3b11ed69c269",
+      "title": "워킹 위드 유",
+      "previousTags": [
+        "워킹 위드 유",
+        "Walking with you",
+        "노벨브라이트",
+        "Novelbright"
+      ],
+      "tags": [
+        "워킹 위드 유",
+        "Walking with you",
+        "노벨브라이트",
+        "Novelbright",
+        "유다이",
+        "유타로"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "유다이",
+          "canonicalName": "雄大",
+          "writer": "雄大",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 雄大 → 유다이. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "유타로",
+          "canonicalName": "勇太朗",
+          "writer": "勇太朗",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 勇太朗 → 유타로. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 14,
+      "id": "86045c24-c2d8-5b0a-997d-8b277dc6846b",
+      "title": "드라이플라워",
+      "previousTags": [
+        "드라이플라워",
+        "Dried Flowers",
+        "유우리"
+      ],
+      "tags": [
+        "드라이플라워",
+        "Dried Flowers",
+        "유우리",
+        "도라이후라와"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "도라이후라와",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "ドライフラワー",
+          "reading": "도라이후라와",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): ドライフラワー → 도라이후라와. 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 15,
+      "id": "6e737453-84da-5d69-861a-d0357e4834c3",
+      "title": "역광",
+      "previousTags": [
+        "역광",
+        "Backlight",
+        "VAUNDY",
+        "아도",
+        "Ado"
+      ],
+      "tags": [
+        "역광",
+        "Backlight",
+        "VAUNDY",
+        "아도",
+        "Ado",
+        "걋코",
+        "바운디"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "걋코",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "逆光",
+          "reading": "걋코",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 逆光 → 걋코. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "바운디",
+          "url": "https://blog.naver.com/kuninori1004/223817889392",
+          "quote": "life hack - Vaundy [ 가사 .해석.듣기] 2 개 것은 어딘지 모르게 서먹서먹한 두 인물의 모습이다. 청춘의 한가운데에 있는 그대로의 모습이 새콤달콤하게 느껴지는 곡이다. ​ ​ life hack (꿀팁) Vaundy (바운디) 作詞： Vaundy 作曲： Vaundy その態度が不安だな 그 태도가 불안해 「気にしない」彩度はそのまま '신경 안 써' 채도는 그대로니까 何気に初めてで不安...",
+          "canonicalName": "VAUNDY",
+          "writer": "VAUNDY"
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 17,
+      "id": "fb5d3790-6dbf-549b-8f29-5eac9a45d3a8",
+      "title": "Bunny Girl",
+      "previousTags": [
+        "Bunny Girl",
+        "AKASAKI",
+        "바니걸"
+      ],
+      "tags": [
+        "Bunny Girl",
+        "AKASAKI",
+        "바니걸",
+        "아카사키"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "아카사키",
+          "canonicalName": "AKASAKI",
+          "writer": "AKASAKI",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): AKASAKI → 아카사키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 18,
+      "id": "f9688975-66cb-5c50-8098-9acfacb5242b",
+      "title": "-ERROR",
+      "previousTags": [
+        "ERROR",
+        "NIKI",
+        "nikiFeatLily",
+        "에러"
+      ],
+      "tags": [
+        "ERROR",
+        "NIKI",
+        "nikiFeatLily",
+        "에러",
+        "니키"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "니키",
+          "canonicalName": "NIKI",
+          "writer": "NIKI",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): NIKI → 니키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 20,
+      "id": "9701a1c8-e23c-508a-a7fa-f02258123c3d",
+      "title": "혼잣말",
+      "previousTags": [
+        "혼잣말",
+        "하치와레CV타나카 마사토",
+        "nagano"
+      ],
+      "tags": [
+        "혼잣말",
+        "하치와레CV타나카 마사토",
+        "nagano",
+        "히토리고츠",
+        "나가노",
+        "토쿠마루슈고"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "히토리고츠",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "ひとりごつ",
+          "reading": "히토리고츠",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): ひとりごつ → 히토리고츠. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "나가노",
+          "canonicalName": "ナガノ",
+          "writer": "ナガノ",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): ナガノ → 나가노. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "토쿠마루슈고",
+          "canonicalName": "トクマルシューゴ",
+          "writer": "トクマルシューゴ",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): トクマルシューゴ → 토쿠마루슈고. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 21,
+      "id": "f48563f9-8525-52c7-8290-25b323f30337",
+      "title": "루카루카★나이트 피버",
+      "previousTags": [
+        "메구리네 루카",
+        "루카루카나이트 피버",
+        "samfree",
+        "samfreeFeat준오토루카",
+        "SAM",
+        "Luka LukaNight Fever"
+      ],
+      "tags": [
+        "메구리네 루카",
+        "루카루카나이트 피버",
+        "samfree",
+        "samfreeFeat준오토루카",
+        "SAM",
+        "Luka LukaNight Fever",
+        "샘프리"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "샘프리",
+          "canonicalName": "samfree",
+          "writer": "samfree",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): samfree → 샘프리. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 25,
+      "id": "b9400482-0e20-5a4a-8c12-f2730eb39718",
+      "title": "실루엣",
+      "previousTags": [
+        "실루엣",
+        "Silhouette",
+        "카나분",
+        "KANABOON",
+        "타니구치마구로"
+      ],
+      "tags": [
+        "실루엣",
+        "Silhouette",
+        "카나분",
+        "KANABOON",
+        "타니구치마구로",
+        "시루엣토"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "시루엣토",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "シルエット",
+          "reading": "시루엣토",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): シルエット → 시루엣토. 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 26,
+      "id": "eb31e691-7372-5095-8d24-36babfa0b122",
+      "title": "푸름과 여름",
+      "previousTags": [
+        "푸름과 여름",
+        "Ao to Natsu",
+        "미세스 그린 애플",
+        "Mrs Green Apple"
+      ],
+      "tags": [
+        "푸름과 여름",
+        "Ao to Natsu",
+        "미세스 그린 애플",
+        "Mrs Green Apple",
+        "아오토나츠",
+        "오오모리모토키"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "아오토나츠",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "青と夏",
+          "reading": "아오토나츠",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 青と夏 → 아오토나츠. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "오오모리모토키",
+          "canonicalName": "大森元貴",
+          "writer": "大森元貴",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 大森元貴 → 오오모리모토키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 29,
+      "id": "2a7c9080-0d38-583b-99b8-b9f5aee8d3bc",
+      "title": "내일의 밤하늘 초계반",
+      "previousTags": [
+        "내일의 밤하늘 초계반",
+        "ORANGESTAR",
+        "OrangestarFeatIA"
+      ],
+      "tags": [
+        "내일의 밤하늘 초계반",
+        "ORANGESTAR",
+        "OrangestarFeatIA",
+        "아스노요조라쇼카이한",
+        "오렌지스타"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "아스노요조라쇼카이한",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "アスノヨゾラ哨戒班",
+          "reading": "아스노요조라쇼카이한",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): アスノヨゾラ哨戒班 → 아스노요조라쇼카이한. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "오렌지스타",
+          "canonicalName": "ORANGESTAR",
+          "writer": "ORANGESTAR",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): ORANGESTAR → 오렌지스타. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 30,
+      "id": "77ff5c8b-c7c8-5a4e-bc98-587a10a5180b",
+      "title": "PPPP",
+      "previousTags": [
+        "PPPP",
+        "TAK",
+        "하츠네 미쿠",
+        "피피피피"
+      ],
+      "tags": [
+        "PPPP",
+        "TAK",
+        "하츠네 미쿠",
+        "피피피피",
+        "탁"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "탁",
+          "canonicalName": "TAK",
+          "writer": "TAK",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): TAK → 탁. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 31,
+      "id": "88fcdbe2-1ef0-5d26-9008-016b05524563",
+      "title": "사랑 감기에 실려",
+      "previousTags": [
+        "사랑 감기에 실려",
+        "VAUNDY",
+        "바운디"
+      ],
+      "tags": [
+        "사랑 감기에 실려",
+        "VAUNDY",
+        "바운디",
+        "코이카제니노세테"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "코이카제니노세테",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "恋風邪にのせて",
+          "reading": "코이카제니노세테",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 恋風邪にのせて → 코이카제니노세테. 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 32,
+      "id": "4b10744e-dc2c-5946-b097-43ccb3e28753",
+      "title": "밤을 달리다",
+      "previousTags": [
+        "밤을 달리다",
+        "Into The Night",
+        "Yoru ni Kakeru",
+        "AYASE",
+        "요아소비",
+        "YOASOBI"
+      ],
+      "tags": [
+        "밤을 달리다",
+        "Into The Night",
+        "Yoru ni Kakeru",
+        "AYASE",
+        "요아소비",
+        "YOASOBI",
+        "요루니카케루",
+        "아야세"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "요루니카케루",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "夜に駆ける",
+          "reading": "요루니카케루",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 夜に駆ける → 요루니카케루. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "아야세",
+          "url": "https://namu.wiki/w/Ayase",
+          "quote": "Ayase - 나무위키 일본의 작곡가이자 싱어송라이터, VOCALOID 프로듀서. 닉네임은 ' 아야세 '라고 읽는다. 본명 田(た)中(なか) 啓(けい)一(いち)郎(ろう), 타나카 케이이치로, Keiichiro Tanaka 출생 1994년 4월 4일, 야마구치현 우베시 국적 일본 신체 174cm｜A형 직업 작곡가, 작사가, 싱어송라이터, VOCALOID 프로듀서",
+          "canonicalName": "AYASE",
+          "writer": "AYASE"
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 33,
+      "id": "b4a88261-250d-5530-83fa-5e46912934c1",
+      "title": "DAYBREAK FRONTLINE",
+      "previousTags": [
+        "DAYBREAK FRONTLINE",
+        "ORANGESTAR",
+        "OrangestarFeatIA",
+        "데이브레이크프런트라인"
+      ],
+      "tags": [
+        "DAYBREAK FRONTLINE",
+        "ORANGESTAR",
+        "OrangestarFeatIA",
+        "데이브레이크프런트라인",
+        "오렌지스타"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "오렌지스타",
+          "canonicalName": "ORANGESTAR",
+          "writer": "ORANGESTAR",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): ORANGESTAR → 오렌지스타. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 34,
+      "id": "a0cd27f1-ff90-507e-be59-22832d360537",
+      "title": "라일락",
+      "previousTags": [
+        "라일락",
+        "미세스 그린 애플",
+        "Mrs GREEN APPLE",
+        "Lilac"
+      ],
+      "tags": [
+        "라일락",
+        "미세스 그린 애플",
+        "Mrs GREEN APPLE",
+        "Lilac",
+        "오오모리모토키"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "오오모리모토키",
+          "canonicalName": "大森元貴",
+          "writer": "大森元貴",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 大森元貴 → 오오모리모토키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 35,
+      "id": "0d3f0b95-3d6d-507d-b0ba-05121395fb87",
+      "title": "사랑",
+      "previousTags": [
+        "사랑",
+        "호시노 겐",
+        "Koi"
+      ],
+      "tags": [
+        "사랑",
+        "호시노 겐",
+        "Koi",
+        "코이"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "코이",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "恋",
+          "reading": "코이",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 恋 → 코이. 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 36,
+      "id": "6fb76d99-5629-5ad0-8562-b03e28c68ea8",
+      "title": "Henceforth",
+      "previousTags": [
+        "Henceforth",
+        "ORANGESTAR",
+        "OrangestarFeatIA",
+        "헨스포스"
+      ],
+      "tags": [
+        "Henceforth",
+        "ORANGESTAR",
+        "OrangestarFeatIA",
+        "헨스포스",
+        "오렌지스타"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "오렌지스타",
+          "canonicalName": "ORANGESTAR",
+          "writer": "ORANGESTAR",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): ORANGESTAR → 오렌지스타. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 37,
+      "id": "48db3067-ab55-58ba-9da8-e404675a52fa",
+      "title": "백일",
+      "previousTags": [
+        "백일",
+        "Hakujitsu",
+        "킹 누",
+        "King Gnu",
+        "츠네타다이키"
+      ],
+      "tags": [
+        "백일",
+        "Hakujitsu",
+        "킹 누",
+        "King Gnu",
+        "츠네타다이키",
+        "하쿠지츠"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "하쿠지츠",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "白日",
+          "reading": "하쿠지츠",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 白日 → 하쿠지츠. 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 38,
+      "id": "826bad9b-0687-5f00-83d7-9e0c170519b5",
+      "title": "당신의 연인이 되고 싶어",
+      "previousTags": [
+        "당신의 연인이 되고 싶어",
+        "초큐메이",
+        "Anata no Koibito ni Naritai"
+      ],
+      "tags": [
+        "당신의 연인이 되고 싶어",
+        "초큐메이",
+        "Anata no Koibito ni Naritai",
+        "우라라"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "우라라",
+          "url": "https://blog.naver.com/corvus240_/223755260299",
+          "quote": "[가사번역] 미련(未恋)-초큐메이( チョ ーキ ュー メイ ) 7 개 ​ ​ <미련(未恋)> 드라마 '미련~나 홀로 숨바꼭질~(未恋〜かくれぼっちたち〜)' OP ​ ♪노래: 초큐메이( チョ ーキ ュー メイ ) ♪작사: 우라라 ( 麗 ) ♪​작곡: 우라라 ( 麗 ) ♪편곡: 초큐메이( チョ ーキ ュー メイ ) ​ ​ 未恋 아티스트 ChoQMay 발매일 2025.01.22. * 가사 * ​ 번역: 코르버스(corvus240_) ​ ※ 오역, 의역이 많을 수...",
+          "canonicalName": "麗",
+          "writer": "麗"
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 43,
+      "id": "4120a2db-c9b0-5a74-b7f0-3ca2f446f02e",
+      "title": "내가 죽으려고 생각한 것은",
+      "previousTags": [
+        "내가 죽으려고 생각한 것은",
+        "아마자라시",
+        "amazarashi",
+        "아키타히로무"
+      ],
+      "tags": [
+        "내가 죽으려고 생각한 것은",
+        "아마자라시",
+        "amazarashi",
+        "아키타히로무",
+        "보쿠가시노오토오못타노와"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "보쿠가시노오토오못타노와",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "僕が死のうと思ったのは",
+          "reading": "보쿠가시노오토오못타노와",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 僕が死のうと思ったのは → 보쿠가시노오토오못타노와. 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 45,
+      "id": "6bc353d6-d7da-55af-8d45-83493d850050",
+      "title": "아이돌",
+      "previousTags": [
+        "아이돌",
+        "AYASE",
+        "요아소비",
+        "YOASOBI",
+        "Idol"
+      ],
+      "tags": [
+        "아이돌",
+        "AYASE",
+        "요아소비",
+        "YOASOBI",
+        "Idol",
+        "아이도루",
+        "아야세"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "아이도루",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "アイドル",
+          "reading": "아이도루",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): アイドル → 아이도루. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "아야세",
+          "url": "https://namu.wiki/w/Ayase",
+          "quote": "Ayase - 나무위키 일본의 작곡가이자 싱어송라이터, VOCALOID 프로듀서. 닉네임은 ' 아야세 '라고 읽는다. 본명 田(た)中(なか) 啓(けい)一(いち)郎(ろう), 타나카 케이이치로, Keiichiro Tanaka 출생 1994년 4월 4일, 야마구치현 우베시 국적 일본 신체 174cm｜A형 직업 작곡가, 작사가, 싱어송라이터, VOCALOID 프로듀서",
+          "canonicalName": "AYASE",
+          "writer": "AYASE"
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 46,
+      "id": "f8d1844d-e127-59ff-9839-a180d4fc7d0e",
+      "title": "Endless Rain",
+      "previousTags": [
+        "Endless Rain",
+        "YOSHIKI",
+        "엑스 재팬",
+        "XJAPAN",
+        "엔들리스레인"
+      ],
+      "tags": [
+        "Endless Rain",
+        "YOSHIKI",
+        "엑스 재팬",
+        "XJAPAN",
+        "엔들리스레인",
+        "요시키"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "요시키",
+          "canonicalName": "YOSHIKI",
+          "writer": "YOSHIKI",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): YOSHIKI → 요시키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 47,
+      "id": "98ac4abe-6d71-542b-af2f-908ef49a62b4",
+      "title": "소녀A",
+      "previousTags": [
+        "소녀A",
+        "시이나모타Feat쿄우온린",
+        "시이나모타"
+      ],
+      "tags": [
+        "소녀A",
+        "시이나모타Feat쿄우온린",
+        "시이나모타",
+        "쇼조에이"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "쇼조에이",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "少女A",
+          "reading": "쇼조에이",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 少女A → 쇼조에이. 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 48,
+      "id": "18d94e04-f6e9-534d-b5ac-e0d68e536c0a",
+      "title": "나는 최강",
+      "previousTags": [
+        "나는 최강",
+        "OOMORI MOTOKI",
+        "아도",
+        "Ado"
+      ],
+      "tags": [
+        "나는 최강",
+        "OOMORI MOTOKI",
+        "아도",
+        "Ado",
+        "와타시와사이쿄",
+        "오오모리모토키"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "와타시와사이쿄",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "私は最強",
+          "reading": "와타시와사이쿄",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 私は最強 → 와타시와사이쿄. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "오오모리모토키",
+          "canonicalName": "OOMORI MOTOKI",
+          "writer": "OOMORI MOTOKI",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): OOMORI MOTOKI → 오오모리모토키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 49,
+      "id": "5a4302cd-e375-5425-a7eb-4a3ebe9c06ff",
+      "title": "나라는 것",
+      "previousTags": [
+        "나라는 것",
+        "미세스 그린 애플",
+        "Mrs Green Apple"
+      ],
+      "tags": [
+        "나라는 것",
+        "미세스 그린 애플",
+        "Mrs Green Apple",
+        "보쿠노코토",
+        "오오모리모토키"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "보쿠노코토",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "僕のこと",
+          "reading": "보쿠노코토",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 僕のこと → 보쿠노코토. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "오오모리모토키",
+          "canonicalName": "大森元貴",
+          "writer": "大森元貴",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 大森元貴 → 오오모리모토키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 50,
+      "id": "72e216e9-ff85-590d-b8a8-3b51824ed386",
+      "title": "언라벨",
+      "previousTags": [
+        "티케이 from 린토시테 시구레",
+        "언라벨",
+        "TK From 린토시테시구레",
+        "Unravel",
+        "TK"
+      ],
+      "tags": [
+        "티케이 from 린토시테 시구레",
+        "언라벨",
+        "TK From 린토시테시구레",
+        "Unravel",
+        "TK",
+        "키타지마토오루"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "키타지마토오루",
+          "canonicalName": "北嶋徹",
+          "writer": "北嶋徹",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 北嶋徹 → 키타지마토오루. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 52,
+      "id": "c55a90f2-eff4-51ad-8bf6-59579b157af2",
+      "title": "취한 줄을 모르고",
+      "previousTags": [
+        "취한 줄을 모르고",
+        "Kanaria",
+        "카나리아",
+        "KanariaFeatGUMI"
+      ],
+      "tags": [
+        "취한 줄을 모르고",
+        "Kanaria",
+        "카나리아",
+        "KanariaFeatGUMI",
+        "요이도레시라즈"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "요이도레시라즈",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "酔いどれ知らず",
+          "reading": "요이도레시라즈",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 酔いどれ知らず → 요이도레시라즈. 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 55,
+      "id": "f34a7cf2-235a-57f9-8b0e-816a00fb6ef6",
+      "title": "푸른 산호초",
+      "previousTags": [
+        "푸른 산호초",
+        "마츠다세이코"
+      ],
+      "tags": [
+        "푸른 산호초",
+        "마츠다세이코",
+        "아오이산고쇼",
+        "미우라요시코",
+        "오다유이치로"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "아오이산고쇼",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "青い珊瑚礁",
+          "reading": "아오이산고쇼",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 青い珊瑚礁 → 아오이산고쇼. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "미우라요시코",
+          "canonicalName": "三浦徳子",
+          "writer": "三浦徳子",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 三浦徳子 → 미우라요시코. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "오다유이치로",
+          "canonicalName": "小田裕一郎",
+          "writer": "小田裕一郎",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 小田裕一郎 → 오다유이치로. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 57,
+      "id": "693b8556-e3a1-5fe5-93cc-ed95e9c2f0b0",
+      "title": "115만 킬로의 필름",
+      "previousTags": [
+        "115만 킬로의 필름",
+        "오피셜 히게단디즘",
+        "후지와라사토시"
+      ],
+      "tags": [
+        "115만 킬로의 필름",
+        "오피셜 히게단디즘",
+        "후지와라사토시",
+        "햐쿠쥬고만키로노피루무"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "햐쿠쥬고만키로노피루무",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "115万キロのフィルム",
+          "reading": "햐쿠쥬고만키로노피루무",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 115万キロのフィルム → 햐쿠쥬고만키로노피루무. 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 59,
+      "id": "e8a0b1be-34b6-53d0-9a71-9e8f669000d3",
+      "title": "좋아하니까",
+      "previousTags": [
+        "좋아하니까",
+        "Suki Dakara"
+      ],
+      "tags": [
+        "좋아하니까",
+        "Suki Dakara",
+        "스키다카라",
+        "유이카"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "스키다카라",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "好きだから",
+          "reading": "스키다카라",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 好きだから → 스키다카라. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "유이카",
+          "canonicalName": "『ユイカ』",
+          "writer": "『ユイカ』",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 『ユイカ』 → 유이카. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 60,
+      "id": "b7724149-8c61-5e78-aa5f-475a7510f2f3",
+      "title": "크리스마스송",
+      "previousTags": [
+        "크리스마스송",
+        "백 넘버",
+        "back number",
+        "시미즈이요리"
+      ],
+      "tags": [
+        "크리스마스송",
+        "백 넘버",
+        "back number",
+        "시미즈이요리",
+        "쿠리스마스송구"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "쿠리스마스송구",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "クリスマスソング",
+          "reading": "쿠리스마스송구",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): クリスマスソング → 쿠리스마스송구. 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 62,
+      "id": "54a29b89-e4da-56ea-82f0-416d74fb13e4",
+      "title": "인페르노",
+      "previousTags": [
+        "인페르노",
+        "Inferno",
+        "미세스 그린 애플",
+        "Mrs Green Apple"
+      ],
+      "tags": [
+        "인페르노",
+        "Inferno",
+        "미세스 그린 애플",
+        "Mrs Green Apple",
+        "인페루노",
+        "오오모리모토키"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "인페루노",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "インフェルノ",
+          "reading": "인페루노",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): インフェルノ → 인페루노. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "오오모리모토키",
+          "canonicalName": "大森元貴",
+          "writer": "大森元貴",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 大森元貴 → 오오모리모토키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 63,
+      "id": "58c8b36c-44b7-5e1c-bee9-e71383e22d6d",
+      "title": "로스트 원의 호곡",
+      "previousTags": [
+        "네루",
+        "로스트 원의 호곡",
+        "Lost Ones Weeping",
+        "NERU",
+        "카가미오토린"
+      ],
+      "tags": [
+        "네루",
+        "로스트 원의 호곡",
+        "Lost Ones Weeping",
+        "NERU",
+        "카가미오토린",
+        "로스트원노고코쿠"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "로스트원노고코쿠",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "ロストワンの号哭",
+          "reading": "로스트원노고코쿠",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): ロストワンの号哭 → 로스트원노고코쿠. 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 64,
+      "id": "bb8628e0-cd30-52dd-8e94-03e2580b6259",
+      "title": "사랑을 전하고 싶다던가",
+      "previousTags": [
+        "사랑을 전하고 싶다던가",
+        "아이묜"
+      ],
+      "tags": [
+        "사랑을 전하고 싶다던가",
+        "아이묜",
+        "아이오츠타에타이다토카"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "아이오츠타에타이다토카",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "愛を伝えたいだとか",
+          "reading": "아이오츠타에타이다토카",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 愛を伝えたいだとか → 아이오츠타에타이다토카. 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 66,
+      "id": "30d58353-0517-50bc-ba64-565b67e3e277",
+      "title": "샤를",
+      "previousTags": [
+        "샤를",
+        "바룬FeatFlower",
+        "balloon",
+        "Charles"
+      ],
+      "tags": [
+        "샤를",
+        "바룬FeatFlower",
+        "balloon",
+        "Charles",
+        "샤루루",
+        "벌룬"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "샤루루",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "シャルル",
+          "reading": "샤루루",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): シャルル → 샤루루. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "벌룬",
+          "canonicalName": "バルーン",
+          "writer": "バルーン",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): バルーン → 벌룬. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 68,
+      "id": "f94a77ca-bc53-539b-9936-6b1315e628d0",
+      "title": "역몽",
+      "previousTags": [
+        "역몽",
+        "킹 누",
+        "King Gnu",
+        "츠네타다이키"
+      ],
+      "tags": [
+        "역몽",
+        "킹 누",
+        "King Gnu",
+        "츠네타다이키",
+        "사카유메"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "사카유메",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "逆夢",
+          "reading": "사카유메",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 逆夢 → 사카유메. 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 71,
+      "id": "50490a57-a3c8-5ca4-86b5-b02355b4e22c",
+      "title": "날아오를 때",
+      "previousTags": [
+        "날아오를 때",
+        "VAUNDY",
+        "바운디",
+        "Fly Away"
+      ],
+      "tags": [
+        "날아오를 때",
+        "VAUNDY",
+        "바운디",
+        "Fly Away",
+        "토부토키"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "토부토키",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "飛ぶ時",
+          "reading": "토부토키",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 飛ぶ時 → 토부토키. 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 73,
+      "id": "65904d42-5c1b-5d16-ab43-c4c5a2a11162",
+      "title": "케세라세라",
+      "previousTags": [
+        "케세라세라",
+        "OOMORI MOTOKI",
+        "미세스 그린 애플",
+        "Mrs GREEN APPLE",
+        "Que Sera Sera"
+      ],
+      "tags": [
+        "케세라세라",
+        "OOMORI MOTOKI",
+        "미세스 그린 애플",
+        "Mrs GREEN APPLE",
+        "Que Sera Sera",
+        "오오모리모토키"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "오오모리모토키",
+          "canonicalName": "OOMORI MOTOKI",
+          "writer": "OOMORI MOTOKI",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): OOMORI MOTOKI → 오오모리모토키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 74,
+      "id": "744d976f-d816-5298-9737-5fe7989f6836",
+      "title": "숨바꼭질",
+      "previousTags": [
+        "숨바꼭질",
+        "TKT",
+        "EREN",
+        "ALIA"
+      ],
+      "tags": [
+        "숨바꼭질",
+        "TKT",
+        "EREN",
+        "ALIA",
+        "카쿠렌보",
+        "티케이티"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "카쿠렌보",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "かくれんぼ",
+          "reading": "카쿠렌보",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): かくれんぼ → 카쿠렌보. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "티케이티",
+          "canonicalName": "TKT",
+          "writer": "TKT",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): TKT → 티케이티. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 77,
+      "id": "8291afcc-905a-5bdb-8da8-e42fb48f05d3",
+      "title": "사신",
+      "previousTags": [
+        "사신",
+        "Shinigami",
+        "요네즈켄시"
+      ],
+      "tags": [
+        "사신",
+        "Shinigami",
+        "요네즈켄시",
+        "시니가미"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "시니가미",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "死神",
+          "reading": "시니가미",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 死神 → 시니가미. 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 78,
+      "id": "8559b99e-66d9-5809-8410-adc2d01046bf",
+      "title": "천성의 약함",
+      "previousTags": [
+        "천성의 약함",
+        "164",
+        "164FeatGUMI"
+      ],
+      "tags": [
+        "천성의 약함",
+        "164",
+        "164FeatGUMI",
+        "아마노자쿠"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "아마노자쿠",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "天ノ弱",
+          "reading": "아마노자쿠",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 天ノ弱 → 아마노자쿠. 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 79,
+      "id": "7b1f7597-5cb2-5de9-bdc2-e23694a8b47e",
+      "title": "슈가송과 비터스텝",
+      "previousTags": [
+        "슈가송과 비터스텝",
+        "유니즌 스퀘어 가든",
+        "Unison Square Garden",
+        "타부치토모야",
+        "Sugar Song and Bitter Step"
+      ],
+      "tags": [
+        "슈가송과 비터스텝",
+        "유니즌 스퀘어 가든",
+        "Unison Square Garden",
+        "타부치토모야",
+        "Sugar Song and Bitter Step",
+        "슈가송구토비타스텟푸"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "슈가송구토비타스텟푸",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "シュガーソングとビターステップ",
+          "reading": "슈가송구토비타스텟푸",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): シュガーソングとビターステップ → 슈가송구토비타스텟푸. 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 80,
+      "id": "ba2de14f-80a1-5e05-848c-1006d54adf88",
+      "title": "해피 엔드",
+      "previousTags": [
+        "해피 엔드",
+        "백 넘버",
+        "back number",
+        "시미즈이요리"
+      ],
+      "tags": [
+        "해피 엔드",
+        "백 넘버",
+        "back number",
+        "시미즈이요리",
+        "핫피엔도"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "핫피엔도",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "ハッピーエンド",
+          "reading": "핫피엔도",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): ハッピーエンド → 핫피엔도. 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 81,
+      "id": "64a14820-fdaa-5a8d-9b03-ae214edcef12",
+      "title": "레인",
+      "previousTags": [
+        "레인",
+        "Rain",
+        "시드"
+      ],
+      "tags": [
+        "레인",
+        "Rain",
+        "시드",
+        "마오",
+        "유우야"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "마오",
+          "canonicalName": "マオ",
+          "writer": "マオ",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): マオ → 마오. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "유우야",
+          "canonicalName": "ゆうや",
+          "writer": "ゆうや",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): ゆうや → 유우야. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 82,
+      "id": "c04f2580-ed87-54aa-9177-5943f3660e5a",
+      "title": "전전전세",
+      "previousTags": [
+        "전전전세",
+        "Zenzenzense",
+        "래드윔프스",
+        "RADWIMPS",
+        "노다요지로"
+      ],
+      "tags": [
+        "전전전세",
+        "Zenzenzense",
+        "래드윔프스",
+        "RADWIMPS",
+        "노다요지로",
+        "젠젠젠세"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "젠젠젠세",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "前前前世",
+          "reading": "젠젠젠세",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 前前前世 → 젠젠젠세. 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 84,
+      "id": "559655d1-2b0e-501f-943d-c8d0071ecc4b",
+      "title": "연애재판",
+      "previousTags": [
+        "연애재판",
+        "Love Trial",
+        "40MP",
+        "하츠네 미쿠",
+        "Renai Saiban"
+      ],
+      "tags": [
+        "연애재판",
+        "Love Trial",
+        "40MP",
+        "하츠네 미쿠",
+        "Renai Saiban",
+        "렌아이사이반",
+        "사십미터피"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "렌아이사이반",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "恋愛裁判",
+          "reading": "렌아이사이반",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 恋愛裁判 → 렌아이사이반. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "사십미터피",
+          "canonicalName": "40MP",
+          "writer": "40MP",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 40MP → 사십미터피. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 85,
+      "id": "b3e4aa61-b9cc-53f7-99dc-74c15ef25597",
+      "title": "Mela!",
+      "previousTags": [
+        "Mela",
+        "PEPPE",
+        "녹황색사회",
+        "나가야하루코",
+        "아나미싱고",
+        "멜라"
+      ],
+      "tags": [
+        "Mela",
+        "PEPPE",
+        "녹황색사회",
+        "나가야하루코",
+        "아나미싱고",
+        "멜라",
+        "펩페"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "펩페",
+          "canonicalName": "PEPPE",
+          "writer": "PEPPE",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): PEPPE → 펩페. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 86,
+      "id": "5de90da4-60eb-59ed-bd76-5fe90232c681",
+      "title": "블링-뱅-뱅-본",
+      "previousTags": [
+        "블링뱅뱅본",
+        "크리피 너츠",
+        "Creepy Nuts",
+        "BlingBangBangBorn"
+      ],
+      "tags": [
+        "블링뱅뱅본",
+        "크리피 너츠",
+        "Creepy Nuts",
+        "BlingBangBangBorn",
+        "알시테이",
+        "디제이마츠나가"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "알시테이",
+          "canonicalName": "R-指定",
+          "writer": "R-指定",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): R-指定 → 알시테이. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "디제이마츠나가",
+          "canonicalName": "DJ松永",
+          "writer": "DJ松永",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): DJ松永 → 디제이마츠나가. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 88,
+      "id": "cdae0ce0-7574-51b0-8d6d-f68537cb4c49",
+      "title": "불가행력",
+      "previousTags": [
+        "불가행력",
+        "VAUNDY",
+        "바운디"
+      ],
+      "tags": [
+        "불가행력",
+        "VAUNDY",
+        "바운디",
+        "후카코료쿠"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "후카코료쿠",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "不可幸力",
+          "reading": "후카코료쿠",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 不可幸力 → 후카코료쿠. 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 89,
+      "id": "416c3eab-b036-57b0-92cf-245c7b879bb7",
+      "title": "댄스홀",
+      "previousTags": [
+        "댄스홀",
+        "미세스 그린 애플",
+        "Mrs GREEN APPLE",
+        "Dance Hall"
+      ],
+      "tags": [
+        "댄스홀",
+        "미세스 그린 애플",
+        "Mrs GREEN APPLE",
+        "Dance Hall",
+        "단스호루",
+        "오오모리모토키"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "단스호루",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "ダンスホール",
+          "reading": "단스호루",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): ダンスホール → 단스호루. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "오오모리모토키",
+          "canonicalName": "大森元貴",
+          "writer": "大森元貴",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 大森元貴 → 오오모리모토키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 90,
+      "id": "d938a8fa-a618-5b16-8783-5a93eae8ed44",
+      "title": "도쿄 플래시",
+      "previousTags": [
+        "도쿄 플래시",
+        "VAUNDY",
+        "바운디"
+      ],
+      "tags": [
+        "도쿄 플래시",
+        "VAUNDY",
+        "바운디",
+        "도쿄후랏슈"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "도쿄후랏슈",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "東京フラッシュ",
+          "reading": "도쿄후랏슈",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 東京フラッシュ → 도쿄후랏슈. 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 92,
+      "id": "0f9bcdcd-5763-5229-b3d7-8ebb3fa09e69",
+      "title": "마음탓",
+      "previousTags": [
+        "마음탓",
+        "PAPIYON",
+        "초우초우PFeatGUMI"
+      ],
+      "tags": [
+        "마음탓",
+        "PAPIYON",
+        "초우초우PFeatGUMI",
+        "코코로나시",
+        "파피용"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "코코로나시",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "心做し",
+          "reading": "코코로나시",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 心做し → 코코로나시. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "파피용",
+          "canonicalName": "PAPIYON",
+          "writer": "PAPIYON",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): PAPIYON → 파피용. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 93,
+      "id": "4bcc2f46-11d0-51f1-a01d-4ca63873422c",
+      "title": "악의 하인",
+      "previousTags": [
+        "악의P",
+        "악의 하인",
+        "Servant of Evil",
+        "mothy",
+        "카가미오토렌"
+      ],
+      "tags": [
+        "악의P",
+        "악의 하인",
+        "Servant of Evil",
+        "mothy",
+        "카가미오토렌",
+        "아쿠노메시츠카이"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "아쿠노메시츠카이",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "悪ノ召使",
+          "reading": "아쿠노메시츠카이",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 悪ノ召使 → 아쿠노메시츠카이. 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 95,
+      "id": "1afdfdc4-6e10-5a2e-ba46-2a4bdc0c7c15",
+      "title": "오렌지",
+      "previousTags": [
+        "오렌지",
+        "MOMIKEN",
+        "UZ",
+        "스파이에어",
+        "SPYAIR"
+      ],
+      "tags": [
+        "오렌지",
+        "MOMIKEN",
+        "UZ",
+        "스파이에어",
+        "SPYAIR",
+        "모미켄",
+        "유지"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "모미켄",
+          "canonicalName": "MOMIKEN",
+          "writer": "MOMIKEN",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): MOMIKEN → 모미켄. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "유지",
+          "canonicalName": "UZ",
+          "writer": "UZ",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): UZ → 유지. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 96,
+      "id": "263e15b1-0697-5afc-97b7-f2431733022e",
+      "title": "소녀 레이",
+      "previousTags": [
+        "미키토P",
+        "소녀 레이",
+        "하츠네 미쿠"
+      ],
+      "tags": [
+        "미키토P",
+        "소녀 레이",
+        "하츠네 미쿠",
+        "쇼조레이"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "쇼조레이",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "少女レイ",
+          "reading": "쇼조 레이",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 少女レイ → 쇼조레이. 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 97,
+      "id": "e2d6aeef-103d-59c3-82e3-bda1c5a61849",
+      "title": "커튼콜",
+      "previousTags": [
+        "커튼콜",
+        "유우리",
+        "CHIMERAZ",
+        "Curtain Call"
+      ],
+      "tags": [
+        "커튼콜",
+        "유우리",
+        "CHIMERAZ",
+        "Curtain Call",
+        "카텐코루",
+        "키메라즈"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "카텐코루",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "カーテンコール",
+          "reading": "카텐코루",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): カーテンコール → 카텐코루. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "키메라즈",
+          "canonicalName": "ＣＨＩＭＥＲＡＺ",
+          "writer": "ＣＨＩＭＥＲＡＺ",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): ＣＨＩＭＥＲＡＺ → 키메라즈. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-japan",
+      "index": 99,
+      "id": "b003c21f-2697-5920-b3e2-0cf2f7b456a5",
+      "title": "벌거벗은 용사",
+      "previousTags": [
+        "벌거벗은 용사",
+        "Hadaka No Yusha",
+        "VAUNDY",
+        "바운디"
+      ],
+      "tags": [
+        "벌거벗은 용사",
+        "Hadaka No Yusha",
+        "VAUNDY",
+        "바운디",
+        "하다카노유샤"
+      ],
+      "addedAliases": [
+        {
+          "kind": "title",
+          "name": "하다카노유샤",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "裸の勇者",
+          "reading": "하다카노유샤",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 裸の勇者 → 하다카노유샤. 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    }
   ]
 }

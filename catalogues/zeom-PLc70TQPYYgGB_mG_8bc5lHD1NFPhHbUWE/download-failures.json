@@ -13,9 +13,21 @@
       "一瀬貴之"
     ],
     "tags": [
-      "Nekokaburu"
+      "Nekokaburu",
+      "네코카부루"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "네코카부루",
+        "origin": "user_authorized_pronunciation",
+        "language": "ja",
+        "originalTitle": "猫かぶる",
+        "reading": "네코카부루",
+        "url": null,
+        "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 猫かぶる → 네코카부루. 외부 검색 인용 아님."
+      }
+    ],
     "reviewRequired": true,
     "reviewReasons": [
       "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요",
@@ -48,10 +60,8 @@
       }
     ],
     "notes": "",
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
     "audioSourceType": "unverified_recording",
     "audioSourceReviewRequired": true,
     "audio": {
@@ -66,6 +76,15 @@
       "동일 곡·가수·버전의 대사·추가 인트로 없는 음원 확인 필요. 개인 자막 업로드 허용."
     ],
     "writerTagReviewRequired": true,
-    "singerAliases": []
+    "singerAliases": [],
+    "namingHistory": [
+      {
+        "date": "2026-10-29",
+        "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+        "addedTags": [
+          "네코카부루"
+        ]
+      }
+    ]
   }
 ]

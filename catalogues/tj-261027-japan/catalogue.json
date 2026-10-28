@@ -28,7 +28,8 @@
       "tags": [
         "만찬가",
         "TUKI",
-        "츠키"
+        "츠키",
+        "반산카"
       ],
       "aliases": [
         {
@@ -36,6 +37,16 @@
           "name": "만찬가",
           "url": "https://m.blog.naver.com/gredo00/224326642778",
           "quote": "제목 '만찬가( 晩餐歌 )'의 의미"
+        },
+        {
+          "kind": "title",
+          "name": "반산카",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "晩餐歌",
+          "reading": "반산카",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 晩餐歌 → 반산카. 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -81,7 +92,7 @@
         "channels": 2,
         "durationSeconds": 217.767,
         "byteLength": 1320069,
-        "sha256": "3c30423fcdf907a9e615bb406b804add24d80ce31ab20ace5dbc746259d113ff"
+        "sha256": "a901ebd01b6c1cee33327d57ff72d93b2a1950cd2c6fcc8d1c4aa0b19627344e"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
@@ -107,7 +118,16 @@
         }
       ],
       "audioSourceReviewRequired": false,
-      "audioSourceType": "official_album_audio"
+      "audioSourceType": "official_album_audio",
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "반산카"
+          ]
+        }
+      ]
     },
     {
       "index": 2,
@@ -263,7 +283,8 @@
         "괴수의 꽃노래",
         "Kaiju no Hanauta",
         "VAUNDY",
-        "바운디"
+        "바운디",
+        "카이쥬노하나우타"
       ],
       "aliases": [
         {
@@ -289,6 +310,16 @@
           "name": "바운디",
           "url": "https://blog.naver.com/purpleblossom7418/224431752821",
           "quote": "Vaundy (바운디) - napori (나포리) [가사/ 한글 발음/한국어 번역/노래방번호] 2 개 Oh right, oh right, oh right 오- 라잇, 오- 라잇, 오- 라잇 Oh right, oh right, oh right ​ 가사번역: 퍼플블라썸 ​ # Vaundy #바운디 # napori #나포리 #Vaundynapori #바운디 napori # napori 가사 # napori 가사해석 # napori 한글 발음 # napori 한국어번역 #바운디가사 #바운디가사해석 #JPOP #제이팝 #일본노래 #일본노래가사"
+        },
+        {
+          "kind": "title",
+          "name": "카이쥬노하나우타",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "怪獣の花唄",
+          "reading": "카이쥬노하나우타",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 怪獣の花唄 → 카이쥬노하나우타. 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -356,7 +387,7 @@
         "channels": 2,
         "durationSeconds": 224.88066666666666,
         "byteLength": 1365608,
-        "sha256": "ef758eca81f88146cad160d2f8fcf208f137701a2a5657acc27014b657cd739f"
+        "sha256": "86000dc1669c34060c7bc645e27775d228ed410405e1da68c9804bd9e0801cd5"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
@@ -390,7 +421,16 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "카이쥬노하나우타"
+          ]
+        }
+      ]
     },
     {
       "index": 4,
@@ -410,7 +450,8 @@
       ],
       "tags": [
         "베텔기우스",
-        "유우리"
+        "유우리",
+        "베테루기우스"
       ],
       "aliases": [
         {
@@ -464,6 +505,16 @@
           "url": "https://otagara.kr/song/tj/52724",
           "quote": "カーテンコール(アニメ '僕のヒーローアカデミア' 7期 OP) · 커튼콜 (애니 '나의 히어로 아카데미아' 7기 OP) · 優里 · 유우리 · TJ 52724",
           "canonicalName": "優里"
+        },
+        {
+          "kind": "title",
+          "name": "베테루기우스",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "ベテルギウス",
+          "reading": "베테루기우스",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): ベテルギウス → 베테루기우스. 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -532,7 +583,7 @@
         "channels": 2,
         "durationSeconds": 236.37454166666666,
         "byteLength": 1415530,
-        "sha256": "1a7dde124da5ed87dc7d213d41c259e467acfc1ff9dc7f584a066cea35028b79"
+        "sha256": "ebe7be8d90ba233a8222f78b2f037fb99e616cd740f6cc6eb78b3cfed9385cea"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
@@ -547,6 +598,13 @@
             "베테루기우스"
           ],
           "reason": "Replace prior naming with independently sourced common usage"
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "베테루기우스"
+          ]
         }
       ],
       "audioSourceReviewRequired": false,
@@ -870,7 +928,10 @@
         "MOMIKEN",
         "UZ",
         "스파이에어",
-        "SPYAIR"
+        "SPYAIR",
+        "사무라이하토",
+        "모미켄",
+        "유지"
       ],
       "aliases": [
         {
@@ -884,6 +945,34 @@
           "url": "https://www.youtube.com/watch?v=4lNL-d6mzPw",
           "quote": "SPYAIR - 사무라이 하트(Some Like It Hot)",
           "kind": "title"
+        },
+        {
+          "kind": "title",
+          "name": "사무라이하토",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "サムライハート",
+          "reading": "사무라이하토",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): サムライハート → 사무라이하토. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "모미켄",
+          "canonicalName": "MOMIKEN",
+          "writer": "MOMIKEN",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): MOMIKEN → 모미켄. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "유지",
+          "canonicalName": "UZ",
+          "writer": "UZ",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): UZ → 유지. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -932,13 +1021,24 @@
         "channels": 2,
         "durationSeconds": 208.89372916666667,
         "byteLength": 1279153,
-        "sha256": "8d79bfb0c6e11255cc0c111cc0f6843d42f5c71ce59c0f600e72b1168dc9cbf0"
+        "sha256": "e20a9e2cfb2d0dbd86678e70dcffc92a75f758e4573bd55ac0fa547dc8933b73"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
       "reviewReasons": [],
       "namingReviewRequired": false,
-      "namingReviewReasons": []
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "사무라이하토",
+            "모미켄",
+            "유지"
+          ]
+        }
+      ]
     },
     {
       "index": 8,
@@ -959,7 +1059,10 @@
       ],
       "tags": [
         "잔혹한 천사의 테제",
-        "다카하시 요코"
+        "다카하시 요코",
+        "잔코쿠나텐시노테제",
+        "오이카와네코",
+        "사토히데토시"
       ],
       "aliases": [
         {
@@ -973,6 +1076,34 @@
           "name": "残酷な天使のテーゼ",
           "url": "https://www.tjmedia.com/legacy/api/topAndHot100",
           "quote": "TJ TOP100 JPOP rank 8: song number 25246; title 残酷な天使のテーゼ(新世紀エヴァンゲリオン OP); singer 高橋洋子; lyricist 及川眠子; composer 佐藤英敏"
+        },
+        {
+          "kind": "title",
+          "name": "잔코쿠나텐시노테제",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "残酷な天使のテーゼ",
+          "reading": "잔코쿠나텐시노테제",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 残酷な天使のテーゼ → 잔코쿠나텐시노테제. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "오이카와네코",
+          "canonicalName": "及川眠子",
+          "writer": "及川眠子",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 及川眠子 → 오이카와네코. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "사토히데토시",
+          "canonicalName": "佐藤英敏",
+          "writer": "佐藤英敏",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 佐藤英敏 → 사토히데토시. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -1012,7 +1143,7 @@
         "channels": 2,
         "durationSeconds": 243.85135416666665,
         "byteLength": 1490179,
-        "sha256": "ced81023e8c93aab8570a9ce2c349478546dc8024779ae2d9b642773f929d1e1"
+        "sha256": "43f17a0cd99f0c0507f26a288c35956bf195763b440bf6dd9a7fd25d4fbe5cb9"
       },
       "aliasReviewReasons": [
         "Writer alias unresolved: 及川眠子: 확인된 Latin 표기 Neko Oikawa는 허용 문자 형식에 공백을 포함하므로 출력 별칭으로 사용할 수 없습니다.",
@@ -1021,7 +1152,18 @@
       "aliasReviewRequired": true,
       "reviewReasons": [],
       "namingReviewRequired": false,
-      "namingReviewReasons": []
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "잔코쿠나텐시노테제",
+            "오이카와네코",
+            "사토히데토시"
+          ]
+        }
+      ]
     },
     {
       "index": 9,
@@ -1307,7 +1449,8 @@
       "tags": [
         "파자마파티즈노우타",
         "타테야마아키유키",
-        "nagano"
+        "nagano",
+        "나가노"
       ],
       "aliases": [
         {
@@ -1323,6 +1466,15 @@
           "name": "nagano",
           "url": "https://en.wikipedia.org/wiki/Nagano_(illustrator)",
           "quote": "nagano ナガノ"
+        },
+        {
+          "kind": "writer",
+          "name": "나가노",
+          "canonicalName": "ナガノ",
+          "writer": "ナガノ",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): ナガノ → 나가노. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -1376,7 +1528,7 @@
         "channels": 2,
         "durationSeconds": 219.26033333333334,
         "byteLength": 1331452,
-        "sha256": "161222466644c74f2be89f2392715aa5154e9be667ff32c0fcb54898ff72d1c1"
+        "sha256": "95b29968cb8c6da96e09720e19b4a9592e37d6d84c21bc391a21e8b081c34c73"
       },
       "aliasReviewReasons": [
         "No sourced Java-valid singer answer alias currently available."
@@ -1386,6 +1538,15 @@
       "namingReviewRequired": true,
       "namingReviewReasons": [
         "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "나가노"
+          ]
+        }
       ]
     },
     {
@@ -1409,7 +1570,9 @@
         "워킹 위드 유",
         "Walking with you",
         "노벨브라이트",
-        "Novelbright"
+        "Novelbright",
+        "유다이",
+        "유타로"
       ],
       "aliases": [
         {
@@ -1429,6 +1592,24 @@
           "url": "https://www.youtube.com/watch?v=Rfff0JJGIT4",
           "quote": "워킹 위드 유 - 노벨브라이트 (Walking with you - Novelbright) (KY.44686) / KY KARAOKE",
           "kind": "singer"
+        },
+        {
+          "kind": "writer",
+          "name": "유다이",
+          "canonicalName": "雄大",
+          "writer": "雄大",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 雄大 → 유다이. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "유타로",
+          "canonicalName": "勇太朗",
+          "writer": "勇太朗",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 勇太朗 → 유타로. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -1475,7 +1656,7 @@
         "channels": 2,
         "durationSeconds": 228.572625,
         "byteLength": 1368518,
-        "sha256": "61fb4e90fbb980ac44b3a78984274ec7c872f2e2c06f75a483e8380341a8ff9e"
+        "sha256": "bc99d4e88f04ae9fa8bda4971258042573f5374b0560b9a474300f4f47eabf76"
       },
       "aliasReviewReasons": [
         "Writer alias unresolved: 雄大: 단일 이름만으로는 writer identity를 특정할 수 없어 별칭을 부여하지 않았습니다.",
@@ -1494,6 +1675,14 @@
             "Novelbright"
           ],
           "reason": "Published Korean usage verified through the user-selected Chrome session."
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "유다이",
+            "유타로"
+          ]
         }
       ]
     },
@@ -1623,7 +1812,8 @@
       "tags": [
         "드라이플라워",
         "Dried Flowers",
-        "유우리"
+        "유우리",
+        "도라이후라와"
       ],
       "aliases": [
         {
@@ -1671,6 +1861,16 @@
           "url": "https://www.youtube.com/watch?v=bkVp-B-wDH4",
           "quote": "유우리 - 베텔기우스(BETELGEUSE)",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "도라이후라와",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "ドライフラワー",
+          "reading": "도라이후라와",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): ドライフラワー → 도라이후라와. 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -1716,7 +1916,7 @@
         "channels": 2,
         "durationSeconds": 287.6442083333333,
         "byteLength": 1752417,
-        "sha256": "aaa45d0c953049bf66dca8a4e4a43c8b1363b739b0938fe0a0595a97872be24d"
+        "sha256": "29b7580b67c077bb2a91d18fc921afa9f8a5b1de7c5cfa8396e31cfdd22de51d"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
@@ -1731,6 +1931,13 @@
             "도라이후라와"
           ],
           "reason": "Replace prior naming with independently sourced common usage"
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "도라이후라와"
+          ]
         }
       ]
     },
@@ -1755,7 +1962,9 @@
         "Backlight",
         "VAUNDY",
         "아도",
-        "Ado"
+        "Ado",
+        "걋코",
+        "바운디"
       ],
       "aliases": [
         {
@@ -1769,6 +1978,24 @@
           "name": "역광",
           "url": "https://m.blog.naver.com/glsaem_hero/224349044236",
           "quote": "逆光 갹코 역광 Ado アド 아도 가사 곡정보 영화 ONE PIECE FILM RED OST Vaundy"
+        },
+        {
+          "kind": "title",
+          "name": "걋코",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "逆光",
+          "reading": "걋코",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 逆光 → 걋코. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "바운디",
+          "url": "https://blog.naver.com/kuninori1004/223817889392",
+          "quote": "life hack - Vaundy [ 가사 .해석.듣기] 2 개 것은 어딘지 모르게 서먹서먹한 두 인물의 모습이다. 청춘의 한가운데에 있는 그대로의 모습이 새콤달콤하게 느껴지는 곡이다. ​ ​ life hack (꿀팁) Vaundy (바운디) 作詞： Vaundy 作曲： Vaundy その態度が不安だな 그 태도가 불안해 「気にしない」彩度はそのまま '신경 안 써' 채도는 그대로니까 何気に初めてで不安...",
+          "canonicalName": "VAUNDY",
+          "writer": "VAUNDY"
         }
       ],
       "reviewRequired": false,
@@ -1808,7 +2035,7 @@
         "channels": 2,
         "durationSeconds": 249.923375,
         "byteLength": 1463278,
-        "sha256": "a7397542dc08fb2d4df0d3e6311609a3ae751ba00ef2521d052c3865aa689da5"
+        "sha256": "3205fe167ae6bba02d8c02b724d8bcc432db062f006ec8e9831436f70f763c45"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
@@ -1825,6 +2052,14 @@
             "아도"
           ],
           "reason": "Replace prior naming with independently sourced common usage"
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "걋코",
+            "바운디"
+          ]
         }
       ]
     },
@@ -1994,7 +2229,8 @@
       "tags": [
         "Bunny Girl",
         "AKASAKI",
-        "바니걸"
+        "바니걸",
+        "아카사키"
       ],
       "aliases": [
         {
@@ -2009,6 +2245,15 @@
           "url": null,
           "origin": "user_authorized_pronunciation",
           "quote": "사용자 승인 영어 제목 일반 발음: Bunny Girl → 바니걸 (2026-10-28). 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "아카사키",
+          "canonicalName": "AKASAKI",
+          "writer": "AKASAKI",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): AKASAKI → 아카사키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -2050,7 +2295,7 @@
         "channels": 2,
         "durationSeconds": 216.5446875,
         "byteLength": 1326808,
-        "sha256": "eca1e7af1f587cdb3c82757d359184844e529bd15856e92fe778f16cfe16a379"
+        "sha256": "9075ce433b2dbe18a3ee21bb3765c6b5496824a9e2741414f65912fc476b5801"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
@@ -2063,6 +2308,13 @@
           "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
           "addedTags": [
             "바니걸"
+          ]
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "아카사키"
           ]
         }
       ]
@@ -2085,7 +2337,8 @@
         "ERROR",
         "NIKI",
         "nikiFeatLily",
-        "에러"
+        "에러",
+        "니키"
       ],
       "aliases": [
         {
@@ -2100,6 +2353,15 @@
           "url": null,
           "origin": "user_authorized_pronunciation",
           "quote": "사용자 승인 영어 제목 일반 발음: -ERROR → 에러 (2026-10-28). 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "니키",
+          "canonicalName": "NIKI",
+          "writer": "NIKI",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): NIKI → 니키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -2135,7 +2397,7 @@
         "channels": 2,
         "durationSeconds": 234.64464583333333,
         "byteLength": 1434300,
-        "sha256": "7cf5026b1fc34c6a26fcf0b546e4acab937dfcd372a2e2b7a0b74f5a09cb90db"
+        "sha256": "c04d760d7a076486eff325e86f73d974b233b2bcc745ce936fd492615944aa56"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
@@ -2148,6 +2410,13 @@
           "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
           "addedTags": [
             "에러"
+          ]
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "니키"
           ]
         }
       ]
@@ -2330,7 +2599,10 @@
       "tags": [
         "혼잣말",
         "하치와레CV타나카 마사토",
-        "nagano"
+        "nagano",
+        "히토리고츠",
+        "나가노",
+        "토쿠마루슈고"
       ],
       "aliases": [
         {
@@ -2345,6 +2617,34 @@
           "name": "혼잣말",
           "url": "https://namu.wiki/w/%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%94%E3%81%A4",
           "quote": "ひとりごつ ～バンドVer.～ 혼잣말 ~밴드 Ver.～"
+        },
+        {
+          "kind": "title",
+          "name": "히토리고츠",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "ひとりごつ",
+          "reading": "히토리고츠",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): ひとりごつ → 히토리고츠. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "나가노",
+          "canonicalName": "ナガノ",
+          "writer": "ナガノ",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): ナガノ → 나가노. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "토쿠마루슈고",
+          "canonicalName": "トクマルシューゴ",
+          "writer": "トクマルシューゴ",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): トクマルシューゴ → 토쿠마루슈고. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -2390,7 +2690,7 @@
         "channels": 2,
         "durationSeconds": 90.9503125,
         "byteLength": 551948,
-        "sha256": "ac8f78e1a2466efd00e5fb558941d4439fea282b1a0ff6289ea76437b69f23e1"
+        "sha256": "10554fe9519b4b1cc8b87db54c3d1a2036654986e6bd946d82bd80a85e70f49f"
       },
       "aliasReviewReasons": [
         "Writer alias unresolved: トクマルシューゴ: 확인된 공식 Latin 표기 Shugo Tokumaru는 허용 문자 형식에 공백을 포함하므로 출력 별칭으로 사용할 수 없습니다."
@@ -2398,7 +2698,18 @@
       "aliasReviewRequired": true,
       "reviewReasons": [],
       "namingReviewRequired": false,
-      "namingReviewReasons": []
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "히토리고츠",
+            "나가노",
+            "토쿠마루슈고"
+          ]
+        }
+      ]
     },
     {
       "index": 21,
@@ -2423,7 +2734,8 @@
         "samfree",
         "samfreeFeat준오토루카",
         "SAM",
-        "Luka LukaNight Fever"
+        "Luka LukaNight Fever",
+        "샘프리"
       ],
       "aliases": [
         {
@@ -2450,6 +2762,15 @@
           "quote": "루카루카★나이트 피버 - samfree / 메구리네 루카 [한국어해석/독음/일본어 자막]",
           "url": "https://www.youtube.com/watch?v=PLsxz451Iuk",
           "kind": "singer"
+        },
+        {
+          "kind": "writer",
+          "name": "샘프리",
+          "canonicalName": "samfree",
+          "writer": "samfree",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): samfree → 샘프리. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -2498,7 +2819,7 @@
         "channels": 2,
         "durationSeconds": 240.3219375,
         "byteLength": 1470766,
-        "sha256": "3d3b53b9e3e765d0a22fff9b5c48299c2256d88ec2d391f1a1b0eae8e5222f43"
+        "sha256": "db35a56713a4f07c9e9c82a2bcd2ca81d371ebf865fa64adac8b43e0ec8d58f4"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
@@ -2520,7 +2841,16 @@
       ],
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "샘프리"
+          ]
+        }
+      ]
     },
     {
       "index": 22,
@@ -2851,7 +3181,8 @@
         "Silhouette",
         "카나분",
         "KANABOON",
-        "타니구치마구로"
+        "타니구치마구로",
+        "시루엣토"
       ],
       "aliases": [
         {
@@ -2884,6 +3215,16 @@
           "name": "카나분",
           "url": "https://blog.naver.com/gomsal_/224368888735",
           "quote": "KANA - BOON 카나분 - シルエット 실루엣[가사/발음/해석] 4 개 ​ 곡 정보 곡명 : シルエット(실루엣) 아티스트 : KANA - BOON (카나분) 발매일 : 2014년 11월 26일 작사 작곡 : 타니구치 마구로 (보컬, 기타) 타이업 : TV 애니메이션 <나루토 질풍전> 16기 오프닝 테마곡 ​ ​ ​ <나루토> 시리즈를 대표하는 레전드 애니메이션 주제가 - 애니메이션 <나루토 질풍전> 16기 오프닝으로..."
+        },
+        {
+          "kind": "title",
+          "name": "시루엣토",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "シルエット",
+          "reading": "시루엣토",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): シルエット → 시루엣토. 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -2930,13 +3271,22 @@
         "channels": 2,
         "durationSeconds": 265.0395625,
         "byteLength": 1622117,
-        "sha256": "bd0c2ba07419c4218d95e0fa2d69e28a659b98cc4e5f13ddcaa9c9affb08a1a7"
+        "sha256": "f6c57a283ff5d4aa2a4a3a3b4f379ede544568d67bbf6d21645a8676aee57f21"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
       "reviewReasons": [],
       "namingReviewRequired": false,
-      "namingReviewReasons": []
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "시루엣토"
+          ]
+        }
+      ]
     },
     {
       "index": 26,
@@ -2959,7 +3309,9 @@
         "푸름과 여름",
         "Ao to Natsu",
         "미세스 그린 애플",
-        "Mrs Green Apple"
+        "Mrs Green Apple",
+        "아오토나츠",
+        "오오모리모토키"
       ],
       "aliases": [
         {
@@ -2985,6 +3337,25 @@
           "url": "https://www.youtube.com/watch?v=-6xk0OH1_TM",
           "quote": "미세스 그린애플 - 댄스홀(ダンスホール, Dance Hall)",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "아오토나츠",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "青と夏",
+          "reading": "아오토나츠",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 青と夏 → 아오토나츠. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "오오모리모토키",
+          "canonicalName": "大森元貴",
+          "writer": "大森元貴",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 大森元貴 → 오오모리모토키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -3030,7 +3401,7 @@
         "channels": 2,
         "durationSeconds": 313.1629375,
         "byteLength": 1911708,
-        "sha256": "6c5f7e61b111ffe9abec3e8289dc7086ec0a4fc7d7d607413b19622ebca10134"
+        "sha256": "ceeed4e776ef904920b05b37e5ec554c67fa320f2aab61d72e748326337c844c"
       },
       "aliasReviewReasons": [
         "Writer alias unresolved: 大森元貴: 한국어 통용명 또는 공식 Latin 표기와 이 일본어 이름을 직접 연결하는 구체적인 출처 페이지를 확인하지 못했습니다."
@@ -3038,7 +3409,17 @@
       "aliasReviewRequired": true,
       "reviewReasons": [],
       "namingReviewRequired": false,
-      "namingReviewReasons": []
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "아오토나츠",
+            "오오모리모토키"
+          ]
+        }
+      ]
     },
     {
       "index": 27,
@@ -3255,7 +3636,9 @@
       "tags": [
         "내일의 밤하늘 초계반",
         "ORANGESTAR",
-        "OrangestarFeatIA"
+        "OrangestarFeatIA",
+        "아스노요조라쇼카이한",
+        "오렌지스타"
       ],
       "aliases": [
         {
@@ -3269,6 +3652,25 @@
           "url": "https://www.youtube.com/watch?v=oNYa1ErkgDc",
           "quote": "Orangestar feat. IA - 내일의 밤하늘 초계반(アスノヨゾラ哨戒班) [가사/발음/해석]",
           "kind": "title"
+        },
+        {
+          "kind": "title",
+          "name": "아스노요조라쇼카이한",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "アスノヨゾラ哨戒班",
+          "reading": "아스노요조라쇼카이한",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): アスノヨゾラ哨戒班 → 아스노요조라쇼카이한. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "오렌지스타",
+          "canonicalName": "ORANGESTAR",
+          "writer": "ORANGESTAR",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): ORANGESTAR → 오렌지스타. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -3330,7 +3732,7 @@
         "channels": 2,
         "durationSeconds": 176.4976875,
         "byteLength": 1074398,
-        "sha256": "397344f3a41e5767350af389e53bc1096e73e21d72661e2423361453860ecba8"
+        "sha256": "fa071b077f1811389f434c74b17f9315f1d8690886df3fd78f4e87e52edbc91c"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
@@ -3364,7 +3766,17 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "아스노요조라쇼카이한",
+            "오렌지스타"
+          ]
+        }
+      ]
     },
     {
       "index": 30,
@@ -3386,7 +3798,8 @@
         "PPPP",
         "TAK",
         "하츠네 미쿠",
-        "피피피피"
+        "피피피피",
+        "탁"
       ],
       "aliases": [
         {
@@ -3395,6 +3808,15 @@
           "url": null,
           "origin": "user_authorized_pronunciation",
           "quote": "사용자 승인 영어 제목 일반 발음: PPPP → 피피피피 (2026-10-28). 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "탁",
+          "canonicalName": "TAK",
+          "writer": "TAK",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): TAK → 탁. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -3436,7 +3858,7 @@
         "channels": 2,
         "durationSeconds": 156.09154166666667,
         "byteLength": 945085,
-        "sha256": "16af123bcb576eb3f4a91727b550a622f6f07e90d5215745080a8cd805ab1283"
+        "sha256": "3d1bdd8ea17081f886ecb05fe435be2dc2319901b296377237eccad9bdc98523"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
@@ -3449,6 +3871,13 @@
           "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
           "addedTags": [
             "피피피피"
+          ]
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "탁"
           ]
         }
       ]
@@ -3472,7 +3901,8 @@
       "tags": [
         "사랑 감기에 실려",
         "VAUNDY",
-        "바운디"
+        "바운디",
+        "코이카제니노세테"
       ],
       "aliases": [
         {
@@ -3486,6 +3916,16 @@
           "name": "바운디",
           "url": "https://blog.naver.com/purpleblossom7418/224431752821",
           "quote": "Vaundy (바운디) - napori (나포리) [가사/ 한글 발음/한국어 번역/노래방번호] 2 개 Oh right, oh right, oh right 오- 라잇, 오- 라잇, 오- 라잇 Oh right, oh right, oh right ​ 가사번역: 퍼플블라썸 ​ # Vaundy #바운디 # napori #나포리 #Vaundynapori #바운디 napori # napori 가사 # napori 가사해석 # napori 한글 발음 # napori 한국어번역 #바운디가사 #바운디가사해석 #JPOP #제이팝 #일본노래 #일본노래가사"
+        },
+        {
+          "kind": "title",
+          "name": "코이카제니노세테",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "恋風邪にのせて",
+          "reading": "코이카제니노세테",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 恋風邪にのせて → 코이카제니노세테. 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -3525,13 +3965,22 @@
         "channels": 2,
         "durationSeconds": 301.52972916666664,
         "byteLength": 1804139,
-        "sha256": "43805330bb85dbfa3a9a816cd6a19cb7074c67883bed38b9e1de1fade4931d75"
+        "sha256": "63f85111482089d31f09e159be4c7a15228160ea18225d5972947bb90c6c5711"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
       "reviewReasons": [],
       "namingReviewRequired": false,
-      "namingReviewReasons": []
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "코이카제니노세테"
+          ]
+        }
+      ]
     },
     {
       "index": 32,
@@ -3555,7 +4004,9 @@
         "Yoru ni Kakeru",
         "AYASE",
         "요아소비",
-        "YOASOBI"
+        "YOASOBI",
+        "요루니카케루",
+        "아야세"
       ],
       "aliases": [
         {
@@ -3575,6 +4026,24 @@
           "name": "Yoru ni Kakeru",
           "url": "http://www.melon.com/album/music.htm?albumId=10437023",
           "quote": "夜に駆ける (밤을 달리다, Into The Night / Yoru ni Kakeru)"
+        },
+        {
+          "kind": "title",
+          "name": "요루니카케루",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "夜に駆ける",
+          "reading": "요루니카케루",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 夜に駆ける → 요루니카케루. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "아야세",
+          "url": "https://namu.wiki/w/Ayase",
+          "quote": "Ayase - 나무위키 일본의 작곡가이자 싱어송라이터, VOCALOID 프로듀서. 닉네임은 ' 아야세 '라고 읽는다. 본명 田(た)中(なか) 啓(けい)一(いち)郎(ろう), 타나카 케이이치로, Keiichiro Tanaka 출생 1994년 4월 4일, 야마구치현 우베시 국적 일본 신체 174cm｜A형 직업 작곡가, 작사가, 싱어송라이터, VOCALOID 프로듀서",
+          "canonicalName": "AYASE",
+          "writer": "AYASE"
         }
       ],
       "reviewRequired": false,
@@ -3614,7 +4083,7 @@
         "channels": 2,
         "durationSeconds": 261.0203125,
         "byteLength": 1598859,
-        "sha256": "a466f11cb34258455049e7877dcad692726881b3c7be32b0ccbc13f62f53c16d"
+        "sha256": "f9c77f76776e34b514315897b53da2a6cfae6b70b34c9ee44283ec17fa7fd5c4"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
@@ -3631,6 +4100,14 @@
             "요아소비"
           ],
           "reason": "Replace prior naming with independently sourced common usage"
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "요루니카케루",
+            "아야세"
+          ]
         }
       ]
     },
@@ -3652,7 +4129,8 @@
         "DAYBREAK FRONTLINE",
         "ORANGESTAR",
         "OrangestarFeatIA",
-        "데이브레이크프런트라인"
+        "데이브레이크프런트라인",
+        "오렌지스타"
       ],
       "aliases": [
         {
@@ -3661,6 +4139,15 @@
           "url": null,
           "origin": "user_authorized_pronunciation",
           "quote": "사용자 승인 영어 제목 일반 발음: DAYBREAK FRONTLINE → 데이브레이크프런트라인 (2026-10-28). 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "오렌지스타",
+          "canonicalName": "ORANGESTAR",
+          "writer": "ORANGESTAR",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): ORANGESTAR → 오렌지스타. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -3696,7 +4183,7 @@
         "channels": 2,
         "durationSeconds": 217.65925,
         "byteLength": 1334828,
-        "sha256": "776a4f547896c7300df03e32b5ed7d7a1ada169811e95cdf35d25b5f5b9b50d5"
+        "sha256": "d3a9a866a4330e5ad097accafe4d4a9983e7ddbcfe0d255087cd24754838d6d0"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
@@ -3709,6 +4196,13 @@
           "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
           "addedTags": [
             "데이브레이크프런트라인"
+          ]
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "오렌지스타"
           ]
         }
       ]
@@ -3734,7 +4228,8 @@
         "라일락",
         "미세스 그린 애플",
         "Mrs GREEN APPLE",
-        "Lilac"
+        "Lilac",
+        "오오모리모토키"
       ],
       "aliases": [
         {
@@ -3742,6 +4237,15 @@
           "url": "https://www.youtube.com/watch?v=-6xk0OH1_TM",
           "quote": "미세스 그린애플 - 댄스홀(ダンスホール, Dance Hall)",
           "kind": "singer"
+        },
+        {
+          "kind": "writer",
+          "name": "오오모리모토키",
+          "canonicalName": "大森元貴",
+          "writer": "大森元貴",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 大森元貴 → 오오모리모토키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -3783,7 +4287,7 @@
         "channels": 2,
         "durationSeconds": 303.31766666666664,
         "byteLength": 1809941,
-        "sha256": "6db98a04ac31fef14511b376a4dd742f07dd6251f77adbecc504085492b203c1"
+        "sha256": "940165cf394cb769c5ec2e814c8525015e2c1d01258f066c838e7efbd72f42fd"
       },
       "aliasReviewReasons": [
         "Writer alias unresolved: 大森元貴: 한국어 통용명 또는 공식 Latin 표기와 이 일본어 이름을 직접 연결하는 구체적인 출처 페이지를 확인하지 못했습니다."
@@ -3793,6 +4297,15 @@
       "namingReviewRequired": true,
       "namingReviewReasons": [
         "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "오오모리모토키"
+          ]
+        }
       ]
     },
     {
@@ -3814,7 +4327,8 @@
       "tags": [
         "사랑",
         "호시노 겐",
-        "Koi"
+        "Koi",
+        "코이"
       ],
       "aliases": [
         {
@@ -3842,6 +4356,16 @@
           "quote": "호시노 겐 - 사랑(恋, koi) [도망치는 것은 부끄럽지만 도움이 된다 OST/가사/발음/한글 자막/해석]",
           "url": "https://www.youtube.com/watch?v=DtqOv9aemNo",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "코이",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "恋",
+          "reading": "코이",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 恋 → 코이. 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -3902,7 +4426,7 @@
         "channels": 2,
         "durationSeconds": 250.7476875,
         "byteLength": 1532613,
-        "sha256": "459366b713e9f578280b22145c041f6dfa2432f35817cfd986a1a7e7578959e7"
+        "sha256": "5892c6b5a523605968983c8fab4c823398879014f7529d50793882152a1c81f6"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
@@ -3926,6 +4450,13 @@
             "Koi"
           ],
           "reason": "Published Korean usage verified through the user-selected Chrome session."
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "코이"
+          ]
         }
       ],
       "recordingHistory": [
@@ -3967,7 +4498,8 @@
         "Henceforth",
         "ORANGESTAR",
         "OrangestarFeatIA",
-        "헨스포스"
+        "헨스포스",
+        "오렌지스타"
       ],
       "aliases": [
         {
@@ -3976,6 +4508,15 @@
           "url": null,
           "origin": "user_authorized_pronunciation",
           "quote": "사용자 승인 영어 제목 일반 발음: Henceforth → 헨스포스 (2026-10-28). 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "오렌지스타",
+          "canonicalName": "ORANGESTAR",
+          "writer": "ORANGESTAR",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): ORANGESTAR → 오렌지스타. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -4011,7 +4552,7 @@
         "channels": 2,
         "durationSeconds": 235.81725,
         "byteLength": 1432544,
-        "sha256": "a1244930de6146a47097f3317f7deb20f080a7b496c51b209045d322ba639987"
+        "sha256": "b42cdd915a26c16d5fd7fb8ba3b4964f245b6d56b48423e5d670b90124b02fd8"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
@@ -4024,6 +4565,13 @@
           "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
           "addedTags": [
             "헨스포스"
+          ]
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "오렌지스타"
           ]
         }
       ]
@@ -4049,7 +4597,8 @@
         "Hakujitsu",
         "킹 누",
         "King Gnu",
-        "츠네타다이키"
+        "츠네타다이키",
+        "하쿠지츠"
       ],
       "aliases": [
         {
@@ -4070,6 +4619,16 @@
           "name": "백일",
           "url": "https://namu.wiki/w/%E7%99%BD%E6%97%A5",
           "quote": "곡 제목 인 ' 白日 '(백일)은"
+        },
+        {
+          "kind": "title",
+          "name": "하쿠지츠",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "白日",
+          "reading": "하쿠지츠",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 白日 → 하쿠지츠. 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -4121,13 +4680,22 @@
         "channels": 2,
         "durationSeconds": 279.47077083333335,
         "byteLength": 1684314,
-        "sha256": "e342a89cac1e94b6ea5ce52b6f3effb412f14d9f435f669751924e171e2f15e7"
+        "sha256": "abbee60cb47bbc09ddb62c50e5f1de991533f1bd09b5128bb1b824d0bfcb2dfa"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
       "reviewReasons": [],
       "namingReviewRequired": false,
-      "namingReviewReasons": []
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "하쿠지츠"
+          ]
+        }
+      ]
     },
     {
       "index": 38,
@@ -4148,7 +4716,8 @@
       "tags": [
         "당신의 연인이 되고 싶어",
         "초큐메이",
-        "Anata no Koibito ni Naritai"
+        "Anata no Koibito ni Naritai",
+        "우라라"
       ],
       "aliases": [
         {
@@ -4156,6 +4725,14 @@
           "name": "당신의 연인이 되고 싶어",
           "url": "https://m.blog.naver.com/yurihur_/224398419562",
           "quote": "貴方の恋人になりたい 당신의 연인이 되고 싶어"
+        },
+        {
+          "kind": "writer",
+          "name": "우라라",
+          "url": "https://blog.naver.com/corvus240_/223755260299",
+          "quote": "[가사번역] 미련(未恋)-초큐메이( チョ ーキ ュー メイ ) 7 개 ​ ​ <미련(未恋)> 드라마 '미련~나 홀로 숨바꼭질~(未恋〜かくれぼっちたち〜)' OP ​ ♪노래: 초큐메이( チョ ーキ ュー メイ ) ♪작사: 우라라 ( 麗 ) ♪​작곡: 우라라 ( 麗 ) ♪편곡: 초큐메이( チョ ーキ ュー メイ ) ​ ​ 未恋 아티스트 ChoQMay 발매일 2025.01.22. * 가사 * ​ 번역: 코르버스(corvus240_) ​ ※ 오역, 의역이 많을 수...",
+          "canonicalName": "麗",
+          "writer": "麗"
         }
       ],
       "reviewRequired": false,
@@ -4195,7 +4772,7 @@
         "channels": 2,
         "durationSeconds": 234.1338125,
         "byteLength": 1436317,
-        "sha256": "11d8c556c048030ddbe582e55c8d7575d1f4e3144e3988b8dd0619de6d51f61d"
+        "sha256": "2e978cebdfef4152ed0cf4992bdf75869d3a6c044609148bd5a79f4656a18e87"
       },
       "aliasReviewReasons": [
         "Writer alias unresolved: 麗: 짧고 여러 인물에 해당할 수 있는 credit이라 writer identity를 특정할 수 없어 별칭을 부여하지 않았습니다."
@@ -4212,6 +4789,13 @@
             "초큐메이"
           ],
           "reason": "Replace prior naming with independently sourced common usage"
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "우라라"
+          ]
         }
       ]
     },
@@ -4637,7 +5221,8 @@
         "내가 죽으려고 생각한 것은",
         "아마자라시",
         "amazarashi",
-        "아키타히로무"
+        "아키타히로무",
+        "보쿠가시노오토오못타노와"
       ],
       "aliases": [
         {
@@ -4652,6 +5237,16 @@
           "name": "내가 죽으려고 생각한 것은",
           "url": "https://namu.wiki/w/%E5%83%95%E3%81%8C%E6%AD%BB%E3%81%AE%E3%81%86%E3%81%A8%E6%80%9D%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%AF",
           "quote": "가사 내가 죽으려고 생각한 것은 僕 ぼく が 死"
+        },
+        {
+          "kind": "title",
+          "name": "보쿠가시노오토오못타노와",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "僕が死のうと思ったのは",
+          "reading": "보쿠가시노오토오못타노와",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 僕が死のうと思ったのは → 보쿠가시노오토오못타노와. 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -4703,7 +5298,7 @@
         "channels": 2,
         "durationSeconds": 249.991,
         "byteLength": 1505627,
-        "sha256": "56ce1b81dfd56eb67ebc0cfdc4aa1e770a3ec744677229d858d71a6ba8e41703"
+        "sha256": "507eb2414dcd45328c1d5357a4a5a68ce602bb38e5ee181c5e504d82e0cca322"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
@@ -4720,6 +5315,13 @@
             "아키타히로무"
           ],
           "reason": "Replace prior naming with independently sourced common usage"
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "보쿠가시노오토오못타노와"
+          ]
         }
       ]
     },
@@ -4836,7 +5438,9 @@
         "AYASE",
         "요아소비",
         "YOASOBI",
-        "Idol"
+        "Idol",
+        "아이도루",
+        "아야세"
       ],
       "aliases": [
         {
@@ -4844,6 +5448,24 @@
           "name": "아이돌",
           "url": "https://namu.wiki/w/%EC%95%84%EC%9D%B4%EB%8F%8C(YOASOBI)",
           "quote": "아이돌(YOASOBI)"
+        },
+        {
+          "kind": "title",
+          "name": "아이도루",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "アイドル",
+          "reading": "아이도루",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): アイドル → 아이도루. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "아야세",
+          "url": "https://namu.wiki/w/Ayase",
+          "quote": "Ayase - 나무위키 일본의 작곡가이자 싱어송라이터, VOCALOID 프로듀서. 닉네임은 ' 아야세 '라고 읽는다. 본명 田(た)中(なか) 啓(けい)一(いち)郎(ろう), 타나카 케이이치로, Keiichiro Tanaka 출생 1994년 4월 4일, 야마구치현 우베시 국적 일본 신체 174cm｜A형 직업 작곡가, 작사가, 싱어송라이터, VOCALOID 프로듀서",
+          "canonicalName": "AYASE",
+          "writer": "AYASE"
         }
       ],
       "reviewRequired": false,
@@ -4883,13 +5505,23 @@
         "channels": 2,
         "durationSeconds": 225.774625,
         "byteLength": 1334805,
-        "sha256": "a4eb625abeb93811722d6250360d4786d20c704f2459904271b8bb7654087953"
+        "sha256": "622b527c34fc54d95ec0e57422af52df43532358c8cc704dbd7a17ae66b679f6"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
       "reviewReasons": [],
       "namingReviewRequired": false,
-      "namingReviewReasons": []
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "아이도루",
+            "아야세"
+          ]
+        }
+      ]
     },
     {
       "index": 46,
@@ -4912,7 +5544,8 @@
         "YOSHIKI",
         "엑스 재팬",
         "XJAPAN",
-        "엔들리스레인"
+        "엔들리스레인",
+        "요시키"
       ],
       "aliases": [
         {
@@ -4921,6 +5554,15 @@
           "url": null,
           "origin": "user_authorized_pronunciation",
           "quote": "사용자 승인 영어 제목 일반 발음: Endless Rain → 엔들리스레인 (2026-10-28). 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "요시키",
+          "canonicalName": "YOSHIKI",
+          "writer": "YOSHIKI",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): YOSHIKI → 요시키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -4962,7 +5604,7 @@
         "channels": 2,
         "durationSeconds": 421.43758333333335,
         "byteLength": 2428754,
-        "sha256": "812201324ade3a84e5abcf8620ce4f95b1608a2949655337ee7c79399ed9156d"
+        "sha256": "c47286cd39a613b66d3151a36d3fecd5e6db9811e5304d5eaa74db1f52a31826"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
@@ -4975,6 +5617,13 @@
           "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
           "addedTags": [
             "엔들리스레인"
+          ]
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "요시키"
           ]
         }
       ]
@@ -4998,7 +5647,8 @@
       "tags": [
         "소녀A",
         "시이나모타Feat쿄우온린",
-        "시이나모타"
+        "시이나모타",
+        "쇼조에이"
       ],
       "aliases": [
         {
@@ -5013,6 +5663,16 @@
           "url": "https://www.youtube.com/watch?v=7E8sVvPkrRg",
           "quote": "[한국어 자막]시이나 모타(포와포와p) - 소녀A(少女A)",
           "kind": "title"
+        },
+        {
+          "kind": "title",
+          "name": "쇼조에이",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "少女A",
+          "reading": "쇼조에이",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 少女A → 쇼조에이. 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -5067,13 +5727,22 @@
         "channels": 2,
         "durationSeconds": 242.08664583333334,
         "byteLength": 1480972,
-        "sha256": "da56a79b640eca5628100abea1642df0ccb353f29da861c9093ecd275f64e0ca"
+        "sha256": "1fa230c77bf17044a411a745e9c4cf05a7f52536802d40c298ecc4941b457821"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
       "reviewReasons": [],
       "namingReviewRequired": false,
-      "namingReviewReasons": []
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "쇼조에이"
+          ]
+        }
+      ]
     },
     {
       "index": 48,
@@ -5095,7 +5764,9 @@
         "나는 최강",
         "OOMORI MOTOKI",
         "아도",
-        "Ado"
+        "Ado",
+        "와타시와사이쿄",
+        "오오모리모토키"
       ],
       "aliases": [
         {
@@ -5103,6 +5774,25 @@
           "name": "나는 최강",
           "url": "https://namu.wiki/w/%E7%A7%81%E3%81%AF%E6%9C%80%E5%BC%B7",
           "quote": "私 わたし は 最強 さいきょう 나는 최강"
+        },
+        {
+          "kind": "title",
+          "name": "와타시와사이쿄",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "私は最強",
+          "reading": "와타시와사이쿄",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 私は最強 → 와타시와사이쿄. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "오오모리모토키",
+          "canonicalName": "OOMORI MOTOKI",
+          "writer": "OOMORI MOTOKI",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): OOMORI MOTOKI → 오오모리모토키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -5142,7 +5832,7 @@
         "channels": 2,
         "durationSeconds": 269.9738125,
         "byteLength": 1586429,
-        "sha256": "0c0887d4cc16d743b06ffba0c1e860a7abb444601723defdeda054d1bf1387c0"
+        "sha256": "dfae5f856947ff2c67f3bc1ffc22fad731459a4efd486eef83e9d86038a5d8a8"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
@@ -5159,6 +5849,14 @@
             "아도"
           ],
           "reason": "Replace prior naming with independently sourced common usage"
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "와타시와사이쿄",
+            "오오모리모토키"
+          ]
         }
       ]
     },
@@ -5182,7 +5880,9 @@
       "tags": [
         "나라는 것",
         "미세스 그린 애플",
-        "Mrs Green Apple"
+        "Mrs Green Apple",
+        "보쿠노코토",
+        "오오모리모토키"
       ],
       "aliases": [
         {
@@ -5196,6 +5896,25 @@
           "url": "https://www.youtube.com/watch?v=-6xk0OH1_TM",
           "quote": "미세스 그린애플 - 댄스홀(ダンスホール, Dance Hall)",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "보쿠노코토",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "僕のこと",
+          "reading": "보쿠노코토",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 僕のこと → 보쿠노코토. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "오오모리모토키",
+          "canonicalName": "大森元貴",
+          "writer": "大森元貴",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 大森元貴 → 오오모리모토키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -5235,7 +5954,7 @@
         "channels": 2,
         "durationSeconds": 328.60420833333336,
         "byteLength": 1970729,
-        "sha256": "3aa6973072b5d7c40b1ecd2510435ec2d78d784bdcdc8cde6c7f576fe95b8fec"
+        "sha256": "07d1f3b1373c8249a4e97b42960926fb35e44ff7c288b63ec2f8f3f5be655e33"
       },
       "aliasReviewReasons": [
         "Writer alias unresolved: 大森元貴: 한국어 통용명 또는 공식 Latin 표기와 이 일본어 이름을 직접 연결하는 구체적인 출처 페이지를 확인하지 못했습니다."
@@ -5253,6 +5972,14 @@
             "미세스 그린 애플"
           ],
           "reason": "Replace prior naming with independently sourced common usage"
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "보쿠노코토",
+            "오오모리모토키"
+          ]
         }
       ]
     },
@@ -5278,7 +6005,8 @@
         "언라벨",
         "TK From 린토시테시구레",
         "Unravel",
-        "TK"
+        "TK",
+        "키타지마토오루"
       ],
       "aliases": [
         {
@@ -5299,6 +6027,15 @@
           "url": "https://www.youtube.com/watch?v=HDpXLS7rPcc",
           "quote": "언라벨 \"도쿄 구울\" - 티케이 from 린토시테 시구레 (unravel (\"東京喰種トーキョーグール\"OP) - TK from 凛として時雨) (KY.43825)",
           "kind": "singer"
+        },
+        {
+          "kind": "writer",
+          "name": "키타지마토오루",
+          "canonicalName": "北嶋徹",
+          "writer": "北嶋徹",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 北嶋徹 → 키타지마토오루. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -5380,7 +6117,7 @@
         "channels": 2,
         "durationSeconds": 238.59902083333333,
         "byteLength": 1449052,
-        "sha256": "e7d9222615688d28a14e7de3fa9c196a91b414b261049c3063778902896ed350"
+        "sha256": "0b44f604350838529445050fc349d3592375ea4e8f7050154bf1989745f4c3a8"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
@@ -5414,7 +6151,16 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "키타지마토오루"
+          ]
+        }
+      ]
     },
     {
       "index": 51,
@@ -5523,7 +6269,8 @@
         "취한 줄을 모르고",
         "Kanaria",
         "카나리아",
-        "KanariaFeatGUMI"
+        "KanariaFeatGUMI",
+        "요이도레시라즈"
       ],
       "aliases": [
         {
@@ -5538,6 +6285,16 @@
           "name": "카나리아",
           "url": "https://namu.wiki/w/Kanaria",
           "quote": "Kanaria カナリア | 카나리아"
+        },
+        {
+          "kind": "title",
+          "name": "요이도레시라즈",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "酔いどれ知らず",
+          "reading": "요이도레시라즈",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 酔いどれ知らず → 요이도레시라즈. 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -5577,13 +6334,22 @@
         "channels": 2,
         "durationSeconds": 134.973,
         "byteLength": 828786,
-        "sha256": "26b1ce9269215a65483c86aa87ccd85992ad61653a8c34d3dbe85cb8387fc765"
+        "sha256": "89d4743229c68a459ab8bdbaf1260a0a282b8aa48a2c1f194633e4b0411d8d71"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
       "reviewReasons": [],
       "namingReviewRequired": false,
-      "namingReviewReasons": []
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "요이도레시라즈"
+          ]
+        }
+      ]
     },
     {
       "index": 53,
@@ -5764,7 +6530,10 @@
       ],
       "tags": [
         "푸른 산호초",
-        "마츠다세이코"
+        "마츠다세이코",
+        "아오이산고쇼",
+        "미우라요시코",
+        "오다유이치로"
       ],
       "aliases": [
         {
@@ -5772,6 +6541,34 @@
           "name": "푸른 산호초",
           "url": "https://m.blog.naver.com/cocoforever5/224077971510",
           "quote": "松田聖子 - 青い珊瑚礁 마츠다 세이코- 푸른 산호초"
+        },
+        {
+          "kind": "title",
+          "name": "아오이산고쇼",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "青い珊瑚礁",
+          "reading": "아오이산고쇼",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 青い珊瑚礁 → 아오이산고쇼. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "미우라요시코",
+          "canonicalName": "三浦徳子",
+          "writer": "三浦徳子",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 三浦徳子 → 미우라요시코. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "오다유이치로",
+          "canonicalName": "小田裕一郎",
+          "writer": "小田裕一郎",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 小田裕一郎 → 오다유이치로. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -5811,7 +6608,7 @@
         "channels": 2,
         "durationSeconds": 230.407,
         "byteLength": 1371800,
-        "sha256": "9d2e8403c0112186267d939b3fd8999656c3f88f22678be3bf1e4145a29756a3"
+        "sha256": "236407cd2765dba930995ac1ef732dfb53f75d3c2f21dda4eadc1ca71293f757"
       },
       "aliasReviewReasons": [
         "Writer alias unresolved: 三浦徳子: 한국어 통용명 또는 공식 Latin 표기를 이 songwriter identity와 직접 연결하는 구체적인 출처 페이지를 확인하지 못했습니다.",
@@ -5829,6 +6626,15 @@
             "마츠다세이코"
           ],
           "reason": "Replace prior naming with independently sourced common usage"
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "아오이산고쇼",
+            "미우라요시코",
+            "오다유이치로"
+          ]
         }
       ]
     },
@@ -5975,7 +6781,8 @@
       "tags": [
         "115만 킬로의 필름",
         "오피셜 히게단디즘",
-        "후지와라사토시"
+        "후지와라사토시",
+        "햐쿠쥬고만키로노피루무"
       ],
       "aliases": [
         {
@@ -5996,6 +6803,16 @@
           "url": "https://www.youtube.com/watch?v=AWoiW4c0frE",
           "quote": "프리텐더(영화\"컨피던스 맨 제이피\") - 오피셜히게단디즘(Pretender (映画\"コンフィデンスマンJP\") - Official髭男dism)(KY.44438) / KY Karaoke",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "햐쿠쥬고만키로노피루무",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "115万キロのフィルム",
+          "reading": "햐쿠쥬고만키로노피루무",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 115万キロのフィルム → 햐쿠쥬고만키로노피루무. 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -6041,13 +6858,22 @@
         "channels": 2,
         "durationSeconds": 323.635125,
         "byteLength": 1979626,
-        "sha256": "361206460cefe48dd198bd3512583d473e9cb694223d60c879e25c67245f979a"
+        "sha256": "4c6ee8da342c483a3cdaf1749bb74e4dbbd04525bb16d8110a102674d3adf314"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
       "reviewReasons": [],
       "namingReviewRequired": false,
-      "namingReviewReasons": []
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "햐쿠쥬고만키로노피루무"
+          ]
+        }
+      ]
     },
     {
       "index": 58,
@@ -6148,7 +6974,9 @@
       ],
       "tags": [
         "좋아하니까",
-        "Suki Dakara"
+        "Suki Dakara",
+        "스키다카라",
+        "유이카"
       ],
       "aliases": [
         {
@@ -6162,6 +6990,25 @@
           "url": "https://www.youtube.com/watch?v=Qiuv7XEccT4",
           "quote": "유이카 - 좋아하니까(好きだから) [가사/발음/해석]",
           "kind": "title"
+        },
+        {
+          "kind": "title",
+          "name": "스키다카라",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "好きだから",
+          "reading": "스키다카라",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 好きだから → 스키다카라. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "유이카",
+          "canonicalName": "『ユイカ』",
+          "writer": "『ユイカ』",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 『ユイカ』 → 유이카. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -6210,7 +7057,7 @@
         "channels": 2,
         "durationSeconds": 298.3137708333333,
         "byteLength": 1821135,
-        "sha256": "54a1d0981c24d54e401a711ce1a02fabfe9676881d3e1dace7409f69bd49278a"
+        "sha256": "94dba1ab240030e8331122d6cb49c8f47517bae396a412aa2eb7907aa59ebc06"
       },
       "aliasReviewReasons": [
         "No sourced Java-valid singer answer alias currently available.",
@@ -6228,6 +7075,14 @@
             "Suki Dakara"
           ],
           "reason": "Published Korean usage verified through the user-selected Chrome session."
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "스키다카라",
+            "유이카"
+          ]
         }
       ]
     },
@@ -6252,7 +7107,8 @@
         "크리스마스송",
         "백 넘버",
         "back number",
-        "시미즈이요리"
+        "시미즈이요리",
+        "쿠리스마스송구"
       ],
       "aliases": [
         {
@@ -6273,6 +7129,16 @@
           "url": "https://www.youtube.com/watch?v=vTWnUHOf4ow",
           "quote": "Back Number - 花束(꽃다발) [꽃다발같은사랑을했다/가사해석]\n#백넘버 #꽃다발 #backnumber",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "쿠리스마스송구",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "クリスマスソング",
+          "reading": "쿠리스마스송구",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): クリスマスソング → 쿠리스마스송구. 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -6318,7 +7184,7 @@
         "channels": 2,
         "durationSeconds": 342.187875,
         "byteLength": 2084270,
-        "sha256": "0423bd3b195051b326b811ddcdd1b1942d7421445e8859783bc5eeda5dacf169"
+        "sha256": "478eb639a306e300309b2d6f5824101b9861fcb4c7d29ba931b29f0ba3f3a14a"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
@@ -6335,6 +7201,13 @@
             "시미즈이요리"
           ],
           "reason": "Replace prior naming with independently sourced common usage"
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "쿠리스마스송구"
+          ]
         }
       ]
     },
@@ -6482,7 +7355,9 @@
         "인페르노",
         "Inferno",
         "미세스 그린 애플",
-        "Mrs Green Apple"
+        "Mrs Green Apple",
+        "인페루노",
+        "오오모리모토키"
       ],
       "aliases": [
         {
@@ -6502,6 +7377,25 @@
           "url": "https://www.youtube.com/watch?v=-6xk0OH1_TM",
           "quote": "미세스 그린애플 - 댄스홀(ダンスホール, Dance Hall)",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "인페루노",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "インフェルノ",
+          "reading": "인페루노",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): インフェルノ → 인페루노. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "오오모리모토키",
+          "canonicalName": "大森元貴",
+          "writer": "大森元貴",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 大森元貴 → 오오모리모토키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -6550,7 +7444,7 @@
         "channels": 2,
         "durationSeconds": 221.235125,
         "byteLength": 1301479,
-        "sha256": "26f9af995b9e9bcd952d0d716f4b874693b7436fe83608840d23478ebea8be33"
+        "sha256": "111e2933ee52a2fdb4e67e418d2267635fec7a118ba2f78078697a9240d5a617"
       },
       "aliasReviewReasons": [
         "Writer alias unresolved: 大森元貴: 한국어 통용명 또는 공식 Latin 표기와 이 일본어 이름을 직접 연결하는 구체적인 출처 페이지를 확인하지 못했습니다."
@@ -6569,6 +7463,14 @@
             "Mrs Green Apple"
           ],
           "reason": "Published Korean usage verified through the user-selected Chrome session."
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "인페루노",
+            "오오모리모토키"
+          ]
         }
       ]
     },
@@ -6593,7 +7495,8 @@
         "로스트 원의 호곡",
         "Lost Ones Weeping",
         "NERU",
-        "카가미오토린"
+        "카가미오토린",
+        "로스트원노고코쿠"
       ],
       "aliases": [
         {
@@ -6620,6 +7523,16 @@
           "name": "네루",
           "url": "https://blog.naver.com/glsaem_hero/224437674109",
           "quote": "로스트 원의 호곡 가사 네루 Neru feat. 카가미네 린"
+        },
+        {
+          "kind": "title",
+          "name": "로스트원노고코쿠",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "ロストワンの号哭",
+          "reading": "로스트원노고코쿠",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): ロストワンの号哭 → 로스트원노고코쿠. 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -6665,13 +7578,22 @@
         "channels": 2,
         "durationSeconds": 217.83339583333333,
         "byteLength": 1335190,
-        "sha256": "37b1646aa3b231ba7312cbf3629eca95576d0402137300bfa75119efa2584676"
+        "sha256": "21fedb6052cb05b08967adb8616855aac1f3b832e82eed0970f28a7a644ef66f"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
       "reviewReasons": [],
       "namingReviewRequired": false,
-      "namingReviewReasons": []
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "로스트원노고코쿠"
+          ]
+        }
+      ]
     },
     {
       "index": 64,
@@ -6691,7 +7613,8 @@
       ],
       "tags": [
         "사랑을 전하고 싶다던가",
-        "아이묜"
+        "아이묜",
+        "아이오츠타에타이다토카"
       ],
       "aliases": [
         {
@@ -6713,6 +7636,16 @@
           "url": "https://otagara.kr/song/tj/28927",
           "quote": "マリーゴールド · 마리고루도 · あいみょん · 아이묜 · TJ 28927 · 금영 44314",
           "canonicalName": "あいみょん"
+        },
+        {
+          "kind": "title",
+          "name": "아이오츠타에타이다토카",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "愛を伝えたいだとか",
+          "reading": "아이오츠타에타이다토카",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 愛を伝えたいだとか → 아이오츠타에타이다토카. 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -6752,7 +7685,7 @@
         "channels": 2,
         "durationSeconds": 255.1943125,
         "byteLength": 1506349,
-        "sha256": "68dd4b2b4b9660e9725b0ae3175787cecc3612d19ac9d099d00ba3a35613262d"
+        "sha256": "a3afdb9064f121d248f119e5aa28810845ec116c814a6606d6b841540eb136cd"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
@@ -6767,6 +7700,13 @@
             "아이오츠타에타이다토카"
           ],
           "reason": "Replace prior naming with independently sourced common usage"
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "아이오츠타에타이다토카"
+          ]
         }
       ]
     },
@@ -6880,7 +7820,9 @@
         "샤를",
         "바룬FeatFlower",
         "balloon",
-        "Charles"
+        "Charles",
+        "샤루루",
+        "벌룬"
       ],
       "aliases": [
         {
@@ -6895,6 +7837,25 @@
           "quote": "벌룬 feat. flower - 샤를(シャルル) [가사/발음/해석]",
           "name": "샤를",
           "kind": "title"
+        },
+        {
+          "kind": "title",
+          "name": "샤루루",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "シャルル",
+          "reading": "샤루루",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): シャルル → 샤루루. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "벌룬",
+          "canonicalName": "バルーン",
+          "writer": "バルーン",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): バルーン → 벌룬. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -6949,13 +7910,23 @@
         "channels": 2,
         "durationSeconds": 228.65389583333334,
         "byteLength": 1402182,
-        "sha256": "fb1bc4e2368cb9bcec8eddd32346104ca01303e76971b4d8098b5cf4b2a3b3db"
+        "sha256": "2d5f77239a84e74b90c6b08e68d3d02df2cd1a32fcf8b5b05a91094b6efd9e82"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
       "reviewReasons": [],
       "namingReviewRequired": false,
-      "namingReviewReasons": []
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "샤루루",
+            "벌룬"
+          ]
+        }
+      ]
     },
     {
       "index": 67,
@@ -7086,7 +8057,8 @@
         "역몽",
         "킹 누",
         "King Gnu",
-        "츠네타다이키"
+        "츠네타다이키",
+        "사카유메"
       ],
       "aliases": [
         {
@@ -7101,6 +8073,16 @@
           "name": "역몽",
           "url": "https://namu.wiki/w/%EC%A3%BC%EC%88%A0%ED%9A%8C%EC%A0%84/%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98/%EC%9D%8C%EC%95%85",
           "quote": "ED 逆夢 역몽 Movie ver."
+        },
+        {
+          "kind": "title",
+          "name": "사카유메",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "逆夢",
+          "reading": "사카유메",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 逆夢 → 사카유메. 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -7146,13 +8128,22 @@
         "channels": 2,
         "durationSeconds": 319.3394375,
         "byteLength": 1887179,
-        "sha256": "d50292d89f2198afd763b92424191ae17d0d4bfee23c4e453e1c4e19219156a0"
+        "sha256": "f7ca6b724bc858f1722a5ecbd4fb7403089859413881277938b626d3e7ddb0a3"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
       "reviewReasons": [],
       "namingReviewRequired": false,
-      "namingReviewReasons": []
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "사카유메"
+          ]
+        }
+      ]
     },
     {
       "index": 69,
@@ -7396,7 +8387,8 @@
         "날아오를 때",
         "VAUNDY",
         "바운디",
-        "Fly Away"
+        "Fly Away",
+        "토부토키"
       ],
       "aliases": [
         {
@@ -7410,6 +8402,16 @@
           "name": "바운디",
           "url": "https://blog.naver.com/purpleblossom7418/224431752821",
           "quote": "Vaundy (바운디) - napori (나포리) [가사/ 한글 발음/한국어 번역/노래방번호] 2 개 Oh right, oh right, oh right 오- 라잇, 오- 라잇, 오- 라잇 Oh right, oh right, oh right ​ 가사번역: 퍼플블라썸 ​ # Vaundy #바운디 # napori #나포리 #Vaundynapori #바운디 napori # napori 가사 # napori 가사해석 # napori 한글 발음 # napori 한국어번역 #바운디가사 #바운디가사해석 #JPOP #제이팝 #일본노래 #일본노래가사"
+        },
+        {
+          "kind": "title",
+          "name": "토부토키",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "飛ぶ時",
+          "reading": "토부토키",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 飛ぶ時 → 토부토키. 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -7458,13 +8460,22 @@
         "channels": 2,
         "durationSeconds": 254.34679166666666,
         "byteLength": 1539439,
-        "sha256": "c401848d586c43b6b6622bda30b8629015f56fe1e464123b5142255da73c8ead"
+        "sha256": "b01fdbefe0406346e7d0e1d85a6aa6ad3edf4e2d412c7ac46ab4a54086ba4233"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
       "reviewReasons": [],
       "namingReviewRequired": false,
-      "namingReviewReasons": []
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "토부토키"
+          ]
+        }
+      ]
     },
     {
       "index": 72,
@@ -7601,7 +8612,8 @@
         "OOMORI MOTOKI",
         "미세스 그린 애플",
         "Mrs GREEN APPLE",
-        "Que Sera Sera"
+        "Que Sera Sera",
+        "오오모리모토키"
       ],
       "aliases": [
         {
@@ -7621,6 +8633,15 @@
           "url": "https://www.youtube.com/watch?v=-6xk0OH1_TM",
           "quote": "미세스 그린애플 - 댄스홀(ダンスホール, Dance Hall)",
           "kind": "singer"
+        },
+        {
+          "kind": "writer",
+          "name": "오오모리모토키",
+          "canonicalName": "OOMORI MOTOKI",
+          "writer": "OOMORI MOTOKI",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): OOMORI MOTOKI → 오오모리모토키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -7700,7 +8721,7 @@
         "channels": 2,
         "durationSeconds": 277.8918125,
         "byteLength": 1667400,
-        "sha256": "960bf2ac742c5577e5d6d4194c1cec6c81959308f5218feed95854fa4a2fd833"
+        "sha256": "7ef1ad320b8ee6c75b3e5564fcf90c85f15bd464db33ea8655fe42ac9003e837"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
@@ -7734,7 +8755,16 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "오오모리모토키"
+          ]
+        }
+      ]
     },
     {
       "index": 74,
@@ -7755,7 +8785,9 @@
         "숨바꼭질",
         "TKT",
         "EREN",
-        "ALIA"
+        "ALIA",
+        "카쿠렌보",
+        "티케이티"
       ],
       "aliases": [
         {
@@ -7763,6 +8795,25 @@
           "name": "숨바꼭질",
           "url": "https://m.blog.naver.com/sujeong_9651/224126551085",
           "quote": "かくれんぼ (카쿠렌보,숨바꼭질)"
+        },
+        {
+          "kind": "title",
+          "name": "카쿠렌보",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "かくれんぼ",
+          "reading": "카쿠렌보",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): かくれんぼ → 카쿠렌보. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "티케이티",
+          "canonicalName": "TKT",
+          "writer": "TKT",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): TKT → 티케이티. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -7802,13 +8853,23 @@
         "channels": 2,
         "durationSeconds": 304.0723125,
         "byteLength": 1826543,
-        "sha256": "08b0888c1fb9b0eaad4b774f998a0af49cc6d11212643efc7f53bb162c0680b4"
+        "sha256": "a18553e2e1257074b1ea0a1ba2b4eed4870797178d008de2a24f929486c19d6d"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
       "reviewReasons": [],
       "namingReviewRequired": false,
-      "namingReviewReasons": []
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "카쿠렌보",
+            "티케이티"
+          ]
+        }
+      ]
     },
     {
       "index": 75,
@@ -8059,7 +9120,8 @@
       "tags": [
         "사신",
         "Shinigami",
-        "요네즈켄시"
+        "요네즈켄시",
+        "시니가미"
       ],
       "aliases": [
         {
@@ -8139,6 +9201,16 @@
           "url": "https://www.youtube.com/watch?v=g8dyEXvKx2Y",
           "quote": "요네즈 켄시 - 피스 사인(Peace Sign)",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "시니가미",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "死神",
+          "reading": "시니가미",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 死神 → 시니가미. 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -8214,7 +9286,7 @@
         "channels": 2,
         "durationSeconds": 180.807,
         "byteLength": 1107705,
-        "sha256": "3d66d35d8fa8ac72fd6346a15d0243943d4205a67cf162634cae8a9ae3d75d31"
+        "sha256": "5218815e934a2d8b4b0c46b2ba80603e858c0fafdb82de05ce1de7f420c11948"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
@@ -8236,7 +9308,16 @@
       ],
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "시니가미"
+          ]
+        }
+      ]
     },
     {
       "index": 78,
@@ -8255,7 +9336,8 @@
       "tags": [
         "천성의 약함",
         "164",
-        "164FeatGUMI"
+        "164FeatGUMI",
+        "아마노자쿠"
       ],
       "aliases": [
         {
@@ -8263,6 +9345,16 @@
           "name": "천성의 약함",
           "url": "https://namu.wiki/w/%EC%B2%9C%EC%84%B1%EC%9D%98%20%EC%95%BD%ED%95%A8",
           "quote": "국내에 널리 알려진 '천성의 약함'이라는 번역어"
+        },
+        {
+          "kind": "title",
+          "name": "아마노자쿠",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "天ノ弱",
+          "reading": "아마노자쿠",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 天ノ弱 → 아마노자쿠. 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -8302,13 +9394,22 @@
         "channels": 2,
         "durationSeconds": 192.90679166666666,
         "byteLength": 1173119,
-        "sha256": "d4216714d0137edf08c1df4c9305c2f08a94018c6f254bffb8395e4c8ba07ba9"
+        "sha256": "8573a2e9d659383e0f59c11e88488a909686dc1b50df4bd04cd64a6415518786"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
       "reviewReasons": [],
       "namingReviewRequired": false,
-      "namingReviewReasons": []
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "아마노자쿠"
+          ]
+        }
+      ]
     },
     {
       "index": 79,
@@ -8331,7 +9432,8 @@
         "유니즌 스퀘어 가든",
         "Unison Square Garden",
         "타부치토모야",
-        "Sugar Song and Bitter Step"
+        "Sugar Song and Bitter Step",
+        "슈가송구토비타스텟푸"
       ],
       "aliases": [
         {
@@ -8346,6 +9448,16 @@
           "name": "슈가송과 비터스텝",
           "url": "https://namu.wiki/w/%E3%82%B7%E3%83%A5%E3%82%AC%E3%83%BC%E3%82%BD%E3%83%B3%E3%82%B0%E3%81%A8%E3%83%93%E3%82%BF%E3%83%BC%E3%82%B9%E3%83%86%E3%83%83%E3%83%97",
           "quote": "슈가송과 비터스텝"
+        },
+        {
+          "kind": "title",
+          "name": "슈가송구토비타스텟푸",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "シュガーソングとビターステップ",
+          "reading": "슈가송구토비타스텟푸",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): シュガーソングとビターステップ → 슈가송구토비타스텟푸. 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -8391,7 +9503,7 @@
         "channels": 2,
         "durationSeconds": 262.973,
         "byteLength": 1571925,
-        "sha256": "b63413842bdee798d8076cfbd5efe8dbd70b435bbb7d0b432635dfcd5342b67f"
+        "sha256": "a0849f4d1dd5187b1cf0419da228c0966de3b96deec66138c183fad28654558a"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
@@ -8408,6 +9520,13 @@
             "타부치토모야"
           ],
           "reason": "Replace prior naming with independently sourced common usage"
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "슈가송구토비타스텟푸"
+          ]
         }
       ]
     },
@@ -8432,7 +9551,8 @@
         "해피 엔드",
         "백 넘버",
         "back number",
-        "시미즈이요리"
+        "시미즈이요리",
+        "핫피엔도"
       ],
       "aliases": [
         {
@@ -8453,6 +9573,16 @@
           "url": "https://www.youtube.com/watch?v=vTWnUHOf4ow",
           "quote": "Back Number - 花束(꽃다발) [꽃다발같은사랑을했다/가사해석]\n#백넘버 #꽃다발 #backnumber",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "핫피엔도",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "ハッピーエンド",
+          "reading": "핫피엔도",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): ハッピーエンド → 핫피엔도. 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -8498,7 +9628,7 @@
         "channels": 2,
         "durationSeconds": 318.6660625,
         "byteLength": 1919267,
-        "sha256": "e9d424f8fb2c318d77078544fd65dae5c763e3069b2c263d362c7d2e37ca84c1"
+        "sha256": "d88c1a77e318dc2262c16e6203d11bdc9227a7742721cca1bfe75fcdf5c957d5"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
@@ -8515,6 +9645,13 @@
             "시미즈이요리"
           ],
           "reason": "Replace prior naming with independently sourced common usage"
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "핫피엔도"
+          ]
         }
       ]
     },
@@ -8538,7 +9675,9 @@
       "tags": [
         "레인",
         "Rain",
-        "시드"
+        "시드",
+        "마오",
+        "유우야"
       ],
       "aliases": [
         {
@@ -8552,6 +9691,24 @@
           "url": "https://www.youtube.com/watch?v=TEmiYkwmbSw",
           "quote": "SID - レイン(레인) [가사/발음/해석]",
           "kind": "title"
+        },
+        {
+          "kind": "writer",
+          "name": "마오",
+          "canonicalName": "マオ",
+          "writer": "マオ",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): マオ → 마오. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "유우야",
+          "canonicalName": "ゆうや",
+          "writer": "ゆうや",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): ゆうや → 유우야. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -8600,7 +9757,7 @@
         "channels": 2,
         "durationSeconds": 259.50160416666665,
         "byteLength": 1564103,
-        "sha256": "b9bbece7ec2ec391f87405d58148c07c1e02e9064358d055534c172d63d1da1a"
+        "sha256": "0818abac55d147127d6328787497f882262b935aa4df5ceccee6cabb091990b2"
       },
       "aliasReviewReasons": [
         "Writer alias unresolved: マオ: 짧은 이름이라 동명이인을 구분할 수 없고, 이 songwriter credit과 한국어명 또는 공식 Latin 표기를 직접 연결하는 페이지를 확인하지 못했습니다.",
@@ -8619,6 +9776,14 @@
             "시드"
           ],
           "reason": "Published Korean usage verified through the user-selected Chrome session."
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "마오",
+            "유우야"
+          ]
         }
       ]
     },
@@ -8643,7 +9808,8 @@
         "Zenzenzense",
         "래드윔프스",
         "RADWIMPS",
-        "노다요지로"
+        "노다요지로",
+        "젠젠젠세"
       ],
       "aliases": [
         {
@@ -8670,6 +9836,16 @@
           "name": "래드윔프스",
           "url": "https://gall.dcinside.com/mgallery/board/view/?id=shinkai2022&no=146246",
           "quote": "이번에 오케스트라도 이런 식으로 됐으면.. https://www.youtube.com/watch?v=02xysssBdJY?feature=share 너의 이름은 오프닝 아련한 장면-꿈의등불 오케스트라 ( 한글 가사) 꿈의 등불(夢灯籠)/ Dream lantern - RADWIMPS 전체를 듣고싶으신분들은 DVD및 블루레이를 구매하여 감상해주세요.`너의 이름은` 오케스트라 콘서트 - 래드윔프스 X 도쿄필하모닉본 영상은..."
+        },
+        {
+          "kind": "title",
+          "name": "젠젠젠세",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "前前前世",
+          "reading": "젠젠젠세",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 前前前世 → 젠젠젠세. 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -8716,7 +9892,7 @@
         "channels": 2,
         "durationSeconds": 292.334625,
         "byteLength": 1744865,
-        "sha256": "04233b97e08354989b73b0cb5d5d488ce88b2c0cdb65c836075f5e0307943c92"
+        "sha256": "060711d12337d64393a1dc65daa8f137479e88b9ecc4905e2439ff63bbc8f930"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
@@ -8734,6 +9910,13 @@
             "노다요지로"
           ],
           "reason": "Published Korean usage verified through the user-selected Chrome session."
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "젠젠젠세"
+          ]
         }
       ]
     },
@@ -8857,7 +10040,9 @@
         "Love Trial",
         "40MP",
         "하츠네 미쿠",
-        "Renai Saiban"
+        "Renai Saiban",
+        "렌아이사이반",
+        "사십미터피"
       ],
       "aliases": [
         {
@@ -8871,6 +10056,25 @@
           "name": "Love Trial",
           "url": "https://namu.wiki/w/%EC%97%B0%EC%95%A0%EC%9E%AC%ED%8C%90",
           "quote": " Chrono Circle의 수록곡 GROOVE COASTER의 수록곡 恋愛裁判 Love Trial | 연애재판 가수 하츠네 미쿠 작곡가 40mP 작사가 조교자 영상 제작 타마 페이지 투고일 2014년 6월 10일 달성 기록 VOCALOID 전당입성 VOCALOID 전설입성 노"
+        },
+        {
+          "kind": "title",
+          "name": "렌아이사이반",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "恋愛裁判",
+          "reading": "렌아이사이반",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 恋愛裁判 → 렌아이사이반. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "사십미터피",
+          "canonicalName": "40MP",
+          "writer": "40MP",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 40MP → 사십미터피. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -8916,13 +10120,23 @@
         "channels": 2,
         "durationSeconds": 221.74595833333333,
         "byteLength": 1357452,
-        "sha256": "922e869fb01e915ec73bff174025285c9d7829a52647593a939cecf362ca25ff"
+        "sha256": "fa02f68695679f6a70cebe87a5c3b9ad7f6ed0c7535aac45a81cd918445c580b"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
       "reviewReasons": [],
       "namingReviewRequired": false,
-      "namingReviewReasons": []
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "렌아이사이반",
+            "사십미터피"
+          ]
+        }
+      ]
     },
     {
       "index": 85,
@@ -8949,7 +10163,8 @@
         "녹황색사회",
         "나가야하루코",
         "아나미싱고",
-        "멜라"
+        "멜라",
+        "펩페"
       ],
       "aliases": [
         {
@@ -8984,6 +10199,15 @@
           "url": null,
           "origin": "user_authorized_pronunciation",
           "quote": "사용자 승인 영어 제목 일반 발음: Mela! → 멜라 (2026-10-28). 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "펩페",
+          "canonicalName": "PEPPE",
+          "writer": "PEPPE",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): PEPPE → 펩페. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -9044,7 +10268,7 @@
         "channels": 2,
         "durationSeconds": 249.923375,
         "byteLength": 1476535,
-        "sha256": "6c2b1188cd9065ba7cb2f2af4dd7e322fe4e662ca5f404a76e54ddf989d3e873"
+        "sha256": "67bef5dbe58df24b5c1c669c2174b313d9ac334f8ecd5353dad7f201b5c12e15"
       },
       "aliasReviewReasons": [
         "Writer alias unresolved: 小林壱誓: 확인된 Latin 표기 Issei Kobayashi는 허용 문자 형식에 공백을 포함하므로 출력 별칭으로 사용할 수 없습니다."
@@ -9059,6 +10283,13 @@
           "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
           "addedTags": [
             "멜라"
+          ]
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "펩페"
           ]
         }
       ]
@@ -9084,7 +10315,9 @@
         "블링뱅뱅본",
         "크리피 너츠",
         "Creepy Nuts",
-        "BlingBangBangBorn"
+        "BlingBangBangBorn",
+        "알시테이",
+        "디제이마츠나가"
       ],
       "aliases": [
         {
@@ -9098,6 +10331,24 @@
           "name": "크리피 너츠",
           "url": "https://blog.naver.com/sens_me_/224420554951",
           "quote": "TV 애니메이션 《ダンダダン(단다단)》 제1기 오프닝 테마 \"オトノケ(오토노케)\" 노래 가사 해석/ 한글 발음 이 2025년 활동을 돌아본 인터뷰에서는 ‘オトノケ(오토노케)’ 이후 Creepy Nuts (크리피 너츠)에 대한 중남미 지역의 반응이 특히 확대됐다고 분석했고, 브라질...퍼졌다는 점에서 흥미로운 사례입니다. ​ ‘オトノケ(오토노케 / Otonoke )’가 《ダンダダン(단다단)》과 특별히 잘 맞는 이유는 결국 ‘괴이’를 음악..."
+        },
+        {
+          "kind": "writer",
+          "name": "알시테이",
+          "canonicalName": "R-指定",
+          "writer": "R-指定",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): R-指定 → 알시테이. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "디제이마츠나가",
+          "canonicalName": "DJ松永",
+          "writer": "DJ松永",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): DJ松永 → 디제이마츠나가. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -9137,7 +10388,7 @@
         "channels": 2,
         "durationSeconds": 172.22941666666668,
         "byteLength": 1028712,
-        "sha256": "7824008b233bbba8a898667ed55edc7f78780cb3a2da9a48c33cdef003eefacc"
+        "sha256": "6631d7b04dee01772ed646cdde692343ad43fd08f145e7ff4a06f1fca270b49c"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
@@ -9145,6 +10396,16 @@
       "namingReviewRequired": true,
       "namingReviewReasons": [
         "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "알시테이",
+            "디제이마츠나가"
+          ]
+        }
       ]
     },
     {
@@ -9258,7 +10519,8 @@
       "tags": [
         "불가행력",
         "VAUNDY",
-        "바운디"
+        "바운디",
+        "후카코료쿠"
       ],
       "aliases": [
         {
@@ -9278,6 +10540,16 @@
           "name": "바운디",
           "url": "https://blog.naver.com/purpleblossom7418/224431752821",
           "quote": "Vaundy (바운디) - napori (나포리) [가사/ 한글 발음/한국어 번역/노래방번호] 2 개 Oh right, oh right, oh right 오- 라잇, 오- 라잇, 오- 라잇 Oh right, oh right, oh right ​ 가사번역: 퍼플블라썸 ​ # Vaundy #바운디 # napori #나포리 #Vaundynapori #바운디 napori # napori 가사 # napori 가사해석 # napori 한글 발음 # napori 한국어번역 #바운디가사 #바운디가사해석 #JPOP #제이팝 #일본노래 #일본노래가사"
+        },
+        {
+          "kind": "title",
+          "name": "후카코료쿠",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "不可幸力",
+          "reading": "후카코료쿠",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 不可幸力 → 후카코료쿠. 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -9317,13 +10589,22 @@
         "channels": 2,
         "durationSeconds": 201.01054166666665,
         "byteLength": 1218898,
-        "sha256": "711a786140e69955ac4fb8f45cba016f45177d94a418139119c96894cb24d900"
+        "sha256": "58b3add3f39065837c77e02e01386cc04ec7dc99130c963809a8bbc8a87fc300"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
       "reviewReasons": [],
       "namingReviewRequired": false,
-      "namingReviewReasons": []
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "후카코료쿠"
+          ]
+        }
+      ]
     },
     {
       "index": 89,
@@ -9346,7 +10627,9 @@
         "댄스홀",
         "미세스 그린 애플",
         "Mrs GREEN APPLE",
-        "Dance Hall"
+        "Dance Hall",
+        "단스호루",
+        "오오모리모토키"
       ],
       "aliases": [
         {
@@ -9360,6 +10643,25 @@
           "url": "https://www.youtube.com/watch?v=-6xk0OH1_TM",
           "quote": "미세스 그린애플 - 댄스홀(ダンスホール, Dance Hall)",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "단스호루",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "ダンスホール",
+          "reading": "단스호루",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): ダンスホール → 단스호루. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "오오모리모토키",
+          "canonicalName": "大森元貴",
+          "writer": "大森元貴",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 大森元貴 → 오오모리모토키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -9423,7 +10725,7 @@
         "channels": 2,
         "durationSeconds": 210.93708333333333,
         "byteLength": 1218302,
-        "sha256": "fbabd73dfb88c12dfb011043bd507b1d554430e965e2081727441b434d195e48"
+        "sha256": "c889484ba2b6401a2673cbc5cd5f210d45f82465fbbd12579b5fcc5ba02a91d9"
       },
       "aliasReviewReasons": [
         "Writer alias unresolved: 大森元貴: 한국어 통용명 또는 공식 Latin 표기와 이 일본어 이름을 직접 연결하는 구체적인 출처 페이지를 확인하지 못했습니다."
@@ -9442,6 +10744,14 @@
             "Dance Hall"
           ],
           "reason": "Published Korean usage verified through the user-selected Chrome session."
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "단스호루",
+            "오오모리모토키"
+          ]
         }
       ]
     },
@@ -9464,7 +10774,8 @@
       "tags": [
         "도쿄 플래시",
         "VAUNDY",
-        "바운디"
+        "바운디",
+        "도쿄후랏슈"
       ],
       "aliases": [
         {
@@ -9478,6 +10789,16 @@
           "name": "바운디",
           "url": "https://blog.naver.com/purpleblossom7418/224431752821",
           "quote": "Vaundy (바운디) - napori (나포리) [가사/ 한글 발음/한국어 번역/노래방번호] 2 개 Oh right, oh right, oh right 오- 라잇, 오- 라잇, 오- 라잇 Oh right, oh right, oh right ​ 가사번역: 퍼플블라썸 ​ # Vaundy #바운디 # napori #나포리 #Vaundynapori #바운디 napori # napori 가사 # napori 가사해석 # napori 한글 발음 # napori 한국어번역 #바운디가사 #바운디가사해석 #JPOP #제이팝 #일본노래 #일본노래가사"
+        },
+        {
+          "kind": "title",
+          "name": "도쿄후랏슈",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "東京フラッシュ",
+          "reading": "도쿄후랏슈",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 東京フラッシュ → 도쿄후랏슈. 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -9517,7 +10838,7 @@
         "channels": 2,
         "durationSeconds": 262.0209791666667,
         "byteLength": 1577389,
-        "sha256": "4c27fd4f652aef5eddd48b34cc97a4d44b90545e65440d6d85cfa87103409216"
+        "sha256": "73d9190869c66ca5324ba09826431adaa48f0783b70dcec14cf8cea9504ef7ff"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
@@ -9534,6 +10855,13 @@
             "바운디"
           ],
           "reason": "Replace prior naming with independently sourced common usage"
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "도쿄후랏슈"
+          ]
         }
       ]
     },
@@ -9654,7 +10982,9 @@
       "tags": [
         "마음탓",
         "PAPIYON",
-        "초우초우PFeatGUMI"
+        "초우초우PFeatGUMI",
+        "코코로나시",
+        "파피용"
       ],
       "aliases": [
         {
@@ -9662,6 +10992,25 @@
           "name": "마음탓",
           "url": "https://namu.wiki/w/%EB%A7%88%EC%9D%8C%ED%83%93",
           "quote": "마음탓 心做し 은 쵸쵸P가 작사·작곡"
+        },
+        {
+          "kind": "title",
+          "name": "코코로나시",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "心做し",
+          "reading": "코코로나시",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 心做し → 코코로나시. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "파피용",
+          "canonicalName": "PAPIYON",
+          "writer": "PAPIYON",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): PAPIYON → 파피용. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -9701,13 +11050,23 @@
         "channels": 2,
         "durationSeconds": 268.6851041666667,
         "byteLength": 1640970,
-        "sha256": "24f97209cb9973ea1427595f4dd9b26449ec77c6320b60933b9b81f027c50fd2"
+        "sha256": "01ede444b3205e147c06b38a91bd464cd7459aed54f90936065da0607781969a"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
       "reviewReasons": [],
       "namingReviewRequired": false,
-      "namingReviewReasons": []
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "코코로나시",
+            "파피용"
+          ]
+        }
+      ]
     },
     {
       "index": 93,
@@ -9730,7 +11089,8 @@
         "악의 하인",
         "Servant of Evil",
         "mothy",
-        "카가미오토렌"
+        "카가미오토렌",
+        "아쿠노메시츠카이"
       ],
       "aliases": [
         {
@@ -9751,6 +11111,16 @@
           "name": "악의P",
           "url": "https://namu.wiki/w/mothy",
           "quote": "VOCALOID 프로듀서 mothy_악의P"
+        },
+        {
+          "kind": "title",
+          "name": "아쿠노메시츠카이",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "悪ノ召使",
+          "reading": "아쿠노메시츠카이",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 悪ノ召使 → 아쿠노메시츠카이. 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -9796,13 +11166,22 @@
         "channels": 2,
         "durationSeconds": 310.0630625,
         "byteLength": 1891818,
-        "sha256": "ecfbae6bd6244e4ac4bfc5a258fda04654ae8e77964e3645fb44d9381ff07b97"
+        "sha256": "19e56cde6586e94ab3a94a928c8f7738da255e2a2c1886af0de4984234bb51b6"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
       "reviewReasons": [],
       "namingReviewRequired": false,
-      "namingReviewReasons": []
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "아쿠노메시츠카이"
+          ]
+        }
+      ]
     },
     {
       "index": 94,
@@ -9907,9 +11286,30 @@
         "MOMIKEN",
         "UZ",
         "스파이에어",
-        "SPYAIR"
+        "SPYAIR",
+        "모미켄",
+        "유지"
       ],
-      "aliases": [],
+      "aliases": [
+        {
+          "kind": "writer",
+          "name": "모미켄",
+          "canonicalName": "MOMIKEN",
+          "writer": "MOMIKEN",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): MOMIKEN → 모미켄. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "유지",
+          "canonicalName": "UZ",
+          "writer": "UZ",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): UZ → 유지. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
       "reviewRequired": false,
       "reviewNotes": [],
       "evidence": [
@@ -9949,7 +11349,7 @@
         "channels": 2,
         "durationSeconds": 236.24683333333334,
         "byteLength": 1414716,
-        "sha256": "6faeeffcec8e655320e66ea3bbc532aea4bde5e7f3430d51d7346a103b66d95e"
+        "sha256": "900dc35314305d2e3439beceae2c1040bff397dac5e6ac4c2581cbfaf43e34f9"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
@@ -9957,6 +11357,16 @@
       "namingReviewRequired": true,
       "namingReviewReasons": [
         "No independent source confirmed a common Korean title; the existing readable display label is retained for review."
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "모미켄",
+            "유지"
+          ]
+        }
       ]
     },
     {
@@ -9978,7 +11388,8 @@
       "tags": [
         "미키토P",
         "소녀 레이",
-        "하츠네 미쿠"
+        "하츠네 미쿠",
+        "쇼조레이"
       ],
       "aliases": [
         {
@@ -9994,6 +11405,16 @@
           "canonicalName": "みきとP",
           "kind": "writer",
           "writer": "みきとP"
+        },
+        {
+          "kind": "title",
+          "name": "쇼조레이",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "少女レイ",
+          "reading": "쇼조 레이",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 少女レイ → 쇼조레이. 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -10034,13 +11455,22 @@
         "channels": 2,
         "durationSeconds": 289.641125,
         "byteLength": 1770720,
-        "sha256": "ce0b75a2780a7d759fb6f8273ec39e9bb5675edf5bd338920155930efca00bc9"
+        "sha256": "de4ff0e45e20ac08ea90622232fe0bc62c947a568d8a0e9726dd365f00f39398"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
       "reviewReasons": [],
       "namingReviewRequired": false,
-      "namingReviewReasons": []
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "쇼조레이"
+          ]
+        }
+      ]
     },
     {
       "index": 97,
@@ -10063,7 +11493,9 @@
         "커튼콜",
         "유우리",
         "CHIMERAZ",
-        "Curtain Call"
+        "Curtain Call",
+        "카텐코루",
+        "키메라즈"
       ],
       "aliases": [
         {
@@ -10112,6 +11544,25 @@
           "url": "https://www.youtube.com/watch?v=bkVp-B-wDH4",
           "quote": "유우리 - 베텔기우스(BETELGEUSE)",
           "kind": "singer"
+        },
+        {
+          "kind": "title",
+          "name": "카텐코루",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "カーテンコール",
+          "reading": "카텐코루",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): カーテンコール → 카텐코루. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "키메라즈",
+          "canonicalName": "ＣＨＩＭＥＲＡＺ",
+          "writer": "ＣＨＩＭＥＲＡＺ",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): ＣＨＩＭＥＲＡＺ → 키메라즈. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -10166,13 +11617,23 @@
         "channels": 2,
         "durationSeconds": 245.7205625,
         "byteLength": 1487254,
-        "sha256": "826e44ee90253ab565935e2dc5cdaa29e7c21a66bf3de3cdfdd2984ea0646eac"
+        "sha256": "86e01d2e8eb6e35dcfad0c46ef7edf9f69c36edea6e4a1c128000c4952c3954d"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
       "reviewReasons": [],
       "namingReviewRequired": false,
-      "namingReviewReasons": []
+      "namingReviewReasons": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "카텐코루",
+            "키메라즈"
+          ]
+        }
+      ]
     },
     {
       "index": 98,
@@ -10363,7 +11824,8 @@
         "벌거벗은 용사",
         "Hadaka No Yusha",
         "VAUNDY",
-        "바운디"
+        "바운디",
+        "하다카노유샤"
       ],
       "aliases": [
         {
@@ -10389,6 +11851,16 @@
           "name": "바운디",
           "url": "https://blog.naver.com/purpleblossom7418/224431752821",
           "quote": "Vaundy (바운디) - napori (나포리) [가사/ 한글 발음/한국어 번역/노래방번호] 2 개 Oh right, oh right, oh right 오- 라잇, 오- 라잇, 오- 라잇 Oh right, oh right, oh right ​ 가사번역: 퍼플블라썸 ​ # Vaundy #바운디 # napori #나포리 #Vaundynapori #바운디 napori # napori 가사 # napori 가사해석 # napori 한글 발음 # napori 한국어번역 #바운디가사 #바운디가사해석 #JPOP #제이팝 #일본노래 #일본노래가사"
+        },
+        {
+          "kind": "title",
+          "name": "하다카노유샤",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "裸の勇者",
+          "reading": "하다카노유샤",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 裸の勇者 → 하다카노유샤. 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -10434,7 +11906,7 @@
         "channels": 2,
         "durationSeconds": 200.55775,
         "byteLength": 1223814,
-        "sha256": "55c963e8efb61e9dd5f69f25be9e91f31bef49c6cb5f987018c4b0a3358a5f22"
+        "sha256": "9a42a4983a958567b48c66f876da3f116d53e74e52a3a2f2a97feba63c23c7d9"
       },
       "aliasReviewReasons": [],
       "aliasReviewRequired": false,
@@ -10451,6 +11923,13 @@
             "바운디"
           ],
           "reason": "Replace prior naming with independently sourced common usage"
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "하다카노유샤"
+          ]
         }
       ]
     },

@@ -471,5 +471,111 @@
       "previousNamingReasons": [],
       "namingReviewReasons": []
     }
+  ],
+  "japanesePronunciationAndWriterChanges": [
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 52,
+      "id": "7a29be87-68c8-5bdb-a50e-c987e44febe0",
+      "title": "만찬가",
+      "previousTags": [
+        "이스란",
+        "TUKI",
+        "태연"
+      ],
+      "tags": [
+        "이스란",
+        "TUKI",
+        "태연",
+        "츠키"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "츠키",
+          "canonicalName": "TUKI.",
+          "writer": "TUKI.",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): TUKI. → 츠키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [],
+      "reviewRequired": false
+    },
+    {
+      "catalogue": "tj-261027-domestic",
+      "index": 71,
+      "id": "f1813de4-12e5-5a5f-b1f1-0181d3b90b4d",
+      "title": "REDRED",
+      "previousTags": [
+        "마틴",
+        "제임스",
+        "코르티스",
+        "SUPREME BOI",
+        "HISS NOISE",
+        "JAMES",
+        "성현",
+        "주훈",
+        "건호",
+        "레드레드"
+      ],
+      "tags": [
+        "마틴",
+        "제임스",
+        "코르티스",
+        "성현",
+        "주훈",
+        "건호",
+        "레드레드",
+        "슈프림보이",
+        "히스노이즈",
+        "방시혁"
+      ],
+      "addedAliases": [
+        {
+          "kind": "writer",
+          "name": "슈프림보이",
+          "canonicalName": "SUPREME BOI",
+          "writer": "SUPREME BOI",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): SUPREME BOI → 슈프림보이. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "히스노이즈",
+          "canonicalName": "HISS NOISE",
+          "writer": "HISS NOISE",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): HISS NOISE → 히스노이즈. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "방시혁",
+          "canonicalName": "HITMAN BANG",
+          "writer": "HITMAN BANG",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): HITMAN BANG → 방시혁. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        }
+      ],
+      "retiredRedundantTags": [
+        {
+          "tag": "SUPREME BOI",
+          "reason": "Title accepted separately or writer represented by the new Korean tag; original credits retained."
+        },
+        {
+          "tag": "HISS NOISE",
+          "reason": "Title accepted separately or writer represented by the new Korean tag; original credits retained."
+        },
+        {
+          "tag": "JAMES",
+          "reason": "Keep existing Korean writer tag 제임스 and use the spare slot for 방시혁; original credit preserved."
+        }
+      ],
+      "reviewRequired": false
+    }
   ]
 }

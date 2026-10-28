@@ -6329,8 +6329,8 @@
       "playable": 541,
       "downloaded": 557,
       "reviewRequired": 24,
-      "namingReviewRequired": 2,
-      "selectedNamingReviewRequired": 2,
+      "namingReviewRequired": 1,
+      "selectedNamingReviewRequired": 1,
       "audioSourceReviewRequired": 0,
       "audioBytes": 756489152
     },
@@ -6342,7 +6342,7 @@
       "playable": 252,
       "downloaded": 288,
       "reviewRequired": 37,
-      "namingReviewRequired": 12,
+      "namingReviewRequired": 4,
       "selectedNamingReviewRequired": 0,
       "audioSourceReviewRequired": 3,
       "audioBytes": 387040525
@@ -6352,5 +6352,10 @@
     "date": "2026-10-28",
     "record": "korean-pronunciation-20261028.json",
     "note": "Current naming flags and tags include user-authorized conventional English-title pronunciations; the search evidence above remains unchanged."
+  },
+  "latestJapanesePronunciationUpdate": {
+    "date": "2026-10-29",
+    "record": "japanese-pronunciation-writers-20261029.json",
+    "note": "Current tags include user-requested Japanese readings and Korean writer names. Earlier search evidence remains unchanged."
   }
 }

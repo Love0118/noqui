@@ -169,13 +169,14 @@
       "tags": [
         "크립",
         "라디오헤드",
-        "Creep",
         "Radiohead",
         "Colin Greenwood",
         "Jonny Greenwood",
-        "Ed Obrien",
-        "Phil Selway",
-        "Thom Yorke"
+        "콜린그린우드",
+        "조니그린우드",
+        "에드오브라이언",
+        "필셀웨이",
+        "톰요크"
       ],
       "aliases": [
         {
@@ -195,6 +196,51 @@
           "url": "https://www.youtube.com/watch?v=CiCU2nZhuJY",
           "quote": "6위: 라디오헤드 - 크립: 영어가사, 한글가사, 한글발음 (Radiohead - Creep)",
           "kind": "singer"
+        },
+        {
+          "kind": "writer",
+          "name": "콜린그린우드",
+          "canonicalName": "Colin Greenwood",
+          "writer": "Colin Greenwood",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Colin Greenwood → 콜린그린우드. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "조니그린우드",
+          "canonicalName": "Jonny Greenwood",
+          "writer": "Jonny Greenwood",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Jonny Greenwood → 조니그린우드. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "에드오브라이언",
+          "canonicalName": "Ed Obrien",
+          "writer": "Ed Obrien",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Ed Obrien → 에드오브라이언. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "필셀웨이",
+          "canonicalName": "Phil Selway",
+          "writer": "Phil Selway",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Phil Selway → 필셀웨이. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "톰요크",
+          "canonicalName": "Thom Yorke",
+          "writer": "Thom Yorke",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Thom Yorke → 톰요크. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -229,7 +275,7 @@
         "sampleRate": 48000,
         "durationSeconds": 236.537,
         "byteLength": 1447438,
-        "sha256": "7bd9132d574236b3e8cc3a0f9de10ebd0df55562d272ddd67f951c33e506bb44"
+        "sha256": "0772b1989e1f59ff4a5d32fc9d6c2448ca3e8b4cef5b1ffd82ed3fb7c49d5d48"
       },
       "sourceTitle": "Creep",
       "rawChartWriterCredit": {
@@ -243,6 +289,19 @@
       "namingReviewReasons": [],
       "singerAliases": [
         "라디오헤드"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "콜린그린우드",
+            "조니그린우드",
+            "에드오브라이언",
+            "필셀웨이",
+            "톰요크"
+          ]
+        }
       ]
     },
     {
@@ -261,7 +320,8 @@
         "Dont Look Back In Anger",
         "Oasis",
         "Noel Gallagher",
-        "돈룩백인앵거"
+        "돈룩백인앵거",
+        "노엘갤러거"
       ],
       "aliases": [
         {
@@ -276,6 +336,15 @@
           "url": null,
           "origin": "user_authorized_pronunciation",
           "quote": "사용자 승인 영어 제목 일반 발음: Don't Look Back In Anger → 돈룩백인앵거 (2026-10-28). 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "노엘갤러거",
+          "canonicalName": "Noel Gallagher",
+          "writer": "Noel Gallagher",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Noel Gallagher → 노엘갤러거. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -311,7 +380,7 @@
         "sampleRate": 48000,
         "durationSeconds": 289.567,
         "byteLength": 1777286,
-        "sha256": "0c3fe650f4bc5c12bec2d5aed2bedf228aa7fcdbb0df1dbd63b74e785ff5cb8c"
+        "sha256": "2c183cb6ca5691f8facf76d4077cabb6779e6e50660984642032d470e040b178"
       },
       "sourceTitle": "Don't Look Back In Anger",
       "rawChartWriterCredit": {
@@ -332,6 +401,13 @@
           "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
           "addedTags": [
             "돈룩백인앵거"
+          ]
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "노엘갤러거"
           ]
         }
       ]
@@ -709,7 +785,8 @@
       "tags": [
         "Love Story",
         "Taylor Swift",
-        "러브스토리"
+        "러브스토리",
+        "테일러스위프트"
       ],
       "aliases": [
         {
@@ -724,6 +801,15 @@
           "url": null,
           "origin": "user_authorized_pronunciation",
           "quote": "사용자 승인 영어 제목 일반 발음: Love Story → 러브스토리 (2026-10-28). 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "테일러스위프트",
+          "canonicalName": "Taylor Swift",
+          "writer": "Taylor Swift",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Taylor Swift → 테일러스위프트. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -759,7 +845,7 @@
         "sampleRate": 48000,
         "durationSeconds": 236.502,
         "byteLength": 1444980,
-        "sha256": "f341c62c3953b3d7c7db668fe1e0f7d09676d668bbda7e7c700c4c48b1b438cb"
+        "sha256": "93222998106d240827c95b0599f24d12d689c0e23ad012b5b99e7fec9d8b0f2e"
       },
       "sourceTitle": "Love Story",
       "rawChartWriterCredit": {
@@ -780,6 +866,13 @@
           "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
           "addedTags": [
             "러브스토리"
+          ]
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "테일러스위프트"
           ]
         }
       ]
@@ -1167,7 +1260,6 @@
         "City Spud"
       ],
       "tags": [
-        "2002",
         "AnneMarie",
         "앤 마리",
         "Benjamin Levin",
@@ -1176,7 +1268,8 @@
         "Edward Christopher Sheeran",
         "AnneMarie Nicholson",
         "Andreas Carlsson",
-        "George Clinton"
+        "George Clinton",
+        "에드시런"
       ],
       "aliases": [
         {
@@ -1190,6 +1283,15 @@
           "name": "앤 마리",
           "url": "https://www.youtube.com/watch?v=Sd-rXGQ1PIQ",
           "quote": "[ALLIVE] Anne-Marie(앤 마리) - 2002 외 1곡 | MBC"
+        },
+        {
+          "kind": "writer",
+          "name": "에드시런",
+          "canonicalName": "Edward Christopher Sheeran",
+          "writer": "Edward Christopher Sheeran",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Edward Christopher Sheeran → 에드시런. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -1237,7 +1339,7 @@
         "sampleRate": 48000,
         "durationSeconds": 186.802,
         "byteLength": 1144891,
-        "sha256": "73687b42f4558bb42f7de696f53e38751f58d67cdc3654e03ed7354d3ddb8885"
+        "sha256": "4adaf69f0c3632071756bcf176f99c5aa6e684f77e51a403ce505579ab8d82d7"
       },
       "sourceTitle": "2002",
       "rawChartWriterCredit": {
@@ -1253,6 +1355,15 @@
       ],
       "singerAliases": [
         "앤 마리"
+      ],
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "에드시런"
+          ]
+        }
       ]
     },
     {
@@ -2108,7 +2219,8 @@
         "SAVAN KOTECHA",
         "MAX MARTIN",
         "NICKI MINAJ",
-        "뷰티앤어비트"
+        "뷰티앤어비트",
+        "제드"
       ],
       "aliases": [
         {
@@ -2130,6 +2242,15 @@
           "url": null,
           "origin": "user_authorized_pronunciation",
           "quote": "사용자 승인 영어 제목 일반 발음: Beauty And A Beat → 뷰티앤어비트 (2026-10-28). 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "제드",
+          "canonicalName": "ZEDD",
+          "writer": "ZEDD",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): ZEDD → 제드. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -2165,7 +2286,7 @@
         "sampleRate": 48000,
         "durationSeconds": 228.329,
         "byteLength": 1397742,
-        "sha256": "3a948e36612a3a431bd923286ce9207befd484798b0dfa4541def40581dc9248"
+        "sha256": "3eca8c373574cd9afa40e140b11831f12c05de1396d1fa6e3bd786497793a041"
       },
       "sourceTitle": "Beauty And A Beat",
       "rawChartWriterCredit": {
@@ -2186,6 +2307,13 @@
           "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
           "addedTags": [
             "뷰티앤어비트"
+          ]
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "제드"
           ]
         }
       ]
@@ -2564,7 +2692,9 @@
         "Justin Bieber",
         "ED SHEERAN",
         "BENNY BLANCO",
-        "러브유어셀프"
+        "러브유어셀프",
+        "에드시런",
+        "베니블랑코"
       ],
       "aliases": [
         {
@@ -2604,6 +2734,24 @@
           "url": null,
           "origin": "user_authorized_pronunciation",
           "quote": "사용자 승인 영어 제목 일반 발음: Love Yourself → 러브유어셀프 (2026-10-28). 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "에드시런",
+          "canonicalName": "ED SHEERAN",
+          "writer": "ED SHEERAN",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): ED SHEERAN → 에드시런. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "베니블랑코",
+          "canonicalName": "BENNY BLANCO",
+          "writer": "BENNY BLANCO",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): BENNY BLANCO → 베니블랑코. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -2646,7 +2794,7 @@
         "sampleRate": 48000,
         "durationSeconds": 272.226,
         "byteLength": 1497104,
-        "sha256": "d9a4c11496096047eb9d0a5c04a5dba18e36c3fc7fb369dd154dc47b5ea0c99c"
+        "sha256": "d88cb75c59c8857860c7e8613aa77e0fa81c1e5aa59121042c97d4a06369f7ff"
       },
       "sourceTitle": "Love Yourself",
       "rawChartWriterCredit": {
@@ -2667,6 +2815,14 @@
           "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
           "addedTags": [
             "러브유어셀프"
+          ]
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "에드시런",
+            "베니블랑코"
           ]
         }
       ]
@@ -3100,13 +3256,16 @@
         "Chris Martin"
       ],
       "tags": [
-        "Viva La Vida",
         "Coldplay",
         "Guy Berryman",
         "Jon Buckland",
         "Will Champion",
         "Chris Martin",
-        "비바라비다"
+        "비바라비다",
+        "가이버리먼",
+        "존버클랜드",
+        "윌챔피언",
+        "크리스마틴"
       ],
       "aliases": [
         {
@@ -3121,6 +3280,42 @@
           "url": null,
           "origin": "user_authorized_pronunciation",
           "quote": "사용자 승인 영어 제목 일반 발음: Viva La Vida → 비바라비다 (2026-10-28). 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "가이버리먼",
+          "canonicalName": "Guy Berryman",
+          "writer": "Guy Berryman",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Guy Berryman → 가이버리먼. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "존버클랜드",
+          "canonicalName": "Jon Buckland",
+          "writer": "Jon Buckland",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Jon Buckland → 존버클랜드. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "윌챔피언",
+          "canonicalName": "Will Champion",
+          "writer": "Will Champion",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Will Champion → 윌챔피언. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "크리스마틴",
+          "canonicalName": "Chris Martin",
+          "writer": "Chris Martin",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Chris Martin → 크리스마틴. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -3162,7 +3357,7 @@
         "channels": 2,
         "durationSeconds": 242.78325,
         "byteLength": 1483018,
-        "sha256": "f5f957f6c2ef07dc7c21727e967cc08269918899ed8932ce4ff53f3fd0ef8490"
+        "sha256": "d5434d447f3e8eb49b3a826ddf45ab4aa97c6848f12ee85dad2d827218f087fd"
       },
       "sourceTitle": "Viva La Vida",
       "rawChartWriterCredit": {
@@ -3212,6 +3407,16 @@
           "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
           "addedTags": [
             "비바라비다"
+          ]
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "가이버리먼",
+            "존버클랜드",
+            "윌챔피언",
+            "크리스마틴"
           ]
         }
       ]
@@ -3470,14 +3675,14 @@
       "tags": [
         "Imagine Dragons",
         "이매진 드래곤스",
-        "Dan Reynolds",
-        "Wayne Sermon",
-        "Ben McKee",
-        "Daniel Platzman",
         "Alex da Kid",
         "Robin Fredriksson",
         "Mattias Larsson",
-        "빌리버"
+        "빌리버",
+        "댄레이놀즈",
+        "웨인서먼",
+        "벤맥키",
+        "대니얼플라츠먼"
       ],
       "aliases": [
         {
@@ -3498,6 +3703,42 @@
           "url": null,
           "origin": "user_authorized_pronunciation",
           "quote": "사용자 승인 영어 제목 일반 발음: Believer → 빌리버 (2026-10-28). 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "댄레이놀즈",
+          "canonicalName": "Dan Reynolds",
+          "writer": "Dan Reynolds",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Dan Reynolds → 댄레이놀즈. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "웨인서먼",
+          "canonicalName": "Wayne Sermon",
+          "writer": "Wayne Sermon",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Wayne Sermon → 웨인서먼. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "벤맥키",
+          "canonicalName": "Ben McKee",
+          "writer": "Ben McKee",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Ben McKee → 벤맥키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "대니얼플라츠먼",
+          "canonicalName": "Daniel Platzman",
+          "writer": "Daniel Platzman",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Daniel Platzman → 대니얼플라츠먼. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": true,
@@ -3545,7 +3786,7 @@
         "sampleRate": 48000,
         "durationSeconds": 202.822,
         "byteLength": 1244635,
-        "sha256": "ff4a88f8690d066cef5a32a90764566b226301cf46b5ed8f56760526220eccc0"
+        "sha256": "b5b8a739a6a5a9c5a54c9f310748610a9819f7e55548b9586518523f80ca4067"
       },
       "sourceTitle": "Believer",
       "rawChartWriterCredit": {
@@ -3568,6 +3809,16 @@
           "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
           "addedTags": [
             "빌리버"
+          ]
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "댄레이놀즈",
+            "웨인서먼",
+            "벤맥키",
+            "대니얼플라츠먼"
           ]
         }
       ]
@@ -3699,7 +3950,6 @@
       ],
       "tags": [
         "마룬 5",
-        "Payphone",
         "Maroon 5FeatWiz Khalifa",
         "LEVIN BENJAMIN",
         "LEVINE ADAM",
@@ -3707,7 +3957,8 @@
         "OMELIO DAN",
         "SCHUSTER JOHAN KARL",
         "THOMAZ CAMERON",
-        "페이폰"
+        "페이폰",
+        "위즈칼리파"
       ],
       "aliases": [
         {
@@ -3729,6 +3980,15 @@
           "url": null,
           "origin": "user_authorized_pronunciation",
           "quote": "사용자 승인 영어 제목 일반 발음: Payphone → 페이폰 (2026-10-28). 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "위즈칼리파",
+          "canonicalName": "THOMAZ CAMERON",
+          "writer": "THOMAZ CAMERON",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): THOMAZ CAMERON → 위즈칼리파. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -3769,7 +4029,7 @@
         "channels": 2,
         "durationSeconds": 232.327,
         "byteLength": 1422617,
-        "sha256": "4591e6d129ca851d65888099aeb2521d0b906bc259a13553f7f27e272502e01b"
+        "sha256": "dd7ae8182ff5bdac670ea13fdcac402a508c0a52697113d4175b06d08f5a52d2"
       },
       "sourceTitle": "Payphone",
       "rawChartWriterCredit": {
@@ -3811,6 +4071,13 @@
           "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
           "addedTags": [
             "페이폰"
+          ]
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "위즈칼리파"
           ]
         }
       ]
@@ -3951,10 +4218,10 @@
         "더 키드 라로이",
         "Charlton Howard",
         "Magnus Hiberg",
-        "Charlie Puth",
         "Omer Fedi",
         "Blake Slatkin",
-        "스테이"
+        "스테이",
+        "찰리푸스"
       ],
       "aliases": [
         {
@@ -3982,6 +4249,15 @@
           "url": null,
           "origin": "user_authorized_pronunciation",
           "quote": "사용자 승인 영어 제목 일반 발음: Stay → 스테이 (2026-10-28). 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "찰리푸스",
+          "canonicalName": "Charlie Puth",
+          "writer": "Charlie Puth",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Charlie Puth → 찰리푸스. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -4040,7 +4316,7 @@
         "channels": 2,
         "durationSeconds": 141.81277083333333,
         "byteLength": 866435,
-        "sha256": "d358c705421114825794d50fc715ea2327e0aeb5303c6f8494f0c6599ca8e9be"
+        "sha256": "5d0b15fdc5d1f027b1769467419855ab71111af97f2630e10b1f3037c714d9a5"
       },
       "sourceTitle": "Stay",
       "rawChartWriterCredit": {
@@ -4083,6 +4359,13 @@
           "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
           "addedTags": [
             "스테이"
+          ]
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "찰리푸스"
           ]
         }
       ]
@@ -4291,7 +4574,8 @@
         "퀸",
         "Bohemian Rhapsody",
         "Queen",
-        "Freddie Mercury"
+        "Freddie Mercury",
+        "프레디머큐리"
       ],
       "aliases": [
         {
@@ -4311,6 +4595,15 @@
           "url": "https://www.youtube.com/watch?v=SEKB7DTsFz8",
           "quote": "Queen - Bohemian Rhapsody(가사/번역)\n작년에 나온 보헤미안 랩소디때문에 퀸을 몰랐던 사람들도 영화를통해서 퀸의 노래를 접할 기회가 늘었다는 것에 정말 고무됩니다.",
           "kind": "singer"
+        },
+        {
+          "kind": "writer",
+          "name": "프레디머큐리",
+          "canonicalName": "Freddie Mercury",
+          "writer": "Freddie Mercury",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Freddie Mercury → 프레디머큐리. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -4357,7 +4650,7 @@
         "channels": 2,
         "durationSeconds": 355.0749375,
         "byteLength": 2177869,
-        "sha256": "acbc0afbac3fcfbe19c14acdfb889cefc7f520061e763998f0d6a50e828c98bd"
+        "sha256": "6fec9053395aaa2aee8baa09437bd3839c75d886c0298ed64b648b8cdb27c01e"
       },
       "sourceTitle": "Bohemian Rhapsody",
       "rawChartWriterCredit": {
@@ -4400,7 +4693,16 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "프레디머큐리"
+          ]
+        }
+      ]
     },
     {
       "index": 38,
@@ -6774,13 +7076,13 @@
         "포스트 말론",
         "Post Malone",
         "Swae Lee",
-        "BROWN KHALIF",
         "WILLIAM WALSH",
         "CARTER LANG",
         "CARL AUSTIN ROSEN",
         "LOUIS BELL",
         "AUSTIN POST",
-        "선플라워"
+        "선플라워",
+        "스웨이리"
       ],
       "aliases": [
         {
@@ -6802,6 +7104,15 @@
           "url": null,
           "origin": "user_authorized_pronunciation",
           "quote": "사용자 승인 영어 제목 일반 발음: Sunflower → 선플라워 (2026-10-28). 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "스웨이리",
+          "canonicalName": "BROWN KHALIF",
+          "writer": "BROWN KHALIF",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): BROWN KHALIF → 스웨이리. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -6837,7 +7148,7 @@
         "sampleRate": 48000,
         "durationSeconds": 161.676,
         "byteLength": 973624,
-        "sha256": "d0ff07bcca235abf23487a2dc30f22fd7bb9dc41a35e1de82cf78cc82639343d"
+        "sha256": "278bde77320cb158498aca4b5bda3fa11ee2a7ace5941fc4f7e0aecb74b11abe"
       },
       "sourceTitle": "Sunflower(Spider-Man: Into the Spider-Verse OST)",
       "rawChartWriterCredit": {
@@ -6870,6 +7181,13 @@
           "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
           "addedTags": [
             "선플라워"
+          ]
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "스웨이리"
           ]
         }
       ],
@@ -7207,7 +7525,8 @@
         "원더월",
         "Wonderwall",
         "Oasis",
-        "Noel Gallagher"
+        "Noel Gallagher",
+        "노엘갤러거"
       ],
       "aliases": [
         {
@@ -7221,6 +7540,15 @@
           "url": "https://www.youtube.com/watch?v=aIX_UDUYqDw",
           "quote": "넌 나의 원더월이야｜Oasis - Wonderwall",
           "kind": "title"
+        },
+        {
+          "kind": "writer",
+          "name": "노엘갤러거",
+          "canonicalName": "Noel Gallagher",
+          "writer": "Noel Gallagher",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Noel Gallagher → 노엘갤러거. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -7262,7 +7590,7 @@
         "sampleRate": 48000,
         "durationSeconds": 258.78,
         "byteLength": 1588417,
-        "sha256": "4c649ecd1f19bd8f71cbf471a0e8aa64b5ef2849c92ce2ee85aff601e440963f"
+        "sha256": "3e0d8b1e072ed081455382ef8def5570979ba02ff600399835c07bbc4d78e69a"
       },
       "sourceTitle": "Wonderwall",
       "rawChartWriterCredit": {
@@ -7276,7 +7604,16 @@
       "namingReviewReasons": [
         "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingHistory": [
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "노엘갤러거"
+          ]
+        }
+      ]
     },
     {
       "index": 62,
@@ -7493,7 +7830,8 @@
         "MARTIN MAX",
         "QUENNEVILLE JASON MATTHEW",
         "TESFAYE ABEL",
-        "블라인딩라이츠"
+        "블라인딩라이츠",
+        "맥스마틴"
       ],
       "aliases": [
         {
@@ -7520,6 +7858,15 @@
           "url": null,
           "origin": "user_authorized_pronunciation",
           "quote": "사용자 승인 영어 제목 일반 발음: Blinding Lights → 블라인딩라이츠 (2026-10-28). 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "맥스마틴",
+          "canonicalName": "MARTIN MAX",
+          "writer": "MARTIN MAX",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): MARTIN MAX → 맥스마틴. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -7555,7 +7902,7 @@
         "sampleRate": 48000,
         "durationSeconds": 203.216,
         "byteLength": 1240758,
-        "sha256": "2564e132e9ca81ec4bd11d30b0eef6164b68b75cd8e48473e5b17660895fc01d"
+        "sha256": "9a8dddf0733a21536be34032564c7e5b9ca6995789f7fc1616dca5a1a83900e4"
       },
       "sourceTitle": "Blinding Lights",
       "rawChartWriterCredit": {
@@ -7576,6 +7923,13 @@
           "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
           "addedTags": [
             "블라인딩라이츠"
+          ]
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "맥스마틴"
           ]
         }
       ]
@@ -7686,7 +8040,8 @@
       "tags": [
         "Englishman In New York",
         "Sting",
-        "잉글리시맨인뉴욕"
+        "잉글리시맨인뉴욕",
+        "스팅"
       ],
       "aliases": [
         {
@@ -7701,6 +8056,15 @@
           "url": null,
           "origin": "user_authorized_pronunciation",
           "quote": "사용자 승인 영어 제목 일반 발음: Englishman In New York → 잉글리시맨인뉴욕 (2026-10-28). 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "스팅",
+          "canonicalName": "Sting",
+          "writer": "Sting",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Sting → 스팅. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -7736,7 +8100,7 @@
         "sampleRate": 48000,
         "durationSeconds": 267.454,
         "byteLength": 1641565,
-        "sha256": "0135b4e41dc477459edde33aa1f0b313a8ec621271857eb778379223e11c568e"
+        "sha256": "652145b80025dedf38a1c3732f1870b8c661cf5f0d878f411e495b31496f864f"
       },
       "sourceTitle": "Englishman In New York",
       "rawChartWriterCredit": {
@@ -7757,6 +8121,13 @@
           "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
           "addedTags": [
             "잉글리시맨인뉴욕"
+          ]
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "스팅"
           ]
         }
       ]
@@ -7867,7 +8238,10 @@
         "SAIKAI",
         "Mili",
         "CASSIE WEI",
-        "HAMO"
+        "HAMO",
+        "사이카이",
+        "캐시웨이",
+        "하모"
       ],
       "aliases": [
         {
@@ -7875,6 +8249,34 @@
           "name": "SAIKAI",
           "url": "https://www.youtube.com/watch?v=h0djuhl97Kw",
           "quote": "Mili - SAIKAI [Limbus Company] | Mili and ProjectMoon Official"
+        },
+        {
+          "kind": "title",
+          "name": "사이카이",
+          "origin": "user_authorized_pronunciation",
+          "language": "ja",
+          "originalTitle": "SAIKAI",
+          "reading": "사이카이",
+          "url": null,
+          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): SAIKAI → 사이카이. 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "캐시웨이",
+          "canonicalName": "CASSIE WEI",
+          "writer": "CASSIE WEI",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): CASSIE WEI → 캐시웨이. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "하모",
+          "canonicalName": "HAMO",
+          "writer": "HAMO",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): HAMO → 하모. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -7910,7 +8312,7 @@
         "sampleRate": 48000,
         "durationSeconds": 323.925,
         "byteLength": 1984577,
-        "sha256": "4cfe645d166a2d9c4c709b491498359bf8a301e24faecd1681c04308226142ba"
+        "sha256": "678365a26c5b67d889f1f803bbe9c5239f9b5b97ea7c9ae9b0fa07f0f63f120f"
       },
       "sourceTitle": "SAIKAI(림버스컴퍼니OST)",
       "rawChartWriterCredit": {
@@ -7922,7 +8324,6 @@
       "notes": "",
       "namingReviewRequired": true,
       "namingReviewReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
         "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
       ],
       "namingHistory": [
@@ -7936,6 +8337,15 @@
             "SAIKAI"
           ],
           "reason": "Replace prior naming with independently sourced common usage"
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "사이카이",
+            "캐시웨이",
+            "하모"
+          ]
         }
       ],
       "singerAliases": []
@@ -8295,7 +8705,8 @@
         "Im Yours",
         "Jason Mraz",
         "MRAZ JASON THOMAS",
-        "아임유어즈"
+        "아임유어즈",
+        "제이슨므라즈"
       ],
       "aliases": [
         {
@@ -8310,6 +8721,15 @@
           "url": null,
           "origin": "user_authorized_pronunciation",
           "quote": "사용자 승인 영어 제목 일반 발음: I'm Yours → 아임유어즈 (2026-10-28). 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "제이슨므라즈",
+          "canonicalName": "MRAZ JASON THOMAS",
+          "writer": "MRAZ JASON THOMAS",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): MRAZ JASON THOMAS → 제이슨므라즈. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -8351,7 +8771,7 @@
         "channels": 2,
         "durationSeconds": 241.01852083333333,
         "byteLength": 1475485,
-        "sha256": "ecaf9490f9b607d723d8f23a15f66b0cdbe5cc7e3de4378d109eebdca38030de"
+        "sha256": "ed4da553415c963bb4df6966fc016016dc974400d0b51165b5d3ff9f088692ee"
       },
       "sourceTitle": "I'm Yours",
       "rawChartWriterCredit": {
@@ -8402,6 +8822,13 @@
           "addedTags": [
             "아임유어즈"
           ]
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "제이슨므라즈"
+          ]
         }
       ]
     },
@@ -8423,7 +8850,8 @@
         "John Legend",
         "GAD TOBY",
         "LEGEND JOHN",
-        "올오브미"
+        "올오브미",
+        "존레전드"
       ],
       "aliases": [
         {
@@ -8438,6 +8866,15 @@
           "url": null,
           "origin": "user_authorized_pronunciation",
           "quote": "사용자 승인 영어 제목 일반 발음: All Of Me → 올오브미 (2026-10-28). 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "존레전드",
+          "canonicalName": "LEGEND JOHN",
+          "writer": "LEGEND JOHN",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): LEGEND JOHN → 존레전드. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -8479,7 +8916,7 @@
         "channels": 2,
         "durationSeconds": 278.01952083333333,
         "byteLength": 1702875,
-        "sha256": "8fe17e9c7a61cf61ee9c166f7eb8b98ce8abf067067e7a23ce891e4c80d58e1c"
+        "sha256": "0dfc983ad3a8b7f545f3e744e6d08851f6e05ee4689d56939ce15c5f21583255"
       },
       "sourceTitle": "All Of Me",
       "rawChartWriterCredit": {
@@ -8529,6 +8966,13 @@
           "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
           "addedTags": [
             "올오브미"
+          ]
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "존레전드"
           ]
         }
       ]
@@ -11305,7 +11749,8 @@
         "Mili",
         "CASSIE WEI",
         "SAKAI HIROKAZU",
-        "히어로"
+        "히어로",
+        "캐시웨이"
       ],
       "aliases": [
         {
@@ -11320,6 +11765,15 @@
           "url": null,
           "origin": "user_authorized_pronunciation",
           "quote": "사용자 승인 영어 제목 일반 발음: Hero → 히어로 (2026-10-28). 외부 검색 인용 아님."
+        },
+        {
+          "kind": "writer",
+          "name": "캐시웨이",
+          "canonicalName": "CASSIE WEI",
+          "writer": "CASSIE WEI",
+          "origin": "user_authorized_writer_alias",
+          "url": null,
+          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): CASSIE WEI → 캐시웨이. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
       "reviewRequired": false,
@@ -11355,7 +11809,7 @@
         "sampleRate": 48000,
         "durationSeconds": 214.768,
         "byteLength": 1282842,
-        "sha256": "d672564ca97478a1605b90d694384f703198196655c5b624ef4d90de031920e1"
+        "sha256": "4c7aaffe203d09b65d5f5e2062accaf64818d1a299b76b6e8f59e0fc84ee7e48"
       },
       "sourceTitle": "Hero(림버스컴퍼니OST)",
       "rawChartWriterCredit": {
@@ -11386,6 +11840,13 @@
           "reason": "User authorized conventional Korean pronunciation for Latin-script English titles.",
           "addedTags": [
             "히어로"
+          ]
+        },
+        {
+          "date": "2026-10-29",
+          "reason": "Add user-requested Japanese title pronunciation and Korean writer aliases.",
+          "addedTags": [
+            "캐시웨이"
           ]
         }
       ],
