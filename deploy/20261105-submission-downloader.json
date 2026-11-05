@@ -1,0 +1,151 @@
+{
+  "date": "2026-11-05",
+  "webSourceCommit": "6620562c93db8171c10b12946e013d701f869a43",
+  "activatedAtKst": "2026-11-05T23:45:41.779502+09:00",
+  "verifiedAtKst": "2026-11-05T23:47:03.630738+09:00",
+  "activation": {
+    "date": "2026-11-05",
+    "before": {
+      "webPid": "1500263",
+      "minecraftPid": "984",
+      "wrapperPath": "/opt/noqui/releases/20261031-memory-audio-8e37cc9/yt-dlp-private-cookies.sh",
+      "wrapperSha256": "e78fba1bdc620e3ef67123052b3a5ecd306cdc75a715c397630fec3c133662e2"
+    },
+    "activated": true,
+    "restartedServices": false,
+    "runtimeVersion": "2026.10.26",
+    "playerClient": "tv_samsung",
+    "activatedAt": 1793889941.7795024,
+    "wrapperSha256": "5b2db8c6777afd22438b83c661fe08977217b7bb2a855304046f925f10e344f5",
+    "launcherSha256": "b203e0cd5e2a4856af1512d5c463e76923bfd1ced83be3a48d75082e63ca6cd0",
+    "versionedWrapper": "/opt/noqui/releases/20261105-downloader-tv-samsung/yt-dlp-private-cookies.sh",
+    "runtime": "/opt/noqui/tools/yt-dlp-2026.10.26/bin/yt-dlp",
+    "after": {
+      "webPid": "1500263",
+      "minecraftPid": "984"
+    }
+  },
+  "comparison": {
+    "videoId": "8oBV3jPTW4s",
+    "baselineVersion": "2026.08.19",
+    "candidateVersion": "2026.10.26",
+    "baseline": {
+      "resolvedClient": [
+        "WEB_EMBEDDED_PLAYER"
+      ],
+      "formatId": "250",
+      "durationSeconds": 218,
+      "sectionOutputExists": false,
+      "sectionHttp403": true
+    },
+    "candidate": {
+      "resolvedClient": [
+        "TVHTML5"
+      ],
+      "formatId": "250",
+      "durationSeconds": 218,
+      "sectionOutputExists": true,
+      "sectionHttp403": false
+    }
+  },
+  "verification": {
+    "verified": true,
+    "startedAt": 1793889981.5220373,
+    "completedAt": 1793890023.630738,
+    "jobs": [
+      {
+        "videoId": "8oBV3jPTW4s",
+        "jobId": "bdcf3ccc-ebe3-447b-809c-f8053a26999d",
+        "initialState": "QUEUED",
+        "byteLength": 732845,
+        "durationMs": 120007,
+        "failureCode": null,
+        "mediaId": "33673cbf-564f-4e3c-8c05-5e9860ef9b89",
+        "mime": "audio/ogg; codecs=opus",
+        "profileVersion": "opus-48-clip120-source360-v3",
+        "retryAfterMs": 0,
+        "retryable": false,
+        "state": "READY",
+        "decoded": true,
+        "answerCommentsStripped": true
+      },
+      {
+        "videoId": "_v_Voe5KD1M",
+        "jobId": "6d05c98e-369b-44d2-b623-cac09124962a",
+        "initialState": "QUEUED",
+        "byteLength": 734682,
+        "durationMs": 120007,
+        "failureCode": null,
+        "mediaId": "2607fa10-7a61-4e1a-880c-81e162caf167",
+        "mime": "audio/ogg; codecs=opus",
+        "profileVersion": "opus-48-clip120-source360-v3",
+        "retryAfterMs": 0,
+        "retryable": false,
+        "state": "READY",
+        "decoded": true,
+        "answerCommentsStripped": true
+      },
+      {
+        "videoId": "MKYv5w0QqFM",
+        "jobId": "1baa625a-7c85-4795-b566-5d1cff49143a",
+        "initialState": "QUEUED",
+        "byteLength": 734080,
+        "durationMs": 120007,
+        "failureCode": null,
+        "mediaId": "8e6e2d95-f118-4b9b-8ebf-c33a85577fd6",
+        "mime": "audio/ogg; codecs=opus",
+        "profileVersion": "opus-48-clip120-source360-v3",
+        "retryAfterMs": 0,
+        "retryable": false,
+        "state": "READY",
+        "decoded": true,
+        "answerCommentsStripped": true
+      }
+    ],
+    "webPid": "1500263",
+    "minecraftPid": "984",
+    "servicesRestarted": false,
+    "playlistManifestsPreserved": true,
+    "playlistCount": 6,
+    "allOpusDecoded": true,
+    "noQuizControlRequestsSent": true
+  },
+  "cleanup": {
+    "removedDiagnosticCopies": [
+      "8oBV3jPTW4s",
+      "candidate-8oBV3jPTW4s",
+      "safari",
+      "samsung",
+      "anonymous",
+      "aac",
+      "candidate-venv"
+    ],
+    "keptInstalledRuntime": "/opt/noqui/tools/yt-dlp-2026.10.26",
+    "keptRollbackBackup": "/home/ubuntu/mc-luck-defense-deploy/submission-fix-20261105/activation-backup",
+    "freeBytesBefore": 1697583104,
+    "freeBytesAfter": 1806766080
+  },
+  "tests": {
+    "windowsCookieWrapper": {
+      "passed": true,
+      "tests": 3
+    },
+    "linuxCookieWrapper": {
+      "passed": true,
+      "tests": 3
+    },
+    "liveWorkerIngestions": {
+      "passed": true,
+      "sources": 3
+    }
+  },
+  "preserved": {
+    "minecraftRestarted": false,
+    "audioServiceRestarted": false,
+    "rustBinaryReplaced": false,
+    "momaDownloaderChanged": false,
+    "playlistManifestsChanged": false,
+    "sharedCookieSourceChangedByDeployment": false,
+    "profile": "opus-48-clip120-source360-v3"
+  }
+}
