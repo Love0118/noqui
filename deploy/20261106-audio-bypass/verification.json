@@ -1,0 +1,25 @@
+{
+  "startedAt": 1793893225.0910547,
+  "observedUntil": 1793893243.4976478,
+  "browserPlaybackStatuses": {
+    "PLAYING": 21
+  },
+  "playingReportCount": 21,
+  "playingPositionMinMs": 10466,
+  "playingPositionMaxMs": 27187,
+  "quizStateChanged": false,
+  "credentialsPersisted": false,
+  "publicAudioStatus": 200,
+  "audioContentType": "audio/ogg; codecs=opus",
+  "downloadedBytes": 1449190,
+  "audioSha256": "4c19b8870e0a87a5c138cb86e5e2b60ad750140e94cb1e5ffe097a2c5f14cf2d",
+  "fullAudioDecodePassed": true,
+  "decodeError": "",
+  "range": {
+    "status": 206,
+    "bytes": 65536,
+    "contentRange": "bytes 0-65535/1449190",
+    "matchesFullResponse": true
+  },
+  "unauthenticatedStatus": 401
+}

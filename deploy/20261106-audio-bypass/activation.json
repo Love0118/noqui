@@ -1,0 +1,10 @@
+{
+  "activated": true,
+  "time": 1793892930.1457667,
+  "intervalRenderingBypassed": true,
+  "authentication": "existing Rust session and current-room media, checked before delivery",
+  "minecraftRestarted": false,
+  "audioServiceRestarted": false,
+  "nginxConfig": "/etc/nginx/sites-enabled/noqui",
+  "helperSha256": "7c35632f849bdfdd9161ded4083025ce971367854fd6f28d3039d5f17c856966"
+}
