@@ -3,8 +3,11 @@
 set -euo pipefail
 umask 077
 
-real_ytdlp=${NOQUI_YT_DLP_REAL:-/home/ubuntu/mc-luck-defense/tools/media-venv/bin/yt-dlp}
-args=("$@")
+real_ytdlp=${NOQUI_YT_DLP_REAL:-/opt/noqui/tools/yt-dlp-2026.10.26/bin/yt-dlp}
+# The authenticated default can resolve web_embedded URLs that GVS rejects with
+# HTTP 403. Use the same working client for metadata and resolved-JSON downloads.
+# Requires yt-dlp >= 2026.10.21; deployment pins the tested 2026.10.26 release.
+args=(--extractor-args 'youtube:player_client=tv_samsung' "$@")
 cookie_dir=
 cleanup() {
     if [[ -n "$cookie_dir" ]]; then

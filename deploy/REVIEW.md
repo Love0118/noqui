@@ -118,8 +118,24 @@ The YouTube jar authenticates ingestion only. Cached Opus playback uses the
 separate Noqui session and Minecraft authority leases; rotating the source jar
 does not expire a browser's already-authenticated listening session.
 
-Observed tools: configured yt-dlp
-`/home/ubuntu/mc-luck-defense/tools/media-venv/bin/yt-dlp` 2026.08.19;
+The Noqui downloader is pinned to yt-dlp 2026.10.26 in the dedicated
+`/opt/noqui/tools/yt-dlp-2026.10.26` venv. The cookie-isolation wrapper selects
+`youtube:player_client=tv_samsung` for both metadata and resolved-JSON download
+invocations. This client requires yt-dlp 2026.10.21 or newer. The prior
+authenticated embedded-player route resolved metadata but returned HTTP 403
+for ordinary song downloads; changing bitrate or removing partial downloading
+did not repair it. The separate Moma downloader venv remains untouched.
+
+Use `python3 -m venv /opt/noqui/tools/yt-dlp-2026.10.26` and its Python to install
+`yt-dlp[default]==2026.10.26`, then verify a previously failing source through
+the actual two-stage Noqui ingest path. Set `NOQUI_YT_DLP_REAL` to its executable
+before using the new wrapper. Keep shared credentials outside this runtime.
+For a running quiz, a backed-up atomic launcher replacement at the existing
+wrapper path can delegate to the new versioned wrapper with the new runtime
+exported; update `noqui.env` to the direct versioned wrapper for future starts.
+This avoids dropping in-memory browser sessions through a service restart.
+
+Other observed tools:
 `/usr/bin/ffmpeg` 6.1.1 with libopus; `/usr/bin/ffprobe`; Node v24.14.1.
 Avoid obsolete `/usr/bin/yt-dlp` 2024.04.09. Official build tools,
 pkg-config, Certbot/nginx integration and **Rust 1.99.1** are installed. Actual

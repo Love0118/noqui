@@ -24,6 +24,9 @@ class CookieWrapperTests(unittest.TestCase):
                 fake = root / "fake-ytdlp"
                 fake.write_text(
                     '#!/usr/bin/env bash\nset -eu\n'
+                    'test "$1" = --extractor-args\n'
+                    'test "$2" = youtube:player_client=tv_samsung\n'
+                    'shift 2\n'
                     'test "$1" = --cookies\n'
                     'test "$2" != "$TEST_SOURCE"\n'
                     'test "$(stat -c %a "$2")" = 600\n'
@@ -51,6 +54,30 @@ class CookieWrapperTests(unittest.TestCase):
             [bash_path(), str(Path(__file__).with_name("yt-dlp-private-cookies.sh")), "--cookies"],
             capture_output=True, text=True)
         self.assertEqual(result.returncode, 64)
+
+    def test_metadata_and_resolved_download_share_client_and_preserve_arguments(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            fake = root / "capture-ytdlp"
+            fake.write_text(
+                '#!/usr/bin/env bash\nset -eu\n'
+                'printf "%s\\0" "$@" > "$TEST_ARGUMENTS"\n',
+                encoding="utf-8", newline="\n")
+            fake.chmod(0o700)
+            captured = root / "arguments"
+            env = os.environ | {"NOQUI_YT_DLP_REAL": fake.as_posix(),
+                                "TEST_ARGUMENTS": captured.as_posix()}
+            for args in (["--skip-download", "--dump-single-json", "--",
+                          "https://www.youtube.com/watch?v=BaW_jenozKc"],
+                         ["--load-info-json", "resolved file.json", "-o", "source.media",
+                          "--download-sections", "*0-120"]):
+                with self.subTest(args=args):
+                    result = subprocess.run(
+                        [bash_path(), str(Path(__file__).with_name("yt-dlp-private-cookies.sh")), *args],
+                        env=env, capture_output=True, text=True)
+                    self.assertEqual(0, result.returncode, result.stderr)
+                    actual = captured.read_bytes().decode().rstrip("\0").split("\0")
+                    self.assertEqual(["--extractor-args", "youtube:player_client=tv_samsung", *args], actual)
 
 
 if __name__ == "__main__":
