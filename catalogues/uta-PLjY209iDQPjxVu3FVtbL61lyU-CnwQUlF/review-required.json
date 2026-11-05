@@ -1,0 +1,3484 @@
+[
+  {
+    "index": 24,
+    "videoId": "T7Sv4H6gkrI",
+    "title": "【Touhou Vocal MV】Idol Koishi - Unconscious Frame",
+    "writers": [],
+    "singer": null,
+    "tags": [],
+    "aliases": [],
+    "evidence": [],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "VocaDB video match unavailable and no verified reusable writer credit."
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "low",
+    "notes": "Local evidence reused; unresolved identity/credit gaps are marked for review.",
+    "id": "4d3d6167-f19c-5237-8f57-0f43ad4ba8af",
+    "sourceIndex": 24,
+    "sourceTitle": "【Touhou Vocal MV】Idol Koishi - Unconscious Frame",
+    "channel": "GAMEPULSE 遊戲脈衝",
+    "durationSeconds": 196,
+    "youtubeUrl": "https://www.youtube.com/watch?v=T7Sv4H6gkrI",
+    "audio": {
+      "status": "ready",
+      "path": "audio/T7Sv4H6gkrI.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 195.03633333333335,
+      "byteLength": 1182379,
+      "sha256": "e26199a179ca8a6cb27254392eb634d56acc84abd2d34c26aa853b1aecdced12"
+    }
+  },
+  {
+    "index": 29,
+    "videoId": "7oi4IHSxcQ4",
+    "title": "First and Last Gift",
+    "writers": [
+      "王越",
+      "林昱"
+    ],
+    "singer": null,
+    "tags": [],
+    "aliases": [],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=7oi4IHSxcQ4",
+        "quote": "[명조] First and Last Gift [OST/가사/한글자막/번역/해석]",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://wutheringwaves.fandom.com/wiki/First_and_Last_Gift",
+        "quote": "First and Last Gift\nComposer | 王越\nLyricist | 林昱",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "메인 독립 조회에서 작가 크레딧을 뒷받침하는 출처를 재확인하지 못했습니다: 王越, 林昱"
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "high",
+    "notes": "Game OST record and composer/lyricist credits are verified; the video does not credit its recording vocalist.",
+    "id": "b74f41f8-7feb-5705-ae9c-01bd501d4a59",
+    "sourceIndex": 29,
+    "sourceTitle": "First and Last Gift [EN/KR Lyrics] | Wuthering Waves 3.3 OST",
+    "channel": "민수 Minsu",
+    "durationSeconds": 191,
+    "youtubeUrl": "https://www.youtube.com/watch?v=7oi4IHSxcQ4",
+    "audio": {
+      "status": "ready",
+      "path": "audio/7oi4IHSxcQ4.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 190.96166666666667,
+      "byteLength": 1165400,
+      "sha256": "da4ab39960f956803c17fa00b9b0f2d3bd5a73a301ffe903166cf3e3acc1ad3d"
+    },
+    "writerTagReviewRequired": true,
+    "writerTagReviewReasons": [
+      "원어 작가 크레딧은 확인했으나 게임에서 매치 가능한 한국어·영문 작가 이름의 출처를 확인하지 못했습니다."
+    ]
+  },
+  {
+    "index": 36,
+    "videoId": "NAX-ypceUCs",
+    "title": "다루마씨가 넘어졌다",
+    "writers": [
+      "丸井幸清"
+    ],
+    "singer": "鏡音リン、初音ミク",
+    "tags": [
+      "다루마씨가 넘어졌다"
+    ],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "다루마씨가 넘어졌다",
+        "url": "https://www.youtube.com/watch?v=NAX-ypceUCs",
+        "quote": "카가미네 린 & 하츠네미쿠 - 다루마씨가 넘어졌다 ( だるまさんがころんだ ) [ 가사/ 발음/ 한글 자막 ]"
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://w.atwiki.jp/hmiku/pages/33157.html",
+        "quote": "作詞：丸井幸清（犬丸芝居小屋）; 作曲：丸井幸清（犬丸芝居小屋）; 唄：鏡音リン・初音ミク.",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=NAX-ypceUCs",
+        "quote": "카가미네 린 & 하츠네미쿠 - 다루마씨가 넘어졌다 ( だるまさんがころんだ ) [ 가사/ 발음/ 한글 자막 ]",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=NAX-ypceUCs",
+        "quote": "카가미네 린 & 하츠네미쿠 - 다루마씨가 넘어졌다 ( だるまさんがころんだ ) [ 가사/ 발음/ 한글 자막 ]",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://www.youtube.com/watch?v=NAX-ypceUCs"
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "Original song identity or writer credit needs verification.",
+      "Actual writer credit lacks a retrieved credit source."
+    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "low",
+    "notes": "Original recording identity and credits require MAIN review where indicated; recording metadata is taken from the assigned row. Cover singer is labeled separately.",
+    "id": "a7454e1d-cf16-54f3-b253-bd2ac150db02",
+    "sourceIndex": 36,
+    "sourceTitle": "카가미네 린 & 하츠네미쿠 - 다루마씨가 넘어졌다 ( だるまさんがころんだ ) [ 가사/ 발음/ 한글 자막 ]",
+    "channel": "새벽을 품은 노래",
+    "durationSeconds": 273,
+    "youtubeUrl": "https://www.youtube.com/watch?v=NAX-ypceUCs",
+    "audio": {
+      "status": "ready",
+      "path": "audio/NAX-ypceUCs.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 272.3654583333333,
+      "byteLength": 1638702,
+      "sha256": "929ec39d6da62d7e0a897027b770cdb0c5a5323cc005bb86539b44a572beaf86"
+    }
+  },
+  {
+    "index": 52,
+    "videoId": "FOLxVpas1pI",
+    "title": "Vernal Days Dreamed by the Star",
+    "writers": [
+      "王谢波",
+      "徐来"
+    ],
+    "singer": "小林未郁",
+    "tags": [],
+    "aliases": [],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=0gSyy50n6vc",
+        "quote": "Vernal Days Dreamed by the Star · Wuthering Waves · jixwang · 小林未郁. Composer: 王谢波; Lyricist: 徐来; Vocal Solo: 小林未郁.",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=FOLxVpas1pI",
+        "quote": "[명조] 3.1 전반 스토리 엔딩곡 OST 『Vernal Days Dreamed by the Star』(한국어, 영어 자막)",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "메인 독립 조회에서 작가 크레딧을 뒷받침하는 출처를 재확인하지 못했습니다: 王谢波, 徐来"
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "high",
+    "notes": "Original recording identity and credits require MAIN review where indicated; recording metadata is taken from the assigned row. Cover singer is labeled separately.",
+    "id": "0d538934-8642-567c-9a8c-9801946abf03",
+    "sourceIndex": 52,
+    "sourceTitle": "[명조] 3.1 전반 스토리 엔딩곡 OST 『Vernal Days Dreamed by the Star』(한국어, 영어 자막)",
+    "channel": "로강",
+    "durationSeconds": 236,
+    "youtubeUrl": "https://www.youtube.com/watch?v=FOLxVpas1pI",
+    "audio": {
+      "status": "ready",
+      "path": "audio/FOLxVpas1pI.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 235.70116666666667,
+      "byteLength": 1447329,
+      "sha256": "012aa15ed51f940e42ee856a6bd6b13245c133410fc4b0546cc6bc74befdd602"
+    },
+    "writerTagReviewRequired": true,
+    "writerTagReviewReasons": [
+      "원어 작가 크레딧은 확인했으나 게임에서 매치 가능한 한국어·영문 작가 이름의 출처를 확인하지 못했습니다."
+    ]
+  },
+  {
+    "index": 54,
+    "videoId": "r6ExBNl0IeU",
+    "title": "Voyaging Star's Farewell",
+    "writers": [
+      "Wang Xiebo",
+      "Xu Lai"
+    ],
+    "singer": "Tarokiki",
+    "tags": [
+      "Voyaging Stars Farewell",
+      "Wang Xiebo",
+      "Xu Lai"
+    ],
+    "aliases": [
+      {
+        "kind": "punctuation",
+        "name": "Voyaging Stars Farewell",
+        "url": null,
+        "quote": "Voyaging Star's Farewell"
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=r6ExBNl0IeU",
+        "quote": "[명조] Voyaging Star's Farewell(먼 길을 떠나는 별의 작별) [OST/가사/한글자막/번역/해석]",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "메인 독립 조회에서 작가 크레딧을 뒷받침하는 출처를 재확인하지 못했습니다: Wang Xiebo, Xu Lai",
+      "추정 크레딧을 채택하지 않고 개별 곡의 작사·작곡/번안 크레딧 확인을 보류합니다."
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "high",
+    "notes": "Original Wuthering Waves OST; the playlist upload is a lyric translation. Credits and original performers sourced separately.",
+    "id": "840c14c4-d25a-5852-90ff-2182a6bc36b8",
+    "sourceIndex": 54,
+    "sourceTitle": "Voyaging Star's Farewell [EN/KR Lyrics] | Wuthering Waves 3.1 OST",
+    "channel": "민수 Minsu",
+    "durationSeconds": 225,
+    "youtubeUrl": "https://www.youtube.com/watch?v=r6ExBNl0IeU",
+    "audio": {
+      "status": "ready",
+      "path": "audio/r6ExBNl0IeU.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 225.01997916666667,
+      "byteLength": 1375014,
+      "sha256": "742e2f3835fe8ca1f496ef8ed033b6f8a5beb79a9c663c2e2ca6379f3a2513b9"
+    },
+    "rejectedEvidenceProposals": [
+      {
+        "url": "https://www.shazam.com/song/1874799709/voyaging-stars-farewell/music-video",
+        "quote": "王谢波 — Composer; 徐来 — Lyrics; Tarokiki — Vocals; Emi Evans — Harmony Vocals",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true
+      }
+    ]
+  },
+  {
+    "index": 82,
+    "videoId": "BOzSSMSNN-Y",
+    "title": "√",
+    "writers": [
+      "Minato"
+    ],
+    "singer": null,
+    "tags": [
+      "Minato"
+    ],
+    "aliases": [],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=BOzSSMSNN-Y",
+        "quote": "√\nLyricist: Minato\nComposer: Minato",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=BOzSSMSNN-Y",
+        "quote": "Lyricist: Minato\nComposer: Minato",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "The official track title is the symbol √ and no sourced game-matchable Korean or Latin title was found."
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "medium",
+    "notes": "Official Minato recording metadata confirms the song and writer; the literal symbol remains unsearchable by the game catalogue.",
+    "id": "400ea15e-e9c0-52b3-a67b-042715dbc052",
+    "sourceIndex": 82,
+    "sourceTitle": "√",
+    "channel": "Minato's official channel",
+    "durationSeconds": 199,
+    "youtubeUrl": "https://www.youtube.com/watch?v=BOzSSMSNN-Y",
+    "audio": {
+      "status": "ready",
+      "path": "audio/BOzSSMSNN-Y.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 198.27885416666666,
+      "byteLength": 1215492,
+      "sha256": "3aa73d5a407be29504230f0251397a39a17f6890c45a5d00a41443580eafd4e5"
+    }
+  },
+  {
+    "index": 87,
+    "videoId": "_-pEF3a0qeY",
+    "title": "画脂鏤氷",
+    "writers": [
+      "かんてゐく"
+    ],
+    "singer": "Hatsune Miku",
+    "tags": [
+      "화지누빙"
+    ],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "화지누빙",
+        "url": "https://www.youtube.com/watch?v=_-pEF3a0qeY",
+        "quote": "🎧 한글화 자막 かんてゐく(간테이쿠) - 画脂鏤氷 (화지누빙) 🎧"
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=RFARms8fVdw",
+        "quote": "Provided to YouTube by かんてゐく\n画脂鏤氷 · kanteac_xxx · Hatsune Miku\nLyricist: かんてゐく\nComposer: かんてゐく",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.joysound.com/web/search/song/1126627",
+        "quote": "画脂鏤氷／かんてゐく",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "Main review: invalid_game_title"
+    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "high",
+    "notes": "Uploader links the original song; matched original recording credits in official Topic page and JOYSOUND.",
+    "id": "2d2cba15-3e0b-50fd-a30b-26f973cbd1ec",
+    "sourceIndex": 87,
+    "sourceTitle": "🎧 한글화 자막 かんてゐく(간테이쿠) - 画脂鏤氷 (화지누빙) 🎧",
+    "channel": "ㅡ",
+    "durationSeconds": 201,
+    "youtubeUrl": "https://www.youtube.com/watch?v=_-pEF3a0qeY",
+    "audio": {
+      "status": "ready",
+      "path": "audio/_-pEF3a0qeY.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 200.48810416666666,
+      "byteLength": 1230336,
+      "sha256": "a4c48617295c92264f6f25c84d80d63c20f10750190d202d05aae196f1e42389"
+    }
+  },
+  {
+    "index": 92,
+    "videoId": "fNU3lrBS9F0",
+    "title": "아키바파라노이아",
+    "writers": [
+      "ペポヨ"
+    ],
+    "singer": "東京少女キャンディ",
+    "tags": [
+      "아키바파라노이아",
+      "페포요",
+      "PEPOYO"
+    ],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "아키바파라노이아",
+        "url": "https://www.youtube.com/watch?v=fNU3lrBS9F0",
+        "quote": "[한글자막] 아키바파라노이아 페포요feat.도쿄소녀사탕"
+      },
+      {
+        "kind": "writer",
+        "name": "페포요",
+        "writer": "ペポヨ",
+        "url": "https://vocadb.net/Ar/90014",
+        "quote": "페포요",
+        "retrievalUrl": "https://vocadb.net/api/songs/418548?fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "kind": "writer",
+        "name": "PEPOYO",
+        "writer": "ペポヨ",
+        "url": "https://vocadb.net/Ar/90014",
+        "quote": "PEPOYO",
+        "retrievalUrl": "https://vocadb.net/api/songs/418548?fields=Names,Artists,PVs",
+        "mainVerified": true
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=fNU3lrBS9F0",
+        "quote": "[한글자막] 아키바파라노이아 페포요feat.도쿄소녀사탕",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=fNU3lrBS9F0",
+        "quote": "[한글자막] 아키바파라노이아 페포요feat.도쿄소녀사탕",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://www.youtube.com/watch?v=fNU3lrBS9F0"
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "The Korean subtitle upload links to a private original; writer attribution could not be independently confirmed from an accessible original-credit page."
+    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "low",
+    "notes": "Original recording identity and credits require MAIN review where indicated; recording metadata is taken from the assigned row. Cover singer is labeled separately.",
+    "id": "85775f3b-327f-5bfd-b4ff-604dd64dc8a4",
+    "sourceIndex": 92,
+    "sourceTitle": "[한글자막] 아키바파라노이아 페포요feat.도쿄소녀사탕",
+    "channel": "이루",
+    "durationSeconds": 188,
+    "youtubeUrl": "https://www.youtube.com/watch?v=fNU3lrBS9F0",
+    "audio": {
+      "status": "ready",
+      "path": "audio/fNU3lrBS9F0.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 187.10179166666666,
+      "byteLength": 1147559,
+      "sha256": "30b18ab003da0b480ab31d632d29906a29fd3b475eebc34a064cc478fec4ae39"
+    }
+  },
+  {
+    "index": 99,
+    "videoId": "vlwdflqDIQM",
+    "title": "언제나 이곳에서",
+    "writers": [],
+    "singer": null,
+    "tags": [],
+    "aliases": [],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=vlwdflqDIQM",
+        "quote": "슈타인즈게이트(Steins gate) 극장판 ED - 언제나 이곳에서 — Secret Poten",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "원곡 작사·작곡가를 로컬 근거에서 확인하지 못함"
+    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "low",
+    "notes": "The upload identifies the Korean title and links an original song video, but songwriter credits remain unverified.",
+    "id": "e39b9f9c-1f9f-5338-a222-c86a6bffa157",
+    "sourceIndex": 99,
+    "sourceTitle": "슈타인즈게이트(Steins gate) 극장판 ED - 언제나 이곳에서",
+    "channel": "Secret Poten",
+    "durationSeconds": 324,
+    "youtubeUrl": "https://www.youtube.com/watch?v=vlwdflqDIQM",
+    "audio": {
+      "status": "ready",
+      "path": "audio/vlwdflqDIQM.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 323.054625,
+      "byteLength": 1952092,
+      "sha256": "0f5df7bd7f528313cace6feaeb0de56837524da9919f8e359213eb7ca0a2ae6c"
+    }
+  },
+  {
+    "index": 124,
+    "videoId": "1MThGYH6XLc",
+    "title": "괜찮다면 너의 권속이 되고싶어",
+    "writers": [
+      "Peg"
+    ],
+    "singer": "鏡音リン",
+    "tags": [
+      "Peg",
+      "괜찮다면 너의 권속이 되고싶어"
+    ],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "괜찮다면 너의 권속이 되고싶어",
+        "url": "https://broccoli-mayo.tistory.com/106",
+        "quote": "Peg - あわよくばきみの眷属になりたいな（괜찮다면 너의 권속이 되고싶어）"
+      },
+      {
+        "kind": "writer",
+        "name": "Peg",
+        "writer": "Peg",
+        "url": "https://vocadb.net/Ar/66447",
+        "quote": "Peg",
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=Q9Ctfh-GdaI&fields=Names,Artists,PVs",
+        "mainVerified": true
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=1MThGYH6XLc",
+        "quote": "あわよくばきみの眷属になりたいな · Peg · あわよくばきみの眷属になりたいな",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=1MThGYH6XLc",
+        "quote": "あわよくばきみの眷属になりたいな",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://broccoli-mayo.tistory.com/106",
+        "quote": "Peg - あわよくばきみの眷属になりたいな（괜찮다면 너의 권속이 되고싶어）",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://search.naver.com/search.naver?query=Peg+%EA%B4%9C%EC%B0%AE%EB%8B%A4%EB%A9%B4+%EB%84%88%EC%9D%98+%EA%B6%8C%EC%86%8D"
+      },
+      {
+        "url": "https://broccoli-mayo.tistory.com/106",
+        "quote": "Peg - あわよくばきみの眷属になりたいな（괜찮다면 너의 권속이 되고싶어）",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://broccoli-mayo.tistory.com/106"
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "Original song identity or writer credit needs verification.",
+      "No sourced Korean or officially used Latin matchable title established.",
+      "Actual writer credit lacks a retrieved credit source.",
+      "No sourced Korean or official Latin title that matches the game search was established."
+    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "low",
+    "notes": "Original recording identity and credits require MAIN review where indicated; recording metadata is taken from the assigned row. Cover singer is labeled separately.",
+    "id": "5b7b8026-dc77-5f9c-94cb-34fb14809554",
+    "sourceIndex": 124,
+    "sourceTitle": "あわよくばきみの眷属になりたいな",
+    "channel": "ヤマモトガク／Peg",
+    "durationSeconds": 187,
+    "youtubeUrl": "https://www.youtube.com/watch?v=1MThGYH6XLc",
+    "audio": {
+      "status": "ready",
+      "path": "audio/1MThGYH6XLc.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 186.8271875,
+      "byteLength": 1147214,
+      "sha256": "98a3d76da3a5fe44e83f0b0b39c18389cfa57a45150f07bc74b668c5f1e2174b"
+    }
+  },
+  {
+    "index": 129,
+    "videoId": "GFHtlz-wqW4",
+    "title": "천천천국지옥국",
+    "writers": [
+      "Aiobahn +81",
+      "夕野ヨシミ"
+    ],
+    "singer": "Nanahira, Pmarusama",
+    "tags": [
+      "Aiobahn +81",
+      "Aiobahn",
+      "Youno Yoshimi",
+      "Ten Ten Tengoku Jigoku Goku"
+    ],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "Ten Ten Tengoku Jigoku Goku",
+        "url": "https://vocadb.net/S/817118",
+        "quote": "Ten Ten Tengoku Jigoku Goku",
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=GFHtlz-wqW4&fields=Names,Artists,PVs"
+      },
+      {
+        "kind": "writer",
+        "name": "Aiobahn",
+        "writer": "Aiobahn +81",
+        "url": "https://vocadb.net/Ar/56310",
+        "quote": "Aiobahn",
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=Nvi3pUtSd5E&fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "kind": "writer",
+        "name": "Youno Yoshimi",
+        "writer": "夕野ヨシミ",
+        "url": "https://vocadb.net/Ar/2922",
+        "quote": "Youno Yoshimi",
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=GFHtlz-wqW4&fields=Names,Artists,PVs",
+        "mainVerified": true
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=GFHtlz-wqW4",
+        "quote": "Composer: Aiobahn +81\nLyricist: 夕野ヨシミ",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://namu.moe/w/天天天国地獄国?from=천천천국지옥국",
+        "quote": "天天天国地獄国 | 천천천국지옥국",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://vocadb.net/S/817118",
+        "quote": "천천천국지옥국",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/S/817118"
+      },
+      {
+        "url": "https://vocadb.net/S/817118",
+        "quote": "Aiobahn",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/S/817118"
+      },
+      {
+        "url": "https://vocadb.net/S/817118",
+        "quote": "天天天国地獄国",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=GFHtlz-wqW4&fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "url": "https://vocadb.net/S/817118",
+        "quote": "Aiobahn",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=GFHtlz-wqW4&fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=GFHtlz-wqW4",
+        "quote": "Composer: Aiobahn +81\nLyricist: 夕野ヨシミ",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=GFHtlz-wqW4",
+        "quote": "天天天国地獄国",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true
+      },
+      {
+        "url": "https://namu.moe/w/天天天国地獄国?from=천천천국지옥국",
+        "quote": "天天天国地獄国 | 천천천국지옥국",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://namu.moe/w/天天天国地獄国?from=천천천국지옥국"
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "메인 독립 조회에서 채택한 곡명 표기의 실제 사용을 재확인하지 못했습니다."
+    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "high",
+    "notes": "Exact YouTube PV match to VocaDB original record; title and producer credited there. Requested video performer/version retained.",
+    "vocadbReview": {
+      "songId": 817118,
+      "songType": "Original",
+      "exactVideoId": "GFHtlz-wqW4",
+      "originalVersionId": null,
+      "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=GFHtlz-wqW4&fields=Names,Artists,PVs"
+    },
+    "descriptionReview": {
+      "source": "https://www.youtube.com/watch?v=GFHtlz-wqW4",
+      "creditLines": [
+        "Composer: Aiobahn +81",
+        "Lyricist: 夕野ヨシミ"
+      ],
+      "previousWriters": [
+        "Aiobahn"
+      ]
+    },
+    "id": "1bf6a3ae-d845-5672-8735-13110fe98948",
+    "sourceIndex": 129,
+    "sourceTitle": "天天天国地獄国",
+    "channel": "Aiobahn",
+    "durationSeconds": 229,
+    "youtubeUrl": "https://www.youtube.com/watch?v=GFHtlz-wqW4",
+    "audio": {
+      "status": "ready",
+      "path": "audio/GFHtlz-wqW4.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 228.43560416666668,
+      "byteLength": 1400422,
+      "sha256": "5f742ad389dfc64219005a76408f3cfc39d1cf1f632bdd9ee57cf74b2a1d2ff7"
+    },
+    "rejectedAliasProposals": [
+      {
+        "kind": "title",
+        "name": "천천천국지옥국",
+        "url": "https://namu.moe/w/天天天国地獄国?from=천천천국지옥국",
+        "quote": "天天天国地獄国 | 천천천국지옥국"
+      }
+    ]
+  },
+  {
+    "index": 139,
+    "videoId": "DXKSiil_gak",
+    "title": "波よせて",
+    "writers": [],
+    "singer": "somunia, Yaca",
+    "tags": [],
+    "aliases": [],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=DXKSiil_gak",
+        "quote": "original Small Circle of Friends; Most famous cover ver. / クラムボン; covered by somunia × Yaca",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=DXKSiil_gak",
+        "quote": "波よせて - クラムボン (cover)｜somunia × Yaca — somunia",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "Small Circle of Friends / クラムボン cover의 원곡 songwriter를 로컬 근거에서 검증하지 못함",
+      "현재 확보한 제목은 일본어 원제뿐이며 게임 매치 표기를 검증하지 못함"
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "low",
+    "notes": "The requested recording is a somunia × Yaca cover; the description distinguishes the original artist from the Clammbon cover version.",
+    "id": "c7200a8a-bfcd-528e-828b-718a201f53ea",
+    "sourceIndex": 139,
+    "sourceTitle": "波よせて - クラムボン (cover)｜somunia × Yaca",
+    "channel": "somunia",
+    "durationSeconds": 304,
+    "youtubeUrl": "https://www.youtube.com/watch?v=DXKSiil_gak",
+    "audio": {
+      "status": "ready",
+      "path": "audio/DXKSiil_gak.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 303.431,
+      "byteLength": 1862109,
+      "sha256": "16cdb293410f0316f57d3f66bbce27e4be9d5f158305b425ba4ece3b64c52c0e"
+    }
+  },
+  {
+    "index": 156,
+    "videoId": "a33CnSLUFHY",
+    "title": "발레리코",
+    "writers": [
+      "みきとP"
+    ],
+    "singer": "GUMI",
+    "tags": [
+      "みきとP",
+      "발레리코",
+      "미키토P"
+    ],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "발레리코",
+        "url": "https://vocadb.net/S/62650",
+        "quote": "발레리코"
+      },
+      {
+        "kind": "writer",
+        "name": "미키토P",
+        "writer": "みきとP",
+        "url": "https://vocadb.net/Ar/876",
+        "quote": "미키토P",
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=b6abJ4NlzsE&fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "kind": "writer",
+        "name": "みきとP",
+        "writer": "みきとP",
+        "url": "https://vocadb.net/Ar/876",
+        "quote": "みきとP",
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=b6abJ4NlzsE&fields=Names,Artists,PVs",
+        "mainVerified": true
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=a33CnSLUFHY",
+        "quote": "バレリーコ · みきとP · バレリーコ",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=a33CnSLUFHY",
+        "quote": "バレリーコ",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://vocadb.net/S/62650",
+        "quote": "발레리코",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs?query=%E3%83%90%E3%83%AC%E3%83%AA%E3%83%BC%E3%82%B3&fields=Names%2CArtists%2CPVs&maxResults=10"
+      },
+      {
+        "url": "https://vocadb.net/S/62650",
+        "quote": "발레리코",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/S/62650"
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "Original song identity or writer credit needs verification.",
+      "No sourced Korean or officially used Latin matchable title established.",
+      "Actual writer credit lacks a retrieved credit source.",
+      "No sourced Korean or official Latin title that matches the game search was established."
+    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "low",
+    "notes": "Original recording identity and credits require MAIN review where indicated; recording metadata is taken from the assigned row. Cover singer is labeled separately.",
+    "id": "3c27ed4e-3e7c-54bc-a40e-73b3c021d9d0",
+    "sourceIndex": 156,
+    "sourceTitle": "バレリーコ",
+    "channel": "mikitoP  Official",
+    "durationSeconds": 247,
+    "youtubeUrl": "https://www.youtube.com/watch?v=a33CnSLUFHY",
+    "audio": {
+      "status": "ready",
+      "path": "audio/a33CnSLUFHY.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 246.40704166666666,
+      "byteLength": 1510432,
+      "sha256": "f77f8fc4ad4044d67ff70ed42e1b1bf5ba989673ce6cc4002cfd13085ea98e00"
+    }
+  },
+  {
+    "index": 159,
+    "videoId": "bsoKY7M-efM",
+    "title": "저승길 등불",
+    "writers": [
+      "シャノン"
+    ],
+    "singer": "GUMI",
+    "tags": [
+      "저승길 등불"
+    ],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "저승길 등불",
+        "url": "https://vocaro.wikidot.com/lamp-lighting-the-descent-into-the-underworld",
+        "quote": "저승길 등불 - 보카로 가사 위키"
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=Apb3BUR2CGg",
+        "quote": "■Music / Lyrics / Animation : シャノン (Shannon)",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://vocaro.wikidot.com/lamp-lighting-the-descent-into-the-underworld",
+        "quote": "저승길 등불 - 보카로 가사 위키",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://vocaro.wikidot.com/lamp-lighting-the-descent-into-the-underworld",
+        "quote": "작사  | 샤논",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://vocaro.wikidot.com/lamp-lighting-the-descent-into-the-underworld",
+        "quote": "저승길 등불 - 보카로 가사 위키",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://vocaro.wikidot.com/lamp-lighting-the-descent-into-the-underworld"
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "메인 독립 조회에서 작가 크레딧을 뒷받침하는 출처를 재확인하지 못했습니다: シャノン"
+    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "high",
+    "notes": "",
+    "id": "83880bf1-d766-5599-b8a6-380478f8f598",
+    "sourceIndex": 159,
+    "sourceTitle": "ヨミクダリの灯",
+    "channel": "シャノン / Shannon Official",
+    "durationSeconds": 240,
+    "youtubeUrl": "https://www.youtube.com/watch?v=bsoKY7M-efM",
+    "audio": {
+      "status": "ready",
+      "path": "audio/bsoKY7M-efM.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 240.007,
+      "byteLength": 1460255,
+      "sha256": "d5f19a7e47187bb3035449c9665ac1ea027ff993213e4f0e6b98b3347ca1d7a9"
+    },
+    "rejectedAliasProposals": [
+      {
+        "kind": "writer",
+        "name": "샤논",
+        "url": "https://vocaro.wikidot.com/lamp-lighting-the-descent-into-the-underworld",
+        "quote": "작사  | 샤논",
+        "writer": "シャノン"
+      }
+    ]
+  },
+  {
+    "index": 184,
+    "videoId": "Q96uXXo9WvE",
+    "title": "★ぺぽよ(페포요)-『±0』한국어 번역★",
+    "writers": [],
+    "singer": null,
+    "tags": [
+      "ぺぽよ페포요0한국어 번역"
+    ],
+    "aliases": [
+      {
+        "kind": "punctuation",
+        "name": "ぺぽよ페포요0한국어 번역",
+        "url": null,
+        "quote": "★ぺぽよ(페포요)-『±0』한국어 번역★"
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=Q96uXXo9WvE",
+        "quote": "ぺぽよ(페포요)-『±0』\n- https://youtu.be/Sv8oCf2ER2I\n\n번역\n- https://m.blog.naver.com/padlscpu/222525744354\n- https://m.blog.naver.com/ibag839/222537337916\n\n좋아하는 노래입니다!",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "VocaDB video match unavailable and no verified reusable writer credit."
+    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "low",
+    "notes": "Local evidence reused; unresolved identity/credit gaps are marked for review.",
+    "id": "38e6d340-cd54-5b4c-9bf9-b3139e87a2da",
+    "sourceIndex": 184,
+    "sourceTitle": "★ぺぽよ(페포요)-『±0』한국어 번역★",
+    "channel": "Turd - 44",
+    "durationSeconds": 271,
+    "youtubeUrl": "https://www.youtube.com/watch?v=Q96uXXo9WvE",
+    "audio": {
+      "status": "ready",
+      "path": "audio/Q96uXXo9WvE.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 270.02025,
+      "byteLength": 1623057,
+      "sha256": "e72d1b30c726f54026cca22d725c8a3385fac794591b1219ee0acfd50db57068"
+    }
+  },
+  {
+    "index": 193,
+    "videoId": "fWORtj1UrBU",
+    "title": "打打打打打打打打打打",
+    "writers": [
+      "ヒゲドライバー"
+    ],
+    "singer": "SELEN",
+    "tags": [],
+    "aliases": [],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=fWORtj1UrBU",
+        "quote": "Music ヒゲドライバー join. SELEN",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://note.com/256mochi/n/n59e8cf4f7155",
+        "quote": "打打打打打打打打打打 / 히게드라이버 join. SELEN",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://note.com/256mochi/n/n59e8cf4f7155",
+        "quote": "打打打打打打打打打打 / 히게드라이버 join. SELEN",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://note.com/256mochi/n/n59e8cf4f7155"
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "게임에서 사용할 수 있는 한국어 또는 공식 영문 제목을 확인하지 못함"
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "high",
+    "notes": "Exact recording credits identify ヒゲドライバー and SELEN. No verified Korean/official Latin title was retrieved; title remains unresolved.",
+    "id": "882c32ec-67bd-543e-9ab4-1208d6d2b2d3",
+    "sourceIndex": 193,
+    "sourceTitle": "중독성 개쩌는 수능/시험 금지곡 [打打打打打打打打打打] / 다다다다다다다다다다",
+    "channel": "울곰",
+    "durationSeconds": 114,
+    "youtubeUrl": "https://www.youtube.com/watch?v=fWORtj1UrBU",
+    "audio": {
+      "status": "ready",
+      "path": "audio/fWORtj1UrBU.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 114.01697916666667,
+      "byteLength": 657108,
+      "sha256": "04465b0caef338fbead623f9f8df748102159c3c43bdfe4c0f9b3e8bd76ea069"
+    }
+  },
+  {
+    "index": 200,
+    "videoId": "wN8uBNLHffI",
+    "title": "Shelter",
+    "writers": [],
+    "singer": null,
+    "tags": [],
+    "aliases": [],
+    "evidence": [],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "VocaDB video match unavailable and no verified reusable writer credit."
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "low",
+    "notes": "Local evidence reused; unresolved identity/credit gaps are marked for review.",
+    "id": "d122d357-8a7a-5b70-88b8-e4942dc4e1b8",
+    "sourceIndex": 200,
+    "sourceTitle": "Shelter",
+    "channel": "Porter Robinson",
+    "durationSeconds": 218,
+    "youtubeUrl": "https://www.youtube.com/watch?v=wN8uBNLHffI",
+    "audio": {
+      "status": "failed",
+      "failureCode": "SOURCE_UNAVAILABLE",
+      "reason": "요청한 원본 영상의 전체 음원을 확보하지 못했습니다."
+    }
+  },
+  {
+    "index": 236,
+    "videoId": "mVvz8w6TILE",
+    "title": "색향수",
+    "writers": [
+      "者に"
+    ],
+    "singer": "神山羊",
+    "tags": [
+      "색향수"
+    ],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "색향수",
+        "url": "https://www.youtube.com/watch?v=mVvz8w6TILE",
+        "quote": "[한글자막] 색향수(色香水) - 호리미야 OP Full"
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=if326EdiDNk",
+        "quote": "色香水(색향수) - 神山羊(카미야마 요우)",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://www.google.com/search?q=%EC%83%89%ED%96%A5%EC%88%98"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=mVvz8w6TILE",
+        "quote": "[한글자막] 색향수(色香水) - 호리미야 OP Full",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=mVvz8w6TILE",
+        "quote": "[한글자막] 색향수(色香水) - 호리미야 OP Full",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://www.youtube.com/watch?v=mVvz8w6TILE"
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "Original song identity or writer credit needs verification.",
+      "Actual writer credit lacks a retrieved credit source."
+    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "low",
+    "notes": "Original recording identity and credits require MAIN review where indicated; recording metadata is taken from the assigned row. Cover singer is labeled separately.",
+    "id": "0e8e7b6c-c7da-5f38-9826-d8ed5196b201",
+    "sourceIndex": 236,
+    "sourceTitle": "[한글자막] 색향수(色香水) - 호리미야 OP Full",
+    "channel": "류드",
+    "durationSeconds": 249,
+    "youtubeUrl": "https://www.youtube.com/watch?v=mVvz8w6TILE",
+    "audio": {
+      "status": "ready",
+      "path": "audio/mVvz8w6TILE.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 248.95975,
+      "byteLength": 1525010,
+      "sha256": "281b197826aaae83dd6832a3c8439a000b70d7f198697b1f194ff9cfa4faf2f6"
+    }
+  },
+  {
+    "index": 237,
+    "videoId": "e-oTXvuc-vE",
+    "title": "향수",
+    "writers": [
+      "8s"
+    ],
+    "singer": "瑛人",
+    "tags": [
+      "8s"
+    ],
+    "aliases": [],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=e-oTXvuc-vE",
+        "quote": "【가사/해석】 瑛人(에이토) - 香水(향수)",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=aY6bGifUFHs",
+        "quote": "香水 · Eito\nComposer: 8s\nLyricist: 8s",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "메인 독립 조회에서 작가 크레딧을 뒷받침하는 출처를 재확인하지 못했습니다: 8s"
+    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "high",
+    "notes": "Exact requested video title supplies Korean title use; official original audio description credits composer/lyricist 8s.",
+    "id": "f2469474-87ac-52be-a1e1-381cc53fb52b",
+    "sourceIndex": 237,
+    "sourceTitle": "【가사/해석】 瑛人(에이토) - 香水(향수)",
+    "channel": "3.6 g",
+    "durationSeconds": 249,
+    "youtubeUrl": "https://www.youtube.com/watch?v=e-oTXvuc-vE",
+    "audio": {
+      "status": "ready",
+      "path": "audio/e-oTXvuc-vE.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 248.75077083333332,
+      "byteLength": 1524061,
+      "sha256": "f95a17ea8aa8866d86d525a86175f12ea4c60423b73640d1522a0f5837d66318"
+    }
+  },
+  {
+    "index": 238,
+    "videoId": "NqIHobJdaMg",
+    "title": "내가 그 녀석을 죽였어",
+    "writers": [
+      "ずきお"
+    ],
+    "singer": "Hatsune Miku",
+    "tags": [
+      "내가 그 녀석을 죽였어",
+      "즈키오",
+      "Zukio"
+    ],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "내가 그 녀석을 죽였어",
+        "url": "https://m.namu.moe/w/%EB%82%B4%EA%B0%80%20%EA%B7%B8%20%EB%85%80%EC%84%9D%EC%9D%84%20%EC%A3%BD%EC%98%80%EC%96%B4",
+        "quote": "내가 그 녀석을 죽였어 (ぼくがあいつを殺した)"
+      },
+      {
+        "kind": "writer",
+        "writer": "ずきお",
+        "name": "즈키오",
+        "url": "https://m.namu.moe/w/%EB%82%B4%EA%B0%80%20%EA%B7%B8%20%EB%85%80%EC%84%9D%EC%9D%84%20%EC%A3%BD%EC%98%80%EC%96%B4",
+        "quote": "즈키오가 2011년 10월 4일에"
+      },
+      {
+        "kind": "writer",
+        "name": "Zukio",
+        "writer": "ずきお",
+        "url": "https://vocadb.net/Ar/2954",
+        "quote": "Zukio",
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=uhkcKvcSpkI&fields=Names,Artists,PVs",
+        "mainVerified": true
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=NqIHobJdaMg",
+        "quote": "[하츠네미쿠]내가 그 녀석을 죽였어",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://m.namu.moe/w/%EB%82%B4%EA%B0%80%20%EA%B7%B8%20%EB%85%80%EC%84%9D%EC%9D%84%20%EC%A3%BD%EC%98%80%EC%96%B4",
+        "quote": "내가 그 녀석을 죽였어 (ぼくがあいつを殺した)는 즈키오가 2011년 10월 4일에 니코니코 동화와 피아프로에 투고한 하츠네 미쿠의 VOCALOID 오리지널 곡이다.",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://m.namu.moe/w/%EB%82%B4%EA%B0%80%20%EA%B7%B8%20%EB%85%80%EC%84%9D%EC%9D%84%20%EC%A3%BD%EC%98%80%EC%96%B4",
+        "quote": "내가 그 녀석을 죽였어 (ぼくがあいつを殺した)",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://m.namu.moe/w/%EB%82%B4%EA%B0%80%20%EA%B7%B8%20%EB%85%80%EC%84%9D%EC%9D%84%20%EC%A3%BD%EC%98%80%EC%96%B4"
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "메인 독립 조회에서 작가 크레딧을 뒷받침하는 출처를 재확인하지 못했습니다: ずきお"
+    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "high",
+    "notes": "",
+    "id": "9c1a2e4b-93f6-5c75-a332-2b127256c37d",
+    "sourceIndex": 238,
+    "sourceTitle": "[하츠네미쿠]내가 그 녀석을 죽였어",
+    "channel": "렌미쿠",
+    "durationSeconds": 201,
+    "youtubeUrl": "https://www.youtube.com/watch?v=NqIHobJdaMg",
+    "audio": {
+      "status": "ready",
+      "path": "audio/NqIHobJdaMg.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 200.97570833333333,
+      "byteLength": 1227466,
+      "sha256": "702c2c8beeabd785be3e4bf336f489bdf31f0d0144e762f9684cdc9f619df604"
+    }
+  },
+  {
+    "index": 251,
+    "videoId": "Jx-ulEJQbeQ",
+    "title": "Ily (I love you baby) (Rock-Version)",
+    "writers": [],
+    "singer": null,
+    "tags": [
+      "Ily I love you baby RockVersion"
+    ],
+    "aliases": [
+      {
+        "kind": "punctuation",
+        "name": "Ily I love you baby RockVersion",
+        "url": null,
+        "quote": "Ily (I love you baby) (Rock-Version)"
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=Jx-ulEJQbeQ",
+        "quote": "Ily (I love you baby) (Rock-Version) — Kontrollverlust",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "원곡 작사·작곡 크레딧을 로컬 근거에서 확인하지 못함"
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "low",
+    "notes": "The requested recording is a rock version; no local source verified the original composition credits.",
+    "id": "5564d1d7-5597-53b4-b9dd-e04f4320cafc",
+    "sourceIndex": 251,
+    "sourceTitle": "Ily (I love you baby) (Rock-Version)",
+    "channel": "Kontrollverlust",
+    "durationSeconds": 191,
+    "youtubeUrl": "https://www.youtube.com/watch?v=Jx-ulEJQbeQ",
+    "audio": {
+      "status": "ready",
+      "path": "audio/Jx-ulEJQbeQ.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 190.30033333333333,
+      "byteLength": 1168345,
+      "sha256": "0e076fc3b37f5d837e53b6683805b5ce009b34db30593a59e11d9f191dcd8c8c"
+    }
+  },
+  {
+    "index": 260,
+    "videoId": "O5WTu2-w7r0",
+    "title": "Shelter",
+    "writers": [
+      "Porter Robinson",
+      "Madeon"
+    ],
+    "singer": null,
+    "tags": [
+      "Porter Robinson",
+      "Madeon"
+    ],
+    "aliases": [],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=O5WTu2-w7r0",
+        "quote": "Porter Robinson & Madeon - Shelter (Piano Version) [Official Audio]",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "The assigned piano recording identifies Shelter and Porter Robinson/Madeon, but this recording’s source description does not provide the original lyric/composition credit."
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "low",
+    "notes": "Original recording identity and credits require MAIN review where indicated; recording metadata is taken from the assigned row. Cover singer is labeled separately.",
+    "id": "920afba2-1cb3-553e-9856-823718964124",
+    "sourceIndex": 260,
+    "sourceTitle": "Porter Robinson & Madeon - Shelter (Piano Version) [Official Audio]",
+    "channel": "feetie",
+    "durationSeconds": 202,
+    "youtubeUrl": "https://www.youtube.com/watch?v=O5WTu2-w7r0",
+    "audio": {
+      "status": "ready",
+      "path": "audio/O5WTu2-w7r0.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 202.009,
+      "byteLength": 1232866,
+      "sha256": "0d9f65a640137c60c3454e490b8ab1e714eac41aaf17a933d41a58e7433dfa49"
+    }
+  },
+  {
+    "index": 269,
+    "videoId": "Mormd4orIKc",
+    "title": "WHACHUWANT",
+    "writers": [
+      "HAON",
+      "Sang Chul Hwang"
+    ],
+    "singer": "HAON",
+    "tags": [
+      "HAON",
+      "Sang Chul Hwang",
+      "김하온"
+    ],
+    "aliases": [
+      {
+        "kind": "writer",
+        "name": "김하온",
+        "writer": "HAON",
+        "url": "https://lyricsweb.com/album/haon/travel-noah",
+        "quote": "HAON (김하온)"
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=Mormd4orIKc",
+        "quote": "WHACHUWANT",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://lyricstranslate.com/en/haon-whachuwant-lyrics.html",
+        "quote": "WHACHUWANT\nWriter(s): Ha On Kim, Sang Chul Hwang",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://lyricsweb.com/album/haon/travel-noah",
+        "quote": "HAON (김하온)",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "메인 독립 조회에서 작가 크레딧을 뒷받침하는 출처를 재확인하지 못했습니다: Sang Chul Hwang"
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "high",
+    "notes": "YouTube Topic description verifies original artist; track-specific writer database lists HAON Kim and Sang Chul Hwang.",
+    "id": "1e294b0d-377a-559c-ac3d-c34b239d14eb",
+    "sourceIndex": 269,
+    "sourceTitle": "WHACHUWANT",
+    "channel": "하온 (HAON) - Topic",
+    "durationSeconds": 216,
+    "youtubeUrl": "https://www.youtube.com/watch?v=Mormd4orIKc",
+    "audio": {
+      "status": "ready",
+      "path": "audio/Mormd4orIKc.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 215.050125,
+      "byteLength": 1319994,
+      "sha256": "48e1b7029d1da52eec9993e3427b82d9c462387addffee13ee1bb6db8771e38a"
+    }
+  },
+  {
+    "index": 273,
+    "videoId": "HBwSqC_PVrk",
+    "title": "메스머라이저",
+    "writers": [
+      "サツキ"
+    ],
+    "singer": "初音ミク, 重音テト",
+    "tags": [],
+    "aliases": [],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=HBwSqC_PVrk",
+        "quote": "메즈머라이저 / 사츠키 / 하츠네 미쿠 X 카사네 테토[한글화]",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.namu.moe/w/메스머라이저",
+        "quote": "메스머라이저 (メズマライザー)",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.namu.moe/w/메스머라이저",
+        "quote": "메즈마라이저는 사츠키가 작사, 작곡",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.namu.moe/w/메스머라이저",
+        "quote": "메스머라이저 (メズマライザー)",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://www.namu.moe/w/메스머라이저"
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "메인 독립 조회에서 작가 크레딧을 뒷받침하는 출처를 재확인하지 못했습니다: サツキ",
+      "메인 독립 조회에서 채택한 곡명 표기의 실제 사용을 재확인하지 못했습니다."
+    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "low",
+    "notes": "원본 ID와 video description을 확인. 인용은 일치 여부를 확인한 source excerpt. 확인되지 않은 제목/credit은 reviewReasons에 표시.",
+    "id": "e9466bfa-2339-56ba-b011-32ce30769dc7",
+    "sourceIndex": 273,
+    "sourceTitle": "메즈머라이저 / 사츠키 / 하츠네 미쿠 X 카사네 테토[한글화]",
+    "channel": "작업용",
+    "durationSeconds": 157,
+    "youtubeUrl": "https://www.youtube.com/watch?v=HBwSqC_PVrk",
+    "audio": {
+      "status": "ready",
+      "path": "audio/HBwSqC_PVrk.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 156.97389583333333,
+      "byteLength": 952822,
+      "sha256": "0650652f2e66b4b452fc60392403a7b7590081dd45c7f3c321a515a34029f2b8"
+    },
+    "rejectedAliasProposals": [
+      {
+        "kind": "title",
+        "name": "메스머라이저",
+        "url": "https://www.namu.moe/w/메스머라이저",
+        "quote": "메스머라이저 (メズマライザー)"
+      }
+    ]
+  },
+  {
+    "index": 283,
+    "videoId": "zYL_CVcpXzM",
+    "title": "Gone",
+    "writers": [],
+    "singer": null,
+    "tags": [],
+    "aliases": [],
+    "evidence": [],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "정확한 원곡 작사·작곡 크레딧을 로컬 근거에서 확인하지 못함"
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "low",
+    "notes": "No exact-video metadata or cached VocaDB match was available locally; the uploader/title alone do not establish songwriter credits.",
+    "id": "4629619f-1c8b-5219-9df0-af539f0e8c93",
+    "sourceIndex": 283,
+    "sourceTitle": "Gone",
+    "channel": "THISISJUSTHIS",
+    "durationSeconds": 187,
+    "youtubeUrl": "https://www.youtube.com/watch?v=zYL_CVcpXzM",
+    "audio": {
+      "status": "failed",
+      "failureCode": "AGE_RESTRICTED",
+      "reason": "원본 영상의 연령 확인이 필요하여 전체 음원을 확보하지 못했습니다."
+    }
+  },
+  {
+    "index": 288,
+    "videoId": "fsdTVe9HwK0",
+    "title": "INTRO",
+    "writers": [],
+    "singer": null,
+    "tags": [],
+    "aliases": [],
+    "evidence": [],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "VocaDB video match unavailable and no verified reusable writer credit."
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "low",
+    "notes": "Local evidence reused; unresolved identity/credit gaps are marked for review.",
+    "id": "d03fca88-b2c8-554f-9ad8-2f21c1d4526f",
+    "sourceIndex": 288,
+    "sourceTitle": "INTRO",
+    "channel": "하온 (HAON) - Topic",
+    "durationSeconds": 111,
+    "youtubeUrl": "https://www.youtube.com/watch?v=fsdTVe9HwK0",
+    "audio": {
+      "status": "ready",
+      "path": "audio/fsdTVe9HwK0.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 110.90977083333334,
+      "byteLength": 679949,
+      "sha256": "26ab7cee8b8c8c70df2e232c6ccf089b318b7f86d671a497a1a8fa448c80ae62"
+    }
+  },
+  {
+    "index": 291,
+    "videoId": "tkSHKEfXvT4",
+    "title": "LOVE ! DANCE !",
+    "writers": [],
+    "singer": null,
+    "tags": [
+      "LOVE DANCE"
+    ],
+    "aliases": [
+      {
+        "kind": "punctuation",
+        "name": "LOVE DANCE",
+        "url": null,
+        "quote": "LOVE ! DANCE !"
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=tkSHKEfXvT4",
+        "quote": "LOVE ! DANCE ! — 하온 (HAON) - Topic",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "작사·작곡 크레딧을 로컬 근거에서 확인하지 못함"
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "low",
+    "notes": "Official Topic metadata identifies the HAON recording, but no local source provided songwriter credits.",
+    "id": "29afa1c9-7aff-5185-8dee-8e36fead7931",
+    "sourceIndex": 291,
+    "sourceTitle": "LOVE ! DANCE !",
+    "channel": "하온 (HAON) - Topic",
+    "durationSeconds": 201,
+    "youtubeUrl": "https://www.youtube.com/watch?v=tkSHKEfXvT4",
+    "audio": {
+      "status": "ready",
+      "path": "audio/tkSHKEfXvT4.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 200.487125,
+      "byteLength": 1230887,
+      "sha256": "b392a1424d183896cd44e3ab9645d6731c810f53b1dd8b855fc7e4888596b9b2"
+    }
+  },
+  {
+    "index": 295,
+    "videoId": "XlgwZqJbIdg",
+    "title": "NOAH",
+    "writers": [
+      "GroovyRoom",
+      "HAON",
+      "Hoody",
+      "Jay Park"
+    ],
+    "singer": "HAON, Jay Park, Hoody",
+    "tags": [
+      "GroovyRoom",
+      "HAON",
+      "Hoody",
+      "Jay Park"
+    ],
+    "aliases": [],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=XlgwZqJbIdg",
+        "quote": "NOAH (Feat. 박재범 Jay Park, Hoody) · HAON",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "메인 독립 조회에서 작가 크레딧을 뒷받침하는 출처를 재확인하지 못했습니다: GroovyRoom",
+      "추정 크레딧을 채택하지 않고 개별 곡의 작사·작곡/번안 크레딧 확인을 보류합니다."
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "high",
+    "notes": "",
+    "id": "6338b797-412f-58cf-a4e0-c8c0fa89e242",
+    "sourceIndex": 295,
+    "sourceTitle": "NOAH (Feat. 박재범 Jay Park, Hoody)",
+    "channel": "하온 (HAON) - Topic",
+    "durationSeconds": 225,
+    "youtubeUrl": "https://www.youtube.com/watch?v=XlgwZqJbIdg",
+    "audio": {
+      "status": "ready",
+      "path": "audio/XlgwZqJbIdg.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 224.57614583333333,
+      "byteLength": 1377559,
+      "sha256": "9c4213f79a4af1b931526ee0325e13126e67421ad86ac888f917c0e55c9ccd68"
+    },
+    "rejectedEvidenceProposals": [
+      {
+        "url": "https://www.shazam.com/song/1608512836/noah-feat-jay-park-and-hoody?tab=lyrics",
+        "quote": "Written by: GroovyRoom, HAON, Hoody, Jay Park",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      }
+    ]
+  },
+  {
+    "index": 300,
+    "videoId": "8V60iuudILY",
+    "title": "유령 도쿄",
+    "writers": [
+      "Ayase"
+    ],
+    "singer": "初音ミク",
+    "tags": [
+      "Ayase",
+      "유령 도쿄",
+      "아야세"
+    ],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "유령 도쿄",
+        "url": "https://eisei.kr/charts",
+        "quote": "유령 도쿄 | 幽霊東京"
+      },
+      {
+        "kind": "writer",
+        "name": "아야세",
+        "url": "https://namu.wiki/w/Ayase",
+        "quote": "닉네임은 ' 아야세 '라고 읽는다",
+        "writer": "Ayase"
+      },
+      {
+        "kind": "writer",
+        "name": "Ayase",
+        "writer": "Ayase",
+        "url": "https://vocadb.net/Ar/70347",
+        "quote": "Ayase",
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=pbvghdehgkk&fields=Names,Artists,PVs",
+        "mainVerified": true
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://eisei.kr/charts",
+        "quote": "유령 도쿄 | 幽霊東京",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://www.google.com/search?q=%EC%9C%A0%EB%A0%B9%20%EB%8F%84%EC%BF%84"
+      },
+      {
+        "url": "https://namu.wiki/w/Ayase",
+        "quote": "닉네임은 ' 아야세 '라고 읽는다",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=8V60iuudILY",
+        "quote": "幽霊東京 · Ayase · 幽霊東京",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=8V60iuudILY",
+        "quote": "幽霊東京",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://eisei.kr/charts",
+        "quote": "유령 도쿄 | 幽霊東京",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://eisei.kr/charts"
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "Original song identity or writer credit needs verification.",
+      "No sourced Korean or officially used Latin matchable title established.",
+      "Actual writer credit lacks a retrieved credit source."
+    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "low",
+    "notes": "Original recording identity and credits require MAIN review where indicated; recording metadata is taken from the assigned row. Cover singer is labeled separately.",
+    "id": "db1a1316-8dd2-5f51-a475-a8a57a79539f",
+    "sourceIndex": 300,
+    "sourceTitle": "幽霊東京",
+    "channel": "Ayase",
+    "durationSeconds": 211,
+    "youtubeUrl": "https://www.youtube.com/watch?v=8V60iuudILY",
+    "audio": {
+      "status": "ready",
+      "path": "audio/8V60iuudILY.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 210.63366666666667,
+      "byteLength": 1289165,
+      "sha256": "f035e8a25cde5f3e8e03b77ae3bbeb53c5b415e2478dbbf494b7ca94a0aa7fa3"
+    }
+  },
+  {
+    "index": 328,
+    "videoId": "wPCAPLrUlTc",
+    "title": "[자막] 화이트 마인드 - Glue / 하츠네 미쿠",
+    "writers": [],
+    "singer": null,
+    "tags": [
+      "자막 화이트 마인드 Glue 하츠네 미쿠"
+    ],
+    "aliases": [
+      {
+        "kind": "punctuation",
+        "name": "자막 화이트 마인드 Glue 하츠네 미쿠",
+        "url": null,
+        "quote": "[자막] 화이트 마인드 - Glue / 하츠네 미쿠"
+      }
+    ],
+    "evidence": [],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "VocaDB video match unavailable and no verified reusable writer credit."
+    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "low",
+    "notes": "Local evidence reused; unresolved identity/credit gaps are marked for review.",
+    "id": "7e792b3b-91ea-528b-bea6-4935ee4e60de",
+    "sourceIndex": 328,
+    "sourceTitle": "[자막] 화이트 마인드 - Glue / 하츠네 미쿠",
+    "channel": "니지_",
+    "durationSeconds": 211,
+    "youtubeUrl": "https://www.youtube.com/watch?v=wPCAPLrUlTc",
+    "audio": {
+      "status": "ready",
+      "path": "audio/wPCAPLrUlTc.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 210.5075,
+      "byteLength": 1291069,
+      "sha256": "175e68df3a4ed1aa8c9f6c5f15c97603c771c284cbf4c01e3b2fce94549b22da"
+    }
+  },
+  {
+    "index": 336,
+    "videoId": "AwT9TXODkkM",
+    "title": "도쿄 다이버 페이크 쇼 / 츠미키 / IA[한글화]",
+    "writers": [],
+    "singer": null,
+    "tags": [
+      "도쿄 다이버 페이크 쇼 츠미키 IA한글화"
+    ],
+    "aliases": [
+      {
+        "kind": "punctuation",
+        "name": "도쿄 다이버 페이크 쇼 츠미키 IA한글화",
+        "url": null,
+        "quote": "도쿄 다이버 페이크 쇼 / 츠미키 / IA[한글화]"
+      }
+    ],
+    "evidence": [],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "VocaDB video match unavailable and no verified reusable writer credit."
+    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "low",
+    "notes": "Local evidence reused; unresolved identity/credit gaps are marked for review.",
+    "id": "e9e787ba-f378-5fff-8020-9ca66819cdaa",
+    "sourceIndex": 336,
+    "sourceTitle": "도쿄 다이버 페이크 쇼 / 츠미키 / IA[한글화]",
+    "channel": "작업용",
+    "durationSeconds": 181,
+    "youtubeUrl": "https://www.youtube.com/watch?v=AwT9TXODkkM",
+    "audio": {
+      "status": "ready",
+      "path": "audio/AwT9TXODkkM.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 180.19385416666665,
+      "byteLength": 1078818,
+      "sha256": "4a3f687c38c425824dd2f754c6e51d2a140f4b4ec70e3be3c388c32b4503b73b"
+    }
+  },
+  {
+    "index": 350,
+    "videoId": "g2MNFAMluSs",
+    "title": "브리키노 댄스",
+    "writers": [
+      "日向電工"
+    ],
+    "singer": "SymaG",
+    "tags": [],
+    "aliases": [],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=g2MNFAMluSs",
+        "quote": "ブリキノダンス　うたった【SymaG】",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.uta-net.com/song/361554/?Aselect=2",
+        "quote": "ブリキノダンス",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=g2MNFAMluSs",
+        "quote": "素晴らしい御本家様(日向電工様) | https://www.nicovideo.jp/watch/sm20296308",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://m.tjmedia.com/web_common_file/kor/data/TJ%EC%9D%BC%EB%B3%B8%EC%95%A0%EB%8B%88%EC%86%A1%EB%B6%812023%EB%85%84%EA%B0%80%EC%9D%84%ED%98%B8.pdf",
+        "quote": "ブリキノダンス | 브리키노 댄스 | 日向電工",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.uta-net.com/songWriter/31615/",
+        "quote": "ブリキノダンス | symaG 作詞：日向電工 作曲：日向電工",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://m.tjmedia.com/web_common_file/kor/data/TJ%EC%9D%BC%EB%B3%B8%EC%95%A0%EB%8B%88%EC%86%A1%EB%B6%812023%EB%85%84%EA%B0%80%EC%9D%84%ED%98%B8.pdf",
+        "quote": "ブリキノダンス | 브리키노 댄스 | 日向電工",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://m.tjmedia.com/web_common_file/kor/data/TJ%EC%9D%BC%EB%B3%B8%EC%95%A0%EB%8B%88%EC%86%A1%EB%B6%812023%EB%85%84%EA%B0%80%EC%9D%84%ED%98%B8.pdf"
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "메인 독립 조회에서 채택한 곡명 표기의 실제 사용을 재확인하지 못했습니다."
+    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "high",
+    "notes": "The selected upload is SymaG cover; original voicebank recording is separate.",
+    "id": "f9426c12-9866-5e60-a6fc-a73a1456a330",
+    "sourceIndex": 350,
+    "sourceTitle": "ブリキノダンス　うたった【SymaG】",
+    "channel": "島爺/SymaG official",
+    "durationSeconds": 199,
+    "youtubeUrl": "https://www.youtube.com/watch?v=g2MNFAMluSs",
+    "audio": {
+      "status": "ready",
+      "path": "audio/g2MNFAMluSs.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 198.94397916666668,
+      "byteLength": 1218610,
+      "sha256": "6e39227824fafd9aa46f07a023572e0370c109dc08773fb92a05551590a0336b"
+    },
+    "rejectedAliasProposals": [
+      {
+        "kind": "title",
+        "name": "브리키노 댄스",
+        "url": "https://m.tjmedia.com/web_common_file/kor/data/TJ%EC%9D%BC%EB%B3%B8%EC%95%A0%EB%8B%88%EC%86%A1%EB%B6%812023%EB%85%84%EA%B0%80%EC%9D%84%ED%98%B8.pdf",
+        "quote": "ブリキノダンス | 브리키노 댄스 | 日向電工"
+      }
+    ]
+  },
+  {
+    "index": 352,
+    "videoId": "eg65SbqmT0s",
+    "title": "ハレハレヤ ll Harehare Ya - ver.Sou [Clear and Sunny]",
+    "writers": [],
+    "singer": null,
+    "tags": [],
+    "aliases": [],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=eg65SbqmT0s",
+        "quote": "ハレハレヤ - Re-Arrange - 羽生まゐご feat.Sou\n夜明け前貴方はSouSouと \n本家様＊https://www.youtube.com/watch?v=2B7MEADeLyA\nVocal＆Mix＊Sou(@Nico_nico_Sou )\nhttps://www.youtube.com/c/niconicoSou",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "VocaDB video match unavailable and no verified reusable writer credit."
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "low",
+    "notes": "Local evidence reused; unresolved identity/credit gaps are marked for review.",
+    "id": "3f3a8e6c-f777-5ffc-97d3-67f6ef484e9b",
+    "sourceIndex": 352,
+    "sourceTitle": "ハレハレヤ ll Harehare Ya - ver.Sou [Clear and Sunny]",
+    "channel": "Sou",
+    "durationSeconds": 209,
+    "youtubeUrl": "https://www.youtube.com/watch?v=eg65SbqmT0s",
+    "audio": {
+      "status": "ready",
+      "path": "audio/eg65SbqmT0s.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 208.41770833333334,
+      "byteLength": 1279239,
+      "sha256": "821326bf329ec4c0a40054c9b3a932ff4011b078faf4a1fea7f3380539e2e1aa"
+    }
+  },
+  {
+    "index": 359,
+    "videoId": "xNc5wcKd8M8",
+    "title": "미확인 영상",
+    "writers": [],
+    "singer": null,
+    "tags": [],
+    "aliases": [],
+    "evidence": [],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "Playlist input has no title/channel; YouTube info is absent; VocaDB exact-PV query and title search found no resolvable recording."
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "low",
+    "notes": "This assigned ID is unresolved because its input sourceTitle and channel are null and no public metadata could be matched.",
+    "id": "5fcf7c3a-091a-55b6-85b6-7f920fd8b08c",
+    "sourceIndex": 359,
+    "sourceTitle": null,
+    "channel": "",
+    "durationSeconds": null,
+    "youtubeUrl": "https://www.youtube.com/watch?v=xNc5wcKd8M8",
+    "audio": {
+      "status": "failed",
+      "failureCode": "RIGHTSHOLDER_BLOCKED",
+      "reason": "권리자 삭제 요청으로 원본 영상에 접근할 수 없습니다."
+    }
+  },
+  {
+    "index": 361,
+    "videoId": "ZjvGZTCVqUQ",
+    "title": "Shoujo S",
+    "writers": [
+      "TOMOMI",
+      "田鹿祐一"
+    ],
+    "singer": "SCANDAL",
+    "tags": [
+      "TOMOMI"
+    ],
+    "aliases": [],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=ZjvGZTCVqUQ",
+        "quote": "Music video by SCANDAL (JP) performing Shojo S. (C) 2009 Epic Records Japan, a division of Sony Music Labels Inc.",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://tower.jp/item/2559124",
+        "quote": "作詞： TOMOMI (SCANDAL) 作曲： 田鹿祐一",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "메인 독립 조회에서 작가 크레딧을 뒷받침하는 출처를 재확인하지 못했습니다: TOMOMI, 田鹿祐一"
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "high",
+    "notes": "SCANDAL recording confirmed by the supplied video description; Tower Records credits lyrics to TOMOMI and composition to 田鹿祐一.",
+    "id": "e23d9ef6-11a7-5074-a33b-40e01b8f2fe7",
+    "sourceIndex": 361,
+    "sourceTitle": "Bleach Opening 10 \"Shoujo S\"",
+    "channel": "Risk Games",
+    "durationSeconds": 195,
+    "youtubeUrl": "https://www.youtube.com/watch?v=ZjvGZTCVqUQ",
+    "audio": {
+      "status": "ready",
+      "path": "audio/ZjvGZTCVqUQ.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 194.90370833333333,
+      "byteLength": 1170847,
+      "sha256": "6ed64ba1168c998950a1a71e36732242c6c21ce4bf0a453c49c8d14c1d1c8980"
+    }
+  },
+  {
+    "index": 372,
+    "videoId": "B213BUHNjts",
+    "title": "チャイナアドバイス",
+    "writers": [
+      "真部脩一"
+    ],
+    "singer": "をとは (cover)",
+    "tags": [],
+    "aliases": [],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=B213BUHNjts",
+        "quote": "ଳ cover - チャイナアドバイス - 相対性理論(Toccoyaki remix)/をとは",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "Original Japanese title is identified as a cover/remix; a sourced Korean game-match title was not established.",
+      "No sourced Korean or official Latin title that matches the game search."
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "low",
+    "notes": "Original recording identity and credits require MAIN review where indicated; recording metadata is taken from the assigned row. Cover singer is labeled separately.",
+    "id": "c7174db6-1c92-5104-a80e-f60a8ce51337",
+    "sourceIndex": 372,
+    "sourceTitle": "ଳ cover - チャイナアドバイス - 相対性理論(Toccoyaki remix)/をとは",
+    "channel": "ଳをとは",
+    "durationSeconds": 208,
+    "youtubeUrl": "https://www.youtube.com/watch?v=B213BUHNjts",
+    "audio": {
+      "status": "ready",
+      "path": "audio/B213BUHNjts.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 207.53766666666667,
+      "byteLength": 1273152,
+      "sha256": "59fb9c07aa31388ecfbeed62a1f15d80c6c8ca29fcce1861d56b970e0c0709be"
+    }
+  },
+  {
+    "index": 376,
+    "videoId": "TGdAoez_Zfk",
+    "title": "[한글화] 플라토닉 러브 / IA",
+    "writers": [],
+    "singer": null,
+    "tags": [
+      "한글화 플라토닉 러브 IA"
+    ],
+    "aliases": [
+      {
+        "kind": "punctuation",
+        "name": "한글화 플라토닉 러브 IA",
+        "url": null,
+        "quote": "[한글화] 플라토닉 러브 / IA"
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=TGdAoez_Zfk",
+        "quote": "원곡 : https://www.youtube.com/watch?v=xjyRLrJk7bA\n번역 : http://vocaro.wikidot.com/platonic-love\n\n#メル #메루 #IA",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "VocaDB video match unavailable and no verified reusable writer credit."
+    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "low",
+    "notes": "Local evidence reused; unresolved identity/credit gaps are marked for review.",
+    "id": "8e6bd19f-25d1-5267-880d-2658a6b91e18",
+    "sourceIndex": 376,
+    "sourceTitle": "[한글화] 플라토닉 러브 / IA",
+    "channel": "나린",
+    "durationSeconds": 219,
+    "youtubeUrl": "https://www.youtube.com/watch?v=TGdAoez_Zfk",
+    "audio": {
+      "status": "ready",
+      "path": "audio/TGdAoez_Zfk.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 218.82025,
+      "byteLength": 1337026,
+      "sha256": "f58da6b2524a433b4ac162ec28b9ed8f3c1f54c4fc8e07c62b5292836fb3ee8e"
+    }
+  },
+  {
+    "index": 384,
+    "videoId": "opRwcvqXc7Y",
+    "title": "Clattanoia",
+    "writers": [],
+    "singer": null,
+    "tags": [],
+    "aliases": [],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=opRwcvqXc7Y",
+        "quote": "Provided to YouTube by KADOKAWA CORPORATION SRAV\n\nClattanoia · OxT\n\nOxT「Hello New World」【初回限定盤】\n\n℗ KADOKAWA\n\nReleased on: 2018-09-12\n\nAuto-generated by YouTube.",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "VocaDB video match unavailable and no verified reusable writer credit."
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "low",
+    "notes": "Local evidence reused; unresolved identity/credit gaps are marked for review.",
+    "id": "0954bf86-a884-5f46-a73a-7d0246e6ba3e",
+    "sourceIndex": 384,
+    "sourceTitle": "Clattanoia",
+    "channel": "OxT - Topic",
+    "durationSeconds": 235,
+    "youtubeUrl": "https://www.youtube.com/watch?v=opRwcvqXc7Y",
+    "audio": {
+      "status": "ready",
+      "path": "audio/opRwcvqXc7Y.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 234.85945833333332,
+      "byteLength": 1440532,
+      "sha256": "49810500fc29ad853facb6fa212b86f3e688ded0352b8861140d3a0ce0284747"
+    }
+  },
+  {
+    "index": 393,
+    "videoId": "uwnyEjvzP8g",
+    "title": "자상무색",
+    "writers": [
+      "ねこぼーろ"
+    ],
+    "singer": null,
+    "tags": [],
+    "aliases": [],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=uwnyEjvzP8g",
+        "quote": "하나땅 - 자상무색",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.akbobada.com/home/akbobada/archive/akbo/samp/samp/20161124092806.pdf",
+        "quote": "자상무색 (自傷無色) Nekoboro(ねこぼろ) 작사 Nekoboro(ねこぼろ) 작곡",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.akbobada.com/home/akbobada/archive/akbo/samp/samp/20161124092806.pdf",
+        "quote": "자상무색 (自傷無色) Nekoboro(ねこぼろ) 작사 Nekoboro(ねこぼろ) 작곡",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://www.akbobada.com/home/akbobada/archive/akbo/samp/samp/20161124092806.pdf"
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "메인 독립 조회에서 작가 크레딧을 뒷받침하는 출처를 재확인하지 못했습니다: ねこぼーろ"
+    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "high",
+    "notes": "원본 ID와 video description을 확인. 인용은 일치 여부를 확인한 source excerpt. 확인되지 않은 제목/credit은 reviewReasons에 표시.",
+    "id": "b2a2fff1-7383-584b-949a-b58af6c52d69",
+    "sourceIndex": 393,
+    "sourceTitle": "하나땅 - 자상무색",
+    "channel": "Kurumi Tokisaki",
+    "durationSeconds": 225,
+    "youtubeUrl": "https://www.youtube.com/watch?v=uwnyEjvzP8g",
+    "audio": {
+      "status": "ready",
+      "path": "audio/uwnyEjvzP8g.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 224.99677083333333,
+      "byteLength": 1334196,
+      "sha256": "c69d6ecbf67dc0dfd992f78bfdb10e8f5d23383f10053dfdcc1b6e46151cbd96"
+    },
+    "rejectedAliasProposals": [
+      {
+        "kind": "title",
+        "name": "자상무색",
+        "url": "https://www.akbobada.com/home/akbobada/archive/akbo/samp/samp/20161124092806.pdf",
+        "quote": "자상무색 (自傷無色) Nekoboro(ねこぼろ) 작사 Nekoboro(ねこぼろ) 작곡"
+      }
+    ]
+  },
+  {
+    "index": 400,
+    "videoId": "bsgBUM2Mnsw",
+    "title": "BAND",
+    "writers": [],
+    "singer": null,
+    "tags": [],
+    "aliases": [],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=bsgBUM2Mnsw",
+        "quote": "Provided to YouTube by mnetmusic\n\nBAND · 창모 CHANGMO, Hash Swan, ASH ISLAND, 김효은 Keem Hyo-Eun\n\nBAND\n\n℗ Genie Music Corporation, Stone Music Entertainment\n\nReleased on: 2019-06-08\n\nAuto-generated by YouTube.",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "VocaDB video match unavailable and no verified reusable writer credit."
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "low",
+    "notes": "Local evidence reused; unresolved identity/credit gaps are marked for review.",
+    "id": "8b30cfea-9cb4-56ba-b0c1-7bdfc76c9ca2",
+    "sourceIndex": 400,
+    "sourceTitle": "BAND",
+    "channel": "CHANGMO",
+    "durationSeconds": 246,
+    "youtubeUrl": "https://www.youtube.com/watch?v=bsgBUM2Mnsw",
+    "audio": {
+      "status": "ready",
+      "path": "audio/bsgBUM2Mnsw.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 245.88116666666667,
+      "byteLength": 1509756,
+      "sha256": "0e0e5545cfeea126973857e3c20d501e29135e17fb7d990a1a0164ae79145d79"
+    }
+  },
+  {
+    "index": 402,
+    "videoId": "sE3GZNA2ZWo",
+    "title": "데드 앤드 시크",
+    "writers": [
+      "Jin"
+    ],
+    "singer": "IA",
+    "tags": [
+      "Jin",
+      "진",
+      "Dead and Seek"
+    ],
+    "aliases": [
+      {
+        "kind": "writer",
+        "name": "진",
+        "writer": "じん",
+        "url": "https://vocadb.net/Ar/552",
+        "quote": "진",
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=sE3GZNA2ZWo&fields=Names,Artists,PVs"
+      },
+      {
+        "kind": "writer",
+        "name": "JIN",
+        "writer": "じん",
+        "url": "https://vocadb.net/Ar/552",
+        "quote": "JIN",
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=sE3GZNA2ZWo&fields=Names,Artists,PVs"
+      },
+      {
+        "kind": "title",
+        "name": "Dead and Seek",
+        "url": "https://vocadb.net/S/12520",
+        "quote": "Dead and Seek",
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=sE3GZNA2ZWo&fields=Names,Artists,PVs"
+      },
+      {
+        "kind": "writer",
+        "name": "진",
+        "writer": "Jin",
+        "url": "https://vocadb.net/Ar/552",
+        "quote": "진",
+        "retrievalUrl": "https://vocadb.net/api/songs/7223?fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "kind": "writer",
+        "name": "JIN",
+        "writer": "Jin",
+        "url": "https://vocadb.net/Ar/552",
+        "quote": "JIN",
+        "retrievalUrl": "https://vocadb.net/api/songs/7223?fields=Names,Artists,PVs",
+        "mainVerified": true
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=sE3GZNA2ZWo",
+        "quote": "Dead and Seek · Jin\nLyricist: Jin\nComposer: Jin",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.namu.moe/w/%EB%8D%B0%EB%93%9C%20%EC%95%A4%EB%93%9C%20%EC%8B%9C%ED%81%AC",
+        "quote": "デッドアンドシーク (Dead and Seek) (데드 앤드 시크)\n가수 | IA\n작곡가 | 진(자연의 적P)",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://vocadb.net/S/12520",
+        "quote": "Dead and Seek",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=sE3GZNA2ZWo&fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "url": "https://vocadb.net/S/12520",
+        "quote": "じん",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=sE3GZNA2ZWo&fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=sE3GZNA2ZWo",
+        "quote": "Lyricist: Jin\nComposer: Jin",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=sE3GZNA2ZWo",
+        "quote": "Dead and Seek",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true
+      },
+      {
+        "url": "https://www.namu.moe/w/%EB%8D%B0%EB%93%9C%20%EC%95%A4%EB%93%9C%20%EC%8B%9C%ED%81%AC",
+        "quote": "デッドアンドシーク (Dead and Seek) (데드 앤드 시크)",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://www.namu.moe/w/%EB%8D%B0%EB%93%9C%20%EC%95%A4%EB%93%9C%20%EC%8B%9C%ED%81%AC"
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "메인 독립 조회에서 채택한 곡명 표기의 실제 사용을 재확인하지 못했습니다."
+    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "high",
+    "notes": "Official album Topic credit confirms Jin as writer; Korean song reference identifies the title and IA vocal.",
+    "vocadbReview": {
+      "songId": 12520,
+      "songType": "Original",
+      "exactVideoId": "sE3GZNA2ZWo",
+      "originalVersionId": null,
+      "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=sE3GZNA2ZWo&fields=Names,Artists,PVs"
+    },
+    "descriptionReview": {
+      "source": "https://www.youtube.com/watch?v=sE3GZNA2ZWo",
+      "creditLines": [
+        "Lyricist: Jin",
+        "Composer: Jin"
+      ],
+      "previousWriters": [
+        "じん"
+      ]
+    },
+    "id": "40e3ddea-2b1b-555e-b8a7-cfc717dfd773",
+    "sourceIndex": 402,
+    "sourceTitle": "Dead and Seek",
+    "channel": "じん OFFICIAL YOUTUBE CHANNEL",
+    "durationSeconds": 206,
+    "youtubeUrl": "https://www.youtube.com/watch?v=sE3GZNA2ZWo",
+    "audio": {
+      "status": "ready",
+      "path": "audio/sE3GZNA2ZWo.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 205.83366666666666,
+      "byteLength": 1262184,
+      "sha256": "8b0418523f92bb16b8fbf67c158a36e620e2428a781a6ff391a8278f7ca6c46b"
+    },
+    "rejectedAliasProposals": [
+      {
+        "kind": "title",
+        "name": "데드 앤드 시크",
+        "url": "https://www.namu.moe/w/%EB%8D%B0%EB%93%9C%20%EC%95%A4%EB%93%9C%20%EC%8B%9C%ED%81%AC",
+        "quote": "デッドアンドシーク (Dead and Seek) (데드 앤드 시크)"
+      },
+      {
+        "kind": "writer",
+        "writer": "Jin",
+        "name": "진",
+        "url": "https://www.namu.moe/w/%EB%8D%B0%EB%93%9C%20%EC%95%A4%EB%93%9C%20%EC%8B%9C%ED%81%AC",
+        "quote": "작곡가 | 진(자연의 적P)"
+      }
+    ]
+  },
+  {
+    "index": 429,
+    "videoId": "0HYm60Mjm0k",
+    "title": "생명에게 미움받고 있어",
+    "writers": [
+      "カンザキイオリ"
+    ],
+    "singer": "Hatsune Miku",
+    "tags": [
+      "칸자키 이오리",
+      "Kanzaki Iori",
+      "Hated By Life.",
+      "Inochi ni Kirawarete Iru."
+    ],
+    "aliases": [
+      {
+        "kind": "writer",
+        "name": "칸자키 이오리",
+        "url": "https://vocadb.net/Ar/23721",
+        "quote": "Kanzaki Iori, 黒柿, クロガキ, Kurogaki, かんざきいおり, 칸자키 이오리, 神绮一织, Schrödinger's Cat",
+        "writer": "カンザキイオリ"
+      },
+      {
+        "kind": "writer",
+        "name": "칸자키 이오리",
+        "writer": "カンザキイオリ",
+        "url": "https://vocadb.net/Ar/23721",
+        "quote": "칸자키 이오리",
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=0HYm60Mjm0k&fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "kind": "writer",
+        "name": "Kanzaki Iori",
+        "writer": "カンザキイオリ",
+        "url": "https://vocadb.net/Ar/23721",
+        "quote": "Kanzaki Iori",
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=0HYm60Mjm0k&fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "kind": "title",
+        "name": "Hated By Life.",
+        "url": "https://vocadb.net/S/164273",
+        "quote": "Hated By Life.",
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=0HYm60Mjm0k&fields=Names,Artists,PVs"
+      },
+      {
+        "kind": "title",
+        "name": "Inochi ni Kirawarete Iru.",
+        "url": "https://vocadb.net/S/164273",
+        "quote": "Inochi ni Kirawarete Iru.",
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=0HYm60Mjm0k&fields=Names,Artists,PVs"
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=0HYm60Mjm0k",
+        "quote": "命に嫌われている。/初音ミク | Iori Kanzaki",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://eisei.kr/song/inochi-ni-kirawarete-kanzakiiroi",
+        "quote": "곡명 생명에게 미움받고 있어 (命に嫌われている) 아티스트 칸자키 이오리 (カンザキイオリ)",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://eisei.kr/song/inochi-ni-kirawarete-kanzakiiroi",
+        "quote": "아티스트 칸자키 이오리 (カンザキイオリ)",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://ko.musescore.com/deemoharlos/hated-by-life-itself",
+        "quote": "생명에게 미움받고 있어 - 칸자키 이오리\n원곡 : https://www.youtube.com/watch?v=0HYm60Mjm0k",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://vocadb.net/S/164273",
+        "quote": "name: 命に嫌われている。; カンザキイオリ — Producer; Composer, VoiceManipulator",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=0HYm60Mjm0k&fields=Names,Artists,PVs"
+      },
+      {
+        "url": "https://vocadb.net/S/164273",
+        "quote": "命に嫌われている。/初音ミク",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=0HYm60Mjm0k&fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "url": "https://vocadb.net/S/164273",
+        "quote": "カンザキイオリ",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=0HYm60Mjm0k&fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "url": "https://eisei.kr/song/inochi-ni-kirawarete-kanzakiiroi",
+        "quote": "곡명 생명에게 미움받고 있어 (命に嫌われている) 아티스트 칸자키 이오리 (カンザキイオリ)",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://eisei.kr/song/inochi-ni-kirawarete-kanzakiiroi"
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "메인 독립 조회에서 채택한 곡명 표기의 실제 사용을 재확인하지 못했습니다."
+    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "high",
+    "notes": "Original creator/song credit confirmed by Korean track listing; playlist recording remains the requested subtitle version.",
+    "vocadbReview": {
+      "songId": 164273,
+      "songType": "Original",
+      "exactVideoId": "0HYm60Mjm0k",
+      "originalVersionId": null,
+      "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=0HYm60Mjm0k&fields=Names,Artists,PVs"
+    },
+    "id": "963670d2-05da-5bb6-80b3-5aff892cd538",
+    "sourceIndex": 429,
+    "sourceTitle": "命に嫌われている。/初音ミク",
+    "channel": "Iori Kanzaki",
+    "durationSeconds": 274,
+    "youtubeUrl": "https://www.youtube.com/watch?v=0HYm60Mjm0k",
+    "audio": {
+      "status": "ready",
+      "path": "audio/0HYm60Mjm0k.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 273.71222916666665,
+      "byteLength": 1676884,
+      "sha256": "6ec4c4c4a02bcec169c4f9929bcb8bac6f18931df7f5bac40eee0df703b0c8d0"
+    },
+    "rejectedAliasProposals": [
+      {
+        "kind": "title",
+        "name": "생명에게 미움받고 있어",
+        "url": "https://eisei.kr/song/inochi-ni-kirawarete-kanzakiiroi",
+        "quote": "곡명 생명에게 미움받고 있어 (命に嫌われている) 아티스트 칸자키 이오리 (カンザキイオリ)"
+      },
+      {
+        "kind": "writer",
+        "name": "칸자키 이오리",
+        "writer": "Iori Kanzaki",
+        "url": "https://eisei.kr/song/inochi-ni-kirawarete-kanzakiiroi",
+        "quote": "아티스트 칸자키 이오리 (カンザキイオリ)"
+      }
+    ]
+  },
+  {
+    "index": 477,
+    "videoId": "h67Pqm2u_So",
+    "title": ".",
+    "writers": [],
+    "singer": null,
+    "tags": [],
+    "aliases": [],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=h67Pqm2u_So",
+        "quote": ". | 죽어있다",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "Exact video title is a period and the description provides no song identity or writer; VocaDB by-video and native-title searches did not return a matching song."
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "low",
+    "notes": "Only source title/description retained after video ID search; exact identity remains unresolved.",
+    "id": "a10a16bd-d6e6-5000-a145-640d34b8bd17",
+    "sourceIndex": 477,
+    "sourceTitle": ".",
+    "channel": "죽어있다",
+    "durationSeconds": 277,
+    "youtubeUrl": "https://www.youtube.com/watch?v=h67Pqm2u_So",
+    "audio": {
+      "status": "ready",
+      "path": "audio/h67Pqm2u_So.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 276.02260416666667,
+      "byteLength": 1626077,
+      "sha256": "af5cd7da880b8830d4b181ca6ba6a6df5fc65ce222cebdfb7d95aa1dd603fc9a"
+    }
+  },
+  {
+    "index": 484,
+    "videoId": "gT1tTt61zJg",
+    "title": "바코드",
+    "writers": [
+      "HAON",
+      "GroovyRoom"
+    ],
+    "singer": "HAON",
+    "tags": [
+      "HAON",
+      "GroovyRoom",
+      "바코드"
+    ],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "바코드",
+        "url": "https://www.youtube.com/watch?v=gT1tTt61zJg",
+        "quote": "바코드 Bar Code (Prod. GroovyRoom)"
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=gT1tTt61zJg",
+        "quote": "바코드 Bar Code (Prod. GroovyRoom) · 김하온 HAON， 이병재 Vinxen · 바코드 Bar Code (Prod. GroovyRoom)",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=gT1tTt61zJg",
+        "quote": "바코드 Bar Code (Prod. GroovyRoom)",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=gT1tTt61zJg",
+        "quote": "바코드 Bar Code (Prod. GroovyRoom)",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://www.youtube.com/watch?v=gT1tTt61zJg"
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "Korean title and track identity are clear, but lyric/composition roles for HAON and GroovyRoom were not confirmed from an accessible credit source."
+    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "low",
+    "notes": "Original recording identity and credits require MAIN review where indicated; recording metadata is taken from the assigned row. Cover singer is labeled separately.",
+    "id": "90b6a9bc-a102-5bf7-b5e9-4a9be41a607d",
+    "sourceIndex": 484,
+    "sourceTitle": "바코드 Bar Code (Prod. GroovyRoom)",
+    "channel": "하온 (HAON) - Topic",
+    "durationSeconds": 223,
+    "youtubeUrl": "https://www.youtube.com/watch?v=gT1tTt61zJg",
+    "audio": {
+      "status": "ready",
+      "path": "audio/gT1tTt61zJg.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 222.936,
+      "byteLength": 1368047,
+      "sha256": "bc813e5945be071340256cef62d5e382feb3aa688cde89270433934e57f8e3f7"
+    }
+  },
+  {
+    "index": 486,
+    "videoId": "60R75NmwRrI",
+    "title": "Hello Mr. my yesterday",
+    "writers": [
+      "Tack",
+      "Ko-KI",
+      "L(R)UCCA",
+      "Takanori Fujimoto",
+      "ASHGRAY"
+    ],
+    "singer": "ASHGRAY",
+    "tags": [
+      "Hello Mr my yesterday",
+      "Tack",
+      "Ko-KI",
+      "L(R)UCCA",
+      "Takanori Fujimoto",
+      "ASHGRAY"
+    ],
+    "aliases": [
+      {
+        "kind": "punctuation",
+        "name": "Hello Mr my yesterday",
+        "url": null,
+        "quote": "Hello Mr. my yesterday"
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=60R75NmwRrI",
+        "quote": "Hello Mr. my yesterday (From 애니메이션 \"명탐정 코난\" 10기) (한국어버젼) · ASHGRAY",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.music.bugs.co.kr/album/453798",
+        "quote": "애쉬그레이(AshGray) | 원래 일본 방영 당시 ... Hundred Percent Free가 노래했던 이곡을 한국 밴드인 애쉬그레이가 참여",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://wikipedia-proxy.gypsop.tech/ko/wiki/Hello_Mr._my_yesterday",
+        "quote": "작사가 | 애쉬그레이(한국어 가사), Tack, Ko-KI, L(R)UCCA | 작곡가 | 후지모토 타카노리",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.uta-net.com/song/89754/",
+        "quote": "作詞：Tack・Ko-KI & L(R)UCCA | 作曲：TAKA",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "메인 독립 조회에서 작가 크레딧을 뒷받침하는 출처를 재확인하지 못했습니다: Tack, Ko-KI, L(R)UCCA, Takanori Fujimoto",
+      "추정 크레딧을 채택하지 않고 개별 곡의 작사·작곡/번안 크레딧 확인을 보류합니다."
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "high",
+    "notes": "ASHGRAY is the Korean-version singer/adaptor; original Japanese recording was by Hundred Percent Free.",
+    "id": "70ee0ac8-c720-5b52-8643-f66ad305f0c0",
+    "sourceIndex": 486,
+    "sourceTitle": "Hello Mr. my yesterday (From 애니메이션 \"명탐정 코난\" 10기) (한국어버젼)",
+    "channel": "ASHGRAY - Topic",
+    "durationSeconds": 264,
+    "youtubeUrl": "https://www.youtube.com/watch?v=60R75NmwRrI",
+    "audio": {
+      "status": "ready",
+      "path": "audio/60R75NmwRrI.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 263.720375,
+      "byteLength": 1618139,
+      "sha256": "1c5cbe84d9afb8353db4827c747998ce53afb466c6793d79992d825ac1809381"
+    }
+  },
+  {
+    "index": 537,
+    "videoId": "Lmb_uKlPUYg",
+    "title": "YOU+CRY BABY",
+    "writers": [],
+    "singer": null,
+    "tags": [
+      "YOUCRY BABY"
+    ],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "YOU+CRY BABY",
+        "url": "https://www.youtube.com/watch?v=Lmb_uKlPUYg",
+        "quote": "쓰르라미 YOU+CRY BABY"
+      },
+      {
+        "kind": "punctuation",
+        "name": "YOUCRY BABY",
+        "url": null,
+        "quote": "YOU+CRY BABY"
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=Lmb_uKlPUYg",
+        "quote": "쓰르라미 YOU+CRY BABY",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=Lmb_uKlPUYg",
+        "quote": "쓰르라미 YOU+CRY BABY",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://www.youtube.com/watch?v=Lmb_uKlPUYg"
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "동일 video title과 작가의 정식 크레딧을 확인할 수 있는 권리/원곡 출처 미확보"
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "low",
+    "notes": "원본 ID와 video description을 확인. 인용은 일치 여부를 확인한 source excerpt. 확인되지 않은 제목/credit은 reviewReasons에 표시.",
+    "id": "3a783b88-33eb-5eee-9594-65bf49d8f4ce",
+    "sourceIndex": 537,
+    "sourceTitle": "쓰르라미 YOU+CRY BABY",
+    "channel": "N. C 엔시",
+    "durationSeconds": 211,
+    "youtubeUrl": "https://www.youtube.com/watch?v=Lmb_uKlPUYg",
+    "audio": {
+      "status": "ready",
+      "path": "audio/Lmb_uKlPUYg.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 210.08954166666666,
+      "byteLength": 1289079,
+      "sha256": "df4bb3c19c83d8aaa35f530b68d8cad3c6b3c68c51edce1257b6416ac20fac74"
+    }
+  },
+  {
+    "index": 547,
+    "videoId": "ENgvUyohXxU",
+    "title": "아노하나 멘마 그날 본 꽃의 이름을 우리는 아직 모른다",
+    "writers": [],
+    "singer": null,
+    "tags": [],
+    "aliases": [],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=ENgvUyohXxU",
+        "quote": "아노하나 멘마 그날 본 꽃의 이름을 우리는 아직 모른다 — 음악요정",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "업로드 제목은 작품/캐릭터 설명이며 실제 수록곡과 songwriter를 로컬 근거에서 식별하지 못함"
+    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "low",
+    "notes": "The upload title identifies the anime and character but does not identify the underlying song.",
+    "id": "637430c8-96c3-5a05-8cbf-74b63e59f5b8",
+    "sourceIndex": 547,
+    "sourceTitle": "아노하나 멘마 그날 본 꽃의 이름을 우리는 아직 모른다",
+    "channel": "음악요정",
+    "durationSeconds": 353,
+    "youtubeUrl": "https://www.youtube.com/watch?v=ENgvUyohXxU",
+    "audio": {
+      "status": "ready",
+      "path": "audio/ENgvUyohXxU.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 352.70652083333334,
+      "byteLength": 2158048,
+      "sha256": "474a6afbba416a58f1d1bb8cb44050d902b182b9af540aaca603f96b07422094"
+    }
+  },
+  {
+    "index": 548,
+    "videoId": "nFG3l5zxLdM",
+    "title": "변하지 않는 것",
+    "writers": [
+      "奥華子"
+    ],
+    "singer": "奥華子",
+    "tags": [
+      "변하지 않는 것"
+    ],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "변하지 않는 것",
+        "url": "https://music.bugs.co.kr/track/30603674?wl_ref=list_tr_08_ab",
+        "quote": "변하지 않는 것 (애니 시간을 달리는 소녀); 작곡 Oku Hanako(오쿠 하나코/奧華子) 작사 Oku Hanako(오쿠 하나코/奧華子)"
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=nFG3l5zxLdM",
+        "quote": "시간을 달리는 소녀OST (변하지 않는것) 자막, 번역, 가사",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://music.bugs.co.kr/track/30603674?wl_ref=list_tr_08_ab",
+        "quote": "변하지 않는 것 (애니 시간을 달리는 소녀); 작곡 Oku Hanako(오쿠 하나코/奧華子) 작사 Oku Hanako(오쿠 하나코/奧華子)",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://search.naver.com/search.naver?query=%EB%B3%80%ED%95%98%EC%A7%80+%EC%95%8A%EB%8A%94+%EA%B2%83+%EC%98%A4%EC%BF%A0+%ED%95%98%EB%82%98%EC%BD%94"
+      },
+      {
+        "url": "https://music.bugs.co.kr/track/30603674?wl_ref=list_tr_08_ab",
+        "quote": "변하지 않는 것 (애니 시간을 달리는 소녀); 작곡 Oku Hanako(오쿠 하나코/奧華子) 작사 Oku Hanako(오쿠 하나코/奧華子)",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://music.bugs.co.kr/track/30603674?wl_ref=list_tr_08_ab"
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "Assigned video is a subtitle/reupload; original vocal recording identity needs confirmation."
+    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "medium",
+    "notes": "Original recording identity and credits require MAIN review where indicated; recording metadata is taken from the assigned row. Cover singer is labeled separately.",
+    "id": "4c9344aa-10b0-5e62-a67e-4d3205d38ba6",
+    "sourceIndex": 548,
+    "sourceTitle": "시간을 달리는 소녀OST (변하지 않는것) 자막, 번역, 가사",
+    "channel": "주혜홍",
+    "durationSeconds": 287,
+    "youtubeUrl": "https://www.youtube.com/watch?v=nFG3l5zxLdM",
+    "audio": {
+      "status": "ready",
+      "path": "audio/nFG3l5zxLdM.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 286.12329166666666,
+      "byteLength": 1720680,
+      "sha256": "9e11e443741c7da9a76e3e6be087c7a65f801af6f8b2afafe2bf34a0607fccba"
+    }
+  },
+  {
+    "index": 549,
+    "videoId": "yuTesDwv6uA",
+    "title": "쏘아올린 불꽃",
+    "writers": [
+      "米津玄師"
+    ],
+    "singer": "Daoko, Kenshi Yonezu",
+    "tags": [
+      "HACHI"
+    ],
+    "aliases": [
+      {
+        "kind": "writer",
+        "name": "HACHI",
+        "writer": "米津玄師",
+        "url": "https://vocadb.net/Ar/49",
+        "quote": "HACHI",
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=nJfaXyDLwy4&fields=Names,Artists,PVs",
+        "mainVerified": true
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=yuTesDwv6uA",
+        "quote": "Uchiagehanabi | Daoko",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://daoko.jp/discography/%E6%8B%9D%E5%95%93%E3%82%B0%E3%83%83%E3%83%90%E3%82%A4%E3%81%95%E3%82%88%E3%81%86%E3%81%AA%E3%82%89%E9%85%8D%E4%BF%A1%E9%99%90%E5%AE%9A%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9/",
+        "quote": "打上花火／DAOKO × 米津玄師\n作詞・作曲：米津玄師",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://welcon.kocca.kr/cmm/fms/CrawlingFileDown.do?atchFileId=FILE_d5107c771-7a09-4488-8bbf-2ea3113bf1c8&fileSn=1",
+        "quote": "쏘아올린 불꽃(打上花火) | DAOKO×米津玄師(요네즈 켄시)",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://welcon.kocca.kr/cmm/fms/CrawlingFileDown.do?atchFileId=FILE_d5107c771-7a09-4488-8bbf-2ea3113bf1c8&fileSn=1",
+        "quote": "쏘아올린 불꽃(打上花火)",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=yuTesDwv6uA",
+        "quote": "Lyricist: 米津玄師\nComposer: 米津玄師",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=yuTesDwv6uA",
+        "quote": "Uchiagehanabi",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true
+      },
+      {
+        "url": "https://welcon.kocca.kr/cmm/fms/CrawlingFileDown.do?atchFileId=FILE_d5107c771-7a09-4488-8bbf-2ea3113bf1c8&fileSn=1",
+        "quote": "쏘아올린 불꽃(打上花火)",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://welcon.kocca.kr/cmm/fms/CrawlingFileDown.do?atchFileId=FILE_d5107c771-7a09-4488-8bbf-2ea3113bf1c8&fileSn=1"
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "메인 독립 조회에서 채택한 곡명 표기의 실제 사용을 재확인하지 못했습니다."
+    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "high",
+    "notes": "Korean release listing names the collaboration 쏘아올린 불꽃; DAOKO’s official release page credits 米津玄師 for lyrics and music.",
+    "descriptionReview": {
+      "source": "https://www.youtube.com/watch?v=yuTesDwv6uA",
+      "creditLines": [
+        "Lyricist: 米津玄師",
+        "Composer: 米津玄師"
+      ],
+      "previousWriters": [
+        "Kenshi Yonezu"
+      ]
+    },
+    "id": "37d705d5-aa9e-5741-a013-80af7e09d548",
+    "sourceIndex": 549,
+    "sourceTitle": "Uchiagehanabi",
+    "channel": "Daoko",
+    "durationSeconds": 290,
+    "youtubeUrl": "https://www.youtube.com/watch?v=yuTesDwv6uA",
+    "audio": {
+      "status": "ready",
+      "path": "audio/yuTesDwv6uA.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 289.3418125,
+      "byteLength": 1761870,
+      "sha256": "e6650f3d2c59ceab41b3dace9ac462f7b1ba7696bb3c99c696de232ca8fc0851"
+    },
+    "rejectedAliasProposals": [
+      {
+        "kind": "title",
+        "name": "쏘아올린 불꽃",
+        "url": "https://welcon.kocca.kr/cmm/fms/CrawlingFileDown.do?atchFileId=FILE_d5107c771-7a09-4488-8bbf-2ea3113bf1c8&fileSn=1",
+        "quote": "쏘아올린 불꽃(打上花火)"
+      }
+    ]
+  },
+  {
+    "index": 553,
+    "videoId": "OIK-q75yrJM",
+    "title": "Again",
+    "writers": [],
+    "singer": null,
+    "tags": [],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "Again",
+        "url": "https://www.youtube.com/watch?v=OIK-q75yrJM",
+        "quote": "강철의 연금술사 브라더후드 여는 노래 「Again」"
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=OIK-q75yrJM",
+        "quote": "강철의 연금술사 브라더후드 여는 노래 「Again」 가사 영상 [한국어/일본어]",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=OIK-q75yrJM",
+        "quote": "강철의 연금술사 브라더후드 여는 노래 「Again」",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=OIK-q75yrJM",
+        "quote": "강철의 연금술사 브라더후드 여는 노래 「Again」",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://www.youtube.com/watch?v=OIK-q75yrJM"
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "설명란은 한국어/일본어 가사 영상이며 실제 원곡 작가 크레딧 확인 불가"
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "low",
+    "notes": "원본 ID와 video description을 확인. 인용은 일치 여부를 확인한 source excerpt. 확인되지 않은 제목/credit은 reviewReasons에 표시.",
+    "id": "97f4441e-db40-5726-bdc1-302db5ddf282",
+    "sourceIndex": 553,
+    "sourceTitle": "강철의 연금술사 브라더후드 여는 노래 「Again」 가사 영상 [한국어/일본어]",
+    "channel": "마일스톤",
+    "durationSeconds": 258,
+    "youtubeUrl": "https://www.youtube.com/watch?v=OIK-q75yrJM",
+    "audio": {
+      "status": "ready",
+      "path": "audio/OIK-q75yrJM.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 257.64402083333334,
+      "byteLength": 1570956,
+      "sha256": "2d137495ff3afd9dc854e3d15c68a3d551ec7cf7e79fe1efcf9d5f2b30155f8c"
+    }
+  },
+  {
+    "index": 556,
+    "videoId": "xq76cRbuYiU",
+    "title": "Lemon",
+    "writers": [
+      "Beenzino"
+    ],
+    "singer": "Beenzino",
+    "tags": [
+      "Beenzino"
+    ],
+    "aliases": [],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=xq76cRbuYiU",
+        "quote": "Lemon",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "Beenzino recording identity is clear, but the assigned recording metadata does not confirm the credited songwriter/composer roles."
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "low",
+    "notes": "Original recording identity and credits require MAIN review where indicated; recording metadata is taken from the assigned row. Cover singer is labeled separately.",
+    "id": "aa08bb80-77b8-5c45-bb8f-9a284772bdf2",
+    "sourceIndex": 556,
+    "sourceTitle": "Lemon",
+    "channel": "Beenzino",
+    "durationSeconds": 182,
+    "youtubeUrl": "https://www.youtube.com/watch?v=xq76cRbuYiU",
+    "audio": {
+      "status": "ready",
+      "path": "audio/xq76cRbuYiU.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 182.007,
+      "byteLength": 1115817,
+      "sha256": "1c1f5630dac542ef74578c71a7ae44286bdac434290fcfd41d61b130841638a5"
+    }
+  },
+  {
+    "index": 580,
+    "videoId": "mrAfFwGEGy0",
+    "title": "꿈의 등불",
+    "writers": [
+      "野田洋次郎"
+    ],
+    "singer": "RADWIMPS",
+    "tags": [
+      "꿈의 등불"
+    ],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "꿈의 등불",
+        "url": "https://www.youtube.com/watch?v=mrAfFwGEGy0",
+        "quote": "Radwimps - 꿈의 등불 (너의이름은 OST) [가사/해석]"
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=mrAfFwGEGy0",
+        "quote": "Radwimps - 꿈의 등불 (너의이름은 OST) [가사/해석]",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=mrAfFwGEGy0",
+        "quote": "Radwimps - 꿈의 등불 (너의이름은 OST) [가사/해석]",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://www.google.com/search?q=%EA%BF%88%EC%9D%98%20%EB%93%B1%EB%B6%88"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=mrAfFwGEGy0",
+        "quote": "Radwimps - 꿈의 등불 (너의이름은 OST) [가사/해석]",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://www.youtube.com/watch?v=mrAfFwGEGy0"
+      }
+    ],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "Korean title and RADWIMPS recording identity are clear; original writer credit was not confirmed from a retrieved credit source."
+    ],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "low",
+    "notes": "Original recording identity and credits require MAIN review where indicated; recording metadata is taken from the assigned row. Cover singer is labeled separately.",
+    "id": "8b546dcd-b638-5d82-b061-f88c6e166ae9",
+    "sourceIndex": 581,
+    "sourceTitle": "Radwimps - 꿈의 등불 (너의이름은 OST) [가사/해석]",
+    "channel": "RIVER",
+    "durationSeconds": 295,
+    "youtubeUrl": "https://www.youtube.com/watch?v=mrAfFwGEGy0",
+    "audio": {
+      "status": "ready",
+      "path": "audio/mrAfFwGEGy0.ogg",
+      "format": "ogg",
+      "codec": "opus",
+      "nominalBitrate": 48000,
+      "channels": 2,
+      "sampleRate": 48000,
+      "durationSeconds": 294.43604166666665,
+      "byteLength": 1804291,
+      "sha256": "a248050113f7b7ad37b8b80c3c494284c3e8c61ab52459ab8a6341cd087b6ae4"
+    }
+  }
+]

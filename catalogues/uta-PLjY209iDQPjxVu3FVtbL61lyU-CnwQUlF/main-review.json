@@ -1,0 +1,3594 @@
+{
+  "reviewedBy": "main_session",
+  "date": "2026-11-05",
+  "workers": [
+    {
+      "batch": 1,
+      "model": "gpt-6-luna",
+      "rows": 76,
+      "sha256": "84647e82ae1e349f6b8f3242bc39bfcea74519411f44af2a7e52a22e6188ff38"
+    },
+    {
+      "batch": 2,
+      "model": "gpt-6-luna",
+      "rows": 75,
+      "sha256": "4f9f1adbed539f33655264656f910363e112ef1563a4cbbb0dc0d25bb1c3361a"
+    },
+    {
+      "batch": 3,
+      "model": "gpt-6-luna",
+      "rows": 75,
+      "sha256": "b75b77258261c4509f4ece67c551799ffb99e26704326d08126be84db0801be3"
+    },
+    {
+      "batch": 4,
+      "model": "gpt-6-luna",
+      "rows": 75,
+      "sha256": "05d9f3c45aba90a3890fb7f6da1fd0855661c3e6ce76bc47312fc9e9db758cc7"
+    },
+    {
+      "batch": 5,
+      "model": "gpt-6-luna",
+      "rows": 75,
+      "sha256": "0a52aaf70b59c72715fca138c4626818748441e25c110d58451ba658ab288730"
+    },
+    {
+      "batch": 6,
+      "model": "gpt-6-luna",
+      "rows": 75,
+      "sha256": "577f0533768448b470fc1e1455b7c0f0fbaf817858e414ef700b1c13729e3a76"
+    },
+    {
+      "batch": 7,
+      "model": "gpt-6-luna",
+      "rows": 75,
+      "sha256": "bdec1a2a2a2e6b53a71585d2a43a0a4026ae2d851783d5aec470e5c5e8a84f03"
+    },
+    {
+      "batch": 8,
+      "model": "gpt-6-luna",
+      "rows": 75,
+      "sha256": "4118f69cb936111c01874426a1fb848661c07c8f4cb9887dce0e155036670bfb"
+    }
+  ],
+  "exactVocaDbVideoMatches": 375,
+  "independentRetrievalAudit": {
+    "reviewed": 566,
+    "urls": 1628,
+    "retrievedNonempty": 1429,
+    "titleUnmatched": 17,
+    "writerRowsUnmatched": 30,
+    "unmatchedAliasRows": 33
+  },
+  "audioDecode": {
+    "files": 589,
+    "decoded": 589,
+    "failures": [],
+    "seconds": 50.38
+  },
+  "sourceReplacements": [
+    {
+      "index": 140,
+      "originalVideoId": "b2ek_kL6SX4",
+      "videoId": "x70oox6bsxw",
+      "sourceType": "subtitled_audio",
+      "sourceDurationSeconds": 284
+    },
+    {
+      "index": 309,
+      "originalVideoId": "kCFznOOugQo",
+      "videoId": "9mWbCPJuoIo",
+      "sourceType": "official_album_audio",
+      "sourceDurationSeconds": 254
+    },
+    {
+      "index": 310,
+      "originalVideoId": "3l9Yl18z3X8",
+      "videoId": "ki22S1irZOc",
+      "sourceType": "personal_album_audio",
+      "sourceDurationSeconds": 279
+    },
+    {
+      "index": 353,
+      "originalVideoId": "smObR_8q5UQ",
+      "videoId": "9mWbCPJuoIo",
+      "sourceType": "official_album_audio",
+      "sourceDurationSeconds": 254
+    },
+    {
+      "index": 363,
+      "originalVideoId": "c-2T-JnXEr8",
+      "videoId": "xYyCUT5QaRo",
+      "sourceType": "official_album_audio",
+      "sourceDurationSeconds": 279
+    },
+    {
+      "index": 383,
+      "originalVideoId": "5QNaSMiZ_-o",
+      "videoId": "YvIsU9kgZz4",
+      "sourceType": "official_album_audio",
+      "sourceDurationSeconds": 279
+    },
+    {
+      "index": 426,
+      "originalVideoId": "KTEdyg69CeY",
+      "videoId": "qSDkabdp3sk",
+      "sourceType": "official_album_audio",
+      "sourceDurationSeconds": 206
+    },
+    {
+      "index": 455,
+      "originalVideoId": "YyMUqbK5RZ0",
+      "videoId": "WDA-gHbdlx0",
+      "sourceType": "subtitled_audio",
+      "sourceDurationSeconds": 220
+    },
+    {
+      "index": 488,
+      "originalVideoId": "skilutORMZM",
+      "videoId": "KVcWoDB35Bg",
+      "sourceType": "official_album_audio",
+      "sourceDurationSeconds": 251
+    }
+  ],
+  "decisions": [
+    {
+      "index": 1,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 2,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 3,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 4,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 5,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 6,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 7,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 8,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 9,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 10,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 11,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 12,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 13,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 14,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 15,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 16,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 17,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 18,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 19,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 20,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 21,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 22,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 23,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 25,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 26,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 27,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 28,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 29,
+      "held": [
+        "메인 독립 조회에서 작가 크레딧을 뒷받침하는 출처를 재확인하지 못했습니다: 王越, 林昱"
+      ],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 30,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 31,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 32,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 33,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 34,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 35,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 37,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 38,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 39,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 40,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 41,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 42,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 43,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 44,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 45,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 46,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 47,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 48,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 49,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 50,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 51,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 52,
+      "held": [
+        "메인 독립 조회에서 작가 크레딧을 뒷받침하는 출처를 재확인하지 못했습니다: 王谢波, 徐来"
+      ],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 53,
+      "held": [],
+      "manualSourceReview": true,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 54,
+      "held": [
+        "메인 독립 조회에서 작가 크레딧을 뒷받침하는 출처를 재확인하지 못했습니다: Wang Xiebo, Xu Lai"
+      ],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 55,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 56,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 57,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 58,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 59,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 60,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 61,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 62,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 63,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 64,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 65,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 66,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 67,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 68,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 69,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 70,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 71,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 72,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 73,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 74,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 75,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 76,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 77,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 78,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 79,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 80,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 81,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 83,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 84,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 85,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 86,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 88,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 89,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 90,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 91,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 93,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 94,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 95,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 96,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 97,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 98,
+      "held": [],
+      "manualSourceReview": true,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 100,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 101,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 102,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 103,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 104,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 105,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 106,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 107,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 108,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 109,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 110,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 111,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 112,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 113,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 114,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 115,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 116,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 117,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 118,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 119,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 120,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 121,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 122,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 123,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 125,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 126,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 127,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 128,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 129,
+      "held": [
+        "메인 독립 조회에서 채택한 곡명 표기의 실제 사용을 재확인하지 못했습니다."
+      ],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 130,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 131,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 132,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 133,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 134,
+      "held": [],
+      "manualSourceReview": true,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 135,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 136,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 137,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 138,
+      "held": [],
+      "manualSourceReview": true,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 140,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 141,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 142,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 143,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 144,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 145,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 146,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 147,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 148,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 149,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 150,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 151,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 152,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 153,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 154,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 155,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 157,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 158,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 159,
+      "held": [
+        "메인 독립 조회에서 작가 크레딧을 뒷받침하는 출처를 재확인하지 못했습니다: シャノン"
+      ],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 160,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 161,
+      "held": [],
+      "manualSourceReview": true,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 162,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 163,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 164,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 165,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 166,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 167,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 168,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 169,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 170,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 171,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 172,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 173,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 174,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 175,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 176,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 177,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 178,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 179,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 180,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 181,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 182,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 183,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 185,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 186,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 187,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 188,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 189,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 190,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 191,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 192,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 194,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 195,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 196,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 197,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 198,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 199,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 201,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 202,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 203,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 204,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 205,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 206,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 207,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 208,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 209,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 210,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 211,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 212,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 213,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 214,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 215,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 216,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 217,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 218,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 219,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 220,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 221,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 222,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 223,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 224,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 225,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 226,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 227,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 228,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 229,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 230,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 231,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 232,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 233,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 234,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 235,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 237,
+      "held": [
+        "메인 독립 조회에서 작가 크레딧을 뒷받침하는 출처를 재확인하지 못했습니다: 8s"
+      ],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 238,
+      "held": [
+        "메인 독립 조회에서 작가 크레딧을 뒷받침하는 출처를 재확인하지 못했습니다: ずきお"
+      ],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 239,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 240,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 241,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 242,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 243,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 244,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 245,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 246,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 247,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 248,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 249,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 250,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 252,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 253,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 254,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 255,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 256,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 257,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 258,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 259,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 261,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 262,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 263,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 264,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 265,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 266,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 267,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 268,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 269,
+      "held": [
+        "메인 독립 조회에서 작가 크레딧을 뒷받침하는 출처를 재확인하지 못했습니다: Sang Chul Hwang"
+      ],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 270,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 271,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 272,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 273,
+      "held": [
+        "메인 독립 조회에서 작가 크레딧을 뒷받침하는 출처를 재확인하지 못했습니다: サツキ",
+        "메인 독립 조회에서 채택한 곡명 표기의 실제 사용을 재확인하지 못했습니다."
+      ],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 274,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 275,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 276,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 277,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 278,
+      "held": [],
+      "manualSourceReview": true,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 279,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 280,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 281,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 282,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 284,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 285,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 286,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 287,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 289,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 290,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 292,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 293,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 294,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 295,
+      "held": [
+        "메인 독립 조회에서 작가 크레딧을 뒷받침하는 출처를 재확인하지 못했습니다: GroovyRoom"
+      ],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 296,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 297,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 298,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 299,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 301,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 302,
+      "held": [],
+      "manualSourceReview": true,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 303,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 304,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 305,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 306,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 307,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 308,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 309,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 310,
+      "held": [],
+      "manualSourceReview": true,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 311,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 312,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 313,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 314,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 315,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 316,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 317,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 318,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 319,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 320,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 321,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 322,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 323,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 324,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 325,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 326,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 327,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 329,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 330,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 331,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 332,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 333,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 334,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 335,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 337,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 338,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 339,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 340,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 341,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 342,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 343,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 344,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 345,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 346,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 347,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 348,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 349,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 350,
+      "held": [
+        "메인 독립 조회에서 채택한 곡명 표기의 실제 사용을 재확인하지 못했습니다."
+      ],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 351,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 353,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 354,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 355,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 356,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 357,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 358,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 360,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 361,
+      "held": [
+        "메인 독립 조회에서 작가 크레딧을 뒷받침하는 출처를 재확인하지 못했습니다: TOMOMI, 田鹿祐一"
+      ],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 362,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 363,
+      "held": [],
+      "manualSourceReview": true,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 364,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 365,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 366,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 367,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 368,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 369,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 370,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 371,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 373,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 374,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 375,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 377,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 378,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 379,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 380,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 381,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 382,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 383,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 385,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 386,
+      "held": [],
+      "manualSourceReview": true,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 387,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 388,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 389,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 390,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 391,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 392,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 393,
+      "held": [
+        "메인 독립 조회에서 작가 크레딧을 뒷받침하는 출처를 재확인하지 못했습니다: ねこぼーろ"
+      ],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 394,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 395,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 396,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 397,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 398,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 399,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 401,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 402,
+      "held": [
+        "메인 독립 조회에서 채택한 곡명 표기의 실제 사용을 재확인하지 못했습니다."
+      ],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 403,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 404,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 405,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 406,
+      "held": [],
+      "manualSourceReview": true,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 407,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 408,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 409,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 410,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 411,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 412,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 413,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 414,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 415,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 416,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 417,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 418,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 419,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 420,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 421,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 422,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 423,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 424,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 425,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 426,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 427,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 428,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 429,
+      "held": [
+        "메인 독립 조회에서 채택한 곡명 표기의 실제 사용을 재확인하지 못했습니다."
+      ],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 430,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 431,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 432,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 433,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 434,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 435,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 436,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 437,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 438,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 439,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 440,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 441,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 442,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 443,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 444,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 445,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 446,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 447,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 448,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 449,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 450,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 451,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 452,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 453,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 454,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 455,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 456,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 457,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 458,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 459,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 460,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 461,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 462,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 463,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 464,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 465,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 466,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 467,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 468,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 469,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 470,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 471,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 472,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 473,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 474,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 475,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 476,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 478,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 479,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 480,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 481,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 482,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 483,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 485,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 486,
+      "held": [
+        "메인 독립 조회에서 작가 크레딧을 뒷받침하는 출처를 재확인하지 못했습니다: Tack, Ko-KI, L(R)UCCA, Takanori Fujimoto"
+      ],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 487,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 488,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 489,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 490,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 491,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 492,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 493,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 494,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 495,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 496,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 497,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 498,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 499,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 500,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 501,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 502,
+      "held": [],
+      "manualSourceReview": true,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 503,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 504,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 505,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 506,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 507,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 508,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 509,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 510,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 511,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 512,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 513,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 514,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 515,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 516,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 517,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 518,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 519,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 520,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 521,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 522,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 523,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 524,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 525,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 526,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 527,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 528,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 529,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 530,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 531,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 532,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 533,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 534,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 535,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 536,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 538,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 539,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 540,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 541,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 542,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 543,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 544,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 545,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 546,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 549,
+      "held": [
+        "메인 독립 조회에서 채택한 곡명 표기의 실제 사용을 재확인하지 못했습니다."
+      ],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 550,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 551,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 552,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 554,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 555,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 557,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 558,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 559,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 560,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 561,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 562,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 563,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 564,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 565,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 566,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 567,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 568,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 569,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 570,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 571,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 572,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 573,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 574,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 575,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 576,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 577,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 578,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 579,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 581,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 582,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 583,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 584,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 585,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 586,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 587,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 588,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 589,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 590,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 591,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 592,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 593,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 594,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 595,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 596,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 597,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 598,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 599,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    },
+    {
+      "index": 600,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": true
+    },
+    {
+      "index": 601,
+      "held": [],
+      "manualSourceReview": false,
+      "priorCatalogueIdentity": false
+    }
+  ],
+  "summary": {
+    "playlistId": "uta-pljy209",
+    "name": "うた - 作別",
+    "sourceDate": "2026-11-05",
+    "sourceEntries": 602,
+    "uniqueTracks": 601,
+    "duplicates": 1,
+    "reviewed": 549,
+    "reviewRequired": 52,
+    "audioReady": 590,
+    "playable": 541,
+    "namingReviewRequired": 228,
+    "audioBytes": 804995304,
+    "sourceReplacements": 9,
+    "distinctAudioFiles": 589,
+    "downloadFailures": 11,
+    "failureCategories": {
+      "UPLOADER_ACCOUNT_UNAVAILABLE": 1,
+      "SOURCE_UNAVAILABLE": 6,
+      "AGE_RESTRICTED": 2,
+      "SOURCE_REMOVED": 1,
+      "RIGHTSHOLDER_BLOCKED": 1
+    },
+    "playableNamingReviewRequired": 199
+  },
+  "catalogueSha256": "c2c6df5ee1ff8737025c1f81fcb0cac6034a50f50fe5768e13b45d2eb402ef9c",
+  "answerTagConsistencyVerified": true
+}

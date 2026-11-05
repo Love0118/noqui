@@ -1,0 +1,115 @@
+{
+  "activated": true,
+  "before": {
+    "minecraftPid": "984",
+    "webPid": "244373",
+    "manifests": {
+      "tj-261027-japan": "dab8ef20a47c4c3996ee0dda568afa1620205b9fdbaafc34e1c34a060297cc4c",
+      "japan-zeom": "b74b1169bf88aad8bf06fe124b80afe7d4363b6f05543b5d49540ee78761018f",
+      "tj-261027-pop": "5080acaf5dbb578116b525e191d56cb69c065dd5976cda12c4b248d699fd0ac1",
+      "tj-261027-domestic": "5c5fa555b4763916a0eb173ef79f6da46899fe6b4cbc38cec3a752ad9738a629",
+      "ssip-noqui": "9cda57a8f1db98ccaf0c7a278af20e1aabba5c9b8bce8ed730b4584dbbd081e6"
+    },
+    "playlists": [
+      {
+        "id": "japan-zeom",
+        "name": "일본 - ZEOM",
+        "playableCount": 252,
+        "trackCount": 289
+      },
+      {
+        "id": "ssip-noqui",
+        "name": "씹노퀴",
+        "playableCount": 541,
+        "trackCount": 541
+      },
+      {
+        "id": "tj-261027-domestic",
+        "name": "TJ인기차트-261027국내",
+        "playableCount": 100,
+        "trackCount": 100
+      },
+      {
+        "id": "tj-261027-japan",
+        "name": "TJ인기차트-261027일본노래",
+        "playableCount": 100,
+        "trackCount": 100
+      },
+      {
+        "id": "tj-261027-pop",
+        "name": "TJ인기차트-261027팝송",
+        "playableCount": 98,
+        "trackCount": 100
+      }
+    ],
+    "freeBytes": 1877786624
+  },
+  "id": "uta-pljy209",
+  "sourceDate": "2026-11-05",
+  "startedAt": 1793867616.5639908,
+  "restartedAudioOnly": true,
+  "completedAt": 1793867634.1431456,
+  "after": {
+    "minecraftPid": "984",
+    "webPid": "1500263",
+    "playlists": [
+      {
+        "id": "japan-zeom",
+        "name": "일본 - ZEOM",
+        "playableCount": 252,
+        "trackCount": 289
+      },
+      {
+        "id": "ssip-noqui",
+        "name": "씹노퀴",
+        "playableCount": 541,
+        "trackCount": 541
+      },
+      {
+        "id": "tj-261027-domestic",
+        "name": "TJ인기차트-261027국내",
+        "playableCount": 100,
+        "trackCount": 100
+      },
+      {
+        "id": "tj-261027-japan",
+        "name": "TJ인기차트-261027일본노래",
+        "playableCount": 100,
+        "trackCount": 100
+      },
+      {
+        "id": "tj-261027-pop",
+        "name": "TJ인기차트-261027팝송",
+        "playableCount": 98,
+        "trackCount": 100
+      },
+      {
+        "id": "uta-pljy209",
+        "name": "うた - 作別",
+        "playableCount": 541,
+        "trackCount": 601
+      }
+    ],
+    "freeBytes": 1876463616,
+    "newManifestSha256": "563c78d59d38ebe230251ed151e48de97a82c3e584fa191f8d507544476e6b51"
+  },
+  "privatePagesVerified": 541,
+  "localPackage": {
+    "id": "uta-pljy209",
+    "name": "うた - 作別",
+    "tracks": 601,
+    "playable": 541,
+    "bytes": 735856640,
+    "audioBytes": 734570394,
+    "sha256": "0348ce3c51c4b78908eec705636a25e89caec19c9138a5f9465c58c5cc4844d6",
+    "manifestSha256": "c6b18d9ec89f84f98581c5525c185d89e1e86fda97e3a94a3e3490a0fdcadde9",
+    "audioFiles": 540,
+    "sourceDate": "2026-11-05"
+  },
+  "sourcePlaylistUrl": "https://www.youtube.com/playlist?list=PLjY209iDQPjxVu3FVtbL61lyU-CnwQUlF",
+  "cataloguePath": "catalogues/uta-PLjY209iDQPjxVu3FVtbL61lyU-CnwQUlF/catalogue.json",
+  "catalogueSha256": "c2c6df5ee1ff8737025c1f81fcb0cac6034a50f50fe5768e13b45d2eb402ef9c",
+  "minecraftRestarted": false,
+  "existingManifestHashesPreserved": true,
+  "activatedAtKst": "2026-11-05T17:33:54.143146+09:00"
+}

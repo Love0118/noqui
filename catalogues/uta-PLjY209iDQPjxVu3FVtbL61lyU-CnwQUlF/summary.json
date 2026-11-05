@@ -1,0 +1,25 @@
+{
+  "playlistId": "uta-pljy209",
+  "name": "うた - 作別",
+  "sourceDate": "2026-11-05",
+  "sourceEntries": 602,
+  "uniqueTracks": 601,
+  "duplicates": 1,
+  "reviewed": 549,
+  "reviewRequired": 52,
+  "audioReady": 590,
+  "playable": 541,
+  "namingReviewRequired": 228,
+  "audioBytes": 804995304,
+  "sourceReplacements": 9,
+  "distinctAudioFiles": 589,
+  "downloadFailures": 11,
+  "failureCategories": {
+    "UPLOADER_ACCOUNT_UNAVAILABLE": 1,
+    "SOURCE_UNAVAILABLE": 6,
+    "AGE_RESTRICTED": 2,
+    "SOURCE_REMOVED": 1,
+    "RIGHTSHOLDER_BLOCKED": 1
+  },
+  "playableNamingReviewRequired": 199
+}

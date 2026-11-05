@@ -1,0 +1,1153 @@
+[
+  {
+    "index": 60,
+    "videoId": "EuJ6UR_pD5s",
+    "title": "World is Mine",
+    "writers": [
+      "ryo"
+    ],
+    "singer": "初音ミク",
+    "tags": [
+      "ryo",
+      "World is Mine"
+    ],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "World is Mine",
+        "url": "https://vocadb.net/S/1326",
+        "quote": "World is Mine"
+      },
+      {
+        "kind": "title",
+        "name": "World is Mine",
+        "url": "https://vocadb.net/S/49708",
+        "quote": "World is Mine",
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=EuJ6UR_pD5s&fields=Names,Artists,PVs"
+      },
+      {
+        "kind": "writer",
+        "name": "ryo",
+        "writer": "ryo",
+        "url": "https://vocadb.net/Ar/67",
+        "quote": "ryo",
+        "retrievalUrl": "https://vocadb.net/api/songs/1326?fields=Names,Artists,PVs",
+        "mainVerified": true
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://vocadb.net/S/49708",
+        "quote": "ワールドイズマイン",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=EuJ6UR_pD5s&fields=Names%2CArtists%2CPVs"
+      },
+      {
+        "url": "https://vocadb.net/S/1326",
+        "quote": "ワールドイズマイン",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/1326?fields=Names,Artists,PVs"
+      },
+      {
+        "url": "https://vocadb.net/S/1326",
+        "quote": "{\"name\":\"ryo\",\"categories\":\"Producer\",\"roles\":\"Default\"}",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/1326?fields=Names,Artists,PVs"
+      },
+      {
+        "url": "https://vocadb.net/S/1326",
+        "quote": "Music & Lyric by Ryo; Vocal by Vocaloid \"Miku Hatsune\"",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/1326?fields=Names,Artists,PVs"
+      },
+      {
+        "url": "https://vocadb.net/S/49708",
+        "quote": "World is Mine",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=EuJ6UR_pD5s&fields=Names,Artists,PVs"
+      },
+      {
+        "url": "https://vocadb.net/S/49708",
+        "quote": "【手描き】ワールドイズマイン【PV】~ Hatsune Miku - World is Mine",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=EuJ6UR_pD5s&fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "url": "https://vocadb.net/S/1326",
+        "quote": "ryo",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/1326?fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "url": "https://vocadb.net/S/1326",
+        "quote": "World is Mine",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/S/1326"
+      }
+    ],
+    "reviewRequired": false,
+    "reviewReasons": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "high",
+    "notes": "Assigned PV is a reprint. VocaDB links it to original song 1326; songwriter ryo and vocal Hatsune Miku are credited on that original record.",
+    "vocadbReview": {
+      "songId": 49708,
+      "songType": "MusicPV",
+      "exactVideoId": "EuJ6UR_pD5s",
+      "originalVersionId": 1326,
+      "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=EuJ6UR_pD5s&fields=Names,Artists,PVs"
+    },
+    "id": "f08278ea-cb0f-59e4-b826-0edc6c40a4b8",
+    "sourceIndex": 60,
+    "sourceTitle": null,
+    "channel": "",
+    "durationSeconds": null,
+    "youtubeUrl": "https://www.youtube.com/watch?v=EuJ6UR_pD5s",
+    "audio": {
+      "status": "failed",
+      "failureCode": "UPLOADER_ACCOUNT_UNAVAILABLE",
+      "reason": "업로더 계정 종료로 원본 영상에 접근할 수 없습니다."
+    }
+  },
+  {
+    "index": 103,
+    "videoId": "vzdYGzrBKx4",
+    "title": "고독의 종교",
+    "writers": [
+      "syudou"
+    ],
+    "singer": "初音ミク Append (Soft)",
+    "tags": [
+      "syudou",
+      "고독의 종교",
+      "Kodoku no Shuukyou",
+      "The Religion of Loneliness"
+    ],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "고독의 종교",
+        "url": "https://vocadb.net/S/271693",
+        "quote": "孤独の宗教; Korean community name: 고독의 종교"
+      },
+      {
+        "kind": "title",
+        "name": "고독의 종교",
+        "url": "https://vocadb.net/S/271693",
+        "quote": "고독의 종교",
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=vzdYGzrBKx4&fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "kind": "title",
+        "name": "Kodoku no Shuukyou",
+        "url": "https://vocadb.net/S/271693",
+        "quote": "Kodoku no Shuukyou",
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=vzdYGzrBKx4&fields=Names,Artists,PVs"
+      },
+      {
+        "kind": "title",
+        "name": "The Religion of Loneliness",
+        "url": "https://vocadb.net/S/271693",
+        "quote": "The Religion of Loneliness",
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=vzdYGzrBKx4&fields=Names,Artists,PVs"
+      },
+      {
+        "kind": "writer",
+        "name": "syudou",
+        "writer": "syudou",
+        "url": "https://vocadb.net/Ar/4834",
+        "quote": "syudou",
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=vzdYGzrBKx4&fields=Names,Artists,PVs",
+        "mainVerified": true
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://vocadb.net/S/271693",
+        "quote": "VocaDB exact YouTube PV match: Kodoku no Syukyo; Korean community name: 고독의 종교; producer(s): syudou",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://vocadb.net/S/271693",
+        "quote": "고독의 종교",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=vzdYGzrBKx4&fields=Names%2CArtists%2CPVs"
+      },
+      {
+        "url": "https://vocadb.net/S/271693",
+        "quote": "syudou",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=vzdYGzrBKx4&fields=Names%2CArtists%2CPVs"
+      },
+      {
+        "url": "https://vocadb.net/S/271693",
+        "quote": "고독의 종교",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=vzdYGzrBKx4&fields=Names,Artists,PVs"
+      },
+      {
+        "url": "https://vocadb.net/S/271693",
+        "quote": "Kodoku no Syukyo",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=vzdYGzrBKx4&fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "url": "https://vocadb.net/S/271693",
+        "quote": "syudou",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=vzdYGzrBKx4&fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "url": "https://vocadb.net/S/271693",
+        "quote": "孤独の宗教; Korean community name: 고독의 종교",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/S/271693"
+      }
+    ],
+    "reviewRequired": false,
+    "reviewReasons": [],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "high",
+    "notes": "Exact YouTube PV match and producer roles verified in VocaDB.",
+    "vocadbReview": {
+      "songId": 271693,
+      "songType": "Original",
+      "exactVideoId": "vzdYGzrBKx4",
+      "originalVersionId": null,
+      "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=vzdYGzrBKx4&fields=Names,Artists,PVs"
+    },
+    "id": "57c5e29f-145c-5202-bfc7-4fd3f3cc6fdf",
+    "sourceIndex": 103,
+    "sourceTitle": "Kodoku no Syukyo",
+    "channel": "syudou",
+    "durationSeconds": 191,
+    "youtubeUrl": "https://www.youtube.com/watch?v=vzdYGzrBKx4",
+    "audio": {
+      "status": "failed",
+      "failureCode": "SOURCE_UNAVAILABLE",
+      "reason": "요청한 원본 영상의 전체 음원을 확보하지 못했습니다."
+    }
+  },
+  {
+    "index": 146,
+    "videoId": "mkrKu_Bd9dg",
+    "title": "미무카와 나이스 트라이",
+    "writers": [
+      "ぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬ"
+    ],
+    "singer": "Hatsune Miku",
+    "tags": [
+      "미무카와 나이스 트라이",
+      "Nunununununununununununununununu",
+      "Mimukauwa Nice Try"
+    ],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "미무카와 나이스 트라이",
+        "url": "https://www.namu.moe/w/%EB%AF%B8%EB%AC%B4%EC%B9%B4%EC%99%80%20%EB%82%98%EC%9D%B4%EC%8A%A4%20%ED%8A%B8%EB%9D%BC%EC%9D%B4",
+        "quote": "Mimukauwa Nice Try | 미무카와 나이스 트라이"
+      },
+      {
+        "kind": "writer",
+        "name": "Nunununununununununununununununu",
+        "writer": "ぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬ",
+        "url": "https://vocadb.net/Ar/102320",
+        "quote": "Nunununununununununununununununu",
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=mkrKu_Bd9dg&fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "kind": "title",
+        "name": "Mimukauwa Nice Try",
+        "url": "https://vocadb.net/S/709707",
+        "quote": "Mimukauwa Nice Try",
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=mkrKu_Bd9dg&fields=Names,Artists,PVs"
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://www.namu.moe/w/%EB%AF%B8%EB%AC%B4%EC%B9%B4%EC%99%80%20%EB%82%98%EC%9D%B4%EC%8A%A4%20%ED%8A%B8%EB%9D%BC%EC%9D%B4",
+        "quote": "Mimukauwa Nice Try | 미무카와 나이스 트라이\n가수 | 하츠네 미쿠\n작곡가 | ぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬ",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://vocadb.net/S/709707",
+        "quote": "み む かゥ わ ナ イ ス ト ラ イ",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=mkrKu_Bd9dg&fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "url": "https://vocadb.net/S/709707",
+        "quote": "ぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬ",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=mkrKu_Bd9dg&fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "url": "https://www.namu.moe/w/%EB%AF%B8%EB%AC%B4%EC%B9%B4%EC%99%80%20%EB%82%98%EC%9D%B4%EC%8A%A4%20%ED%8A%B8%EB%9D%BC%EC%9D%B4",
+        "quote": "Mimukauwa Nice Try | 미무카와 나이스 트라이",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://www.namu.moe/w/%EB%AF%B8%EB%AC%B4%EC%B9%B4%EC%99%80%20%EB%82%98%EC%9D%B4%EC%8A%A4%20%ED%8A%B8%EB%9D%BC%EC%9D%B4"
+      }
+    ],
+    "reviewRequired": false,
+    "reviewReasons": [],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "high",
+    "notes": "Exact by-video VocaDB association and Korean song page identify the original producer and the common Korean title.",
+    "vocadbReview": {
+      "songId": 709707,
+      "songType": "Original",
+      "exactVideoId": "mkrKu_Bd9dg",
+      "originalVersionId": null,
+      "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=mkrKu_Bd9dg&fields=Names,Artists,PVs"
+    },
+    "id": "0e0f49cd-ff41-59a4-8c29-1a8ca8e586d2",
+    "sourceIndex": 146,
+    "sourceTitle": "み む かゥ わ ナ イ ス ト ラ イ",
+    "channel": "ぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬ",
+    "durationSeconds": 206,
+    "youtubeUrl": "https://www.youtube.com/watch?v=mkrKu_Bd9dg",
+    "audio": {
+      "status": "failed",
+      "failureCode": "SOURCE_UNAVAILABLE",
+      "reason": "요청한 원본 영상의 전체 음원을 확보하지 못했습니다."
+    }
+  },
+  {
+    "index": 200,
+    "videoId": "wN8uBNLHffI",
+    "title": "Shelter",
+    "writers": [],
+    "singer": null,
+    "tags": [],
+    "aliases": [],
+    "evidence": [],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "VocaDB video match unavailable and no verified reusable writer credit."
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "low",
+    "notes": "Local evidence reused; unresolved identity/credit gaps are marked for review.",
+    "id": "d122d357-8a7a-5b70-88b8-e4942dc4e1b8",
+    "sourceIndex": 200,
+    "sourceTitle": "Shelter",
+    "channel": "Porter Robinson",
+    "durationSeconds": 218,
+    "youtubeUrl": "https://www.youtube.com/watch?v=wN8uBNLHffI",
+    "audio": {
+      "status": "failed",
+      "failureCode": "SOURCE_UNAVAILABLE",
+      "reason": "요청한 원본 영상의 전체 음원을 확보하지 못했습니다."
+    }
+  },
+  {
+    "index": 276,
+    "videoId": "wpEemOA1PL0",
+    "title": "배계",
+    "writers": [
+      "ぺぽよ"
+    ],
+    "singer": "初音ミク V4X (Original)",
+    "tags": [
+      "배계",
+      "페포요",
+      "PEPOYO",
+      "Haikei",
+      "Dear"
+    ],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "배계",
+        "url": "https://vocadb.net/S/483782",
+        "quote": "배계"
+      },
+      {
+        "kind": "writer",
+        "name": "페포요",
+        "writer": "ぺぽよ",
+        "url": "https://vocadb.net/Ar/90014",
+        "quote": "페포요",
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/414135?fields=Names,Artists,PVs"
+      },
+      {
+        "kind": "writer",
+        "name": "PEPOYO",
+        "writer": "ぺぽよ",
+        "url": "https://vocadb.net/Ar/90014",
+        "quote": "PEPOYO",
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/414135?fields=Names,Artists,PVs"
+      },
+      {
+        "kind": "title",
+        "name": "배계",
+        "url": "https://vocadb.net/S/483782",
+        "quote": "배계",
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=wpEemOA1PL0&fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "kind": "title",
+        "name": "Haikei",
+        "url": "https://vocadb.net/S/483782",
+        "quote": "Haikei",
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=wpEemOA1PL0&fields=Names,Artists,PVs"
+      },
+      {
+        "kind": "title",
+        "name": "Dear",
+        "url": "https://vocadb.net/S/483782",
+        "quote": "Dear",
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=wpEemOA1PL0&fields=Names,Artists,PVs"
+      },
+      {
+        "kind": "title",
+        "name": "배계",
+        "url": "https://vocadb.net/S/414135",
+        "quote": "배계",
+        "retrievalUrl": "https://vocadb.net/api/songs/414135?fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "kind": "writer",
+        "name": "페포요",
+        "writer": "ぺぽよ",
+        "url": "https://vocadb.net/Ar/90014",
+        "quote": "페포요",
+        "retrievalUrl": "https://vocadb.net/api/songs/418548?fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "kind": "writer",
+        "name": "PEPOYO",
+        "writer": "ぺぽよ",
+        "url": "https://vocadb.net/Ar/90014",
+        "quote": "PEPOYO",
+        "retrievalUrl": "https://vocadb.net/api/songs/418548?fields=Names,Artists,PVs",
+        "mainVerified": true
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=wpEemOA1PL0",
+        "quote": "拝啓",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://vocadb.net/S/483782",
+        "quote": "拝啓",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=wpEemOA1PL0&fields=Names%2CArtists%2CPVs"
+      },
+      {
+        "url": "https://vocadb.net/S/483782",
+        "quote": "{\"name\":\"ぺぽよ\",\"categories\":\"Producer\",\"roles\":\"Default\"}",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=wpEemOA1PL0&fields=Names%2CArtists%2CPVs"
+      },
+      {
+        "url": "https://vocadb.net/S/483782",
+        "quote": "배계",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=wpEemOA1PL0&fields=Names%2CArtists%2CPVs"
+      },
+      {
+        "url": "https://vocadb.net/S/414135",
+        "quote": "拝啓",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/414135?fields=Names,Artists,PVs"
+      },
+      {
+        "url": "https://vocadb.net/S/414135",
+        "quote": "{\"name\":\"ぺぽよ\",\"categories\":\"Producer\",\"roles\":\"Default\"}",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/414135?fields=Names,Artists,PVs"
+      },
+      {
+        "url": "https://d.namu.moe/w/%EB%B0%B0%EA%B3%84",
+        "quote": "배계는 PEPOYO 가 2023년 3월 19일에 투고한 VOCALOID 오리지널 곡",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://search.naver.com/search.naver?query=PEPOYO+%ED%99%95%EA%B3%84+%EA%B3%A1"
+      },
+      {
+        "url": "https://vocadb.net/S/483782",
+        "quote": "배계",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=wpEemOA1PL0&fields=Names,Artists,PVs"
+      },
+      {
+        "url": "https://vocadb.net/S/483782",
+        "quote": "拝啓",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=wpEemOA1PL0&fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "url": "https://vocadb.net/S/414135",
+        "quote": "ぺぽよ",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/414135?fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "url": "https://vocadb.net/S/483782",
+        "quote": "배계",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/S/483782"
+      },
+      {
+        "url": "https://vocadb.net/S/414135",
+        "quote": "배계",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/414135?fields=Names,Artists,PVs"
+      }
+    ],
+    "reviewRequired": false,
+    "reviewReasons": [],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "high",
+    "notes": "VocaDB matched this exact YouTube ID as Original for '拝啓'.",
+    "vocadbReview": {
+      "songId": 483782,
+      "songType": "Remix",
+      "exactVideoId": "wpEemOA1PL0",
+      "originalVersionId": 414135,
+      "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=wpEemOA1PL0&fields=Names,Artists,PVs"
+    },
+    "id": "69632b61-1d23-52c7-b25d-61cdefd81b63",
+    "sourceIndex": 276,
+    "sourceTitle": "拝啓",
+    "channel": "ぺぽよ⋆PEPOYO",
+    "durationSeconds": 270,
+    "youtubeUrl": "https://www.youtube.com/watch?v=wpEemOA1PL0",
+    "audio": {
+      "status": "failed",
+      "failureCode": "AGE_RESTRICTED",
+      "reason": "원본 영상의 연령 확인이 필요하여 전체 음원을 확보하지 못했습니다."
+    }
+  },
+  {
+    "index": 277,
+    "videoId": "JRp4EIx8oio",
+    "title": "마음 편히 안락사",
+    "writers": [
+      "ぺぽよ"
+    ],
+    "singer": null,
+    "tags": [
+      "페포요",
+      "마음 편히 안락사",
+      "안락",
+      "PEPOYO",
+      "Rakuraku Anrakushi",
+      "Easy-peasy Euthanasia"
+    ],
+    "aliases": [
+      {
+        "kind": "writer",
+        "name": "페포요",
+        "url": "https://vocadb.net/Ar/90014",
+        "quote": "PEPOYO, 低頭身P, 페포요, ペポヨ",
+        "writer": "ぺぽよ"
+      },
+      {
+        "kind": "title",
+        "name": "마음 편히 안락사",
+        "url": "https://vocadb.net/S/359534",
+        "quote": "Unspecified: 마음 편히 안락사"
+      },
+      {
+        "kind": "writer",
+        "name": "페포요",
+        "writer": "ぺぽよ",
+        "url": "https://vocadb.net/Ar/90014",
+        "quote": "페포요",
+        "retrievalUrl": "https://vocadb.net/api/songs/418548?fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "kind": "writer",
+        "name": "PEPOYO",
+        "writer": "ぺぽよ",
+        "url": "https://vocadb.net/Ar/90014",
+        "quote": "PEPOYO",
+        "retrievalUrl": "https://vocadb.net/api/songs/418548?fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "kind": "title",
+        "name": "마음 편히 안락사",
+        "url": "https://vocadb.net/S/359534",
+        "quote": "마음 편히 안락사",
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=JRp4EIx8oio&fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "kind": "title",
+        "name": "Rakuraku Anrakushi",
+        "url": "https://vocadb.net/S/359534",
+        "quote": "Rakuraku Anrakushi",
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=JRp4EIx8oio&fields=Names,Artists,PVs"
+      },
+      {
+        "kind": "title",
+        "name": "Easy-peasy Euthanasia",
+        "url": "https://vocadb.net/S/359534",
+        "quote": "Easy-peasy Euthanasia",
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=JRp4EIx8oio&fields=Names,Artists,PVs"
+      },
+      {
+        "kind": "title",
+        "name": "안락",
+        "url": "https://vocadb.net/S/418548",
+        "quote": "안락",
+        "retrievalUrl": "https://vocadb.net/api/songs/418548?fields=Names,Artists,PVs",
+        "mainVerified": true
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://vocadb.net/S/359534",
+        "quote": "name: らくらく安楽死; Unspecified: 마음 편히 안락사; ぺぽよ — Producer; Default",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=JRp4EIx8oio&fields=Names,Artists,PVs"
+      },
+      {
+        "url": "https://vocadb.net/S/359534",
+        "quote": "마음 편히 안락사",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=JRp4EIx8oio&fields=Names,Artists,PVs"
+      },
+      {
+        "url": "https://vocadb.net/S/359534",
+        "quote": "らくらく安楽死",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=JRp4EIx8oio&fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "url": "https://vocadb.net/S/418548",
+        "quote": "ぺぽよ",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/418548?fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "url": "https://vocadb.net/S/359534",
+        "quote": "Unspecified: 마음 편히 안락사",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/S/359534"
+      }
+    ],
+    "reviewRequired": false,
+    "reviewReasons": [],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "high",
+    "notes": "Research is incomplete for this recording; unresolved fields are flagged for review.",
+    "vocadbReview": {
+      "songId": 359534,
+      "songType": "Remix",
+      "exactVideoId": "JRp4EIx8oio",
+      "originalVersionId": 418548,
+      "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=JRp4EIx8oio&fields=Names,Artists,PVs"
+    },
+    "id": "bf234c1e-9e5f-5cbc-8b25-ec9940353d75",
+    "sourceIndex": 277,
+    "sourceTitle": null,
+    "channel": "",
+    "durationSeconds": null,
+    "youtubeUrl": "https://www.youtube.com/watch?v=JRp4EIx8oio",
+    "audio": {
+      "status": "failed",
+      "failureCode": "SOURCE_REMOVED",
+      "reason": "YouTube 운영정책에 의해 원본 영상이 삭제되었습니다."
+    }
+  },
+  {
+    "index": 283,
+    "videoId": "zYL_CVcpXzM",
+    "title": "Gone",
+    "writers": [],
+    "singer": null,
+    "tags": [],
+    "aliases": [],
+    "evidence": [],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "정확한 원곡 작사·작곡 크레딧을 로컬 근거에서 확인하지 못함"
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "low",
+    "notes": "No exact-video metadata or cached VocaDB match was available locally; the uploader/title alone do not establish songwriter credits.",
+    "id": "4629619f-1c8b-5219-9df0-af539f0e8c93",
+    "sourceIndex": 283,
+    "sourceTitle": "Gone",
+    "channel": "THISISJUSTHIS",
+    "durationSeconds": 187,
+    "youtubeUrl": "https://www.youtube.com/watch?v=zYL_CVcpXzM",
+    "audio": {
+      "status": "failed",
+      "failureCode": "AGE_RESTRICTED",
+      "reason": "원본 영상의 연령 확인이 필요하여 전체 음원을 확보하지 못했습니다."
+    }
+  },
+  {
+    "index": 359,
+    "videoId": "xNc5wcKd8M8",
+    "title": "미확인 영상",
+    "writers": [],
+    "singer": null,
+    "tags": [],
+    "aliases": [],
+    "evidence": [],
+    "reviewRequired": true,
+    "reviewReasons": [
+      "Playlist input has no title/channel; YouTube info is absent; VocaDB exact-PV query and title search found no resolvable recording."
+    ],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "low",
+    "notes": "This assigned ID is unresolved because its input sourceTitle and channel are null and no public metadata could be matched.",
+    "id": "5fcf7c3a-091a-55b6-85b6-7f920fd8b08c",
+    "sourceIndex": 359,
+    "sourceTitle": null,
+    "channel": "",
+    "durationSeconds": null,
+    "youtubeUrl": "https://www.youtube.com/watch?v=xNc5wcKd8M8",
+    "audio": {
+      "status": "failed",
+      "failureCode": "RIGHTSHOLDER_BLOCKED",
+      "reason": "권리자 삭제 요청으로 원본 영상에 접근할 수 없습니다."
+    }
+  },
+  {
+    "index": 418,
+    "videoId": "c1DBnfih3-4",
+    "title": "소녀해부",
+    "writers": [
+      "DECO*27"
+    ],
+    "singer": "Hatsune Miku (vocal synth)",
+    "tags": [
+      "DECO*27",
+      "소녀 해부",
+      "데코",
+      "데코니나",
+      "Maiden Dissection",
+      "Otome Kaibou"
+    ],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "소녀 해부",
+        "url": "https://music.bugs.co.kr/track/32716913",
+        "quote": "乙女解剖 / Otome Kaibo (소녀 해부)"
+      },
+      {
+        "kind": "title",
+        "name": "Maiden Dissection",
+        "url": "https://vocadb.net/S/222749",
+        "quote": "Maiden Dissection",
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=c1DBnfih3-4&fields=Names,Artists,PVs"
+      },
+      {
+        "kind": "title",
+        "name": "Otome Kaibou",
+        "url": "https://vocadb.net/S/222749",
+        "quote": "Otome Kaibou",
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=c1DBnfih3-4&fields=Names,Artists,PVs"
+      },
+      {
+        "kind": "writer",
+        "writer": "DECO*27",
+        "name": "데코",
+        "url": "https://ko.wikipedia.org/wiki/DECO*27",
+        "quote": "DECO*27 ( 데코 * 27 , 일본어: デコ・ニーナ 데코 니나 )는 일본의 뮤지션"
+      },
+      {
+        "name": "데코니나",
+        "url": "https://www.youtube.com/watch?v=yqHB6v_PzRE",
+        "quote": "「JOURNEY」저니- Deco*27/ 하츠네 미쿠 [한글 가사] [한글자막]\n원곡: https://youtu.be/BTekXS9d-no 가사: 나무위키 Comments: 저저저저니 데코니나 그는 신.",
+        "canonicalName": "DECO*27",
+        "kind": "writer",
+        "writer": "DECO*27"
+      },
+      {
+        "kind": "writer",
+        "name": "DECO*27",
+        "writer": "DECO*27",
+        "url": "https://vocadb.net/Ar/45",
+        "quote": "DECO*27",
+        "retrievalUrl": "https://vocadb.net/api/songs/164074?fields=Names,Artists,PVs",
+        "mainVerified": true
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://music.bugs.co.kr/track/32716913",
+        "quote": "작곡 DECO*27 작사 DECO*27",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://music.bugs.co.kr/track/32716913",
+        "quote": "乙女解剖 / Otome Kaibo (소녀 해부)",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://vocadb.net/S/222749",
+        "quote": "Maiden Dissection",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=c1DBnfih3-4&fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "url": "https://vocadb.net/S/222749",
+        "quote": "乙女解剖",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=c1DBnfih3-4&fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "url": "https://vocadb.net/S/222749",
+        "quote": "DECO*27",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=c1DBnfih3-4&fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "url": "https://namu.wiki/w/%EC%86%8C%EB%85%80%ED%95%B4%EB%B6%80",
+        "quote": "소녀해부 - 나무위키",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://m.search.naver.com/search.naver?query=%EC%86%8C%EB%85%80%ED%95%B4%EB%B6%80+DECO%2A27",
+        "retrievedAt": "2026-10-27T10:30:06.177041+00:00"
+      },
+      {
+        "url": "https://namu.wiki/w/%EC%86%8C%EB%85%80%ED%95%B4%EB%B6%80",
+        "quote": "작곡가 DECO*27",
+        "kind": "search_snippet",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://m.search.naver.com/search.naver?query=%EC%86%8C%EB%85%80%ED%95%B4%EB%B6%80+DECO%2A27",
+        "retrievedAt": "2026-10-27T10:30:06.177041+00:00"
+      },
+      {
+        "url": "https://music.bugs.co.kr/track/32716913",
+        "quote": "乙女解剖 / Otome Kaibo (소녀 해부)",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://music.bugs.co.kr/track/32716913"
+      }
+    ],
+    "reviewRequired": false,
+    "reviewReasons": [],
+    "namingReviewRequired": false,
+    "namingReviewReasons": [],
+    "confidence": "high",
+    "notes": "Bugs 표기는 커버 음원 페이지이지만 제목 별칭과 DECO*27 작사·작곡 크레딧을 함께 확인할 수 있다. 원곡 보컬은 하츠네 미쿠.",
+    "vocadbReview": {
+      "songId": 222749,
+      "songType": "Original",
+      "exactVideoId": "c1DBnfih3-4",
+      "originalVersionId": null,
+      "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=c1DBnfih3-4&fields=Names,Artists,PVs"
+    },
+    "reuseReview": [
+      {
+        "catalogue": "catalogues\\vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB\\catalogue.json",
+        "songId": "d14c3caf-cdf9-5821-9442-80ff569a8a9b",
+        "basis": "exact_video_or_vocadb_original_composition"
+      }
+    ],
+    "id": "6e54d12c-15c8-57b7-8534-dfa44f7f70e3",
+    "sourceIndex": 418,
+    "sourceTitle": "乙女解剖",
+    "channel": "DECO*27",
+    "durationSeconds": 224,
+    "youtubeUrl": "https://www.youtube.com/watch?v=c1DBnfih3-4",
+    "rejectedAliasProposals": [
+      {
+        "kind": "title",
+        "name": "오토메카이보",
+        "origin": "user_authorized_pronunciation",
+        "language": "ja",
+        "originalTitle": "乙女解剖",
+        "reading": "오토메카이보",
+        "url": null,
+        "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): 乙女解剖 → 오토메카이보. 외부 검색 인용 아님."
+      }
+    ],
+    "audio": {
+      "status": "failed",
+      "failureCode": "SOURCE_UNAVAILABLE",
+      "reason": "요청한 원본 영상의 전체 음원을 확보하지 못했습니다."
+    }
+  },
+  {
+    "index": 487,
+    "videoId": "RYZswyheC9s",
+    "title": "Sincerely",
+    "writers": [
+      "唐沢美帆",
+      "堀江晶太"
+    ],
+    "singer": "TRUE",
+    "tags": [
+      "kemu"
+    ],
+    "aliases": [
+      {
+        "kind": "writer",
+        "name": "kemu",
+        "writer": "堀江晶太",
+        "url": "https://vocadb.net/Ar/735",
+        "quote": "kemu",
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=DsnmyUdfbcI&fields=Names,Artists,PVs",
+        "mainVerified": true
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://true-singer.com/contents/261225",
+        "quote": "「Sincerely」作詞：唐沢美帆　作曲：堀江晶太　編曲Evan Call",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=RYZswyheC9s",
+        "quote": "Sincerely · TRUE",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      }
+    ],
+    "reviewRequired": false,
+    "reviewReasons": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "high",
+    "notes": "",
+    "id": "f6300a67-6519-5f06-bc59-ab6634260f70",
+    "sourceIndex": 487,
+    "sourceTitle": "Sincerely",
+    "channel": "TRUE Lantis Official Channel",
+    "durationSeconds": 276,
+    "youtubeUrl": "https://www.youtube.com/watch?v=RYZswyheC9s",
+    "audio": {
+      "status": "failed",
+      "failureCode": "SOURCE_UNAVAILABLE",
+      "reason": "요청한 원본 영상의 전체 음원을 확보하지 못했습니다."
+    }
+  },
+  {
+    "index": 564,
+    "videoId": "yhihudd9yB0",
+    "title": "Aun no Beats",
+    "writers": [
+      "羽生まゐご"
+    ],
+    "singer": "v flower、初音ミク",
+    "tags": [
+      "하뉴 마이고",
+      "Hanyuu Maigo",
+      "Aun no Beats",
+      "Aun Beats"
+    ],
+    "aliases": [
+      {
+        "kind": "writer",
+        "name": "하뉴 마이고",
+        "writer": "羽生まゐご",
+        "url": "https://vocadb.net/Ar/44565",
+        "quote": "하뉴 마이고",
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=yhihudd9yB0&fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "kind": "writer",
+        "name": "Hanyuu Maigo",
+        "writer": "羽生まゐご",
+        "url": "https://vocadb.net/Ar/44565",
+        "quote": "Hanyuu Maigo",
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=yhihudd9yB0&fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "kind": "title",
+        "name": "Aun no Beats",
+        "url": "https://vocadb.net/S/165658",
+        "quote": "Aun no Beats",
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=yhihudd9yB0&fields=Names,Artists,PVs"
+      },
+      {
+        "kind": "title",
+        "name": "Aun Beats",
+        "url": "https://vocadb.net/S/165658",
+        "quote": "Aun Beats",
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=yhihudd9yB0&fields=Names,Artists,PVs"
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://www.youtube.com/watch?v=yhihudd9yB0",
+        "quote": "Aunnobeats",
+        "kind": "page",
+        "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://vocadb.net/S/165658",
+        "quote": "阿吽のビーツ",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=yhihudd9yB0&fields=Names%2CArtists%2CPVs"
+      },
+      {
+        "url": "https://vocadb.net/S/165658",
+        "quote": "{\"name\":\"羽生まゐご\",\"categories\":\"Producer\",\"roles\":\"Default\"}",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=yhihudd9yB0&fields=Names%2CArtists%2CPVs"
+      },
+      {
+        "url": "https://vocadb.net/S/165658",
+        "quote": "Aun no Beats",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=yhihudd9yB0&fields=Names,Artists,PVs"
+      },
+      {
+        "url": "https://vocadb.net/S/165658",
+        "quote": "Aunnobeats",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=yhihudd9yB0&fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "url": "https://vocadb.net/S/165658",
+        "quote": "羽生まゐご",
+        "kind": "page",
+        "retrievedEvidenceMatched": true,
+        "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=yhihudd9yB0&fields=Names,Artists,PVs",
+        "mainVerified": true
+      }
+    ],
+    "reviewRequired": false,
+    "reviewReasons": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+    ],
+    "confidence": "high",
+    "notes": "VocaDB matched this exact YouTube ID as Original for '阿吽のビーツ'.",
+    "vocadbReview": {
+      "songId": 165658,
+      "songType": "Original",
+      "exactVideoId": "yhihudd9yB0",
+      "originalVersionId": null,
+      "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=yhihudd9yB0&fields=Names,Artists,PVs"
+    },
+    "id": "91a02aa6-cc2a-5200-b78e-caafcf7f8859",
+    "sourceIndex": 564,
+    "sourceTitle": "Aunnobeats",
+    "channel": "羽生まゐご",
+    "durationSeconds": 207,
+    "youtubeUrl": "https://www.youtube.com/watch?v=yhihudd9yB0",
+    "audio": {
+      "status": "failed",
+      "failureCode": "SOURCE_UNAVAILABLE",
+      "reason": "요청한 원본 영상의 전체 음원을 확보하지 못했습니다."
+    }
+  }
+]
