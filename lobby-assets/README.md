@@ -1,6 +1,6 @@
 # Noqui lobby assets
 
-The pack targets exactly resource format **97.1** and uses native `minecraft:model` item definitions. `lobby-cosmetics.json` is the canonical catalog: schema version 1, with `id`, Korean `label`, and `slot` (`head`, `face`, or `back`) for each cosmetic. All catalog entries and the five existing gadget models must have actual cuboid geometry, complete texture UVs, and explicit `fixed` transforms. The downloaded 64×64 slim female shopkeeper skin by Munasharna (navy tuxedo, purple hair, monocle) and four active user-provided quiz cues keep their original bytes. No quiz music, full source archives, or mod/client JARs are included. Native torso meshes use the pinned MIT obj-cubed 26.3 core shaders.
+The pack targets exactly resource format **97.1** and uses native `minecraft:model` item definitions. `lobby-cosmetics.json` is the canonical catalog: schema version 1, with `id`, Korean `label`, and `slot` (`head`, `face`, or `back`) for each cosmetic. All catalog entries and the five existing gadget models must have actual cuboid geometry, complete texture UVs, and explicit `fixed` transforms. The downloaded 64×64 slim female shopkeeper skin by Munasharna (navy tuxedo, purple hair, monocle) and four active user-provided quiz cues keep their original bytes. No quiz music, full source archives, or mod/client JARs are included. The lobby pack inherits vanilla shaders on every backend; back accessories use ordinary item-display models.
 
 Prices belong to the Java catalog/configuration: all cosmetics default to 200 stars / 20 answer points, with per-product overrides. The asset catalog deliberately contains no prices. Existing cosmetic IDs, labels, and slots remain stable so saved ownership and equipment remain valid. `preserved-assets.json` pins the original six catalog entries and the exact hashes of the original 34 pack files; additions do not regenerate or replace those assets.
 
@@ -11,14 +11,15 @@ Packaging removes JSON whitespace and model-editor fields (`credit`,
 geometry, textures, licenses, and attribution stay intact in this repository.
 The packaged `COSMETICS_SOURCES.json` retains the canonical input hash as
 `sourceModelSha256` and records the shipped model hash in `modelSha256`;
-`pack-manifest.json` also describes the actual ZIP contents. The lobby pack
-is 1,865,943 bytes, down from 3,147,035 bytes before trimming. All 80
-cosmetics, five gadgets, NPC skin, and four active sound cues remain.
-The uncalled `0miss` cue and item-only `objmc_mesh_carrier.glsl` are excluded
-from delivery; their pinned source inputs remain available for authoring.
-Validation checks the complete canonical inputs before packaging, and the
-ZIP manifest lists only delivered files. Shader imports are followed from
-the two entity entry points so only their eight shader files are shipped.
+`pack-manifest.json` also describes the actual ZIP contents. All 80 cosmetics,
+five gadgets, NPC skin, and four active sound cues remain. Model packaging adds
+a missing `particle` texture alias so vanilla loading no longer warns about
+back-accessory particles. The unused `0miss` cue is excluded from delivery.
+
+No entity, item, terrain or include shader overrides are allowed in this pack.
+The old obj-cubed vertex decoder used subgroup broadcasts, which cannot be
+translated into ordinary Metal vertex functions on macOS. Its shaders, encoded
+equipment layers, exporter and exclusive vendor inputs have been removed.
 
 The delivered ZIP contains no standalone license files. Complete license
 texts are consolidated under `licenses` in `pack.mcmeta`, keyed by SHA-256;
@@ -26,7 +27,7 @@ six duplicate texts share entries. Attribution and source URLs remain in
 `ASSET_NOTICES.txt` and `COSMETICS_SOURCES.json`. Source records point to the
 metadata using `packLicenseFile` and `packLicenseKey`. The canonical license
 files remain in the repository as validated build inputs. The lobby ZIP
-contains 524 files instead of 543.
+contains 279 files; the canonical pack contains 296 source files.
 
 ```text
 python3 lobby-assets/build_pack.py
@@ -36,7 +37,7 @@ python3 lobby-assets/test_pack.py
 
 The normal build writes the small tracked `lobby-assets/lobby-pack.properties` descriptor and ignored `.runtime/noqui-cosmetics-integration/pack/<sha256>.zip` plus `pack-manifest.json`. `--output PATH` selects another artifact directory. `--check` validates all committed inputs, builds the ZIP twice in memory and compares the resulting URL/SHA1 with the tracked descriptor. It does not modify sources. PNG/OGG inputs are already compressed; ZIP entries use STORED mode, fixed timestamps/permissions and sorted paths to avoid zlib-version hash drift across Windows/Linux. Text inputs are pinned to LF through `.gitattributes`. No Pillow, downloader or original ZIP is needed for normal build/check. For local provenance verification add `--original-zip PATH`.
 
-**Maven integration owner:** bundle `lobby-assets/lobby-pack.properties` and `lobby-assets/lobby-cosmetics.json` at the JAR classpath root under those same filenames. Exclude `pack/`, vendor files, previews, and the ZIP from the JAR. The descriptor contains `url` and `sha1`. The pack UUID is `7d5243d5-c30e-4bdd-a039-71ec1ad10001`; public URL is `https://noqui.danta.qzz.io/packs/<sha256>.zip`. Publishing is a separate parent-owned step. Keep using `addResourcePack` so existing BGM packs remain applied.
+**Maven integration owner:** bundle `lobby-assets/lobby-pack.properties`, `lobby-assets/lobby-cosmetics.json` and `lobby-assets/native-equipment.json` at the JAR classpath root under those same filenames. Exclude `pack/`, vendor files, previews, and the ZIP from the JAR. The descriptor contains `url` and `sha1`. The pack UUID is `7d5243d5-c30e-4bdd-a039-71ec1ad10001`; public URL is `https://noqui.danta.qzz.io/packs/<sha256>.zip`. Publishing is a separate parent-owned step. Keep using `addResourcePack` so existing BGM packs remain applied.
 
 `cosmetics-provenance.json` records each additional cosmetic's pinned model hash, texture resources, source IDs, and actual conversion steps. Every source retains its author, source/license URLs, exact vendor license, and hashes of the selected upstream evidence. The packaged `COSMETICS_SOURCES.json` adds the shipped model hash and metadata license location; human-readable attribution remains in `ASSET_NOTICES.txt`, with complete license text in `pack.mcmeta`. An original adaptation must be explicitly labeled and carry parent approval; it must not be described as a downloaded model. The original asset, skin, and sound provenance files remain in force.
 
@@ -56,7 +57,7 @@ Validation derives the model set from the catalog rather than a fixed count. It 
 | `noqui:snow_bomb` | Held item | Stepped ice sphere and fuse |
 | `noqui:gravity_suit` | Torso, y1.1 | Open exoskeleton frame, shoulders, core and back coils |
 
-Models retain their source cuboids and UVs. Headwear and glasses share the real HEAD slot through `noqui:wearable_head`, with custom-model-data string indices 0 and 1. Each model has a native `display.head` transform fitted to crown or eye height. Back accessories use the real CHEST slot and native humanoid body-bone meshes; the pinned MIT obj-cubed renderer decodes their geometry from equipment PNG layers. No cosmetic armor stands, displays or teleport loops are used. The gravity suit has combined equipment assets so the physical gadget keeps its serial and behavior while a back accessory is selected. Real occupied armor moves into an ordinary free inventory pocket; equipping waits when no pocket is available. Managed wardrobe stacks are removed before inventory snapshots and reconciled afterward. `assets/noqui/textures/entity/shopkeeper.png` resolves as `noqui:entity/shopkeeper` for the native Mannequin's SLIM skin patch.
+Models retain their source cuboids and UVs. Headwear and glasses share the real HEAD slot through `noqui:wearable_head`, with custom-model-data string indices 0 and 1. Each model has a native `display.head` transform fitted to crown or eye height. Back accessories use one nonpersistent `ItemDisplay` per wearer with the unchanged native item model, original textures, per-model torso fit, body yaw and crouch transform. Updates reuse the display; unchanged transforms and locations are not resent. Switching worlds or an invalid display recreates it; deselection, invisibility, spectator mode, death, inventory handoff, quit and shutdown remove it. They follow the server body position with one-tick interpolation rather than the client's exact animated torso bone. Sitting, swimming and other client-only pose details still need in-game visual review. Back accessories leave real CHEST equipment in place, so the authentic gravity suit retains its serial, native texture and behavior without combined equipment assets. Persisted shader-backed wardrobe chest stacks are removed and old suit asset names are restored to `noqui:gravity_suit` during reconciliation. Real occupied HEAD armor moves into an ordinary free inventory pocket; equipping waits when no pocket is available. Managed head stacks are removed before inventory snapshots and reconciled afterward. `assets/noqui/textures/entity/shopkeeper.png` resolves as `noqui:entity/shopkeeper` for the native Mannequin's SLIM skin patch.
 
 Optional authoring/preview tools require Pillow and NumPy. `author_assets.py --original-zip PATH` regenerates only the original model/palette inputs and restores the unchanged downloaded skin from vendor/munasharna/ and copies the exact five sounds; it reads pinned vendor inputs already present and downloads them only if absent. Avoid running it during an integration freeze. `preview_assets.py` renders every catalog/gadget JSON and all of its actual face textures into ignored `.runtime/noqui-cosmetics-integration/pack/previews/` (or `--output PATH`). It creates overview sheets, detailed 20-item pages, individual images with each model's GUI rotation/scale, attachment-scale mannequins, and a preview manifest tying images to model/texture hashes. These are software renders for geometry/UV QA, not screenshots proving in-game rendering. In-game26.3 verification remains an integration step.
 
@@ -74,4 +75,31 @@ For deployment, the parent publishes the new content-hash ZIP before Paper start
 
 ## Native equipment authoring
 
-`native-equipment.json` pins every native equipment definition, texture and shader. Normal pack validation and packaging use only Python's standard library. Optional regeneration uses Pillow plus `npm ci` in this directory, then `python native_wearables.py`. The pinned exporter, MIT license, shader sources and normalized single-atlas back inputs are preserved in `vendor/`; regeneration does not require an ignored runtime input. `vendor/native-head-baseline` preserves the original five head models, and validation permits only their native head transform to change.
+`native-equipment.json` schema 2 pins the head selector, three vanilla gadget
+equipment definitions/textures and each back model's source hash and translation.
+It is also bundled in the plugin JAR to supply attachment fits. `python
+lobby-assets/native_wearables.py` regenerates head transforms and this manifest
+using the standard library, preserving the committed gadget artwork. The original
+five head baselines remain in `vendor/native-head-baseline`.
+
+## Graphics compatibility verification
+
+`verification/ShaderCompatibilityCheck.java` compiles entity vertex/fragment
+variants (ordinary, emissive, per-face lighting, glint, OIT depth bounds and OIT
+accumulation), plus world/GUI hint text, into SPIR-V and translates each to Metal
+2.3 and OpenGL 3.3. It uses the official 26.3 client JAR and its LWJGL 3.4.3
+`lwjgl`, `lwjgl-shaderc`, `lwjgl-spvc` and matching platform-native JARs. Supply
+those six JARs as the Java classpath, using the host OS classpath separator:
+
+```text
+java --enable-native-access=ALL-UNNAMED -cp <client-library-classpath> lobby-assets/verification/ShaderCompatibilityCheck.java lobby-assets/pack hint-assets/pack <26.3-client.jar>
+```
+
+This test runs offline without starting Minecraft or requiring a Mac. All 16
+shader variants passed SPIR-V compilation plus Metal/OpenGL translation on
+2026-11-10. Physical Apple Silicon GPU rendering and attachment motion remain
+in-game acceptance checks; translation is not a claim of live Mac testing.
+
+Install the rebuilt plugin and matching pack descriptor together. An old plugin
+would still equip the retired back-layer assets, so replacing only the ZIP is
+insufficient. Publish the content-hash ZIP before updating the live descriptor.

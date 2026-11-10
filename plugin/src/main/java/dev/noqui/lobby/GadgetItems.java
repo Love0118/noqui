@@ -141,8 +141,8 @@ final class GadgetItems {
     private static boolean refreshEquipment(ItemStack item) {
         String id=product(item);if(!Set.of("triple_boots","quad_boots","gravity_suit").contains(id==null?"":id))return false;
         var meta=item.getItemMeta();var wearable=meta.getEquippable();NamespacedKey current=wearable.getModel();
-        // A selected back can be layered over the authentic suit by NativeWardrobe.
-        if(current!=null&&(current.equals(new NamespacedKey("noqui",id))||id.equals("gravity_suit")&&current.getNamespace().equals("noqui")&&current.getKey().startsWith("wearable_back_gravity/")))return false;
+        // Also migrate suits saved with the retired shader-backed combined asset.
+        if(new NamespacedKey("noqui",id).equals(current))return false;
         wearable.setModel(new NamespacedKey("noqui",id));meta.setEquippable(wearable);item.setItemMeta(meta);return true;
     }
     private int freeSlot(Player player) {

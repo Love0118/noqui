@@ -12,7 +12,7 @@ from urllib.parse import urlparse
 import uuid
 import zipfile
 import zlib
-from model_geometry import geometry_signature, model_bounds, rotation_angles
+from model_geometry import geometry_signature, model_bounds, rotation_angles, back_translation
 
 ROOT=Path(__file__).resolve().parent
 PACK=ROOT/'pack'
@@ -156,18 +156,16 @@ def png(path, pixels=False):
 
 def validate_native(rows):
     native=read_json(NATIVE)
-    core=PACK/'assets/minecraft/shaders/core'
-    assert {p.name for p in core.iterdir() if p.is_file()}=={'entity.vsh','entity.fsh'}, 'Only wearable entity shaders belong in this pack; terrain/block/item overrides are forbidden'
-    assert not any((PACK/'assets/minecraft/shaders/include'/name).exists() for name in ('light.glsl','fog.glsl')), 'Do not override Sodium-shared vanilla shader includes'
-    assert native['schemaVersion']==1
-    assert native['upstream']['sourceSha256']==digest((ROOT/'vendor/objcubed/objcubed.js').read_bytes())=='a52545b6c2e3a389859b5db32a3f83710164d8aaade12ea7f6ce8aed5856f58c'
+    assert not any(path.is_file() for path in PACK.glob('assets/*/shaders/**/*')), 'Lobby pack must use vanilla shaders on every graphics backend'
+    assert native['schemaVersion']==2
+    expected_native={'assets/noqui/items/wearable_head.json'}|{
+        f'assets/noqui/{folder}/{name}.{suffix}' for name in ('triple_boots','quad_boots','gravity_suit')
+        for folder,suffix in (('equipment','json'),('textures/entity/equipment/humanoid','png'))}
+    assert set(native['files'])==expected_native,'Native equipment manifest differs'
     for relative,hash_value in native['files'].items():
-        assert relative=='assets/noqui/items/wearable_head.json' or relative=='licenses/objcubed.txt' or relative.startswith(('assets/noqui/equipment/','assets/noqui/textures/entity/equipment/humanoid/','assets/minecraft/shaders/')),relative
+        assert relative=='assets/noqui/items/wearable_head.json' or relative.startswith(('assets/noqui/equipment/','assets/noqui/textures/entity/equipment/humanoid/')),relative
         assert digest(safe_path(PACK,relative).read_bytes())==hash_value,('Native equipment changed',relative)
         if relative.endswith('.png'):png(PACK/relative)
-        if relative.startswith('assets/minecraft/shaders/'):
-            assert (PACK/relative).read_bytes()==(ROOT/'vendor/objcubed/shaders'/relative.removeprefix('assets/minecraft/shaders/')).read_bytes()
-    assert (PACK/'licenses/objcubed.txt').read_bytes()==(ROOT/'vendor/objcubed/LICENSE').read_bytes()
     head=read_json(PACK/'assets/noqui/items/wearable_head.json')['model']
     assert head['type']=='minecraft:composite' and len(head['models'])==2
     for index,slot in enumerate(('head','face')):
@@ -176,11 +174,10 @@ def validate_native(rows):
         assert selected['fallback']=={'type':'minecraft:empty'}
         assert {entry['when']:entry['model'] for entry in selected['cases']}=={r['id']:{'type':'minecraft:model','model':'noqui:'+r['id']} for r in rows if r['slot']==slot}
     backs={r['id'] for r in rows if r['slot']=='back'}
-    records={r['id']:r for r in native['backs']};assert set(records)==backs,'Native back catalogue differs'
-    expected_assets={'triple_boots','quad_boots','gravity_suit'}|{prefix+'/'+name for name in backs for prefix in ('wearable_back','wearable_back_gravity')}
+    records={r['id']:r for r in native['backs']};assert set(records)==backs and len(records)==len(native['backs']),'Native back catalogue differs'
+    expected_assets={'triple_boots','quad_boots','gravity_suit'}
     actual_assets={p.relative_to(PACK/'assets/noqui/equipment').with_suffix('').as_posix() for p in (PACK/'assets/noqui/equipment').rglob('*.json')}
     assert actual_assets==expected_assets,'Native armor asset set differs'
-    gravity=read_json(PACK/'assets/noqui/equipment/gravity_suit.json')['layers']['humanoid']
     for name in expected_assets:
         layers=read_json(PACK/f'assets/noqui/equipment/{name}.json')['layers']['humanoid'];assert layers,name
         for layer in layers:
@@ -190,10 +187,7 @@ def validate_native(rows):
     for name,record in records.items():
         model=read_json(PACK/f'assets/noqui/models/{name}.json')
         assert record['sourceModelSha256']==digest((PACK/f'assets/noqui/models/{name}.json').read_bytes()),name
-        count=sum(len(e['faces']) for e in model['elements'])
-        layers=read_json(PACK/f'assets/noqui/equipment/wearable_back/{name}.json')['layers']['humanoid']
-        combined=read_json(PACK/f'assets/noqui/equipment/wearable_back_gravity/{name}.json')['layers']['humanoid']
-        assert count==record['faces'] and len(layers)==math.ceil(count/4) and combined==gravity+layers,name
+        assert record['translation']==back_translation(model),('Back attachment fit changed',name)
     return set(native['files'])
 
 def validate(original=None):
@@ -296,22 +290,6 @@ def validate(original=None):
     return {'cosmetics':len(rows),'gadgets':len(GADGETS),'models':len(ids),'elements':total_elements,'textures':len(textures)+1,'sounds':len(EVENTS),
             'files':len(actual),'uniqueCosmeticGeometry':len(geometry),'geometry':model_checks,'slimSkinUV':'64x64 opaque base faces,3pixel arms'}
 
-def shader_dependencies(files):
-    """Follow packaged core shader imports; vanilla includes stay client-owned."""
-    pending=[name for name in files if '/shaders/core/' in name]
-    used=set()
-    while pending:
-        name=pending.pop()
-        if name in used:continue
-        used.add(name)
-        imports=re.findall(r'(?m)^\s*#(?:include|moj_import)\s*[<"]([^>"]+)[>"]',files[name].decode('utf-8'))
-        for reference in imports:
-            namespace,relative=reference.split(':',1) if ':' in reference else ('minecraft',reference)
-            target=f'assets/{namespace}/shaders/include/{relative}'
-            if target in files:pending.append(target)
-            else:assert not relative.startswith('objmc_'), ('Missing wearable shader include',target)
-    return used
-
 def packed_files():
     """Keep authoring evidence in source; ship compact runtime model data."""
     files={}
@@ -322,11 +300,10 @@ def packed_files():
             if name.startswith('assets/noqui/models/'):
                 for key in ('credit','format_version','texture_size'):value.pop(key,None)
                 for element in value.get('elements',[]):element.pop('name',None)
+                # Vanilla model loading expects a particle alias even for wearable icons.
+                value['textures'].setdefault('particle',next(iter(value['textures'].values())))
             data=(json.dumps(value,ensure_ascii=False,separators=(',',':'))+'\n').encode('utf-8')
         files[name]=data
-    required_shaders=shader_dependencies(files)
-    for name in list(files):
-        if '/shaders/' in name and name not in required_shaders:del files[name]
     sounds=json.loads(files['assets/minecraft/sounds.json'])
     files['assets/minecraft/sounds.json']=(json.dumps({name:sounds[name] for name in RUNTIME_EVENTS},separators=(',',':'))+'\n').encode('utf-8')
     for name in set(EVENTS)-set(RUNTIME_EVENTS):del files[f'assets/minecraft/sounds/arsf/{name}.ogg']

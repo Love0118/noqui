@@ -5,6 +5,7 @@ import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.*;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicReference;
+import java.util.function.Consumer;
 import org.bukkit.*;
 import org.bukkit.entity.*;
 import org.bukkit.event.inventory.*;
@@ -17,9 +18,19 @@ import org.mockito.*;
 class NativeWardrobeTest {
     Player player;GadgetTestSupport.Inventory inventory;NativeWardrobe wardrobe;
     MockedConstruction<ItemStack> stacks;
+    World world;List<ItemDisplay> displays;
     @BeforeEach void setup(){
         player=mock(Player.class);when(player.getUniqueId()).thenReturn(UUID.randomUUID());when(player.getGameMode()).thenReturn(GameMode.ADVENTURE);
         inventory=new GadgetTestSupport.Inventory(player);wardrobe=new NativeWardrobe();
+        world=mock(World.class);displays=new ArrayList<>();
+        when(player.getLocation()).thenAnswer(c->new Location(world,10,20,30,90,45));
+        when(world.spawn(any(Location.class),eq(ItemDisplay.class),any(Consumer.class))).thenAnswer(c->{
+            var display=mock(ItemDisplay.class);var location=new AtomicReference<Location>(c.getArgument(0));
+            when(display.isValid()).thenReturn(true);when(display.getWorld()).thenReturn(world);
+            when(display.getLocation()).thenAnswer(call->location.get().clone());
+            when(display.teleport(any(Location.class))).thenAnswer(call->{location.set(call.getArgument(0));return true;});
+            ((Consumer<ItemDisplay>)c.getArgument(2)).accept(display);displays.add(display);return display;
+        });
         stacks=mockConstruction(ItemStack.class,(item,context)->{
             ItemMeta meta=mock(ItemMeta.class);var wearable=mock(EquippableComponent.class);var custom=mock(CustomModelDataComponent.class);
             var key=new AtomicReference<NamespacedKey>();var strings=new AtomicReference<List<String>>(List.of());
@@ -51,12 +62,51 @@ class NativeWardrobeTest {
         inventory.slots[2]=stale;wardrobe.tick(player,Map.of("head","cap"));assertNull(inventory.slots[2]);assertTrue(NativeWardrobe.managed(inventory.slots[39]));
         wardrobe.remove(player);wardrobe.tick(player,Map.of("head","cap"));wardrobe.leave(player.getUniqueId());assertNull(inventory.slots[39]);assertSame(original,inventory.slots[4]);
     }
-    @Test void backLayersOntoPhysicalSuitAndRestoresBaseAssetAtHandoff(){
+    @Test void backDisplayPreservesPhysicalSuitAndMigratesRetiredCombinedAsset(){
         UUID serial=UUID.randomUUID();var suit=GadgetTestSupport.item(new LobbyWallets.Gadget(serial,player.getUniqueId(),"gravity_suit",true));
+        suit.getItemMeta().getEquippable().setModel(new NamespacedKey("noqui","wearable_back_gravity/backpack"));
         inventory.slots[38]=suit;wardrobe.tick(player,Map.of("back","backpack"));
         assertSame(suit,inventory.slots[38]);assertEquals(serial,GadgetItems.serial(suit));
-        assertEquals(new NamespacedKey("noqui","wearable_back_gravity/backpack"),suit.getItemMeta().getEquippable().getModel());
+        assertEquals(new NamespacedKey("noqui","gravity_suit"),suit.getItemMeta().getEquippable().getModel());
+        assertEquals(1,displays.size());
         wardrobe.remove(player);assertSame(suit,inventory.slots[38]);assertEquals(new NamespacedKey("noqui","gravity_suit"),suit.getItemMeta().getEquippable().getModel());
+        verify(displays.getFirst()).remove();
+    }
+    @Test void backUsesOneVanillaModelAndLeavesRealChestArmorInPlace(){
+        var chest=gear();inventory.slots[38]=chest;
+        wardrobe.tick(player,Map.of("back","backpack"));var display=displays.getFirst();
+        var stack=ArgumentCaptor.forClass(ItemStack.class);verify(display).setItemStack(stack.capture());
+        verify(stack.getValue().getItemMeta()).setItemModel(new NamespacedKey("noqui","backpack"));
+        verify(display).setItemDisplayTransform(ItemDisplay.ItemDisplayTransform.FIXED);
+        verify(display).setPersistent(false);assertSame(chest,inventory.slots[38]);
+        wardrobe.tick(player,Map.of("back","backpack"));assertEquals(1,displays.size());
+        verify(display,times(1)).setTransformationMatrix(any());
+        wardrobe.tick(player,Map.of("back","back_acoustic_guitar"));assertEquals(1,displays.size());
+        verify(display,times(2)).setItemStack(any());verify(display,times(2)).setTransformationMatrix(any());
+        wardrobe.tick(player,Map.of());verify(display).remove();assertSame(chest,inventory.slots[38]);
+    }
+    @Test void retiredManagedChestAndStorageCopiesAreRemovedBeforeDisplayMigration(){
+        wardrobe.tick(player,Map.of("head","cap"));var retired=inventory.slots[39];
+        inventory.slots[39]=null;inventory.slots[38]=retired;inventory.slots[5]=retired;
+        wardrobe.tick(player,Map.of("back","backpack"));
+        assertNull(inventory.slots[38]);assertNull(inventory.slots[5]);assertEquals(1,displays.size());
+        wardrobe.close();verify(displays.getFirst()).remove();
+    }
+    @Test void backFollowsBodyYawAndCrouchingInsteadOfHeadPitch(){
+        when(player.getBodyYaw()).thenReturn(120f);wardrobe.tick(player,Map.of("back","backpack"));
+        var display=displays.getFirst();assertEquals(120,display.getLocation().getYaw());assertEquals(0,display.getLocation().getPitch());
+        when(player.getBodyYaw()).thenReturn(130f);when(player.isSneaking()).thenReturn(true);
+        wardrobe.tick(player,Map.of("back","backpack"));assertEquals(130,display.getLocation().getYaw());
+        verify(display).teleport(any(Location.class));verify(display,times(2)).setTransformationMatrix(any());
+        verify(display).setInterpolationDelay(0);
+        when(player.isInvisible()).thenReturn(true);wardrobe.tick(player,Map.of("back","backpack"));verify(display).remove();
+    }
+    @Test void backRecreatesInvalidOrWorldChangedDisplaysAndCleansUpOnLeave(){
+        wardrobe.tick(player,Map.of("back","backpack"));var first=displays.getFirst();when(first.isValid()).thenReturn(false);
+        wardrobe.tick(player,Map.of("back","backpack"));verify(first).remove();assertEquals(2,displays.size());
+        var second=displays.getLast();when(second.getWorld()).thenReturn(mock(World.class));
+        wardrobe.tick(player,Map.of("back","backpack"));verify(second).remove();assertEquals(3,displays.size());
+        wardrobe.leave(player);verify(displays.getLast()).remove();
     }
     @Test void managedClickAndDragAreBlockedButActualGadgetsRemainTransferable(){
         wardrobe.tick(player,Map.of("head","cap"));var event=mock(InventoryClickEvent.class);when(event.getCurrentItem()).thenReturn(inventory.slots[39]);wardrobe.click(event);verify(event).setCancelled(true);
@@ -68,6 +118,7 @@ class NativeWardrobeTest {
     @Test void spectatorAndCloseRemoveOnlyManagedEquipment(){
         var real=gear();inventory.slots[3]=real;wardrobe.tick(player,Map.of("head","cap","back","backpack"));
         when(player.getGameMode()).thenReturn(GameMode.SPECTATOR);wardrobe.tick(player,Map.of("head","cap"));assertNull(inventory.slots[39]);assertNull(inventory.slots[38]);
+        verify(displays.getFirst()).remove();
         wardrobe.close();assertSame(real,inventory.slots[3]);
     }
     @Test void restartHandoffCleansPersistedEquipmentBeforeTheFirstTick(){
@@ -76,10 +127,11 @@ class NativeWardrobeTest {
     }
     @Test void upgradePurgeLeavesForeignDisplaysAndGsitArmorStandsAlone(){
         try(var bukkit=mockStatic(Bukkit.class)){
-            var world=mock(World.class);var old=mock(ItemDisplay.class);var foreign=mock(ItemDisplay.class);var gsit=mock(ArmorStand.class);
+            var world=mock(World.class);var old=mock(ItemDisplay.class);var current=mock(ItemDisplay.class);var foreign=mock(ItemDisplay.class);var gsit=mock(ArmorStand.class);
+            when(current.getScoreboardTags()).thenReturn(Set.of(BackAccessories.TAG));
             when(old.getScoreboardTags()).thenReturn(Set.of(NativeWardrobe.LEGACY_TAG));when(foreign.getScoreboardTags()).thenReturn(Set.of("foreign"));when(gsit.getScoreboardTags()).thenReturn(Set.of("GSit"));
-            when(world.getEntities()).thenReturn(List.of(old,foreign,gsit));bukkit.when(Bukkit::getWorlds).thenReturn(List.of(world));
-            wardrobe.purge();verify(old).remove();verify(foreign,never()).remove();verify(gsit,never()).remove();
+            when(world.getEntities()).thenReturn(List.of(old,current,foreign,gsit));bukkit.when(Bukkit::getWorlds).thenReturn(List.of(world));
+            wardrobe.purge();verify(old).remove();verify(current).remove();verify(foreign,never()).remove();verify(gsit,never()).remove();
         }
     }
 }

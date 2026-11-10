@@ -86,7 +86,7 @@ Noqui의 변환 오디오 캐시는 최대 5 GiB LRU로 관리하며 Moma BGM �
 
 Java는 내부 `/internal/v1/sync`의 최상위 `retainedMediaIds`에 현재 세션의 전체 보관 목록을 보냅니다. 최대 100개 UUID를 중복 제거하며 동일 미디어의 마지막 제출 참조가 없어질 때 해제합니다. READY 응답만으로 준비를 완료하지 않고, 해당 ID를 포함한 실제 sync 패킷의 성공 ACK를 받은 뒤 QuizGame에 전달합니다. ACK 실패는 준비 실패·출제권 반환으로 처리하며 취소된 요청의 늦은 ACK는 무시합니다. 취소·이탈·종료·재시작은 다음 전체 목록에 반영하고 정상 종료는 빈 배열을 보낸 뒤 연결을 닫습니다. READY/cache hit의 60초 임시 보호는 첫 sync 전의 틈만 막으며 장기 대기열 보호를 대신하지 않습니다. Rust는 승인된 pin 목록을 영구 보관하고 재시작 후에도 보호합니다. 필드가 없는 구버전 요청은 빈 배열로 해석하거나 eviction을 활성화하지 않습니다. 이 목록은 공개 state/SSE와 대기곡 메타데이터에 노출하지 않습니다.
 
-팩의 소스와 생성·검증 방법은 [로비 에셋 안내](lobby-assets/README.md)를 따릅니다. 검증한 `lobby-assets/lobby-pack.properties` 하나만 JAR 루트에 포함하며 ZIP은 포함하지 않습니다. 팩 ZIP을 해당 내용 해시의 공개 URL에 먼저 게시한 후 플러그인을 기동합니다. 기존 `plugins/Noqui/lobby-pack.properties`가 있으면 자동 덮어쓰지 않으므로 팩을 바꿀 때 검증한 새 descriptor를 함께 반영합니다. CI는 Python 표준 라이브러리로 팩 재현성과 descriptor를 먼저 확인한 뒤 Maven을 실행합니다.
+팩의 소스와 생성·검증 방법은 [로비 에셋 안내](lobby-assets/README.md)를 따릅니다. 검증한 `lobby-pack.properties`, `lobby-cosmetics.json`, `native-equipment.json`을 JAR 루트에 포함하며 ZIP은 포함하지 않습니다. 팩 ZIP을 해당 내용 해시의 공개 URL에 먼저 게시한 후 플러그인을 기동합니다. 기존 `plugins/Noqui/lobby-pack.properties`가 있으면 자동 덮어쓰지 않으므로 팩을 바꿀 때 검증한 새 descriptor를 함께 반영합니다. CI는 Python 표준 라이브러리로 팩 재현성과 descriptor를 먼저 확인한 뒤 Maven을 실행합니다. 로비 팩은 기본 셰이더를 사용하며 등 치장은 표준 아이템 디스플레이로 표시하여 macOS Vulkan의 정점 subgroup 제한을 피합니다. 힌트 HUD 셰이더는 별도 팩에 유지합니다. 이 변경은 플러그인과 팩 descriptor를 함께 갱신해야 합니다.
 
 ## 설정과 이용
 

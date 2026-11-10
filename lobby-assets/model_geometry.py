@@ -58,6 +58,16 @@ def model_bounds(model,fixed=False):
         points=[[v+display['translation'][i] for i,v in enumerate(rotate([(p[j]-8)*display['scale'][j] for j in range(3)],display['rotation']))] for p in points]
     return [[min(p[i] for p in points) for i in range(3)],[max(p[i] for p in points) for i in range(3)]]
 
+def back_translation(model):
+    """Offset from the torso centre, in blocks, for a 0.8-scale Y-flipped display.
+
+    Reuse the previous fit: centre X/Y on the torso and put the frontmost
+    surface 3.2 model pixels behind it. Compensate the item's fixed translation.
+    """
+    low,high=model_bounds(model,fixed=True)
+    return [round(.8*(low[0]+high[0])/32,9),
+            round(-.8*(low[1]+high[1])/32,9),round((-3.2+.8*low[2])/16,9)]
+
 def geometry_signature(model):
     """Texture/order/translation/uniform-scale invariant, including rotated cuboids."""
     groups=[element_corners(element) for element in model['elements']]

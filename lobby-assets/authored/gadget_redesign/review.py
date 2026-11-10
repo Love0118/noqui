@@ -114,7 +114,7 @@ def validate():
         if any(layer.get('texture') == 'noqui:gravity_suit' for layer in layers):
             assert layers[0]['texture'] == 'noqui:gravity_suit'
             uses.append(path.relative_to(PACK).as_posix())
-    assert len(uses) > 1, 'Combined back+gravity assets must keep the shared suit layer'
+    assert uses == ['assets/noqui/equipment/gravity_suit.json'], 'Back displays must not replace the vanilla suit asset'
     results['nativeGravity'] = {'sha256': sha(native), 'size': [64, 32], 'referencingEquipmentAssets': uses,
         'preview': 'vanilla humanoid chestplate UVs, 1px outer armor inflation, slight idle arm pose; software render'}
     return results

@@ -65,28 +65,7 @@
         32
       ],
       "referencingEquipmentAssets": [
-        "assets/noqui/equipment/gravity_suit.json",
-        "assets/noqui/equipment/wearable_back_gravity/backpack.json",
-        "assets/noqui/equipment/wearable_back_gravity/back_acoustic_guitar.json",
-        "assets/noqui/equipment/wearable_back_gravity/back_arcane_staff.json",
-        "assets/noqui/equipment/wearable_back_gravity/back_artist_easel.json",
-        "assets/noqui/equipment/wearable_back_gravity/back_bagpipe.json",
-        "assets/noqui/equipment/wearable_back_gravity/back_cleric_cross.json",
-        "assets/noqui/equipment/wearable_back_gravity/back_didgeridoo.json",
-        "assets/noqui/equipment/wearable_back_gravity/back_double_axe.json",
-        "assets/noqui/equipment/wearable_back_gravity/back_halloween_gravestone.json",
-        "assets/noqui/equipment/wearable_back_gravity/back_handpan.json",
-        "assets/noqui/equipment/wearable_back_gravity/back_hunters_bow.json",
-        "assets/noqui/equipment/wearable_back_gravity/back_katana_scabbard.json",
-        "assets/noqui/equipment/wearable_back_gravity/back_kite_shield.json",
-        "assets/noqui/equipment/wearable_back_gravity/back_lute.json",
-        "assets/noqui/equipment/wearable_back_gravity/back_portable_keyboard.json",
-        "assets/noqui/equipment/wearable_back_gravity/back_round_shield.json",
-        "assets/noqui/equipment/wearable_back_gravity/back_smith_hammer.json",
-        "assets/noqui/equipment/wearable_back_gravity/back_tiny_drum.json",
-        "assets/noqui/equipment/wearable_back_gravity/back_trail_rucksack.json",
-        "assets/noqui/equipment/wearable_back_gravity/back_trumpet.json",
-        "assets/noqui/equipment/wearable_back_gravity/back_vielle.json"
+        "assets/noqui/equipment/gravity_suit.json"
       ],
       "preview": "vanilla humanoid chestplate UVs, 1px outer armor inflation, slight idle arm pose; software render"
     }

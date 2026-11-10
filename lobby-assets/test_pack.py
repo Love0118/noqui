@@ -43,6 +43,7 @@ class PackTest(unittest.TestCase):
             expected=build.read_json(path)
             for key in ('credit','format_version','texture_size'):expected.pop(key,None)
             for element in expected['elements']:element.pop('name',None)
+            expected['textures'].setdefault('particle',next(iter(expected['textures'].values())))
             self.assertEqual(json.loads(files[path.relative_to(build.PACK).as_posix()]),expected)
         for path in build.PACK.rglob('*'):
             name=path.relative_to(build.PACK).as_posix()
@@ -75,18 +76,23 @@ class PackTest(unittest.TestCase):
         self.assertEqual(set(sounds),set(calls))
         self.assertNotIn('assets/minecraft/sounds/arsf/0miss.ogg',files)
         for key in calls:self.assertIn(f'assets/minecraft/sounds/arsf/{key}.ogg',files)
-    def test_item_only_shader_is_omitted_without_changing_active_shaders(self):
+    def test_lobby_pack_contains_only_vanilla_rendered_models(self):
         files=build.packed_files()
-        self.assertNotIn('assets/minecraft/shaders/include/objmc_mesh_carrier.glsl',files)
-        shaders={name for name in files if '/shaders/' in name}
-        self.assertEqual(len(shaders),8)
-        for name in shaders:self.assertEqual(files[name],(build.PACK/name).read_bytes())
-    def test_shader_imports_reject_missing_custom_include_and_accept_vanilla(self):
-        core='assets/minecraft/shaders/core/entity.vsh';include='assets/minecraft/shaders/include/objmc_needed.glsl'
-        with self.assertRaisesRegex(AssertionError,'Missing wearable shader'):
-            build.shader_dependencies({core:b'#include <minecraft:objmc_needed.glsl>'})
-        files={core:b'#include <minecraft:objmc_needed.glsl>',include:b'#include <minecraft:light.glsl>'}
-        self.assertEqual(build.shader_dependencies(files),{core,include})
+        self.assertFalse(any('/shaders/' in name for name in files))
+        self.assertFalse(any('wearable_back/' in name or 'wearable_back_gravity/' in name for name in files))
+        self.assertEqual(set(build.read_json(build.NATIVE)['files']),{
+            'assets/noqui/items/wearable_head.json',
+            *[f'assets/noqui/{folder}/{name}.{suffix}' for name in ('triple_boots','quad_boots','gravity_suit')
+              for folder,suffix in (('equipment','json'),('textures/entity/equipment/humanoid','png'))]})
+        for name,data in files.items():
+            if name.startswith('assets/noqui/models/'):
+                self.assertIn('particle',json.loads(data)['textures'],name)
+    def test_backend_specific_shader_overrides_are_rejected(self):
+        for relative in ('minecraft/shaders/core/entity.vsh','minecraft/shaders/core/terrain.vsh',
+                         'minecraft/shaders/include/light.glsl','noqui/shaders/include/custom.glsl'):
+            path=build.PACK/'assets'/relative;path.parent.mkdir(parents=True,exist_ok=True);path.write_text('#version 450\n')
+            with self.assertRaisesRegex(AssertionError,'vanilla shaders'):build.validate()
+            path.unlink()
     def test_out_of_bounds_uv(self):
         self.edit('assets/noqui/models/cap.json',lambda v:v['elements'][0]['faces']['north'].update(uv=[0,0,17,4]))
         with self.assertRaises(AssertionError):build.validate()
@@ -154,11 +160,7 @@ class PackTest(unittest.TestCase):
         shutil.copyfile(build.ROOT/'vendor/jashduck/LICENSE',build.PACK/'licenses/fixture.txt')
         with (build.PACK/'ASSET_NOTICES.txt').open('a',encoding='utf-8') as out:out.write('\n'+source['model']+'\n'+source['copyrightNotice']+'\nMIT\n')
         native=build.read_json(build.NATIVE)
-        native['backs'].append({'id':name,'faces':42,'sourceModelSha256':build.digest(path.read_bytes())})
-        for prefix in ('wearable_back','wearable_back_gravity'):
-            relative=f'assets/noqui/equipment/{prefix}/{name}.json'
-            target=build.PACK/relative;shutil.copyfile(build.PACK/f'assets/noqui/equipment/{prefix}/backpack.json',target)
-            native['files'][relative]=build.digest(target.read_bytes())
+        native['backs'].append({'id':name,'sourceModelSha256':build.digest(path.read_bytes()),'translation':build.back_translation(model)})
         build.NATIVE.write_text(json.dumps(native),encoding='utf-8')
         return name
 
@@ -170,17 +172,26 @@ class PackTest(unittest.TestCase):
         (build.PACK/'assets/noqui/textures/entity/equipment/humanoid/triple_boots.png').unlink()
         with self.assertRaises((AssertionError,FileNotFoundError)):build.validate()
 
-    def test_native_back_shader_and_gravity_layers_are_pinned(self):
-        path=build.PACK/'assets/minecraft/shaders/core/entity.vsh';path.write_bytes(path.read_bytes()+b'\nchanged')
-        with self.assertRaises(AssertionError):build.validate()
+    def test_back_attachment_fit_is_pinned_to_preserved_model_geometry(self):
+        native=build.read_json(build.NATIVE);native['backs'][0]['translation'][0]+=.1
+        build.NATIVE.write_text(json.dumps(native),encoding='utf-8')
+        with self.assertRaisesRegex(AssertionError,'Back attachment fit'):build.validate()
 
-    def test_unneeded_sodium_terrain_overrides_are_rejected(self):
-        (build.PACK/'assets/minecraft/shaders/core/terrain.vsh').write_text('#version 330\n')
-        with self.assertRaises(AssertionError):build.validate()
-
-    def test_vanilla_shader_include_overrides_are_rejected(self):
-        (build.PACK/'assets/minecraft/shaders/include/light.glsl').write_text('// incompatible override\n')
-        with self.assertRaises(AssertionError):build.validate()
+    def test_every_back_keeps_its_size_and_sits_behind_the_torso(self):
+        from model_geometry import element_corners, rotate
+        for row in build.read_json(build.NATIVE)['backs']:
+            model=build.read_json(build.PACK/f'assets/noqui/models/{row["id"]}.json')
+            fixed=model['display']['fixed'];offset=row['translation'];points=[]
+            for element in model['elements']:
+                for p in element_corners(element):
+                    q=rotate([(p[j]-8)*fixed['scale'][j] for j in range(3)],fixed['rotation'])
+                    q=[(q[j]+fixed['translation'][j])/16 for j in range(3)]
+                    # The official ItemDisplayRenderer supplies the Y half turn.
+                    points.append([-.8*q[0]+offset[0],.8*q[1]+offset[1]+1.125,-.8*q[2]+offset[2]])
+            low=[min(p[j] for p in points) for j in range(3)];high=[max(p[j] for p in points) for j in range(3)]
+            self.assertAlmostEqual(low[0]+high[0],0,places=7,msg=row['id'])
+            self.assertAlmostEqual((low[1]+high[1])/2,1.125,places=7,msg=row['id'])
+            self.assertAlmostEqual(high[2],-.2,places=7,msg=row['id'])
 
     def test_catalog_drives_models_textures_and_provenance_without_fixed_count(self):
         before=build.validate();self.add_cosmetic_fixture();after=build.validate()

@@ -38,8 +38,8 @@ The gravity harness uses graphite plates, subtle blue steel edges, a recessed
 teal core, small warm fasteners, shoulder bridges and a compact rear power pack.
 Its actual vanilla humanoid texture has a matching bright chest core, teal
 seams, short shoulder caps and transparent forearms/neck. Bright colors suggest
-light; no additional emissive renderer is assumed. All 22 existing standalone
-and combined back+gravity equipment definitions still reference this same PNG.
+light; no additional emissive renderer is assumed. The standalone gravity equipment definition references this PNG. Back accessories
+render separately as portable item displays and leave the physical suit intact.
 Native CHEST compatibility and item model identity are retained.
 
 The snow bomb is a small stepped packed-snow shape with icy belt, snowflake

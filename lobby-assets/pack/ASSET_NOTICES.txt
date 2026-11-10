@@ -179,7 +179,3 @@ License URL: https://creativecommons.org/publicdomain/zero/1.0/
 Full license: licenses/novelty_wasabi_workshop.txt
 Changes: One selected Blockbench Workshop listing converted into a Noqui native head ornament: static source cuboids and per-face UVs retained, UVs normalized to Java 0..16 units, PNG bytes copied unchanged, geometry uniformly scaled/recentred only, explicit fixed head pose added. The listing provenance and source page are pinned.
 Source notice: License, creator-rights, and AI-use statements are declared by the Blockbench Workshop uploader and are not independently verified by the platform. The original .bbmodel download endpoint requires an account, so the openly published interactive-preview JSON is the pinned source model; no account was used.
-
-Native equipment renderer: https://github.com/JagerMeistars/obj-cubed
-MIT Copyright (c) 2022 Godlander. Pinned 266880bb7030dae4ab51178df9ee9f8ff91b395f.
-See licenses/objcubed.txt. Native-body PNG layers generated from the unchanged cosmetic meshes.
