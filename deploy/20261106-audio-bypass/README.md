@@ -6,6 +6,8 @@ The temporary bypass was activated at 00:35 KST. Valid Ogg Opus inputs with a co
 
 The helper runs as `ubuntu` under `noqui-media-bypass.service`, with a 128 MiB memory limit and 50% CPU quota. The running Minecraft PID 984 and Rust PID 1500263 were preserved. No Rust binary, JAR, playlist manifest, score, ticket, or quiz-control request was changed.
 
+2026-11-10 follow-up: the live helper now runs as the dedicated `noqui` account with a read-only data mount and additional systemd restrictions. See [the service hardening record](../20261110-service-hardening.md) for the current ownership and deployment requirements. The activation script below is a historical record and must not be rerun to recreate the original account settings.
+
 Initial activation skipped playback tests at the user's request. The user subsequently requested a live playback test. Over an approximately 18-second sample, existing browser reports showed 21 `PLAYING` reports, no `FAILED` reports, and positions from 10,466 to 27,187 ms. A read-only request through the public HTTPS media URL returned HTTP 200 and 1,449,190 bytes. FFmpeg decoded the complete response without error. A 65,536-byte range returned HTTP 206 and matched the full response prefix. The same URL without a session returned HTTP 401. Session values and request headers were not persisted. Actual speaker output was not monitored. See `verification.json` for the machine-readable result.
 
 Server files:
