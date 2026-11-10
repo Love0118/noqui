@@ -1,0 +1,330 @@
+{
+  "date": "2026-11-10",
+  "timezone": "Asia/Seoul",
+  "target": "PuTTY semion / ubuntu / Ubuntu 24.04 ARM64",
+  "deployment": {
+    "activatedAtUtc": "2026-11-10T04:36:27.108411+00:00",
+    "sourceCommit": "b55692ccf538e1bd17986139a94d2a1f8dfc41b8",
+    "jarSha256": "fdd55603a912c81168f6315265ad056159480082103f43a0703917ea30a0f9b9",
+    "oldJarSha256": "77c2d6634023db4ecc720ffd5b697b58ebe4b9d71cd51b15a5653fd875ac2cad",
+    "lobbyPackSha256": "f2f62ae80765535fc8171b813199fe544f0d624c046d426bd414f284e5167d01",
+    "hintPackSha256": "ad26d3b08ec36c59e617edb573c4e2da512db23a86179db97897f3df979ca32d",
+    "oldKernel": "7.0.0-1013-oracle",
+    "targetKernel": "7.0.0-1016-oracle",
+    "runningKernel": "7.0.0-1016-oracle",
+    "bootId": "cbba936d-d7e5-4ab5-8cdf-15003f3cb85f",
+    "services": {
+      "mc-luck-defense.service": "active",
+      "noqui-web.service": "active",
+      "noqui-media-bypass.service": "active",
+      "nginx.service": "active",
+      "server-chat-mirror.service": "active",
+      "oracle-network-monitor.service": "active"
+    },
+    "jarSha256Verified": true,
+    "lobbyDescriptorVerified": true,
+    "minecraft": {
+      "version": {
+        "name": "Paper 26.3",
+        "protocol": 777
+      },
+      "onlinePlayers": 0,
+      "noquiEnabled": true
+    },
+    "startupErrors": [],
+    "health": [
+      {
+        "url": "https://noqui.danta.qzz.io/healthz",
+        "status": 200,
+        "body": "{\"status\":\"ok\"}"
+      },
+      {
+        "url": "http://127.0.0.1:8787/healthz",
+        "status": 200,
+        "body": "{\"status\":\"ok\"}"
+      }
+    ],
+    "publicPacksVerified": true,
+    "java": [
+      "openjdk version \"25.0.5.0.3\" 2026-10-24",
+      "OpenJDK Runtime Environment (build 25.0.5.0.3+1-1-24.04.1-Ubuntu)",
+      "OpenJDK 64-Bit Server VM (build 25.0.5.0.3+1-1-24.04.1-Ubuntu, mixed mode, sharing)"
+    ],
+    "packageAuditClean": true,
+    "remainingUpgrades": [],
+    "rebootRequired": false,
+    "filesystem": [
+      "Filesystem      Size  Used Avail Use% Mounted on",
+      "/dev/sda1        48G   45G  3.1G  94% /",
+      "/dev/sda16      891M  357M  472M  44% /boot"
+    ],
+    "failedUnits": [],
+    "verifiedAtUtc": "2026-11-10T04:38:51.166259+00:00"
+  },
+  "bridge": {
+    "authenticatedBridgeStatus": 200,
+    "playlists": [
+      {
+        "id": "japan-zeom",
+        "trackCount": 289,
+        "playableCount": 252
+      },
+      {
+        "id": "ssip-noqui",
+        "trackCount": 541,
+        "playableCount": 541
+      },
+      {
+        "id": "tj-261027-domestic",
+        "trackCount": 100,
+        "playableCount": 100
+      },
+      {
+        "id": "tj-261027-japan",
+        "trackCount": 100,
+        "playableCount": 100
+      },
+      {
+        "id": "tj-261027-pop",
+        "trackCount": 100,
+        "playableCount": 98
+      },
+      {
+        "id": "uta-pljy209",
+        "trackCount": 601,
+        "playableCount": 541
+      }
+    ],
+    "unauthenticatedInternalStatus": 401,
+    "publicInternalStatus": 404,
+    "unauthenticatedMediaStatus": 401,
+    "preservedDataHashes": {
+      "config.yml": true,
+      "credits.json": true,
+      "lobby/wallets.bin": true
+    }
+  },
+  "packageUpdate": {
+    "upgraded": 32,
+    "newPackages": 7,
+    "removed": 0,
+    "version": "7.0.0-1016.18~24.04.1",
+    "source": "linux-oracle-7.0",
+    "packageManager": "Ubuntu noble-updates / noble-security",
+    "configurationPolicy": "Preserved local configurations; no distribution upgrade"
+  },
+  "rollbackDirectory": "/home/ubuntu/mc-luck-defense-deploy/compat-kernel-20261110/rollback",
+  "research": {
+    "checkedCves": 11,
+    "ubuntuCveRows": [
+      {
+        "cve": "CVE-2026-74580",
+        "url": "https://ubuntu.com/security/CVE-2026-74580",
+        "ubuntu24_04": [
+          {
+            "package": "linux",
+            "release": "24.04 LTS noble",
+            "status": "Vulnerable work in progress in 6.8.0-148.148"
+          },
+          {
+            "package": "linux-oracle",
+            "release": "24.04 LTS noble",
+            "status": "Vulnerable work in progress in 6.8.0-1066.69"
+          },
+          {
+            "package": "linux-oracle-7.0",
+            "release": "24.04 LTS noble",
+            "status": "Vulnerable work in progress in 7.0.0-1016.18~24.04.1"
+          }
+        ]
+      },
+      {
+        "cve": "CVE-2026-80844",
+        "url": "https://ubuntu.com/security/CVE-2026-80844",
+        "ubuntu24_04": [
+          {
+            "package": "linux",
+            "release": "24.04 LTS noble",
+            "status": "Vulnerable work in progress in 6.8.0-148.148"
+          },
+          {
+            "package": "linux-oracle",
+            "release": "24.04 LTS noble",
+            "status": "Vulnerable work in progress in 6.8.0-1066.69"
+          },
+          {
+            "package": "linux-oracle-7.0",
+            "release": "24.04 LTS noble",
+            "status": "Vulnerable work in progress in 7.0.0-1016.18~24.04.1"
+          }
+        ]
+      },
+      {
+        "cve": "CVE-2026-81000",
+        "url": "https://ubuntu.com/security/CVE-2026-81000",
+        "ubuntu24_04": [
+          {
+            "package": "linux",
+            "release": "24.04 LTS noble",
+            "status": "Vulnerable work in progress in 6.8.0-148.148"
+          },
+          {
+            "package": "linux-oracle",
+            "release": "24.04 LTS noble",
+            "status": "Vulnerable work in progress in 6.8.0-1066.69"
+          },
+          {
+            "package": "linux-oracle-7.0",
+            "release": "24.04 LTS noble",
+            "status": "Vulnerable work in progress in 7.0.0-1016.18~24.04.1"
+          }
+        ]
+      },
+      {
+        "cve": "CVE-2026-68121",
+        "url": "https://ubuntu.com/security/CVE-2026-68121",
+        "error": "The read operation timed out"
+      },
+      {
+        "cve": "CVE-2026-74469",
+        "url": "https://ubuntu.com/security/CVE-2026-74469",
+        "ubuntu24_04": [
+          {
+            "package": "linux",
+            "release": "24.04 LTS noble",
+            "status": "Vulnerable work in progress in 6.8.0-148.148"
+          },
+          {
+            "package": "linux-oracle",
+            "release": "24.04 LTS noble",
+            "status": "Vulnerable work in progress in 6.8.0-1066.69"
+          },
+          {
+            "package": "linux-oracle-7.0",
+            "release": "24.04 LTS noble",
+            "status": "Vulnerable work in progress in 7.0.0-1016.18~24.04.1"
+          }
+        ]
+      },
+      {
+        "cve": "CVE-2026-89492",
+        "url": "https://ubuntu.com/security/CVE-2026-89492",
+        "ubuntu24_04": [
+          {
+            "package": "linux",
+            "release": "24.04 LTS noble",
+            "status": "Vulnerable work in progress in 6.8.0-148.148"
+          },
+          {
+            "package": "linux-oracle",
+            "release": "24.04 LTS noble",
+            "status": "Vulnerable work in progress in 6.8.0-1066.69"
+          },
+          {
+            "package": "linux-oracle-7.0",
+            "release": "24.04 LTS noble",
+            "status": "Vulnerable work in progress in 7.0.0-1016.18~24.04.1"
+          }
+        ]
+      },
+      {
+        "cve": "CVE-2026-31431",
+        "url": "https://ubuntu.com/security/CVE-2026-31431",
+        "ubuntu24_04": [
+          {
+            "package": "linux",
+            "release": "24.04 LTS noble",
+            "status": "Fixed in 6.8.0-117.117"
+          },
+          {
+            "package": "linux-oracle",
+            "release": "24.04 LTS noble",
+            "status": "Fixed in 6.8.0-1054.55"
+          },
+          {
+            "package": "linux-oracle-7.0",
+            "release": "24.04 LTS noble",
+            "status": "Not affected"
+          }
+        ]
+      },
+      {
+        "cisa_linux_recent": [
+          {
+            "cve": "CVE-2026-46300",
+            "dateAdded": "2026-10-28",
+            "name": "Linux Kernel Missing Initialization of a Variable Vulnerability"
+          },
+          {
+            "cve": "CVE-2025-39964",
+            "dateAdded": "2026-09-18",
+            "name": "Linux Kernel Race Condition Vulnerability"
+          },
+          {
+            "cve": "CVE-2026-53266",
+            "dateAdded": "2026-09-18",
+            "name": "Linux Kernel Out-of-Bounds Write Vulnerability"
+          },
+          {
+            "cve": "CVE-2025-39682",
+            "dateAdded": "2026-09-18",
+            "name": "Linux Kernel Improper Check for Unusual or Exceptional Conditions Vulnerability"
+          }
+        ]
+      }
+    ],
+    "kernelChangelog": [
+      {
+        "cve": "CVE-2026-74580",
+        "entry": "linux-oracle-7.0 (7.0.0-1016.18~24.04.1) noble; urgency=medium"
+      },
+      {
+        "cve": "CVE-2026-80844",
+        "entry": "linux-oracle-7.0 (7.0.0-1016.18~24.04.1) noble; urgency=medium"
+      },
+      {
+        "cve": "CVE-2026-81000",
+        "entry": "linux-oracle-7.0 (7.0.0-1016.18~24.04.1) noble; urgency=medium"
+      },
+      {
+        "cve": "CVE-2026-68121",
+        "entry": "linux-oracle-7.0 (7.0.0-1016.18~24.04.1) noble; urgency=medium"
+      },
+      {
+        "cve": "CVE-2026-74469",
+        "entry": "linux-oracle-7.0 (7.0.0-1016.18~24.04.1) noble; urgency=medium"
+      },
+      {
+        "cve": "CVE-2026-89492",
+        "entry": "linux-oracle-7.0 (7.0.0-1016.18~24.04.1) noble; urgency=medium"
+      },
+      {
+        "cve": "CVE-2026-31431",
+        "entry": null
+      },
+      {
+        "cve": "CVE-2026-46300",
+        "entry": "linux-oracle-7.0 (7.0.0-1011.11~24.04.1) noble; urgency=medium"
+      },
+      {
+        "cve": "CVE-2025-39964",
+        "entry": null
+      },
+      {
+        "cve": "CVE-2026-53266",
+        "entry": null
+      },
+      {
+        "cve": "CVE-2025-39682",
+        "entry": null
+      }
+    ],
+    "evidenceScope": "CVE status pages, CISA KEV feed, installed signed Ubuntu package changelog and package versions. Some CVE pages still label the deployed version work in progress despite matching correction entries in its changelog.",
+    "sources": [
+      "https://ubuntu.com/security/notices/USN-8959-1",
+      "https://lists.ubuntu.com/archives/noble-changes/2026-October/060472.html",
+      "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+    ]
+  },
+  "clientVisualVerification": false
+}
