@@ -408,7 +408,7 @@
       "song": {
         "id": "9d48f0e2-5ecb-5159-a841-79a4d5d540ce",
         "youtubeUrl": "https://www.youtube.com/watch?v=emrt46SRyYs",
-        "title": "DAYBREAK FRONTLINE",
+        "title": "데이브레이크 프론트라인",
         "tags": [
           "Orangestar",
           "데이브레이크 프론트라인",
@@ -427,7 +427,7 @@
       "song": {
         "id": "6777a75f-7e87-5e64-9100-1631a5e59d04",
         "youtubeUrl": "https://www.youtube.com/watch?v=yXl5D2B8nKk",
-        "title": "Henceforth",
+        "title": "헨스포스",
         "tags": [
           "Orangestar",
           "헨스포스",
@@ -483,7 +483,7 @@
       "song": {
         "id": "2f065aa4-125c-5e1a-b58a-74fc724238ca",
         "youtubeUrl": "https://www.youtube.com/watch?v=cm-l2h6GB8Q",
-        "title": "KING",
+        "title": "킹",
         "tags": [
           "Kanaria",
           "카나리아",
@@ -1205,7 +1205,7 @@
       "song": {
         "id": "adfc69ca-fbe4-5474-8458-42a982677b6c",
         "youtubeUrl": "https://www.youtube.com/watch?v=TVeIDmk3rBo",
-        "title": "Calc.",
+        "title": "캘크",
         "tags": [
           "JimmyThumbP",
           "지미섬P",
@@ -1766,7 +1766,7 @@
       "song": {
         "id": "bed213ac-e157-5385-a1fd-6fef4f16dc10",
         "youtubeUrl": "https://www.youtube.com/watch?v=cQKGUgOfD8U",
-        "title": "ECHO",
+        "title": "에코",
         "tags": [
           "CrusherP",
           "ECHO",
@@ -2275,7 +2275,7 @@
       "song": {
         "id": "3504a3cd-539a-574e-951a-0ec2afadfe5b",
         "youtubeUrl": "https://www.youtube.com/watch?v=TcHvEFxk_78",
-        "title": "YY",
+        "title": "와이와이",
         "tags": [
           "23exe",
           "YY",
@@ -3008,7 +3008,7 @@
       "song": {
         "id": "7e7f9d26-821e-5dcb-a66c-659ccb32efef",
         "youtubeUrl": "https://www.youtube.com/watch?v=9eyyhtOrKPI",
-        "title": "drop pop candy",
+        "title": "드롭 팝 캔디",
         "tags": [
           "Reol",
           "Giga",
@@ -3319,7 +3319,7 @@
       "song": {
         "id": "dcf56640-ff56-52b8-99a8-eeba185e00fc",
         "youtubeUrl": "https://www.youtube.com/watch?v=txvsf2Zaquo",
-        "title": "Love & Death",
+        "title": "러브 앤 데스",
         "tags": [
           "호옹이",
           "Love Death",
@@ -3821,7 +3821,7 @@
       "song": {
         "id": "dbf9b8eb-951b-58ed-9d05-aba1875b2ab5",
         "youtubeUrl": "https://www.youtube.com/watch?v=IMB-t2j02XQ",
-        "title": "Alone",
+        "title": "얼론",
         "tags": [
           "김박사",
           "HAKASE K",
@@ -3858,7 +3858,7 @@
       "song": {
         "id": "8d933db4-14b1-51e4-ab7c-a46f4087bb3e",
         "youtubeUrl": "https://www.youtube.com/watch?v=RKtoreimcQ8",
-        "title": "Hand in Hand",
+        "title": "핸드 인 핸드",
         "tags": [
           "kz",
           "Hand in Hand",
@@ -3981,7 +3981,7 @@
       "song": {
         "id": "77c5c219-f8df-5a19-9b96-b0aed05b61f8",
         "youtubeUrl": "https://www.youtube.com/watch?v=243vPl8HdVk",
-        "title": "Redial",
+        "title": "리다이얼",
         "tags": [
           "kz",
           "Redial",
@@ -4186,45 +4186,6 @@
         "sha256": "71cebf49561699b3b5d1c92130a4c0e8f1bc57bc295508b8ed317b36bf8877e0",
         "byteLength": 912628,
         "durationMs": 150577
-      }
-    },
-    {
-      "song": {
-        "id": "6837669a-780e-59c5-a4ed-b5dc233a5ef9",
-        "youtubeUrl": "https://www.youtube.com/watch?v=dJc0vpT5UT0",
-        "title": "quiet room",
-        "tags": [
-          "유기산",
-          "quiet room",
-          "콰이어트룸"
-        ]
-      },
-      "audio": {
-        "path": "audio/dJc0vpT5UT0.ogg",
-        "sha256": "a110d22d2ecc41c628d33bc211da5499a752a95dd967939fc11264399a018209",
-        "byteLength": 1338094,
-        "durationMs": 219993
-      }
-    },
-    {
-      "song": {
-        "id": "c9c181b2-f132-54c6-92c9-1a818be706d6",
-        "youtubeUrl": "https://www.youtube.com/watch?v=p-o_bMkzOW0",
-        "title": "LUVORATORRRRRY!",
-        "tags": [
-          "Giga",
-          "Reol",
-          "기가P",
-          "LUVORATORRRRRY",
-          "러버토리",
-          "레오루"
-        ]
-      },
-      "audio": {
-        "path": "audio/p-o_bMkzOW0.ogg",
-        "sha256": "7acc97ebf8f4f86c143ea169b87f2570b7e99522adef334107ba297eb7ffaa8b",
-        "byteLength": 1242644,
-        "durationMs": 205051
       }
     },
     {
@@ -4838,7 +4799,7 @@
       "song": {
         "id": "7aed0ecf-1299-5ed2-a5b4-9eecb391ecb0",
         "youtubeUrl": "https://www.youtube.com/watch?v=7sr1H6emuyk",
-        "title": "Tell Your World",
+        "title": "텔 유어 월드",
         "tags": [
           "kz",
           "Tell Your World",
@@ -4857,7 +4818,7 @@
       "song": {
         "id": "4b2acc2e-bd27-5368-adff-88f0e71d4e51",
         "youtubeUrl": "https://www.youtube.com/watch?v=NocXEwsJGOQ",
-        "title": "Miku",
+        "title": "미쿠",
         "tags": [
           "Anamanaguchi",
           "Miku",
@@ -4927,12 +4888,12 @@
       "song": {
         "id": "644e7ebc-8a29-5046-9c89-7fea1a699181",
         "youtubeUrl": "https://www.youtube.com/watch?v=httB2UoZ44s",
-        "title": "p.h.",
+        "title": "페하",
         "tags": [
           "SEVENTHLINKS",
           "ph",
-          "피에이치",
-          "세븐스링크스"
+          "세븐스링크스",
+          "페하"
         ]
       },
       "audio": {
@@ -4978,7 +4939,7 @@
       "song": {
         "id": "2de34890-d057-509e-952b-b2834903620c",
         "youtubeUrl": "https://www.youtube.com/watch?v=rkaNKAvksDE",
-        "title": "Surges",
+        "title": "서지스",
         "tags": [
           "Orangestar",
           "Surges",
@@ -5082,7 +5043,7 @@
       "song": {
         "id": "4e65caaa-d25e-5966-9a69-2936248266ab",
         "youtubeUrl": "https://www.youtube.com/watch?v=eB0ofPh083g",
-        "title": "letter song",
+        "title": "레터송",
         "tags": [
           "doriko",
           "키리땅P",
@@ -5169,7 +5130,7 @@
       "song": {
         "id": "91dd171f-91d0-58be-8ce8-84934af76210",
         "youtubeUrl": "https://www.youtube.com/watch?v=t0B6QJFJ0LM",
-        "title": "Corruption",
+        "title": "커럽션",
         "tags": [
           "오누마 파슬리",
           "Corruption",
@@ -5466,7 +5427,7 @@
       "song": {
         "id": "1fe83d52-513c-5775-a48d-158d7bed44a7",
         "youtubeUrl": "https://www.youtube.com/watch?v=N55NsP_G1es",
-        "title": "I=Fantasy",
+        "title": "아이=판타지",
         "tags": [
           "시유",
           "방시혁",
@@ -5847,7 +5808,7 @@
       "song": {
         "id": "3d49b7c0-29ef-5d79-8710-9b1db759b76f",
         "youtubeUrl": "https://www.youtube.com/watch?v=_qLCdom6AiM",
-        "title": "ODDS & ENDS",
+        "title": "오즈 앤 엔즈",
         "tags": [
           "ryo",
           "ODDS ENDS",
@@ -5938,7 +5899,8 @@
         "title": "1925",
         "tags": [
           "TPOCKET",
-          "티포켓"
+          "티포켓",
+          "1925"
         ]
       },
       "audio": {
@@ -6068,7 +6030,7 @@
       "song": {
         "id": "6ae6dc5d-de4d-5bc6-8aab-818c9fc28301",
         "youtubeUrl": "https://www.youtube.com/watch?v=cZbdgG86wZc",
-        "title": "Q",
+        "title": "큐",
         "tags": [
           "시이나 모타",
           "Q",
@@ -6260,7 +6222,7 @@
       "song": {
         "id": "e1d6ff1b-f550-5cf8-8082-ef7e9c885626",
         "youtubeUrl": "https://www.youtube.com/watch?v=8g2B0iJjBsc",
-        "title": "QUEEN",
+        "title": "퀸",
         "tags": [
           "Kanaria",
           "카나리아",
@@ -6468,7 +6430,7 @@
       "song": {
         "id": "d2dd42e1-7801-5bfe-abd9-2d47dfc40d7a",
         "youtubeUrl": "https://www.youtube.com/watch?v=oGQnn9vbvk0",
-        "title": "ONE OFF MIND",
+        "title": "원 오프 마인드",
         "tags": [
           "Van de Shop",
           "ONE OFF MIND",
@@ -6571,7 +6533,7 @@
       "song": {
         "id": "2f56bdc0-6799-5510-9407-964496fec0c0",
         "youtubeUrl": "https://www.youtube.com/watch?v=2UE9XnUverk",
-        "title": "MIRA",
+        "title": "미라",
         "tags": [
           "Kanaria",
           "카나리아",
@@ -6740,7 +6702,7 @@
       "song": {
         "id": "20b03eea-924e-576f-aee4-aeddb268ac4c",
         "youtubeUrl": "https://www.youtube.com/watch?v=KxBy9b5gAHI",
-        "title": "snooze",
+        "title": "스누즈",
         "tags": [
           "wotaku",
           "snooze",
@@ -6848,7 +6810,7 @@
       "song": {
         "id": "44374e35-1174-5a22-893c-36fb05734a8b",
         "youtubeUrl": "https://www.youtube.com/watch?v=UgK6n1KKUxY",
-        "title": "About Me",
+        "title": "어바웃 미",
         "tags": [
           "쵸쵸P",
           "About Me",
@@ -6866,7 +6828,7 @@
       "song": {
         "id": "45b2b369-785d-5148-b787-4b86449fa340",
         "youtubeUrl": "https://www.youtube.com/watch?v=VemXOuPyr8k",
-        "title": "Beat Eater",
+        "title": "비트 이터",
         "tags": [
           "Police Piccadilly",
           "Beat Eater",
@@ -7055,7 +7017,7 @@
       "song": {
         "id": "679cfd23-d944-5e76-b952-58da71d8b500",
         "youtubeUrl": "https://www.youtube.com/watch?v=WDUA7z3703g",
-        "title": "Bad ∞ End ∞ Night",
+        "title": "배드 엔드 나이트",
         "tags": [
           "HitoshizukuP",
           "Yama",
@@ -7130,12 +7092,11 @@
       "song": {
         "id": "26261bf2-171c-5fef-99fa-a587ac0feaae",
         "youtubeUrl": "https://www.youtube.com/watch?v=lvPRs_HC7Wg",
-        "title": "ANTI THE∞HOLiC",
+        "title": "안티 디 인피니트 홀릭",
         "tags": [
           "cosMo폭주P",
           "ANTI THEHOLiC",
-          "안티디인피니트홀릭",
-          "안티더홀릭"
+          "안티디인피니트홀릭"
         ]
       },
       "audio": {
@@ -7182,25 +7143,6 @@
     },
     {
       "song": {
-        "id": "ef7c9e42-92f7-517e-9182-f59e26e4772e",
-        "youtubeUrl": "https://www.youtube.com/watch?v=XjcfzyAtzug",
-        "title": "Black Board",
-        "tags": [
-          "chouchouP",
-          "쵸쵸P",
-          "Black Board",
-          "블랙보드"
-        ]
-      },
-      "audio": {
-        "path": "audio/XjcfzyAtzug.ogg",
-        "sha256": "93da9bc4b790dc75848fd44b6cc7c497c9d0d350f2b39168c225869fead8dde5",
-        "byteLength": 1349191,
-        "durationMs": 221596
-      }
-    },
-    {
-      "song": {
         "id": "e1af5c58-f82f-5d9e-a99a-4328043c2247",
         "youtubeUrl": "https://www.youtube.com/watch?v=9DD6JvY06Ok",
         "title": "스트리밍 하트",
@@ -7221,7 +7163,7 @@
       "song": {
         "id": "2c01b84c-6d6b-5a88-9bd4-bcbb53da1d7a",
         "youtubeUrl": "https://www.youtube.com/watch?v=PBjSHA2b5gM",
-        "title": "Calc.",
+        "title": "캘크",
         "tags": [
           "JimmyThumbP",
           "지미섬P",
@@ -7293,12 +7235,14 @@
       "song": {
         "id": "8535aa58-84ab-5fd3-b979-904fea489529",
         "youtubeUrl": "https://www.youtube.com/watch?v=505rBX9MNcQ",
-        "title": "88☆彡",
+        "title": "88별",
         "tags": [
           "marasy",
           "kemu",
           "마라시",
-          "케무"
+          "케무",
+          "88별",
+          "호리에 쇼타"
         ]
       },
       "audio": {
@@ -7348,7 +7292,7 @@
       "song": {
         "id": "acc354b5-dfef-51dc-8bde-d1b35c9e2481",
         "youtubeUrl": "https://www.youtube.com/watch?v=YVD1RLI7klc",
-        "title": "STAGE OF SEKAI",
+        "title": "스테이지 오브 세카이",
         "tags": [
           "HarryP",
           "하리P",
@@ -7541,7 +7485,7 @@
       "song": {
         "id": "1ff5691a-87ce-574f-b8f0-1974bddd46a1",
         "youtubeUrl": "https://www.youtube.com/watch?v=nfpYhYtHuKo",
-        "title": "Flyer!",
+        "title": "플라이어!",
         "tags": [
           "Chinozo",
           "Flyer",
@@ -7579,7 +7523,7 @@
       "song": {
         "id": "9a31dee0-975a-5276-a40f-d0e380a6db05",
         "youtubeUrl": "https://www.youtube.com/watch?v=BUyrhLRzAwU",
-        "title": "Awake Now",
+        "title": "어웨이크 나우",
         "tags": [
           "Yunosuke",
           "유노스케",
@@ -7731,7 +7675,7 @@
       "song": {
         "id": "00c6ad9c-1d83-5f1c-8eb0-b7ea8cb0fc9d",
         "youtubeUrl": "https://www.youtube.com/watch?v=jvoW9lJdirk",
-        "title": "-ERROR",
+        "title": "에러",
         "tags": [
           "niki",
           "ERROR",
@@ -7799,7 +7743,7 @@
       "song": {
         "id": "04e0e2e6-319b-58e3-9c75-63ec47a900eb",
         "youtubeUrl": "https://www.youtube.com/watch?v=1TgeWq2zgFY",
-        "title": "twitter",
+        "title": "트위터",
         "tags": [
           "devilishP",
           "twitter",
@@ -7935,25 +7879,6 @@
     },
     {
       "song": {
-        "id": "1ba67a80-176a-5ea5-8936-9d04f9a67eca",
-        "youtubeUrl": "https://www.youtube.com/watch?v=RcQxAqtNeKA",
-        "title": "Close to you",
-        "tags": [
-          "niki",
-          "Close to you",
-          "클로스토유",
-          "니키"
-        ]
-      },
-      "audio": {
-        "path": "audio/RcQxAqtNeKA.ogg",
-        "sha256": "f443adfb844cd6588bdb1f860e927d065054d35fdfe84e5f6c6c616653cf7480",
-        "byteLength": 1785131,
-        "durationMs": 292010
-      }
-    },
-    {
-      "song": {
         "id": "546263b3-ed95-50e2-a0f0-b49226687d97",
         "youtubeUrl": "https://www.youtube.com/watch?v=Ye95jBoBZSg",
         "title": "슬픔의 물결에 빠져",
@@ -7973,7 +7898,7 @@
       "song": {
         "id": "46aedc8c-9c34-58c5-9f15-d28eab7fbbbf",
         "youtubeUrl": "https://www.youtube.com/watch?v=36SxEHQeDi8",
-        "title": "WAVE",
+        "title": "웨이브",
         "tags": [
           "niki",
           "WAVE",
@@ -8129,7 +8054,7 @@
       "song": {
         "id": "f3ead26c-26dd-55b6-9b42-9c739d939b9c",
         "youtubeUrl": "https://www.youtube.com/watch?v=rXee9CxYmTY",
-        "title": "ELECT",
+        "title": "일렉트",
         "tags": [
           "niki",
           "ELECT",
@@ -8148,11 +8073,12 @@
       "song": {
         "id": "aedf8335-f6c3-5bae-882b-425dd1580d25",
         "youtubeUrl": "https://www.youtube.com/watch?v=CniSkoogfZs",
-        "title": "6900000000",
+        "title": "69억",
         "tags": [
           "HAMO",
           "kyotn",
-          "하모"
+          "하모",
+          "69억"
         ]
       },
       "audio": {
@@ -8160,25 +8086,6 @@
         "sha256": "395053c978c91c0e1cc436076034c79a6459758b7f2ce0f10d4510c72fc67551",
         "byteLength": 1435194,
         "durationMs": 236932
-      }
-    },
-    {
-      "song": {
-        "id": "cee9643d-5b1f-53f2-acb7-7acd3f63b9bf",
-        "youtubeUrl": "https://www.youtube.com/watch?v=hAbu1AHsqhc",
-        "title": "HEAVEN",
-        "tags": [
-          "HarryP",
-          "하리P",
-          "HEAVEN",
-          "헤븐"
-        ]
-      },
-      "audio": {
-        "path": "audio/hAbu1AHsqhc.ogg",
-        "sha256": "9f9feca5eb377711db76a1aa65682432d924ba0663ebc833c39424b195ee68f1",
-        "byteLength": 1748422,
-        "durationMs": 288007
       }
     },
     {
@@ -8341,7 +8248,7 @@
       "song": {
         "id": "f041ec32-e15b-5b2b-9b74-07bac6f966bd",
         "youtubeUrl": "https://www.youtube.com/watch?v=QWFw2ueFdnQ",
-        "title": "Catchy !?",
+        "title": "캐치!?",
         "tags": [
           "r906",
           "Catchy",
@@ -8494,7 +8401,7 @@
       "song": {
         "id": "1e5c0ea6-5899-5d03-9f48-328c5666fb2a",
         "youtubeUrl": "https://www.youtube.com/watch?v=uGZ0I71Yawo",
-        "title": "Happppy song",
+        "title": "해피 송",
         "tags": [
           "SOOOO",
           "Happppy song",
@@ -8628,7 +8535,8 @@
         "youtubeUrl": "https://www.youtube.com/watch?v=OnczLTtCWk0",
         "title": "0",
         "tags": [
-          "cosMo폭주P"
+          "cosMo폭주P",
+          "0"
         ]
       },
       "audio": {
@@ -8809,7 +8717,7 @@
       "song": {
         "id": "922c9535-d760-532c-ab72-913aace4861e",
         "youtubeUrl": "https://www.youtube.com/watch?v=9LRMzRCYMlw",
-        "title": "SPiCa",
+        "title": "스피카",
         "tags": [
           "토쿠",
           "kentax",
@@ -8986,7 +8894,7 @@
       "song": {
         "id": "fdad22f6-9080-59a4-a5ba-d5e19e8b55df",
         "youtubeUrl": "https://www.youtube.com/watch?v=crCS77wqxTI",
-        "title": "Forward",
+        "title": "포워드",
         "tags": [
           "R Sound Design",
           "Forward",
@@ -9126,7 +9034,8 @@
           "sasakureUK",
           "DECO27",
           "사사쿠레P",
-          "데코"
+          "데코",
+          "39"
         ]
       },
       "audio": {
@@ -9340,11 +9249,12 @@
       "song": {
         "id": "97c6c004-15c3-5726-95c3-62a5fc00680a",
         "youtubeUrl": "https://www.youtube.com/watch?v=zGMftuCqLhk",
-        "title": "야마다 PERFECT",
+        "title": "야마다 퍼펙트",
         "tags": [
           "jonYAKITORY",
           "야마다 PERFECT",
-          "존야키토리"
+          "존야키토리",
+          "야마다 퍼펙트"
         ]
       },
       "audio": {
@@ -9372,6 +9282,48 @@
         "byteLength": 1160364,
         "durationMs": 190596
       }
+    }
+  ],
+  "excludedSongs": [
+    {
+      "index": 253,
+      "title": "quiet room",
+      "reasons": [
+        "통용 한국어 곡명·발음의 실제 사용 근거를 재검수 중입니다. 임의 번역·발음 변환을 적용하지 않았습니다.",
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ]
+    },
+    {
+      "index": 254,
+      "title": "LUVORATORRRRRY!",
+      "reasons": [
+        "통용 한국어 곡명·발음의 실제 사용 근거를 재검수 중입니다. 임의 번역·발음 변환을 적용하지 않았습니다.",
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ]
+    },
+    {
+      "index": 434,
+      "title": "Black Board",
+      "reasons": [
+        "통용 한국어 곡명·발음의 실제 사용 근거를 재검수 중입니다. 임의 번역·발음 변환을 적용하지 않았습니다.",
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ]
+    },
+    {
+      "index": 477,
+      "title": "Close to you",
+      "reasons": [
+        "통용 한국어 곡명·발음의 실제 사용 근거를 재검수 중입니다. 임의 번역·발음 변환을 적용하지 않았습니다.",
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ]
+    },
+    {
+      "index": 492,
+      "title": "HEAVEN",
+      "reasons": [
+        "통용 한국어 곡명·발음의 실제 사용 근거를 재검수 중입니다. 임의 번역·발음 변환을 적용하지 않았습니다.",
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ]
     }
   ]
 }

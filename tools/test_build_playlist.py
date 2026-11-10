@@ -12,7 +12,8 @@ class RecordingSourceGateTest(unittest.TestCase):
             source = root / 'catalogue.json'
             source.write_text(json.dumps({'songs': [{
                 'index': 1, 'id': 'record', 'youtubeUrl': 'https://www.youtube.com/watch?v=BaW_jenozKc',
-                'videoId': 'BaW_jenozKc', 'title': 'Song', 'tags': ['Writer'],
+                'videoId': 'BaW_jenozKc', 'title': '검수곡', 'tags': ['Writer'],
+                'evidence': [{'url':'https://example.com/song', 'quote':'검수곡', 'retrievedEvidenceMatched':True}],
                 'reviewRequired': False, 'audioSourceReviewRequired': True,
                 'audio': {'status': 'ready', 'path': 'audio/BaW_jenozKc.ogg'},
             }]}), encoding='utf-8')

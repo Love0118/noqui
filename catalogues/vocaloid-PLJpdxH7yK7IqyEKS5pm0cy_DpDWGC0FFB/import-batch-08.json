@@ -2,26 +2,6 @@
   "schemaVersion": 1,
   "songs": [
     {
-      "id": "6ae6dc5d-de4d-5bc6-8aab-818c9fc28301",
-      "youtubeUrl": "https://www.youtube.com/watch?v=cZbdgG86wZc",
-      "title": "Q",
-      "tags": [
-        "시이나 모타",
-        "Q",
-        "큐"
-      ]
-    },
-    {
-      "id": "4bd822c3-58a2-5c8e-a3f3-318a63bef2e2",
-      "youtubeUrl": "https://www.youtube.com/watch?v=meu-N2YyP00",
-      "title": "신곡",
-      "tags": [
-        "R Sound Design",
-        "신쿄쿠",
-        "알사운드디자인"
-      ]
-    },
-    {
       "id": "99147f42-5976-59f9-8ecf-a97b7e7e1281",
       "youtubeUrl": "https://www.youtube.com/watch?v=FDMmFR1PUFw",
       "title": "하츠네 미쿠의 폭주",
@@ -108,7 +88,7 @@
     {
       "id": "e1d6ff1b-f550-5cf8-8082-ef7e9c885626",
       "youtubeUrl": "https://www.youtube.com/watch?v=8g2B0iJjBsc",
-      "title": "QUEEN",
+      "title": "퀸",
       "tags": [
         "Kanaria",
         "카나리아",
@@ -220,7 +200,7 @@
     {
       "id": "d2dd42e1-7801-5bfe-abd9-2d47dfc40d7a",
       "youtubeUrl": "https://www.youtube.com/watch?v=oGQnn9vbvk0",
-      "title": "ONE OFF MIND",
+      "title": "원 오프 마인드",
       "tags": [
         "Van de Shop",
         "ONE OFF MIND",
@@ -275,7 +255,7 @@
     {
       "id": "2f56bdc0-6799-5510-9407-964496fec0c0",
       "youtubeUrl": "https://www.youtube.com/watch?v=2UE9XnUverk",
-      "title": "MIRA",
+      "title": "미라",
       "tags": [
         "Kanaria",
         "카나리아",
@@ -364,7 +344,7 @@
     {
       "id": "20b03eea-924e-576f-aee4-aeddb268ac4c",
       "youtubeUrl": "https://www.youtube.com/watch?v=KxBy9b5gAHI",
-      "title": "snooze",
+      "title": "스누즈",
       "tags": [
         "wotaku",
         "snooze",
@@ -424,7 +404,7 @@
     {
       "id": "44374e35-1174-5a22-893c-36fb05734a8b",
       "youtubeUrl": "https://www.youtube.com/watch?v=UgK6n1KKUxY",
-      "title": "About Me",
+      "title": "어바웃 미",
       "tags": [
         "쵸쵸P",
         "About Me",
@@ -434,7 +414,7 @@
     {
       "id": "45b2b369-785d-5148-b787-4b86449fa340",
       "youtubeUrl": "https://www.youtube.com/watch?v=VemXOuPyr8k",
-      "title": "Beat Eater",
+      "title": "비트 이터",
       "tags": [
         "Police Piccadilly",
         "Beat Eater",
@@ -465,6 +445,23 @@
       "tags": [
         "카를로스 하카마다",
         "달라"
+      ]
+    },
+    {
+      "id": "dbf6a918-0b9e-581a-9bb5-56cb7af9ada1",
+      "youtubeUrl": "https://www.youtube.com/watch?v=LleQdrW_RhQ",
+      "title": "비어가",
+      "tags": [
+        "MIMI",
+        "미미"
+      ]
+    },
+    {
+      "id": "5cca1e94-3887-5a98-baf9-0671e611e3bf",
+      "youtubeUrl": "https://www.youtube.com/watch?v=wqV9HGpgGDA",
+      "title": "위풍당당",
+      "tags": [
+        "우메토라"
       ]
     }
   ]

@@ -2,26 +2,6 @@
   "schemaVersion": 1,
   "songs": [
     {
-      "id": "b62d3c4f-7fd1-517d-9538-26494d3b356c",
-      "youtubeUrl": "https://www.youtube.com/watch?v=6z456c3Drms",
-      "title": "여기는, 행복안심위원회입니다.",
-      "tags": [
-        "UtataP",
-        "우타타P",
-        "여기는 행복안심위원회입니다",
-        "코치라코우후쿠안신이인카이데스"
-      ]
-    },
-    {
-      "id": "e4bde1a1-3d62-5f47-a63c-57b3b1877b43",
-      "youtubeUrl": "https://www.youtube.com/watch?v=kduL0gLRHGk",
-      "title": "영원히 게임에서 대전하고 싶은 키리탄",
-      "tags": [
-        "GYARI",
-        "코코아시가렛P"
-      ]
-    },
-    {
       "id": "98c4f3a0-f5f2-5b40-95d1-70b0c255bdb5",
       "youtubeUrl": "https://www.youtube.com/watch?v=TLtjiUbz2TM",
       "title": "샷건 나울",
@@ -146,7 +126,7 @@
     {
       "id": "1fe83d52-513c-5775-a48d-158d7bed44a7",
       "youtubeUrl": "https://www.youtube.com/watch?v=N55NsP_G1es",
-      "title": "I=Fantasy",
+      "title": "아이=판타지",
       "tags": [
         "시유",
         "방시혁",
@@ -351,7 +331,7 @@
     {
       "id": "3d49b7c0-29ef-5d79-8710-9b1db759b76f",
       "youtubeUrl": "https://www.youtube.com/watch?v=_qLCdom6AiM",
-      "title": "ODDS & ENDS",
+      "title": "오즈 앤 엔즈",
       "tags": [
         "ryo",
         "ODDS ENDS",
@@ -402,7 +382,8 @@
       "title": "1925",
       "tags": [
         "TPOCKET",
-        "티포켓"
+        "티포켓",
+        "1925"
       ]
     },
     {
@@ -463,6 +444,26 @@
       "tags": [
         "sasakureUK",
         "사사쿠레P"
+      ]
+    },
+    {
+      "id": "6ae6dc5d-de4d-5bc6-8aab-818c9fc28301",
+      "youtubeUrl": "https://www.youtube.com/watch?v=cZbdgG86wZc",
+      "title": "큐",
+      "tags": [
+        "시이나 모타",
+        "Q",
+        "큐"
+      ]
+    },
+    {
+      "id": "4bd822c3-58a2-5c8e-a3f3-318a63bef2e2",
+      "youtubeUrl": "https://www.youtube.com/watch?v=meu-N2YyP00",
+      "title": "신곡",
+      "tags": [
+        "R Sound Design",
+        "신쿄쿠",
+        "알사운드디자인"
       ]
     }
   ]

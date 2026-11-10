@@ -7,6 +7,7 @@ import shutil
 import subprocess
 import tempfile
 import re
+from playlist_review import review_reasons, reviewed
 
 
 def build(source, output, playlist_id, name, ffmpeg='ffmpeg'):
@@ -16,9 +17,12 @@ def build(source, output, playlist_id, name, ffmpeg='ffmpeg'):
     if output==source.parent:
         raise ValueError('Export must use a separate output folder')
     data = json.loads(source.read_text(encoding='utf-8'))
-    rows = [song for song in data['songs'] if not song['reviewRequired']]
+    # The original ssip-noqui selection contains only its original 541 metadata-approved rows.
+    # Naming holds stay counted within that selection instead of silently disappearing.
+    candidates = [song for song in data['songs'] if not song['reviewRequired']] if playlist_id=='ssip-noqui' else data['songs']
+    rows = [song for song in candidates if reviewed(song)]
     if not rows:
-        raise ValueError('No reviewed songs to export')
+        raise ValueError('No songs have completed identity, credit and Korean naming review')
     output.parent.mkdir(parents=True, exist_ok=True)
     if output.exists():
         raise ValueError('Export folder already exists; choose a new path to preserve the existing bundle')
@@ -26,8 +30,8 @@ def build(source, output, playlist_id, name, ffmpeg='ffmpeg'):
         staging = Path(temporary) / 'bundle'
         staging.mkdir()
         excluded=[{'index':row['index'],'title':row['title'][:160],
-                   'reasons':row.get('reviewReasons') or [row.get('notes') or 'Song identity, title or credits require review']}
-                  for row in data['songs'] if row['reviewRequired']] if playlist_id!='ssip-noqui' else []
+                   'reasons':review_reasons(row)}
+                  for row in candidates if not reviewed(row)]
         result = export_rows(source, staging, playlist_id, name, rows, ffmpeg, excluded)
         staging.replace(output)
     return result
@@ -38,6 +42,8 @@ def export_rows(source, output, playlist_id, name, rows, ffmpeg, excluded):
     (output / 'audio').mkdir()
     tracks = []
     for row in rows:
+        if not reviewed(row):
+            raise ValueError(f'Incomplete catalogue review: {row.get("index")}: {review_reasons(row)}')
         if (not re.search('[0-9A-Za-z가-힣]', row['title']) or len(row['title'])>160 or len(row['tags'])>10
                 or any(not re.search('[0-9A-Za-z가-힣]', tag) or len(tag)>32 for tag in row['tags'])):
             raise ValueError(f'Invalid reviewed game metadata: {row.get("index")}: {row["title"]}')

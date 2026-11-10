@@ -28,11 +28,13 @@ DB는 같은 폴더의 `build_database.py`로 `catalogue.json`에서 재생성�
 
 ## 서버 플레이리스트
 
-2026-11-05에 추가한 [**うた - 作別**](catalogues/uta-PLjY209iDQPjxVu3FVtbL61lyU-CnwQUlF/)은 요청한 602개 항목에서 동일 영상 중복 1개를 제거한 601곡 목록입니다. 메타데이터 검수 549곡 중 541곡을 재생할 수 있습니다. 메타데이터 검토 52곡과 검수 완료·음원 미확보 8곡은 재생에서 제외합니다. 한국어 통용 표기 근거가 부족한 항목은 확인된 원제·영문·로마자 표기와 추가 조사 표시를 유지합니다. 서버 ID는 `uta-pljy209`이며 [통합 DB](playlists/catalogue.sqlite3)에도 포함합니다.
+2026-11-10 한국어 이름 재검수 결과를 [통합 DB](playlists/catalogue.sqlite3)와 모든 서버 번들에 반영했습니다. 표시 곡명은 개별 출처에서 확인한 한국어 통용명·발음으로 사용하며 `2002`, `1925` 같은 공개된 숫자 제목은 원형을 유지합니다. 한국어 태그만 있고 표시 제목이 영문인 항목, 이름 검토가 끝나지 않은 항목은 검수 완료·출제 대상으로 계산하지 않습니다. [검수 기록](deploy/20261110-korean-playlist-review.md)에서 변경과 보류 사유를 확인할 수 있습니다.
+
+[**うた - 作別**](catalogues/uta-PLjY209iDQPjxVu3FVtbL61lyU-CnwQUlF/)은 요청한 602개 항목에서 동일 영상 중복 1개를 제거한 601곡 목록입니다. 곡 정체·작가와 한국어 이름 검토를 모두 통과한 511곡 중 음원이 확보된 504곡을 출제합니다. 검토 보류 90곡과 검수 완료·음원 미확보 7곡은 출제하지 않습니다. 원본 목록과 음원은 보존합니다. 서버 ID는 `uta-pljy209`입니다.
 
 OP의 `/noqui playlist`에서 설치된 목록과 전체/재생 가능 곡 수를 보고 선택하면 셔플로 시작합니다. 콘솔은 `/noqui playlist <id>`를 사용합니다. 출제권을 소모하지 않으며 곡 제출은 받지 않습니다. 기존 스킵·힌트·일시정지·점수·시간 설정을 사용하고 목록이 끝나면 종료합니다. `/noqui limit <라운드 수>`는 현재 셔플 순서를 유지하면서 뒤의 대기곡을 자릅니다. 제한을 늘리거나 0으로 되돌려도 잘린 곡은 복구하지 않습니다.
 
-`playlists/ssip-noqui/playlist.json`의 **씹노퀴**는 기존 검수 완료 541곡의 ID와 순서를 보존합니다. 다운로드 불가였던 5곡의 대체 음원을 확보하여 541곡 모두 재생할 수 있습니다. `audio/`는 전체 길이 Opus의 정답 메타데이터를 제거한 서버용 파일이며 Git에는 포함하지 않습니다. 원본 정제 음원의 제목·작가 태그는 유지합니다.
+`playlists/ssip-noqui/playlist.json`의 **씹노퀴**는 기존 541곡 선택을 전체 수에 보존합니다. 한국어 곡명 근거까지 확인된 536곡을 출제하며, 이름 근거가 부족한 5곡은 `excludedSongs`에 검토 사유를 기록합니다. 원본 곡 ID·순서·녹음은 유지합니다. `audio/`는 전체 길이 Opus의 정답 메타데이터를 제거한 서버용 파일이며 Git에는 포함하지 않습니다.
 
 ```powershell
 python tools/build_playlist.py catalogues/vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB/catalogue.json playlists/ssip-noqui --id ssip-noqui --name 씹노퀴
@@ -40,7 +42,7 @@ python tools/build_playlist.py catalogues/vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWG
 
 서버에 해당 폴더를 복사하고 오디오 서비스를 정지한 뒤 `web` 릴리스의 `install-playlist /var/lib/noqui /전송경로/ssip-noqui/playlist.json`을 서비스 계정으로 실행하고 재시작합니다. 설치기는 해시·파일 크기·Opus 전체 길이·경로를 검증합니다. 설치 음원은 `/var/lib/noqui/library/`에 저장하여 **5 GiB 임시 재생 캐시의 용량 계산·자동 삭제에서 제외**합니다. 동일 ID는 덮어쓰지 않으므로 교체 시 기존 폴더를 library 밖으로 보관한 후 설치합니다. library 폴더를 웹 정적 경로로 공개하지 마세요.
 
-작가 원명은 `writers`, 한국어 별칭·곡명 발음·특수문자 제거 이름은 `aliases`로 구분하고 게임용 `tags`에 합칩니다. DB의 `전체곡.정답태그`와 `별칭목록`에서 확인할 수 있습니다. `alias-research.json`에는 미확인 이름을 남깁니다. 사용자 요청으로 영어 제목의 일반 발음에 이어 2026-10-29에는 `MUGEN → 무겐` 같은 일본어 발음도 허용했습니다. 이 항목은 `origin: user_authorized_pronunciation`으로 기록하며 일본어에는 `language: ja`, 원제와 읽기를 함께 저장합니다. 추가 조사 없이 반영한 한국어 작가명은 `origin: user_authorized_writer_alias`와 원작가명을 기록합니다. 이 표기들은 외부 검색 인용으로 표시하지 않으며 새 의미 번역은 만들지 않습니다. 확인되지 않은 읽기와 동명이인 매핑은 보류합니다.
+작가 원명은 `writers`, 한국어 별칭·곡명 발음·특수문자 제거 이름은 `aliases`로 구분하고 게임용 `tags`에 합칩니다. DB의 `전체곡.정답태그`와 `별칭목록`에서 확인할 수 있습니다. 새로운 한국어 이름·발음은 실제 사용된 개별 출처를 요구하며 자체 번역·추정 음차로 채우지 않습니다. `originalTitle`, `namingHistory`, `retiredAliases`는 원래 표기와 이전 정제 이력을 보존합니다. 과거의 `user_authorized_pronunciation`·`user_authorized_writer_alias` 기록은 외부 검색 근거로 취급하지 않습니다. `review-required.json`은 곡 정체·작가 검토 목록이고 `naming-review-required.json`은 한국어 이름 검토 목록입니다. DB·내보내기의 검수 상태는 두 조건을 함께 적용합니다.
 
 음원 선택은 개인이 올린 한글 자막곡을 우선 후보로 사용하며 공식·Topic 업로드로 제한하지 않습니다. 동일 곡과 가수·버전인지 확인하고, MV용 대사·인트로가 붙은 영상은 교체 대상으로 둡니다. 출처 교체 도구의 `sourceType: subtitled_audio`는 개인 자막 업로드를 허용합니다. 한국어 제목·작가 태그의 근거 확인은 음원 출처 판정과 별도로 기록합니다.
 

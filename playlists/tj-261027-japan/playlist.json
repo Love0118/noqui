@@ -201,12 +201,13 @@
       "song": {
         "id": "04e6fe40-a7b4-5fb6-9c96-c7b93cf965c2",
         "youtubeUrl": "https://www.youtube.com/watch?v=LzzW_TBL558",
-        "title": "파자마파티즈노우타",
+        "title": "파자마 파티즈의 노래",
         "tags": [
           "파자마파티즈노우타",
           "타테야마아키유키",
           "nagano",
-          "나가노"
+          "나가노",
+          "파자마 파티즈의 노래"
         ]
       },
       "audio": {
@@ -320,12 +321,12 @@
       "song": {
         "id": "fb5d3790-6dbf-549b-8f29-5eac9a45d3a8",
         "youtubeUrl": "https://www.youtube.com/watch?v=RCltAg_iK0E",
-        "title": "Bunny Girl",
+        "title": "버니 걸",
         "tags": [
           "Bunny Girl",
           "AKASAKI",
-          "바니걸",
-          "아카사키"
+          "아카사키",
+          "버니 걸"
         ]
       },
       "audio": {
@@ -339,7 +340,7 @@
       "song": {
         "id": "f9688975-66cb-5c50-8098-9acfacb5242b",
         "youtubeUrl": "https://www.youtube.com/watch?v=jvoW9lJdirk",
-        "title": "-ERROR",
+        "title": "에러",
         "tags": [
           "ERROR",
           "NIKI",
@@ -457,7 +458,7 @@
       "song": {
         "id": "94ce2e98-777f-5346-b174-225168af46d8",
         "youtubeUrl": "https://www.youtube.com/watch?v=mp2-w15SXms",
-        "title": "W / X / Y",
+        "title": "더블유 엑스 와이",
         "tags": [
           "W X Y",
           "Tani Yuuki",
@@ -577,7 +578,7 @@
       "song": {
         "id": "77ff5c8b-c7c8-5a4e-bc98-587a10a5180b",
         "youtubeUrl": "https://www.youtube.com/watch?v=8Cm-7oCq9HA",
-        "title": "PPPP",
+        "title": "피피피피",
         "tags": [
           "PPPP",
           "TAK",
@@ -639,13 +640,13 @@
       "song": {
         "id": "b4a88261-250d-5530-83fa-5e46912934c1",
         "youtubeUrl": "https://www.youtube.com/watch?v=emrt46SRyYs",
-        "title": "DAYBREAK FRONTLINE",
+        "title": "데이브레이크 프론트라인",
         "tags": [
           "DAYBREAK FRONTLINE",
           "ORANGESTAR",
           "OrangestarFeatIA",
-          "데이브레이크프런트라인",
-          "오렌지스타"
+          "오렌지스타",
+          "데이브레이크 프론트라인"
         ]
       },
       "audio": {
@@ -698,7 +699,7 @@
       "song": {
         "id": "6fb76d99-5629-5ad0-8562-b03e28c68ea8",
         "youtubeUrl": "https://www.youtube.com/watch?v=L13gCEZJVRU",
-        "title": "Henceforth",
+        "title": "헨스포스",
         "tags": [
           "Henceforth",
           "ORANGESTAR",
@@ -891,7 +892,7 @@
       "song": {
         "id": "f8d1844d-e127-59ff-9839-a180d4fc7d0e",
         "youtubeUrl": "https://www.youtube.com/watch?v=QhOFg_3RV5Q",
-        "title": "Endless Rain",
+        "title": "엔들리스 레인",
         "tags": [
           "Endless Rain",
           "YOSHIKI",
@@ -993,7 +994,7 @@
       "song": {
         "id": "a6c33dea-c22d-5e78-b73e-40c8cea3a727",
         "youtubeUrl": "https://www.youtube.com/watch?v=kagoEGKHZvU",
-        "title": "NIGHT DANCER",
+        "title": "나이트 댄서",
         "tags": [
           "NIGHT DANCER",
           "IMASE",
@@ -1053,12 +1054,13 @@
       "song": {
         "id": "5cb91ea1-d71c-544e-9913-c9db91e7db22",
         "youtubeUrl": "https://www.youtube.com/watch?v=aS2B6tJCdiE",
-        "title": "우타타네",
+        "title": "선잠",
         "tags": [
           "우타타네",
           "LEINA",
           "레이나",
-          "Utatane"
+          "Utatane",
+          "선잠"
         ]
       },
       "audio": {
@@ -1409,7 +1411,7 @@
       "song": {
         "id": "bea4ad3f-1c1d-5fd4-8a62-f73160da0a4f",
         "youtubeUrl": "https://www.youtube.com/watch?v=EsOsc-sajMk",
-        "title": "I love you",
+        "title": "아이러브유",
         "tags": [
           "I love you",
           "오자키유타카",
@@ -1666,7 +1668,7 @@
       "song": {
         "id": "b3e4aa61-b9cc-53f7-99dc-74c15ef25597",
         "youtubeUrl": "https://www.youtube.com/watch?v=aRDURmIYBZ4",
-        "title": "Mela!",
+        "title": "멜라",
         "tags": [
           "Mela",
           "PEPPE",
@@ -1966,7 +1968,7 @@
       "song": {
         "id": "320b99ba-5742-5b19-91e6-b7fb98ad6ceb",
         "youtubeUrl": "https://www.youtube.com/watch?v=yT_ylSCgY6Q",
-        "title": "Ray",
+        "title": "레이",
         "tags": [
           "Ray",
           "범프 오브 치킨",

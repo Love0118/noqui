@@ -45,7 +45,8 @@
         "나미구루"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 2,
@@ -190,7 +191,8 @@
             "치노조"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 4,
@@ -241,7 +243,8 @@
         "cosMo@폭주P"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 5,
@@ -292,7 +295,8 @@
           "quote": "미쿠미쿠하게 해줄게♪"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 6,
@@ -429,7 +433,8 @@
           "writer": "Hachi"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 8,
@@ -498,7 +503,8 @@
           "writer": "DECO*27"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 9,
@@ -559,7 +565,8 @@
           "writer": "DECO*27"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 10,
@@ -935,7 +942,8 @@
           "quote": "wowaka ヲワカ · 오와카"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 15,
@@ -1042,7 +1050,8 @@
       ],
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false
     },
     {
       "index": 16,
@@ -1242,7 +1251,8 @@
           "quote": "이름 みきとP 미키토P / Mikito-P"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 19,
@@ -1368,7 +1378,8 @@
           "quote": "뉴턴 댄스는 나유탄 성인이 작사·작곡하고"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 21,
@@ -1506,7 +1517,8 @@
           "writer": "DECO*27"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 23,
@@ -1569,7 +1581,8 @@
             "이지팝"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 24,
@@ -1579,7 +1592,7 @@
       "durationSeconds": 218,
       "youtubeUrl": "https://www.youtube.com/watch?v=emrt46SRyYs",
       "id": "9d48f0e2-5ecb-5159-a841-79a4d5d540ce",
-      "title": "DAYBREAK FRONTLINE",
+      "title": "데이브레이크 프론트라인",
       "tags": [
         "Orangestar",
         "데이브레이크 프론트라인",
@@ -1604,6 +1617,16 @@
           "quote": "#DAYBREAK_FRONTLINE #데이브레이크_프론트라인",
           "kind": "page",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://jadal.wiki/weekly/504",
+          "quote": "DAYBREAK FRONTLINE 데이브레이크 프론트라인 · Orangestar",
+          "kind": "page",
+          "retrievalUrl": "https://jadal.wiki/weekly/504",
+          "mainWebVerified": true,
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06"
         }
       ],
       "audio": {
@@ -1615,7 +1638,7 @@
         "channels": 2,
         "durationSeconds": 217.659,
         "byteLength": 1334890,
-        "sha256": "f64681538d2a43561e45039909cdf29bfb6b9cfdac29be1a5b288c8189e71331"
+        "sha256": "90296d592e9519496b19b01f847ddc07ddea5369af0264ad7819ea80bff22011"
       },
       "writers": [
         "Orangestar"
@@ -1635,6 +1658,13 @@
           "origin": "user_authorized_writer_alias",
           "url": null,
           "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Orangestar → 오렌지스타. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "title",
+          "name": "데이브레이크 프론트라인",
+          "url": "https://jadal.wiki/weekly/504",
+          "quote": "DAYBREAK FRONTLINE 데이브레이크 프론트라인 · Orangestar",
+          "mainVerified": true
         }
       ],
       "singerAliases": [],
@@ -1645,8 +1675,20 @@
           "addedTags": [
             "오렌지스타"
           ]
+        },
+        {
+          "previousTitle": "DAYBREAK FRONTLINE",
+          "previousTags": [
+            "Orangestar",
+            "데이브레이크 프론트라인",
+            "DAYBREAK FRONTLINE",
+            "오렌지스타"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
         }
-      ]
+      ],
+      "namingReviewRequired": false,
+      "originalTitle": "DAYBREAK FRONTLINE"
     },
     {
       "index": 25,
@@ -1656,7 +1698,7 @@
       "durationSeconds": 236,
       "youtubeUrl": "https://www.youtube.com/watch?v=yXl5D2B8nKk",
       "id": "6777a75f-7e87-5e64-9100-1631a5e59d04",
-      "title": "Henceforth",
+      "title": "헨스포스",
       "tags": [
         "Orangestar",
         "헨스포스",
@@ -1681,6 +1723,16 @@
           "quote": "Henceforth (헨스포스) - Orangestar",
           "kind": "page",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.fmkorea.com/9934983964",
+          "quote": "헨스포스",
+          "kind": "page",
+          "retrievalUrl": "https://www.fmkorea.com/9934983964",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "34c18aae1f943721a3f7f5b4e9feb547ea154b583a011bb66c9fd885849ce5c7"
         }
       ],
       "audio": {
@@ -1692,7 +1744,7 @@
         "channels": 2,
         "durationSeconds": 235.713,
         "byteLength": 1446347,
-        "sha256": "2437dcb52454df6bf7c4209c4800c6c1683b3643e3e1c5e2671e8d1f94d12c0a"
+        "sha256": "4c208177e49346e2041468893ede4fa2fa8ad00bb8becae4de5f3aed2539727e"
       },
       "writers": [
         "Orangestar"
@@ -1712,6 +1764,13 @@
           "origin": "user_authorized_writer_alias",
           "url": null,
           "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Orangestar → 오렌지스타. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "title",
+          "name": "헨스포스",
+          "url": "https://www.fmkorea.com/9934983964",
+          "quote": "헨스포스",
+          "mainVerified": true
         }
       ],
       "singerAliases": [],
@@ -1722,8 +1781,20 @@
           "addedTags": [
             "오렌지스타"
           ]
+        },
+        {
+          "previousTitle": "Henceforth",
+          "previousTags": [
+            "Orangestar",
+            "헨스포스",
+            "Henceforth",
+            "오렌지스타"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
         }
-      ]
+      ],
+      "namingReviewRequired": false,
+      "originalTitle": "Henceforth"
     },
     {
       "index": 26,
@@ -1898,7 +1969,7 @@
       "durationSeconds": 135,
       "youtubeUrl": "https://www.youtube.com/watch?v=cm-l2h6GB8Q",
       "id": "2f065aa4-125c-5e1a-b58a-74fc724238ca",
-      "title": "KING",
+      "title": "킹",
       "tags": [
         "Kanaria",
         "카나리아",
@@ -1923,6 +1994,16 @@
           "quote": "https://youtu.be/cm-l2h6GB8Q 원곡 킹 KING",
           "kind": "page",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://msn9760.tistory.com/675",
+          "quote": "킹",
+          "kind": "page",
+          "retrievalUrl": "https://msn9760.tistory.com/675",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "a5054fa5423904f0e79afd05c8563b854974583910afccd2096137e8dabd3677"
         }
       ],
       "audio": {
@@ -1934,7 +2015,7 @@
         "channels": 2,
         "durationSeconds": 134.88,
         "byteLength": 828239,
-        "sha256": "332fcfc5b4b8ea7356b0e9c1e9c6d38962bbcf7bfb7af7a7065c556265e5c06a"
+        "sha256": "44a6e5d2d58901c1e1ced55ebb36f180873b06b288a329bf681389a9d0ead4e3"
       },
       "writers": [
         "Kanaria"
@@ -1952,9 +2033,30 @@
           "name": "킹",
           "url": "https://m.blog.naver.com/playlist_010/224383195216",
           "quote": "https://youtu.be/cm-l2h6GB8Q 원곡 킹 KING"
+        },
+        {
+          "kind": "title",
+          "name": "킹",
+          "url": "https://msn9760.tistory.com/675",
+          "quote": "킹",
+          "mainVerified": true
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false,
+      "originalTitle": "KING",
+      "namingHistory": [
+        {
+          "previousTitle": "KING",
+          "previousTags": [
+            "Kanaria",
+            "카나리아",
+            "킹",
+            "KING"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ]
     },
     {
       "index": 29,
@@ -2017,7 +2119,8 @@
             "유우유"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 30,
@@ -2375,7 +2478,8 @@
           "quote": "생명에게 미움받고 있어."
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 35,
@@ -2697,7 +2801,8 @@
           "quote": "이름 みきとP 미키토P / Mikito-P"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 39,
@@ -2740,7 +2845,8 @@
         "키무라 와이P"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 40,
@@ -2849,7 +2955,8 @@
         "쵸쵸P"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 42,
@@ -2880,7 +2987,11 @@
       },
       "writers": [],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ]
     },
     {
       "index": 43,
@@ -3192,7 +3303,8 @@
       ],
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false
     },
     {
       "index": 47,
@@ -3587,7 +3699,8 @@
             "레프티몬스터피"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 52,
@@ -3650,7 +3763,8 @@
             "나츠시로타카아키"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 53,
@@ -3986,7 +4100,8 @@
         "토마"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 58,
@@ -4123,7 +4238,8 @@
           "quote": "이름 YASUHIRO(康寛) 야스히로"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 60,
@@ -4260,7 +4376,8 @@
             "헤븐즈"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 62,
@@ -4419,7 +4536,8 @@
           "quote": "かいりきベア (Kairiki Bear, 카이리키 베어/괴력베어)"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 64,
@@ -4625,7 +4743,8 @@
         "Kai"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 67,
@@ -4688,7 +4807,8 @@
             "야스오피"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 68,
@@ -4731,7 +4851,8 @@
         "하뉴 마이고"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 69,
@@ -4838,7 +4959,7 @@
       "durationSeconds": 236,
       "youtubeUrl": "https://www.youtube.com/watch?v=TVeIDmk3rBo",
       "id": "adfc69ca-fbe4-5474-8458-42a982677b6c",
-      "title": "Calc.",
+      "title": "캘크",
       "tags": [
         "JimmyThumbP",
         "지미섬P",
@@ -4889,6 +5010,15 @@
           "retrievedEvidenceMatched": true,
           "retrievalUrl": "https://www.youtube.com/results?search_query=Hatsune%20Miku%20-%20Calc.%20(English%20%26%20Romaji%20Subs)%20%EA%B0%80%EC%82%AC",
           "checkedAt": "2026-10-27T15:57:21.489Z"
+        },
+        {
+          "url": "https://m.blog.naver.com/bibi9902/224113330102",
+          "quote": "캘크",
+          "kind": "page",
+          "mainVerified": true,
+          "retrievalUrl": "https://m.blog.naver.com/bibi9902/224113330102",
+          "retrievedEvidenceMatched": true,
+          "retrievedAt": "2026-11-06"
         }
       ],
       "audio": {
@@ -4900,7 +5030,7 @@
         "channels": 2,
         "durationSeconds": 235.933,
         "byteLength": 1441407,
-        "sha256": "92516688d0ba218c1e1d6037c6624ed38223793317c3ace624350f61460b8596"
+        "sha256": "57ce2078a71fe3ea81283fc4cd989312ec0565294b47ff43e03b9fb42d06d503"
       },
       "writers": [
         "JimmyThumb-P"
@@ -4922,13 +5052,12 @@
         {
           "kind": "title",
           "name": "캘크",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: Calc. → 캘크 (2026-10-28). 외부 검색 인용 아님."
+          "url": "https://m.blog.naver.com/bibi9902/224113330102",
+          "quote": "캘크",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -4937,6 +5066,26 @@
           "addedTags": [
             "캘크"
           ]
+        },
+        {
+          "previousTitle": "Calc.",
+          "previousTags": [
+            "JimmyThumbP",
+            "지미섬P",
+            "Calc",
+            "캘크"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "Calc.",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "캘크",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Calc. → 캘크 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -4972,7 +5121,11 @@
       },
       "writers": [],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시한 한국어 곡명이 실제 사용된 개별 출처가 필요합니다."
+      ]
     },
     {
       "index": 72,
@@ -5024,7 +5177,11 @@
           "quote": "Ievan Polkka (이에반 폴카)"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ]
     },
     {
       "index": 73,
@@ -5076,7 +5233,8 @@
           "quote": "이나바 쿠모리 稲葉曇 | Inaba Kumori"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 74,
@@ -5235,7 +5393,8 @@
             "세이빈"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 76,
@@ -5435,7 +5594,8 @@
           "quote": "マレツ, 마레츠"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 79,
@@ -5487,7 +5647,8 @@
           "quote": "じん(自然の敵P) 진(자연의 적P)"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 80,
@@ -5539,7 +5700,8 @@
           "quote": "wowaka ヲワカ · 오와카"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 81,
@@ -5580,7 +5742,11 @@
           "quote": "【手描き】자캐로 다루마씨가 굴러간다 패러디【オリキャラ】"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시한 한국어 곡명이 실제 사용된 개별 출처가 필요합니다."
+      ]
     },
     {
       "index": 82,
@@ -5640,7 +5806,8 @@
           "quote": "syudou (슈도우,"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 83,
@@ -5700,7 +5867,8 @@
           "quote": "Kanaria カナリア | 카나리아"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 84,
@@ -5752,7 +5920,8 @@
           "quote": "뉴턴 댄스는 나유탄 성인이 작사·작곡하고"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 85,
@@ -5892,7 +6061,8 @@
         "진(자연의 적P)"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 87,
@@ -5943,7 +6113,8 @@
         "진(자연의 적P)"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 88,
@@ -5986,7 +6157,8 @@
         "하치"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 89,
@@ -6046,7 +6218,8 @@
           "writer": "PinocchioP"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 90,
@@ -6106,7 +6279,8 @@
           "writer": "PinocchioP"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 91,
@@ -6157,7 +6331,8 @@
         "누유리"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 92,
@@ -6200,7 +6375,8 @@
         "히나타 전공"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 93,
@@ -6444,7 +6620,11 @@
       },
       "writers": [],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ]
     },
     {
       "index": 97,
@@ -6561,7 +6741,8 @@
         "라마즈P"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 99,
@@ -6612,7 +6793,8 @@
         "진"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 100,
@@ -6683,7 +6865,8 @@
             "사십미터피"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 101,
@@ -6808,7 +6991,8 @@
           "quote": "싫어 · 싫어 · 자아비대 !"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 103,
@@ -6950,7 +7134,8 @@
           "quote": "츄루리라·츄루리라·땃땃따!"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 105,
@@ -7001,7 +7186,8 @@
         "스리"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 106,
@@ -7052,7 +7238,8 @@
         "하루마키고한"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 107,
@@ -7062,7 +7249,7 @@
       "durationSeconds": 245,
       "youtubeUrl": "https://www.youtube.com/watch?v=cQKGUgOfD8U",
       "id": "bed213ac-e157-5385-a1fd-6fef4f16dc10",
-      "title": "ECHO",
+      "title": "에코",
       "tags": [
         "CrusherP",
         "ECHO",
@@ -7097,6 +7284,16 @@
           "retrievalUrl": "https://www.youtube.com/results?search_query=%E3%80%90VOCALOID%20Original%E3%80%91ECHO%E3%80%90Gumi%20English%E3%80%91%20%EA%B0%80%EC%82%AC",
           "quote": "【VOCALOID Original】ECHO【Gumi English】",
           "kind": "youtube_search"
+        },
+        {
+          "url": "https://jadal.wiki/weekly/416",
+          "quote": "에코",
+          "kind": "page",
+          "retrievalUrl": "https://jadal.wiki/weekly/416",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "d208c14a3ee2bff3d89705fa0bbf13356aba2e11feec32bd2a8d8915565245e0"
         }
       ],
       "audio": {
@@ -7108,19 +7305,12 @@
         "channels": 2,
         "durationSeconds": 244.931,
         "byteLength": 1440491,
-        "sha256": "1048bfe05dfd7579d691c4d4499fcfb1e703dc9c5fc8082e416fbe4172ee9703"
+        "sha256": "b651893d6f092e9ad3274e7fe3c7cc6ffac512fc573efb6b508bd388f9341fe1"
       },
       "writers": [
         "Crusher-P"
       ],
       "aliases": [
-        {
-          "kind": "title",
-          "name": "에코",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: ECHO → 에코 (2026-10-28). 외부 검색 인용 아님."
-        },
         {
           "kind": "writer",
           "name": "크러셔피",
@@ -7129,10 +7319,16 @@
           "origin": "user_authorized_writer_alias",
           "url": null,
           "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Crusher-P → 크러셔피. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "title",
+          "name": "에코",
+          "url": "https://jadal.wiki/weekly/416",
+          "quote": "에코",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -7148,6 +7344,26 @@
           "addedTags": [
             "크러셔피"
           ]
+        },
+        {
+          "previousTitle": "ECHO",
+          "previousTags": [
+            "CrusherP",
+            "ECHO",
+            "에코",
+            "크러셔피"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "ECHO",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "에코",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: ECHO → 에코 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -7219,7 +7435,8 @@
             "아야세"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 109,
@@ -7270,7 +7487,8 @@
         "피노키오피"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 110,
@@ -7329,7 +7547,8 @@
           "quote": "체체 · 체크 · 원투 !"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 111,
@@ -7475,7 +7694,8 @@
             "치노조"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 113,
@@ -7526,7 +7746,8 @@
         "카이리키 베어"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 114,
@@ -7733,7 +7954,8 @@
         "나유탄 성인"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 117,
@@ -7784,7 +8006,8 @@
         "피콘"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 118,
@@ -7909,7 +8132,8 @@
         "나유탄 성인"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 120,
@@ -8142,7 +8366,8 @@
           "quote": "로스트 원의 호곡 가사 네루 Neru feat. 카가미네 린"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 123,
@@ -8193,7 +8418,8 @@
         "쿠루링고"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 124,
@@ -8326,7 +8552,8 @@
         "피노키오피"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 126,
@@ -8468,7 +8695,8 @@
         "피노키오피"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 128,
@@ -8528,7 +8756,8 @@
           "quote": "GYARI(ココアシガレットP) (CocoaCigarette-P, 코코아시가렛P)"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 129,
@@ -8656,7 +8885,8 @@
         "쏘망"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 131,
@@ -8707,7 +8937,8 @@
         "카이리키 베어"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 132,
@@ -8832,7 +9063,8 @@
         "쿠루링고"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 134,
@@ -8957,7 +9189,8 @@
         "진"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 136,
@@ -9041,7 +9274,7 @@
       "durationSeconds": 195,
       "youtubeUrl": "https://www.youtube.com/watch?v=TcHvEFxk_78",
       "id": "3504a3cd-539a-574e-951a-0ec2afadfe5b",
-      "title": "YY",
+      "title": "와이와이",
       "tags": [
         "23exe",
         "YY",
@@ -9076,6 +9309,15 @@
           "checkedAt": "2026-10-27T15:58:20Z",
           "url": "https://www.youtube.com/watch?v=z6fZ3y1WVoQ",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "http://vocaro.wikidot.com/yy",
+          "quote": "아이코토바와 와이와이",
+          "kind": "page",
+          "retrievalUrl": "http://vocaro.wikidot.com/yy",
+          "retrievedAt": "2026-11-06",
+          "mainVerified": true,
+          "retrievedEvidenceMatched": true
         }
       ],
       "audio": {
@@ -9087,19 +9329,12 @@
         "channels": 2,
         "durationSeconds": 194.114,
         "byteLength": 1173160,
-        "sha256": "2ff3fdd4a509e15696efc9c1d111c7f2ada4297fc2311056882986740d0652b6"
+        "sha256": "712a4a147df60227b18ccc759d2eaedd60a9e1cc3eaf31a9ea74095b7a500618"
       },
       "writers": [
         "23.exe"
       ],
       "aliases": [
-        {
-          "kind": "title",
-          "name": "와이와이",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: YY → 와이와이 (2026-10-28). 외부 검색 인용 아님."
-        },
         {
           "kind": "writer",
           "name": "니산엑세",
@@ -9108,10 +9343,16 @@
           "origin": "user_authorized_writer_alias",
           "url": null,
           "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 23.exe → 니산엑세. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "title",
+          "name": "와이와이",
+          "url": "http://vocaro.wikidot.com/yy",
+          "quote": "아이코토바와 와이와이",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -9127,6 +9368,26 @@
           "addedTags": [
             "니산엑세"
           ]
+        },
+        {
+          "previousTitle": "YY",
+          "previousTags": [
+            "23exe",
+            "YY",
+            "와이와이",
+            "니산엑세"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "YY",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "와이와이",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: YY → 와이와이 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -9179,7 +9440,8 @@
         "진"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 139,
@@ -9230,7 +9492,8 @@
         "진"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 140,
@@ -9293,7 +9556,8 @@
             "오토마니아"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 141,
@@ -9329,7 +9593,11 @@
       },
       "writers": [],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ]
     },
     {
       "index": 142,
@@ -9528,7 +9796,8 @@
         "카이리키 베어"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 145,
@@ -9645,7 +9914,8 @@
         "츠미키"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 147,
@@ -9696,7 +9966,8 @@
         "이나바 쿠모리"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 148,
@@ -9756,7 +10027,8 @@
           "quote": "로스트 원의 호곡 가사 네루 Neru feat. 카가미네 린"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 149,
@@ -9898,7 +10170,8 @@
           "quote": "wowaka ヲワカ · 오와카"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 151,
@@ -10281,7 +10554,8 @@
           "writer": "레루리리"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 156,
@@ -10332,7 +10606,8 @@
         "진"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 157,
@@ -10403,7 +10678,8 @@
             "론피"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 158,
@@ -10464,7 +10740,8 @@
           "writer": "DECO*27"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 159,
@@ -10617,7 +10894,8 @@
             "에이트"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 161,
@@ -10824,7 +11102,8 @@
           "quote": "있잖아 있잖아 있잖아."
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 164,
@@ -10875,7 +11154,8 @@
         "카이리키 베어"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 165,
@@ -10964,8 +11244,10 @@
           "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 23.exe → 니산엑세. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -11138,7 +11420,8 @@
             "니키"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 168,
@@ -11273,7 +11556,8 @@
         "카이리키 베어"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 170,
@@ -11407,7 +11691,8 @@
           "quote": "マレツ, 마레츠"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 172,
@@ -11458,7 +11743,8 @@
         "키쿠오"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 173,
@@ -11509,7 +11795,8 @@
         "타다노Co"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 174,
@@ -11651,7 +11938,8 @@
         "오누마 파슬리"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 176,
@@ -11785,7 +12073,8 @@
           "quote": "GYARI(ココアシガレットP) (CocoaCigarette-P, 코코아시가렛P)"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 178,
@@ -11845,7 +12134,8 @@
           "quote": "Kanaria カナリア | 카나리아"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 179,
@@ -11896,7 +12186,8 @@
         "cosMo@폭주P"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 180,
@@ -11947,7 +12238,8 @@
         "누유리"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 181,
@@ -12126,7 +12418,7 @@
       "durationSeconds": 228,
       "youtubeUrl": "https://www.youtube.com/watch?v=9eyyhtOrKPI",
       "id": "7e7f9d26-821e-5dcb-a66c-659ccb32efef",
-      "title": "drop pop candy",
+      "title": "드롭 팝 캔디",
       "tags": [
         "Reol",
         "Giga",
@@ -12163,6 +12455,16 @@
           "retrievedEvidenceMatched": true,
           "retrievalUrl": "https://www.youtube.com/results?search_query=%5BMV%5D%20REOL%20-%20drop%20pop%20candy%20%EA%B0%80%EC%82%AC",
           "checkedAt": "2026-10-27T15:58:28.8045587Z"
+        },
+        {
+          "url": "https://www.namu.moe/w/drop%20pop%20candy",
+          "quote": "드롭 팝 캔디",
+          "kind": "page",
+          "retrievalUrl": "https://www.namu.moe/w/drop%20pop%20candy",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "0f463c79553d0f6ffba46f04802308e816f8df069b756da512261289a456496f"
         }
       ],
       "audio": {
@@ -12174,7 +12476,7 @@
         "channels": 2,
         "durationSeconds": 227.098,
         "byteLength": 1391015,
-        "sha256": "f433e0aa08120240ab3e0ff48718c4125aaeabdf43d3708f86aa5f7cd48bca4c"
+        "sha256": "5fd44895693bee3c271eec4b8fccba719ce9b8844eeb51b5a8dcdaf3c1f298e0"
       },
       "writers": [
         "Reol",
@@ -12189,13 +12491,6 @@
           "quote": "Giga (=기가P)"
         },
         {
-          "kind": "title",
-          "name": "드롭팝캔디",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: drop pop candy → 드롭팝캔디 (2026-10-28). 외부 검색 인용 아님."
-        },
-        {
           "kind": "writer",
           "name": "레오루",
           "canonicalName": "Reol",
@@ -12203,10 +12498,16 @@
           "origin": "user_authorized_writer_alias",
           "url": null,
           "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Reol → 레오루. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "title",
+          "name": "드롭 팝 캔디",
+          "url": "https://www.namu.moe/w/drop%20pop%20candy",
+          "quote": "드롭 팝 캔디",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -12222,6 +12523,28 @@
           "addedTags": [
             "레오루"
           ]
+        },
+        {
+          "previousTitle": "drop pop candy",
+          "previousTags": [
+            "Reol",
+            "Giga",
+            "기가P",
+            "drop pop candy",
+            "드롭팝캔디",
+            "레오루"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "drop pop candy",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "드롭팝캔디",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: drop pop candy → 드롭팝캔디 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -12440,7 +12763,8 @@
         "카이리키 베어"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 187,
@@ -12565,7 +12889,8 @@
         "스리이"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 189,
@@ -12698,7 +13023,8 @@
         "진"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 191,
@@ -12749,7 +13075,8 @@
         "진"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 192,
@@ -12874,7 +13201,8 @@
         "즈키오"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 194,
@@ -13150,7 +13478,8 @@
         "진"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 198,
@@ -13201,7 +13530,8 @@
         "히후미"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 199,
@@ -13384,7 +13714,7 @@
       "durationSeconds": 249,
       "youtubeUrl": "https://www.youtube.com/watch?v=txvsf2Zaquo",
       "id": "dcf56640-ff56-52b8-99a8-eeba185e00fc",
-      "title": "Love & Death",
+      "title": "러브 앤 데스",
       "tags": [
         "호옹이",
         "Love Death",
@@ -13418,6 +13748,16 @@
           "retrievedEvidenceMatched": true,
           "retrievalUrl": "https://www.youtube.com/results?search_query=%EC%8B%9C%EC%9C%A0%20-%20love%20and%20death%20(%EB%9F%AC%EB%B8%8C%20%EC%95%A4%20%EB%8D%B0%EC%8A%A4%20%EB%AC%B4%EC%84%9C%EC%9A%B4%EB%85%B8%EB%9E%98)%20%EA%B0%80%EC%82%AC",
           "checkedAt": "2026-10-27T15:57:21.489Z"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=txvsf2Zaquo",
+          "quote": "러브 앤 데스",
+          "kind": "page",
+          "retrievalUrl": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dtxvsf2Zaquo&format=json",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "971ef52c466c062aee80e826213fa045e199b2d1ea0b2d809ad1d33841984052"
         }
       ],
       "audio": {
@@ -13429,7 +13769,7 @@
         "channels": 2,
         "durationSeconds": 248.867,
         "byteLength": 1508681,
-        "sha256": "f746d6c6312d292a15900400617fd5bab21283a16c9604769b3ec137ac6c3f5f"
+        "sha256": "c605a5a7e4b208b5fe7c8f947bba11d959f4202837e90a0040670aed82fdf792"
       },
       "writers": [
         "호옹이"
@@ -13443,14 +13783,13 @@
         },
         {
           "kind": "title",
-          "name": "러브앤데스",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: Love & Death → 러브앤데스 (2026-10-28). 외부 검색 인용 아님."
+          "name": "러브 앤 데스",
+          "url": "https://www.youtube.com/watch?v=txvsf2Zaquo",
+          "quote": "러브 앤 데스",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -13459,6 +13798,25 @@
           "addedTags": [
             "러브앤데스"
           ]
+        },
+        {
+          "previousTitle": "Love & Death",
+          "previousTags": [
+            "호옹이",
+            "Love Death",
+            "러브앤데스"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "Love & Death",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "러브앤데스",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Love & Death → 러브앤데스 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -13512,7 +13870,8 @@
           "quote": "柊キライ 히이라기 키라이 / Hiiragi Kirai"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 203,
@@ -13571,7 +13930,8 @@
           "quote": "죽어버리다니 한심하구나!"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 204,
@@ -13623,7 +13983,8 @@
           "quote": "マレツ, 마레츠"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 205,
@@ -13675,7 +14036,8 @@
           "quote": "우타타P(うたたP)는"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 206,
@@ -13706,7 +14068,11 @@
       },
       "writers": [],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ]
     },
     {
       "index": 207,
@@ -13757,7 +14123,8 @@
         "나유탄 성인"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 208,
@@ -13912,7 +14279,8 @@
           "writer": "DECO*27"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 210,
@@ -14009,7 +14377,11 @@
       },
       "writers": [],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ]
     },
     {
       "index": 212,
@@ -14144,7 +14516,8 @@
         "누유리"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 214,
@@ -14187,7 +14560,8 @@
         "나나호시 관현악단"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 215,
@@ -14258,7 +14632,8 @@
             "알사운드디자인"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 216,
@@ -14309,7 +14684,8 @@
         "집 뒤에 개복치가 죽어 있어P"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 217,
@@ -14518,7 +14894,8 @@
           "writer": "DECO*27"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 220,
@@ -14745,7 +15122,8 @@
           "quote": "로스트 원의 호곡 가사 네루 Neru feat. 카가미네 린"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 223,
@@ -14946,7 +15324,8 @@
         "피노키오피"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 226,
@@ -15082,7 +15461,8 @@
         "피노키오피"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 228,
@@ -15356,7 +15736,8 @@
         "호옹이"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 232,
@@ -15366,7 +15747,7 @@
       "durationSeconds": 299,
       "youtubeUrl": "https://www.youtube.com/watch?v=IMB-t2j02XQ",
       "id": "dbf9b8eb-951b-58ed-9d05-aba1875b2ab5",
-      "title": "Alone",
+      "title": "얼론",
       "tags": [
         "김박사",
         "HAKASE K",
@@ -15401,6 +15782,16 @@
           "kind": "youtube_search",
           "retrievedEvidenceMatched": true,
           "checkedAt": "2026-10-28"
+        },
+        {
+          "url": "https://www.namu.moe/w/Alone%28kimpaksa%29?from=Alone%28VOCALOID+%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90+%EA%B3%A1%29",
+          "quote": "얼론",
+          "kind": "page",
+          "retrievalUrl": "https://www.namu.moe/w/Alone%28kimpaksa%29?from=Alone%28VOCALOID+%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90+%EA%B3%A1%29",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "21a6268cece8b26607e397840c07a9f12104a1a7a72ad5742770a28b9792b084"
         }
       ],
       "audio": {
@@ -15412,7 +15803,7 @@
         "channels": 2,
         "durationSeconds": 298.685,
         "byteLength": 1790106,
-        "sha256": "c3fb331f9915a2842e21496210775c8f9206a5e3f3538232427ce7292581b918"
+        "sha256": "4bb2e7fc17c1743a4d08fc1afc15c82b9e38212d0f9bafc0d73b6137e2af517d"
       },
       "writers": [
         "HAKASE K"
@@ -15436,13 +15827,12 @@
         {
           "kind": "title",
           "name": "얼론",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: Alone → 얼론 (2026-10-28). 외부 검색 인용 아님."
+          "url": "https://www.namu.moe/w/Alone%28kimpaksa%29?from=Alone%28VOCALOID+%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90+%EA%B3%A1%29",
+          "quote": "얼론",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -15451,6 +15841,27 @@
           "addedTags": [
             "얼론"
           ]
+        },
+        {
+          "previousTitle": "Alone",
+          "previousTags": [
+            "김박사",
+            "HAKASE K",
+            "하카세 K",
+            "Alone",
+            "얼론"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "Alone",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "얼론",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Alone → 얼론 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -15515,7 +15926,8 @@
             "에몬"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 234,
@@ -15525,7 +15937,7 @@
       "durationSeconds": 319,
       "youtubeUrl": "https://www.youtube.com/watch?v=RKtoreimcQ8",
       "id": "8d933db4-14b1-51e4-ab7c-a46f4087bb3e",
-      "title": "Hand in Hand",
+      "title": "핸드 인 핸드",
       "tags": [
         "kz",
         "Hand in Hand",
@@ -15560,6 +15972,15 @@
           "quote": "【JAPANESE SONG】Hand in Hand -『kz』『KAN/ROM/ENG』",
           "checkedAt": "2026-10-28",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "http://vocaro.wikidot.com/hand-in-hand",
+          "quote": "핸드 인 핸드",
+          "kind": "page",
+          "retrievalUrl": "http://vocaro.wikidot.com/hand-in-hand",
+          "retrievedAt": "2026-11-06",
+          "mainVerified": true,
+          "retrievedEvidenceMatched": true
         }
       ],
       "audio": {
@@ -15571,19 +15992,12 @@
         "channels": 2,
         "durationSeconds": 319.038,
         "byteLength": 1908383,
-        "sha256": "163b992c8db384214bbb08a45dc5ee05d9cda23ba801ac11dbb0302092f43621"
+        "sha256": "52d1d933ce2e2d75a7c8bf44d2e88610a52cd60ea81094a525ad8df7d3bdceaa"
       },
       "writers": [
         "kz"
       ],
       "aliases": [
-        {
-          "kind": "title",
-          "name": "핸드인핸드",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: Hand in Hand → 핸드인핸드 (2026-10-28). 외부 검색 인용 아님."
-        },
         {
           "kind": "writer",
           "name": "케이제트",
@@ -15592,10 +16006,16 @@
           "origin": "user_authorized_writer_alias",
           "url": null,
           "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): kz → 케이제트. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "title",
+          "name": "핸드 인 핸드",
+          "url": "http://vocaro.wikidot.com/hand-in-hand",
+          "quote": "핸드 인 핸드",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -15611,6 +16031,26 @@
           "addedTags": [
             "케이제트"
           ]
+        },
+        {
+          "previousTitle": "Hand in Hand",
+          "previousTags": [
+            "kz",
+            "Hand in Hand",
+            "핸드인핸드",
+            "케이제트"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "Hand in Hand",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "핸드인핸드",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Hand in Hand → 핸드인핸드 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -15831,7 +16271,8 @@
           "quote": "VOCALOID 프로듀서 mothy_악의P"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 238,
@@ -15883,7 +16324,8 @@
           "quote": "HoneyWorks ハニーワークス | 허니웍스"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 239,
@@ -15943,7 +16385,8 @@
           "quote": "예명 流星P (Ryuusei-P, 유성P)"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 240,
@@ -16027,7 +16470,7 @@
       "durationSeconds": 312,
       "youtubeUrl": "https://www.youtube.com/watch?v=243vPl8HdVk",
       "id": "77c5c219-f8df-5a19-9b96-b0aed05b61f8",
-      "title": "Redial",
+      "title": "리다이얼",
       "tags": [
         "kz",
         "Redial",
@@ -16054,6 +16497,16 @@
           "checkedAt": "2026-10-27T15:58:20Z",
           "url": "https://www.youtube.com/watch?v=243vPl8HdVk",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://manggazip.tistory.com/156",
+          "quote": "리다이얼",
+          "kind": "page",
+          "retrievalUrl": "https://manggazip.tistory.com/156",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "ec78f7cf9b6efacafa6da4f5fa4b3644afacaa3e3990c810598f35a61179c7e0"
         }
       ],
       "audio": {
@@ -16065,19 +16518,12 @@
         "channels": 2,
         "durationSeconds": 311.456,
         "byteLength": 1808294,
-        "sha256": "b2a7ec955b6bbccabd7b228459e35fde0f10b67be45eac398df182c23a975e5b"
+        "sha256": "18871e09632d1e9cf8c9695152b9a077c199462cefc62fff45562a25ca255644"
       },
       "writers": [
         "kz"
       ],
       "aliases": [
-        {
-          "kind": "title",
-          "name": "리다이얼",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: Redial → 리다이얼 (2026-10-28). 외부 검색 인용 아님."
-        },
         {
           "kind": "writer",
           "name": "케이제트",
@@ -16086,10 +16532,16 @@
           "origin": "user_authorized_writer_alias",
           "url": null,
           "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): kz → 케이제트. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "title",
+          "name": "리다이얼",
+          "url": "https://manggazip.tistory.com/156",
+          "quote": "리다이얼",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -16105,6 +16557,26 @@
           "addedTags": [
             "케이제트"
           ]
+        },
+        {
+          "previousTitle": "Redial",
+          "previousTags": [
+            "kz",
+            "Redial",
+            "리다이얼",
+            "케이제트"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "Redial",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "리다이얼",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Redial → 리다이얼 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -16157,7 +16629,8 @@
         "하치오지P"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 243,
@@ -16288,7 +16761,8 @@
         "누유리"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 245,
@@ -16397,7 +16871,8 @@
         "니루 카지츠"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 247,
@@ -16858,7 +17333,8 @@
           "quote": "성격이 나빠서 죄송합니다."
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 253,
@@ -16927,8 +17403,11 @@
           "quote": "사용자 승인 영어 제목 일반 발음: quiet room → 콰이어트룸 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "통용 한국어 곡명·발음의 실제 사용 근거를 재검수 중입니다. 임의 번역·발음 변환을 적용하지 않았습니다.",
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -17024,8 +17503,11 @@
           "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Reol → 레오루. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "통용 한국어 곡명·발음의 실제 사용 근거를 재검수 중입니다. 임의 번역·발음 변환을 적용하지 않았습니다.",
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -17197,7 +17679,8 @@
           "quote": "GYARI(ココアシガレットP) (CocoaCigarette-P, 코코아시가렛P)"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 257,
@@ -17257,7 +17740,8 @@
           "quote": "또는 사사쿠레P"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 258,
@@ -17319,7 +17803,8 @@
             "아야세"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 259,
@@ -17371,7 +17856,8 @@
           "quote": "Kanaria カナリア | 카나리아"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 260,
@@ -17514,7 +18000,8 @@
           "quote": "ラマーズP 라마즈P / LamazeP"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 262,
@@ -17565,7 +18052,8 @@
         "호보니치P"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 263,
@@ -17710,7 +18198,8 @@
             "토라볼타피"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 265,
@@ -17858,7 +18347,8 @@
             "치노조"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 267,
@@ -17918,7 +18408,8 @@
           "quote": "syudou (슈도우,"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 268,
@@ -18045,7 +18536,8 @@
         "kahimi"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 270,
@@ -18116,7 +18608,8 @@
             "슬레이브이브이알"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 271,
@@ -18261,7 +18754,8 @@
             "정키"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 273,
@@ -18378,7 +18872,8 @@
           "quote": "포지티브☆ 댄스 타임"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 275,
@@ -18520,7 +19015,8 @@
           "quote": "マレツ, 마레츠"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 277,
@@ -18653,7 +19149,8 @@
           "quote": "모험의 서가 사라졌습니다!"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 279,
@@ -18712,7 +19209,8 @@
           "quote": "엔비 베이비 × 킹"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 280,
@@ -18755,7 +19253,11 @@
           "quote": "난세콘나센스 / 아마네. / 하츠네 미쿠[한글화]"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시한 한국어 곡명이 실제 사용된 개별 출처가 필요합니다."
+      ]
     },
     {
       "index": 281,
@@ -18900,7 +19402,8 @@
             "치노조"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 283,
@@ -19009,7 +19512,8 @@
         "미즈노 아츠"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 285,
@@ -19135,7 +19639,8 @@
           "quote": "레루리리"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 287,
@@ -19305,7 +19810,8 @@
           "quote": "라브카?"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 289,
@@ -19378,7 +19884,8 @@
         "Tarae"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 290,
@@ -19437,7 +19944,8 @@
           "quote": "*헬로, 플래닛."
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 291,
@@ -19500,7 +20008,8 @@
             "오모이"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 292,
@@ -19510,7 +20019,7 @@
       "durationSeconds": 254,
       "youtubeUrl": "https://www.youtube.com/watch?v=7sr1H6emuyk",
       "id": "7aed0ecf-1299-5ed2-a5b4-9eecb391ecb0",
-      "title": "Tell Your World",
+      "title": "텔 유어 월드",
       "tags": [
         "kz",
         "Tell Your World",
@@ -19545,6 +20054,16 @@
           "quote": "[한글자막] Tell Your World / kz / 하츠네 미쿠",
           "checkedAt": "2026-10-28",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.fomos.kr/game/news_view?entry_id=110906",
+          "quote": "텔 유어 월드",
+          "kind": "page",
+          "retrievalUrl": "https://www.fomos.kr/game/news_view?entry_id=110906",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "0f454c95179066bab778ba3f7633b0e91f5e615c23973698632444b610b57a65"
         }
       ],
       "audio": {
@@ -19556,19 +20075,12 @@
         "channels": 2,
         "durationSeconds": 253.557,
         "byteLength": 1555180,
-        "sha256": "c2e48a0bf3e4565a522a277f8850c9db6384dfb2ce83d2e130165f61e5413f6d"
+        "sha256": "42473cb4f7ed53245c5f8c2c92ac0d01900378dba3c2b86e9d6639b0206d9751"
       },
       "writers": [
         "kz"
       ],
       "aliases": [
-        {
-          "kind": "title",
-          "name": "텔유어월드",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: Tell Your World → 텔유어월드 (2026-10-28). 외부 검색 인용 아님."
-        },
         {
           "kind": "writer",
           "name": "케이제트",
@@ -19577,10 +20089,16 @@
           "origin": "user_authorized_writer_alias",
           "url": null,
           "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): kz → 케이제트. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "title",
+          "name": "텔 유어 월드",
+          "url": "https://www.fomos.kr/game/news_view?entry_id=110906",
+          "quote": "텔 유어 월드",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -19596,6 +20114,26 @@
           "addedTags": [
             "케이제트"
           ]
+        },
+        {
+          "previousTitle": "Tell Your World",
+          "previousTags": [
+            "kz",
+            "Tell Your World",
+            "텔유어월드",
+            "케이제트"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "Tell Your World",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "텔유어월드",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Tell Your World → 텔유어월드 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -19607,7 +20145,7 @@
       "durationSeconds": 239,
       "youtubeUrl": "https://www.youtube.com/watch?v=NocXEwsJGOQ",
       "id": "4b2acc2e-bd27-5368-adff-88f0e71d4e51",
-      "title": "Miku",
+      "title": "미쿠",
       "tags": [
         "Anamanaguchi",
         "Miku",
@@ -19634,6 +20172,16 @@
           "checkedAt": "2026-10-27T15:58:20Z",
           "url": "https://www.youtube.com/watch?v=_-2dIuV34cs",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://d.namu.moe/w/Miku",
+          "quote": "미쿠",
+          "kind": "page",
+          "retrievalUrl": "https://d.namu.moe/w/Miku",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "9ac1b2fcba9c0f7f42942b921d69f4ecc5641787d1ed6360687202710a2b9741"
         }
       ],
       "audio": {
@@ -19645,19 +20193,12 @@
         "channels": 2,
         "durationSeconds": 238.557,
         "byteLength": 1372650,
-        "sha256": "8964d3d4b0081e3fe74e216766164fbea347d5f378e178a6e043cd436ffe9798"
+        "sha256": "d698dd2019771928ff0a144b1700abb77f75f4c4d9082af069448bc5221e973f"
       },
       "writers": [
         "Anamanaguchi"
       ],
       "aliases": [
-        {
-          "kind": "title",
-          "name": "미쿠",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: Miku → 미쿠 (2026-10-28). 외부 검색 인용 아님."
-        },
         {
           "kind": "writer",
           "name": "아나마나구치",
@@ -19666,10 +20207,16 @@
           "origin": "user_authorized_writer_alias",
           "url": null,
           "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Anamanaguchi → 아나마나구치. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "title",
+          "name": "미쿠",
+          "url": "https://d.namu.moe/w/Miku",
+          "quote": "미쿠",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -19685,6 +20232,26 @@
           "addedTags": [
             "아나마나구치"
           ]
+        },
+        {
+          "previousTitle": "Miku",
+          "previousTags": [
+            "Anamanaguchi",
+            "Miku",
+            "미쿠",
+            "아나마나구치"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "Miku",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "미쿠",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Miku → 미쿠 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -19714,6 +20281,16 @@
           "retrievedEvidenceMatched": true,
           "retrievalUrl": "https://search.naver.com/search.naver?query=%2ALuna+-+8.32+feat.flower+%ED%95%9C%EA%B5%AD+%EB%B3%B4%EC%BB%AC%EB%A1%9C%EC%9D%B4%EB%93%9C",
           "retrievedAt": "2026-10-27T10:01:59.213409+00:00"
+        },
+        {
+          "url": "https://pjsk.moe/ko-kr/music/629/",
+          "quote": "8.32",
+          "kind": "page",
+          "retrievalUrl": "https://pjsk.moe/ko-kr/music/629/",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "d2d3b75fe486377b75ca0fff17345c160a6d0bc4518658ed595d541ed12e8080"
         }
       ],
       "audio": {
@@ -19745,6 +20322,20 @@
           "origin": "user_authorized_writer_alias",
           "url": null,
           "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): *Luna → 루나. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "title",
+          "name": "8.32",
+          "url": "https://pjsk.moe/ko-kr/music/629/",
+          "quote": "8.32",
+          "mainVerified": true
+        },
+        {
+          "kind": "punctuation",
+          "name": "832",
+          "url": null,
+          "quote": "8.32",
+          "mainVerified": true
         }
       ],
       "singerAliases": [],
@@ -19756,7 +20347,8 @@
             "루나"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 295,
@@ -19827,7 +20419,8 @@
             "루나"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 296,
@@ -19870,7 +20463,8 @@
         "하뉴 마이고"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 297,
@@ -19880,12 +20474,12 @@
       "durationSeconds": 157,
       "youtubeUrl": "https://www.youtube.com/watch?v=httB2UoZ44s",
       "id": "644e7ebc-8a29-5046-9c89-7fea1a699181",
-      "title": "p.h.",
+      "title": "페하",
       "tags": [
         "SEVENTHLINKS",
         "ph",
-        "피에이치",
-        "세븐스링크스"
+        "세븐스링크스",
+        "페하"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -19906,6 +20500,16 @@
           "kind": "youtube_search",
           "retrievedEvidenceMatched": true,
           "checkedAt": "2026-10-28"
+        },
+        {
+          "url": "https://camelpage.tistory.com/entry/%EC%9D%8C%EC%95%85-%EB%A6%AC%EB%B7%B0-SEVENTHLINKS-ph?category=1221862",
+          "quote": "페하",
+          "kind": "page",
+          "retrievalUrl": "https://camelpage.tistory.com/entry/%EC%9D%8C%EC%95%85-%EB%A6%AC%EB%B7%B0-SEVENTHLINKS-ph?category=1221862",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "b87d1e21075782a362607a082a7ff5e4aa778a440602f3b750802154fd3bc017"
         }
       ],
       "audio": {
@@ -19917,7 +20521,7 @@
         "channels": 2,
         "durationSeconds": 155.975,
         "byteLength": 930327,
-        "sha256": "7aaec63cec1689eedca3841808cb00575456b870cb8fe503e0ed518c0d1717ad"
+        "sha256": "6371be3904f0ee4ddf642928a11e1cd6256e78d4a1e4b3a8bbe506d0bacf599f"
       },
       "writers": [
         "SEVENTHLINKS"
@@ -19930,13 +20534,6 @@
           "quote": "p.h."
         },
         {
-          "kind": "title",
-          "name": "피에이치",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: p.h. → 피에이치 (2026-10-28). 외부 검색 인용 아님."
-        },
-        {
           "kind": "writer",
           "name": "세븐스링크스",
           "canonicalName": "SEVENTHLINKS",
@@ -19944,10 +20541,16 @@
           "origin": "user_authorized_writer_alias",
           "url": null,
           "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): SEVENTHLINKS → 세븐스링크스. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "title",
+          "name": "페하",
+          "url": "https://camelpage.tistory.com/entry/%EC%9D%8C%EC%95%85-%EB%A6%AC%EB%B7%B0-SEVENTHLINKS-ph?category=1221862",
+          "quote": "페하",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -19963,6 +20566,26 @@
           "addedTags": [
             "세븐스링크스"
           ]
+        },
+        {
+          "previousTitle": "p.h.",
+          "previousTags": [
+            "SEVENTHLINKS",
+            "ph",
+            "피에이치",
+            "세븐스링크스"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "p.h.",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "피에이치",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: p.h. → 피에이치 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -20007,7 +20630,8 @@
         "폴리스 피카딜리"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 299,
@@ -20066,7 +20690,8 @@
         "지미섬P"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 300,
@@ -20076,7 +20701,7 @@
       "durationSeconds": 145,
       "youtubeUrl": "https://www.youtube.com/watch?v=rkaNKAvksDE",
       "id": "2de34890-d057-509e-952b-b2834903620c",
-      "title": "Surges",
+      "title": "서지스",
       "tags": [
         "Orangestar",
         "Surges",
@@ -20103,6 +20728,16 @@
           "retrievedEvidenceMatched": true,
           "retrievalUrl": "https://www.youtube.com/results?search_query=Orangestar%20-%20Surges%20%28feat.%20IA%20%26%20%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF%29%20Official%20Video%20%EA%B0%80%EC%82%AC",
           "checkedAt": "2026-10-27T15:58:28.8051142Z"
+        },
+        {
+          "url": "https://jadal.wiki/weekly/726",
+          "quote": "서지스",
+          "kind": "page",
+          "retrievalUrl": "https://jadal.wiki/weekly/726",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "ee2d72e7762d02bf94699e824c95bed24257dadd06edd5fa22385685e2a65df9"
         }
       ],
       "audio": {
@@ -20114,19 +20749,12 @@
         "channels": 2,
         "durationSeconds": 144.574,
         "byteLength": 884853,
-        "sha256": "01116f155a07f5dc3ed6ce7b71a3221b89d5309ec10b63dc0f4e8b013f910f8d"
+        "sha256": "8e25ad60483506f16c9b8fbf0fc4c903d809d06c0f80c9e17eef79c55105a2e6"
       },
       "writers": [
         "Orangestar"
       ],
       "aliases": [
-        {
-          "kind": "title",
-          "name": "서지스",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: Surges → 서지스 (2026-10-28). 외부 검색 인용 아님."
-        },
         {
           "kind": "writer",
           "name": "오렌지스타",
@@ -20135,10 +20763,16 @@
           "origin": "user_authorized_writer_alias",
           "url": null,
           "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Orangestar → 오렌지스타. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "title",
+          "name": "서지스",
+          "url": "https://jadal.wiki/weekly/726",
+          "quote": "서지스",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -20154,6 +20788,26 @@
           "addedTags": [
             "오렌지스타"
           ]
+        },
+        {
+          "previousTitle": "Surges",
+          "previousTags": [
+            "Orangestar",
+            "Surges",
+            "서지스",
+            "오렌지스타"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "Surges",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "서지스",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Surges → 서지스 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -20360,7 +21014,8 @@
         "츠미키"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 304,
@@ -20419,7 +21074,8 @@
         "히이라기 키라이"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 305,
@@ -20495,7 +21151,7 @@
       "durationSeconds": 335,
       "youtubeUrl": "https://www.youtube.com/watch?v=eB0ofPh083g",
       "id": "4e65caaa-d25e-5966-9a69-2936248266ab",
-      "title": "letter song",
+      "title": "레터송",
       "tags": [
         "doriko",
         "키리땅P",
@@ -20520,6 +21176,16 @@
           "quote": "곡명 : Letter Song (레터송), 아티스트 : doriko 도리코",
           "kind": "page",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Ci6fMdqu_LM",
+          "quote": "레터송",
+          "kind": "page",
+          "retrievalUrl": "https://www.youtube.com/watch?v=Ci6fMdqu_LM",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "b6f03a44b892f5bf1d960866dd9b0e0fd95f53b44bc65fe02fe7612821237b04"
         }
       ],
       "audio": {
@@ -20531,7 +21197,7 @@
         "channels": 2,
         "durationSeconds": 334.966,
         "byteLength": 2049349,
-        "sha256": "9637d45ca311366be22669937abaf2d1bfc7f193782fa21ba7beb644e50750a8"
+        "sha256": "e375bf045cdd644c2f796212c662942ff371c06d86ca9484a97e6099b2b43c1a"
       },
       "writers": [
         "doriko"
@@ -20549,9 +21215,30 @@
           "name": "레터송",
           "url": "https://www.mymusic5.com/ko/meowguro/44690",
           "quote": "곡명 : Letter Song (레터송), 아티스트 : doriko 도리코"
+        },
+        {
+          "kind": "title",
+          "name": "레터송",
+          "url": "https://www.youtube.com/watch?v=Ci6fMdqu_LM",
+          "quote": "레터송",
+          "mainVerified": true
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false,
+      "originalTitle": "letter song",
+      "namingHistory": [
+        {
+          "previousTitle": "letter song",
+          "previousTags": [
+            "doriko",
+            "키리땅P",
+            "레터송",
+            "letter song"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ]
     },
     {
       "index": 307,
@@ -20614,7 +21301,8 @@
             "미미"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 308,
@@ -20738,7 +21426,11 @@
       },
       "writers": [],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ]
     },
     {
       "index": 310,
@@ -20789,7 +21481,8 @@
         "하루마키고한"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 311,
@@ -20865,7 +21558,7 @@
       "durationSeconds": 192,
       "youtubeUrl": "https://www.youtube.com/watch?v=t0B6QJFJ0LM",
       "id": "91dd171f-91d0-58be-8ce8-84934af76210",
-      "title": "Corruption",
+      "title": "커럽션",
       "tags": [
         "오누마 파슬리",
         "Corruption",
@@ -20891,6 +21584,15 @@
           "retrievedEvidenceMatched": true,
           "retrievalUrl": "https://www.youtube.com/results?search_query=Corruption%2F%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF%20%EA%B0%80%EC%82%AC",
           "checkedAt": "2026-10-27T15:57:48.495Z"
+        },
+        {
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=mikuhatsune&no=53759",
+          "quote": "커럽션",
+          "kind": "page",
+          "mainVerified": true,
+          "retrievalUrl": "https://gall.dcinside.com/mgallery/board/view/?id=mikuhatsune&no=53759",
+          "retrievedEvidenceMatched": true,
+          "retrievedAt": "2026-11-06"
         }
       ],
       "audio": {
@@ -20902,7 +21604,7 @@
         "channels": 2,
         "durationSeconds": 192.001,
         "byteLength": 1165822,
-        "sha256": "c760499f15fb7c84c993767a7c6f567f93caf656402960be6d0ff3807460758e"
+        "sha256": "3c7b41583e51b3df14a04f025acb661ae65ee9968361281943ce9f5d2ecae9ec"
       },
       "writers": [
         "오누마 파슬리"
@@ -20911,13 +21613,12 @@
         {
           "kind": "title",
           "name": "커럽션",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: Corruption → 커럽션 (2026-10-28). 외부 검색 인용 아님."
+          "url": "https://gall.dcinside.com/mgallery/board/view/?id=mikuhatsune&no=53759",
+          "quote": "커럽션",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -20926,6 +21627,25 @@
           "addedTags": [
             "커럽션"
           ]
+        },
+        {
+          "previousTitle": "Corruption",
+          "previousTags": [
+            "오누마 파슬리",
+            "Corruption",
+            "커럽션"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "Corruption",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "커럽션",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Corruption → 커럽션 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -21000,8 +21720,10 @@
           "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): okameP → 오카메피. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -21081,7 +21803,8 @@
             "아쿠에라"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 315,
@@ -21131,7 +21854,8 @@
           "quote": "라이스 정식으로 먹어요."
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 316,
@@ -21185,7 +21909,11 @@
         "UraCommanderP"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ]
     },
     {
       "index": 317,
@@ -21326,7 +22054,8 @@
           "quote": "GYARI(ココアシガレットP) (CocoaCigarette-P, 코코아시가렛P)"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 319,
@@ -21446,7 +22175,8 @@
         "쿠라게P"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 321,
@@ -21591,7 +22321,8 @@
         "하치야 나나시"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 323,
@@ -21672,7 +22403,8 @@
             "오렌지스타"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 324,
@@ -21715,7 +22447,8 @@
         "아고아니키"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 325,
@@ -22164,7 +22897,8 @@
           "writer": "Wada Takeaki"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 331,
@@ -22207,7 +22941,8 @@
         "초롱아귀"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 332,
@@ -22217,7 +22952,7 @@
       "durationSeconds": 230,
       "youtubeUrl": "https://www.youtube.com/watch?v=N55NsP_G1es",
       "id": "1fe83d52-513c-5775-a48d-158d7bed44a7",
-      "title": "I=Fantasy",
+      "title": "아이=판타지",
       "tags": [
         "시유",
         "방시혁",
@@ -22259,6 +22994,16 @@
           "kind": "youtube_search",
           "retrievedEvidenceMatched": true,
           "checkedAt": "2026-10-28"
+        },
+        {
+          "url": "https://sports.donga.com/ent/article/all/20110609/37900465/1",
+          "quote": "아이=판타지",
+          "kind": "page",
+          "retrievalUrl": "https://sports.donga.com/ent/article/all/20110609/37900465/1",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "5d1bf1a2da3a4d6fe3058832db615242854028b03980a7efaaa16bddcaf5ac20"
         }
       ],
       "audio": {
@@ -22270,7 +23015,7 @@
         "channels": 2,
         "durationSeconds": 229.525,
         "byteLength": 1409175,
-        "sha256": "7d92c5abe2d505eb1ae3531358c41ee30ca47cbff873aa643dd9997611ed5e3d"
+        "sha256": "a92c78f4d8cb24512d7481fbc62112b601b82d32b19e4921d456842ef684ea05"
       },
       "writers": [
         "방시혁"
@@ -22290,14 +23035,20 @@
         },
         {
           "kind": "title",
+          "name": "아이=판타지",
+          "url": "https://sports.donga.com/ent/article/all/20110609/37900465/1",
+          "quote": "아이=판타지",
+          "mainVerified": true
+        },
+        {
+          "kind": "punctuation",
           "name": "아이판타지",
           "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: I=Fantasy → 아이판타지 (2026-10-28). 외부 검색 인용 아님."
+          "quote": "아이=판타지",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [
         "시유"
       ],
@@ -22308,6 +23059,26 @@
           "addedTags": [
             "아이판타지"
           ]
+        },
+        {
+          "previousTitle": "I=Fantasy",
+          "previousTags": [
+            "시유",
+            "방시혁",
+            "IFantasy",
+            "아이판타지"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "I=Fantasy",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "아이판타지",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: I=Fantasy → 아이판타지 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -22384,7 +23155,8 @@
           "quote": "팝핀 캔디☆피버!"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 334,
@@ -22612,7 +23384,8 @@
         "나유탄 성인"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 337,
@@ -22828,7 +23601,8 @@
           "quote": "뉴턴 댄스는 나유탄 성인이 작사·작곡하고"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 340,
@@ -22937,7 +23711,8 @@
         "히이라기 키라이"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 342,
@@ -22989,7 +23764,8 @@
           "quote": "マレツ, 마레츠"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 343,
@@ -23049,7 +23825,8 @@
           "quote": "マレツ, 마레츠"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 344,
@@ -23203,7 +23980,8 @@
         "이요와"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 346,
@@ -23246,7 +24024,8 @@
         "이요와"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 347,
@@ -23289,7 +24068,8 @@
         "이요와"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 348,
@@ -23332,7 +24112,8 @@
         "이요와"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 349,
@@ -23375,7 +24156,8 @@
         "이요와"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 350,
@@ -23707,7 +24489,7 @@
       "durationSeconds": 348,
       "youtubeUrl": "https://www.youtube.com/watch?v=_qLCdom6AiM",
       "id": "3d49b7c0-29ef-5d79-8710-9b1db759b76f",
-      "title": "ODDS & ENDS",
+      "title": "오즈 앤 엔즈",
       "tags": [
         "ryo",
         "ODDS ENDS",
@@ -23734,6 +24516,15 @@
           "checkedAt": "2026-10-27T15:58:20Z",
           "url": "https://www.youtube.com/watch?v=_qLCdom6AiM",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://nowtokyo.net/njpopatoz/mno/x1052.html",
+          "quote": "오즈 앤 엔즈",
+          "kind": "page",
+          "mainVerified": true,
+          "retrievalUrl": "https://nowtokyo.net/njpopatoz/mno/x1052.html",
+          "retrievedEvidenceMatched": true,
+          "retrievedAt": "2026-11-06"
         }
       ],
       "audio": {
@@ -23745,7 +24536,7 @@
         "channels": 2,
         "durationSeconds": 348.004,
         "byteLength": 2132180,
-        "sha256": "dd85409ab614674941c3925d0c69e2b7a637224c60d396ad88de797802ccfbb4"
+        "sha256": "363abbc31e9960661df8990559698efab96d9920a6b28eda7e51951963a2c4f3"
       },
       "writers": [
         "ryo"
@@ -23758,13 +24549,6 @@
           "quote": "ODDS & ENDS"
         },
         {
-          "kind": "title",
-          "name": "오즈앤엔즈",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: ODDS & ENDS → 오즈앤엔즈 (2026-10-28). 외부 검색 인용 아님."
-        },
-        {
           "kind": "writer",
           "name": "료",
           "canonicalName": "ryo",
@@ -23772,10 +24556,16 @@
           "origin": "user_authorized_writer_alias",
           "url": null,
           "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): ryo → 료. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "title",
+          "name": "오즈 앤 엔즈",
+          "url": "https://nowtokyo.net/njpopatoz/mno/x1052.html",
+          "quote": "오즈 앤 엔즈",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -23791,6 +24581,26 @@
           "addedTags": [
             "료"
           ]
+        },
+        {
+          "previousTitle": "ODDS & ENDS",
+          "previousTags": [
+            "ryo",
+            "ODDS ENDS",
+            "오즈앤엔즈",
+            "료"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "ODDS & ENDS",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "오즈앤엔즈",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: ODDS & ENDS → 오즈앤엔즈 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -23844,7 +24654,8 @@
           "quote": "IOSYS イオシス 이오시스"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 356,
@@ -24035,7 +24846,8 @@
         "카이리키 베어"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 359,
@@ -24048,7 +24860,8 @@
       "title": "1925",
       "tags": [
         "TPOCKET",
-        "티포켓"
+        "티포켓",
+        "1925"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -24062,6 +24875,16 @@
           "retrievedEvidenceMatched": true,
           "retrievalUrl": "https://search.naver.com/search.naver?query=%ED%95%98%EC%B8%A0%EB%84%A4+%EB%AF%B8%EC%BF%A0+-+1925+%EB%B3%B4%EC%BB%AC%EB%A1%9C%EC%9D%B4%EB%93%9C+%ED%95%9C%EA%B5%AD%EC%96%B4+%EC%A0%9C%EB%AA%A9",
           "retrievedAt": "2026-10-27T10:01:02.856597+00:00"
+        },
+        {
+          "url": "https://noraebang.app/songs/tj/28000",
+          "quote": "1925",
+          "kind": "page",
+          "retrievalUrl": "https://noraebang.app/songs/tj/28000",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "39e2d35752f4f827fd8fea1ce391a1bca0ac2fc932e89f47deab85961aaaefcd"
         }
       ],
       "audio": {
@@ -24073,7 +24896,7 @@
         "channels": 2,
         "durationSeconds": 196.053,
         "byteLength": 1185652,
-        "sha256": "566fccbba73ad69362c3fb27d75fe0c388f59fb268a52b4feb264979db73dac4"
+        "sha256": "3e8c210b75d0c5bd86a91744058f4a542ec972286f7c76ce00f8641f64841fa6"
       },
       "writers": [
         "T-POCKET"
@@ -24087,6 +24910,13 @@
           "origin": "user_authorized_writer_alias",
           "url": null,
           "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): T-POCKET → 티포켓. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "title",
+          "name": "1925",
+          "url": "https://noraebang.app/songs/tj/28000",
+          "quote": "1925",
+          "mainVerified": true
         }
       ],
       "singerAliases": [],
@@ -24098,7 +24928,8 @@
             "티포켓"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 360,
@@ -24141,7 +24972,8 @@
         "하뉴 마이고"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 361,
@@ -24192,7 +25024,8 @@
         "쿠라게P"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 362,
@@ -24289,7 +25122,11 @@
       },
       "writers": [],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ]
     },
     {
       "index": 364,
@@ -24364,7 +25201,8 @@
           "quote": "싫어 일 안해!"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 365,
@@ -24415,7 +25253,8 @@
           "quote": "제 신곡은 아직입니까?"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 366,
@@ -24458,7 +25297,8 @@
         "키쿠오"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 367,
@@ -24510,7 +25350,8 @@
           "quote": "또는 사사쿠레P"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 368,
@@ -24520,7 +25361,7 @@
       "durationSeconds": 259,
       "youtubeUrl": "https://www.youtube.com/watch?v=cZbdgG86wZc",
       "id": "6ae6dc5d-de4d-5bc6-8aab-818c9fc28301",
-      "title": "Q",
+      "title": "큐",
       "tags": [
         "시이나 모타",
         "Q",
@@ -24545,6 +25386,16 @@
           "kind": "youtube_search",
           "retrievedEvidenceMatched": true,
           "checkedAt": "2026-10-28"
+        },
+        {
+          "url": "https://lemonary.tistory.com/170",
+          "quote": "큐",
+          "kind": "page",
+          "retrievalUrl": "https://lemonary.tistory.com/170",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "752e2aa565055de27e87e05a3fadfeac2d374a9152e2dca6787d52f749e27796"
         }
       ],
       "audio": {
@@ -24556,7 +25407,7 @@
         "channels": 2,
         "durationSeconds": 258.972,
         "byteLength": 1581538,
-        "sha256": "898a6455edc10843c3c90ba6748c61fbc62b88d36653517e679394eaab744f3f"
+        "sha256": "0123d37518f2fde20e6f4da8b36d5d7a1fce3f198fad6db378e66b38e91bfc0f"
       },
       "writers": [
         "시이나 모타"
@@ -24573,13 +25424,12 @@
         {
           "kind": "title",
           "name": "큐",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: Q → 큐 (2026-10-28). 외부 검색 인용 아님."
+          "url": "https://lemonary.tistory.com/170",
+          "quote": "큐",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -24588,6 +25438,25 @@
           "addedTags": [
             "큐"
           ]
+        },
+        {
+          "previousTitle": "Q",
+          "previousTags": [
+            "시이나 모타",
+            "Q",
+            "큐"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "Q",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "큐",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Q → 큐 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -25114,7 +25983,8 @@
         "이요와"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 376,
@@ -25261,7 +26131,8 @@
           "quote": "여명 2:30"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 378,
@@ -25330,7 +26201,8 @@
           "writer": "DECO*27"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 379,
@@ -25340,7 +26212,7 @@
       "durationSeconds": 158,
       "youtubeUrl": "https://www.youtube.com/watch?v=8g2B0iJjBsc",
       "id": "e1d6ff1b-f550-5cf8-8082-ef7e9c885626",
-      "title": "QUEEN",
+      "title": "퀸",
       "tags": [
         "Kanaria",
         "카나리아",
@@ -25373,6 +26245,15 @@
           "quote": "이후에도 카나리아의 창작열은 멈추지 않았습니다. EYE (아이), YUI (유이), QUEEN (퀸) 등 발표하는 곡마다 연달아 히트시키며, 명실상부한 2020년대 최고의 보컬로이드 프로듀서 반열에 올랐습니다.",
           "kind": "page",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=8g2B0iJjBsc",
+          "quote": "곡 제목 : QUEEN ( 퀸 )",
+          "kind": "page",
+          "retrievalUrl": "https://www.youtube.com/watch?v=8g2B0iJjBsc",
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievedEvidenceMatched": true
         }
       ],
       "audio": {
@@ -25384,7 +26265,7 @@
         "channels": 2,
         "durationSeconds": 157.044,
         "byteLength": 879685,
-        "sha256": "6bd6dc50035dddc6d929c4a1ae428b6119da2dc2f0cda4c27dde490409816659"
+        "sha256": "609d0925fe52f82acea2803bf6d5873aa864fb3d2398ae0ab6ba6aad254924c7"
       },
       "writers": [
         "Kanaria"
@@ -25402,9 +26283,30 @@
           "name": "퀸",
           "url": "https://m.blog.naver.com/chicscene/224371010583",
           "quote": "이후에도 카나리아의 창작열은 멈추지 않았습니다. EYE (아이), YUI (유이), QUEEN (퀸) 등 발표하는 곡마다 연달아 히트시키며, 명실상부한 2020년대 최고의 보컬로이드 프로듀서 반열에 올랐습니다."
+        },
+        {
+          "kind": "title",
+          "name": "퀸",
+          "url": "https://www.youtube.com/watch?v=8g2B0iJjBsc",
+          "quote": "곡 제목 : QUEEN ( 퀸 )",
+          "mainVerified": true
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false,
+      "originalTitle": "QUEEN",
+      "namingHistory": [
+        {
+          "previousTitle": "QUEEN",
+          "previousTags": [
+            "Kanaria",
+            "카나리아",
+            "퀸",
+            "QUEEN"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ]
     },
     {
       "index": 380,
@@ -25513,7 +26415,8 @@
         "카이리키 베어"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 382,
@@ -25573,7 +26476,8 @@
           "quote": "이름 みきとP 미키토P / Mikito-P"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 383,
@@ -25616,7 +26520,8 @@
         "미키토P"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 384,
@@ -25659,7 +26564,8 @@
         "피노키오피"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 385,
@@ -25772,7 +26678,11 @@
       },
       "writers": [],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ]
     },
     {
       "index": 387,
@@ -26023,7 +26933,8 @@
         "스리"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 390,
@@ -26074,7 +26985,8 @@
         "유가미P"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 391,
@@ -26117,7 +27029,8 @@
         "피노키오피"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 392,
@@ -26127,7 +27040,7 @@
       "durationSeconds": 220,
       "youtubeUrl": "https://www.youtube.com/watch?v=oGQnn9vbvk0",
       "id": "d2dd42e1-7801-5bfe-abd9-2d47dfc40d7a",
-      "title": "ONE OFF MIND",
+      "title": "원 오프 마인드",
       "tags": [
         "Van de Shop",
         "ONE OFF MIND",
@@ -26161,6 +27074,16 @@
           "retrievedEvidenceMatched": true,
           "retrievalUrl": "https://www.youtube.com/results?search_query=ONE%20OFF%20MIND%20Van%20de%20Shop%20%EA%B0%80%EC%82%AC",
           "checkedAt": "2026-10-28"
+        },
+        {
+          "url": "https://jadal.wiki/weekly/439",
+          "quote": "원 오프 마인드",
+          "kind": "page",
+          "retrievalUrl": "https://jadal.wiki/weekly/439",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "aa722afff6e08904cfd36b64f23e860da4cd64c858ef30e638a86659fa498e93"
         }
       ],
       "audio": {
@@ -26172,7 +27095,7 @@
         "channels": 2,
         "durationSeconds": 219.145,
         "byteLength": 1336156,
-        "sha256": "500155429dbd6724a625c6988230d8c779d6a420139046e29456072bad6a4601"
+        "sha256": "d6a91caf703a1ed8bf56f4c741051e1b9623b1bfea425316581f54ef737ed69a"
       },
       "writers": [
         "Van de Shop"
@@ -26180,14 +27103,13 @@
       "aliases": [
         {
           "kind": "title",
-          "name": "원오프마인드",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: ONE OFF MIND → 원오프마인드 (2026-10-28). 외부 검색 인용 아님."
+          "name": "원 오프 마인드",
+          "url": "https://jadal.wiki/weekly/439",
+          "quote": "원 오프 마인드",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -26196,6 +27118,25 @@
           "addedTags": [
             "원오프마인드"
           ]
+        },
+        {
+          "previousTitle": "ONE OFF MIND",
+          "previousTags": [
+            "Van de Shop",
+            "ONE OFF MIND",
+            "원오프마인드"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "ONE OFF MIND",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "원오프마인드",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: ONE OFF MIND → 원오프마인드 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -26268,7 +27209,8 @@
             "오모이"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 394,
@@ -26311,7 +27253,8 @@
         "r-906"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 395,
@@ -26440,7 +27383,8 @@
             "워타쿠"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 397,
@@ -26526,7 +27470,7 @@
       "durationSeconds": 137,
       "youtubeUrl": "https://www.youtube.com/watch?v=2UE9XnUverk",
       "id": "2f56bdc0-6799-5510-9407-964496fec0c0",
-      "title": "MIRA",
+      "title": "미라",
       "tags": [
         "Kanaria",
         "카나리아",
@@ -26553,6 +27497,16 @@
           "retrievedEvidenceMatched": true,
           "retrievalUrl": "https://www.youtube.com/results?search_query=MIRA%20%2F%20Kanaria%20%2F%20%EC%BD%94%ED%95%98%EB%A3%A8%20%EB%A6%BF%EC%B9%B4%5B%ED%95%9C%EA%B8%80%ED%99%94%5D%20%EA%B0%80%EC%82%AC",
           "checkedAt": "2026-10-27T15:57:21.489Z"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=f-sUtJ9GdlE",
+          "quote": "미라",
+          "kind": "page",
+          "retrievalUrl": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Df-sUtJ9GdlE&format=json",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "0fca5b3b3548208cacee45cf9d73c45630b17c8d9b1e47214d8dd37d344123ec"
         }
       ],
       "audio": {
@@ -26564,7 +27518,7 @@
         "channels": 2,
         "durationSeconds": 136.413,
         "byteLength": 833518,
-        "sha256": "454a13526972bde2cdec98e15604cc4b13c706acebdf460f4a09ca92037d02ce"
+        "sha256": "d2e3928355d9bc87cc278da538d0735e7b27044ead8a04aba55c8f0b8081ae0c"
       },
       "writers": [
         "Kanaria"
@@ -26580,13 +27534,12 @@
         {
           "kind": "title",
           "name": "미라",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: MIRA → 미라 (2026-10-28). 외부 검색 인용 아님."
+          "url": "https://www.youtube.com/watch?v=f-sUtJ9GdlE",
+          "quote": "미라",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -26595,6 +27548,26 @@
           "addedTags": [
             "미라"
           ]
+        },
+        {
+          "previousTitle": "MIRA",
+          "previousTags": [
+            "Kanaria",
+            "카나리아",
+            "MIRA",
+            "미라"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "MIRA",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "미라",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: MIRA → 미라 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -26639,7 +27612,8 @@
         "카시이 모이미"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 400,
@@ -26707,7 +27681,8 @@
           "quote": "kemu(케무)"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 401,
@@ -26758,7 +27733,8 @@
         "이나바 쿠모리"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 402,
@@ -26809,7 +27785,8 @@
         "이요와"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 403,
@@ -26852,7 +27829,8 @@
         "이요와"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 404,
@@ -26978,7 +27956,8 @@
           "quote": "마후마후"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 406,
@@ -27114,7 +28093,8 @@
           "quote": "マレツ, 마레츠"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 408,
@@ -27124,7 +28104,7 @@
       "durationSeconds": 177,
       "youtubeUrl": "https://www.youtube.com/watch?v=KxBy9b5gAHI",
       "id": "20b03eea-924e-576f-aee4-aeddb268ac4c",
-      "title": "snooze",
+      "title": "스누즈",
       "tags": [
         "wotaku",
         "snooze",
@@ -27158,6 +28138,16 @@
           "kind": "youtube_search",
           "retrievedEvidenceMatched": true,
           "checkedAt": "2026-10-28"
+        },
+        {
+          "url": "https://dark.namu.moe/w/snooze%28VOCALOID%20%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90%20%EA%B3%A1%29?from=%EC%8A%A4%EB%88%84%EC%A6%88%28VOCALOID+%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90+%EA%B3%A1%29",
+          "quote": "스누즈",
+          "kind": "page",
+          "retrievalUrl": "https://dark.namu.moe/w/snooze%28VOCALOID%20%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90%20%EA%B3%A1%29?from=%EC%8A%A4%EB%88%84%EC%A6%88%28VOCALOID+%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90+%EA%B3%A1%29",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "d3d79c827bab47488d90843c4c81fea854f17f64b87b84eb60cad99a282552ac"
         }
       ],
       "audio": {
@@ -27169,19 +28159,12 @@
         "channels": 2,
         "durationSeconds": 176.328,
         "byteLength": 1080485,
-        "sha256": "77879fa3f43fc821fd01393aef3249b11e2650db88120b4e4973d1a3ff2b020b"
+        "sha256": "9afaf8328e8d1463e9baa183e99cdde1a5041dbc33e5e820493367283c21bea5"
       },
       "writers": [
         "wotaku"
       ],
       "aliases": [
-        {
-          "kind": "title",
-          "name": "스누즈",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: snooze → 스누즈 (2026-10-28). 외부 검색 인용 아님."
-        },
         {
           "kind": "writer",
           "name": "워타쿠",
@@ -27190,10 +28173,16 @@
           "origin": "user_authorized_writer_alias",
           "url": null,
           "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): wotaku → 워타쿠. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "title",
+          "name": "스누즈",
+          "url": "https://dark.namu.moe/w/snooze%28VOCALOID%20%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90%20%EA%B3%A1%29?from=%EC%8A%A4%EB%88%84%EC%A6%88%28VOCALOID+%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90+%EA%B3%A1%29",
+          "quote": "스누즈",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -27209,6 +28198,26 @@
           "addedTags": [
             "워타쿠"
           ]
+        },
+        {
+          "previousTitle": "snooze",
+          "previousTags": [
+            "wotaku",
+            "snooze",
+            "스누즈",
+            "워타쿠"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "snooze",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "스누즈",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: snooze → 스누즈 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -27269,7 +28278,8 @@
           "quote": "빨리 그것이 되고 싶어!"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 410,
@@ -27332,7 +28342,8 @@
             "라스트노트"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 411,
@@ -27576,7 +28587,7 @@
       "durationSeconds": 246,
       "youtubeUrl": "https://www.youtube.com/watch?v=UgK6n1KKUxY",
       "id": "44374e35-1174-5a22-893c-36fb05734a8b",
-      "title": "About Me",
+      "title": "어바웃 미",
       "tags": [
         "쵸쵸P",
         "About Me",
@@ -27610,6 +28621,16 @@
           "retrievedEvidenceMatched": true,
           "kind": "youtube_search",
           "url": "https://www.youtube.com/watch?v=UgK6n1KKUxY"
+        },
+        {
+          "url": "https://jadal.wiki/weekly/332",
+          "quote": "어바웃 미",
+          "kind": "page",
+          "retrievalUrl": "https://jadal.wiki/weekly/332",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "26eccd6c391d623fa9f50f938c20babccd4e4c5d88d81f0ed4c795a1c551a97d"
         }
       ],
       "audio": {
@@ -27621,7 +28642,7 @@
         "channels": 2,
         "durationSeconds": 245.488,
         "byteLength": 1496593,
-        "sha256": "6182a9fcb98c38cbbd088d7885cb3b8c7ac93a97e21fb8945823b1476c2769c5"
+        "sha256": "1170080c8090940b6ca06425f7c490560c9e8cac368b4e011a4639bfbca27250"
       },
       "writers": [
         "쵸쵸P"
@@ -27629,14 +28650,13 @@
       "aliases": [
         {
           "kind": "title",
-          "name": "어바웃미",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: About Me → 어바웃미 (2026-10-28). 외부 검색 인용 아님."
+          "name": "어바웃 미",
+          "url": "https://jadal.wiki/weekly/332",
+          "quote": "어바웃 미",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -27645,6 +28665,25 @@
           "addedTags": [
             "어바웃미"
           ]
+        },
+        {
+          "previousTitle": "About Me",
+          "previousTags": [
+            "쵸쵸P",
+            "About Me",
+            "어바웃미"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "About Me",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "어바웃미",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: About Me → 어바웃미 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -27656,7 +28695,7 @@
       "durationSeconds": 217,
       "youtubeUrl": "https://www.youtube.com/watch?v=VemXOuPyr8k",
       "id": "45b2b369-785d-5148-b787-4b86449fa340",
-      "title": "Beat Eater",
+      "title": "비트 이터",
       "tags": [
         "Police Piccadilly",
         "Beat Eater",
@@ -27691,6 +28730,16 @@
           "quote": "[ 발음 ] Beat Eater - Police Piccadilly ( feat. 하츠네 미쿠 )",
           "checkedAt": "2026-10-28",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://d.namu.moe/w/Beat%20Eater?from=%EB%B9%84%ED%8A%B8+%EC%9D%B4%ED%84%B0",
+          "quote": "비트 이터",
+          "kind": "page",
+          "retrievalUrl": "https://d.namu.moe/w/Beat%20Eater?from=%EB%B9%84%ED%8A%B8+%EC%9D%B4%ED%84%B0",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "3d69c48655f3b312e3d5e9f8d5d3c7a01c178797039a9ea0d403310f4e7d0623"
         }
       ],
       "audio": {
@@ -27702,19 +28751,12 @@
         "channels": 2,
         "durationSeconds": 216.928,
         "byteLength": 1327464,
-        "sha256": "434043a0cd11bdbb3d0f7a68ebf5b3ee1b4cbff812c1892a61ddb8095b16d571"
+        "sha256": "24a3e35154cc68e546640742501dbb370243eb4aaaab037501fecf8423483084"
       },
       "writers": [
         "Police Piccadilly"
       ],
       "aliases": [
-        {
-          "kind": "title",
-          "name": "비트이터",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: Beat Eater → 비트이터 (2026-10-28). 외부 검색 인용 아님."
-        },
         {
           "kind": "writer",
           "name": "폴리스피카딜리",
@@ -27723,10 +28765,16 @@
           "origin": "user_authorized_writer_alias",
           "url": null,
           "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Police Piccadilly → 폴리스피카딜리. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "title",
+          "name": "비트 이터",
+          "url": "https://d.namu.moe/w/Beat%20Eater?from=%EB%B9%84%ED%8A%B8+%EC%9D%B4%ED%84%B0",
+          "quote": "비트 이터",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -27742,6 +28790,26 @@
           "addedTags": [
             "폴리스피카딜리"
           ]
+        },
+        {
+          "previousTitle": "Beat Eater",
+          "previousTags": [
+            "Police Piccadilly",
+            "Beat Eater",
+            "비트이터",
+            "폴리스피카딜리"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "Beat Eater",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "비트이터",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Beat Eater → 비트이터 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -27833,7 +28901,8 @@
       ],
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false
     },
     {
       "index": 417,
@@ -27876,7 +28945,8 @@
         "와다 타케아키"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 418,
@@ -27935,7 +29005,8 @@
           "quote": "달라!!!"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 419,
@@ -27998,7 +29069,8 @@
             "미미"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 420,
@@ -28049,7 +29121,8 @@
         "우메토라"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 421,
@@ -28422,7 +29495,8 @@
             "워타쿠"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 426,
@@ -28432,7 +29506,7 @@
       "durationSeconds": 253,
       "youtubeUrl": "https://www.youtube.com/watch?v=WDUA7z3703g",
       "id": "679cfd23-d944-5e76-b952-58da71d8b500",
-      "title": "Bad ∞ End ∞ Night",
+      "title": "배드 엔드 나이트",
       "tags": [
         "HitoshizukuP",
         "Yama",
@@ -28467,6 +29541,16 @@
           "quote": "Hitoshizuku-P × Yama - Bad ∞ End ∞ Night (배드 엔드 나이트)",
           "kind": "page",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://m.blog.naver.com/skhbber/223832855392",
+          "quote": "배드 엔드 나이트",
+          "kind": "page",
+          "retrievalUrl": "https://m.blog.naver.com/skhbber/223832855392",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "2092546f1523815e344b97bf2d32ae77639d268c2a43ca98745c444b0c7744ca"
         }
       ],
       "audio": {
@@ -28478,7 +29562,7 @@
         "channels": 2,
         "durationSeconds": 252.57,
         "byteLength": 1525810,
-        "sha256": "2afec42feec2b85f05d28b521e249c0aeec79aa0de492963b13773b5a64331c1"
+        "sha256": "684bd04fd2cbd70bac3bfa3a352ffc04b8f67e72962f43e235008b4b7f79a104"
       },
       "writers": [
         "Hitoshizuku-P",
@@ -28512,6 +29596,13 @@
           "origin": "user_authorized_writer_alias",
           "url": null,
           "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Yama△ → 야마. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "title",
+          "name": "배드 엔드 나이트",
+          "url": "https://m.blog.naver.com/skhbber/223832855392",
+          "quote": "배드 엔드 나이트",
+          "mainVerified": true
         }
       ],
       "singerAliases": [],
@@ -28522,8 +29613,22 @@
           "addedTags": [
             "야마"
           ]
+        },
+        {
+          "previousTitle": "Bad ∞ End ∞ Night",
+          "previousTags": [
+            "HitoshizukuP",
+            "Yama",
+            "히토시즈쿠P",
+            "배드 엔드 나이트",
+            "Bad End Night",
+            "야마"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
         }
-      ]
+      ],
+      "namingReviewRequired": false,
+      "originalTitle": "Bad ∞ End ∞ Night"
     },
     {
       "index": 427,
@@ -28599,7 +29704,8 @@
           "writer": "PinocchioP"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 428,
@@ -28740,7 +29846,8 @@
           "quote": "n-buna 나부나"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 430,
@@ -28750,12 +29857,11 @@
       "durationSeconds": 309,
       "youtubeUrl": "https://www.youtube.com/watch?v=lvPRs_HC7Wg",
       "id": "26261bf2-171c-5fef-99fa-a587ac0feaae",
-      "title": "ANTI THE∞HOLiC",
+      "title": "안티 디 인피니트 홀릭",
       "tags": [
         "cosMo폭주P",
         "ANTI THEHOLiC",
-        "안티디인피니트홀릭",
-        "안티더홀릭"
+        "안티디인피니트홀릭"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -28785,6 +29891,16 @@
           "retrievedEvidenceMatched": true,
           "retrievalUrl": "https://www.youtube.com/results?search_query=%5BOfficial%5D%20ANTI%20THE%E2%88%9EHOLiC%20%2F%20cosMo%EF%BC%A0Bousou-P%20feat.%20Kagamine%20Rin%2C%20Megurine%20Luka%20%EA%B0%80%EC%82%AC",
           "checkedAt": "2026-10-27T15:58:28.8055138Z"
+        },
+        {
+          "url": "https://m.namu.moe/w/ANTI%20THE%E2%88%9EHOLiC",
+          "quote": "안티 디 인피니트 홀릭",
+          "kind": "page",
+          "retrievalUrl": "https://m.namu.moe/w/ANTI%20THE%E2%88%9EHOLiC",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "b812c80d3a1fded92c9abd3df6dd0d80094f21e916c6e24880a1f4cdd61631d9"
         }
       ],
       "audio": {
@@ -28796,7 +29912,7 @@
         "channels": 2,
         "durationSeconds": 308.743,
         "byteLength": 1885324,
-        "sha256": "4da303398c65dc5e4c8ed135177c991b63e678769b60f9f8c7207dbdbf66e78d"
+        "sha256": "0e75387b33672344fb54e51e7b5bc8a98b4351ecef3c52d39ed62dc29cf0a7bf"
       },
       "writers": [
         "cosMo@폭주P"
@@ -28810,21 +29926,13 @@
         },
         {
           "kind": "title",
-          "name": "안티디인피니트홀릭",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: ANTI THE∞HOLiC → 안티디인피니트홀릭 (2026-10-28). 외부 검색 인용 아님."
-        },
-        {
-          "kind": "title",
-          "name": "안티더홀릭",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: ANTI THE∞HOLiC → 안티더홀릭 (2026-10-28). 외부 검색 인용 아님."
+          "name": "안티 디 인피니트 홀릭",
+          "url": "https://m.namu.moe/w/ANTI%20THE%E2%88%9EHOLiC",
+          "quote": "안티 디 인피니트 홀릭",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "retiredAnswerTags": [
         {
@@ -28841,6 +29949,33 @@
             "안티디인피니트홀릭",
             "안티더홀릭"
           ]
+        },
+        {
+          "previousTitle": "ANTI THE∞HOLiC",
+          "previousTags": [
+            "cosMo폭주P",
+            "ANTI THEHOLiC",
+            "안티디인피니트홀릭",
+            "안티더홀릭"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "ANTI THE∞HOLiC",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "안티디인피니트홀릭",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: ANTI THE∞HOLiC → 안티디인피니트홀릭 (2026-10-28). 외부 검색 인용 아님."
+        },
+        {
+          "kind": "title",
+          "name": "안티더홀릭",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: ANTI THE∞HOLiC → 안티더홀릭 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -28976,7 +30111,8 @@
         "오와타P"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 433,
@@ -29022,8 +30158,10 @@
           "quote": "사용자 승인 영어 제목 일반 발음: NEXT STAGE → 넥스트스테이지 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -29118,8 +30256,11 @@
           "quote": "사용자 승인 영어 제목 일반 발음: Black Board → 블랙보드 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "통용 한국어 곡명·발음의 실제 사용 근거를 재검수 중입니다. 임의 번역·발음 변환을 적용하지 않았습니다.",
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -29198,7 +30339,8 @@
           "writer": "DECO*27"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 436,
@@ -29208,7 +30350,7 @@
       "durationSeconds": 240,
       "youtubeUrl": "https://www.youtube.com/watch?v=PBjSHA2b5gM",
       "id": "2c01b84c-6d6b-5a88-9bd4-bcbb53da1d7a",
-      "title": "Calc.",
+      "title": "캘크",
       "tags": [
         "JimmyThumbP",
         "지미섬P",
@@ -29259,6 +30401,15 @@
           "retrievedEvidenceMatched": true,
           "retrievalUrl": "https://www.youtube.com/results?search_query=%5B%ED%95%9C%EA%B8%80%5D%20%EA%B5%AC%EB%A3%A8%ED%83%80%EB%B0%8D%20-%20Calc.%20%EA%B0%80%EC%82%AC",
           "checkedAt": "2026-10-27T15:57:21.489Z"
+        },
+        {
+          "url": "https://m.blog.naver.com/bibi9902/224113330102",
+          "quote": "캘크",
+          "kind": "page",
+          "mainVerified": true,
+          "retrievalUrl": "https://m.blog.naver.com/bibi9902/224113330102",
+          "retrievedEvidenceMatched": true,
+          "retrievedAt": "2026-11-06"
         }
       ],
       "audio": {
@@ -29270,7 +30421,7 @@
         "channels": 2,
         "durationSeconds": 240.008,
         "byteLength": 1447466,
-        "sha256": "beee0a2b62132980f0a028795977c6f802f0a4ab6038340bc2ccbfadcfb2d4e5"
+        "sha256": "9a878071088059e0dbeed0cc3983289539999cb30dd6a467add18086cc8b64e5"
       },
       "writers": [
         "JimmyThumb-P"
@@ -29292,13 +30443,12 @@
         {
           "kind": "title",
           "name": "캘크",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: Calc. → 캘크 (2026-10-28). 외부 검색 인용 아님."
+          "url": "https://m.blog.naver.com/bibi9902/224113330102",
+          "quote": "캘크",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -29307,6 +30457,26 @@
           "addedTags": [
             "캘크"
           ]
+        },
+        {
+          "previousTitle": "Calc.",
+          "previousTags": [
+            "JimmyThumbP",
+            "지미섬P",
+            "Calc",
+            "캘크"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "Calc.",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "캘크",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Calc. → 캘크 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -29387,7 +30557,8 @@
             "미미"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 438,
@@ -29538,7 +30709,8 @@
             "미미"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 440,
@@ -29548,12 +30720,14 @@
       "durationSeconds": 131,
       "youtubeUrl": "https://www.youtube.com/watch?v=505rBX9MNcQ",
       "id": "8535aa58-84ab-5fd3-b979-904fea489529",
-      "title": "88☆彡",
+      "title": "88별",
       "tags": [
         "marasy",
         "kemu",
         "마라시",
-        "케무"
+        "케무",
+        "88별",
+        "호리에 쇼타"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -29575,6 +30749,16 @@
           "retrievedEvidenceMatched": true,
           "retrievalUrl": "https://search.naver.com/search.naver?query=88%E2%98%86%E5%BD%A1+%EB%A7%88%EB%9D%BC%EC%8B%9C+kemu&where=web",
           "retrievedAt": "2026-10-27T10:32:07.794444+00:00"
+        },
+        {
+          "url": "https://namu.moe/w/88%E2%98%86%E5%BD%A1",
+          "quote": "88별",
+          "kind": "page",
+          "retrievalUrl": "https://namu.moe/w/88%E2%98%86%E5%BD%A1",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "c2a3e57720c7abf75bc3fce6ab6edf7f09251d1113ddb942f37c1b3d45dc481c"
         }
       ],
       "audio": {
@@ -29586,7 +30770,7 @@
         "channels": 2,
         "durationSeconds": 131.015,
         "byteLength": 773984,
-        "sha256": "063fe4462bf01028ddf2d00bdd1ac7db98e571757cf1f5498b0b0605021bd97d"
+        "sha256": "6870c838cbc7d68e62fbf508cd373b29bc1aabef995c526e5b25af24d0f9a4bb"
       },
       "writers": [
         "marasy",
@@ -29612,9 +30796,48 @@
           "name": "88彡",
           "url": null,
           "quote": "88☆彡"
+        },
+        {
+          "kind": "title",
+          "name": "88별",
+          "url": "https://namu.moe/w/88%E2%98%86%E5%BD%A1",
+          "quote": "88별",
+          "mainVerified": true
+        },
+        {
+          "kind": "writer",
+          "name": "마라시",
+          "url": "https://namu.moe/w/88%E2%98%86%E5%BD%A1",
+          "quote": "마라시",
+          "mainVerified": true,
+          "writer": "marasy",
+          "canonicalName": "marasy"
+        },
+        {
+          "kind": "writer",
+          "name": "호리에 쇼타",
+          "url": "https://namu.moe/w/88%E2%98%86%E5%BD%A1",
+          "quote": "호리에 쇼타",
+          "mainVerified": true,
+          "writer": "kemu",
+          "canonicalName": "kemu"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false,
+      "originalTitle": "88☆彡",
+      "namingHistory": [
+        {
+          "previousTitle": "88☆彡",
+          "previousTags": [
+            "marasy",
+            "kemu",
+            "마라시",
+            "케무"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ]
     },
     {
       "index": 441,
@@ -29793,7 +31016,7 @@
       "durationSeconds": 240,
       "youtubeUrl": "https://www.youtube.com/watch?v=YVD1RLI7klc",
       "id": "acc354b5-dfef-51dc-8bde-d1b35c9e2481",
-      "title": "STAGE OF SEKAI",
+      "title": "스테이지 오브 세카이",
       "tags": [
         "HarryP",
         "하리P",
@@ -29828,6 +31051,16 @@
           "quote": "하츠네 미쿠 - STAGE OF SEKAI / HarryP / 한글 가사",
           "checkedAt": "2026-10-28",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=i2lP-rAJa4U",
+          "quote": "스테이지 오브 세카이",
+          "kind": "page",
+          "retrievalUrl": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Di2lP-rAJa4U&format=json",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "25a9a0b3d232817da2b229a84c8533b52464ad00f2d9d6d187c8ad61c651c55b"
         }
       ],
       "audio": {
@@ -29839,7 +31072,7 @@
         "channels": 2,
         "durationSeconds": 239.962,
         "byteLength": 1470122,
-        "sha256": "d90cab92aae42ad0b38c4d971451f9c0fb5a3dae3b1e745ed89ce4ba7ff879f7"
+        "sha256": "26e323b04210170dc264ba2be2b8c351c099ce637168be42b889f47c85a05524"
       },
       "writers": [
         "HarryP"
@@ -29854,14 +31087,13 @@
         },
         {
           "kind": "title",
-          "name": "스테이지오브세카이",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: STAGE OF SEKAI → 스테이지오브세카이 (2026-10-28). 외부 검색 인용 아님."
+          "name": "스테이지 오브 세카이",
+          "url": "https://www.youtube.com/watch?v=i2lP-rAJa4U",
+          "quote": "스테이지 오브 세카이",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -29870,6 +31102,26 @@
           "addedTags": [
             "스테이지오브세카이"
           ]
+        },
+        {
+          "previousTitle": "STAGE OF SEKAI",
+          "previousTags": [
+            "HarryP",
+            "하리P",
+            "STAGE OF SEKAI",
+            "스테이지오브세카이"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "STAGE OF SEKAI",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "스테이지오브세카이",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: STAGE OF SEKAI → 스테이지오브세카이 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -30165,7 +31417,8 @@
         "미키토P"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 448,
@@ -30208,7 +31461,8 @@
         "카라스야사보우"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 449,
@@ -30269,7 +31523,8 @@
           "writer": "DECO*27"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 450,
@@ -30338,7 +31593,8 @@
           "writer": "DECO*27"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 451,
@@ -30475,7 +31731,8 @@
             "사십미터피"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 453,
@@ -30562,7 +31819,7 @@
       "durationSeconds": 215,
       "youtubeUrl": "https://www.youtube.com/watch?v=nfpYhYtHuKo",
       "id": "1ff5691a-87ce-574f-b8f0-1974bddd46a1",
-      "title": "Flyer!",
+      "title": "플라이어!",
       "tags": [
         "Chinozo",
         "Flyer",
@@ -30597,6 +31854,16 @@
           "checkedAt": "2026-10-27T15:58:20Z",
           "url": "https://www.youtube.com/watch?v=jGhgxxlVqKE",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://jadal.wiki/weekly/752",
+          "quote": "플라이어",
+          "kind": "page",
+          "retrievalUrl": "https://jadal.wiki/weekly/752",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "e9dc903c4f1023763e154fb048d7274fca0ad7f8b3cbef64528830ad60b1b917"
         }
       ],
       "audio": {
@@ -30608,7 +31875,7 @@
         "channels": 2,
         "durationSeconds": 214.455,
         "byteLength": 1314717,
-        "sha256": "12976444cf8fa1c8547d1ecbb232fad9dd9ba6a56c18199f8927d591d532a9de"
+        "sha256": "11cb81ff9f4d757e16acf2599eb06db16948a0bc9fe2bea86206cfad3e170fba"
       },
       "writers": [
         "Chinozo"
@@ -30621,13 +31888,6 @@
           "quote": "Flyer!"
         },
         {
-          "kind": "title",
-          "name": "플라이어",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: Flyer! → 플라이어 (2026-10-28). 외부 검색 인용 아님."
-        },
-        {
           "kind": "writer",
           "name": "치노조",
           "canonicalName": "Chinozo",
@@ -30635,10 +31895,23 @@
           "origin": "user_authorized_writer_alias",
           "url": null,
           "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Chinozo → 치노조. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "title",
+          "name": "플라이어!",
+          "url": "https://jadal.wiki/weekly/752",
+          "quote": "플라이어",
+          "mainVerified": true
+        },
+        {
+          "kind": "punctuation",
+          "name": "플라이어",
+          "url": null,
+          "quote": "플라이어!",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -30654,6 +31927,26 @@
           "addedTags": [
             "치노조"
           ]
+        },
+        {
+          "previousTitle": "Flyer!",
+          "previousTags": [
+            "Chinozo",
+            "Flyer",
+            "플라이어",
+            "치노조"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "Flyer!",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "플라이어",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Flyer! → 플라이어 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -30753,7 +32046,7 @@
       "durationSeconds": 206,
       "youtubeUrl": "https://www.youtube.com/watch?v=BUyrhLRzAwU",
       "id": "9a31dee0-975a-5276-a40f-d0e380a6db05",
-      "title": "Awake Now",
+      "title": "어웨이크 나우",
       "tags": [
         "Yunosuke",
         "유노스케",
@@ -30788,6 +32081,16 @@
           "retrievedEvidenceMatched": true,
           "retrievalUrl": "https://www.youtube.com/results?search_query=Awake%20Now%20%2F%20Vivid%20BAD%20SQUAD%20%C3%97%20%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF%20%EA%B0%80%EC%82%AC",
           "checkedAt": "2026-10-27T15:58:28.8056975Z"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Qt_ikNP5kiQ",
+          "quote": "어웨이크 나우",
+          "kind": "page",
+          "retrievalUrl": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DQt_ikNP5kiQ&format=json",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "663f17f2d713b391e3b4b9b64f896e83ce4ba55341de224219356c1a837b4736"
         }
       ],
       "audio": {
@@ -30799,7 +32102,7 @@
         "channels": 2,
         "durationSeconds": 205.515,
         "byteLength": 1222917,
-        "sha256": "9ea0970443839f7fbe3e479e492377d393100ba0edf779da9547766e11aa770b"
+        "sha256": "d4d80221948fe2df2d17f5356a2944bbbc0fb4f51e80f69d37a0c2cfce5d4d4e"
       },
       "writers": [
         "Yunosuke"
@@ -30814,14 +32117,13 @@
         },
         {
           "kind": "title",
-          "name": "어웨이크나우",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: Awake Now → 어웨이크나우 (2026-10-28). 외부 검색 인용 아님."
+          "name": "어웨이크 나우",
+          "url": "https://www.youtube.com/watch?v=Qt_ikNP5kiQ",
+          "quote": "어웨이크 나우",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -30830,6 +32132,26 @@
           "addedTags": [
             "어웨이크나우"
           ]
+        },
+        {
+          "previousTitle": "Awake Now",
+          "previousTags": [
+            "Yunosuke",
+            "유노스케",
+            "Awake Now",
+            "어웨이크나우"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "Awake Now",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "어웨이크나우",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Awake Now → 어웨이크나우 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -30874,7 +32196,8 @@
         "카사무라 토타"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 458,
@@ -30917,7 +32240,8 @@
         "칸자키 이오리"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 459,
@@ -30996,7 +32320,8 @@
             "구이아노"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 460,
@@ -31039,7 +32364,8 @@
         "푸스"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 461,
@@ -31296,7 +32622,8 @@
         "푸스"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 465,
@@ -31306,7 +32633,7 @@
       "durationSeconds": 235,
       "youtubeUrl": "https://www.youtube.com/watch?v=jvoW9lJdirk",
       "id": "00c6ad9c-1d83-5f1c-8eb0-b7ea8cb0fc9d",
-      "title": "-ERROR",
+      "title": "에러",
       "tags": [
         "niki",
         "ERROR",
@@ -31341,6 +32668,16 @@
           "retrievedEvidenceMatched": true,
           "retrievalUrl": "https://www.youtube.com/results?search_query=ERROR%20niki%20Lily%20%EA%B0%80%EC%82%AC",
           "checkedAt": "2026-10-28"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=makSTSeTUt4",
+          "quote": "에러",
+          "kind": "page",
+          "retrievalUrl": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DmakSTSeTUt4&format=json",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "75fd508fb1b03cf0a92cc2889c0af9102cb7b0ba6243064d5f53af70d0b2f29c"
         }
       ],
       "audio": {
@@ -31352,7 +32689,7 @@
         "channels": 2,
         "durationSeconds": 234.645,
         "byteLength": 1434359,
-        "sha256": "ae65ac823733223d8879c394b3cfb6e5a3716877907204e7c4b08ba980570ecb"
+        "sha256": "16fbca32fefd3e57d70653b0bde672f217f8a7595d6553df9a80dd6e4ceeacc5"
       },
       "writers": [
         "niki"
@@ -31365,13 +32702,6 @@
           "quote": "-ERROR"
         },
         {
-          "kind": "title",
-          "name": "에러",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: -ERROR → 에러 (2026-10-28). 외부 검색 인용 아님."
-        },
-        {
           "kind": "writer",
           "name": "니키",
           "canonicalName": "niki",
@@ -31379,10 +32709,16 @@
           "origin": "user_authorized_writer_alias",
           "url": null,
           "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): niki → 니키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "title",
+          "name": "에러",
+          "url": "https://www.youtube.com/watch?v=makSTSeTUt4",
+          "quote": "에러",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -31398,6 +32734,26 @@
           "addedTags": [
             "니키"
           ]
+        },
+        {
+          "previousTitle": "-ERROR",
+          "previousTags": [
+            "niki",
+            "ERROR",
+            "에러",
+            "니키"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "-ERROR",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "에러",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: -ERROR → 에러 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -31442,7 +32798,8 @@
         "스코프"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 467,
@@ -31521,7 +32878,8 @@
             "사츠키가텐코모리"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 468,
@@ -31572,7 +32930,8 @@
         "우메토라"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 469,
@@ -31582,7 +32941,7 @@
       "durationSeconds": 253,
       "youtubeUrl": "https://www.youtube.com/watch?v=1TgeWq2zgFY",
       "id": "04e0e2e6-319b-58e3-9c75-63ec47a900eb",
-      "title": "twitter",
+      "title": "트위터",
       "tags": [
         "devilishP",
         "twitter",
@@ -31616,6 +32975,16 @@
           "retrievedEvidenceMatched": true,
           "retrievalUrl": "https://www.youtube.com/results?search_query=twitter%2F%ED%8A%B8%EC%9C%84%ED%84%B0%E3%80%90COVER%20by%20Guriri%E3%80%91%20%EA%B0%80%EC%82%AC",
           "checkedAt": "2026-10-27T15:57:21.489Z"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=1TgeWq2zgFY",
+          "quote": "트위터",
+          "kind": "page",
+          "retrievalUrl": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D1TgeWq2zgFY&format=json",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "9dc8a8389535ca08a77001783c8e4ee36080f3108dccd4e95f9b5ddbfd04f28a"
         }
       ],
       "audio": {
@@ -31627,7 +32996,7 @@
         "channels": 2,
         "durationSeconds": 252.999,
         "byteLength": 1552897,
-        "sha256": "10648e295455b2dee717670d36f1ada2fcfee7114fe35aedb779142d30d99f1e"
+        "sha256": "882663a3ea2aba7015ed559e71441e3cd581388e57d38c4bd7ac6615e48f6b6d"
       },
       "writers": [
         "devilishP"
@@ -31636,13 +33005,12 @@
         {
           "kind": "title",
           "name": "트위터",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: twitter → 트위터 (2026-10-28). 외부 검색 인용 아님."
+          "url": "https://www.youtube.com/watch?v=1TgeWq2zgFY",
+          "quote": "트위터",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "retiredAnswerTags": [
         {
@@ -31658,6 +33026,25 @@
           "addedTags": [
             "트위터"
           ]
+        },
+        {
+          "previousTitle": "twitter",
+          "previousTags": [
+            "devilishP",
+            "twitter",
+            "트위터"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "twitter",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "트위터",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: twitter → 트위터 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -31746,7 +33133,8 @@
             "버즈지"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 471,
@@ -31809,7 +33197,8 @@
             "니키"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 472,
@@ -32135,7 +33524,8 @@
         "하루마키고한"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 477,
@@ -32213,8 +33603,11 @@
           "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): niki → 니키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "통용 한국어 곡명·발음의 실제 사용 근거를 재검수 중입니다. 임의 번역·발음 변환을 적용하지 않았습니다.",
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -32294,8 +33687,10 @@
           "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Nem → 넴. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
         }
       ],
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -32364,7 +33759,8 @@
           "quote": "로스트 원의 호곡 가사 네루 Neru feat. 카가미네 린"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 480,
@@ -32374,7 +33770,7 @@
       "durationSeconds": 204,
       "youtubeUrl": "https://www.youtube.com/watch?v=36SxEHQeDi8",
       "id": "46aedc8c-9c34-58c5-9f15-d28eab7fbbbf",
-      "title": "WAVE",
+      "title": "웨이브",
       "tags": [
         "niki",
         "WAVE",
@@ -32409,6 +33805,15 @@
           "retrievedEvidenceMatched": true,
           "kind": "youtube_search",
           "url": "https://www.youtube.com/watch?v=36SxEHQeDi8"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Vbtw7ip79-4",
+          "quote": "#niki #vocaloid #lily #WAVE #ボカロ #보컬로이드 #프로세카 #프세카 #프로젝트세카이 #보카로 #웨이브 #니키",
+          "kind": "page",
+          "retrievalUrl": "https://www.youtube.com/watch?v=Vbtw7ip79-4",
+          "retrievedAt": "2026-11-06",
+          "mainVerified": true,
+          "retrievedEvidenceMatched": true
         }
       ],
       "audio": {
@@ -32420,19 +33825,12 @@
         "channels": 2,
         "durationSeconds": 203.576,
         "byteLength": 1235326,
-        "sha256": "05034d8b4a2ffb3a292f3bb310d8d49b4a0ec93daf8944b070987f6d52a37453"
+        "sha256": "5b6f84295a37c69d6b5757eaad822c8b8cae439c1d92f9fbc61b867bc9f2d14a"
       },
       "writers": [
         "niki"
       ],
       "aliases": [
-        {
-          "kind": "title",
-          "name": "웨이브",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: WAVE → 웨이브 (2026-10-28). 외부 검색 인용 아님."
-        },
         {
           "kind": "writer",
           "name": "니키",
@@ -32441,10 +33839,16 @@
           "origin": "user_authorized_writer_alias",
           "url": null,
           "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): niki → 니키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "title",
+          "name": "웨이브",
+          "url": "https://www.youtube.com/watch?v=Vbtw7ip79-4",
+          "quote": "#niki #vocaloid #lily #WAVE #ボカロ #보컬로이드 #프로세카 #프세카 #프로젝트세카이 #보카로 #웨이브 #니키",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -32460,6 +33864,26 @@
           "addedTags": [
             "니키"
           ]
+        },
+        {
+          "previousTitle": "WAVE",
+          "previousTags": [
+            "niki",
+            "WAVE",
+            "웨이브",
+            "니키"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "WAVE",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "웨이브",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: WAVE → 웨이브 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -32512,7 +33936,8 @@
         "아사"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 482,
@@ -32805,7 +34230,8 @@
             "라스트노트"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 486,
@@ -32914,7 +34340,8 @@
         "아오키 겟코"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 488,
@@ -32967,7 +34394,8 @@
         "야마△"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 489,
@@ -32977,7 +34405,7 @@
       "durationSeconds": 194,
       "youtubeUrl": "https://www.youtube.com/watch?v=rXee9CxYmTY",
       "id": "f3ead26c-26dd-55b6-9b42-9c739d939b9c",
-      "title": "ELECT",
+      "title": "일렉트",
       "tags": [
         "niki",
         "ELECT",
@@ -33012,6 +34440,15 @@
           "quote": "ELECT / niki feat.Lily",
           "checkedAt": "2026-10-28",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://m.blog.naver.com/clapclapbin/224151307010",
+          "quote": "일렉트",
+          "kind": "page",
+          "mainVerified": true,
+          "retrievalUrl": "https://m.blog.naver.com/clapclapbin/224151307010",
+          "retrievedEvidenceMatched": true,
+          "retrievedAt": "2026-11-06"
         }
       ],
       "audio": {
@@ -33023,19 +34460,12 @@
         "channels": 2,
         "durationSeconds": 193.244,
         "byteLength": 1180490,
-        "sha256": "9122c25b8b1120a5a7e27019c7ab5de85aec12a11266a4b37d26231ec886eee1"
+        "sha256": "cb9117dd27d690642dd91d24c3cfa4c04f6d13245d298ab9bfbca7cd7a55b8a0"
       },
       "writers": [
         "niki"
       ],
       "aliases": [
-        {
-          "kind": "title",
-          "name": "일렉트",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: ELECT → 일렉트 (2026-10-28). 외부 검색 인용 아님."
-        },
         {
           "kind": "writer",
           "name": "니키",
@@ -33044,10 +34474,16 @@
           "origin": "user_authorized_writer_alias",
           "url": null,
           "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): niki → 니키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "title",
+          "name": "일렉트",
+          "url": "https://m.blog.naver.com/clapclapbin/224151307010",
+          "quote": "일렉트",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -33063,6 +34499,26 @@
           "addedTags": [
             "니키"
           ]
+        },
+        {
+          "previousTitle": "ELECT",
+          "previousTags": [
+            "niki",
+            "ELECT",
+            "일렉트",
+            "니키"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "ELECT",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "일렉트",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: ELECT → 일렉트 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -33131,8 +34587,10 @@
         }
       ],
       "singerAliases": [],
-      "namingReviewReasons": [],
-      "namingReviewRequired": false,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
+      "namingReviewRequired": true,
       "namingHistory": [
         {
           "date": "2026-10-29",
@@ -33151,11 +34609,12 @@
       "durationSeconds": 237,
       "youtubeUrl": "https://www.youtube.com/watch?v=CniSkoogfZs",
       "id": "aedf8335-f6c3-5bae-882b-425dd1580d25",
-      "title": "6900000000",
+      "title": "69억",
       "tags": [
         "HAMO",
         "kyotn",
-        "하모"
+        "하모",
+        "69억"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -33177,6 +34636,16 @@
           "retrievedEvidenceMatched": true,
           "retrievalUrl": "http://vocaro.wikidot.com/6900000000",
           "retrievedAt": "2026-10-27T10:54:47.800742+00:00"
+        },
+        {
+          "url": "https://jadal.wiki/weekly/174",
+          "quote": "69억",
+          "kind": "page",
+          "retrievalUrl": "https://jadal.wiki/weekly/174",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "7d64ed4c34dd3bf8e96658d8e14e96ba357200ff66e52fb88df949391e9c972b"
         }
       ],
       "audio": {
@@ -33188,7 +34657,7 @@
         "channels": 2,
         "durationSeconds": 236.932,
         "byteLength": 1437805,
-        "sha256": "9108c87191f4f5c82bd39c61c4f15499e77bee0554eee09851acc84cff2f5f7b"
+        "sha256": "10492894f8b5d87a084e8990628c46b4ef511c6348e4de47684309590b333d45"
       },
       "writers": [
         "HAMO",
@@ -33203,6 +34672,13 @@
           "origin": "user_authorized_writer_alias",
           "url": null,
           "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): HAMO → 하모. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "title",
+          "name": "69억",
+          "url": "https://jadal.wiki/weekly/174",
+          "quote": "69억",
+          "mainVerified": true
         }
       ],
       "singerAliases": [],
@@ -33213,8 +34689,19 @@
           "addedTags": [
             "하모"
           ]
+        },
+        {
+          "previousTitle": "6900000000",
+          "previousTags": [
+            "HAMO",
+            "kyotn",
+            "하모"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
         }
-      ]
+      ],
+      "namingReviewRequired": false,
+      "originalTitle": "6900000000"
     },
     {
       "index": 492,
@@ -33283,8 +34770,11 @@
           "quote": "사용자 승인 영어 제목 일반 발음: HEAVEN → 헤븐 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "통용 한국어 곡명·발음의 실제 사용 근거를 재검수 중입니다. 임의 번역·발음 변환을 적용하지 않았습니다.",
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -33589,7 +35079,8 @@
           "writer": "PinocchioP"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 497,
@@ -33632,7 +35123,8 @@
         "벌룬"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 498,
@@ -33683,7 +35175,8 @@
         "니루 카지츠"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 499,
@@ -33739,7 +35232,8 @@
           "quote": "kemu(케무)"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 500,
@@ -33782,7 +35276,8 @@
         "이요와"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 501,
@@ -33845,7 +35340,8 @@
             "에이포"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 502,
@@ -33855,7 +35351,7 @@
       "durationSeconds": 181,
       "youtubeUrl": "https://www.youtube.com/watch?v=QWFw2ueFdnQ",
       "id": "f041ec32-e15b-5b2b-9b74-07bac6f966bd",
-      "title": "Catchy !?",
+      "title": "캐치!?",
       "tags": [
         "r906",
         "Catchy",
@@ -33881,6 +35377,15 @@
           "retrievedEvidenceMatched": true,
           "retrievalUrl": "https://www.youtube.com/results?search_query=Catchy%20%21%3F%20%2F%20r-906%20feat.%20Ci%20flower%20%EA%B0%80%EC%82%AC",
           "checkedAt": "2026-10-27T15:58:28.8059842Z"
+        },
+        {
+          "url": "http://vocaro.wikidot.com/catchy",
+          "quote": "소, 유 아 캐치.",
+          "kind": "page",
+          "retrievalUrl": "http://vocaro.wikidot.com/catchy",
+          "retrievedAt": "2026-11-06",
+          "mainVerified": true,
+          "retrievedEvidenceMatched": true
         }
       ],
       "audio": {
@@ -33892,7 +35397,7 @@
         "channels": 2,
         "durationSeconds": 180.008,
         "byteLength": 1103321,
-        "sha256": "f54daff99c2f13b9ab5eb0cbab1b445128214c901a7d01cdeac7f2c85cf0228a"
+        "sha256": "90928e5ff944fec1d234069c33fe00098b5a72171910f1ac2083f8d71b073596"
       },
       "writers": [
         "r-906"
@@ -33906,14 +35411,20 @@
         },
         {
           "kind": "title",
+          "name": "캐치!?",
+          "url": "http://vocaro.wikidot.com/catchy",
+          "quote": "소, 유 아 캐치.",
+          "mainVerified": true
+        },
+        {
+          "kind": "punctuation",
           "name": "캐치",
           "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: Catchy !? → 캐치 (2026-10-28). 외부 검색 인용 아님."
+          "quote": "캐치!?",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -33922,6 +35433,25 @@
           "addedTags": [
             "캐치"
           ]
+        },
+        {
+          "previousTitle": "Catchy !?",
+          "previousTags": [
+            "r906",
+            "Catchy",
+            "캐치"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "Catchy !?",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "캐치",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Catchy !? → 캐치 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -33974,7 +35504,8 @@
         "시이노 미린"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 504,
@@ -34026,7 +35557,8 @@
           "quote": "Kanaria カナリア | 카나리아"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 505,
@@ -34163,7 +35695,8 @@
             "사십미터피"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 507,
@@ -34234,7 +35767,8 @@
             "헤븐즈"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 508,
@@ -34289,8 +35823,10 @@
           "quote": "사용자 승인 영어 제목 일반 발음: NEVERLAND → 네버랜드 (2026-10-28). 외부 검색 인용 아님."
         }
       ],
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -34351,7 +35887,8 @@
         "이요와"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 510,
@@ -34517,7 +36054,7 @@
       "durationSeconds": 325,
       "youtubeUrl": "https://www.youtube.com/watch?v=uGZ0I71Yawo",
       "id": "1e5c0ea6-5899-5d03-9f48-328c5666fb2a",
-      "title": "Happppy song",
+      "title": "해피 송",
       "tags": [
         "SOOOO",
         "Happppy song",
@@ -34543,6 +36080,15 @@
           "retrievedEvidenceMatched": true,
           "retrievalUrl": "https://www.youtube.com/results?search_query=Happppy%20song%20SOOOO%20%EA%B0%80%EC%82%AC",
           "checkedAt": "2026-10-28"
+        },
+        {
+          "url": "https://gall.dcinside.com/board/view/?id=vocaloid&no=227367",
+          "quote": "해피 송",
+          "kind": "page",
+          "mainVerified": true,
+          "retrievalUrl": "https://gall.dcinside.com/board/view/?id=vocaloid&no=227367",
+          "retrievedEvidenceMatched": true,
+          "retrievedAt": "2026-11-06"
         }
       ],
       "audio": {
@@ -34554,7 +36100,7 @@
         "channels": 2,
         "durationSeconds": 324.134,
         "byteLength": 1960410,
-        "sha256": "e2084cdecfa9ddfd9c4ef5810c3dd73fb2390097047138cf0ea86d9e0504063a"
+        "sha256": "7d6f368004386cabf8b630183541a4162c2e51187fee86c1ac30dacb0b0c65a6"
       },
       "writers": [
         "SOOOO"
@@ -34562,14 +36108,13 @@
       "aliases": [
         {
           "kind": "title",
-          "name": "해피송",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: Happppy song → 해피송 (2026-10-28). 외부 검색 인용 아님."
+          "name": "해피 송",
+          "url": "https://gall.dcinside.com/board/view/?id=vocaloid&no=227367",
+          "quote": "해피 송",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -34578,6 +36123,25 @@
           "addedTags": [
             "해피송"
           ]
+        },
+        {
+          "previousTitle": "Happppy song",
+          "previousTags": [
+            "SOOOO",
+            "Happppy song",
+            "해피송"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "Happppy song",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "해피송",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Happppy song → 해피송 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -34704,7 +36268,8 @@
         "피노키오피"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 515,
@@ -34755,7 +36320,8 @@
         "이요와"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 516,
@@ -34806,7 +36372,8 @@
         "피콘"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 517,
@@ -34857,7 +36424,8 @@
         "마후마후"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 518,
@@ -34908,7 +36476,8 @@
         "히후미"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 519,
@@ -34939,7 +36508,11 @@
       },
       "writers": [],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ]
     },
     {
       "index": 520,
@@ -35025,7 +36598,8 @@
       "id": "5b9f3637-79d4-5c69-935b-63f0968a5b0c",
       "title": "0",
       "tags": [
-        "cosMo폭주P"
+        "cosMo폭주P",
+        "0"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -35047,6 +36621,16 @@
           "retrievedEvidenceMatched": true,
           "retrievalUrl": "https://search.naver.com/search.naver?query=0+ZERO+cosMo+%EB%B3%B4%EC%BB%AC%EB%A1%9C%EC%9D%B4%EB%93%9C",
           "retrievedAt": "2026-10-27T10:47:22.451627+00:00"
+        },
+        {
+          "url": "https://m.namu.moe/w/0%28VOCALOID%20%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90%20%EA%B3%A1%29",
+          "quote": "0",
+          "kind": "page",
+          "retrievalUrl": "https://m.namu.moe/w/0%28VOCALOID%20%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90%20%EA%B3%A1%29",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "6a32b80798ea316c1d1a40969da75379a9d56417bc682f0969317a314c20de85"
         }
       ],
       "audio": {
@@ -35058,13 +36642,22 @@
         "channels": 2,
         "durationSeconds": 213.932,
         "byteLength": 1313112,
-        "sha256": "056943b2cdcd827576b9441cacde232b5db7b1d59e857defa5bfd59fe4adbd87"
+        "sha256": "5ea37474fb2f3f0456faa19f26d8353c4913bbc0a286b6827702d1e62ecfe9ca"
       },
       "writers": [
         "cosMo@폭주P"
       ],
-      "aliases": [],
-      "singerAliases": []
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "0",
+          "url": "https://m.namu.moe/w/0%28VOCALOID%20%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90%20%EA%B3%A1%29",
+          "quote": "0",
+          "mainVerified": true
+        }
+      ],
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 522,
@@ -35115,7 +36708,8 @@
         "히이라기 키라이"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 523,
@@ -35166,7 +36760,8 @@
         "r-906"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 524,
@@ -35217,7 +36812,8 @@
         "you맨"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 525,
@@ -35268,7 +36864,8 @@
         "유기카"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 526,
@@ -35518,7 +37115,11 @@
       },
       "writers": [],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ]
     },
     {
       "index": 530,
@@ -35571,7 +37172,8 @@
         "야마△"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 531,
@@ -35649,7 +37251,8 @@
             "료"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 532,
@@ -35709,7 +37312,8 @@
           "quote": "マレツ, 마레츠"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 533,
@@ -35719,7 +37323,7 @@
       "durationSeconds": 218,
       "youtubeUrl": "https://www.youtube.com/watch?v=9LRMzRCYMlw",
       "id": "922c9535-d760-532c-ab72-913aace4861e",
-      "title": "SPiCa",
+      "title": "스피카",
       "tags": [
         "토쿠",
         "kentax",
@@ -35746,6 +37350,15 @@
           "retrievedEvidenceMatched": true,
           "retrievalUrl": "https://www.youtube.com/results?search_query=%E3%80%90%ED%95%98%EC%B8%A0%EB%84%A4%20%EB%AF%B8%EC%BF%A0%E3%80%91%20SPiCa%20%E3%80%90%ED%86%A0%EC%BF%A0P%20%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90%20%EA%B3%A1%E3%80%91%20%EC%9E%90%EB%A7%89%EB%B3%B8%20%EA%B0%80%EC%82%AC",
           "checkedAt": "2026-10-27T15:57:21.489Z"
+        },
+        {
+          "url": "http://vocaro.wikidot.com/spica",
+          "quote": "스피카",
+          "kind": "page",
+          "retrievalUrl": "http://vocaro.wikidot.com/spica",
+          "mainVerified": true,
+          "retrievedEvidenceMatched": true,
+          "retrievedAt": "2026-11-06"
         }
       ],
       "audio": {
@@ -35757,7 +37370,7 @@
         "channels": 2,
         "durationSeconds": 217.172,
         "byteLength": 1330099,
-        "sha256": "970670b0f46b84b1aae0b9b5962d0137dc4c3f785270325814b26e995968875f"
+        "sha256": "4d92d5126a6fdd1198d3e224452c0e2cdb2dc16c2c6e4345fe944da701b40bce"
       },
       "writers": [
         "토쿠",
@@ -35767,13 +37380,12 @@
         {
           "kind": "title",
           "name": "스피카",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: SPiCa → 스피카 (2026-10-28). 외부 검색 인용 아님."
+          "url": "http://vocaro.wikidot.com/spica",
+          "quote": "스피카",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -35782,6 +37394,26 @@
           "addedTags": [
             "스피카"
           ]
+        },
+        {
+          "previousTitle": "SPiCa",
+          "previousTags": [
+            "토쿠",
+            "kentax",
+            "SPiCa",
+            "스피카"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "SPiCa",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "스피카",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: SPiCa → 스피카 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -35913,7 +37545,8 @@
       ],
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false
     },
     {
       "index": 535,
@@ -35982,7 +37615,8 @@
           "writer": "DECO*27"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 536,
@@ -36344,7 +37978,8 @@
             "미미"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 541,
@@ -36387,7 +38022,8 @@
         "마사라다"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 542,
@@ -36457,7 +38093,8 @@
             "에이포"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 543,
@@ -36467,7 +38104,7 @@
       "durationSeconds": 194,
       "youtubeUrl": "https://www.youtube.com/watch?v=crCS77wqxTI",
       "id": "fdad22f6-9080-59a4-a5ba-d5e19e8b55df",
-      "title": "Forward",
+      "title": "포워드",
       "tags": [
         "R Sound Design",
         "Forward",
@@ -36494,6 +38131,16 @@
           "retrievedEvidenceMatched": true,
           "kind": "youtube_search",
           "url": "https://www.youtube.com/watch?v=crCS77wqxTI"
+        },
+        {
+          "url": "https://jadal.wiki/weekly/689",
+          "quote": "포워드",
+          "kind": "page",
+          "retrievalUrl": "https://jadal.wiki/weekly/689",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "40f111f5aa348cd312cb1dd74cdeb1b7a1b500f5ec4a5906ac78cf69eaf5102b"
         }
       ],
       "audio": {
@@ -36505,19 +38152,12 @@
         "channels": 2,
         "durationSeconds": 193.754,
         "byteLength": 1189551,
-        "sha256": "a0b80c7d8be036e2f624bb049539fbe9759b8089757be54fbdef9fdb72d2f6ab"
+        "sha256": "dee85ebc90e5dfcca9546fbf51d48700909b1f3101be95cdd029bf3555c2d8a1"
       },
       "writers": [
         "R Sound Design"
       ],
       "aliases": [
-        {
-          "kind": "title",
-          "name": "포워드",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: Forward → 포워드 (2026-10-28). 외부 검색 인용 아님."
-        },
         {
           "kind": "writer",
           "name": "알사운드디자인",
@@ -36526,10 +38166,16 @@
           "origin": "user_authorized_writer_alias",
           "url": null,
           "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): R Sound Design → 알사운드디자인. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "title",
+          "name": "포워드",
+          "url": "https://jadal.wiki/weekly/689",
+          "quote": "포워드",
+          "mainVerified": true
         }
       ],
       "namingReviewRequired": false,
-      "namingReviewReasons": [],
       "singerAliases": [],
       "namingHistory": [
         {
@@ -36545,6 +38191,26 @@
           "addedTags": [
             "알사운드디자인"
           ]
+        },
+        {
+          "previousTitle": "Forward",
+          "previousTags": [
+            "R Sound Design",
+            "Forward",
+            "포워드",
+            "알사운드디자인"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "Forward",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "포워드",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Forward → 포워드 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -36597,7 +38263,8 @@
           "quote": "자칭, 음악 애호가"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 545,
@@ -36640,7 +38307,8 @@
         "Fushi"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 546,
@@ -36749,7 +38417,8 @@
         "로오아루"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 548,
@@ -36800,7 +38469,8 @@
         "KISARA"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 549,
@@ -36843,7 +38513,8 @@
         "이나바 쿠모리"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 550,
@@ -36903,7 +38574,8 @@
           "quote": "이름 koyori (電ポルP) 덴포루P"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 551,
@@ -36919,7 +38591,8 @@
         "sasakureUK",
         "DECO27",
         "사사쿠레P",
-        "데코"
+        "데코",
+        "39"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -36941,6 +38614,16 @@
           "retrievedEvidenceMatched": true,
           "retrievalUrl": "https://www.youtube.com/watch?v=ecU_uJRzhfk",
           "retrievedAt": "2026-10-27T10:35:57.814559+00:00"
+        },
+        {
+          "url": "https://asia.sega.com/mega39splus/kr/",
+          "quote": "39",
+          "kind": "page",
+          "retrievalUrl": "https://asia.sega.com/mega39splus/kr/",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "3efeb6a15c578f2c638f6fb8479fec117b34df046315b5daee108d6c19edb921"
         }
       ],
       "audio": {
@@ -36952,7 +38635,7 @@
         "channels": 2,
         "durationSeconds": 219.099,
         "byteLength": 1342844,
-        "sha256": "c054d6242d7be4eb0cbf922b6a2f640814932cf550ffd395eed6a119d97a1d37"
+        "sha256": "dbe72f7063df2792961c9239537820a67b732283f795450d9464f2d471774aa3"
       },
       "writers": [
         "sasakure.UK",
@@ -36980,9 +38663,17 @@
           "canonicalName": "DECO*27",
           "kind": "writer",
           "writer": "DECO*27"
+        },
+        {
+          "kind": "title",
+          "name": "39",
+          "url": "https://asia.sega.com/mega39splus/kr/",
+          "quote": "39",
+          "mainVerified": true
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 552,
@@ -37025,7 +38716,8 @@
         "지저스P"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 553,
@@ -37068,7 +38760,8 @@
         "yamada"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 554,
@@ -37120,7 +38813,8 @@
           "quote": "マレツ, 마레츠"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 555,
@@ -37163,7 +38857,8 @@
         "요시다 야세이"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 556,
@@ -37226,7 +38921,8 @@
             "존야키토리"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 557,
@@ -37269,7 +38965,8 @@
         "사츠키"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 558,
@@ -37312,7 +39009,8 @@
         "하라구치 사스케"
       ],
       "aliases": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 559,
@@ -37375,7 +39073,8 @@
             "오스터프로젝트"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 560,
@@ -37438,7 +39137,8 @@
             "론피"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 561,
@@ -37507,7 +39207,8 @@
           "writer": "DECO*27"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 562,
@@ -37575,7 +39276,8 @@
           "quote": "이름 비트마리오 (ビートまりお)"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 563,
@@ -37635,7 +39337,8 @@
           "quote": "Kanaria カナリア | 카나리아"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 564,
@@ -37645,11 +39348,12 @@
       "durationSeconds": 135,
       "youtubeUrl": "https://www.youtube.com/watch?v=zGMftuCqLhk",
       "id": "97c6c004-15c3-5726-95c3-62a5fc00680a",
-      "title": "야마다 PERFECT",
+      "title": "야마다 퍼펙트",
       "tags": [
         "jonYAKITORY",
         "야마다 PERFECT",
-        "존야키토리"
+        "존야키토리",
+        "야마다 퍼펙트"
       ],
       "confidence": "high",
       "reviewRequired": false,
@@ -37687,6 +39391,16 @@
           "quote": "山田PERFECT / jon-YAKITORY, 初音ミク -YAMADA PERFECT / jon-YAKITORY, Hatsune Miku-",
           "checkedAt": "2026-10-28",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.namu.moe/w/%EC%95%BC%EB%A7%88%EB%8B%A4%20PERFECT?from=%E5%B1%B1%E7%94%B0PERFECT",
+          "quote": "야마다 퍼펙트",
+          "kind": "page",
+          "retrievalUrl": "https://www.namu.moe/w/%EC%95%BC%EB%A7%88%EB%8B%A4%20PERFECT?from=%E5%B1%B1%E7%94%B0PERFECT",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "a347de55bfc9eaa9b8832fdd5318c8c600c1d310735549ec9f442614c0a93d5f"
         }
       ],
       "audio": {
@@ -37698,7 +39412,7 @@
         "channels": 2,
         "durationSeconds": 134.845,
         "byteLength": 825214,
-        "sha256": "94eac6b27acf3cd6fefb0881dcbcf7fb31da88c7b3d22a11ffae08347e3905dc"
+        "sha256": "3f19c532e819107c889c67a7bd4dd446037df2c102fc766a19d6d6401bf87fdd"
       },
       "writers": [
         "jon-YAKITORY"
@@ -37712,12 +39426,16 @@
           "origin": "user_authorized_writer_alias",
           "url": null,
           "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): jon-YAKITORY → 존야키토리. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "title",
+          "name": "야마다 퍼펙트",
+          "url": "https://www.namu.moe/w/%EC%95%BC%EB%A7%88%EB%8B%A4%20PERFECT?from=%E5%B1%B1%E7%94%B0PERFECT",
+          "quote": "야마다 퍼펙트",
+          "mainVerified": true
         }
       ],
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "No substantiated, song-specific commonly used Korean title alias found; do not infer a pronunciation or translation."
-      ],
+      "namingReviewRequired": false,
       "singerAliases": [],
       "namingHistory": [
         {
@@ -37726,8 +39444,18 @@
           "addedTags": [
             "존야키토리"
           ]
+        },
+        {
+          "previousTitle": "야마다 PERFECT",
+          "previousTags": [
+            "jonYAKITORY",
+            "야마다 PERFECT",
+            "존야키토리"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
         }
-      ]
+      ],
+      "originalTitle": "야마다 PERFECT"
     },
     {
       "index": 565,
@@ -37795,7 +39523,8 @@
           "writer": "DECO*27"
         }
       ],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     }
   ]
 }

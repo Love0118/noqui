@@ -6,10 +6,13 @@ from pathlib import Path
 import re
 import struct
 import unicodedata
+import sys
 from urllib.parse import unquote, urlparse
 
 
 ROOT = Path(__file__).resolve().parent
+sys.path.insert(0,str(ROOT.parents[1]/'tools'))
+from playlist_review import naming_review_reasons, reviewed
 
 
 def normalized(value):
@@ -116,7 +119,7 @@ def main():
             check(all(e.get('retrievedEvidenceMatched') for e in row['evidence']), f'Unmatched evidence: {name}')
             check(all(is_article(e['url']) for e in row['evidence']), f'Non-article source URL: {name}')
             check(any(normalized(row['title']) in normalized(e['quote']) for e in row['evidence']), f'Title absent from evidence: {name}')
-            expected.append({key: row[key] for key in ['id', 'youtubeUrl', 'title', 'tags']})
+            if reviewed(row):expected.append({key: row[key] for key in ['id', 'youtubeUrl', 'title', 'tags']})
         audio = row['audio']
         check(audio['status'] in {'ready', 'failed'}, f'Download still pending: {name}')
         if audio['status'] == 'ready':
@@ -142,7 +145,8 @@ def main():
     check(unresolved == [row for row in rows if row['reviewRequired']], 'Review list mismatch')
     check(failures == [row for row in rows if row['audio']['status'] != 'ready'], 'Failure list mismatch')
     print(json.dumps({'entries': len(rows), 'downloaded': audio_count, 'downloadFailures': len(failures),
-                      'verifiedMetadata': len(expected), 'reviewRequired': len(unresolved), 'audioVerified': args.audio}))
+                      'verifiedMetadata': len(expected), 'reviewRequired':sum(not reviewed(row) for row in rows),
+                      'metadataReviewRequired':len(unresolved),'namingReviewRequired':sum(bool(naming_review_reasons(row)) for row in rows),'audioVerified': args.audio}))
 
 
 if __name__ == '__main__':

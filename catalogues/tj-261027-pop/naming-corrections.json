@@ -1,10 +1,9 @@
 {
   "changes": [
     {
-      "catalogue": "tj-261027-pop",
       "index": 1,
       "previousTitle": "Let It Go",
-      "title": "Let It Go",
+      "title": "렛잇고",
       "tags": [
         "이디나 멘젤",
         "Let It Go",
@@ -12,3847 +11,12 @@
         "Idina Menzel",
         "LOPEZ ROBERT J",
         "ANDERSON KRISTEN"
-      ],
-      "namingReviewRequired": false
+      ]
     },
     {
-      "catalogue": "tj-261027-pop",
       "index": 2,
       "previousTitle": "Creep",
-      "title": "Creep",
-      "tags": [
-        "크립",
-        "라디오헤드",
-        "Creep",
-        "Radiohead",
-        "Colin Greenwood",
-        "Jonny Greenwood",
-        "Ed Obrien",
-        "Phil Selway",
-        "Thom Yorke"
-      ],
-      "namingReviewRequired": false
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 4,
-      "previousTitle": "Speechless",
-      "title": "Speechless",
-      "tags": [
-        "나오미 스콧",
-        "Speechless",
-        "Naomi Scott",
-        "PASEK BENJ",
-        "PAUL JUSTIN NOBLE",
-        "MENKEN ALAN"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 5,
-      "previousTitle": "Love Is An Open Door",
-      "title": "Love Is An Open Door",
-      "tags": [
-        "사랑은열린문",
-        "크리스틴 벨",
-        "산티노 폰태나",
-        "Love Is An Open Door",
-        "Kristen Bell",
-        "Santino Fontana",
-        "LOPEZ ROBERT J",
-        "ANDERSON KRISTEN"
-      ],
-      "namingReviewRequired": false
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 6,
-      "previousTitle": "Rolling In The Deep",
-      "title": "Rolling In The Deep",
-      "tags": [
-        "아델",
-        "Rolling In The Deep",
-        "Adele",
-        "ADKINS ADELE LAURIE BLUE",
-        "EPWORTH PAUL"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 8,
-      "previousTitle": "I'm Not The Only One",
-      "title": "I'm Not The Only One",
-      "tags": [
-        "샘 스미스",
-        "Im Not The Only One",
-        "Sam Smith",
-        "JAMES NAPIER"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 10,
-      "previousTitle": "Die With A Smile",
-      "title": "Die With A Smile",
-      "tags": [
-        "레이디 가가",
-        "브루노 마스",
-        "Die With A Smile",
-        "Lady Gaga",
-        "Bruno Mars",
-        "EMILE DERNST",
-        "FAUNTLEROY JAMES EDWARD",
-        "GERMANOTTA STEFANI J",
-        "HERNANDEZ PETER GENE",
-        "WATT ANDREW"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 12,
-      "previousTitle": "She's Gone",
-      "title": "She's Gone",
-      "tags": [
-        "쉬즈곤",
-        "스틸하트",
-        "Shes Gone",
-        "Steelheart",
-        "MATTJEVIC MICHAEL"
-      ],
-      "namingReviewRequired": false
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 13,
-      "previousTitle": "Dangerously",
-      "title": "Dangerously",
-      "tags": [
-        "찰리 푸스",
-        "Dangerously",
-        "Charlie Puth",
-        "ALEXANDER IZQUIERDO",
-        "JAMES JOHN ABRAHART",
-        "MARCO ANTONIO RODRIGUEZDIAZ",
-        "ROTEM JONATHAN"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 14,
-      "previousTitle": "Lost Stars",
-      "title": "Lost Stars",
-      "tags": [
-        "애덤 리바인",
-        "Lost Stars",
-        "로스트 스타스",
-        "Adam Levine",
-        "ALEXANDER GREGG",
-        "BRISEBOIS DANIELLE A",
-        "LASHLEY NICK P",
-        "NICKY SOUTHWOOD"
-      ],
-      "namingReviewRequired": false
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 15,
-      "previousTitle": "Dance Monkey",
-      "title": "Dance Monkey",
-      "tags": [
-        "톤스 앤 아이",
-        "Dance Monkey",
-        "댄스몽키",
-        "Tones And I",
-        "WATSON TONI"
-      ],
-      "namingReviewRequired": false
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 16,
-      "previousTitle": "Lemon Tree",
-      "title": "Lemon Tree",
-      "tags": [
-        "풀스 가든",
-        "Lemon Tree",
-        "Fools Garden",
-        "FREUDENTHALER PETER",
-        "HINKEL VOLKER"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 17,
-      "previousTitle": "Baby",
-      "title": "Baby",
-      "tags": [
-        "저스틴 비버",
-        "Baby",
-        "Justin Bieber",
-        "Youngdell Nash",
-        "Nash Bieber",
-        "Bridges",
-        "TheDream",
-        "Stewart Bridges",
-        "Stewart Milian"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 18,
-      "previousTitle": "Snowman",
-      "title": "Snowman",
-      "tags": [
-        "시아",
-        "Snowman",
-        "Sia",
-        "GREG KURSTIN",
-        "SIA FURLER"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 19,
-      "previousTitle": "Beauty And A Beat",
-      "title": "Beauty And A Beat",
-      "tags": [
-        "저스틴 비버",
-        "Beauty And A Beat",
-        "Justin BieberFeatNicki Minaj",
-        "ZEDD",
-        "SAVAN KOTECHA",
-        "MAX MARTIN",
-        "NICKI MINAJ"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 21,
-      "previousTitle": "When I Was Your Man",
-      "title": "When I Was Your Man",
-      "tags": [
-        "브루노 마스",
-        "When I Was Your Man",
-        "Bruno Mars",
-        "LAWRENCE PHILIP MARTIN II",
-        "LEVINE ARI",
-        "MARS BRUNO",
-        "WYATT ANDREW"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 22,
-      "previousTitle": "A Whole New World",
-      "title": "A Whole New World",
-      "tags": [
-        "미나 마수드",
-        "나오미 스콧",
-        "A Whole New World",
-        "Mena Massoud",
-        "Naomi Scott",
-        "MENKEN ALAN IRWIN",
-        "RICE TIMOTHY MILES BINDON"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 23,
-      "previousTitle": "Love Yourself",
-      "title": "Love Yourself",
-      "tags": [
-        "저스틴 비버",
-        "Love Yourself",
-        "Justin Bieber",
-        "ED SHEERAN",
-        "BENNY BLANCO"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 24,
-      "previousTitle": "Someone Like You",
-      "title": "Someone Like You",
-      "tags": [
-        "아델",
-        "Someone Like You",
-        "Adele",
-        "Dan Wilson"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 29,
-      "previousTitle": "There's Nothing Holdin' Me Back",
-      "title": "There's Nothing Holdin' Me Back",
-      "tags": [
-        "숀 멘데스",
-        "Theres Nothing Holdin Me Back",
-        "Shawn Mendes",
-        "TEDDY GEIGER",
-        "SCOTT HARRIS",
-        "GEOFFREY WARBURTON"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 31,
-      "previousTitle": "Shape Of You",
-      "title": "Shape Of You",
-      "tags": [
-        "에드 시런",
-        "Shape Of You",
-        "Ed Sheeran",
-        "STEVE MAC",
-        "JOHNNY MCDAID"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 32,
-      "previousTitle": "Payphone",
-      "title": "Payphone",
-      "tags": [
-        "마룬 5",
-        "Payphone",
-        "Maroon 5FeatWiz Khalifa",
-        "LEVIN BENJAMIN",
-        "LEVINE ADAM",
-        "MALIK AMMAR",
-        "OMELIO DAN",
-        "SCHUSTER JOHAN KARL",
-        "THOMAZ CAMERON"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 33,
-      "previousTitle": "Last Night On Earth",
-      "title": "Last Night On Earth",
-      "tags": [
-        "그린 데이",
-        "Last Night On Earth",
-        "Green Day",
-        "BILLIE JOE ARMSTRONG",
-        "FRANK E III WRIGHT",
-        "MICHAEL RYAN PRITCHARD"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 34,
-      "previousTitle": "Stay",
-      "title": "Stay",
-      "tags": [
-        "저스틴 비버",
-        "Stay",
-        "The Kid LAROI",
-        "Justin Bieber",
-        "더 키드 라로이",
-        "Charlton Howard",
-        "Magnus Hiberg",
-        "Charlie Puth",
-        "Omer Fedi",
-        "Blake Slatkin"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 37,
-      "previousTitle": "Bohemian Rhapsody",
-      "title": "Bohemian Rhapsody",
-      "tags": [
-        "보헤미안 랩소디",
-        "퀸",
-        "Bohemian Rhapsody",
-        "Queen",
-        "Freddie Mercury"
-      ],
-      "namingReviewRequired": false
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 38,
-      "previousTitle": "Off My Face",
-      "title": "Off My Face",
-      "tags": [
-        "저스틴 비버",
-        "Off My Face",
-        "Justin Bieber",
-        "BIEBER JUSTIN",
-        "PRINGLE DANIEL JAMES",
-        "PRINGLE LEAH JAQUELINE",
-        "SCOLA TIA MARIE",
-        "TORREY JACOB"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 39,
-      "previousTitle": "Sugar",
-      "title": "Sugar",
-      "tags": [
-        "마룬 5",
-        "Sugar",
-        "Maroon 5",
-        "MICHAEL POSNER",
-        "HENRY WALTER",
-        "ADAM LEVINE",
-        "JOSHUA COLEMAN",
-        "JACOB HINDLIN",
-        "LUKASZ GOTTWALD"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 40,
-      "previousTitle": "This Love",
-      "title": "This Love",
-      "tags": [
-        "마룬 5",
-        "This Love",
-        "Maroon 5",
-        "Carmichael",
-        "Levine"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 41,
-      "previousTitle": "The Phantom Of The Opera",
-      "title": "The Phantom Of The Opera",
-      "tags": [
-        "오페라의 유령",
-        "The Phantom Of The Opera",
-        "Sarah Brightman",
-        "Mike Batt",
-        "Charles Hart",
-        "Andrew Lloyd Webber",
-        "Richard Stilgoe"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 43,
-      "previousTitle": "Painkiller",
-      "title": "Painkiller",
-      "tags": [
-        "루엘",
-        "Painkiller",
-        "Ruel",
-        "VAN DIJK RUEL VINCENT",
-        "AARONS SARAH PAIGE",
-        "LANDON MARK"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 44,
-      "previousTitle": "Fly Me To The Moon",
-      "title": "Fly Me To The Moon",
-      "tags": [
-        "프랭크 시나트라",
-        "Fly Me To The Moon",
-        "Frank Sinatra",
-        "Bart Howard"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 45,
-      "previousTitle": "Call Me Maybe",
-      "title": "Call Me Maybe",
-      "tags": [
-        "칼리 래이 잽슨",
-        "Call Me Maybe",
-        "콜 미 메이비",
-        "Carly Rae Jepsen",
-        "CROWE TAVISH",
-        "JEPSEN CARLY RAE",
-        "RAMSAY JOSHUA KEELER"
-      ],
-      "namingReviewRequired": false
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 46,
-      "previousTitle": "If I Ain't Got You",
-      "title": "If I Ain't Got You",
-      "tags": [
-        "앨리샤 키스",
-        "If I Aint Got You",
-        "Alicia Keys",
-        "AUGELLOCOOK ALICIA"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 49,
-      "previousTitle": "Billie Jean",
-      "title": "Billie Jean",
-      "tags": [
-        "마이클 잭슨",
-        "Billie Jean",
-        "Michael Jackson"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 50,
-      "previousTitle": "Chandelier",
-      "title": "Chandelier",
-      "tags": [
-        "시아",
-        "Chandelier",
-        "Sia",
-        "SIA FURLER",
-        "JESSE SHATKIN"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 51,
-      "previousTitle": "Perfect",
-      "title": "Perfect",
-      "tags": [
-        "에드 시런",
-        "Perfect",
-        "Ed Sheeran",
-        "SHEERAN ED"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 52,
-      "previousTitle": "Always Remember Us This Way",
-      "title": "Always Remember Us This Way",
-      "tags": [
-        "레이디 가가",
-        "Always Remember Us This Way",
-        "Lady Gaga",
-        "GERMANOTTA STEFANI",
-        "HEMBY NATALIE",
-        "LINDSEY HILLARY",
-        "MCKENNA LORI"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 53,
-      "previousTitle": "Santa Tell Me",
-      "title": "Santa Tell Me",
-      "tags": [
-        "아리아나 그란데",
-        "Santa Tell Me",
-        "Ariana Grande",
-        "SAVAN HARISH KOTECHA",
-        "ILYA"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 54,
-      "previousTitle": "My Heart Will Go On",
-      "title": "My Heart Will Go On",
-      "tags": [
-        "마이 하트 윌 고 온",
-        "셀린 디온",
-        "My Heart Will Go On",
-        "Celine Dion",
-        "HORNER JAMES",
-        "JENNINGS WILL"
-      ],
-      "namingReviewRequired": false
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 55,
-      "previousTitle": "What Makes You Beautiful",
-      "title": "What Makes You Beautiful",
-      "tags": [
-        "원 디렉션",
-        "What Makes You Beautiful",
-        "One Direction",
-        "FALK CARL",
-        "KOTECHA SAVAN HARISH",
-        "YACOUB RAMI"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 57,
-      "previousTitle": "Sunflower",
-      "title": "Sunflower",
-      "tags": [
-        "포스트 말론",
-        "Sunflower",
-        "Post Malone",
-        "Swae Lee",
-        "BROWN KHALIF",
-        "WILLIAM WALSH",
-        "CARTER LANG",
-        "CARL AUSTIN ROSEN",
-        "LOUIS BELL",
-        "AUSTIN POST"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 58,
-      "previousTitle": "Beautiful Things",
-      "title": "Beautiful Things",
-      "tags": [
-        "벤슨 분",
-        "Beautiful Things",
-        "Benson Boone",
-        "EVAN BLAIR",
-        "JACK LAFRANTZ"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 61,
-      "previousTitle": "Wonderwall",
-      "title": "Wonderwall",
-      "tags": [
-        "원더월",
-        "Wonderwall",
-        "Oasis",
-        "Noel Gallagher"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 64,
-      "previousTitle": "Blinding Lights",
-      "title": "Blinding Lights",
-      "tags": [
-        "위켄드",
-        "Blinding Lights",
-        "The Weeknd",
-        "BALSHE AHMAD",
-        "HOLTER OSCAR THOMAS",
-        "MARTIN MAX",
-        "QUENNEVILLE JASON MATTHEW",
-        "TESFAYE ABEL"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 69,
-      "previousTitle": "This Is Me",
-      "title": "This Is Me",
-      "tags": [
-        "케알라 세틀",
-        "This Is Me",
-        "Various Artists",
-        "PASEK BENJ",
-        "PAUL JUSTIN NOBLE"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 70,
-      "previousTitle": "Die For You",
-      "title": "Die For You",
-      "tags": [
-        "Die For You",
-        "다이포유",
-        "The Weeknd",
-        "위켄드",
-        "Abel Tesfaye",
-        "Martin McKinney",
-        "Mejdi Rhars",
-        "Dylan Wiggins",
-        "Magnus Hiberg",
-        "William Thomas Walsh"
-      ],
-      "namingReviewRequired": false
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 71,
-      "previousTitle": "Zombie",
-      "title": "Zombie",
-      "tags": [
-        "좀비",
-        "크랜베리",
-        "Zombie",
-        "The Cranberries",
-        "ORiordian",
-        "Dolores ORiordan"
-      ],
-      "namingReviewRequired": false
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 75,
-      "previousTitle": "When We Were Young",
-      "title": "When We Were Young",
-      "tags": [
-        "아델",
-        "When We Were Young",
-        "Adele",
-        "JESSO TOBIAS MACDONALD",
-        "ADKINS ADELE LAURIE BLUE"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 76,
-      "previousTitle": "How Far I'll Go",
-      "title": "How Far I'll Go",
-      "tags": [
-        "시아",
-        "How Far Ill Go",
-        "Alessia Cara",
-        "MIRANDA LIN MANUEL"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 77,
-      "previousTitle": "Dancing Queen",
-      "title": "Dancing Queen",
-      "tags": [
-        "아바",
-        "Dancing Queen",
-        "댄싱퀸",
-        "ABBA",
-        "Stig Anderson",
-        "Benny Andersson",
-        "Bjorn Ulvaeus"
-      ],
-      "namingReviewRequired": false
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 79,
-      "previousTitle": "Love On Top",
-      "title": "Love On Top",
-      "tags": [
-        "비욘세",
-        "Love On Top",
-        "Beyonce",
-        "KNOWLES BEYONCE GISSELLE",
-        "NASH TERIUS YOUNGDELL",
-        "TAYLOR ROBERT SHEA"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 80,
-      "previousTitle": "From The Start",
-      "title": "From The Start",
-      "tags": [
-        "레이베이",
-        "From The Start",
-        "Laufey",
-        "JONSDOTTIR LAUFEY LIN",
-        "STEWART SPENCER EUGENE"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 81,
-      "previousTitle": "My Way",
-      "title": "My Way",
-      "tags": [
-        "프랭크 시나트라",
-        "My Way",
-        "마이 웨이",
-        "Frank Sinatra",
-        "ANKA PAUL",
-        "FRANCOIS CLAUDE",
-        "REVAUX JACQUES",
-        "THIBAUT GILLES"
-      ],
-      "namingReviewRequired": false
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 82,
-      "previousTitle": "See You Again",
-      "title": "See You Again",
-      "tags": [
-        "위즈 칼리파",
-        "찰리 푸스",
-        "See You Again",
-        "Wiz Khalifa",
-        "Charlie Puth",
-        "CEDAR ANDREW",
-        "FRANKS JUSTIN SCOTT"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 83,
-      "previousTitle": "Welcome To The Black Parade",
-      "title": "Welcome To The Black Parade",
-      "tags": [
-        "마이 케미컬 로맨스",
-        "Welcome To The Black Parade",
-        "My Chemical Romance",
-        "BRYAR BOB",
-        "IERO FRANK",
-        "TORO RAY",
-        "WAY GERARD",
-        "WAY MICHAEL"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 84,
-      "previousTitle": "Circles",
-      "title": "Circles",
-      "tags": [
-        "포스트 말론",
-        "Circles",
-        "Post Malone",
-        "FEENEY ADAM KING",
-        "POST AUSTIN RICHARD",
-        "BELL LOUIS RUSSELL",
-        "WALSH BILLY",
-        "GUNESBERK KAAN"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 85,
-      "previousTitle": "GHOST TOWN",
-      "title": "GHOST TOWN",
-      "tags": [
-        "벤슨 분",
-        "GHOST TOWN",
-        "Benson Boone",
-        "NOLAN WINFIELD SIPE",
-        "TUSHAR APTE"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 86,
-      "previousTitle": "Piano Man",
-      "title": "Piano Man",
-      "tags": [
-        "피아노 맨",
-        "빌리 조엘",
-        "Piano Man",
-        "Billy Joel"
-      ],
-      "namingReviewRequired": false
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 87,
-      "previousTitle": "Out of Time",
-      "title": "Out of Time",
-      "tags": [
-        "위켄드",
-        "Out of Time",
-        "The Weeknd",
-        "ARAN TOMOKO",
-        "HAMADA TETSURO",
-        "HOLTER OSCAR THOMAS",
-        "LOPATIN DANIEL",
-        "MAX MARTIN",
-        "TESFAYE ABEL"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 88,
-      "previousTitle": "Sunday Morning",
-      "title": "Sunday Morning",
-      "tags": [
-        "마룬 5",
-        "Sunday Morning",
-        "Maroon 5",
-        "Carmichael",
-        "Levine"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 89,
-      "previousTitle": "Shallow",
-      "title": "Shallow",
-      "tags": [
-        "레이디 가가",
-        "Shallow",
-        "Lady Gaga",
-        "Bradley Cooper",
-        "GERMANOTTA STEFANI",
-        "RONSON MARK",
-        "ROSSOMANDO ANTHONY",
-        "WYATT ANDREW"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 90,
-      "previousTitle": "Marry You",
-      "title": "Marry You",
-      "tags": [
-        "브루노 마스",
-        "Marry You",
-        "Bruno Mars",
-        "HERNANDEZ PETER GENE",
-        "LAWRENCE PHILIP MARTIN",
-        "LEVINE ARI"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 93,
-      "previousTitle": "We Don't Talk Anymore",
-      "title": "We Don't Talk Anymore",
-      "tags": [
-        "찰리 푸스",
-        "셀레나 고메즈",
-        "We Dont Talk Anymore",
-        "Charlie PuthFeatSelena Gomez",
-        "CHARLIE PUTH",
-        "JACOB KASHER HINDLIN",
-        "SELENA MARIE GOMEZ"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 94,
-      "previousTitle": "Lay Me Down",
-      "title": "Lay Me Down",
-      "tags": [
-        "샘 스미스",
-        "Lay Me Down",
-        "Sam SmithFeatJohn Legend",
-        "SAM SMITH",
-        "JAMES NAPIER",
-        "ELVIN SMITH"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 97,
-      "previousTitle": "Risk It All",
-      "title": "Risk It All",
-      "tags": [
-        "브루노 마스",
-        "Risk It All",
-        "Bruno Mars",
-        "ARJONA VAZQUEZ JOHAN",
-        "HERNANDEZ PETER GENE"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 99,
-      "previousTitle": "Hello",
-      "title": "Hello",
-      "tags": [
-        "아델",
-        "Hello",
-        "Adele",
-        "ADKINS ADELE",
-        "KURSTIN GREGORY ALLEN"
-      ],
-      "namingReviewRequired": true
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 100,
-      "previousTitle": "Halo",
-      "title": "Halo",
-      "tags": [
-        "비욘세",
-        "Halo",
-        "Beyonce",
-        "E Kidd Bogart",
-        "Beyonce Knowles",
-        "Ryan Tedder"
-      ],
-      "namingReviewRequired": true
-    }
-  ],
-  "remainingNamingReview": [
-    {
-      "index": 3,
-      "title": "Don't Look Back In Anger",
-      "reasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "index": 7,
-      "title": "Love Story",
-      "reasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "index": 9,
-      "title": "Rewrite The Stars",
-      "reasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "index": 11,
-      "title": "2002",
-      "reasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ]
-    },
-    {
-      "index": 20,
-      "title": "Until I Found You",
-      "reasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "index": 26,
-      "title": "Bad",
-      "reasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "index": 27,
-      "title": "Viva La Vida",
-      "reasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "index": 28,
-      "title": "Cruel Summer",
-      "reasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "index": 35,
-      "title": "All I Want For Christmas Is You",
-      "reasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "index": 36,
-      "title": "Beggin'",
-      "reasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "index": 41,
-      "title": "The Phantom Of The Opera",
-      "reasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "index": 42,
-      "title": "Just The Two Of Us",
-      "reasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "index": 48,
-      "title": "A Thousand Years",
-      "reasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "index": 59,
-      "title": "Into the Unknown",
-      "reasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "index": 60,
-      "title": "I Really Want to Stay at Your House",
-      "reasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "index": 61,
-      "title": "Wonderwall",
-      "reasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "index": 62,
-      "title": "Reality",
-      "reasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "index": 63,
-      "title": "Someone You Loved",
-      "reasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "index": 65,
-      "title": "Counting Stars",
-      "reasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "index": 66,
-      "title": "Englishman In New York",
-      "reasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "index": 67,
-      "title": "Despacito",
-      "reasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "index": 68,
-      "title": "SAIKAI",
-      "reasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "index": 72,
-      "title": "I'm Yours",
-      "reasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "index": 73,
-      "title": "All Of Me",
-      "reasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "index": 74,
-      "title": "My Love",
-      "reasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "index": 95,
-      "title": "Hero",
-      "reasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "index": 96,
-      "title": "Can't Take My Eyes Off You",
-      "reasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "index": 98,
-      "title": "Falling Slowly",
-      "reasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    }
-  ],
-  "pronunciationChanges": [
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 10,
-      "id": "db3e3072-cfb7-5be5-9260-6659b1962821",
-      "title": "Die With A Smile",
-      "addedTags": [
-        "다이위드어스마일"
-      ],
-      "previousTags": [
-        "레이디 가가",
-        "브루노 마스",
-        "Die With A Smile",
-        "Lady Gaga",
-        "Bruno Mars",
-        "EMILE DERNST",
-        "FAUNTLEROY JAMES EDWARD",
-        "GERMANOTTA STEFANI J",
-        "HERNANDEZ PETER GENE",
-        "WATT ANDREW"
-      ],
-      "tags": [
-        "레이디 가가",
-        "브루노 마스",
-        "Lady Gaga",
-        "Bruno Mars",
-        "EMILE DERNST",
-        "FAUNTLEROY JAMES EDWARD",
-        "GERMANOTTA STEFANI J",
-        "HERNANDEZ PETER GENE",
-        "WATT ANDREW",
-        "다이위드어스마일"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 22,
-      "id": "c03ed1bc-a840-5ca0-8e52-67f207d49dd4",
-      "title": "A Whole New World",
-      "addedTags": [
-        "어홀뉴월드"
-      ],
-      "previousTags": [
-        "미나 마수드",
-        "나오미 스콧",
-        "A Whole New World",
-        "Mena Massoud",
-        "Naomi Scott",
-        "MENKEN ALAN IRWIN",
-        "RICE TIMOTHY MILES BINDON"
-      ],
-      "tags": [
-        "미나 마수드",
-        "나오미 스콧",
-        "A Whole New World",
-        "Mena Massoud",
-        "Naomi Scott",
-        "MENKEN ALAN IRWIN",
-        "RICE TIMOTHY MILES BINDON",
-        "어홀뉴월드"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 30,
-      "id": "aa11ee6d-582a-59f3-97b0-5328fee57654",
-      "title": "Believer",
-      "addedTags": [
-        "빌리버"
-      ],
-      "previousTags": [
-        "Believer",
-        "Imagine Dragons",
-        "이매진 드래곤스",
-        "Dan Reynolds",
-        "Wayne Sermon",
-        "Ben McKee",
-        "Daniel Platzman",
-        "Alex da Kid",
-        "Robin Fredriksson",
-        "Mattias Larsson"
-      ],
-      "tags": [
-        "Imagine Dragons",
-        "이매진 드래곤스",
-        "Dan Reynolds",
-        "Wayne Sermon",
-        "Ben McKee",
-        "Daniel Platzman",
-        "Alex da Kid",
-        "Robin Fredriksson",
-        "Mattias Larsson",
-        "빌리버"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": true,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 39,
-      "id": "d3c7551c-bb40-5606-b7bd-a1bdbd4610c9",
-      "title": "Sugar",
-      "addedTags": [
-        "슈거"
-      ],
-      "previousTags": [
-        "마룬 5",
-        "Sugar",
-        "Maroon 5",
-        "MICHAEL POSNER",
-        "HENRY WALTER",
-        "ADAM LEVINE",
-        "JOSHUA COLEMAN",
-        "JACOB HINDLIN",
-        "LUKASZ GOTTWALD"
-      ],
-      "tags": [
-        "마룬 5",
-        "Sugar",
-        "Maroon 5",
-        "MICHAEL POSNER",
-        "HENRY WALTER",
-        "ADAM LEVINE",
-        "JOSHUA COLEMAN",
-        "JACOB HINDLIN",
-        "LUKASZ GOTTWALD",
-        "슈거"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 49,
-      "id": "1969e61b-5de6-575b-ab1e-f526082f4598",
-      "title": "Billie Jean",
-      "addedTags": [
-        "빌리진"
-      ],
-      "previousTags": [
-        "마이클 잭슨",
-        "Billie Jean",
-        "Michael Jackson"
-      ],
-      "tags": [
-        "마이클 잭슨",
-        "Billie Jean",
-        "Michael Jackson",
-        "빌리진"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 58,
-      "id": "09a95459-4fd2-5c21-847e-efed188f5b86",
-      "title": "Beautiful Things",
-      "addedTags": [
-        "뷰티풀씽스"
-      ],
-      "previousTags": [
-        "벤슨 분",
-        "Beautiful Things",
-        "Benson Boone",
-        "EVAN BLAIR",
-        "JACK LAFRANTZ"
-      ],
-      "tags": [
-        "벤슨 분",
-        "Beautiful Things",
-        "Benson Boone",
-        "EVAN BLAIR",
-        "JACK LAFRANTZ",
-        "뷰티풀씽스"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 79,
-      "id": "583fcaa2-143f-59ba-b744-703013f1216d",
-      "title": "Love On Top",
-      "addedTags": [
-        "러브온탑"
-      ],
-      "previousTags": [
-        "비욘세",
-        "Love On Top",
-        "Beyonce",
-        "KNOWLES BEYONCE GISSELLE",
-        "NASH TERIUS YOUNGDELL",
-        "TAYLOR ROBERT SHEA"
-      ],
-      "tags": [
-        "비욘세",
-        "Love On Top",
-        "Beyonce",
-        "KNOWLES BEYONCE GISSELLE",
-        "NASH TERIUS YOUNGDELL",
-        "TAYLOR ROBERT SHEA",
-        "러브온탑"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 89,
-      "id": "7d831039-9831-5acf-9a1c-e8662a8f2092",
-      "title": "Shallow",
-      "addedTags": [
-        "샬로우"
-      ],
-      "previousTags": [
-        "레이디 가가",
-        "Shallow",
-        "Lady Gaga",
-        "Bradley Cooper",
-        "GERMANOTTA STEFANI",
-        "RONSON MARK",
-        "ROSSOMANDO ANTHONY",
-        "WYATT ANDREW"
-      ],
-      "tags": [
-        "레이디 가가",
-        "Shallow",
-        "Lady Gaga",
-        "Bradley Cooper",
-        "GERMANOTTA STEFANI",
-        "RONSON MARK",
-        "ROSSOMANDO ANTHONY",
-        "WYATT ANDREW",
-        "샬로우"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 97,
-      "id": "aa88ce59-4b86-5c93-ab72-5631dd2fa1d8",
-      "title": "Risk It All",
-      "addedTags": [
-        "리스크잇올"
-      ],
-      "previousTags": [
-        "브루노 마스",
-        "Risk It All",
-        "Bruno Mars",
-        "ARJONA VAZQUEZ JOHAN",
-        "HERNANDEZ PETER GENE"
-      ],
-      "tags": [
-        "브루노 마스",
-        "Risk It All",
-        "Bruno Mars",
-        "ARJONA VAZQUEZ JOHAN",
-        "HERNANDEZ PETER GENE",
-        "리스크잇올"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 13,
-      "id": "cd6f8d84-48fc-518f-8179-ebcfff6c8a3d",
-      "title": "Dangerously",
-      "addedTags": [
-        "데인저러슬리"
-      ],
-      "previousTags": [
-        "찰리 푸스",
-        "Dangerously",
-        "Charlie Puth",
-        "ALEXANDER IZQUIERDO",
-        "JAMES JOHN ABRAHART",
-        "MARCO ANTONIO RODRIGUEZDIAZ",
-        "ROTEM JONATHAN"
-      ],
-      "tags": [
-        "찰리 푸스",
-        "Dangerously",
-        "Charlie Puth",
-        "ALEXANDER IZQUIERDO",
-        "JAMES JOHN ABRAHART",
-        "MARCO ANTONIO RODRIGUEZDIAZ",
-        "ROTEM JONATHAN",
-        "데인저러슬리"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 23,
-      "id": "10dacbf4-b977-54ba-87f5-6273ce7e8a6d",
-      "title": "Love Yourself",
-      "addedTags": [
-        "러브유어셀프"
-      ],
-      "previousTags": [
-        "저스틴 비버",
-        "Love Yourself",
-        "Justin Bieber",
-        "ED SHEERAN",
-        "BENNY BLANCO"
-      ],
-      "tags": [
-        "저스틴 비버",
-        "Love Yourself",
-        "Justin Bieber",
-        "ED SHEERAN",
-        "BENNY BLANCO",
-        "러브유어셀프"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 31,
-      "id": "6f3a5260-8c2d-5178-b2f8-8a28106c0f47",
-      "title": "Shape Of You",
-      "addedTags": [
-        "셰이프오브유"
-      ],
-      "previousTags": [
-        "에드 시런",
-        "Shape Of You",
-        "Ed Sheeran",
-        "STEVE MAC",
-        "JOHNNY MCDAID"
-      ],
-      "tags": [
-        "에드 시런",
-        "Shape Of You",
-        "Ed Sheeran",
-        "STEVE MAC",
-        "JOHNNY MCDAID",
-        "셰이프오브유"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 40,
-      "id": "70e70988-e424-5670-b7ff-512f24573641",
-      "title": "This Love",
-      "addedTags": [
-        "디스러브"
-      ],
-      "previousTags": [
-        "마룬 5",
-        "This Love",
-        "Maroon 5",
-        "Carmichael",
-        "Levine"
-      ],
-      "tags": [
-        "마룬 5",
-        "This Love",
-        "Maroon 5",
-        "Carmichael",
-        "Levine",
-        "디스러브"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 50,
-      "id": "f65b745c-7501-5e8a-9c2c-746360b826eb",
-      "title": "Chandelier",
-      "addedTags": [
-        "샹들리에"
-      ],
-      "previousTags": [
-        "시아",
-        "Chandelier",
-        "Sia",
-        "SIA FURLER",
-        "JESSE SHATKIN"
-      ],
-      "tags": [
-        "시아",
-        "Chandelier",
-        "Sia",
-        "SIA FURLER",
-        "JESSE SHATKIN",
-        "샹들리에"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 59,
-      "id": "45dd6e72-a6a7-59ea-bf01-9ed2d9abb037",
-      "title": "Into the Unknown",
-      "addedTags": [
-        "인투디언노운"
-      ],
-      "previousTags": [
-        "Into the Unknown",
-        "Idina Menzel",
-        "Aurora",
-        "KRISTEN ANDERSONLOPEZ",
-        "ROBERT LOPEZ"
-      ],
-      "tags": [
-        "Into the Unknown",
-        "Idina Menzel",
-        "Aurora",
-        "KRISTEN ANDERSONLOPEZ",
-        "ROBERT LOPEZ",
-        "인투디언노운"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ],
-      "namingReviewReasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 69,
-      "id": "08fc2772-80fd-5b35-998a-0b3be5e19f7d",
-      "title": "This Is Me",
-      "addedTags": [
-        "디스이즈미"
-      ],
-      "previousTags": [
-        "케알라 세틀",
-        "This Is Me",
-        "Various Artists",
-        "PASEK BENJ",
-        "PAUL JUSTIN NOBLE"
-      ],
-      "tags": [
-        "케알라 세틀",
-        "This Is Me",
-        "Various Artists",
-        "PASEK BENJ",
-        "PAUL JUSTIN NOBLE",
-        "디스이즈미"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 80,
-      "id": "ae38fd7e-f078-584e-8b50-baa953a38529",
-      "title": "From The Start",
-      "addedTags": [
-        "프롬더스타트"
-      ],
-      "previousTags": [
-        "레이베이",
-        "From The Start",
-        "Laufey",
-        "JONSDOTTIR LAUFEY LIN",
-        "STEWART SPENCER EUGENE"
-      ],
-      "tags": [
-        "레이베이",
-        "From The Start",
-        "Laufey",
-        "JONSDOTTIR LAUFEY LIN",
-        "STEWART SPENCER EUGENE",
-        "프롬더스타트"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 90,
-      "id": "0425577a-97a3-56c0-a4f4-3ac4c9d7f997",
-      "title": "Marry You",
-      "addedTags": [
-        "메리유"
-      ],
-      "previousTags": [
-        "브루노 마스",
-        "Marry You",
-        "Bruno Mars",
-        "HERNANDEZ PETER GENE",
-        "LAWRENCE PHILIP MARTIN",
-        "LEVINE ARI"
-      ],
-      "tags": [
-        "브루노 마스",
-        "Marry You",
-        "Bruno Mars",
-        "HERNANDEZ PETER GENE",
-        "LAWRENCE PHILIP MARTIN",
-        "LEVINE ARI",
-        "메리유"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 98,
-      "id": "968fac20-60f5-597f-a5d5-e2cf8fe74120",
-      "title": "Falling Slowly",
-      "addedTags": [
-        "폴링슬로울리"
-      ],
-      "previousTags": [
-        "Falling Slowly",
-        "Glen Hansard",
-        "Marketa Irglova"
-      ],
-      "tags": [
-        "Falling Slowly",
-        "Glen Hansard",
-        "Marketa Irglova",
-        "폴링슬로울리"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ],
-      "namingReviewReasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 3,
-      "id": "6a4e02b0-dce2-5717-8c2f-8b9461035ea9",
-      "title": "Don't Look Back In Anger",
-      "addedTags": [
-        "돈룩백인앵거"
-      ],
-      "previousTags": [
-        "Dont Look Back In Anger",
-        "Oasis",
-        "Noel Gallagher"
-      ],
-      "tags": [
-        "Dont Look Back In Anger",
-        "Oasis",
-        "Noel Gallagher",
-        "돈룩백인앵거"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ],
-      "namingReviewReasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 16,
-      "id": "6ecd50a2-eed8-58ca-b2c6-0c52a0fffab1",
-      "title": "Lemon Tree",
-      "addedTags": [
-        "레몬트리"
-      ],
-      "previousTags": [
-        "풀스 가든",
-        "Lemon Tree",
-        "Fools Garden",
-        "FREUDENTHALER PETER",
-        "HINKEL VOLKER"
-      ],
-      "tags": [
-        "풀스 가든",
-        "Lemon Tree",
-        "Fools Garden",
-        "FREUDENTHALER PETER",
-        "HINKEL VOLKER",
-        "레몬트리"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 24,
-      "id": "b6f0eb64-d76d-5588-bb3c-5634bb9e6aa3",
-      "title": "Someone Like You",
-      "addedTags": [
-        "섬원라이크유"
-      ],
-      "previousTags": [
-        "아델",
-        "Someone Like You",
-        "Adele",
-        "Dan Wilson"
-      ],
-      "tags": [
-        "아델",
-        "Someone Like You",
-        "Adele",
-        "Dan Wilson",
-        "섬원라이크유"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 32,
-      "id": "74aa365a-0886-595d-91a0-13154a6d5613",
-      "title": "Payphone",
-      "addedTags": [
-        "페이폰"
-      ],
-      "previousTags": [
-        "마룬 5",
-        "Payphone",
-        "Maroon 5FeatWiz Khalifa",
-        "LEVIN BENJAMIN",
-        "LEVINE ADAM",
-        "MALIK AMMAR",
-        "OMELIO DAN",
-        "SCHUSTER JOHAN KARL",
-        "THOMAZ CAMERON"
-      ],
-      "tags": [
-        "마룬 5",
-        "Payphone",
-        "Maroon 5FeatWiz Khalifa",
-        "LEVIN BENJAMIN",
-        "LEVINE ADAM",
-        "MALIK AMMAR",
-        "OMELIO DAN",
-        "SCHUSTER JOHAN KARL",
-        "THOMAZ CAMERON",
-        "페이폰"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 42,
-      "id": "2f5a62ab-5826-57b1-897e-2fa7cffeb753",
-      "title": "Just The Two Of Us",
-      "addedTags": [
-        "저스트더투오브어스"
-      ],
-      "previousTags": [
-        "Just The Two Of Us",
-        "Bill Withers",
-        "Ralph MacDonald",
-        "William Salter"
-      ],
-      "tags": [
-        "Just The Two Of Us",
-        "Bill Withers",
-        "Ralph MacDonald",
-        "William Salter",
-        "저스트더투오브어스"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ],
-      "namingReviewReasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 51,
-      "id": "58dc9918-163a-564f-897d-b5af20482826",
-      "title": "Perfect",
-      "addedTags": [
-        "퍼펙트"
-      ],
-      "previousTags": [
-        "에드 시런",
-        "Perfect",
-        "Ed Sheeran",
-        "SHEERAN ED"
-      ],
-      "tags": [
-        "에드 시런",
-        "Perfect",
-        "Ed Sheeran",
-        "SHEERAN ED",
-        "퍼펙트"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 60,
-      "id": "9843e17d-bee2-58a5-b5fb-95bd02a7e127",
-      "title": "I Really Want to Stay at Your House",
-      "addedTags": [
-        "아이리얼리원트투스테이앳유어하우스"
-      ],
-      "previousTags": [
-        "Rosa Walton",
-        "Hallie Coggins",
-        "WALTON ROSA JEWEL"
-      ],
-      "tags": [
-        "Rosa Walton",
-        "Hallie Coggins",
-        "WALTON ROSA JEWEL",
-        "아이리얼리원트투스테이앳유어하우스"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ],
-      "namingReviewReasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 72,
-      "id": "592c7421-5607-5a51-89a3-706199ac3d3f",
-      "title": "I'm Yours",
-      "addedTags": [
-        "아임유어즈"
-      ],
-      "previousTags": [
-        "Im Yours",
-        "Jason Mraz",
-        "MRAZ JASON THOMAS"
-      ],
-      "tags": [
-        "Im Yours",
-        "Jason Mraz",
-        "MRAZ JASON THOMAS",
-        "아임유어즈"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ],
-      "namingReviewReasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 82,
-      "id": "5aa1b61b-7f8b-527d-9c93-14926ab3112d",
-      "title": "See You Again",
-      "addedTags": [
-        "씨유어게인"
-      ],
-      "previousTags": [
-        "위즈 칼리파",
-        "찰리 푸스",
-        "See You Again",
-        "Wiz Khalifa",
-        "Charlie Puth",
-        "CEDAR ANDREW",
-        "FRANKS JUSTIN SCOTT"
-      ],
-      "tags": [
-        "위즈 칼리파",
-        "찰리 푸스",
-        "See You Again",
-        "Wiz Khalifa",
-        "Charlie Puth",
-        "CEDAR ANDREW",
-        "FRANKS JUSTIN SCOTT",
-        "씨유어게인"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 91,
-      "id": "aa6bb707-fe5e-588f-b5df-16ab2ddfe19e",
-      "title": "Sign Of The Times",
-      "addedTags": [
-        "사인오브더타임즈"
-      ],
-      "previousTags": [
-        "Sign Of The Times",
-        "Harry Styles",
-        "해리 스타일스",
-        "Jeff Bhasker",
-        "Mitch Rowland",
-        "Ryan Nasci",
-        "Alex Salibian",
-        "Tyler Johnson"
-      ],
-      "tags": [
-        "Sign Of The Times",
-        "Harry Styles",
-        "해리 스타일스",
-        "Jeff Bhasker",
-        "Mitch Rowland",
-        "Ryan Nasci",
-        "Alex Salibian",
-        "Tyler Johnson",
-        "사인오브더타임즈"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 99,
-      "id": "2ef8df92-564a-59ae-93a3-9f0507696904",
-      "title": "Hello",
-      "addedTags": [
-        "헬로"
-      ],
-      "previousTags": [
-        "아델",
-        "Hello",
-        "Adele",
-        "ADKINS ADELE",
-        "KURSTIN GREGORY ALLEN"
-      ],
-      "tags": [
-        "아델",
-        "Hello",
-        "Adele",
-        "ADKINS ADELE",
-        "KURSTIN GREGORY ALLEN",
-        "헬로"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 4,
-      "id": "8f7b4375-dcc8-57ab-8342-8aa7099bc454",
-      "title": "Speechless",
-      "addedTags": [
-        "스피치리스"
-      ],
-      "previousTags": [
-        "나오미 스콧",
-        "Speechless",
-        "Naomi Scott",
-        "PASEK BENJ",
-        "PAUL JUSTIN NOBLE",
-        "MENKEN ALAN"
-      ],
-      "tags": [
-        "나오미 스콧",
-        "Speechless",
-        "Naomi Scott",
-        "PASEK BENJ",
-        "PAUL JUSTIN NOBLE",
-        "MENKEN ALAN",
-        "스피치리스"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 17,
-      "id": "8eb19b26-22a1-50a7-be40-8d815c83e696",
-      "title": "Baby",
-      "addedTags": [
-        "베이비"
-      ],
-      "previousTags": [
-        "저스틴 비버",
-        "Baby",
-        "Justin Bieber",
-        "Youngdell Nash",
-        "Nash Bieber",
-        "Bridges",
-        "TheDream",
-        "Stewart Bridges",
-        "Stewart Milian"
-      ],
-      "tags": [
-        "저스틴 비버",
-        "Baby",
-        "Justin Bieber",
-        "Youngdell Nash",
-        "Nash Bieber",
-        "Bridges",
-        "TheDream",
-        "Stewart Bridges",
-        "Stewart Milian",
-        "베이비"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 25,
-      "id": "f10bc6e8-6367-5d7b-ad13-51daed71dc76",
-      "title": "Love",
-      "addedTags": [
-        "러브"
-      ],
-      "previousTags": [
-        "Love",
-        "Keyshia Cole",
-        "키샤 콜",
-        "Greg Curtis"
-      ],
-      "tags": [
-        "Love",
-        "Keyshia Cole",
-        "키샤 콜",
-        "Greg Curtis",
-        "러브"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 33,
-      "id": "8a4b2ff3-7bd8-5fe7-9d86-2a694e926397",
-      "title": "Last Night On Earth",
-      "addedTags": [
-        "라스트나이트온어스"
-      ],
-      "previousTags": [
-        "그린 데이",
-        "Last Night On Earth",
-        "Green Day",
-        "BILLIE JOE ARMSTRONG",
-        "FRANK E III WRIGHT",
-        "MICHAEL RYAN PRITCHARD"
-      ],
-      "tags": [
-        "그린 데이",
-        "Last Night On Earth",
-        "Green Day",
-        "BILLIE JOE ARMSTRONG",
-        "FRANK E III WRIGHT",
-        "MICHAEL RYAN PRITCHARD",
-        "라스트나이트온어스"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 43,
-      "id": "adf7bf4b-c4e9-5314-984f-3d5bf4dbe9be",
-      "title": "Painkiller",
-      "addedTags": [
-        "페인킬러"
-      ],
-      "previousTags": [
-        "루엘",
-        "Painkiller",
-        "Ruel",
-        "VAN DIJK RUEL VINCENT",
-        "AARONS SARAH PAIGE",
-        "LANDON MARK"
-      ],
-      "tags": [
-        "루엘",
-        "Painkiller",
-        "Ruel",
-        "VAN DIJK RUEL VINCENT",
-        "AARONS SARAH PAIGE",
-        "LANDON MARK",
-        "페인킬러"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 52,
-      "id": "0f7ab3de-739a-5679-8676-ae401f6b67af",
-      "title": "Always Remember Us This Way",
-      "addedTags": [
-        "올웨이즈리멤버어스디스웨이"
-      ],
-      "previousTags": [
-        "레이디 가가",
-        "Always Remember Us This Way",
-        "Lady Gaga",
-        "GERMANOTTA STEFANI",
-        "HEMBY NATALIE",
-        "LINDSEY HILLARY",
-        "MCKENNA LORI"
-      ],
-      "tags": [
-        "레이디 가가",
-        "Always Remember Us This Way",
-        "Lady Gaga",
-        "GERMANOTTA STEFANI",
-        "HEMBY NATALIE",
-        "LINDSEY HILLARY",
-        "MCKENNA LORI",
-        "올웨이즈리멤버어스디스웨이"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 62,
-      "id": "3cfb3d04-8a3f-5be4-bea8-e4cc921200af",
-      "title": "Reality",
-      "addedTags": [
-        "리얼리티"
-      ],
-      "previousTags": [
-        "Reality",
-        "Richard Sanderson",
-        "Vladimir Cosma",
-        "J Jordan"
-      ],
-      "tags": [
-        "Reality",
-        "Richard Sanderson",
-        "Vladimir Cosma",
-        "J Jordan",
-        "리얼리티"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ],
-      "namingReviewReasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 73,
-      "id": "a4b61e86-2618-5f6a-bdb0-1c4d676543a1",
-      "title": "All Of Me",
-      "addedTags": [
-        "올오브미"
-      ],
-      "previousTags": [
-        "All Of Me",
-        "John Legend",
-        "GAD TOBY",
-        "LEGEND JOHN"
-      ],
-      "tags": [
-        "All Of Me",
-        "John Legend",
-        "GAD TOBY",
-        "LEGEND JOHN",
-        "올오브미"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ],
-      "namingReviewReasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 83,
-      "id": "43249097-b257-53ba-810d-69af3f14669e",
-      "title": "Welcome To The Black Parade",
-      "addedTags": [
-        "웰컴투더블랙퍼레이드"
-      ],
-      "previousTags": [
-        "마이 케미컬 로맨스",
-        "Welcome To The Black Parade",
-        "My Chemical Romance",
-        "BRYAR BOB",
-        "IERO FRANK",
-        "TORO RAY",
-        "WAY GERARD",
-        "WAY MICHAEL"
-      ],
-      "tags": [
-        "마이 케미컬 로맨스",
-        "Welcome To The Black Parade",
-        "My Chemical Romance",
-        "BRYAR BOB",
-        "IERO FRANK",
-        "TORO RAY",
-        "WAY GERARD",
-        "WAY MICHAEL",
-        "웰컴투더블랙퍼레이드"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 92,
-      "id": "357f3724-643f-5d3c-9e75-9f32707d7545",
-      "title": "High Hopes",
-      "addedTags": [
-        "하이호프스"
-      ],
-      "previousTags": [
-        "High Hopes",
-        "Panic At The Disco",
-        "패닉 앳 더 디스코",
-        "Brendon Urie",
-        "Jake Sinclair",
-        "Jenny Owen Youngs",
-        "Lauren Pritchard",
-        "Sam Hollander",
-        "William LobbanBean",
-        "Jonas Jeberg"
-      ],
-      "tags": [
-        "Panic At The Disco",
-        "패닉 앳 더 디스코",
-        "Brendon Urie",
-        "Jake Sinclair",
-        "Jenny Owen Youngs",
-        "Lauren Pritchard",
-        "Sam Hollander",
-        "William LobbanBean",
-        "Jonas Jeberg",
-        "하이호프스"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 100,
-      "id": "592f8a0e-833a-50da-b851-44cced82ebdd",
-      "title": "Halo",
-      "addedTags": [
-        "헤일로"
-      ],
-      "previousTags": [
-        "비욘세",
-        "Halo",
-        "Beyonce",
-        "E Kidd Bogart",
-        "Beyonce Knowles",
-        "Ryan Tedder"
-      ],
-      "tags": [
-        "비욘세",
-        "Halo",
-        "Beyonce",
-        "E Kidd Bogart",
-        "Beyonce Knowles",
-        "Ryan Tedder",
-        "헤일로"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 6,
-      "id": "2055c502-71fd-5583-b395-6b261785774a",
-      "title": "Rolling In The Deep",
-      "addedTags": [
-        "롤링인더딥"
-      ],
-      "previousTags": [
-        "아델",
-        "Rolling In The Deep",
-        "Adele",
-        "ADKINS ADELE LAURIE BLUE",
-        "EPWORTH PAUL"
-      ],
-      "tags": [
-        "아델",
-        "Rolling In The Deep",
-        "Adele",
-        "ADKINS ADELE LAURIE BLUE",
-        "EPWORTH PAUL",
-        "롤링인더딥"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 18,
-      "id": "b87ff2cc-034c-5c9c-84c4-28ad0a2e8869",
-      "title": "Snowman",
-      "addedTags": [
-        "스노우맨"
-      ],
-      "previousTags": [
-        "시아",
-        "Snowman",
-        "Sia",
-        "GREG KURSTIN",
-        "SIA FURLER"
-      ],
-      "tags": [
-        "시아",
-        "Snowman",
-        "Sia",
-        "GREG KURSTIN",
-        "SIA FURLER",
-        "스노우맨"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 26,
-      "id": "4d0a62d2-d53b-5830-a3e9-bb2317bfa0bf",
-      "title": "Bad",
-      "addedTags": [
-        "배드"
-      ],
-      "previousTags": [
-        "Bad",
-        "Christopher",
-        "LINJAMA LENNO SAKARI",
-        "LUND CHRISTOPHER",
-        "BLOM ARON ROLF"
-      ],
-      "tags": [
-        "Bad",
-        "Christopher",
-        "LINJAMA LENNO SAKARI",
-        "LUND CHRISTOPHER",
-        "BLOM ARON ROLF",
-        "배드"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ],
-      "namingReviewReasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 34,
-      "id": "1d324877-d5bb-5042-9a62-d069ef263c63",
-      "title": "Stay",
-      "addedTags": [
-        "스테이"
-      ],
-      "previousTags": [
-        "저스틴 비버",
-        "Stay",
-        "The Kid LAROI",
-        "Justin Bieber",
-        "더 키드 라로이",
-        "Charlton Howard",
-        "Magnus Hiberg",
-        "Charlie Puth",
-        "Omer Fedi",
-        "Blake Slatkin"
-      ],
-      "tags": [
-        "저스틴 비버",
-        "The Kid LAROI",
-        "Justin Bieber",
-        "더 키드 라로이",
-        "Charlton Howard",
-        "Magnus Hiberg",
-        "Charlie Puth",
-        "Omer Fedi",
-        "Blake Slatkin",
-        "스테이"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 44,
-      "id": "c7e7d50e-809a-5a05-af6f-0e40cf0496e5",
-      "title": "Fly Me To The Moon",
-      "addedTags": [
-        "플라이미투더문"
-      ],
-      "previousTags": [
-        "프랭크 시나트라",
-        "Fly Me To The Moon",
-        "Frank Sinatra",
-        "Bart Howard"
-      ],
-      "tags": [
-        "프랭크 시나트라",
-        "Fly Me To The Moon",
-        "Frank Sinatra",
-        "Bart Howard",
-        "플라이미투더문"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 53,
-      "id": "c4853623-d80c-5028-bbe6-ca16bbb96c85",
-      "title": "Santa Tell Me",
-      "addedTags": [
-        "산타텔미"
-      ],
-      "previousTags": [
-        "아리아나 그란데",
-        "Santa Tell Me",
-        "Ariana Grande",
-        "SAVAN HARISH KOTECHA",
-        "ILYA"
-      ],
-      "tags": [
-        "아리아나 그란데",
-        "Santa Tell Me",
-        "Ariana Grande",
-        "SAVAN HARISH KOTECHA",
-        "ILYA",
-        "산타텔미"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 63,
-      "id": "24132cfb-aa52-5e9c-9530-5599df877b28",
-      "title": "Someone You Loved",
-      "addedTags": [
-        "섬원유러브드"
-      ],
-      "previousTags": [
-        "Someone You Loved",
-        "Lewis Capaldi",
-        "BENJAMIN ALEXANDER KOHN",
-        "THOMAS BARNES",
-        "PETER KELLEHERLEWIS CAPALDI",
-        "SAMUEL ELLIOT ROMAN"
-      ],
-      "tags": [
-        "Someone You Loved",
-        "Lewis Capaldi",
-        "BENJAMIN ALEXANDER KOHN",
-        "THOMAS BARNES",
-        "PETER KELLEHERLEWIS CAPALDI",
-        "SAMUEL ELLIOT ROMAN",
-        "섬원유러브드"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ],
-      "namingReviewReasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 74,
-      "id": "9d778a86-4aed-567b-82b9-fd73b07fec1e",
-      "title": "My Love",
-      "addedTags": [
-        "마이러브"
-      ],
-      "previousTags": [
-        "My Love",
-        "Westlife",
-        "Jorgen Elofsson",
-        "Dave Kreuger",
-        "Per Nylen"
-      ],
-      "tags": [
-        "My Love",
-        "Westlife",
-        "Jorgen Elofsson",
-        "Dave Kreuger",
-        "Per Nylen",
-        "마이러브"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ],
-      "namingReviewReasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 84,
-      "id": "8014abd3-805b-5ca2-9ca7-af6005936ce3",
-      "title": "Circles",
-      "addedTags": [
-        "서클스"
-      ],
-      "previousTags": [
-        "포스트 말론",
-        "Circles",
-        "Post Malone",
-        "FEENEY ADAM KING",
-        "POST AUSTIN RICHARD",
-        "BELL LOUIS RUSSELL",
-        "WALSH BILLY",
-        "GUNESBERK KAAN"
-      ],
-      "tags": [
-        "포스트 말론",
-        "Circles",
-        "Post Malone",
-        "FEENEY ADAM KING",
-        "POST AUSTIN RICHARD",
-        "BELL LOUIS RUSSELL",
-        "WALSH BILLY",
-        "GUNESBERK KAAN",
-        "서클스"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 93,
-      "id": "fd659bf6-fccb-5cb3-b56e-aa3efec69735",
-      "title": "We Don't Talk Anymore",
-      "addedTags": [
-        "위돈트토크애니모어"
-      ],
-      "previousTags": [
-        "찰리 푸스",
-        "셀레나 고메즈",
-        "We Dont Talk Anymore",
-        "Charlie PuthFeatSelena Gomez",
-        "CHARLIE PUTH",
-        "JACOB KASHER HINDLIN",
-        "SELENA MARIE GOMEZ"
-      ],
-      "tags": [
-        "찰리 푸스",
-        "셀레나 고메즈",
-        "We Dont Talk Anymore",
-        "Charlie PuthFeatSelena Gomez",
-        "CHARLIE PUTH",
-        "JACOB KASHER HINDLIN",
-        "SELENA MARIE GOMEZ",
-        "위돈트토크애니모어"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 7,
-      "id": "eefbe3d6-c9db-5ad2-99b5-f8baf203b6da",
-      "title": "Love Story",
-      "addedTags": [
-        "러브스토리"
-      ],
-      "previousTags": [
-        "Love Story",
-        "Taylor Swift"
-      ],
-      "tags": [
-        "Love Story",
-        "Taylor Swift",
-        "러브스토리"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ],
-      "namingReviewReasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 19,
-      "id": "a64b301a-a0bd-5425-8644-7403e1b55e2c",
-      "title": "Beauty And A Beat",
-      "addedTags": [
-        "뷰티앤어비트"
-      ],
-      "previousTags": [
-        "저스틴 비버",
-        "Beauty And A Beat",
-        "Justin BieberFeatNicki Minaj",
-        "ZEDD",
-        "SAVAN KOTECHA",
-        "MAX MARTIN",
-        "NICKI MINAJ"
-      ],
-      "tags": [
-        "저스틴 비버",
-        "Beauty And A Beat",
-        "Justin BieberFeatNicki Minaj",
-        "ZEDD",
-        "SAVAN KOTECHA",
-        "MAX MARTIN",
-        "NICKI MINAJ",
-        "뷰티앤어비트"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 27,
-      "id": "5fd0ebee-7c82-5cfd-8a62-aadc2adeaed9",
-      "title": "Viva La Vida",
-      "addedTags": [
-        "비바라비다"
-      ],
-      "previousTags": [
-        "Viva La Vida",
-        "Coldplay",
-        "Guy Berryman",
-        "Jon Buckland",
-        "Will Champion",
-        "Chris Martin"
-      ],
-      "tags": [
-        "Viva La Vida",
-        "Coldplay",
-        "Guy Berryman",
-        "Jon Buckland",
-        "Will Champion",
-        "Chris Martin",
-        "비바라비다"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ],
-      "namingReviewReasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 35,
-      "id": "41bec61d-2c9a-57ff-925a-3a3dff8289e3",
-      "title": "All I Want For Christmas Is You",
-      "addedTags": [
-        "올아이원트포크리스마스이즈유"
-      ],
-      "previousTags": [
-        "All I Want For Christmas Is You",
-        "Mariah Carey",
-        "AFANASIEFF WALTER N",
-        "CAREY MARIAH"
-      ],
-      "tags": [
-        "All I Want For Christmas Is You",
-        "Mariah Carey",
-        "AFANASIEFF WALTER N",
-        "CAREY MARIAH",
-        "올아이원트포크리스마스이즈유"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ],
-      "namingReviewReasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 46,
-      "id": "5cc9292c-285f-535e-810d-9c68d07b488c",
-      "title": "If I Ain't Got You",
-      "addedTags": [
-        "이프아이에인트갓유"
-      ],
-      "previousTags": [
-        "앨리샤 키스",
-        "If I Aint Got You",
-        "Alicia Keys",
-        "AUGELLOCOOK ALICIA"
-      ],
-      "tags": [
-        "앨리샤 키스",
-        "If I Aint Got You",
-        "Alicia Keys",
-        "AUGELLOCOOK ALICIA",
-        "이프아이에인트갓유"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 55,
-      "id": "3cc017df-5f5a-5498-9bb7-a4c35af83551",
-      "title": "What Makes You Beautiful",
-      "addedTags": [
-        "왓메이크스유뷰티풀"
-      ],
-      "previousTags": [
-        "원 디렉션",
-        "What Makes You Beautiful",
-        "One Direction",
-        "FALK CARL",
-        "KOTECHA SAVAN HARISH",
-        "YACOUB RAMI"
-      ],
-      "tags": [
-        "원 디렉션",
-        "What Makes You Beautiful",
-        "One Direction",
-        "FALK CARL",
-        "KOTECHA SAVAN HARISH",
-        "YACOUB RAMI",
-        "왓메이크스유뷰티풀"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 64,
-      "id": "0d0bbf86-b197-5bf7-8e9a-a8092085ec56",
-      "title": "Blinding Lights",
-      "addedTags": [
-        "블라인딩라이츠"
-      ],
-      "previousTags": [
-        "위켄드",
-        "Blinding Lights",
-        "The Weeknd",
-        "BALSHE AHMAD",
-        "HOLTER OSCAR THOMAS",
-        "MARTIN MAX",
-        "QUENNEVILLE JASON MATTHEW",
-        "TESFAYE ABEL"
-      ],
-      "tags": [
-        "위켄드",
-        "Blinding Lights",
-        "The Weeknd",
-        "BALSHE AHMAD",
-        "HOLTER OSCAR THOMAS",
-        "MARTIN MAX",
-        "QUENNEVILLE JASON MATTHEW",
-        "TESFAYE ABEL",
-        "블라인딩라이츠"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 75,
-      "id": "fb4106ad-efb2-5ef0-ae10-b3866857f3b4",
-      "title": "When We Were Young",
-      "addedTags": [
-        "웬위워영"
-      ],
-      "previousTags": [
-        "아델",
-        "When We Were Young",
-        "Adele",
-        "JESSO TOBIAS MACDONALD",
-        "ADKINS ADELE LAURIE BLUE"
-      ],
-      "tags": [
-        "아델",
-        "When We Were Young",
-        "Adele",
-        "JESSO TOBIAS MACDONALD",
-        "ADKINS ADELE LAURIE BLUE",
-        "웬위워영"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 85,
-      "id": "25e983c4-a857-5ce1-b0a8-cc4a0658449c",
-      "title": "GHOST TOWN",
-      "addedTags": [
-        "고스트타운"
-      ],
-      "previousTags": [
-        "벤슨 분",
-        "GHOST TOWN",
-        "Benson Boone",
-        "NOLAN WINFIELD SIPE",
-        "TUSHAR APTE"
-      ],
-      "tags": [
-        "벤슨 분",
-        "GHOST TOWN",
-        "Benson Boone",
-        "NOLAN WINFIELD SIPE",
-        "TUSHAR APTE",
-        "고스트타운"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 94,
-      "id": "5b798a03-f7a7-58d8-83fb-6d9a16c3f252",
-      "title": "Lay Me Down",
-      "addedTags": [
-        "레이미다운"
-      ],
-      "previousTags": [
-        "샘 스미스",
-        "Lay Me Down",
-        "Sam SmithFeatJohn Legend",
-        "SAM SMITH",
-        "JAMES NAPIER",
-        "ELVIN SMITH"
-      ],
-      "tags": [
-        "샘 스미스",
-        "Lay Me Down",
-        "Sam SmithFeatJohn Legend",
-        "SAM SMITH",
-        "JAMES NAPIER",
-        "ELVIN SMITH",
-        "레이미다운"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 8,
-      "id": "de1eb4fb-7d84-567a-a559-21080ba66c14",
-      "title": "I'm Not The Only One",
-      "addedTags": [
-        "아임낫디온리원"
-      ],
-      "previousTags": [
-        "샘 스미스",
-        "Im Not The Only One",
-        "Sam Smith",
-        "JAMES NAPIER"
-      ],
-      "tags": [
-        "샘 스미스",
-        "Im Not The Only One",
-        "Sam Smith",
-        "JAMES NAPIER",
-        "아임낫디온리원"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 20,
-      "id": "9d3fe26e-fc1e-5a90-bffa-b2d5c01b0596",
-      "title": "Until I Found You",
-      "addedTags": [
-        "언틸아이파운드유"
-      ],
-      "previousTags": [
-        "Until I Found You",
-        "Stephen Sanchez",
-        "SANCHEZ STEPHEN CHRISTOPHER"
-      ],
-      "tags": [
-        "Until I Found You",
-        "Stephen Sanchez",
-        "SANCHEZ STEPHEN CHRISTOPHER",
-        "언틸아이파운드유"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ],
-      "namingReviewReasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 28,
-      "id": "3843f5b8-c6f6-5cb2-be43-4ca4ffb85471",
-      "title": "Cruel Summer",
-      "addedTags": [
-        "크루얼서머"
-      ],
-      "previousTags": [
-        "Cruel Summer",
-        "Taylor Swift",
-        "ANTONOFF JACK",
-        "CLARK ANNIE",
-        "SWIFT TAYLOR ALISON"
-      ],
-      "tags": [
-        "Cruel Summer",
-        "Taylor Swift",
-        "ANTONOFF JACK",
-        "CLARK ANNIE",
-        "SWIFT TAYLOR ALISON",
-        "크루얼서머"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ],
-      "namingReviewReasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 36,
-      "id": "fd6bb828-1523-569a-98fc-b02e85a5b31d",
-      "title": "Beggin'",
-      "addedTags": [
-        "베긴"
-      ],
-      "previousTags": [
-        "Beggin",
-        "Maneskin",
-        "BOB GAUDIO",
-        "PEGGY FARINA"
-      ],
-      "tags": [
-        "Beggin",
-        "Maneskin",
-        "BOB GAUDIO",
-        "PEGGY FARINA",
-        "베긴"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ],
-      "namingReviewReasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 47,
-      "id": "0dca0bfa-0846-5291-831f-8d6a864fbb25",
-      "title": "One Call Away",
-      "addedTags": [
-        "원콜어웨이"
-      ],
-      "previousTags": [
-        "One Call Away",
-        "Charlie Puth",
-        "찰리 푸스",
-        "Justin Franks",
-        "Matt Prime",
-        "Shy Carter",
-        "Maureen McDonald",
-        "Breyan Isaac"
-      ],
-      "tags": [
-        "One Call Away",
-        "Charlie Puth",
-        "찰리 푸스",
-        "Justin Franks",
-        "Matt Prime",
-        "Shy Carter",
-        "Maureen McDonald",
-        "Breyan Isaac",
-        "원콜어웨이"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 56,
-      "id": "f21ebed9-1289-5928-a76a-542ca88b35ff",
-      "title": "Teeth",
-      "addedTags": [
-        "티스"
-      ],
-      "previousTags": [
-        "Teeth",
-        "5 Seconds Of Summer",
-        "파이브 세컨즈 오브 서머",
-        "Ali Tamposi",
-        "Ashton Irwin",
-        "Luke Hemmings",
-        "Andrew Watt",
-        "Bernard Sumner",
-        "Carl Sturken",
-        "Evan Rogers"
-      ],
-      "tags": [
-        "5 Seconds Of Summer",
-        "파이브 세컨즈 오브 서머",
-        "Ali Tamposi",
-        "Ashton Irwin",
-        "Luke Hemmings",
-        "Andrew Watt",
-        "Bernard Sumner",
-        "Carl Sturken",
-        "Evan Rogers",
-        "티스"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": true,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 65,
-      "id": "1dea42b3-c4bb-5e98-8ae7-b67a6ec45b04",
-      "title": "Counting Stars",
-      "addedTags": [
-        "카운팅스타즈"
-      ],
-      "previousTags": [
-        "Counting Stars",
-        "OneRepublic",
-        "TEDDER RYAN B"
-      ],
-      "tags": [
-        "Counting Stars",
-        "OneRepublic",
-        "TEDDER RYAN B",
-        "카운팅스타즈"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ],
-      "namingReviewReasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 76,
-      "id": "5ad5cfda-3f3d-58f0-8ecc-051a5b5abee8",
-      "title": "How Far I'll Go",
-      "addedTags": [
-        "하우파아일고"
-      ],
-      "previousTags": [
-        "시아",
-        "How Far Ill Go",
-        "Alessia Cara",
-        "MIRANDA LIN MANUEL"
-      ],
-      "tags": [
-        "시아",
-        "How Far Ill Go",
-        "Alessia Cara",
-        "MIRANDA LIN MANUEL",
-        "하우파아일고"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 87,
-      "id": "4fb326ae-f04f-5b76-815a-7633e18cb7c9",
-      "title": "Out of Time",
-      "addedTags": [
-        "아웃오브타임"
-      ],
-      "previousTags": [
-        "위켄드",
-        "Out of Time",
-        "The Weeknd",
-        "ARAN TOMOKO",
-        "HAMADA TETSURO",
-        "HOLTER OSCAR THOMAS",
-        "LOPATIN DANIEL",
-        "MAX MARTIN",
-        "TESFAYE ABEL"
-      ],
-      "tags": [
-        "위켄드",
-        "Out of Time",
-        "The Weeknd",
-        "ARAN TOMOKO",
-        "HAMADA TETSURO",
-        "HOLTER OSCAR THOMAS",
-        "LOPATIN DANIEL",
-        "MAX MARTIN",
-        "TESFAYE ABEL",
-        "아웃오브타임"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 95,
-      "id": "f604219c-6a2a-5825-a5e7-e7f8835d9aa8",
-      "title": "Hero",
-      "addedTags": [
-        "히어로"
-      ],
-      "previousTags": [
-        "Hero",
-        "Mili",
-        "CASSIE WEI",
-        "SAKAI HIROKAZU"
-      ],
-      "tags": [
-        "Hero",
-        "Mili",
-        "CASSIE WEI",
-        "SAKAI HIROKAZU",
-        "히어로"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ],
-      "namingReviewReasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 9,
-      "id": "e754a932-2a3d-599a-9258-08ed5a0c45e5",
-      "title": "Rewrite The Stars",
-      "addedTags": [
-        "리라이트더스타즈"
-      ],
-      "previousTags": [
-        "Rewrite The Stars",
-        "Zac Efron",
-        "Zendaya",
-        "PASEK BENJ",
-        "PAUL JUSTIN NOBLE"
-      ],
-      "tags": [
-        "Rewrite The Stars",
-        "Zac Efron",
-        "Zendaya",
-        "PASEK BENJ",
-        "PAUL JUSTIN NOBLE",
-        "리라이트더스타즈"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ],
-      "namingReviewReasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 21,
-      "id": "412c190d-1573-5b3a-838a-3d2b31297d4c",
-      "title": "When I Was Your Man",
-      "addedTags": [
-        "웬아이워즈유어맨"
-      ],
-      "previousTags": [
-        "브루노 마스",
-        "When I Was Your Man",
-        "Bruno Mars",
-        "LAWRENCE PHILIP MARTIN II",
-        "LEVINE ARI",
-        "MARS BRUNO",
-        "WYATT ANDREW"
-      ],
-      "tags": [
-        "브루노 마스",
-        "When I Was Your Man",
-        "Bruno Mars",
-        "LAWRENCE PHILIP MARTIN II",
-        "LEVINE ARI",
-        "MARS BRUNO",
-        "WYATT ANDREW",
-        "웬아이워즈유어맨"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 29,
-      "id": "84c47cb6-6d22-5aa6-b758-2b50d4e0e94e",
-      "title": "There's Nothing Holdin' Me Back",
-      "addedTags": [
-        "데어즈낫씽홀딩미백"
-      ],
-      "previousTags": [
-        "숀 멘데스",
-        "Theres Nothing Holdin Me Back",
-        "Shawn Mendes",
-        "TEDDY GEIGER",
-        "SCOTT HARRIS",
-        "GEOFFREY WARBURTON"
-      ],
-      "tags": [
-        "숀 멘데스",
-        "Theres Nothing Holdin Me Back",
-        "Shawn Mendes",
-        "TEDDY GEIGER",
-        "SCOTT HARRIS",
-        "GEOFFREY WARBURTON",
-        "데어즈낫씽홀딩미백"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 38,
-      "id": "34e03825-a86d-5174-9b06-87539fbb15a4",
-      "title": "Off My Face",
-      "addedTags": [
-        "오프마이페이스"
-      ],
-      "previousTags": [
-        "저스틴 비버",
-        "Off My Face",
-        "Justin Bieber",
-        "BIEBER JUSTIN",
-        "PRINGLE DANIEL JAMES",
-        "PRINGLE LEAH JAQUELINE",
-        "SCOLA TIA MARIE",
-        "TORREY JACOB"
-      ],
-      "tags": [
-        "저스틴 비버",
-        "Off My Face",
-        "Justin Bieber",
-        "BIEBER JUSTIN",
-        "PRINGLE DANIEL JAMES",
-        "PRINGLE LEAH JAQUELINE",
-        "SCOLA TIA MARIE",
-        "TORREY JACOB",
-        "오프마이페이스"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 48,
-      "id": "83c86830-0297-5131-8633-13dbbfa6abad",
-      "title": "A Thousand Years",
-      "addedTags": [
-        "어사우전드이어즈"
-      ],
-      "previousTags": [
-        "A Thousand Years",
-        "Christina Perri",
-        "HODGES DAVID",
-        "PERRI CHRISTINA"
-      ],
-      "tags": [
-        "A Thousand Years",
-        "Christina Perri",
-        "HODGES DAVID",
-        "PERRI CHRISTINA",
-        "어사우전드이어즈"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ],
-      "namingReviewReasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 57,
-      "id": "7c76ec89-3ffe-5882-8c33-0e469254de7d",
-      "title": "Sunflower",
-      "addedTags": [
-        "선플라워"
-      ],
-      "previousTags": [
-        "포스트 말론",
-        "Sunflower",
-        "Post Malone",
-        "Swae Lee",
-        "BROWN KHALIF",
-        "WILLIAM WALSH",
-        "CARTER LANG",
-        "CARL AUSTIN ROSEN",
-        "LOUIS BELL",
-        "AUSTIN POST"
-      ],
-      "tags": [
-        "포스트 말론",
-        "Post Malone",
-        "Swae Lee",
-        "BROWN KHALIF",
-        "WILLIAM WALSH",
-        "CARTER LANG",
-        "CARL AUSTIN ROSEN",
-        "LOUIS BELL",
-        "AUSTIN POST",
-        "선플라워"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 66,
-      "id": "a9442913-b96a-5a89-a941-6221c240979f",
-      "title": "Englishman In New York",
-      "addedTags": [
-        "잉글리시맨인뉴욕"
-      ],
-      "previousTags": [
-        "Englishman In New York",
-        "Sting"
-      ],
-      "tags": [
-        "Englishman In New York",
-        "Sting",
-        "잉글리시맨인뉴욕"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ],
-      "namingReviewReasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 78,
-      "id": "4ca17646-1903-5e07-8143-a341c5c22b97",
-      "title": "Too Good To Say Goodbye",
-      "addedTags": [
-        "투굿투세이굿바이"
-      ],
-      "previousTags": [
-        "Too Good To Say Goodbye",
-        "Bruno Mars",
-        "브루노 마스",
-        "Babyface",
-        "Jeff Bhasker",
-        "Brody Brown",
-        "Philip Lawrence"
-      ],
-      "tags": [
-        "Too Good To Say Goodbye",
-        "Bruno Mars",
-        "브루노 마스",
-        "Babyface",
-        "Jeff Bhasker",
-        "Brody Brown",
-        "Philip Lawrence",
-        "투굿투세이굿바이"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 88,
-      "id": "bb6d1de3-61fd-55ee-88e3-27310f52451d",
-      "title": "Sunday Morning",
-      "addedTags": [
-        "선데이모닝"
-      ],
-      "previousTags": [
-        "마룬 5",
-        "Sunday Morning",
-        "Maroon 5",
-        "Carmichael",
-        "Levine"
-      ],
-      "tags": [
-        "마룬 5",
-        "Sunday Morning",
-        "Maroon 5",
-        "Carmichael",
-        "Levine",
-        "선데이모닝"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음."
-      ],
-      "namingReviewReasons": []
-    },
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 96,
-      "id": "764dc25d-c905-58a5-ad36-7638a35c7b2b",
-      "title": "Can't Take My Eyes Off You",
-      "addedTags": [
-        "캔트테이크마이아이즈오프유"
-      ],
-      "previousTags": [
-        "Cant Take My Eyes Off You",
-        "Morten Harket",
-        "Bob Crewe",
-        "Bob Gaudio"
-      ],
-      "tags": [
-        "Cant Take My Eyes Off You",
-        "Morten Harket",
-        "Bob Crewe",
-        "Bob Gaudio",
-        "캔트테이크마이아이즈오프유"
-      ],
-      "retiredRedundantAliases": [],
-      "reviewRequired": false,
-      "previousNamingReasons": [
-        "통용 한국어 곡명·발음 표기를 확인할 수 있는 출처 추가 조사 필요. 직접 번역·음차하지 않음.",
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ],
-      "namingReviewReasons": [
-        "동일 가수의 통용 한국어 이름 출처 추가 확인 필요."
-      ]
-    }
-  ],
-  "japanesePronunciationAndWriterChanges": [
-    {
-      "catalogue": "tj-261027-pop",
-      "index": 2,
-      "id": "ca7ada3c-ef61-50dc-bc4c-9ea8578e9252",
-      "title": "Creep",
-      "previousTags": [
-        "크립",
-        "라디오헤드",
-        "Creep",
-        "Radiohead",
-        "Colin Greenwood",
-        "Jonny Greenwood",
-        "Ed Obrien",
-        "Phil Selway",
-        "Thom Yorke"
-      ],
+      "title": "크립",
       "tags": [
         "크립",
         "라디오헤드",
@@ -3864,199 +28,217 @@
         "에드오브라이언",
         "필셀웨이",
         "톰요크"
-      ],
-      "addedAliases": [
-        {
-          "kind": "writer",
-          "name": "콜린그린우드",
-          "canonicalName": "Colin Greenwood",
-          "writer": "Colin Greenwood",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Colin Greenwood → 콜린그린우드. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        },
-        {
-          "kind": "writer",
-          "name": "조니그린우드",
-          "canonicalName": "Jonny Greenwood",
-          "writer": "Jonny Greenwood",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Jonny Greenwood → 조니그린우드. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        },
-        {
-          "kind": "writer",
-          "name": "에드오브라이언",
-          "canonicalName": "Ed Obrien",
-          "writer": "Ed Obrien",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Ed Obrien → 에드오브라이언. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        },
-        {
-          "kind": "writer",
-          "name": "필셀웨이",
-          "canonicalName": "Phil Selway",
-          "writer": "Phil Selway",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Phil Selway → 필셀웨이. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        },
-        {
-          "kind": "writer",
-          "name": "톰요크",
-          "canonicalName": "Thom Yorke",
-          "writer": "Thom Yorke",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Thom Yorke → 톰요크. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        }
-      ],
-      "retiredRedundantTags": [
-        {
-          "tag": "Creep",
-          "reason": "Title accepted separately or writer represented by the new Korean tag; original credits retained."
-        },
-        {
-          "tag": "Ed Obrien",
-          "reason": "Title accepted separately or writer represented by the new Korean tag; original credits retained."
-        },
-        {
-          "tag": "Phil Selway",
-          "reason": "Title accepted separately or writer represented by the new Korean tag; original credits retained."
-        },
-        {
-          "tag": "Thom Yorke",
-          "reason": "Title accepted separately or writer represented by the new Korean tag; original credits retained."
-        }
-      ],
-      "reviewRequired": false
+      ]
     },
     {
-      "catalogue": "tj-261027-pop",
       "index": 3,
-      "id": "6a4e02b0-dce2-5717-8c2f-8b9461035ea9",
-      "title": "Don't Look Back In Anger",
-      "previousTags": [
-        "Dont Look Back In Anger",
-        "Oasis",
-        "Noel Gallagher",
-        "돈룩백인앵거"
-      ],
+      "previousTitle": "Don't Look Back In Anger",
+      "title": "돈 룩 백 인 앵거",
       "tags": [
         "Dont Look Back In Anger",
         "Oasis",
         "Noel Gallagher",
         "돈룩백인앵거",
         "노엘갤러거"
-      ],
-      "addedAliases": [
-        {
-          "kind": "writer",
-          "name": "노엘갤러거",
-          "canonicalName": "Noel Gallagher",
-          "writer": "Noel Gallagher",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Noel Gallagher → 노엘갤러거. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        }
-      ],
-      "retiredRedundantTags": [],
-      "reviewRequired": false
+      ]
     },
     {
-      "catalogue": "tj-261027-pop",
+      "index": 4,
+      "previousTitle": "Speechless",
+      "title": "스피치리스",
+      "tags": [
+        "나오미 스콧",
+        "Speechless",
+        "Naomi Scott",
+        "PASEK BENJ",
+        "PAUL JUSTIN NOBLE",
+        "MENKEN ALAN",
+        "스피치리스"
+      ]
+    },
+    {
+      "index": 5,
+      "previousTitle": "Love Is An Open Door",
+      "title": "사랑은 열린 문",
+      "tags": [
+        "사랑은열린문",
+        "크리스틴 벨",
+        "산티노 폰태나",
+        "Love Is An Open Door",
+        "Kristen Bell",
+        "Santino Fontana",
+        "LOPEZ ROBERT J",
+        "ANDERSON KRISTEN"
+      ]
+    },
+    {
+      "index": 6,
+      "previousTitle": "Rolling In The Deep",
+      "title": "롤링 인 더 딥",
+      "tags": [
+        "아델",
+        "Rolling In The Deep",
+        "Adele",
+        "ADKINS ADELE LAURIE BLUE",
+        "EPWORTH PAUL",
+        "롤링인더딥"
+      ]
+    },
+    {
       "index": 7,
-      "id": "eefbe3d6-c9db-5ad2-99b5-f8baf203b6da",
-      "title": "Love Story",
-      "previousTags": [
-        "Love Story",
-        "Taylor Swift",
-        "러브스토리"
-      ],
+      "previousTitle": "Love Story",
+      "title": "러브스토리",
       "tags": [
         "Love Story",
         "Taylor Swift",
         "러브스토리",
         "테일러스위프트"
-      ],
-      "addedAliases": [
-        {
-          "kind": "writer",
-          "name": "테일러스위프트",
-          "canonicalName": "Taylor Swift",
-          "writer": "Taylor Swift",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Taylor Swift → 테일러스위프트. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        }
-      ],
-      "retiredRedundantTags": [],
-      "reviewRequired": false
+      ]
     },
     {
-      "catalogue": "tj-261027-pop",
-      "index": 11,
-      "id": "6ae806fc-bf49-5bab-a0fb-e0fe8c54c33b",
-      "title": "2002",
-      "previousTags": [
-        "2002",
-        "AnneMarie",
-        "앤 마리",
-        "Benjamin Levin",
-        "Julia Cavazos",
-        "Steve McCutcheon",
-        "Edward Christopher Sheeran",
-        "AnneMarie Nicholson",
-        "Andreas Carlsson",
-        "George Clinton"
-      ],
+      "index": 8,
+      "previousTitle": "I'm Not The Only One",
+      "title": "아임 낫 디 온리 원",
       "tags": [
-        "AnneMarie",
-        "앤 마리",
-        "Benjamin Levin",
-        "Julia Cavazos",
-        "Steve McCutcheon",
-        "Edward Christopher Sheeran",
-        "AnneMarie Nicholson",
-        "Andreas Carlsson",
-        "George Clinton",
-        "에드시런"
-      ],
-      "addedAliases": [
-        {
-          "kind": "writer",
-          "name": "에드시런",
-          "canonicalName": "Edward Christopher Sheeran",
-          "writer": "Edward Christopher Sheeran",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Edward Christopher Sheeran → 에드시런. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        }
-      ],
-      "retiredRedundantTags": [
-        {
-          "tag": "2002",
-          "reason": "Title accepted separately or writer represented by the new Korean tag; original credits retained."
-        }
-      ],
-      "reviewRequired": false
+        "샘 스미스",
+        "Im Not The Only One",
+        "Sam Smith",
+        "JAMES NAPIER",
+        "아임낫디온리원"
+      ]
     },
     {
-      "catalogue": "tj-261027-pop",
-      "index": 19,
-      "id": "a64b301a-a0bd-5425-8644-7403e1b55e2c",
-      "title": "Beauty And A Beat",
-      "previousTags": [
+      "index": 9,
+      "previousTitle": "Rewrite The Stars",
+      "title": "리라이트 더 스타즈",
+      "tags": [
+        "Rewrite The Stars",
+        "Zac Efron",
+        "Zendaya",
+        "PASEK BENJ",
+        "PAUL JUSTIN NOBLE",
+        "리라이트더스타즈"
+      ]
+    },
+    {
+      "index": 10,
+      "previousTitle": "Die With A Smile",
+      "title": "다이 위드 어 스마일",
+      "tags": [
+        "레이디 가가",
+        "브루노 마스",
+        "Lady Gaga",
+        "Bruno Mars",
+        "EMILE DERNST",
+        "FAUNTLEROY JAMES EDWARD",
+        "GERMANOTTA STEFANI J",
+        "HERNANDEZ PETER GENE",
+        "WATT ANDREW",
+        "다이위드어스마일"
+      ]
+    },
+    {
+      "index": 12,
+      "previousTitle": "She's Gone",
+      "title": "쉬즈 곤",
+      "tags": [
+        "쉬즈곤",
+        "스틸하트",
+        "Shes Gone",
+        "Steelheart",
+        "MATTJEVIC MICHAEL"
+      ]
+    },
+    {
+      "index": 13,
+      "previousTitle": "Dangerously",
+      "title": "데인저러슬리",
+      "tags": [
+        "찰리 푸스",
+        "Dangerously",
+        "Charlie Puth",
+        "ALEXANDER IZQUIERDO",
+        "JAMES JOHN ABRAHART",
+        "MARCO ANTONIO RODRIGUEZDIAZ",
+        "ROTEM JONATHAN",
+        "데인저러슬리"
+      ]
+    },
+    {
+      "index": 14,
+      "previousTitle": "Lost Stars",
+      "title": "로스트 스타",
+      "tags": [
+        "애덤 리바인",
+        "Lost Stars",
+        "로스트 스타스",
+        "Adam Levine",
+        "ALEXANDER GREGG",
+        "BRISEBOIS DANIELLE A",
+        "LASHLEY NICK P",
+        "NICKY SOUTHWOOD",
+        "로스트 스타"
+      ]
+    },
+    {
+      "index": 15,
+      "previousTitle": "Dance Monkey",
+      "title": "댄스 몽키",
+      "tags": [
+        "톤스 앤 아이",
+        "Dance Monkey",
+        "댄스몽키",
+        "Tones And I",
+        "WATSON TONI"
+      ]
+    },
+    {
+      "index": 16,
+      "previousTitle": "Lemon Tree",
+      "title": "레몬트리",
+      "tags": [
+        "풀스 가든",
+        "Lemon Tree",
+        "Fools Garden",
+        "FREUDENTHALER PETER",
+        "HINKEL VOLKER",
+        "레몬트리"
+      ]
+    },
+    {
+      "index": 17,
+      "previousTitle": "Baby",
+      "title": "베이비",
+      "tags": [
         "저스틴 비버",
-        "Beauty And A Beat",
-        "Justin BieberFeatNicki Minaj",
-        "ZEDD",
-        "SAVAN KOTECHA",
-        "MAX MARTIN",
-        "NICKI MINAJ",
-        "뷰티앤어비트"
-      ],
+        "Baby",
+        "Justin Bieber",
+        "Youngdell Nash",
+        "Nash Bieber",
+        "Bridges",
+        "TheDream",
+        "Stewart Bridges",
+        "Stewart Milian",
+        "베이비"
+      ]
+    },
+    {
+      "index": 18,
+      "previousTitle": "Snowman",
+      "title": "스노우맨",
+      "tags": [
+        "시아",
+        "Snowman",
+        "Sia",
+        "GREG KURSTIN",
+        "SIA FURLER",
+        "스노우맨"
+      ]
+    },
+    {
+      "index": 19,
+      "previousTitle": "Beauty And A Beat",
+      "title": "뷰티 앤 어 비트",
       "tags": [
         "저스틴 비버",
         "Beauty And A Beat",
@@ -4067,34 +249,53 @@
         "NICKI MINAJ",
         "뷰티앤어비트",
         "제드"
-      ],
-      "addedAliases": [
-        {
-          "kind": "writer",
-          "name": "제드",
-          "canonicalName": "ZEDD",
-          "writer": "ZEDD",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): ZEDD → 제드. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        }
-      ],
-      "retiredRedundantTags": [],
-      "reviewRequired": false
+      ]
     },
     {
-      "catalogue": "tj-261027-pop",
+      "index": 20,
+      "previousTitle": "Until I Found You",
+      "title": "언틸 아이 파운드 유",
+      "tags": [
+        "Until I Found You",
+        "Stephen Sanchez",
+        "SANCHEZ STEPHEN CHRISTOPHER",
+        "언틸아이파운드유"
+      ]
+    },
+    {
+      "index": 21,
+      "previousTitle": "When I Was Your Man",
+      "title": "웬 아이 워즈 유어 맨",
+      "tags": [
+        "브루노 마스",
+        "When I Was Your Man",
+        "Bruno Mars",
+        "LAWRENCE PHILIP MARTIN II",
+        "LEVINE ARI",
+        "MARS BRUNO",
+        "WYATT ANDREW",
+        "웬아이워즈유어맨"
+      ]
+    },
+    {
+      "index": 22,
+      "previousTitle": "A Whole New World",
+      "title": "아름다운 세상",
+      "tags": [
+        "미나 마수드",
+        "나오미 스콧",
+        "A Whole New World",
+        "Mena Massoud",
+        "Naomi Scott",
+        "MENKEN ALAN IRWIN",
+        "RICE TIMOTHY MILES BINDON",
+        "아름다운 세상"
+      ]
+    },
+    {
       "index": 23,
-      "id": "10dacbf4-b977-54ba-87f5-6273ce7e8a6d",
-      "title": "Love Yourself",
-      "previousTags": [
-        "저스틴 비버",
-        "Love Yourself",
-        "Justin Bieber",
-        "ED SHEERAN",
-        "BENNY BLANCO",
-        "러브유어셀프"
-      ],
+      "previousTitle": "Love Yourself",
+      "title": "러브 유어셀프",
       "tags": [
         "저스틴 비버",
         "Love Yourself",
@@ -4104,44 +305,49 @@
         "러브유어셀프",
         "에드시런",
         "베니블랑코"
-      ],
-      "addedAliases": [
-        {
-          "kind": "writer",
-          "name": "에드시런",
-          "canonicalName": "ED SHEERAN",
-          "writer": "ED SHEERAN",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): ED SHEERAN → 에드시런. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        },
-        {
-          "kind": "writer",
-          "name": "베니블랑코",
-          "canonicalName": "BENNY BLANCO",
-          "writer": "BENNY BLANCO",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): BENNY BLANCO → 베니블랑코. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        }
-      ],
-      "retiredRedundantTags": [],
-      "reviewRequired": false
+      ]
     },
     {
-      "catalogue": "tj-261027-pop",
+      "index": 24,
+      "previousTitle": "Someone Like You",
+      "title": "섬원 라이크 유",
+      "tags": [
+        "아델",
+        "Someone Like You",
+        "Adele",
+        "Dan Wilson",
+        "섬원라이크유"
+      ]
+    },
+    {
+      "index": 25,
+      "previousTitle": "Love",
+      "title": "러브",
+      "tags": [
+        "Love",
+        "Keyshia Cole",
+        "키샤 콜",
+        "Greg Curtis",
+        "러브"
+      ]
+    },
+    {
+      "index": 26,
+      "previousTitle": "Bad",
+      "title": "배드",
+      "tags": [
+        "Bad",
+        "Christopher",
+        "LINJAMA LENNO SAKARI",
+        "LUND CHRISTOPHER",
+        "BLOM ARON ROLF",
+        "배드"
+      ]
+    },
+    {
       "index": 27,
-      "id": "5fd0ebee-7c82-5cfd-8a62-aadc2adeaed9",
-      "title": "Viva La Vida",
-      "previousTags": [
-        "Viva La Vida",
-        "Coldplay",
-        "Guy Berryman",
-        "Jon Buckland",
-        "Will Champion",
-        "Chris Martin",
-        "비바라비다"
-      ],
+      "previousTitle": "Viva La Vida",
+      "title": "비바 라 비다",
       "tags": [
         "Coldplay",
         "Guy Berryman",
@@ -4153,157 +359,52 @@
         "존버클랜드",
         "윌챔피언",
         "크리스마틴"
-      ],
-      "addedAliases": [
-        {
-          "kind": "writer",
-          "name": "가이버리먼",
-          "canonicalName": "Guy Berryman",
-          "writer": "Guy Berryman",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Guy Berryman → 가이버리먼. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        },
-        {
-          "kind": "writer",
-          "name": "존버클랜드",
-          "canonicalName": "Jon Buckland",
-          "writer": "Jon Buckland",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Jon Buckland → 존버클랜드. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        },
-        {
-          "kind": "writer",
-          "name": "윌챔피언",
-          "canonicalName": "Will Champion",
-          "writer": "Will Champion",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Will Champion → 윌챔피언. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        },
-        {
-          "kind": "writer",
-          "name": "크리스마틴",
-          "canonicalName": "Chris Martin",
-          "writer": "Chris Martin",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Chris Martin → 크리스마틴. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        }
-      ],
-      "retiredRedundantTags": [
-        {
-          "tag": "Viva La Vida",
-          "reason": "Title accepted separately or writer represented by the new Korean tag; original credits retained."
-        }
-      ],
-      "reviewRequired": false
+      ]
     },
     {
-      "catalogue": "tj-261027-pop",
-      "index": 30,
-      "id": "aa11ee6d-582a-59f3-97b0-5328fee57654",
-      "title": "Believer",
-      "previousTags": [
-        "Imagine Dragons",
-        "이매진 드래곤스",
-        "Dan Reynolds",
-        "Wayne Sermon",
-        "Ben McKee",
-        "Daniel Platzman",
-        "Alex da Kid",
-        "Robin Fredriksson",
-        "Mattias Larsson",
-        "빌리버"
-      ],
+      "index": 28,
+      "previousTitle": "Cruel Summer",
+      "title": "크루얼 서머",
       "tags": [
-        "Imagine Dragons",
-        "이매진 드래곤스",
-        "Alex da Kid",
-        "Robin Fredriksson",
-        "Mattias Larsson",
-        "빌리버",
-        "댄레이놀즈",
-        "웨인서먼",
-        "벤맥키",
-        "대니얼플라츠먼"
-      ],
-      "addedAliases": [
-        {
-          "kind": "writer",
-          "name": "댄레이놀즈",
-          "canonicalName": "Dan Reynolds",
-          "writer": "Dan Reynolds",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Dan Reynolds → 댄레이놀즈. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        },
-        {
-          "kind": "writer",
-          "name": "웨인서먼",
-          "canonicalName": "Wayne Sermon",
-          "writer": "Wayne Sermon",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Wayne Sermon → 웨인서먼. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        },
-        {
-          "kind": "writer",
-          "name": "벤맥키",
-          "canonicalName": "Ben McKee",
-          "writer": "Ben McKee",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Ben McKee → 벤맥키. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        },
-        {
-          "kind": "writer",
-          "name": "대니얼플라츠먼",
-          "canonicalName": "Daniel Platzman",
-          "writer": "Daniel Platzman",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Daniel Platzman → 대니얼플라츠먼. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        }
-      ],
-      "retiredRedundantTags": [
-        {
-          "tag": "Dan Reynolds",
-          "reason": "Title accepted separately or writer represented by the new Korean tag; original credits retained."
-        },
-        {
-          "tag": "Wayne Sermon",
-          "reason": "Title accepted separately or writer represented by the new Korean tag; original credits retained."
-        },
-        {
-          "tag": "Ben McKee",
-          "reason": "Title accepted separately or writer represented by the new Korean tag; original credits retained."
-        },
-        {
-          "tag": "Daniel Platzman",
-          "reason": "Title accepted separately or writer represented by the new Korean tag; original credits retained."
-        }
-      ],
-      "reviewRequired": true
+        "Cruel Summer",
+        "Taylor Swift",
+        "ANTONOFF JACK",
+        "CLARK ANNIE",
+        "SWIFT TAYLOR ALISON",
+        "크루얼서머"
+      ]
     },
     {
-      "catalogue": "tj-261027-pop",
+      "index": 29,
+      "previousTitle": "There's Nothing Holdin' Me Back",
+      "title": "데어스 낫띵 홀딩 미 백",
+      "tags": [
+        "숀 멘데스",
+        "Theres Nothing Holdin Me Back",
+        "Shawn Mendes",
+        "TEDDY GEIGER",
+        "SCOTT HARRIS",
+        "GEOFFREY WARBURTON",
+        "데어스 낫띵 홀딩 미 백"
+      ]
+    },
+    {
+      "index": 31,
+      "previousTitle": "Shape Of You",
+      "title": "셰이프 오브 유",
+      "tags": [
+        "에드 시런",
+        "Shape Of You",
+        "Ed Sheeran",
+        "STEVE MAC",
+        "JOHNNY MCDAID",
+        "셰이프오브유"
+      ]
+    },
+    {
       "index": 32,
-      "id": "74aa365a-0886-595d-91a0-13154a6d5613",
-      "title": "Payphone",
-      "previousTags": [
-        "마룬 5",
-        "Payphone",
-        "Maroon 5FeatWiz Khalifa",
-        "LEVIN BENJAMIN",
-        "LEVINE ADAM",
-        "MALIK AMMAR",
-        "OMELIO DAN",
-        "SCHUSTER JOHAN KARL",
-        "THOMAZ CAMERON",
-        "페이폰"
-      ],
+      "previousTitle": "Payphone",
+      "title": "페이폰",
       "tags": [
         "마룬 5",
         "Maroon 5FeatWiz Khalifa",
@@ -4315,43 +416,26 @@
         "THOMAZ CAMERON",
         "페이폰",
         "위즈칼리파"
-      ],
-      "addedAliases": [
-        {
-          "kind": "writer",
-          "name": "위즈칼리파",
-          "canonicalName": "THOMAZ CAMERON",
-          "writer": "THOMAZ CAMERON",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): THOMAZ CAMERON → 위즈칼리파. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        }
-      ],
-      "retiredRedundantTags": [
-        {
-          "tag": "Payphone",
-          "reason": "Title accepted separately or writer represented by the new Korean tag; original credits retained."
-        }
-      ],
-      "reviewRequired": false
+      ]
     },
     {
-      "catalogue": "tj-261027-pop",
+      "index": 33,
+      "previousTitle": "Last Night On Earth",
+      "title": "라스트 나이트 온 어스",
+      "tags": [
+        "그린 데이",
+        "Last Night On Earth",
+        "Green Day",
+        "BILLIE JOE ARMSTRONG",
+        "FRANK E III WRIGHT",
+        "MICHAEL RYAN PRITCHARD",
+        "라스트나이트온어스"
+      ]
+    },
+    {
       "index": 34,
-      "id": "1d324877-d5bb-5042-9a62-d069ef263c63",
-      "title": "Stay",
-      "previousTags": [
-        "저스틴 비버",
-        "The Kid LAROI",
-        "Justin Bieber",
-        "더 키드 라로이",
-        "Charlton Howard",
-        "Magnus Hiberg",
-        "Charlie Puth",
-        "Omer Fedi",
-        "Blake Slatkin",
-        "스테이"
-      ],
+      "previousTitle": "Stay",
+      "title": "스테이",
       "tags": [
         "저스틴 비버",
         "The Kid LAROI",
@@ -4363,38 +447,36 @@
         "Blake Slatkin",
         "스테이",
         "찰리푸스"
-      ],
-      "addedAliases": [
-        {
-          "kind": "writer",
-          "name": "찰리푸스",
-          "canonicalName": "Charlie Puth",
-          "writer": "Charlie Puth",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Charlie Puth → 찰리푸스. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        }
-      ],
-      "retiredRedundantTags": [
-        {
-          "tag": "Charlie Puth",
-          "reason": "Title accepted separately or writer represented by the new Korean tag; original credits retained."
-        }
-      ],
-      "reviewRequired": false
+      ]
     },
     {
-      "catalogue": "tj-261027-pop",
+      "index": 35,
+      "previousTitle": "All I Want For Christmas Is You",
+      "title": "올 아이 원트 포 크리스마스 이즈 유",
+      "tags": [
+        "All I Want For Christmas Is You",
+        "Mariah Carey",
+        "AFANASIEFF WALTER N",
+        "CAREY MARIAH",
+        "올아이원트포크리스마스이즈유"
+      ]
+    },
+    {
+      "index": 36,
+      "previousTitle": "Beggin'",
+      "title": "베긴",
+      "tags": [
+        "Beggin",
+        "Maneskin",
+        "BOB GAUDIO",
+        "PEGGY FARINA",
+        "베긴"
+      ]
+    },
+    {
       "index": 37,
-      "id": "e8d2ec90-2bd8-5c00-b52d-80befda75999",
-      "title": "Bohemian Rhapsody",
-      "previousTags": [
-        "보헤미안 랩소디",
-        "퀸",
-        "Bohemian Rhapsody",
-        "Queen",
-        "Freddie Mercury"
-      ],
+      "previousTitle": "Bohemian Rhapsody",
+      "title": "보헤미안 랩소디",
       "tags": [
         "보헤미안 랩소디",
         "퀸",
@@ -4402,38 +484,255 @@
         "Queen",
         "Freddie Mercury",
         "프레디머큐리"
-      ],
-      "addedAliases": [
-        {
-          "kind": "writer",
-          "name": "프레디머큐리",
-          "canonicalName": "Freddie Mercury",
-          "writer": "Freddie Mercury",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Freddie Mercury → 프레디머큐리. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        }
-      ],
-      "retiredRedundantTags": [],
-      "reviewRequired": false
+      ]
     },
     {
-      "catalogue": "tj-261027-pop",
+      "index": 38,
+      "previousTitle": "Off My Face",
+      "title": "오프 마이 페이스",
+      "tags": [
+        "저스틴 비버",
+        "Off My Face",
+        "Justin Bieber",
+        "BIEBER JUSTIN",
+        "PRINGLE DANIEL JAMES",
+        "PRINGLE LEAH JAQUELINE",
+        "SCOLA TIA MARIE",
+        "TORREY JACOB",
+        "오프마이페이스"
+      ]
+    },
+    {
+      "index": 39,
+      "previousTitle": "Sugar",
+      "title": "슈거",
+      "tags": [
+        "마룬 5",
+        "Sugar",
+        "Maroon 5",
+        "MICHAEL POSNER",
+        "HENRY WALTER",
+        "ADAM LEVINE",
+        "JOSHUA COLEMAN",
+        "JACOB HINDLIN",
+        "LUKASZ GOTTWALD",
+        "슈거"
+      ]
+    },
+    {
+      "index": 40,
+      "previousTitle": "This Love",
+      "title": "디스 러브",
+      "tags": [
+        "마룬 5",
+        "This Love",
+        "Maroon 5",
+        "Carmichael",
+        "Levine",
+        "디스러브"
+      ]
+    },
+    {
+      "index": 41,
+      "previousTitle": "The Phantom Of The Opera",
+      "title": "오페라의 유령",
+      "tags": [
+        "오페라의 유령",
+        "The Phantom Of The Opera",
+        "Sarah Brightman",
+        "Mike Batt",
+        "Charles Hart",
+        "Andrew Lloyd Webber",
+        "Richard Stilgoe"
+      ]
+    },
+    {
+      "index": 42,
+      "previousTitle": "Just The Two Of Us",
+      "title": "저스트 더 투 오브 어스",
+      "tags": [
+        "Just The Two Of Us",
+        "Bill Withers",
+        "Ralph MacDonald",
+        "William Salter",
+        "저스트더투오브어스"
+      ]
+    },
+    {
+      "index": 43,
+      "previousTitle": "Painkiller",
+      "title": "페인킬러",
+      "tags": [
+        "루엘",
+        "Painkiller",
+        "Ruel",
+        "VAN DIJK RUEL VINCENT",
+        "AARONS SARAH PAIGE",
+        "LANDON MARK",
+        "페인킬러"
+      ]
+    },
+    {
+      "index": 44,
+      "previousTitle": "Fly Me To The Moon",
+      "title": "플라이 미 투더 문",
+      "tags": [
+        "프랭크 시나트라",
+        "Fly Me To The Moon",
+        "Frank Sinatra",
+        "Bart Howard",
+        "플라이미투더문"
+      ]
+    },
+    {
+      "index": 45,
+      "previousTitle": "Call Me Maybe",
+      "title": "콜 미 메이비",
+      "tags": [
+        "칼리 래이 잽슨",
+        "Call Me Maybe",
+        "콜 미 메이비",
+        "Carly Rae Jepsen",
+        "CROWE TAVISH",
+        "JEPSEN CARLY RAE",
+        "RAMSAY JOSHUA KEELER"
+      ]
+    },
+    {
+      "index": 46,
+      "previousTitle": "If I Ain't Got You",
+      "title": "이프 아이 에인트 갓 유",
+      "tags": [
+        "앨리샤 키스",
+        "If I Aint Got You",
+        "Alicia Keys",
+        "AUGELLOCOOK ALICIA",
+        "이프아이에인트갓유"
+      ]
+    },
+    {
+      "index": 47,
+      "previousTitle": "One Call Away",
+      "title": "원 콜 어웨이",
+      "tags": [
+        "One Call Away",
+        "Charlie Puth",
+        "찰리 푸스",
+        "Justin Franks",
+        "Matt Prime",
+        "Shy Carter",
+        "Maureen McDonald",
+        "Breyan Isaac",
+        "원콜어웨이"
+      ]
+    },
+    {
+      "index": 48,
+      "previousTitle": "A Thousand Years",
+      "title": "어 사우전드 이어스",
+      "tags": [
+        "A Thousand Years",
+        "Christina Perri",
+        "HODGES DAVID",
+        "PERRI CHRISTINA",
+        "어 사우전드 이어스"
+      ]
+    },
+    {
+      "index": 49,
+      "previousTitle": "Billie Jean",
+      "title": "빌리 진",
+      "tags": [
+        "마이클 잭슨",
+        "Billie Jean",
+        "Michael Jackson",
+        "빌리진"
+      ]
+    },
+    {
+      "index": 50,
+      "previousTitle": "Chandelier",
+      "title": "샹들리에",
+      "tags": [
+        "시아",
+        "Chandelier",
+        "Sia",
+        "SIA FURLER",
+        "JESSE SHATKIN",
+        "샹들리에"
+      ]
+    },
+    {
+      "index": 51,
+      "previousTitle": "Perfect",
+      "title": "퍼펙트",
+      "tags": [
+        "에드 시런",
+        "Perfect",
+        "Ed Sheeran",
+        "SHEERAN ED",
+        "퍼펙트"
+      ]
+    },
+    {
+      "index": 52,
+      "previousTitle": "Always Remember Us This Way",
+      "title": "올웨이즈 리멤버 어스 디스 웨이",
+      "tags": [
+        "레이디 가가",
+        "Always Remember Us This Way",
+        "Lady Gaga",
+        "GERMANOTTA STEFANI",
+        "HEMBY NATALIE",
+        "LINDSEY HILLARY",
+        "MCKENNA LORI",
+        "올웨이즈리멤버어스디스웨이"
+      ]
+    },
+    {
+      "index": 53,
+      "previousTitle": "Santa Tell Me",
+      "title": "산타 텔 미",
+      "tags": [
+        "아리아나 그란데",
+        "Santa Tell Me",
+        "Ariana Grande",
+        "SAVAN HARISH KOTECHA",
+        "ILYA",
+        "산타텔미"
+      ]
+    },
+    {
+      "index": 54,
+      "previousTitle": "My Heart Will Go On",
+      "title": "마이 하트 윌 고 온",
+      "tags": [
+        "마이 하트 윌 고 온",
+        "셀린 디온",
+        "My Heart Will Go On",
+        "Celine Dion",
+        "HORNER JAMES",
+        "JENNINGS WILL"
+      ]
+    },
+    {
+      "index": 55,
+      "previousTitle": "What Makes You Beautiful",
+      "title": "왓 메이크스 유 뷰티풀",
+      "tags": [
+        "원 디렉션",
+        "What Makes You Beautiful",
+        "One Direction",
+        "FALK CARL",
+        "KOTECHA SAVAN HARISH",
+        "YACOUB RAMI",
+        "왓메이크스유뷰티풀"
+      ]
+    },
+    {
       "index": 57,
-      "id": "7c76ec89-3ffe-5882-8c33-0e469254de7d",
-      "title": "Sunflower",
-      "previousTags": [
-        "포스트 말론",
-        "Post Malone",
-        "Swae Lee",
-        "BROWN KHALIF",
-        "WILLIAM WALSH",
-        "CARTER LANG",
-        "CARL AUSTIN ROSEN",
-        "LOUIS BELL",
-        "AUSTIN POST",
-        "선플라워"
-      ],
+      "previousTitle": "Sunflower",
+      "title": "선플라워",
       "tags": [
         "포스트 말론",
         "Post Malone",
@@ -4445,74 +744,87 @@
         "AUSTIN POST",
         "선플라워",
         "스웨이리"
-      ],
-      "addedAliases": [
-        {
-          "kind": "writer",
-          "name": "스웨이리",
-          "canonicalName": "BROWN KHALIF",
-          "writer": "BROWN KHALIF",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): BROWN KHALIF → 스웨이리. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        }
-      ],
-      "retiredRedundantTags": [
-        {
-          "tag": "BROWN KHALIF",
-          "reason": "Title accepted separately or writer represented by the new Korean tag; original credits retained."
-        }
-      ],
-      "reviewRequired": false
+      ]
     },
     {
-      "catalogue": "tj-261027-pop",
+      "index": 58,
+      "previousTitle": "Beautiful Things",
+      "title": "뷰티풀 띵스",
+      "tags": [
+        "벤슨 분",
+        "Beautiful Things",
+        "Benson Boone",
+        "EVAN BLAIR",
+        "JACK LAFRANTZ",
+        "뷰티풀 띵스"
+      ]
+    },
+    {
+      "index": 59,
+      "previousTitle": "Into the Unknown",
+      "title": "숨겨진 세상",
+      "tags": [
+        "Into the Unknown",
+        "Idina Menzel",
+        "Aurora",
+        "KRISTEN ANDERSONLOPEZ",
+        "ROBERT LOPEZ",
+        "숨겨진 세상"
+      ]
+    },
+    {
+      "index": 60,
+      "previousTitle": "I Really Want to Stay at Your House",
+      "title": "아이 리얼리 원트 투 스테이 앳 유어 하우스",
+      "tags": [
+        "Rosa Walton",
+        "Hallie Coggins",
+        "WALTON ROSA JEWEL",
+        "아이리얼리원트투스테이앳유어하우스"
+      ]
+    },
+    {
       "index": 61,
-      "id": "5e46c88e-61d7-5045-bb70-bc198c864414",
-      "title": "Wonderwall",
-      "previousTags": [
-        "원더월",
-        "Wonderwall",
-        "Oasis",
-        "Noel Gallagher"
-      ],
+      "previousTitle": "Wonderwall",
+      "title": "원더월",
       "tags": [
         "원더월",
         "Wonderwall",
         "Oasis",
         "Noel Gallagher",
         "노엘갤러거"
-      ],
-      "addedAliases": [
-        {
-          "kind": "writer",
-          "name": "노엘갤러거",
-          "canonicalName": "Noel Gallagher",
-          "writer": "Noel Gallagher",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Noel Gallagher → 노엘갤러거. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        }
-      ],
-      "retiredRedundantTags": [],
-      "reviewRequired": false
+      ]
     },
     {
-      "catalogue": "tj-261027-pop",
+      "index": 62,
+      "previousTitle": "Reality",
+      "title": "리얼리티",
+      "tags": [
+        "Reality",
+        "Richard Sanderson",
+        "Vladimir Cosma",
+        "J Jordan",
+        "리얼리티"
+      ]
+    },
+    {
+      "index": 63,
+      "previousTitle": "Someone You Loved",
+      "title": "썸원 유 러브드",
+      "tags": [
+        "Someone You Loved",
+        "Lewis Capaldi",
+        "BENJAMIN ALEXANDER KOHN",
+        "THOMAS BARNES",
+        "PETER KELLEHERLEWIS CAPALDI",
+        "SAMUEL ELLIOT ROMAN",
+        "썸원 유 러브드"
+      ]
+    },
+    {
       "index": 64,
-      "id": "0d0bbf86-b197-5bf7-8e9a-a8092085ec56",
-      "title": "Blinding Lights",
-      "previousTags": [
-        "위켄드",
-        "Blinding Lights",
-        "The Weeknd",
-        "BALSHE AHMAD",
-        "HOLTER OSCAR THOMAS",
-        "MARTIN MAX",
-        "QUENNEVILLE JASON MATTHEW",
-        "TESFAYE ABEL",
-        "블라인딩라이츠"
-      ],
+      "previousTitle": "Blinding Lights",
+      "title": "블라인딩 라이츠",
       "tags": [
         "위켄드",
         "Blinding Lights",
@@ -4524,62 +836,46 @@
         "TESFAYE ABEL",
         "블라인딩라이츠",
         "맥스마틴"
-      ],
-      "addedAliases": [
-        {
-          "kind": "writer",
-          "name": "맥스마틴",
-          "canonicalName": "MARTIN MAX",
-          "writer": "MARTIN MAX",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): MARTIN MAX → 맥스마틴. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        }
-      ],
-      "retiredRedundantTags": [],
-      "reviewRequired": false
+      ]
     },
     {
-      "catalogue": "tj-261027-pop",
+      "index": 65,
+      "previousTitle": "Counting Stars",
+      "title": "카운팅 스타즈",
+      "tags": [
+        "Counting Stars",
+        "OneRepublic",
+        "TEDDER RYAN B",
+        "카운팅스타즈"
+      ]
+    },
+    {
       "index": 66,
-      "id": "a9442913-b96a-5a89-a941-6221c240979f",
-      "title": "Englishman In New York",
-      "previousTags": [
-        "Englishman In New York",
-        "Sting",
-        "잉글리시맨인뉴욕"
-      ],
+      "previousTitle": "Englishman In New York",
+      "title": "잉글리시맨 인 뉴욕",
       "tags": [
         "Englishman In New York",
         "Sting",
         "잉글리시맨인뉴욕",
         "스팅"
-      ],
-      "addedAliases": [
-        {
-          "kind": "writer",
-          "name": "스팅",
-          "canonicalName": "Sting",
-          "writer": "Sting",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Sting → 스팅. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        }
-      ],
-      "retiredRedundantTags": [],
-      "reviewRequired": false
+      ]
     },
     {
-      "catalogue": "tj-261027-pop",
+      "index": 67,
+      "previousTitle": "Despacito",
+      "title": "데스파시토",
+      "tags": [
+        "Despacito",
+        "데스파시토",
+        "Luis FonsiFeatDaddy Yankee",
+        "ERIKA ENDER",
+        "LUIS FONSI"
+      ]
+    },
+    {
       "index": 68,
-      "id": "188ad64d-8e5d-5544-95b8-92e4076760a4",
-      "title": "SAIKAI",
-      "previousTags": [
-        "SAIKAI",
-        "Mili",
-        "CASSIE WEI",
-        "HAMO"
-      ],
+      "previousTitle": "SAIKAI",
+      "title": "사이카이",
       "tags": [
         "SAIKAI",
         "Mili",
@@ -4588,84 +884,67 @@
         "사이카이",
         "캐시웨이",
         "하모"
-      ],
-      "addedAliases": [
-        {
-          "kind": "title",
-          "name": "사이카이",
-          "origin": "user_authorized_pronunciation",
-          "language": "ja",
-          "originalTitle": "SAIKAI",
-          "reading": "사이카이",
-          "url": null,
-          "quote": "사용자 승인 일본어 제목 발음 태그 (2026-10-29): SAIKAI → 사이카이. 외부 검색 인용 아님."
-        },
-        {
-          "kind": "writer",
-          "name": "캐시웨이",
-          "canonicalName": "CASSIE WEI",
-          "writer": "CASSIE WEI",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): CASSIE WEI → 캐시웨이. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        },
-        {
-          "kind": "writer",
-          "name": "하모",
-          "canonicalName": "HAMO",
-          "writer": "HAMO",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): HAMO → 하모. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        }
-      ],
-      "retiredRedundantTags": [],
-      "reviewRequired": false
+      ]
     },
     {
-      "catalogue": "tj-261027-pop",
+      "index": 69,
+      "previousTitle": "This Is Me",
+      "title": "디스 이즈 미",
+      "tags": [
+        "케알라 세틀",
+        "This Is Me",
+        "Various Artists",
+        "PASEK BENJ",
+        "PAUL JUSTIN NOBLE",
+        "디스이즈미"
+      ]
+    },
+    {
+      "index": 70,
+      "previousTitle": "Die For You",
+      "title": "다이 포유",
+      "tags": [
+        "Die For You",
+        "다이포유",
+        "The Weeknd",
+        "위켄드",
+        "Abel Tesfaye",
+        "Martin McKinney",
+        "Mejdi Rhars",
+        "Dylan Wiggins",
+        "Magnus Hiberg",
+        "William Thomas Walsh"
+      ]
+    },
+    {
+      "index": 71,
+      "previousTitle": "Zombie",
+      "title": "좀비",
+      "tags": [
+        "좀비",
+        "크랜베리",
+        "Zombie",
+        "The Cranberries",
+        "ORiordian",
+        "Dolores ORiordan"
+      ]
+    },
+    {
       "index": 72,
-      "id": "592c7421-5607-5a51-89a3-706199ac3d3f",
-      "title": "I'm Yours",
-      "previousTags": [
-        "Im Yours",
-        "Jason Mraz",
-        "MRAZ JASON THOMAS",
-        "아임유어즈"
-      ],
+      "previousTitle": "I'm Yours",
+      "title": "아임 유어스",
       "tags": [
         "Im Yours",
         "Jason Mraz",
         "MRAZ JASON THOMAS",
-        "아임유어즈",
-        "제이슨므라즈"
-      ],
-      "addedAliases": [
-        {
-          "kind": "writer",
-          "name": "제이슨므라즈",
-          "canonicalName": "MRAZ JASON THOMAS",
-          "writer": "MRAZ JASON THOMAS",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): MRAZ JASON THOMAS → 제이슨므라즈. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        }
-      ],
-      "retiredRedundantTags": [],
-      "reviewRequired": false
+        "제이슨므라즈",
+        "아임 유어스"
+      ]
     },
     {
-      "catalogue": "tj-261027-pop",
       "index": 73,
-      "id": "a4b61e86-2618-5f6a-bdb0-1c4d676543a1",
-      "title": "All Of Me",
-      "previousTags": [
-        "All Of Me",
-        "John Legend",
-        "GAD TOBY",
-        "LEGEND JOHN",
-        "올오브미"
-      ],
+      "previousTitle": "All Of Me",
+      "title": "올 오브 미",
       "tags": [
         "All Of Me",
         "John Legend",
@@ -4673,54 +952,401 @@
         "LEGEND JOHN",
         "올오브미",
         "존레전드"
-      ],
-      "addedAliases": [
-        {
-          "kind": "writer",
-          "name": "존레전드",
-          "canonicalName": "LEGEND JOHN",
-          "writer": "LEGEND JOHN",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): LEGEND JOHN → 존레전드. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        }
-      ],
-      "retiredRedundantTags": [],
-      "reviewRequired": false
+      ]
     },
     {
-      "catalogue": "tj-261027-pop",
+      "index": 74,
+      "previousTitle": "My Love",
+      "title": "마이 러브",
+      "tags": [
+        "My Love",
+        "Westlife",
+        "Jorgen Elofsson",
+        "Dave Kreuger",
+        "Per Nylen",
+        "마이러브"
+      ]
+    },
+    {
+      "index": 75,
+      "previousTitle": "When We Were Young",
+      "title": "웬 위 워 영",
+      "tags": [
+        "아델",
+        "When We Were Young",
+        "Adele",
+        "JESSO TOBIAS MACDONALD",
+        "ADKINS ADELE LAURIE BLUE",
+        "웬위워영"
+      ]
+    },
+    {
+      "index": 76,
+      "previousTitle": "How Far I'll Go",
+      "title": "나 언젠간 떠날 거야",
+      "tags": [
+        "시아",
+        "How Far Ill Go",
+        "Alessia Cara",
+        "MIRANDA LIN MANUEL",
+        "나 언젠간 떠날 거야"
+      ]
+    },
+    {
+      "index": 77,
+      "previousTitle": "Dancing Queen",
+      "title": "댄싱 퀸",
+      "tags": [
+        "아바",
+        "Dancing Queen",
+        "댄싱퀸",
+        "ABBA",
+        "Stig Anderson",
+        "Benny Andersson",
+        "Bjorn Ulvaeus"
+      ]
+    },
+    {
+      "index": 78,
+      "previousTitle": "Too Good To Say Goodbye",
+      "title": "투 굿 투 세이 굿바이",
+      "tags": [
+        "Too Good To Say Goodbye",
+        "Bruno Mars",
+        "브루노 마스",
+        "Babyface",
+        "Jeff Bhasker",
+        "Brody Brown",
+        "Philip Lawrence",
+        "투굿투세이굿바이"
+      ]
+    },
+    {
+      "index": 79,
+      "previousTitle": "Love On Top",
+      "title": "러브 온 탑",
+      "tags": [
+        "비욘세",
+        "Love On Top",
+        "Beyonce",
+        "KNOWLES BEYONCE GISSELLE",
+        "NASH TERIUS YOUNGDELL",
+        "TAYLOR ROBERT SHEA",
+        "러브온탑"
+      ]
+    },
+    {
+      "index": 80,
+      "previousTitle": "From The Start",
+      "title": "프롬 더 스타트",
+      "tags": [
+        "레이베이",
+        "From The Start",
+        "Laufey",
+        "JONSDOTTIR LAUFEY LIN",
+        "STEWART SPENCER EUGENE",
+        "프롬더스타트"
+      ]
+    },
+    {
+      "index": 81,
+      "previousTitle": "My Way",
+      "title": "마이 웨이",
+      "tags": [
+        "프랭크 시나트라",
+        "My Way",
+        "마이 웨이",
+        "Frank Sinatra",
+        "ANKA PAUL",
+        "FRANCOIS CLAUDE",
+        "REVAUX JACQUES",
+        "THIBAUT GILLES"
+      ]
+    },
+    {
+      "index": 82,
+      "previousTitle": "See You Again",
+      "title": "씨 유 어게인",
+      "tags": [
+        "위즈 칼리파",
+        "찰리 푸스",
+        "See You Again",
+        "Wiz Khalifa",
+        "Charlie Puth",
+        "CEDAR ANDREW",
+        "FRANKS JUSTIN SCOTT",
+        "씨유어게인"
+      ]
+    },
+    {
+      "index": 83,
+      "previousTitle": "Welcome To The Black Parade",
+      "title": "웰컴 투 더 블랙 퍼레이드",
+      "tags": [
+        "마이 케미컬 로맨스",
+        "Welcome To The Black Parade",
+        "My Chemical Romance",
+        "BRYAR BOB",
+        "IERO FRANK",
+        "TORO RAY",
+        "WAY GERARD",
+        "WAY MICHAEL",
+        "웰컴투더블랙퍼레이드"
+      ]
+    },
+    {
+      "index": 84,
+      "previousTitle": "Circles",
+      "title": "서클스",
+      "tags": [
+        "포스트 말론",
+        "Circles",
+        "Post Malone",
+        "FEENEY ADAM KING",
+        "POST AUSTIN RICHARD",
+        "BELL LOUIS RUSSELL",
+        "WALSH BILLY",
+        "GUNESBERK KAAN",
+        "서클스"
+      ]
+    },
+    {
+      "index": 85,
+      "previousTitle": "GHOST TOWN",
+      "title": "고스트 타운",
+      "tags": [
+        "벤슨 분",
+        "GHOST TOWN",
+        "Benson Boone",
+        "NOLAN WINFIELD SIPE",
+        "TUSHAR APTE",
+        "고스트타운"
+      ]
+    },
+    {
+      "index": 86,
+      "previousTitle": "Piano Man",
+      "title": "피아노 맨",
+      "tags": [
+        "피아노 맨",
+        "빌리 조엘",
+        "Piano Man",
+        "Billy Joel"
+      ]
+    },
+    {
+      "index": 87,
+      "previousTitle": "Out of Time",
+      "title": "아웃 오브 타임",
+      "tags": [
+        "위켄드",
+        "Out of Time",
+        "The Weeknd",
+        "ARAN TOMOKO",
+        "HAMADA TETSURO",
+        "HOLTER OSCAR THOMAS",
+        "LOPATIN DANIEL",
+        "MAX MARTIN",
+        "TESFAYE ABEL",
+        "아웃오브타임"
+      ]
+    },
+    {
+      "index": 88,
+      "previousTitle": "Sunday Morning",
+      "title": "선데이 모닝",
+      "tags": [
+        "마룬 5",
+        "Sunday Morning",
+        "Maroon 5",
+        "Carmichael",
+        "Levine",
+        "선데이모닝"
+      ]
+    },
+    {
+      "index": 89,
+      "previousTitle": "Shallow",
+      "title": "셸로우",
+      "tags": [
+        "레이디 가가",
+        "Shallow",
+        "Lady Gaga",
+        "Bradley Cooper",
+        "GERMANOTTA STEFANI",
+        "RONSON MARK",
+        "ROSSOMANDO ANTHONY",
+        "WYATT ANDREW",
+        "셸로우"
+      ]
+    },
+    {
+      "index": 90,
+      "previousTitle": "Marry You",
+      "title": "메리 유",
+      "tags": [
+        "브루노 마스",
+        "Marry You",
+        "Bruno Mars",
+        "HERNANDEZ PETER GENE",
+        "LAWRENCE PHILIP MARTIN",
+        "LEVINE ARI",
+        "메리유"
+      ]
+    },
+    {
+      "index": 91,
+      "previousTitle": "Sign Of The Times",
+      "title": "사인 오브 더 타임스",
+      "tags": [
+        "Sign Of The Times",
+        "Harry Styles",
+        "해리 스타일스",
+        "Jeff Bhasker",
+        "Mitch Rowland",
+        "Ryan Nasci",
+        "Alex Salibian",
+        "Tyler Johnson",
+        "사인 오브 더 타임스"
+      ]
+    },
+    {
+      "index": 92,
+      "previousTitle": "High Hopes",
+      "title": "하이 홉스",
+      "tags": [
+        "Panic At The Disco",
+        "패닉 앳 더 디스코",
+        "Brendon Urie",
+        "Jake Sinclair",
+        "Jenny Owen Youngs",
+        "Lauren Pritchard",
+        "Sam Hollander",
+        "William LobbanBean",
+        "Jonas Jeberg",
+        "하이 홉스"
+      ]
+    },
+    {
+      "index": 93,
+      "previousTitle": "We Don't Talk Anymore",
+      "title": "위 돈트 토크 애니모어",
+      "tags": [
+        "찰리 푸스",
+        "셀레나 고메즈",
+        "We Dont Talk Anymore",
+        "Charlie PuthFeatSelena Gomez",
+        "CHARLIE PUTH",
+        "JACOB KASHER HINDLIN",
+        "SELENA MARIE GOMEZ",
+        "위돈트토크애니모어"
+      ]
+    },
+    {
+      "index": 94,
+      "previousTitle": "Lay Me Down",
+      "title": "레이 미 다운",
+      "tags": [
+        "샘 스미스",
+        "Lay Me Down",
+        "Sam SmithFeatJohn Legend",
+        "SAM SMITH",
+        "JAMES NAPIER",
+        "ELVIN SMITH",
+        "레이미다운"
+      ]
+    },
+    {
       "index": 95,
-      "id": "f604219c-6a2a-5825-a5e7-e7f8835d9aa8",
-      "title": "Hero",
-      "previousTags": [
-        "Hero",
-        "Mili",
-        "CASSIE WEI",
-        "SAKAI HIROKAZU",
-        "히어로"
-      ],
+      "previousTitle": "Hero",
+      "title": "영웅",
       "tags": [
         "Hero",
         "Mili",
         "CASSIE WEI",
         "SAKAI HIROKAZU",
-        "히어로",
-        "캐시웨이"
-      ],
-      "addedAliases": [
-        {
-          "kind": "writer",
-          "name": "캐시웨이",
-          "canonicalName": "CASSIE WEI",
-          "writer": "CASSIE WEI",
-          "origin": "user_authorized_writer_alias",
-          "url": null,
-          "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): CASSIE WEI → 캐시웨이. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
-        }
-      ],
-      "retiredRedundantTags": [],
-      "reviewRequired": false
+        "캐시웨이",
+        "영웅"
+      ]
+    },
+    {
+      "index": 96,
+      "previousTitle": "Can't Take My Eyes Off You",
+      "title": "캔트 테이크 마이 아이즈 오프 유",
+      "tags": [
+        "Cant Take My Eyes Off You",
+        "Morten Harket",
+        "Bob Crewe",
+        "Bob Gaudio",
+        "캔트테이크마이아이즈오프유"
+      ]
+    },
+    {
+      "index": 97,
+      "previousTitle": "Risk It All",
+      "title": "리스크 잇 올",
+      "tags": [
+        "브루노 마스",
+        "Risk It All",
+        "Bruno Mars",
+        "ARJONA VAZQUEZ JOHAN",
+        "HERNANDEZ PETER GENE",
+        "리스크잇올"
+      ]
+    },
+    {
+      "index": 98,
+      "previousTitle": "Falling Slowly",
+      "title": "폴링 슬로울리",
+      "tags": [
+        "Falling Slowly",
+        "Glen Hansard",
+        "Marketa Irglova",
+        "폴링슬로울리"
+      ]
+    },
+    {
+      "index": 99,
+      "previousTitle": "Hello",
+      "title": "헬로",
+      "tags": [
+        "아델",
+        "Hello",
+        "Adele",
+        "ADKINS ADELE",
+        "KURSTIN GREGORY ALLEN",
+        "헬로"
+      ]
+    },
+    {
+      "index": 100,
+      "previousTitle": "Halo",
+      "title": "헤일로",
+      "tags": [
+        "비욘세",
+        "Halo",
+        "Beyonce",
+        "E Kidd Bogart",
+        "Beyonce Knowles",
+        "Ryan Tedder",
+        "헤일로"
+      ]
+    }
+  ],
+  "remainingNamingReview": [
+    {
+      "index": 30,
+      "title": "Believer",
+      "reasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ]
+    },
+    {
+      "index": 56,
+      "title": "Teeth",
+      "reasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ]
     }
   ]
 }

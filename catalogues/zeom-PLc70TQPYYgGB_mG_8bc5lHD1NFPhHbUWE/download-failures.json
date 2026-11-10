@@ -60,8 +60,10 @@
       }
     ],
     "notes": "",
-    "namingReviewRequired": false,
-    "namingReviewReasons": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+    ],
     "audioSourceType": "unverified_recording",
     "audioSourceReviewRequired": true,
     "audio": {

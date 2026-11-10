@@ -2,33 +2,6 @@
   "schemaVersion": 1,
   "songs": [
     {
-      "id": "0c6a8dd1-39ae-529c-9477-04a58741a2c6",
-      "youtubeUrl": "https://www.youtube.com/watch?v=kpq7ImUWvME",
-      "title": "리플리컨트",
-      "tags": [
-        "buzzG",
-        "버즈지"
-      ]
-    },
-    {
-      "id": "31cbd875-09b3-559f-92b5-7d599ba5bee2",
-      "youtubeUrl": "https://www.youtube.com/watch?v=YHfm3bwC-Qk",
-      "title": "파라노이드",
-      "tags": [
-        "niki",
-        "니키"
-      ]
-    },
-    {
-      "id": "fd387a29-54c6-5a3e-96ad-8cfe9ea438ef",
-      "youtubeUrl": "https://www.youtube.com/watch?v=F-9G620NdbI",
-      "title": "비밀",
-      "tags": [
-        "마후마후",
-        "카쿠시고토"
-      ]
-    },
-    {
       "id": "31cfb8bd-26f0-5737-9de7-2409c72e620a",
       "youtubeUrl": "https://www.youtube.com/watch?v=tPo0LGsADCw",
       "title": "심장 데모크라시",
@@ -66,17 +39,6 @@
       ]
     },
     {
-      "id": "1ba67a80-176a-5ea5-8936-9d04f9a67eca",
-      "youtubeUrl": "https://www.youtube.com/watch?v=RcQxAqtNeKA",
-      "title": "Close to you",
-      "tags": [
-        "niki",
-        "Close to you",
-        "클로스토유",
-        "니키"
-      ]
-    },
-    {
       "id": "546263b3-ed95-50e2-a0f0-b49226687d97",
       "youtubeUrl": "https://www.youtube.com/watch?v=Ye95jBoBZSg",
       "title": "슬픔의 물결에 빠져",
@@ -88,7 +50,7 @@
     {
       "id": "46aedc8c-9c34-58c5-9f15-d28eab7fbbbf",
       "youtubeUrl": "https://www.youtube.com/watch?v=36SxEHQeDi8",
-      "title": "WAVE",
+      "title": "웨이브",
       "tags": [
         "niki",
         "WAVE",
@@ -172,7 +134,7 @@
     {
       "id": "f3ead26c-26dd-55b6-9b42-9c739d939b9c",
       "youtubeUrl": "https://www.youtube.com/watch?v=rXee9CxYmTY",
-      "title": "ELECT",
+      "title": "일렉트",
       "tags": [
         "niki",
         "ELECT",
@@ -183,22 +145,12 @@
     {
       "id": "aedf8335-f6c3-5bae-882b-425dd1580d25",
       "youtubeUrl": "https://www.youtube.com/watch?v=CniSkoogfZs",
-      "title": "6900000000",
+      "title": "69억",
       "tags": [
         "HAMO",
         "kyotn",
-        "하모"
-      ]
-    },
-    {
-      "id": "cee9643d-5b1f-53f2-acb7-7acd3f63b9bf",
-      "youtubeUrl": "https://www.youtube.com/watch?v=hAbu1AHsqhc",
-      "title": "HEAVEN",
-      "tags": [
-        "HarryP",
-        "하리P",
-        "HEAVEN",
-        "헤븐"
+        "하모",
+        "69억"
       ]
     },
     {
@@ -288,7 +240,7 @@
     {
       "id": "f041ec32-e15b-5b2b-9b74-07bac6f966bd",
       "youtubeUrl": "https://www.youtube.com/watch?v=QWFw2ueFdnQ",
-      "title": "Catchy !?",
+      "title": "캐치!?",
       "tags": [
         "r906",
         "Catchy",
@@ -369,7 +321,7 @@
     {
       "id": "1e5c0ea6-5899-5d03-9f48-328c5666fb2a",
       "youtubeUrl": "https://www.youtube.com/watch?v=uGZ0I71Yawo",
-      "title": "Happppy song",
+      "title": "해피 송",
       "tags": [
         "SOOOO",
         "Happppy song",
@@ -439,7 +391,8 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=OnczLTtCWk0",
       "title": "0",
       "tags": [
-        "cosMo폭주P"
+        "cosMo폭주P",
+        "0"
       ]
     },
     {
@@ -456,6 +409,49 @@
       "title": "초승달 스텝",
       "tags": [
         "r906"
+      ]
+    },
+    {
+      "id": "eddd6b2d-7a4f-56e7-b640-79d21da54bd1",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ACCQTOVEKt0",
+      "title": "타이니 버니",
+      "tags": [
+        "you맨"
+      ]
+    },
+    {
+      "id": "e6de8418-ccf6-56be-b556-48b1f6cfee3a",
+      "youtubeUrl": "https://www.youtube.com/watch?v=GEuvYI6SbBc",
+      "title": "카프리스 캐스트",
+      "tags": [
+        "유기카"
+      ]
+    },
+    {
+      "id": "0b4607a3-e98d-50c0-b2c1-2fca902399a0",
+      "youtubeUrl": "https://www.youtube.com/watch?v=A2Pk5-o019k",
+      "title": "리콜렉션 엔드롤",
+      "tags": [
+        "츠미키",
+        "리코레쿠숀엔도로우루"
+      ]
+    },
+    {
+      "id": "84b3018f-1054-5c4b-82b9-67b14a527d22",
+      "youtubeUrl": "https://www.youtube.com/watch?v=qdfr26X-DpY",
+      "title": "징크스",
+      "tags": [
+        "RuLu",
+        "진쿠스"
+      ]
+    },
+    {
+      "id": "d2d7ddcb-4110-5146-86b4-f7509b53540a",
+      "youtubeUrl": "https://www.youtube.com/watch?v=7vEXm5it7Tw",
+      "title": "기상 야자수",
+      "tags": [
+        "유코피",
+        "네오키야시노키"
       ]
     }
   ]

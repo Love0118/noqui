@@ -5,6 +5,8 @@ import json
 from pathlib import Path
 import re
 import sys
+from collections import defaultdict
+from playlist_review import title_usage_verified
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -20,7 +22,7 @@ def apply(source,corrections,packages=None):
     if packages:sys.path.insert(0,str(packages))
     from mutagen.oggopus import OggOpus
     changes=[]
-    retag=[]
+    files=defaultdict(list)
     protected=['index','videoId','youtubeUrl','sourceTitle','singer','writers','audio','reviewRequired','reviewReasons','reviewNotes','confidence']
     for before,after in zip(old['songs'],proposed['songs']):
         for key in protected:
@@ -38,20 +40,34 @@ def apply(source,corrections,packages=None):
             if alias['kind']!='punctuation' and (not alias.get('url') or not alias.get('quote') or normalize(alias['name']) not in normalize(alias['quote'])):
                 raise ValueError(f'{before["index"]}: new alias lacks matching usage evidence')
         if after['title']!=before['title']:
-            if not any(normalize(after['title']) in normalize(e['quote']) and e.get('retrievedEvidenceMatched') for e in after['evidence']):
-                raise ValueError(f'{before["index"]}: replacement title lacks usage evidence')
+            if not title_usage_verified(after):
+                raise ValueError(f'{before["index"]}: replacement requires a sourced Korean display title')
+            after.setdefault('originalTitle',before.get('originalTitle',before['title']))
+            for alias in after.get('aliases',[]):
+                if alias.get('origin')=='user_authorized_pronunciation' and alias.get('language','en')=='en':
+                    alias.setdefault('originalTitle',before['title'])
             history=after.setdefault('namingHistory',[])
             history.append({'previousTitle':before['title'],'previousTags':before['tags'],'reason':'Replace prior naming with independently sourced common usage'})
-        if before['audio']['status']=='ready' and (after['title']!=before['title'] or after['tags']!=before['tags']):
-            retag.append((before,after))
+        if before['audio']['status']=='ready':
+            path=(source.parent/before['audio']['path']).resolve()
+            if not path.is_relative_to(source.parent.resolve()):raise ValueError('Audio path escapes catalogue')
+            files[path].append((before,after,naming_changed))
         if after['title']!=before['title'] or after['tags']!=before['tags']:
             changes.append({'index':before['index'],'previousTitle':before['title'],'title':after['title'],'tags':after['tags']})
-    for before,after in retag:
-        path=source.parent/before['audio']['path'];audio=OggOpus(path);audio['TITLE']=[after['title']]
+    retag=[]
+    for path,rows in files.items():
+        if not any(changed for _,_,changed in rows):continue
+        if len({(after['title'],tuple(after['tags'])) for _,after,_ in rows})!=1:
+            raise ValueError(f'Shared recording requires consistent title and tags: {path.name}')
+        retag.append((path,rows))
+    for path,rows in retag:
+        after=rows[0][1];audio=OggOpus(path);audio['TITLE']=[after['title']]
         if after['tags']:audio['ANSWER_TAG']=after['tags']
         elif 'ANSWER_TAG' in audio:del audio['ANSWER_TAG']
         audio.save()
-        after['audio']={**before['audio'],'byteLength':path.stat().st_size,'sha256':hashlib.sha256(path.read_bytes()).hexdigest()}
+        size=path.stat().st_size;sha256=hashlib.sha256(path.read_bytes()).hexdigest()
+        for before,after,_ in rows:
+            after['audio']={**before['audio'],'byteLength':size,'sha256':sha256}
     save(source,proposed)
     for file,predicate in [('review-required.json',lambda s:s['reviewRequired']),('download-failures.json',lambda s:s['audio']['status']=='failed')]:
         path=source.parent/file

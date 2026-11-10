@@ -2,23 +2,6 @@
   "schemaVersion": 1,
   "songs": [
     {
-      "id": "038199d9-fd3a-5838-8d45-bf2b94c9c16f",
-      "youtubeUrl": "https://www.youtube.com/watch?v=1VHNBaa7rZ8",
-      "title": "폿핏포",
-      "tags": [
-        "LamazeP",
-        "라마즈P"
-      ]
-    },
-    {
-      "id": "a80a4f8d-1b1b-518a-8056-dfd5dc7844cf",
-      "youtubeUrl": "https://www.youtube.com/watch?v=QChI36XWqnU",
-      "title": "집에 돌아가면 아내가 반드시 죽은 척을 하고 있습니다",
-      "tags": [
-        "호보니치P"
-      ]
-    },
-    {
       "id": "3c38ffff-553b-541f-b903-0a9494e29359",
       "youtubeUrl": "https://www.youtube.com/watch?v=rePFEUu7YZs",
       "title": "테러",
@@ -272,7 +255,7 @@
     {
       "id": "7aed0ecf-1299-5ed2-a5b4-9eecb391ecb0",
       "youtubeUrl": "https://www.youtube.com/watch?v=7sr1H6emuyk",
-      "title": "Tell Your World",
+      "title": "텔 유어 월드",
       "tags": [
         "kz",
         "Tell Your World",
@@ -283,7 +266,7 @@
     {
       "id": "4b2acc2e-bd27-5368-adff-88f0e71d4e51",
       "youtubeUrl": "https://www.youtube.com/watch?v=NocXEwsJGOQ",
-      "title": "Miku",
+      "title": "미쿠",
       "tags": [
         "Anamanaguchi",
         "Miku",
@@ -321,12 +304,12 @@
     {
       "id": "644e7ebc-8a29-5046-9c89-7fea1a699181",
       "youtubeUrl": "https://www.youtube.com/watch?v=httB2UoZ44s",
-      "title": "p.h.",
+      "title": "페하",
       "tags": [
         "SEVENTHLINKS",
         "ph",
-        "피에이치",
-        "세븐스링크스"
+        "세븐스링크스",
+        "페하"
       ]
     },
     {
@@ -348,7 +331,7 @@
     {
       "id": "2de34890-d057-509e-952b-b2834903620c",
       "youtubeUrl": "https://www.youtube.com/watch?v=rkaNKAvksDE",
-      "title": "Surges",
+      "title": "서지스",
       "tags": [
         "Orangestar",
         "Surges",
@@ -404,7 +387,7 @@
     {
       "id": "4e65caaa-d25e-5966-9a69-2936248266ab",
       "youtubeUrl": "https://www.youtube.com/watch?v=eB0ofPh083g",
-      "title": "letter song",
+      "title": "레터송",
       "tags": [
         "doriko",
         "키리땅P",
@@ -451,7 +434,7 @@
     {
       "id": "91dd171f-91d0-58be-8ce8-84934af76210",
       "youtubeUrl": "https://www.youtube.com/watch?v=t0B6QJFJ0LM",
-      "title": "Corruption",
+      "title": "커럽션",
       "tags": [
         "오누마 파슬리",
         "Corruption",
@@ -465,6 +448,26 @@
       "tags": [
         "Aqu3ra",
         "아쿠에라"
+      ]
+    },
+    {
+      "id": "b62d3c4f-7fd1-517d-9538-26494d3b356c",
+      "youtubeUrl": "https://www.youtube.com/watch?v=6z456c3Drms",
+      "title": "여기는, 행복안심위원회입니다.",
+      "tags": [
+        "UtataP",
+        "우타타P",
+        "여기는 행복안심위원회입니다",
+        "코치라코우후쿠안신이인카이데스"
+      ]
+    },
+    {
+      "id": "e4bde1a1-3d62-5f47-a63c-57b3b1877b43",
+      "youtubeUrl": "https://www.youtube.com/watch?v=kduL0gLRHGk",
+      "title": "영원히 게임에서 대전하고 싶은 키리탄",
+      "tags": [
+        "GYARI",
+        "코코아시가렛P"
       ]
     }
   ]

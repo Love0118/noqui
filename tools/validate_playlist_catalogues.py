@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 import re
 import uuid
+from playlist_review import naming_review_reasons, playable, reviewed
 
 ROOT = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location('audio_validation', ROOT/'catalogues/vocaloid-PLJpdxH7yK7IqyEKS5pm0cy_DpDWGC0FFB/validate.py')
@@ -40,7 +41,8 @@ def validate(source, audio=False):
                 if alias.get('language','en')=='ja':
                     assert alias.get('originalTitle') and alias.get('reading'),f'{label}: Japanese pronunciation requires the original title and reading'
                 else:
-                    assert alias.get('language','en')=='en' and re.search('[A-Za-z]',song['title']) and not re.search('[ぁ-ゖァ-ヺ一-龯가-힣]',song['title']),f'{label}: English pronunciation requires a Latin title'
+                    original=alias.get('originalTitle',song.get('originalTitle',song['title']))
+                    assert alias.get('language','en')=='en' and re.search('[A-Za-z]',original) and not re.search('[ぁ-ゖァ-ヺ一-龯가-힣]',original),f'{label}: English pronunciation requires its original Latin title'
                 assert alias.get('quote') and not alias.get('url'),f'{label}: pronunciation provenance must not claim a retrieved source'
             elif alias.get('origin')=='user_authorized_writer_alias':
                 assert alias['kind']=='writer' and re.search('[가-힣]',alias['name']) and len(alias['name'])<=32,f'{label}: invalid Korean writer alias'
@@ -60,9 +62,11 @@ def validate(source, audio=False):
                 assert abs(duration-a['durationSeconds'])<.02,f'{label}: duration mismatch'
                 assert comments.get('title')==[song['title']],f'{label}: embedded title mismatch'
                 assert comments.get('composer',[])==song.get('writers',song['tags']),f'{label}: embedded writer mismatch'
-    return {'name':data['playlistTitle'],'entries':len(songs),'reviewed':sum(not s['reviewRequired'] for s in songs),
+    return {'name':data['playlistTitle'],'entries':len(songs),'reviewed':sum(reviewed(s) for s in songs),
+            'metadataReviewed':sum(not s['reviewRequired'] for s in songs),
+            'namingReviewRequired':sum(bool(naming_review_reasons(s)) for s in songs),
             'downloaded':sum(s['audio']['status']=='ready' for s in songs),
-            'playable':sum(not s['reviewRequired'] and not s.get('audioSourceReviewRequired',False) and s['audio']['status']=='ready' for s in songs)}
+            'playable':sum(playable(s) for s in songs)}
 
 
 if __name__=='__main__':

@@ -14,7 +14,8 @@
     ],
     "namingReviewRequired": true,
     "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+      "통용 한국어 곡명·발음의 실제 사용 근거를 재검수 중입니다. 임의 번역·발음 변환을 적용하지 않았습니다.",
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
     ],
     "confidence": "low",
     "notes": "Local evidence reused; unresolved identity/credit gaps are marked for review.",
@@ -68,7 +69,8 @@
     ],
     "namingReviewRequired": true,
     "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+      "통용 한국어 곡명·발음의 실제 사용 근거를 재검수 중입니다. 임의 번역·발음 변환을 적용하지 않았습니다.",
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
     ],
     "confidence": "high",
     "notes": "Game OST record and composer/lyricist credits are verified; the video does not credit its recording vocalist.",
@@ -195,7 +197,8 @@
     ],
     "namingReviewRequired": true,
     "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+      "통용 한국어 곡명·발음의 실제 사용 근거를 재검수 중입니다. 임의 번역·발음 변환을 적용하지 않았습니다.",
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
     ],
     "confidence": "high",
     "notes": "Original recording identity and credits require MAIN review where indicated; recording metadata is taken from the assigned row. Cover singer is labeled separately.",
@@ -225,7 +228,7 @@
   {
     "index": 54,
     "videoId": "r6ExBNl0IeU",
-    "title": "Voyaging Star's Farewell",
+    "title": "먼 길을 떠나는 별의 작별",
     "writers": [
       "Wang Xiebo",
       "Xu Lai"
@@ -234,7 +237,8 @@
     "tags": [
       "Voyaging Stars Farewell",
       "Wang Xiebo",
-      "Xu Lai"
+      "Xu Lai",
+      "먼 길을 떠나는 별의 작별"
     ],
     "aliases": [
       {
@@ -242,6 +246,13 @@
         "name": "Voyaging Stars Farewell",
         "url": null,
         "quote": "Voyaging Star's Farewell"
+      },
+      {
+        "kind": "title",
+        "name": "먼 길을 떠나는 별의 작별",
+        "url": "https://www.youtube.com/watch?v=r6ExBNl0IeU",
+        "quote": "먼 길을 떠나는 별의 작별",
+        "mainVerified": true
       }
     ],
     "evidence": [
@@ -250,6 +261,16 @@
         "quote": "[명조] Voyaging Star's Farewell(먼 길을 떠나는 별의 작별) [OST/가사/한글자막/번역/해석]",
         "kind": "page",
         "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=r6ExBNl0IeU",
+        "quote": "먼 길을 떠나는 별의 작별",
+        "kind": "page",
+        "retrievalUrl": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dr6ExBNl0IeU&format=json",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievedAt": "2026-11-06",
+        "retrievalSha256": "ee1b4b46629b5fb737fae11382bd9ea96b2b9fd37a8e072ee51dc53cdd1f7e0b"
       }
     ],
     "reviewRequired": true,
@@ -257,10 +278,7 @@
       "메인 독립 조회에서 작가 크레딧을 뒷받침하는 출처를 재확인하지 못했습니다: Wang Xiebo, Xu Lai",
       "추정 크레딧을 채택하지 않고 개별 곡의 작사·작곡/번안 크레딧 확인을 보류합니다."
     ],
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
-    ],
+    "namingReviewRequired": false,
     "confidence": "high",
     "notes": "Original Wuthering Waves OST; the playlist upload is a lyric translation. Credits and original performers sourced separately.",
     "id": "840c14c4-d25a-5852-90ff-2182a6bc36b8",
@@ -279,7 +297,7 @@
       "sampleRate": 48000,
       "durationSeconds": 225.01997916666667,
       "byteLength": 1375014,
-      "sha256": "742e2f3835fe8ca1f496ef8ed033b6f8a5beb79a9c663c2e2ca6379f3a2513b9"
+      "sha256": "a97ed33965c225465aaab685014aade8bfe20fb0afbe235103e9abeb3adf40b7"
     },
     "rejectedEvidenceProposals": [
       {
@@ -287,6 +305,18 @@
         "quote": "王谢波 — Composer; 徐来 — Lyrics; Tarokiki — Vocals; Emi Evans — Harmony Vocals",
         "kind": "search_snippet",
         "retrievedEvidenceMatched": true
+      }
+    ],
+    "originalTitle": "Voyaging Star's Farewell",
+    "namingHistory": [
+      {
+        "previousTitle": "Voyaging Star's Farewell",
+        "previousTags": [
+          "Voyaging Stars Farewell",
+          "Wang Xiebo",
+          "Xu Lai"
+        ],
+        "reason": "Replace prior naming with independently sourced common usage"
       }
     ]
   },
@@ -323,7 +353,8 @@
     ],
     "namingReviewRequired": true,
     "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+      "통용 한국어 곡명·발음의 실제 사용 근거를 재검수 중입니다. 임의 번역·발음 변환을 적용하지 않았습니다.",
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
     ],
     "confidence": "medium",
     "notes": "Official Minato recording metadata confirms the song and writer; the literal symbol remains unsearchable by the game catalogue.",
@@ -383,8 +414,10 @@
     "reviewReasons": [
       "Main review: invalid_game_title"
     ],
-    "namingReviewRequired": false,
-    "namingReviewReasons": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+    ],
     "confidence": "high",
     "notes": "Uploader links the original song; matched original recording credits in official Topic page and JOYSOUND.",
     "id": "2d2cba15-3e0b-50fd-a30b-26f973cbd1ec",
@@ -809,7 +842,8 @@
     ],
     "namingReviewRequired": true,
     "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+      "통용 한국어 곡명·발음의 실제 사용 근거를 재검수 중입니다. 임의 번역·발음 변환을 적용하지 않았습니다.",
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
     ],
     "confidence": "low",
     "notes": "The requested recording is a somunia × Yaca cover; the description distinguishes the original artist from the Clammbon cover version.",
@@ -1042,8 +1076,10 @@
     "reviewReasons": [
       "VocaDB video match unavailable and no verified reusable writer credit."
     ],
-    "namingReviewRequired": false,
-    "namingReviewReasons": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시한 한국어 곡명이 실제 사용된 개별 출처가 필요합니다."
+    ],
     "confidence": "low",
     "notes": "Local evidence reused; unresolved identity/credit gaps are marked for review.",
     "id": "38e6d340-cd54-5b4c-9bf9-b3139e87a2da",
@@ -1068,13 +1104,23 @@
   {
     "index": 193,
     "videoId": "fWORtj1UrBU",
-    "title": "打打打打打打打打打打",
+    "title": "다다다다다다다다다다",
     "writers": [
       "ヒゲドライバー"
     ],
     "singer": "SELEN",
-    "tags": [],
-    "aliases": [],
+    "tags": [
+      "다다다다다다다다다다"
+    ],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "다다다다다다다다다다",
+        "url": "https://www.youtube.com/watch?v=fWORtj1UrBU",
+        "quote": "다다다다다다다다다다",
+        "mainVerified": true
+      }
+    ],
     "evidence": [
       {
         "url": "https://www.youtube.com/watch?v=fWORtj1UrBU",
@@ -1095,16 +1141,23 @@
         "retrievedEvidenceMatched": true,
         "mainVerified": true,
         "retrievalUrl": "https://note.com/256mochi/n/n59e8cf4f7155"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=fWORtj1UrBU",
+        "quote": "다다다다다다다다다다",
+        "kind": "page",
+        "retrievalUrl": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DfWORtj1UrBU&format=json",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievedAt": "2026-11-06",
+        "retrievalSha256": "ac589bdf94d6ca7cbfeeab3fd299f7c5c1cb99d0fcddf9ab20dcd50e95c1a36e"
       }
     ],
     "reviewRequired": true,
     "reviewReasons": [
       "게임에서 사용할 수 있는 한국어 또는 공식 영문 제목을 확인하지 못함"
     ],
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
-    ],
+    "namingReviewRequired": false,
     "confidence": "high",
     "notes": "Exact recording credits identify ヒゲドライバー and SELEN. No verified Korean/official Latin title was retrieved; title remains unresolved.",
     "id": "882c32ec-67bd-543e-9ab4-1208d6d2b2d3",
@@ -1123,26 +1176,53 @@
       "sampleRate": 48000,
       "durationSeconds": 114.01697916666667,
       "byteLength": 657108,
-      "sha256": "04465b0caef338fbead623f9f8df748102159c3c43bdfe4c0f9b3e8bd76ea069"
-    }
+      "sha256": "616812e3544950f980701a62df321eeacaeb50faf2cd1813d47c9e5a968db187"
+    },
+    "originalTitle": "打打打打打打打打打打",
+    "namingHistory": [
+      {
+        "previousTitle": "打打打打打打打打打打",
+        "previousTags": [],
+        "reason": "Replace prior naming with independently sourced common usage"
+      }
+    ]
   },
   {
     "index": 200,
     "videoId": "wN8uBNLHffI",
-    "title": "Shelter",
+    "title": "셸터",
     "writers": [],
     "singer": null,
-    "tags": [],
-    "aliases": [],
-    "evidence": [],
+    "tags": [
+      "셸터",
+      "Shelter"
+    ],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "셸터",
+        "url": "https://m.namu.moe/w/%EC%85%B8%ED%84%B0?from=Shelter",
+        "quote": "셸터",
+        "mainVerified": true
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://m.namu.moe/w/%EC%85%B8%ED%84%B0?from=Shelter",
+        "quote": "셸터",
+        "kind": "page",
+        "retrievalUrl": "https://m.namu.moe/w/%EC%85%B8%ED%84%B0?from=Shelter",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievedAt": "2026-11-06",
+        "retrievalSha256": "96833fcc39e913a7659b4893cf4f24c43eac431e435209961dbdca33ee76daa3"
+      }
+    ],
     "reviewRequired": true,
     "reviewReasons": [
       "VocaDB video match unavailable and no verified reusable writer credit."
     ],
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
-    ],
+    "namingReviewRequired": false,
     "confidence": "low",
     "notes": "Local evidence reused; unresolved identity/credit gaps are marked for review.",
     "id": "d122d357-8a7a-5b70-88b8-e4942dc4e1b8",
@@ -1155,7 +1235,15 @@
       "status": "failed",
       "failureCode": "SOURCE_UNAVAILABLE",
       "reason": "요청한 원본 영상의 전체 음원을 확보하지 못했습니다."
-    }
+    },
+    "originalTitle": "Shelter",
+    "namingHistory": [
+      {
+        "previousTitle": "Shelter",
+        "previousTags": [],
+        "reason": "Replace prior naming with independently sourced common usage"
+      }
+    ]
   },
   {
     "index": 236,
@@ -1397,7 +1485,8 @@
     ],
     "namingReviewRequired": true,
     "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+      "통용 한국어 곡명·발음의 실제 사용 근거를 재검수 중입니다. 임의 번역·발음 변환을 적용하지 않았습니다.",
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
     ],
     "confidence": "low",
     "notes": "The requested recording is a rock version; no local source verified the original composition credits.",
@@ -1423,7 +1512,7 @@
   {
     "index": 260,
     "videoId": "O5WTu2-w7r0",
-    "title": "Shelter",
+    "title": "셸터",
     "writers": [
       "Porter Robinson",
       "Madeon"
@@ -1431,25 +1520,42 @@
     "singer": null,
     "tags": [
       "Porter Robinson",
-      "Madeon"
+      "Madeon",
+      "셸터",
+      "Shelter"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "셸터",
+        "url": "https://seore.org/raw/Shelter%28Porter%20Robinson%29",
+        "quote": "셸터",
+        "mainVerified": true
+      }
+    ],
     "evidence": [
       {
         "url": "https://www.youtube.com/watch?v=O5WTu2-w7r0",
         "quote": "Porter Robinson & Madeon - Shelter (Piano Version) [Official Audio]",
         "kind": "page",
         "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://seore.org/raw/Shelter%28Porter%20Robinson%29",
+        "quote": "셸터",
+        "kind": "page",
+        "retrievalUrl": "https://seore.org/raw/Shelter%28Porter%20Robinson%29",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievedAt": "2026-11-06",
+        "retrievalSha256": "f77e355ca55ea4bac5fbf72ff3ce6d7dec41a6eebb4aad8e74826727520a298d"
       }
     ],
     "reviewRequired": true,
     "reviewReasons": [
       "The assigned piano recording identifies Shelter and Porter Robinson/Madeon, but this recording’s source description does not provide the original lyric/composition credit."
     ],
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
-    ],
+    "namingReviewRequired": false,
     "confidence": "low",
     "notes": "Original recording identity and credits require MAIN review where indicated; recording metadata is taken from the assigned row. Cover singer is labeled separately.",
     "id": "920afba2-1cb3-553e-9856-823718964124",
@@ -1468,13 +1574,24 @@
       "sampleRate": 48000,
       "durationSeconds": 202.009,
       "byteLength": 1232866,
-      "sha256": "0d9f65a640137c60c3454e490b8ab1e714eac41aaf17a933d41a58e7433dfa49"
-    }
+      "sha256": "45db06e839951072e450907c247509a7e0abed3a5405709b7298ef69938fbb26"
+    },
+    "originalTitle": "Shelter",
+    "namingHistory": [
+      {
+        "previousTitle": "Shelter",
+        "previousTags": [
+          "Porter Robinson",
+          "Madeon"
+        ],
+        "reason": "Replace prior naming with independently sourced common usage"
+      }
+    ]
   },
   {
     "index": 269,
     "videoId": "Mormd4orIKc",
-    "title": "WHACHUWANT",
+    "title": "왓츄원트",
     "writers": [
       "HAON",
       "Sang Chul Hwang"
@@ -1483,7 +1600,9 @@
     "tags": [
       "HAON",
       "Sang Chul Hwang",
-      "김하온"
+      "김하온",
+      "왓츄원트",
+      "WHACHUWANT"
     ],
     "aliases": [
       {
@@ -1492,6 +1611,22 @@
         "writer": "HAON",
         "url": "https://lyricsweb.com/album/haon/travel-noah",
         "quote": "HAON (김하온)"
+      },
+      {
+        "kind": "title",
+        "name": "왓츄원트",
+        "url": "https://www.tenasia.co.kr/article/2018090472494",
+        "quote": "왓츄원트",
+        "mainVerified": true
+      },
+      {
+        "kind": "writer",
+        "name": "김하온",
+        "url": "https://lyricsweb.com/album/haon/travel-noah",
+        "quote": "김하온",
+        "mainVerified": true,
+        "writer": "HAON",
+        "canonicalName": "HAON"
       }
     ],
     "evidence": [
@@ -1512,16 +1647,23 @@
         "quote": "HAON (김하온)",
         "kind": "page",
         "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.tenasia.co.kr/article/2018090472494",
+        "quote": "왓츄원트",
+        "kind": "page",
+        "retrievalUrl": "https://www.tenasia.co.kr/article/2018090472494",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievedAt": "2026-11-06",
+        "retrievalSha256": "468352b14b240e2e50f7a1ec13aaea49808c1bbcf6df56ae093d1e57c60928dd"
       }
     ],
     "reviewRequired": true,
     "reviewReasons": [
       "메인 독립 조회에서 작가 크레딧을 뒷받침하는 출처를 재확인하지 못했습니다: Sang Chul Hwang"
     ],
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
-    ],
+    "namingReviewRequired": false,
     "confidence": "high",
     "notes": "YouTube Topic description verifies original artist; track-specific writer database lists HAON Kim and Sang Chul Hwang.",
     "id": "1e294b0d-377a-559c-ac3d-c34b239d14eb",
@@ -1540,8 +1682,20 @@
       "sampleRate": 48000,
       "durationSeconds": 215.050125,
       "byteLength": 1319994,
-      "sha256": "48e1b7029d1da52eec9993e3427b82d9c462387addffee13ee1bb6db8771e38a"
-    }
+      "sha256": "b2184a79584e3f439cdc6209fa92215733fd2ce661c11ff07001021e7cb0bc5a"
+    },
+    "originalTitle": "WHACHUWANT",
+    "namingHistory": [
+      {
+        "previousTitle": "WHACHUWANT",
+        "previousTags": [
+          "HAON",
+          "Sang Chul Hwang",
+          "김하온"
+        ],
+        "reason": "Replace prior naming with independently sourced common usage"
+      }
+    ]
   },
   {
     "index": 273,
@@ -1632,7 +1786,8 @@
     ],
     "namingReviewRequired": true,
     "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+      "통용 한국어 곡명·발음의 실제 사용 근거를 재검수 중입니다. 임의 번역·발음 변환을 적용하지 않았습니다.",
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
     ],
     "confidence": "low",
     "notes": "No exact-video metadata or cached VocaDB match was available locally; the uploader/title alone do not establish songwriter credits.",
@@ -1663,7 +1818,8 @@
     ],
     "namingReviewRequired": true,
     "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+      "통용 한국어 곡명·발음의 실제 사용 근거를 재검수 중입니다. 임의 번역·발음 변환을 적용하지 않았습니다.",
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
     ],
     "confidence": "low",
     "notes": "Local evidence reused; unresolved identity/credit gaps are marked for review.",
@@ -1689,11 +1845,12 @@
   {
     "index": 291,
     "videoId": "tkSHKEfXvT4",
-    "title": "LOVE ! DANCE !",
+    "title": "러브! 댄스",
     "writers": [],
     "singer": null,
     "tags": [
-      "LOVE DANCE"
+      "LOVE DANCE",
+      "러브! 댄스"
     ],
     "aliases": [
       {
@@ -1701,6 +1858,20 @@
         "name": "LOVE DANCE",
         "url": null,
         "quote": "LOVE ! DANCE !"
+      },
+      {
+        "kind": "title",
+        "name": "러브! 댄스",
+        "url": "https://www.tenasia.co.kr/article/2018090472494",
+        "quote": "러브! 댄스",
+        "mainVerified": true
+      },
+      {
+        "kind": "punctuation",
+        "name": "러브 댄스",
+        "url": null,
+        "quote": "러브! 댄스",
+        "mainVerified": true
       }
     ],
     "evidence": [
@@ -1709,16 +1880,23 @@
         "quote": "LOVE ! DANCE ! — 하온 (HAON) - Topic",
         "kind": "page",
         "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.tenasia.co.kr/article/2018090472494",
+        "quote": "러브! 댄스",
+        "kind": "page",
+        "retrievalUrl": "https://www.tenasia.co.kr/article/2018090472494",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievedAt": "2026-11-06",
+        "retrievalSha256": "468352b14b240e2e50f7a1ec13aaea49808c1bbcf6df56ae093d1e57c60928dd"
       }
     ],
     "reviewRequired": true,
     "reviewReasons": [
       "작사·작곡 크레딧을 로컬 근거에서 확인하지 못함"
     ],
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
-    ],
+    "namingReviewRequired": false,
     "confidence": "low",
     "notes": "Official Topic metadata identifies the HAON recording, but no local source provided songwriter credits.",
     "id": "29afa1c9-7aff-5185-8dee-8e36fead7931",
@@ -1737,13 +1915,23 @@
       "sampleRate": 48000,
       "durationSeconds": 200.487125,
       "byteLength": 1230887,
-      "sha256": "b392a1424d183896cd44e3ab9645d6731c810f53b1dd8b855fc7e4888596b9b2"
-    }
+      "sha256": "58c5fd49bf3fa337d061eec0c9e6d89352ac1b12f7431eeec28a2859b2ec8c74"
+    },
+    "originalTitle": "LOVE ! DANCE !",
+    "namingHistory": [
+      {
+        "previousTitle": "LOVE ! DANCE !",
+        "previousTags": [
+          "LOVE DANCE"
+        ],
+        "reason": "Replace prior naming with independently sourced common usage"
+      }
+    ]
   },
   {
     "index": 295,
     "videoId": "XlgwZqJbIdg",
-    "title": "NOAH",
+    "title": "노아",
     "writers": [
       "GroovyRoom",
       "HAON",
@@ -1755,15 +1943,35 @@
       "GroovyRoom",
       "HAON",
       "Hoody",
-      "Jay Park"
+      "Jay Park",
+      "노아",
+      "NOAH"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "노아",
+        "url": "https://www.osen.co.kr/article/G1110981628",
+        "quote": "노아",
+        "mainVerified": true
+      }
+    ],
     "evidence": [
       {
         "url": "https://www.youtube.com/watch?v=XlgwZqJbIdg",
         "quote": "NOAH (Feat. 박재범 Jay Park, Hoody) · HAON",
         "kind": "page",
         "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.osen.co.kr/article/G1110981628",
+        "quote": "노아",
+        "kind": "page",
+        "retrievalUrl": "https://www.osen.co.kr/article/G1110981628",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievedAt": "2026-11-06",
+        "retrievalSha256": "12b9ccd9eb4a797de0fdb864fdf46a5d77149bc3d048dbd109c89d5dee5485e7"
       }
     ],
     "reviewRequired": true,
@@ -1771,10 +1979,7 @@
       "메인 독립 조회에서 작가 크레딧을 뒷받침하는 출처를 재확인하지 못했습니다: GroovyRoom",
       "추정 크레딧을 채택하지 않고 개별 곡의 작사·작곡/번안 크레딧 확인을 보류합니다."
     ],
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
-    ],
+    "namingReviewRequired": false,
     "confidence": "high",
     "notes": "",
     "id": "6338b797-412f-58cf-a4e0-c8c0fa89e242",
@@ -1793,7 +1998,7 @@
       "sampleRate": 48000,
       "durationSeconds": 224.57614583333333,
       "byteLength": 1377559,
-      "sha256": "9c4213f79a4af1b931526ee0325e13126e67421ad86ac888f917c0e55c9ccd68"
+      "sha256": "399b8135f013a48f172ceb394885d132f332e80ac465956070dafc47bb0c843b"
     },
     "rejectedEvidenceProposals": [
       {
@@ -1801,6 +2006,19 @@
         "quote": "Written by: GroovyRoom, HAON, Hoody, Jay Park",
         "kind": "page",
         "retrievedEvidenceMatched": true
+      }
+    ],
+    "originalTitle": "NOAH",
+    "namingHistory": [
+      {
+        "previousTitle": "NOAH",
+        "previousTags": [
+          "GroovyRoom",
+          "HAON",
+          "Hoody",
+          "Jay Park"
+        ],
+        "reason": "Replace prior naming with independently sourced common usage"
       }
     ]
   },
@@ -1927,8 +2145,10 @@
     "reviewReasons": [
       "VocaDB video match unavailable and no verified reusable writer credit."
     ],
-    "namingReviewRequired": false,
-    "namingReviewReasons": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시한 한국어 곡명이 실제 사용된 개별 출처가 필요합니다."
+    ],
     "confidence": "low",
     "notes": "Local evidence reused; unresolved identity/credit gaps are marked for review.",
     "id": "7e792b3b-91ea-528b-bea6-4935ee4e60de",
@@ -1972,8 +2192,10 @@
     "reviewReasons": [
       "VocaDB video match unavailable and no verified reusable writer credit."
     ],
-    "namingReviewRequired": false,
-    "namingReviewReasons": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시한 한국어 곡명이 실제 사용된 개별 출처가 필요합니다."
+    ],
     "confidence": "low",
     "notes": "Local evidence reused; unresolved identity/credit gaps are marked for review.",
     "id": "e9e787ba-f378-5fff-8020-9ca66819cdaa",
@@ -2083,27 +2305,44 @@
   {
     "index": 352,
     "videoId": "eg65SbqmT0s",
-    "title": "ハレハレヤ ll Harehare Ya - ver.Sou [Clear and Sunny]",
+    "title": "하레하레야",
     "writers": [],
     "singer": null,
-    "tags": [],
-    "aliases": [],
+    "tags": [
+      "하레하레야"
+    ],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "하레하레야",
+        "url": "https://everyjongu.tistory.com/28",
+        "quote": "하레하레야",
+        "mainVerified": true
+      }
+    ],
     "evidence": [
       {
         "url": "https://www.youtube.com/watch?v=eg65SbqmT0s",
         "quote": "ハレハレヤ - Re-Arrange - 羽生まゐご feat.Sou\n夜明け前貴方はSouSouと \n本家様＊https://www.youtube.com/watch?v=2B7MEADeLyA\nVocal＆Mix＊Sou(@Nico_nico_Sou )\nhttps://www.youtube.com/c/niconicoSou",
         "kind": "page",
         "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://everyjongu.tistory.com/28",
+        "quote": "하레하레야",
+        "kind": "page",
+        "retrievalUrl": "https://everyjongu.tistory.com/28",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievedAt": "2026-11-06",
+        "retrievalSha256": "54e03b503f80890909f5621e7918d89c80ab62bad06dadbb88380f5c8f49a46c"
       }
     ],
     "reviewRequired": true,
     "reviewReasons": [
       "VocaDB video match unavailable and no verified reusable writer credit."
     ],
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
-    ],
+    "namingReviewRequired": false,
     "confidence": "low",
     "notes": "Local evidence reused; unresolved identity/credit gaps are marked for review.",
     "id": "3f3a8e6c-f777-5ffc-97d3-67f6ef484e9b",
@@ -2122,26 +2361,52 @@
       "sampleRate": 48000,
       "durationSeconds": 208.41770833333334,
       "byteLength": 1279239,
-      "sha256": "821326bf329ec4c0a40054c9b3a932ff4011b078faf4a1fea7f3380539e2e1aa"
-    }
+      "sha256": "520083b5d8b16ef66777186ce3a91c9873476294f88593e7c2d80e7ab699bc8b"
+    },
+    "originalTitle": "ハレハレヤ ll Harehare Ya - ver.Sou [Clear and Sunny]",
+    "namingHistory": [
+      {
+        "previousTitle": "ハレハレヤ ll Harehare Ya - ver.Sou [Clear and Sunny]",
+        "previousTags": [],
+        "reason": "Replace prior naming with independently sourced common usage"
+      }
+    ]
   },
   {
     "index": 359,
     "videoId": "xNc5wcKd8M8",
-    "title": "미확인 영상",
+    "title": "여래아",
     "writers": [],
     "singer": null,
-    "tags": [],
-    "aliases": [],
-    "evidence": [],
+    "tags": [
+      "여래아"
+    ],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "여래아",
+        "url": "https://jhayan.tistory.com/180",
+        "quote": "여래아",
+        "mainVerified": true
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://jhayan.tistory.com/180",
+        "quote": "여래아",
+        "kind": "page",
+        "retrievalUrl": "https://jhayan.tistory.com/180",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievedAt": "2026-11-06",
+        "retrievalSha256": "2b050c234e0857238d2e091c2d97b2aae3e06de9f41585f540d1ade051df6f77"
+      }
+    ],
     "reviewRequired": true,
     "reviewReasons": [
       "Playlist input has no title/channel; YouTube info is absent; VocaDB exact-PV query and title search found no resolvable recording."
     ],
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
-    ],
+    "namingReviewRequired": false,
     "confidence": "low",
     "notes": "This assigned ID is unresolved because its input sourceTitle and channel are null and no public metadata could be matched.",
     "id": "5fcf7c3a-091a-55b6-85b6-7f920fd8b08c",
@@ -2154,21 +2419,39 @@
       "status": "failed",
       "failureCode": "RIGHTSHOLDER_BLOCKED",
       "reason": "권리자 삭제 요청으로 원본 영상에 접근할 수 없습니다."
-    }
+    },
+    "originalTitle": "미확인 영상",
+    "namingHistory": [
+      {
+        "previousTitle": "미확인 영상",
+        "previousTags": [],
+        "reason": "Replace prior naming with independently sourced common usage"
+      }
+    ]
   },
   {
     "index": 361,
     "videoId": "ZjvGZTCVqUQ",
-    "title": "Shoujo S",
+    "title": "소녀S",
     "writers": [
       "TOMOMI",
       "田鹿祐一"
     ],
     "singer": "SCANDAL",
     "tags": [
-      "TOMOMI"
+      "TOMOMI",
+      "소녀S",
+      "Shoujo S"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "소녀S",
+        "url": "https://despicio.tistory.com/52",
+        "quote": "소녀S",
+        "mainVerified": true
+      }
+    ],
     "evidence": [
       {
         "url": "https://www.youtube.com/watch?v=ZjvGZTCVqUQ",
@@ -2181,16 +2464,23 @@
         "quote": "作詞： TOMOMI (SCANDAL) 作曲： 田鹿祐一",
         "kind": "page",
         "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://despicio.tistory.com/52",
+        "quote": "소녀S",
+        "kind": "page",
+        "retrievalUrl": "https://despicio.tistory.com/52",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievedAt": "2026-11-06",
+        "retrievalSha256": "6df968b409a7b235b47a999a90606800cdf3cc87d9caa5d839fdfab9813f02fc"
       }
     ],
     "reviewRequired": true,
     "reviewReasons": [
       "메인 독립 조회에서 작가 크레딧을 뒷받침하는 출처를 재확인하지 못했습니다: TOMOMI, 田鹿祐一"
     ],
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
-    ],
+    "namingReviewRequired": false,
     "confidence": "high",
     "notes": "SCANDAL recording confirmed by the supplied video description; Tower Records credits lyrics to TOMOMI and composition to 田鹿祐一.",
     "id": "e23d9ef6-11a7-5074-a33b-40e01b8f2fe7",
@@ -2209,25 +2499,55 @@
       "sampleRate": 48000,
       "durationSeconds": 194.90370833333333,
       "byteLength": 1170847,
-      "sha256": "6ed64ba1168c998950a1a71e36732242c6c21ce4bf0a453c49c8d14c1d1c8980"
-    }
+      "sha256": "9d1a66cadb1e882ebd320a566298633476b98c9e0ec2b6886816be3013ea9b99"
+    },
+    "originalTitle": "Shoujo S",
+    "namingHistory": [
+      {
+        "previousTitle": "Shoujo S",
+        "previousTags": [
+          "TOMOMI"
+        ],
+        "reason": "Replace prior naming with independently sourced common usage"
+      }
+    ]
   },
   {
     "index": 372,
     "videoId": "B213BUHNjts",
-    "title": "チャイナアドバイス",
+    "title": "차이나 어드바이스",
     "writers": [
       "真部脩一"
     ],
     "singer": "をとは (cover)",
-    "tags": [],
-    "aliases": [],
+    "tags": [
+      "차이나 어드바이스"
+    ],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "차이나 어드바이스",
+        "url": "https://j-pop-playlist.tistory.com/635",
+        "quote": "차이나 어드바이스",
+        "mainVerified": true
+      }
+    ],
     "evidence": [
       {
         "url": "https://www.youtube.com/watch?v=B213BUHNjts",
         "quote": "ଳ cover - チャイナアドバイス - 相対性理論(Toccoyaki remix)/をとは",
         "kind": "page",
         "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://j-pop-playlist.tistory.com/635",
+        "quote": "차이나 어드바이스",
+        "kind": "page",
+        "retrievalUrl": "https://j-pop-playlist.tistory.com/635",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievedAt": "2026-11-06",
+        "retrievalSha256": "94a364f5eb822f26a0d1d6b7a50ae317410fc7d6b3d67fe67234570911a35aae"
       }
     ],
     "reviewRequired": true,
@@ -2235,10 +2555,7 @@
       "Original Japanese title is identified as a cover/remix; a sourced Korean game-match title was not established.",
       "No sourced Korean or official Latin title that matches the game search."
     ],
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
-    ],
+    "namingReviewRequired": false,
     "confidence": "low",
     "notes": "Original recording identity and credits require MAIN review where indicated; recording metadata is taken from the assigned row. Cover singer is labeled separately.",
     "id": "c7174db6-1c92-5104-a80e-f60a8ce51337",
@@ -2257,8 +2574,16 @@
       "sampleRate": 48000,
       "durationSeconds": 207.53766666666667,
       "byteLength": 1273152,
-      "sha256": "59fb9c07aa31388ecfbeed62a1f15d80c6c8ca29fcce1861d56b970e0c0709be"
-    }
+      "sha256": "85c42d74d332669dfe93cced7c38205b6f9431e16956c0d569fa9d7a00b95bfd"
+    },
+    "originalTitle": "チャイナアドバイス",
+    "namingHistory": [
+      {
+        "previousTitle": "チャイナアドバイス",
+        "previousTags": [],
+        "reason": "Replace prior naming with independently sourced common usage"
+      }
+    ]
   },
   {
     "index": 376,
@@ -2289,8 +2614,10 @@
     "reviewReasons": [
       "VocaDB video match unavailable and no verified reusable writer credit."
     ],
-    "namingReviewRequired": false,
-    "namingReviewReasons": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시한 한국어 곡명이 실제 사용된 개별 출처가 필요합니다."
+    ],
     "confidence": "low",
     "notes": "Local evidence reused; unresolved identity/credit gaps are marked for review.",
     "id": "8e6bd19f-25d1-5267-880d-2658a6b91e18",
@@ -2334,7 +2661,8 @@
     ],
     "namingReviewRequired": true,
     "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+      "통용 한국어 곡명·발음의 실제 사용 근거를 재검수 중입니다. 임의 번역·발음 변환을 적용하지 않았습니다.",
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
     ],
     "confidence": "low",
     "notes": "Local evidence reused; unresolved identity/credit gaps are marked for review.",
@@ -2427,27 +2755,45 @@
   {
     "index": 400,
     "videoId": "bsgBUM2Mnsw",
-    "title": "BAND",
+    "title": "밴드",
     "writers": [],
     "singer": null,
-    "tags": [],
-    "aliases": [],
+    "tags": [
+      "밴드",
+      "BAND"
+    ],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "밴드",
+        "url": "https://news.tf.co.kr/read/entertain/1760152.htm",
+        "quote": "밴드",
+        "mainVerified": true
+      }
+    ],
     "evidence": [
       {
         "url": "https://www.youtube.com/watch?v=bsgBUM2Mnsw",
         "quote": "Provided to YouTube by mnetmusic\n\nBAND · 창모 CHANGMO, Hash Swan, ASH ISLAND, 김효은 Keem Hyo-Eun\n\nBAND\n\n℗ Genie Music Corporation, Stone Music Entertainment\n\nReleased on: 2019-06-08\n\nAuto-generated by YouTube.",
         "kind": "page",
         "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://news.tf.co.kr/read/entertain/1760152.htm",
+        "quote": "밴드",
+        "kind": "page",
+        "retrievalUrl": "https://news.tf.co.kr/read/entertain/1760152.htm",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievedAt": "2026-11-06",
+        "retrievalSha256": "6267c5164192afbe095e682e339f4ca6e56a6386190f30e133d1b6b218f0ca5f"
       }
     ],
     "reviewRequired": true,
     "reviewReasons": [
       "VocaDB video match unavailable and no verified reusable writer credit."
     ],
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
-    ],
+    "namingReviewRequired": false,
     "confidence": "low",
     "notes": "Local evidence reused; unresolved identity/credit gaps are marked for review.",
     "id": "8b30cfea-9cb4-56ba-b0c1-7bdfc76c9ca2",
@@ -2466,8 +2812,16 @@
       "sampleRate": 48000,
       "durationSeconds": 245.88116666666667,
       "byteLength": 1509756,
-      "sha256": "0e0e5545cfeea126973857e3c20d501e29135e17fb7d990a1a0164ae79145d79"
-    }
+      "sha256": "cab731dcba9e9a060914e3fa4be7c43445eea87cd153144c7b4f4fd968bc0503"
+    },
+    "originalTitle": "BAND",
+    "namingHistory": [
+      {
+        "previousTitle": "BAND",
+        "previousTags": [],
+        "reason": "Replace prior naming with independently sourced common usage"
+      }
+    ]
   },
   {
     "index": 402,
@@ -2824,7 +3178,8 @@
     ],
     "namingReviewRequired": true,
     "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+      "통용 한국어 곡명·발음의 실제 사용 근거를 재검수 중입니다. 임의 번역·발음 변환을 적용하지 않았습니다.",
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
     ],
     "confidence": "low",
     "notes": "Only source title/description retained after video ID search; exact identity remains unresolved.",
@@ -2921,7 +3276,7 @@
   {
     "index": 486,
     "videoId": "60R75NmwRrI",
-    "title": "Hello Mr. my yesterday",
+    "title": "헬로 미스터 마이 예스터데이",
     "writers": [
       "Tack",
       "Ko-KI",
@@ -2936,7 +3291,8 @@
       "Ko-KI",
       "L(R)UCCA",
       "Takanori Fujimoto",
-      "ASHGRAY"
+      "ASHGRAY",
+      "헬로 미스터 마이 예스터데이"
     ],
     "aliases": [
       {
@@ -2944,6 +3300,13 @@
         "name": "Hello Mr my yesterday",
         "url": null,
         "quote": "Hello Mr. my yesterday"
+      },
+      {
+        "kind": "title",
+        "name": "헬로 미스터 마이 예스터데이",
+        "url": "https://music.bugs.co.kr/album/20361821",
+        "quote": "헌드레드 퍼센트 프리 [헬로 미스터 마이 예스터데이]",
+        "mainVerified": true
       }
     ],
     "evidence": [
@@ -2970,6 +3333,15 @@
         "quote": "作詞：Tack・Ko-KI & L(R)UCCA | 作曲：TAKA",
         "kind": "search_snippet",
         "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://music.bugs.co.kr/album/20361821",
+        "quote": "헌드레드 퍼센트 프리 [헬로 미스터 마이 예스터데이]",
+        "kind": "page",
+        "retrievalUrl": "https://music.bugs.co.kr/album/20361821",
+        "mainVerified": true,
+        "retrievedAt": "2026-11-06",
+        "retrievedEvidenceMatched": true
       }
     ],
     "reviewRequired": true,
@@ -2977,10 +3349,7 @@
       "메인 독립 조회에서 작가 크레딧을 뒷받침하는 출처를 재확인하지 못했습니다: Tack, Ko-KI, L(R)UCCA, Takanori Fujimoto",
       "추정 크레딧을 채택하지 않고 개별 곡의 작사·작곡/번안 크레딧 확인을 보류합니다."
     ],
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
-    ],
+    "namingReviewRequired": false,
     "confidence": "high",
     "notes": "ASHGRAY is the Korean-version singer/adaptor; original Japanese recording was by Hundred Percent Free.",
     "id": "70ee0ac8-c720-5b52-8643-f66ad305f0c0",
@@ -2999,8 +3368,23 @@
       "sampleRate": 48000,
       "durationSeconds": 263.720375,
       "byteLength": 1618139,
-      "sha256": "1c5cbe84d9afb8353db4827c747998ce53afb466c6793d79992d825ac1809381"
-    }
+      "sha256": "3890daa3d95afa89ec9848cbde85b71cf7979db2a62f088ddad073398456b25f"
+    },
+    "originalTitle": "Hello Mr. my yesterday",
+    "namingHistory": [
+      {
+        "previousTitle": "Hello Mr. my yesterday",
+        "previousTags": [
+          "Hello Mr my yesterday",
+          "Tack",
+          "Ko-KI",
+          "L(R)UCCA",
+          "Takanori Fujimoto",
+          "ASHGRAY"
+        ],
+        "reason": "Replace prior naming with independently sourced common usage"
+      }
+    ]
   },
   {
     "index": 537,
@@ -3047,7 +3431,8 @@
     ],
     "namingReviewRequired": true,
     "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+      "통용 한국어 곡명·발음의 실제 사용 근거를 재검수 중입니다. 임의 번역·발음 변환을 적용하지 않았습니다.",
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
     ],
     "confidence": "low",
     "notes": "원본 ID와 video description을 확인. 인용은 일치 여부를 확인한 source excerpt. 확인되지 않은 제목/credit은 reviewReasons에 표시.",
@@ -3300,16 +3685,26 @@
   {
     "index": 553,
     "videoId": "OIK-q75yrJM",
-    "title": "Again",
+    "title": "어게인",
     "writers": [],
     "singer": null,
-    "tags": [],
+    "tags": [
+      "어게인",
+      "Again"
+    ],
     "aliases": [
       {
         "kind": "title",
         "name": "Again",
         "url": "https://www.youtube.com/watch?v=OIK-q75yrJM",
         "quote": "강철의 연금술사 브라더후드 여는 노래 「Again」"
+      },
+      {
+        "kind": "title",
+        "name": "어게인",
+        "url": "https://www.youtube.com/watch?v=bksDveTqdhk",
+        "quote": "어게인 \"강철의 연금술사 BROTHERHOOD\" - 유이",
+        "mainVerified": true
       }
     ],
     "evidence": [
@@ -3332,16 +3727,22 @@
         "retrievedEvidenceMatched": true,
         "mainVerified": true,
         "retrievalUrl": "https://www.youtube.com/watch?v=OIK-q75yrJM"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=bksDveTqdhk",
+        "quote": "어게인 \"강철의 연금술사 BROTHERHOOD\" - 유이",
+        "kind": "page",
+        "retrievalUrl": "https://www.youtube.com/watch?v=bksDveTqdhk",
+        "mainVerified": true,
+        "retrievedAt": "2026-11-06",
+        "retrievedEvidenceMatched": true
       }
     ],
     "reviewRequired": true,
     "reviewReasons": [
       "설명란은 한국어/일본어 가사 영상이며 실제 원곡 작가 크레딧 확인 불가"
     ],
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
-    ],
+    "namingReviewRequired": false,
     "confidence": "low",
     "notes": "원본 ID와 video description을 확인. 인용은 일치 여부를 확인한 source excerpt. 확인되지 않은 제목/credit은 reviewReasons에 표시.",
     "id": "97f4441e-db40-5726-bdc1-302db5ddf282",
@@ -3360,37 +3761,62 @@
       "sampleRate": 48000,
       "durationSeconds": 257.64402083333334,
       "byteLength": 1570956,
-      "sha256": "2d137495ff3afd9dc854e3d15c68a3d551ec7cf7e79fe1efcf9d5f2b30155f8c"
-    }
+      "sha256": "7412498193670cff99af1758e0ecdace6380270292b657db3bbd56ebd336259e"
+    },
+    "originalTitle": "Again",
+    "namingHistory": [
+      {
+        "previousTitle": "Again",
+        "previousTags": [],
+        "reason": "Replace prior naming with independently sourced common usage"
+      }
+    ]
   },
   {
     "index": 556,
     "videoId": "xq76cRbuYiU",
-    "title": "Lemon",
+    "title": "레몬",
     "writers": [
       "Beenzino"
     ],
     "singer": "Beenzino",
     "tags": [
-      "Beenzino"
+      "Beenzino",
+      "레몬",
+      "Lemon"
     ],
-    "aliases": [],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "레몬",
+        "url": "https://www.genie.co.kr/detail/songInfo?xgnm=102507606",
+        "quote": "레몬",
+        "mainVerified": true
+      }
+    ],
     "evidence": [
       {
         "url": "https://www.youtube.com/watch?v=xq76cRbuYiU",
         "quote": "Lemon",
         "kind": "page",
         "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://www.genie.co.kr/detail/songInfo?xgnm=102507606",
+        "quote": "레몬",
+        "kind": "page",
+        "retrievalUrl": "https://www.genie.co.kr/detail/songInfo?xgnm=102507606",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievedAt": "2026-11-06",
+        "retrievalSha256": "348f9e488f51618ce1dd76ea3ce723ceac261c838289a5531b1b076ebc10673b"
       }
     ],
     "reviewRequired": true,
     "reviewReasons": [
       "Beenzino recording identity is clear, but the assigned recording metadata does not confirm the credited songwriter/composer roles."
     ],
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
-    ],
+    "namingReviewRequired": false,
     "confidence": "low",
     "notes": "Original recording identity and credits require MAIN review where indicated; recording metadata is taken from the assigned row. Cover singer is labeled separately.",
     "id": "aa08bb80-77b8-5c45-bb8f-9a284772bdf2",
@@ -3409,8 +3835,18 @@
       "sampleRate": 48000,
       "durationSeconds": 182.007,
       "byteLength": 1115817,
-      "sha256": "1c1f5630dac542ef74578c71a7ae44286bdac434290fcfd41d61b130841638a5"
-    }
+      "sha256": "3016c0043730e5c073b8c121806df028f01886eca0017dc4005ef36176693c13"
+    },
+    "originalTitle": "Lemon",
+    "namingHistory": [
+      {
+        "previousTitle": "Lemon",
+        "previousTags": [
+          "Beenzino"
+        ],
+        "reason": "Replace prior naming with independently sourced common usage"
+      }
+    ]
   },
   {
     "index": 580,

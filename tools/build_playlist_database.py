@@ -6,6 +6,7 @@ from pathlib import Path
 import sqlite3
 import tempfile
 import time
+from playlist_review import naming_review_reasons, review_reasons
 
 
 def build(workspace, destination):
@@ -57,16 +58,15 @@ def build(workspace, destination):
                     audio = song.get('audio', {})
                     db.execute('INSERT INTO songs VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', (
                         playlist_id,song['index'],song.get('title',''),song.get('singer'),', '.join(song.get('writers',song.get('tags',[]))),
-                        ', '.join(song.get('tags',[])),song.get('rank'),str(song.get('tjNumber','')),int(song['reviewRequired']),audio.get('status','pending'),
+                        ', '.join(song.get('tags',[])),song.get('rank'),str(song.get('tjNumber','')),int(bool(review_reasons(song))),audio.get('status','pending'),
                         audio.get('durationSeconds'),str(source.parent.relative_to(workspace)/audio['path']) if audio.get('path') else None,
-                        ' / '.join(filter(None,[audio.get('reason'),song.get('notes'),*song.get('reviewReasons',[])])),song.get('youtubeUrl'),song.get('id'),int(song.get('audioSourceReviewRequired',False))))
+                        ' / '.join(filter(None,[audio.get('reason'),song.get('notes'),*review_reasons(song)])),song.get('youtubeUrl'),song.get('id'),int(song.get('audioSourceReviewRequired',False))))
                     for evidence in song.get('evidence',[]):
                         db.execute('INSERT INTO evidence VALUES (?,?,?,?)',(playlist_id,song['index'],evidence.get('url'),evidence.get('quote')))
                     for alias in song.get('aliases',[]):
                         db.execute('INSERT INTO aliases VALUES (?,?,?,?,?,?)',(playlist_id,song['index'],alias['kind'],alias['name'],alias.get('url'),alias.get('quote')))
-                    if song.get('namingReviewRequired'):
-                        for reason in song.get('namingReviewReasons') or ['통용 제목·별칭 출처 추가 확인 필요']:
-                            db.execute('INSERT INTO naming_reviews VALUES (?,?,?)',(playlist_id,song['index'],reason))
+                    for reason in naming_review_reasons(song):
+                        db.execute('INSERT INTO naming_reviews VALUES (?,?,?)',(playlist_id,song['index'],reason))
                     if song.get('audioSourceReviewRequired'):
                         for reason in song.get('audioSourceReviewReasons') or ['공식 음원·앨범 버전 및 MV 대사·인트로 확인 필요']:
                             db.execute('INSERT INTO recording_reviews VALUES (?,?,?)',(playlist_id,song['index'],reason))

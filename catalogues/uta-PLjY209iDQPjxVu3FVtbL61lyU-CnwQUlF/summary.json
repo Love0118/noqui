@@ -5,12 +5,12 @@
   "sourceEntries": 602,
   "uniqueTracks": 601,
   "duplicates": 1,
-  "reviewed": 549,
-  "reviewRequired": 52,
+  "reviewed": 511,
+  "reviewRequired": 90,
   "audioReady": 590,
-  "playable": 541,
-  "namingReviewRequired": 228,
-  "audioBytes": 804995304,
+  "playable": 504,
+  "namingReviewRequired": 54,
+  "audioBytes": 803439628,
   "sourceReplacements": 9,
   "distinctAudioFiles": 589,
   "downloadFailures": 11,
@@ -21,5 +21,9 @@
     "SOURCE_REMOVED": 1,
     "RIGHTSHOLDER_BLOCKED": 1
   },
-  "playableNamingReviewRequired": 199
+  "playableNamingReviewRequired": 0,
+  "entries": 601,
+  "metadataReviewed": 549,
+  "metadataReviewRequired": 52,
+  "lastNamingReview": "2026-11-06"
 }

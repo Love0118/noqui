@@ -4,10 +4,13 @@ from pathlib import Path
 import sqlite3
 import tempfile
 import time
+import sys
 from contextlib import closing
 
 
 ROOT = Path(__file__).resolve().parent
+sys.path.insert(0,str(ROOT.parents[1]/'tools'))
+from playlist_review import naming_review_reasons, reviewed
 ISSUE_LABELS = {
     'No title/producer evidence supplied': '제목·작가 확인 출처 부족',
     'Selected title does not appear in the matched evidence quote': '선택한 제목의 출처 문구 확인 필요',
@@ -33,7 +36,7 @@ def populate(connection, catalogue):
             'INSERT INTO songs VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
             (song_id, song['index'], song['videoId'], song['title'], song.get('sourceTitle'),
              song.get('channel'), song.get('durationSeconds'), song['youtubeUrl'],
-             song['confidence'], int(song['reviewRequired']), song.get('notes', '')),
+             song['confidence'], int(not reviewed(song)), song.get('notes', '')),
         )
         for position, writer in enumerate(song.get('writers', song['tags'])):
             connection.execute('INSERT INTO writers(name) VALUES (?) ON CONFLICT(name) DO NOTHING', (writer,))
@@ -59,7 +62,7 @@ def populate(connection, catalogue):
                  int(source.get('retrievedEvidenceMatched', False)), source.get('retrievalUrl'),
                  source.get('retrievedAt') or source.get('checkedAt')),
             )
-        for position, message in enumerate(song['validationWarnings']):
+        for position, message in enumerate(list(dict.fromkeys(song['validationWarnings']+naming_review_reasons(song)))):
             connection.execute(
                 'INSERT INTO review_issues VALUES (?, ?, ?, ?)',
                 (song_id, position, message, ISSUE_LABELS.get(message, message)),
@@ -76,10 +79,10 @@ def verify_database(connection, catalogue):
         'song_tags': sum(len(song['tags']) for song in songs),
         'aliases': sum(len(song.get('aliases', [])) for song in songs),
         'evidence': sum(len(song['evidence']) for song in songs),
-        'review_issues': sum(len(song['validationWarnings']) for song in songs),
+        'review_issues': sum(len(set(song['validationWarnings']+naming_review_reasons(song))) for song in songs),
         '전체곡': len(songs),
-        '검수완료곡': sum(not song['reviewRequired'] for song in songs),
-        '검토필요곡': sum(song['reviewRequired'] for song in songs),
+        '검수완료곡': sum(reviewed(song) for song in songs),
+        '검토필요곡': sum(not reviewed(song) for song in songs),
         '다운로드불가곡': sum(song['audio']['status'] == 'failed' for song in songs),
     }
     for name, count in expected.items():

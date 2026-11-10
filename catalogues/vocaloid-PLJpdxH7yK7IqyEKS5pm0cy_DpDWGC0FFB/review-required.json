@@ -28,7 +28,11 @@
     },
     "writers": [],
     "aliases": [],
-    "singerAliases": []
+    "singerAliases": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+    ]
   },
   {
     "index": 71,
@@ -62,7 +66,11 @@
     },
     "writers": [],
     "aliases": [],
-    "singerAliases": []
+    "singerAliases": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시한 한국어 곡명이 실제 사용된 개별 출처가 필요합니다."
+    ]
   },
   {
     "index": 72,
@@ -114,7 +122,11 @@
         "quote": "Ievan Polkka (이에반 폴카)"
       }
     ],
-    "singerAliases": []
+    "singerAliases": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+    ]
   },
   {
     "index": 81,
@@ -155,7 +167,11 @@
         "quote": "【手描き】자캐로 다루마씨가 굴러간다 패러디【オリキャラ】"
       }
     ],
-    "singerAliases": []
+    "singerAliases": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시한 한국어 곡명이 실제 사용된 개별 출처가 필요합니다."
+    ]
   },
   {
     "index": 96,
@@ -193,7 +209,11 @@
     },
     "writers": [],
     "aliases": [],
-    "singerAliases": []
+    "singerAliases": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+    ]
   },
   {
     "index": 141,
@@ -229,7 +249,11 @@
     },
     "writers": [],
     "aliases": [],
-    "singerAliases": []
+    "singerAliases": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+    ]
   },
   {
     "index": 156,
@@ -280,7 +304,8 @@
       "진"
     ],
     "aliases": [],
-    "singerAliases": []
+    "singerAliases": [],
+    "namingReviewRequired": false
   },
   {
     "index": 165,
@@ -369,8 +394,10 @@
         "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): 23.exe → 니산엑세. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
       }
     ],
-    "namingReviewRequired": false,
-    "namingReviewReasons": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+    ],
     "singerAliases": [],
     "namingHistory": [
       {
@@ -418,7 +445,11 @@
     },
     "writers": [],
     "aliases": [],
-    "singerAliases": []
+    "singerAliases": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+    ]
   },
   {
     "index": 211,
@@ -449,7 +480,11 @@
     },
     "writers": [],
     "aliases": [],
-    "singerAliases": []
+    "singerAliases": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+    ]
   },
   {
     "index": 269,
@@ -502,7 +537,8 @@
       "kahimi"
     ],
     "aliases": [],
-    "singerAliases": []
+    "singerAliases": [],
+    "namingReviewRequired": false
   },
   {
     "index": 280,
@@ -545,7 +581,11 @@
         "quote": "난세콘나센스 / 아마네. / 하츠네 미쿠[한글화]"
       }
     ],
-    "singerAliases": []
+    "singerAliases": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시한 한국어 곡명이 실제 사용된 개별 출처가 필요합니다."
+    ]
   },
   {
     "index": 309,
@@ -576,7 +616,11 @@
     },
     "writers": [],
     "aliases": [],
-    "singerAliases": []
+    "singerAliases": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+    ]
   },
   {
     "index": 313,
@@ -649,8 +693,10 @@
         "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): okameP → 오카메피. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
       }
     ],
-    "namingReviewRequired": false,
-    "namingReviewReasons": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+    ],
     "singerAliases": [],
     "namingHistory": [
       {
@@ -717,7 +763,8 @@
         "quote": "라이스 정식으로 먹어요."
       }
     ],
-    "singerAliases": []
+    "singerAliases": [],
+    "namingReviewRequired": false
   },
   {
     "index": 316,
@@ -771,7 +818,11 @@
       "UraCommanderP"
     ],
     "aliases": [],
-    "singerAliases": []
+    "singerAliases": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+    ]
   },
   {
     "index": 363,
@@ -802,7 +853,11 @@
     },
     "writers": [],
     "aliases": [],
-    "singerAliases": []
+    "singerAliases": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+    ]
   },
   {
     "index": 386,
@@ -833,7 +888,11 @@
     },
     "writers": [],
     "aliases": [],
-    "singerAliases": []
+    "singerAliases": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+    ]
   },
   {
     "index": 433,
@@ -879,8 +938,10 @@
         "quote": "사용자 승인 영어 제목 일반 발음: NEXT STAGE → 넥스트스테이지 (2026-10-28). 외부 검색 인용 아님."
       }
     ],
-    "namingReviewRequired": false,
-    "namingReviewReasons": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+    ],
     "singerAliases": [],
     "namingHistory": [
       {
@@ -953,8 +1014,10 @@
         "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): Nem → 넴. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
       }
     ],
-    "namingReviewRequired": false,
-    "namingReviewReasons": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+    ],
     "singerAliases": [],
     "namingHistory": [
       {
@@ -1038,8 +1101,10 @@
       }
     ],
     "singerAliases": [],
-    "namingReviewReasons": [],
-    "namingReviewRequired": false,
+    "namingReviewReasons": [
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+    ],
+    "namingReviewRequired": true,
     "namingHistory": [
       {
         "date": "2026-10-29",
@@ -1103,8 +1168,10 @@
         "quote": "사용자 승인 영어 제목 일반 발음: NEVERLAND → 네버랜드 (2026-10-28). 외부 검색 인용 아님."
       }
     ],
-    "namingReviewRequired": false,
-    "namingReviewReasons": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+    ],
     "singerAliases": [],
     "namingHistory": [
       {
@@ -1145,7 +1212,11 @@
     },
     "writers": [],
     "aliases": [],
-    "singerAliases": []
+    "singerAliases": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+    ]
   },
   {
     "index": 529,
@@ -1181,6 +1252,10 @@
     },
     "writers": [],
     "aliases": [],
-    "singerAliases": []
+    "singerAliases": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+    ]
   }
 ]

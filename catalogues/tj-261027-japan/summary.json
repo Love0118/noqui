@@ -4,7 +4,7 @@
   "playable": 100,
   "downloaded": 100,
   "reviewRequired": 0,
-  "namingReviewRequired": 11,
+  "namingReviewRequired": 0,
   "audioSourceReviewRequired": 0,
   "audioBytes": 148028396,
   "playlistId": "tj-261027-japan",
@@ -12,5 +12,8 @@
   "audioReady": 100,
   "audioFailed": 0,
   "downloadFailures": 0,
-  "lastPronunciationUpdate": "2026-10-29"
+  "lastPronunciationUpdate": "2026-10-29",
+  "metadataReviewed": 100,
+  "metadataReviewRequired": 0,
+  "lastNamingReview": "2026-11-06"
 }

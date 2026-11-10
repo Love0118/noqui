@@ -200,7 +200,7 @@
     {
       "id": "dbf9b8eb-951b-58ed-9d05-aba1875b2ab5",
       "youtubeUrl": "https://www.youtube.com/watch?v=IMB-t2j02XQ",
-      "title": "Alone",
+      "title": "얼론",
       "tags": [
         "김박사",
         "HAKASE K",
@@ -221,7 +221,7 @@
     {
       "id": "8d933db4-14b1-51e4-ab7c-a46f4087bb3e",
       "youtubeUrl": "https://www.youtube.com/watch?v=RKtoreimcQ8",
-      "title": "Hand in Hand",
+      "title": "핸드 인 핸드",
       "tags": [
         "kz",
         "Hand in Hand",
@@ -288,7 +288,7 @@
     {
       "id": "77c5c219-f8df-5a19-9b96-b0aed05b61f8",
       "youtubeUrl": "https://www.youtube.com/watch?v=243vPl8HdVk",
-      "title": "Redial",
+      "title": "리다이얼",
       "tags": [
         "kz",
         "Redial",
@@ -401,29 +401,6 @@
       ]
     },
     {
-      "id": "6837669a-780e-59c5-a4ed-b5dc233a5ef9",
-      "youtubeUrl": "https://www.youtube.com/watch?v=dJc0vpT5UT0",
-      "title": "quiet room",
-      "tags": [
-        "유기산",
-        "quiet room",
-        "콰이어트룸"
-      ]
-    },
-    {
-      "id": "c9c181b2-f132-54c6-92c9-1a818be706d6",
-      "youtubeUrl": "https://www.youtube.com/watch?v=p-o_bMkzOW0",
-      "title": "LUVORATORRRRRY!",
-      "tags": [
-        "Giga",
-        "Reol",
-        "기가P",
-        "LUVORATORRRRRY",
-        "러버토리",
-        "레오루"
-      ]
-    },
-    {
       "id": "99584d1e-0f9f-529b-aca2-926a420f7712",
       "youtubeUrl": "https://www.youtube.com/watch?v=6HGLeUqoUf8",
       "title": "플러스 남자",
@@ -480,6 +457,23 @@
         "DECO27",
         "데코",
         "아이코토바"
+      ]
+    },
+    {
+      "id": "038199d9-fd3a-5838-8d45-bf2b94c9c16f",
+      "youtubeUrl": "https://www.youtube.com/watch?v=1VHNBaa7rZ8",
+      "title": "폿핏포",
+      "tags": [
+        "LamazeP",
+        "라마즈P"
+      ]
+    },
+    {
+      "id": "a80a4f8d-1b1b-518a-8056-dfd5dc7844cf",
+      "youtubeUrl": "https://www.youtube.com/watch?v=QChI36XWqnU",
+      "title": "집에 돌아가면 아내가 반드시 죽은 척을 하고 있습니다",
+      "tags": [
+        "호보니치P"
       ]
     }
   ]

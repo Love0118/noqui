@@ -1,20 +1,9 @@
 {
   "id": "uta-pljy209",
-  "name": "うた - 作別",
-  "tracks": 601,
-  "playable": 541,
-  "bytes": 735856640,
-  "audioBytes": 734570394,
-  "sha256": "0348ce3c51c4b78908eec705636a25e89caec19c9138a5f9465c58c5cc4844d6",
-  "manifestSha256": "c6b18d9ec89f84f98581c5525c185d89e1e86fda97e3a94a3e3490a0fdcadde9",
-  "audioFiles": 540,
-  "sourceDate": "2026-11-05",
-  "hashesVerified": true,
-  "durationVerified": true,
+  "entries": 601,
+  "playable": 504,
+  "audioVerified": true,
   "answerCommentsStripped": true,
-  "sourceFullDecodeVerified": true,
-  "liveInstalled": true,
-  "privateTrackPagesVerified": 541,
-  "installedManifestSha256": "563c78d59d38ebe230251ed151e48de97a82c3e584fa191f8d507544476e6b51",
-  "activatedAtKst": "2026-11-05T17:33:54.143146+09:00"
+  "reviewRequired": 90,
+  "date": "2026-11-06"
 }

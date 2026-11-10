@@ -3,10 +3,13 @@
 [요청한 YouTube 목록](https://www.youtube.com/playlist?list=PLjY209iDQPjxVu3FVtbL61lyU-CnwQUlF)을 2026-11-05에 수집했습니다. 원래 602개 항목 중 같은 영상 ID가 한 번 중복되어 601개를 보존합니다. `sourceIndex`, `sourceTitle`, `originalVideoId`, `recordingHistory`로 원래 순서와 교체 이력을 확인할 수 있습니다.
 
 - 서버 ID: `uta-pljy209`, 표시 이름: `うた - 作別`
-- 메타데이터 검수 완료 549곡, 검토 대기 52곡
+- 곡 정체·작가 메타데이터 확인 549곡 중 한국어 이름까지 검수 완료 511곡
 - 전체 길이 음원 확보 590곡, 미확보 11곡
-- **서버 재생 가능 541곡**: 검수 완료와 음원 확보를 모두 만족하는 항목
-- 한국어 통용 제목·발음 추가 확인 228곡. 이 중 재생 가능 목록에 포함된 199곡은 출처로 확인한 원제·영문·로마자 제목을 유지합니다. 직접 번역하거나 새 발음 태그를 만들어 채우지 않았습니다.
+- **출제 가능 504곡**: 곡 정체·작가, 한국어 이름, 음원 확보를 모두 만족하는 항목
+- 검토 보류 90곡과 검수 완료·음원 미확보 7곡은 출제에서 제외합니다.
+- 한국어 이름 추가 확인 54곡은 별도 목록에 남깁니다. 다른 검토 사유와 겹치는 항목이 있으므로 보류 수를 단순 합산하지 않습니다.
+
+2026-11-10 재검수에서 영문·로마자 표시 제목을 그대로 출제하던 이전 기준을 수정했습니다. 개별 출처에서 확인한 한국어 통용 이름·발음을 표시 제목으로 사용하고, 확인되지 않은 곡은 보류합니다. 직접 번역하거나 새 발음을 추정하지 않습니다. 이전 549곡·541곡 집계는 곡 정체·작가 기준의 과거 기록이며 현재 검수 완료 수가 아닙니다. [재검수 보고서](../../deploy/20261110-korean-playlist-review.md)와 통합 DB를 기준으로 확인하세요.
 
 8개 `gpt-6-luna` 배치의 제안을 메인 세션에서 검토했습니다. 영상 ID가 정확히 일치하는 VocaDB 375건, 유통사·제작자 설명의 작사·작곡 역할, 기존 검수 자료의 동일 곡 연결과 개별 출처를 대조했습니다. 다른 곡으로 이동하는 크레딧 링크와 재확인할 수 없는 이름은 검수 근거에서 제외하거나 검토 대기로 돌렸습니다. `main-review.json`은 배치 해시, 메인 판단과 오디오 검사를 기록합니다. 배치의 최초 검토 수와 최종 승인 수는 다릅니다.
 
@@ -30,4 +33,4 @@ python tools/build_playlist_database.py
 python tools/build_playlist.py catalogues/uta-PLjY209iDQPjxVu3FVtbL61lyU-CnwQUlF/catalogue.json <새-폴더> --id uta-pljy209 --name "うた - 作別" --ffmpeg <ffmpeg.exe>
 ```
 
-OP는 `/noqui playlist`에서 선택하거나 `/noqui playlist uta-pljy209`로 시작합니다. 기본 셔플과 `/noqui limit <라운드 수>`의 뒤 대기곡 잘라내기를 그대로 사용합니다. 라이브 설치 결과는 `deploy/20261105-uta-playlist.json`에 기록합니다.
+OP는 `/noqui playlist`에서 선택하거나 `/noqui playlist uta-pljy209`로 시작합니다. 기본 셔플과 `/noqui limit <라운드 수>`의 뒤 대기곡 잘라내기를 그대로 사용합니다. 최초 설치 기록은 `deploy/20261105-uta-playlist.json`, 한국어 이름 재검수 적용 기록은 `deploy/20261110-korean-playlist-review.json`입니다.

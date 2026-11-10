@@ -28,7 +28,11 @@
     },
     "writers": [],
     "aliases": [],
-    "singerAliases": []
+    "singerAliases": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+    ]
   },
   {
     "index": 96,
@@ -66,7 +70,11 @@
     },
     "writers": [],
     "aliases": [],
-    "singerAliases": []
+    "singerAliases": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+    ]
   },
   {
     "index": 206,
@@ -97,7 +105,11 @@
     },
     "writers": [],
     "aliases": [],
-    "singerAliases": []
+    "singerAliases": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+    ]
   },
   {
     "index": 211,
@@ -128,7 +140,11 @@
     },
     "writers": [],
     "aliases": [],
-    "singerAliases": []
+    "singerAliases": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+    ]
   },
   {
     "index": 309,
@@ -159,7 +175,11 @@
     },
     "writers": [],
     "aliases": [],
-    "singerAliases": []
+    "singerAliases": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+    ]
   },
   {
     "index": 363,
@@ -190,7 +210,11 @@
     },
     "writers": [],
     "aliases": [],
-    "singerAliases": []
+    "singerAliases": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+    ]
   },
   {
     "index": 386,
@@ -221,7 +245,11 @@
     },
     "writers": [],
     "aliases": [],
-    "singerAliases": []
+    "singerAliases": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+    ]
   },
   {
     "index": 519,
@@ -252,6 +280,10 @@
     },
     "writers": [],
     "aliases": [],
-    "singerAliases": []
+    "singerAliases": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+    ]
   }
 ]

@@ -3648,8 +3648,10 @@
         }
       ],
       "notes": "",
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "audioSourceType": "official_album_audio",
       "audioSourceReviewRequired": false,
       "audio": {
@@ -3973,8 +3975,10 @@
         }
       ],
       "notes": "",
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "audioSourceType": "official_album_audio",
       "audioSourceReviewRequired": false,
       "audio": {
@@ -4151,8 +4155,10 @@
         }
       ],
       "notes": "",
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "audioSourceType": "official_album_audio",
       "audioSourceReviewRequired": false,
       "audio": {
@@ -4833,8 +4839,10 @@
         }
       ],
       "notes": "",
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "audioSourceType": "official_album_audio",
       "audioSourceReviewRequired": false,
       "audio": {
@@ -5209,8 +5217,10 @@
         }
       ],
       "notes": "",
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "audioSourceType": "official_album_audio",
       "audioSourceReviewRequired": false,
       "audio": {
@@ -6057,8 +6067,10 @@
         }
       ],
       "notes": "",
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "audioSourceType": "official_album_audio",
       "audioSourceReviewRequired": false,
       "audio": {
@@ -7389,8 +7401,10 @@
         }
       ],
       "notes": "",
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "audioSourceType": "official_album_audio",
       "audioSourceReviewRequired": false,
       "audio": {
@@ -7481,8 +7495,10 @@
         }
       ],
       "notes": "",
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "audioSourceType": "official_album_audio",
       "audioSourceReviewRequired": false,
       "audio": {
@@ -8914,7 +8930,8 @@
       "notes": "",
       "namingReviewRequired": true,
       "namingReviewReasons": [
-        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+        "통용 한국어 곡명·발음의 실제 사용 근거를 재검수 중입니다. 임의 번역·발음 변환을 적용하지 않았습니다.",
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
       ],
       "audioSourceType": "official_album_audio",
       "audioSourceReviewRequired": false,
@@ -10469,8 +10486,10 @@
         }
       ],
       "notes": "",
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "audioSourceType": "official_album_audio",
       "audioSourceReviewRequired": false,
       "audio": {
@@ -11004,8 +11023,10 @@
         }
       ],
       "notes": "",
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "audioSourceType": "official_album_audio",
       "audioSourceReviewRequired": false,
       "audio": {
@@ -11086,8 +11107,10 @@
         }
       ],
       "notes": "",
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "audioSourceType": "official_album_audio",
       "audioSourceReviewRequired": false,
       "audio": {
@@ -11991,7 +12014,8 @@
       "notes": "",
       "namingReviewRequired": true,
       "namingReviewReasons": [
-        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+        "통용 한국어 곡명·발음의 실제 사용 근거를 재검수 중입니다. 임의 번역·발음 변환을 적용하지 않았습니다.",
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
       ],
       "audioSourceType": "official_album_audio",
       "audioSourceReviewRequired": false,
@@ -14789,7 +14813,8 @@
       "notes": "",
       "namingReviewRequired": true,
       "namingReviewReasons": [
-        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
+        "통용 한국어 곡명·발음의 실제 사용 근거를 재검수 중입니다. 임의 번역·발음 변환을 적용하지 않았습니다.",
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
       ],
       "audioSourceType": "official_album_audio",
       "audioSourceReviewRequired": false,
@@ -15602,8 +15627,10 @@
         }
       ],
       "notes": "",
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "audioSourceType": "official_album_audio",
       "audioSourceReviewRequired": false,
       "audio": {
@@ -16161,8 +16188,10 @@
         }
       ],
       "notes": "",
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "audioSourceType": "official_album_audio",
       "audioSourceReviewRequired": false,
       "audio": {
@@ -17449,8 +17478,10 @@
         }
       ],
       "notes": "",
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "audioSourceType": "official_album_audio",
       "audioSourceReviewRequired": false,
       "audio": {
@@ -17654,8 +17685,10 @@
         }
       ],
       "notes": "",
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "audioSourceType": "official_album_audio",
       "audioSourceReviewRequired": false,
       "audio": {
@@ -18666,14 +18699,23 @@
       "sourceTitle": "サースティデイズ",
       "channel": "リュベンス / rubens",
       "durationSeconds": 152,
-      "title": "サースティデイズ",
+      "title": "써스티 데이즈",
       "writers": [
         "Etsu"
       ],
       "tags": [
-        "Etsu"
+        "Etsu",
+        "써스티 데이즈"
       ],
-      "aliases": [],
+      "aliases": [
+        {
+          "kind": "title",
+          "name": "써스티 데이즈",
+          "url": "https://www.namu.moe/w/%E3%82%B5%E3%83%BC%E3%82%B9%E3%83%86%E3%82%A3%E3%83%87%E3%82%A4%E3%82%BA",
+          "quote": "써스티 데이즈",
+          "mainVerified": true
+        }
+      ],
       "reviewRequired": true,
       "reviewReasons": [
         "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
@@ -18692,13 +18734,20 @@
           "quote": "リュべンス - サースティデイズ（Official Music Video）",
           "checkedAt": "2026-10-28",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.namu.moe/w/%E3%82%B5%E3%83%BC%E3%82%B9%E3%83%86%E3%82%A3%E3%83%87%E3%82%A4%E3%82%BA",
+          "quote": "써스티 데이즈",
+          "kind": "page",
+          "retrievalUrl": "https://www.namu.moe/w/%E3%82%B5%E3%83%BC%E3%82%B9%E3%83%86%E3%82%A3%E3%83%87%E3%82%A4%E3%82%BA",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "a2db3397f62811dcfafca8174a5fbd10a08dbca3ed8a44f6a5ccde84175eb68c"
         }
       ],
       "notes": "",
-      "namingReviewRequired": true,
-      "namingReviewReasons": [
-        "동일 곡의 통용 한국어 제목을 확인할 수 있는 출처 추가 조사 필요"
-      ],
+      "namingReviewRequired": false,
       "audioSourceType": "official_album_audio",
       "audioSourceReviewRequired": false,
       "audio": {
@@ -18710,12 +18759,22 @@
         "channels": 2,
         "durationSeconds": 151.42433333333332,
         "byteLength": 920005,
-        "sha256": "68039c9bf355b4dbdc4d4d740aee2cbafe18120bf260f69505fabcd45b1534fd"
+        "sha256": "858d32bd91bfb962a096e778b11ba4d139b9e81f1d0c206fe6460ac22ec6e353"
       },
       "singer": "rubens",
       "writerReviewRequired": false,
       "writerTagReviewRequired": false,
-      "singerAliases": []
+      "singerAliases": [],
+      "originalTitle": "サースティデイズ",
+      "namingHistory": [
+        {
+          "previousTitle": "サースティデイズ",
+          "previousTags": [
+            "Etsu"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ]
     },
     {
       "index": 196,
@@ -19494,8 +19553,10 @@
         }
       ],
       "notes": "",
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "audioSourceType": "official_album_audio",
       "audioSourceReviewRequired": false,
       "audio": {
@@ -19655,8 +19716,10 @@
         }
       ],
       "notes": "",
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "audioSourceType": "official_album_audio",
       "audioSourceReviewRequired": false,
       "audio": {
@@ -19835,8 +19898,10 @@
         }
       ],
       "notes": "",
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "audioSourceType": "official_album_audio",
       "audioSourceReviewRequired": false,
       "audio": {
@@ -21454,8 +21519,10 @@
         }
       ],
       "notes": "",
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "audioSourceType": "official_album_audio",
       "audioSourceReviewRequired": false,
       "audio": {
@@ -21876,8 +21943,10 @@
         }
       ],
       "notes": "",
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "audioSourceType": "unverified_recording",
       "audioSourceReviewRequired": true,
       "audio": {
@@ -22153,8 +22222,10 @@
         }
       ],
       "notes": "",
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "audioSourceType": "official_album_audio",
       "audioSourceReviewRequired": false,
       "audio": {
@@ -23310,8 +23381,10 @@
         }
       ],
       "notes": "",
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "audioSourceType": "official_album_audio",
       "audioSourceReviewRequired": false,
       "audio": {
@@ -23616,8 +23689,10 @@
         }
       ],
       "notes": "",
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "audioSourceType": "official_album_audio",
       "audioSourceReviewRequired": false,
       "audio": {
@@ -25260,8 +25335,10 @@
         }
       ],
       "notes": "",
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "audioSourceType": "official_album_audio",
       "audioSourceReviewRequired": false,
       "audio": {
@@ -26529,8 +26606,10 @@
         }
       ],
       "notes": "",
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "audioSourceType": "official_album_audio",
       "audioSourceReviewRequired": false,
       "audio": {
@@ -26709,8 +26788,10 @@
         }
       ],
       "notes": "",
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "audioSourceType": "official_album_audio",
       "audioSourceReviewRequired": false,
       "audio": {
@@ -27613,8 +27694,10 @@
         }
       ],
       "notes": "",
-      "namingReviewRequired": false,
-      "namingReviewReasons": [],
+      "namingReviewRequired": true,
+      "namingReviewReasons": [
+        "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+      ],
       "audioSourceType": "official_album_audio",
       "audioSourceReviewRequired": false,
       "audio": {

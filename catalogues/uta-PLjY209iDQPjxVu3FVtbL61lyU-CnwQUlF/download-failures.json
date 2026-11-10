@@ -2,14 +2,15 @@
   {
     "index": 60,
     "videoId": "EuJ6UR_pD5s",
-    "title": "World is Mine",
+    "title": "월드 이즈 마인",
     "writers": [
       "ryo"
     ],
     "singer": "初音ミク",
     "tags": [
       "ryo",
-      "World is Mine"
+      "World is Mine",
+      "월드 이즈 마인"
     ],
     "aliases": [
       {
@@ -33,6 +34,13 @@
         "url": "https://vocadb.net/Ar/67",
         "quote": "ryo",
         "retrievalUrl": "https://vocadb.net/api/songs/1326?fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "kind": "title",
+        "name": "월드 이즈 마인",
+        "url": "https://argente.tistory.com/213",
+        "quote": "월드 이즈 마인",
         "mainVerified": true
       }
     ],
@@ -96,14 +104,21 @@
         "retrievedEvidenceMatched": true,
         "mainVerified": true,
         "retrievalUrl": "https://vocadb.net/S/1326"
+      },
+      {
+        "url": "https://argente.tistory.com/213",
+        "quote": "월드 이즈 마인",
+        "kind": "page",
+        "retrievalUrl": "https://argente.tistory.com/213",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievedAt": "2026-11-06",
+        "retrievalSha256": "428b25491ed11648c18cbaf73e2f82ca1506bad4fdb811e3c2896b4697e89b1f"
       }
     ],
     "reviewRequired": false,
     "reviewReasons": [],
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
-    ],
+    "namingReviewRequired": false,
     "confidence": "high",
     "notes": "Assigned PV is a reprint. VocaDB links it to original song 1326; songwriter ryo and vocal Hatsune Miku are credited on that original record.",
     "vocadbReview": {
@@ -123,7 +138,18 @@
       "status": "failed",
       "failureCode": "UPLOADER_ACCOUNT_UNAVAILABLE",
       "reason": "업로더 계정 종료로 원본 영상에 접근할 수 없습니다."
-    }
+    },
+    "originalTitle": "World is Mine",
+    "namingHistory": [
+      {
+        "previousTitle": "World is Mine",
+        "previousTags": [
+          "ryo",
+          "World is Mine"
+        ],
+        "reason": "Replace prior naming with independently sourced common usage"
+      }
+    ]
   },
   {
     "index": 103,
@@ -357,20 +383,39 @@
   {
     "index": 200,
     "videoId": "wN8uBNLHffI",
-    "title": "Shelter",
+    "title": "셸터",
     "writers": [],
     "singer": null,
-    "tags": [],
-    "aliases": [],
-    "evidence": [],
+    "tags": [
+      "셸터",
+      "Shelter"
+    ],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "셸터",
+        "url": "https://m.namu.moe/w/%EC%85%B8%ED%84%B0?from=Shelter",
+        "quote": "셸터",
+        "mainVerified": true
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://m.namu.moe/w/%EC%85%B8%ED%84%B0?from=Shelter",
+        "quote": "셸터",
+        "kind": "page",
+        "retrievalUrl": "https://m.namu.moe/w/%EC%85%B8%ED%84%B0?from=Shelter",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievedAt": "2026-11-06",
+        "retrievalSha256": "96833fcc39e913a7659b4893cf4f24c43eac431e435209961dbdca33ee76daa3"
+      }
+    ],
     "reviewRequired": true,
     "reviewReasons": [
       "VocaDB video match unavailable and no verified reusable writer credit."
     ],
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
-    ],
+    "namingReviewRequired": false,
     "confidence": "low",
     "notes": "Local evidence reused; unresolved identity/credit gaps are marked for review.",
     "id": "d122d357-8a7a-5b70-88b8-e4942dc4e1b8",
@@ -383,7 +428,15 @@
       "status": "failed",
       "failureCode": "SOURCE_UNAVAILABLE",
       "reason": "요청한 원본 영상의 전체 음원을 확보하지 못했습니다."
-    }
+    },
+    "originalTitle": "Shelter",
+    "namingHistory": [
+      {
+        "previousTitle": "Shelter",
+        "previousTags": [],
+        "reason": "Replace prior naming with independently sourced common usage"
+      }
+    ]
   },
   {
     "index": 276,
@@ -753,7 +806,8 @@
     ],
     "namingReviewRequired": true,
     "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+      "통용 한국어 곡명·발음의 실제 사용 근거를 재검수 중입니다. 임의 번역·발음 변환을 적용하지 않았습니다.",
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
     ],
     "confidence": "low",
     "notes": "No exact-video metadata or cached VocaDB match was available locally; the uploader/title alone do not establish songwriter credits.",
@@ -772,20 +826,38 @@
   {
     "index": 359,
     "videoId": "xNc5wcKd8M8",
-    "title": "미확인 영상",
+    "title": "여래아",
     "writers": [],
     "singer": null,
-    "tags": [],
-    "aliases": [],
-    "evidence": [],
+    "tags": [
+      "여래아"
+    ],
+    "aliases": [
+      {
+        "kind": "title",
+        "name": "여래아",
+        "url": "https://jhayan.tistory.com/180",
+        "quote": "여래아",
+        "mainVerified": true
+      }
+    ],
+    "evidence": [
+      {
+        "url": "https://jhayan.tistory.com/180",
+        "quote": "여래아",
+        "kind": "page",
+        "retrievalUrl": "https://jhayan.tistory.com/180",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievedAt": "2026-11-06",
+        "retrievalSha256": "2b050c234e0857238d2e091c2d97b2aae3e06de9f41585f540d1ade051df6f77"
+      }
+    ],
     "reviewRequired": true,
     "reviewReasons": [
       "Playlist input has no title/channel; YouTube info is absent; VocaDB exact-PV query and title search found no resolvable recording."
     ],
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
-    ],
+    "namingReviewRequired": false,
     "confidence": "low",
     "notes": "This assigned ID is unresolved because its input sourceTitle and channel are null and no public metadata could be matched.",
     "id": "5fcf7c3a-091a-55b6-85b6-7f920fd8b08c",
@@ -798,7 +870,15 @@
       "status": "failed",
       "failureCode": "RIGHTSHOLDER_BLOCKED",
       "reason": "권리자 삭제 요청으로 원본 영상에 접근할 수 없습니다."
-    }
+    },
+    "originalTitle": "미확인 영상",
+    "namingHistory": [
+      {
+        "previousTitle": "미확인 영상",
+        "previousTags": [],
+        "reason": "Replace prior naming with independently sourced common usage"
+      }
+    ]
   },
   {
     "index": 418,
@@ -973,14 +1053,16 @@
   {
     "index": 487,
     "videoId": "RYZswyheC9s",
-    "title": "Sincerely",
+    "title": "진심으로",
     "writers": [
       "唐沢美帆",
       "堀江晶太"
     ],
     "singer": "TRUE",
     "tags": [
-      "kemu"
+      "kemu",
+      "진심으로",
+      "Sincerely"
     ],
     "aliases": [
       {
@@ -990,6 +1072,13 @@
         "url": "https://vocadb.net/Ar/735",
         "quote": "kemu",
         "retrievalUrl": "https://vocadb.net/api/songs/byPv?pvService=Youtube&pvId=DsnmyUdfbcI&fields=Names,Artists,PVs",
+        "mainVerified": true
+      },
+      {
+        "kind": "title",
+        "name": "진심으로",
+        "url": "https://lyrics.kamilake.com/127",
+        "quote": "진심으로",
         "mainVerified": true
       }
     ],
@@ -1005,14 +1094,21 @@
         "quote": "Sincerely · TRUE",
         "kind": "page",
         "retrievedEvidenceMatched": true
+      },
+      {
+        "url": "https://lyrics.kamilake.com/127",
+        "quote": "진심으로",
+        "kind": "page",
+        "retrievalUrl": "https://lyrics.kamilake.com/127",
+        "retrievedEvidenceMatched": true,
+        "mainVerified": true,
+        "retrievedAt": "2026-11-06",
+        "retrievalSha256": "ce5d54f0a6b025a22f39c9146b8f7c8d6a34704de16c9baa5bdf8084d39efebb"
       }
     ],
     "reviewRequired": false,
     "reviewReasons": [],
-    "namingReviewRequired": true,
-    "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
-    ],
+    "namingReviewRequired": false,
     "confidence": "high",
     "notes": "",
     "id": "f6300a67-6519-5f06-bc59-ab6634260f70",
@@ -1025,7 +1121,17 @@
       "status": "failed",
       "failureCode": "SOURCE_UNAVAILABLE",
       "reason": "요청한 원본 영상의 전체 음원을 확보하지 못했습니다."
-    }
+    },
+    "originalTitle": "Sincerely",
+    "namingHistory": [
+      {
+        "previousTitle": "Sincerely",
+        "previousTags": [
+          "kemu"
+        ],
+        "reason": "Replace prior naming with independently sourced common usage"
+      }
+    ]
   },
   {
     "index": 564,
@@ -1127,7 +1233,8 @@
     "reviewReasons": [],
     "namingReviewRequired": true,
     "namingReviewReasons": [
-      "통용 한국어 제목·발음을 확인한 출처가 없어 확인된 원제/영문/로마자 표기를 유지합니다."
+      "통용 한국어 곡명·발음의 실제 사용 근거를 재검수 중입니다. 임의 번역·발음 변환을 적용하지 않았습니다.",
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
     ],
     "confidence": "high",
     "notes": "VocaDB matched this exact YouTube ID as Original for '阿吽のビーツ'.",

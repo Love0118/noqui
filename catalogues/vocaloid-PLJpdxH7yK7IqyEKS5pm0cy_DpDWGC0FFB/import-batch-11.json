@@ -2,49 +2,6 @@
   "schemaVersion": 1,
   "songs": [
     {
-      "id": "eddd6b2d-7a4f-56e7-b640-79d21da54bd1",
-      "youtubeUrl": "https://www.youtube.com/watch?v=ACCQTOVEKt0",
-      "title": "타이니 버니",
-      "tags": [
-        "you맨"
-      ]
-    },
-    {
-      "id": "e6de8418-ccf6-56be-b556-48b1f6cfee3a",
-      "youtubeUrl": "https://www.youtube.com/watch?v=GEuvYI6SbBc",
-      "title": "카프리스 캐스트",
-      "tags": [
-        "유기카"
-      ]
-    },
-    {
-      "id": "0b4607a3-e98d-50c0-b2c1-2fca902399a0",
-      "youtubeUrl": "https://www.youtube.com/watch?v=A2Pk5-o019k",
-      "title": "리콜렉션 엔드롤",
-      "tags": [
-        "츠미키",
-        "리코레쿠숀엔도로우루"
-      ]
-    },
-    {
-      "id": "84b3018f-1054-5c4b-82b9-67b14a527d22",
-      "youtubeUrl": "https://www.youtube.com/watch?v=qdfr26X-DpY",
-      "title": "징크스",
-      "tags": [
-        "RuLu",
-        "진쿠스"
-      ]
-    },
-    {
-      "id": "d2d7ddcb-4110-5146-86b4-f7509b53540a",
-      "youtubeUrl": "https://www.youtube.com/watch?v=7vEXm5it7Tw",
-      "title": "기상 야자수",
-      "tags": [
-        "유코피",
-        "네오키야시노키"
-      ]
-    },
-    {
       "id": "d5b08061-58af-5994-a7d2-6329bde320ff",
       "youtubeUrl": "https://www.youtube.com/watch?v=CiEC329xPos",
       "title": "축복의 메시아와 슬픔의 탑",
@@ -75,7 +32,7 @@
     {
       "id": "922c9535-d760-532c-ab72-913aace4861e",
       "youtubeUrl": "https://www.youtube.com/watch?v=9LRMzRCYMlw",
-      "title": "SPiCa",
+      "title": "스피카",
       "tags": [
         "토쿠",
         "kentax",
@@ -172,7 +129,7 @@
     {
       "id": "fdad22f6-9080-59a4-a5ba-d5e19e8b55df",
       "youtubeUrl": "https://www.youtube.com/watch?v=crCS77wqxTI",
-      "title": "Forward",
+      "title": "포워드",
       "tags": [
         "R Sound Design",
         "Forward",
@@ -248,7 +205,8 @@
         "sasakureUK",
         "DECO27",
         "사사쿠레P",
-        "데코"
+        "데코",
+        "39"
       ]
     },
     {
@@ -358,11 +316,12 @@
     {
       "id": "97c6c004-15c3-5726-95c3-62a5fc00680a",
       "youtubeUrl": "https://www.youtube.com/watch?v=zGMftuCqLhk",
-      "title": "야마다 PERFECT",
+      "title": "야마다 퍼펙트",
       "tags": [
         "jonYAKITORY",
         "야마다 PERFECT",
-        "존야키토리"
+        "존야키토리",
+        "야마다 퍼펙트"
       ]
     },
     {

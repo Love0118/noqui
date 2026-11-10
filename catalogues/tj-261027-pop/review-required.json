@@ -144,8 +144,10 @@
       "TJ’s raw writer credit represents seven credited names, while the independently retrieved full-songwriter source lists eight. Retained the full sourced list and raw chart credit separately; author-count discrepancy still needs reconciliation."
     ],
     "notes": "TJ’s raw writer credit represents seven credited names, while the independently retrieved full-songwriter source lists eight. Retained the full sourced list and raw chart credit separately; author-count discrepancy still needs reconciliation.",
-    "namingReviewRequired": false,
-    "namingReviewReasons": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+    ],
     "singerAliases": [
       "이매진 드래곤스"
     ],
@@ -287,8 +289,10 @@
       "TJ’s raw credit names Louis Bell and indicates six additional writers, while the full-songwriter source lists a different 11-name set and omits Louis Bell. Retained both records separately; credit-set discrepancy still needs reconciliation."
     ],
     "notes": "TJ’s raw credit names Louis Bell and indicates six additional writers, while the full-songwriter source lists a different 11-name set and omits Louis Bell. Retained both records separately; credit-set discrepancy still needs reconciliation.",
-    "namingReviewRequired": false,
-    "namingReviewReasons": [],
+    "namingReviewRequired": true,
+    "namingReviewReasons": [
+      "표시 곡명의 통용 한국어 이름·발음을 확인하지 않았습니다."
+    ],
     "audioSourceReviewRequired": false,
     "audioSourceReviewReasons": [],
     "audioSourceEvidence": {

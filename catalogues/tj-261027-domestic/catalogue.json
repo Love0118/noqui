@@ -129,7 +129,8 @@
       ],
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false
     },
     {
       "index": 2,
@@ -138,7 +139,7 @@
       "videoId": "NbKH4iZqq1Y",
       "id": "3df46bf9-d6ed-5501-9ed0-4ab766a72b8d",
       "youtubeUrl": "https://www.youtube.com/watch?v=NbKH4iZqq1Y",
-      "title": "Drowning",
+      "title": "드라우닝",
       "sourceTitle": "Drowning",
       "singer": "WOODZ(조승연)",
       "writers": [
@@ -151,7 +152,8 @@
         "네이슨NATHAN",
         "HOHO",
         "WOODZ조승연",
-        "드라우닝"
+        "드라우닝",
+        "Drowning"
       ],
       "aliases": [
         {
@@ -159,6 +161,13 @@
           "name": "드라우닝",
           "url": "https://namu.wiki/w/Drowning(WOODZ)",
           "quote": "그중의 한 곡이 드라우닝이었다."
+        },
+        {
+          "kind": "title",
+          "name": "드라우닝",
+          "url": "https://www.yna.co.kr/amp/view/AKR20260515033900005",
+          "quote": "드라우닝",
+          "mainVerified": true
         }
       ],
       "reviewRequired": false,
@@ -186,6 +195,16 @@
           "quote": "그중의 한 곡이 드라우닝이었다.",
           "kind": "page",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.yna.co.kr/amp/view/AKR20260515033900005",
+          "quote": "드라우닝",
+          "kind": "page",
+          "retrievalUrl": "https://www.yna.co.kr/amp/view/AKR20260515033900005",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "df3d91a0bb5126ee5b35b06dab733e8de3226b77ed68bdffa648492c24815a22"
         }
       ],
       "audio": {
@@ -197,10 +216,25 @@
         "channels": 2,
         "durationSeconds": 244.99366666666666,
         "byteLength": 1502494,
-        "sha256": "48cbe14e44e80d5440c929af5fdcb562d3fc9f082bfda17876c84d2b5535515a"
+        "sha256": "7b9ea3a76afde0d967cc98ca11ff4ef948e0fad22dd6fafe01a7c1ac5571aedf"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false,
+      "originalTitle": "Drowning",
+      "namingHistory": [
+        {
+          "previousTitle": "Drowning",
+          "previousTags": [
+            "WOODZ",
+            "네이슨NATHAN",
+            "HOHO",
+            "WOODZ조승연",
+            "드라우닝"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ]
     },
     {
       "index": 3,
@@ -268,7 +302,8 @@
         "sha256": "7bab7fc12db7d55d5101195e2cc4fe2efdfd8746b8b2886373d13cd6ad803c65"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 4,
@@ -323,7 +358,8 @@
         "sha256": "579644ad20657551cb5fc6a5bc90ff1545e2bd7521c2dd3445bd1edae76b84f1"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 5,
@@ -378,7 +414,8 @@
         "sha256": "c1201894dd662da4aba454287ee7e1126460952949e4a404084f9dacece3a7fb"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 6,
@@ -446,7 +483,8 @@
         "sha256": "7cea303fd20ebaf94af2f4616fae451224f4c44419000bc7651e32456156028a"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 7,
@@ -557,7 +595,8 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false
     },
     {
       "index": 8,
@@ -663,7 +702,8 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false
     },
     {
       "index": 9,
@@ -734,7 +774,8 @@
       ],
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false
     },
     {
       "index": 10,
@@ -820,7 +861,8 @@
       ],
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false
     },
     {
       "index": 11,
@@ -913,7 +955,8 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false
     },
     {
       "index": 12,
@@ -990,7 +1033,8 @@
         "sha256": "a3b86c016ceacec9a86d60399a4d4e91ad05effb95150df625bc048cd03c8568"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 13,
@@ -1049,7 +1093,8 @@
         "sha256": "fde3e2b8b47c485a0e68efbfa2ce0740d346ff708b959f77288d3432e4c69405"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 14,
@@ -1104,7 +1149,8 @@
         "sha256": "d4a239297fa0e6c44f727de87fb46e2bf287f72187c4b2281a3142941d522774"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 15,
@@ -1173,7 +1219,8 @@
         "sha256": "2eb05ca042cc86f0f0ebf2820dccd3d7d73f5d8d44e3ac28b5c533c43869f955"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 16,
@@ -1226,7 +1273,8 @@
         "sha256": "4eb03a481259d9d3ecfacd6cfb0e4bf59b5e2d4cfd718a68f5a61cf63326215b"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 17,
@@ -1281,7 +1329,8 @@
         "sha256": "13db1e987817e4226c5daf22e571ca7bf51b24bbee0bcd949470c8e9ed1cea9b"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 18,
@@ -1408,7 +1457,8 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false
     },
     {
       "index": 19,
@@ -1463,7 +1513,8 @@
         "sha256": "4b5dbf9bc66244deef8315606c04e404af20ae9815eb3311b72b1f30b22144ea"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 20,
@@ -1520,7 +1571,8 @@
         "sha256": "068428cf52750308236ed291a771c04da2926272cb23cf6305d3d752562eb681"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 21,
@@ -1592,7 +1644,8 @@
         "sha256": "bf5d83b32cfec7dbd3f4858476b919db40a47ab6953673ecf451ade2d0229f0a"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 22,
@@ -1651,7 +1704,8 @@
         "sha256": "8d3d60b9e11e9d1a388df48c772b91939cf0ec14384a908a95a7941a55c43f8e"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 23,
@@ -1760,7 +1814,8 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false
     },
     {
       "index": 24,
@@ -1769,7 +1824,7 @@
       "videoId": "dZ508GjFhvA",
       "id": "0bbccc9c-70b4-510e-b702-2ebc8ef7ccd1",
       "youtubeUrl": "https://www.youtube.com/watch?v=dZ508GjFhvA",
-      "title": "My Love(And)",
+      "title": "마이 러브(앤드)",
       "sourceTitle": "My Love(And)",
       "singer": "버즈",
       "writers": [
@@ -1799,10 +1854,17 @@
         },
         {
           "kind": "title",
-          "name": "마이러브앤드",
+          "name": "마이 러브(앤드)",
+          "url": "https://v.daum.net/v/6E2VPpwart",
+          "quote": "마이 러브(앤드",
+          "mainVerified": true
+        },
+        {
+          "kind": "punctuation",
+          "name": "마이 러브앤드",
           "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: My Love(And) → 마이러브앤드 (2026-10-28). 외부 검색 인용 아님."
+          "quote": "마이 러브(앤드)",
+          "mainVerified": true
         }
       ],
       "reviewRequired": false,
@@ -1824,6 +1886,16 @@
           "quote": "BUZZ (버즈) • My Love (and) Lyrics Han_Rom_Eng — Fly Butterfly Entertainment. ",
           "kind": "search_snippet",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://v.daum.net/v/6E2VPpwart",
+          "quote": "마이 러브(앤드",
+          "kind": "page",
+          "retrievalUrl": "https://v.daum.net/v/6E2VPpwart",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "f0e079a910449748158593157297d0d5d98e9ad51c1e83491b870f145a0ad286"
         }
       ],
       "audio": {
@@ -1835,11 +1907,10 @@
         "channels": 2,
         "durationSeconds": 242.81808333333333,
         "byteLength": 1490033,
-        "sha256": "384b84b34aac0e1cda02219985512931d322dc3635c19c2ec2963dc53f623676"
+        "sha256": "70f5d3afa3ab389bef2d74b300308c61d8dd275841230580736bc1c0c3386528"
       },
       "reviewReasons": [],
       "singerAliases": [],
-      "namingReviewReasons": [],
       "namingReviewRequired": false,
       "namingHistory": [
         {
@@ -1848,6 +1919,28 @@
           "addedTags": [
             "마이러브앤드"
           ]
+        },
+        {
+          "previousTitle": "My Love(And)",
+          "previousTags": [
+            "이재경",
+            "이상준",
+            "버즈",
+            "My LoveAnd",
+            "My Love",
+            "마이러브앤드"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "My Love(And)",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "마이러브앤드",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: My Love(And) → 마이러브앤드 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -1916,7 +2009,8 @@
         "sha256": "7eaa984afdf4bcd7eeda459b548106776bb256e1d64cfb6e28703ebbe20f9e47"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 26,
@@ -2021,7 +2115,8 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false
     },
     {
       "index": 27,
@@ -2108,7 +2203,8 @@
       ],
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false
     },
     {
       "index": 28,
@@ -2200,7 +2296,8 @@
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
       "audioSourceType": "official_album_audio",
-      "audioVersion": "2016-01-20 released live album recording, 행보 2015 윤종신 / 작사가 윤종신 Live Part.1"
+      "audioVersion": "2016-01-20 released live album recording, 행보 2015 윤종신 / 작사가 윤종신 Live Part.1",
+      "namingReviewRequired": false
     },
     {
       "index": 29,
@@ -2255,7 +2352,8 @@
         "sha256": "4ab656b76063c3af54b12104964eb76c1a0937a7158f06b1b4eb98ff7d2bf29b"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 30,
@@ -2312,7 +2410,8 @@
         "sha256": "baa9779f3069fb0b868783dfa6b38539a993b90b92d167261667fd6626db51f3"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 31,
@@ -2384,7 +2483,8 @@
         "sha256": "b3857710d43209722d7b6e63afdd7c6eb062743819147d46deeeaf4da1eeedae"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 32,
@@ -2455,7 +2555,8 @@
         "sha256": "f29288761bd039cd4fd98bf3941ca0bb040386d1c97081e45b2ae3ee9852790e"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 33,
@@ -2509,7 +2610,8 @@
         "sha256": "a1c2cee0cb2eb3e4cdbf56c039773c25916391ef33407dd1b8d4862631da7f56"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 34,
@@ -2564,7 +2666,8 @@
         "sha256": "e54552bb48165a346ba8baf8c95e4adbacfd3ad163005f55a4746614ff80e4ac"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 35,
@@ -2619,7 +2722,8 @@
         "sha256": "a788b124cb76f45ef56e101fd2a60139aa7707d7dbbce78a1b5b4cacc208a89f"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 36,
@@ -2628,7 +2732,7 @@
       "videoId": "qZlu2j2SiBA",
       "id": "c1e71249-52f9-514b-84f3-8b580eb4ad52",
       "youtubeUrl": "https://www.youtube.com/watch?v=qZlu2j2SiBA",
-      "title": "Pretty Girl",
+      "title": "프리티 걸",
       "sourceTitle": "Pretty Girl",
       "singer": "RESCENE(리센느)",
       "writers": [
@@ -2641,15 +2745,16 @@
         "김승수",
         "송수윤",
         "RESCENE리센느",
-        "프리티걸"
+        "프리티걸",
+        "Pretty Girl"
       ],
       "aliases": [
         {
           "kind": "title",
-          "name": "프리티걸",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: Pretty Girl → 프리티걸 (2026-10-28). 외부 검색 인용 아님."
+          "name": "프리티 걸",
+          "url": "https://v.daum.net/v/20260708092239179",
+          "quote": "프리티 걸",
+          "mainVerified": true
         }
       ],
       "reviewRequired": false,
@@ -2671,6 +2776,16 @@
           "quote": "RESCENE (리센느) 'Pretty Girl' Special Video — RESCENE. RESCENE (리센느) 'Pretty Girl' Special Video [Pretty Girl - Special Single] : https://rescene.lnk.to/PrettyGirl RESCENE Plus ...",
           "kind": "search_snippet",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://v.daum.net/v/20260708092239179",
+          "quote": "프리티 걸",
+          "kind": "page",
+          "retrievalUrl": "https://v.daum.net/v/20260708092239179",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "ad90071e2a73330e598cbbb7604767c54875009dca188c3098f0dd52d50e8ee2"
         }
       ],
       "audio": {
@@ -2682,11 +2797,10 @@
         "channels": 2,
         "durationSeconds": 213.43322916666668,
         "byteLength": 1289922,
-        "sha256": "1b81ca000c7e0bcfef71e4b9c42d5a154022fcb5803d8ba94b890bde6c4fe4e8"
+        "sha256": "dbd2eff10edfd5ae817860e2fa845ee69b9077e5309fc03a1c64e859182d99c3"
       },
       "reviewReasons": [],
       "singerAliases": [],
-      "namingReviewReasons": [],
       "namingReviewRequired": false,
       "namingHistory": [
         {
@@ -2695,6 +2809,27 @@
           "addedTags": [
             "프리티걸"
           ]
+        },
+        {
+          "previousTitle": "Pretty Girl",
+          "previousTags": [
+            "한재호",
+            "김승수",
+            "송수윤",
+            "RESCENE리센느",
+            "프리티걸"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "Pretty Girl",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "프리티걸",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Pretty Girl → 프리티걸 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -2750,7 +2885,8 @@
         "sha256": "3b3586534f3620641a235394e461eb4063b9ca2605cce25a8df5d9f955f6d3e5"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 38,
@@ -2779,6 +2915,20 @@
           "name": "00",
           "url": null,
           "quote": "0+0"
+        },
+        {
+          "kind": "title",
+          "name": "0+0",
+          "url": "https://www.ichart.kr/song/38213",
+          "quote": "0+0",
+          "mainVerified": true
+        },
+        {
+          "kind": "punctuation",
+          "name": "00",
+          "url": null,
+          "quote": "0+0",
+          "mainVerified": true
         }
       ],
       "reviewRequired": false,
@@ -2808,6 +2958,16 @@
           "retrievedEvidenceMatched": true,
           "retrievalUrl": "https://www.youtube.com/results?search_query=0%2B0+%EA%B0%80%EC%82%AC",
           "checkedAt": "2026-10-28"
+        },
+        {
+          "url": "https://www.ichart.kr/song/38213",
+          "quote": "0+0",
+          "kind": "page",
+          "retrievalUrl": "https://www.ichart.kr/song/38213",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "4b12f5f14f290a26a35cdf6710cac3457c81b894c5fe9644e18935198672f34b"
         }
       ],
       "audio": {
@@ -2850,7 +3010,8 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false
     },
     {
       "index": 39,
@@ -2947,7 +3108,8 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false
     },
     {
       "index": 40,
@@ -3060,7 +3222,8 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false
     },
     {
       "index": 41,
@@ -3130,7 +3293,8 @@
         "sha256": "a4bfecd4812c6583d202aa6b8eb3fb2e5454184baebbde515337acaf3c0f985a"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 42,
@@ -3240,7 +3404,8 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false
     },
     {
       "index": 43,
@@ -3347,7 +3512,8 @@
       ],
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false
     },
     {
       "index": 44,
@@ -3460,7 +3626,8 @@
       ],
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false
     },
     {
       "index": 45,
@@ -3565,7 +3732,8 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false
     },
     {
       "index": 46,
@@ -3619,7 +3787,8 @@
         "sha256": "817aa06cad515030e01725a8e0b7c35f0f386412796270b388426106a9a019a1"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 47,
@@ -3674,7 +3843,8 @@
         "sha256": "f699f5e13dbb15d9d3dac9ad5c99b8e3bc7548badc4c7b3b97df38842977f2f1"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 48,
@@ -3728,7 +3898,8 @@
         "sha256": "543e30fe344c2bdfd90ff7d959a52903dc1046959efa0bd54f6eb8a712c21bec"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 49,
@@ -3789,7 +3960,8 @@
         "sha256": "777f669f3ba8933f9fa5b2497473cb3785b632ab8eb29702d01faf70c4b017c3"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 50,
@@ -3842,7 +4014,8 @@
         "sha256": "8c33b5ce46ef90ebf4ba50157b0aaaef344667ac560fdb6f12e2c88b50143a93"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 51,
@@ -3897,7 +4070,8 @@
         "sha256": "4bf7d606b8f405b23382c46f5f7f777ca00d3ff07ba3a5c33c8da10d58c50ef7"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 52,
@@ -4015,7 +4189,8 @@
             "츠키"
           ]
         }
-      ]
+      ],
+      "namingReviewRequired": false
     },
     {
       "index": 53,
@@ -4068,7 +4243,8 @@
         "sha256": "52ed6003db81576acdc82377297c41831b6aaf4f8597b6512443b0bc4c145f7b"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 54,
@@ -4140,7 +4316,8 @@
         "sha256": "18c27b93b832f11b26c6000640459ad661c51370c972759fbcf2301bf5d1e71f"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 55,
@@ -4194,7 +4371,8 @@
         "sha256": "c022b9399092dcf891981e74d995d4c53135714187ac5a356500d461f6793eb7"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 56,
@@ -4249,7 +4427,8 @@
         "sha256": "de13b31d3fd0eaedc3a0cfe1d5ca4a9ccfb7db7a48e9bbad0ef9150538639be3"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 57,
@@ -4302,7 +4481,8 @@
         "sha256": "8feae7d02655e8c93f44452cef3ae4ca99a3d6880deed12883134ec40f6fd49c"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 58,
@@ -4359,7 +4539,8 @@
         "sha256": "3aa7bc99110aa63b682fccee5a0a41cde316cf4d9d859f0b59d845aac1f875aa"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 59,
@@ -4412,7 +4593,8 @@
         "sha256": "6a3203333c0ea6cc00c50672a3e616b8c35d60d89595cc703d997def6682c412"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 60,
@@ -4465,7 +4647,8 @@
         "sha256": "9bde710a7e608fda58b1204a5b5e0306103c0fdba2a869d476a9cd14bcf5f256"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 61,
@@ -4474,7 +4657,7 @@
       "videoId": "YmzY2lTSnko",
       "id": "6c6e6cdf-4dcb-5a5e-91ce-c63a74b1fb46",
       "youtubeUrl": "https://www.youtube.com/watch?v=YmzY2lTSnko",
-      "title": "I Love You",
+      "title": "아이 러브 유",
       "sourceTitle": "I Love You",
       "singer": "포지션",
       "writers": [
@@ -4483,15 +4666,16 @@
       "tags": [
         "OZAKI YUTAKA",
         "포지션",
-        "아이러브유"
+        "아이러브유",
+        "I Love You"
       ],
       "aliases": [
         {
           "kind": "title",
-          "name": "아이러브유",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: I Love You → 아이러브유 (2026-10-28). 외부 검색 인용 아님."
+          "name": "아이 러브 유",
+          "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N0300147205",
+          "quote": "아이 러브 유",
+          "mainVerified": true
         }
       ],
       "reviewRequired": false,
@@ -4513,6 +4697,16 @@
           "quote": "[Audio] 포지션 (Position) - I Love You — 땅도라의 음악상자 Ddangdora music box. [Audio] 포지션 (Position) - I Love You.",
           "kind": "search_snippet",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N0300147205",
+          "quote": "아이 러브 유",
+          "kind": "page",
+          "retrievalUrl": "https://news.sbs.co.kr/news/endPage.do?news_id=N0300147205",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "ccd4a5e34eea4d57b1818986a1d300fe05858bba77058c4d604ca276fcb0cc70"
         }
       ],
       "audio": {
@@ -4524,11 +4718,10 @@
         "channels": 2,
         "durationSeconds": 335.07095833333335,
         "byteLength": 2018816,
-        "sha256": "0c6ddc468007233b7c43210d47f60d31c92b31b88cde19c81e8bbfb25b4bbee0"
+        "sha256": "b5bda4e8b157f4559df4da21d058a04ef7cfc0a6b94ede8aaf9f83b607fc36d6"
       },
       "reviewReasons": [],
       "singerAliases": [],
-      "namingReviewReasons": [],
       "namingReviewRequired": false,
       "namingHistory": [
         {
@@ -4537,6 +4730,25 @@
           "addedTags": [
             "아이러브유"
           ]
+        },
+        {
+          "previousTitle": "I Love You",
+          "previousTags": [
+            "OZAKI YUTAKA",
+            "포지션",
+            "아이러브유"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "I Love You",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "아이러브유",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: I Love You → 아이러브유 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -4592,7 +4804,8 @@
         "sha256": "580600b8d609c449c87621c7835d639448aa5dac0c3c1a582765fba969f1ae3d"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 63,
@@ -4645,7 +4858,8 @@
         "sha256": "9a23feb7e77fe5d771de2cc160456a2870871f4336859d5cbc58c8688ede0b37"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 64,
@@ -4717,7 +4931,8 @@
         "sha256": "21b49ac6792c2bc0e0b951753191a7269ade99519396225d780e43398c6e54d4"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 65,
@@ -4792,7 +5007,8 @@
         "sha256": "25a2635ad4c55606fd3a3bbf96f5d3d6004006bdde9f575e12dc60f11998f8ab"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 66,
@@ -4845,7 +5061,8 @@
         "sha256": "2a7377296eca82aa5140bebca2d7b56082236ef1032602555790a465be22162f"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 67,
@@ -4854,7 +5071,7 @@
       "videoId": "MwBOUnzYB-8",
       "id": "0dcb0d1d-fce4-521d-94ba-7219c49081f2",
       "youtubeUrl": "https://www.youtube.com/watch?v=MwBOUnzYB-8",
-      "title": "One Love",
+      "title": "원러브",
       "sourceTitle": "One Love",
       "singer": "MC THE MAX",
       "writers": [
@@ -4863,15 +5080,16 @@
       "tags": [
         "이수",
         "MC THE MAX",
-        "원러브"
+        "원러브",
+        "One Love"
       ],
       "aliases": [
         {
           "kind": "title",
           "name": "원러브",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: One Love → 원러브 (2026-10-28). 외부 검색 인용 아님."
+          "url": "https://www.youtube.com/watch?v=B3nvf_vOu88",
+          "quote": "원러브",
+          "mainVerified": true
         }
       ],
       "reviewRequired": false,
@@ -4893,6 +5111,16 @@
           "quote": "[Audio] 엠씨더맥스 (M.C The MAX) - One Love — 땅도라의 음악상자 Ddangdora music box. [Audio] 엠씨더맥스 (M.C The MAX) - One Love.",
           "kind": "search_snippet",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=B3nvf_vOu88",
+          "quote": "원러브",
+          "kind": "page",
+          "retrievalUrl": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DB3nvf_vOu88&format=json",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "c575b11fcc5bf824159f0a8a251f862c8e8d127ba2162d309f4cec440e51f941"
         }
       ],
       "audio": {
@@ -4904,11 +5132,10 @@
         "channels": 2,
         "durationSeconds": 265.06279166666667,
         "byteLength": 1609831,
-        "sha256": "6ffe7ead02315fe5b81ab2a3c5a1d87c90a90e1680e34fdf31ce002017c1b00f"
+        "sha256": "389c2def1ce637b828564d3ee877d8241aef30bf5abc7b04cb8241e25149e028"
       },
       "reviewReasons": [],
       "singerAliases": [],
-      "namingReviewReasons": [],
       "namingReviewRequired": false,
       "namingHistory": [
         {
@@ -4917,6 +5144,25 @@
           "addedTags": [
             "원러브"
           ]
+        },
+        {
+          "previousTitle": "One Love",
+          "previousTags": [
+            "이수",
+            "MC THE MAX",
+            "원러브"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "One Love",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "원러브",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: One Love → 원러브 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -4983,7 +5229,8 @@
         "sha256": "eb83363fffaf41bbe63bc7def24a7364182aa428b446d98b47730d3ce8a5d3df"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 69,
@@ -4992,7 +5239,7 @@
       "videoId": "gRV8pMtyzvI",
       "id": "56ae2a84-8c77-57e9-9c6c-5b8b4569ce33",
       "youtubeUrl": "https://www.youtube.com/watch?v=gRV8pMtyzvI",
-      "title": "Tears",
+      "title": "티어스",
       "sourceTitle": "Tears",
       "singer": "소찬휘",
       "writers": [
@@ -5003,15 +5250,16 @@
         "정성윤",
         "주태영",
         "소찬휘",
-        "티어스"
+        "티어스",
+        "Tears"
       ],
       "aliases": [
         {
           "kind": "title",
           "name": "티어스",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: Tears → 티어스 (2026-10-28). 외부 검색 인용 아님."
+          "url": "https://enews.imbc.com/M/Detail/380466",
+          "quote": "티어스",
+          "mainVerified": true
         }
       ],
       "reviewRequired": false,
@@ -5033,6 +5281,26 @@
           "quote": "Tears — 소찬휘 - Topic. Provided to YouTube by Recording Industry Association of Korea Tears · So Chanhwi First Bridge Released on: 2000-03-23 ...",
           "kind": "search_snippet",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://enews.imbc.com/M/Detail/380466",
+          "quote": "티어스",
+          "kind": "page",
+          "retrievalUrl": "https://enews.imbc.com/M/Detail/380466",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "d163f820ad3f9a49fb039c9f30ab69376c992eba5fdb7c27ba4fe112acf6f386"
+        },
+        {
+          "url": "https://www.tenasia.co.kr/article/2015032313704",
+          "quote": "티어스",
+          "kind": "page",
+          "retrievalUrl": "https://www.tenasia.co.kr/article/2015032313704",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "65325b2b0c1a9e8e0f41aa2f159f25c355df0228c619ce82a9d32c58ec1583d5"
         }
       ],
       "audio": {
@@ -5044,11 +5312,10 @@
         "channels": 2,
         "durationSeconds": 236.90033333333332,
         "byteLength": 1442091,
-        "sha256": "73aa5fee9cb05a6612ff8acad13915eba794c9166969ac2073bae5a74d0613b5"
+        "sha256": "97a57629837a6f39db487f993dd84031a9aaf7f536e24cf272eeab751186448f"
       },
       "reviewReasons": [],
       "singerAliases": [],
-      "namingReviewReasons": [],
       "namingReviewRequired": false,
       "namingHistory": [
         {
@@ -5057,6 +5324,26 @@
           "addedTags": [
             "티어스"
           ]
+        },
+        {
+          "previousTitle": "Tears",
+          "previousTags": [
+            "정성윤",
+            "주태영",
+            "소찬휘",
+            "티어스"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "Tears",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "티어스",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Tears → 티어스 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -5113,7 +5400,8 @@
         "sha256": "8d6cd6b37a5f9b1220376b653de22391b5ac286a26eb1b199a88b79260f408cb"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 71,
@@ -5122,7 +5410,7 @@
       "videoId": "ZF49-rKzTLk",
       "id": "f1813de4-12e5-5a5f-b1f1-0181d3b90b4d",
       "youtubeUrl": "https://www.youtube.com/watch?v=ZF49-rKzTLk",
-      "title": "REDRED",
+      "title": "레드레드",
       "sourceTitle": "REDRED",
       "singer": "CORTIS(코르티스)",
       "writers": [
@@ -5176,13 +5464,6 @@
           "quote": "발매 : 2026.04.20 아티스트 : CORTIS (코르티스) 앨범 : GREENGREEN 작곡 : Supreme Boi, ''hitman''bang, Hiss noise, 마틴, Jasper Harris, Skillies, 성현, 건호, skai, 제임스, 주훈, Derrick Milano, Jacob Aaron (THE HUB) 작사 : Supreme Boi, ''hitman''bang, Hiss noise, 마틴, Jasper Harris, Skillies, 성현, 건호, skai, 제임스, 주훈, Derrick Milano, Jacob Aaron (THE HUB)"
         },
         {
-          "kind": "title",
-          "name": "레드레드",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: REDRED → 레드레드 (2026-10-28). 외부 검색 인용 아님."
-        },
-        {
           "kind": "writer",
           "name": "슈프림보이",
           "canonicalName": "SUPREME BOI",
@@ -5208,6 +5489,13 @@
           "origin": "user_authorized_writer_alias",
           "url": null,
           "quote": "사용자 요청 한국어 작가 태그 보완 (2026-10-29): HITMAN BANG → 방시혁. 기존 크레딧을 보존한 통용명·발음 표기이며 외부 검색 인용 아님."
+        },
+        {
+          "kind": "title",
+          "name": "레드레드",
+          "url": "https://sinjoeo.kr/dict/%EB%A0%88%EB%93%9C%EB%A0%88%EB%93%9C",
+          "quote": "레드레드",
+          "mainVerified": true
         }
       ],
       "reviewRequired": false,
@@ -5251,6 +5539,16 @@
           "kind": "youtube_description",
           "retrievedEvidenceMatched": true,
           "checkedAt": "2026-10-28"
+        },
+        {
+          "url": "https://sinjoeo.kr/dict/%EB%A0%88%EB%93%9C%EB%A0%88%EB%93%9C",
+          "quote": "레드레드",
+          "kind": "page",
+          "retrievalUrl": "https://sinjoeo.kr/dict/%EB%A0%88%EB%93%9C%EB%A0%88%EB%93%9C",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "a81faf49a47618f6b1b6440131705b19145bdad026414a393a1e778ab5ca0d16"
         }
       ],
       "audio": {
@@ -5262,7 +5560,7 @@
         "channels": 2,
         "durationSeconds": 163.015,
         "byteLength": 1000990,
-        "sha256": "c4c794dc8044580aefb275d21a9536feb2932d01d41c57ef0e248d1e3b42da56"
+        "sha256": "1dcb58082abe6381e0fd61694232feb4a419ee30f9cd95583cf8cf36478be5ba"
       },
       "reviewReasons": [],
       "singerAliases": [
@@ -5305,7 +5603,6 @@
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
       "audioSourceType": "subtitled_audio",
-      "namingReviewReasons": [],
       "namingReviewRequired": false,
       "namingHistory": [
         {
@@ -5322,6 +5619,32 @@
             "슈프림보이",
             "히스노이즈"
           ]
+        },
+        {
+          "previousTitle": "REDRED",
+          "previousTags": [
+            "마틴",
+            "제임스",
+            "코르티스",
+            "성현",
+            "주훈",
+            "건호",
+            "레드레드",
+            "슈프림보이",
+            "히스노이즈",
+            "방시혁"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "REDRED",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "레드레드",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: REDRED → 레드레드 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -5376,7 +5699,8 @@
         "sha256": "f6fb11e55fe69d0cba2d53d7743542e170e3f4c76bb1a40f65d142d5ca5a237f"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 73,
@@ -5435,7 +5759,8 @@
         "sha256": "cf7a22a93ac918fe524e4b7a2836e4f0ff9b93d26132d041b8b193ac6ac469c5"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 74,
@@ -5524,7 +5849,8 @@
       ],
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false
     },
     {
       "index": 75,
@@ -5579,7 +5905,8 @@
         "sha256": "c35e8d51d37c2bfb555611a571485303f48b8ea948c3545c5f18b2aa1ba18d86"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 76,
@@ -5641,7 +5968,8 @@
         "sha256": "d566c56684fe0d0896cb4fd1180fd5e18924599112b0f33c00ef9db862d1c8bd"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 77,
@@ -5732,7 +6060,8 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false
     },
     {
       "index": 78,
@@ -5828,7 +6157,8 @@
       ],
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false
     },
     {
       "index": 79,
@@ -5936,7 +6266,8 @@
       ],
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false
     },
     {
       "index": 80,
@@ -6003,7 +6334,8 @@
         "sha256": "8de871c14228a6250be8ffcce0eb5f5db87009a7bf98c72640366f66cffa68d9"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 81,
@@ -6012,7 +6344,7 @@
       "videoId": "--knPjoSlNE",
       "id": "01f5b148-5522-5a96-8b9f-e6818f78b80f",
       "youtubeUrl": "https://www.youtube.com/watch?v=--knPjoSlNE",
-      "title": "Marry Me",
+      "title": "메리 미",
       "sourceTitle": "Marry Me",
       "singer": "마크툽(MAKTUB),구윤회",
       "writers": [
@@ -6021,15 +6353,16 @@
       "tags": [
         "마크툽MAKTUB",
         "마크툽MAKTUB구윤회",
-        "메리미"
+        "메리미",
+        "Marry Me"
       ],
       "aliases": [
         {
           "kind": "title",
-          "name": "메리미",
-          "url": null,
-          "origin": "user_authorized_pronunciation",
-          "quote": "사용자 승인 영어 제목 일반 발음: Marry Me → 메리미 (2026-10-28). 외부 검색 인용 아님."
+          "name": "메리 미",
+          "url": "https://www.tenasia.co.kr/article/2017121419684",
+          "quote": "메리 미",
+          "mainVerified": true
         }
       ],
       "reviewRequired": false,
@@ -6051,6 +6384,16 @@
           "quote": "마크툽(MAKTUB) _ Marry Me [마크툽 프로젝트 Vol.03(MAKTUB Project Vol.03)] (Feat.구윤회) — 마크툽 MAKTUB Official. Instagram : https://www.instagram.com/maktub_world 비내리는 날엔 우산이 되주고 어둠이 오면 빛이 되줄게 추운 겨울이면 난로가 ...",
           "kind": "search_snippet",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.tenasia.co.kr/article/2017121419684",
+          "quote": "메리 미",
+          "kind": "page",
+          "retrievalUrl": "https://www.tenasia.co.kr/article/2017121419684",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "e110d6d2a6b5197d26f631ea138bd3d0bde7fe8f5edf8f72a8b6932d6a7aaa68"
         }
       ],
       "audio": {
@@ -6062,11 +6405,10 @@
         "channels": 2,
         "durationSeconds": 261.428875,
         "byteLength": 1602284,
-        "sha256": "2a23070ce39b7987e2a4130f4612a070f8c9f48d1898747d351f26f4f8977d8f"
+        "sha256": "d21ed317b8fc270d7321f291757dc4f92730b6b2368f0e0fa33d585980b3a4be"
       },
       "reviewReasons": [],
       "singerAliases": [],
-      "namingReviewReasons": [],
       "namingReviewRequired": false,
       "namingHistory": [
         {
@@ -6075,6 +6417,25 @@
           "addedTags": [
             "메리미"
           ]
+        },
+        {
+          "previousTitle": "Marry Me",
+          "previousTags": [
+            "마크툽MAKTUB",
+            "마크툽MAKTUB구윤회",
+            "메리미"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ],
+      "originalTitle": "Marry Me",
+      "retiredAliases": [
+        {
+          "kind": "title",
+          "name": "메리미",
+          "url": null,
+          "origin": "user_authorized_pronunciation",
+          "quote": "사용자 승인 영어 제목 일반 발음: Marry Me → 메리미 (2026-10-28). 외부 검색 인용 아님."
         }
       ]
     },
@@ -6137,7 +6498,8 @@
         "sha256": "aec2c2fbea203b6b5c0447d45f5cbb3da9f7660ba616a2514a51556d4eaab297"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 83,
@@ -6189,7 +6551,8 @@
         "sha256": "9ae7bc46c4b39532f7cd55cd4ffc141334cd2672e161db43da967b33a8f8914c"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 84,
@@ -6198,7 +6561,7 @@
       "videoId": "VnqgmOJaMGc",
       "id": "666e7c06-5a40-58e8-8c9e-e55de25843e2",
       "youtubeUrl": "https://www.youtube.com/watch?v=VnqgmOJaMGc",
-      "title": "LOVE ATTACK",
+      "title": "러브어택",
       "sourceTitle": "LOVE ATTACK",
       "singer": "RESCENE(리센느)",
       "writers": [
@@ -6219,7 +6582,8 @@
         "JONASSON SIMON ERIK HENRIK",
         "LANDELL GUSTAV",
         "EURENIUS KARIN WILHELMINA",
-        "RESCENE리센느"
+        "RESCENE리센느",
+        "LOVE ATTACK"
       ],
       "aliases": [
         {
@@ -6227,6 +6591,13 @@
           "url": "https://www.youtube.com/watch?v=VnqgmOJaMGc",
           "quote": "RESCENE (리센느) - LOVE ATTACK(러브어택) [가사 | Lyrics]",
           "kind": "title"
+        },
+        {
+          "kind": "title",
+          "name": "러브어택",
+          "url": "https://v.daum.net/v/5wPtUFKGip",
+          "quote": "러브어택",
+          "mainVerified": true
         }
       ],
       "reviewRequired": false,
@@ -6263,6 +6634,16 @@
           "kind": "youtube_search",
           "retrievedEvidenceMatched": true,
           "checkedAt": "2026-10-28"
+        },
+        {
+          "url": "https://v.daum.net/v/5wPtUFKGip",
+          "quote": "러브어택",
+          "kind": "page",
+          "retrievalUrl": "https://v.daum.net/v/5wPtUFKGip",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "89d58daa1849e43670737dced082f4cc94d130fb161fbf3a7fe91c9289eea565"
         }
       ],
       "audio": {
@@ -6274,7 +6655,7 @@
         "channels": 2,
         "durationSeconds": 181.56383333333332,
         "byteLength": 1115441,
-        "sha256": "38fc684f549aaee7e260cf7aeb22b744e7abf8a29080d4092ce9c4f0debb3e83"
+        "sha256": "d89b57f9201ed4aceff7d8a253f29415b3aad7caea29ef301f17c17890fa5837"
       },
       "reviewReasons": [],
       "audioSourceReviewRequired": false,
@@ -6305,7 +6686,26 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false,
+      "originalTitle": "LOVE ATTACK",
+      "namingHistory": [
+        {
+          "previousTitle": "LOVE ATTACK",
+          "previousTags": [
+            "러브어택",
+            "THE MUZE 1",
+            "방혜현",
+            "THE MUZE 2",
+            "THE MUZE 3",
+            "JONASSON SIMON ERIK HENRIK",
+            "LANDELL GUSTAV",
+            "EURENIUS KARIN WILHELMINA",
+            "RESCENE리센느"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ]
     },
     {
       "index": 85,
@@ -6360,7 +6760,8 @@
         "sha256": "30c4f12d7bb57c9c8c1c52eb8bcf7745321dc4b0b1873c4ad1b7a62b30ab6012"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 86,
@@ -6422,7 +6823,8 @@
         "sha256": "6750792892cceb7c02c5287d0dcc2c17a46e7ce3354a96fbc8c84833284efb7b"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 87,
@@ -6509,7 +6911,8 @@
       ],
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false
     },
     {
       "index": 88,
@@ -6604,7 +7007,8 @@
       ],
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false
     },
     {
       "index": 89,
@@ -6657,7 +7061,8 @@
         "sha256": "30e5ef6ea5b6ada775fba7c81a2ae29b066430c6b4e2b0d62db8b089336ace8d"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 90,
@@ -6710,7 +7115,8 @@
         "sha256": "77987f9d905a9ac5f1beb149861d6f63dfaa72dfbc1bc7f680159943762a62b5"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 91,
@@ -6809,7 +7215,8 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false
     },
     {
       "index": 92,
@@ -6862,7 +7269,8 @@
         "sha256": "9ebbfd43e176fc6ab830d87f711317284b6fa276e5f869932f58de98e9f70339"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 93,
@@ -6917,7 +7325,8 @@
         "sha256": "4b92e99e5a454da8d22c2f9740ae6426667b271b4abce3d664365b0223d81377"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 94,
@@ -6972,7 +7381,8 @@
         "sha256": "a7a07f7ebee243a1e0b91b2562afdb0e358fbd3b529435099538d5dc044f7ca8"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 95,
@@ -7035,7 +7445,8 @@
         "sha256": "9be2c394fe8c87947b458d3a19c82f192ef779a03b8caece56097badbfcea671"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 96,
@@ -7114,7 +7525,8 @@
       ],
       "audioSourceReviewRequired": false,
       "audioSourceReviewReasons": [],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false
     },
     {
       "index": 97,
@@ -7204,7 +7616,8 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false
     },
     {
       "index": 98,
@@ -7213,7 +7626,7 @@
       "videoId": "k6rJS0ek-a4",
       "id": "78574b96-cde4-59e0-ac34-f9a8b63e8712",
       "youtubeUrl": "https://www.youtube.com/watch?v=k6rJS0ek-a4",
-      "title": "Hello",
+      "title": "헬로",
       "sourceTitle": "Hello",
       "singer": "허각",
       "writers": [
@@ -7224,7 +7637,8 @@
         "최규성",
         "라도",
         "허각",
-        "헬로"
+        "헬로",
+        "Hello"
       ],
       "aliases": [
         {
@@ -7238,6 +7652,13 @@
           "url": "https://www.youtube.com/watch?v=k6rJS0ek-a4",
           "quote": "허각(HuhGak) - Hello [가사/Lyrics] 4:13",
           "kind": "title"
+        },
+        {
+          "kind": "title",
+          "name": "헬로",
+          "url": "https://www.yna.co.kr/amp/view/AKR20110915053000005",
+          "quote": "헬로",
+          "mainVerified": true
         }
       ],
       "reviewRequired": false,
@@ -7288,6 +7709,16 @@
           "checkedAt": "2026-10-27T15:58:20Z",
           "url": "https://www.youtube.com/watch?v=k6rJS0ek-a4",
           "retrievedEvidenceMatched": true
+        },
+        {
+          "url": "https://www.yna.co.kr/amp/view/AKR20110915053000005",
+          "quote": "헬로",
+          "kind": "page",
+          "retrievalUrl": "https://www.yna.co.kr/amp/view/AKR20110915053000005",
+          "retrievedEvidenceMatched": true,
+          "mainVerified": true,
+          "retrievedAt": "2026-11-06",
+          "retrievalSha256": "dcdd7bad8c85348842e0c0367a75f933bbd9ebb49afdecfdee2be046aaefb510"
         }
       ],
       "audio": {
@@ -7299,7 +7730,7 @@
         "channels": 2,
         "durationSeconds": 252.09445833333334,
         "byteLength": 1540982,
-        "sha256": "f92605b69dd55ad847a46b6b29fac4a39fbc3b097774d94650c7387db90bbe02"
+        "sha256": "c2e6fa703d223a1f4c6b1937ac2ec154a19ae8a15e658e28a6fdf8e63e1d936a"
       },
       "reviewReasons": [],
       "audioSourceReviewRequired": false,
@@ -7330,7 +7761,21 @@
           "replacementSourceType": "subtitled_audio"
         }
       ],
-      "audioSourceType": "subtitled_audio"
+      "audioSourceType": "subtitled_audio",
+      "namingReviewRequired": false,
+      "originalTitle": "Hello",
+      "namingHistory": [
+        {
+          "previousTitle": "Hello",
+          "previousTags": [
+            "최규성",
+            "라도",
+            "허각",
+            "헬로"
+          ],
+          "reason": "Replace prior naming with independently sourced common usage"
+        }
+      ]
     },
     {
       "index": 99,
@@ -7405,7 +7850,8 @@
         "sha256": "352e62d91fa2c517685dc59e59d1e7be952cc0339544abc6a4826422f74023a0"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     },
     {
       "index": 100,
@@ -7460,7 +7906,8 @@
         "sha256": "df91813d7495381109586410e6ffd45cdbae9625e48ea09c2a87dce6c9db67a7"
       },
       "reviewReasons": [],
-      "singerAliases": []
+      "singerAliases": [],
+      "namingReviewRequired": false
     }
   ],
   "punctuationTags": {

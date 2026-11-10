@@ -2,23 +2,6 @@
   "schemaVersion": 1,
   "songs": [
     {
-      "id": "dbf6a918-0b9e-581a-9bb5-56cb7af9ada1",
-      "youtubeUrl": "https://www.youtube.com/watch?v=LleQdrW_RhQ",
-      "title": "비어가",
-      "tags": [
-        "MIMI",
-        "미미"
-      ]
-    },
-    {
-      "id": "5cca1e94-3887-5a98-baf9-0671e611e3bf",
-      "youtubeUrl": "https://www.youtube.com/watch?v=wqV9HGpgGDA",
-      "title": "위풍당당",
-      "tags": [
-        "우메토라"
-      ]
-    },
-    {
       "id": "90e56d8e-4727-5bea-90d0-40c28704da7e",
       "youtubeUrl": "https://www.youtube.com/watch?v=mKzs_ZqIXC0",
       "title": "공주열차",
@@ -69,7 +52,7 @@
     {
       "id": "679cfd23-d944-5e76-b952-58da71d8b500",
       "youtubeUrl": "https://www.youtube.com/watch?v=WDUA7z3703g",
-      "title": "Bad ∞ End ∞ Night",
+      "title": "배드 엔드 나이트",
       "tags": [
         "HitoshizukuP",
         "Yama",
@@ -112,12 +95,11 @@
     {
       "id": "26261bf2-171c-5fef-99fa-a587ac0feaae",
       "youtubeUrl": "https://www.youtube.com/watch?v=lvPRs_HC7Wg",
-      "title": "ANTI THE∞HOLiC",
+      "title": "안티 디 인피니트 홀릭",
       "tags": [
         "cosMo폭주P",
         "ANTI THEHOLiC",
-        "안티디인피니트홀릭",
-        "안티더홀릭"
+        "안티디인피니트홀릭"
       ]
     },
     {
@@ -140,17 +122,6 @@
       ]
     },
     {
-      "id": "ef7c9e42-92f7-517e-9182-f59e26e4772e",
-      "youtubeUrl": "https://www.youtube.com/watch?v=XjcfzyAtzug",
-      "title": "Black Board",
-      "tags": [
-        "chouchouP",
-        "쵸쵸P",
-        "Black Board",
-        "블랙보드"
-      ]
-    },
-    {
       "id": "e1af5c58-f82f-5d9e-a99a-4328043c2247",
       "youtubeUrl": "https://www.youtube.com/watch?v=9DD6JvY06Ok",
       "title": "스트리밍 하트",
@@ -163,7 +134,7 @@
     {
       "id": "2c01b84c-6d6b-5a88-9bd4-bcbb53da1d7a",
       "youtubeUrl": "https://www.youtube.com/watch?v=PBjSHA2b5gM",
-      "title": "Calc.",
+      "title": "캘크",
       "tags": [
         "JimmyThumbP",
         "지미섬P",
@@ -203,12 +174,14 @@
     {
       "id": "8535aa58-84ab-5fd3-b979-904fea489529",
       "youtubeUrl": "https://www.youtube.com/watch?v=505rBX9MNcQ",
-      "title": "88☆彡",
+      "title": "88별",
       "tags": [
         "marasy",
         "kemu",
         "마라시",
-        "케무"
+        "케무",
+        "88별",
+        "호리에 쇼타"
       ]
     },
     {
@@ -234,7 +207,7 @@
     {
       "id": "acc354b5-dfef-51dc-8bde-d1b35c9e2481",
       "youtubeUrl": "https://www.youtube.com/watch?v=YVD1RLI7klc",
-      "title": "STAGE OF SEKAI",
+      "title": "스테이지 오브 세카이",
       "tags": [
         "HarryP",
         "하리P",
@@ -339,7 +312,7 @@
     {
       "id": "1ff5691a-87ce-574f-b8f0-1974bddd46a1",
       "youtubeUrl": "https://www.youtube.com/watch?v=nfpYhYtHuKo",
-      "title": "Flyer!",
+      "title": "플라이어!",
       "tags": [
         "Chinozo",
         "Flyer",
@@ -361,7 +334,7 @@
     {
       "id": "9a31dee0-975a-5276-a40f-d0e380a6db05",
       "youtubeUrl": "https://www.youtube.com/watch?v=BUyrhLRzAwU",
-      "title": "Awake Now",
+      "title": "어웨이크 나우",
       "tags": [
         "Yunosuke",
         "유노스케",
@@ -441,7 +414,7 @@
     {
       "id": "00c6ad9c-1d83-5f1c-8eb0-b7ea8cb0fc9d",
       "youtubeUrl": "https://www.youtube.com/watch?v=jvoW9lJdirk",
-      "title": "-ERROR",
+      "title": "에러",
       "tags": [
         "niki",
         "ERROR",
@@ -477,11 +450,38 @@
     {
       "id": "04e0e2e6-319b-58e3-9c75-63ec47a900eb",
       "youtubeUrl": "https://www.youtube.com/watch?v=1TgeWq2zgFY",
-      "title": "twitter",
+      "title": "트위터",
       "tags": [
         "devilishP",
         "twitter",
         "트위터"
+      ]
+    },
+    {
+      "id": "0c6a8dd1-39ae-529c-9477-04a58741a2c6",
+      "youtubeUrl": "https://www.youtube.com/watch?v=kpq7ImUWvME",
+      "title": "리플리컨트",
+      "tags": [
+        "buzzG",
+        "버즈지"
+      ]
+    },
+    {
+      "id": "31cbd875-09b3-559f-92b5-7d599ba5bee2",
+      "youtubeUrl": "https://www.youtube.com/watch?v=YHfm3bwC-Qk",
+      "title": "파라노이드",
+      "tags": [
+        "niki",
+        "니키"
+      ]
+    },
+    {
+      "id": "fd387a29-54c6-5a3e-96ad-8cfe9ea438ef",
+      "youtubeUrl": "https://www.youtube.com/watch?v=F-9G620NdbI",
+      "title": "비밀",
+      "tags": [
+        "마후마후",
+        "카쿠시고토"
       ]
     }
   ]

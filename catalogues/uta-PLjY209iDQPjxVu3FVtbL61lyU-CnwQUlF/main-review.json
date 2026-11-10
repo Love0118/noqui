@@ -3590,5 +3590,12 @@
     "playableNamingReviewRequired": 199
   },
   "catalogueSha256": "c2c6df5ee1ff8737025c1f81fcb0cac6034a50f50fe5768e13b45d2eb402ef9c",
-  "answerTagConsistencyVerified": true
+  "answerTagConsistencyVerified": true,
+  "supersededNamingReview": {
+    "date": "2026-11-10",
+    "report": "../../deploy/20261110-korean-playlist-review.json",
+    "reviewed": 511,
+    "playable": 504,
+    "note": "Earlier counts recorded identity/credit review and did not require a verified Korean display name."
+  }
 }
