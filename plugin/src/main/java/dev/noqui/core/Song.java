@@ -10,13 +10,13 @@ public record Song(String youtubeUrl, String title, List<String> tags) {
     public Song {
         youtubeUrl = youtube(youtubeUrl);
         title = checked(title, 160, "제목");
-        if (normalize(title).isEmpty()) throw new IllegalArgumentException("제목에 한글, 영문 또는 숫자를 입력하세요.");
-        if (tags == null || tags.size() > 10) throw new IllegalArgumentException("태그는 최대 10개입니다.");
+        if (normalize(title).isEmpty()) throw new IllegalArgumentException("제목에 한글, 영문, 일본어 또는 숫자를 입력하세요.");
+        if (tags == null || tags.size() > 16) throw new IllegalArgumentException("태그는 최대 16개입니다.");
         var unique = new LinkedHashMap<String,String>();
         for (String tag : tags) {
             tag = checked(tag, 32, "태그");
             String answer = normalize(tag);
-            if (answer.isEmpty()) throw new IllegalArgumentException("태그에 한글, 영문 또는 숫자를 입력하세요.");
+            if (answer.isEmpty()) throw new IllegalArgumentException("태그에 한글, 영문, 일본어 또는 숫자를 입력하세요.");
             unique.putIfAbsent(answer, tag);
         }
         tags = List.copyOf(unique.values());
@@ -32,7 +32,7 @@ public record Song(String youtubeUrl, String title, List<String> tags) {
         return text.trim();
     }
     public static String normalize(String text) {
-        return text == null ? "" : text.replaceAll("[^0-9A-Za-z가-힣]", "").toLowerCase(Locale.ROOT);
+        return text == null ? "" : text.replaceAll("[^0-9A-Za-z가-힣ぁ-ゖゝ-ゟァ-ヺー-ヿ々〆〇㐀-䶿一-鿿]", "").toLowerCase(Locale.ROOT);
     }
     public boolean matches(String input) {
         String value = normalize(input);

@@ -1,0 +1,110 @@
+{
+  "playlistId": "tj-new-japan-20261110",
+  "count": 11,
+  "songs": [
+    {
+      "index": 53,
+      "tjNumber": 52690,
+      "title": "숨바꼭질",
+      "originalTitle": "かくれんぼ",
+      "reasons": [
+        "Korean and original-name mapping is missing for official creator “EREN”."
+      ]
+    },
+    {
+      "index": 58,
+      "tjNumber": 52685,
+      "title": "큐스토의 노래",
+      "originalTitle": "きゅーすとのうた",
+      "reasons": [
+        "Korean and original-name mapping is missing for official creator “宇田川翔”."
+      ]
+    },
+    {
+      "index": 66,
+      "tjNumber": 52677,
+      "title": "큐트한 구체",
+      "originalTitle": "キュートなキューたい",
+      "reasons": [
+        "Korean and original-name mapping is missing for official creator “宇田川翔”.",
+        "Korean and original-name mapping is missing for official creator “ポケモン音楽歌い隊”."
+      ]
+    },
+    {
+      "index": 92,
+      "tjNumber": 52552,
+      "title": "프리큐큐",
+      "originalTitle": "ぷりきゅきゅ",
+      "reasons": [
+        "Korean and original-name mapping is missing for official creator “YUPPA”."
+      ]
+    },
+    {
+      "index": 98,
+      "tjNumber": 52546,
+      "title": "여보세요?",
+      "originalTitle": "mosi mosi?",
+      "reasons": [
+        "Korean and original-name mapping is missing for official creator “向田民子”."
+      ]
+    },
+    {
+      "index": 101,
+      "tjNumber": 52542,
+      "title": "릴리",
+      "originalTitle": "Lily",
+      "reasons": [
+        "Korean and original-name mapping is missing for official creator “PON”."
+      ]
+    },
+    {
+      "index": 103,
+      "tjNumber": 52538,
+      "title": "추억의 벚꽃",
+      "originalTitle": "名残り桜",
+      "reasons": [
+        "Korean and original-name mapping is missing for official creator “karia”."
+      ]
+    },
+    {
+      "index": 112,
+      "tjNumber": 52533,
+      "title": "조연남우상",
+      "originalTitle": "助演男優賞",
+      "reasons": [
+        "Korean and original-name mapping is missing for official creator “TARLOW JORDAN”.",
+        "Korean and original-name mapping is missing for official creator “YIN BERNARD”."
+      ]
+    },
+    {
+      "index": 113,
+      "tjNumber": 52532,
+      "title": "알러지",
+      "originalTitle": "Allergy",
+      "reasons": [
+        "Korean and original-name mapping is missing for official creator “PAPRIKAA”.",
+        "Korean and original-name mapping is missing for official creator “임정우”.",
+        "Korean and original-name mapping is missing for official creator “FLAME”.",
+        "Korean and original-name mapping is missing for official creator “nodresscode”."
+      ]
+    },
+    {
+      "index": 120,
+      "tjNumber": 52525,
+      "title": "카리스맥스",
+      "originalTitle": "カリスマックス",
+      "reasons": [
+        "Korean and original-name mapping is missing for official creator “MUTEKI DEAD SNAKE”."
+      ]
+    },
+    {
+      "index": 146,
+      "tjNumber": 52499,
+      "title": "향수",
+      "originalTitle": "香水",
+      "reasons": [
+        "Korean and original-name mapping is missing for official creator “8s”."
+      ]
+    }
+  ]
+}

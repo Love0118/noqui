@@ -44,8 +44,8 @@ def export_rows(source, output, playlist_id, name, rows, ffmpeg, excluded):
     for row in rows:
         if not reviewed(row):
             raise ValueError(f'Incomplete catalogue review: {row.get("index")}: {review_reasons(row)}')
-        if (not re.search('[0-9A-Za-z가-힣]', row['title']) or len(row['title'])>160 or len(row['tags'])>10
-                or any(not re.search('[0-9A-Za-z가-힣]', tag) or len(tag)>32 for tag in row['tags'])):
+        if (not re.search('[0-9A-Za-z가-힣ぁ-ゖゝ-ゟァ-ヺー-ヿ々〆〇㐀-䶿一-鿿]', row['title']) or len(row['title'])>160 or len(row['tags'])>16
+                or any(not re.search('[0-9A-Za-z가-힣ぁ-ゖゝ-ゟァ-ヺー-ヿ々〆〇㐀-䶿一-鿿]', tag) or len(tag)>32 for tag in row['tags'])):
             raise ValueError(f'Invalid reviewed game metadata: {row.get("index")}: {row["title"]}')
         track = {'song': {key: row[key] for key in ('id', 'youtubeUrl', 'title', 'tags')}, 'audio': None}
         audio = row['audio']

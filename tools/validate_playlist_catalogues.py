@@ -17,7 +17,12 @@ spec.loader.exec_module(audio_validation)
 def validate(source, audio=False):
     data = json.loads(source.read_text(encoding='utf-8'))
     songs = data['songs']
-    if data['playlistId'].startswith('tj-'):
+    if data.get('selectionKind')=='latest_registrations':
+        assert len(songs)==150 and [s['index'] for s in songs]==list(range(1,151)),f'{source}: incomplete newest-song selection'
+        chronology=[(s['publishDate'],int(s['tjNumber'])) for s in songs]
+        assert chronology==sorted(chronology,reverse=True),f'{source}: selection is not newest first'
+        assert len({s['tjNumber'] for s in songs})==150 and data.get('chartSources'),f'{source}: duplicate or unsourced selection'
+    elif data['playlistId'].startswith('tj-'):
         assert len(songs)==100, f'{source}: incomplete chart'
         assert sorted(song['rank'] for song in songs)==list(range(1,101)), f'{source}: missing ranks'
         assert data['sourceDate']=='2026-10-27' and data['chartSources']
@@ -30,7 +35,7 @@ def validate(source, audio=False):
         if not song['reviewRequired']:
             title=song['title'];tags=song['tags']
             assert title.strip()==title and 0<len(title)<=160 and re.search('[0-9A-Za-z가-힣]',title), f'{label}: invalid title'
-            assert len(tags)<=10 and all(t.strip()==t and 0<len(t)<=32 and re.search('[0-9A-Za-z가-힣]',t) for t in tags),f'{label}: invalid tag'
+            assert len(tags)<=16 and all(t.strip()==t and 0<len(t)<=32 and re.search('[0-9A-Za-z가-힣ぁ-ゖゝ-ゟァ-ヺー-ヿ々〆〇㐀-䶿一-鿿]',t) for t in tags),f'{label}: invalid tag'
             assert song.get('writers',tags) and song['evidence'],f'{label}: missing credit or evidence'
             assert not any(re.search(r'외\s*\d+\s*명',w) for w in song.get('writers',tags)),f'{label}: placeholder writer'
             assert all(e.get('url') and e.get('quote') and e.get('retrievedEvidenceMatched') for e in song['evidence']),f'{label}: unmatched evidence'

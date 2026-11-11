@@ -14,6 +14,11 @@ def numeric_title(title):
 
 def title_usage_verified(song):
     title = song.get('title', '')
+    original = song.get('originalTitle', '')
+    if (song.get('titleOrigin') == 'user_authorized_english_pronunciation' and song.get('namingSearches')
+            and re.search('[가-힣]', title) and re.search('[A-Za-z]', original)
+            and not re.search('[ぁ-ゖァ-ヺ一-龯가-힣]', original)):
+        return True
     numeric = numeric_title(title)
     if not re.search('[가-힣]', title) and not numeric:
         return False

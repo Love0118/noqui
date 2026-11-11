@@ -1,0 +1,2903 @@
+{
+  "schemaVersion": 1,
+  "id": "tj-new-japan-20261110",
+  "name": "TJ 일본 신곡 150 - 261110",
+  "songs": [
+    {
+      "song": {
+        "id": "1a6cc945-3477-5c9c-adfa-b5238e8d0aa8",
+        "youtubeUrl": "https://www.youtube.com/watch?v=XxRkIoZqf20",
+        "title": "신발에 쓸린 상처",
+        "tags": [
+          "くつずれ",
+          "トクマルシューゴ",
+          "토쿠마루 슈고",
+          "ナガノ",
+          "나가노",
+          "ハチワレCV田中誠人",
+          "하치와레 CV 타나카 마코토",
+          "신발 때문에 난 상처",
+          "구두에 쓸린 상처",
+          "ハチワレ",
+          "하치와레"
+        ]
+      },
+      "audio": {
+        "path": "audio/XxRkIoZqf20.ogg",
+        "sha256": "800055db431c0a0bbb7de1cdfb526063c95996201ecac6388231d4eab9f43ea7",
+        "byteLength": 1108392,
+        "durationMs": 180957
+      }
+    },
+    {
+      "song": {
+        "id": "3ebdd86c-c778-56d5-919d-32aed09a7dcf",
+        "youtubeUrl": "https://www.youtube.com/watch?v=nUyFIf_DjVQ",
+        "title": "론리네스",
+        "tags": [
+          "Loneliness",
+          "大森元貴",
+          "오모리 모토키",
+          "Mrs GREEN APPLE",
+          "미세스 그린 애플"
+        ]
+      },
+      "audio": {
+        "path": "audio/nUyFIf_DjVQ.ogg",
+        "sha256": "53c929cb3738112cf3e922b75eb6c0aceb6a9713a6dfc190f634e9ad86218d02",
+        "byteLength": 1381557,
+        "durationMs": 229307
+      }
+    },
+    {
+      "song": {
+        "id": "47e70d8b-5398-5971-b49b-661403da740a",
+        "youtubeUrl": "https://www.youtube.com/watch?v=dgN0JbJfzFA",
+        "title": "쏙독새",
+        "tags": [
+          "夜鷹",
+          "米津玄師",
+          "요네즈 켄시",
+          "Yodaka"
+        ]
+      },
+      "audio": {
+        "path": "audio/dgN0JbJfzFA.ogg",
+        "sha256": "22d2c7d7ad7cb8d853c7e66c3e600877dc7951bf0b568ac8b5be398406872e40",
+        "byteLength": 1207502,
+        "durationMs": 198064
+      }
+    },
+    {
+      "song": {
+        "id": "b36e1458-afd7-5e51-a3f2-1ad126ed1dc7",
+        "youtubeUrl": "https://www.youtube.com/watch?v=wSRziiXJHT8",
+        "title": "사랑받지 못해도 네가 있어",
+        "tags": [
+          "愛されなくても 君がいる",
+          "ピノキオピー",
+          "피노키오피",
+          "ピノキオピーFeat初音ミク",
+          "피노키오P feat 하츠네 미쿠",
+          "피노키오P"
+        ]
+      },
+      "audio": {
+        "path": "audio/wSRziiXJHT8.ogg",
+        "sha256": "85346332b0535612032c3d0092c86fcbb2b9f8b5d6648a42fa58fccda31bb229",
+        "byteLength": 1665022,
+        "durationMs": 272014
+      }
+    },
+    {
+      "song": {
+        "id": "100f4f93-0194-5739-a77c-a0c0643ae8ef",
+        "youtubeUrl": "https://www.youtube.com/watch?v=wFV8W42pZ0U",
+        "title": "포물선",
+        "tags": [
+          "パラボラ",
+          "藤原聡",
+          "후지와라 사토시",
+          "Official髭男dism",
+          "오피셜 히게단디즘",
+          "파라볼라"
+        ]
+      },
+      "audio": {
+        "path": "audio/wFV8W42pZ0U.ogg",
+        "sha256": "0fa7d5c761db073917874f7176d067add83baa5d190efe95c7b430a455d3cc98",
+        "byteLength": 1840103,
+        "durationMs": 303080
+      }
+    },
+    {
+      "song": {
+        "id": "ae9395b2-86b5-5316-82f2-d7696c6fc48a",
+        "youtubeUrl": "https://www.youtube.com/watch?v=lb8ykprY3gE",
+        "title": "영-zero-",
+        "tags": [
+          "零zero",
+          "TUKI",
+          "츠키",
+          "零",
+          "zero",
+          "영"
+        ]
+      },
+      "audio": {
+        "path": "audio/lb8ykprY3gE.ogg",
+        "sha256": "a2256dcbd22754529606b600552f795a1dc2639a0eec16ffbd5f1857deca10e4",
+        "byteLength": 1458561,
+        "durationMs": 238267
+      }
+    },
+    {
+      "song": {
+        "id": "9d2524f9-cee7-581d-b345-3f9ae7d49f93",
+        "youtubeUrl": "https://www.youtube.com/watch?v=X2n-TqnqskM",
+        "title": "전생사과",
+        "tags": [
+          "転生林檎",
+          "ピノキオピー",
+          "피노키오피",
+          "ピノキオピーFeat初音ミク",
+          "피노키오P feat 하츠네 미쿠",
+          "피노키오P"
+        ]
+      },
+      "audio": {
+        "path": "audio/X2n-TqnqskM.ogg",
+        "sha256": "9fa99ef43fb35f10fe363e38ed4c078324df753418dfc241e2533d265666ea42",
+        "byteLength": 1356969,
+        "durationMs": 221614
+      }
+    },
+    {
+      "song": {
+        "id": "1010bcf8-172c-54ee-aba9-c3a3e0ef65d2",
+        "youtubeUrl": "https://www.youtube.com/watch?v=hurYJCgf-7Y",
+        "title": "이데아가 넘쳐흘러 잠들 수 없어",
+        "tags": [
+          "イデアが溢れて 眠れない",
+          "VAUNDY",
+          "바운디"
+        ]
+      },
+      "audio": {
+        "path": "audio/hurYJCgf-7Y.ogg",
+        "sha256": "3cf4b4ab5e481f42ff490f352229f845344ccdbfec645ba34ff4f6da7ce43658",
+        "byteLength": 1599813,
+        "durationMs": 263011
+      }
+    },
+    {
+      "song": {
+        "id": "ba16f5b7-9ab6-50d1-8634-dd521a215f08",
+        "youtubeUrl": "https://www.youtube.com/watch?v=n13ULXp5--I",
+        "title": "융해sink",
+        "tags": [
+          "融解sink",
+          "VAUNDY",
+          "바운디"
+        ]
+      },
+      "audio": {
+        "path": "audio/n13ULXp5--I.ogg",
+        "sha256": "61367607cd0197087277bceb049a439ef4aba24f968c6741b742761dc93e0c06",
+        "byteLength": 1479894,
+        "durationMs": 242014
+      }
+    },
+    {
+      "song": {
+        "id": "cb7b4daf-a60b-5d08-9740-b849b9c885d5",
+        "youtubeUrl": "https://www.youtube.com/watch?v=VdDPPWb5cF8",
+        "title": "좋아해",
+        "tags": [
+          "好き",
+          "星野源",
+          "호시노 겐"
+        ]
+      },
+      "audio": {
+        "path": "audio/VdDPPWb5cF8.ogg",
+        "sha256": "acf5336f8f60294bd8a8ac0e081150a9f197f55f2328f769ac656c5407201147",
+        "byteLength": 1410876,
+        "durationMs": 230614
+      }
+    },
+    {
+      "song": {
+        "id": "1b81e855-1814-5d96-96bd-8486fa5110c4",
+        "youtubeUrl": "https://www.youtube.com/watch?v=X_p5iQ7cwmg",
+        "title": "서지스",
+        "tags": [
+          "Surges",
+          "ORANGESTAR",
+          "오렌지스타",
+          "OrangestarFeat夏背ルワン",
+          "오렌지스타 Feat 카세 루완"
+        ]
+      },
+      "audio": {
+        "path": "audio/X_p5iQ7cwmg.ogg",
+        "sha256": "8bba6f41aba7521268ff0d5057e8bb3d8b8f245de22df2c4890f8ff765dad8ba",
+        "byteLength": 884749,
+        "durationMs": 144557
+      }
+    },
+    {
+      "song": {
+        "id": "70fd75f0-46e9-5a15-8091-0831d933615e",
+        "youtubeUrl": "https://www.youtube.com/watch?v=GXc9h3hXRUk",
+        "title": "두근거림",
+        "tags": [
+          "Tokimeki",
+          "VAUNDY",
+          "바운디"
+        ]
+      },
+      "audio": {
+        "path": "audio/GXc9h3hXRUk.ogg",
+        "sha256": "199c08a815940467ae7b95b0bd749a2ee39d42f4337569d73ac076d0fe4f6f95",
+        "byteLength": 1298625,
+        "durationMs": 212014
+      }
+    },
+    {
+      "song": {
+        "id": "f1d8de0b-c243-5256-b3fb-3b2135615644",
+        "youtubeUrl": "https://www.youtube.com/watch?v=6aXSLfLs67A",
+        "title": "둔갑의 꽃",
+        "tags": [
+          "化けの花",
+          "なきそ",
+          "나키소",
+          "なきそFeat初音ミク",
+          "나키소Feat 하츠네 미쿠"
+        ]
+      },
+      "audio": {
+        "path": "audio/6aXSLfLs67A.ogg",
+        "sha256": "d08ea60c40fb0f1bb2628ecd97d894db2b5cc435245e67bf42963477e656e80f",
+        "byteLength": 712080,
+        "durationMs": 116347
+      }
+    },
+    {
+      "song": {
+        "id": "bec1aeb3-a4e2-5eb0-bba4-e2dcdffe76be",
+        "youtubeUrl": "https://www.youtube.com/watch?v=UZ4an60Zmvc",
+        "title": "브랜드 뉴",
+        "tags": [
+          "Brand New",
+          "大森元貴",
+          "오모리 모토키",
+          "Mrs GREEN APPLE",
+          "미세스 그린 애플"
+        ]
+      },
+      "audio": {
+        "path": "audio/UZ4an60Zmvc.ogg",
+        "sha256": "f491d13eec245a0d5cc68fff1ad3410fcbe2bdc5a9ce1f4666b4591ce40e6d9b",
+        "byteLength": 1294989,
+        "durationMs": 211680
+      }
+    },
+    {
+      "song": {
+        "id": "aee519fb-be2d-5140-a9be-e678696a473b",
+        "youtubeUrl": "https://www.youtube.com/watch?v=wsNO9DpthOE",
+        "title": "100엔 키스",
+        "tags": [
+          "100円キッス",
+          "Matty",
+          "마티",
+          "LET ME KNOW",
+          "렛 미 노우"
+        ]
+      },
+      "audio": {
+        "path": "audio/wsNO9DpthOE.ogg",
+        "sha256": "98b0d05bec493d4bff88b550e072ad4fcc2b3cf462dd447658efacb444febc84",
+        "byteLength": 1616788,
+        "durationMs": 264146
+      }
+    },
+    {
+      "song": {
+        "id": "2344f158-9357-50fc-8a50-0ad5b1432e22",
+        "youtubeUrl": "https://www.youtube.com/watch?v=jAaj1bOmWVQ",
+        "title": "퍼펫",
+        "tags": [
+          "Puppet",
+          "なとり",
+          "나토리"
+        ]
+      },
+      "audio": {
+        "path": "audio/jAaj1bOmWVQ.ogg",
+        "sha256": "16276e6e4e75d6bc214fdbd004d88173c42c813a8fa8f698e4d82414f638d5d0",
+        "byteLength": 1339573,
+        "durationMs": 219166
+      }
+    },
+    {
+      "song": {
+        "id": "d669455b-f1b3-52c8-ba1d-e2a79262a8a0",
+        "youtubeUrl": "https://www.youtube.com/watch?v=JonvwJvZFv4",
+        "title": "퓨처 플레이스",
+        "tags": [
+          "Future Place",
+          "笠井雄太ELEMENTS GARDEN",
+          "카사이 유우타",
+          "中村航",
+          "나카무라 코우",
+          "PoppinParty",
+          "포핀파티",
+          "笠井雄太"
+        ]
+      },
+      "audio": {
+        "path": "audio/JonvwJvZFv4.ogg",
+        "sha256": "d10fd0e9856d0c3a6c8783123b269f1558685b38d5fcd6d887f173d6b5ffbb51",
+        "byteLength": 1417184,
+        "durationMs": 232980
+      }
+    },
+    {
+      "song": {
+        "id": "1a5e2024-9fda-5dcb-ae19-c3ba2cdfd226",
+        "youtubeUrl": "https://www.youtube.com/watch?v=VfBswbj1824",
+        "title": "래그트레인",
+        "tags": [
+          "ラグトレイン",
+          "稲葉曇",
+          "이나바 쿠모리",
+          "稲葉曇Feat歌愛ユキ",
+          "이나바쿠모리 Feat 카아이 유키"
+        ]
+      },
+      "audio": {
+        "path": "audio/VfBswbj1824.ogg",
+        "sha256": "409869f6842353ae599bc1e735d0b5acbd60005c1cc4467d4c9671b258dd8710",
+        "byteLength": 1539874,
+        "durationMs": 251442
+      }
+    },
+    {
+      "song": {
+        "id": "69f8e854-aac7-5dcf-bfe6-de04dc285e55",
+        "youtubeUrl": "https://www.youtube.com/watch?v=l_HTf8JRTts",
+        "title": "베드룸 토크",
+        "tags": [
+          "Bedroom Talk",
+          "小笹大輔",
+          "오자사 다이스케",
+          "Official髭男dism",
+          "오피셜 히게단디즘"
+        ]
+      },
+      "audio": {
+        "path": "audio/l_HTf8JRTts.ogg",
+        "sha256": "fe5d5627171b97dadbc9c691ae7d7f635613b3631f1ca9fa51d04130f5e0db1f",
+        "byteLength": 1223275,
+        "durationMs": 199972
+      }
+    },
+    {
+      "song": {
+        "id": "de2cb42a-52b7-51f7-88d1-c8194461a97c",
+        "youtubeUrl": "https://www.youtube.com/watch?v=TRN2XtOi8IE",
+        "title": "줄곧 러브 송",
+        "tags": [
+          "ずっとラブソング",
+          "VAUNDY",
+          "바운디"
+        ]
+      },
+      "audio": {
+        "path": "audio/TRN2XtOi8IE.ogg",
+        "sha256": "3a6880a1b9f9fd529bbc9b5dcd90554554b8b85e4c369e84f212b99206ec87d1",
+        "byteLength": 1298690,
+        "durationMs": 212562
+      }
+    },
+    {
+      "song": {
+        "id": "3e8dccaf-781c-5e43-ab76-81ca66d2c36f",
+        "youtubeUrl": "https://www.youtube.com/watch?v=M3we1RzoxaI",
+        "title": "열이상",
+        "tags": [
+          "熱異常",
+          "いよわ",
+          "이요와",
+          "いよわFeat足立レイ",
+          "이요와Feat 아다치 레이"
+        ]
+      },
+      "audio": {
+        "path": "audio/M3we1RzoxaI.ogg",
+        "sha256": "a628307b14dd3ccbef036df1e530f028beacefd349a3da8f430caf0beac9f06d",
+        "byteLength": 1471021,
+        "durationMs": 240013
+      }
+    },
+    {
+      "song": {
+        "id": "83a3bcd8-f8df-539f-bfc8-5e6494b7679e",
+        "youtubeUrl": "https://www.youtube.com/watch?v=f_78K8u7QIU",
+        "title": "아무것도 없어",
+        "tags": [
+          "なんもねえ",
+          "柴田隆浩",
+          "시바타 타카히로",
+          "忘れらんねえよ",
+          "와스레란네요"
+        ]
+      },
+      "audio": {
+        "path": "audio/f_78K8u7QIU.ogg",
+        "sha256": "d6a92f8c64ccc792c43feee61aee54df8f01925e171f5bc7438e4263e3ce0907",
+        "byteLength": 1047078,
+        "durationMs": 171014
+      }
+    },
+    {
+      "song": {
+        "id": "7cdfe486-9a60-5ea6-a363-87c7076b288e",
+        "youtubeUrl": "https://www.youtube.com/watch?v=mnnPZp2i0l4",
+        "title": "새벽이 오기 전에 뛰어올라",
+        "tags": [
+          "夜明け前に飛び乗って",
+          "MIMI",
+          "미미",
+          "MIMIFeat初音ミク",
+          "미미 Feat 하츠네 미쿠"
+        ]
+      },
+      "audio": {
+        "path": "audio/mnnPZp2i0l4.ogg",
+        "sha256": "32134340ed63912f64f05e604fb891216c296d1603c3bed9cd0da72e1adde82c",
+        "byteLength": 1426809,
+        "durationMs": 233014
+      }
+    },
+    {
+      "song": {
+        "id": "1bd2e9d2-b85c-5ac1-a8a2-2ae2bdc59e98",
+        "youtubeUrl": "https://www.youtube.com/watch?v=1BDOJCKKiEE",
+        "title": "올 나이트 라디오",
+        "tags": [
+          "オールナイトレディオ",
+          "Mitchie M",
+          "미치엠",
+          "Ado",
+          "아도"
+        ]
+      },
+      "audio": {
+        "path": "audio/1BDOJCKKiEE.ogg",
+        "sha256": "2099c5def68bc90d20043e535abf912dca7e381b77e73e600a03de2b484226eb",
+        "byteLength": 1295272,
+        "durationMs": 212587
+      }
+    },
+    {
+      "song": {
+        "id": "11308d3d-cd9c-5860-8745-e2f117710c90",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Givlo4EF2n4",
+        "title": "레몬 멜론 쿠키",
+        "tags": [
+          "LEMON MELON COOKIE",
+          "TAK",
+          "탁",
+          "WONTAK HAN",
+          "한원탁",
+          "TAKFeat初音ミク",
+          "탁 feat 하츠네 미쿠"
+        ]
+      },
+      "audio": {
+        "path": "audio/Givlo4EF2n4.ogg",
+        "sha256": "7da8fee1057f49b2d71042349d34ee2b50fb0f3b5e359a3d6b0e65d531478663",
+        "byteLength": 933309,
+        "durationMs": 152680
+      }
+    },
+    {
+      "song": {
+        "id": "7d168e89-f201-5e2b-8465-17e07d7f035a",
+        "youtubeUrl": "https://www.youtube.com/watch?v=tdypWBQsErA",
+        "title": "차가운 상어 아가씨",
+        "tags": [
+          "モエチャッカファイア",
+          "弌誠",
+          "잇세이"
+        ]
+      },
+      "audio": {
+        "path": "audio/tdypWBQsErA.ogg",
+        "sha256": "6bd6ffd089cd5e64eea4f48c106fda958dd13be9fdec26bd2d13cdac7e303488",
+        "byteLength": 955342,
+        "durationMs": 155995
+      }
+    },
+    {
+      "song": {
+        "id": "4e892b29-3fde-5798-af05-b06dcaf1caec",
+        "youtubeUrl": "https://www.youtube.com/watch?v=mlj94gStn78",
+        "title": "아보카도",
+        "tags": [
+          "アボカド",
+          "牛丸ありさ",
+          "우시마루 아리사",
+          "yonige",
+          "요니게"
+        ]
+      },
+      "audio": {
+        "path": "audio/mlj94gStn78.ogg",
+        "sha256": "b6e980df6f746ec5bab8543d13e2d8c11fcf7534351e5b869828947cf13421ec",
+        "byteLength": 1303545,
+        "durationMs": 212787
+      }
+    },
+    {
+      "song": {
+        "id": "3278bf17-40b5-5552-95a3-46b363214880",
+        "youtubeUrl": "https://www.youtube.com/watch?v=83zmIfIiNWc",
+        "title": "아이 아이 아",
+        "tags": [
+          "アイアイア",
+          "きくお",
+          "키쿠오",
+          "Ado",
+          "아도"
+        ]
+      },
+      "audio": {
+        "path": "audio/83zmIfIiNWc.ogg",
+        "sha256": "b4f2d3940d0c9f5754801fcecdbe5a33fd4fc4bb34a011e033c022caadefdd6c",
+        "byteLength": 1556810,
+        "durationMs": 254361
+      }
+    },
+    {
+      "song": {
+        "id": "91b73756-71a9-5e42-a31b-1e2e32e6a710",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Yir-3mlhchU",
+        "title": "리빙 데드",
+        "tags": [
+          "リビングデッド",
+          "なとり",
+          "나토리"
+        ]
+      },
+      "audio": {
+        "path": "audio/Yir-3mlhchU.ogg",
+        "sha256": "9a32575947e20ac768672119dd044d13748478a19b629bc1ffa92b114c190c17",
+        "byteLength": 904384,
+        "durationMs": 149600
+      }
+    },
+    {
+      "song": {
+        "id": "d9e04a0d-fbc5-5a8f-9794-f1e3f90fe17b",
+        "youtubeUrl": "https://www.youtube.com/watch?v=2hYQ13wX4Dg",
+        "title": "에러",
+        "tags": [
+          "ERROR",
+          "NIKI",
+          "니키",
+          "nikiFeatLily",
+          "니키 feat 릴리"
+        ]
+      },
+      "audio": {
+        "path": "audio/2hYQ13wX4Dg.ogg",
+        "sha256": "27c103d4c7a3a1a45f3a610fe994978decb0606e3b41ccf7866b85d16698674b",
+        "byteLength": 1456937,
+        "durationMs": 238514
+      }
+    },
+    {
+      "song": {
+        "id": "3e6299ca-8565-5c77-87aa-f737ff6832e9",
+        "youtubeUrl": "https://www.youtube.com/watch?v=jpuCalaBVpA",
+        "title": "앨리스",
+        "tags": [
+          "愛麗絲",
+          "米津玄師",
+          "요네즈 켄시"
+        ]
+      },
+      "audio": {
+        "path": "audio/jpuCalaBVpA.ogg",
+        "sha256": "829d3b782b3359113758a2790f0bd7ab8e14eb2cb4ae75c48737801d359ffbc4",
+        "byteLength": 1150851,
+        "durationMs": 189774
+      }
+    },
+    {
+      "song": {
+        "id": "372a6dc4-5ce3-5de1-87a3-1af27ce572fa",
+        "youtubeUrl": "https://www.youtube.com/watch?v=rnPIKo9N6xA",
+        "title": "별거 아냐",
+        "tags": [
+          "へでもねーよ",
+          "藤井風",
+          "후지이 카제"
+        ]
+      },
+      "audio": {
+        "path": "audio/rnPIKo9N6xA.ogg",
+        "sha256": "f040590620c162cbebe7dc2b92805883096758261e7b0a6451c3731a316b69f0",
+        "byteLength": 1156200,
+        "durationMs": 190768
+      }
+    },
+    {
+      "song": {
+        "id": "48e6aa45-6a1c-5ba6-abbb-bd0bb1124f1f",
+        "youtubeUrl": "https://www.youtube.com/watch?v=va4RQFivwEo",
+        "title": "가희 실격",
+        "tags": [
+          "歌姫失格",
+          "ピノキオピー",
+          "피노키오피",
+          "ピノキオピーFeat初音ミク",
+          "피노키오P feat 하츠네 미쿠",
+          "피노키오P"
+        ]
+      },
+      "audio": {
+        "path": "audio/va4RQFivwEo.ogg",
+        "sha256": "06026c272bdc9587071ae345616a5845e761e66d48d1cb97b1826de4ecc3ba23",
+        "byteLength": 1225861,
+        "durationMs": 200422
+      }
+    },
+    {
+      "song": {
+        "id": "c0823d46-a05c-5a84-8f23-51d1d0fc31b5",
+        "youtubeUrl": "https://www.youtube.com/watch?v=UZLwm8U5j3s",
+        "title": "나한테 여자친구가 생겼어",
+        "tags": [
+          "僕に彼女ができたんだ",
+          "宮崎朝子",
+          "미야자키 아사코",
+          "吉川美冴貴",
+          "요시카와 미사키",
+          "SHISHAMO",
+          "시샤모"
+        ]
+      },
+      "audio": {
+        "path": "audio/UZLwm8U5j3s.ogg",
+        "sha256": "b8700a6f7c799c49c96bf627793e0b4d10f352f1377f542907bf1aa68b187f3c",
+        "byteLength": 1156757,
+        "durationMs": 189214
+      }
+    },
+    {
+      "song": {
+        "id": "4310603c-838b-5e8f-97bd-e829821c613a",
+        "youtubeUrl": "https://www.youtube.com/watch?v=3HuyRf6tV4E",
+        "title": "바람의 행방",
+        "tags": [
+          "風のゆくえ",
+          "秦基博",
+          "하타 모토히로",
+          "Ado",
+          "아도"
+        ]
+      },
+      "audio": {
+        "path": "audio/3HuyRf6tV4E.ogg",
+        "sha256": "6533338e583689112c77dc14c523fd4a12830e5696371edabeddcf95568491ee",
+        "byteLength": 1642643,
+        "durationMs": 272480
+      }
+    },
+    {
+      "song": {
+        "id": "a0ed842b-49d8-5da5-8a21-b2e87cd276e0",
+        "youtubeUrl": "https://www.youtube.com/watch?v=EgQ8MIr0K3o",
+        "title": "쾌청",
+        "tags": [
+          "快晴",
+          "ORANGESTAR",
+          "오렌지스타",
+          "OrangestarFeatIA",
+          "오렌지스타 feat 이아"
+        ]
+      },
+      "audio": {
+        "path": "audio/EgQ8MIr0K3o.ogg",
+        "sha256": "1fa67770a5e4817b904ed4fa82ab90c556629588bc522b4675395739399c6778",
+        "byteLength": 1608822,
+        "durationMs": 264083
+      }
+    },
+    {
+      "song": {
+        "id": "91bc6ded-1656-5af3-b10a-d91565b181ea",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Ltk_SkhqpCs",
+        "title": "빛",
+        "tags": [
+          "光",
+          "野田 洋次郎",
+          "노다 요지로",
+          "RADWIMPS",
+          "래드윔프스"
+        ]
+      },
+      "audio": {
+        "path": "audio/Ltk_SkhqpCs.ogg",
+        "sha256": "c81947e82873a73dac968656ebd3dc2ea068566ab011d1cb0e8f7415dd05a0de",
+        "byteLength": 1472091,
+        "durationMs": 241640
+      }
+    },
+    {
+      "song": {
+        "id": "c3353824-1129-5a08-87d3-4ac0e566d597",
+        "youtubeUrl": "https://www.youtube.com/watch?v=IqmrDiuQ_dE",
+        "title": "올드 패션",
+        "tags": [
+          "オールドファッション",
+          "清水依与吏",
+          "시미즈 이요리",
+          "back number",
+          "백넘버"
+        ]
+      },
+      "audio": {
+        "path": "audio/IqmrDiuQ_dE.ogg",
+        "sha256": "4c469e7d4734499fe0f478aeb72ee78b6d479d6b2854185f1b7e8808a545e828",
+        "byteLength": 1535346,
+        "durationMs": 254454
+      }
+    },
+    {
+      "song": {
+        "id": "e7b47315-b504-5049-93da-8b3b891761b4",
+        "youtubeUrl": "https://www.youtube.com/watch?v=gj4EmojEQmQ",
+        "title": "헤드라이너",
+        "tags": [
+          "ヘッドライナー",
+          "涼音",
+          "스즈네",
+          "レトロリロン",
+          "레트로리론"
+        ]
+      },
+      "audio": {
+        "path": "audio/gj4EmojEQmQ.ogg",
+        "sha256": "d86834442f5b25f52becec78574a39b4b9d67fa1acaa871e1849e546b2b6825f",
+        "byteLength": 1421897,
+        "durationMs": 234580
+      }
+    },
+    {
+      "song": {
+        "id": "b522882c-034e-587e-a3e8-7dbdee682913",
+        "youtubeUrl": "https://www.youtube.com/watch?v=LVCwdZoUFQ8",
+        "title": "날아오를 때",
+        "tags": [
+          "飛ぶ時",
+          "VAUNDY",
+          "바운디"
+        ]
+      },
+      "audio": {
+        "path": "audio/LVCwdZoUFQ8.ogg",
+        "sha256": "2538d80aa5a73c9a063eff5db9061ac8709b1207f6f831f0820691e8c71ed8dc",
+        "byteLength": 1536388,
+        "durationMs": 252825
+      }
+    },
+    {
+      "song": {
+        "id": "6068176d-f717-50d4-88cd-68d296b8169a",
+        "youtubeUrl": "https://www.youtube.com/watch?v=026i7z_Lopk",
+        "title": "파이어 그라운드",
+        "tags": [
+          "FIRE GROUND",
+          "藤原聡",
+          "후지와라 사토시",
+          "Official髭男dism",
+          "오피셜 히게단디즘"
+        ]
+      },
+      "audio": {
+        "path": "audio/026i7z_Lopk.ogg",
+        "sha256": "3450f96dbdd99b3ced47a963d416ae60914339063a57ea36f357cda8d5ab1239",
+        "byteLength": 1363618,
+        "durationMs": 224056
+      }
+    },
+    {
+      "song": {
+        "id": "cd85d800-a88b-5b59-a103-e5babf0ad25c",
+        "youtubeUrl": "https://www.youtube.com/watch?v=6Io5B6_j7K4",
+        "title": "새벽전선",
+        "tags": [
+          "DAYBREAK FRONTLINE",
+          "ORANGESTAR",
+          "오렌지스타",
+          "OrangestarFeatIA",
+          "오렌지스타 feat 이아",
+          "데이브레이크 프론트라인"
+        ]
+      },
+      "audio": {
+        "path": "audio/6Io5B6_j7K4.ogg",
+        "sha256": "8b4139858abe57fc16c4c8df104ff01369574e3fcc675f56c14bf5b43cbe6e72",
+        "byteLength": 1324878,
+        "durationMs": 216631
+      }
+    },
+    {
+      "song": {
+        "id": "3a44d9bb-5dec-5ef1-9eca-d747d77eb77b",
+        "youtubeUrl": "https://www.youtube.com/watch?v=AL8HMsmvBBI",
+        "title": "정말정말정말정말정말싫어",
+        "tags": [
+          "ダイダイダイダイダイ キライ",
+          "Amala",
+          "아마라",
+          "雨良 AmalaFeat初音ミク重音テト",
+          "아마라Feat 하츠네 미쿠 카사네 테토",
+          "雨良 Amala"
+        ]
+      },
+      "audio": {
+        "path": "audio/AL8HMsmvBBI.ogg",
+        "sha256": "dc1640f4a9bcd375bbbfc3b2f297818fd0d22582b5b953fa3b41b97a28e6e6a5",
+        "byteLength": 960352,
+        "durationMs": 156725
+      }
+    },
+    {
+      "song": {
+        "id": "3e384886-23c6-5be7-84df-22a17d111564",
+        "youtubeUrl": "https://www.youtube.com/watch?v=ojJe-t0yU7g",
+        "title": "휴루리라팟파",
+        "tags": [
+          "ひゅるりらぱっぱ",
+          "TUKI",
+          "츠키",
+          "HYURURIRAPAPPA"
+        ]
+      },
+      "audio": {
+        "path": "audio/ojJe-t0yU7g.ogg",
+        "sha256": "70707a343b72d6107f96ca306839ccd70697d4feb30bf37029f9aeb3a54d64b3",
+        "byteLength": 1226152,
+        "durationMs": 200216
+      }
+    },
+    {
+      "song": {
+        "id": "ffa1df94-7a39-5df4-9b56-77eb2b0fcf8e",
+        "youtubeUrl": "https://www.youtube.com/watch?v=rBrKwc5hphA",
+        "title": "투명 엘레지",
+        "tags": [
+          "透明エレジー",
+          "NBUNA",
+          "나부나",
+          "nbunaFeatGUMI",
+          "나부나 feat 구미"
+        ]
+      },
+      "audio": {
+        "path": "audio/rBrKwc5hphA.ogg",
+        "sha256": "1099794e41dedebf589f14e0f5e3eb8127df8ab561d1f32be753378625ada836",
+        "byteLength": 1355556,
+        "durationMs": 222962
+      }
+    },
+    {
+      "song": {
+        "id": "2a382d3a-85e7-53d1-b005-c94665aa9f34",
+        "youtubeUrl": "https://www.youtube.com/watch?v=hnzYwDE3jRM",
+        "title": "고 고스트",
+        "tags": [
+          "GO GHOST",
+          "常田大希",
+          "츠네타 다이키",
+          "King Gnu",
+          "킹누"
+        ]
+      },
+      "audio": {
+        "path": "audio/hnzYwDE3jRM.ogg",
+        "sha256": "3231fa41e198f614b2516400623ae94ad4309062458ff78a39cb101d9a559ca6",
+        "byteLength": 1027160,
+        "durationMs": 168056
+      }
+    },
+    {
+      "song": {
+        "id": "5081ed05-36a7-57ef-a692-9af909dd9e6d",
+        "youtubeUrl": "https://www.youtube.com/watch?v=y8B_5IpzTu0",
+        "title": "고작 아이 러브 유",
+        "tags": [
+          "たかがアイラブユー",
+          "藤原聡",
+          "후지와라 사토시",
+          "Official髭男dism",
+          "오피셜 히게단디즘"
+        ]
+      },
+      "audio": {
+        "path": "audio/y8B_5IpzTu0.ogg",
+        "sha256": "f123f2d11a8486f1af2a27dfeaf0aa4968da5e8bcb93c85375e24bcf5bb51164",
+        "byteLength": 1658254,
+        "durationMs": 271554
+      }
+    },
+    {
+      "song": {
+        "id": "c8c2712b-31ee-50c1-ab1d-d403bdf15719",
+        "youtubeUrl": "https://www.youtube.com/watch?v=PB9-sxvn88Q",
+        "title": "폴터가이스트",
+        "tags": [
+          "ポルターガイスト",
+          "なとり",
+          "나토리"
+        ]
+      },
+      "audio": {
+        "path": "audio/PB9-sxvn88Q.ogg",
+        "sha256": "287118f8319c5a85353a5cee3083c69de6aedf4b883d6328b58280a6a64de00d",
+        "byteLength": 1165439,
+        "durationMs": 191058
+      }
+    },
+    {
+      "song": {
+        "id": "5ec4aebc-1ddb-5b65-950f-069346196013",
+        "youtubeUrl": "https://www.youtube.com/watch?v=8chhKs4puGo",
+        "title": "워아이니",
+        "tags": [
+          "我愛你",
+          "浪岡真太郎",
+          "나미오카 신타로",
+          "大原拓真",
+          "오오하라 타쿠마",
+          "Penthouse",
+          "펜트하우스"
+        ]
+      },
+      "audio": {
+        "path": "audio/8chhKs4puGo.ogg",
+        "sha256": "276719baf68b7e25b2e754b619cb178f94e65675f3c5e8dd88d0915c3ec1bdf3",
+        "byteLength": 1185591,
+        "durationMs": 193461
+      }
+    },
+    {
+      "song": {
+        "id": "7f1da7cb-b1ef-5d0e-bf41-be1894c65a27",
+        "youtubeUrl": "https://www.youtube.com/watch?v=_GXbXU4g_CA",
+        "title": "버니 걸",
+        "tags": [
+          "Bunny Girl",
+          "AKASAKI",
+          "아카사키"
+        ]
+      },
+      "audio": {
+        "path": "audio/_GXbXU4g_CA.ogg",
+        "sha256": "d6886ef3e69246e2dd163f69abebdefd39ba296e7673b0f7121003d7aa2d7949",
+        "byteLength": 1323000,
+        "durationMs": 217506
+      }
+    },
+    {
+      "song": {
+        "id": "6ae5afb4-42fb-5384-be40-b8e198a21717",
+        "youtubeUrl": "https://www.youtube.com/watch?v=pjEKfyRKtI4",
+        "title": "별이 쏟아지는 바다",
+        "tags": [
+          "星降る海",
+          "Aqu3ra",
+          "아쿠에라",
+          "月見 ヤチヨCV早見沙織",
+          "루나미 야치요 CV 하야미 사오리",
+          "月見 ヤチヨ",
+          "루나미 야치요"
+        ]
+      },
+      "audio": {
+        "path": "audio/pjEKfyRKtI4.ogg",
+        "sha256": "02b7278cf051ae959b72e44539f53a9cef39087a78520e29c7eccff1c3a19a09",
+        "byteLength": 1539359,
+        "durationMs": 257592
+      }
+    },
+    {
+      "song": {
+        "id": "c6011e8c-849e-5e5b-8135-50bff322293f",
+        "youtubeUrl": "https://www.youtube.com/watch?v=rA3--S70iXg",
+        "title": "처형박수",
+        "tags": [
+          "Execution Clap",
+          "TRAP CHICK",
+          "트랩칙",
+          "TRAP CHICKFeat重音テト",
+          "트랩칙Feat 카사네 테토"
+        ]
+      },
+      "audio": {
+        "path": "audio/rA3--S70iXg.ogg",
+        "sha256": "2fea49ae926bb02e2f18eff4770d2ef8215b4e636481b337456486f101e0e7f4",
+        "byteLength": 1171780,
+        "durationMs": 191264
+      }
+    },
+    {
+      "song": {
+        "id": "99f82c40-6688-5df7-8778-d4f23de60584",
+        "youtubeUrl": "https://www.youtube.com/watch?v=YBMVdtDeK18",
+        "title": "까마귀",
+        "tags": [
+          "烏",
+          "米津玄師",
+          "요네즈 켄시",
+          "까마귀 Raven",
+          "Raven"
+        ]
+      },
+      "audio": {
+        "path": "audio/YBMVdtDeK18.ogg",
+        "sha256": "e67cdc29fbe0ff151a76036a7d8262f00fef6c79031c5317df7f7e808cb88ab6",
+        "byteLength": 1520552,
+        "durationMs": 248508
+      }
+    },
+    {
+      "song": {
+        "id": "facc5f77-c324-5ce1-9939-a78be243b098",
+        "youtubeUrl": "https://www.youtube.com/watch?v=lPHThxD3pP0",
+        "title": "무화과 연기",
+        "tags": [
+          "イチジク煙",
+          "ACAね",
+          "아카네",
+          "ずっと真夜中でいいのに",
+          "계속 한밤중이면 좋을 텐데"
+        ]
+      },
+      "audio": {
+        "path": "audio/lPHThxD3pP0.ogg",
+        "sha256": "8bb16216b430d59ffb82526692371a9c25959937adae23722906431437b3f46e",
+        "byteLength": 1439591,
+        "durationMs": 235247
+      }
+    },
+    {
+      "song": {
+        "id": "6bfb8b2d-84ba-550e-ae8f-a84de2089512",
+        "youtubeUrl": "https://www.youtube.com/watch?v=gIfm67RuAi0",
+        "title": "있잖아 있잖아 있잖아。",
+        "tags": [
+          "ねぇねぇねぇ",
+          "ピノキオピー",
+          "피노키오피",
+          "ピノキオピーFeat鏡音リン初音ミク",
+          "피노키오P feat 카가미네 린 하츠네 미쿠",
+          "피노키오P"
+        ]
+      },
+      "audio": {
+        "path": "audio/gIfm67RuAi0.ogg",
+        "sha256": "6c865b667012c893c26a7acfb48429e7d60f79c7a615e91db2dfac1000d978af",
+        "byteLength": 1289631,
+        "durationMs": 210621
+      }
+    },
+    {
+      "song": {
+        "id": "ca80eb2c-cebc-5d8c-9eb7-d44dd1ba0cd2",
+        "youtubeUrl": "https://www.youtube.com/watch?v=K4RP8WklZeE",
+        "title": "스피드",
+        "tags": [
+          "SPEED",
+          "なとり",
+          "나토리"
+        ]
+      },
+      "audio": {
+        "path": "audio/K4RP8WklZeE.ogg",
+        "sha256": "e8ef43369c166957fa2d1d5d11034f525ac8c0b63048f63e3b251b60bb2b9dbb",
+        "byteLength": 743004,
+        "durationMs": 123120
+      }
+    },
+    {
+      "song": {
+        "id": "253b259b-67ac-5768-b2df-199c8df6ab92",
+        "youtubeUrl": "https://www.youtube.com/watch?v=fxtQ4Dsmqo0",
+        "title": "상열",
+        "tags": [
+          "常熱",
+          "VAUNDY",
+          "바운디"
+        ]
+      },
+      "audio": {
+        "path": "audio/fxtQ4Dsmqo0.ogg",
+        "sha256": "b7d4de67d41a896ae0ed7274c285d5073383f48a87106c949097d7ee4e6079eb",
+        "byteLength": 1464922,
+        "durationMs": 239621
+      }
+    },
+    {
+      "song": {
+        "id": "e949465e-ac44-5267-a917-cab98d303c7c",
+        "youtubeUrl": "https://www.youtube.com/watch?v=4Zbl2Kt6QjQ",
+        "title": "언노운 마더 구스",
+        "tags": [
+          "アンノウン マザーグース",
+          "WOWAKA",
+          "오와카",
+          "WowakaFeat初音ミク",
+          "오와카 feat 하츠네 미쿠"
+        ]
+      },
+      "audio": {
+        "path": "audio/4Zbl2Kt6QjQ.ogg",
+        "sha256": "03dadcb074ef8783cae7e3a1eb4ce226eca745b1687a08261bbf0a80895ceaa7",
+        "byteLength": 1736190,
+        "durationMs": 284034
+      }
+    },
+    {
+      "song": {
+        "id": "fdecdf10-e43f-52d8-9c65-d3a759e8c4d5",
+        "youtubeUrl": "https://www.youtube.com/watch?v=q-fHmduwxBg",
+        "title": "빈티지",
+        "tags": [
+          "ビンテージ",
+          "藤原聡",
+          "후지와라 사토시",
+          "Official髭男dism",
+          "오피셜 히게단디즘",
+          "후지하라 사토시"
+        ]
+      },
+      "audio": {
+        "path": "audio/q-fHmduwxBg.ogg",
+        "sha256": "30a363afb6c6bba8b6b59099fa3fac7dcd2b2bc0179fd19ffed89106fd9920fc",
+        "byteLength": 1534049,
+        "durationMs": 252579
+      }
+    },
+    {
+      "song": {
+        "id": "3d648ae1-ba85-5741-be7e-66169e635747",
+        "youtubeUrl": "https://www.youtube.com/watch?v=amQZKaeEyv0",
+        "title": "세계의 비밀",
+        "tags": [
+          "世界の秘密",
+          "VAUNDY",
+          "바운디"
+        ]
+      },
+      "audio": {
+        "path": "audio/amQZKaeEyv0.ogg",
+        "sha256": "0a9fd4cfb46de6af20c138a0e27cda72bd0fe71cc8baa4ac7b26170fbfbafeed",
+        "byteLength": 1352222,
+        "durationMs": 221264
+      }
+    },
+    {
+      "song": {
+        "id": "c92d7df2-4c7a-5143-84d5-59137dcd3ce9",
+        "youtubeUrl": "https://www.youtube.com/watch?v=HIytijrapTw",
+        "title": "말의 이어짐",
+        "tags": [
+          "言葉の続き",
+          "MIMI",
+          "미미",
+          "ロクデナシ",
+          "로쿠데나시"
+        ]
+      },
+      "audio": {
+        "path": "audio/HIytijrapTw.ogg",
+        "sha256": "fc0e0cb9eb2d747073c7b832a67d7b9a7ea0dac4af844636b0adfd9c52ba9473",
+        "byteLength": 1172100,
+        "durationMs": 191720
+      }
+    },
+    {
+      "song": {
+        "id": "198a7b03-8503-5a3c-b18b-2f0606523a5f",
+        "youtubeUrl": "https://www.youtube.com/watch?v=1N2Jjssl28g",
+        "title": "헨스포스",
+        "tags": [
+          "Henceforth",
+          "ORANGESTAR",
+          "오렌지스타",
+          "OrangestarFeatIA",
+          "오렌지스타 feat 이아"
+        ]
+      },
+      "audio": {
+        "path": "audio/1N2Jjssl28g.ogg",
+        "sha256": "e39ce5c3a4c969249e3582f4675e0a39bc78237aae16d9c009825ffbc92ec769",
+        "byteLength": 1442973,
+        "durationMs": 235836
+      }
+    },
+    {
+      "song": {
+        "id": "bb09cec1-6397-5250-947e-7a002762c15e",
+        "youtubeUrl": "https://www.youtube.com/watch?v=d0RGKhjIygQ",
+        "title": "신 같네",
+        "tags": [
+          "神っぽいな",
+          "ピノキオピー",
+          "피노키오피",
+          "ピノキオピーFeat初音ミク",
+          "피노키오P feat 하츠네 미쿠",
+          "피노키오P"
+        ]
+      },
+      "audio": {
+        "path": "audio/d0RGKhjIygQ.ogg",
+        "sha256": "11cc7a54167f34e0162dd41a97ba411d44ff15367ab93ad7ccb91e0d585cf7bd",
+        "byteLength": 1256851,
+        "durationMs": 205106
+      }
+    },
+    {
+      "song": {
+        "id": "9dddbfc0-34e7-595c-bf25-4a5ac2293245",
+        "youtubeUrl": "https://www.youtube.com/watch?v=yP_9QF2mCng",
+        "title": "카노푸스",
+        "tags": [
+          "カノープス",
+          "沖聡次郎",
+          "오키 소지로",
+          "竹中雄大",
+          "타케나카 유다이",
+          "Novelbright",
+          "노벨브라이트"
+        ]
+      },
+      "audio": {
+        "path": "audio/yP_9QF2mCng.ogg",
+        "sha256": "dd78c3db2f3d4030e4a8e7d8bd2acb1beba4c62a3f3897aa956b39f0bbd4ba63",
+        "byteLength": 1329950,
+        "durationMs": 218600
+      }
+    },
+    {
+      "song": {
+        "id": "8d82725d-532b-5e8a-9820-9082c82767aa",
+        "youtubeUrl": "https://www.youtube.com/watch?v=y-abO0PMZAY",
+        "title": "아포토시스",
+        "tags": [
+          "アポトーシス",
+          "藤原聡",
+          "후지와라 사토시",
+          "Official髭男dism",
+          "오피셜 히게단디즘",
+          "후지하라 사토시"
+        ]
+      },
+      "audio": {
+        "path": "audio/y-abO0PMZAY.ogg",
+        "sha256": "9b9c578eb734df65f1399011bffa6fcb9998c87e60faad5d85dbfc67181515a1",
+        "byteLength": 2365147,
+        "durationMs": 389720
+      }
+    },
+    {
+      "song": {
+        "id": "7cfe1057-d9da-561a-aeda-4883bcc9f19a",
+        "youtubeUrl": "https://www.youtube.com/watch?v=k6jN7zKofmM",
+        "title": "마법소녀와 초콜릿",
+        "tags": [
+          "魔法少女とチョコレゐト",
+          "ピノキオピー",
+          "피노키오피",
+          "ピノキオピーFeat初音ミク",
+          "피노키오P feat 하츠네 미쿠",
+          "피노키오P"
+        ]
+      },
+      "audio": {
+        "path": "audio/k6jN7zKofmM.ogg",
+        "sha256": "585fdd476bc11944c56a9a043f707b7c7559e20370942e4ddd750cbbdb2698f6",
+        "byteLength": 1151918,
+        "durationMs": 194016
+      }
+    },
+    {
+      "song": {
+        "id": "3c2dfdb7-0987-50d2-831b-158b6928cf5c",
+        "youtubeUrl": "https://www.youtube.com/watch?v=K14yE9SK3bs",
+        "title": "답장 아직일까? 아저씨 구문!",
+        "tags": [
+          "お返事まだカナ おじさん構文",
+          "吉本おじさん",
+          "요시모토 아저씨",
+          "吉本おじさんFeat雨衣",
+          "요시모토 아저씨Feat 우이"
+        ]
+      },
+      "audio": {
+        "path": "audio/K14yE9SK3bs.ogg",
+        "sha256": "845906352db2ec2a89c25d34b649b81821725d763110c68dc780151453191b96",
+        "byteLength": 1132148,
+        "durationMs": 184814
+      }
+    },
+    {
+      "song": {
+        "id": "eb1e2566-7073-523b-b4a8-a4dee5ed3338",
+        "youtubeUrl": "https://www.youtube.com/watch?v=IRWcYlM0DC8",
+        "title": "보통사람 퍼레이드",
+        "tags": [
+          "ぼんじんパレード",
+          "和田たけあきくらげP",
+          "와다 타케아키쿠라게P",
+          "くらげPFeat音街ウナ",
+          "쿠라게PFeat 오토마치 우나",
+          "和田たけあき",
+          "와다 타케아키",
+          "くらげP",
+          "쿠라게P"
+        ]
+      },
+      "audio": {
+        "path": "audio/IRWcYlM0DC8.ogg",
+        "sha256": "50ff29d9458445a5b63849a2888b18bdff24b352d924f6e2e98f0788e3ba0ac2",
+        "byteLength": 1381832,
+        "durationMs": 225587
+      }
+    },
+    {
+      "song": {
+        "id": "32f50df8-78ec-5429-a438-9271687706f9",
+        "youtubeUrl": "https://www.youtube.com/watch?v=nKiDkdS8-38",
+        "title": "텔레캐스터 비보이",
+        "tags": [
+          "テレキャスター ビーボーイ",
+          "すりぃ",
+          "스리이"
+        ]
+      },
+      "audio": {
+        "path": "audio/nKiDkdS8-38.ogg",
+        "sha256": "d424b1d06beef10b97c2132d77a2c77c62dd3e6a66fff832b380a6c1a3113d80",
+        "byteLength": 1007564,
+        "durationMs": 164655
+      }
+    },
+    {
+      "song": {
+        "id": "14078d97-b425-50b8-99f6-f7b749e662ec",
+        "youtubeUrl": "https://www.youtube.com/watch?v=-23SgNWEAvM",
+        "title": "에스오에스",
+        "tags": [
+          "SOS",
+          "TUKI",
+          "츠키"
+        ]
+      },
+      "audio": {
+        "path": "audio/-23SgNWEAvM.ogg",
+        "sha256": "f288d4d47a50f39425b8148a8707d141e9156d425b12280c455869da362a624a",
+        "byteLength": 1107566,
+        "durationMs": 181536
+      }
+    },
+    {
+      "song": {
+        "id": "cdf8cc58-c558-5f8a-bdbd-1dd78a5cb8aa",
+        "youtubeUrl": "https://www.youtube.com/watch?v=fCh0qfxElm8",
+        "title": "오리온",
+        "tags": [
+          "オリオン",
+          "AYASE",
+          "아야세",
+          "YOASOBI",
+          "요아소비"
+        ]
+      },
+      "audio": {
+        "path": "audio/fCh0qfxElm8.ogg",
+        "sha256": "c51e0568902eca8c1eeae24f4c8c1b8315df5670a35acab39862b2ad179f7b2f",
+        "byteLength": 1261408,
+        "durationMs": 206600
+      }
+    },
+    {
+      "song": {
+        "id": "2f26d267-c1b2-5522-a3a7-7e7502e19379",
+        "youtubeUrl": "https://www.youtube.com/watch?v=nqTmucJwa8g",
+        "title": "지금 바로 윤회",
+        "tags": [
+          "いますぐ輪廻",
+          "なきそ",
+          "나키소",
+          "なきそFeat初音ミク",
+          "나키소Feat 하츠네 미쿠"
+        ]
+      },
+      "audio": {
+        "path": "audio/nqTmucJwa8g.ogg",
+        "sha256": "f823df73029e1a61ab501306665fff832c0e867a8d23258d003b952fe052b893",
+        "byteLength": 749613,
+        "durationMs": 122496
+      }
+    },
+    {
+      "song": {
+        "id": "725a295f-5c37-54c2-a10a-0176ed01364c",
+        "youtubeUrl": "https://www.youtube.com/watch?v=ilbnta471cI",
+        "title": "가짜 사랑과 하이볼",
+        "tags": [
+          "偽愛とハイボール",
+          "Matty",
+          "마티",
+          "LET ME KNOW",
+          "렛 미 노우"
+        ]
+      },
+      "audio": {
+        "path": "audio/ilbnta471cI.ogg",
+        "sha256": "11c7a46bc5f31776defdb451650d96ab595b8492a92cc90fcbfab022826dd76b",
+        "byteLength": 1600223,
+        "durationMs": 261240
+      }
+    },
+    {
+      "song": {
+        "id": "65f848fd-2425-59db-8afa-245dcddbfe1c",
+        "youtubeUrl": "https://www.youtube.com/watch?v=n9GWKPu9Fh8",
+        "title": "물거품",
+        "tags": [
+          "あぶく",
+          "NBUNA",
+          "나부나",
+          "ヨルシカ",
+          "요루시카",
+          "거품"
+        ]
+      },
+      "audio": {
+        "path": "audio/n9GWKPu9Fh8.ogg",
+        "sha256": "01486e910fc9502cecb525c23c6826dcfc447de023d027a65aca65440dd1cdd2",
+        "byteLength": 1436549,
+        "durationMs": 234627
+      }
+    },
+    {
+      "song": {
+        "id": "510658f7-b59c-532a-9da1-90bd6e7ec63e",
+        "youtubeUrl": "https://www.youtube.com/watch?v=rMlPpmNle2Y",
+        "title": "보여주기식 러브송",
+        "tags": [
+          "見せかけのラブソング",
+          "川谷絵音",
+          "카와타니 에논",
+          "indigo la End",
+          "인디고 라 엔드"
+        ]
+      },
+      "audio": {
+        "path": "audio/rMlPpmNle2Y.ogg",
+        "sha256": "714bf6a7ed73cdf6046b57508ae00bbeeadffdfb00e90b586f78d05e0b066ac2",
+        "byteLength": 1539655,
+        "durationMs": 256200
+      }
+    },
+    {
+      "song": {
+        "id": "d2d62cac-5c58-5424-93de-b37a7fe77dca",
+        "youtubeUrl": "https://www.youtube.com/watch?v=sA1NVZRT8SY",
+        "title": "Get Back To 인생",
+        "tags": [
+          "Get Back To 人生",
+          "藤原聡",
+          "후지와라 사토시",
+          "Official髭男dism",
+          "오피셜 히게단디즘"
+        ]
+      },
+      "audio": {
+        "path": "audio/sA1NVZRT8SY.ogg",
+        "sha256": "733b4acb86afbf709bc0727d3c5e6b43a460a70a6379c575eee8ec6a9769d65d",
+        "byteLength": 1638754,
+        "durationMs": 267415
+      }
+    },
+    {
+      "song": {
+        "id": "588efd61-6edf-5d0b-a190-cb9bcb547e6b",
+        "youtubeUrl": "https://www.youtube.com/watch?v=xFK3bNHn4AQ",
+        "title": "마시멜로",
+        "tags": [
+          "マシュマロ",
+          "DECO27",
+          "데코니나",
+          "DECO27Feat初音ミク",
+          "데코니나 feat 하츠네 미쿠",
+          "데코"
+        ]
+      },
+      "audio": {
+        "path": "audio/xFK3bNHn4AQ.ogg",
+        "sha256": "c0aeec5b60ab67618ad23dbd682abe6b370d9596bd87a2469d6b1ce5bf1e190f",
+        "byteLength": 1045095,
+        "durationMs": 171414
+      }
+    },
+    {
+      "song": {
+        "id": "5fae8bea-4d43-5b03-8253-ad3122f599b6",
+        "youtubeUrl": "https://www.youtube.com/watch?v=BxeAm9PK2io",
+        "title": "우이밭의 파수꾼",
+        "tags": [
+          "うい麦畑でつかまえて",
+          "岩見陸",
+          "이와미 다카시",
+          "ナナホシ管弦楽団",
+          "나나호시 관현악단",
+          "しぐれうい",
+          "시구레 우이",
+          "우이 보리밭에서 붙잡아 봐"
+        ]
+      },
+      "audio": {
+        "path": "audio/BxeAm9PK2io.ogg",
+        "sha256": "5f8d83c8b11cd94513d06faafde8d0f700d5503f9db716be8f9e1bc4e8703658",
+        "byteLength": 1365973,
+        "durationMs": 225080
+      }
+    },
+    {
+      "song": {
+        "id": "0a1bf6ac-7175-5dad-b334-906377883d5f",
+        "youtubeUrl": "https://www.youtube.com/watch?v=ibjWftkJrd4",
+        "title": "메스머라이저",
+        "tags": [
+          "メズマライザー",
+          "サツキ",
+          "사츠키",
+          "サツキFeat初音ミク重音テト",
+          "사츠키Feat하츠네 미쿠카사네 테토"
+        ]
+      },
+      "audio": {
+        "path": "audio/ibjWftkJrd4.ogg",
+        "sha256": "86a9b8f903b409e8c596d13f6a4c5fdaf027080cfa876f12321d22883ca5a07a",
+        "byteLength": 951060,
+        "durationMs": 156986
+      }
+    },
+    {
+      "song": {
+        "id": "504a82cd-b9ed-5387-9d83-a53c29bc3781",
+        "youtubeUrl": "https://www.youtube.com/watch?v=6mTKPDwzoRM",
+        "title": "바이바이 FIGHT！",
+        "tags": [
+          "倍倍FIGHT",
+          "玉屋2060",
+          "타마야2060",
+          "CANDY TUNE",
+          "캔디튠"
+        ]
+      },
+      "audio": {
+        "path": "audio/6mTKPDwzoRM.ogg",
+        "sha256": "21641d262f7ef233d1aa98506f50d5ba968a1801d76f9236745d42d7beebbd39",
+        "byteLength": 1540479,
+        "durationMs": 253080
+      }
+    },
+    {
+      "song": {
+        "id": "0494d459-5afc-52e7-ab8d-e878a99e8008",
+        "youtubeUrl": "https://www.youtube.com/watch?v=8FeIF5b_EcU",
+        "title": "제국소녀",
+        "tags": [
+          "帝国少女",
+          "R SOUND DESIGN",
+          "알 사운드 디자인",
+          "R Sound DesignFeat初音ミク",
+          "R Sound Design Feat 하츠네 미쿠"
+        ]
+      },
+      "audio": {
+        "path": "audio/8FeIF5b_EcU.ogg",
+        "sha256": "ae2cbd4e3c422c57b02d3cdd5fdf3884024ea07e09e4157193d5522011ea0daf",
+        "byteLength": 1544156,
+        "durationMs": 254240
+      }
+    },
+    {
+      "song": {
+        "id": "6bf41b32-e443-539d-9731-27f52ea30cb5",
+        "youtubeUrl": "https://www.youtube.com/watch?v=D5DrJyaF9so",
+        "title": "갈릴레오는 사랑을 한다",
+        "tags": [
+          "ガリレオは恋をする",
+          "優里",
+          "유우리"
+        ]
+      },
+      "audio": {
+        "path": "audio/D5DrJyaF9so.ogg",
+        "sha256": "7cb97467411d02885089f6f0e7128525a3acff487034f8bf40b03d85634e0571",
+        "byteLength": 1571258,
+        "durationMs": 258200
+      }
+    },
+    {
+      "song": {
+        "id": "478a94b1-0cd3-5ee0-a606-757ea2e8687f",
+        "youtubeUrl": "https://www.youtube.com/watch?v=jJiHrLUfBX0",
+        "title": "투명",
+        "tags": [
+          "透明",
+          "竹中雄大",
+          "타케나카 유다이",
+          "沖聡次郎",
+          "오키 소지로",
+          "Novelbright",
+          "노벨브라이트"
+        ]
+      },
+      "audio": {
+        "path": "audio/jJiHrLUfBX0.ogg",
+        "sha256": "806c8b6bf2f7255691dd1ccf588ff15ea577396a7be1a93288b8f0e5e7e3a3d3",
+        "byteLength": 1183500,
+        "durationMs": 196320
+      }
+    },
+    {
+      "song": {
+        "id": "3583aaa6-8346-543a-9648-8b0f43dc36c0",
+        "youtubeUrl": "https://www.youtube.com/watch?v=Nz-MAr3YPEA",
+        "title": "운명의 꽃",
+        "tags": [
+          "運命の華",
+          "永澤和真",
+          "나가사와 카즈마",
+          "カイザー恵理菜",
+          "카이저 에리나",
+          "トゲナシトゲアリ",
+          "토게나시 토게아리"
+        ]
+      },
+      "audio": {
+        "path": "audio/Nz-MAr3YPEA.ogg",
+        "sha256": "ba0bb41752b5ea6d023f71356f5eed103942b00a3a93ca0509265610d6287a9b",
+        "byteLength": 1196451,
+        "durationMs": 195718
+      }
+    },
+    {
+      "song": {
+        "id": "bdd14941-6d3f-5cb5-920c-40e2379405ab",
+        "youtubeUrl": "https://www.youtube.com/watch?v=vZuJfe-KhUA",
+        "title": "스타더스트",
+        "tags": [
+          "スターダスト",
+          "藤原聡",
+          "후지와라 사토시",
+          "Official髭男dism",
+          "오피셜 히게단디즘"
+        ]
+      },
+      "audio": {
+        "path": "audio/vZuJfe-KhUA.ogg",
+        "sha256": "0c5e960f62777c205a44947dbe1dd2286243291ffedf620f7a591facec81b98c",
+        "byteLength": 1764614,
+        "durationMs": 288730
+      }
+    },
+    {
+      "song": {
+        "id": "d6d25f4f-2e36-538e-98f8-cf8d01cdb223",
+        "youtubeUrl": "https://www.youtube.com/watch?v=SHXJ5Q3UyiU",
+        "title": "실패작 소녀",
+        "tags": [
+          "失敗作少女",
+          "かいりきベア",
+          "카이리키베어",
+          "かいりきベアFeat初音ミク",
+          "카이리키베어Feat 하츠네 미쿠"
+        ]
+      },
+      "audio": {
+        "path": "audio/SHXJ5Q3UyiU.ogg",
+        "sha256": "aa25e13f4619a361eb1e1d9676e68a9e3a6d33203ba5a7da7f90ce80e5a7f378",
+        "byteLength": 1155958,
+        "durationMs": 189279
+      }
+    },
+    {
+      "song": {
+        "id": "a6c00ebf-a0bb-5a89-9e76-0d2f218a2c48",
+        "youtubeUrl": "https://www.youtube.com/watch?v=xBxwKeVGFeg",
+        "title": "비바리움",
+        "tags": [
+          "ビバリウム",
+          "Ado",
+          "아도"
+        ]
+      },
+      "audio": {
+        "path": "audio/xBxwKeVGFeg.ogg",
+        "sha256": "adc385f16dac7aa2bb77a3296d26a27738fec156edc9b18bda9faac90a30d33b",
+        "byteLength": 1487476,
+        "durationMs": 243335
+      }
+    },
+    {
+      "song": {
+        "id": "43465e5c-62d8-5867-b789-cf87045f7d28",
+        "youtubeUrl": "https://www.youtube.com/watch?v=f_2PqUwdijI",
+        "title": "울려퍼져라",
+        "tags": [
+          "ヒビカセ",
+          "ギガ",
+          "기가",
+          "れをる",
+          "레오루",
+          "GigaFeat初音ミク",
+          "기가Feat 하츠네 미쿠",
+          "Giga"
+        ]
+      },
+      "audio": {
+        "path": "audio/f_2PqUwdijI.ogg",
+        "sha256": "374306c11d8e1efd0366c21fddfd7c7e7c5e18f6ed87916d797ba8baaaa771df",
+        "byteLength": 1536219,
+        "durationMs": 250745
+      }
+    },
+    {
+      "song": {
+        "id": "0eabab9a-7038-530d-89af-2c9e23d5d913",
+        "youtubeUrl": "https://www.youtube.com/watch?v=3E0j_-N-7KA",
+        "title": "린쥬 러브",
+        "tags": [
+          "リンジューラヴ",
+          "はっとり",
+          "핫토리",
+          "マカロニえんぴつ",
+          "마카로니 엔피츠"
+        ]
+      },
+      "audio": {
+        "path": "audio/3E0j_-N-7KA.ogg",
+        "sha256": "09c1bc44fe2b7e4be2f3fa538b179f94e4f28653eb20bb48cb6981b3b0d8deac",
+        "byteLength": 1128528,
+        "durationMs": 188043
+      }
+    },
+    {
+      "song": {
+        "id": "fac2eb40-3d76-5404-aa23-64240b57db06",
+        "youtubeUrl": "https://www.youtube.com/watch?v=uYyfD5A-w8Q",
+        "title": "변덕",
+        "tags": [
+          "気まぐれ",
+          "VAUNDY",
+          "바운디",
+          "키마구레"
+        ]
+      },
+      "audio": {
+        "path": "audio/uYyfD5A-w8Q.ogg",
+        "sha256": "7c2705173620215d1eaf950ee8d4a0116a37ce2b6609bcb0a26c2121bc137252",
+        "byteLength": 1279439,
+        "durationMs": 209778
+      }
+    },
+    {
+      "song": {
+        "id": "213039be-e77e-5b67-8e6e-8e9cb8fea837",
+        "youtubeUrl": "https://www.youtube.com/watch?v=5h3OGKEV4Aw",
+        "title": "라스트 버진",
+        "tags": [
+          "ラストバージン",
+          "野田洋次郎",
+          "노다 요지로",
+          "RADWIMPS",
+          "래드윔프스"
+        ]
+      },
+      "audio": {
+        "path": "audio/5h3OGKEV4Aw.ogg",
+        "sha256": "d670cb51f92432818c0040bc726d8930de16ebd1c614ea6a471136a0c35c58bc",
+        "byteLength": 1921901,
+        "durationMs": 315894
+      }
+    },
+    {
+      "song": {
+        "id": "140d8485-f5a7-5fc5-ad2a-f3890fc97a04",
+        "youtubeUrl": "https://www.youtube.com/watch?v=V9CG6WTVQIY",
+        "title": "개냐 고양이냐로 죽을 때까지 싸우자!",
+        "tags": [
+          "犬かキャットかで 死ぬまで喧嘩しよう",
+          "藤原聡",
+          "후지와라 사토시",
+          "Official髭男dism",
+          "오피셜 히게단디즘"
+        ]
+      },
+      "audio": {
+        "path": "audio/V9CG6WTVQIY.ogg",
+        "sha256": "ad155aad86418ea3b91dd5b9c241b1a3664c14b514d5ddc9a091147bddfac68e",
+        "byteLength": 1339120,
+        "durationMs": 220694
+      }
+    },
+    {
+      "song": {
+        "id": "bfba4a82-8b70-5d24-9fdc-609e4c5c4a74",
+        "youtubeUrl": "https://www.youtube.com/watch?v=HKsNoF8qO-0",
+        "title": "삼각 게임",
+        "tags": [
+          "さんかくゲーム",
+          "ユイカ",
+          "유이카"
+        ]
+      },
+      "audio": {
+        "path": "audio/HKsNoF8qO-0.ogg",
+        "sha256": "6201ce7ce8aff263a085ea1265682e26b868d029f3c5fae2b44e7d744e3770d3",
+        "byteLength": 1331055,
+        "durationMs": 217356
+      }
+    },
+    {
+      "song": {
+        "id": "5774718e-33d6-5805-bf06-f432e5b54476",
+        "youtubeUrl": "https://www.youtube.com/watch?v=RhgTqqxxqds",
+        "title": "빛의 거리",
+        "tags": [
+          "光の街",
+          "清水依与吏",
+          "시미즈 이요리",
+          "back number",
+          "백넘버"
+        ]
+      },
+      "audio": {
+        "path": "audio/RhgTqqxxqds.ogg",
+        "sha256": "17a474051feaccce1f011ef62435cd21fe37479d4fcc197e3c038fa7497ff15a",
+        "byteLength": 1652277,
+        "durationMs": 270947
+      }
+    },
+    {
+      "song": {
+        "id": "62680b92-279b-5c72-81c5-0a32ef8579b2",
+        "youtubeUrl": "https://www.youtube.com/watch?v=5tttUO2nefA",
+        "title": "여름의 그림자",
+        "tags": [
+          "夏の影",
+          "大森元貴",
+          "오모리 모토키",
+          "Mrs GREEN APPLE",
+          "미세스 그린 애플"
+        ]
+      },
+      "audio": {
+        "path": "audio/5tttUO2nefA.ogg",
+        "sha256": "abb66b65c79ae2ffdf155784fee0468abf82739f67299b527b232dafd1bc804b",
+        "byteLength": 1512472,
+        "durationMs": 249347
+      }
+    },
+    {
+      "song": {
+        "id": "5cfa3b18-a6e3-5665-bc4e-22efd72f4d14",
+        "youtubeUrl": "https://www.youtube.com/watch?v=pJJrhNeXiU0",
+        "title": "히치콕",
+        "tags": [
+          "ヒッチコック",
+          "NBUNA",
+          "나부나",
+          "ヨルシカ",
+          "요루시카"
+        ]
+      },
+      "audio": {
+        "path": "audio/pJJrhNeXiU0.ogg",
+        "sha256": "fd702016ce926dc0f188540e4600d0bb6ea2ad75ee6e9fa632b8ed8cd3499a4f",
+        "byteLength": 1357656,
+        "durationMs": 222827
+      }
+    },
+    {
+      "song": {
+        "id": "03f6b380-213b-50f0-b6b3-3959852ecd41",
+        "youtubeUrl": "https://www.youtube.com/watch?v=cesgpPwtNys",
+        "title": "귀여워서 미안해",
+        "tags": [
+          "可愛くてごめん",
+          "SHITO",
+          "시토",
+          "HoneyWorksFeatかぴ",
+          "허니웍스Feat카피",
+          "HoneyWorks",
+          "허니웍스"
+        ]
+      },
+      "audio": {
+        "path": "audio/cesgpPwtNys.ogg",
+        "sha256": "c42e2520d26edf111b5270dcf213abfa9d1a3e625a7f9a03ec7101f86e0692e6",
+        "byteLength": 1336813,
+        "durationMs": 219918
+      }
+    },
+    {
+      "song": {
+        "id": "4a0fdd31-266c-5c63-ac69-440f3bfe32e6",
+        "youtubeUrl": "https://www.youtube.com/watch?v=GLrfkHB9thY",
+        "title": "써니 드롭",
+        "tags": [
+          "Sunny drop",
+          "竹中雄大",
+          "타케나카 유다이",
+          "沖聡次郎",
+          "오키 소지로",
+          "Novelbright",
+          "노벨브라이트"
+        ]
+      },
+      "audio": {
+        "path": "audio/GLrfkHB9thY.ogg",
+        "sha256": "71755f7d5a99789de2ed9892aa028cfe90f134e852ca534422ce5cc547bd61c4",
+        "byteLength": 1479179,
+        "durationMs": 243520
+      }
+    },
+    {
+      "song": {
+        "id": "358f4b88-f010-5ecd-bbe0-b735015477f2",
+        "youtubeUrl": "https://www.youtube.com/watch?v=m3cU0vG1j3c",
+        "title": "언밸런스 블렌드",
+        "tags": [
+          "アンバランスブレンド",
+          "涼音",
+          "스즈네",
+          "レトロリロン",
+          "레트로리론"
+        ]
+      },
+      "audio": {
+        "path": "audio/m3cU0vG1j3c.ogg",
+        "sha256": "5118ccd10d613a84ad410019c97b2e3398d93612efbc50bb2d09e2e74bdbb37c",
+        "byteLength": 1955888,
+        "durationMs": 319637
+      }
+    },
+    {
+      "song": {
+        "id": "69b6af7b-bb73-5158-9b64-a0d138daf8a7",
+        "youtubeUrl": "https://www.youtube.com/watch?v=BRPZgpdgwIM",
+        "title": "고스트 애비뉴",
+        "tags": [
+          "ゴーストアベニュー",
+          "EVE",
+          "이브"
+        ]
+      },
+      "audio": {
+        "path": "audio/BRPZgpdgwIM.ogg",
+        "sha256": "f57775e4dff7ff15b11af2bc23f98440e5654abc360585d3506b12b9d6188245",
+        "byteLength": 1057763,
+        "durationMs": 173620
+      }
+    },
+    {
+      "song": {
+        "id": "234bd57e-4e9d-5481-98a5-9051d4bfe888",
+        "youtubeUrl": "https://www.youtube.com/watch?v=PAqCNWZSR80",
+        "title": "포니",
+        "tags": [
+          "フォニイ",
+          "ツミキ",
+          "츠미키",
+          "ツミキFeat可不",
+          "츠미키Feat카후"
+        ]
+      },
+      "audio": {
+        "path": "audio/PAqCNWZSR80.ogg",
+        "sha256": "16ebd05a59a367d1b8349159de3f475f45354814ea9ee1545590653dc6863bf0",
+        "byteLength": 1152971,
+        "durationMs": 188513
+      }
+    },
+    {
+      "song": {
+        "id": "76e39e40-ff28-5173-81c1-21b7ae05791f",
+        "youtubeUrl": "https://www.youtube.com/watch?v=npSw6gt4PqI",
+        "title": "튜링 러브",
+        "tags": [
+          "チューリングラブ",
+          "ナユタセイジ",
+          "나유타 세이지",
+          "ナナヲアカリ",
+          "나나오아카리",
+          "ナナヲアカリFeatSou",
+          "나나오아카리Feat소우"
+        ]
+      },
+      "audio": {
+        "path": "audio/npSw6gt4PqI.ogg",
+        "sha256": "c6683545e62313179ebdbea5c4f0286b92fd9dcd4973e3e1264294d70276d8a3",
+        "byteLength": 1343782,
+        "durationMs": 222507
+      }
+    },
+    {
+      "song": {
+        "id": "203aff9e-2778-5ac9-a2ab-baa562e8b787",
+        "youtubeUrl": "https://www.youtube.com/watch?v=OBV-HCXoB_s",
+        "title": "밤새도록",
+        "tags": [
+          "よもすがら",
+          "ACAね",
+          "아카네",
+          "ずっと真夜中でいいのに",
+          "계속 한밤중이면 좋을 텐데"
+        ]
+      },
+      "audio": {
+        "path": "audio/OBV-HCXoB_s.ogg",
+        "sha256": "59a8b19025480106536d3e42175b918df50f780fda7e51a0a0cbee71f306d3ce",
+        "byteLength": 1306587,
+        "durationMs": 213547
+      }
+    },
+    {
+      "song": {
+        "id": "b7c6e1ab-4fef-55aa-b4e2-f9ebfaa33930",
+        "youtubeUrl": "https://www.youtube.com/watch?v=dJottC7FmYc",
+        "title": "누구도 될 수 없는 나니까",
+        "tags": [
+          "誰にもなれない私だから",
+          "遊部優介",
+          "아소베 유스케",
+          "カイザー恵理菜",
+          "카이저 에리나",
+          "トゲナシトゲアリ",
+          "토게나시 토게아리"
+        ]
+      },
+      "audio": {
+        "path": "audio/dJottC7FmYc.ogg",
+        "sha256": "b8290c6db6d8d8618800c9b671eee66a2d71c9af925ba9332f52d548e9c68c81",
+        "byteLength": 1161365,
+        "durationMs": 189830
+      }
+    },
+    {
+      "song": {
+        "id": "2a7705bf-0c65-5f1d-9340-b6c53c975ee6",
+        "youtubeUrl": "https://www.youtube.com/watch?v=dGp6wS0IP4I",
+        "title": "꿈불꽃",
+        "tags": [
+          "夢花火",
+          "竹中雄大",
+          "타케나카 유다이",
+          "Novelbright",
+          "노벨브라이트"
+        ]
+      },
+      "audio": {
+        "path": "audio/dGp6wS0IP4I.ogg",
+        "sha256": "0bf81a070f31d28bbd288d787240e105cbe7fd949077452ded137353db87629c",
+        "byteLength": 1596690,
+        "durationMs": 260600
+      }
+    },
+    {
+      "song": {
+        "id": "8c91605c-2c1c-5231-b76e-74337543e190",
+        "youtubeUrl": "https://www.youtube.com/watch?v=UgG0P2sHoU4",
+        "title": "벚꽃 너 나",
+        "tags": [
+          "サクラキミワタシ",
+          "TUKI",
+          "츠키",
+          "SAKURA KIMI WATASHI"
+        ]
+      },
+      "audio": {
+        "path": "audio/UgG0P2sHoU4.ogg",
+        "sha256": "3cfa60a33a14affe7f40b7a178dcacc673c43f9b81d99cd702548ad0e8cf88f8",
+        "byteLength": 1235674,
+        "durationMs": 204667
+      }
+    },
+    {
+      "song": {
+        "id": "ea0851c0-f105-5f2e-8730-f590886a88de",
+        "youtubeUrl": "https://www.youtube.com/watch?v=IdekFd3D6q8",
+        "title": "열등상등",
+        "tags": [
+          "劣等上等",
+          "GIGA",
+          "기가",
+          "REOL",
+          "레오루",
+          "GigaFeat鏡音リン鏡音レン",
+          "기가feat 카가미네 린 카가미네 렌"
+        ]
+      },
+      "audio": {
+        "path": "audio/IdekFd3D6q8.ogg",
+        "sha256": "f8013973e8b70e6bb501e4570a84558353120574e397a391c07d5c1cbfb166a8",
+        "byteLength": 1440296,
+        "durationMs": 235110
+      }
+    },
+    {
+      "song": {
+        "id": "f128801c-225e-51ec-ac0a-73237e5b9ad6",
+        "youtubeUrl": "https://www.youtube.com/watch?v=F8e2ohz1Jwg",
+        "title": "밤의 무희",
+        "tags": [
+          "夜の踊り子",
+          "山口一郎",
+          "야마구치 이치로",
+          "サカナクション",
+          "사카낙션"
+        ]
+      },
+      "audio": {
+        "path": "audio/F8e2ohz1Jwg.ogg",
+        "sha256": "64ee2cda66410b67c2de212e15d6f9018b015917de4a8e7a248a2177a47f52fc",
+        "byteLength": 1854208,
+        "durationMs": 302934
+      }
+    },
+    {
+      "song": {
+        "id": "6e72df0e-c19e-5f81-ba02-64907274dd8d",
+        "youtubeUrl": "https://www.youtube.com/watch?v=F_mS1f-oKa0",
+        "title": "엘더플라워",
+        "tags": [
+          "エルダーフラワー",
+          "藤原聡",
+          "후지와라 사토시",
+          "Official髭男dism",
+          "오피셜 히게단디즘"
+        ]
+      },
+      "audio": {
+        "path": "audio/F_mS1f-oKa0.ogg",
+        "sha256": "0e79a4a7214577b4b0fe91a5347255d9012bdc69dd3841fa20cd6785b28568f9",
+        "byteLength": 1744967,
+        "durationMs": 285890
+      }
+    },
+    {
+      "song": {
+        "id": "87f66362-1121-5ede-8183-4deedec1c385",
+        "youtubeUrl": "https://www.youtube.com/watch?v=z2tDtdHHAHg",
+        "title": "도와줘!!",
+        "tags": [
+          "HELP",
+          "なとり",
+          "나토리",
+          "KOBO KANAERU",
+          "코보 카나에루"
+        ]
+      },
+      "audio": {
+        "path": "audio/z2tDtdHHAHg.ogg",
+        "sha256": "0efe33141a0c884df467e11ca0daa556b1e17196f25518d9b9269497935f7784",
+        "byteLength": 1150388,
+        "durationMs": 187808
+      }
+    },
+    {
+      "song": {
+        "id": "3527ad72-dbe9-5eae-a070-522cbcc7109e",
+        "youtubeUrl": "https://www.youtube.com/watch?v=85UapL2_x_o",
+        "title": "이제 와서냐며 나는 말하려나",
+        "tags": [
+          "今更だって僕は言うかな",
+          "Saucy Dog",
+          "사우시 독",
+          "石原慎也",
+          "이시하라 신야"
+        ]
+      },
+      "audio": {
+        "path": "audio/85UapL2_x_o.ogg",
+        "sha256": "333c6803b568ed689b7935bb3054b5399c585c5b0597cb53c21353dcf31712c7",
+        "byteLength": 1524012,
+        "durationMs": 249614
+      }
+    },
+    {
+      "song": {
+        "id": "93f01bd7-24bd-5a31-b716-74680bc929bc",
+        "youtubeUrl": "https://www.youtube.com/watch?v=lySKXHiyzlQ",
+        "title": "옐로우 (CLOSET version)",
+        "tags": [
+          "YELLOWCLOSET version",
+          "神山羊",
+          "카미야마 요우",
+          "YELLOW",
+          "옐로우"
+        ]
+      },
+      "audio": {
+        "path": "audio/lySKXHiyzlQ.ogg",
+        "sha256": "a3e07147510794bd2a0992100346395cb71caad248f5175b11e97902dd23894e",
+        "byteLength": 1088404,
+        "durationMs": 178814
+      }
+    },
+    {
+      "song": {
+        "id": "80e02fb1-b257-522d-831d-359d22e2109f",
+        "youtubeUrl": "https://www.youtube.com/watch?v=kZStE_kecIQ",
+        "title": "춤",
+        "tags": [
+          "踊",
+          "GIGA",
+          "기가",
+          "TEDDYLOID",
+          "테티로이드",
+          "DECO27",
+          "데코니나",
+          "Ado",
+          "아도",
+          "데코"
+        ]
+      },
+      "audio": {
+        "path": "audio/kZStE_kecIQ.ogg",
+        "sha256": "5884fd62d0134e9a1959f78d299e7a74ff3b5e804bef2c9634f817c8d41436b6",
+        "byteLength": 1272372,
+        "durationMs": 208970
+      }
+    },
+    {
+      "song": {
+        "id": "1e27876b-8817-5bd9-9924-a1d19345788f",
+        "youtubeUrl": "https://www.youtube.com/watch?v=fJBCFUKSYyA",
+        "title": "개막선언",
+        "tags": [
+          "開幕宣言",
+          "竹中雄大",
+          "타케나카 유다이",
+          "Novelbright",
+          "노벨브라이트"
+        ]
+      },
+      "audio": {
+        "path": "audio/fJBCFUKSYyA.ogg",
+        "sha256": "842c044f7c9867743eee5d5bfdb09054e1a6d01bc4ddce38399475c70292d774",
+        "byteLength": 1695437,
+        "durationMs": 279787
+      }
+    },
+    {
+      "song": {
+        "id": "0b0ec6a9-3dcb-55f0-8bcd-063e47c54843",
+        "youtubeUrl": "https://www.youtube.com/watch?v=fNhDZu6jUUM",
+        "title": "래빗 홀",
+        "tags": [
+          "ラビットホール",
+          "DECO27",
+          "데코니나",
+          "DECO27Feat初音ミク",
+          "데코니나 feat 하츠네 미쿠",
+          "데코"
+        ]
+      },
+      "audio": {
+        "path": "audio/fNhDZu6jUUM.ogg",
+        "sha256": "5e4d93cab989eda589147e4577b4de9710d002d01c760fcd0848a02b38bafdd5",
+        "byteLength": 969843,
+        "durationMs": 159032
+      }
+    },
+    {
+      "song": {
+        "id": "5fb8b6fe-e038-5868-b2be-228681ab7382",
+        "youtubeUrl": "https://www.youtube.com/watch?v=4eaiP2EXoc0",
+        "title": "바람의 찬가",
+        "tags": [
+          "風のアンセム",
+          "EVE",
+          "이브",
+          "EveFeatsuis from ヨルシカ",
+          "이브feat 스이 from 요루시카",
+          "바람의 앤섬"
+        ]
+      },
+      "audio": {
+        "path": "audio/4eaiP2EXoc0.ogg",
+        "sha256": "bd48069389c899798ec2512f95f9ab83c7d4ce1a59f28279c025118f73e54465",
+        "byteLength": 1361718,
+        "durationMs": 222506
+      }
+    },
+    {
+      "song": {
+        "id": "7668f0c1-c399-53d0-a0c3-3c89ab161ea2",
+        "youtubeUrl": "https://www.youtube.com/watch?v=gOwTw4LzfxE",
+        "title": "엔젤시크",
+        "tags": [
+          "エンゼルシーク",
+          "煮ル果実",
+          "니루 카지츠",
+          "Ado",
+          "아도"
+        ]
+      },
+      "audio": {
+        "path": "audio/gOwTw4LzfxE.ogg",
+        "sha256": "abd2f831ee3ac712b55536522247b480abdeff56922f24e2010d986364d75483",
+        "byteLength": 1401457,
+        "durationMs": 229413
+      }
+    },
+    {
+      "song": {
+        "id": "6009de5b-c5fb-59eb-93a2-78fc3256232c",
+        "youtubeUrl": "https://www.youtube.com/watch?v=ptKe9cVbN6Q",
+        "title": "일요일",
+        "tags": [
+          "日曜日",
+          "清水依与吏",
+          "시미즈 이요리",
+          "川村結花",
+          "카와무라 유카",
+          "back number",
+          "백넘버"
+        ]
+      },
+      "audio": {
+        "path": "audio/ptKe9cVbN6Q.ogg",
+        "sha256": "797a07d6d4c81c53d52930dc4042a76ee15e71ffdc1ee5c290909f81a014eede",
+        "byteLength": 1338749,
+        "durationMs": 218827
+      }
+    },
+    {
+      "song": {
+        "id": "2a9c20e7-9266-5d17-b003-ded678b52c16",
+        "youtubeUrl": "https://www.youtube.com/watch?v=-NkWKRm2Dg0",
+        "title": "피피피피",
+        "tags": [
+          "PPPP",
+          "TAK",
+          "탁",
+          "TAKFeat初音ミク重音テト",
+          "탁Feat하츠네 미쿠카사네 테토"
+        ]
+      },
+      "audio": {
+        "path": "audio/-NkWKRm2Dg0.ogg",
+        "sha256": "c07ac20abb9db3d4c796b317a68ec13f05be0789cac394195afa3d19848b6d11",
+        "byteLength": 946336,
+        "durationMs": 154849
+      }
+    },
+    {
+      "song": {
+        "id": "d281deb2-e375-5f6a-a4fe-f4a6b2b94ed0",
+        "youtubeUrl": "https://www.youtube.com/watch?v=-Qn_yN4g8IM",
+        "title": "뱀파이어",
+        "tags": [
+          "ヴァンパイア",
+          "DECO27",
+          "데코니나",
+          "DECO27Feat初音ミク",
+          "데코니나 feat 하츠네 미쿠",
+          "데코"
+        ]
+      },
+      "audio": {
+        "path": "audio/-Qn_yN4g8IM.ogg",
+        "sha256": "dbcc1198f5a5f5fcb8eb2bb0e3f204092d7a546350d905dd1a01660865919099",
+        "byteLength": 1090430,
+        "durationMs": 178249
+      }
+    },
+    {
+      "song": {
+        "id": "587f0da6-51b2-59a8-9710-c51b128024ff",
+        "youtubeUrl": "https://www.youtube.com/watch?v=MQ7NNkpGlNo",
+        "title": "책갈피",
+        "tags": [
+          "栞",
+          "尾崎世界観",
+          "오자키 세카이칸",
+          "クリープハイプ",
+          "크리프 하이프",
+          "시오리"
+        ]
+      },
+      "audio": {
+        "path": "audio/MQ7NNkpGlNo.ogg",
+        "sha256": "0d49bf321376a76baf8e056b157e01ef18beaa03d718fb741226f45a334c47a2",
+        "byteLength": 1600093,
+        "durationMs": 261560
+      }
+    },
+    {
+      "song": {
+        "id": "e5c665cf-6000-5176-a393-ea1363e850fd",
+        "youtubeUrl": "https://www.youtube.com/watch?v=nMPQoiZoN2U",
+        "title": "레플리칸트",
+        "tags": [
+          "レプリカント",
+          "NBUNA",
+          "나부나",
+          "ヨルシカ",
+          "요루시카"
+        ]
+      },
+      "audio": {
+        "path": "audio/nMPQoiZoN2U.ogg",
+        "sha256": "b3ef5219136b5f05eb227b3825f7ce41daca7577d452c69e474541594c35b45a",
+        "byteLength": 1329105,
+        "durationMs": 217067
+      }
+    },
+    {
+      "song": {
+        "id": "97f8f7de-d672-5234-9331-b3ae60c277cd",
+        "youtubeUrl": "https://www.youtube.com/watch?v=HtEFO8RB-r8",
+        "title": "애프터 페인",
+        "tags": [
+          "アフターペイン",
+          "DECO27",
+          "데코니나",
+          "MILGRAM ムウCV香里有佐",
+          "밀그램 무우CV코리 아리사",
+          "데코",
+          "MILGRAM ムウ",
+          "밀그램 무우"
+        ]
+      },
+      "audio": {
+        "path": "audio/HtEFO8RB-r8.ogg",
+        "sha256": "a26d156511e9d17ad99a35d293877c9e60982b25b25be2061ae02feb2c837850",
+        "byteLength": 1322441,
+        "durationMs": 217707
+      }
+    },
+    {
+      "song": {
+        "id": "360820ea-6007-57a4-b738-3cee53ba124a",
+        "youtubeUrl": "https://www.youtube.com/watch?v=v6Vj5izoql8",
+        "title": "고스트",
+        "tags": [
+          "ゴースト",
+          "秋田ひろむ",
+          "아키타 히로무",
+          "amazarashi",
+          "아마자라시"
+        ]
+      },
+      "audio": {
+        "path": "audio/v6Vj5izoql8.ogg",
+        "sha256": "c9dc73a39bbd8ae1498a4f2b4d627fef0e14e9b2609203da29443e21d7a023ef",
+        "byteLength": 2421285,
+        "durationMs": 395840
+      }
+    },
+    {
+      "song": {
+        "id": "02b63405-7cb2-529f-a456-49d4dc5ebd4a",
+        "youtubeUrl": "https://www.youtube.com/watch?v=WiYkBISlv0w",
+        "title": "세레나데",
+        "tags": [
+          "セレナーデ",
+          "なとり",
+          "나토리"
+        ]
+      },
+      "audio": {
+        "path": "audio/WiYkBISlv0w.ogg",
+        "sha256": "ec6d13931e5bfef00ab07a4735be7fd39eec49d7514e9d98a1e20fdd2ea00b64",
+        "byteLength": 1325276,
+        "durationMs": 219747
+      }
+    },
+    {
+      "song": {
+        "id": "663426d8-6f12-581c-83aa-90b8e3d3834c",
+        "youtubeUrl": "https://www.youtube.com/watch?v=0N4ffgT9z-g",
+        "title": "킬 더 노이즈",
+        "tags": [
+          "Kill the Noise",
+          "UZ",
+          "유지",
+          "MOMIKEN",
+          "모미켄",
+          "SPYAIR",
+          "스파이에어"
+        ]
+      },
+      "audio": {
+        "path": "audio/0N4ffgT9z-g.ogg",
+        "sha256": "b177c2dce9e4469ba4e296cc4a7abf654410837e06f23ff51a0d9a199b7c0a26",
+        "byteLength": 1263210,
+        "durationMs": 206091
+      }
+    },
+    {
+      "song": {
+        "id": "2553b201-d3fe-51a8-9114-894692d12a2a",
+        "youtubeUrl": "https://www.youtube.com/watch?v=WMMlqpcWBr8",
+        "title": "부르는 소리",
+        "tags": [
+          "呼び声",
+          "VAUNDY",
+          "바운디",
+          "요비고에"
+        ]
+      },
+      "audio": {
+        "path": "audio/WMMlqpcWBr8.ogg",
+        "sha256": "839e425d65f926ffc2636a72f7e546bc1e004d0313cfadaf7093fd857fcc2971",
+        "byteLength": 1432766,
+        "durationMs": 234014
+      }
+    },
+    {
+      "song": {
+        "id": "7cae4bf6-ee7b-58b4-bc34-8f6f5eb2d449",
+        "youtubeUrl": "https://www.youtube.com/watch?v=EY_n7wgUX-U",
+        "title": "아나키",
+        "tags": [
+          "Anarchy",
+          "藤原聡",
+          "후지와라 사토시",
+          "Official髭男dism",
+          "오피셜 히게단디즘"
+        ]
+      },
+      "audio": {
+        "path": "audio/EY_n7wgUX-U.ogg",
+        "sha256": "caad912cba2402e88dd56dd2f6dab5a39be90e12630c5d3108b66f221cc6cae8",
+        "byteLength": 1631100,
+        "durationMs": 266230
+      }
+    },
+    {
+      "song": {
+        "id": "7c5ce7e3-0d54-5fa4-9750-49d2e4971edf",
+        "youtubeUrl": "https://www.youtube.com/watch?v=JMAJS_s99Ho",
+        "title": "두근 어질",
+        "tags": [
+          "きゅうくらりん",
+          "いよわ",
+          "이요와",
+          "いよわFeat可不",
+          "이요와Feat 카후"
+        ]
+      },
+      "audio": {
+        "path": "audio/JMAJS_s99Ho.ogg",
+        "sha256": "5868be60f8b4f1d6dafda487ea4e0ca3903b50b3d72502ec1ff00dfca0f39039",
+        "byteLength": 1323685,
+        "durationMs": 217104
+      }
+    },
+    {
+      "song": {
+        "id": "6c0435dc-71bf-53ce-9668-956627f3d8f9",
+        "youtubeUrl": "https://www.youtube.com/watch?v=AVIo9K-DrcY",
+        "title": "텔레파시",
+        "tags": [
+          "テレパシ",
+          "DECO27",
+          "데코니나",
+          "DECO27Feat初音ミク",
+          "데코니나 feat 하츠네 미쿠",
+          "데코"
+        ]
+      },
+      "audio": {
+        "path": "audio/AVIo9K-DrcY.ogg",
+        "sha256": "227348e34f210f1f00a1417209778c0daafe267f1b94a632dd11c76277476cef",
+        "byteLength": 838261,
+        "durationMs": 137760
+      }
+    },
+    {
+      "song": {
+        "id": "25c30c90-255a-550a-ae0d-61ad60145cf5",
+        "youtubeUrl": "https://www.youtube.com/watch?v=YLG1yiWkZM0",
+        "title": "물떼새",
+        "tags": [
+          "千鳥",
+          "NBUNA",
+          "나부나",
+          "ヨルシカ",
+          "요루시카"
+        ]
+      },
+      "audio": {
+        "path": "audio/YLG1yiWkZM0.ogg",
+        "sha256": "0a9b338a28cada9b3fbe827a41d0146dba0150da3c2c6ef350d5a00b82e99341",
+        "byteLength": 1523862,
+        "durationMs": 252129
+      }
+    },
+    {
+      "song": {
+        "id": "33a3e755-aed9-5349-9952-bcd7cee46ed0",
+        "youtubeUrl": "https://www.youtube.com/watch?v=yrw7Ddi-YNs",
+        "title": "빌런",
+        "tags": [
+          "ヴィラン",
+          "てにをは",
+          "테니오하",
+          "てにをはFeatFlower",
+          "테니오하 feat flower"
+        ]
+      },
+      "audio": {
+        "path": "audio/yrw7Ddi-YNs.ogg",
+        "sha256": "0447c1f448d63b0c708399ba13baeaf11c2b5d3d1454c97063146596aa0ace9f",
+        "byteLength": 1227022,
+        "durationMs": 200406
+      }
+    },
+    {
+      "song": {
+        "id": "8676861c-7be9-5888-a3e7-c66bebb75968",
+        "youtubeUrl": "https://www.youtube.com/watch?v=kiyL9uN0VVU",
+        "title": "메디아노체",
+        "tags": [
+          "メディアノーチェ",
+          "ACAね",
+          "아카네",
+          "ずっと真夜中でいいのに",
+          "계속 한밤중이면 좋을 텐데"
+        ]
+      },
+      "audio": {
+        "path": "audio/kiyL9uN0VVU.ogg",
+        "sha256": "44efdd5eba56b56916e5d067169fa45512680222bc8ef961b896a06db603ca08",
+        "byteLength": 1396776,
+        "durationMs": 228374
+      }
+    },
+    {
+      "song": {
+        "id": "0c56f9a8-c1d2-5990-afc4-5885ca451fb6",
+        "youtubeUrl": "https://www.youtube.com/watch?v=ZHtYNBse9Zo",
+        "title": "애증",
+        "tags": [
+          "AIZO",
+          "常田大希",
+          "츠네타 다이키",
+          "King Gnu",
+          "킹누",
+          "아이조"
+        ]
+      },
+      "audio": {
+        "path": "audio/ZHtYNBse9Zo.ogg",
+        "sha256": "ebe75358eeb47980df60d8bd958700b6e7f4a01f739b4d53759ff2e95569d6ca",
+        "byteLength": 1318449,
+        "durationMs": 215947
+      }
+    },
+    {
+      "song": {
+        "id": "bb6aff3b-7bba-5ca4-843e-8677a10ba9e2",
+        "youtubeUrl": "https://www.youtube.com/watch?v=iuNYMjfntFI",
+        "title": "나이스하네",
+        "tags": [
+          "ナイスだね",
+          "川谷絵音",
+          "카와타니 에논",
+          "CUTIE STREET",
+          "큐티 스트리트",
+          "나이스다네",
+          "나이스네"
+        ]
+      },
+      "audio": {
+        "path": "audio/iuNYMjfntFI.ogg",
+        "sha256": "cc6a923c25a1b77c50db2d5d83025d3d82944f4d39d81559f2f249a1de202e14",
+        "byteLength": 1649230,
+        "durationMs": 270612
+      }
+    },
+    {
+      "song": {
+        "id": "fa285c75-8659-529c-b742-dc73df93c849",
+        "youtubeUrl": "https://www.youtube.com/watch?v=VjsPYyUWUwY",
+        "title": "소녀A",
+        "tags": [
+          "少女A",
+          "椎名もた",
+          "시이나 모타",
+          "椎名もたFeat鏡音リン",
+          "시이나 모타Feat카가미네 린"
+        ]
+      },
+      "audio": {
+        "path": "audio/VjsPYyUWUwY.ogg",
+        "sha256": "14df7b7cf50ce580475d2270baa5d87e2d1e47aad6b26e83ce2491a5aa0b27ca",
+        "byteLength": 1494898,
+        "durationMs": 244014
+      }
+    },
+    {
+      "song": {
+        "id": "2b937341-8db0-5c48-bf5a-3c7fe8cfef0a",
+        "youtubeUrl": "https://www.youtube.com/watch?v=TRdnYZtnNis",
+        "title": "감이 좋아서 분해",
+        "tags": [
+          "勘冴えて悔しいわ",
+          "ACAね",
+          "아카네",
+          "ラムシーニ",
+          "람시니",
+          "ずっと真夜中でいいのに",
+          "계속 한밤중이면 좋을 텐데"
+        ]
+      },
+      "audio": {
+        "path": "audio/TRdnYZtnNis.ogg",
+        "sha256": "e4d2a431468b7d5956e838d198f5ef246e629cceb6178d20ca4b1b73416f10e5",
+        "byteLength": 1446412,
+        "durationMs": 236974
+      }
+    },
+    {
+      "song": {
+        "id": "b3697969-6ecf-511b-ac0d-360bbd8c8ed9",
+        "youtubeUrl": "https://www.youtube.com/watch?v=jzDJ4ZRfVMY",
+        "title": "아네모네",
+        "tags": [
+          "アネモネ",
+          "沖聡次郎",
+          "오키 소지로",
+          "竹中雄大",
+          "타케나카 유다이",
+          "Novelbright",
+          "노벨브라이트"
+        ]
+      },
+      "audio": {
+        "path": "audio/jzDJ4ZRfVMY.ogg",
+        "sha256": "c5c498a42c4b62836f623d6e94026649f5227a7c135078bd0c2b72d583df58dd",
+        "byteLength": 1278952,
+        "durationMs": 210360
+      }
+    },
+    {
+      "song": {
+        "id": "94f17cff-84be-5c56-b65c-37be596903ad",
+        "youtubeUrl": "https://www.youtube.com/watch?v=LEGYJmTUqWM",
+        "title": "바람을 타고",
+        "tags": [
+          "風に乗る",
+          "穴見真吾",
+          "아나미 신고",
+          "長屋晴子",
+          "나가야 하루코",
+          "緑黄色社会",
+          "녹황색사회"
+        ]
+      },
+      "audio": {
+        "path": "audio/LEGYJmTUqWM.ogg",
+        "sha256": "7cea3e01b0343945ccc4b01bd65ace5eac04bd31917c16d085292c7b2a283b04",
+        "byteLength": 1313516,
+        "durationMs": 216694
+      }
+    }
+  ],
+  "excludedSongs": [
+    {
+      "index": 53,
+      "title": "숨바꼭질",
+      "reasons": [
+        "Korean and original-name mapping is missing for official creator “EREN”."
+      ]
+    },
+    {
+      "index": 58,
+      "title": "큐스토의 노래",
+      "reasons": [
+        "Korean and original-name mapping is missing for official creator “宇田川翔”."
+      ]
+    },
+    {
+      "index": 66,
+      "title": "큐트한 구체",
+      "reasons": [
+        "Korean and original-name mapping is missing for official creator “宇田川翔”.",
+        "Korean and original-name mapping is missing for official creator “ポケモン音楽歌い隊”."
+      ]
+    },
+    {
+      "index": 92,
+      "title": "프리큐큐",
+      "reasons": [
+        "Korean and original-name mapping is missing for official creator “YUPPA”."
+      ]
+    },
+    {
+      "index": 98,
+      "title": "여보세요?",
+      "reasons": [
+        "Korean and original-name mapping is missing for official creator “向田民子”."
+      ]
+    },
+    {
+      "index": 101,
+      "title": "릴리",
+      "reasons": [
+        "Korean and original-name mapping is missing for official creator “PON”."
+      ]
+    },
+    {
+      "index": 103,
+      "title": "추억의 벚꽃",
+      "reasons": [
+        "Korean and original-name mapping is missing for official creator “karia”."
+      ]
+    },
+    {
+      "index": 112,
+      "title": "조연남우상",
+      "reasons": [
+        "Korean and original-name mapping is missing for official creator “TARLOW JORDAN”.",
+        "Korean and original-name mapping is missing for official creator “YIN BERNARD”."
+      ]
+    },
+    {
+      "index": 113,
+      "title": "알러지",
+      "reasons": [
+        "Korean and original-name mapping is missing for official creator “PAPRIKAA”.",
+        "Korean and original-name mapping is missing for official creator “임정우”.",
+        "Korean and original-name mapping is missing for official creator “FLAME”.",
+        "Korean and original-name mapping is missing for official creator “nodresscode”."
+      ]
+    },
+    {
+      "index": 120,
+      "title": "카리스맥스",
+      "reasons": [
+        "Korean and original-name mapping is missing for official creator “MUTEKI DEAD SNAKE”."
+      ]
+    },
+    {
+      "index": 146,
+      "title": "향수",
+      "reasons": [
+        "Korean and original-name mapping is missing for official creator “8s”."
+      ]
+    }
+  ]
+}
