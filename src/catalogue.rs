@@ -81,7 +81,7 @@ impl CatalogueImportRequest {
 }
 
 fn validate_metadata(title: &str, tags: &[String]) -> Result<()> {
-    if !valid_text(title, 160) || tags.len() > 10 || tags.iter().any(|tag| !valid_text(tag, 32)) {
+    if !valid_text(title, 160) || tags.len() > 16 || tags.iter().any(|tag| !valid_text(tag, 32)) {
         return Err(Error::new(422, "INVALID_SONG_METADATA"));
     }
     Ok(())
@@ -94,9 +94,17 @@ fn valid_text(value: &str, max_scalars: usize) -> bool {
         && value.trim_matches(|c| c <= '\u{0020}') == value
         && value.chars().count() <= max_scalars
         && !value.chars().any(char::is_control)
-        && value
-            .chars()
-            .any(|c| c.is_ascii_alphanumeric() || ('\u{ac00}'..='\u{d7a3}').contains(&c))
+        && value.chars().any(|c| {
+            c.is_ascii_alphanumeric()
+                || ('\u{ac00}'..='\u{d7a3}').contains(&c)
+                || ('\u{3041}'..='\u{3096}').contains(&c)
+                || ('\u{309d}'..='\u{309f}').contains(&c)
+                || ('\u{30a1}'..='\u{30fa}').contains(&c)
+                || ('\u{30fc}'..='\u{30ff}').contains(&c)
+                || ('\u{3005}'..='\u{3007}').contains(&c)
+                || ('\u{3400}'..='\u{4dbf}').contains(&c)
+                || ('\u{4e00}'..='\u{9fff}').contains(&c)
+        })
 }
 
 pub(crate) fn initialize(db: &Connection) -> Result<()> {

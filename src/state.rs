@@ -470,7 +470,7 @@ pub fn validate(s: &Snapshot, media: &HashMap<String, Media>, now: i64) -> Resul
                 .unwrap_or("");
             if !text(&reveal.title, 160)
                 || reveal.aliases.len() > 10
-                || reveal.tags.len() > 10
+                || reveal.tags.len() > 16
                 || reveal.aliases.iter().any(|x| !text(x, 160))
                 || reveal.tags.iter().any(|x| !text(x, 32))
                 || !video(id)

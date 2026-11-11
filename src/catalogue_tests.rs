@@ -107,7 +107,7 @@ fn unicode_scalar_limits_do_not_count_utf8_bytes_or_utf16_surrogates() {
     for title in ["가".repeat(160), format!("A{}", "🎵".repeat(159))] {
         let value = SongMetadata {
             title,
-            tags: vec![format!("A{}", "🎵".repeat(31)); 10],
+            tags: vec![format!("A{}", "🎵".repeat(31)); 16],
         };
         value.validate().unwrap();
     }
@@ -126,7 +126,7 @@ fn unicode_scalar_limits_do_not_count_utf8_bytes_or_utf16_surrogates() {
         },
         SongMetadata {
             title: "A".into(),
-            tags: vec!["tag".into(); 11],
+            tags: vec!["tag".into(); 17],
         },
     ] {
         failure(value.validate(), 422, "INVALID_SONG_METADATA");
@@ -155,7 +155,7 @@ fn text_requires_trimmed_noncontrol_text_with_java_answer_characters() {
         "🎵",
         "!?",
         "é",
-        "漢字",
+        "「」・。",
         "ㄱㄴ",
         "\u{abff}",
         "\u{d7a4}",
@@ -186,6 +186,11 @@ fn text_requires_trimmed_noncontrol_text_with_java_answer_characters() {
         "z",
         "가",
         "힣",
+        "漢字",
+        "転生林檎",
+        "ピノキオピー",
+        "佐々木",
+        "アンノウン・マザーグース",
         "A 🎵",
         "한 글",
         "A-é",

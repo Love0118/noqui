@@ -1737,14 +1737,30 @@ async fn reveal_can_keep_playing_then_idle_and_public_projection_never_leaks_sou
     reveal.rooms[0].reveal = Some(Reveal {
         title: "정답 제목".into(),
         aliases: vec!["별칭".into()],
-        tags: vec!["태그".into()],
+        tags: (0..16).map(|i| format!("作家{i}")).collect(),
         youtube_url: "https://www.youtube.com/watch?v=BaW_jenozKc".into(),
     });
+    let mut excessive = reveal.clone();
+    excessive.rooms[0]
+        .reveal
+        .as_mut()
+        .unwrap()
+        .tags
+        .push("초과".into());
+    assert!(
+        noqui_web::state::validate(
+            &excessive,
+            &HashMap::from([(m.id.clone(), m.clone())]),
+            f.app.now(),
+        )
+        .is_err()
+    );
     f.sync_direct(reveal, Some(m));
     let (_, _, bytes) = call(api::public(f.app.clone()), get("/api/v1/state", &cookie)).await;
     let v: Value = serde_json::from_slice(&bytes).unwrap();
     assert_eq!(v["round"]["playing"], true);
     assert_eq!(v["reveal"]["title"], "정답 제목");
+    assert_eq!(v["reveal"]["tags"].as_array().unwrap().len(), 16);
     f.sync_direct(f.snapshot(3, "IDLE"), None);
     let (_, _, bytes) = call(api::public(f.app.clone()), get("/api/v1/state", &cookie)).await;
     let v: Value = serde_json::from_slice(&bytes).unwrap();
